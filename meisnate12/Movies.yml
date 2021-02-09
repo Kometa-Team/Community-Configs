@@ -84,6 +84,12 @@ collections:
     sync_mode: sync
     summary: Rotten Tomatoes Best Movies of 2020
     collection_order: release
+  Best of 2021:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2021
+    sort_title: ++++_Best of 2021
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of 2021
+    collection_order: release
   Oscars:
     imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
     sort_title: ++++_Oscars
