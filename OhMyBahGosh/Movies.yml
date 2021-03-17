@@ -1,0 +1,92 @@
+##########################################################################
+##########################################################################
+##                                                                      ##
+##         _____ _   _____     _____     _   _____         _            ##
+##        |     | |_|     |_ _| __  |___| |_|   __|___ ___| |_          ##
+##        |  |  |   | | | | | | __ -| .'|   |  |  | . |_ -|   |         ##
+##        |_____|_|_|_|_|_|_  |_____|__,|_|_|_____|___|___|_|_|         ##
+##                        |___|                                         ##
+##                                                                      ##
+##           ..Movie Library Collections YML Confg For..                ##
+##         https://github.com/meisnate12/Plex-Meta-Manager              ##
+##########################################################################
+##########################################################################
+##                   -=My Trakt.tv Collection Lists=-                   ##
+##              _-=http://trakt.tv/users/hdlists/lists=-_               ##
+##########################################################################
+##########################################################################
+
+collections:
+  Mindfuck Movies:
+    trakt_list:
+     - https://trakt.tv/users/hdlists/lists/mindfuck-movies
+     - https://trakt.tv/users/benfranklin/lists/best-mindfucks
+    collection_order: alpha
+    collection_mode: default
+    sort_title: +++++++++++++++++_Mindfuck Movies
+    summary: There’s nothing greater than a film that makes you think. A film that lingers on your mind long after the credits have rolled and is the subject of many conversation and discussion. Trying to piece together the puzzle of what you saw and coming to a conclusion that makes sense or still doesn’t add up.
+    url_poster: https://i.imgur.com/Tl6QMgA.png
+    url_background: https://i.imgur.com/DM1Im1X.jpeg
+    add_to_arr: false
+
+  80s Movies:
+    trakt_list:
+     - https://trakt.tv/users/hdlists/lists/rottentomatoes-com-s-best-of-the-80s
+     - https://trakt.tv/users/zyrus/lists/80s-classics
+    collection_order: alpha
+    collection_mode: default
+    sort_title: +++++++++++++++++_80s Movies
+    summary: The Best Movies From The 80s
+    url_poster: https://i.imgur.com/k9c4ieG.png
+    url_background: https://i.imgur.com/ITnaga1.jpg
+    add_to_arr: true
+
+  90s Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/rottentomatoes-com-s-best-of-the-90s
+    collection_order: alpha
+    collection_mode: default
+    sort_title: +++++++++++++++++_90s Movies
+    summary: The Best Movies From The 90s
+    url_poster: https://i.imgur.com/Nq8fxp8.png
+    url_background: https://i.imgur.com/g2yfzfx.jpg
+    add_to_arr: true
+
+  Best Picture Nominees (2021 Academy Awards):
+    trakt_list: https://trakt.tv/users/hdlists/lists/2021-academy-award-nominated-for-best-picture-93rd-academy-awards-oscar-s
+    collection_order: alpha
+    collection_mode: default
+    sort_title: ++++++++++++++++++_Best Picture Nominees 2021
+    summary: The 93rd Academy Awards ceremony is scheduled to take place on April 25, more than two months later than last year’s ceremony. The awards will recognize films released during a year in which movie theaters were largely closed.  Streaming services, which were already on the rise as an awards-season presence, are poised to dominate in April, both with their own productions (like Netflix’s “Mank”) and with traditional studio films that were released through streaming platforms because of the pandemic (like Searchlight Pictures’s “Nomadland,” which is streaming on Hulu).
+    url_poster: https://i.imgur.com/HhpBvRR.png
+    url_background: https://i.imgur.com/0Kao9gY.jpeg
+    add_to_arr: true
+
+  Oscar Nominated Movies (2021 Academy Awards):
+    trakt_list: https://trakt.tv/users/hdlists/lists/2021-academy-award-nominated-movies-93rd-academy-awards-oscar-s
+    collection_order: alpha
+    collection_mode: default
+    sort_title: ++++++++++++++++++_Oscar Nominated Movies 2021
+    summary: The 93rd Academy Awards ceremony is scheduled to take place on April 25, more than two months later than last year’s ceremony. The awards will recognize films released during a year in which movie theaters were largely closed.  Streaming services, which were already on the rise as an awards-season presence, are poised to dominate in April, both with their own productions (like Netflix’s “Mank”) and with traditional studio films that were released through streaming platforms because of the pandemic (like Searchlight Pictures’s “Nomadland,” which is streaming on Hulu).
+    url_poster: https://i.imgur.com/H05ESeK.png
+    url_background: https://i.imgur.com/0Kao9gY.jpeg
+    add_to_arr: true
+
+  Nostalgia Collection (Classics From The 80s & 90s):
+    trakt_list: https://trakt.tv/users/hdlists/lists/nostalgiac-movies-from-the-80s-90s
+    collection_order: alpha
+    collection_mode: default
+    sort_title: +++++++++++++++++++_Nostalgia Collection
+    summary: All The Nostalgiac Movies From The 80s & 90s in One Collection
+    url_poster: https://i.imgur.com/vE8dsdd.jpg
+    url_background: https://i.imgur.com/frz0kly.jpg
+    add_to_arr: true
+
+  Outer Space Movie Collection:
+    trakt_list: https://trakt.tv/users/hdlists/lists/outer-space-space-exploration-movies
+    collection_order: alpha
+    collection_mode: default
+    sort_title: ++++++++++++++++++_Outer Space Movie Collection
+    summary: Movies That Take Place in Outer Space
+    url_poster: https://i.imgur.com/tOujJnS.jpg
+    url_background: https://i.imgur.com/CUIrEWQ.jpg
+    add_to_arr: true
