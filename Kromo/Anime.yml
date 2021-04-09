@@ -1,0 +1,117 @@
+﻿templates:
+  Anime Fall Seasons :
+    trakt_list: https://trakt.tv/users/sp1ti/lists/anime-fall-<<year>>
+    sort_title: Fall <<year>>
+    sync_mode: sync
+    summary: Anime premiering during Fall <<year>>
+    collection_order: release
+  Anime Winter Seasons :
+    trakt_list: https://trakt.tv/users/sp1ti/lists/anime-winter-<<year>>-<<next>>
+    sort_title: Winter <<year>>
+    sync_mode: sync
+    summary: Anime premiering during Winter <<year>>-<<next>>
+    collection_order: release
+  Anime Spring Seasons :
+    trakt_list: https://trakt.tv/users/sp1ti/lists/anime-spring-<<year>>
+    sort_title: Spring <<year>>
+    sync_mode: sync
+    summary: Anime premiering during Spring <<year>>
+    collection_order: release
+  Anime Summer Seasons :
+    trakt_list: https://trakt.tv/users/sp1ti/lists/anime-summer-<<year>>
+    sort_title: Summer <<year>>
+    sync_mode: sync
+    summary: Anime premiering during Summer <<year>>
+    collection_order: release
+
+
+collections:
+  Fall Season 2021:
+    template: {name: Anime Fall Seasons, year: 2021}
+  Fall Season 2020:
+    template: {name: Anime Fall Seasons, year: 2020}
+  Fall Season 2019:
+    template: {name: Anime Fall Seasons, year: 2019}
+  Fall Season 2018:
+    template: {name: Anime Fall Seasons, year: 2018}
+  Fall Season 2017:
+    template: {name: Anime Fall Seasons, year: 2017}
+  Fall Season 2016:
+    template: {name: Anime Fall Seasons, year: 2016}
+  Fall Season 2015:
+    template: {name: Anime Fall Seasons, year: 2015}    
+  Fall Season 2014:
+    template: {name: Anime Fall Seasons, year: 2014}
+  Fall Season 2013:
+    template: {name: Anime Fall Seasons, year: 2013}
+  Fall Season 2012:
+    template: {name: Anime Fall Seasons, year: 2012}
+  Summer Season 2021:
+    template: {name: Anime Summer Seasons, year: 2021}
+  Summer Season 2020:
+    template: {name: Anime Summer Seasons, year: 2020}
+  Summer Season 2019:
+    template: {name: Anime Summer Seasons, year: 2019}
+  Summer Season 2018:
+    template: {name: Anime Summer Seasons, year: 2018}
+  Summer Season 2017:
+    template: {name: Anime Summer Seasons, year: 2017}
+  Summer Season 2016:
+    template: {name: Anime Summer Seasons, year: 2016}
+  Summer Season 2015:
+    template: {name: Anime Summer Seasons, year: 2015}    
+  Summer Season 2014:
+    template: {name: Anime Summer Seasons, year: 2014}
+  Summer Season 2013:
+    template: {name: Anime Summer Seasons, year: 2013}
+  Summer Season 2012:
+    template: {name: Anime Summer Seasons, year: 2012}
+  Spring Season 2021:
+    template: {name: Anime Spring Seasons, year: 2021}
+  Spring Season 2020:
+    template: {name: Anime Spring Seasons, year: 2020}
+  Spring Season 2019:
+    template: {name: Anime Spring Seasons, year: 2019}
+  Spring Season 2018:
+    template: {name: Anime Spring Seasons, year: 2018}
+  Spring Season 2017:
+    template: {name: Anime Spring Seasons, year: 2017}
+  Spring Season 2016:
+    template: {name: Anime Spring Seasons, year: 2016}
+  Spring Season 2015:
+    template: {name: Anime Spring Seasons, year: 2015}    
+  Spring Season 2014:
+    template: {name: Anime Spring Seasons, year: 2014}
+  Spring Season 2013:
+    template: {name: Anime Spring Seasons, year: 2013}
+  Spring Season 2012:
+    template: {name: Anime Spring Seasons, year: 2012}
+  Winter Season 2021:
+    template: {name: Anime Winter Seasons, year: 2021, next: 2022}
+  Winter Season 2020:
+    template: {name: Anime Winter Seasons, year: 2020, next: 2021}
+  Winter Season 2019:
+    template: {name: Anime Winter Seasons, year: 2019, next: 2020}
+  Winter Season 2018:
+    template: {name: Anime Winter Seasons, year: 2018, next: 2019}
+  Winter Season 2017:
+    template: {name: Anime Winter Seasons, year: 2017, next: 2018}
+  Winter Season 2016:
+    template: {name: Anime Winter Seasons, year: 2016, next: 2017}
+  Winter Season 2015:
+    template: {name: Anime Winter Seasons, year: 2015, next: 2016}    
+  Winter Season 2014:
+    template: {name: Anime Winter Seasons, year: 2014, next: 2015}
+  Winter Season 2013:
+    template: {name: Anime Winter Seasons, year: 2013, next: 2014}
+  Winter Season 2012:
+    template: {name: Anime Winter Seasons, year: 2012, next: 2013}
+  Top All Anime:
+    mal_all: 100
+    sync_mode: sync
+  Top Airing Anime:
+    mal_airing: 10
+    sync_mode: sync
+  Most Popular Anime:
+    mal_popular: 50
+    sync_mode: sync
