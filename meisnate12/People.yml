@@ -11,7 +11,7 @@ templates:
         producer: tmdb
       sort_by: random
     tmdb_person: <<person>>
-    sort_title: +_<<collection_name>>
+    sort_title: +4_<<collection_name>>
 collections:
   Adam Sandler:
     template: {name: Person, person: 19292}

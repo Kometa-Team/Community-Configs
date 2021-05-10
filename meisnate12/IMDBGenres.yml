@@ -15,7 +15,7 @@ templates:
     sync_mode: sync
     smart_label: random
   Other Genre:
-    sort_title: ++_<<collection_name>>
+    sort_title: +3_<<collection_name>>
     sync_mode: sync
     smart_label: random
 collections:

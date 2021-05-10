@@ -3,7 +3,7 @@
 ######################################################
 templates:
   Chart:
-    sort_title: ++++_<<num>><<collection_name>>
+    sort_title: +1_<<num>><<collection_name>>
     sync_mode: sync
     smart_label: random
   Best of:
