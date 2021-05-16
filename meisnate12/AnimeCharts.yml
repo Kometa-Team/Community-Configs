@@ -1,0 +1,34 @@
+######################################################
+#                Chart Collections                   #
+######################################################
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    smart_label: random
+collections:
+  Plex Popular:
+    template: { name: Chart, num: 1 }
+    tautulli_popular:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    tautulli_watched:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    summary: Shows Popular on Plex
+  Popular:
+    template: { name: Chart, num: 3 }
+    anidb_popular: 30
+    anilist_popular: 30
+    summary: Popular Anime across the internet
+  Top Rated:
+    template: { name: Chart, num: 4 }
+    anilist_top_rated: 50
+    summary: Top Rated Anime across the internet
+  Current Anime Season:
+    anilist_season:
+      sort_by: popular
+      limit: 100
+    sync_mode: sync
