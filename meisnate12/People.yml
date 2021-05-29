@@ -10,6 +10,7 @@ templates:
         writer: tmdb
         producer: tmdb
       sort_by: random
+      validate: false
     tmdb_person: <<person>>
     sort_title: +4_<<collection_name>>
 collections:
