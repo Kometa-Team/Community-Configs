@@ -8,7 +8,7 @@ templates:
     tmdb_company: <<company>>
     sort_title: +2_<<collection_name>>
     sync_mode: sync
-    smart_label: originally_available.desc
+    smart_label: release.desc
 collections:
   Aardman:
     template: { name: Studio, company: 297 }
