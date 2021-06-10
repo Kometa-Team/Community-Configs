@@ -1,0 +1,28 @@
+######################################################
+#        Critics Choice Awards Collections           #
+######################################################
+templates:
+  CCA Template:
+    sort_title: '*Critics Choice Awards <<year>>'
+    smart_label: audience_rating.desc
+    summary: '<<year>> Critics Choice Awards'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-critic-s-choice
+    item_label: CCA
+collections:
+  Critics Choice Awards 2021:
+    template: { name: CCA Template, year: 2021 }
+  Critics Choice Awards 2020:
+    template: { name: CCA Template, year: 2020 }
+  Critics Choice Awards 2019:
+    template: { name: CCA Template, year: 2019 }
+  Critics Choice Awards 2018:
+    template: { name: CCA Template, year: 2018 }
+  Critics Choice Awards 2017:
+    template: { name: CCA Template, year: 2017 }
+  Critics Choice Awards 2016:
+    template: { name: CCA Template, year: 2016 }
+  Critics Choice Awards 2015:
+    template: { name: CCA Template, year: 2015 }
+  Critics Choice Awards 2014:
+    template: { name: CCA Template, year: 2014 }

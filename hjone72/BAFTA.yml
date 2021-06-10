@@ -1,0 +1,28 @@
+######################################################
+#                BAFTA Collections                   #
+######################################################
+templates:
+  BAFTA Template:
+    sort_title: '*BAFTA <<year>>'
+    smart_label: audience_rating.desc
+    summary: '<<year>> BAFTA awards'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-bafta
+    item_label: BAFTA
+collections:
+  BAFTA 2021:
+    template: { name: BAFTA Template, year: 2021 }
+  BAFTA 2020:
+    template: { name: BAFTA Template, year: 2020 }
+  BAFTA 2019:
+    template: { name: BAFTA Template, year: 2019 }
+  BAFTA 2018:
+    template: { name: BAFTA Template, year: 2018 }
+  BAFTA 2017:
+    template: { name: BAFTA Template, year: 2017 }
+  BAFTA 2016:
+    template: { name: BAFTA Template, year: 2016 }
+  BAFTA 2015:
+    template: { name: BAFTA Template, year: 2015 }
+  BAFTA 2014:
+    template: { name: BAFTA Template, year: 2014 }
