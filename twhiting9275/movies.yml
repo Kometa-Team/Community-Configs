@@ -78,6 +78,8 @@ collections:
     template: {name: Collection, collection: 402074}
   Ant-Man:
     template: {name: Collection, collection: 422834}
+  The Apple Dumpling Gang:
+    template: {name: Collection, collection: 87232}
   Appleseed:
     template: {name: Collection, collection: "87800, 371526"}
   Arthur:
@@ -110,6 +112,8 @@ collections:
     template: {name: Collection, collection: 117693}
   Bambi:
     template: {name: Collection, collection: 87250}
+  Bandit Made for TV Movies:
+    template: {name: Collection, collection: "398758"}            
   Barbershop:
     template: {name: Collection, collection: 176097, movie: 14177}
   Batman:
@@ -206,6 +210,10 @@ collections:
     template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls021933730/
     summary: Cloverfield is an American science fiction anthology film series and media franchise created and produced by J. J. Abrams consisting of three films, viral marketing websites linking the films together, and a tie-in manga to the first film titled Cloverfield/Kishin (2008), all set in a shared fictional universe referred to as The Cloververse. 
+  Comedy Central Roasts:
+    template: {name: Collection, movie: "536056,333103,300302,296192,329690,296206,329243,296193,296194,334461,324173,315850,630068,414749,333126,333127,275771,698776"}                        
+    Summary: The Comedy Central Roasts are a series of celebrity roast specials which air on the Comedy Central cable network.
+    url_poster: https://theposterdb.com/api/assets/1006782/view?    
   Coming to America:
     template: {name: Collection, collection: 647077}    
   The Conjuring:
@@ -306,6 +314,8 @@ collections:
     template: {name: Collection, collection: 137697}
   The Flintstones:
     template: {name: Collection, collection: 351684}
+  Flubber:
+    template: {name: Collection, collection: 294468}
   The Fox and the Hound:
     template: {name: Collection, collection: 100970}
   Free Willy:
@@ -398,10 +408,27 @@ collections:
     template: {name: Collection, collection: 87253}
   Highlander:
     template: {name: Collection, collection: 8050}
+  The Hobbit: 
+    summary: "The Hobbit collection is a three-part epic fantasy-adventure film directed and produced by Peter Jackson and based on J. R. R. Tolkien's fantasy novel of the same name. The trilogy of films are set in Middle-earth 60 years before 'The Lord of the Rings', and will act as a prequel to Jackson's The Lord of the Rings trilogy."
+    url_poster: https://theposterdb.com/api/assets/25015/view?    
+    tmdb_background: 49051
+    sync_mode: sync
+    plex_search:
+      all:
+        title.begins: "The Hobbit:"
+        title.not: "Extended Edition"    
+  The Hobbit (the long version):     
+    summary: "
+    The Hobbit Extended Edition is a version of Peter Jackson's Hobbit Trilogy. These versions have new editing, scenes, special effects and music, and also more scenes and content than the theatrical versions.\nAn Unexpected Journey contains 13 minutes of additional footage.\nThe Desolation of Smaug contains 25 minutes of additional footage.\nThe Battle of the Five Armies contains 20 minutes of additional footage.\n"
+    tmdb_background: 122917
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/36979/view?
+    plex_search:
+      all:
+        title.begins: "The Hobbit:"
+        title.ends: " - Extended Edition"
   Hobbs & Shaw:
-    template: {name: Collection, collection: 688042}
-  The Hobbit:
-    template: {name: Collection, collection: 121938}    
+    template: {name: Collection, collection: 688042}        
   Home Alone:
     template: {name: Collection, collection: 9888}
   Homeward Bound:
@@ -524,10 +551,26 @@ collections:
     template: {name: Collection, collection: 33085}
   Look Who's Talking:
     template: {name: Collection, collection: 9521}    
+  The Lord of the Rings (the long version):
+    summary: "The Lord of the Rings: Special Extended Edition is a version of Peter Jackson's Lord of the Rings film trilogy. These versions have new editing, additional special effects and music, and also more scenes and content than the theatrical versions. Each film is two discs, and two appendices.\nThe Fellowship of the Ring contains 30 minutes of additional footage (plus 20 minutes of Fan Club Credits).\nThe Two Towers contains 44 minutes of additional footage (plus 12 minutes of Fan Club Credits).\nThe Return of the King contains 51 minutes of additional footage (plus 12 minutes of Fan Club Credits)."
+    sync_mode: sync
+    tmdb_background: 122
+    url_poster: https://theposterdb.com/api/assets/113956/view?
+    plex_search:
+      all:        
+        title.begins: "The Lord of the Rings:"
+        title.ends: "Extended Edition"    
   The Lord of the Rings:
-    template: {name: Collection, collection: 119}
+    summary: "The Lord of the Rings trilogy consists of three epic fantasy films, based on the influential novels written by J. R. R. Tolkien, directed by Peter Jackson."      
+    tmdb_background: 120
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/113964/view?
+    plex_search:
+      all:
+        title.begins: "The Lord of the Rings:"
+        title.not: " - Extended Edition"  
   The Lord of the Rings (Animated):
-    template: {name: Collection, collection: 141290, movie: 123}
+    template: {name: Collection, collection: 141290, movie: 123}      
   Machete:
     template: {name: Collection, collection: 210006}        
   Mad Max:
@@ -673,6 +716,8 @@ collections:
     template: {name: Collection, collection: "713330"}   
   The Purge:
     template: {name: Collection, collection: 256322}
+  Pure Country:
+    template: {name: Collection, collection: 558027}
   Quarantine:
     template: {name: Collection, collection: 123932}
   Rambo:
@@ -729,6 +774,8 @@ collections:
     template: {name: Collection, collection: "495, 608103"}
   Shanghai Noon:
     template: {name: Collection, collection: 59567}
+  Shark attack:
+    template: {name: Collection, collection: 389867}  
   Sharknado:
     template: {name: Collection, collection: 286023}
   Sherlock Holmes:
@@ -743,12 +790,14 @@ collections:
     template: {name: Collection, collection: 135179}        
   Sister Act:
     template: {name: Collection, collection: 103573}        
+  The Sisterhood of the Traveling Pants:
+    template: {name: Collection, collection: 17368}        
   Slap Shot:
     template: {name: Collection, collection: 261526}
   Smokey and the bandit:
     template: {name: Collection, collection: "87220"}    
-  Bandit Made for TV Movies:
-    template: {name: Collection, collection: "398758"}        
+  The Shaggy Dog:
+    template: {name: Collection, collection: "294519"}        
   The Smurfs:
     template: {name: Collection, collection: 134897}
   Spider-Man (Avengers):
@@ -837,6 +886,8 @@ collections:
     template: {name: Collection, collection: 63043, movie: 73362}
   Twilight:
     template: {name: Collection, collection: 33514}
+  Two Headed Shark attack:
+    template: {name: Collection, collection: 494838}    
   Tyler Perry's Madea:
     template: {name: Collection, collection: "534673, 501909"}         
   Unbreakable:

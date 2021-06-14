@@ -12,7 +12,7 @@ templates:
         director: tmdb
         writer: tmdb
         producer: tmdb
-      sort_by: random
+      sort_by: title.asc
       validate: false
     tmdb_person: <<person>>
     sort_title: +4_<<collection_name>>
@@ -33,18 +33,24 @@ collections:
     template: {name: Person, person: 12248}                       
   Alfred Hitchcock:
     template: {name: Person, person: 2636}
+  Alexandra Daddario:
+    template: {name: Person, person: 109513}    
   Andy Serkis:
     template: {name: Person, person: 1333}    
   Amy Adams:
     template: {name: Person, person: 9273}
   Angelina Jolie:
     template: {name: Person, person: 11701}
+  Ana De Armas:
+    template: {name: Person, person: 224513}
   Anne Hathaway:
     template: {name: Person, person: 1813}
   Anthony Hopkins:
     template: {name: Person, person: 4173}
   Antonio Banderas:
     template: {name: Person, person: 3131}
+  Anya Taylor-Joy:
+    template: {name: Person, person: 1397778}    
   Arnold Schwarzenegger:
     template: {name: Person, person: 1100}
   Ben Affleck:
@@ -57,8 +63,14 @@ collections:
     template: {name: Person, person: 1532}
   Billy Boyd:
     template: {name: Person, person: 1329}    
+  Billy Crystal:
+    template: {name: Person, person: 7904}            
   Brad Pitt:
     template: {name: Person, person: 287}
+  Bradley Cooper:    
+    template: {name: Person, person: 51329}                                     
+  Bradley Whitford:
+    template: {name: Person, person: 11367}            
   Brendan Fraser:
     template: {name: Person, person: 18269}
   Bruce Lee:
@@ -79,6 +91,8 @@ collections:
     template: {name: Person, person: 16418}                                 
   Cary Grant:    
     template: {name: Person, person: 2638}                       
+  Casper Van Dien:
+    template: {name: Person, person: 27763}                       
   Cate Blanchett:
     template: {name: Person, person: 112}
   Catherine Zeta-Jones:
@@ -93,6 +107,8 @@ collections:
     template: {name: Person, person: 6952}                                 
   Charlize Theron:
     template: {name: Person, person: 6885}
+  "Chloë Grace Moretz":
+    template: {name: Person, person: 56734}
   Christian Bale:
     template: {name: Person, person: 3894}
   Christoph Waltz:    
@@ -115,6 +131,8 @@ collections:
     template: {name: Person, person: 4690}
   Chuck Norris:
     template: {name: Person, person: 51576}
+  Cilian Murphy:    
+    template: {name: Person, person: 2037}                                         
   Clark Gable:    
     template: {name: Person, person: 11492}                       
   Clint Eastwood:
@@ -124,10 +142,14 @@ collections:
     summary: "Joel Coen and Ethan Coen, collectively referred to as the Coen Brothers, are American film directors, producers, screenwriters, and editors. Their films span many genres and styles, which they frequently subvert or parody. Their most acclaimed works include: Raising Arizona (1987), Miller's Crossing (1990), Fargo (1996), The Big Lebowski (1998), O Brother, Where Art Thou? (2000), No Country for Old Men (2007), Burn After Reading (2008), A Serious Man (2009), True Grit (2010), Inside Llewyn Davis (2013), and The Ballad of Buster Scruggs (2018)."
   Colin Firth:    
     template: {name: Person, person: 5472}        
+  Connie Nielsen:    
+    template: {name: Person, person: 935}        
   Daniel Craig:
     template: {name: Person, person: 8784}
   Daniel Day-Lewis:    
     template: {name: Person, person: 11856}           
+  Danielle Panabaker:
+    template: {name: Person, person: 31838}    
   Dave Bautista:
     template: {name: Person, person: 543530}
   Dave Chappelle:
@@ -152,10 +174,16 @@ collections:
     template: {name: Person, person: 109}    
   Ellen / Elliot Page:
     template: {name: Person, person: 27578}
+  Elizabeth Hurley:
+    template: {name: Person, person: 13918}        
+  Emily Blunt:
+    template: {name: Person, person: 11701}    
   Emma Stone:
     template: {name: Person, person: 54693}
   Emma Watson:
     template: {name: Person, person: 10990}
+  Ernie Hudson:
+    template: {name: Person, person: 8874}                       
   Ewan McGregor:
     template: {name: Person, person: 3061}
   Evangeline Lilly:    
@@ -196,8 +224,12 @@ collections:
     template: {name: Person, person: 1810}                           
   Helen Mirren:
     template: {name: Person, person: 15735}               
+  Henry Cavill:    
+    template: {name: Person, person: 73968}           
   Henry Fonda:    
-    template: {name: Person, person: 4958}           
+    template: {name: Person, person: 4958}      
+  Hiroyuki Sanada:    
+    template: {name: Person, person: 9195}                                          
   Hugh Jackman:
     template: {name: Person, person: 6968}
   Humphrey Bogart:    
@@ -206,6 +238,8 @@ collections:
     template: {name: Person, person: 65}
   Ian McKellen:
     template: {name: Person, person: 1327}
+  Ian McShane:
+    template: {name: Person, person: 6972}
   Ice Cube:
     template: {name: Person, person: 9778}
   J.J. Abrams:
@@ -218,6 +252,8 @@ collections:
     template: {name: Person, person: 514}            
   Jackie Chan:
     template: {name: Person, person: 18897}
+  Jake Gyllenhaal:    
+    template: {name: Person, person: 131}            
   James Cameron:
     template: {name: Person, person: 2710}
   James Dean:    
@@ -240,6 +276,8 @@ collections:
     template: {name: Person, person: 1229}
   Jeff Goldblum:
     template: {name: Person, person: 4785}
+  Jeffrey Dean Morgan:    
+    template: {name: Person, person: 47296}                                         
   Jennifer Aniston:
     template: {name: Person, person: 4491}
   Jennifer Garner:    
@@ -256,6 +294,10 @@ collections:
     template: {name: Person, person: 1336}
   Jim Carrey:
     template: {name: Person, person: 206}
+  Joan Cusack:
+    template: {name: Person, person: 3234}         
+  "Jodi Lyn O'Keefe":
+    template: {name: Person, person: 58006}       
   Joaquin Phoenix:    
     template: {name: Person, person: 73421}                               
   Joe Pesci:    
@@ -264,6 +306,8 @@ collections:
     template: {name: Person, person: 7180}
   John Cena:    
     template: {name: Person, person: 56446}                                 
+  John Cusack:
+    template: {name: Person, person: 3036}            
   John Travolta:
     template: {name: Person, person: 8891}
   John Wayne:
@@ -294,8 +338,12 @@ collections:
     template: {name: Person, person: 7090}                 
   Kate Hudson:    
     template: {name: Person, person: 11661}                                 
+  Kate Winslet:    
+    template: {name: Person, person: 204}                                     
   Kathy Bates:    
     template: {name: Person, person: 8534}                                 
+  Keanu Reeves:
+    template: {name: Person, person: 6384}    
   Kevin Bacon:
     template: {name: Person, person: 4724}    
   Kevin Costner:
@@ -314,18 +362,28 @@ collections:
     template: {name: Person, person: 6193}
   Leonard Nimoy:    
     template: {name: Person, person: 1749}                                 
+  Leslie Nielsen:    
+    template: {name: Person, person: 813}                                   
   Liam Neeson:
     template: {name: Person, person: 3896}
   Lin Shaye:    
     template: {name: Person, person: 7401}                                   
+  Lisa Kudrow:
+    template: {name: Person, person: 14406}    
   Liv Tyler:
     template: {name: Person, person: 882}    
+  Lloyd Bridges:
+    template: {name: Person, person: 2177}        
   Lucy Liu:
     template: {name: Person, person: 140}
   M. Night Shyamalan:
     template: {name: Person, person: 11614}
   Mandy Moore:
     template: {name: Person, person: 16855}    
+  Margot Robbie:
+    template: {name: Person, person: 234352}
+  Mark Strong:
+    template: {name: Person, person: 2983}            
   Mark Wahlberg:
     template: {name: Person, person: 13240}
   Marlon Brando:    
@@ -388,6 +446,8 @@ collections:
     template: {name: Person, person: 2387}
   Paul Newman:    
     template: {name: Person, person: 3636}       
+  Paul Rudd:    
+    template: {name: Person, person: 22226}                                     
   Paul Walker:    
     template: {name: Person, person: 8167}                                    
   Peter Cullen:    
@@ -402,6 +462,8 @@ collections:
     template: {name: Person, person: 1233}             
   Quentin Tarantino:
     template: {name: Person, person: 138}
+  Rachel McAdams:    
+    template: {name: Person, person: 53714}                                         
   Ralph Fiennes:    
     template: {name: Person, person: 5469}                                        
   Renee Zelweger:
@@ -423,7 +485,9 @@ collections:
   Robert DuVall:    
     template: {name: Person, person: 3087}               
   Robert Redford:    
-    template: {name: Person, person: 4135}                    
+    template: {name: Person, person: 4135}         
+  Robert Wagner:
+    template: {name: Person, person: 9208}               
   Robin Williams:
     template: {name: Person, person: 2157}
   Rosario Dawson:
@@ -450,6 +514,10 @@ collections:
     template: {name: Person, person: 738}
   Sean Penn:    
     template: {name: Person, person: 2228}                
+  Sebastian Stan:
+    template: {name: Person, person: 60898}    
+  Seth Green:
+    template: {name: Person, person: 13922}  
   Seth Rogen:
     template: {name: Person, person: 19274}
   Shia LaBeouf:
@@ -484,6 +552,10 @@ collections:
     template: {name: Person, person: 500}
   Tom Hanks:
     template: {name: Person, person: 31}
+  Tom Hardy:
+    template: {name: Person, person: 2524}    
+  Tom Holland:
+    template: {name: Person, person: 1136406}    
   Tom Selleck:
       template: {name: Person, person: 15112}
   Tommy Lee Jones:
@@ -492,8 +564,12 @@ collections:
     template: {name: Person, person: 8169}                                 
   Uma Thurman:    
     template: {name: Person, person: 139}                                   
+  Val Kilmer:    
+    template: {name: Person, person: 5576}                                   
   Vanessa Williams:    
     template: {name: Person, person: 27011}                               
+  Verne Troyer:
+    template: {name: Person, person: 10987}            
   Vin Diesel:
     template: {name: Person, person: 12835}
   Viggo Mortensen:
@@ -514,6 +590,8 @@ collections:
     template: {name: Person, person: 1748}           
   Woody Harrelson:
     template: {name: Person, person: 57755}
+  Zachary Levi:
+    template: {name: Person, person: 69899}        
   Zack Snyder:
     template: {name: Person, person: 15217}
   Zooey Deschanel:    
