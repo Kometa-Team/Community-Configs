@@ -1,0 +1,25 @@
+######################################################
+#                Cannes Collections                  #
+######################################################
+templates:
+  Cannes Template:
+    sort_title: '*Cannes <<year>>'
+    smart_label: audience_rating.desc
+    summary: '<<year>> Cannes awards'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-cannes
+    item_label: Cannes
+collections:
+  Cannes 2021:
+    template: { name: Cannes Template, year: 2021 }
+  Cannes 2020:
+    template: { name: Cannes Template, year: 2020 }
+  Cannes 2019:
+    template: { name: Cannes Template, year: 2019 }
+  Cannes 2018:
+    template: { name: Cannes Template, year: 2018 }
+  Cannes 2017:
+    template: { name: Cannes Template, year: 2017 }
+  Cannes 2016:
+    template: { name: Cannes Template, year: 2016 }
+

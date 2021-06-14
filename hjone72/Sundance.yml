@@ -1,0 +1,49 @@
+######################################################
+#                Sundance Collections                #
+######################################################
+templates:
+  SFF Template:
+    sort_title: '*Sundance Film Festival <<year>>'
+    smart_label: audience_rating.desc
+    summary: 'Sundance Film Festival of <<year>>'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/vermelholimao/lists/sundance-film-festival-<<year>>
+    item_label: Sundance Film Festival
+  SFF Genre Template:
+    sort_title: '*Sundance Film Festival <<genre>>'
+    smart_label: audience_rating.desc
+    smart_filter:
+      all:
+        label: Sundance Film Festival
+        genre: <<genre>>
+    summary: 'Sundance Film Festival: <<genre>>'
+    sync_mode: append
+collections:
+  Sundance Film Festival Romance:
+    template: { name:  SFF Genre Template, genre: Romance }
+  Sundance Film Festival Comedies:
+    template: { name:  SFF Genre Template, genre: Comedies }
+  Sundance Film Festival 2021:
+    template: { name: SFF Template, year: 2021 }
+  Sundance Film Festival 2020:
+    template: { name: SFF Template, year: 2020 }
+  Sundance Film Festival 2019:
+    template: { name: SFF Template, year: 2019 }
+  Sundance Film Festival 2018:
+    template: { name: SFF Template, year: 2018 }
+  Sundance Film Festival 2017:
+    template: { name: SFF Template, year: 2017 }
+  Sundance Film Festival 2016:
+    template: { name: SFF Template, year: 2016 }
+  Sundance Film Festival 2015:
+    template: { name: SFF Template, year: 2015 }
+  Sundance Film Festival 2014:
+    template: { name: SFF Template, year: 2014 }
+  Sundance Film Festival 2013:
+    template: { name: SFF Template, year: 2013 }
+  Sundance Film Festival 2012:
+    template: { name: SFF Template, year: 2012 }
+  Sundance Film Festival 2011:
+    template: { name: SFF Template, year: 2011 }
+  Sundance Film Festival 2010:
+    template: { name: SFF Template, year: 2010 }

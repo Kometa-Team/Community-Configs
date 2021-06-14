@@ -1,0 +1,59 @@
+######################################################
+#                Oscar Collections                   #
+######################################################
+templates:
+    Oscars:
+        trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-oscars
+        sort_title: '*Oscars <<year>>'
+        sync_mode: sync
+        summary: Academy Awards (Oscars) for <<year>>
+        smart_label: audience_rating.desc
+collections:
+  Oscars Best Picture Winners:
+    sort_title: '*Oscars Best Picture Winners'
+    trakt_list: https://trakt.tv/users/pjcob/lists/1970-2021-oscars-best-picture-winners?sort=rank,asc
+  Oscars 1970 - 1979:
+    sort_title: '*Oscars 1970 - 1979'
+    trakt_list: https://trakt.tv/users/pjcob/lists/1970-1979-oscars
+  Oscars 1980 - 1984:
+    sort_title: '*Oscars 1980 - 1984'
+    trakt_list: https://trakt.tv/users/pjcob/lists/1980-1984-oscars
+  Oscars 1985 - 1989:
+    sort_title: '*Oscars 1985 - 1989'
+    trakt_list: https://trakt.tv/users/pjcob/lists/1985-1989-oscars
+  Oscars 1990 - 1994:
+    sort_title: '*Oscars 1990 - 1994'
+    trakt_list: https://trakt.tv/users/pjcob/lists/1990-1994-oscars
+  Oscars 1995 - 1999:
+    sort_title: '*Oscars 1995 - 1999'
+    trakt_list: https://trakt.tv/users/pjcob/lists/1995-1999-oscars
+  Oscars 2000 - 2004:
+    sort_title: '*Oscars 2000 - 2004'
+    trakt_list: https://trakt.tv/users/pjcob/lists/2000-2004-oscars
+  Oscars 2005 - 2009:
+    sort_title: '*Oscars 2005 - 2009'
+    trakt_list: https://trakt.tv/users/pjcob/lists/2005-2009-oscars
+  Oscars 2010:
+    template: { name: Oscars, year: 2010 }
+  Oscars 2011:
+    template: { name: Oscars, year: 2011 }
+  Oscars 2012:
+    template: { name: Oscars, year: 2012 }
+  Oscars 2013:
+    template: { name: Oscars, year: 2013 }
+  Oscars 2014:
+    template: { name: Oscars, year: 2014 }
+  Oscars 2015:
+    template: { name: Oscars, year: 2015 }
+  Oscars 2016:
+    template: { name: Oscars, year: 2016 }
+  Oscars 2017:
+    template: { name: Oscars, year: 2017 }
+  Oscars 2018:
+    template: { name: Oscars, year: 2018 }
+  Oscars 2019:
+    template: { name: Oscars, year: 2019 }
+  Oscars 2020:
+    template: { name: Oscars, year: 2020 }
+  Oscars 2021:
+    template: { name: Oscars, year: 2021 }
