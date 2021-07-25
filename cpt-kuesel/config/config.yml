@@ -32,6 +32,7 @@ settings:
       show_filtered: false
       show_missing: true
       save_missing: false
+      asset_directory: assets
       asset_folders: true
       assets_for_all: true
 plex:
