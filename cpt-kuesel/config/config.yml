@@ -10,20 +10,20 @@ libraries:
                 - metadata/movies/metadata.yml
                 - metadata/movies/overlays.yml
             settings:
-                  asset_directory: movies
+                  asset_directory: assets/movies
       Anime:
             metadata_path:
                 - metadata/anime/Anime.yml
                 - metadata/anime/metadata.yml
             settings:
-                  asset_directory: anime
+                  asset_directory: assets/anime
       Serien:
             metadata_path:
                 - metadata/tv_shows/Serien.yml
                 - metadata/tv_shows/metadata.yml
             #     - metadata/tv_shows/overlays.yml
             settings:
-                  asset_directory: tv_shows
+                  asset_directory: assets/tv_shows
 settings:
       cache: true
       cache_expiration: 60
@@ -32,8 +32,6 @@ settings:
       show_filtered: false
       show_missing: true
       save_missing: false
-      run_again_delay: 2
-      asset_directory: assets
       asset_folders: true
       assets_for_all: true
 plex:
