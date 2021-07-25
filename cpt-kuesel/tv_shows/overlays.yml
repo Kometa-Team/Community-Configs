@@ -1,0 +1,142 @@
+collections:
+  dl_german_english:
+    plex_search:
+      all:
+        audio_language:
+          - Deutsch
+          - English
+        audio_language.not:
+          - Français
+    build_collection: false
+    item_overlay: dl_german_english
+    test: true
+  dl_german_french:
+    plex_search:
+      all:
+        audio_language:
+          - Deutsch
+          - Français
+        audio_language.not:
+          - English
+    build_collection: false
+    item_overlay: dl_german_french
+    test: true
+  dl_english_french:
+    plex_search:
+      all:
+        audio_language:
+          - English
+          - Français
+        audio_language.not:
+          - Deutsch
+    build_collection: false
+    item_overlay: dl_english_french
+    test: true
+
+  german:
+    plex_search:
+      all:
+        audio_language:
+          - Deutsch
+        audio_language.not:
+          - English
+          - Français
+    build_collection: false
+    item_overlay: german
+    test: true
+  english:
+    plex_search:
+      all:
+        audio_language:
+          - English
+        audio_language.not:
+          - Deutsch
+          - Français
+    build_collection: false
+    item_overlay: english
+    test: true
+  french:
+    plex_search:
+      all:
+        audio_language:
+          - Français
+        audio_language.not:
+          - Deutsch
+          - English
+    build_collection: false
+    item_overlay: french
+    test: true
+
+  dl_german_english_episodes:
+    plex_search:
+      type: episodes
+      all:
+        audio_language:
+          - Deutsch
+          - English
+        audio_language.not:
+          - Français
+    build_collection: false
+    item_overlay: dl_german_english
+    test: true
+  dl_german_french_episodes:
+    plex_search:
+      type: episodes
+      all:
+        audio_language:
+          - Deutsch
+          - Français
+        audio_language.not:
+          - English
+    build_collection: false
+    item_overlay: dl_german_french
+    test: true
+  dl_english_french_episodes:
+    plex_search:
+      type: episodes
+      all:
+        audio_language:
+          - English
+          - Français
+        audio_language.not:
+          - Deutsch
+    build_collection: false
+    item_overlay: dl_english_french
+    test: true
+
+  german_episodes:
+    plex_search:
+      type: episodes
+      all:
+        audio_language:
+          - Deutsch
+        audio_language.not:
+          - English
+          - Français
+    build_collection: false
+    item_overlay: german
+    test: true
+  english_episodes:
+    plex_search:
+      type: episodes
+      all:
+        audio_language:
+          - English
+        audio_language.not:
+          - Deutsch
+          - Français
+    build_collection: false
+    item_overlay: english
+    test: true
+  french_episodes:
+    plex_search:
+      type: episodes
+      all:
+        audio_language:
+          - Français
+        audio_language.not:
+          - Deutsch
+          - English
+    build_collection: false
+    item_overlay: french
+    test: true
