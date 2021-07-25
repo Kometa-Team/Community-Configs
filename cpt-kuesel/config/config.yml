@@ -1,0 +1,48 @@
+libraries:
+      Filme:
+            split_duplicates: true
+            metadata_path:
+                - metadata/movies/Filme.yml
+                - metadata/movies/People.yml
+                - metadata/movies/Genres.yml
+                - metadata/movies/Awards.yml
+                - metadata/movies/Decades.yml
+                - metadata/movies/metadata.yml
+                - metadata/movies/overlays.yml
+            settings:
+                  asset_directory: movies
+      Anime:
+            metadata_path:
+                - metadata/anime/Anime.yml
+                - metadata/anime/metadata.yml
+            settings:
+                  asset_directory: anime
+      Serien:
+            metadata_path:
+                - metadata/tv_shows/Serien.yml
+                - metadata/tv_shows/metadata.yml
+            #     - metadata/tv_shows/overlays.yml
+            settings:
+                  asset_directory: tv_shows
+settings:
+      cache: true
+      cache_expiration: 60
+      sync_mode: sync
+      show_unmanaged: true
+      show_filtered: false
+      show_missing: true
+      save_missing: false
+      run_again_delay: 2
+      asset_directory: assets
+      asset_folders: true
+      assets_for_all: true
+plex:
+      url: <local_plex_ip>:32400
+      token: <plex_token>
+      timeout: 60
+      clean_bundles: true
+      empty_trash: true
+      optimize: false
+tmdb:
+      apikey: <tmdb_api_key>
+      language: de
