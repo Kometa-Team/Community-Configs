@@ -13,7 +13,7 @@ I run PMM with docker-compose:
       PMM_TIME: "05:15,11:15,17:15,23:15"
     restart: on-failure
 ```
-Here is a screenshot of my folder structure:
+Here is a screenshot of my folder structure: <br>
 ![pmm_folder_structure](pmm_folder_structure.png)
 
 I have added my config.yml as well, sanitized for personal stuff of course. 
