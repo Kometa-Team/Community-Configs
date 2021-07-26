@@ -1,0 +1,35 @@
+# Prefixes for cpt-kuesels Movie Collections:
+#   +1_ = Decades
+
+#  In this file:
+#  [
+#   +2_1_ = Oscars
+#  ]
+
+#   +3_ = People
+#   +4_ = Genres
+#   +5_ = Filme
+
+templates:
+  Award:
+    optional:
+      - movie
+      - list
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sort_title: <<collection_name>>
+collections:
+  2021 Oscar Winners:
+    template: {name: Award, list: 7093940}
+    smart_label: critic_rating.desc
+    sort_title: +2_1_2021 Oscar Winners
+  2020 Oscar Winners:
+    template: {name: Award, list: 7095665}
+    smart_label: critic_rating.desc
+    sort_title: +2_11_2020 Oscar Winners
+  2019 Oscar Winners:
+    template: {name: Award, list: 7095666}
+    smart_label: critic_rating.desc
+    sort_title: +2_111_2019 Oscar Winners
+
+
