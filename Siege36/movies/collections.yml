@@ -1,0 +1,101 @@
+# Collection Templates
+templates:
+  tmdb:
+    optional:
+      - collections
+      - lists
+      - movies
+      - tmdb_summary
+      - summary
+    tmdb_collection: <<collections>>
+    tmdb_list: <<lists>>
+    tmdb_movie: <<movies>>
+    tmdb_summary: <<tmdb_summary>>
+    summary: <<summary>>
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+    collection_order: release
+  imdb:
+    url_poster: <<poster>>
+    summary: <<summary>>
+    sync_mode: sync
+  Holiday:
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+    collection_order: release
+
+# Collections
+collections:
+  James Bond:
+    template: {name: tmdb, movies: 12208, collections: 645, tmdb_summary: 645, poster: https://theposterdb.com/api/assets/67529}
+  American Pie:
+    template: {name: tmdb, collections: "2806, 298820", tmdb_summary: 2806, poster: https://theposterdb.com/api/assets/68418}
+  The Bourne Collection:
+    template: {name: tmdb, collections: 31562, tmdb_summary: 31562, poster: https://theposterdb.com/api/assets/5420}
+  DC Extended Universe:
+    template: {name: imdb, summary: "The DC Extended Universe (DCEU) is an American media franchise and shared universe centered on a series of superhero films based on characters that appeared in American comic books by DC Comics.", poster: https://theposterdb.com/api/assets/79223}
+    imdb_list:
+      - https://www.imdb.com/list/ls077827588/
+  The Fast and the Furious:
+    template: {name: tmdb, collections: "9485", tmdb_summary: 9485, poster: https://theposterdb.com/api/assets/10036}
+  Disney Animation:
+    template: {name: tmdb, lists: "7103808, 7103807", summary: "A collection of Disney Animation movies.", poster: https://theposterdb.com/api/assets/68411}
+  Disney Fairies:
+    template: {name: tmdb, collections: "315595", tmdb_summary: 315595, poster: https://theposterdb.com/api/assets/167996}
+  Disney ReImaginings:
+    template: {name: imdb, summary: "Live-action remakes produced by Walt Disney Pictures of its animated films.", poster: https://theposterdb.com/api/assets/68410}
+    imdb_list:
+      - https://www.imdb.com/list/ls083312980/
+  Christmas:
+    template: {name: Holiday, summary: "Christmas film is a genre that revolves around the plot involving Christmas.", poster: https://theposterdb.com/api/assets/111695}
+    trakt_list:
+      - https://trakt.tv/users/movistapp/lists/christmas-movies
+      - https://trakt.tv/users/2borno2b/lists/christmas-movies-extravanganza
+    imdb_list:
+      - https://www.imdb.com/list/ls025976544/
+      - https://www.imdb.com/list/ls003863000/
+      - https://www.imdb.com/list/ls027454200/
+      - https://www.imdb.com/list/ls027886673/
+      - https://www.imdb.com/list/ls097998599/
+      - https://www.imdb.com/list/ls066252180/
+      - https://www.imdb.com/list/ls031348568/
+  Marvel Cinematic Universe:
+    template: {name: imdb, summary: "The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films produced by Marvel Studios. The films are based on characters that appear in American comic books published by Marvel Comics. The franchise also includes television series, short films, digital series, and literature. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters.", poster: https://theposterdb.com/api/assets/879}
+    imdb_list:
+      - https://www.imdb.com/list/ls031310794/
+  Star Trek:
+    template: {name: imdb, summary: "Star Trek is an American media franchise based on the science fiction television series created by Gene Roddenberry. The first television series, simply called Star Trek and now referred to as The Original Series, debuted in 1966 and aired for three seasons on NBC. The Star Trek canon includes the original series, seven spin-off television series, two animated series, and thirteen films.", poster: "https://theposterdb.com/api/assets/21270"}
+    imdb_list:
+      - https://www.imdb.com/list/ls062347197/
+  Middle Earth:
+    template: {name: imdb, summary: "Depictions of Middle-Earth in film.", poster: "https://theposterdb.com/api/assets/1716"}
+    imdb_list:
+      - https://www.imdb.com/list/ls068942981/
+  "Mission: Impossible":
+    template: {name: tmdb, collections: "87359", tmdb_summary: 87359, poster: https://theposterdb.com/api/assets/12118}
+  The Muppets:
+    template: {name: imdb, summary: "The Muppets Movies", poster: "https://theposterdb.com/api/assets/205"}
+    imdb_list:
+      - https://www.imdb.com/list/ls068314869/
+  Pirates of the Caribbean:
+    template: {name: tmdb, collections: "295", tmdb_summary: 295, poster: https://theposterdb.com/api/assets/71934}
+  Terminator:
+    template: {name: tmdb, collections: "528", tmdb_summary: 528, poster: https://theposterdb.com/api/assets/26461}
+  Transformers:
+    template: {name: tmdb, collections: "8650", movies: 424783, tmdb_summary: 8650, poster: https://theposterdb.com/api/assets/33217}
+  Underworld:
+    template: {name: tmdb, collections: "2326", tmdb_summary: 2326, poster: https://theposterdb.com/api/assets/74996}
+  The Wizarding World:
+    template: {name: imdb, summary: "The Wizarding World", poster: "https://theposterdb.com/api/assets/151007"}
+    imdb_list:
+      - https://www.imdb.com/list/ls060991914/
+  X-Men:
+    template: {name: imdb, summary: "A superhero film series about a team of mutant superheroes based on the Marvel Comics superheroes of the same name.", poster: "https://theposterdb.com/api/assets/32304"}
+    imdb_list:
+      - https://www.imdb.com/list/ls024445822/
+  Teenage Mutant Ninja Turtles:
+    template: {name: tmdb, collections: "1582, 401562", movies: "1273", tmdb_summary: 1582, poster: https://theposterdb.com/api/assets/59350}
+  Star Wars:
+    template: {name: tmdb, collections: "10", movies: "348350, 330459", tmdb_summary: 10, poster: https://theposterdb.com/api/assets/5846}
+    plex_search:
+      title: "Star Wars"
