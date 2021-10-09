@@ -1,47 +1,96 @@
 libraries:
-      Filme:
-            split_duplicates: true
-            metadata_path:
-                - metadata/movies/Filme.yml
-                - metadata/movies/People.yml
-                - metadata/movies/Genres.yml
-                - metadata/movies/Awards.yml
-                - metadata/movies/Decades.yml
-                - metadata/movies/metadata.yml
-                - metadata/movies/overlays.yml
-            settings:
-                  asset_directory: assets/movies
-      Anime:
-            metadata_path:
-                - metadata/anime/Anime.yml
-                - metadata/anime/metadata.yml
-            settings:
-                  asset_directory: assets/anime
-      Serien:
-            metadata_path:
-                - metadata/tv_shows/Serien.yml
-                - metadata/tv_shows/metadata.yml
-            #     - metadata/tv_shows/overlays.yml
-            settings:
-                  asset_directory: assets/tv_shows
+  Filme:
+    split_duplicates: true
+    metadata_path:
+      - metadata/movies/metadata.yml
+      - metadata/movies/overlays.yml
+      - metadata/movies/anime.yml
+      - metadata/movies/serien.yml
+      - metadata/movies/Filme.yml
+      - metadata/movies/People.yml
+      - metadata/movies/Genres.yml
+      - metadata/movies/Awards.yml
+      - metadata/movies/Decades.yml
+      - metadata/movies/Watchlists.yml
+    settings:
+      asset_directory:
+        - assets/movies/collections
+        - assets/movies/filme
+        - assets/movies/people
+        - assets/movies/genres
+        - assets/movies/awards
+        - assets/movies/decades
+        - assets/movies/watchlists
+  Anime:
+    metadata_path:
+      - metadata/anime/metadata.yml
+      - metadata/anime/filme.yml
+      - metadata/anime/Anime.yml
+    settings:
+      asset_directory:
+        - assets/anime/collections
+        - assets/anime/anime
+  Serien:
+    metadata_path:
+      - metadata/tv_shows/metadata.yml
+      - metadata/tv_shows/overlays.yml
+      - metadata/tv_shows/filme.yml
+      - metadata/tv_shows/Serien.yml
+    settings:
+      asset_directory:
+        - assets/tv_shows/collections
+        - assets/tv_shows/serien
+  Movies:
+    split_duplicates: true
+    metadata_path:
+      - metadata/movies/metadata.yml
+      - metadata/movies/overlays.yml
+      - metadata/movies/Movies.yml
+      - metadata/movies/People.yml
+      - metadata/movies/Genres.yml
+      - metadata/movies/Awards.yml
+      - metadata/movies/Decades.yml
+    settings:
+      asset_directory:
+        - assets/movies/collections
+        - assets/movies/filme
+        - assets/movies/people
+        - assets/movies/genres
+        - assets/movies/awards
+        - assets/movies/decades
+  Shows:
+    metadata_path:
+      - metadata/tv_shows/metadata.yml
+      - metadata/tv_shows/overlays.yml
+      - metadata/tv_shows/Shows.yml
+    settings:
+      asset_directory:
+        - assets/tv_shows/collections
+        - assets/tv_shows/serien
 settings:
-      cache: true
-      cache_expiration: 60
-      sync_mode: sync
-      show_unmanaged: true
-      show_filtered: false
-      show_missing: true
-      save_missing: false
-      asset_directory: assets
-      asset_folders: true
-      assets_for_all: true
+  cache: true
+  cache_expiration: 60
+  sync_mode: sync
+  show_unmanaged: true
+  show_filtered: false
+  show_missing: true
+  save_missing: false
+  run_again_delay: 2
+  asset_directory: assets
+  asset_folders: true
+  assets_for_all: true
+  released_missing_only: false
+  create_asset_folders: false
+  missing_only_released: false
+  collection_minimum: 1
+  delete_below_minimum: false
 plex:
-      url: <local_plex_ip>:32400
-      token: <plex_token>
-      timeout: 60
-      clean_bundles: true
-      empty_trash: true
-      optimize: false
+  url: http://192.168.178.27:32400
+  token: <token>
+  timeout: 60
+  clean_bundles: true
+  empty_trash: true
+  optimize: false
 tmdb:
-      apikey: <tmdb_api_key>
-      language: de
+  apikey: <apikey>
+  language: de

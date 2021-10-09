@@ -1,0 +1,18 @@
+templates:
+  Watchlist:
+    optional:
+      - label
+      - letterboxd
+    letterboxd_list: https://letterboxd.com/<<letterboxd>>
+    label: <<label>>
+    visible_library: true
+    visible_shared: true
+    smart_label: random
+    sort_title: +6_<<collection_name>>
+
+collections:
+  Family Watchlist:
+    template: {name: Watchlist, label: Family Watchlist, letterboxd: jkbsmm/list/family-watchlist/}
+  My Watchlist:
+    template: {name: Watchlist, label: My Watchlist, letterboxd: jkbsmm/watchlist/}
+

@@ -44,10 +44,21 @@ This is shown in the header of each file:
 #  ]
 ```
 Normal collections, like Bad Boys, are just sorted alphabetically into the library.
+Capitalized Metadata Files get their own asset folders in an attempt to be organized. 
+Works for me as I have now, at time of writing, cracked the mark of 10GB of local assets. Too much for a single asset directory in my opinion.
+
+I have started cross library metadata files. 
+For example in my movies library I have a `serien.yml` for those Movies that belong to a tv show.
+The collections are hidden so that they just come up in the overview of the items when you scroll down, but not in the library tab.
 
 ## Overlays
 Overlays are my way to signal audio languages and therefore i have created overlays with every language currently in my library. 
 I also use *item_metadata_language* to only have movies with german audio track with german movie synopsis and title and everything else with english text and title.
+The flags are taken from: https://www.countries-ofthe-world.com/flags-of-the-world.html
+
+In my overlay.psd, located in  `config/overlays` in this repo btw, i have prepared a layer for every flag/language that is represented in my library.
+They are in layer groups and can easily be toggled to quickly create new overlays.
+If you like to use my overlays and can't use my .psd shoot me a message on Discord and I can create any missing language overlay for you.
 
 ## Questions?
 You can always shoot me a question in the PMM Discord found on the main GitHub in the support section:
