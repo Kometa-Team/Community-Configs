@@ -1,828 +1,915 @@
+### ISO-Language codes (https://www.loc.gov/standards/iso639-2/php/code_list.php) in this file:
+# de  |  German
+# en  |  English
+# fr  |  French
+# ja  |  Japanese
+# zh  |  Chinese
+# ko  |  Korean
+# da  |  Danish
+# ru  |  Russian
+# es  |  Spanish
+# nl  |  Dutch
+# hi  |  Hindi
+# te  |  Telugu
+# sv  |  Swedish
+# it  |  Italian
+# fa  |  Farsi
+# th  |  Thai
+### Flags for Overlays -> https://www.countries-ofthe-world.com/flags-of-the-world.html
+
 collections:
   dl_german_english_4k_hdr:
     plex_search:
       all:
         resolution: 4K
-        hdr: true
+        hdr: True
         audio_language:
-          - Deutsch
-          - English
-        audio_language.not:
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
+          - de
+          - en
+        label.not:
+          - Tv_special
     build_collection: false
     item_overlay: dl_german_english_4k_hdr
+    # revert_overlay: true
     item_metadata_language: de-DE
-    item_label: 4K
-  german_4k_hdr:
-    plex_search:
-      all:
-        resolution: 4K
-        hdr: true
-        audio_language: Deutsch
-        audio_language.not:
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: german_4k_hdr
-    item_metadata_language: de-DE
-    item_label: 4K
-  english_4k_hdr:
-    plex_search:
-      all:
-        resolution: 4K
-        hdr: true
-        audio_language: English
-        audio_language.not:
-          - Deutsch
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: english_4k_hdr
-    item_metadata_language: en-US
-    item_label: 4K
   dl_german_english_4k:
     plex_search:
       all:
         resolution: 4K
         hdr: false
         audio_language:
-          - Deutsch
-          - English
-        audio_language.not:
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
+          - de
+          - en
+        label.not:
+          - Tv_special
     build_collection: false
     item_overlay: dl_german_english_4k
+    # revert_overlay: true
     item_metadata_language: de-DE
-    item_label: 4K
-  german_4k:
-    plex_search:
-      all:
-        resolution: 4K
-        hdr: false
-        audio_language: Deutsch
-        audio_language.not:
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: german_4k
-    item_metadata_language: de-DE
-    item_label: 4K
-  english_4k:
-    plex_search:
-      all:
-        resolution: 4K
-        hdr: false
-        audio_language: English
-        audio_language.not:
-          - Deutsch
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: english_4k
-    item_metadata_language: en-US
-    item_label: 4K
   dl_german_english_hdr:
     plex_search:
       all:
         resolution: 1080
         hdr: true
         audio_language:
-          - Deutsch
-          - English
-        audio_language.not:
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
+          - de
+          - en
+        label.not:
+          - Tv_special
     build_collection: false
     item_overlay: dl_german_english_hdr
+    # revert_overlay: true
     item_metadata_language: de-DE
-    item_label: 4K
-  german_hdr:
+  english_4k_hdr:
     plex_search:
       all:
-        resolution: 1080
+        resolution: 4K
         hdr: true
-        audio_language: Deutsch
+        audio_language: en
         audio_language.not:
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
+          - de
+        label.not:
+          - Tv_special
     build_collection: false
-    item_overlay: german_hdr
-    item_metadata_language: de-DE
-    item_label: 4K
+    item_overlay: english_4k_hdr
+    # revert_overlay: true
+    item_metadata_language: en-US
+  english_4k:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+        audio_language: en
+        audio_language.not:
+          - de
+        label.not:
+          - Tv_special
+    build_collection: false
+    item_overlay: english_4k
+    # revert_overlay: true
+    item_metadata_language: en-US
   english_hdr:
     plex_search:
       all:
         resolution: 1080
         hdr: true
-        audio_language: English
+        audio_language: en
         audio_language.not:
-          - Deutsch
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
+          - de
+        label.not:
+          - Tv_special
     build_collection: false
     item_overlay: english_hdr
+    # revert_overlay: true
     item_metadata_language: en-US
-    item_label: 4K
+  german_4k_hdr:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+        audio_language: de
+        audio_language.not:
+          - en
+        label.not:
+          - Tv_special
+    build_collection: false
+    item_overlay: german_4k_hdr
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  german_4k:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+        audio_language: de
+        audio_language.not:
+          - en
+        label.not:
+          - Tv_special
+    build_collection: false
+    item_overlay: german_4k
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  german_hdr:
+    plex_search:
+      all:
+        resolution: 1080
+        hdr: true
+        audio_language: de
+        audio_language.not:
+          - en
+        label.not:
+          - Tv_special
+    build_collection: false
+    item_overlay: german_hdr
+    # revert_overlay: true
+    item_metadata_language: de-DE
 
-  dl_german_english:
+  dl_chinese_french:
     plex_search:
       all:
-        label.not: 4K
+        label.not: 
+          - Tv_special
         audio_language:
-          - Deutsch
-          - English
-        audio_language.not:
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
+          - zh
+          - fr
     build_collection: false
-    item_overlay: dl_german_english
-    item_metadata_language: de-DE
-  dl_german_french:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - Deutsch
-          - Français
-        audio_language.not:
-          - English
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_german_french
-    item_metadata_language: de-DE
-  dl_german_japanese:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - Deutsch
-          - 日本語
-        audio_language.not:
-          - English
-          - Français
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_german_japanese
-    item_metadata_language: de-DE
-  dl_german_chinese:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - Deutsch
-          - 中文
-        audio_language.not:
-          - English
-          - Français
-          - 日本語
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_german_chinese
-    item_metadata_language: de-DE
-  dl_german_korean:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - Deutsch
-          - 한국어
-        audio_language.not:
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_german_korean
-    item_metadata_language: de-DE
-  dl_german_danish:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - Deutsch
-          - Dansk
-        audio_language.not:
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_german_danish
-    item_metadata_language: de-DE
-  dl_german_russian:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - Deutsch
-          - русский язык
-        audio_language.not:
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_german_russian
-    item_metadata_language: de-DE
-  dl_german_spanish:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - Deutsch
-          - Español
-        audio_language.not:
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_german_spanish
-    item_metadata_language: de-DE
-  dl_german_dutch:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - Deutsch
-          - Nederlands
-        audio_language.not:
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-    build_collection: false
-    item_overlay: dl_german_dutch
-    item_metadata_language: de-DE
-  dl_german_indian:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - Deutsch
-        any:
-          audio_language:
-            - हिन्दी, हिंदी
-            - తెలుగు
-        audio_language.not:
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_german_indian
-    item_metadata_language: de-DE
-  dl_english_japanese:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - English
-          - 日本語
-        audio_language.not:
-          - Deutsch
-          - Français
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_english_japanese
+    item_overlay: dl_chinese_french
+    # revert_overlay: true
     item_metadata_language: en-US
   dl_english_chinese:
     plex_search:
       all:
-        label.not: 4K
+        label.not: 
+          - Tv_special
         audio_language:
-          - English
-          - 中文
-        audio_language.not:
-          - Deutsch
-          - Français
-          - 日本語
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
+          - en
+          - zh
     build_collection: false
     item_overlay: dl_english_chinese
-  dl_english_korean:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - English
-          - 한국어
-        audio_language.not:
-          - Deutsch
-          - Français
-          - 日本語
-          - 中文
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_english_korean
-    item_metadata_language: en-US
-  dl_english_french:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - English
-          - Français
-        audio_language.not:
-          - Deutsch
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_english_french
-    item_metadata_language: en-US
-  dl_english_indian:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - English
-        any:
-          audio_language:
-            - हिन्दी, हिंदी
-            - తెలుగు
-        audio_language.not:
-          - Deutsch
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_english_indian
+    # revert_overlay: true
     item_metadata_language: en-US
   dl_english_danish:
     plex_search:
       all:
-        label.not: 4K
+        label.not: 
+          - Tv_special
         audio_language:
-          - English
-          - Dansk
-        audio_language.not:
-          - Deutsch
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - русский язык
-          - Español
-          - Nederlands
+          - en
+          - da
     build_collection: false
     item_overlay: dl_english_danish
-    item_metadata_language: en-US
-  dl_english_russian:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - English
-          - русский язык
-        audio_language.not:
-          - Deutsch
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_english_russian
-    item_metadata_language: en-US
-  dl_english_spanish:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language:
-          - English
-          - Español
-        audio_language.not:
-          - Deutsch
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Nederlands
-    build_collection: false
-    item_overlay: dl_english_spanish
+    # revert_overlay: true
     item_metadata_language: en-US
   dl_english_dutch:
     plex_search:
       all:
-        label.not: 4K
+        label.not: 
+          - Tv_special
         audio_language:
-          - English
-          - Nederlands
-        audio_language.not:
-          - Deutsch
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
+          - en
+          - nl
     build_collection: false
     item_overlay: dl_english_dutch
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_english_french:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - en
+          - fr
+    build_collection: false
+    item_overlay: dl_english_french
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_english_indian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - en
+        any:
+          audio_language:
+            - hi
+            - te
+    build_collection: false
+    item_overlay: dl_english_indian
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_english_iranian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - en
+          - fa
+    build_collection: false
+    item_overlay: dl_english_iranian
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_english_italian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - en
+          - it
+    build_collection: false
+    item_overlay: dl_english_italian
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_english_japanese:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - en
+          - ja
+    build_collection: false
+    item_overlay: dl_english_japanese
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_english_korean:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - en
+          - ko
+    build_collection: false
+    item_overlay: dl_english_korean
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_english_russian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - en
+          - ru
+    build_collection: false
+    item_overlay: dl_english_russian
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_english_spanish:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - en
+          - es
+    build_collection: false
+    item_overlay: dl_english_spanish
+    # revert_overlay: true
+    item_metadata_language: en-US
+  # dl_english_swedish:
+  #   plex_search:
+  #     all:
+  #       label.not: 
+  #         - Tv_special
+  #       audio_language:
+  #         - en
+  #         - sv
+  #   build_collection: false
+  #   item_overlay: dl_english_swedish
+  #   # revert_overlay: true
+  #   item_metadata_language: en-US
+  dl_english_thai:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - en
+          - th
+    build_collection: false
+    item_overlay: dl_english_thai
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_french_danish:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - fr
+          - da
+    build_collection: false
+    item_overlay: dl_french_danish
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_german_chinese:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - zh
+    build_collection: false
+    item_overlay: dl_german_chinese
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_german_danish:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - da
+    build_collection: false
+    item_overlay: dl_german_danish
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_german_dutch:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - nl
+    build_collection: false
+    item_overlay: dl_german_dutch
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_german_english:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - en
+    build_collection: false
+    item_overlay: dl_german_english
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_german_french:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - fr
+    build_collection: false
+    item_overlay: dl_german_french
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_german_indian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+        any:
+          audio_language:
+            - hi
+            - te
+    build_collection: false
+    item_overlay: dl_german_indian
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_german_iranian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - fa
+    build_collection: false
+    item_overlay: dl_german_iranian
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_german_italian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - it
+    build_collection: false
+    item_overlay: dl_german_italian
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_german_japanese:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - ja
+    build_collection: false
+    item_overlay: dl_german_japanese
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_german_korean:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - ko
+    build_collection: false
+    item_overlay: dl_german_korean
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_german_russian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - ru
+    build_collection: false
+    item_overlay: dl_german_russian
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_german_spanish:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - es
+    build_collection: false
+    item_overlay: dl_german_spanish
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  # dl_german_swedish:
+  #   plex_search:
+  #     all:
+  #       label.not: 
+  #         - Tv_special
+  #       audio_language:
+  #         - de
+  #         - sv
+  #   build_collection: false
+  #   item_overlay: dl_german_swedish
+  #   # revert_overlay: true
+  #   item_metadata_language: de-DE
+  dl_german_thai:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - de
+          - th
+    build_collection: false
+    item_overlay: dl_german_thai
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  dl_italian_thai:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - it
+          - th
+    build_collection: false
+    item_overlay: dl_italian_thai
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_japanese_chinese:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - ja
+          - zh
+    build_collection: false
+    item_overlay: dl_japanese_chinese
+    # revert_overlay: true
+    item_metadata_language: en-US
+  dl_korean_french:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language:
+          - ko
+          - fr
+    build_collection: false
+    item_overlay: dl_korean_french
+    # revert_overlay: true
     item_metadata_language: en-US
 
-  german:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language: Deutsch
-        audio_language.not:
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: german
-    item_metadata_language: de-DE
-  english:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language: English
-        audio_language.not:
-          - Deutsch
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: english
-    item_metadata_language: en-US
-  french:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language: Français
-        audio_language.not:
-          - Deutsch
-          - English
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: french
-    item_metadata_language: en-US
-  japanese:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language: 日本語
-        audio_language.not:
-          - Deutsch
-          - English
-          - Français
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: japanese
-    item_metadata_language: en-US
   chinese:
     plex_search:
       all:
-        label.not: 4K
-        audio_language: 中文
+        label.not: 
+          - Tv_special
+        audio_language: zh
         audio_language.not:
-          - Deutsch
-          - English
-          - Français
-          - 日本語
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
+          - da
+          - de
+          - en
+          - es
+          - fa
+          - fr
+          - hi
+          - it
+          - ja
+          - ko
+          - nl
+          - ru
+          - te
+          - th
     build_collection: false
     item_overlay: chinese
-    item_metadata_language: en-US
-  korean:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language: 한국어
-        audio_language.not:
-          - Deutsch
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: korean
+    # revert_overlay: true
     item_metadata_language: en-US
   danish:
     plex_search:
       all:
-        label.not: 4K
-        audio_language: Dansk
+        label.not: 
+          - Tv_special
+        audio_language: da
         audio_language.not:
-          - Deutsch
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - русский язык
-          - Español
-          - Nederlands
+          - de
+          - en
+          - es
+          - fa
+          - fr
+          - hi
+          - it
+          - ja
+          - ko
+          - nl
+          - ru
+          - te
+          - th
+          - zh
     build_collection: false
     item_overlay: danish
-    item_metadata_language: en-US
-  indian:
-    plex_search:
-      all:
-        label.not: 4K
-        any:
-          audio_language:
-            - हिन्दी, हिंदी
-            - తెలుగు
-        audio_language.not:
-          - Deutsch
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - Dansk
-          - русский язык
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: indian
-    item_metadata_language: en-US
-  russian:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language: русский язык
-        audio_language.not:
-          - Deutsch
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - Español
-          - Nederlands
-    build_collection: false
-    item_overlay: russian
-    item_metadata_language: en-US
-  spanish:
-    plex_search:
-      all:
-        label.not: 4K
-        audio_language: Español
-        audio_language.not:
-          - Deutsch
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Nederlands
-    build_collection: false
-    item_overlay: spanish
+    # revert_overlay: true
     item_metadata_language: en-US
   dutch:
     plex_search:
       all:
-        label.not: 4K
-        audio_language: Nederlands
+        label.not: 
+          - Tv_special
+        audio_language: nl
         audio_language.not:
-          - Deutsch
-          - English
-          - Français
-          - 日本語
-          - 中文
-          - 한국어
-          - हिन्दी, हिंदी
-          - తెలుగు
-          - Dansk
-          - русский язык
-          - Español
+          - da
+          - de
+          - en
+          - es
+          - fa
+          - fr
+          - hi
+          - it
+          - ja
+          - ko
+          - ru
+          - te
+          - th
+          - zh
     build_collection: false
     item_overlay: dutch
+    # revert_overlay: true
+    item_metadata_language: en-US
+  english:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language: en
+        audio_language.not:
+          - da
+          - de
+          - es
+          - fa
+          - fr
+          - hi
+          - it
+          - ja
+          - ko
+          - nl
+          - ru
+          - te
+          - th
+          - zh
+    build_collection: false
+    item_overlay: english
+    # revert_overlay: true
+    item_metadata_language: en-US
+  french:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language: fr
+        audio_language.not:
+          - da
+          - de
+          - en
+          - es
+          - fa
+          - hi
+          - it
+          - ja
+          - ko
+          - nl
+          - ru
+          - te
+          - th
+          - zh
+    build_collection: false
+    item_overlay: french
+    # revert_overlay: true
+    item_metadata_language: en-US
+  german:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language: de
+        audio_language.not:
+          - da
+          - en
+          - es
+          - fa
+          - fr
+          - hi
+          - it
+          - ja
+          - ko
+          - nl
+          - ru
+          - te
+          - th
+          - zh
+    build_collection: false
+    item_overlay: german
+    # revert_overlay: true
+    item_metadata_language: de-DE
+  indian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        any:
+          audio_language:
+            - hi
+            - te
+        audio_language.not:
+          - da
+          - de
+          - en
+          - es
+          - fa
+          - fr
+          - it
+          - ja
+          - ko
+          - nl
+          - ru
+          - th
+          - zh
+    build_collection: false
+    item_overlay: indian
+    # revert_overlay: true
+    item_metadata_language: en-US
+  iranian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language: fa
+        audio_language.not:
+          - da
+          - de
+          - en
+          - es
+          - fr
+          - ja
+          - hi
+          - it
+          - ko
+          - nl
+          - ru
+          - te
+          - th
+          - zh
+    build_collection: false
+    item_overlay: iranian
+    # revert_overlay: true
+    item_metadata_language: en-US
+  italian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language: it
+        audio_language.not:
+          - da
+          - de
+          - en
+          - es
+          - fa
+          - fr
+          - hi
+          - ja
+          - ko
+          - nl
+          - ru
+          - te
+          - th
+          - zh
+    build_collection: false
+    item_overlay: italian
+    # revert_overlay: true
+    item_metadata_language: en-US
+  japanese:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language: ja
+        audio_language.not:
+          - da
+          - de
+          - en
+          - es
+          - fa
+          - fr
+          - hi
+          - it
+          - ko
+          - nl
+          - ru
+          - te
+          - th
+          - zh
+    build_collection: false
+    item_overlay: japanese
+    # revert_overlay: true
+    item_metadata_language: en-US
+  korean:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language: ko
+        audio_language.not:
+          - da
+          - de
+          - en
+          - es
+          - fa
+          - fr
+          - hi
+          - it
+          - ja
+          - nl
+          - ru
+          - te
+          - th
+          - zh
+    build_collection: false
+    item_overlay: korean
+    # revert_overlay: true
+    item_metadata_language: en-US
+  russian:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language: ru
+        audio_language.not:
+          - da
+          - de
+          - en
+          - es
+          - fa
+          - fr
+          - hi
+          - it
+          - ja
+          - ko
+          - nl
+          - te
+          - th
+          - zh
+    build_collection: false
+    item_overlay: russian
+    # revert_overlay: true
+    item_metadata_language: en-US
+  spanish:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language: es
+        audio_language.not:
+          - da
+          - de
+          - en
+          - fa
+          - fr
+          - hi
+          - it
+          - ja
+          - ko
+          - nl
+          - ru
+          - te
+          - th
+          - zh
+    build_collection: false
+    item_overlay: spanish
+    # revert_overlay: true
+    item_metadata_language: en-US
+  # swedish:
+  #   plex_search:
+  #     all:
+  #       label.not: 
+  #         - Tv_special
+  #       audio_language: sv
+  #       audio_language.not:
+  #         - da
+  #         - de
+  #         - en
+  #         - es
+  #         - fa
+  #         - fr
+  #         - hi
+  #         - it
+  #         - ja
+  #         - ko
+  #         - nl
+  #         - ru
+  #         - te
+  #         - th
+  #         - zh
+  #   build_collection: false
+  #   item_overlay: swedish
+  #   # revert_overlay: true
+  #   item_metadata_language: en-US
+  thai:
+    plex_search:
+      all:
+        label.not: 
+          - Tv_special
+        audio_language: th
+        audio_language.not:
+          - da
+          - de
+          - en
+          - fa
+          - fr
+          - hi
+          - it
+          - ja
+          - ko
+          - nl
+          - ru
+          - te
+          - zh
+    build_collection: false
+    item_overlay: thai
+    # revert_overlay: true
     item_metadata_language: en-US

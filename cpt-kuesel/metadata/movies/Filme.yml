@@ -65,6 +65,11 @@ collections:
     template: {name: Movie, collection: 14890}
   Bahubali:
     template: {name: Movie, collection: 350309}
+  "Batman: The Long Halloween":
+    template: {name: Movie, collection: 785583}
+    name_mapping: Batman The Long Halloween
+  Battle Royale:
+    template: {name: Movie, collection: 16302}
   Bill & Ted's Most Excellent:
     template: {name: Movie, collection: 91746}
   Black Panther:
@@ -97,6 +102,8 @@ collections:
   Crazy Rich Asians:
     template: {name: Movie, collection: 545955}
     collection_mode: hide
+  Crouching Tiger, Hidden Dragon:
+    template: {name: Movie, collection: 290973}
   Darko:
     template: {name: Movie, collection: 178106}
   Deadpool:
@@ -106,11 +113,20 @@ collections:
   Doctor Strange:
     template: {name: Movie, collection: 618529}
     collection_mode: hide
+  Don't Breathe:
+    template: {name: Movie, collection: 748919}
   Eastrail 177:
     template: {name: Movie, movie: "9741, 381288, 450465"}
   Edge of Tomorrow:
     template: {name: Movie, collection: 578704}
     collection_mode: hide
+  Elizabeth:
+    template: {name: Movie, collection: 100286}
+  Escape From ...:
+    template: {name: Movie, collection: 115838}
+    name_mapping: Escape From
+  Escape Room:
+    template: {name: Movie, collection: 769423}
   Evil Dead:
     template: {name: Movie, collection: 1960}
   Extraction:
@@ -119,12 +135,17 @@ collections:
   Fantastic Beasts:
     template: {name: Movie, collection: 435259}
   Fast & Furious:
-    template: {name: Movie, collection: 9485, movie: 384018}
+    template: {name: Movie, list: 7102873}
+    collection_order: custom
     sort_title: +5_2_Fast & Furious
+  Final Destination:
+    template: {name: Movie, collection: 8864}
   Finding Nemo:
     template: {name: Movie, collection: 137697}
   Frozen:
     template: {name: Movie, collection: 386382}
+  Gintama:
+    template: {name: Movie, collection: 713969}
   Ghost Rider:
     template: {name: Movie, collection: 90306}
   Ghostbusters:
@@ -181,7 +202,7 @@ collections:
   Kick-Ass:
     template: {name: Movie, collection: 179892}
   Kill Bill:
-    template: {name: Movie, collection: 2883}
+    template: {name: Movie, collection: 2883, movie: 414419}
   Kingsman:
     template: {name: Movie, collection: 391860}
   Machete:
@@ -194,6 +215,8 @@ collections:
     template: {name: Movie, list: 7082740}
     smart_label: year.asc
     sort_title: +5_1_Marvel Cinematic Universe
+  Millennium:
+    template: {name: Movie, collection: 24761}
   Mechanic:
     template: {name: Movie, collection: 280504}
   "Mission: Impossible":
@@ -202,8 +225,9 @@ collections:
     sort_title: +5_2_Mission Impossible
   Men In Black:
     template: {name: Movie, collection: 86055}
-  Monsters, Inc.:
+  "Monsters, Inc.":
     template: {name: Movie, collection: 137696}
+    name_mapping: Monsters, Inc
   Monty Python:
     template: {name: Movie, movie: "583, 762"}
   Naked Gun:
@@ -228,6 +252,8 @@ collections:
     template: {name: Movie, collection: 135416}
   Psych:
     template: {name: Movie, collection: 718934}
+  Rebuild of Evangelion:
+    template: {name: Movie, collection: 210303}
   RED:
     template: {name: Movie, collection: 163902}
   Rocky:
@@ -251,6 +277,8 @@ collections:
     template: {name: Movie, collection: 135179}
   Smokin' Aces:
     template: {name: Movie, collection: 96680}
+  Space Jam:
+    template: {name: Movie, collection: 722961}
   Spider-Man:
     template: {name: Movie, collection: 556}
   Spider-Man (Avengers):
@@ -266,8 +294,8 @@ collections:
     template: {name: Movie, collection: 115575}
     name_mapping: Star Trek Alternate Reality
   Star Wars:
-    template: {name: Movie, collection: 10, movie: "348350, 330459"}
-    collection_order: alpha
+    template: {name: Movie, list: 7102821}
+    collection_order: custom
     sort_title: +5_2_Star Wars
   Stargate:
     template: {name: Movie, collection: 44215}
@@ -279,55 +307,92 @@ collections:
     template: {name: Movie, collection: 135483}
   The Amazing Spider-Man:
     template: {name: Movie, collection: 125574}
+    sort_title: Amazing Spider-Man
   The Avengers:
     template: {name: Movie, collection: 86311}
+    sort_title: Avengers
   The Babysitter:
     template: {name: Movie, collection: 737382}
+    sort_title: Babysitter
   The Boondock Saints:
     template: {name: Movie, collection: 87186}
+    sort_title: Boondock Saints
+  The Chronicles of Narnia:
+    template: {name: Movie, collection: 420}
+    sort_title: Chronicles of Narnia
   The Conjuring:
     template: {name: Movie, collection: 313086}
+    sort_title: Conjuring
+  The Croods:
+    template: {name: Movie, collection: 464577}
+    sort_title: Croods
   The Dark Knight:
     template: {name: Movie, collection: 263}
+    sort_title: Dark Knight
   The Equalizer:
     template: {name: Movie, collection: 523855}
+    sort_title: Equalizer
   The Expendables:
     template: {name: Movie, collection: 126125}
+    sort_title: Expendables
   The First Myth Universe:
     template: {name: Movie, movie: "635389, 615453"}
     item_label: never_german
     item_metadata_language: en-US
+    sort_title: First Myth Universe
+  The Girl - Millenium:
+    template: {name: Movie, collection: 575987}
+    sort_title: Girl - Millenium
   The Godfather:
     template: {name: Movie, collection: 230}
+    sort_title: Godfather
   The Hangover:
     template: {name: Movie, collection: 86119}
+    sort_title: Hangover
   The Hitman's Bodyguard:
     template: {name: Movie, collection: 608101}
+    sort_title: Hitman's Bodyguard
   The Hobbit:
     template: {name: Movie, collection: 121938}
+    sort_title: Hobbit
   The Lego Movie:
     template: {name: Movie, collection: 325470}
+    sort_title: Lego Movie
   The Lord of the Rings:
     template: {name: Movie, collection: 119}
+    sort_title: Lord of the Rings
   The Matrix:
     template: {name: Movie, collection: 2344, movie: 55931}
+    sort_title: Matrix
   The Middle Earth Collection:
     template: {name: Movie, collection: "119, 121938"}
     collection_order: alpha
     sort_title: +5_2_The Middle Earth Collection
+  The Monsterverse:
+    template: {name: Movie, collection: 535313, movie: 293167}
+    sort_title: +5_2_The Monsterverse
+  The Purge:
+    template: {name: Movie, collection: 256322}
+    sort_title: Purge
   The Raid:
     template: {name: Movie, collection: 257960}
+    sort_title: Raid
   The Space Odyssey Series:
     template: {name: Movie, collection: 4438}
+    sort_title: Space Odyssey
   The Terminator:
     template: {name: Movie, collection: 528}
     sort_title: +5_2_The Terminator
   The Transporter:
     template: {name: Movie, collection: 9518}
+    sort_title: Transporter
   The Wolverine:
     template: {name: Movie, collection: 453993}
+    sort_title: Wolverine
   Thor:
     template: {name: Movie, collection: 131296}
+  Three Colors:
+    template: {name: Movie, collection: 131}
   Top Gun:
     template: {name: Movie, collection: 531330}
     collection_mode: hide

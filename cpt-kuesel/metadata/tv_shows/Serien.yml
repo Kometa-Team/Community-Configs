@@ -17,15 +17,11 @@ collections:
     smart_label: year.asc
     sort_title: +2_1_In Association With Marvel
   Marvel Cinematic Universe:
-    template: {name: Show, show: "362392, 362496, 362472"}
+    template: {name: Show, show: "362392, 362496, 362472, 367147"}
     smart_label: year.asc
     sort_title: +2_2_Marvel Cinematic Universe
   Penny Dreadful:
     template: {name: Show, show: "265766, 360892"}
-  Star Wars:
-    template: {name: Show, show: "83268, 361753, 385376"}
-    smart_label: year.asc
-    sort_title: +2_3_Star Wars
   Stargate:
     template: {name: Show, show: "72449, 70851, 83237, 339552"}
   What We Do in the Shadows:
