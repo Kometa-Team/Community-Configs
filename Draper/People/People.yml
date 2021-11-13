@@ -11,7 +11,7 @@ templates:
       sort_by: title.asc
       validate: false
     tmdb_person: <<person>>
-    sort_title: ++_<<collection_name>>
+    sort_title: +4_<<collection_name>>
 
 collections:
   "Florence Pugh":
