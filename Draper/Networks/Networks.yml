@@ -4707,7 +4707,7 @@ templates:
   network:
     optional:
     - network
-    smart_label: episode_added.desc
+    smart_label: release.desc
     sort_title: +2_<<collection_name>>
     sync_mode: sync
     tmdb_network: <<network>>

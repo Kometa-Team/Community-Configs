@@ -11,6 +11,7 @@ templates:
     sync_mode: sync
     sort_title: zzzz_Season_<<sort_year>>_<<season_index>>_<<year>>
     summary: Anime airing during <<season_lower>> anime season in <<year>>.
+    smart_label: release.desc
     collection_order: release
 
 collections:
@@ -22,6 +23,7 @@ collections:
       sort_by: members
       limit: 500
     summary: Anime airing this season.
+    smart_label: episode_added.desc
     sync_mode: sync
 
   Fall 2022 Anime:

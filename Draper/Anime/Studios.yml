@@ -4,6 +4,7 @@ templates:
       studio_id: <<id>>
       limit: 0
     sort_title: zzzzzzzzzzzzzzzzzzzzzzzz_Studio_<<collection_name>>
+    smart_label: release.desc
     summary: Anime released by <<collection_name>>.
     collection_name: <<collection_name>>
     sync_mode: append
