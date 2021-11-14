@@ -12,6 +12,8 @@ templates:
       validate: false
     tmdb_person: <<person>>
     sort_title: +4_<<collection_name>>
+    smart_label: release.desc
+
 
 collections:
   "Florence Pugh":

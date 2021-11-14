@@ -2,13 +2,15 @@ templates:
   Chart:
     sort_title: +1_<<num>><<collection_name>>
     sync_mode: sync
-    smart_label: random
+    smart_label: release.desc
+
 
 collections:
     Suggested Anime:
       sort_title: +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++_Suggested
       mal_suggested: 50
       sync_mode: sync
+      smart_label: release.desc
     Top Airing Anime:
       template: { name: Chart, num: 2 }
       mal_airing: 10
