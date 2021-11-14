@@ -3,22 +3,18 @@ collections:
     template:
       name: network
       network: '2140'
-  '&TV':
-    template:
-      name: network
-      network: '1566'
   1+1:
     template:
       name: network
       network: '1254'
+  10 Play:
+    template:
+      name: network
+      network: '3466'
   100 TV:
     template:
       name: network
       network: '3191'
-  13C:
-    template:
-      name: network
-      network: '4038'
   13e rue:
     template:
       name: network
@@ -27,42 +23,14 @@ collections:
     template:
       name: network
       network: '1828'
-  24 Kanal:
-    template:
-      name: network
-      network: '4223'
   24 horas:
     template:
       name: network
       network: '4932'
-  2M:
-    template:
-      name: network
-      network: '3215'
-  2STV:
-    template:
-      name: network
-      network: '3549'
-  2x2:
-    template:
-      name: network
-      network: '3631'
-  "2\xD72":
-    template:
-      name: network
-      network: '859'
   3+:
     template:
       name: network
       network: '2527'
-  "360\xB0":
-    template:
-      name: network
-      network: '2520'
-  3net:
-    template:
-      name: network
-      network: '2497'
   3sat:
     template:
       name: network
@@ -75,10 +43,6 @@ collections:
     template:
       name: network
       network: '2196'
-  5-tv:
-    template:
-      name: network
-      network: '3587'
   5Star:
     template:
       name: network
@@ -87,18 +51,10 @@ collections:
     template:
       name: network
       network: '842'
-  6play:
-    template:
-      name: network
-      network: '3912'
   6ter:
     template:
       name: network
       network: '2230'
-  7TV:
-    template:
-      name: network
-      network: '2619'
   7TWO:
     template:
       name: network
@@ -106,7 +62,7 @@ collections:
   7mate:
     template:
       name: network
-      network: '2562'
+      network: 2562,1721
   8TV:
     template:
       name: network
@@ -114,27 +70,11 @@ collections:
   A&E:
     template:
       name: network
-      network: '5202'
-  A+:
-    template:
-      name: network
-      network: '4189'
-  AB1:
-    template:
-      name: network
-      network: '3274'
-  AB3:
-    template:
-      name: network
-      network: '3724'
-  AB4:
-    template:
-      name: network
-      network: '3275'
+      network: 5202,3688,2639,129
   ABC:
     template:
       name: network
-      network: '5345'
+      network: 5345,5250,18,2
   ABC Comedy:
     template:
       name: network
@@ -171,10 +111,6 @@ collections:
     template:
       name: network
       network: '1327'
-  ABCd:
-    template:
-      name: network
-      network: '2791'
   ABEMA:
     template:
       name: network
@@ -183,30 +119,14 @@ collections:
     template:
       name: network
       network: '20'
-  ABXplore (BE-FR):
-    template:
-      name: network
-      network: '5347'
-  ADK:
-    template:
-      name: network
-      network: '5207'
   AHC:
     template:
       name: network
       network: '1430'
-  AIS PLAY:
-    template:
-      name: network
-      network: '3489'
   ALLBLK:
     template:
       name: network
       network: '4810'
-  ALTBalaji:
-    template:
-      name: network
-      network: '2112'
   AMC:
     template:
       name: network
@@ -215,14 +135,14 @@ collections:
     template:
       name: network
       network: '4661'
+  AMI-tl:
+    template:
+      name: network
+      network: '1438'
   AMI-tv:
     template:
       name: network
       network: '3296'
-  "AMI-t\xE9l\xE9":
-    template:
-      name: network
-      network: '1438'
   ANIMAX:
     template:
       name: network
@@ -230,15 +150,11 @@ collections:
   ANT1:
     template:
       name: network
-      network: '4170'
+      network: 4170,572
   AOL:
     template:
       name: network
       network: '1050'
-  AP1:
-    template:
-      name: network
-      network: '1882'
   APTN:
     template:
       name: network
@@ -251,14 +167,6 @@ collections:
     template:
       name: network
       network: '2147'
-  ART Hekayat:
-    template:
-      name: network
-      network: '2546'
-  ART Hekayat Kaman:
-    template:
-      name: network
-      network: '2547'
   ARTE Creative:
     template:
       name: network
@@ -275,14 +183,6 @@ collections:
     template:
       name: network
       network: '173'
-  ATV:
-    template:
-      name: network
-      network: '3534'
-  ATV Home:
-    template:
-      name: network
-      network: '2374'
   AVA:
     template:
       name: network
@@ -291,10 +191,6 @@ collections:
     template:
       name: network
       network: '636'
-  AVROTROS:
-    template:
-      name: network
-      network: '1227'
   AXN:
     template:
       name: network
@@ -319,7 +215,7 @@ collections:
     template:
       name: network
       network: '988'
-  "Acas\u0103":
+  Acas:
     template:
       name: network
       network: '969'
@@ -339,10 +235,6 @@ collections:
     template:
       name: network
       network: '80'
-  Aj+ Arabi:
-    template:
-      name: network
-      network: '2717'
   Al Jazeera:
     template:
       name: network
@@ -355,18 +247,10 @@ collections:
     template:
       name: network
       network: '1763'
-  Al Saudiya:
+  Alhayah:
     template:
       name: network
-      network: '1589'
-  Al-Nahar Drama:
-    template:
-      name: network
-      network: '1948'
-  Al-Nahar One:
-    template:
-      name: network
-      network: '1710'
+      network: '1929'
   Alibi:
     template:
       name: network
@@ -387,34 +271,18 @@ collections:
     template:
       name: network
       network: '763'
-  Amarin TV:
-    template:
-      name: network
-      network: '3281'
   Amazon:
     template:
       name: network
       network: '1024'
-  American Forces Network:
+  Amrica Televisin:
     template:
       name: network
-      network: '801'
+      network: '441'
   Amrita TV:
     template:
       name: network
       network: '3102'
-  "Am\xE9rica TV":
-    template:
-      name: network
-      network: '2485'
-  "Am\xE9rica Televisi\xF3n":
-    template:
-      name: network
-      network: '441'
-  Angel Studios:
-    template:
-      name: network
-      network: '3081'
   Anhui Television:
     template:
       name: network
@@ -422,35 +290,11 @@ collections:
   Animal Planet:
     template:
       name: network
-      network: '3627'
+      network: 3627,2781,91
   Animal Planet Brasil:
     template:
       name: network
       network: '4454'
-  Animax Asia:
-    template:
-      name: network
-      network: '3268'
-  Animax Korea:
-    template:
-      name: network
-      network: '2975'
-  Anime Houdai:
-    template:
-      name: network
-      network: '3748'
-  Anime Network:
-    template:
-      name: network
-      network: '4081'
-  Anime Zone:
-    template:
-      name: network
-      network: '2616'
-  Aniplus:
-    template:
-      name: network
-      network: '2976'
   Antena 1:
     template:
       name: network
@@ -475,10 +319,6 @@ collections:
     template:
       name: network
       network: '2552'
-  "Arag\xF3n TV":
-    template:
-      name: network
-      network: '3820'
   Arena:
     template:
       name: network
@@ -487,18 +327,10 @@ collections:
     template:
       name: network
       network: '2053'
-  Armenia 1:
-    template:
-      name: network
-      network: '4313'
   Armenia TV:
     template:
       name: network
       network: '901'
-  Arre:
-    template:
-      name: network
-      network: '3986'
   Arte:
     template:
       name: network
@@ -511,95 +343,31 @@ collections:
     template:
       name: network
       network: '1410'
-  Asia Television Limited:
-    template:
-      name: network
-      network: '461'
   Asian Food Channel:
     template:
       name: network
       network: '983'
-  Asianet:
-    template:
-      name: network
-      network: '2573'
   Associated Television:
     template:
       name: network
       network: '117'
-  Astro AEC:
-    template:
-      name: network
-      network: '4198'
-  Astro Aruna:
-    template:
-      name: network
-      network: '984'
-  Astro Ceria:
-    template:
-      name: network
-      network: '3303'
-  Astro Maya:
-    template:
-      name: network
-      network: '1744'
-  Astro Oasis:
-    template:
-      name: network
-      network: '2226'
-  Astro Prima:
-    template:
-      name: network
-      network: '1743'
-  Astro Ria:
-    template:
-      name: network
-      network: '606'
-  Astro Shuang Xing:
-    template:
-      name: network
-      network: '1786'
-  Astro Vaanavil:
-    template:
-      name: network
-      network: '2356'
-  Astro Warna:
-    template:
-      name: network
-      network: '1742'
-  Atomic Network:
-    template:
-      name: network
-      network: '2900'
   Atreseries:
     template:
       name: network
       network: '1300'
-  Atresplayer Premium:
-    template:
-      name: network
-      network: '3744'
   Audience:
     template:
       name: network
       network: '251'
-  Aurora Community Channel:
-    template:
-      name: network
-      network: '671'
-  AutoMoto La Chaine (FR):
-    template:
-      name: network
-      network: '5357'
   AwesomeTV:
     template:
       name: network
       network: '4059'
-  Azteca 7:
+  Azrbaycan Televiziyas:
     template:
       name: network
-      network: '5279'
-  "Azteca Am\xE9rica":
+      network: '2998'
+  Azteca Amrica:
     template:
       name: network
       network: '810'
@@ -607,22 +375,6 @@ collections:
     template:
       name: network
       network: '4035'
-  Azteca Uno:
-    template:
-      name: network
-      network: '3295'
-  "Azul Televisi\xF3n":
-    template:
-      name: network
-      network: '3236'
-  "Az\u0259rbaycan Televiziyas\u0131":
-    template:
-      name: network
-      network: '2998'
-  BBC Alba:
-    template:
-      name: network
-      network: '5384'
   BBC America:
     template:
       name: network
@@ -687,18 +439,10 @@ collections:
     template:
       name: network
       network: '24'
-  BET+:
-    template:
-      name: network
-      network: '3343'
   BFMTV:
     template:
       name: network
       network: '4247'
-  BINGE:
-    template:
-      name: network
-      network: '5118'
   BNN:
     template:
       name: network
@@ -715,22 +459,10 @@ collections:
     template:
       name: network
       network: '871'
-  BS Asahi:
-    template:
-      name: network
-      network: '1765'
-  BS Fuji:
-    template:
-      name: network
-      network: '1136'
-  BS SKY PerfecTV!:
+  BS SKY PerfecTV:
     template:
       name: network
       network: '1164'
-  BS TV Tokyo:
-    template:
-      name: network
-      network: '3471'
   BS-TBS:
     template:
       name: network
@@ -755,26 +487,14 @@ collections:
     template:
       name: network
       network: '914'
-  Balloons:
-    template:
-      name: network
-      network: '4630'
   Band:
     template:
       name: network
       network: '887'
-  Bandai Channel:
-    template:
-      name: network
-      network: '888'
   Bangladesh Television:
     template:
       name: network
       network: '2209'
-  BayaM:
-    template:
-      name: network
-      network: '3448'
   Be Mad:
     template:
       name: network
@@ -783,14 +503,6 @@ collections:
     template:
       name: network
       network: '2571'
-  Beijing Television:
-    template:
-      name: network
-      network: '455'
-  Belgische Radio- en Televisieomroep:
-    template:
-      name: network
-      network: '2502'
   Bell Fibe TV1:
     template:
       name: network
@@ -799,30 +511,10 @@ collections:
     template:
       name: network
       network: '5'
-  Big Movie Zoo:
-    template:
-      name: network
-      network: '4920'
   Big Ten Network:
     template:
       name: network
       network: '917'
-  Bindass:
-    template:
-      name: network
-      network: '3993'
-  Binge:
-    template:
-      name: network
-      network: '5264'
-  Bio.:
-    template:
-      name: network
-      network: '1002'
-  Bioscope:
-    template:
-      name: network
-      network: '3094'
   BiteTV:
     template:
       name: network
@@ -847,22 +539,14 @@ collections:
     template:
       name: network
       network: '3916'
-  "Bollywood \u0628\u0627\u0644\u0639\u0631\u0628\u064A":
+  Bold:
     template:
       name: network
-      network: '5390'
-  "Bon App\xE9tit":
+      network: '684'
+  Bon Apptit:
     template:
       name: network
       network: '2969'
-  Boom Movies:
-    template:
-      name: network
-      network: '4738'
-  Boomerang:
-    template:
-      name: network
-      network: '523'
   Bounce TV:
     template:
       name: network
@@ -874,51 +558,27 @@ collections:
   Bravo:
     template:
       name: network
-      network: '312'
-  Brazzers TV:
-    template:
-      name: network
-      network: '2407'
+      network: 312,74
   BritBox:
     template:
       name: network
       network: '4025'
-  Broadcasting System of San-in:
-    template:
-      name: network
-      network: '3972'
   BrutX:
     template:
       name: network
       network: '4876'
-  "B\u2022A\u2022S\u2022I Produktion":
-    template:
-      name: network
-      network: '4940'
   C More:
     template:
       name: network
-      network: '5025'
+      network: 5025,458
   C-SPAN:
     template:
       name: network
       network: '322'
-  C2S Network:
-    template:
-      name: network
-      network: '1121'
-  C8:
-    template:
-      name: network
-      network: '1603'
   CASA:
     template:
       name: network
       network: '2105'
-  CATCHPLAY+:
-    template:
-      name: network
-      network: '5002'
   CAZ:
     template:
       name: network
@@ -930,7 +590,7 @@ collections:
   CBC:
     template:
       name: network
-      network: '2548'
+      network: 2548,201
   CBC Gem:
     template:
       name: network
@@ -963,26 +623,6 @@ collections:
     template:
       name: network
       network: '166'
-  CCTV:
-    template:
-      name: network
-      network: '11'
-  CCTV News:
-    template:
-      name: network
-      network: '813'
-  CCTV-1:
-    template:
-      name: network
-      network: '1363'
-  CCTV-10:
-    template:
-      name: network
-      network: '3113'
-  CCTV-14:
-    template:
-      name: network
-      network: '2465'
   CCTV-2:
     template:
       name: network
@@ -991,22 +631,6 @@ collections:
     template:
       name: network
       network: '4465'
-  CCTV-5:
-    template:
-      name: network
-      network: '2659'
-  CCTV-6:
-    template:
-      name: network
-      network: '4442'
-  CCTV-8:
-    template:
-      name: network
-      network: '521'
-  CCTV-9:
-    template:
-      name: network
-      network: '1598'
   CHCH-DT:
     template:
       name: network
@@ -1022,11 +646,7 @@ collections:
   CMT:
     template:
       name: network
-      network: '377'
-  CMTV:
-    template:
-      name: network
-      network: '4769'
+      network: 377,85
   CNBC:
     template:
       name: network
@@ -1047,10 +667,6 @@ collections:
     template:
       name: network
       network: '355'
-  CNC:
-    template:
-      name: network
-      network: '1600'
   CNN:
     template:
       name: network
@@ -1059,10 +675,6 @@ collections:
     template:
       name: network
       network: '5274'
-  CNN Chile:
-    template:
-      name: network
-      network: '4555'
   CNN International:
     template:
       name: network
@@ -1079,10 +691,6 @@ collections:
     template:
       name: network
       network: '5001'
-  CTC Media:
-    template:
-      name: network
-      network: '4103'
   CTS:
     template:
       name: network
@@ -1090,7 +698,7 @@ collections:
   CTV:
     template:
       name: network
-      network: '4961'
+      network: 4961,2909,403,110
   CTV Comedy Channel:
     template:
       name: network
@@ -1099,10 +707,6 @@ collections:
     template:
       name: network
       network: '4880'
-  CTV Main Channel:
-    template:
-      name: network
-      network: '860'
   CTV News Channel:
     template:
       name: network
@@ -1119,35 +723,19 @@ collections:
     template:
       name: network
       network: '1049'
-  Cadenatres:
-    template:
-      name: network
-      network: '1396'
-  Canal 1:
-    template:
-      name: network
-      network: '3115'
   Canal 13:
     template:
       name: network
       network: '392'
-  Canal 21:
-    template:
-      name: network
-      network: '5160'
   Canal 22:
     template:
       name: network
-      network: '3099'
+      network: 3099,2674
   Canal 5:
     template:
       name: network
       network: '506'
-  Canal 9:
-    template:
-      name: network
-      network: '5200'
-  "Canal Alg\xE9rie":
+  Canal Algrie:
     template:
       name: network
       network: '2126'
@@ -1159,10 +747,6 @@ collections:
     template:
       name: network
       network: '841'
-  Canal Doce Misiones:
-    template:
-      name: network
-      network: '5381'
   Canal FOX:
     template:
       name: network
@@ -1171,22 +755,10 @@ collections:
     template:
       name: network
       network: '2309'
-  Canal Futura:
-    template:
-      name: network
-      network: '4385'
   Canal J:
     template:
       name: network
       network: '682'
-  Canal Off:
-    template:
-      name: network
-      network: '4473'
-  Canal Once:
-    template:
-      name: network
-      network: '1291'
   Canal Q:
     template:
       name: network
@@ -1210,27 +782,11 @@ collections:
   Canal+:
     template:
       name: network
-      network: '3928'
+      network: 3928,285
   Canal+ (Telenor):
     template:
       name: network
       network: '3829'
-  Canal+ Discovery:
-    template:
-      name: network
-      network: '3068'
-  Canal+ Family:
-    template:
-      name: network
-      network: '1655'
-  Canal+ Kids:
-    template:
-      name: network
-      network: '5281'
-  Canal+ Poland:
-    template:
-      name: network
-      network: '951'
   CanalPlay:
     template:
       name: network
@@ -1251,26 +807,10 @@ collections:
     template:
       name: network
       network: '1606'
-  Cartoon Network:
-    template:
-      name: network
-      network: '3917'
-  Cartoon Network Latin America:
-    template:
-      name: network
-      network: '1483'
   Cartoonito:
     template:
       name: network
       network: '1261'
-  Central Television USSR:
-    template:
-      name: network
-      network: '926'
-  Challenge:
-    template:
-      name: network
-      network: '116'
   Channel 1:
     template:
       name: network
@@ -1279,10 +819,6 @@ collections:
     template:
       name: network
       network: '169'
-  Channel 20:
-    template:
-      name: network
-      network: '3968'
   Channel 3:
     template:
       name: network
@@ -1303,10 +839,6 @@ collections:
     template:
       name: network
       network: '2978'
-  Channel 9:
-    template:
-      name: network
-      network: '4743'
   Channel 9 MCOT HD:
     template:
       name: network
@@ -1315,10 +847,6 @@ collections:
     template:
       name: network
       network: '1943'
-  Channel Awesome:
-    template:
-      name: network
-      network: '4286'
   Channel Eser:
     template:
       name: network
@@ -1338,28 +866,20 @@ collections:
   Channel One:
     template:
       name: network
-      network: '558'
-  Channel [V]:
+      network: 558,496
+  Channel V:
     template:
       name: network
       network: '998'
-  Che:
-    template:
-      name: network
-      network: '2519'
   Chiba TV:
     template:
       name: network
       network: '663'
-  ChikooFlix:
-    template:
-      name: network
-      network: '4579'
   Children Channel:
     template:
       name: network
       network: '4118'
-  "Chilevisi\xF3n":
+  Chilevisin:
     template:
       name: network
       network: '805'
@@ -1367,30 +887,10 @@ collections:
     template:
       name: network
       network: '1341'
-  Chorki:
-    template:
-      name: network
-      network: '5119'
   Christian Broadcasting Network:
     template:
       name: network
       network: '680'
-  Chubu-Nippon Broadcasting:
-    template:
-      name: network
-      network: '3785'
-  Chukyo TV:
-    template:
-      name: network
-      network: '2727'
-  Cielo:
-    template:
-      name: network
-      network: '1366'
-  Cinematic:
-    template:
-      name: network
-      network: '5170'
   Cinemax:
     template:
       name: network
@@ -1399,58 +899,14 @@ collections:
     template:
       name: network
       network: '92'
-  Clan:
-    template:
-      name: network
-      network: '2994'
   Claro Video:
     template:
       name: network
       network: '3024'
-  CliffMovies:
-    template:
-      name: network
-      network: '4580'
-  Club Illico:
-    template:
-      name: network
-      network: '1290'
   Club RTL:
     template:
       name: network
       network: '3559'
-  CollegeHumor:
-    template:
-      name: network
-      network: '447'
-  Colors:
-    template:
-      name: network
-      network: '5282'
-  Colors Bangla:
-    template:
-      name: network
-      network: '2584'
-  Colors Infinity:
-    template:
-      name: network
-      network: '5153'
-  Colors Kannada:
-    template:
-      name: network
-      network: '2575'
-  Colors Marathi:
-    template:
-      name: network
-      network: '2582'
-  Colors Super:
-    template:
-      name: network
-      network: '2578'
-  Com@Tv:
-    template:
-      name: network
-      network: '5157'
   Comcast SportsNet:
     template:
       name: network
@@ -1458,67 +914,23 @@ collections:
   Comedy Central:
     template:
       name: network
-      network: '4535'
-  Comedy Central (AU):
-    template:
-      name: network
-      network: '2988'
+      network: 4535,3082,2436,2178,1226,1087,278,47
   Comedy Central Netherlands:
     template:
       name: network
       network: '3575'
-  Comic-Con HQ:
-    template:
-      name: network
-      network: '3465'
   Commercial Television:
     template:
       name: network
       network: '4157'
-  "Com\xE9die +":
-    template:
-      name: network
-      network: '5212'
-  ConTV:
-    template:
-      name: network
-      network: '1098'
-  Contar:
-    template:
-      name: network
-      network: '2672'
   Cooking Channel:
     template:
       name: network
       network: '802'
-  CorriereDelloSport.it:
-    template:
-      name: network
-      network: '1934'
-  Cosmote TV:
-    template:
-      name: network
-      network: '3169'
-  Cottage Life:
-    template:
-      name: network
-      network: '3523'
-  Couleur 3:
-    template:
-      name: network
-      network: '5273'
   Country Music Channel:
     template:
       name: network
       network: '2318'
-  Coupang Play:
-    template:
-      name: network
-      network: '5169'
-  Court TV:
-    template:
-      name: network
-      network: '4138'
   Crackle:
     template:
       name: network
@@ -1534,11 +946,7 @@ collections:
   Crime + Investigation:
     template:
       name: network
-      network: '2393'
-  Crime District:
-    template:
-      name: network
-      network: '5304'
+      network: 2393,2392
   Crime+Investigation:
     template:
       name: network
@@ -1559,10 +967,6 @@ collections:
     template:
       name: network
       network: '2349'
-  DABL:
-    template:
-      name: network
-      network: '5434'
   DAZN:
     template:
       name: network
@@ -1571,58 +975,26 @@ collections:
     template:
       name: network
       network: '2243'
-  DD National:
-    template:
-      name: network
-      network: '177'
   DIY Network:
     template:
       name: network
       network: '625'
-  DKISS:
-    template:
-      name: network
-      network: '2804'
   DMAX:
     template:
       name: network
-      network: '2742'
+      network: 2742,2531,1113
   DPTV:
     template:
       name: network
       network: '1799'
-  DR Minisjang:
-    template:
-      name: network
-      network: '4699'
   DR Ramasjang:
     template:
       name: network
       network: '3279'
-  DR Ultra:
-    template:
-      name: network
-      network: '2151'
-  DR1:
-    template:
-      name: network
-      network: '391'
-  DR2:
-    template:
-      name: network
-      network: '196'
-  DR3:
-    template:
-      name: network
-      network: '1384'
   DSF:
     template:
       name: network
       network: '1829'
-  DTV:
-    template:
-      name: network
-      network: '2679'
   DTour:
     template:
       name: network
@@ -1635,10 +1007,6 @@ collections:
     template:
       name: network
       network: '78'
-  Dailymotion:
-    template:
-      name: network
-      network: '5151'
   Das Erste:
     template:
       name: network
@@ -1651,14 +1019,6 @@ collections:
     template:
       name: network
       network: '388'
-  Daystar:
-    template:
-      name: network
-      network: '659'
-  Deejay TV:
-    template:
-      name: network
-      network: '2794'
   Destination America:
     template:
       name: network
@@ -1678,7 +1038,7 @@ collections:
   Discovery:
     template:
       name: network
-      network: '3953'
+      network: 3953,3900,1079,106,64
   Discovery Asia:
     template:
       name: network
@@ -1686,7 +1046,7 @@ collections:
   Discovery Channel:
     template:
       name: network
-      network: 2692,3045
+      network: 3045,2692,2087
   Discovery Family:
     template:
       name: network
@@ -1695,14 +1055,6 @@ collections:
     template:
       name: network
       network: '10'
-  Discovery Home:
-    template:
-      name: network
-      network: '2480'
-  Discovery Kids:
-    template:
-      name: network
-      network: '2630'
   Discovery Life:
     template:
       name: network
@@ -1711,26 +1063,14 @@ collections:
     template:
       name: network
       network: '626'
-  Discovery Science:
-    template:
-      name: network
-      network: '3591'
-  Discovery World:
-    template:
-      name: network
-      network: '1534'
-  "Discovery en Espa\xF1ol":
+  Discovery en Espaol:
     template:
       name: network
       network: '4987'
-  Discovery+:
-    template:
-      name: network
-      network: 5408,4983,5192
   Disney Channel:
     template:
       name: network
-      network: 3874,4426
+      network: 4426,4350,4006,3874,3408,2897,2534,2327,1996,1385,730,539,515,54
   Disney Channel Latin America:
     template:
       name: network
@@ -1738,7 +1078,7 @@ collections:
   Disney Junior:
     template:
       name: network
-      network: '2771'
+      network: 2771,2325,281
   Disney Junior Brasil:
     template:
       name: network
@@ -1750,7 +1090,7 @@ collections:
   Disney XD:
     template:
       name: network
-      network: '5137'
+      network: 5137,2326,2324,44
   Disney+:
     template:
       name: network
@@ -1759,22 +1099,10 @@ collections:
     template:
       name: network
       network: '3919'
-  Distrito Comedia:
-    template:
-      name: network
-      network: '3812'
   Divinity:
     template:
       name: network
       network: '1233'
-  Diyanet TV:
-    template:
-      name: network
-      network: '3520'
-  Dlive:
-    template:
-      name: network
-      network: '5366'
   Dom Kino:
     template:
       name: network
@@ -1794,7 +1122,7 @@ collections:
   Dplay:
     template:
       name: network
-      network: '4381'
+      network: 4381,4342,3710,1658
   Dragon TV:
     template:
       name: network
@@ -1803,10 +1131,6 @@ collections:
     template:
       name: network
       network: '3084'
-  Dropout:
-    template:
-      name: network
-      network: '4551'
   DuMont Television Network:
     template:
       name: network
@@ -1815,10 +1139,6 @@ collections:
     template:
       name: network
       network: '545'
-  Dumpert:
-    template:
-      name: network
-      network: '3477'
   Duna TV:
     template:
       name: network
@@ -1827,34 +1147,22 @@ collections:
     template:
       name: network
       network: '1188'
-  E!:
+  E:
     template:
       name: network
-      network: '76'
+      network: 5148,76
   E4:
     template:
       name: network
       network: '136'
-  EBS 1:
-    template:
-      name: network
-      network: '1796'
   ELLE Fictions:
     template:
       name: network
       network: '4357'
-  ENV:
-    template:
-      name: network
-      network: '3047'
   EO:
     template:
       name: network
       network: '1228'
-  EPIC:
-    template:
-      name: network
-      network: '1524'
   ERF 1:
     template:
       name: network
@@ -1862,11 +1170,11 @@ collections:
   ERT1:
     template:
       name: network
-      network: '5272'
+      network: 5272,2474
   ESPN:
     template:
       name: network
-      network: '2540'
+      network: 2540,29
   ESPN Australia:
     template:
       name: network
@@ -1883,10 +1191,6 @@ collections:
     template:
       name: network
       network: '4132'
-  ESPN.com:
-    template:
-      name: network
-      network: '5113'
   ESPN2:
     template:
       name: network
@@ -1911,7 +1215,7 @@ collections:
     template:
       name: network
       network: '990'
-  "EWTN Televisi\xF3n":
+  EWTN Televisin:
     template:
       name: network
       network: '1895'
@@ -1927,10 +1231,6 @@ collections:
     template:
       name: network
       network: '1844'
-  El 33:
-    template:
-      name: network
-      network: '1013'
   El Nueve:
     template:
       name: network
@@ -1939,14 +1239,6 @@ collections:
     template:
       name: network
       network: '1122'
-  "El S\xF3tano":
-    template:
-      name: network
-      network: '3884'
-  El Terrat tv:
-    template:
-      name: network
-      network: '3864'
   El Toro TV:
     template:
       name: network
@@ -1959,46 +1251,18 @@ collections:
     template:
       name: network
       network: '1823'
-  Elisa Viihde Viaplay:
-    template:
-      name: network
-      network: '4367'
-  Energy:
-    template:
-      name: network
-      network: '2609'
-  Epic Media:
-    template:
-      name: network
-      network: '3553'
   Epix:
     template:
       name: network
       network: '922'
-  Eros Now:
-    template:
-      name: network
-      network: '2716'
-  Eshiuson:
-    template:
-      name: network
-      network: '221'
   Esquire Network:
     template:
       name: network
       network: '532'
-  Estrella TV:
-    template:
-      name: network
-      network: '3061'
   Eurosport:
     template:
       name: network
       network: '675'
-  "Eur\xEAka !":
-    template:
-      name: network
-      network: '2808'
   Exxen:
     template:
       name: network
@@ -2007,10 +1271,6 @@ collections:
     template:
       name: network
       network: '1896'
-  FCT:
-    template:
-      name: network
-      network: '3644'
   FDF:
     template:
       name: network
@@ -2019,38 +1279,22 @@ collections:
     template:
       name: network
       network: '3799'
-  FOD:
-    template:
-      name: network
-      network: '2763'
   FOX:
     template:
       name: network
-      network: '303'
-  "FOX Espa\xF1a":
+      network: 303,19
+  FOX Espaa:
     template:
       name: network
       network: '2145'
-  FOXTELECOLOMBIA:
-    template:
-      name: network
-      network: '2538'
   FOXlife:
     template:
       name: network
-      network: '1498'
-  FOXlife (IN):
-    template:
-      name: network
-      network: '4908'
-  FR3:
-    template:
-      name: network
-      network: '4070'
+      network: 1498,1117
   FX:
     template:
       name: network
-      network: '5405'
+      network: 5405,1641,88
   FXX:
     template:
       name: network
@@ -2075,38 +1319,10 @@ collections:
     template:
       name: network
       network: '1508'
-  Family Gekijo:
-    template:
-      name: network
-      network: '2905'
-  Family Jr.:
-    template:
-      name: network
-      network: '1847'
-  FamilyNet:
-    template:
-      name: network
-      network: '433'
-  FashionTV:
-    template:
-      name: network
-      network: '821'
-  Fearless:
-    template:
-      name: network
-      network: '2263'
   Fearnet On Demand:
     template:
       name: network
       network: '635'
-  Fifth Channel:
-    template:
-      name: network
-      network: '2516'
-  Fight Network:
-    template:
-      name: network
-      network: '2656'
   Filimo:
     template:
       name: network
@@ -2115,10 +1331,6 @@ collections:
     template:
       name: network
       network: '4753'
-  First channel:
-    template:
-      name: network
-      network: '3436'
   Flooxer:
     template:
       name: network
@@ -2127,38 +1339,14 @@ collections:
     template:
       name: network
       network: '4884'
-  Focus:
-    template:
-      name: network
-      network: '2743'
   Food Network:
     template:
       name: network
-      network: '4638'
-  Food Network Polska:
-    template:
-      name: network
-      network: '2898'
-  Forcezen:
-    template:
-      name: network
-      network: '280'
+      network: 4638,2793,143
   Formosa TV:
     template:
       name: network
       network: '870'
-  Foro TV:
-    template:
-      name: network
-      network: '3195'
-  Fox:
-    template:
-      name: network
-      network: '961'
-  Fox Action Movies:
-    template:
-      name: network
-      network: '2648'
   Fox Brasil:
     template:
       name: network
@@ -2179,10 +1367,6 @@ collections:
     template:
       name: network
       network: '481'
-  Fox Kids:
-    template:
-      name: network
-      network: '4522'
   Fox Latin America:
     template:
       name: network
@@ -2211,10 +1395,6 @@ collections:
     template:
       name: network
       network: '243'
-  Fox Soccer:
-    template:
-      name: network
-      network: '415'
   Fox Sports:
     template:
       name: network
@@ -2227,10 +1407,6 @@ collections:
     template:
       name: network
       network: '875'
-  Fox Sports Detroit:
-    template:
-      name: network
-      network: '87'
   Fox Sports Networks:
     template:
       name: network
@@ -2239,6 +1415,10 @@ collections:
     template:
       name: network
       network: '327'
+  France:
+    template:
+      name: network
+      network: '2984'
   France 2:
     template:
       name: network
@@ -2259,10 +1439,6 @@ collections:
     template:
       name: network
       network: '2983'
-  "France \xD4":
-    template:
-      name: network
-      network: '2984'
   France.tv:
     template:
       name: network
@@ -2271,22 +1447,18 @@ collections:
     template:
       name: network
       network: '333'
-  FreeSports:
-    template:
-      name: network
-      network: '2757'
   Freeform:
     template:
       name: network
       network: '1267'
-  Friday!:
+  Friday:
     template:
       name: network
       network: '3031'
   Fuel TV:
     template:
       name: network
-      network: '2346'
+      network: 2346,1003
   Fuji News Network:
     template:
       name: network
@@ -2318,16 +1490,12 @@ collections:
   G4:
     template:
       name: network
-      network: '231'
+      network: 231,164
   G4TechTV:
     template:
       name: network
       network: '2102'
-  GAC Family:
-    template:
-      name: network
-      network: '5303'
-  "GA\u0130N":
+  GAN:
     template:
       name: network
       network: '4409'
@@ -2335,18 +1503,10 @@ collections:
     template:
       name: network
       network: '1175'
-  GFSDF}:
-    template:
-      name: network
-      network: '5290'
   GMA Network:
     template:
       name: network
       network: '50'
-  GMM 25:
-    template:
-      name: network
-      network: '1974'
   GNT:
     template:
       name: network
@@ -2354,16 +1514,12 @@ collections:
   GTV:
     template:
       name: network
-      network: '4986'
-  GagaOOLala:
-    template:
-      name: network
-      network: '3266'
+      network: 4986,3805,185
   Gaia:
     template:
       name: network
       network: '1101'
-  "Galavisi\xF3n":
+  Galavisin:
     template:
       name: network
       network: '422'
@@ -2375,14 +1531,6 @@ collections:
     template:
       name: network
       network: '1224'
-  Gemplex:
-    template:
-      name: network
-      network: '3849'
-  Genflix:
-    template:
-      name: network
-      network: '4634'
   Genius Kitchen:
     template:
       name: network
@@ -2391,10 +1539,6 @@ collections:
     template:
       name: network
       network: '751'
-  Glitz:
-    template:
-      name: network
-      network: '4645'
   Global TV:
     template:
       name: network
@@ -2407,10 +1551,6 @@ collections:
     template:
       name: network
       network: '3290'
-  Gloob:
-    template:
-      name: network
-      network: '2623'
   GolTV:
     template:
       name: network
@@ -2431,18 +1571,10 @@ collections:
     template:
       name: network
       network: '1102'
-  Google Podcasts:
-    template:
-      name: network
-      network: '5301'
   Great American Country:
     template:
       name: network
       network: '749'
-  Gulli:
-    template:
-      name: network
-      network: '2638'
   Gunma TV:
     template:
       name: network
@@ -2451,26 +1583,18 @@ collections:
     template:
       name: network
       network: '2764'
-  GyaO!:
+  GyaO:
     template:
       name: network
       network: '2819'
-  Gyeongin TV:
-    template:
-      name: network
-      network: '2862'
   H2:
     template:
       name: network
       network: '849'
-  HBC:
-    template:
-      name: network
-      network: '3658'
   HBO:
     template:
       name: network
-      network: '3308'
+      network: 3308,49
   HBO Asia:
     template:
       name: network
@@ -2483,7 +1607,7 @@ collections:
     template:
       name: network
       network: '1590'
-  "HBO Espa\xF1a":
+  HBO Espaa:
     template:
       name: network
       network: '3877'
@@ -2491,10 +1615,6 @@ collections:
     template:
       name: network
       network: '1129'
-  HBO Family:
-    template:
-      name: network
-      network: '2593'
   HBO Latin America:
     template:
       name: network
@@ -2523,14 +1643,6 @@ collections:
     template:
       name: network
       network: '1672'
-  HIDIVE:
-    template:
-      name: network
-      network: '3637'
-  HKSTV:
-    template:
-      name: network
-      network: '2657'
   HLN:
     template:
       name: network
@@ -2539,14 +1651,6 @@ collections:
     template:
       name: network
       network: '2695'
-  HOT Entertainment:
-    template:
-      name: network
-      network: '2464'
-  HOT VOD Young:
-    template:
-      name: network
-      network: '1804'
   HOT3:
     template:
       name: network
@@ -2555,14 +1659,6 @@ collections:
     template:
       name: network
       network: '1766'
-  HRT 1:
-    template:
-      name: network
-      network: '2466'
-  HRT 2:
-    template:
-      name: network
-      network: '2467'
   HTB:
     template:
       name: network
@@ -2571,10 +1667,6 @@ collections:
     template:
       name: network
       network: '2361'
-  HUB:
-    template:
-      name: network
-      network: '5249'
   HUMAN:
     template:
       name: network
@@ -2607,94 +1699,34 @@ collections:
     template:
       name: network
       network: '2669'
-  Here TV:
-    template:
-      name: network
-      network: '232'
-  Hero TV:
-    template:
-      name: network
-      network: '4080'
-  HetPrex:
-    template:
-      name: network
-      network: '242'
-  Hikari TV:
-    template:
-      name: network
-      network: '3418'
-  Hikari TV Channel+:
-    template:
-      name: network
-      network: '3419'
-  Histoire TV:
-    template:
-      name: network
-      network: '4106'
   Historia:
     template:
       name: network
-      network: '3010'
+      network: 3010,1245
   History:
     template:
       name: network
-      network: '5433'
+      network: 5433,3541,2382,2360,1755,65
   History Channel Italia:
     template:
       name: network
       network: '1354'
-  Hokkaido Cultural Broadcasting:
-    template:
-      name: network
-      network: '3721'
-  Hokuriku Broadcasting:
-    template:
-      name: network
-      network: '3973'
   Home:
     template:
       name: network
       network: '685'
-  Hot Masti:
-    template:
-      name: network
-      network: '5093'
-  HotHit:
-    template:
-      name: network
-      network: '5094'
-  Hromadske:
-    template:
-      name: network
-      network: '4224'
   Hub Network:
     template:
       name: network
       network: '518'
-  Hub VV Drama:
-    template:
-      name: network
-      network: '2861'
   Hulu:
     template:
       name: network
-      network: '1772'
-  Hum Sitaray:
-    template:
-      name: network
-      network: '3158'
+      network: 1772,453
   Hum TV:
     template:
       name: network
       network: '1204'
-  Hunan Television:
-    template:
-      name: network
-      network: '952'
-  Hungama:
-    template:
-      name: network
-      network: '2828'
   ICI ARTV:
     template:
       name: network
@@ -2707,7 +1739,7 @@ collections:
     template:
       name: network
       network: '2290'
-  "ICI Radio-Canada T\xE9l\xE9":
+  ICI Radio-Canada Tl:
     template:
       name: network
       network: '141'
@@ -2730,7 +1762,7 @@ collections:
   IFC:
     template:
       name: network
-      network: '672'
+      network: 672,124
   IMDb:
     template:
       name: network
@@ -2751,10 +1783,6 @@ collections:
     template:
       name: network
       network: '4524'
-  IRIB TV1:
-    template:
-      name: network
-      network: '440'
   IRIB TV2:
     template:
       name: network
@@ -2763,22 +1791,10 @@ collections:
     template:
       name: network
       network: '229'
-  IRIB TV5:
-    template:
-      name: network
-      network: '39'
-  IRIB tv4:
-    template:
-      name: network
-      network: '4375'
   ITV:
     template:
       name: network
       network: '9'
-  ITV Encore:
-    template:
-      name: network
-      network: '3187'
   ITV2:
     template:
       name: network
@@ -2795,54 +1811,22 @@ collections:
     template:
       name: network
       network: '1159'
-  Imago TV:
-    template:
-      name: network
-      network: '3762'
-  Indosiar:
-    template:
-      name: network
-      network: '661'
   Infinity:
     template:
       name: network
       network: '1522'
-  Infomix:
-    template:
-      name: network
-      network: '2545'
   Insight TV:
     template:
       name: network
       network: '3378'
-  Instany:
-    template:
-      name: network
-      network: '5030'
   Inter:
     template:
       name: network
       network: '1635'
-  Intercontinental Broadcasting Corporation:
-    template:
-      name: network
-      network: '222'
-  Investigation:
-    template:
-      name: network
-      network: '3294'
   Investigation Discovery:
     template:
       name: network
-      network: '4562'
-  Ishara TV:
-    template:
-      name: network
-      network: '4715'
-  Israeli Educational Television:
-    template:
-      name: network
-      network: '510'
+      network: 4562,244
   Italia 1:
     template:
       name: network
@@ -2859,22 +1843,14 @@ collections:
     template:
       name: network
       network: '725'
-  JSTV:
-    template:
-      name: network
-      network: '3331'
   JTBC:
     template:
       name: network
-      network: '5417'
+      network: 5417,885
   JTBC2:
     template:
       name: network
       network: '1924'
-  JTBC3 Fox Sports:
-    template:
-      name: network
-      network: '3562'
   JTBC4:
     template:
       name: network
@@ -2883,34 +1859,10 @@ collections:
     template:
       name: network
       network: '2390'
-  Jetix:
-    template:
-      name: network
-      network: '2445'
-  Jewelry Television:
-    template:
-      name: network
-      network: '2653'
-  Jiangsu Television:
-    template:
-      name: network
-      network: '1055'
-  JioCinema:
-    template:
-      name: network
-      network: '4008'
   Joodse Omroep:
     template:
       name: network
       network: '2637'
-  Junior TV:
-    template:
-      name: network
-      network: '3490'
-  K2:
-    template:
-      name: network
-      network: '4502'
   KBS Drama:
     template:
       name: network
@@ -2923,22 +1875,14 @@ collections:
     template:
       name: network
       network: '1137'
-  KBS N SPORTS:
-    template:
-      name: network
-      network: '3778'
   KBS W:
     template:
       name: network
       network: '2772'
-  KBS World:
-    template:
-      name: network
-      network: '4866'
   KBS1:
     template:
       name: network
-      network: '5348'
+      network: 5348,829
   KBS2:
     template:
       name: network
@@ -2951,18 +1895,10 @@ collections:
     template:
       name: network
       network: '731'
-  KFVE:
-    template:
-      name: network
-      network: '800'
   KGW:
     template:
       name: network
       network: '738'
-  KION (MTS Live):
-    template:
-      name: network
-      network: '4085'
   KKTV:
     template:
       name: network
@@ -2971,10 +1907,6 @@ collections:
     template:
       name: network
       network: '697'
-  KQEH:
-    template:
-      name: network
-      network: '698'
   KRO:
     template:
       name: network
@@ -2987,38 +1919,14 @@ collections:
     template:
       name: network
       network: '134'
-  KTV:
-    template:
-      name: network
-      network: '3661'
-  KVCW:
-    template:
-      name: network
-      network: '2693'
   Kabel 1 Doku:
     template:
       name: network
       network: '2000'
-  Kabillion:
-    template:
-      name: network
-      network: '230'
   Kakao TV:
     template:
       name: network
       network: '2748'
-  Kan 11:
-    template:
-      name: network
-      network: '2970'
-  Kan Educational:
-    template:
-      name: network
-      network: '3580'
-  Kanal 1:
-    template:
-      name: network
-      network: '2236'
   Kanal 2:
     template:
       name: network
@@ -3030,19 +1938,7 @@ collections:
   Kanal 5:
     template:
       name: network
-      network: '3216'
-  Kanal 6:
-    template:
-      name: network
-      network: '2847'
-  Kanal 7:
-    template:
-      name: network
-      network: '3093'
-  Kanal 9:
-    template:
-      name: network
-      network: '4723'
+      network: 3216,844,437
   Kanal D:
     template:
       name: network
@@ -3051,22 +1947,6 @@ collections:
     template:
       name: network
       network: '1163'
-  Kapamilya Channel:
-    template:
-      name: network
-      network: '3920'
-  Kartoon Channel!:
-    template:
-      name: network
-      network: '4777'
-  Kawaiian TV:
-    template:
-      name: network
-      network: '4952'
-  Kayo Pops Channel:
-    template:
-      name: network
-      network: '4994'
   Keshet 12:
     template:
       name: network
@@ -3079,14 +1959,6 @@ collections:
     template:
       name: network
       network: '239'
-  KidZ:
-    template:
-      name: network
-      network: '1870'
-  Kids Station:
-    template:
-      name: network
-      network: '610'
   Kino Polska:
     template:
       name: network
@@ -3095,46 +1967,26 @@ collections:
     template:
       name: network
       network: '3827'
-  Kitanihon Broadcasting:
-    template:
-      name: network
-      network: '3741'
   Kompas TV:
     template:
       name: network
       network: '966'
-  Kooku:
-    template:
-      name: network
-      network: '4573'
-  Kuwait TV:
-    template:
-      name: network
-      network: '1041'
   Kyushu Asahi Broadcasting:
     template:
       name: network
       network: '1278'
-  LAFTEL:
-    template:
-      name: network
-      network: '5126'
-  LATV:
-    template:
-      name: network
-      network: '648'
   LCN:
     template:
       name: network
       network: '3106'
-  "LCP - Assembl\xE9e nationale":
+  LCP - Assemble nationale:
     template:
       name: network
       network: '4658'
   LINE TV:
     template:
       name: network
-      network: '4003'
+      network: 4003,1671
   LRT Televizija:
     template:
       name: network
@@ -3155,10 +2007,6 @@ collections:
     template:
       name: network
       network: '1360'
-  La Cinq:
-    template:
-      name: network
-      network: '3273'
   La Deux:
     template:
       name: network
@@ -3187,26 +2035,14 @@ collections:
     template:
       name: network
       network: '1386'
-  La5:
-    template:
-      name: network
-      network: '3526'
-  La7:
-    template:
-      name: network
-      network: '948'
   Las Estrellas:
     template:
       name: network
       network: '487'
-  "Latina Televisi\xF3n":
+  Latina Televisin:
     template:
       name: network
       network: '489'
-  Latvijas Televizija:
-    template:
-      name: network
-      network: '3505'
   Laugh Out Loud:
     template:
       name: network
@@ -3219,10 +2055,6 @@ collections:
     template:
       name: network
       network: '858'
-  Life TV:
-    template:
-      name: network
-      network: '4105'
   LifeStyle:
     template:
       name: network
@@ -3234,23 +2066,15 @@ collections:
   Lifetime:
     template:
       name: network
-      network: '2974'
+      network: 2974,34
   Lifetime Movies:
     template:
       name: network
       network: '1072'
-  Lihaf:
-    template:
-      name: network
-      network: '5085'
   Link TV:
     template:
       name: network
       network: '561'
-  Lionsgate Play:
-    template:
-      name: network
-      network: '3464'
   Liv:
     template:
       name: network
@@ -3263,26 +2087,6 @@ collections:
     template:
       name: network
       network: '127'
-  Look du jour:
-    template:
-      name: network
-      network: '4599'
-  Lotus Play:
-    template:
-      name: network
-      network: '2428'
-  Love Nature:
-    template:
-      name: network
-      network: '2782'
-  M-Net:
-    template:
-      name: network
-      network: '192'
-  M1:
-    template:
-      name: network
-      network: '1399'
   M6:
     template:
       name: network
@@ -3290,19 +2094,11 @@ collections:
   MALL.TV:
     template:
       name: network
-      network: '4272'
-  MAN-GA:
-    template:
-      name: network
-      network: '2778'
+      network: 4272,2995
   MAVTV:
     template:
       name: network
       network: '796'
-  MAX:
-    template:
-      name: network
-      network: '5360'
   MAtv:
     template:
       name: network
@@ -3310,35 +2106,15 @@ collections:
   MBC:
     template:
       name: network
-      network: '5228'
+      network: 5228,97
   MBC 1:
     template:
       name: network
       network: '963'
-  MBC 2:
-    template:
-      name: network
-      network: '3040'
-  MBC 4:
-    template:
-      name: network
-      network: '2556'
-  MBC 5:
-    template:
-      name: network
-      network: '3892'
-  MBC Bollywood:
-    template:
-      name: network
-      network: '3208'
   MBC Drama:
     template:
       name: network
-      network: '2440'
-  MBC IRAQ:
-    template:
-      name: network
-      network: '4893'
+      network: 2440,1887
   MBC M:
     template:
       name: network
@@ -3363,14 +2139,6 @@ collections:
     template:
       name: network
       network: '1118'
-  MEGA:
-    template:
-      name: network
-      network: '2476'
-  MGM Brasil:
-    template:
-      name: network
-      network: '4956'
   MLB Network:
     template:
       name: network
@@ -3390,7 +2158,7 @@ collections:
   MTV:
     template:
       name: network
-      network: 2972,488
+      network: 2972,488,33
   MTV Asia:
     template:
       name: network
@@ -3467,46 +2235,18 @@ collections:
     template:
       name: network
       network: '295'
-  MX Player:
-    template:
-      name: network
-      network: '2964'
   Machinima:
     template:
       name: network
       network: '2992'
-  MagentaTV:
-    template:
-      name: network
-      network: '3301'
   Magnolia Network:
     template:
       name: network
       network: '4519'
-  "Magyar Telev\xEDzi\xF3":
-    template:
-      name: network
-      network: '831'
-  Makeful:
-    template:
-      name: network
-      network: '2893'
   Mango TV:
     template:
       name: network
       network: '1631'
-  Manhattan Neighborhood Network:
-    template:
-      name: network
-      network: '1768'
-  Manoto:
-    template:
-      name: network
-      network: '1017'
-  "Mark\xEDza":
-    template:
-      name: network
-      network: '550'
   Massengeschmack.TV:
     template:
       name: network
@@ -3519,42 +2259,18 @@ collections:
     template:
       name: network
       network: '1760'
-  Mazhavil Manorama:
-    template:
-      name: network
-      network: '5422'
-  MeTV:
-    template:
-      name: network
-      network: '3037'
   MediaCorp Channel 5:
     template:
       name: network
       network: '95'
-  MediaCorp Channel 8:
-    template:
-      name: network
-      network: '1787'
-  Mediacorp Channel U:
-    template:
-      name: network
-      network: '4886'
   Mediaset Premium:
     template:
       name: network
       network: '1362'
-  Mega:
-    template:
-      name: network
-      network: '646'
   Mega TV:
     template:
       name: network
-      network: '2475'
-  Metro:
-    template:
-      name: network
-      network: '3052'
+      network: 2475,273
   Mie TV:
     template:
       name: network
@@ -3563,14 +2279,10 @@ collections:
     template:
       name: network
       network: '372'
-  Milkshake!:
+  Milkshake:
     template:
       name: network
       network: '2509'
-  Minimax:
-    template:
-      name: network
-      network: '1509'
   Mnet:
     template:
       name: network
@@ -3579,22 +2291,18 @@ collections:
     template:
       name: network
       network: '1298'
-  Mola TV:
-    template:
-      name: network
-      network: '5088'
   Mondo Media:
     template:
       name: network
       network: '4931'
-  Mono29:
-    template:
-      name: network
-      network: '2660'
   More4:
     template:
       name: network
       network: '298'
+  Mori Television:
+    template:
+      name: network
+      network: '8'
   MotorTrend:
     template:
       name: network
@@ -3611,6 +2319,10 @@ collections:
     template:
       name: network
       network: '5081'
+  Much:
+    template:
+      name: network
+      network: '138'
   MuchMore:
     template:
       name: network
@@ -3639,10 +2351,6 @@ collections:
     template:
       name: network
       network: '847'
-  My Damn Channel:
-    template:
-      name: network
-      network: '653'
   MyNetworkTV:
     template:
       name: network
@@ -3651,10 +2359,6 @@ collections:
     template:
       name: network
       network: '2061'
-  "M\u0101ori Television":
-    template:
-      name: network
-      network: '8'
   N24:
     template:
       name: network
@@ -3674,7 +2378,7 @@ collections:
   NBC:
     template:
       name: network
-      network: '2462'
+      network: 2462,6
   NBC Weather Plus:
     template:
       name: network
@@ -3683,10 +2387,6 @@ collections:
     template:
       name: network
       network: '413'
-  NBN Television:
-    template:
-      name: network
-      network: '633'
   NCRV:
     template:
       name: network
@@ -3695,10 +2395,6 @@ collections:
     template:
       name: network
       network: '577'
-  NDTV Imagine:
-    template:
-      name: network
-      network: '3104'
   NFL Network:
     template:
       name: network
@@ -3706,7 +2402,7 @@ collections:
   NHK:
     template:
       name: network
-      network: '5291'
+      network: 5291,5216,5112,2334
   NHK BS Premium:
     template:
       name: network
@@ -3715,30 +2411,22 @@ collections:
     template:
       name: network
       network: '219'
-  NHK BS2:
-    template:
-      name: network
-      network: '2026'
   NHK BS4K:
     template:
       name: network
       network: '4328'
-  NHK BS8K:
-    template:
-      name: network
-      network: '5121'
   NHK Educational TV:
     template:
       name: network
       network: '622'
+  NHK G:
+    template:
+      name: network
+      network: '469'
   NHK WORLD-JAPAN:
     template:
       name: network
       network: '4570'
-  "NHK\u30C7\u30B8\u30BF\u30EB\u885B\u661F\u30CF\u30A4\u30D3\u30B8\u30E7\u30F3":
-    template:
-      name: network
-      network: '5112'
   NHL Network:
     template:
       name: network
@@ -3759,14 +2447,6 @@ collections:
     template:
       name: network
       network: '1822'
-  NOW 26:
-    template:
-      name: network
-      network: '2936'
-  NOW Claro:
-    template:
-      name: network
-      network: '4781'
   NPO 1:
     template:
       name: network
@@ -3791,10 +2471,6 @@ collections:
     template:
       name: network
       network: '2736'
-  NRJ 12:
-    template:
-      name: network
-      network: '3601'
   NRK P3:
     template:
       name: network
@@ -3815,10 +2491,6 @@ collections:
     template:
       name: network
       network: '843'
-  NRT2:
-    template:
-      name: network
-      network: '4002'
   NT1:
     template:
       name: network
@@ -3830,19 +2502,7 @@ collections:
   NTV:
     template:
       name: network
-      network: 5171,1199
-  NTV MIR:
-    template:
-      name: network
-      network: '2618'
-  NYC TV:
-    template:
-      name: network
-      network: '616'
-  Nagasaki Culture Telecasting Corporation:
-    template:
-      name: network
-      network: '3756'
+      network: 5171,4031,1199
   Nagoya TV:
     template:
       name: network
@@ -3851,10 +2511,6 @@ collections:
     template:
       name: network
       network: '3260'
-  Nara Television:
-    template:
-      name: network
-      network: '3962'
   Nat Geo Kids:
     template:
       name: network
@@ -3870,7 +2526,7 @@ collections:
   National Geographic:
     template:
       name: network
-      network: '5432'
+      network: 5432,4293,3355,43
   National Geographic Brasil:
     template:
       name: network
@@ -3878,19 +2534,11 @@ collections:
   National Geographic Channel:
     template:
       name: network
-      network: '1825'
-  National Geographic Latinoamerica:
-    template:
-      name: network
-      network: '4750'
+      network: 1825,1756,799
   National Indigenous Television:
     template:
       name: network
       network: '780'
-  Nebraska Educational Telecommunications:
-    template:
-      name: network
-      network: '920'
   Nelonen:
     template:
       name: network
@@ -3907,10 +2555,6 @@ collections:
     template:
       name: network
       network: '213'
-  Netvideo:
-    template:
-      name: network
-      network: '2816'
   Network Ten:
     template:
       name: network
@@ -3923,10 +2567,6 @@ collections:
     template:
       name: network
       network: '618'
-  Nick Jr.:
-    template:
-      name: network
-      network: '2315'
   Nick Pakistan:
     template:
       name: network
@@ -3938,7 +2578,7 @@ collections:
   Nickelodeon:
     template:
       name: network
-      network: '5267'
+      network: 5267,4015,2314,794,775,474,416,286,13
   Nickelodeon India:
     template:
       name: network
@@ -3983,46 +2623,18 @@ collections:
     template:
       name: network
       network: '4648'
-  Noovo:
-    template:
-      name: network
-      network: '4161'
   Nou:
     template:
       name: network
       network: '2332'
-  Nova:
-    template:
-      name: network
-      network: '3004'
-  Nova S:
-    template:
-      name: network
-      network: '4068'
   Nova TV:
     template:
       name: network
       network: '517'
-  Novyi Kanal:
-    template:
-      name: network
-      network: '3510'
   Now TV:
     template:
       name: network
       network: '1596'
-  Ntv7:
-    template:
-      name: network
-      network: '309'
-  O Channel:
-    template:
-      name: network
-      network: '2269'
-  O tvN:
-    template:
-      name: network
-      network: '3129'
   O2 TV Sport:
     template:
       name: network
@@ -4035,10 +2647,6 @@ collections:
     template:
       name: network
       network: '627'
-  OCN movies:
-    template:
-      name: network
-      network: '934'
   OCS City:
     template:
       name: network
@@ -4059,15 +2667,7 @@ collections:
     template:
       name: network
       network: '2636'
-  'ON':
-    template:
-      name: network
-      network: '1928'
-  ONE 31:
-    template:
-      name: network
-      network: '1784'
-  ONF/NFB:
+  ONFNFB:
     template:
       name: network
       network: '2645'
@@ -4083,26 +2683,14 @@ collections:
     template:
       name: network
       network: '1795'
-  "ORTF T\xE9l\xE9vision":
-    template:
-      name: network
-      network: '1196'
-  "ORTF T\xE9l\xE9vision 2":
+  ORTF Tlvision 2:
     template:
       name: network
       network: '2198'
-  OSN:
-    template:
-      name: network
-      network: '1675'
   OTV:
     template:
       name: network
       network: '3041'
-  OUFtivi:
-    template:
-      name: network
-      network: '2388'
   OUTtv:
     template:
       name: network
@@ -4110,39 +2698,15 @@ collections:
   OWN:
     template:
       name: network
-      network: '4466'
-  Odisea:
-    template:
-      name: network
-      network: '1901'
-  Odnoklassniki:
-    template:
-      name: network
-      network: '4577'
+      network: 4466,827
   Odyssey Network:
     template:
       name: network
       network: '2589'
-  Oita Broadcasting System:
-    template:
-      name: network
-      network: '3974'
-  Okko:
-    template:
-      name: network
-      network: '3871'
-  Okoo:
-    template:
-      name: network
-      network: '3544'
   Olive:
     template:
       name: network
       network: '1081'
-  Olympic Channel:
-    template:
-      name: network
-      network: '5166'
   Omroep Max:
     template:
       name: network
@@ -4151,10 +2715,6 @@ collections:
     template:
       name: network
       network: '2677'
-  OnStyle:
-    template:
-      name: network
-      network: '563'
   One:
     template:
       name: network
@@ -4179,10 +2739,6 @@ collections:
     template:
       name: network
       network: '132'
-  OzoneTV:
-    template:
-      name: network
-      network: '2019'
   PBS:
     template:
       name: network
@@ -4195,7 +2751,7 @@ collections:
     template:
       name: network
       network: '122'
-  "PLAN\xC8TE+":
+  PLANTE+:
     template:
       name: network
       network: '2032'
@@ -4210,7 +2766,7 @@ collections:
   PPTV:
     template:
       name: network
-      network: '2704'
+      network: 2704,1504
   PTS:
     template:
       name: network
@@ -4219,26 +2775,10 @@ collections:
     template:
       name: network
       network: '3358'
-  PTS+:
-    template:
-      name: network
-      network: '5068'
-  Palladia:
-    template:
-      name: network
-      network: '451'
-  "Panamericana Televisi\xF3n":
+  Panamericana Televisin:
     template:
       name: network
       network: '714'
-  Pantaya:
-    template:
-      name: network
-      network: '3283'
-  Paraguay TV:
-    template:
-      name: network
-      network: '4512'
   Paramount Comedy 1:
     template:
       name: network
@@ -4246,19 +2786,11 @@ collections:
   Paramount Network:
     template:
       name: network
-      network: '2604'
+      network: 2604,2076
   Paramount+:
     template:
       name: network
       network: '4330'
-  Paravi:
-    template:
-      name: network
-      network: '3879'
-  "Paris Premi\xE8re":
-    template:
-      name: network
-      network: '4749'
   PassionFlix:
     template:
       name: network
@@ -4275,10 +2807,6 @@ collections:
     template:
       name: network
       network: '199'
-  Perets:
-    template:
-      name: network
-      network: '2518'
   Pick:
     template:
       name: network
@@ -4287,34 +2815,14 @@ collections:
     template:
       name: network
       network: '4857'
-  PiliFlix:
-    template:
-      name: network
-      network: '4684'
-  Piwi+:
-    template:
-      name: network
-      network: '4915'
   Planet Green:
     template:
       name: network
       network: '828'
-  "Plan\xE8te+ A&E":
-    template:
-      name: network
-      network: '3050'
-  "Plan\xE8te+ Crime Investigation":
-    template:
-      name: network
-      network: '3659'
-  "Plan\xE8te+ Justice":
+  Plante+ Justice:
     template:
       name: network
       network: '3949'
-  Play Entertainment:
-    template:
-      name: network
-      network: '3307'
   Play UK:
     template:
       name: network
@@ -4327,46 +2835,18 @@ collections:
     template:
       name: network
       network: '3802'
-  PlayPlus:
-    template:
-      name: network
-      network: '2876'
-  PlayZ:
-    template:
-      name: network
-      network: '2596'
   Playboy TV:
     template:
       name: network
       network: '225'
-  Playhouse Disney:
-    template:
-      name: network
-      network: '2991'
-  Playstation Network:
-    template:
-      name: network
-      network: '1029'
   Plug RTL:
     template:
       name: network
       network: '2090'
-  Plus:
-    template:
-      name: network
-      network: '1011'
   Pluto TV:
     template:
       name: network
       network: '3245'
-  Pogo:
-    template:
-      name: network
-      network: '1439'
-  PokerGO:
-    template:
-      name: network
-      network: '4561'
   Polsat:
     template:
       name: network
@@ -4375,14 +2855,6 @@ collections:
     template:
       name: network
       network: '830'
-  Polsat PLAY:
-    template:
-      name: network
-      network: '3069'
-  Pop:
-    template:
-      name: network
-      network: '516'
   PowNed:
     template:
       name: network
@@ -4399,30 +2871,14 @@ collections:
     template:
       name: network
       network: '3423'
-  Prima LOVE:
-    template:
-      name: network
-      network: '3424'
   Prima ZOOM:
     template:
       name: network
       network: '3407'
-  Prime:
-    template:
-      name: network
-      network: '1567'
-  Prime Box Brazil:
-    template:
-      name: network
-      network: '2613'
   Prime7:
     template:
       name: network
       network: '1021'
-  Primeflix:
-    template:
-      name: network
-      network: '4023'
   Pro TV:
     template:
       name: network
@@ -4435,54 +2891,26 @@ collections:
     template:
       name: network
       network: '3282'
-  Prva:
-    template:
-      name: network
-      network: '1309'
-  Puls 4:
-    template:
-      name: network
-      network: '3641'
-  Pulse Prime:
-    template:
-      name: network
-      network: '4921'
   Pure Flix:
     template:
       name: network
       network: '1307'
-  Pursuit Channel:
-    template:
-      name: network
-      network: '2866'
-  Q:
-    template:
-      name: network
-      network: '4079'
   Q2:
     template:
       name: network
       network: '2627'
-  Qatar TV:
-    template:
-      name: network
-      network: '2732'
-  Quenel+:
-    template:
-      name: network
-      network: '4407'
   Quest:
     template:
       name: network
       network: '996'
+  Quest Red:
+    template:
+      name: network
+      network: '3687'
   Quibi:
     template:
       name: network
       network: '3091'
-  R1:
-    template:
-      name: network
-      network: '4421'
   RBB Fernsehen:
     template:
       name: network
@@ -4503,14 +2931,6 @@ collections:
     template:
       name: network
       network: '3491'
-  RDS Info:
-    template:
-      name: network
-      network: '2718'
-  REN TV:
-    template:
-      name: network
-      network: '681'
   RFD-TV:
     template:
       name: network
@@ -4518,27 +2938,11 @@ collections:
   RKB:
     template:
       name: network
-      network: '4772'
-  RKK Kumamoto Broadcasting:
-    template:
-      name: network
-      network: '3705'
-  "RMC D\xE9couverte":
-    template:
-      name: network
-      network: '1064'
+      network: 4772,4748
   RMC Sport:
     template:
       name: network
       network: '2658'
-  RMC Story:
-    template:
-      name: network
-      network: '3674'
-  RNB:
-    template:
-      name: network
-      network: '2728'
   RSI LA1:
     template:
       name: network
@@ -4547,30 +2951,26 @@ collections:
     template:
       name: network
       network: '839'
+  RT One:
+    template:
+      name: network
+      network: '155'
   RT UK:
     template:
       name: network
       network: '1633'
+  RT2:
+    template:
+      name: network
+      network: '228'
   RTBF.be:
     template:
       name: network
       network: '2385'
-  "RTF T\xE9l\xE9vision":
+  RTF Tlvision:
     template:
       name: network
       network: '1371'
-  RTHK:
-    template:
-      name: network
-      network: '4182'
-  RTI1:
-    template:
-      name: network
-      network: '3851'
-  RTK:
-    template:
-      name: network
-      network: '4082'
   RTL:
     template:
       name: network
@@ -4587,14 +2987,6 @@ collections:
     template:
       name: network
       network: '4253'
-  RTL 8:
-    template:
-      name: network
-      network: '4254'
-  RTL Gold:
-    template:
-      name: network
-      network: '1997'
   RTL II:
     template:
       name: network
@@ -4615,38 +3007,22 @@ collections:
     template:
       name: network
       network: '324'
-  "RTL T\xE9l\xE9":
+  RTL Tl:
     template:
       name: network
       network: '1528'
-  RTL Z:
-    template:
-      name: network
-      network: '4252'
   RTL+:
     template:
       name: network
       network: '5428'
-  RTL-TVI:
-    template:
-      name: network
-      network: '3777'
   RTL2:
     template:
       name: network
       network: '1716'
-  RTL9:
-    template:
-      name: network
-      network: '3782'
   RTLTVI:
     template:
       name: network
       network: '1846'
-  RTM2:
-    template:
-      name: network
-      network: '2331'
   RTP Play:
     template:
       name: network
@@ -4683,31 +3059,15 @@ collections:
     template:
       name: network
       network: '1277'
-  "RT\xC9 One":
+  RV:
     template:
       name: network
-      network: '155'
-  "RT\xC92":
-    template:
-      name: network
-      network: '228'
-  "RT\xC9jr":
-    template:
-      name: network
-      network: '1757'
-  Rabbit:
-    template:
-      name: network
-      network: '4575'
-  Radio Bremen Fernsehen:
-    template:
-      name: network
-      network: '4495'
+      network: '268'
   Radio Philippines Network:
     template:
       name: network
       network: '266'
-  "Radio-Qu\xE9bec":
+  Radio-Qubec:
     template:
       name: network
       network: '3634'
@@ -4723,26 +3083,10 @@ collections:
     template:
       name: network
       network: '547'
-  Rai 4:
-    template:
-      name: network
-      network: '4556'
   Rai 5:
     template:
       name: network
       network: '3927'
-  Rai Gulp:
-    template:
-      name: network
-      network: '1422'
-  Rai Play:
-    template:
-      name: network
-      network: '3828'
-  Rai Storia:
-    template:
-      name: network
-      network: '3447'
   Rai YoYo:
     template:
       name: network
@@ -4751,18 +3095,10 @@ collections:
     template:
       name: network
       network: '3463'
-  Raj TV:
-    template:
-      name: network
-      network: '3830'
   Rajawali Televisi:
     template:
       name: network
       network: '1861'
-  Rakuten TV:
-    template:
-      name: network
-      network: '3747'
   Rang:
     template:
       name: network
@@ -4771,18 +3107,10 @@ collections:
     template:
       name: network
       network: '2312'
-  Real Madrid TV:
-    template:
-      name: network
-      network: '1907'
   Really:
     template:
       name: network
       network: '1892'
-  RecordTV:
-    template:
-      name: network
-      network: '535'
   Red Bull TV:
     template:
       name: network
@@ -4791,14 +3119,10 @@ collections:
     template:
       name: network
       network: '512'
-  RedeTV!:
+  RedeTV:
     template:
       name: network
       network: '1256'
-  Redlight TV:
-    template:
-      name: network
-      network: '3347'
   Reelz:
     template:
       name: network
@@ -4819,42 +3143,14 @@ collections:
     template:
       name: network
       network: '438'
-  Revry:
-    template:
-      name: network
-      network: '3875'
-  Revver:
-    template:
-      name: network
-      network: '429'
   Rivit TV:
     template:
       name: network
       network: '2603'
-  Rocket Beans TV:
-    template:
-      name: network
-      network: '2797'
-  RocketJump:
-    template:
-      name: network
-      network: '2807'
-  Rogers TV:
-    template:
-      name: network
-      network: '4501'
-  Rooster Teeth:
-    template:
-      name: network
-      network: '1356'
   Rotana Khalijia:
     template:
       name: network
       network: '967'
-  Royal Thai Army Radio and Television Channel 5:
-    template:
-      name: network
-      network: '417'
   Rush HD:
     template:
       name: network
@@ -4871,34 +3167,14 @@ collections:
     template:
       name: network
       network: '2923'
-  Russian detective:
-    template:
-      name: network
-      network: '2543'
-  Rustavi 2:
-    template:
-      name: network
-      network: '548'
   Ruutu:
     template:
       name: network
       network: '2708'
-  "R\xDAV":
-    template:
-      name: network
-      network: '268'
   S4C:
     template:
       name: network
       network: '139'
-  SABC 1:
-    template:
-      name: network
-      network: '2438'
-  SABC 2:
-    template:
-      name: network
-      network: '1518'
   SAT.1:
     template:
       name: network
@@ -4918,19 +3194,15 @@ collections:
   SBS:
     template:
       name: network
-      network: '5124'
+      network: 5124,223,156
   SBS 2:
     template:
       name: network
       network: '856'
-  SBS 9:
+  SBS TV:
     template:
       name: network
-      network: '4255'
-  SBS Plus:
-    template:
-      name: network
-      network: '932'
+      network: '3970'
   SBS funE:
     template:
       name: network
@@ -4943,30 +3215,14 @@ collections:
     template:
       name: network
       network: '541'
-  SEN TV:
-    template:
-      name: network
-      network: '3550'
   SHANT TV:
     template:
       name: network
       network: '4029'
-  SHENZHEN SATELLITE TV:
-    template:
-      name: network
-      network: '1265'
-  SIC:
-    template:
-      name: network
-      network: '818'
   SIC Radical:
     template:
       name: network
       network: '642'
-  SKY PerfecTV!:
-    template:
-      name: network
-      network: '1037'
   SOAPnet:
     template:
       name: network
@@ -4979,14 +3235,6 @@ collections:
     template:
       name: network
       network: '2563'
-  SRG SSR:
-    template:
-      name: network
-      network: '5196'
-  STAR Chinese Channel:
-    template:
-      name: network
-      network: '791'
   STAR Vijay:
     template:
       name: network
@@ -5047,54 +3295,22 @@ collections:
     template:
       name: network
       network: '1162'
-  Sab Tv:
-    template:
-      name: network
-      network: '1708'
-  Safari TV:
-    template:
-      name: network
-      network: '2886'
-  Sahara One:
-    template:
-      name: network
-      network: '564'
   Salto:
     template:
       name: network
       network: '4655'
-  Sama Dubai TV:
-    template:
-      name: network
-      network: '3878'
-  Samanyolu TV:
-    template:
-      name: network
-      network: '962'
-  Sanlih E-Television:
-    template:
-      name: network
-      network: '726'
-  Sapporo Television Broadcasting:
-    template:
-      name: network
-      network: '3698'
-  Sari-Sari Channel:
-    template:
-      name: network
-      network: '3112'
   Science:
     template:
       name: network
       network: '226'
+  Seal Colombia:
+    template:
+      name: network
+      network: '3088'
   SeeSo:
     template:
       name: network
       network: '1523'
-  Seezn:
-    template:
-      name: network
-      network: '3612'
   Servus TV:
     template:
       name: network
@@ -5107,26 +3323,6 @@ collections:
     template:
       name: network
       network: '118'
-  "Se\xF1al Colombia":
-    template:
-      name: network
-      network: '3088'
-  Shahid:
-    template:
-      name: network
-      network: '3626'
-  Shanghai Television:
-    template:
-      name: network
-      network: '2437'
-  Shanxi Television:
-    template:
-      name: network
-      network: '4168'
-  Shaw TV:
-    template:
-      name: network
-      network: '4500'
   Show TV:
     template:
       name: network
@@ -5147,18 +3343,18 @@ collections:
     template:
       name: network
       network: '2949'
-  "Sistema Brasileiro de Televis\xE3o (SBT)":
+  Sistema Brasileiro de Televiso (SBT):
     template:
       name: network
       network: '128'
+  Sjnvarp Smans:
+    template:
+      name: network
+      network: '2855'
   Sjuan:
     template:
       name: network
       network: '854'
-  "Sj\xF3nvarp S\xEDmans":
-    template:
-      name: network
-      network: '2855'
   Skai:
     template:
       name: network
@@ -5171,10 +3367,6 @@ collections:
     template:
       name: network
       network: '362'
-  Sky Arts:
-    template:
-      name: network
-      network: '553'
   Sky Atlantic:
     template:
       name: network
@@ -5183,10 +3375,6 @@ collections:
     template:
       name: network
       network: '877'
-  Sky Comedy:
-    template:
-      name: network
-      network: '5213'
   Sky Crime:
     template:
       name: network
@@ -5207,22 +3395,10 @@ collections:
     template:
       name: network
       network: '5237'
-  Sky Nature:
-    template:
-      name: network
-      network: '4439'
-  Sky News:
-    template:
-      name: network
-      network: '480'
-  Sky News Australia:
-    template:
-      name: network
-      network: '819'
   Sky One:
     template:
       name: network
-      network: '5059'
+      network: 5059,214
   Sky Sports:
     template:
       name: network
@@ -5235,10 +3411,6 @@ collections:
     template:
       name: network
       network: '1076'
-  Sky Witness:
-    template:
-      name: network
-      network: '2691'
   Slice:
     template:
       name: network
@@ -5246,15 +3418,11 @@ collections:
   Smithsonian Channel:
     template:
       name: network
-      network: 4862,4982
+      network: 4982,4862,658
   Smithsonian Earth:
     template:
       name: network
       network: '2572'
-  Smotrim:
-    template:
-      name: network
-      network: '5000'
   SnackableTV:
     template:
       name: network
@@ -5275,26 +3443,10 @@ collections:
     template:
       name: network
       network: '320'
-  Sony ESPN:
-    template:
-      name: network
-      network: '3156'
-  Sony Entertainment Television:
-    template:
-      name: network
-      network: '676'
-  Sony Liv:
-    template:
-      name: network
-      network: '2646'
-  Sony Pal:
-    template:
-      name: network
-      network: '1791'
   Space:
     template:
       name: network
-      network: '2159'
+      network: 2159,170
   Spectrum:
     template:
       name: network
@@ -5302,11 +3454,11 @@ collections:
   Speed:
     template:
       name: network
-      network: '732'
+      network: 732,257
   Spektrum:
     template:
       name: network
-      network: '2287'
+      network: 2287,1574
   Spiegel Geschichte:
     template:
       name: network
@@ -5314,7 +3466,7 @@ collections:
   Spike:
     template:
       name: network
-      network: '1735'
+      network: 1735,55
   SporTV:
     template:
       name: network
@@ -5323,10 +3475,6 @@ collections:
     template:
       name: network
       network: '168'
-  Sportsman Channel:
-    template:
-      name: network
-      network: '957'
   Sportsnet:
     template:
       name: network
@@ -5335,6 +3483,14 @@ collections:
     template:
       name: network
       network: '2840'
+  Sries+:
+    template:
+      name: network
+      network: '502'
+  St 2:
+    template:
+      name: network
+      network: '277'
   Stan:
     template:
       name: network
@@ -5347,30 +3503,10 @@ collections:
     template:
       name: network
       network: '1046'
-  Star Jalsha:
-    template:
-      name: network
-      network: '4402'
-  Star Maa:
-    template:
-      name: network
-      network: '2035'
-  Star One:
-    template:
-      name: network
-      network: '540'
   Star TV:
     template:
       name: network
       network: '778'
-  StarPlus:
-    template:
-      name: network
-      network: '159'
-  Stardeos:
-    template:
-      name: network
-      network: '267'
   Stargate Command:
     template:
       name: network
@@ -5383,10 +3519,6 @@ collections:
     template:
       name: network
       network: '758'
-  Steam:
-    template:
-      name: network
-      network: '4071'
   Stream TV:
     template:
       name: network
@@ -5403,22 +3535,10 @@ collections:
     template:
       name: network
       network: '353'
-  Studio 4:
-    template:
-      name: network
-      network: '2703'
-  Studio Roobie:
-    template:
-      name: network
-      network: '5073'
   Style Network:
     template:
       name: network
       network: '2711'
-  "St\xF6\xF0 2":
-    template:
-      name: network
-      network: '277'
   Sub:
     template:
       name: network
@@ -5426,7 +3546,7 @@ collections:
   Sun TV:
     template:
       name: network
-      network: '3026'
+      network: 3026,817
   Sundance Now:
     template:
       name: network
@@ -5435,35 +3555,15 @@ collections:
     template:
       name: network
       network: '270'
-  SuomiTV:
-    template:
-      name: network
-      network: '1793'
-  Super:
-    template:
-      name: network
-      network: '4127'
-  Super Channel:
-    template:
-      name: network
-      network: '783'
   Super Deluxe:
     template:
       name: network
       network: '639'
-  Super Polsat:
-    template:
-      name: network
-      network: '5359'
   Super RTL:
     template:
       name: network
       network: '522'
-  Super TV2:
-    template:
-      name: network
-      network: '2939'
-  "Super \xC9cran":
+  Super cran:
     template:
       name: network
       network: '1714'
@@ -5471,10 +3571,6 @@ collections:
     template:
       name: network
       network: '2565'
-  SuperPelis:
-    template:
-      name: network
-      network: '656'
   SuperSport:
     template:
       name: network
@@ -5486,23 +3582,39 @@ collections:
   Syfy:
     template:
       name: network
-      network: '3701'
-  Syndication:
+      network: 3701,77
+  T D:
     template:
       name: network
-      network: '184'
-  "S\xE9ries+":
+      network: '3380'
+  T art:
     template:
       name: network
-      network: '502'
+      network: '3379'
+  T sport:
+    template:
+      name: network
+      network: '3872'
   T+E:
     template:
       name: network
       network: '2220'
+  T1:
+    template:
+      name: network
+      network: '632'
+  T2:
+    template:
+      name: network
+      network: '2384'
   TBS:
     template:
       name: network
-      network: '5012'
+      network: 5012,160,68
+  TET:
+    template:
+      name: network
+      network: '1326'
   TF1:
     template:
       name: network
@@ -5523,10 +3635,6 @@ collections:
     template:
       name: network
       network: '203'
-  TGRT:
-    template:
-      name: network
-      network: '4964'
   TIMVision:
     template:
       name: network
@@ -5534,11 +3642,7 @@ collections:
   TLC:
     template:
       name: network
-      network: '5258'
-  TLC (HU):
-    template:
-      name: network
-      network: '2829'
+      network: 5258,3571,84
   TLC Go:
     template:
       name: network
@@ -5547,14 +3651,6 @@ collections:
     template:
       name: network
       network: '1172'
-  TLUM HD:
-    template:
-      name: network
-      network: '1608'
-  TMC:
-    template:
-      name: network
-      network: '1133'
   TMF:
     template:
       name: network
@@ -5562,12 +3658,8 @@ collections:
   TNT:
     template:
       name: network
-      network: '1191'
-  TNT Comedy:
-    template:
-      name: network
-      network: '2857'
-  "TNT Espa\xF1a":
+      network: 1191,41
+  TNT Espaa:
     template:
       name: network
       network: '3501'
@@ -5579,34 +3671,10 @@ collections:
     template:
       name: network
       network: '904'
-  TNU:
-    template:
-      name: network
-      network: '1601'
-  TOP kanal:
-    template:
-      name: network
-      network: '2796'
-  TPS Jeunesse:
-    template:
-      name: network
-      network: '3335'
-  TPS Star:
-    template:
-      name: network
-      network: '3742'
   TQS:
     template:
       name: network
       network: '2310'
-  TRK Ukraina:
-    template:
-      name: network
-      network: '4651'
-  TRO:
-    template:
-      name: network
-      network: '2762'
   TROS:
     template:
       name: network
@@ -5627,26 +3695,14 @@ collections:
     template:
       name: network
       network: '1604'
-  "TRT \xC7ocuk":
+  TRT ocuk:
     template:
       name: network
       network: '937'
-  TSS:
-    template:
-      name: network
-      network: '4970'
-  TTV:
-    template:
-      name: network
-      network: '3087'
-  TTV Main Channel:
-    template:
-      name: network
-      network: '479'
   TV 2:
     template:
       name: network
-      network: '4997'
+      network: 4997,467,125
   TV 2 Charlie:
     template:
       name: network
@@ -5655,10 +3711,6 @@ collections:
     template:
       name: network
       network: '2072'
-  TV 2 Play:
-    template:
-      name: network
-      network: '4461'
   TV 2 Zebra:
     template:
       name: network
@@ -5686,7 +3738,7 @@ collections:
   TV Chosun:
     template:
       name: network
-      network: '5336'
+      network: 5336,903
   TV Cultura:
     template:
       name: network
@@ -5695,10 +3747,6 @@ collections:
     template:
       name: network
       network: '60'
-  TV Hokkaido:
-    template:
-      name: network
-      network: '3202'
   TV JOJ:
     template:
       name: network
@@ -5707,10 +3755,6 @@ collections:
     template:
       name: network
       network: '397'
-  TV Noe:
-    template:
-      name: network
-      network: '4892'
   TV Nova:
     template:
       name: network
@@ -5718,19 +3762,19 @@ collections:
   TV One:
     template:
       name: network
-      network: '2355'
+      network: 2355,150
   TV Osaka:
     template:
       name: network
       network: '824'
-  "TV Per\xFA":
-    template:
-      name: network
-      network: '4449'
   TV Puls:
     template:
       name: network
       network: '551'
+  TV Rain:
+    template:
+      name: network
+      network: '2398'
   TV Setouchi:
     template:
       name: network
@@ -5743,22 +3787,6 @@ collections:
     template:
       name: network
       network: '2098'
-  TV WAU:
-    template:
-      name: network
-      network: '1415'
-  TV-3:
-    template:
-      name: network
-      network: '1258'
-  TV-6:
-    template:
-      name: network
-      network: '2585'
-  TV-U Fukushima:
-    template:
-      name: network
-      network: '3975'
   TV-U Yamagata:
     template:
       name: network
@@ -5766,23 +3794,15 @@ collections:
   TV2:
     template:
       name: network
-      network: '3560'
+      network: 3560,975
   TV2000:
     template:
       name: network
       network: '2289'
-  TV24 (CH):
-    template:
-      name: network
-      network: '5329'
   TV3:
     template:
       name: network
-      network: '1649'
-  TV3 Latvia:
-    template:
-      name: network
-      network: '2865'
+      network: 1649,785,499,463,457,406,374
   TV3+:
     template:
       name: network
@@ -5790,7 +3810,7 @@ collections:
   TV4:
     template:
       name: network
-      network: '456'
+      network: 456,352
   TV5:
     template:
       name: network
@@ -5799,22 +3819,18 @@ collections:
     template:
       name: network
       network: '3049'
-  "TV5 Qu\xE9bec Canada":
+  TV5 Qubec Canada:
     template:
       name: network
       network: '1533'
-  TV5Monde:
-    template:
-      name: network
-      network: '2922'
   TV6:
     template:
       name: network
-      network: '2977'
+      network: 2977,974
   TV8:
     template:
       name: network
-      network: '2702'
+      network: 2702,1367,1141
   TV9:
     template:
       name: network
@@ -5843,10 +3859,10 @@ collections:
     template:
       name: network
       network: '187'
-  TVE:
+  TVFPlay:
     template:
       name: network
-      network: '3719'
+      network: '1145'
   TVG Network:
     template:
       name: network
@@ -5855,14 +3871,6 @@ collections:
     template:
       name: network
       network: '1718'
-  TVI24:
-    template:
-      name: network
-      network: '2957'
-  TVING:
-    template:
-      name: network
-      network: '3897'
   TVM:
     template:
       name: network
@@ -5870,7 +3878,7 @@ collections:
   TVN:
     template:
       name: network
-      network: '3136'
+      network: 3136,504
   TVN 7:
     template:
       name: network
@@ -5879,10 +3887,6 @@ collections:
     template:
       name: network
       network: '3067'
-  TVN Turbo:
-    template:
-      name: network
-      network: '3178'
   TVNOW:
     template:
       name: network
@@ -5895,18 +3899,6 @@ collections:
     template:
       name: network
       network: '123'
-  TVNZ Duke:
-    template:
-      name: network
-      network: '3616'
-  TVNZ Kidzone:
-    template:
-      name: network
-      network: '3924'
-  TVNZ6:
-    template:
-      name: network
-      network: '3925'
   TVNorge:
     template:
       name: network
@@ -5915,10 +3907,6 @@ collections:
     template:
       name: network
       network: '191'
-  TVP:
-    template:
-      name: network
-      network: '555'
   TVP Kultura:
     template:
       name: network
@@ -5939,6 +3927,10 @@ collections:
     template:
       name: network
       network: '822'
+  TVR 1:
+    template:
+      name: network
+      network: '1620'
   TVR 2:
     template:
       name: network
@@ -5955,18 +3947,10 @@ collections:
     template:
       name: network
       network: '4172'
-  Taiwan+:
-    template:
-      name: network
-      network: '5179'
   Talpa:
     template:
       name: network
       network: '2258'
-  Tchelet TV:
-    template:
-      name: network
-      network: '4073'
   TechTV:
     template:
       name: network
@@ -5995,22 +3979,10 @@ collections:
     template:
       name: network
       network: '668'
-  TeleUV:
-    template:
-      name: network
-      network: '2934'
   Telecinco:
     template:
       name: network
       network: '53'
-  Telefe:
-    template:
-      name: network
-      network: '96'
-  "Telemedell\xEDn":
-    template:
-      name: network
-      network: '4905'
   Telemundo:
     template:
       name: network
@@ -6023,10 +3995,6 @@ collections:
     template:
       name: network
       network: '715'
-  Teletica:
-    template:
-      name: network
-      network: '2588'
   Teletoon:
     template:
       name: network
@@ -6035,46 +4003,30 @@ collections:
     template:
       name: network
       network: '608'
+  Televisin Nacional de Chile:
+    template:
+      name: network
+      network: '25'
+  Televisin Pblica Argentina:
+    template:
+      name: network
+      network: '1529'
+  Televisin de Galicia:
+    template:
+      name: network
+      network: '1314'
   Television Maldives:
     template:
       name: network
       network: '1321'
-  "Televisi\xF3n Nacional de Chile":
-    template:
-      name: network
-      network: '25'
-  "Televisi\xF3n P\xFAblica Argentina":
-    template:
-      name: network
-      network: '1529'
-  "Televisi\xF3n de Galicia":
-    template:
-      name: network
-      network: '1314'
-  "Televis\xE3o Independente":
-    template:
-      name: network
-      network: '93'
   Televize Seznam:
     template:
       name: network
       network: '3383'
-  Tello:
-    template:
-      name: network
-      network: '3537'
-  Ten:
-    template:
-      name: network
-      network: '3929'
   Tencent Video:
     template:
       name: network
       network: '2007'
-  Tet+:
-    template:
-      name: network
-      network: '5247'
   Thai Public Broadcasting Service:
     template:
       name: network
@@ -6091,10 +4043,6 @@ collections:
     template:
       name: network
       network: '51'
-  The Fantasy Network:
-    template:
-      name: network
-      network: '2875'
   The Filipino Channel:
     template:
       name: network
@@ -6111,10 +4059,6 @@ collections:
     template:
       name: network
       network: '245'
-  The Nashville Network:
-    template:
-      name: network
-      network: '588'
   The New TNN:
     template:
       name: network
@@ -6147,18 +4091,6 @@ collections:
     template:
       name: network
       network: '114'
-  Tianjin Television:
-    template:
-      name: network
-      network: '953'
-  Tiitlii:
-    template:
-      name: network
-      network: '4576'
-  Tiji:
-    template:
-      name: network
-      network: '2524'
   TikTok:
     template:
       name: network
@@ -6167,18 +4099,18 @@ collections:
     template:
       name: network
       network: '399'
-  Tip!k:
+  Tkai Television Broadcasting:
     template:
       name: network
-      network: '4966'
+      network: '879'
+  Tl-Qubec:
+    template:
+      name: network
+      network: '1131'
   Tochigi TV:
     template:
       name: network
       network: '2478'
-  Toei Tokusatsu Fan Club:
-    template:
-      name: network
-      network: '2833'
   Tohoku Broadcasting:
     template:
       name: network
@@ -6195,10 +4127,10 @@ collections:
     template:
       name: network
       network: '1174'
-  Topic:
+  Top Channel:
     template:
       name: network
-      network: '3097'
+      network: '2895'
   Toute l'Histoire:
     template:
       name: network
@@ -6215,10 +4147,6 @@ collections:
     template:
       name: network
       network: '863'
-  Travel Box Brazil:
-    template:
-      name: network
-      network: '5425'
   Travel Channel:
     template:
       name: network
@@ -6227,30 +4155,14 @@ collections:
     template:
       name: network
       network: '1187'
-  Trece:
-    template:
-      name: network
-      network: '3181'
   Treehouse TV:
     template:
       name: network
       network: '216'
-  Trinity Broadcasting Network:
-    template:
-      name: network
-      network: '369'
   Trouble:
     template:
       name: network
       network: '316'
-  True4U:
-    template:
-      name: network
-      network: '4601'
-  TrueID:
-    template:
-      name: network
-      network: '5319'
   TrueVisions:
     template:
       name: network
@@ -6263,10 +4175,6 @@ collections:
     template:
       name: network
       network: '896'
-  Turkmax:
-    template:
-      name: network
-      network: '980'
   Turner Classic Movies:
     template:
       name: network
@@ -6275,46 +4183,6 @@ collections:
     template:
       name: network
       network: '1231'
-  "T\xE9l\xE9-Qu\xE9bec":
-    template:
-      name: network
-      network: '1131'
-  "T\xE9l\xE9Sud":
-    template:
-      name: network
-      network: '2917'
-  "T\xE9l\xE9toon":
-    template:
-      name: network
-      network: '272'
-  "T\xE9l\xE9toon+":
-    template:
-      name: network
-      network: '2170'
-  "T\xE9va":
-    template:
-      name: network
-      network: '3835'
-  "T\u014Dkai Television Broadcasting":
-    template:
-      name: network
-      network: '879'
-  U-NEXT:
-    template:
-      name: network
-      network: '3869'
-  'UA: PERSHYI':
-    template:
-      name: network
-      network: '4222'
-  UCV Television:
-    template:
-      name: network
-      network: '531'
-  UFC FIGHT PASS:
-    template:
-      name: network
-      network: '2006'
   UKTV History:
     template:
       name: network
@@ -6343,7 +4211,11 @@ collections:
     template:
       name: network
       network: '151'
-  "UniM\xE1s":
+  Ukraine:
+    template:
+      name: network
+      network: '1625'
+  UniMs:
     template:
       name: network
       network: '354'
@@ -6354,7 +4226,7 @@ collections:
   Universal Channel:
     template:
       name: network
-      network: '4014'
+      network: 4014,2238
   Universal Kids:
     template:
       name: network
@@ -6370,11 +4242,7 @@ collections:
   Univision:
     template:
       name: network
-      network: '2447'
-  UrduFlix:
-    template:
-      name: network
-      network: '4668'
+      network: 2447,28
   Ustream:
     template:
       name: network
@@ -6391,10 +4259,6 @@ collections:
     template:
       name: network
       network: '760'
-  VCI Entertainment:
-    template:
-      name: network
-      network: '5372'
   VGTV:
     template:
       name: network
@@ -6402,23 +4266,15 @@ collections:
   VH1:
     template:
       name: network
-      network: '2803'
+      network: 2803,158
   VH1 Classic:
     template:
       name: network
       network: '664'
-  VIDI Space:
-    template:
-      name: network
-      network: '2283'
   VIVA Germany:
     template:
       name: network
       network: '804'
-  VOOT:
-    template:
-      name: network
-      network: '2532'
   VOX:
     template:
       name: network
@@ -6447,26 +4303,14 @@ collections:
     template:
       name: network
       network: '2626'
-  VTM GO:
-    template:
-      name: network
-      network: '5257'
-  Vasanth TV:
-    template:
-      name: network
-      network: '3831'
   Velocity:
     template:
       name: network
       network: '435'
-  "Venevisi\xF3n":
+  Venevisin:
     template:
       name: network
       network: '133'
-  "Venezolana de Televisi\xF3n":
-    template:
-      name: network
-      network: '707'
   Veronica:
     template:
       name: network
@@ -6482,15 +4326,7 @@ collections:
   Viaplay:
     template:
       name: network
-      network: '3504'
-  Viasat Film:
-    template:
-      name: network
-      network: '853'
-  Viasat3:
-    template:
-      name: network
-      network: '2455'
+      network: 3504,2869,2406,1585
   Vice TV:
     template:
       name: network
@@ -6499,14 +4335,6 @@ collections:
     template:
       name: network
       network: '1339'
-  Video Pass:
-    template:
-      name: network
-      network: '1806'
-  VideoLand Movie:
-    template:
-      name: network
-      network: '4835'
   Videoland:
     template:
       name: network
@@ -6523,30 +4351,14 @@ collections:
     template:
       name: network
       network: '1065'
-  Virgin Media One:
-    template:
-      name: network
-      network: '3458'
   VisionTV:
     template:
       name: network
       network: '237'
-  Viu:
-    template:
-      name: network
-      network: '4597'
   ViuTV:
     template:
       name: network
       network: '2146'
-  Viva:
-    template:
-      name: network
-      network: '3218'
-  Vizion Plus:
-    template:
-      name: network
-      network: '4086'
   VoyageVoyage.ca:
     template:
       name: network
@@ -6566,15 +4378,11 @@ collections:
   W:
     template:
       name: network
-      network: '1030'
+      network: 5439,1030
   W Network:
     template:
       name: network
       network: '284'
-  W.:
-    template:
-      name: network
-      network: '2431'
   W9:
     template:
       name: network
@@ -6583,10 +4391,6 @@ collections:
     template:
       name: network
       network: '1536'
-  WATCH iT!:
-    template:
-      name: network
-      network: '4786'
   WDR Fernsehen:
     template:
       name: network
@@ -6611,10 +4415,6 @@ collections:
     template:
       name: network
       network: '581'
-  WOW Presents Plus:
-    template:
-      name: network
-      network: '2806'
   WOWOW Prime:
     template:
       name: network
@@ -6635,22 +4435,6 @@ collections:
     template:
       name: network
       network: '1025'
-  Wados:
-    template:
-      name: network
-      network: '351'
-  Wakanim:
-    template:
-      name: network
-      network: '3611'
-  Wakayama Telecasting:
-    template:
-      name: network
-      network: '3981'
-  Watcher:
-    template:
-      name: network
-      network: '5062'
   WeTV:
     template:
       name: network
@@ -6659,22 +4443,6 @@ collections:
     template:
       name: network
       network: '868'
-  Weverse:
-    template:
-      name: network
-      network: '3702'
-  Weyyak:
-    template:
-      name: network
-      network: '5369'
-  Wido:
-    template:
-      name: network
-      network: '3551'
-  Workpoint TV:
-    template:
-      name: network
-      network: '2937'
   XTV:
     template:
       name: network
@@ -6687,10 +4455,6 @@ collections:
     template:
       name: network
       network: '3177'
-  Xploration Station:
-    template:
-      name: network
-      network: '3691'
   XtvN:
     template:
       name: network
@@ -6703,15 +4467,11 @@ collections:
     template:
       name: network
       network: '615'
-  YNN:
-    template:
-      name: network
-      network: '4969'
   YTV:
     template:
       name: network
-      network: '569'
-  Yahoo! Screen:
+      network: 569,46
+  Yahoo Screen:
     template:
       name: network
       network: '1059'
@@ -6723,26 +4483,6 @@ collections:
     template:
       name: network
       network: '710'
-  Yle Areena:
-    template:
-      name: network
-      network: '2594'
-  Yle Fem:
-    template:
-      name: network
-      network: '1208'
-  Yle TV1:
-    template:
-      name: network
-      network: '630'
-  Yle TV2:
-    template:
-      name: network
-      network: '995'
-  Yle Teema:
-    template:
-      name: network
-      network: '1885'
   Yomiuri Telecasting Corporation:
     template:
       name: network
@@ -6763,26 +4503,14 @@ collections:
     template:
       name: network
       network: '1436'
-  Youku:
-    template:
-      name: network
-      network: '1419'
   Z:
     template:
       name: network
-      network: '2522'
+      network: 2522,1247
   ZDF:
     template:
       name: network
       network: '31'
-  ZDFinfo:
-    template:
-      name: network
-      network: '1350'
-  ZDFneo:
-    template:
-      name: network
-      network: '1274'
   ZDTV:
     template:
       name: network
@@ -6795,22 +4523,10 @@ collections:
     template:
       name: network
       network: '677'
-  Zee Alwan:
-    template:
-      name: network
-      network: '5370'
-  Zee News:
-    template:
-      name: network
-      network: '3159'
   Zee TV:
     template:
       name: network
       network: '526'
-  Zee Zindagi:
-    template:
-      name: network
-      network: '3206'
   Zeste:
     template:
       name: network
@@ -6819,26 +4535,14 @@ collections:
     template:
       name: network
       network: '3132'
-  Zhejiang Television:
-    template:
-      name: network
-      network: '989'
-  Ziggo Sport:
-    template:
-      name: network
-      network: '4251'
-  Ziggo TV:
-    template:
-      name: network
-      network: '4256'
   Zona Latina:
     template:
       name: network
       network: '4967'
-  Zoom:
+  Zvezda:
     template:
       name: network
-      network: '1381'
+      network: '1647'
   addatimes:
     template:
       name: network
@@ -6847,10 +4551,6 @@ collections:
     template:
       name: network
       network: '1281'
-  aha:
-    template:
-      name: network
-      network: '3758'
   antv:
     template:
       name: network
@@ -6863,70 +4563,26 @@ collections:
     template:
       name: network
       network: '465'
-  bTV Cinema:
-    template:
-      name: network
-      network: '1497'
-  beIN Connect:
-    template:
-      name: network
-      network: '4077'
-  beIN SPORTS 1:
-    template:
-      name: network
-      network: '4867'
   bilibili:
     template:
       name: network
       network: '1605'
-  bravo:
-    template:
-      name: network
-      network: '485'
-  d Anime Store:
-    template:
-      name: network
-      network: '3685'
-  dTV:
-    template:
-      name: network
-      network: '2137'
-  dekkoo:
-    template:
-      name: network
-      network: '2109'
-  discovery+:
-    template:
-      name: network
-      network: '5431'
-  dk4:
-    template:
-      name: network
-      network: '2301'
-  element14:
-    template:
-      name: network
-      network: '5100'
   eltrece:
     template:
       name: network
       network: '368'
-  enVedette:
+  esk televize:
     template:
       name: network
-      network: '1922'
-  friDay Video:
+      network: '2617'
+  eskoslovensk televize:
     template:
       name: network
-      network: '3959'
+      network: '310'
   funk:
     template:
       name: network
       network: '1665'
-  funnyordie.com:
-    template:
-      name: network
-      network: '3302'
   fyi:
     template:
       name: network
@@ -6935,42 +4591,18 @@ collections:
     template:
       name: network
       network: '1299'
-  hoichoi:
-    template:
-      name: network
-      network: '2139'
   hr-fernsehen:
     template:
       name: network
       network: '1033'
-  i-Television:
-    template:
-      name: network
-      network: '3969'
-  iFilm:
-    template:
-      name: network
-      network: '3940'
   iQiyi:
     template:
       name: network
       network: '1330'
-  iTV:
-    template:
-      name: network
-      network: '997'
   iTunes Store:
     template:
       name: network
       network: '1377'
-  iWant:
-    template:
-      name: network
-      network: '3021'
-  iWantTFC:
-    template:
-      name: network
-      network: '5032'
   ichannel:
     template:
       name: network
@@ -6979,10 +4611,6 @@ collections:
     template:
       name: network
       network: '2224'
-  ivi:
-    template:
-      name: network
-      network: '3923'
   joyn:
     template:
       name: network
@@ -6991,54 +4619,26 @@ collections:
     template:
       name: network
       network: '1110'
-  kurdbin:
+  ko:
     template:
       name: network
-      network: '5289'
-  kurdsat:
-    template:
-      name: network
-      network: '5277'
-  kykNET:
-    template:
-      name: network
-      network: '1826'
+      network: '4037'
   laSexta:
     template:
       name: network
       network: '1016'
-  makoTV:
-    template:
-      name: network
-      network: '5367'
-  meWATCH:
-    template:
-      name: network
-      network: '3011'
-  mitele:
-    template:
-      name: network
-      network: '3980'
-  more.tv:
-    template:
-      name: network
-      network: '3882'
   mtmad:
     template:
       name: network
       network: '2971'
-  myVideo:
+  n:
     template:
       name: network
-      network: '3801'
+      network: '1028'
   n-tv:
     template:
       name: network
       network: '2787'
-  nabd alqalb studio:
-    template:
-      name: network
-      network: '5380'
   noovo.ca:
     template:
       name: network
@@ -7051,30 +4651,14 @@ collections:
     template:
       name: network
       network: '2586'
-  omyl:
-    template:
-      name: network
-      network: '5116'
   puhutv:
     template:
       name: network
       network: '1925'
-  showcase:
-    template:
-      name: network
-      network: '1630'
   sixx:
     template:
       name: network
       network: '1283'
-  sky Travel:
-    template:
-      name: network
-      network: '2758'
-  stuff.co.nz:
-    template:
-      name: network
-      network: '3362'
   tagesschau24:
     template:
       name: network
@@ -7083,10 +4667,6 @@ collections:
     template:
       name: network
       network: '364'
-  tuttosport.com:
-    template:
-      name: network
-      network: '1935'
   tv asahi:
     template:
       name: network
@@ -7095,14 +4675,6 @@ collections:
     template:
       name: network
       network: '3664'
-  tvN:
-    template:
-      name: network
-      network: '866'
-  tvN Movies:
-    template:
-      name: network
-      network: '3630'
   tvk:
     template:
       name: network
@@ -7111,18 +4683,14 @@ collections:
     template:
       name: network
       network: '2461'
-  ullu:
+  vasion:
     template:
       name: network
-      network: '2902'
-  vive!:
-    template:
-      name: network
-      network: '4943'
+      network: '1785'
   vtm:
     template:
       name: network
-      network: '4730'
+      network: 4730,556
   vtm 2:
     template:
       name: network
@@ -7131,98 +4699,10 @@ collections:
     template:
       name: network
       network: '3898'
-  wavve:
-    template:
-      name: network
-      network: '3357'
   'yes':
     template:
       name: network
       network: '644'
-  "\xC0 Punt":
-    template:
-      name: network
-      network: '3583'
-  "\xC9vasion":
-    template:
-      name: network
-      network: '1785'
-  "\xD3\u010Dko":
-    template:
-      name: network
-      network: '4037'
-  "\xE9\xE9n":
-    template:
-      name: network
-      network: '1028'
-  "\u010CT :D":
-    template:
-      name: network
-      network: '3380'
-  "\u010CT art":
-    template:
-      name: network
-      network: '3379'
-  "\u010CT sport":
-    template:
-      name: network
-      network: '3872'
-  "\u010CT1":
-    template:
-      name: network
-      network: '632'
-  "\u010CT2":
-    template:
-      name: network
-      network: '2384'
-  "\u010CT24":
-    template:
-      name: network
-      network: '3388'
-  "\u010CT3":
-    template:
-      name: network
-      network: '3887'
-  "\u010Ceskoslovensk\xE1 televize":
-    template:
-      name: network
-      network: '310'
-  "\u010Cesk\xE1 televize":
-    template:
-      name: network
-      network: '2617'
-  "\u0395\u03A1\u03A42":
-    template:
-      name: network
-      network: '5107'
-  "\u041D\u043E\u0432\u0438\u0439 \u043A\u0430\u043D\u0430\u043B":
-    template:
-      name: network
-      network: '4602'
-  "\u041F\u0435\u0440\u0432\u044B\u0439 \u043A\u0430\u043D\u0430\u043B":
-    template:
-      name: network
-      network: '4861'
-  "\u0422\u0412\u0446":
-    template:
-      name: network
-      network: '4773'
-  "\u05D4\u05D5\u05E4!":
-    template:
-      name: network
-      network: '3431'
-  "\u0627\u0644\u062A\u0644\u0641\u0632\u0629 \u0627\u0644\u062A\u0648\u0646\u0633\u064A\u0629":
-    template:
-      name: network
-      network: '2165'
-  "\u0633\u0648\u0631\u064A\u0629 \u062F\u0631\u0627\u0645\u0627":
-    template:
-      name: network
-      network: '3420'
-  "\u897F\u74DC\u89C6\u9891":
-    template:
-      name: network
-      network: '3330'
 templates:
   network:
     optional:
