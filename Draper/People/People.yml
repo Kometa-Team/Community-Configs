@@ -1,0 +1,24 @@
+## Uses the same formatting as twhiting9275's list meant to complement their list.
+
+templates:
+  Person:
+    smart_filter:
+      any:
+        actor: tmdb
+        director: tmdb
+        writer: tmdb
+        producer: tmdb
+      sort_by: title.asc
+      validate: false
+    tmdb_person: <<person>>
+    sort_title: +4_<<collection_name>>
+    smart_label: release.desc
+
+
+collections:
+  "Florence Pugh":
+    template: {name: Person, person: 1373737}
+  "Timothée Chalamet":
+    template: {name: Person, person: 1190668}
+  "Zendaya":
+    template: {name: Person, person: 505710}

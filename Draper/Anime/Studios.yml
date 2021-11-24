@@ -1,0 +1,3682 @@
+templates:
+  Studio:
+    mal_studio:
+      studio_id: <<id>>
+      limit: 0
+    sort_title: zzzzzzzzzzzzzzzzzzzzzzzz_Studio_<<collection_name>>
+    smart_label: release.desc
+    summary: Anime released by <<collection_name>>.
+    collection_name: <<collection_name>>
+    sync_mode: append
+
+collections:
+  "10Gauge":
+      template: {name: Studio, id: 1286}
+  "12 Diary Holders":
+      template: {name: Studio, id: 713}
+  "1IN":
+      template: {name: Studio, id: 2137}
+  "1st PLACE":
+      template: {name: Studio, id: 1117}
+  "1theK":
+      template: {name: Studio, id: 1963}
+  "2:10 AM Animation":
+      template: {name: Studio, id: 1807}
+  "33 Collective":
+      template: {name: Studio, id: 1838}
+  "3xCube":
+      template: {name: Studio, id: 1079}
+  "4Kids Entertainment":
+      template: {name: Studio, id: 252}
+  "5 Inc.":
+      template: {name: Studio, id: 2264}
+  "5pb.":
+      template: {name: Studio, id: 1425}
+  "81 Produce":
+      template: {name: Studio, id: 1185}
+  "8bit":
+      template: {name: Studio, id: 441}
+  "A-1 Pictures":
+      template: {name: Studio, id: 56}
+  "A-Craft":
+      template: {name: Studio, id: 1733}
+  "A-Line":
+      template: {name: Studio, id: 171}
+  "A-Real":
+      template: {name: Studio, id: 1257}
+  "A-Sketch":
+      template: {name: Studio, id: 1635}
+  "A.C.G.T.":
+      template: {name: Studio, id: 179}
+  "A3":
+      template: {name: Studio, id: 2290}
+  "ABC Animation":
+      template: {name: Studio, id: 1500}
+  "Abe Shuuji Jimusho":
+      template: {name: Studio, id: 2016}
+  "AbemaTV":
+      template: {name: Studio, id: 1659}
+  "AC Create":
+      template: {name: Studio, id: 667}
+  "AC-Bu":
+      template: {name: Studio, id: 2272}
+  "Academy Productions":
+      template: {name: Studio, id: 589}
+  "ACC Production":
+      template: {name: Studio, id: 420}
+  "Acca effe":
+      template: {name: Studio, id: 2085}
+  "ACiD FiLM":
+      template: {name: Studio, id: 289}
+  "Actas":
+      template: {name: Studio, id: 60}
+  "Active":
+      template: {name: Studio, id: 121}
+  "ADK":
+      template: {name: Studio, id: 2101}
+  "ADK Emotions":
+      template: {name: Studio, id: 2118}
+  "ADK Marketing Solutions":
+      template: {name: Studio, id: 2232}
+  "Adores":
+      template: {name: Studio, id: 1502}
+  "Adult Source Media":
+      template: {name: Studio, id: 410}
+  "ADV Films":
+      template: {name: Studio, id: 97}
+  "Advance Syakujii":
+      template: {name: Studio, id: 785}
+  "Aeon Entertainment":
+      template: {name: Studio, id: 1886}
+  "AG-ONE":
+      template: {name: Studio, id: 1580}
+  "Age":
+      template: {name: Studio, id: 182}
+  "Age Global Networks":
+      template: {name: Studio, id: 1225}
+  "Agent 21":
+      template: {name: Studio, id: 183}
+  "AHA Entertainment":
+      template: {name: Studio, id: 2294}
+  "Ai Addiction":
+      template: {name: Studio, id: 1041}
+  "Ai ga areba Daijobu":
+      template: {name: Studio, id: 184}
+  "Ai Si Animation Studio":
+      template: {name: Studio, id: 2068}
+  "AIC":
+      template: {name: Studio, id: 48}
+  "AIC ASTA":
+      template: {name: Studio, id: 88}
+  "AIC Build":
+      template: {name: Studio, id: 436}
+  "AIC Classic":
+      template: {name: Studio, id: 1306}
+  "AIC Frontier":
+      template: {name: Studio, id: 805}
+  "AIC PLUS+":
+      template: {name: Studio, id: 292}
+  "AIC Rights":
+      template: {name: Studio, id: 2255}
+  "AIC Spirits":
+      template: {name: Studio, id: 83}
+  "AIC Takarazuka":
+      template: {name: Studio, id: 425}
+  "Aikikaku Center":
+      template: {name: Studio, id: 1083}
+  "AIR AGENCY":
+      template: {name: Studio, id: 1246}
+  "Ajia-Do":
+      template: {name: Studio, id: 30}
+  "Akabanten":
+      template: {name: Studio, id: 1398}
+  "AKABEiSOFT2":
+      template: {name: Studio, id: 1707}
+  "Akatsuki":
+      template: {name: Studio, id: 2034}
+  "Akita Shoten":
+      template: {name: Studio, id: 1373}
+  "AKOM":
+      template: {name: Studio, id: 809}
+  "Albacrow":
+      template: {name: Studio, id: 1999}
+  "Alchemist":
+      template: {name: Studio, id: 172}
+  "Alchemy Bros.":
+      template: {name: Studio, id: 1855}
+  "Alfred Imageworks":
+      template: {name: Studio, id: 2355}
+  "Alice Production":
+      template: {name: Studio, id: 2346}
+  "All Products":
+      template: {name: Studio, id: 2344}
+  "Allure":
+      template: {name: Studio, id: 1161}
+  "Alpha Animation":
+      template: {name: Studio, id: 1939}
+  "Alpha Group Co. Ltd.":
+      template: {name: Studio, id: 2170}
+  "Alpha Pictures":
+      template: {name: Studio, id: 2254}
+  "Amber Film Works":
+      template: {name: Studio, id: 827}
+  "AMG Entertainment":
+      template: {name: Studio, id: 2221}
+  "AMG MUSIC":
+      template: {name: Studio, id: 779}
+  "Amino":
+      template: {name: Studio, id: 408}
+  "Amuse":
+      template: {name: Studio, id: 1313}
+  "Amuse Pictures":
+      template: {name: Studio, id: 380}
+  "Amusement Media Academy":
+      template: {name: Studio, id: 1401}
+  "An DerCen":
+      template: {name: Studio, id: 878}
+  "AN Entertainment":
+      template: {name: Studio, id: 2259}
+  "Anchor Bay Films":
+      template: {name: Studio, id: 488}
+  "Angelfish":
+      template: {name: Studio, id: 975}
+  "ANIDO FILM":
+      template: {name: Studio, id: 1951}
+  "ANIK":
+      template: {name: Studio, id: 194}
+  "Anima":
+      template: {name: Studio, id: 298}
+  "Anima&Co.":
+      template: {name: Studio, id: 1983}
+  "Animac":
+      template: {name: Studio, id: 124}
+  "AniMan":
+      template: {name: Studio, id: 1243}
+  "Animaruya":
+      template: {name: Studio, id: 386}
+  "animate":
+      template: {name: Studio, id: 1906}
+  "animate Film":
+      template: {name: Studio, id: 155}
+  "Animatic":
+      template: {name: Studio, id: 1449}
+  "Animation 21":
+      template: {name: Studio, id: 326}
+  "Animation Do":
+      template: {name: Studio, id: 929}
+  "Animation Lab Japan":
+      template: {name: Studio, id: 2079}
+  "Animation Planet":
+      template: {name: Studio, id: 1861}
+  "Animation Staff Room":
+      template: {name: Studio, id: 1952}
+  "Animatsu Entertainment":
+      template: {name: Studio, id: 1528}
+  "Animax":
+      template: {name: Studio, id: 140}
+  "Anime Antenna Iinkai":
+      template: {name: Studio, id: 1463}
+  "Anime Beans":
+      template: {name: Studio, id: 1723}
+  "Anime Consortium Japan":
+      template: {name: Studio, id: 1510}
+  "Anime Friend":
+      template: {name: Studio, id: 1990}
+  "Anime Midstream":
+      template: {name: Studio, id: 277}
+  "Anime R":
+      template: {name: Studio, id: 971}
+  "AnimEigo":
+      template: {name: Studio, id: 310}
+  "Aniplex":
+      template: {name: Studio, id: 17}
+  "Aniplex of America":
+      template: {name: Studio, id: 493}
+  "Ankama":
+      template: {name: Studio, id: 919}
+  "Ankama Animations":
+      template: {name: Studio, id: 1897}
+  "Annapuru":
+      template: {name: Studio, id: 583}
+  "Anon Pictures":
+      template: {name: Studio, id: 1949}
+  "Anpro":
+      template: {name: Studio, id: 521}
+  "Aoi Studio":
+      template: {name: Studio, id: 2156}
+  "AOMG":
+      template: {name: Studio, id: 1962}
+  "Aoni Entertainment":
+      template: {name: Studio, id: 1802}
+  "Aoni Production":
+      template: {name: Studio, id: 1720}
+  "APDREAM":
+      template: {name: Studio, id: 1883}
+  "Apollon":
+      template: {name: Studio, id: 747}
+  "APPP":
+      template: {name: Studio, id: 77}
+  "AQUA ARIS":
+      template: {name: Studio, id: 2071}
+  "Aquamarine":
+      template: {name: Studio, id: 1801}
+  "AQUAPLUS":
+      template: {name: Studio, id: 1329}
+  "Arcs Create":
+      template: {name: Studio, id: 1445}
+  "Arcturus":
+      template: {name: Studio, id: 1282}
+  "ARECT":
+      template: {name: Studio, id: 2265}
+  "Ark":
+      template: {name: Studio, id: 2020}
+  "arma bianca":
+      template: {name: Studio, id: 1986}
+  "Armor":
+      template: {name: Studio, id: 297}
+  "Arms":
+      template: {name: Studio, id: 38}
+  "Arplants":
+      template: {name: Studio, id: 585}
+  "Arquebuse":
+      template: {name: Studio, id: 1912}
+  "Artist Management Office":
+      template: {name: Studio, id: 1900}
+  "Artland":
+      template: {name: Studio, id: 8}
+  "Artmic":
+      template: {name: Studio, id: 72}
+  "Arts Magic":
+      template: {name: Studio, id: 2261}
+  "Arvo Animation":
+      template: {name: Studio, id: 1874}
+  "Asahi Broadcasting":
+      template: {name: Studio, id: 1415}
+  "Asahi Production":
+      template: {name: Studio, id: 406}
+  "Asahi Shimbun":
+      template: {name: Studio, id: 1318}
+  "Asatsu DK":
+      template: {name: Studio, id: 142}
+  "Ascension":
+      template: {name: Studio, id: 473}
+  "ASCII Media Works":
+      template: {name: Studio, id: 681}
+  "Asgard":
+      template: {name: Studio, id: 1816}
+  "Ashi Production":
+      template: {name: Studio, id: 242}
+  "Ashisuto":
+      template: {name: Studio, id: 1885}
+  "ASIA Documentary Productions":
+      template: {name: Studio, id: 1021}
+  "ASK Animation Studio":
+      template: {name: Studio, id: 2048}
+  "Asmik Ace":
+      template: {name: Studio, id: 517}
+  "asread.":
+      template: {name: Studio, id: 163}
+  "Assez Finaud Fabric":
+      template: {name: Studio, id: 1271}
+  "Asura Film":
+      template: {name: Studio, id: 1399}
+  "AT-2":
+      template: {name: Studio, id: 579}
+  "AT-X":
+      template: {name: Studio, id: 238}
+  "Atelier Musa":
+      template: {name: Studio, id: 1175}
+  "AtelierPontdarc":
+      template: {name: Studio, id: 2298}
+  "Atlus":
+      template: {name: Studio, id: 344}
+  "Aubec":
+      template: {name: Studio, id: 1009}
+  "Audio Graphics Institute":
+      template: {name: Studio, id: 1878}
+  "Audio Highs":
+      template: {name: Studio, id: 645}
+  "Audio Planning U":
+      template: {name: Studio, id: 1506}
+  "Audio Tanaka":
+      template: {name: Studio, id: 1461}
+  "Aurum Production":
+      template: {name: Studio, id: 1867}
+  "Automatic Flowers Studio":
+      template: {name: Studio, id: 482}
+  "Avaco Creative Studios":
+      template: {name: Studio, id: 379}
+  "Avex Entertainment":
+      template: {name: Studio, id: 52}
+  "Avex Pictures":
+      template: {name: Studio, id: 1284}
+  "Avex Technologies":
+      template: {name: Studio, id: 2105}
+  "AXsiZ":
+      template: {name: Studio, id: 1299}
+  "AYCO":
+      template: {name: Studio, id: 907}
+  "AZ Creative":
+      template: {name: Studio, id: 1694}
+  "Azeta Pictures":
+      template: {name: Studio, id: 1191}
+  "Azumaker":
+      template: {name: Studio, id: 1429}
+  "B&T":
+      template: {name: Studio, id: 1462}
+  "B.CMAY PICTURES":
+      template: {name: Studio, id: 1350}
+  "Bakken Record":
+      template: {name: Studio, id: 1984}
+  "Baku Enterprise":
+      template: {name: Studio, id: 1610}
+  "Bandai":
+      template: {name: Studio, id: 230}
+  "Bandai Channel":
+      template: {name: Studio, id: 1588}
+  "Bandai Entertainment":
+      template: {name: Studio, id: 233}
+  "Bandai Namco Arts":
+      template: {name: Studio, id: 1840}
+  "Bandai Namco Entertainment":
+      template: {name: Studio, id: 1233}
+  "Bandai Namco Games":
+      template: {name: Studio, id: 1097}
+  "Bandai Namco Live Creative":
+      template: {name: Studio, id: 687}
+  "Bandai Namco Online":
+      template: {name: Studio, id: 2006}
+  "Bandai Namco Pictures":
+      template: {name: Studio, id: 1258}
+  "Bandai Namco Rights Marketing":
+      template: {name: Studio, id: 1544}
+  "Bandai Spirits":
+      template: {name: Studio, id: 1992}
+  "Bandai Visual":
+      template: {name: Studio, id: 23}
+  "Bandai Visual USA":
+      template: {name: Studio, id: 1466}
+  "Banpresto":
+      template: {name: Studio, id: 1121}
+  "Baramiri":
+      template: {name: Studio, id: 961}
+  "Barnum Studio":
+      template: {name: Studio, id: 271}
+  "BEAM Entertainment":
+      template: {name: Studio, id: 1139}
+  "Beat Frog":
+      template: {name: Studio, id: 59}
+  "Bee Media":
+      template: {name: Studio, id: 322}
+  "Bee Train":
+      template: {name: Studio, id: 5}
+  "BeeWorks":
+      template: {name: Studio, id: 1029}
+  "Beijing Enlight Pictures":
+      template: {name: Studio, id: 1465}
+  "Beijing Huihuang Animation Company":
+      template: {name: Studio, id: 1456}
+  "Beijing IMMG":
+      template: {name: Studio, id: 2120}
+  "Beijing Rocen Digital":
+      template: {name: Studio, id: 1706}
+  "Beijing Sharaku Art":
+      template: {name: Studio, id: 458}
+  "Beijing Sunchime Happy Culture Company":
+      template: {name: Studio, id: 1341}
+  "Being":
+      template: {name: Studio, id: 1285}
+  "Benesse Corporation":
+      template: {name: Studio, id: 1043}
+  "Benlai Pictures":
+      template: {name: Studio, id: 2082}
+  "BeSTACK":
+      template: {name: Studio, id: 89}
+  "Beyond C.":
+      template: {name: Studio, id: 1584}
+  "Bianyue Culture":
+      template: {name: Studio, id: 2083}
+  "Bibury Animation CG":
+      template: {name: Studio, id: 2325}
+  "Bibury Animation Studios":
+      template: {name: Studio, id: 1722}
+  "Big Bang":
+      template: {name: Studio, id: 1157}
+  "Big West":
+      template: {name: Studio, id: 351}
+  "BIGFACE":
+      template: {name: Studio, id: 1711}
+  "BigFireBird Animation":
+      template: {name: Studio, id: 1980}
+  "BIGLOBE":
+      template: {name: Studio, id: 789}
+  "bilibili":
+      template: {name: Studio, id: 1414}
+  "Bishop":
+      template: {name: Studio, id: 1432}
+  "Bit grooove promotion":
+      template: {name: Studio, id: 2074}
+  "Bit Promotion":
+      template: {name: Studio, id: 1869}
+  "Bitgang":
+      template: {name: Studio, id: 1326}
+  "blackflag":
+      template: {name: Studio, id: 2197}
+  "Blade":
+      template: {name: Studio, id: 1547}
+  "Bliss Pictures":
+      template: {name: Studio, id: 445}
+  "BloomZ":
+      template: {name: Studio, id: 2144}
+  "Blue Cat":
+      template: {name: Studio, id: 1385}
+  "Blue Eyes":
+      template: {name: Studio, id: 387}
+  "Blue Impact":
+      template: {name: Studio, id: 174}
+  "BMG Japan":
+      template: {name: Studio, id: 157}
+  "BOMB! CUTE! BOMB!":
+      template: {name: Studio, id: 2049}
+  "Bones":
+      template: {name: Studio, id: 4}
+  "BookLive":
+      template: {name: Studio, id: 2092}
+  "BOOTLEG":
+      template: {name: Studio, id: 981}
+  "Borutong":
+      template: {name: Studio, id: 2301}
+  "Bouncy":
+      template: {name: Studio, id: 1487}
+  "Boyan Pictures":
+      template: {name: Studio, id: 1811}
+  "Brain's Base":
+      template: {name: Studio, id: 112}
+  "Brave group":
+      template: {name: Studio, id: 2238}
+  "Brave Hearts":
+      template: {name: Studio, id: 1745}
+  "BreakBottle":
+      template: {name: Studio, id: 1093}
+  "Bridge":
+      template: {name: Studio, id: 397}
+  "Brio Animation":
+      template: {name: Studio, id: 1887}
+  "Broccoli":
+      template: {name: Studio, id: 116}
+  "BS Asahi":
+      template: {name: Studio, id: 2185}
+  "BS Fuji":
+      template: {name: Studio, id: 843}
+  "BS Japan":
+      template: {name: Studio, id: 1469}
+  "BS NTV":
+      template: {name: Studio, id: 1680}
+  "BS-i":
+      template: {name: Studio, id: 214}
+  "BS-TBS":
+      template: {name: Studio, id: 693}
+  "BS11":
+      template: {name: Studio, id: 1416}
+  "Buemon":
+      template: {name: Studio, id: 1279}
+  "BUILD DREAM":
+      template: {name: Studio, id: 2191}
+  "Bulls Eye":
+      template: {name: Studio, id: 1579}
+  "Bungeishunjuu":
+      template: {name: Studio, id: 1619}
+  "Bushiroad":
+      template: {name: Studio, id: 775}
+  "Bushiroad Move":
+      template: {name: Studio, id: 2228}
+  "Bushiroad Music":
+      template: {name: Studio, id: 1634}
+  "Buzz Wave":
+      template: {name: Studio, id: 2110}
+  "Byakuya Shobo":
+      template: {name: Studio, id: 491}
+  "BYMENT":
+      template: {name: Studio, id: 2055}
+  "C & I entertainment":
+      template: {name: Studio, id: 1497}
+  "C-one":
+      template: {name: Studio, id: 2225}
+  "C-Station":
+      template: {name: Studio, id: 1075}
+  "C2C":
+      template: {name: Studio, id: 605}
+  "CA-Cygames Anime Fund":
+      template: {name: Studio, id: 1901}
+  "Cafe de Jeilhouse":
+      template: {name: Studio, id: 2323}
+  "Calf Studio":
+      template: {name: Studio, id: 1063}
+  "Cammot":
+      template: {name: Studio, id: 609}
+  "CANDY BOX":
+      template: {name: Studio, id: 2134}
+  "Capcom":
+      template: {name: Studio, id: 240}
+  "Carp Studio":
+      template: {name: Studio, id: 933}
+  "Casio Entertainment":
+      template: {name: Studio, id: 328}
+  "CBC Radio":
+      template: {name: Studio, id: 2231}
+  "CBC Television":
+      template: {name: Studio, id: 146}
+  "CBS":
+      template: {name: Studio, id: 1480}
+  "CCTV Animation":
+      template: {name: Studio, id: 1301}
+  "CEKAI":
+      template: {name: Studio, id: 2087}
+  "Celsys":
+      template: {name: Studio, id: 1922}
+  "Central Park Media":
+      template: {name: Studio, id: 284}
+  "CG Year":
+      template: {name: Studio, id: 1808}
+  "CGCG Studio":
+      template: {name: Studio, id: 1976}
+  "CHANCE iN":
+      template: {name: Studio, id: 2155}
+  "Chaos Project":
+      template: {name: Studio, id: 462}
+  "chara-ani.com":
+      template: {name: Studio, id: 665}
+  "Charaction":
+      template: {name: Studio, id: 856}
+  "CherryLips":
+      template: {name: Studio, id: 130}
+  "Chiba TV":
+      template: {name: Studio, id: 1628}
+  "ChiChinoya":
+      template: {name: Studio, id: 402}
+  "Children's Playground Entertainment":
+      template: {name: Studio, id: 1407}
+  "China Animation Characters":
+      template: {name: Studio, id: 1710}
+  "China Film Animation":
+      template: {name: Studio, id: 2119}
+  "China Literature Limited":
+      template: {name: Studio, id: 1728}
+  "Chippai":
+      template: {name: Studio, id: 1546}
+  "Chiptune":
+      template: {name: Studio, id: 1639}
+  "Christmas Holly":
+      template: {name: Studio, id: 2223}
+  "Chrono Gear Creative":
+      template: {name: Studio, id: 1288}
+  "ChuChu":
+      template: {name: Studio, id: 401}
+  "Chugai Mining":
+      template: {name: Studio, id: 1336}
+  "Chukong Technologies":
+      template: {name: Studio, id: 1781}
+  "Chukyo TV Broadcasting":
+      template: {name: Studio, id: 1701}
+  "Chungeorahm Film":
+      template: {name: Studio, id: 353}
+  "Chuubu Nihon Kyouei":
+      template: {name: Studio, id: 1405}
+  "CIC":
+      template: {name: Studio, id: 1586}
+  "Cinelicious Pics":
+      template: {name: Studio, id: 1484}
+  "Cinema Tohoku":
+      template: {name: Studio, id: 886}
+  "CinePix":
+      template: {name: Studio, id: 1384}
+  "Circle Tribute":
+      template: {name: Studio, id: 1642}
+  "CLAP":
+      template: {name: Studio, id: 1876}
+  "Clarion":
+      template: {name: Studio, id: 1395}
+  "Cloud22":
+      template: {name: Studio, id: 2088}
+  "CloverWorks":
+      template: {name: Studio, id: 1835}
+  "CMAY Animation":
+      template: {name: Studio, id: 2216}
+  "Coamix":
+      template: {name: Studio, id: 995}
+  "Coastline Animation Studio":
+      template: {name: Studio, id: 1460}
+  "Cocoro Free":
+      template: {name: Studio, id: 1675}
+  "Code":
+      template: {name: Studio, id: 325}
+  "Collaboration Works":
+      template: {name: Studio, id: 519}
+  "COLOPL":
+      template: {name: Studio, id: 1613}
+  "Colored Pencil Animation":
+      template: {name: Studio, id: 1831}
+  "Comic Animation":
+      template: {name: Studio, id: 2002}
+  "Comic Umenohone":
+      template: {name: Studio, id: 1207}
+  "comico":
+      template: {name: Studio, id: 1481}
+  "COMICSMART":
+      template: {name: Studio, id: 1902}
+  "CoMix Wave Films":
+      template: {name: Studio, id: 291}
+  "Company AZA":
+      template: {name: Studio, id: 1926}
+  "Composition Inc.":
+      template: {name: Studio, id: 2159}
+  "Comstock, Ltd.":
+      template: {name: Studio, id: 1141}
+  "Congzhuo Animation":
+      template: {name: Studio, id: 2066}
+  "Connect":
+      template: {name: Studio, id: 957}
+  "Contents Seed":
+      template: {name: Studio, id: 1554}
+  "Cookie Jar Entertainment":
+      template: {name: Studio, id: 451}
+  "Coolism Productions":
+      template: {name: Studio, id: 1535}
+  "Cosmic Ray":
+      template: {name: Studio, id: 745}
+  "Cosmos":
+      template: {name: Studio, id: 1085}
+  "Cospa":
+      template: {name: Studio, id: 619}
+  "Cotton Doll":
+      template: {name: Studio, id: 821}
+  "Craftar Studios":
+      template: {name: Studio, id: 1357}
+  "Cranberry":
+      template: {name: Studio, id: 356}
+  "Creative Bridge":
+      template: {name: Studio, id: 987}
+  "Creative Power Entertaining":
+      template: {name: Studio, id: 1322}
+  "Creators Dot Com":
+      template: {name: Studio, id: 1662}
+  "Creators in Pack":
+      template: {name: Studio, id: 1195}
+  "Creatures Inc.":
+      template: {name: Studio, id: 1961}
+  "Creek & River":
+      template: {name: Studio, id: 1657}
+  "CREi":
+      template: {name: Studio, id: 1490}
+  "Crimson Star Media":
+      template: {name: Studio, id: 965}
+  "Critical Mass Video":
+      template: {name: Studio, id: 296}
+  "Cromea":
+      template: {name: Studio, id: 1788}
+  "Crossphere":
+      template: {name: Studio, id: 551}
+  "Crown Records":
+      template: {name: Studio, id: 2077}
+  "Crunchyroll":
+      template: {name: Studio, id: 1468}
+  "Crunchyroll SC Anime Fund":
+      template: {name: Studio, id: 1784}
+  "CTW":
+      template: {name: Studio, id: 2236}
+  "CUCURI":
+      template: {name: Studio, id: 1795}
+  "Culture Entertainment":
+      template: {name: Studio, id: 2017}
+  "Culture Publishers":
+      template: {name: Studio, id: 2190}
+  "Cutie Bee":
+      template: {name: Studio, id: 2340}
+  "CyberAgent":
+      template: {name: Studio, id: 1422}
+  "CyberConnect2":
+      template: {name: Studio, id: 231}
+  "CyberStep":
+      template: {name: Studio, id: 923}
+  "Cyclone Graphics":
+      template: {name: Studio, id: 1099}
+  "Cygames":
+      template: {name: Studio, id: 1587}
+  "CygamesPictures":
+      template: {name: Studio, id: 1893}
+  "D & D Pictures":
+      template: {name: Studio, id: 1753}
+  "d-rights":
+      template: {name: Studio, id: 164}
+  "D-techno":
+      template: {name: Studio, id: 1819}
+  "D.A.S.T.":
+      template: {name: Studio, id: 567}
+  "D.N. Dream Partners":
+      template: {name: Studio, id: 1791}
+  "D3":
+      template: {name: Studio, id: 244}
+  "Da Huoniao Donghua":
+      template: {name: Studio, id: 1940}
+  "Daewon Media":
+      template: {name: Studio, id: 228}
+  "Dai Nippon Printing":
+      template: {name: Studio, id: 1549}
+  "Dai-Ichi Douga":
+      template: {name: Studio, id: 1512}
+  "Daiei":
+      template: {name: Studio, id: 278}
+  "Daiichi Shokai":
+      template: {name: Studio, id: 1632}
+  "Daiichikosho":
+      template: {name: Studio, id: 1215}
+  "Daiko":
+      template: {name: Studio, id: 983}
+  "Dancing CG Studio":
+      template: {name: Studio, id: 1848}
+  "DandeLion Animation Studio":
+      template: {name: Studio, id: 1111}
+  "Dangun Pictures":
+      template: {name: Studio, id: 1879}
+  "Darts":
+      template: {name: Studio, id: 1361}
+  "Datam Polystar":
+      template: {name: Studio, id: 1729}
+  "Datama Film":
+      template: {name: Studio, id: 2319}
+  "Daume":
+      template: {name: Studio, id: 39}
+  "David Production":
+      template: {name: Studio, id: 287}
+  "Dawn Animation":
+      template: {name: Studio, id: 2241}
+  "DAX Production":
+      template: {name: Studio, id: 315}
+  "Dazzling Star":
+      template: {name: Studio, id: 2046}
+  "Dear Stage inc.":
+      template: {name: Studio, id: 1803}
+  "Decovocal":
+      template: {name: Studio, id: 1328}
+  "Deho Gallery":
+      template: {name: Studio, id: 1965}
+  "Delfi Sound":
+      template: {name: Studio, id: 711}
+  "Delight Animation":
+      template: {name: Studio, id: 2247}
+  "Delightworks":
+      template: {name: Studio, id: 2008}
+  "DeNA":
+      template: {name: Studio, id: 1576}
+  "Dentsu":
+      template: {name: Studio, id: 53}
+  "Dentsu Eigasha Tokyo":
+      template: {name: Studio, id: 1251}
+  "Dentsu Entertainment USA":
+      template: {name: Studio, id: 791}
+  "Dentsu Meitetsu Communications":
+      template: {name: Studio, id: 2131}
+  "Dentsu Razorfish":
+      template: {name: Studio, id: 1606}
+  "Dentsu Tec":
+      template: {name: Studio, id: 1607}
+  "Design Factory":
+      template: {name: Studio, id: 1570}
+  "DiC Entertainment":
+      template: {name: Studio, id: 269}
+  "Digital Frontier":
+      template: {name: Studio, id: 486}
+  "Digital Media Lab":
+      template: {name: Studio, id: 466}
+  "Digital Network Animation":
+      template: {name: Studio, id: 1796}
+  "Digital Works":
+      template: {name: Studio, id: 206}
+  "Digiturbo":
+      template: {name: Studio, id: 1439}
+  "Diomedéa":
+      template: {name: Studio, id: 51}
+  "Directions":
+      template: {name: Studio, id: 324}
+  "Discotek Media":
+      template: {name: Studio, id: 467}
+  "Discovery":
+      template: {name: Studio, id: 294}
+  "DIVE II Entertainment":
+      template: {name: Studio, id: 1039}
+  "Diwphalanx Records":
+      template: {name: Studio, id: 2124}
+  "DJI":
+      template: {name: Studio, id: 1736}
+  "Djinn Power":
+      template: {name: Studio, id: 2133}
+  "DLE":
+      template: {name: Studio, id: 276}
+  "DMM Music":
+      template: {name: Studio, id: 2139}
+  "DMM pictures":
+      template: {name: Studio, id: 1671}
+  "DMM.com":
+      template: {name: Studio, id: 1542}
+  "DMM.com Labo":
+      template: {name: Studio, id: 2199}
+  "DMM.futureworks":
+      template: {name: Studio, id: 1673}
+  "Docomo Anime Store":
+      template: {name: Studio, id: 1334}
+  "Doga Kobo":
+      template: {name: Studio, id: 95}
+  "DOGA Productions":
+      template: {name: Studio, id: 479}
+  "Dokidoki Factory":
+      template: {name: Studio, id: 1911}
+  "domerica":
+      template: {name: Studio, id: 1380}
+  "Dongwoo A&E":
+      template: {name: Studio, id: 1025}
+  "Dongyang Animation":
+      template: {name: Studio, id: 1513}
+  "Donuts":
+      template: {name: Studio, id: 1658}
+  "DR Movie":
+      template: {name: Studio, id: 1575}
+  "Drawing and Manual":
+      template: {name: Studio, id: 2275}
+  "DRAWIZ":
+      template: {name: Studio, id: 2056}
+  "Dream Creation":
+      template: {name: Studio, id: 615}
+  "Dream Entertainment":
+      template: {name: Studio, id: 2317}
+  "Dream Force":
+      template: {name: Studio, id: 399}
+  "Dream Shift":
+      template: {name: Studio, id: 2090}
+  "DreamWorks":
+      template: {name: Studio, id: 1475}
+  "Drecom":
+      template: {name: Studio, id: 1799}
+  "Drive":
+      template: {name: Studio, id: 1967}
+  "drop":
+      template: {name: Studio, id: 1661}
+  "Duckbill Entertainment":
+      template: {name: Studio, id: 1609}
+  "dugout":
+      template: {name: Studio, id: 1856}
+  "Durufix":
+      template: {name: Studio, id: 2158}
+  "Dwango":
+      template: {name: Studio, id: 715}
+  "Dwango Music Entertainment":
+      template: {name: Studio, id: 663}
+  "dwarf":
+      template: {name: Studio, id: 1133}
+  "Dynamic Planning":
+      template: {name: Studio, id: 921}
+  "Dynamo Pictures":
+      template: {name: Studio, id: 1263}
+  "E&G Films":
+      template: {name: Studio, id: 154}
+  "e-notion":
+      template: {name: Studio, id: 1689}
+  "Earth Design Works":
+      template: {name: Studio, id: 2029}
+  "Earth Star Entertainment":
+      template: {name: Studio, id: 925}
+  "eBooK Initiative Japan":
+      template: {name: Studio, id: 1633}
+  "EBS":
+      template: {name: Studio, id: 1427}
+  "Echo":
+      template: {name: Studio, id: 258}
+  "Echoes":
+      template: {name: Studio, id: 1522}
+  "EDGE":
+      template: {name: Studio, id: 1351}
+  "Egg":
+      template: {name: Studio, id: 593}
+  "Egg Firm":
+      template: {name: Studio, id: 1444}
+  "eigoMANGA":
+      template: {name: Studio, id: 1486}
+  "Eiken":
+      template: {name: Studio, id: 191}
+  "EKACHI EPILKA":
+      template: {name: Studio, id: 1794}
+  "Ekakiya":
+      template: {name: Studio, id: 2151}
+  "Ekura Animal":
+      template: {name: Studio, id: 1433}
+  "ElectromagneticWave":
+      template: {name: Studio, id: 419}
+  "Eleven Arts":
+      template: {name: Studio, id: 531}
+  "ELF-IN":
+      template: {name: Studio, id: 2242}
+  "EMI":
+      template: {name: Studio, id: 815}
+  "Emon":
+      template: {name: Studio, id: 1530}
+  "EMT Squared":
+      template: {name: Studio, id: 1264}
+  "Encourage Films":
+      template: {name: Studio, id: 354}
+  "ENGI":
+      template: {name: Studio, id: 1974}
+  "Enishiya":
+      template: {name: Studio, id: 1991}
+  "Enjin Productions":
+      template: {name: Studio, id: 2041}
+  "Enoki Films":
+      template: {name: Studio, id: 311}
+  "ensky":
+      template: {name: Studio, id: 1330}
+  "entama":
+      template: {name: Studio, id: 2107}
+  "Enterbrain":
+      template: {name: Studio, id: 392}
+  "Epicross":
+      template: {name: Studio, id: 1824}
+  "Epoch":
+      template: {name: Studio, id: 393}
+  "Eswood":
+      template: {name: Studio, id: 2038}
+  "Ether Kitten":
+      template: {name: Studio, id: 2114}
+  "Evil Line Records":
+      template: {name: Studio, id: 1241}
+  "Exa International":
+      template: {name: Studio, id: 1598}
+  "Exit Tunes":
+      template: {name: Studio, id: 1594}
+  "EXNOA":
+      template: {name: Studio, id: 2297}
+  "Eye Move":
+      template: {name: Studio, id: 759}
+  "Ezόla":
+      template: {name: Studio, id: 1864}
+  "F.M.F":
+      template: {name: Studio, id: 1289}
+  "f4samurai":
+      template: {name: Studio, id: 2102}
+  "FABTONE":
+      template: {name: Studio, id: 2128}
+  "Fairy Dust":
+      template: {name: Studio, id: 515}
+  "famima.com":
+      template: {name: Studio, id: 1332}
+  "Fan Company":
+      template: {name: Studio, id: 2094}
+  "FanFan Inc.":
+      template: {name: Studio, id: 2153}
+  "Fanworks":
+      template: {name: Studio, id: 866}
+  "FBC":
+      template: {name: Studio, id: 2121}
+  "feel.":
+      template: {name: Studio, id: 91}
+  "Felicity":
+      template: {name: Studio, id: 2021}
+  "Felix Film":
+      template: {name: Studio, id: 1440}
+  "feng":
+      template: {name: Studio, id: 699}
+  "Fenz":
+      template: {name: Studio, id: 2076}
+  "Fields":
+      template: {name: Studio, id: 1358}
+  "Fifth Avenue":
+      template: {name: Studio, id: 825}
+  "Film Workshop":
+      template: {name: Studio, id: 362}
+  "Filmlink International":
+      template: {name: Studio, id: 426}
+  "FILMONY":
+      template: {name: Studio, id: 2033}
+  "FIREBUG":
+      template: {name: Studio, id: 2179}
+  "Five Ways":
+      template: {name: Studio, id: 267}
+  "FLAGSHIP LINE":
+      template: {name: Studio, id: 2249}
+  "Flat Studio":
+      template: {name: Studio, id: 2067}
+  "Flatiron Film Company":
+      template: {name: Studio, id: 1163}
+  "Flavors Soft":
+      template: {name: Studio, id: 1531}
+  "Flex Comix":
+      template: {name: Studio, id: 874}
+  "flying DOG":
+      template: {name: Studio, id: 464}
+  "foodunited.":
+      template: {name: Studio, id: 2123}
+  "Forecast Communications":
+      template: {name: Studio, id: 1423}
+  "FOREST Hunting One":
+      template: {name: Studio, id: 1135}
+  "Fosun Entertainment Japan":
+      template: {name: Studio, id: 2312}
+  "Four Some":
+      template: {name: Studio, id: 285}
+  "Free-Will":
+      template: {name: Studio, id: 1307}
+  "Frencel":
+      template: {name: Studio, id: 1389}
+  "Friendly Land":
+      template: {name: Studio, id: 1881}
+  "Front Line":
+      template: {name: Studio, id: 69}
+  "Front Wing":
+      template: {name: Studio, id: 2202}
+  "Frontier Works":
+      template: {name: Studio, id: 61}
+  "Fuji Creative":
+      template: {name: Studio, id: 1556}
+  "Fuji TV":
+      template: {name: Studio, id: 169}
+  "Fuji Video":
+      template: {name: Studio, id: 509}
+  "Fuji&gumi Games":
+      template: {name: Studio, id: 1483}
+  "Fujiko F. Fujio Pro":
+      template: {name: Studio, id: 1315}
+  "Fujimi Shobo":
+      template: {name: Studio, id: 1664}
+  "Fujio Production":
+      template: {name: Studio, id: 1822}
+  "Fujipacific Music":
+      template: {name: Studio, id: 769}
+  "Fujishouji":
+      template: {name: Studio, id: 1714}
+  "FUJIYAMA PROJECT JAPAN":
+      template: {name: Studio, id: 1656}
+  "Fukuoka Broadcasting System":
+      template: {name: Studio, id: 1703}
+  "Fukushima Gaina":
+      template: {name: Studio, id: 2305}
+  "Funimation":
+      template: {name: Studio, id: 102}
+  "FuRyu":
+      template: {name: Studio, id: 1590}
+  "Futabasha":
+      template: {name: Studio, id: 1377}
+  "FUTURE LEAP":
+      template: {name: Studio, id: 2237}
+  "Future Planet":
+      template: {name: Studio, id: 340}
+  "G holdings":
+      template: {name: Studio, id: 2152}
+  "G&G Entertainment":
+      template: {name: Studio, id: 131}
+  "G-angle":
+      template: {name: Studio, id: 1837}
+  "G-Lam":
+      template: {name: Studio, id: 1369}
+  "G-mode":
+      template: {name: Studio, id: 876}
+  "GAGA":
+      template: {name: Studio, id: 470}
+  "Gaina":
+      template: {name: Studio, id: 1314}
+  "Gainax":
+      template: {name: Studio, id: 6}
+  "Gainax Kyoto":
+      template: {name: Studio, id: 1971}
+  "Gakken":
+      template: {name: Studio, id: 198}
+  "Gakken Eigakyoku":
+      template: {name: Studio, id: 1091}
+  "Gallop":
+      template: {name: Studio, id: 36}
+  "Gambit":
+      template: {name: Studio, id: 2226}
+  "Gamegate":
+      template: {name: Studio, id: 1895}
+  "GANSIS":
+      template: {name: Studio, id: 721}
+  "Garden Culture":
+      template: {name: Studio, id: 2175}
+  "GARDEN LODGE":
+      template: {name: Studio, id: 1419}
+  "Gathering":
+      template: {name: Studio, id: 400}
+  "GDH":
+      template: {name: Studio, id: 42}
+  "GEEK TOYS":
+      template: {name: Studio, id: 1857}
+  "Geidai Animation":
+      template: {name: Studio, id: 1524}
+  "Geijutsu Eigasha":
+      template: {name: Studio, id: 1177}
+  "GEMBA":
+      template: {name: Studio, id: 1381}
+  "GEN Productions":
+      template: {name: Studio, id: 189}
+  "Gen'ei":
+      template: {name: Studio, id: 1526}
+  "Genco":
+      template: {name: Studio, id: 79}
+  "Gendai Production":
+      template: {name: Studio, id: 1105}
+  "Geneon Entertainment USA":
+      template: {name: Studio, id: 1459}
+  "Geneon Universal Entertainment":
+      template: {name: Studio, id: 31}
+  "Genie Music":
+      template: {name: Studio, id: 2026}
+  "Geno Studio":
+      template: {name: Studio, id: 1393}
+  "Gentosha Comics":
+      template: {name: Studio, id: 282}
+  "GIFTanimation":
+      template: {name: Studio, id: 2299}
+  "Giga Production":
+      template: {name: Studio, id: 2086}
+  "Gigno Systems":
+      template: {name: Studio, id: 1636}
+  "gimik":
+      template: {name: Studio, id: 880}
+  "Ginga Ya":
+      template: {name: Studio, id: 176}
+  "GKIDS":
+      template: {name: Studio, id: 783}
+  "Glams":
+      template: {name: Studio, id: 793}
+  "Global Solutions":
+      template: {name: Studio, id: 2095}
+  "Glovision":
+      template: {name: Studio, id: 1255}
+  "GODxDOG Production":
+      template: {name: Studio, id: 302}
+  "GoGo Visual Planning":
+      template: {name: Studio, id: 1925}
+  "GoHands":
+      template: {name: Studio, id: 309}
+  "Gold Bear":
+      template: {name: Studio, id: 1721}
+  "Gonzo":
+      template: {name: Studio, id: 3}
+  "Good Smile Company":
+      template: {name: Studio, id: 1261}
+  "Good Smile Film":
+      template: {name: Studio, id: 1899}
+  "GOON TRAX":
+      template: {name: Studio, id: 2127}
+  "Gosay Studio":
+      template: {name: Studio, id: 2115}
+  "Graduate School of Film Producing":
+      template: {name: Studio, id: 1923}
+  "GRANTdesign":
+      template: {name: Studio, id: 2099}
+  "Graphinica":
+      template: {name: Studio, id: 894}
+  "Grasshoppa!":
+      template: {name: Studio, id: 378}
+  "GREE":
+      template: {name: Studio, id: 1815}
+  "GREE Entertainment":
+      template: {name: Studio, id: 2289}
+  "Green Bunny":
+      template: {name: Studio, id: 152}
+  "Green Monster Team":
+      template: {name: Studio, id: 1959}
+  "Greenwood":
+      template: {name: Studio, id: 1743}
+  "GRIZZLY":
+      template: {name: Studio, id: 1832}
+  "Grom":
+      template: {name: Studio, id: 1866}
+  "Grooove":
+      template: {name: Studio, id: 1254}
+  "Group TAC":
+      template: {name: Studio, id: 86}
+  "Grouper Productions":
+      template: {name: Studio, id: 391}
+  "Guton Animation Studio":
+      template: {name: Studio, id: 1845}
+  "GYAO!":
+      template: {name: Studio, id: 1602}
+  "Gyorai Eizo Inc.":
+      template: {name: Studio, id: 2311}
+  "Gzbrain":
+      template: {name: Studio, id: 1674}
+  "Hai An Xian Donghua Gongzuo Shi":
+      template: {name: Studio, id: 2192}
+  "Hakoniwa Academy Student Council":
+      template: {name: Studio, id: 649}
+  "Hakuhodo":
+      template: {name: Studio, id: 1563}
+  "Hakuhodo DY Media Partners":
+      template: {name: Studio, id: 1488}
+  "Hakuhodo DY Music & Pictures":
+      template: {name: Studio, id: 1333}
+  "Hakusensha":
+      template: {name: Studio, id: 148}
+  "Hal Film Maker":
+      template: {name: Studio, id: 34}
+  "Half H.P Studio":
+      template: {name: Studio, id: 213}
+  "Haoliners Animation League":
+      template: {name: Studio, id: 1325}
+  "Happinet":
+      template: {name: Studio, id: 1933}
+  "Happinet Pictures":
+      template: {name: Studio, id: 787}
+  "Happy Elements":
+      template: {name: Studio, id: 1793}
+  "Harappa":
+      template: {name: Studio, id: 1256}
+  "Harmony Gold":
+      template: {name: Studio, id: 2278}
+  "Hasbro":
+      template: {name: Studio, id: 465}
+  "Hawkeye":
+      template: {name: Studio, id: 1946}
+  "Hayakawa Shobou":
+      template: {name: Studio, id: 2181}
+  "Heart Company":
+      template: {name: Studio, id: 2147}
+  "HeART-BIT":
+      template: {name: Studio, id: 1217}
+  "Heewon Entertainment":
+      template: {name: Studio, id: 367}
+  "Heiwa":
+      template: {name: Studio, id: 2035}
+  "helo.inc":
+      template: {name: Studio, id: 1769}
+  "Hero Communication":
+      template: {name: Studio, id: 447}
+  "Heroz":
+      template: {name: Studio, id: 1503}
+  "Hexagon Pictures":
+      template: {name: Studio, id: 1917}
+  "HIDEHOMARE":
+      template: {name: Studio, id: 2078}
+  "Higa Brothers Production":
+      template: {name: Studio, id: 527}
+  "High Kick Entertainment":
+      template: {name: Studio, id: 1904}
+  "Highlights Entertainment":
+      template: {name: Studio, id: 1539}
+  "Hikari TV":
+      template: {name: Studio, id: 2138}
+  "Himajin Planning":
+      template: {name: Studio, id: 138}
+  "Himeyuri Alumnae Incorporated Foundation":
+      template: {name: Studio, id: 1019}
+  "Hipland Music Corporation":
+      template: {name: Studio, id: 1716}
+  "Hirameki International":
+      template: {name: Studio, id: 1994}
+  "Hiro Media":
+      template: {name: Studio, id: 1464}
+  "Hiroshi Planning":
+      template: {name: Studio, id: 1310}
+  "Hiroshima Television":
+      template: {name: Studio, id: 1702}
+  "Hisashishi Videos":
+      template: {name: Studio, id: 1457}
+  "HJ Holdings":
+      template: {name: Studio, id: 2227}
+  "HOBBY BASE Yellow Submarine":
+      template: {name: Studio, id: 2116}
+  "Hobby Japan":
+      template: {name: Studio, id: 547}
+  "Hobi Animation":
+      template: {name: Studio, id: 1347}
+  "Hobibox":
+      template: {name: Studio, id: 1495}
+  "Hochi Shimbun":
+      template: {name: Studio, id: 2100}
+  "Hokkaido Azmacy":
+      template: {name: Studio, id: 1219}
+  "Hokkaido Cultural Broadcasting":
+      template: {name: Studio, id: 1221}
+  "Hololive Production":
+      template: {name: Studio, id: 2167}
+  "Hoods Drifters Studio":
+      template: {name: Studio, id: 1360}
+  "Hoods Entertainment":
+      template: {name: Studio, id: 346}
+  "Horannabi":
+      template: {name: Studio, id: 492}
+  "Horgos Coloroom Pictures Co., Ltd.":
+      template: {name: Studio, id: 2285}
+  "HoriPro":
+      template: {name: Studio, id: 134}
+  "HoriPro International":
+      template: {name: Studio, id: 2015}
+  "HORNETS":
+      template: {name: Studio, id: 2097}
+  "Hoso Seisaku Doga":
+      template: {name: Studio, id: 991}
+  "Hot Bear":
+      template: {name: Studio, id: 268}
+  "Hotline":
+      template: {name: Studio, id: 723}
+  "HOTZIPANG":
+      template: {name: Studio, id: 1972}
+  "Houbunsha":
+      template: {name: Studio, id: 797}
+  "HS Pictures Studio":
+      template: {name: Studio, id: 1276}
+  "Hulu":
+      template: {name: Studio, id: 1695}
+  "Husio Studio":
+      template: {name: Studio, id: 1766}
+  "I was a Ballerina":
+      template: {name: Studio, id: 1235}
+  "I Will":
+      template: {name: Studio, id: 1605}
+  "I'm Enterprise":
+      template: {name: Studio, id: 1681}
+  "I-move":
+      template: {name: Studio, id: 389}
+  "I.Gzwei":
+      template: {name: Studio, id: 898}
+  "I.Toon":
+      template: {name: Studio, id: 375}
+  "i0+":
+      template: {name: Studio, id: 1331}
+  "ibis Capital Partners":
+      template: {name: Studio, id: 2093}
+  "Ichigo Animation":
+      template: {name: Studio, id: 2001}
+  "Ichijinsha":
+      template: {name: Studio, id: 1582}
+  "Idea Factory":
+      template: {name: Studio, id: 193}
+  "Idol":
+      template: {name: Studio, id: 1943}
+  "iDRAGONS Creative Studio":
+      template: {name: Studio, id: 1767}
+  "IKK Room":
+      template: {name: Studio, id: 2347}
+  "ILCA":
+      template: {name: Studio, id: 1169}
+  "Illumitoon Entertainment":
+      template: {name: Studio, id: 2262}
+  "Ima Group":
+      template: {name: Studio, id: 1713}
+  "Image House":
+      template: {name: Studio, id: 1527}
+  "Image Kei":
+      template: {name: Studio, id: 1153}
+  "Imagi":
+      template: {name: Studio, id: 255}
+  "Imagica":
+      template: {name: Studio, id: 170}
+  "Imagica Imageworks":
+      template: {name: Studio, id: 1812}
+  "IMAGICA Lab.":
+      template: {name: Studio, id: 1903}
+  "Imagica West":
+      template: {name: Studio, id: 1277}
+  "Imagin":
+      template: {name: Studio, id: 75}
+  "ImaginAsian Entertainment":
+      template: {name: Studio, id: 2263}
+  "Imagine":
+      template: {name: Studio, id: 2135}
+  "Imagineer":
+      template: {name: Studio, id: 1690}
+  "Include P.D.":
+      template: {name: Studio, id: 1862}
+  "INCS toenter":
+      template: {name: Studio, id: 1731}
+  "Indeprox":
+      template: {name: Studio, id: 331}
+  "Index":
+      template: {name: Studio, id: 870}
+  "indigo line":
+      template: {name: Studio, id: 799}
+  "Indivision":
+      template: {name: Studio, id: 2248}
+  "Infinite":
+      template: {name: Studio, id: 1386}
+  "ING":
+      template: {name: Studio, id: 469}
+  "Innocent Grey":
+      template: {name: Studio, id: 357}
+  "International Digital Artist":
+      template: {name: Studio, id: 421}
+  "Inugoya":
+      template: {name: Studio, id: 2320}
+  "iQIYI":
+      template: {name: Studio, id: 1806}
+  "Irawias":
+      template: {name: Studio, id: 2198}
+  "Ishikawa Pro":
+      template: {name: Studio, id: 475}
+  "Ishimori Entertainment":
+      template: {name: Studio, id: 1437}
+  "Ishimori Pro":
+      template: {name: Studio, id: 1561}
+  "Issen":
+      template: {name: Studio, id: 1353}
+  "it's":
+      template: {name: Studio, id: 2104}
+  "Itasca Studio":
+      template: {name: Studio, id: 349}
+  "Iwatobi High School Swimming Club":
+      template: {name: Studio, id: 941}
+  "ixtl":
+      template: {name: Studio, id: 601}
+  "Iyasakadou Film":
+      template: {name: Studio, id: 370}
+  "J.C.Staff":
+      template: {name: Studio, id: 7}
+  "Jade Animation":
+      template: {name: Studio, id: 222}
+  "Jam":
+      template: {name: Studio, id: 257}
+  "Japan Home Video":
+      template: {name: Studio, id: 342}
+  "Japan Sleeve":
+      template: {name: Studio, id: 1629}
+  "Japan Taps":
+      template: {name: Studio, id: 1545}
+  "Japan Vistec":
+      template: {name: Studio, id: 1037}
+  "Japan Volleyball Association":
+      template: {name: Studio, id: 2180}
+  "JapanAnime":
+      template: {name: Studio, id: 573}
+  "Jay Zone Comic":
+      template: {name: Studio, id: 1826}
+  "JCF":
+      template: {name: Studio, id: 1435}
+  "jeux d'eau":
+      template: {name: Studio, id: 2291}
+  "Jichitai Anime":
+      template: {name: Studio, id: 2210}
+  "Jidaigeki Channel":
+      template: {name: Studio, id: 1663}
+  "Jinnan Studio":
+      template: {name: Studio, id: 1517}
+  "Jinnis Animation Studios":
+      template: {name: Studio, id: 444}
+  "JJJOY Animation Studios":
+      template: {name: Studio, id: 2081}
+  "JM Animation":
+      template: {name: Studio, id: 336}
+  "Joker Films":
+      template: {name: Studio, id: 1320}
+  "JP Room":
+      template: {name: Studio, id: 1646}
+  "JR East Marketing & Communications":
+      template: {name: Studio, id: 1501}
+  "JTB Entertainment":
+      template: {name: Studio, id: 1538}
+  "JTB Next Creation":
+      template: {name: Studio, id: 1989}
+  "Jules Bass":
+      template: {name: Studio, id: 360}
+  "Jumondo":
+      template: {name: Studio, id: 755}
+  "Jumonji":
+      template: {name: Studio, id: 1851}
+  "Just Production":
+      template: {name: Studio, id: 1645}
+  "JY Animation":
+      template: {name: Studio, id: 1735}
+  "K-Factory":
+      template: {name: Studio, id: 1269}
+  "Kaca Entertainment":
+      template: {name: Studio, id: 2061}
+  "Kachidoki Studio":
+      template: {name: Studio, id: 432}
+  "Kadokawa":
+      template: {name: Studio, id: 1696}
+  "Kadokawa Animation":
+      template: {name: Studio, id: 1916}
+  "Kadokawa Contents Gate":
+      template: {name: Studio, id: 685}
+  "Kadokawa Daiei Studio":
+      template: {name: Studio, id: 1709}
+  "Kadokawa Games":
+      template: {name: Studio, id: 1738}
+  "Kadokawa Haruki Corporation":
+      template: {name: Studio, id: 1913}
+  "Kadokawa Media (Taiwan)":
+      template: {name: Studio, id: 1540}
+  "Kadokawa Media House":
+      template: {name: Studio, id: 1551}
+  "Kadokawa Pictures Japan":
+      template: {name: Studio, id: 352}
+  "Kadokawa Pictures USA":
+      template: {name: Studio, id: 262}
+  "Kadokawa Shoten":
+      template: {name: Studio, id: 113}
+  "Kaeruotoko Shokai":
+      template: {name: Studio, id: 259}
+  "KAGAYA Studio":
+      template: {name: Studio, id: 525}
+  "Kaibutsu":
+      template: {name: Studio, id: 2024}
+  "Kakao Japan":
+      template: {name: Studio, id: 1649}
+  "Kamikaze Douga":
+      template: {name: Studio, id: 437}
+  "Kamio Japan":
+      template: {name: Studio, id: 1592}
+  "Kamitsubaki Studio":
+      template: {name: Studio, id: 2309}
+  "Kanaban Graphics":
+      template: {name: Studio, id: 330}
+  "Kanade Creative":
+      template: {name: Studio, id: 2072}
+  "Kaname Productions":
+      template: {name: Studio, id: 288}
+  "Kanetsu Investment":
+      template: {name: Studio, id: 1677}
+  "Kanon Sound":
+      template: {name: Studio, id: 1494}
+  "Kansai Telecasting":
+      template: {name: Studio, id: 1412}
+  "Kantou Douga Kai":
+      template: {name: Studio, id: 2350}
+  "Karaku":
+      template: {name: Studio, id: 890}
+  "Karasfilms":
+      template: {name: Studio, id: 1668}
+  "Kate Arrow":
+      template: {name: Studio, id: 1947}
+  "Katsudou-manga-kan":
+      template: {name: Studio, id: 575}
+  "Kawade Shobo Shinsha":
+      template: {name: Studio, id: 1740}
+  "Kawamoto Productions":
+      template: {name: Studio, id: 348}
+  "Kazami Gakuen Koushiki Douga-bu":
+      template: {name: Studio, id: 848}
+  "Kazuki Production":
+      template: {name: Studio, id: 1368}
+  "KBS":
+      template: {name: Studio, id: 411}
+  "KDDI":
+      template: {name: Studio, id: 1697}
+  "Keica":
+      template: {name: Studio, id: 2183}
+  "Keisei Electric Railway":
+      template: {name: Studio, id: 1621}
+  "KEN ON":
+      template: {name: Studio, id: 1790}
+  "Kenji Studio":
+      template: {name: Studio, id: 850}
+  "KENMedia":
+      template: {name: Studio, id: 283}
+  "Ketchup Entertainment":
+      template: {name: Studio, id: 1704}
+  "KeyEast":
+      template: {name: Studio, id: 1239}
+  "Khara":
+      template: {name: Studio, id: 47}
+  "Ki/oon Music":
+      template: {name: Studio, id: 1755}
+  "Kids Station":
+      template: {name: Studio, id: 158}
+  "Kinema Citrus":
+      template: {name: Studio, id: 290}
+  "King Bee":
+      template: {name: Studio, id: 1159}
+  "King Records":
+      template: {name: Studio, id: 1344}
+  "Kino Production":
+      template: {name: Studio, id: 477}
+  "Kinoshita Group Holdings":
+      template: {name: Studio, id: 1653}
+  "Kinoshita Koumuten":
+      template: {name: Studio, id: 1346}
+  "Kinoshita Management":
+      template: {name: Studio, id: 2149}
+  "Kinyosha":
+      template: {name: Studio, id: 1679}
+  "Kitty Film Mitaka Studio":
+      template: {name: Studio, id: 2256}
+  "Kitty Films":
+      template: {name: Studio, id: 99}
+  "Kitty Media":
+      template: {name: Studio, id: 321}
+  "Kiyosumi High School Mahjong Club":
+      template: {name: Studio, id: 727}
+  "KIZAWA Studio":
+      template: {name: Studio, id: 1770}
+  "KJJ Animation":
+      template: {name: Studio, id: 1773}
+  "KKC Animation Production":
+      template: {name: Studio, id: 2348}
+  "KLab":
+      template: {name: Studio, id: 1787}
+  "KlockWorx":
+      template: {name: Studio, id: 460}
+  "KMMJ Studios":
+      template: {name: Studio, id: 383}
+  "Knack Animation":
+      template: {name: Studio, id: 535}
+  "Knack Productions":
+      template: {name: Studio, id: 452}
+  "Kobunsha":
+      template: {name: Studio, id: 1559}
+  "Kodansha":
+      template: {name: Studio, id: 159}
+  "Koei":
+      template: {name: Studio, id: 241}
+  "Koei Tecmo Games":
+      template: {name: Studio, id: 1498}
+  "Kojiro Shishido Animation Works":
+      template: {name: Studio, id: 275}
+  "Kokusai Eigasha":
+      template: {name: Studio, id: 281}
+  "Konami":
+      template: {name: Studio, id: 85}
+  "Konami Digital Entertainment":
+      template: {name: Studio, id: 1470}
+  "KOO-KI":
+      template: {name: Studio, id: 1291}
+  "Korean Academy of Film Arts":
+      template: {name: Studio, id: 1942}
+  "Kotobukiya":
+      template: {name: Studio, id: 1719}
+  "KSS":
+      template: {name: Studio, id: 50}
+  "Kujou-kun no Bonnou wo Mimamoru-kai":
+      template: {name: Studio, id: 1640}
+  "Kuri Jikken Manga Kobo":
+      template: {name: Studio, id: 377}
+  "Kyodo Eiga":
+      template: {name: Studio, id: 1001}
+  "Kyoraku Industrial Holdings":
+      template: {name: Studio, id: 1411}
+  "Kyoto Animation":
+      template: {name: Studio, id: 2}
+  "Kyotoma":
+      template: {name: Studio, id: 833}
+  "Kyowa Film":
+      template: {name: Studio, id: 1057}
+  "l-a-unch・BOX":
+      template: {name: Studio, id: 2053}
+  "L.":
+      template: {name: Studio, id: 1199}
+  "Lambert":
+      template: {name: Studio, id: 1101}
+  "LandQ studios":
+      template: {name: Studio, id: 563}
+  "Langmaor":
+      template: {name: Studio, id: 301}
+  "Lantis":
+      template: {name: Studio, id: 104}
+  "Lapin Track":
+      template: {name: Studio, id: 1828}
+  "Lapis":
+      template: {name: Studio, id: 529}
+  "Larx Entertainment":
+      template: {name: Studio, id: 896}
+  "Lastrum Music":
+      template: {name: Studio, id: 1408}
+  "Lawson":
+      template: {name: Studio, id: 1496}
+  "Lawson Entertainment":
+      template: {name: Studio, id: 2031}
+  "Lawson HMV Entertainment":
+      template: {name: Studio, id: 1309}
+  "Lay-duce":
+      template: {name: Studio, id: 1087}
+  "L²Studio":
+      template: {name: Studio, id: 1268}
+  "Lead":
+      template: {name: Studio, id: 2336}
+  "Legs":
+      template: {name: Studio, id: 1908}
+  "Lemon Heart":
+      template: {name: Studio, id: 414}
+  "Lerche":
+      template: {name: Studio, id: 456}
+  "Lesprit":
+      template: {name: Studio, id: 1829}
+  "Level-5":
+      template: {name: Studio, id: 1428}
+  "LEVELS":
+      template: {name: Studio, id: 2142}
+  "Liber Entertainment":
+      template: {name: Studio, id: 2113}
+  "Liberty Animation Studio":
+      template: {name: Studio, id: 1936}
+  "Libre":
+      template: {name: Studio, id: 1905}
+  "LICO":
+      template: {name: Studio, id: 2125}
+  "Lide":
+      template: {name: Studio, id: 1945}
+  "LIDENFILMS":
+      template: {name: Studio, id: 839}
+  "LIDENFILMS Kyoto Studio":
+      template: {name: Studio, id: 2306}
+  "LIDENFILMS Osaka Studio":
+      template: {name: Studio, id: 1982}
+  "Life Work":
+      template: {name: Studio, id: 312}
+  "Light Chaser Animation Studios":
+      template: {name: Studio, id: 1485}
+  "Lilix":
+      template: {name: Studio, id: 1759}
+  "LINE Corporation":
+      template: {name: Studio, id: 1777}
+  "Ling San Wu Donghua":
+      template: {name: Studio, id: 2211}
+  "LinkedBrain":
+      template: {name: Studio, id: 1865}
+  "Links":
+      template: {name: Studio, id: 1798}
+  "Live Viewing Japan":
+      template: {name: Studio, id: 1823}
+  "Live2D Creative Studio":
+      template: {name: Studio, id: 1995}
+  "Liverpool":
+      template: {name: Studio, id: 1017}
+  "LMD":
+      template: {name: Studio, id: 565}
+  "LOGIC&MAGIC":
+      template: {name: Studio, id: 2354}
+  "Lucent Pictures Entertainment":
+      template: {name: Studio, id: 1123}
+  "Lucky Paradise":
+      template: {name: Studio, id: 657}
+  "Lune Pictures":
+      template: {name: Studio, id: 823}
+  "Lute":
+      template: {name: Studio, id: 2025}
+  "LX Animation Studio":
+      template: {name: Studio, id: 2143}
+  "m.o.e.":
+      template: {name: Studio, id: 40}
+  "M.S.C":
+      template: {name: Studio, id: 463}
+  "Maboroshi Koubou":
+      template: {name: Studio, id: 2316}
+  "Mad Box":
+      template: {name: Studio, id: 430}
+  "Madhouse":
+      template: {name: Studio, id: 11}
+  "Mag Garden":
+      template: {name: Studio, id: 1452}
+  "MAGES.":
+      template: {name: Studio, id: 963}
+  "Magia Doraglier":
+      template: {name: Studio, id: 1860}
+  "Magic Bus":
+      template: {name: Studio, id: 207}
+  "Magic Capsule":
+      template: {name: Studio, id: 306}
+  "Magic Lantern Film":
+      template: {name: Studio, id: 1073}
+  "Magma Studio":
+      template: {name: Studio, id: 2213}
+  "MAGNET":
+      template: {name: Studio, id: 1996}
+  "Maho Film":
+      template: {name: Studio, id: 1978}
+  "Maiden Japan":
+      template: {name: Studio, id: 490}
+  "Maikaze":
+      template: {name: Studio, id: 449}
+  "Mainichi Broadcasting System":
+      template: {name: Studio, id: 143}
+  "Mainichi Shimbun":
+      template: {name: Studio, id: 1603}
+  "Majin":
+      template: {name: Studio, id: 767}
+  "Making Animation":
+      template: {name: Studio, id: 2069}
+  "Manga Entertainment":
+      template: {name: Studio, id: 947}
+  "Manga Productions":
+      template: {name: Studio, id: 2283}
+  "Manglobe":
+      template: {name: Studio, id: 32}
+  "MAPPA":
+      template: {name: Studio, id: 569}
+  "Marine Entertainment":
+      template: {name: Studio, id: 1363}
+  "Maro Studio":
+      template: {name: Studio, id: 2040}
+  "Marone":
+      template: {name: Studio, id: 2188}
+  "Maru Production":
+      template: {name: Studio, id: 320}
+  "Marubeni":
+      template: {name: Studio, id: 165}
+  "Marui Group":
+      template: {name: Studio, id: 1800}
+  "Marvel Entertainment":
+      template: {name: Studio, id: 483}
+  "Marvelous":
+      template: {name: Studio, id: 82}
+  "Marvelous AQL":
+      template: {name: Studio, id: 751}
+  "Marvy Jack":
+      template: {name: Studio, id: 553}
+  "Mary Jane":
+      template: {name: Studio, id: 424}
+  "Marza Animation Planet":
+      template: {name: Studio, id: 1296}
+  "MASTER LIGHTS":
+      template: {name: Studio, id: 1849}
+  "MAT":
+      template: {name: Studio, id: 1937}
+  "Mattel Creations":
+      template: {name: Studio, id: 1891}
+  "Maxell E-Cube":
+      template: {name: Studio, id: 997}
+  "Maxilla":
+      template: {name: Studio, id: 2162}
+  "MAZRI":
+      template: {name: Studio, id: 1877}
+  "Möbius Tone":
+      template: {name: Studio, id: 637}
+  "Media Blasters":
+      template: {name: Studio, id: 250}
+  "Media Castle":
+      template: {name: Studio, id: 1280}
+  "Media Do":
+      template: {name: Studio, id: 1520}
+  "Media Factory":
+      template: {name: Studio, id: 108}
+  "Media Rings":
+      template: {name: Studio, id: 1378}
+  "Mediabank":
+      template: {name: Studio, id: 1424}
+  "MediaLink Entertainment Limited":
+      template: {name: Studio, id: 2279}
+  "MediaNet":
+      template: {name: Studio, id: 135}
+  "MediaNet Pictures":
+      template: {name: Studio, id: 2222}
+  "Medicos Entertainment":
+      template: {name: Studio, id: 1337}
+  "Medicrie":
+      template: {name: Studio, id: 1438}
+  "Meiji Seika":
+      template: {name: Studio, id: 1403}
+  "Melissa":
+      template: {name: Studio, id: 2339}
+  "Mellow Head":
+      template: {name: Studio, id: 71}
+  "Melonbooks":
+      template: {name: Studio, id: 1821}
+  "Meltdown":
+      template: {name: Studio, id: 2330}
+  "Memory-Tech":
+      template: {name: Studio, id: 647}
+  "Meruhensha":
+      template: {name: Studio, id: 1754}
+  "Micro Magazine Publishing":
+      template: {name: Studio, id: 1896}
+  "Midorimatsu":
+      template: {name: Studio, id: 2308}
+  "MiHoYoAnime":
+      template: {name: Studio, id: 2253}
+  "Milestone Music Publishing":
+      template: {name: Studio, id: 1305}
+  "Mili Pictures":
+      template: {name: Studio, id: 1810}
+  "Milkshake":
+      template: {name: Studio, id: 1027}
+  "Milky Animation Label":
+      template: {name: Studio, id: 25}
+  "Milky Cartoon":
+      template: {name: Studio, id: 398}
+  "Mill Creek Entertainment":
+      template: {name: Studio, id: 2280}
+  "Millepensee":
+      template: {name: Studio, id: 1237}
+  "Mime Corporation":
+      template: {name: Studio, id: 2103}
+  "Mimoid":
+      template: {name: Studio, id: 2177}
+  "Minakata Laboratory":
+      template: {name: Studio, id: 1725}
+  "Minami Machi Bugyousho":
+      template: {name: Studio, id: 442}
+  "Ministry of the Navy":
+      template: {name: Studio, id: 1477}
+  "Mippei Eigeki Kiryuukan":
+      template: {name: Studio, id: 1441}
+  "Miracle Bus":
+      template: {name: Studio, id: 1406}
+  "Miracle Robo":
+      template: {name: Studio, id: 763}
+  "Mirai Film":
+      template: {name: Studio, id: 1249}
+  "Mirai Records":
+      template: {name: Studio, id: 1644}
+  "Mirai-Kojo":
+      template: {name: Studio, id: 2186}
+  "Miraicha Records":
+      template: {name: Studio, id: 1756}
+  "Miramax Films":
+      template: {name: Studio, id: 501}
+  "Misseri Studio":
+      template: {name: Studio, id: 394}
+  "Mistral Japan":
+      template: {name: Studio, id: 1247}
+  "Mitsubishi":
+      template: {name: Studio, id: 1564}
+  "Mixer":
+      template: {name: Studio, id: 2098}
+  "Miyagi Television Broadcasting":
+      template: {name: Studio, id: 1699}
+  "Miyazaki Broadcasting":
+      template: {name: Studio, id: 2224}
+  "MK Pictures":
+      template: {name: Studio, id: 1179}
+  "MMDGP":
+      template: {name: Studio, id: 1077}
+  "MMT Technology":
+      template: {name: Studio, id: 2267}
+  "Mobcast":
+      template: {name: Studio, id: 1213}
+  "Mokai Technology":
+      template: {name: Studio, id: 2064}
+  "monofilmo":
+      template: {name: Studio, id: 1854}
+  "Monomusik":
+      template: {name: Studio, id: 1409}
+  "Monster's Egg":
+      template: {name: Studio, id: 1973}
+  "MooGoo":
+      template: {name: Studio, id: 1193}
+  "Mook Animation":
+      template: {name: Studio, id: 54}
+  "Mook DLE":
+      template: {name: Studio, id: 1442}
+  "Moonbell":
+      template: {name: Studio, id: 1730}
+  "Moonstone Cherry":
+      template: {name: Studio, id: 495}
+  "MORIE Inc.":
+      template: {name: Studio, id: 2054}
+  "Moss Design Unit":
+      template: {name: Studio, id: 1525}
+  "Motion Magic":
+      template: {name: Studio, id: 1827}
+  "Mouse":
+      template: {name: Studio, id: 2334}
+  "Mousou Senka":
+      template: {name: Studio, id: 2322}
+  "Movic":
+      template: {name: Studio, id: 166}
+  "MS Pictures":
+      template: {name: Studio, id: 319}
+  "Muse Communication":
+      template: {name: Studio, id: 1786}
+  "Muse International":
+      template: {name: Studio, id: 1919}
+  "Mushi Production":
+      template: {name: Studio, id: 68}
+  "Music Ray'n":
+      template: {name: Studio, id: 1682}
+  "My Theater D.D.":
+      template: {name: Studio, id: 1744}
+  "Myrica Music":
+      template: {name: Studio, id: 2045}
+  "Myung Films":
+      template: {name: Studio, id: 1472}
+  "N&G Production":
+      template: {name: Studio, id: 533}
+  "NADA Holdings":
+      template: {name: Studio, id: 1612}
+  "Nagoya Broadcasting Network":
+      template: {name: Studio, id: 1366}
+  "Nakamura Production":
+      template: {name: Studio, id: 1260}
+  "Namisokan":
+      template: {name: Studio, id: 1915}
+  "Namu Animation":
+      template: {name: Studio, id: 1536}
+  "Natural High":
+      template: {name: Studio, id: 266}
+  "Naver Webtoons":
+      template: {name: Studio, id: 2044}
+  "NAZ":
+      template: {name: Studio, id: 951}
+  "NBCUniversal Entertainment Japan":
+      template: {name: Studio, id: 1113}
+  "NEC Avenue":
+      template: {name: Studio, id: 1446}
+  "Neft Film":
+      template: {name: Studio, id: 1387}
+  "Nelke Planning":
+      template: {name: Studio, id: 1555}
+  "Nelvana":
+      template: {name: Studio, id: 215}
+  "NetEase":
+      template: {name: Studio, id: 2146}
+  "Netflix":
+      template: {name: Studio, id: 1977}
+  "Network":
+      template: {name: Studio, id: 1448}
+  "Network Kouenji Studio":
+      template: {name: Studio, id: 2277}
+  "New Generation":
+      template: {name: Studio, id: 2269}
+  "NewGin":
+      template: {name: Studio, id: 1779}
+  "Nexon":
+      template: {name: Studio, id: 677}
+  "Next":
+      template: {name: Studio, id: 1491}
+  "Next Media Animation":
+      template: {name: Studio, id: 819}
+  "Nexus":
+      template: {name: Studio, id: 852}
+  "NHK":
+      template: {name: Studio, id: 111}
+  "NHK Enterprises":
+      template: {name: Studio, id: 1797}
+  "NHK-BS2":
+      template: {name: Studio, id: 359}
+  "NHN PlayArt":
+      template: {name: Studio, id: 1712}
+  "NIANTIC":
+      template: {name: Studio, id: 1825}
+  "Nice Boat Animation":
+      template: {name: Studio, id: 1804}
+  "Nichiei Agency":
+      template: {name: Studio, id: 428}
+  "NichiNare":
+      template: {name: Studio, id: 1589}
+  "Nichion":
+      template: {name: Studio, id: 1585}
+  "Nihikime no Dozeu":
+      template: {name: Studio, id: 801}
+  "Nihon Ad Systems":
+      template: {name: Studio, id: 139}
+  "Nihon Eizo":
+      template: {name: Studio, id: 1532}
+  "Nihon Falcom":
+      template: {name: Studio, id: 468}
+  "Nihon Hoso Eigasha":
+      template: {name: Studio, id: 989}
+  "Nihon Keizai Koukokusha":
+      template: {name: Studio, id: 2219}
+  "Nikkatsu":
+      template: {name: Studio, id: 513}
+  "Nikkatsu Mukojima":
+      template: {name: Studio, id: 1167}
+  "Nintendo":
+      template: {name: Studio, id: 503}
+  "Nintendo of America":
+      template: {name: Studio, id: 505}
+  "Nippon Animation":
+      template: {name: Studio, id: 22}
+  "Nippon Columbia":
+      template: {name: Studio, id: 323}
+  "Nippon Cultural Broadcasting":
+      template: {name: Studio, id: 1577}
+  "Nippon Ichi Software":
+      template: {name: Studio, id: 1623}
+  "Nippon Ramayana Film Co.":
+      template: {name: Studio, id: 2010}
+  "Nippon Shuppan Hanbai (Nippan) K.K.":
+      template: {name: Studio, id: 316}
+  "Nippon Television Music":
+      template: {name: Studio, id: 1418}
+  "Nippon Television Network":
+      template: {name: Studio, id: 1003}
+  "NIS America, Inc.":
+      template: {name: Studio, id: 372}
+  "Nishiki Studio":
+      template: {name: Studio, id: 1670}
+  "Nishinippon Broadcasting":
+      template: {name: Studio, id: 1548}
+  "Nitroplus":
+      template: {name: Studio, id: 459}
+  "Nobel":
+      template: {name: Studio, id: 2160}
+  "Nomad":
+      template: {name: Studio, id: 70}
+  "Noovo":
+      template: {name: Studio, id: 2303}
+  "North Stars Pictures":
+      template: {name: Studio, id: 1534}
+  "Nostalook":
+      template: {name: Studio, id: 2302}
+  "Notes":
+      template: {name: Studio, id: 703}
+  "NOTTV":
+      template: {name: Studio, id: 892}
+  "Nozomi Entertainment":
+      template: {name: Studio, id: 217}
+  "NTT Docomo":
+      template: {name: Studio, id: 689}
+  "NTT Plala":
+      template: {name: Studio, id: 1614}
+  "Nur":
+      template: {name: Studio, id: 2014}
+  "Nut":
+      template: {name: Studio, id: 1567}
+  "NuTech Digital":
+      template: {name: Studio, id: 270}
+  "NYAV Post":
+      template: {name: Studio, id: 595}
+  "OB Planning":
+      template: {name: Studio, id: 67}
+  "Obtain Future":
+      template: {name: Studio, id: 571}
+  "OCC":
+      template: {name: Studio, id: 1921}
+  "October Media":
+      template: {name: Studio, id: 1809}
+  "Oddjob":
+      template: {name: Studio, id: 1005}
+  "Odolttogi":
+      template: {name: Studio, id: 1473}
+  "Office AO":
+      template: {name: Studio, id: 429}
+  "Office DCI":
+      template: {name: Studio, id: 1281}
+  "Office ENDLESS":
+      template: {name: Studio, id: 2286}
+  "Office No. 8":
+      template: {name: Studio, id: 2315}
+  "Office Nobu":
+      template: {name: Studio, id: 1300}
+  "Office Take Off":
+      template: {name: Studio, id: 481}
+  "Office Takeout":
+      template: {name: Studio, id: 1374}
+  "Oh! Production":
+      template: {name: Studio, id: 234}
+  "Okuruto Noboru":
+      template: {name: Studio, id: 2037}
+  "OLE-M":
+      template: {name: Studio, id: 461}
+  "Olive Studio":
+      template: {name: Studio, id: 1171}
+  "OLM":
+      template: {name: Studio, id: 28}
+  "OLM Digital":
+      template: {name: Studio, id: 1231}
+  "OLM Team Yoshioka":
+      template: {name: Studio, id: 2326}
+  "Omnibus Japan":
+      template: {name: Studio, id: 313}
+  "On The Run":
+      template: {name: Studio, id: 1624}
+  "On-Lead":
+      template: {name: Studio, id: 1600}
+  "ONEMUSIC":
+      template: {name: Studio, id: 1783}
+  "Ongaq":
+      template: {name: Studio, id: 1863}
+  "Onion Studio":
+      template: {name: Studio, id: 2345}
+  "Onionskin":
+      template: {name: Studio, id: 1717}
+  "Opera House":
+      template: {name: Studio, id: 1013}
+  "ORADA COMPANY":
+      template: {name: Studio, id: 2318}
+  "Orange":
+      template: {name: Studio, id: 1109}
+  "Orchid Seed":
+      template: {name: Studio, id: 1654}
+  "Ordet":
+      template: {name: Studio, id: 334}
+  "ORENDA":
+      template: {name: Studio, id: 2193}
+  "Original Dream":
+      template: {name: Studio, id: 2172}
+  "Original Force":
+      template: {name: Studio, id: 2065}
+  "Orix":
+      template: {name: Studio, id: 1924}
+  "Osaka University of Arts":
+      template: {name: Studio, id: 1273}
+  "Otogi Production":
+      template: {name: Studio, id: 831}
+  "Overlap":
+      template: {name: Studio, id: 1443}
+  "Oxybot":
+      template: {name: Studio, id: 361}
+  "OZ":
+      template: {name: Studio, id: 2204}
+  "Oz Inc.":
+      template: {name: Studio, id: 395}
+  "P core":
+      template: {name: Studio, id: 2353}
+  "P Productions":
+      template: {name: Studio, id: 985}
+  "P-Vine Records":
+      template: {name: Studio, id: 1715}
+  "P.A. Works":
+      template: {name: Studio, id: 132}
+  "P.I.C.S.":
+      template: {name: Studio, id: 1872}
+  "Painting Dream":
+      template: {name: Studio, id: 2073}
+  "Palm Studio":
+      template: {name: Studio, id: 455}
+  "Panasonic Digital Contents":
+      template: {name: Studio, id: 1565}
+  "Pancake":
+      template: {name: Studio, id: 2047}
+  "Panda Factory":
+      template: {name: Studio, id: 373}
+  "Panmedia":
+      template: {name: Studio, id: 226}
+  "PansonWorks":
+      template: {name: Studio, id: 1303}
+  "Paper Animation":
+      template: {name: Studio, id: 2171}
+  "Paper Plane Animation Studio":
+      template: {name: Studio, id: 2310}
+  "Parco":
+      template: {name: Studio, id: 1688}
+  "Pashmina":
+      template: {name: Studio, id: 862}
+  "Passione":
+      template: {name: Studio, id: 911}
+  "Pastel":
+      template: {name: Studio, id: 413}
+  "Pazzy Entertainment":
+      template: {name: Studio, id: 1568}
+  "Pb Animation Co. Ltd.":
+      template: {name: Studio, id: 1771}
+  "Peak Hunt":
+      template: {name: Studio, id: 2013}
+  "Pencil":
+      template: {name: Studio, id: 1478}
+  "Penta Show Studios":
+      template: {name: Studio, id: 1354}
+  "PERIMETRON":
+      template: {name: Studio, id: 2122}
+  "Peter Pan Creation":
+      template: {name: Studio, id: 773}
+  "pH Studio":
+      template: {name: Studio, id: 1751}
+  "Phoenix Entertainment":
+      template: {name: Studio, id: 329}
+  "Pia":
+      template: {name: Studio, id: 2111}
+  "Picante Circus":
+      template: {name: Studio, id: 1758}
+  "Picograph":
+      template: {name: Studio, id: 293}
+  "Picona":
+      template: {name: Studio, id: 1764}
+  "Picture Magic":
+      template: {name: Studio, id: 78}
+  "Pie in the sky":
+      template: {name: Studio, id: 1229}
+  "Pied Piper":
+      template: {name: Studio, id: 1467}
+  "Pierrot Plus":
+      template: {name: Studio, id: 1129}
+  "Piko Studio":
+      template: {name: Studio, id: 1382}
+  "Pine Jam":
+      template: {name: Studio, id: 1295}
+  "Pink Pineapple":
+      template: {name: Studio, id: 45}
+  "Pioneer LDC":
+      template: {name: Studio, id: 204}
+  "Piso Studio":
+      template: {name: Studio, id: 1762}
+  "Pixy":
+      template: {name: Studio, id: 195}
+  "Planet":
+      template: {name: Studio, id: 175}
+  "Planet Nemo Animation":
+      template: {name: Studio, id: 2266}
+  "Platinum Vision":
+      template: {name: Studio, id: 1471}
+  "Plum":
+      template: {name: Studio, id: 107}
+  "Plus Heads":
+      template: {name: Studio, id: 374}
+  "Plus One":
+      template: {name: Studio, id: 1630}
+  "Po10tial":
+      template: {name: Studio, id: 807}
+  "Point Pictures":
+      template: {name: Studio, id: 2268}
+  "Pollyanna Graphics":
+      template: {name: Studio, id: 1290}
+  "Poly Animation":
+      template: {name: Studio, id: 2207}
+  "Polygon Magic":
+      template: {name: Studio, id: 1938}
+  "Polygon Pictures":
+      template: {name: Studio, id: 1023}
+  "Polygram Japan":
+      template: {name: Studio, id: 156}
+  "Poncotan":
+      template: {name: Studio, id: 931}
+  "PONOS Corporation":
+      template: {name: Studio, id: 2195}
+  "Pony Canyon":
+      template: {name: Studio, id: 144}
+  "Pony Canyon Enterprise":
+      template: {name: Studio, id: 1557}
+  "Ponycan USA":
+      template: {name: Studio, id: 1201}
+  "PoPoCo":
+      template: {name: Studio, id: 1049}
+  "Pops Inc.":
+      template: {name: Studio, id: 1746}
+  "PoRO":
+      template: {name: Studio, id: 365}
+  "Postgal Workshop":
+      template: {name: Studio, id: 448}
+  "Potato House":
+      template: {name: Studio, id: 2349}
+  "PP Project":
+      template: {name: Studio, id: 2342}
+  "PPM":
+      template: {name: Studio, id: 137}
+  "PPP":
+      template: {name: Studio, id: 709}
+  "PRA":
+      template: {name: Studio, id: 753}
+  "Presidio":
+      template: {name: Studio, id: 1931}
+  "Primastea":
+      template: {name: Studio, id: 304}
+  "PrimeTime":
+      template: {name: Studio, id: 347}
+  "Procidis":
+      template: {name: Studio, id: 431}
+  "Production +h.":
+      template: {name: Studio, id: 2157}
+  "Production Ace":
+      template: {name: Studio, id: 1651}
+  "Production D.M.H":
+      template: {name: Studio, id: 2321}
+  "production doA":
+      template: {name: Studio, id: 1669}
+  "Production GoodBook":
+      template: {name: Studio, id: 1317}
+  "Production I.G":
+      template: {name: Studio, id: 10}
+  "Production IMS":
+      template: {name: Studio, id: 1053}
+  "Production Reed":
+      template: {name: Studio, id: 196}
+  "project lights":
+      template: {name: Studio, id: 1508}
+  "Project No.9":
+      template: {name: Studio, id: 439}
+  "Project Team Eikyuu Kikan":
+      template: {name: Studio, id: 1061}
+  "Project Team Sarah":
+      template: {name: Studio, id: 2276}
+  "PSG":
+      template: {name: Studio, id: 1404}
+  "Public & Basic":
+      template: {name: Studio, id: 1065}
+  "Purple Cow Studio Japan":
+      template: {name: Studio, id: 559}
+  "Puzzle Animation Studio Limited":
+      template: {name: Studio, id: 343}
+  "Q-Tec":
+      template: {name: Studio, id: 1287}
+  "Qianqi Animation":
+      template: {name: Studio, id: 2140}
+  "Qiying Animation":
+      template: {name: Studio, id: 2274}
+  "QREAZY":
+      template: {name: Studio, id: 1655}
+  "Quad":
+      template: {name: Studio, id: 2314}
+  "Qualia Animation":
+      template: {name: Studio, id: 1304}
+  "Quaras":
+      template: {name: Studio, id: 1574}
+  "Quatre Stella":
+      template: {name: Studio, id: 1595}
+  "Qubic Pictures":
+      template: {name: Studio, id: 1975}
+  "Quebico":
+      template: {name: Studio, id: 2243}
+  "Queen Bee":
+      template: {name: Studio, id: 977}
+  "Quick Corporation":
+      template: {name: Studio, id: 1739}
+  "Qzil.la":
+      template: {name: Studio, id: 2288}
+  "RAB Aomori Broadcasting":
+      template: {name: Studio, id: 1417}
+  "Rabbit Gate":
+      template: {name: Studio, id: 1107}
+  "Rabbit Machine":
+      template: {name: Studio, id: 1362}
+  "Radio Osaka":
+      template: {name: Studio, id: 1631}
+  "Radix":
+      template: {name: Studio, id: 81}
+  "Raku High Student Council":
+      template: {name: Studio, id: 729}
+  "Rakuonsha":
+      template: {name: Studio, id: 211}
+  "Rakuten":
+      template: {name: Studio, id: 1817}
+  "Rambling Records":
+      template: {name: Studio, id: 1410}
+  "RAMS":
+      template: {name: Studio, id: 607}
+  "Rankin/Bass":
+      template: {name: Studio, id: 339}
+  "RAY":
+      template: {name: Studio, id: 1581}
+  "RCC Chugoku Broadcasting":
+      template: {name: Studio, id: 190}
+  "REALTHING":
+      template: {name: Studio, id: 1454}
+  "Red Dog Culture House":
+      template: {name: Studio, id: 2126}
+  "Reddog Culture House":
+      template: {name: Studio, id: 2273}
+  "Reiki Eyes Animation":
+      template: {name: Studio, id: 2209}
+  "Remic":
+      template: {name: Studio, id: 49}
+  "Revoroot":
+      template: {name: Studio, id: 1692}
+  "Rex Entertainment":
+      template: {name: Studio, id: 1850}
+  "RG Animation Studios":
+      template: {name: Studio, id: 1181}
+  "Rialto Entertainment":
+      template: {name: Studio, id: 2018}
+  "Right Gauge":
+      template: {name: Studio, id: 661}
+  "RightTracks":
+      template: {name: Studio, id: 1394}
+  "Rikuentai":
+      template: {name: Studio, id: 253}
+  "Ripple Film":
+      template: {name: Studio, id: 1187}
+  "Ripromo":
+      template: {name: Studio, id: 1489}
+  "Rironsha":
+      template: {name: Studio, id: 1519}
+  "Rising Force":
+      template: {name: Studio, id: 1067}
+  "RME":
+      template: {name: Studio, id: 1888}
+  "Robot Communications":
+      template: {name: Studio, id: 249}
+  "Rocen":
+      template: {name: Studio, id: 2281}
+  "Rockwell Eyes":
+      template: {name: Studio, id: 1618}
+  "RoiVisual":
+      template: {name: Studio, id: 1302}
+  "Romanov Films":
+      template: {name: Studio, id: 591}
+  "Romantica club !!":
+      template: {name: Studio, id: 1293}
+  "Rondo Robe":
+      template: {name: Studio, id: 160}
+  "Royal Limousine":
+      template: {name: Studio, id: 2187}
+  "RTHK":
+      template: {name: Studio, id: 446}
+  "Ruby-Spears Productions":
+      template: {name: Studio, id: 264}
+  "Ruo Hong Culture":
+      template: {name: Studio, id: 2042}
+  "RX-RECORDS":
+      template: {name: Studio, id: 1741}
+  "Ryukyu Asahi Broadcasting":
+      template: {name: Studio, id: 913}
+  "S-TAR7":
+      template: {name: Studio, id: 1875}
+  "Saban Brands":
+      template: {name: Studio, id: 1323}
+  "Saban Entertainment":
+      template: {name: Studio, id: 841}
+  "Saetta":
+      template: {name: Studio, id: 1853}
+  "Saigo no Shudan":
+      template: {name: Studio, id: 1934}
+  "Sakura Color Film":
+      template: {name: Studio, id: 1242}
+  "Sakura Create":
+      template: {name: Studio, id: 765}
+  "Sakura Motion Picture":
+      template: {name: Studio, id: 1298}
+  "Sakura Production":
+      template: {name: Studio, id: 611}
+  "SamBakZa":
+      template: {name: Studio, id: 341}
+  "Sammy":
+      template: {name: Studio, id: 1345}
+  "Samsara Animation Studio":
+      template: {name: Studio, id: 1944}
+  "Samsung":
+      template: {name: Studio, id: 1914}
+  "San-X":
+      template: {name: Studio, id: 261}
+  "Sanctuary":
+      template: {name: Studio, id: 1270}
+  "Sankyo Planning":
+      template: {name: Studio, id: 1311}
+  "Sanrio":
+      template: {name: Studio, id: 150}
+  "Sanrio Digital":
+      template: {name: Studio, id: 1151}
+  "Sanyo":
+      template: {name: Studio, id: 1515}
+  "Sanyo Bussan":
+      template: {name: Studio, id: 1552}
+  "SANZIGEN":
+      template: {name: Studio, id: 537}
+  "Sapporo Television Broadcasting":
+      template: {name: Studio, id: 1698}
+  "Satelight":
+      template: {name: Studio, id: 41}
+  "Sav! The World Productions":
+      template: {name: Studio, id: 98}
+  "SB Creative":
+      template: {name: Studio, id: 2117}
+  "SBS TV Production":
+      template: {name: Studio, id: 523}
+  "Scarlet":
+      template: {name: Studio, id: 2324}
+  "Schoolzone":
+      template: {name: Studio, id: 422}
+  "Science SARU":
+      template: {name: Studio, id: 1591}
+  "SEDIC International":
+      template: {name: Studio, id: 1308}
+  "Sega":
+      template: {name: Studio, id: 167}
+  "Sega Interactive":
+      template: {name: Studio, id: 1910}
+  "Seikaisha":
+      template: {name: Studio, id: 701}
+  "SEK Studios":
+      template: {name: Studio, id: 1137}
+  "SELFISH":
+      template: {name: Studio, id: 1836}
+  "Sentai Filmworks":
+      template: {name: Studio, id: 376}
+  "Seta Corporation":
+      template: {name: Studio, id: 335}
+  "Seven":
+      template: {name: Studio, id: 541}
+  "Seven Arcs":
+      template: {name: Studio, id: 35}
+  "Seven Arcs Pictures":
+      template: {name: Studio, id: 1569}
+  "Seven Stone Entertainment":
+      template: {name: Studio, id: 1830}
+  "Shaft":
+      template: {name: Studio, id: 44}
+  "Shanghai Animation Film Studio":
+      template: {name: Studio, id: 471}
+  "Shanghai Foch Film and TV Culture Investment":
+      template: {name: Studio, id: 1667}
+  "Shanghai Hippo Animation":
+      template: {name: Studio, id: 1844}
+  "Shanghai Jump Network Technology":
+      template: {name: Studio, id: 1818}
+  "Shanghai Tiantan Culture & Media":
+      template: {name: Studio, id: 1611}
+  "Sharefun Studio":
+      template: {name: Studio, id: 2258}
+  "Shelty":
+      template: {name: Studio, id: 168}
+  "Shenying Animation":
+      template: {name: Studio, id: 2058}
+  "Shimogumi":
+      template: {name: Studio, id: 1324}
+  "Shin-Ei Animation":
+      template: {name: Studio, id: 247}
+  "Shinano Kikaku":
+      template: {name: Studio, id: 1147}
+  "Shinchosha":
+      template: {name: Studio, id: 1550}
+  "Shindeban Film":
+      template: {name: Studio, id: 2335}
+  "Shinjukuza":
+      template: {name: Studio, id: 2329}
+  "Shinkuukan":
+      template: {name: Studio, id: 192}
+  "Shinshokan":
+      template: {name: Studio, id: 1672}
+  "Shinwon Productions":
+      template: {name: Studio, id: 485}
+  "Shinyusha":
+      template: {name: Studio, id: 133}
+  "Shion":
+      template: {name: Studio, id: 2332}
+  "Shirogumi":
+      template: {name: Studio, id: 235}
+  "Shizuoka Asahi Television":
+      template: {name: Studio, id: 2036}
+  "Shizuoka Broadcasting System":
+      template: {name: Studio, id: 1359}
+  "Shizuoka Daiichi Television":
+      template: {name: Studio, id: 1700}
+  "Shochiku":
+      template: {name: Studio, id: 109}
+  "Shochiku Animation Institute":
+      template: {name: Studio, id: 1476}
+  "Shochiku Media Division":
+      template: {name: Studio, id: 1894}
+  "Shochiku Music Publishing":
+      template: {name: Studio, id: 1626}
+  "Shodensha":
+      template: {name: Studio, id: 1765}
+  "Shogakukan":
+      template: {name: Studio, id: 1430}
+  "Shogakukan Music & Digital Entertainment":
+      template: {name: Studio, id: 474}
+  "Shogakukan-Shueisha Productions":
+      template: {name: Studio, id: 62}
+  "Shounen Gahousha":
+      template: {name: Studio, id: 1553}
+  "Shout! Factory":
+      template: {name: Studio, id: 1737}
+  "Show Corporation":
+      template: {name: Studio, id: 2148}
+  "Showgate":
+      template: {name: Studio, id: 777}
+  "Showten":
+      template: {name: Studio, id: 2215}
+  "Shueisha":
+      template: {name: Studio, id: 1365}
+  "Shufunotomo":
+      template: {name: Studio, id: 1708}
+  "Shuka":
+      template: {name: Studio, id: 1119}
+  "Shun Produce":
+      template: {name: Studio, id: 2154}
+  "Shura":
+      template: {name: Studio, id: 2331}
+  "Shuuhei Morita":
+      template: {name: Studio, id: 260}
+  "SIDO LIMITED":
+      template: {name: Studio, id: 1420}
+  "Signal.MD":
+      template: {name: Studio, id: 1278}
+  "Silky’s":
+      template: {name: Studio, id: 129}
+  "Silver":
+      template: {name: Studio, id: 1873}
+  "SILVER LINK.":
+      template: {name: Studio, id: 300}
+  "SJYNEXCUS":
+      template: {name: Studio, id: 2284}
+  "Skouras":
+      template: {name: Studio, id: 279}
+  "Sky Perfect Communications":
+      template: {name: Studio, id: 2189}
+  "SKY Perfect Well Think":
+      template: {name: Studio, id: 147}
+  "SKY PerfecTV!":
+      template: {name: Studio, id: 1859}
+  "Slow Curve":
+      template: {name: Studio, id: 735}
+  "SME Records":
+      template: {name: Studio, id: 1918}
+  "SME Visual Works":
+      template: {name: Studio, id: 149}
+  "Smile Company":
+      template: {name: Studio, id: 2293}
+  "Smiral Animation":
+      template: {name: Studio, id: 1647}
+  "Soeishinsha":
+      template: {name: Studio, id: 1372}
+  "Soft Garage":
+      template: {name: Studio, id: 254}
+  "Soft on Demand":
+      template: {name: Studio, id: 953}
+  "SoftBank Creative":
+      template: {name: Studio, id: 621}
+  "SoftCel Pictures":
+      template: {name: Studio, id: 813}
+  "SoftX":
+      template: {name: Studio, id: 153}
+  "Sogo Vision":
+      template: {name: Studio, id: 161}
+  "Sol Blade":
+      template: {name: Studio, id: 209}
+  "Sola Digital Arts":
+      template: {name: Studio, id: 1189}
+  "Sola Entertainment":
+      template: {name: Studio, id: 2019}
+  "Solid Vox":
+      template: {name: Studio, id: 854}
+  "Sonilude":
+      template: {name: Studio, id: 1858}
+  "Sonsan Kikaku":
+      template: {name: Studio, id: 2328}
+  "Sony Creative Products":
+      template: {name: Studio, id: 2000}
+  "Sony Interactive Entertainment":
+      template: {name: Studio, id: 1950}
+  "Sony Music Communications":
+      template: {name: Studio, id: 737}
+  "Sony Music Entertainment":
+      template: {name: Studio, id: 757}
+  "Sony Music Solutions":
+      template: {name: Studio, id: 2106}
+  "Sony PCL":
+      template: {name: Studio, id: 1516}
+  "Sony Pictures Entertainment":
+      template: {name: Studio, id: 15}
+  "Sony Pictures Worldwide Acquisitions":
+      template: {name: Studio, id: 1928}
+  "Sotsu":
+      template: {name: Studio, id: 64}
+  "Sotsu Music Publishing":
+      template: {name: Studio, id: 1597}
+  "Sound Team Don Juan":
+      template: {name: Studio, id: 1294}
+  "Souten no Ken":
+      template: {name: Studio, id: 1909}
+  "Souten Studio":
+      template: {name: Studio, id: 128}
+  "Sovat Theater":
+      template: {name: Studio, id: 364}
+  "Soyep":
+      template: {name: Studio, id: 2059}
+  "Soyuzmultfilm":
+      template: {name: Studio, id: 679}
+  "Space Neko Company":
+      template: {name: Studio, id: 1045}
+  "Space Shower Music":
+      template: {name: Studio, id: 1343}
+  "Space-X":
+      template: {name: Studio, id: 2333}
+  "Spacey Music Entertainment":
+      template: {name: Studio, id: 1732}
+  "Sparkly Key Animation Studio":
+      template: {name: Studio, id: 1768}
+  "Sparky Animation":
+      template: {name: Studio, id: 581}
+  "SPEED":
+      template: {name: Studio, id: 979}
+  "Speed Inc.":
+      template: {name: Studio, id: 1932}
+  "Spell Bound":
+      template: {name: Studio, id: 2063}
+  "SPO Entertainment":
+      template: {name: Studio, id: 1391}
+  "Spooky graphic":
+      template: {name: Studio, id: 2250}
+  "Spoon":
+      template: {name: Studio, id: 2023}
+  "Sprite Animation Studios":
+      template: {name: Studio, id: 1370}
+  "Square Enix":
+      template: {name: Studio, id: 58}
+  "Square Enix Visual Works":
+      template: {name: Studio, id: 1847}
+  "Starchild Records":
+      template: {name: Studio, id: 92}
+  "Stardust Promotion":
+      template: {name: Studio, id: 1601}
+  "Starry Cube":
+      template: {name: Studio, id: 2233}
+  "Stella Promotion":
+      template: {name: Studio, id: 2028}
+  "Steve N' Steven":
+      template: {name: Studio, id: 1197}
+  "Stingray":
+      template: {name: Studio, id: 1436}
+  "STORY":
+      template: {name: Studio, id: 1956}
+  "Story Effect":
+      template: {name: Studio, id: 2295}
+  "StoryRiders Co. Ltd.":
+      template: {name: Studio, id: 1960}
+  "Straight Edge":
+      template: {name: Studio, id: 1683}
+  "Strawberry Meets Pictures":
+      template: {name: Studio, id: 884}
+  "Stray Cats":
+      template: {name: Studio, id: 2062}
+  "Studio 1st":
+      template: {name: Studio, id: 1203}
+  "Studio 3Hz":
+      template: {name: Studio, id: 1127}
+  "Studio 4°C":
+      template: {name: Studio, id: 13}
+  "Studio 88":
+      template: {name: Studio, id: 2169}
+  "Studio 9 Maiami":
+      template: {name: Studio, id: 407}
+  "Studio A-CAT":
+      template: {name: Studio, id: 1209}
+  "Studio Animal":
+      template: {name: Studio, id: 999}
+  "Studio Arch Inc.":
+      template: {name: Studio, id: 1966}
+  "Studio AWAKE":
+      template: {name: Studio, id: 1641}
+  "Studio Bind":
+      template: {name: Studio, id: 1993}
+  "Studio Binzo":
+      template: {name: Studio, id: 1252}
+  "Studio Blanc":
+      template: {name: Studio, id: 478}
+  "Studio Bogey":
+      template: {name: Studio, id: 338}
+  "Studio Boogie Nights":
+      template: {name: Studio, id: 2327}
+  "Studio CA":
+      template: {name: Studio, id: 1750}
+  "Studio Cab":
+      template: {name: Studio, id: 1149}
+  "Studio Carbuncle":
+      template: {name: Studio, id: 1666}
+  "Studio CHANT":
+      template: {name: Studio, id: 1599}
+  "Studio Chizu":
+      template: {name: Studio, id: 555}
+  "Studio Coa":
+      template: {name: Studio, id: 2051}
+  "Studio Cockpit":
+      template: {name: Studio, id: 1095}
+  "Studio Colorido":
+      template: {name: Studio, id: 1033}
+  "Studio Comet":
+      template: {name: Studio, id: 126}
+  "Studio Compile":
+      template: {name: Studio, id: 959}
+  "Studio Core":
+      template: {name: Studio, id: 1479}
+  "Studio Crocodile":
+      template: {name: Studio, id: 1927}
+  "Studio Curtain":
+      template: {name: Studio, id: 1259}
+  "Studio Dadashow":
+      template: {name: Studio, id: 1173}
+  "Studio Daisy":
+      template: {name: Studio, id: 2240}
+  "Studio Deen":
+      template: {name: Studio, id: 37}
+  "Studio Deva Loka":
+      template: {name: Studio, id: 545}
+  "Studio Drive":
+      template: {name: Studio, id: 2007}
+  "Studio DURIAN":
+      template: {name: Studio, id: 2196}
+  "Studio Egg":
+      template: {name: Studio, id: 409}
+  "Studio elle":
+      template: {name: Studio, id: 1521}
+  "Studio Eromatick":
+      template: {name: Studio, id: 423}
+  "Studio Fantasia":
+      template: {name: Studio, id: 24}
+  "Studio Flad":
+      template: {name: Studio, id: 1693}
+  "Studio Flag":
+      template: {name: Studio, id: 93}
+  "Studio G-1Neo":
+      template: {name: Studio, id: 427}
+  "Studio Gadget":
+      template: {name: Studio, id: 2351}
+  "Studio GDW":
+      template: {name: Studio, id: 1227}
+  "Studio Ghibli":
+      template: {name: Studio, id: 21}
+  "Studio Gohan":
+      template: {name: Studio, id: 2244}
+  "Studio Gokumi":
+      template: {name: Studio, id: 418}
+  "Studio GOONEYS":
+      template: {name: Studio, id: 1253}
+  "Studio Gram":
+      template: {name: Studio, id: 497}
+  "Studio Guts":
+      template: {name: Studio, id: 2282}
+  "Studio Hakk":
+      template: {name: Studio, id: 1814}
+  "studio hb":
+      template: {name: Studio, id: 2313}
+  "Studio Hibari":
+      template: {name: Studio, id: 101}
+  "Studio Hokiboshi":
+      template: {name: Studio, id: 1968}
+  "Studio Izena":
+      template: {name: Studio, id: 117}
+  "Studio Jack":
+      template: {name: Studio, id: 829}
+  "Studio Jam":
+      template: {name: Studio, id: 1375}
+  "Studio Jemi":
+      template: {name: Studio, id: 2300}
+  "Studio Junio":
+      template: {name: Studio, id: 280}
+  "Studio Kaab":
+      template: {name: Studio, id: 937}
+  "Studio Kafka":
+      template: {name: Studio, id: 2205}
+  "Studio Kai":
+      template: {name: Studio, id: 1997}
+  "Studio Kajino":
+      template: {name: Studio, id: 272}
+  "Studio Kelmadick":
+      template: {name: Studio, id: 909}
+  "Studio Khronos":
+      template: {name: Studio, id: 1705}
+  "Studio Kikan":
+      template: {name: Studio, id: 256}
+  "Studio Kingyoiro":
+      template: {name: Studio, id: 2252}
+  "Studio Korumi":
+      template: {name: Studio, id: 1115}
+  "Studio Kuma":
+      template: {name: Studio, id: 440}
+  "Studio Kyuuma":
+      template: {name: Studio, id: 177}
+  "Studio LAN":
+      template: {name: Studio, id: 1774}
+  "Studio Liberty":
+      template: {name: Studio, id: 973}
+  "Studio Lings":
+      template: {name: Studio, id: 1813}
+  "Studio Live":
+      template: {name: Studio, id: 1383}
+  "Studio Lotus":
+      template: {name: Studio, id: 1071}
+  "Studio M2":
+      template: {name: Studio, id: 1529}
+  "Studio March":
+      template: {name: Studio, id: 1505}
+  "Studio Matrix":
+      template: {name: Studio, id: 114}
+  "Studio Mausu":
+      template: {name: Studio, id: 719}
+  "Studio Meditation With a Pencil":
+      template: {name: Studio, id: 1426}
+  "Studio Mir":
+      template: {name: Studio, id: 1776}
+  "Studio Mirai":
+      template: {name: Studio, id: 1248}
+  "Studio Moriken":
+      template: {name: Studio, id: 1155}
+  "studio MOTHER":
+      template: {name: Studio, id: 2246}
+  "Studio MWP":
+      template: {name: Studio, id: 487}
+  "Studio Nanahoshi":
+      template: {name: Studio, id: 1763}
+  "Studio Nem":
+      template: {name: Studio, id: 1059}
+  "Studio NOIX":
+      template: {name: Studio, id: 781}
+  "Studio Nuck":
+      template: {name: Studio, id: 2296}
+  "Studio Nue":
+      template: {name: Studio, id: 199}
+  "Studio OX":
+      template: {name: Studio, id: 1724}
+  "Studio Palette":
+      template: {name: Studio, id: 2201}
+  "Studio Pastoral":
+      template: {name: Studio, id: 299}
+  "Studio Pierrot":
+      template: {name: Studio, id: 1}
+  "Studio Ponoc":
+      template: {name: Studio, id: 1523}
+  "Studio Ppuri":
+      template: {name: Studio, id: 1839}
+  "Studio Prokion":
+      template: {name: Studio, id: 2341}
+  "Studio PuYUKAI":
+      template: {name: Studio, id: 443}
+  "Studio RE:Map":
+      template: {name: Studio, id: 2271}
+  "Studio Rikka":
+      template: {name: Studio, id: 84}
+  "Studio Saki Makura":
+      template: {name: Studio, id: 543}
+  "Studio Shamrock":
+      template: {name: Studio, id: 1852}
+  "Studio Shelter":
+      template: {name: Studio, id: 2130}
+  "Studio Sign":
+      template: {name: Studio, id: 629}
+  "Studio Signal":
+      template: {name: Studio, id: 438}
+  "Studio Signpost":
+      template: {name: Studio, id: 1998}
+  "Studio Soul":
+      template: {name: Studio, id: 2337}
+  "Studio Take Off":
+      template: {name: Studio, id: 494}
+  "Studio Ten":
+      template: {name: Studio, id: 2338}
+  "Studio Ten Carat":
+      template: {name: Studio, id: 1352}
+  "Studio Tron":
+      template: {name: Studio, id: 216}
+  "Studio Tulip":
+      template: {name: Studio, id: 210}
+  "Studio UGOKI":
+      template: {name: Studio, id: 1691}
+  "Studio Unicorn":
+      template: {name: Studio, id: 404}
+  "Studio VOLN":
+      template: {name: Studio, id: 1244}
+  "Studio W.Baba":
+      template: {name: Studio, id: 1871}
+  "Studio WHO":
+      template: {name: Studio, id: 1533}
+  "Studio Wombat":
+      template: {name: Studio, id: 412}
+  "Studio World":
+      template: {name: Studio, id: 1509}
+  "Studio Z5":
+      template: {name: Studio, id: 1504}
+  "Studio Zain":
+      template: {name: Studio, id: 1089}
+  "Studio Zealot":
+      template: {name: Studio, id: 903}
+  "Studio Zero":
+      template: {name: Studio, id: 435}
+  "Studio! Cucuri":
+      template: {name: Studio, id: 1266}
+  "studioGONG":
+      template: {name: Studio, id: 2145}
+  "StudioRF Inc.":
+      template: {name: Studio, id: 549}
+  "SUBARU":
+      template: {name: Studio, id: 1608}
+  "Sublimation":
+      template: {name: Studio, id: 1892}
+  "Success Corp.":
+      template: {name: Studio, id: 1593}
+  "Sugar Boy":
+      template: {name: Studio, id: 1348}
+  "Suiseisha":
+      template: {name: Studio, id: 1760}
+  "Sumitomo":
+      template: {name: Studio, id: 1507}
+  "Sumzap":
+      template: {name: Studio, id: 2260}
+  "Sun TV":
+      template: {name: Studio, id: 1604}
+  "Suna Kouhou":
+      template: {name: Studio, id: 1979}
+  "Sunny Side Up":
+      template: {name: Studio, id: 761}
+  "Sunrise":
+      template: {name: Studio, id: 14}
+  "Sunrise Beyond":
+      template: {name: Studio, id: 2004}
+  "Sunrise Music Publishing":
+      template: {name: Studio, id: 1543}
+  "Sunwoo Entertainment":
+      template: {name: Studio, id: 307}
+  "SUPA LOVE":
+      template: {name: Studio, id: 2108}
+  "Super Brain":
+      template: {name: Studio, id: 2164}
+  "Super Normal Studio":
+      template: {name: Studio, id: 2080}
+  "Super Techno Arts":
+      template: {name: Studio, id: 1364}
+  "Suspenders":
+      template: {name: Studio, id: 2161}
+  "Suzuki Mirano":
+      template: {name: Studio, id: 274}
+  "syn Sophia":
+      template: {name: Studio, id: 2003}
+  "Synch-Point":
+      template: {name: Studio, id: 1474}
+  "Synergy Japan":
+      template: {name: Studio, id: 434}
+  "SynergySP":
+      template: {name: Studio, id: 118}
+  "T-JOY":
+      template: {name: Studio, id: 1935}
+  "T-Rex":
+      template: {name: Studio, id: 405}
+  "T.O Entertainment":
+      template: {name: Studio, id: 1015}
+  "T.P.O":
+      template: {name: Studio, id: 1371}
+  "Tablier Communications":
+      template: {name: Studio, id: 1622}
+  "Taikong Works":
+      template: {name: Studio, id: 2208}
+  "Takahashi Studio":
+      template: {name: Studio, id: 917}
+  "Takara":
+      template: {name: Studio, id: 327}
+  "Takara Tomy A.R.T.S":
+      template: {name: Studio, id: 1421}
+  "Takeshobo":
+      template: {name: Studio, id: 332}
+  "TAKI Corporation":
+      template: {name: Studio, id: 345}
+  "Takun Manga Box":
+      template: {name: Studio, id: 2214}
+  "Tama Production":
+      template: {name: Studio, id: 939}
+  "Tamabi":
+      template: {name: Studio, id: 2307}
+  "tamakoshi":
+      template: {name: Studio, id: 2235}
+  "Tamura Shigeru Studio":
+      template: {name: Studio, id: 388}
+  "TANOsim":
+      template: {name: Studio, id: 2141}
+  "Taomee":
+      template: {name: Studio, id: 2075}
+  "TAP":
+      template: {name: Studio, id: 416}
+  "Tapioca":
+      template: {name: Studio, id: 2182}
+  "Tatsunoko Production":
+      template: {name: Studio, id: 103}
+  "Tavac":
+      template: {name: Studio, id: 1761}
+  "TBS":
+      template: {name: Studio, id: 145}
+  "TC Entertainment":
+      template: {name: Studio, id: 1283}
+  "TCJ":
+      template: {name: Studio, id: 489}
+  "TEAM Entertainment Inc.":
+      template: {name: Studio, id: 1335}
+  "Team TillDawn":
+      template: {name: Studio, id: 2027}
+  "Team YokkyuFuman":
+      template: {name: Studio, id: 1562}
+  "teamKG":
+      template: {name: Studio, id: 949}
+  "Tear Studio":
+      template: {name: Studio, id: 1890}
+  "Teatro Nishi Tokyo Studio":
+      template: {name: Studio, id: 2163}
+  "Tecarat":
+      template: {name: Studio, id: 2178}
+  "Techno Sound":
+      template: {name: Studio, id: 1499}
+  "Teichiku Entertainment":
+      template: {name: Studio, id: 1223}
+  "Tele-Cartoon Japan":
+      template: {name: Studio, id: 385}
+  "Telecom Animation Film":
+      template: {name: Studio, id: 94}
+  "Telescreen":
+      template: {name: Studio, id: 358}
+  "Ten Tails Animation":
+      template: {name: Studio, id: 2136}
+  "Tencent Animation & Comics":
+      template: {name: Studio, id: 1349}
+  "Tencent Games":
+      template: {name: Studio, id: 1880}
+  "Tencent Japan":
+      template: {name: Studio, id: 1617}
+  "Tencent Penguin Pictures":
+      template: {name: Studio, id: 1727}
+  "Tengu Kobo":
+      template: {name: Studio, id: 1514}
+  "Terada Mokei":
+      template: {name: Studio, id: 1752}
+  "Tezuka Productions":
+      template: {name: Studio, id: 200}
+  "The Answer Studio":
+      template: {name: Studio, id: 229}
+  "The Berich":
+      template: {name: Studio, id: 476}
+  "The Monk Studios":
+      template: {name: Studio, id: 2184}
+  "The National Film Center Japan":
+      template: {name: Studio, id: 1250}
+  "The Pokemon Company International":
+      template: {name: Studio, id: 499}
+  "The Village of Marchen":
+      template: {name: Studio, id: 350}
+  "Think Corporation":
+      template: {name: Studio, id: 273}
+  "THINKR":
+      template: {name: Studio, id: 1684}
+  "Three Fat Samurai":
+      template: {name: Studio, id: 208}
+  "Three-d":
+      template: {name: Studio, id: 1726}
+  "Thundray":
+      template: {name: Studio, id: 1805}
+  "Tin House":
+      template: {name: Studio, id: 248}
+  "TIS":
+      template: {name: Studio, id: 2200}
+  "TMS Entertainment":
+      template: {name: Studio, id: 73}
+  "TMS Music":
+      template: {name: Studio, id: 2174}
+  "TMS-Kyokuchi":
+      template: {name: Studio, id: 707}
+  "TNK":
+      template: {name: Studio, id: 120}
+  "TO Books":
+      template: {name: Studio, id: 1988}
+  "Tochigi TV":
+      template: {name: Studio, id: 1757}
+  "TOCSIS":
+      template: {name: Studio, id: 1558}
+  "Toei Agency":
+      template: {name: Studio, id: 2292}
+  "Toei Animation":
+      template: {name: Studio, id: 18}
+  "Toei Video":
+      template: {name: Studio, id: 141}
+  "Tohan Corporation":
+      template: {name: Studio, id: 1734}
+  "Toho":
+      template: {name: Studio, id: 245}
+  "TOHO animation":
+      template: {name: Studio, id: 1143}
+  "Toho Interactive Animation":
+      template: {name: Studio, id: 2057}
+  "Toho Music":
+      template: {name: Studio, id: 2229}
+  "Toho Visual Entertainment":
+      template: {name: Studio, id: 1898}
+  "Toho-Towa":
+      template: {name: Studio, id: 1870}
+  "Tohokushinsha Film Corporation":
+      template: {name: Studio, id: 577}
+  "Tokai Television":
+      template: {name: Studio, id: 1455}
+  "Tokuma Japan":
+      template: {name: Studio, id: 905}
+  "Tokuma Japan Communications":
+      template: {name: Studio, id: 1493}
+  "Tokuma Shoten":
+      template: {name: Studio, id: 382}
+  "Tokyo Animation Film":
+      template: {name: Studio, id: 899}
+  "Tokyo Animator Gakuin":
+      template: {name: Studio, id: 1987}
+  "Tokyo FM Broadcasting":
+      template: {name: Studio, id: 1625}
+  "Tokyo Kids":
+      template: {name: Studio, id: 122}
+  "Tokyo Media Connections":
+      template: {name: Studio, id: 403}
+  "Tokyo Movie":
+      template: {name: Studio, id: 1846}
+  "Tokyo Movie Shinsha":
+      template: {name: Studio, id: 65}
+  "Tokyo MX":
+      template: {name: Studio, id: 1211}
+  "Tokyo Theatres":
+      template: {name: Studio, id: 1319}
+  "Tokyopop":
+      template: {name: Studio, id: 484}
+  "Tokyu Recreation":
+      template: {name: Studio, id: 1312}
+  "Tomason":
+      template: {name: Studio, id: 587}
+  "Tomovies":
+      template: {name: Studio, id: 1265}
+  "Tomoyasu Murata Company":
+      template: {name: Studio, id: 366}
+  "TOMY Company":
+      template: {name: Studio, id: 1458}
+  "Tong Ming Xuan":
+      template: {name: Studio, id: 2084}
+  "Tonko House":
+      template: {name: Studio, id: 1356}
+  "Top Marshal":
+      template: {name: Studio, id: 1660}
+  "Top-Insight International":
+      template: {name: Studio, id: 1637}
+  "Topcraft":
+      template: {name: Studio, id: 363}
+  "Toppan Printing":
+      template: {name: Studio, id: 1620}
+  "Toranoana":
+      template: {name: Studio, id: 882}
+  "Tose":
+      template: {name: Studio, id: 1541}
+  "Toshiba Digital Frontiers":
+      template: {name: Studio, id: 1685}
+  "Toshiba EMI":
+      template: {name: Studio, id: 224}
+  "Toshiba Entertainment":
+      template: {name: Studio, id: 741}
+  "Toshima Entertainment":
+      template: {name: Studio, id: 671}
+  "Tosho Printing":
+      template: {name: Studio, id: 1676}
+  "Tower Records":
+      template: {name: Studio, id: 2030}
+  "Toy's Factory":
+      template: {name: Studio, id: 1390}
+  "Toyo Recording":
+      template: {name: Studio, id: 1985}
+  "Trans Arts":
+      template: {name: Studio, id: 80}
+  "Trans Cosmos":
+      template: {name: Studio, id: 1316}
+  "Transcendence Picture":
+      template: {name: Studio, id: 2239}
+  "Trash Studio":
+      template: {name: Studio, id: 2050}
+  "Tri-Slash":
+      template: {name: Studio, id: 1165}
+  "Triangle Staff":
+      template: {name: Studio, id: 110}
+  "Trick Block":
+      template: {name: Studio, id: 384}
+  "TriF Studio":
+      template: {name: Studio, id: 1843}
+  "Trigger":
+      template: {name: Studio, id: 803}
+  "Trilogy Future Studio":
+      template: {name: Studio, id: 178}
+  "Trinet Entertainment":
+      template: {name: Studio, id: 63}
+  "Trinity Sound":
+      template: {name: Studio, id: 643}
+  "TrioPen Studio":
+      template: {name: Studio, id: 2304}
+  "Triple X":
+      template: {name: Studio, id: 860}
+  "TROYCA":
+      template: {name: Studio, id: 1103}
+  "TRUSS":
+      template: {name: Studio, id: 1948}
+  "Tryforce":
+      template: {name: Studio, id: 2352}
+  "Tsubasa Entertainment":
+      template: {name: Studio, id: 901}
+  "Tsuburaya Productions":
+      template: {name: Studio, id: 453}
+  "Tsuchida Productions":
+      template: {name: Studio, id: 390}
+  "Tsukimidou":
+      template: {name: Studio, id: 1638}
+  "Tsukuru no Mori":
+      template: {name: Studio, id: 1686}
+  "Tsumugi Akita Animation Lab":
+      template: {name: Studio, id: 2212}
+  "TSUTAYA":
+      template: {name: Studio, id: 1884}
+  "TthunDer Animation":
+      template: {name: Studio, id: 2251}
+  "TUBA":
+      template: {name: Studio, id: 1292}
+  "TV Aichi":
+      template: {name: Studio, id: 1355}
+  "TV Asahi":
+      template: {name: Studio, id: 55}
+  "TV Asahi Music":
+      template: {name: Studio, id: 2234}
+  "TV Osaka":
+      template: {name: Studio, id: 100}
+  "TV Saitama":
+      template: {name: Studio, id: 1627}
+  "TV Setouchi":
+      template: {name: Studio, id: 1511}
+  "TV Tokyo":
+      template: {name: Studio, id: 16}
+  "TV Tokyo Music":
+      template: {name: Studio, id: 717}
+  "Twilight Studio":
+      template: {name: Studio, id: 1650}
+  "Twin Engine":
+      template: {name: Studio, id: 1747}
+  "Twin Planet":
+      template: {name: Studio, id: 1868}
+  "TYMOTE":
+      template: {name: Studio, id: 2022}
+  "TYO":
+      template: {name: Studio, id: 1451}
+  "TYO Animations":
+      template: {name: Studio, id: 333}
+  "Typhoon Graphics":
+      template: {name: Studio, id: 1340}
+  "U-NEXT":
+      template: {name: Studio, id: 1583}
+  "U/M/A/A Inc.":
+      template: {name: Studio, id: 561}
+  "ufotable":
+      template: {name: Studio, id: 43}
+  "UK.PROJECT INC.":
+      template: {name: Studio, id: 1742}
+  "Ultra Super Pictures":
+      template: {name: Studio, id: 539}
+  "UM Productions":
+      template: {name: Studio, id: 368}
+  "Union Cho":
+      template: {name: Studio, id: 371}
+  "Universal Entertainment":
+      template: {name: Studio, id: 1785}
+  "Universal Music Japan":
+      template: {name: Studio, id: 1397}
+  "Universal Pictures Japan":
+      template: {name: Studio, id: 1450}
+  "Universal Radio Studio":
+      template: {name: Studio, id: 1031}
+  "Universal Studios":
+      template: {name: Studio, id: 507}
+  "Urban Product":
+      template: {name: Studio, id: 1842}
+  "Urban Vision":
+      template: {name: Studio, id: 1447}
+  "Usagi Ou":
+      template: {name: Studio, id: 472}
+  "USEN":
+      template: {name: Studio, id: 1615}
+  "UWAN Pictures":
+      template: {name: Studio, id: 1882}
+  "V-sign":
+      template: {name: Studio, id: 1969}
+  "Valkyria":
+      template: {name: Studio, id: 265}
+  "Vanguard Sound":
+      template: {name: Studio, id: 1981}
+  "Vanikey":
+      template: {name: Studio, id: 2150}
+  "VAP":
+      template: {name: Studio, id: 29}
+  "Vasoon Animation":
+      template: {name: Studio, id: 945}
+  "Vega Entertainment":
+      template: {name: Studio, id: 136}
+  "Venet":
+      template: {name: Studio, id: 457}
+  "Venus Vangard":
+      template: {name: Studio, id: 212}
+  "Victor Entertainment":
+      template: {name: Studio, id: 123}
+  "Victor Studio":
+      template: {name: Studio, id: 2245}
+  "Video Market":
+      template: {name: Studio, id: 2109}
+  "View Works":
+      template: {name: Studio, id: 433}
+  "Viki":
+      template: {name: Studio, id: 733}
+  "Virgin Babylon Records":
+      template: {name: Studio, id: 1718}
+  "Visual 80":
+      template: {name: Studio, id: 246}
+  "Visual Arts":
+      template: {name: Studio, id: 203}
+  "Visual Flight":
+      template: {name: Studio, id: 2129}
+  "Visual Vision":
+      template: {name: Studio, id: 1518}
+  "VIZ Media":
+      template: {name: Studio, id: 119}
+  "Volks":
+      template: {name: Studio, id: 655}
+  "voque ting":
+      template: {name: Studio, id: 1929}
+  "Voyager Entertainment":
+      template: {name: Studio, id: 1571}
+  "VV-ALKLINE":
+      template: {name: Studio, id: 1964}
+  "W+K Tokyo":
+      template: {name: Studio, id: 1953}
+  "W-Toon Studio":
+      template: {name: Studio, id: 1396}
+  "Wako Productions":
+      template: {name: Studio, id: 450}
+  "Walkers Company":
+      template: {name: Studio, id: 1400}
+  "Walt Disney Japan":
+      template: {name: Studio, id: 1789}
+  "Walt Disney Studios":
+      template: {name: Studio, id: 417}
+  "Wan Wei Mao Donghua":
+      template: {name: Studio, id: 2089}
+  "WAO World":
+      template: {name: Studio, id: 318}
+  "Wargaming Japan":
+      template: {name: Studio, id: 1537}
+  "Warner Bros. Japan":
+      template: {name: Studio, id: 415}
+  "Warner Bros. Pictures":
+      template: {name: Studio, id: 1889}
+  "Warner Music Japan":
+      template: {name: Studio, id: 1011}
+  "WarRock":
+      template: {name: Studio, id: 2343}
+  "Watermark":
+      template: {name: Studio, id: 1920}
+  "Wawayu Animation":
+      template: {name: Studio, id: 1772}
+  "Wei Chuang Jiang Xin":
+      template: {name: Studio, id: 2070}
+  "Welz Animation Studios":
+      template: {name: Studio, id: 1954}
+  "WField":
+      template: {name: Studio, id: 817}
+  "White Bear":
+      template: {name: Studio, id: 1327}
+  "White Fox":
+      template: {name: Studio, id: 314}
+  "WHOPPERS":
+      template: {name: Studio, id: 2032}
+  "Wicky.Records":
+      template: {name: Studio, id: 2165}
+  "Will Palette":
+      template: {name: Studio, id: 1596}
+  "Wise Guy":
+      template: {name: Studio, id: 2270}
+  "Wit Studio":
+      template: {name: Studio, id: 858}
+  "Wolf Smoke Studio":
+      template: {name: Studio, id: 1970}
+  "Wolfsbane":
+      template: {name: Studio, id: 2052}
+  "Wonder Kids":
+      template: {name: Studio, id: 511}
+  "World Cosplay Summit":
+      template: {name: Studio, id: 1648}
+  "WOWOW":
+      template: {name: Studio, id: 33}
+  "Wulifang Digital":
+      template: {name: Studio, id: 2060}
+  "Xanthus Media":
+      template: {name: Studio, id: 2091}
+  "Xebec":
+      template: {name: Studio, id: 27}
+  "XEBEC M2":
+      template: {name: Studio, id: 2257}
+  "XFLAG":
+      template: {name: Studio, id: 1572}
+  "XFLAG Pictures":
+      template: {name: Studio, id: 1573}
+  "Xing":
+      template: {name: Studio, id: 1578}
+  "Xuni Yinxiang Gongzuo Shi":
+      template: {name: Studio, id: 2206}
+  "Y&N Brothers":
+      template: {name: Studio, id: 2096}
+  "Y.O.U.C":
+      template: {name: Studio, id: 239}
+  "Yahoo! Japan":
+      template: {name: Studio, id: 795}
+  "Yamaha Music Communications":
+      template: {name: Studio, id: 2132}
+  "Yamamura Animation, Inc.":
+      template: {name: Studio, id: 1055}
+  "Yamasa":
+      template: {name: Studio, id: 1833}
+  "Yamato Works":
+      template: {name: Studio, id: 381}
+  "Yaoqi":
+      template: {name: Studio, id: 1431}
+  "Yaoyorozu":
+      template: {name: Studio, id: 1560}
+  "Yellow Film":
+      template: {name: Studio, id: 308}
+  "YHKT Entertainment":
+      template: {name: Studio, id: 1958}
+  "Yi Chen Animation":
+      template: {name: Studio, id: 2194}
+  "Yili Animation Studio":
+      template: {name: Studio, id: 1665}
+  "Yokohama Animation Lab":
+      template: {name: Studio, id: 1687}
+  "Yomiko Advertising":
+      template: {name: Studio, id: 127}
+  "Yomiuri Advertising":
+      template: {name: Studio, id: 675}
+  "Yomiuri Shimbun":
+      template: {name: Studio, id: 1792}
+  "Yomiuri Telecasting":
+      template: {name: Studio, id: 76}
+  "Yomiuri TV Enterprise":
+      template: {name: Studio, id: 1492}
+  "Yonago Gainax":
+      template: {name: Studio, id: 2011}
+  "Yoon's Color":
+      template: {name: Studio, id: 1453}
+  "Yoshimoto Creative Agency":
+      template: {name: Studio, id: 1820}
+  "Yostar Pictures":
+      template: {name: Studio, id: 2009}
+  "Youmex":
+      template: {name: Studio, id: 220}
+  "YTV":
+      template: {name: Studio, id: 236}
+  "Yuhodo":
+      template: {name: Studio, id: 1678}
+  "YUKE'S":
+      template: {name: Studio, id: 2112}
+  "Yumearu":
+      template: {name: Studio, id: 1749}
+  "Yumeta Company":
+      template: {name: Studio, id: 96}
+  "Zack Promotion":
+      template: {name: Studio, id: 1392}
+  "Zelico Film":
+      template: {name: Studio, id: 1930}
+  "ZERO-A":
+      template: {name: Studio, id: 1081}
+  "Zero-G":
+      template: {name: Studio, id: 1379}
+  "Zero-G Room":
+      template: {name: Studio, id: 1131}
+  "Zexcs":
+      template: {name: Studio, id: 218}
+  "Zipang":
+      template: {name: Studio, id: 2230}
+  "ZIZ Entertainment (ZIZ)":
+      template: {name: Studio, id: 1245}
+  "ZOOM ENTERPRISE":
+      template: {name: Studio, id: 1376}
+  "Zyc":
+      template: {name: Studio, id: 557}

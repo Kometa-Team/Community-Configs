@@ -1,0 +1,594 @@
+templates:
+  Anime Season:
+    # sort_year is to ensure we can sort by showing the most recent seasons first
+    # season_index is used to ensure we order the anime correctly, Winter > Spring > Summer > Fall
+    url_poster: https://github.com/Drapersniper/Posters/raw/main/anime/seasons/<<year>>/<<season>>.jpg
+    mal_season:
+      season: <<season_lower>>
+      year: <<year>>
+      limit: 500
+      sort_by: members
+    sync_mode: sync
+    sort_title: zzzz_Season_<<sort_year>>_<<season_index>>_<<year>>
+    summary: Anime airing during <<season_lower>> anime season in <<year>>.
+    smart_label: release.desc
+    collection_order: release
+
+collections:
+
+  Current Anime Season:
+    ### Always displayed as the first collection.
+    sort_title: +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++_Current Season
+    mal_season:
+      sort_by: members
+      limit: 500
+    summary: Anime airing this season.
+    smart_label: episode_added.desc
+    sync_mode: sync
+
+  Fall 2022 Anime:
+    template: {name: Anime Season, year: 2022, sort_year: "00978", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2022 Anime:
+    template: {name: Anime Season, year: 2022, sort_year: "00978", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2022 Anime:
+    template: {name: Anime Season, year: 2022, sort_year: "00978", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2022 Anime:
+    template: {name: Anime Season, year: 2022, sort_year: "00978", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2021 Anime:
+    template: {name: Anime Season, year: 2021, sort_year: "00979", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2021 Anime:
+    template: {name: Anime Season, year: 2021, sort_year: "00979", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2021 Anime:
+    template: {name: Anime Season, year: 2021, sort_year: "00979", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2021 Anime:
+    template: {name: Anime Season, year: 2021, sort_year: "00979", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2020 Anime:
+    template: {name: Anime Season, year: 2020, sort_year: "00980", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2020 Anime:
+    template: {name: Anime Season, year: 2020, sort_year: "00980", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2020 Anime:
+    template: {name: Anime Season, year: 2020, sort_year: "00980", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2020 Anime:
+    template: {name: Anime Season, year: 2020, sort_year: "00980", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2019 Anime:
+    template: {name: Anime Season, year: 2019, sort_year: "00981", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2019 Anime:
+    template: {name: Anime Season, year: 2019, sort_year: "00981", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2019 Anime:
+    template: {name: Anime Season, year: 2019, sort_year: "00981", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2019 Anime:
+    template: {name: Anime Season, year: 2019, sort_year: "00981", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2018 Anime:
+    template: {name: Anime Season, year: 2018, sort_year: "00982", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2018 Anime:
+    template: {name: Anime Season, year: 2018, sort_year: "00982", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2018 Anime:
+    template: {name: Anime Season, year: 2018, sort_year: "00982", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2018 Anime:
+    template: {name: Anime Season, year: 2018, sort_year: "00982", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2017 Anime:
+    template: {name: Anime Season, year: 2017, sort_year: "00983", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2017 Anime:
+    template: {name: Anime Season, year: 2017, sort_year: "00983", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2017 Anime:
+    template: {name: Anime Season, year: 2017, sort_year: "00983", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2017 Anime:
+    template: {name: Anime Season, year: 2017, sort_year: "00983", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2016 Anime:
+    template: {name: Anime Season, year: 2016, sort_year: "00984", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2016 Anime:
+    template: {name: Anime Season, year: 2016, sort_year: "00984", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2016 Anime:
+    template: {name: Anime Season, year: 2016, sort_year: "00984", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2016 Anime:
+    template: {name: Anime Season, year: 2016, sort_year: "00984", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2015 Anime:
+    template: {name: Anime Season, year: 2015, sort_year: "00985", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2015 Anime:
+    template: {name: Anime Season, year: 2015, sort_year: "00985", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2015 Anime:
+    template: {name: Anime Season, year: 2015, sort_year: "00985", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2015 Anime:
+    template: {name: Anime Season, year: 2015, sort_year: "00985", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2014 Anime:
+    template: {name: Anime Season, year: 2014, sort_year: "00986", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2014 Anime:
+    template: {name: Anime Season, year: 2014, sort_year: "00986", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2014 Anime:
+    template: {name: Anime Season, year: 2014, sort_year: "00986", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2014 Anime:
+    template: {name: Anime Season, year: 2014, sort_year: "00986", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2013 Anime:
+    template: {name: Anime Season, year: 2013, sort_year: "00987", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2013 Anime:
+    template: {name: Anime Season, year: 2013, sort_year: "00987", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2013 Anime:
+    template: {name: Anime Season, year: 2013, sort_year: "00987", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2013 Anime:
+    template: {name: Anime Season, year: 2013, sort_year: "00987", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2012 Anime:
+    template: {name: Anime Season, year: 2012, sort_year: "00988", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2012 Anime:
+    template: {name: Anime Season, year: 2012, sort_year: "00988", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2012 Anime:
+    template: {name: Anime Season, year: 2012, sort_year: "00988", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2012 Anime:
+    template: {name: Anime Season, year: 2012, sort_year: "00988", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2011 Anime:
+    template: {name: Anime Season, year: 2011, sort_year: "00989", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2011 Anime:
+    template: {name: Anime Season, year: 2011, sort_year: "00989", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2011 Anime:
+    template: {name: Anime Season, year: 2011, sort_year: "00989", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2011 Anime:
+    template: {name: Anime Season, year: 2011, sort_year: "00989", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2010 Anime:
+    template: {name: Anime Season, year: 2010, sort_year: "00990", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2010 Anime:
+    template: {name: Anime Season, year: 2010, sort_year: "00990", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2010 Anime:
+    template: {name: Anime Season, year: 2010, sort_year: "00990", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2010 Anime:
+    template: {name: Anime Season, year: 2010, sort_year: "00990", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2009 Anime:
+    template: {name: Anime Season, year: 2009, sort_year: "00991", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2009 Anime:
+    template: {name: Anime Season, year: 2009, sort_year: "00991", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2009 Anime:
+    template: {name: Anime Season, year: 2009, sort_year: "00991", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2009 Anime:
+    template: {name: Anime Season, year: 2009, sort_year: "00991", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2008 Anime:
+    template: {name: Anime Season, year: 2008, sort_year: "00992", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2008 Anime:
+    template: {name: Anime Season, year: 2008, sort_year: "00992", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2008 Anime:
+    template: {name: Anime Season, year: 2008, sort_year: "00992", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2008 Anime:
+    template: {name: Anime Season, year: 2008, sort_year: "00992", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2007 Anime:
+    template: {name: Anime Season, year: 2007, sort_year: "00993", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2007 Anime:
+    template: {name: Anime Season, year: 2007, sort_year: "00993", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2007 Anime:
+    template: {name: Anime Season, year: 2007, sort_year: "00993", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2007 Anime:
+    template: {name: Anime Season, year: 2007, sort_year: "00993", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2006 Anime:
+    template: {name: Anime Season, year: 2006, sort_year: "00994", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2006 Anime:
+    template: {name: Anime Season, year: 2006, sort_year: "00994", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2006 Anime:
+    template: {name: Anime Season, year: 2006, sort_year: "00994", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2006 Anime:
+    template: {name: Anime Season, year: 2006, sort_year: "00994", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2005 Anime:
+    template: {name: Anime Season, year: 2005, sort_year: "00995", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2005 Anime:
+    template: {name: Anime Season, year: 2005, sort_year: "00995", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2005 Anime:
+    template: {name: Anime Season, year: 2005, sort_year: "00995", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2005 Anime:
+    template: {name: Anime Season, year: 2005, sort_year: "00995", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2004 Anime:
+    template: {name: Anime Season, year: 2004, sort_year: "00996", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2004 Anime:
+    template: {name: Anime Season, year: 2004, sort_year: "00996", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2004 Anime:
+    template: {name: Anime Season, year: 2004, sort_year: "00996", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2004 Anime:
+    template: {name: Anime Season, year: 2004, sort_year: "00996", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2003 Anime:
+    template: {name: Anime Season, year: 2003, sort_year: "00997", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2003 Anime:
+    template: {name: Anime Season, year: 2003, sort_year: "00997", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2003 Anime:
+    template: {name: Anime Season, year: 2003, sort_year: "00997", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2003 Anime:
+    template: {name: Anime Season, year: 2003, sort_year: "00997", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2002 Anime:
+    template: {name: Anime Season, year: 2002, sort_year: "00998", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2002 Anime:
+    template: {name: Anime Season, year: 2002, sort_year: "00998", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2002 Anime:
+    template: {name: Anime Season, year: 2002, sort_year: "00998", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2002 Anime:
+    template: {name: Anime Season, year: 2002, sort_year: "00998", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2001 Anime:
+    template: {name: Anime Season, year: 2001, sort_year: "00999", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2001 Anime:
+    template: {name: Anime Season, year: 2001, sort_year: "00999", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2001 Anime:
+    template: {name: Anime Season, year: 2001, sort_year: "00999", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2001 Anime:
+    template: {name: Anime Season, year: 2001, sort_year: "00999", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 2000 Anime:
+    template: {name: Anime Season, year: 2000, sort_year: "01000", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 2000 Anime:
+    template: {name: Anime Season, year: 2000, sort_year: "01000", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 2000 Anime:
+    template: {name: Anime Season, year: 2000, sort_year: "01000", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 2000 Anime:
+    template: {name: Anime Season, year: 2000, sort_year: "01000", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1999 Anime:
+    template: {name: Anime Season, year: 1999, sort_year: "01001", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1999 Anime:
+    template: {name: Anime Season, year: 1999, sort_year: "01001", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1999 Anime:
+    template: {name: Anime Season, year: 1999, sort_year: "01001", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1999 Anime:
+    template: {name: Anime Season, year: 1999, sort_year: "01001", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1998 Anime:
+    template: {name: Anime Season, year: 1998, sort_year: "01002", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1998 Anime:
+    template: {name: Anime Season, year: 1998, sort_year: "01002", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1998 Anime:
+    template: {name: Anime Season, year: 1998, sort_year: "01002", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1998 Anime:
+    template: {name: Anime Season, year: 1998, sort_year: "01002", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1997 Anime:
+    template: {name: Anime Season, year: 1997, sort_year: "01003", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1997 Anime:
+    template: {name: Anime Season, year: 1997, sort_year: "01003", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1997 Anime:
+    template: {name: Anime Season, year: 1997, sort_year: "01003", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1997 Anime:
+    template: {name: Anime Season, year: 1997, sort_year: "01003", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1996 Anime:
+    template: {name: Anime Season, year: 1996, sort_year: "01004", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1996 Anime:
+    template: {name: Anime Season, year: 1996, sort_year: "01004", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1996 Anime:
+    template: {name: Anime Season, year: 1996, sort_year: "01004", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1996 Anime:
+    template: {name: Anime Season, year: 1996, sort_year: "01004", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1995 Anime:
+    template: {name: Anime Season, year: 1995, sort_year: "01005", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1995 Anime:
+    template: {name: Anime Season, year: 1995, sort_year: "01005", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1995 Anime:
+    template: {name: Anime Season, year: 1995, sort_year: "01005", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1995 Anime:
+    template: {name: Anime Season, year: 1995, sort_year: "01005", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1994 Anime:
+    template: {name: Anime Season, year: 1994, sort_year: "01006", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1994 Anime:
+    template: {name: Anime Season, year: 1994, sort_year: "01006", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1994 Anime:
+    template: {name: Anime Season, year: 1994, sort_year: "01006", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1994 Anime:
+    template: {name: Anime Season, year: 1994, sort_year: "01006", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1993 Anime:
+    template: {name: Anime Season, year: 1993, sort_year: "01007", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1993 Anime:
+    template: {name: Anime Season, year: 1993, sort_year: "01007", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1993 Anime:
+    template: {name: Anime Season, year: 1993, sort_year: "01007", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1993 Anime:
+    template: {name: Anime Season, year: 1993, sort_year: "01007", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1992 Anime:
+    template: {name: Anime Season, year: 1992, sort_year: "01008", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1992 Anime:
+    template: {name: Anime Season, year: 1992, sort_year: "01008", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1992 Anime:
+    template: {name: Anime Season, year: 1992, sort_year: "01008", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1992 Anime:
+    template: {name: Anime Season, year: 1992, sort_year: "01008", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1991 Anime:
+    template: {name: Anime Season, year: 1991, sort_year: "01009", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1991 Anime:
+    template: {name: Anime Season, year: 1991, sort_year: "01009", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1991 Anime:
+    template: {name: Anime Season, year: 1991, sort_year: "01009", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1991 Anime:
+    template: {name: Anime Season, year: 1991, sort_year: "01009", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1990 Anime:
+    template: {name: Anime Season, year: 1990, sort_year: "01010", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1990 Anime:
+    template: {name: Anime Season, year: 1990, sort_year: "01010", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1990 Anime:
+    template: {name: Anime Season, year: 1990, sort_year: "01010", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1990 Anime:
+    template: {name: Anime Season, year: 1990, sort_year: "01010", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1989 Anime:
+    template: {name: Anime Season, year: 1989, sort_year: "01011", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1989 Anime:
+    template: {name: Anime Season, year: 1989, sort_year: "01011", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1989 Anime:
+    template: {name: Anime Season, year: 1989, sort_year: "01011", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1989 Anime:
+    template: {name: Anime Season, year: 1989, sort_year: "01011", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1988 Anime:
+    template: {name: Anime Season, year: 1988, sort_year: "01012", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1988 Anime:
+    template: {name: Anime Season, year: 1988, sort_year: "01012", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1988 Anime:
+    template: {name: Anime Season, year: 1988, sort_year: "01012", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1988 Anime:
+    template: {name: Anime Season, year: 1988, sort_year: "01012", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1987 Anime:
+    template: {name: Anime Season, year: 1987, sort_year: "01013", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1987 Anime:
+    template: {name: Anime Season, year: 1987, sort_year: "01013", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1987 Anime:
+    template: {name: Anime Season, year: 1987, sort_year: "01013", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1987 Anime:
+    template: {name: Anime Season, year: 1987, sort_year: "01013", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1986 Anime:
+    template: {name: Anime Season, year: 1986, sort_year: "01014", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1986 Anime:
+    template: {name: Anime Season, year: 1986, sort_year: "01014", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1986 Anime:
+    template: {name: Anime Season, year: 1986, sort_year: "01014", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1986 Anime:
+    template: {name: Anime Season, year: 1986, sort_year: "01014", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1985 Anime:
+    template: {name: Anime Season, year: 1985, sort_year: "01015", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1985 Anime:
+    template: {name: Anime Season, year: 1985, sort_year: "01015", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1985 Anime:
+    template: {name: Anime Season, year: 1985, sort_year: "01015", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1985 Anime:
+    template: {name: Anime Season, year: 1985, sort_year: "01015", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1984 Anime:
+    template: {name: Anime Season, year: 1984, sort_year: "01016", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1984 Anime:
+    template: {name: Anime Season, year: 1984, sort_year: "01016", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1984 Anime:
+    template: {name: Anime Season, year: 1984, sort_year: "01016", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1984 Anime:
+    template: {name: Anime Season, year: 1984, sort_year: "01016", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1983 Anime:
+    template: {name: Anime Season, year: 1983, sort_year: "01017", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1983 Anime:
+    template: {name: Anime Season, year: 1983, sort_year: "01017", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1983 Anime:
+    template: {name: Anime Season, year: 1983, sort_year: "01017", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1983 Anime:
+    template: {name: Anime Season, year: 1983, sort_year: "01017", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1982 Anime:
+    template: {name: Anime Season, year: 1982, sort_year: "01018", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1982 Anime:
+    template: {name: Anime Season, year: 1982, sort_year: "01018", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1982 Anime:
+    template: {name: Anime Season, year: 1982, sort_year: "01018", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1982 Anime:
+    template: {name: Anime Season, year: 1982, sort_year: "01018", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1981 Anime:
+    template: {name: Anime Season, year: 1981, sort_year: "01019", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1981 Anime:
+    template: {name: Anime Season, year: 1981, sort_year: "01019", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1981 Anime:
+    template: {name: Anime Season, year: 1981, sort_year: "01019", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1981 Anime:
+    template: {name: Anime Season, year: 1981, sort_year: "01019", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1980 Anime:
+    template: {name: Anime Season, year: 1980, sort_year: "01020", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1980 Anime:
+    template: {name: Anime Season, year: 1980, sort_year: "01020", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1980 Anime:
+    template: {name: Anime Season, year: 1980, sort_year: "01020", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1980 Anime:
+    template: {name: Anime Season, year: 1980, sort_year: "01020", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1979 Anime:
+    template: {name: Anime Season, year: 1979, sort_year: "01021", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1979 Anime:
+    template: {name: Anime Season, year: 1979, sort_year: "01021", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1979 Anime:
+    template: {name: Anime Season, year: 1979, sort_year: "01021", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1979 Anime:
+    template: {name: Anime Season, year: 1979, sort_year: "01021", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1978 Anime:
+    template: {name: Anime Season, year: 1978, sort_year: "01022", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1978 Anime:
+    template: {name: Anime Season, year: 1978, sort_year: "01022", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1978 Anime:
+    template: {name: Anime Season, year: 1978, sort_year: "01022", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1978 Anime:
+    template: {name: Anime Season, year: 1978, sort_year: "01022", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1977 Anime:
+    template: {name: Anime Season, year: 1977, sort_year: "01023", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1977 Anime:
+    template: {name: Anime Season, year: 1977, sort_year: "01023", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1977 Anime:
+    template: {name: Anime Season, year: 1977, sort_year: "01023", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1977 Anime:
+    template: {name: Anime Season, year: 1977, sort_year: "01023", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1976 Anime:
+    template: {name: Anime Season, year: 1976, sort_year: "01024", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1976 Anime:
+    template: {name: Anime Season, year: 1976, sort_year: "01024", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1976 Anime:
+    template: {name: Anime Season, year: 1976, sort_year: "01024", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1976 Anime:
+    template: {name: Anime Season, year: 1976, sort_year: "01024", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1975 Anime:
+    template: {name: Anime Season, year: 1975, sort_year: "01025", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1975 Anime:
+    template: {name: Anime Season, year: 1975, sort_year: "01025", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1975 Anime:
+    template: {name: Anime Season, year: 1975, sort_year: "01025", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1975 Anime:
+    template: {name: Anime Season, year: 1975, sort_year: "01025", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1974 Anime:
+    template: {name: Anime Season, year: 1974, sort_year: "01026", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1974 Anime:
+    template: {name: Anime Season, year: 1974, sort_year: "01026", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1974 Anime:
+    template: {name: Anime Season, year: 1974, sort_year: "01026", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1974 Anime:
+    template: {name: Anime Season, year: 1974, sort_year: "01026", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1973 Anime:
+    template: {name: Anime Season, year: 1973, sort_year: "01027", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1973 Anime:
+    template: {name: Anime Season, year: 1973, sort_year: "01027", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1973 Anime:
+    template: {name: Anime Season, year: 1973, sort_year: "01027", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1973 Anime:
+    template: {name: Anime Season, year: 1973, sort_year: "01027", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1972 Anime:
+    template: {name: Anime Season, year: 1972, sort_year: "01028", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1972 Anime:
+    template: {name: Anime Season, year: 1972, sort_year: "01028", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1972 Anime:
+    template: {name: Anime Season, year: 1972, sort_year: "01028", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1972 Anime:
+    template: {name: Anime Season, year: 1972, sort_year: "01028", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1971 Anime:
+    template: {name: Anime Season, year: 1971, sort_year: "01029", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1971 Anime:
+    template: {name: Anime Season, year: 1971, sort_year: "01029", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1971 Anime:
+    template: {name: Anime Season, year: 1971, sort_year: "01029", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1971 Anime:
+    template: {name: Anime Season, year: 1971, sort_year: "01029", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1970 Anime:
+    template: {name: Anime Season, year: 1970, sort_year: "01030", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1970 Anime:
+    template: {name: Anime Season, year: 1970, sort_year: "01030", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1970 Anime:
+    template: {name: Anime Season, year: 1970, sort_year: "01030", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1970 Anime:
+    template: {name: Anime Season, year: 1970, sort_year: "01030", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1969 Anime:
+    template: {name: Anime Season, year: 1969, sort_year: "01031", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1969 Anime:
+    template: {name: Anime Season, year: 1969, sort_year: "01031", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1969 Anime:
+    template: {name: Anime Season, year: 1969, sort_year: "01031", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1969 Anime:
+    template: {name: Anime Season, year: 1969, sort_year: "01031", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1968 Anime:
+    template: {name: Anime Season, year: 1968, sort_year: "01032", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1968 Anime:
+    template: {name: Anime Season, year: 1968, sort_year: "01032", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1968 Anime:
+    template: {name: Anime Season, year: 1968, sort_year: "01032", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1968 Anime:
+    template: {name: Anime Season, year: 1968, sort_year: "01032", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1967 Anime:
+    template: {name: Anime Season, year: 1967, sort_year: "01033", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1967 Anime:
+    template: {name: Anime Season, year: 1967, sort_year: "01033", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1967 Anime:
+    template: {name: Anime Season, year: 1967, sort_year: "01033", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1967 Anime:
+    template: {name: Anime Season, year: 1967, sort_year: "01033", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1966 Anime:
+    template: {name: Anime Season, year: 1966, sort_year: "01034", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1966 Anime:
+    template: {name: Anime Season, year: 1966, sort_year: "01034", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1966 Anime:
+    template: {name: Anime Season, year: 1966, sort_year: "01034", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1966 Anime:
+    template: {name: Anime Season, year: 1966, sort_year: "01034", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1965 Anime:
+    template: {name: Anime Season, year: 1965, sort_year: "01035", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1965 Anime:
+    template: {name: Anime Season, year: 1965, sort_year: "01035", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1965 Anime:
+    template: {name: Anime Season, year: 1965, sort_year: "01035", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1965 Anime:
+    template: {name: Anime Season, year: 1965, sort_year: "01035", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1964 Anime:
+    template: {name: Anime Season, year: 1964, sort_year: "01036", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1964 Anime:
+    template: {name: Anime Season, year: 1964, sort_year: "01036", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1964 Anime:
+    template: {name: Anime Season, year: 1964, sort_year: "01036", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1964 Anime:
+    template: {name: Anime Season, year: 1964, sort_year: "01036", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1963 Anime:
+    template: {name: Anime Season, year: 1963, sort_year: "01037", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1963 Anime:
+    template: {name: Anime Season, year: 1963, sort_year: "01037", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1963 Anime:
+    template: {name: Anime Season, year: 1963, sort_year: "01037", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1963 Anime:
+    template: {name: Anime Season, year: 1963, sort_year: "01037", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1962 Anime:
+    template: {name: Anime Season, year: 1962, sort_year: "01038", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1962 Anime:
+    template: {name: Anime Season, year: 1962, sort_year: "01038", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1962 Anime:
+    template: {name: Anime Season, year: 1962, sort_year: "01038", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1962 Anime:
+    template: {name: Anime Season, year: 1962, sort_year: "01038", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1961 Anime:
+    template: {name: Anime Season, year: 1961, sort_year: "01039", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1961 Anime:
+    template: {name: Anime Season, year: 1961, sort_year: "01039", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1961 Anime:
+    template: {name: Anime Season, year: 1961, sort_year: "01039", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1961 Anime:
+    template: {name: Anime Season, year: 1961, sort_year: "01039", season: "Winter", season_lower: "winter", season_index: "3"}
+
+  Fall 1960 Anime:
+    template: {name: Anime Season, year: 1960, sort_year: "01040", season: "Fall", season_lower: "fall", season_index: "0"}
+  Summer 1960 Anime:
+    template: {name: Anime Season, year: 1960, sort_year: "01040", season: "Summer", season_lower: "summer", season_index: "1"}
+  Spring 1960 Anime:
+    template: {name: Anime Season, year: 1960, sort_year: "01040", season: "Spring", season_lower: "spring", season_index: "2"}
+  Winter 1960 Anime:
+    template: {name: Anime Season, year: 1960, sort_year: "01040", season: "Winter", season_lower: "winter", season_index: "3"}

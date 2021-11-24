@@ -1,0 +1,31 @@
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    smart_label: release.desc
+
+
+collections:
+    Suggested Anime:
+      sort_title: +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++_Suggested
+      mal_suggested: 50
+      sync_mode: sync
+      smart_label: release.desc
+    Top Airing Anime:
+      template: { name: Chart, num: 2 }
+      mal_airing: 10
+    Most Popular Anime:
+      template: { name: Chart, num: 3 }
+      mal_popular: 50
+    Popular Anime:
+      template: { name: Chart, num: 3 }
+      anidb_popular: 30
+      anilist_popular: 30
+      summary: Popular Anime across the internet
+    Top Rated Anime:
+      template: { name: Chart, num: 4 }
+      anilist_top_rated: 50
+      summary: Top Rated Anime across the internet
+    Top All Anime:
+      template: { name: Chart, num: 4 }
+      mal_all: 100
