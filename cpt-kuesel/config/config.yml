@@ -1,6 +1,5 @@
 libraries:
   Filme:
-    split_duplicates: true
     metadata_path:
       - metadata/movies/metadata.yml
       - metadata/movies/overlays.yml
@@ -21,6 +20,8 @@ libraries:
         - assets/movies/awards
         - assets/movies/decades
         - assets/movies/watchlists
+    operations:
+      split_duplicates: true
   Anime:
     metadata_path:
       - metadata/anime/metadata.yml
@@ -41,10 +42,13 @@ libraries:
         - assets/tv_shows/collections
         - assets/tv_shows/serien
   Movies:
+    plex:
+      url: <url>
+      token: <token>
     split_duplicates: true
     metadata_path:
       - metadata/movies/metadata.yml
-      - metadata/movies/overlays.yml
+      - metadata/movies/overlays4k.yml
       - metadata/movies/Movies.yml
       - metadata/movies/People.yml
       - metadata/movies/Genres.yml
@@ -59,33 +63,37 @@ libraries:
         - assets/movies/awards
         - assets/movies/decades
   Shows:
+    plex:
+      url: <url>
+      token: <token>
     metadata_path:
       - metadata/tv_shows/metadata.yml
       - metadata/tv_shows/overlays.yml
-      - metadata/tv_shows/Shows.yml
+      # - metadata/tv_shows/Shows.yml
     settings:
       asset_directory:
         - assets/tv_shows/collections
         - assets/tv_shows/serien
 settings:
+  tvdb_language: default
   cache: true
   cache_expiration: 60
+  run_again_delay: 2
   sync_mode: sync
   show_unmanaged: true
   show_filtered: false
   show_missing: true
   save_missing: false
-  run_again_delay: 2
+  missing_only_released: false
   asset_directory: assets
   asset_folders: true
-  assets_for_all: true
-  released_missing_only: false
   create_asset_folders: false
-  missing_only_released: false
+  assets_for_all: true
+  show_missing_assets: true
   collection_minimum: 1
   delete_below_minimum: false
 plex:
-  url: http://192.168.178.27:32400
+  url: <url>
   token: <token>
   timeout: 60
   clean_bundles: true
