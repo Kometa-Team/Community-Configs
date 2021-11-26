@@ -46,10 +46,10 @@ collections:
 #    Genre Collections    #
 ###########################
   Action:
-    template: {name: Genre, genre: Action/Adventure, poster: https://theposterdb.com/api/assets/52018}
+    template: {name: Genre, genre: Action, poster: https://theposterdb.com/api/assets/52018}
     summary: Action film is a genre wherein physical action takes precedence in the storytelling. The film will often have continuous motion and action including physical stunts, chases, fights, battles, and races. The story usually revolves around a hero that has a goal, but is facing incredible odds to obtain it.
   Adventure:
-    template: {name: Genre, genre: Action/Adventure, poster: https://theposterdb.com/api/assets/52218}
+    template: {name: Genre, genre: Adventure, poster: https://theposterdb.com/api/assets/52218}
     summary: Adventure film is a genre that revolves around the conquests and explorations of a protagonist. The purpose of the conquest can be to retrieve a person or treasure, but often the main focus is simply the pursuit of the unknown. These films generally take place in exotic locations and play on historical myths. Adventure films incorporate suspenseful puzzles and intricate obstacles that the protagonist must overcome in order to achieve the end goal.  
   Animation:
     template: {name: Genre, genre: Animation, poster: https://theposterdb.com/api/assets/120090}
@@ -131,7 +131,7 @@ collections:
     template: {name: Genre, genre: Short, poster: https://theposterdb.com/api/assets/53063}
     summary: A collection of Short movies
   Sports:
-    template: {name: Genre, poster: https://theposterdb.com/api/assets/60371}
+    template: {name: Genre, genre: Sport, poster: https://theposterdb.com/api/assets/60371}
     imdb_list:
     - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=sport
       limit: 200
@@ -150,9 +150,6 @@ collections:
     template: {name: Genre, poster: https://theposterdb.com/api/assets/74604}
     imdb_list: https://www.imdb.com/list/ls022909805
     summary: Sword and Sorcery film is a sub-genre of Fantasy that tend to be more plot-driven. These films rely on heavy action and battle scenes. Common themes in Sword and Sorcery films include a rescue mission, saving a princess, and battling a fantastical monster. The worlds and characters in these films are often much less developed than in other fantasy sub-genres. Of all the Fantasy sub-genres, Sword and Sorcery is most likely to be geared towards a younger audience, as many of these films are animated.
-  Sport:
-    template: {name: Genre, genre: Sport, poster: https://theposterdb.com/api/assets/60371}
-    summary: A Sport Film revolves around a sport setting, event, or an athlete. Often, these films will center on a single sporting event that carries significant importance. Sports films traditionally have a simple plot that builds up to the significant sporting event. This genre is known for incorporating film techniques to build anticipation and intensity. Sport films have a large range of sub-genres, from comedies to dramas, and are more likely than other genres to be based true-life events.
   Thriller:
     template: {name: Genre, genre: Thriller, poster: https://theposterdb.com/api/assets/52019}
     summary: Thriller Film is a genre that revolves around anticipation and suspense. The aim for Thrillers is to keep the audience alert and on the edge of their seats. The protagonist in these films is set against a problem – an escape, a mission, or a mystery. No matter what sub-genre a Thriller film falls into, it will emphasize the danger that the protagonist faces. The tension with the main problem is built on throughout the film and leads to a highly stressful climax.
