@@ -36,7 +36,7 @@ collections:
         summary: Shows Aired on FOX        
  HBO:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113186}
-        tmdb_network: 2
+        tmdb_network: 49
         summary: HBO Orginal Shows     
  Showtime:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113257}
