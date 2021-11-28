@@ -1,5 +1,3 @@
-# https://github.com/meisnate12/Plex-Meta-Manager  
-# Based on https://github.com/meisnate12/Plex-Meta-Manager-Configs/blob/master/Glasti1/Movies.yml
                                       ######################################################
                                       #                Movie Collections Genre            #
                                       ######################################################
@@ -118,6 +116,8 @@ collections:
       - https://www.imdb.com/list/ls086584751/
       - https://www.imdb.com/list/ls086022668/
       - https://www.imdb.com/list/ls049792208/
+      trakt_list:
+      - https://trakt.tv/users/giladg/lists/stand-up-comedy
     summary: Stand-up comedy is a comedic style in which a comedian performs in front of a live audience, speaking directly to them through a microphone. Comedians give the illusion that they are dialoguing, but in actuality, they are monologuing a grouping of humorous stories, jokes and one-liners, typically called a shtick, routine, act, or set. Some stand-up comedians use props, music or magic tricks to enhance their acts. Stand-up comedians perform quasi-autobiographical and fictionalized extensions of their offstage selves.
   Sword & Sorcery:
     template: {name: Genre, poster: https://theposterdb.com/api/assets/74604}
@@ -132,4 +132,3 @@ collections:
   Western:
     template: {name: Genre, genre: Western, poster: https://theposterdb.com/api/assets/51774}
     summary: "Western Film is a genre that revolves around stories primarily set in the late 19th century in the American Old West. Most Westerns are set between the American Civil War (1865) and the early 1900s. Common themes within Western Film include: the conquest of the wild west, the cultural separation of the East and the West, the West’s resistance to modern change, the conflict between Cowboys and Indians, outlaws, and treasure/gold hunting. American Western Film usually revolves around a stoic hero and emphasizes the importance of honor and sacrifice."
-
