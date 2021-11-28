@@ -37,7 +37,15 @@ collections:
  HBO:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113186}
         tmdb_network: 49
-        summary: HBO Orginal Shows     
+        summary: HBO Orginal Shows   
+ NBC:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113217}
+        tmdb_network: 6
+        summary: Shows Aired on NBC    
+ Netflix:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113218}
+        tmdb_network: 213
+        summary: HBO Orginal Shows        
  Showtime:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113257}
         tmdb_network: 67
