@@ -14,40 +14,39 @@ collections:
 ###########################
 #    Studio Collections   #
 ###########################
-    ABC:
+ ABC:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113115}
         tmdb_network: 2
         summary: Shows Aired on ABC
-    AMC:
+ AMC:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113118}
         tmdb_network: 174
         summary: Shows Aired on AMC        
-    BBC:
+ BBC:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113123}
         tmdb_network: 4
         summary: Shows Aired on BBC One
-    CBS:
+ CBS:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113138}
         tmdb_network: 16
         summary: Shows Aired on CBS
-    FOX:
+ FOX:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113173}
         tmdb_network: 19
         summary: Shows Aired on FOX        
-     HBO:
+ HBO:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113186}
         tmdb_network: 2
         summary: HBO Orginal Shows     
-    Showtime:
+ Showtime:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113257}
         tmdb_network: 67
         summary: Showtime Orginal Shows
-     Starz:
+ Starz:
         template: {name: Studio, poster: https://theposterdb.com/api/assets/113265}
         tmdb_network: 318
         summary: Starz Orginal Shows       
-    SyFy:
-        template: {name: Studio, poster: https://theposterdb.com/api/assets/113269}
+ SyFy:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113267}
         tmdb_network: 77
-        summary: Shows Aired on SYFY    
-      
+        summary: Shows Aired on SYFY
