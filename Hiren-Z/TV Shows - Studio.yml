@@ -1,0 +1,60 @@
+                                      ######################################################
+                                      #                TV Collections Studios              #
+                                      ######################################################
+###########################
+#        Templates        #
+###########################
+templates:
+    Studio:
+        url_poster: <<poster>>
+        sort_title: +++++++_<<collection_name>>
+        collection_order: alpha
+        
+collections:
+###########################
+#    Studio Collections   #
+###########################
+ ABC:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113115}
+        tmdb_network: 2
+        summary: Shows Aired on ABC
+ AMC:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113118}
+        tmdb_network: 174
+        summary: Shows Aired on AMC        
+ BBC:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113123}
+        tmdb_network: 4
+        summary: Shows Aired on BBC One
+ CBS:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113138}
+        tmdb_network: 16
+        summary: Shows Aired on CBS
+ FOX:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113173}
+        tmdb_network: 19
+        summary: Shows Aired on FOX        
+ HBO:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113186}
+        tmdb_network: 49
+        summary: HBO Orginal Shows   
+ NBC:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113217}
+        tmdb_network: 6
+        summary: Shows Aired on NBC    
+ Netflix:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113218}
+        tmdb_network: 213
+        summary: HBO Orginal Shows        
+ Showtime:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113257}
+        tmdb_network: 67
+        summary: Showtime Orginal Shows
+ Starz:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113265}
+        tmdb_network: 318
+        summary: Starz Orginal Shows       
+ SyFy:
+        template: {name: Studio, poster: https://theposterdb.com/api/assets/113267}
+        tmdb_network: 77
+        summary: Shows Aired on SYFY
