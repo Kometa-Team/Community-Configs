@@ -40,7 +40,7 @@ collections:
     sort_title: +++++++++++++++++++++_1APPLE
     imdb_list:
       url:   https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0319272
-    summary: All Apple TV Originals From 2021-2025
+    summary: All Amazon Originals From 2021-2025
     url_poster: https://i.imgur.com/nU3gqqB.png
     url_background: https://i.imgur.com/2jfs7oS.png
     radarr_add: true
@@ -66,7 +66,7 @@ collections:
     sort_title: +++++++++++++++++++++_1HBOMAX
     imdb_list:
       url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0754095
-    summary: All HULU Originals From 2021-2025
+    summary: All HBO Max Originals From 2021-2025
     url_poster: https://i.redd.it/zxdvw3tk3f151.jpg
     url_background: https://wallpapercave.com/wp/wp6402755.png
     radarr_add: true
