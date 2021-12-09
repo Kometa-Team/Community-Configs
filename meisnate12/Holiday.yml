@@ -10,6 +10,7 @@ templates:
       NOTE: this collection will only be around until <<end_date>>.
     sort_title: +0_<<collection_name>>
     schedule: range(<<start_date>>-<<end_date>>)
+    delete_not_scheduled: true
     visible_home: true
     visible_shared: true
 collections:
