@@ -1,0 +1,860 @@
+templates:
+  Chart Alpha:
+    sort_title: +_<<num>><<collection_name>>
+    sync_mode: sync
+    collection_order: alpha
+    collection_minimum: 3
+    delete_below_minimum: true
+  Chart Release:
+    sort_title: +_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Best of:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
+    sort_title: +_Best of <<year>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of <<year>>, according to https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>.
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Studio:
+    optional:
+      - company
+    tmdb_company: <<company>>
+    sort_title: ++_<<collection_name>>
+    sync_mode: sync
+    collection_order: alpha
+    collection_minimum: 3
+    delete_below_minimum: true
+  IMDb Genre:
+    default:
+      title: feature
+      limit: 100
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>
+      limit: <<limit>>
+    - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>&sort=user_rating,desc
+      limit: <<limit>>
+    sort_title: +++_<<collection_name>>
+    sync_mode: sync
+    collection_order: alpha
+    collection_minimum: 3
+    delete_below_minimum: true
+  Other Genre:
+    sort_title: +++_<<collection_name>>
+    sync_mode: sync
+    collection_order: alpha
+    collection_minimum: 3
+    delete_below_minimum: true
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Actor Director:
+    actor: tmdb
+    director: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Actor Director Writer:
+    actor: tmdb
+    director: tmdb
+    writer: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Actor Writer:
+    actor: tmdb
+    writer: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Director:
+    director: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Director Writer:
+    director: tmdb
+    writer: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Writer:
+    writer: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Collection:
+    optional:
+      - collection
+      - movie
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    sync_mode: sync
+    item_assets: true
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+
+collections:
+  4K Overlay:
+    plex_search:
+      all:
+        resolution: 4K
+    item_overlay: 4K
+    item_assets: true
+    build_collection: false
+######################################################
+#                Studio Collections                  #
+######################################################
+  Pixar:
+    template: {name: Studio, company: 3}
+    summary: Pixar Animation Studios, commonly known as Pixar, is an American computer animation studio based in Emeryville, California, a subsidiary of Disney Studios Content owned by The Walt Disney Company. Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation on February 3, 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4 billion by converting each share of Pixar stock to 2.3 shares of Disney stock, a transaction that resulted in Jobs becoming Disney's largest single shareholder at the time. Pixar is best known for its feature films technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot.
+
+######################################################
+#                Chart Collections                   #
+######################################################
+
+  Top 10 Pirated Films:
+    template: {name: Chart Alpha, num: 1}
+    trakt_list:
+      - https://trakt.tv/users/linaspurinis/lists/top-10-pirated-movies-of-the-week?sort=rank,asc
+    summary: These are the top 10 most pirated movies in the last week according to https://trakt.tv/users/linaspurinis/lists/top-10-pirated-movies-of-the-week?sort=rank,asc
+  Popular Movies on Plex:
+    template: {name: Chart Alpha, num: 2}
+    tautulli_popular:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    tautulli_watched:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    summary: This collection is based on the most popular movies on my server in the last 30 days. It is updated every day at 3AM.
+  Trending:
+    template: {name: Chart Alpha, num: 3}
+    trakt_trending: 40
+    tmdb_trending_daily: 40
+    tmdb_trending_weekly: 40
+    summary: Movies Trending across the internet, according to https://trakt.tv/movies/trending.
+  Popular:
+    template: {name: Chart Alpha, num: 4}
+    tmdb_popular: 40
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
+      limit: 40
+    summary: Popular Movies across the internet, according to https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short.
+  Top Rated:
+    template: {name: Chart Alpha, num: 5}
+    tmdb_top_rated: 250
+    summary: Top Rated Movies across the internet
+    #schedule: weekly(sunday)
+  Top Christmas Movies:
+    template: {name: Chart Alpha, num: 6}
+    imdb_list:
+      url: https://www.imdb.com/list/ls000096828/
+      limit: 100
+    summary: Top 100 Christmas movies, accoring to https://www.imdb.com/list/ls000096828/.
+    #schedule: monthly(1)
+  Top Horror Movies:
+    template: {name: Chart Alpha, num: 7}
+    trakt_list:
+      - https://trakt.tv/users/w1nt3r/lists/time-out-s-100-best-horror-films?sort=rank,asc
+    summary: Top horror movies, accoring to https://trakt.tv/users/w1nt3r/lists/time-out-s-100-best-horror-films?sort=rank,asc.
+    radarr_add: true
+    radarr_search: true
+    #schedule: monthly(1)
+  Best of 1980s:
+    template: {name: Chart Alpha, num: 8}
+    trakt_list: https://trakt.tv/users/zyrus/lists/80s-classics?sort=rank,asc
+    summary: Best of 1980s, according to https://trakt.tv/users/zyrus/lists/80s-classics?sort=rank,asc.
+    #schedule: monthly(1)
+  Best of 1990s:
+    template: {name: Chart Alpha, num: 9.0}
+    trakt_list: https://trakt.tv/users/sp1ti/lists/a-v-club-s-best-films-of-the-90s?sort=rank,asc
+    summary: Best of the 1990s, according to https://trakt.tv/users/sp1ti/lists/a-v-club-s-best-films-of-the-90s?sort=rank,asc.
+    #schedule: monthly(1)
+  Best of 2000s:
+    template: {name: Chart Alpha, num: 9.1}
+    trakt_list: https://trakt.tv/users/sp1ti/lists/a-v-club-s-best-films-of-the-00s?sort=rank,asc
+    summary: Best of the 2000s, according to https://trakt.tv/users/sp1ti/lists/a-v-club-s-best-films-of-the-00s?sort=rank,asc.
+    #schedule: monthly(1)
+  Best of 2017:
+    template: {name: Best of, year: 2017}
+    #schedule: monthly(1)
+  Best of 2018:
+    template: {name: Best of, year: 2018}
+    #schedule: monthly(1)
+  Best of 2019:
+    template: {name: Best of, year: 2019}
+    #schedule: monthly(1)
+  Best of 2020:
+    template: {name: Best of, year: 2020}
+    #schedule: monthly(1)
+  Best of 2021:
+    template: {name: Best of, year: 2021}
+  Oscars:
+    template: {name: Chart Release}
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    summary: Oscar Winning Movies
+    #schedule: monthly(1)
+
+######################################################
+#                TMDb Collections                    #
+######################################################
+  101 Dalmatians:
+    template: {name: Collection, collection: "100693, 124916", movie: 337404}
+    #schedule: monthly(1)
+  3 Ninjas:
+    template: {name: Collection, collection: 71458}
+    ##schedule: monthly(1)
+  Aladdin:
+    template: {name: Collection, collection: "86027, 748401"}
+    ##schedule: monthly(1)
+  Alien:
+    template: {name: Collection, collection: "8091, 135416, 115762"}
+    #schedule: monthly(1)
+  American Pie:
+    template: {name: Collection, collection: "2806, 298820"}
+    #schedule: monthly(1)
+  An American Tail:
+    template: {name: Collection, collection: 8783}
+    #schedule: monthly(1)
+  Amityville:
+    template: {name: Collection, collection: 397842}
+    ##schedule: monthly(1)
+  Annabelle:
+    template: {name: Collection, collection: 402074}
+    #schedule: monthly(1)
+  Austin Powers:
+    template: {name: Collection, collection: 1006}
+    #schedule: monthly(1)
+  The Avengers:
+    template: {name: Collection, collection: 86311}
+    #schedule: monthly(1)
+  Back to the Future:
+    template: {name: Collection, collection: 264}
+    #schedule: monthly(1)
+  Bad Boys:
+    template: {name: Collection, collection: 14890}
+    #schedule: monthly(1)
+  Batman:
+    template: {name: Collection, collection: 120794}
+    #schedule: monthly(1)
+  Beauty and the Beast:
+    template: {name: Collection, collection: 153010, movie: 321612} #Need some custom artwork
+    #schedule: monthly(1)
+  Best of the Best:
+    template: {name: Collection, collection: 153948}
+    #schedule: monthly(1)
+  Beverly Hills Cop:
+    template: {name: Collection, collection: 85861}
+    #schedule: monthly(1)
+  Big Momma's House:
+    template: {name: Collection, collection: 44979}
+    #schedule: monthly(1)
+  Bill & Ted's Most Excellent:
+    template: {name: Collection, collection: 91746}
+    #schedule: monthly(1)
+  Blade:
+    template: {name: Collection, collection: 735}
+    ##schedule: monthly(1)
+  Blair Witch:
+    template: {name: Collection, collection: 64750}
+    #schedule: monthly(1)
+  Bourne:
+    template: {name: Collection, collection: 31562}
+    #schedule: monthly(1)
+  Cabin Fever:
+    template: {name: Collection, collection: 201576}
+    #schedule: monthly(1)
+  Captain America:
+    template: {name: Collection, collection: 131295}
+    #schedule: monthly(1)
+  Cars:
+    template: {name: Collection, collection: 87118}
+    #schedule: monthly(1)
+  Charlie Brown:
+    template: {name: Collection}
+    imdb_list: https://www.imdb.com/list/ls054850259/
+    summary: Collection of Movies and TV Specials with the beloved Peanuts characters.
+    #schedule: monthly(1)
+  Cheech and Chong:
+    template: {name: Collection, collection: 33071}
+    #schedule: monthly(1)
+  Child's Play:
+    template: {name: Collection, collection: 10455}
+    #schedule: monthly(1)
+  The Chronicles of Narnia:
+    template: {name: Collection, collection: 420}
+    #schedule: monthly(1)
+  Chronicles of Riddick:
+    template: {name: Collection, collection: 2794}
+    #schedule: monthly(1)
+  Cinderella:
+    template: {name: Collection, collection: 55419}
+    #schedule: monthly(1)
+  Conjuring Universe:
+    template: {name: Collection}
+    imdb_list: https://www.imdb.com/list/ls025508921/
+    #schedule: monthly(1)
+  Cloverfield:
+    template: {name: Collection}
+    imdb_list: https://www.imdb.com/list/ls021933730/
+    summary: Cloverfield is an American science fiction anthology film series and media franchise created and produced by J. J. Abrams consisting of three films, viral marketing websites linking the films together, and a tie-in manga to the first film titled Cloverfield/Kishin (2008), all set in a shared fictional universe referred to as the "Cloververse". The franchise as a whole deals with creatures from other dimensions attacking Earth throughout various decades, all as a repercussion of an experiment by an astronaut team aboard the Cloverfield Station in outer-space. Each film depicts the reality-altering effects of their study, which was meant to find a new energy source replacing the planet's depleted resources, only to open portals for assault from various beasts from deep space.
+    #schedule: monthly(1)
+  Cornetto Trilogy:
+    template: {name: Collection}
+    imdb_list: https://www.imdb.com/list/ls068623110/
+    summary: An anthology series of British comedic genre films directed by Edgar Wright, written by Wright and Simon Pegg, produced by Nira Park, and starring Pegg and Nick Frost. The trilogy consists of Shaun of the Dead (2004), Hot Fuzz (2007), and The World's End (2013).
+    #schedule: monthly(1)
+  Crocodile Dundee:
+    template: {name: Collection, collection: 9332}
+    #schedule: yearly(01/01)
+  Dark Knight:
+    template: {name: Collection, collection: 263}
+    #schedule: monthly(1)
+  DCU:
+    template: {name: Collection}
+    imdb_list: https://www.imdb.com/list/ls047446610/
+    #schedule: monthly(1)
+  Deadpool:
+    template: {name: Collection, collection: 448150, movie: 567604}
+    #schedule: monthly(1)
+  Death Race:
+    template: {name: Collection, collection: 86116}
+    #schedule: monthly(1)
+  Death Wish:
+    template: {name: Collection, collection: 14377, movie: 395990}
+    #schedule: monthly(1)
+  Descendants:
+    template: {name: Collection, collection: 466463} #Need some custom artwork
+    #schedule: monthly(1)
+  Despicable Me:
+    template: {name: Collection, collection: "86066, 544669"}
+    #schedule: monthly(1)
+  Die Hard:
+    template: {name: Collection, collection: 1570}
+    #schedule: monthly(1)
+  Dirty Harry:
+    template: {name: Collection, collection: 10456}
+    #schedule: monthly(1)
+  Disney Buddies:
+    template: {name: Collection, collection: 91657}
+    #schedule: monthly(1)
+  Divergent:
+    template: {name: Collection, collection: 283579}
+    #schedule: monthly(1)
+  Deep Blue Sea:
+    template: {name: Collection, collection: 518165}
+    #schedule: monthly(1)
+  DragonHeart:
+    template: {name: Collection, collection: 169452}
+    #schedule: monthly(1)
+  Dumb and Dumber:
+    template: {name: Collection, collection: 96665}
+    #schedule: monthly(1)
+  Ernest:
+    template: {name: Collection, collection: 330555}
+    #schedule: monthly(1)
+  The Expendables:
+    template: {name: Collection, collection: 126125}
+    #schedule: monthly(1)
+  Escape Plan:
+    template: {name: Collection, collection: 525891}
+    #schedule: monthly(1)
+  Evil Dead:
+    template: {name: Collection, collection: 1960}
+    #schedule: monthly(1)
+  The Exorcist:
+    template: {name: Collection, collection: 12263}
+    #schedule: monthly(1)
+  Fantastic Beasts:
+    template: {name: Collection, collection: 435259}
+  The Fast and the Furious:
+    template: {name: Collection, collection: "9485, 688042"}
+  Fear Street:
+    template: {name: Collection, collection: 790370}
+    #schedule: monthly(1)
+  Fifty Shades:
+    template: {name: Collection, collection: 344830}
+  Final Destination:
+    template: {name: Collection, collection: 8864}
+  Free Willy:
+    template: {name: Collection, collection: 9328}
+    #schedule: monthly(1)
+  Friday:
+    template: {name: Collection, collection: 43563}
+  Friday the 13th:
+    template: {name: Collection, collection: 9735, movie: 6466}
+    #schedule: monthly(1)
+  Futurama:
+    template: {name: Collection, collection: 13800}
+    #schedule: monthly(1)
+  Ghostbusters:
+    template: {name: Collection, collection: 2980, movie: 43074}
+    #schedule: monthly(1)
+  G.I. Joe:
+    template: {name: Collection, collection: 135468}
+  The Godfather:
+    template: {name: Collection, collection: 230}
+    #schedule: monthly(1)
+  Godzilla:
+    template: {name: Collection, collection: 535313} #Maybe include movie: 293167???
+    #schedule: monthly(1)
+  The Grudge:
+    template: {name: Collection, collection: 1974, movie: 465086}
+    #schedule: monthly(1)
+  Halloween:
+    template: {name: Collection, collection: "91361, 126209"}
+    #schedule: monthly(1)
+  Halloweentown:
+    template: {name: Collection, collection: 87252}
+    #schedule: monthly(1)
+  The Hangover:
+    template: {name: Collection, collection: 86119}
+    #schedule: monthly(1)
+  Hannibal Lecter:
+    template: {name: Collection, collection: 9743, movie: 11454}
+    #schedule: monthly(1)
+  Happy Death Day:
+    template: {name: Collection, collection: 526380} #Will need custom artwork when 3rd film is released
+  Harold & Kumar:
+    template: {name: Collection, collection: 30663}
+    #schedule: monthly(1)
+  Harry Potter:
+    template: {name: Collection, collection: 1241}
+    #schedule: monthly(1)
+  ... Has Fallen:
+    template: {name: Collection, collection: 386534}
+    name_mapping: Has Fallen
+    #schedule: monthly(1)
+  Hayao Miyazaki:
+    template: {name: Collection}
+    imdb_list: https://www.imdb.com/list/ls069998735/
+    #schedule: monthly(1)
+  Hellboy:
+    template: {name: Collection, collection: 17235, movie: 456740}
+    #schedule: monthly(1)
+  Hellraiser:
+    template: {name: Collection, collection: 8917}
+  Herbie:
+    template: {name: Collection, collection: 12087}
+    #schedule: monthly(1)
+  High School Musical:
+    template: {name: Collection, collection: 87253}
+  Highlander:
+    template: {name: Collection, collection: 8050}
+    #schedule: monthly(1)
+  The Hobbit:
+    template: {name: Collection, collection: 121938}
+    #schedule: monthly(1)
+  Home Alone:
+    template: {name: Collection, collection: 9888}
+    #schedule: monthly(1)
+  Honey, I Shrunk the Kids:
+    template: {name: Collection, collection: 72119}
+    #schedule: monthly(1)
+  Hostel:
+    template: {name: Collection, collection: 86578}
+    #schedule: monthly(1)
+  Hotel Transylvania:
+    template: {name: Collection, collection: 185103}
+    #schedule: monthly(1)
+  House of 1000 Corpses:
+    template: {name: Collection, collection: 105625}
+    #schedule: monthly(1)
+  How to Train Your Dragon:
+    template: {name: Collection, collection: 89137}
+    #schedule: monthly(1)
+  The Human Centipede:
+    template: {name: Collection, collection: 96671}
+    #schedule: monthly(1)
+  The Hunger Games:
+    template: {name: Collection, collection: 131635}
+    #schedule: monthly(1)
+  I Know What You Did Last Summer:
+    template: {name: Collection, collection: 3601}
+    #schedule: monthly(1)
+  I Spit On Your Grave:
+    template: {name: Collection, collection: 219691}
+    #schedule: monthly(1)
+  Ice Age:
+    template: {name: Collection, collection: 8354}
+    #schedule: monthly(1)
+  Indiana Jones:
+    template: {name: Collection, collection: 84}
+    #schedule: monthly(1)
+  Insidious:
+    template: {name: Collection, collection: 228446}
+    #schedule: monthly(1)
+  Ip Man:
+    template: {name: Collection, collection: 70068}
+    #schedule: monthly(1)
+  Iron Man:
+    template: {name: Collection, collection: 131292}
+    #schedule: monthly(1)
+  Jack Ryan:
+    template: {name: Collection, collection: 192492, movie: "137094, 4614"}
+    #schedule: monthly(1)
+  Jackass:
+    template: {name: Collection, collection: 17178, movie: "208134, 273641, 265065"}
+    #schedule: monthly(1)
+  James Bond:
+    template: {name: Collection, collection: 645}
+    #schedule: monthly(1)
+  Jaws:
+    template: {name: Collection, collection: 2366}
+    #schedule: monthly(1)
+  Jay and Silent Bob:
+    template: {name: Collection, collection: 726870} #Artwork not complete
+    #schedule: monthly(1)
+  Jeepers Creepers:
+    template: {name: Collection, collection: 94899}
+    #schedule: monthly(1)
+  John Wick:
+    template: {name: Collection, collection: 404609}
+    #schedule: monthly(1)
+  Joy Ride:
+    template: {name: Collection, collection: 166378}
+    #schedule: monthly(1)
+  Jumanji:
+    template: {name: Collection, collection: 495527}
+    #schedule: monthly(1)
+  Jurassic Park:
+    template: {name: Collection, collection: 328}
+    #schedule: monthly(1)
+  The Karate Kid:
+    template: {name: Collection, collection: 8580, movie: 38575}
+    #schedule: monthly(1)
+  Kingsman:
+    template: {name: Collection, collection: 391860, movie: "476669, 631971"}
+    #schedule: monthly(1)
+  Kung Fu Panda:
+    template: {name: Collection, collection: 77816}
+    #schedule: monthly(1)
+  Lake Placid:
+    template: {name: Collection, collection: 97768}
+    #schedule: monthly(1)
+  The Land Before Time:
+    template: {name: Collection, collection: 19163}
+    #schedule: monthly(1)
+  Laurel & Hardy:
+    template: {name: Collection}
+    imdb_list: https://www.imdb.com/list/ls005126419/ #Need custom artwork
+    #schedule: monthly(1)
+  Legally Blonde:
+    template: {name: Collection, collection: 86024} #Will need custom artwork after release of Legally Blonde 4
+    #schedule: monthly(1)
+  LEGO DC Comics Super Heroes:
+    template: {name: Collection, collection: 386162} #Need custom artwork
+    #schedule: monthly(1)
+  Lego Star Wars:
+    template: {name: Collection, collection: 302331} #Need custom artwork
+    #schedule: monthly(1)
+  Lethal Weapon:
+    template: {name: Collection, collection: 945}
+  Lilo & Stitch:
+    template: {name: Collection, collection: 97461}
+    #schedule: monthly(1)
+  The Lion King:
+    template: {name: Collection, collection: "94032, 762512"} #Will need custom artwork when latest film is released
+    #schedule: monthly(1)
+  The Little Mermaid:
+    template: {name: Collection, collection: 33085}
+    #schedule: monthly(1)
+  Living Dead:
+    template: {name: Collection, collection: 261590, movie: "19185, 924, 13025, 29426"}
+    #schedule: monthly(1)
+  Lord of the Rings:
+    template: {name: Collection, collection: 119}
+    #schedule: monthly(1)
+  Lost Boys:
+    template: {name: Collection, collection: 109076}
+    #schedule: monthly(1)
+  Mad Max:
+    template: {name: Collection, collection: 8945}
+    #schedule: monthly(1)
+  Madagascar:
+    template: {name: Collection, collection: 14740, movie: 270946}
+    #schedule: monthly(1)
+  The Man with No Name:
+    template: {name: Collection, movie: "391, 429, 938"}
+    #schedule: monthly(1)
+  The Matrix:
+    template: {name: Collection, collection: 2344}
+    #schedule: monthly(1)
+  The Maze Runner:
+    template: {name: Collection, collection: 295130}
+    #schedule: monthly(1)
+  MCU:
+    template: {name: Collection}
+    #schedule: monthly(1)
+    imdb_list: https://www.imdb.com/list/ls066946827/
+  MCU - Chronological:
+    template: {name: Collection}
+    #schedule: monthly(1)
+    imdb_list: https://www.imdb.com/list/ls021001839/
+    collection_order: custom
+  Meet the Parents:
+    template: {name: Collection, collection: 51509}
+    #schedule: monthly(1)
+  Men In Black:
+    template: {name: Collection, collection: 86055}
+    #schedule: monthly(1)
+  Mexico Trilogy:
+    template: {name: Collection, collection: 9649}
+    #schedule: monthly(1)
+  The Mighty Ducks:
+    template: {name: Collection, collection: 10709}
+    #schedule: monthly(1)
+  Missing in Action:
+    template: {name: Collection, collection: 46512}
+    #schedule: monthly(1)
+  Mission Impossible:
+    template: {name: Collection, collection: 87359}
+    #schedule: monthly(1)
+  Mortal Kombat:
+    template: {name: Collection, collection: 9818, movie: "664767, 460465"}
+    #schedule: monthly(1)
+  Mulan:
+    template: {name: Collection, collection: 87236, movie: 337401}
+    #schedule: monthly(1)
+  The Mummy:
+    template: {name: Collection, collection: 1733} #movie: 282035 = The Mummy 2017
+    #schedule: monthly(1)
+  The Muppets:
+    template: {name: Collection, collection: 256377, movie: "10208, 10437, 10874, 11176, 11899, 14900, 20910"}
+    #schedule: monthly(1)
+  Naked Gun:
+    template: {name: Collection, collection: 37139}
+    #schedule: monthly(1)
+  National Lampoon:
+    template: {name: Collection, collection: 108693, movie: 296099}
+    #schedule: monthly(1)
+  The Neverending Story:
+    template: {name: Collection, collection: 91430}
+    #schedule: monthly(1)
+  Night at the Museum:
+    template: {name: Collection, collection: 85943}
+    #schedule: monthly(1)
+  A Nightmare on Elm Street:
+    template: {name: Collection, collection: 8581, movie: "6466, 23437, 37757"}
+    #schedule: monthly(1)
+  Ocean's:
+    template: {name: Collection, collection: 304, movie: 402900}
+    #schedule: monthly(1)
+  Oz:
+    template: {name: Collection, collection: 627517, movie: "13155, 68728"}
+    #schedule: monthly(1)
+  Paranormal Activity:
+    template: {name: Collection, collection: 41437}
+    #schedule: monthly(1)
+  Pet Sematary:
+    template: {name: Collection, collection: 10789, movie: 157433} #Need custom artwork
+  Phantasm:
+    template: {name: Collection, collection: 47770}
+    #schedule: monthly(1)
+  Pirates of the Caribbean:
+    template: {name: Collection, collection: 295}
+    #schedule: monthly(1)
+  Pitch Perfect:
+    template: {name: Collection, collection: 306031}
+    #schedule: monthly(1)
+  Planet of the Apes:
+    template: {name: Collection, collection: "173710, 1709", movie: 869}
+    #schedule: monthly(1)
+  Police Academy:
+    template: {name: Collection, collection: 9338}
+    #schedule: monthly(1)
+  Police Story:
+    template: {name: Collection, collection: 269098} #Need custom artwork
+    #schedule: monthly(1)
+  Predator:
+    template: {name: Collection, collection: 399}
+    #schedule: monthly(1)
+  The Purge:
+    template: {name: Collection, collection: 256322}
+    #schedule: monthly(1)
+  Rambo:
+    template: {name: Collection, collection: 5039}
+    #schedule: monthly(1)
+  Resident Evil:
+    template: {name: Collection, collection: 17255}
+    #schedule: monthly(1)
+  The Ring:
+    template: {name: Collection, collection: 14563} #Need custom artwork
+    #schedule: monthly(1)
+#  "Resident Evil: Biohazard":
+#    template: {name: Collection, collection: 133352} #Need custom artwork
+#    name_mapping: Resident Evil Biohazard
+#    #schedule: monthly(1)
+  Robert Langdon:
+    template: {name: Collection, collection: 115776}
+    #schedule: monthly(1)
+  Robocop:
+    template: {name: Collection, collection: 5547}
+    #schedule: monthly(1)
+  Rocky:
+    template: {name: Collection, collection: "1575, 553717"}
+    #schedule: monthly(1)
+  Rugrats:
+    template: {name: Collection, collection: 57129} #Need custom artwork
+    #schedule: monthly(1)
+  Rush Hour:
+    template: {name: Collection, collection: 90863}
+    #schedule: monthly(1)
+  The Sandlot:
+    template: {name: Collection, collection: 87214} #Need custom artwork
+    #schedule: monthly(1)
+  The Santa Clause:
+    template: {name: Collection, collection: 53159}
+    #schedule: monthly(1)
+  Saw:
+    template: {name: Collection, collection: 656}
+    #schedule: monthly(1)
+  Scary Movie:
+    template: {name: Collection, collection: 4246}
+    #schedule: monthly(1)
+  The Scorpion King:
+    template: {name: Collection, collection: 116669} #Need custom artwork
+    #schedule: monthly(1)
+  Scream:
+    template: {name: Collection, collection: 2602}
+    #schedule: monthly(1)
+  Shaft:
+    template: {name: Collection, collection: "495, 608103"} #Need custom artwork
+    #schedule: monthly(1)
+  Sharknado:
+    template: {name: Collection, collection: 286023} #Need custom artwork
+    #schedule: monthly(1)
+  Sherlock Holmes:
+    template: {name: Collection, collection: 102322} #Need custom artwork
+    #schedule: monthly(1)
+  Shrek:
+    template: {name: Collection, collection: 2150}
+    #schedule: monthly(1)
+  The Smurfs:
+    template: {name: Collection, collection: 134897} #Need custom artwork
+    #schedule: monthly(1)
+  Spider-Man:
+    template: {name: Collection, collection: 556}
+    #schedule: monthly(1)
+  Spy Kids:
+    template: {name: Collection, collection: 86486} #Need custom artwork
+    #schedule: monthly(1)
+  Star Trek:
+    template: {name: Collection, collection: "115575, 115570, 151"}
+    #schedule: monthly(1)
+  Star Wars:
+    template: {name: Collection, collection: 10, movie: "348350, 330459"}
+    #schedule: monthly(1)
+  Step Up:
+    template: {name: Collection, collection: 86092} #Need custom artwork
+    #schedule: monthly(1)
+  Superman:
+    template: {name: Collection, collection: 8537}
+    #schedule: monthly(1)
+  Taken:
+    template: {name: Collection, collection: 135483}
+    #schedule: monthly(1)
+  Tarzan:
+    template: {name: Collection, collection: 106768} #Need custom artwork
+    #schedule: monthly(1)
+  Teenage Mutant Ninja Turtles:
+    template: {name: Collection, collection: "1582, 401562"}
+    #schedule: monthly(1)
+  Terminator:
+    template: {name: Collection, collection: 528}
+    #schedule: monthly(1)
+  Texas Chainsaw Massacre:
+    template: {name: Collection, collection: "111751, 425175"}
+    #schedule: monthly(1)
+  Thor:
+    template: {name: Collection, collection: 131296}
+    #schedule: monthly(1)
+  Three Colors:
+    template: {name: Collection, collection: 131}
+    #schedule: monthly(1)
+    summary: Three Colors is a film trilogy who’s colors make up the films and the three colors of France – Blue, White and Red. With the colors meaning – freedom, equality and brotherliness.
+  Tinker Bell:
+    template: {name: Collection, collection: 315595} #Need custom artwork
+    #schedule: monthly(1)
+  To All the Boys:
+    template: {name: Collection, collection: 569738} #Need custom artwork
+    #schedule: monthly(1)
+  Tomb Raider:
+    template: {name: Collection, collection: "2467, 621142"}
+    #schedule: monthly(1)
+  Toy Story:
+    template: {name: Collection, collection: 10194}
+    #schedule: monthly(1)
+  Transformers:
+    template: {name: Collection, collection: 8650}
+    #schedule: monthly(1)
+  The Transporter:
+    template: {name: Collection, collection: 9518}
+    #schedule: monthly(1)
+  Tremors:
+    template: {name: Collection, collection: 91799} #Need custom artwork
+    #schedule: monthly(1)
+  Trolls:
+    template: {name: Collection, collection: 489724} #Need custom artwork
+    #schedule: monthly(1)
+  TRON:
+    template: {name: Collection, collection: 63043, movie: 73362} #Need custom artwork
+    #schedule: monthly(1)
+  Twilight:
+    template: {name: Collection, collection: 33514}
+    #schedule: monthly(1)
+  Unbreakable:
+    template: {name: Collection}
+    imdb_list: https://www.imdb.com/list/ls022101006/
+    summary: The Unbreakable trilogy, officially known as the Eastrail 177 Trilogy, is an American superhero thriller and psychological horror film series. The films were written, produced, and directed by M. Night Shyamalan. The trilogy consists of Unbreakable (2000), Split (2016), and Glass (2019).
+    #schedule: monthly(1)
+  Underworld:
+    template: {name: Collection, collection: 2326}
+    #schedule: monthly(1)
+  Wallace & Gromit:
+    template: {name: Collection, collection: 529} #Need custom artwork
+    #schedule: monthly(1)
+  Wrong Turn:
+    template: {name: Collection, collection: 52985, movie: 630586}
+    #schedule: monthly(1)
+  X-Men:
+    template: {name: Collection, collection: "748, 453993, 448150", movie: "567604, 340102"}
+    #schedule: monthly(1)
+  xXx:
+    template: {name: Collection, collection: 52785} #Need custom artwork
+    #schedule: monthly(1)
+  Zeigeist:
+    template: {name: Collection, collection: 96682} #Need custom artwork
+    #schedule: monthly(1)
+  Zenon:
+    template: {name: Collection, collection: 321148} #Need custom artwork
+    #schedule: monthly(1)
