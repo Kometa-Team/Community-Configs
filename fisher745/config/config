@@ -1,0 +1,124 @@
+## This file is a template remove the .template to use the file
+
+libraries:                                      # Library mappings must have a colon (:) placed after them
+  Movies:
+    metadata_path:
+      - file: metadata/movies/Metadata.yml
+      - file: metadata/movies/Studio.yml
+      - file: metadata/movies/Charts.yml
+      - file: metadata/movies/Genre.yml
+      - file: metadata/movies/Holiday.yml
+      - file: metadata/movies/Movie-Collection.yml
+      - file: metadata/movies/People.yml
+    settings:
+      asset_folders: true
+      create_asset_folders: true
+  TV Shows:
+    metadata_path:
+      - file: metadata/tv-shows/Metadata.yml
+      - file: metadata/tv-shows/Network.yml
+      - file: metadata/tv-shows/Charts.yml
+  Anime-Shows:
+    metadata_path:
+      - file: metadata/anime-shows/Charts.yml
+      - file: metadata/anime-shows/Seasons.yml
+      - file: metadata/anime-shows/Studios.yml
+settings:                                       # Can be individually specified per library as well
+  cache: true
+  cache_expiration: 60
+  asset_directory: /assets
+  asset_folders: true
+  assets_for_all: true
+  sync_mode: sync
+  show_unmanaged: true
+  show_filtered: true
+  show_missing: true
+  save_missing: true
+  run_again_delay: 2
+  missing_only_released: false
+  create_asset_folders: true
+  collection_minimum: 1
+  delete_below_minimum: true
+  tvdb_language: default
+  show_missing_assets: true
+  show_missing_season_assets: true
+  delete_not_scheduled: false
+  only_filter_missing: false
+  ignore_ids:
+  ignore_imdb_ids:
+  asset_depth: 0
+  show_options: false
+webhooks:
+  error: notifiarr
+  run_start: notifiarr
+  run_end: notifiarr
+  collection_changes: notifiarr
+plex:                                           # Can be individually specified per library as well
+  url: http://ipaddress:32400
+  token: 
+  timeout: 60
+  clean_bundles: true
+  empty_trash: true
+  optimize: true
+tmdb:
+  apikey: 
+  language: en
+tautulli:                                       # Can be individually specified per library as well
+  url: http://tautulli:8181
+  apikey: 
+omdb:
+  apikey:
+notifiarr:
+  apikey: 
+anidb:          # Optional
+  username: 
+  password: 
+radarr:                                         # Can be individually specified per library as well
+  url: http://radarr:7878
+  token: 
+  version: v3
+  add: false
+  root_folder_path: 
+  monitor: true
+  availability: announced
+  quality_profile: Any
+  tag:
+  search: false
+  add_existing: false
+  radarr_path:
+  plex_path:
+sonarr:                                         # Can be individually specified per library as well
+  url: http://sonarr:8989
+  token: 
+  version: v3
+  add: false
+  root_folder_path: 
+  monitor: all
+  quality_profile: Any
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  tag:
+  search: false
+  cutoff_search: false
+  add_existing: false
+  sonarr_path:
+  plex_path:
+trakt:
+  client_id: 
+  client_secret: 
+  authorization:
+    access_token: 
+    token_type: 
+    expires_in: 
+    refresh_token: 
+    scope: public
+    created_at: 
+mal:
+  client_id: 
+  client_secret: 
+  authorization:
+    access_token: 
+    token_type: 
+    expires_in: 
+    refresh_token: 
