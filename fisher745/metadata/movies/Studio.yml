@@ -18,7 +18,7 @@ collections:
   Blue Sky:
     template: { name: Studio, company: 9383 }
     summary: Blue Sky Studios, Inc. is an American computer animation film studio based in Greenwich, Connecticut. It is a subsidiary of 20th Century Animation, a division of Disney Studios Content.
-  Dharma Productions:
+  Dharma Productions: #Note that I was unable to find a poster for this online and so couldnt use "url_poster" tag for this.
     template: { name: Studio, company: "19146, 150300" }
     file_poster:  //config/assets/Dharma Productions/poster.png
     summary: Dharma Productions Pvt. Ltd. is an Indian production and distribution company established by Yash Johar in 1979. It was taken over in 2004 after his death by his son Karan Johar. Based in Mumbai, it mainly produces and distributes Hindi films, In November 2018, a new sector of the company was created called Dharmatic, which will focus on producing digital content for online distribution platforms
