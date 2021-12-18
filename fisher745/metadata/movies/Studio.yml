@@ -1,0 +1,66 @@
+templates:
+  Studio:
+    optional:
+      - company
+    tmdb_company: <<company>>
+    sort_title: +2_<<collection_name>>
+    collection_order: alpha
+    sync_mode: sync
+collections:
+
+######################################################
+#                Studio Collections                  #
+######################################################
+
+  Aardman:
+    template: { name: Studio, company: 297 }
+    summary: Aardman Animations, Ltd. is a British animation studio based in Bristol, England. Aardman is known for films made using stop-motion clay animation techniques, particularly those featuring Plasticine characters Wallace and Gromit.
+  Blue Sky:
+    template: { name: Studio, company: 9383 }
+    summary: Blue Sky Studios, Inc. is an American computer animation film studio based in Greenwich, Connecticut. It is a subsidiary of 20th Century Animation, a division of Disney Studios Content.
+  Dharma Productions: #Note that I was unable to find a poster for this online and so couldnt use "url_poster" tag for this.
+    template: { name: Studio, company: "19146, 150300" }
+    file_poster:  //config/assets/Dharma Productions/poster.png
+    summary: Dharma Productions Pvt. Ltd. is an Indian production and distribution company established by Yash Johar in 1979. It was taken over in 2004 after his death by his son Karan Johar. Based in Mumbai, it mainly produces and distributes Hindi films, In November 2018, a new sector of the company was created called Dharmatic, which will focus on producing digital content for online distribution platforms
+  DreamWorks:
+    template: { name: Studio, company: 521 }
+    url_poster: https://theposterdb.com/api/assets/57647
+    summary: DreamWorks Animation LLC (also simply known as DreamWorks) is an American animation studio and a subsidiary of Universal Pictures, itself a subsidiary of Comcast's NBCUniversal. It is based in Glendale, California, and produces animated feature films, television programs, and online virtual games.
+    filters:
+      collection.not: Aardman
+  Illumination Entertainment:
+    template: { name: Studio, company: 6704 }
+    url_poster: https://theposterdb.com/api/assets/8158
+    summary: Illumination is an American film and animation studio founded by Chris Meledandri in 2007 and owned by Universal Pictures, a division of NBCUniversal, which is itself a division of Comcast. Meledandri produces the films, while Universal finances and distributes all the films. The studio is responsible for the Despicable Me and The Secret Life of Pets franchises and the film adaptations of Dr. Seuss books The Lorax and How the Grinch Stole Christmas. The Minions, characters from the Despicable Me series, are the studio's mascots.
+  Marvel:
+    template: { name: Studio, company: "420, 7505" }
+    url_poster: https://theposterdb.com/api/assets/113197
+    summary: Marvel Studios, LLC is an American film and television production company that is a subsidiary of Walt Disney Studios, a division of The Walt Disney Company. Marvel Studios is known for the production of the Marvel Cinematic Universe films, based on characters that appear in Marvel Comics publications.
+  Paramount:
+    template: { name: Studio, company: 4 }
+    url_poster: https://theposterdb.com/api/assets/113243
+    summary: Paramount Pictures Corporation is an American film and television production and distribution company and a subsidiary of ViacomCBS. It is the fifth oldest film studio in the world, the second oldest film studio in the United States (behind Universal Pictures), and the sole member of the 'Big Five' film studios still located in the city limits of Los Angeles. In 1916, film producer Adolph Zukor put 22 actors and actresses under contract and honored each with a star on the logo. In 2014, Paramount Pictures became the first major Hollywood studio to distribute all of its films in digital form only. The company's headquarters and studios are located at 5555 Melrose Avenue, Hollywood, California. Paramount Pictures is a member of the Motion Picture Association (MPA).
+  Pixar:
+    template: { name: Studio, company: 3 }
+    url_poster: https://theposterdb.com/api/assets/18894
+    summary: Pixar Animation Studios, commonly known as Pixar, is an American computer animation studio based in Emeryville, California, a subsidiary of Disney Studios Content owned by The Walt Disney Company. Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation on February 3, 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4 billion by converting each share of Pixar stock to 2.3 shares of Disney stock, a transaction that resulted in Jobs becoming Disney's largest single shareholder at the time. Pixar is best known for its feature films technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot.
+  Studio Ghibli:
+    template: { name: Studio, company: 10342 }
+    summary: Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. The studio is best known for its animated feature films, and has also produced several short films, television commercials, and one television film. The studios mascot and most recognizable symbol is the character, Totoro, a giant cat-like spirit from the 1988 classic, My Neighbor Totoro.
+  Sony Pictures Animation:
+    template: { name: Studio, company: 2251, summary: 2251 }
+    url_poster: https://theposterdb.com/api/assets/177573
+  Warner Group:
+    template: { name: Studio, company: "25120, 174, 9993", summary: 174  }
+    url_poster: https://theposterdb.com/api/assets/163715
+    summary: Warner Bros. Entertainment Inc. is an American diversified multinational mass media and entertainment conglomerate headquartered at the Warner Bros. Studios complex in Burbank, California, and a subsidiary of AT&T's WarnerMedia through its Studios & Networks division.
+  Walt Disney Animation Studios:
+    template: { name: Studio }
+    url_poster: https://theposterdb.com/api/assets/5285
+    imdb_list: https://www.imdb.com/list/ls059383351/
+    summary: Walt Disney Animation Studios (WDAS), sometimes shortened to Disney Animation, is an American animation studio that creates animated features and short films for The Walt Disney Company. Founded on October 16, 1923 by brothers Walt Disney and Roy O. Disney, it is one of the oldest-running animation studios in the world. It is currently organized as a division of Walt Disney Studios and is headquartered at the Roy E. Disney Animation Building at the Walt Disney Studios lot in Burbank, California.
+  Walt Disney Pictures:
+    template: { name: Studio }
+    url_poster: https://theposterdb.com/api/assets/90125
+    imdb_list: https://www.imdb.com/list/ls077114097/
+    summary: Walt Disney Pictures is an American film production studio of The Walt Disney Studios, which is owned by The Walt Disney Company. The studio is the flagship producer of live-action feature films within the Walt Disney Studios unit, and is based at the Walt Disney Studios in Burbank, California. Animated films produced by Walt Disney Animation Studios and Pixar Animation Studios are also released under this brand. Walt Disney Studios Motion Pictures distributes and markets the films produced by Walt Disney Pictures.

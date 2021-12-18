@@ -1,0 +1,20 @@
+templates:
+  network:
+    optional:
+      - network
+    tmdb_network: <<network>>
+    sort_title: +2_<<collection_name>>
+    sync_mode: sync
+    smart_label: episode_added.desc    
+collections:
+
+######################################################
+#                Network Collection                  #
+######################################################
+
+  Netflix:
+    template: { name: network, network: 213 }
+    url_poster: https://github.com/Drapersniper/Posters/raw/main/networks/Netflix/poster.jpg
+  Apple TV+:
+    template: { name: network, network: 2552 }
+    url_poster: https://github.com/Drapersniper/Posters/raw/main/networks/Apple%20TV%2B/poster.jpg
