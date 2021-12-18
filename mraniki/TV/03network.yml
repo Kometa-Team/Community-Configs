@@ -1,0 +1,102 @@
+#####################################################
+#              Network Collections                   #
+######################################################
+#   +01_ = Charts
+#   +02_ = Holidays
+#   +03_ = Studios or Network
+#   +04_ = Collection
+#   +05_ = Countries
+#   +06_ = Genres
+#   +07_ = Awards
+#   +08_ = Decades
+#   +09_ = People
+#   +10_ = Movies
+
+
+templates:
+  network:
+    optional:
+      - network
+    tmdb_network: <<network>>
+    sort_title: +3_<<collection_name>>
+    sync_mode: sync
+    smart_label: originally_available.desc
+
+
+collections:
+  HBO:
+    template: { name: network, network: "49, 2593, 3186, 3308" }
+    schedule: weekly (thursday)
+
+#  Cinemax:
+#    template: { name: network, network: 359 }
+  Showtime:
+    template: { name: network, network: 67 }
+    schedule: weekly (thursday)
+
+  Netflix:
+    template: { name: network, network: 213 }
+    schedule: weekly (thursday)
+
+
+  Hulu:
+    template: { name: network, network: 453 }
+    schedule: weekly (thursday)
+
+
+#  Syfy:
+#    template: { name: network, network: "77, 3701" }
+  Starz:
+    template: { name: network, network: "318, 758, 4906" }
+    schedule: weekly (thursday)
+
+  HGTV:
+    template: { name: network, network: 210 }
+    schedule: weekly (thursday)
+#  TBS:
+#    template: { name: network, network: 68 }
+#    schedule: weekly (monday)
+#  TBS Tokyo:
+#  template: { name: network, network: 1393 }  
+
+  National Geographic:
+    template: { name: network, network: "43, 799, 1756, 1825, 3355, 4293, 4476" }
+    schedule: weekly (thursday)
+
+
+  Prime Video:
+    template: { name: network, network: 1024 }
+    schedule: weekly (thursday)
+
+
+#  YouTube:
+#    template: { name: network, network: "247, 1436, 4869" }
+  FX:
+    template: { name: network, network: 88 }
+    schedule: weekly (thursday)
+
+
+  Disney+:
+    template: { name: network, network: "2739, 2919" }
+    schedule: weekly (thursday)
+
+
+  Apple+:
+    template: { name: network, network: 2552 }
+    schedule: weekly (thursday)
+
+  Discovery:
+    template: { name: network, network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741" }
+    schedule: weekly (thursday)
+
+#  A&E:
+#    template: { name: network, network: "129, 2639, 3688" }
+  BBC:
+    template: { name: network, network: "3546, 3278, 4, 332" }
+    url_poster: https://i.imgur.com/8f5EQSn.png
+    schedule: weekly (thursday)
+
+  iTV:
+    template: { name: network, network: "9, 3448, 24546, 5238" }
+    url_poster: https://i.imgur.com/7iiQ02K.png
+    
