@@ -1,0 +1,473 @@
+
+######################################################
+#                  Movie Metadata                    #
+######################################################
+
+metadata:
+  # Tinker Bell Collection
+  Pixie Hollow Games:
+    url_poster: https://theposterdb.com/api/assets/31542
+  Secret of the Wings:
+    url_poster: https://theposterdb.com/api/assets/17247
+  
+  # Marvel Cinematic Universe (https://theposterdb.com/set/90)
+  Iron Man:
+    url_poster: https://theposterdb.com/api/assets/346
+  The Incredible Hulk:
+    url_poster: https://theposterdb.com/api/assets/347
+  Iron Man 2:
+    url_poster: https://theposterdb.com/api/assets/348
+  Thor:
+    url_poster: https://theposterdb.com/api/assets/349
+  "Captain America: The First Avenger":
+    url_poster: https://theposterdb.com/api/assets/350
+  The Avengers:
+    url_poster: https://theposterdb.com/api/assets/351
+  Iron Man 3:
+    url_poster: https://theposterdb.com/api/assets/352
+  "Thor: The Dark World":
+    url_poster: https://theposterdb.com/api/assets/353
+  "Captain America: The Winter Soldier":
+    url_poster: https://theposterdb.com/api/assets/354
+  Guardians of the Galaxy:
+    url_poster: https://theposterdb.com/api/assets/355
+  "Avengers: Age of Ultron":
+    url_poster: https://theposterdb.com/api/assets/356
+  Ant-Man:
+    url_poster: https://theposterdb.com/api/assets/357
+  "Captain America: Civil War":
+    url_poster: https://theposterdb.com/api/assets/358
+  Doctor Strange:
+    url_poster: https://theposterdb.com/api/assets/359
+  Guardians of the Galaxy Vol. 2:
+    url_poster: https://theposterdb.com/api/assets/360
+  "Spider-Man: Homecoming":
+    url_poster: https://theposterdb.com/api/assets/361
+  "Thor: Ragnarok":
+    url_poster: https://theposterdb.com/api/assets/362
+  Black Panther:
+    url_poster: https://theposterdb.com/api/assets/363
+  "Avengers: Infinity War":
+    url_poster: https://theposterdb.com/api/assets/364
+  Ant-Man and the Wasp:
+    url_poster: https://theposterdb.com/api/assets/365
+  Captain Marvel:
+    url_poster: https://theposterdb.com/api/assets/366
+  "Avengers: Endgame":
+    url_poster: https://theposterdb.com/api/assets/367
+  "Spider-Man: Far from Home":
+    url_poster: https://theposterdb.com/api/assets/368
+  Black Widow:
+    url_poster: https://theposterdb.com/api/assets/54980
+  Venom:
+    url_poster: https://theposterdb.com/api/assets/193446
+  "Venom: Let There Be Carnage":
+    url_poster: https://theposterdb.com/api/assets/193447
+
+  # Disney Live Action
+  Alice in Wonderland:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/12391
+  Maleficent:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/45624
+  The Jungle Book:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/44737
+  "Pete's Dragon":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/12405
+  Beauty and the Beast:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/44738
+  Christopher Robin:
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/6505
+  Dumbo:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/44739
+  Aladdin:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/44740
+  The Lion King:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/44741
+  "Maleficent: Mistress of Evil":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/45625
+  Mulan:
+    year: 2020
+    url_poster: https://theposterdb.com/api/assets/46255
+  Cruella:
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/153709
+
+  # The Fast and the Furious
+  2 Fast 2 Furious:
+    url_poster: https://theposterdb.com/api/assets/27817
+  Fast & Furious:
+    url_poster: https://theposterdb.com/api/assets/27819
+  Furious 7:
+    url_poster: https://theposterdb.com/api/assets/27822
+  The Fate of the Furious:
+    url_poster: https://theposterdb.com/api/assets/27823
+  F9:
+    url_poster: https://theposterdb.com/api/assets/45286
+
+  # X-Men
+  X-Men:
+    url_poster: https://theposterdb.com/api/assets/77498
+  X2:
+    url_poster: https://theposterdb.com/api/assets/77499
+  "X-Men: The Last Stand":
+    url_poster: https://theposterdb.com/api/assets/77500
+  "X-Men Origins: Wolverine":
+    url_poster: https://theposterdb.com/api/assets/77838
+  "X-Men: First Class":
+    url_poster: https://theposterdb.com/api/assets/77501
+  The Wolverine:
+    url_poster: https://theposterdb.com/api/assets/77839
+  "X-Men: Days of Future Past":
+    url_poster: https://theposterdb.com/api/assets/77502
+  Deadpool:
+    url_poster: https://theposterdb.com/api/assets/78087
+  "X-Men: Apocalypse":
+    url_poster: https://theposterdb.com/api/assets/77503
+  Logan:
+    url_poster: https://theposterdb.com/api/assets/77840
+  Deadpool 2:
+    url_poster: https://theposterdb.com/api/assets/78088
+  Dark Phoenix:
+    url_poster: https://theposterdb.com/api/assets/77504
+  The New Mutants:
+    url_poster: https://theposterdb.com/api/assets/91114
+
+  # DCEU
+  Man of Steel:
+    url_poster: https://theposterdb.com/api/assets/79224
+  "Batman v Superman: Dawn of Justice":
+    url_poster: https://theposterdb.com/api/assets/79225
+  "Batman: The Long Halloween, Part Two":
+    url_poster: https://theposterdb.com/api/assets/172875
+  "Batman: The Long Halloween, Part One":
+    url_poster: https://theposterdb.com/api/assets/172874  
+  Suicide Squad:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/79226
+  Wonder Woman:
+    url_poster: https://theposterdb.com/api/assets/79227
+  Justice League:
+    url_poster: https://theposterdb.com/api/assets/79228
+  Aquaman:
+    url_poster: https://theposterdb.com/api/assets/79229
+  Shazam!:
+    url_poster: https://theposterdb.com/api/assets/79230
+  Joker:
+    url_poster: https://theposterdb.com/api/assets/79254
+  Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn):
+    url_poster: https://theposterdb.com/api/assets/79231
+  Wonder Woman 1984:
+    url_poster: https://theposterdb.com/api/assets/79232
+  Zack Snyder's Justice League:
+    url_poster: https://theposterdb.com/api/assets/138328
+  The Suicide Squad:
+    url_poster: https://theposterdb.com/api/assets/167287  
+  
+  # James Bond
+  Dr. No:
+    url_poster: https://theposterdb.com/api/assets/115663
+  From Russia with Love:
+    url_poster: https://theposterdb.com/api/assets/115664
+  Goldfinger:
+    url_poster: https://theposterdb.com/api/assets/115665
+  Thunderball:
+    url_poster: https://theposterdb.com/api/assets/115666
+  You Only Live Twice:
+    url_poster: https://theposterdb.com/api/assets/115667
+  On Her Majesty's Secret Service:
+    url_poster: https://theposterdb.com/api/assets/115668
+  Diamonds Are Forever:
+    url_poster: https://theposterdb.com/api/assets/115669
+  Live and Let Die:
+    url_poster: https://theposterdb.com/api/assets/115670
+  The Man with the Golden Gun:
+    url_poster: https://theposterdb.com/api/assets/115671
+  The Spy Who Loved Me:
+    url_poster: https://theposterdb.com/api/assets/115672
+  Moonraker:
+    url_poster: https://theposterdb.com/api/assets/115673
+  For Your Eyes Only:
+    url_poster: https://theposterdb.com/api/assets/115674
+  Octopussy:
+    url_poster: https://theposterdb.com/api/assets/115675
+  Never Say Never Again:
+    url_poster: https://theposterdb.com/api/assets/115676
+  A View to a Kill:
+    url_poster: https://theposterdb.com/api/assets/115677
+  The Living Daylights:
+    url_poster: https://theposterdb.com/api/assets/115678
+  Licence to Kill:
+    url_poster: https://theposterdb.com/api/assets/115679
+  GoldenEye:
+    url_poster: https://theposterdb.com/api/assets/115680
+  Tomorrow Never Dies:
+    url_poster: https://theposterdb.com/api/assets/115681
+  The World Is Not Enough:
+    url_poster: https://theposterdb.com/api/assets/115682
+  Die Another Day:
+    url_poster: https://theposterdb.com/api/assets/115683
+  Casino Royale:
+    url_poster: https://theposterdb.com/api/assets/115684
+  Quantum of Solace:
+    url_poster: https://theposterdb.com/api/assets/115685
+  Skyfall:
+    url_poster: https://theposterdb.com/api/assets/115686
+  Spectre:
+    url_poster: https://theposterdb.com/api/assets/115687
+  No Time to Die:
+    url_poster: https://theposterdb.com/api/assets/115688
+
+  # Jason Bourne
+  The Bourne Identity:
+    url_poster: https://theposterdb.com/api/assets/5421
+  The Bourne Legacy:
+    url_poster: https://theposterdb.com/api/assets/5424
+  The Bourne Supremacy:
+    url_poster: https://theposterdb.com/api/assets/5422
+  The Bourne Ultimatum:
+    url_poster: https://theposterdb.com/api/assets/5423
+  Jason Bourne:
+    url_poster: https://theposterdb.com/api/assets/5425
+
+  # Misc Movies
+  Return to Never Land:
+    url_poster: https://theposterdb.com/api/assets/6011
+  Who Framed Roger Rabbit:
+    url_poster: https://theposterdb.com/api/assets/97894
+  Batman:  
+    url_poster: https://theposterdb.com/api/assets/50894
+  Batman & Robin:  
+    url_poster: https://theposterdb.com/api/assets/50897
+  Batman Forever:
+    url_poster: https://theposterdb.com/api/assets/50896
+  Batman Returns:
+    url_poster: https://theposterdb.com/api/assets/50895
+  Batman vs. Teenage Mutant Ninja Turtles:
+    url_poster: https://theposterdb.com/api/assets/73030
+  "Batman: Hush":
+    url_poster: https://theposterdb.com/api/assets/73031
+  "Batman: The Killing Joke":
+    url_poster: https://theposterdb.com/api/assets/73020
+  The Godfather:
+    url_poster: https://theposterdb.com/api/assets/8935
+  "The Godfather: Part II":
+    url_poster: https://theposterdb.com/api/assets/8936
+  "The Godfather: Part III":
+    url_poster: https://theposterdb.com/api/assets/8937
+  The Hunger Games:
+    url_poster: https://theposterdb.com/api/assets/31005
+  "The Hunger Games: Catching Fire":
+    url_poster: https://theposterdb.com/api/assets/31006
+  "The Hunger Games: Mockingjay - Part 1":
+    url_poster: https://theposterdb.com/api/assets/31007
+  "The Hunger Games: Mockingjay - Part 2":
+    url_poster: https://theposterdb.com/api/assets/31008
+  Spider-Man:
+    url_poster: https://theposterdb.com/api/assets/164389
+  Spider-Man 2:
+    url_poster: https://theposterdb.com/api/assets/164388
+  Ghostbusters1984:
+    title: Ghostbusters
+    year: 1984
+    url_poster: https://theposterdb.com/api/assets/166358
+  Ghostbusters2016:
+    title: Ghostbusters
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/166360
+  Ghostbusters II:
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/166359
+  The Maze Runner:
+    url_poster: https://theposterdb.com/api/assets/167830
+  "Maze Runner: The Death Cure":
+    url_poster: https://theposterdb.com/api/assets/167832
+  "Maze Runner: The Scorch Trials":
+    url_poster: https://theposterdb.com/api/assets/167831
+  Transformers:
+    url_poster: https://theposterdb.com/api/assets/14176
+  "Transformers: Dark of the Moon":
+    url_poster: https://theposterdb.com/api/assets/14178
+  "Transformers: Revenge of the Fallen":
+    url_poster: https://theposterdb.com/api/assets/14177
+  "Transformers: The Last Knight":
+    url_poster: https://theposterdb.com/api/assets/14180
+  "Transformers: Age of Extinction":
+    url_poster: https://theposterdb.com/api/assets/14179
+  Bumblebee:
+    url_poster: https://theposterdb.com/api/assets/14181
+  28 Days Later:
+    url_poster: https://theposterdb.com/api/assets/4964
+  28 Weeks Later:
+    url_poster: https://theposterdb.com/api/assets/4965
+  "Ace Ventura: Pet Detective":
+    url_poster: https://theposterdb.com/api/assets/6613
+  "Ace Ventura: When Nature Calls":
+    url_poster: https://theposterdb.com/api/assets/6614
+  Batman Begins:
+    url_poster: https://theposterdb.com/api/assets/22276
+  The Dark Knight:
+    url_poster: https://theposterdb.com/api/assets/22277
+  The Dark Knight Rises:
+    url_poster: https://theposterdb.com/api/assets/22278
+  Beverly Hills Cop:
+    url_poster: https://theposterdb.com/api/assets/45077
+  Beverly Hills Cop II:
+    url_poster: https://theposterdb.com/api/assets/45078
+  Beverly Hills Cop III:
+    url_poster: https://theposterdb.com/api/assets/45079
+  Bill & Ted Face the Music:
+    url_poster: https://theposterdb.com/api/assets/94522
+  Bill & Ted's Bogus Journey:
+    url_poster: https://theposterdb.com/api/assets/94521
+  Bill & Ted's Excellent Adventure:
+    url_poster: https://theposterdb.com/api/assets/94520
+  Blade:
+    url_poster: https://theposterdb.com/api/assets/12047
+  Blade II:
+    url_poster: https://theposterdb.com/api/assets/12048
+  Blade Trinity:
+    url_poster: https://theposterdb.com/api/assets/12049
+  Goosebumps:
+    url_poster: https://theposterdb.com/api/assets/13947
+  "Goosebumps 2: Haunted Halloween":
+    url_poster: https://theposterdb.com/api/assets/13948
+  John Wick:
+    url_poster: https://theposterdb.com/api/assets/14055
+  "John Wick: Chapter 2":
+    url_poster: https://theposterdb.com/api/assets/14056
+  "John Wick: Chapter 3 - Parabellum":
+    url_poster: https://theposterdb.com/api/assets/14057
+  Kung Fu Panda:
+    url_poster: https://theposterdb.com/api/assets/20627
+  Kung Fu Panda 2:
+    url_poster: https://theposterdb.com/api/assets/20628
+  Kung Fu Panda 3:
+    url_poster: https://theposterdb.com/api/assets/20629
+  Ocean's Eleven:
+    sort_title: Ocean's 11
+    url_poster: https://theposterdb.com/api/assets/229
+  Ocean's Twelve:
+    sort_title: Ocean's 12
+    url_poster: https://theposterdb.com/api/assets/230
+  Ocean's Thirteen:
+    sort_title: Ocean's 13
+    url_poster: https://theposterdb.com/api/assets/231
+  Ocean's Eight:
+    sort_title: Ocean's 8
+    url_poster: https://theposterdb.com/api/assets/232
+  The Santa Clause:
+    url_poster: https://theposterdb.com/api/assets/25717
+  The Santa Clause 2:
+    url_poster: https://theposterdb.com/api/assets/25718
+  "The Santa Clause 3: The Escape Clause":
+    url_poster: https://theposterdb.com/api/assets/25719
+  Superman:
+    url_poster: https://theposterdb.com/api/assets/72727
+  Superman II:
+    url_poster: https://theposterdb.com/api/assets/72728
+  Superman III:
+    url_poster: https://theposterdb.com/api/assets/72729
+  "Superman IV: The Quest for Peace":
+    url_poster: https://theposterdb.com/api/assets/72730
+  "Anchorman: The Legend of Ron Burgundy":
+    url_poster: https://theposterdb.com/api/assets/27084
+  "Anchorman 2: The Legend Continues":
+    url_poster: https://theposterdb.com/api/assets/27085
+  Chinatown:
+    url_poster: https://theposterdb.com/api/assets/110518
+  Titanic:
+    url_poster: https://theposterdb.com/api/assets/101704
+  
+  # Bad Boys
+  Bad Boys:
+    url_poster: https://theposterdb.com/api/assets/26833
+  Bad Boys II:
+    url_poster: https://theposterdb.com/api/assets/26834
+  Bad Boys for Life:
+    url_poster: https://theposterdb.com/api/assets/26835
+  
+  # The Expendables
+  The Expendables 2:
+    url_poster: https://theposterdb.com/api/assets/86705
+  The Expendables 3:
+    url_poster: https://theposterdb.com/api/assets/86706
+  The Expendables:
+    url_poster: https://theposterdb.com/api/assets/86704
+  
+  # Jumanji
+  Jumanji:
+    url_poster: https://theposterdb.com/api/assets/54113
+  "Jumanji: Welcome to the Jungle":
+    url_poster: https://theposterdb.com/api/assets/54114
+  "Jumanji: The Next Level":
+    url_poster: https://theposterdb.com/api/assets/54115
+  
+  # The Matrix
+  The Matrix:
+    url_poster: https://theposterdb.com/api/assets/64840
+  The Matrix Revolutions:
+    url_poster: https://theposterdb.com/api/assets/64842
+  The Matrix Reloaded:
+    url_poster: https://theposterdb.com/api/assets/64841
+
+  # Pirates of the Caribbean
+  "Pirates of the Caribbean: The Curse of the Black Pearl":
+    url_poster: https://theposterdb.com/api/assets/49934
+  "Pirates of the Caribbean: Dead Man's Chest":
+    url_poster: https://theposterdb.com/api/assets/49935
+  "Pirates of the Caribbean: At World's End":
+    url_poster: https://theposterdb.com/api/assets/49936
+  "Pirates of the Caribbean: On Stranger Tides":
+    url_poster: https://theposterdb.com/api/assets/49937
+  "Pirates of the Caribbean: Dead Men Tell No Tales":
+    url_poster: https://theposterdb.com/api/assets/49938
+
+  # Star Wars (Skywalker Saga)
+  "Star Wars: Episode IV - A New Hope":
+    url_poster: https://theposterdb.com/api/assets/28742
+  "Star Wars: Episode V - The Empire Strikes Back":
+    url_poster: https://theposterdb.com/api/assets/28743
+  "Star Wars: Episode VI - Return of the Jedi":
+    url_poster: https://theposterdb.com/api/assets/28744
+  "Star Wars: Episode I - The Phantom Menace":
+    url_poster: https://theposterdb.com/api/assets/28745
+  "Star Wars: Episode II - Attack of the Clones":
+    url_poster: https://theposterdb.com/api/assets/28746  
+  "Star Wars: Episode III - Revenge of the Sith":
+    url_poster: https://theposterdb.com/api/assets/28747
+  "Star Wars: The Force Awakens":
+    url_poster: https://theposterdb.com/api/assets/28748
+  "Star Wars: The Last Jedi":
+    url_poster: https://theposterdb.com/api/assets/28749
+  "Star Wars: The Rise of Skywalker":
+    url_poster: https://theposterdb.com/api/assets/28750
+
+  # Dune
+  Dune:
+    url_poster: https://theposterdb.com/api/assets/186479
+  "Dune: Part Two":
+    url_poster: https://theposterdb.com/api/assets/186480
+
+  # Kingsman
+  "Kingsman: The Secret Service":
+    url_poster: https://theposterdb.com/api/assets/179
+  "Kingsman: The Golden Circle":
+    url_poster: https://theposterdb.com/api/assets/180
+  "The King's Man":
+    url_poster: https://theposterdb.com/api/assets/50420
+
+  # Don't Breathe
+  Don't Breathe:
+    url_poster: https://theposterdb.com/api/assets/173569
+  Don't Breathe 2:
+    url_poster: https://theposterdb.com/api/assets/173570 
