@@ -1,0 +1,105 @@
+collections:
+#Update daily
+  All DC Movies:
+    imdb_list: https://www.imdb.com/list/ls041437328/
+    summary: A collection of all DC movies.
+    sort_title: "+001"
+    collection_order: release
+    collection_mode: default
+  Marvel Cinematic Universe:
+    imdb_list: https://www.imdb.com/list/ls081113000/
+    summary: A collection of all MCU movies.
+    sort_title: "+001"
+    collection_order: release
+    collection_mode: default
+  X-Men:
+    template: {name: imdb, summary: "A superhero film series about a team of mutant superheroes based on the Marvel Comics superheroes of the same name.", poster: "https://theposterdb.com/api/assets/32304"}
+    imdb_list:
+      - https://www.imdb.com/list/ls024445822/
+    collection_order: release
+    collection_mode: default
+#Update weekly
+  Our Most Watched Movies:
+    sync_mode: sync
+    tautulli_watched:
+      list_days: 1460 #4 years
+      list_size: 20
+      list_buffer: 20
+    summary: Movies watched on Plex according to Tautulli over the last 4 years
+    schedule: weekly(sunday)
+    collection_order: alpha
+  TMDb Weekly Trending:
+    tmdb_trending_weekly: 30
+    sync_mode: sync
+    schedule: weekly(sunday)
+    collection_order: release
+    collection_mode: default
+  Judd Apatow Production:
+    tmdb_director: https://www.themoviedb.org/person/41039-judd-apatow
+    tmdb_writer: https://www.themoviedb.org/person/41039-judd-apatow
+    tmdb_producer: https://www.themoviedb.org/person/41039-judd-apatow
+    collection_order: release
+    collection_mode: default
+    schedule: weekly(friday)
+#Update montly
+  90s Movies:
+    plex_search:
+      any:
+        year:
+          - 1990
+          - 1991
+          - 1992
+          - 1993
+          - 1994
+          - 1995
+          - 1996
+          - 1997
+          - 1998
+          - 1999
+    collection_order: release
+    collection_mode: default
+    schedule: monthly(9)
+  80s Movies:
+    plex_search:
+      any:
+        year:
+          - 1980
+          - 1981
+          - 1982
+          - 1983
+          - 1984
+          - 1985
+          - 1986
+          - 1987
+          - 1988
+          - 1989
+    collection_order: release
+    collection_mode: default
+    schedule: monthly(8)
+  Star Wars:
+    tmdb_collection: https://www.themoviedb.org/collection/10-star-wars-collection
+    tmdb_summary: https://www.themoviedb.org/collection/10-star-wars-collection
+    sort_title: "+004"
+    collection_order: release
+    collection_mode: default
+    schedule: monthly(6)
+  IMDB Top 100 Superhero Movies:
+    imdb_list: https://www.imdb.com/list/ls008583762/
+    summary: Top 100 Superhero Movies.
+    sort_title: "+001"
+    collection_order: release
+    collection_mode: default
+    schedule: monthly(2)
+#Update yearly
+  IMDB Top 250:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=25
+    sync_mode: sync
+    collection_mode: show_items
+    schedule: Yearly(01/15), Yearly(06/1)
+  IMDB Top 25 Baseball Movies:
+    imdb_list: https://www.imdb.com/list/ls064950205/
+    summary: Top 25 Baseball Movies.
+    sort_title: "+001"
+    collection_order: release
+    collection_mode: default
+    schedule: Yearly(03/15), Yearly(10/1)
