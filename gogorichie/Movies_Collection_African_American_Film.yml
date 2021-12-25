@@ -1,0 +1,17 @@
+######################################################
+#                African-American Films Collections                 #
+######################################################
+templates:
+  imdb:
+    url_poster: <<poster>>
+    summary: <<summary>>
+    sync_mode: sync
+    schedule: weekly(saturday)
+collections:
+  African-American Films:
+    template: {name: imdb, summary: "Some of greatest films telling the Black story, staring a Black actor, or Directed by a Black Director"}
+    imdb_list:
+      - https://www.imdb.com/list/ls054431555/
+      - https://www.imdb.com/list/ls031451603/
+      - https://www.imdb.com/list/ls045147779/
+      - https://www.imdb.com/list/ls041984032/
