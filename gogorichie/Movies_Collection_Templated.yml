@@ -75,3 +75,12 @@ collections:
     imdb_list:
       - https://www.imdb.com/list/ls022342493/
       - https://www.imdb.com/list/ls059646235/
+  Star Wars Collection:
+    template: {name: tmdb, collections: 10, tmdb_summary: 10, poster: https://theposterdb.com/api/assets/4448}
+  African-American Films:
+    template: {name: imdb, summary: "Some of greatest films telling the Black story, staring a Black actor, or Directed by a Black Director"}
+    imdb_list:
+      - https://www.imdb.com/list/ls054431555/
+      - https://www.imdb.com/list/ls031451603/
+      - https://www.imdb.com/list/ls045147779/
+      - https://www.imdb.com/list/ls041984032/
