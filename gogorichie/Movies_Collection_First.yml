@@ -1,0 +1,85 @@
+collections:
+#Update daily
+  90s Movies:
+    plex_search:
+      any:
+        year:
+          - 1990
+          - 1991
+          - 1992
+          - 1993
+          - 1994
+          - 1995
+          - 1996
+          - 1997
+          - 1998
+          - 1999
+    collection_order: release
+    collection_mode: default
+  80s Movies:
+    plex_search:
+      any:
+        year:
+          - 1980
+          - 1981
+          - 1982
+          - 1983
+          - 1984
+          - 1985
+          - 1986
+          - 1987
+          - 1988
+          - 1989
+    collection_order: release
+    collection_mode: default
+  Recent Released Movies:
+    plex_search:
+      any:
+        year:
+          - 2019
+          - 2020
+          - 2021
+    collection_order: release
+    collection_mode: default
+  IMDB Top 250:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=25
+    summary: Top 250 most popular movies
+    sync_mode: sync
+    collection_mode: show_items
+#Update weekly
+  Our Most Watched Movies:
+    sync_mode: sync
+    tautulli_watched:
+      list_days: 1460 #4 years
+      list_size: 20
+      list_buffer: 20
+    summary: Movies watched on Plex according to Tautulli over the last 4 years
+    schedule: weekly(sunday)
+    collection_order: alpha
+  TMDb Weekly Trending:
+    tmdb_trending_weekly: 30
+    sync_mode: sync
+    schedule: weekly(sunday)
+    collection_order: release
+    collection_mode: default
+  Judd Apatow Production:
+    tmdb_director: https://www.themoviedb.org/person/41039-judd-apatow
+    tmdb_writer: https://www.themoviedb.org/person/41039-judd-apatow
+    tmdb_producer: https://www.themoviedb.org/person/41039-judd-apatow
+    collection_order: release
+    collection_mode: default
+    schedule: weekly(friday)
+#Update montly
+  IMDB Top 100 Superhero Movies:
+    imdb_list: https://www.imdb.com/list/ls008583762/
+    summary: Top 100 Superhero Movies.
+    collection_order: release
+    collection_mode: default
+    schedule: monthly(2)
+#Update yearly
+  IMDB Top 25 Baseball Movies:
+    imdb_list: https://www.imdb.com/list/ls064950205/
+    summary: Top 25 Baseball Movies.
+    collection_order: alpha
+    collection_mode: show_items
+    schedule: Yearly(03/15), Yearly(10/1)

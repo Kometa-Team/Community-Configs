@@ -1,3 +1,5 @@
+#### Wife Flix #############
+#### Collections for my wife ###########
 collections:
   Anne Anna Emma Meg:
     tmdb_actor: 
@@ -12,25 +14,26 @@ collections:
     imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
     collection_order: release
     summary: Oscar Winning Movies
-    schedule: monthly(1), monthly(19)
+    schedule: monthly(1), monthly(15)
   Romantic Comedies:
     genre: Romance
     filters:
       genre: Comedy
     collection_order: alpha
     collection_mode: default
-    schedule: monthly(1), monthly(19)
+    schedule: monthly(1), monthly(15)
   John Hughes Production:
     tmdb_director: 11505
     tmdb_writer: 11505
     tmdb_producer: 11505
     collection_order: release
     collection_mode: default
-    schedule: monthly(1), monthly(19)
-  # Sing-along Movies:
-  #   plex_search:
-  #     all:
-  #       genre: Music, Musical
-  #     sort_by: audience_rating.desc
+    schedule: monthly(1), monthly(15)
+  # Sing-Along Movies:
+  #   genre: Music
+  #   filters:
+  #     genre: Musical
+  #   collection_order: alpha
+  #   collection_mode: default
   #   summary: Movies you can sing along with
-  #   schedule: monthly(19)
+  #   schedule: monthly(25)

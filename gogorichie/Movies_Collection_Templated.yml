@@ -1,0 +1,86 @@
+#### Movie Collections #############
+# Collection Templates
+templates:
+  tmdb:
+    optional:
+      - collections
+      - lists
+      - movies
+      - tmdb_summary
+      - summary
+    tmdb_collection: <<collections>>
+    tmdb_list: <<lists>>
+    tmdb_movie: <<movies>>
+    tmdb_summary: <<tmdb_summary>>
+    summary: <<summary>>
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+    collection_order: release
+    schedule: weekly(saturday)
+  imdb:
+    url_poster: <<poster>>
+    summary: <<summary>>
+    sync_mode: sync
+    schedule: weekly(saturday)
+  Holiday:
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+    collection_order: release
+    schedule: monthly(12)
+
+# Collections
+collections:
+  American Pie:
+    template: {name: tmdb, collections: "2806, 298820", tmdb_summary: 2806, poster: https://theposterdb.com/api/assets/68418}
+  The Bourne Collection:
+    template: {name: tmdb, collections: 31562, tmdb_summary: 31562, poster: https://theposterdb.com/api/assets/5420}
+  John Wick Collection:
+    template: {name: tmdb, collections: 404609, tmdb_summary: 404609, poster: https://theposterdb.com/api/assets/17550}
+  Jurassic Park Collection:
+    template: {name: tmdb, collections: 328, tmdb_summary: 328, poster: https://theposterdb.com/api/assets/9492}
+  DC Extended Universe:
+    template: {name: imdb, summary: "The DC Extended Universe (DCEU) is an American media franchise and shared universe centered on a series of superhero films based on characters that appeared in American comic books by DC Comics.", poster: https://theposterdb.com/api/assets/79223}
+    imdb_list:
+      - https://www.imdb.com/list/ls077827588/
+  All DC Movies:
+    template: {name: imdb, summary: "A collection of all DC movies.", poster: https://theposterdb.com/api/assets/52780}
+    imdb_list: 
+      - https://www.imdb.com/list/ls041437328/
+  The Fast and the Furious:
+    template: {name: tmdb, collections: "9485", tmdb_summary: 9485, poster: https://theposterdb.com/api/assets/10036}
+  Disney Animation:
+    template: {name: tmdb, lists: "7103808, 7103807", summary: "A collection of Disney Animation movies.", poster: https://theposterdb.com/api/assets/68411}
+  Christmas:
+    template: {name: Holiday, summary: "Christmas film is a genre that revolves around the plot involving Christmas.", poster: https://theposterdb.com/api/assets/111695}
+    imdb_list:
+      - https://www.imdb.com/list/ls025976544/
+      - https://www.imdb.com/list/ls003863000/
+      - https://www.imdb.com/list/ls027454200/
+      - https://www.imdb.com/list/ls027886673/
+      - https://www.imdb.com/list/ls097998599/
+      - https://www.imdb.com/list/ls066252180/
+      - https://www.imdb.com/list/ls031348568/
+  Marvel Cinematic Universe:
+    template: {name: imdb, summary: "The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films produced by Marvel Studios. The films are based on characters that appear in American comic books published by Marvel Comics. The franchise also includes television series, short films, digital series, and literature. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters.", poster: https://theposterdb.com/api/assets/879}
+    imdb_list:
+      - https://www.imdb.com/list/ls031310794/
+  "Mission: Impossible":
+    template: {name: tmdb, collections: "87359", tmdb_summary: 87359, poster: https://theposterdb.com/api/assets/12118}
+  X-Men:
+    template: {name: imdb, summary: "A superhero film series about a team of mutant superheroes based on the Marvel Comics superheroes of the same name.", poster: "https://theposterdb.com/api/assets/32304"}
+    imdb_list:
+      - https://www.imdb.com/list/ls024445822/
+  Batman Collection:
+    template: {name: imdb, summary: "Batman is a superhero who appears in American comic books published by DC Comics.", poster: "https://theposterdb.com/api/assets/14850"}
+    imdb_list:
+      - https://www.imdb.com/list/ls022342493/
+      - https://www.imdb.com/list/ls059646235/
+  Star Wars Collection:
+    template: {name: tmdb, collections: 10, tmdb_summary: 10, poster: https://theposterdb.com/api/assets/4448}
+  African-American Films:
+    template: {name: imdb, summary: "Some of greatest films telling the Black story, staring a Black actor, or Directed by a Black Director"}
+    imdb_list:
+      - https://www.imdb.com/list/ls054431555/
+      - https://www.imdb.com/list/ls031451603/
+      - https://www.imdb.com/list/ls045147779/
+      - https://www.imdb.com/list/ls041984032/
