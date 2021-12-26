@@ -29,10 +29,11 @@ collections:
     collection_order: release
     collection_mode: default
     schedule: monthly(1), monthly(15)
-  # Sing-along Movies:
-  #   plex_search:
-  #     all:
-  #       genre: Music, Musical
-  #     sort_by: audience_rating.desc
+  # Sing-Along Movies:
+  #   genre: Music
+  #   filters:
+  #     genre: Musical
+  #   collection_order: alpha
+  #   collection_mode: default
   #   summary: Movies you can sing along with
-  #   schedule: monthly(19)
+  #   schedule: monthly(25)
