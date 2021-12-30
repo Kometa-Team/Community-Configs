@@ -11,6 +11,7 @@ templates:
     visible_home: true
     visible_shared: true
     visible_library: true
+    radarr_add: true
 
 collections:
 # list-driven
@@ -123,15 +124,16 @@ collections:
     url_poster: https://i.imgur.com/AJ1nD4d.jpg
 
   Trending:  
-    trakt_trending: 40
-    tmdb_trending_daily: 40
-    tmdb_trending_weekly: 40
+    trakt_trending: 100
+    tmdb_trending_daily: 100
+    tmdb_trending_weekly: 100
     sort_title: ---Trending
     sync_mode: sync
     smart_label: year.desc
     summary: Movies trending across the internet
     url_background: https://i.imgur.com/SOVfrIq.png
     url_poster: https://i.imgur.com/4vpMZoA.png
+    radarr_add: true
 
   Top Rated:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
@@ -142,6 +144,7 @@ collections:
     summary: Top Rated Movies, according to IMDB.
     url_background: https://i.imgur.com/b26VZ9y.jpg
     url_poster: https://i.imgur.com/x7BhedD.png
+    radarr_add: true
 
   Popular on Plex:
     sort_title: ---Popular on Plex
@@ -176,7 +179,6 @@ collections:
     sync_mode: sync
     smart_label: critic_rating.desc
     url_poster: https://i.imgur.com/EKxn51i.jpg
-    radarr_add: true
 
 
 ######################################################
