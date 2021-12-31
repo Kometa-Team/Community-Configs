@@ -21,70 +21,57 @@ templates:
     sort_title: +3_<<collection_name>>
     sync_mode: sync
     smart_label: originally_available.desc
-		schedule: weekly (wednesday)
-
 
 collections:
   HBO:
-    template: { name: network, network: "49, 2593, 3186, 3308" }
-		
+    template: { name: network, tmdb_network: "49, 2593, 3186, 3308" }
+    
   Showtime:
-    template: { name: network, network: 67 }
+    template: { name: network, tmdb_network: 67 }
 
   Netflix:
-    template: { name: network, network: 213 }
+    template: { name: network, tmdb_network: 213 }
 
   Hulu:
-    template: { name: network, network: 453 }
+    template: { name: network, tmdb_network: 453 }
 
   Starz:
-    template: { name: network, network: "318, 758, 4906" }
+    template: { name: network, tmdb_network: "318, 758, 4906" }
 
   HGTV:
-    template: { name: network, network: 210 }
-    
+    template: { name: network, tmdb_network: 210 } 
 		
   National Geographic:
-    template: { name: network, network: "43, 799, 1756, 1825, 3355, 4293, 4476" }
+    template: { name: network, tmdb_network: "43, 799, 1756, 1825, 3355, 4293, 4476" }
     
-
   Prime Video:
-    template: { name: network, network: 1024 }
+    template: { name: network, tmdb_network: 1024 }
    
-
   FX:
-    template: { name: network, network: 88 }
+    template: { name: network, tmdb_network: 88 }
 
   Disney+:
-    template: { name: network, network: "2739, 2919" }
+    template: { name: network, tmdb_network: "2739, 2919" }
 
   Apple+:
-    template: { name: network, network: 2552 }
+    template: { name: network, tmdb_network: 2552 }
 
   Discovery:
-    template: { name: network, network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741" }
+    template: { name: network, tmdb_network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741" }
 
 #UK networks
   BBC:
-    template: { name: network, network: "3546, 3278, 4, 332" }
+    template: { name: network, tmdb_network: "3546, 3278, 4, 332" }
     url_poster: https://i.imgur.com/8f5EQSn.png
 
   iTV:
-    template: { name: network, network: "9, 3448, 24546, 5238" }
+    template: { name: network, tmdb_network: "9, 3448, 24546, 5238" }
     url_poster: https://i.imgur.com/7iiQ02K.png
 
 #FR network
 
   Canal:
-    template: { name: network, network: 285 }
+    template: { name: network, tmdb_network: 285 }
     
-
   France TV:
-    template: { name: network, network: "249, 361, 3856"}
-
-  tf1:
-    template: { name: network, network: 3856 }
-
-  m6:
-    template: { name: network, network: 3856 }
-    
+    template: { name: network, tmdb_network: "249, 361, 3856"}
