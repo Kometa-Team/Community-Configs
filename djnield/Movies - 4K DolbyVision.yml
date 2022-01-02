@@ -67,19 +67,9 @@ collections:
    visible_home: false
    visible_shared: false 
    visible_library: true 
-   
- Dolby:
-   plex_all: true
-   filters:
-     filepath: MoviesDV
-     resolution.not: 4K
-   item_overlay: Dolby
-   build_collection: false
-   
+    
  4K-Dolby:
-   plex_search:
-     all:
-       resolution: 4K
+   plex_all: true
    filters:
      filepath: MoviesDV
    item_overlay: 4K-Dolby
