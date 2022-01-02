@@ -1,4 +1,4 @@
-collections:  
+collections:
  TV Watchlist:
    trakt_watchlist:
      - me
@@ -7,9 +7,8 @@ collections:
    label: admin
    url_poster: https://i.imgur.com/28RussS.jpg
    visible_home: true
-   visible_shared: false 
-   visible_library: false   
-   
+   visible_shared: false
+   visible_library: false
  Trending TV:
    smart_label: release.desc
    sort_title: "#1Trending TV"
@@ -44,21 +43,7 @@ collections:
    tmdb_top_rated: 100
    summary: Top Rated Shows across the internet
    url_poster: https://i.imgur.com/Ja997V8.jpg
-   
- 4K Overlay:
-   plex_search:
-     all:
-       resolution: 4K
-       hdr: false
-   item_overlay: 4K
-   build_collection: false
- 4K-HDR Overlay:
-   plex_search:
-     all:
-       resolution: 4K
-       hdr: true
-   item_overlay: 4K-HDR
-   build_collection: false   
+     
  4K-Dolby:
    plex_search:
      all:
