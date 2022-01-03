@@ -70,7 +70,6 @@ collections:
     
  4K-Dolby:
    plex_all: true
-   filters:
-     filepath: MoviesDV
    item_overlay: 4K-Dolby
+   revert_overlay: true
    build_collection: false   

@@ -45,10 +45,6 @@ collections:
    url_poster: https://i.imgur.com/Ja997V8.jpg
      
  4K-Dolby:
-   plex_search:
-     all:
-       resolution: 4K
-   filters:
-     filepath: TVDV
+   plex_all: true
    item_overlay: 4K-Dolby
    build_collection: false   
