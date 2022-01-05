@@ -1,0 +1,70 @@
+### ISO-Language codes (https://www.loc.gov/standards/iso639-2/php/code_list.php) in this file:
+# de    | German
+# en    | English
+# fr    | French
+### Flags for Overlays -> https://www.countries-ofthe-world.com/flags-of-the-world.html
+
+templates:
+  dl_overlay:
+    optional:
+      - english
+      - french
+      - german
+    default:
+      overlay_name: <<collection_name>>
+      meta_lang: en-US
+    plex_search:
+      all:
+        audio_language:
+          - <<english>>
+          - <<french>>
+          - <<german>>
+    build_collection: false
+    # item_overlay: <<overlay_name>>
+    item_metadata_language: <<meta_lang>>
+  overlay:
+    optional:
+      - english
+      - french
+      - german
+    default:
+      english_not: en
+      french_not: fr
+      german_not: de
+
+      overlay_name: <<collection_name>>
+      meta_lang: en-US
+    plex_search:
+      all:
+        audio_language:
+          - <<english>>
+          - <<french>>
+          - <<german>>
+        audio_language.not:
+          - <<english_not>>
+          - <<french_not>>
+          - <<german_not>>
+    build_collection: false
+    # item_overlay: <<overlay_name>>
+    item_metadata_language: <<meta_lang>>
+
+collections:
+  dl_english_french:
+    template: {name: dl_overlay, english: en, french: fr}
+    item_overlay: dl_english_french
+  dl_german_english:
+    template: {name: dl_overlay, german: de, english: en, meta_lang: de-DE}
+    item_overlay: dl_german_english
+  dl_german_french:
+    template: {name: dl_overlay, german: de, french: fr, meta_lang: de-DE}
+    item_overlay: dl_german_french
+
+  english:
+    template: {name: overlay, english: en, english_not: de}
+    item_overlay: english
+  french:
+    template: {name: overlay, french: fr, french_not: de}
+    item_overlay: french
+  german:
+    template: {name: overlay, german: de, german_not: en, meta_lang: de-DE}
+    item_overlay: german

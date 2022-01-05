@@ -8,6 +8,10 @@ templates:
     sort_title: <<collection_name>>
 
 collections:
+  Blade Runner:
+    template: {name: Show, show: 356155}
+  Demon Slayer - Kimetsu no Yaiba:
+    template: {name: Show, show: 348545}
   Gintama:
     template: {name: Show, show: 79895}
   K-Project:

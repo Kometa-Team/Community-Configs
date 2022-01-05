@@ -3,8 +3,7 @@ libraries:
     metadata_path:
       - metadata/movies/metadata.yml
       - metadata/movies/overlays.yml
-      - metadata/movies/anime.yml
-      - metadata/movies/serien.yml
+      - metadata/movies/admin.yml
       - metadata/movies/Filme.yml
       - metadata/movies/People.yml
       - metadata/movies/Genres.yml
@@ -22,10 +21,46 @@ libraries:
         - assets/movies/watchlists
     operations:
       split_duplicates: true
+      tmdb_collections:
+        remove_suffix:
+          - Filmreihe
+          - Collection
+        exclude_ids:
+          - 290973
+          - 9485
+          - 115575
+          - 163902
+          - 34055
+          - 661025
+          - 661026
+          - 661028
+          - 661029
+          - 661031
+          - 304
+          - 87359
+          - 2344
+          - 608101
+          - 115838
+          - 386382
+          - 809185
+          - 135483
+          - 1565
+          - 115762
+          - 785583
+          - 91361
+          - 645
+          - 328
+          - 1575
+          - 528
+          - 748
+          - 535313
+        template:
+          tmdb_collection_details: <<collection_id>>
+          sort_title: <<collection_name>>
   Anime:
     metadata_path:
       - metadata/anime/metadata.yml
-      - metadata/anime/filme.yml
+      - metadata/anime/admin.yml
       - metadata/anime/Anime.yml
     settings:
       asset_directory:
@@ -33,47 +68,14 @@ libraries:
         - assets/anime/anime
   Serien:
     metadata_path:
-      - metadata/tv_shows/metadata.yml
-      - metadata/tv_shows/overlays.yml
-      - metadata/tv_shows/filme.yml
-      - metadata/tv_shows/Serien.yml
+      - metadata/shows/metadata.yml
+      - metadata/shows/overlays.yml
+      - metadata/shows/admin.yml
+      - metadata/shows/Serien.yml
     settings:
       asset_directory:
-        - assets/tv_shows/collections
-        - assets/tv_shows/serien
-  Movies:
-    plex:
-      url: <url>
-      token: <token>
-    split_duplicates: true
-    metadata_path:
-      - metadata/movies/metadata.yml
-      - metadata/movies/overlays4k.yml
-      - metadata/movies/Movies.yml
-      - metadata/movies/People.yml
-      - metadata/movies/Genres.yml
-      - metadata/movies/Awards.yml
-      - metadata/movies/Decades.yml
-    settings:
-      asset_directory:
-        - assets/movies/collections
-        - assets/movies/filme
-        - assets/movies/people
-        - assets/movies/genres
-        - assets/movies/awards
-        - assets/movies/decades
-  Shows:
-    plex:
-      url: <url>
-      token: <token>
-    metadata_path:
-      - metadata/tv_shows/metadata.yml
-      - metadata/tv_shows/overlays.yml
-      # - metadata/tv_shows/Shows.yml
-    settings:
-      asset_directory:
-        - assets/tv_shows/collections
-        - assets/tv_shows/serien
+        - assets/shows/collections
+        - assets/shows/serien
 settings:
   tvdb_language: default
   cache: true
@@ -84,14 +86,23 @@ settings:
   show_filtered: false
   show_missing: true
   save_missing: false
-  missing_only_released: false
   asset_directory: assets
+  asset_depth: 0
   asset_folders: true
-  create_asset_folders: false
   assets_for_all: true
+  create_asset_folders: false
   show_missing_assets: true
-  collection_minimum: 1
-  delete_below_minimum: false
+  show_missing_season_assets: true
+  collection_minimum: 2
+  missing_only_released: true
+  delete_below_minimum: true
+  only_filter_missing: false
+  delete_not_scheduled: false
+  ignore_ids:
+  ignore_imdb_ids:
+  dimensional_asset_rename: false
+  show_options: false
+  playlist_sync_to_user: all
 plex:
   url: <url>
   token: <token>
