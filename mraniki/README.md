@@ -8,9 +8,9 @@
 ## meisnate12 for awesome PMM tool and the contributors
 
 
-## Basics
-Dcoker and config details TBD
 
+## Basics
+Using Docker image
 I have setup assets for the key libraries (credits are above for ressources)
 
 ## metadata files
@@ -31,7 +31,10 @@ Metadata structure
 Prefixes are added to the sort title of the collections in the file that should be sorted at the top of my movies library.
 
 ## Assets
-TBD
+Assets available at https://mega.nz/folder/mwQzjAwQ#Rzq6JTUWW1bc4J4O4gy9fw
+
+https://i.imgur.com/5H5tyXm.jpg
+
 
 ## Questions?
-You can always shoot me a question via reddit u/MrAniki
+You can always shoot me a question via github
