@@ -1,0 +1,12 @@
+playlists:
+  Marvel Cinematic Universe:
+    sync_to_user: all
+    sync_mode: sync
+    libraries: Movies, TV Shows
+    trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
+    summary: Marvel Cinematic Universe In Order
+  Star Wars Clone Wars Chronological Order:
+    sync_to_user: all
+    sync_mode: sync
+    libraries: Movies, TV Shows
+    trakt_list: https://trakt.tv/users/tomfin46/lists/star-wars-the-clone-wars-chronological-episode-order
