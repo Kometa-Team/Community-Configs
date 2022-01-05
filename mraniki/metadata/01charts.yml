@@ -1,0 +1,94 @@
+##########################################################################
+##########################################################################
+##                                       _ _    _                       ##
+##             _ __ ___  _ __ __ _ _ __ (_) | _(_)                      ##
+##            | '_ ` _ \| '__/ _` | '_ \| | |/ / |                      ##
+##            | | | | | | | | (_| | | | | |   <| |                      ##
+##            |_| |_| |_|_|  \__,_|_| |_|_|_|\_\_|                      ##
+##                                                                      ##
+##                                                                      ##
+##               Collection for Plex-Meta-Manager                       ##
+##########################################################################
+##########################################################################
+
+#   +01_ = Charts
+#   +02_ = Holidays
+#   +03_ = Studios or Network
+#   +04_ = Collection
+#   +05_ = Countries
+#   +06_ = Genres
+#   +07_ = Awards
+#   +08_ = Decades
+#   +09_ = People
+#   +10_ = Movies
+
+######################################################
+#                   MOVIE  CHART                     #
+######################################################
+
+templates:
+  Trakt:
+    sort_title: +01_<<collection_name>>
+    sync_mode: sync
+    url_background: https://bit.ly/PlexMovieBackground
+    smart_label: originally_available.desc
+    #schedule: weekly (monday)
+
+
+collections:
+  Trending:
+    sync_mode: sync
+    trakt_trending: 15
+    tmdb_trending_daily: 15
+    tmdb_trending_weekly: 15
+    sort_title: '+01_1Trending'
+    summary: Movies Trending across the internet
+    smart_label: audience_rating.desc
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Popular:
+    sync_mode: sync
+    tmdb_popular: 40
+    imdb_list:
+      url: 
+        - https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
+        - https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
+      limit: 40
+    sort_title: '+01_2Popular'
+    summary: Popular Movies across the internet
+    smart_label: audience_rating.desc
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Watching Now:
+    sort_title: +00_1watchingnow
+    summary: Watching now
+    sync_mode: sync
+    trakt_watchlist:
+      - me
+    trakt_list:
+      - https://trakt.tv/users/mraniki/lists/tonightmovies
+      - https://trakt.tv/users/mraniki/lists/tonightseries
+
+  Dernier Film Francais:
+    sort_title: +01_3FilmFrancais
+    summary: Dernier Film Francais
+    sync_mode: sync
+    smart_filter:
+      all:        
+        country: France
+      sort_by: release.desc 
+      limit: 150
+
+  Film in French:
+    sort_title: +01_5FilmenFrancais
+    summary: Film en Francais
+    sync_mode: sync
+    smart_filter:
+      all:        
+        audio_language: fr
+      sort_by: release.desc 
+      limit: 400
