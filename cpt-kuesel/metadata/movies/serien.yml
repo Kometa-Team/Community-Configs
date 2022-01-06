@@ -8,5 +8,7 @@ templates:
     sort_title: <<collection_name>>
 
 collections:
+  Hogfather:
+    template: {name: Movie, movie: 11910}
   What We Do in the Shadows:
     template: {name: Movie, movie: 246741}

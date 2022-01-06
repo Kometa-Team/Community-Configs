@@ -8,5 +8,7 @@ templates:
     sort_title: <<collection_name>>
 
 collections:
+  Demon Slayer - Kimetsu no Yaiba:
+    template: {name: Movie, movie: 635302}
   K-Project:
     template: {name: Movie, movie: 271708}

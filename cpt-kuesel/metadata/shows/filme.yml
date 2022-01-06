@@ -8,5 +8,7 @@ templates:
     sort_title: <<collection_name>>
 
 collections:
+  Hogfather:
+    template: {name: Show, show: 79988}
   Psych:
     template: {name: Show, show: 79335}

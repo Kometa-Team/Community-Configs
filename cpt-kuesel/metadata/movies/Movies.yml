@@ -21,11 +21,9 @@ templates:
     tmdb_list: <<list>>
     sort_title: <<collection_name>>
 collections:
-  # The Hobbit:
-  #   template: {name: Movie, collection: 121938}
-  # The Lord of the Rings:
-  #   template: {name: Movie, collection: 119}
-  # The Middle Earth Collection:
-  #   template: {name: Movie, collection: "119, 121938"}
-  #   collection_order: alpha
-  #   sort_title: +5_2_The Middle Earth Collection
+  Ocean's Movies:
+    template: {name: Movie, collection: 304, movie: 402900}
+  The Middle Earth Collection:
+    template: {name: Movie, collection: "119, 121938"}
+    collection_order: alpha
+    sort_title: +5_2_The Middle Earth Collection

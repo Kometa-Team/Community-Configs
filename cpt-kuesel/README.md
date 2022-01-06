@@ -10,7 +10,7 @@ I run PMM with docker-compose:
       - /docker/appdata/plex-meta-manager/assets:/assets:rw
       - /docker/appdata/plex-meta-manager/metadata:/metadata:rw
     environment:
-      PMM_TIME: "05:15,11:15,17:15,23:15"
+      PMM_TIME: "01:15,07:15,13:15,19:15"
     restart: on-failure
 ```
 Here is a screenshot of my folder structure: <br>
@@ -47,18 +47,20 @@ Normal collections, like Bad Boys, are just sorted alphabetically into the libra
 Capitalized Metadata Files get their own asset folders in an attempt to be organized. 
 Works for me as I have now, at time of writing, cracked the mark of 10GB of local assets. Too much for a single asset directory in my opinion.
 
-I have started cross library metadata files. 
-For example in my movies library I have a `serien.yml` for those Movies that belong to a tv show.
-The collections are hidden so that they just come up in the overview of the items when you scroll down, but not in the library tab.
 
 ## Overlays
 Overlays are my way to signal audio languages and therefore i have created overlays with every language currently in my library. 
 I also use *item_metadata_language* to only have movies with german audio track with german movie synopsis and title and everything else with english text and title.
 The flags are taken from: https://www.countries-ofthe-world.com/flags-of-the-world.html
 
-In my overlay.psd, located in  `config/overlays` in this repo btw, i have prepared a layer for every flag/language that is represented in my library.
+I have streamlined addition of new languages and therefore overlays by creating templates for dual language and single language overlays.
+The dual language overlays are used by providing the two language names with the corresponding ISO code in the collection builder.
+For the single language overlays all other languages have to be excluded. This is accomplished by providing them as default values in the template.
+When creating the collection it is now necessary to provide the language with ISO code and also to overwrite the language_not default variable with another ISO code that is NOT the language.
+
+In my overlay.psd I have prepared a layer for every flag/language that is represented in my library.
 They are in layer groups and can easily be toggled to quickly create new overlays.
-If you like to use my overlays and can't use my .psd shoot me a message on Discord and I can create any missing language overlay for you.
+If you like to use my overlays and can't use my .psd shoot me a message on Discord and I can create any missing language overlay in my style for you.
 
 ## Questions?
 You can always shoot me a question in the PMM Discord found on the main GitHub in the support section:

@@ -12,12 +12,14 @@ templates:
     sort_title: <<collection_name>>
 
 collections:
+  Dexter:
+    template: {name: Show, show: "79349, 412366"}
   In Association With Marvel:
     template: {name: Show, show: "331980, 281662, 284190, 304219, 317953, 326490, 263365, 281485, 341455, 320558, 332027, 328552"}
     smart_label: year.asc
     sort_title: +2_1_In Association With Marvel
   Marvel Cinematic Universe:
-    template: {name: Show, show: "362392, 362496, 362472, 367147"}
+    template: {name: Show, show: "362392, 362496, 362472, 367147,367146"}
     smart_label: year.asc
     sort_title: +2_2_Marvel Cinematic Universe
   Penny Dreadful:
