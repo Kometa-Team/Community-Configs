@@ -3,7 +3,7 @@
 
 
 ## Credits
- - meisnate12 for awesome PMM tool and the contributors
+ - meisnate12 for the [awesome PMM tool](https://github.com/meisnate12/Plex-Meta-Manager) and the contributors
  - Assets source via https://unsplash.com
  - Main template built by ![ishalioh](https://www.reddit.com/user/ishalioh) https://ishalioh.art 
     - https://www.reddit.com/r/PlexPosters/comments/falwmu/genre_poster_template/
