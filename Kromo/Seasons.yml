@@ -2,7 +2,7 @@ templates:
   Anime Season:
     # sort_year is to ensure we can sort by showing the most recent seasons first
     # season_index is used to ensure we order the anime correctly, Winter > Spring > Summer > Fall
-    url_poster: https://github.com/Drapersniper/Posters/raw/main/anime/seasons/<>/<>.jpg
+    url_poster: https://github.com/Drapersniper/Posters/raw/main/anime/seasons/<<year>>/<<season>>.jpg
     mal_season:
       season: <<season_lower>>
       year: <<year>>
