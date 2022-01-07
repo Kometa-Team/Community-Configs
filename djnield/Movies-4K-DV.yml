@@ -68,7 +68,52 @@ collections:
    visible_shared: false 
    visible_library: true 
     
- 4K-Dolby:
-   plex_all: true
-   item_overlay: 4K-Dolby
-   build_collection: false   
+# 4K-Dolby:
+#   plex_all: true
+#   item_overlay: 4K-Dolby
+#   build_collection: false   
+   
+# DV-Atmos:
+#   plex_all: true
+#   filters:
+#     filepath: Atmos
+#     filepath.not: 
+#      - DTS-X
+#      - TrueHD
+#      - DTS-HD
+#   item_overlay: DV-Atmos
+#   build_collection: false
+   
+# DV-DTS-X:
+#   plex_all: true
+#   filters:
+#     filepath: DTS-X
+#     filepath.not: 
+#      - Atmos
+#      - TrueHD
+#      - DTS-HD
+#   item_overlay: DV-DTS-X
+#   build_collection: false
+   
+# DV-TrueHD:
+#   plex_all: true
+#   filters:
+#     filepath: TrueHD
+#     filepath.not: 
+#      - DTS-X
+#      - Atmos
+#      - DTS-HD
+#   item_overlay: DV-TrueHD
+#   build_collection: false
+   
+# DV-DTS-HD:
+#   plex_all: true
+#   filters:
+#     filepath: DTS-HD
+#     filepath.not: 
+#      - DTS-X
+#      - TrueHD
+#      - Atmos
+#   item_overlay: DV-DTS-HD
+   build_collection: false
+     

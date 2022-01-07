@@ -59,17 +59,17 @@ collections:
    summary: Top Rated Shows across the internet
    url_poster: https://i.imgur.com/Ja997V8.jpg
    
- 4K Overlay:
-   plex_search:
-     all:
-       resolution: 4K
-       hdr: false
-   item_overlay: 4K
-   build_collection: false
- 4K-HDR Overlay:
-   plex_search:
-     all:
-       resolution: 4K
-       hdr: true
-   item_overlay: 4K-HDR
-   build_collection: false   
+# 4K Overlay:
+#   plex_search:
+#     all:
+#       resolution: 4K
+#       hdr: false
+#   item_overlay: 4K
+#   build_collection: false
+# 4K-HDR Overlay:
+#   plex_search:
+#     all:
+#       resolution: 4K
+#       hdr: true
+#   item_overlay: 4K-HDR
+#   build_collection: false   

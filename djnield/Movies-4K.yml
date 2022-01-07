@@ -68,25 +68,25 @@ collections:
    visible_shared: false 
    visible_library: true 
    
- 4K Overlay:
-   plex_search:
-     all:
-       resolution: 4K
-       hdr: false
-   item_overlay: 4K
-   build_collection: false
- 4K-HDR Overlay:
-   plex_search:
-     all:
-       resolution: 4K
-       hdr: true
-   item_overlay: 4K-HDR
-   build_collection: false
- HDR Overlay:
-   plex_search:
-     all:
-       hdr: true
-   filters:
-     resolution.not: 4K
-   item_overlay: HDR
+# 4K Overlay:
+#   plex_search:
+#     all:
+#       resolution: 4K
+#       hdr: false
+#   item_overlay: 4K
+#   build_collection: false
+# 4K-HDR Overlay:
+#   plex_search:
+#     all:
+#       resolution: 4K
+#       hdr: true
+#   item_overlay: 4K-HDR
+#   build_collection: false
+# HDR Overlay:
+#   plex_search:
+#     all:
+#       hdr: true
+#   filters:
+#     resolution.not: 4K
+#   item_overlay: HDR
    build_collection: false
