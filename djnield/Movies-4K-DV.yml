@@ -68,52 +68,80 @@ collections:
    visible_shared: false 
    visible_library: true 
     
-# 4K-Dolby:
-#   plex_all: true
-#   item_overlay: 4K-Dolby
-#   build_collection: false   
-   
 # DV-Atmos:
 #   plex_all: true
 #   filters:
-#     filepath: Atmos
+#     filepath: 
+#      - MoviesDV
+#      - Atmos
 #     filepath.not: 
 #      - DTS-X
 #      - TrueHD
 #      - DTS-HD
 #   item_overlay: DV-Atmos
 #   build_collection: false
-   
+#   
+# DV:
+#   plex_all: true
+#   filters:
+#     filepath: MoviesDV
+#     filepath.not: 
+#      - Atmos
+#      - DTS-X
+#      - TrueHD
+#      - DTS-HD
+#   item_overlay: DV
+#   build_collection: false
+#   
 # DV-DTS-X:
 #   plex_all: true
 #   filters:
-#     filepath: DTS-X
+#     filepath: 
+#      - MoviesDV
+#      - DTS-X
 #     filepath.not: 
 #      - Atmos
 #      - TrueHD
 #      - DTS-HD
 #   item_overlay: DV-DTS-X
 #   build_collection: false
-   
+#   
 # DV-TrueHD:
 #   plex_all: true
 #   filters:
-#     filepath: TrueHD
+#     filepath:
+#      - MoviesDV
+#      - TrueHD
 #     filepath.not: 
 #      - DTS-X
-#      - Atmos
 #      - DTS-HD
+#      - Atmos
+#      - EAC3
 #   item_overlay: DV-TrueHD
 #   build_collection: false
-   
+#   
+# DV-TrueHD-Atmos:
+#   plex_all: true
+#   filters:
+#     filepath: 
+#      - MoviesDV
+#      - TrueHD Atmos
+#     filepath.not: 
+#      - DTS-X
+#      - DTS-HD
+#      - EAC3
+#   item_overlay: DV-TrueHD-Atmos
+#   build_collection: false
+#   
 # DV-DTS-HD:
 #   plex_all: true
 #   filters:
-#     filepath: DTS-HD
+#     filepath: 
+#      - MoviesDV
+#      - DTS-HD
 #     filepath.not: 
 #      - DTS-X
 #      - TrueHD
 #      - Atmos
 #   item_overlay: DV-DTS-HD
-   build_collection: false
-     
+#   build_collection: false

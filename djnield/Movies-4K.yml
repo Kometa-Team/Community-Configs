@@ -82,11 +82,3 @@ collections:
 #       hdr: true
 #   item_overlay: 4K-HDR
 #   build_collection: false
-# HDR Overlay:
-#   plex_search:
-#     all:
-#       hdr: true
-#   filters:
-#     resolution.not: 4K
-#   item_overlay: HDR
-   build_collection: false
