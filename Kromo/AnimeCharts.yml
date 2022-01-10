@@ -6,8 +6,9 @@ templates:
     sort_title: +1_<<num>><<collection_name>>
     sync_mode: sync
     smart_label: random
+    
 collections:
-    Suggested Anime:
+  Suggested Anime:
       sort_title: ++_Suggested
       mal_suggested: 50
       sync_mode: sync
