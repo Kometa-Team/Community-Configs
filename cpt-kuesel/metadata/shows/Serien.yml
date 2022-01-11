@@ -26,6 +26,10 @@ collections:
     template: {name: Show, show: "265766, 360892"}
   Stargate:
     template: {name: Show, show: "72449, 70851, 83237, 339552"}
+  Star Wars:
+    template: {name: Show, show: "361753, 393589, 393187"}
+    smart_label: year.asc
+    sort_title: +2_3_Star Wars
   What We Do in the Shadows:
     template: {name: Show, show: "358211, 344280"}
     smart_label: year.asc

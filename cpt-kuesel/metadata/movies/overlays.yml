@@ -1,4 +1,4 @@
-### ISO-Language codes (https://www.loc.gov/standards/iso639-2/php/code_list.php) in this file:
+### ISO-Language codes (https://www.loc.gov/standards/iso639-2/php/code_list.php) in my library:
 # zh  |  Chinese
 # da  |  Danish
 # nl  |  Dutch
@@ -27,7 +27,7 @@ templates:
       - german
       - indian_hindi
       - indian_telugu
-      - iranian
+      - iranian_farsi
       - italian
       - japanese
       - korean
@@ -48,7 +48,7 @@ templates:
           - <<german>>
           - <<indian_hindi>>
           - <<indian_telugu>>
-          - <<iranian>>
+          - <<iranian_farsi>>
           - <<italian>>
           - <<japanese>>
           - <<korean>>
@@ -56,7 +56,7 @@ templates:
           - <<spanish>>
           - <<thai>>
     build_collection: false
-    # item_overlay: <<overlay_name>>
+    item_overlay: <<overlay_name>>
     item_metadata_language: <<meta_lang>>
   overlay:
     optional:
@@ -68,7 +68,7 @@ templates:
       - german
       - indian_hindi
       - indian_telugu
-      - iranian
+      - iranian_farsi
       - italian
       - japanese
       - korean
@@ -84,7 +84,7 @@ templates:
       german_not: de
       indian_hindi_not: hi
       indian_telugu_not: te
-      iranian_not: fa
+      iranian_farsi_not: fa
       italian_not: it
       japanese_not: ja
       korean_not: ko
@@ -105,7 +105,7 @@ templates:
           - <<german>>
           - <<indian_hindi>>
           - <<indian_telugu>>
-          - <<iranian>>
+          - <<iranian_farsi>>
           - <<italian>>
           - <<japanese>>
           - <<korean>>
@@ -120,7 +120,7 @@ templates:
           - <<german_not>>
           - <<indian_hindi_not>>
           - <<indian_telugu_not>>
-          - <<iranian_not>>
+          - <<iranian_farsi_not>>
           - <<italian_not>>
           - <<japanese_not>>
           - <<korean_not>>
@@ -128,149 +128,102 @@ templates:
           - <<spanish_not>>
           - <<thai_not>>
     build_collection: false
-    # item_overlay: <<overlay_name>>
+    item_overlay: <<overlay_name>>
     item_metadata_language: <<meta_lang>>
 
 collections:
   dl_chinese_french:
     template: {name: dl_overlay, chinese: zh, french: fr}
-    item_overlay: dl_chinese_french
   dl_english_chinese:
     template: {name: dl_overlay, chinese: zh, english: en}
-    item_overlay: dl_english_chinese
   dl_english_danish:
     template: {name: dl_overlay, english: en, danish: da}
-    item_overlay: dl_english_danish
   dl_english_dutch:
     template: {name: dl_overlay, english: en, dutch: nl}
-    item_overlay: dl_english_dutch
   dl_english_french:
     template: {name: dl_overlay, english: en, french: fr}
-    item_overlay: dl_english_french
   dl_english_indian_hindi:
-    template: {name: dl_overlay, english: en, indian_hindi: hi, overlay_name: dl_english_indian}
-    item_overlay: dl_english_indian
+    template: {name: dl_overlay, english: en, indian_hindi: hi}
   dl_english_indian_telugu:
-    template: {name: dl_overlay, english: en, indian_telugu: tu, overlay_name: dl_english_indian}
-    item_overlay: dl_english_indian
-  dl_english_iranian:
-    template: {name: dl_overlay, english: en, iranian: fa}
-    item_overlay: dl_english_iranian
+    template: {name: dl_overlay, english: en, indian_telugu: tu}
+  dl_english_iranian_farsi:
+    template: {name: dl_overlay, english: en, iranian_farsi: fa}
   dl_english_italian:
     template: {name: dl_overlay, english: en, italian: it}
-    item_overlay: dl_english_italian
   dl_english_japanese:
     template: {name: dl_overlay, english: en, japanese: ja}
-    item_overlay: dl_english_japanese
   dl_english_korean:
     template: {name: dl_overlay, english: en, korean: ko}
-    item_overlay: dl_english_korean
   dl_english_russian:
     template: {name: dl_overlay, english: en, russian: ru}
-    item_overlay: dl_english_russian
   dl_english_spanish:
     template: {name: dl_overlay, english: en, spanish: es}
-    item_overlay: dl_english_spanish
   dl_english_thai:
     template: {name: dl_overlay, english: en, thai: th}
-    item_overlay: dl_english_thai
   dl_french_danish:
     template: {name: dl_overlay, french: fr, danish: da}
-    item_overlay: dl_french_danish
   dl_german_chinese:
     template: {name: dl_overlay, german: de, chinese: zh, meta_lang: de-DE}
-    item_overlay: dl_german_chinese
   dl_german_danish:
     template: {name: dl_overlay, german: de, danish: da, meta_lang: de-DE}
-    item_overlay: dl_german_danish
   dl_german_dutch:
     template: {name: dl_overlay, german: de, dutch: nl, meta_lang: de-DE}
-    item_overlay: dl_german_dutch
   dl_german_english:
     template: {name: dl_overlay, german: de, english: en, meta_lang: de-DE}
-    item_overlay: dl_german_english
   dl_german_french:
     template: {name: dl_overlay, german: de, french: fr, meta_lang: de-DE}
-    item_overlay: dl_german_french
   dl_german_indian_hindi:
-    template: {name: dl_overlay, german: de, indian_hindi: hi, overlay_name: dl_german_indian, meta_lang: de-DE}
-    item_overlay: dl_german_indian
+    template: {name: dl_overlay, german: de, indian_hindi: hi, meta_lang: de-DE}
   dl_german_indian_telugu:
-    template: {name: dl_overlay, german: de, indian_telugu: te, overlay_name: dl_german_indian, meta_lang: de-DE}
-    item_overlay: dl_german_indian
-  dl_german_iranian:
-    template: {name: dl_overlay, german: de, iranian: fa, meta_lang: de-DE}
-    item_overlay: dl_german_iranian
+    template: {name: dl_overlay, german: de, indian_telugu: te, meta_lang: de-DE}
+  dl_german_iranian_farsi:
+    template: {name: dl_overlay, german: de, iranian_farsi: fa, meta_lang: de-DE}
   dl_german_italian:
     template: {name: dl_overlay, german: de, italian: it, meta_lang: de-DE}
-    item_overlay: dl_german_italian
   dl_german_japanese:
     template: {name: dl_overlay, german: de, japanese: ja, meta_lang: de-DE}
-    item_overlay: dl_german_japanese
   dl_german_korean:
     template: {name: dl_overlay, german: de, korean: ko, meta_lang: de-DE}
-    item_overlay: dl_german_korean
   dl_german_russian:
     template: {name: dl_overlay, german: de, russian: ru, meta_lang: de-DE}
-    item_overlay: dl_german_russian
   dl_german_spanish:
     template: {name: dl_overlay, german: de, spanish: es, meta_lang: de-DE}
-    item_overlay: dl_german_spanish
   dl_german_thai:
     template: {name: dl_overlay, german: de, thai: th, meta_lang: de-DE}
-    item_overlay: dl_german_thai
   dl_italian_thai:
     template: {name: dl_overlay, italian: it, thai: th}
-    item_overlay: dl_italian_thai
   dl_japanese_chinese:
     template: {name: dl_overlay, japanese: ja, chinese: zh}
-    item_overlay: dl_japanese_chinese
   dl_korean_french:
     template: {name: dl_overlay, korean: ko, french: fr}
-    item_overlay: dl_korean_french
 
   chinese:
-    template: {name: overlay, chinese: zh, chinese_not: de}
-    item_overlay: chinese
+    template: {name: overlay, chinese: zh, chinese_not: null}
   danish:
-    template: {name: overlay, danish: da, danish_not: de}
-    item_overlay: danish
+    template: {name: overlay, danish: da, danish_not: null}
   dutch:
-    template: {name: overlay, dutch: nl, dutch_not: de}
-    item_overlay: dutch
+    template: {name: overlay, dutch: nl, dutch_not: null}
   english:
-    template: {name: overlay, english: en, english_not: de}
-    item_overlay: english
+    template: {name: overlay, english: en, english_not: null}
   french:
-    template: {name: overlay, french: fr, french_not: de}
-    item_overlay: french
+    template: {name: overlay, french: fr, french_not: null}
   german:
-    template: {name: overlay, german: de, german_not: en}
-    item_overlay: german
+    template: {name: overlay, german: de, german_not: null, meta_lang: de-DE}
   indian_hindi:
-    template: {name: overlay, indian_hindi: hi, indian_hindi_not: de, overlay_name: indian}
-    item_overlay: indian
+    template: {name: overlay, indian_hindi: hi, indian_hindi_not: null}
   indian_telugu:
-    template: {name: overlay, indian_telugu: te, indian_telugu_not: de, overlay_name: indian}
-    item_overlay: indian
-  iranian:
-    template: {name: overlay, iranian: fa, iranian_not: de}
-    item_overlay: iranian
+    template: {name: overlay, indian_telugu: te, indian_telugu_not: null}
+  iranian_farsi:
+    template: {name: overlay, iranian_farsi: fa, iranian_farsi_not: null}
   italian:
-    template: {name: overlay, italian: it, italian_not: de}
-    item_overlay: italian
+    template: {name: overlay, italian: it, italian_not: null}
   japanese:
-    template: {name: overlay, japanese: ja, japanese_not: de}
-    item_overlay: japanese
+    template: {name: overlay, japanese: ja, japanese_not: null}
   korean:
-    template: {name: overlay, korean: ko, korean_not: de}
-    item_overlay: korean
+    template: {name: overlay, korean: ko, korean_not: null}
   russian:
-    template: {name: overlay, russian: ru, russian_not: de}
-    item_overlay: russian
+    template: {name: overlay, russian: ru, russian_not: null}
   spanish:
-    template: {name: overlay, spanish: es, spanish_not: de}
-    item_overlay: spanish
+    template: {name: overlay, spanish: es, spanish_not: null}
   thai:
-    template: {name: overlay, thai: th, thai_not: de}
-    item_overlay: thai
+    template: {name: overlay, thai: th, thai_not: null}

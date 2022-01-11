@@ -18,6 +18,7 @@ collections:
               country: United Kingdom
             - audio_language.not: de
               country: Germany
+      sort_by: added.desc
       validate: false
   Keine deutsche Tonspur:
     template: {name: Admin}
@@ -27,4 +28,14 @@ collections:
           - separate_german
           - never_german
         audio_language.not: de
+      sort_by: added.desc
       validate: false
+  RlsGrp nicht gesetzt:
+    template: {name: Admin}
+    plex_search:
+      all:
+        label.not: Rlsgrp_lost
+    filters:
+      filepath: Radarr
+    smart_label: added.desc
+    schedule: hourly(1)
