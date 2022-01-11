@@ -1,0 +1,84 @@
+templates:
+  tmdb:
+    default:
+      collection_order: release
+    optional:
+      - collections
+      - lists
+      - movies
+      - tmdb_summary
+      - summary
+    tmdb_collection: <<collections>>
+    tmdb_list: <<lists>>
+    tmdb_movie: <<movies>>
+    tmdb_summary: <<tmdb_summary>>
+    summary: <<summary>>
+    url_poster: <<poster>>
+    sort_title: +2_<<collection_name>>
+    collection_order: <<collection_order>>
+    visible_home: true
+    visible_shared: true
+  person:
+    sort_title: +3_<<collection_name>>
+    visible_home: true
+    visible_shared: true
+    tmdb_discover:
+      with_people: <<person>>
+    collection_order: release
+  genre:
+    default:
+      title: feature
+      limit: 100
+    tmdb_discover:
+      with_genres: <<genre>>
+      sort_by: vote_average.desc
+    imdb_list:
+      - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1950-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>
+        limit: <<limit>>
+      - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1950-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>&sort=user_rating,desc
+        limit: <<limit>>
+    sort_title: +4_<<collection_name>>
+    url_poster: <<poster>>
+    collection_order: alpha
+    visible_home: true
+    visible_shared: true
+collections:
+  Bud Sepncer & Terrence Hill:
+    template: {name: person, person: "18841, 15140"}
+    summary: "The congenial duo: Bud Spencer and Terence Hill"
+    url_poster:  https://i.imgur.com/NQ0PmZD.png
+  Middle Earth:
+    template: {name: tmdb, collections: "119, 121938", summary: "A collection of all J.R.R. Tolkien's movies.", poster: https://theposterdb.com/api/assets/32987}
+  Star Wars Movies in Story Order:
+    template: {name: tmdb, lists: 7102821, collection_order: custom, poster: https://theposterdb.com/api/assets/4448}
+  Romance:
+    template: {name: genre, genre: Romance, limit: 100, poster: https://theposterdb.com/api/assets/117306}
+    summary: "Romance film can be defined as a genre wherein the plot revolves around the love between two protagonists. This genre usually has a theme that explores an issue within love, including but not limited to: love at first sight, forbidden love, love triangles, and sacrificial love. The tone of Romance film can vary greatly. Whether the end is happy or tragic, Romance film aims to evoke strong emotions in the audience."
+  Action:
+    template: {name: genre, genre: Action, limit: 100, poster: https://theposterdb.com/api/assets/117290}
+    summary: Action film is a genre wherein physical action takes precedence in the storytelling. The film will often have continuous motion and action including physical stunts, chases, fights, battles, and races. The story usually revolves around a hero that has a goal, but is facing incredible odds to obtain it.
+  Adventure:
+    template: {name: genre, genre: Adcenture, limit: 100, poster: https://theposterdb.com/api/assets/117291}
+    summary: Adventure film is a genre that revolves around the conquests and explorations of a protagonist. The purpose of the conquest can be to retrieve a person or treasure, but often the main focus is simply the pursuit of the unknown. These films generally take place in exotic locations and play on historical myths. Adventure films incorporate suspenseful puzzles and intricate obstacles that the protagonist must overcome in order to achieve the end goal.  
+  Animation:
+    template: {name: genre, genre: Animation, limit: 100, poster: https://theposterdb.com/api/assets/116642}
+    summary: Animated film is a collection of illustrations that are photographed frame-by-frame and then played in a quick succession. Since its inception, animation has had a creative and imaginative tendency. Being able to bring animals and objects to life, this genre has catered towards fairy tales and children’s stories. However, animation has long been a genre enjoyed by all ages. As of recent, there has even been an influx of animation geared towards adults. Animation is commonly thought of as a technique, thus it’s ability to span over many different genres.
+  Biography:
+    template: {name: genre, genre: Biography, limit: 100, poster: https://theposterdb.com/api/assets/60369}
+    summary: A collection of Biography movies
+  Comedy:
+    template: {name: genre, genre: Comedy, limit: 100, poster: https://theposterdb.com/api/assets/117296}
+    summary: Comedy is a genre of film that uses humor as a driving force. The aim of a comedy film is to illicit laughter from the audience through entertaining stories and characters. Although the comedy film may take on some serious material, most have a happy ending. Comedy film has the tendency to become a hybrid sub-genre because humor can be incorporated into many other genres. Comedies are more likely than other films to fall back on the success and popularity of an individual star.
+  Crime:
+    template: {name: genre, genre: Crime, limit: 100, poster: https://theposterdb.com/api/assets/117297}
+    summary: Crime film is a genre that revolves around the action of a criminal mastermind. A Crime film will often revolve around the criminal himself, chronicling his rise and fall. Some Crime films will have a storyline that follows the criminal's victim, yet others follow the person in pursuit of the criminal. This genre tends to be fast paced with an air of mystery – this mystery can come from the plot or from the characters themselves.
+  Documentary:
+    template: {name: genre, genre: Documentary, limit: 100, poster: https://theposterdb.com/api/assets/51430}
+    summary: Documentary film is a non-fiction genre intended to document reality primarily for the purposes of instruction, education, or maintaining a historical record.
+  Drama:
+    template: {name: genre, genre: Drama, limit: 100, poster: https://theposterdb.com/api/assets/117299}
+    summary: Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues. Whether heroes or heroines are facing a conflict from the outside or a conflict within themselves, Drama film aims to tell an honest story of human struggles.
+  Family:
+    template: {name: genre, genre: Family, limit: 100, poster: https://theposterdb.com/api/assets/117300}
+    summary: Fantasy film is a genre that incorporates imaginative and fantastic themes. These themes usually involve magic, supernatural events, or fantasy worlds. Although it is its own distinct genre, these films can overlap into the horror and science fiction genres. Unlike science fiction, a fantasy film does not need to be rooted in fact. This element allows the audience to be transported into a new and unique world. Often, these films center on an ordinary hero in an extraordinary situation.
+  
