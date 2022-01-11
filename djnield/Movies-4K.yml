@@ -43,12 +43,16 @@ collections:
      all:
        resolution: 4K
        hdr: false
-   item_overlay: 4K
+   item_overlay:
+     name: 4K
+     url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
    build_collection: false
  4K-HDR Overlay:
    plex_search:
      all:
        resolution: 4K
        hdr: true
-   item_overlay: 4K-HDR
-   build_collection: false
+   item_overlay:
+     name: 4K-HDR
+     url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K-HDR/overlay.png
+   build_collection: false 

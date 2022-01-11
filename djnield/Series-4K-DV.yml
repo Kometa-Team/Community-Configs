@@ -46,5 +46,7 @@ collections:
      
  DV:
    plex_all: true
-   item_overlay: DV
+   item_overlay:
+     name: DV
+     url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV/overlay.png
    build_collection: false   
