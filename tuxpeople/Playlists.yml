@@ -38,8 +38,6 @@ templates:
       - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1950-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>&sort=user_rating,desc
         limit: <<limit>>
     sort_title: +4_<<collection_name>>
-    sync_mode: sync
-    smart_label: random
     url_poster: <<poster>>
     collection_order: alpha
     visible_home: true
@@ -50,9 +48,9 @@ collections:
     summary: "The congenial duo: Bud Spencer and Terence Hill"
     url_poster:  https://i.imgur.com/NQ0PmZD.png
   Middle Earth:
-    template: {name: tmdb, collections: "119, 121938", summary: "A collection of all J.R.R. Tolkien's movies.", poster: https://theposterdb.com/api/assets/4448}
+    template: {name: tmdb, collections: "119, 121938", summary: "A collection of all J.R.R. Tolkien's movies.", poster: https://theposterdb.com/api/assets/32987}
   Star Wars Movies in Story Order:
     template: {name: tmdb, lists: 7102821, collection_order: custom, poster: https://theposterdb.com/api/assets/4448}
   Romance:
-    template: {name: genre, genre: Romance, limit: 200, poster: https://theposterdb.com/api/assets/53062}
+    template: {name: genre, genre: Romance, limit: 200, poster: https://theposterdb.com/api/assets/117306}
     summary: "Romance film can be defined as a genre wherein the plot revolves around the love between two protagonists. This genre usually has a theme that explores an issue within love, including but not limited to: love at first sight, forbidden love, love triangles, and sacrificial love. The tone of Romance film can vary greatly. Whether the end is happy or tragic, Romance film aims to evoke strong emotions in the audience."

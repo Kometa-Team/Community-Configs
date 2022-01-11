@@ -41,7 +41,7 @@ collections:
     imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_best_picture_winners
     summary: Movies that have won an Oscar
     smart_label: year.desc
-    url_poster: https://i.imgur.com/l0CHbgx.png
+    url_poster: https://theposterdb.com/api/assets/75802
   Oscar Winning Movies:
     template: { name: Chart, num: 6 }
     imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
