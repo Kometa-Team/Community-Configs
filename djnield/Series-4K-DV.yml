@@ -44,11 +44,7 @@ collections:
    summary: Top Rated Shows across the internet
    url_poster: https://i.imgur.com/Ja997V8.jpg
      
- 4K-Dolby:
-   plex_search:
-     all:
-       resolution: 4K
-   filters:
-     filepath: TVDV
-   item_overlay: 4K-Dolby
+ DV:
+   plex_all: true
+   item_overlay: DV
    build_collection: false   
