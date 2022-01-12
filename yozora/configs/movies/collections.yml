@@ -1,0 +1,76 @@
+######################################################
+#                Movie Collections                   #
+######################################################
+templates:
+  collection:
+    optional:
+      - collection
+      - movie
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    sort_title: +09_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+#    schedule: weekly(friday)
+
+collections:
+  DC Comics Universe:
+    template: {name: collection}
+    tmdb_list_details: 3
+    url_poster: https://i.imgur.com/TJr35Au.jpeg
+    url_background: https://wallpaper.dog/large/17164614.jpg
+
+  Fast and the Furious:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/ireallylovevids/lists/fast-and-furious
+    url_poster: https://i.imgur.com/dPnWh1B.jpeg
+    url_background: https://images5.alphacoders.com/811/thumb-1920-811727.jpg
+
+  James Bond:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/any/lists/james-bond
+    url_poster: https://i.imgur.com/DO6IDWi.jpeg
+    url_background: https://www.pixel4k.com/wp-content/uploads/2018/09/james-bond-007_1536401470.jpg
+
+  Jurassic Park:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/darkman1498/lists/jurassic-park
+    url_poster: https://i.imgur.com/dj3gain.jpeg
+    url_background: https://www.teahub.io/photos/full/54-546246_2500x1200-jurassic-world-wallpapers-jurassic-park-wallpaper-4k.jpg
+
+  Lord of the Rings:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/lutgnature/lists/lord-of-the-rings-hobbit
+    url_poster: https://i.imgur.com/xFbp0IR.jpeg
+    url_background: https://wallpaperaccess.com/full/838293.jpg
+
+  Marvel Cinematic Universe:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/jawann2002/lists/marvel-cinematic-universe-movies?sort=rank,asc
+    url_poster: https://i.imgur.com/iDi8DBe.jpeg
+    url_background: https://images.hdqwalls.com/download/marvel-cinematic-universe-jm-3840x2400.jpg
+
+  Spider-man Universe:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/james_97/lists/spider-verse
+    url_poster: https://i.imgur.com/keYWzrL.jpeg
+    url_background: https://i.ibb.co/P59wtVs/download.jpg
+
+  Star Wars:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/draackje/lists/star-wars
+    url_poster: https://i.imgur.com/jlLZuOr.jpeg
+    url_background: https://wallpaperaccess.com/full/1101749.jpg
+
+  Wizarding World of Harry Potter:
+    template: {name: collection}
+    tmdb_list_details: 63607
+    url_poster: https://i.imgur.com/qjNHdhY.jpeg
+    url_background: https://wallpaperaccess.com/full/562430.jpg
+    sort_title: +09_Harry Potter
+
+  X-Men:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/bertjj/lists/x-men
+    url_poster: https://i.imgur.com/GFamrIY.jpeg
+    url_background: https://s2.best-wallpaper.net/wallpaper/3840x2160/1607/X-Men-Days-of-Future-Past-Ultra-HD_3840x2160.jpg
