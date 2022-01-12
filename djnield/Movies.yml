@@ -9,36 +9,6 @@ collections:
    visible_shared: false 
    visible_library: false
    url_poster: https://i.imgur.com/xRfaqAD.jpg
-
- Amazon Originals:
-   smart_label: release.desc
-   sync_mode: sync
-   schedule: weekly(wednesday), weekly(sunday)
-   sort_title: "#6AMAZON"
-   trakt_list: https://trakt.tv/users/garycrawfordgc/lists/amazon-prime-movies
-   summary: All Amazon Prime
-   url_poster: https://i.imgur.com/nU3gqqB.png
-   url_background: https://i.imgur.com/2jfs7oS.png
-
- Netflix Originals:
-   smart_label: release.desc
-   sync_mode: sync
-   schedule: weekly(wednesday), weekly(sunday)
-   sort_title: "#7Netflix"
-   trakt_list: https://trakt.tv/users/garycrawfordgc/lists/netflix-movies
-   summary: All Netflix Originals
-   url_poster: https://i.imgur.com/7kiE1MU.png
-   url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
-
- Highest Rated Movies of 2021:
-   trakt_list: https://trakt.tv/users/hdlists/lists/2021-best-rated-movies-so-far
-   sync_mode: sync
-   schedule: weekly(wednesday), weekly(sunday)
-   smart_label: random
-   sort_title: "#42021 Top Rated popular"
-   summary: The Top Rated Movies of 2021 on RottenTomatoes.com
-   url_poster: https://i.imgur.com/TXqA2CR.jpg
-   url_background: https://i.imgur.com/trITIgI.jpg
    
  Trending Movies:  
    trakt_trending: 40
