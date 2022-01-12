@@ -1,0 +1,23 @@
+#####################################################
+#              Awards Collections                   #
+#####################################################
+
+collections:
+  Award Season Winners:
+    imdb_list:
+      - https://www.imdb.com/search/title/?title_type=feature,short&groups=emmy_winner&sort=year,desc
+      - https://www.imdb.com/search/title/?title_type=feature,short&groups=oscar_winner&sort=year,desc
+      - https://www.imdb.com/search/title/?title_type=feature,short&groups=golden_globe_winner&sort=year,desc
+    sort_title: "+07_1AwardWinners"
+    summary: "A collection of winning movies from the Emmys, Oscars and Golden Globe award ceremonies over the year"
+    url_poster: https://i.ibb.co/X4jjdS4/Awards-Season.jpg
+    smart_label: year.desc
+    schedule: range (11/01-02/28)
+
+  Razzie Award Winners:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,short&groups=razzie_winner&sort=year,desc
+    sort_title: "+07_2RazzieAwards"
+    summary: "The Golden Raspberry Awards (also known as the Razzies and Razzie Awards) is a parody award show honoring the worst of cinematic under-achievements"
+    url_poster: https://i.ibb.co/jW143gX/Razzie-Awards.jpg
+    smart_label: year.desc
+    schedule: range (11/01-02/28)
