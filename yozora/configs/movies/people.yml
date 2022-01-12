@@ -1,0 +1,311 @@
+#####################################################
+#               People Collections                   #
+######################################################
+
+templates:
+  Person:
+    smart_filter:
+      sort_by: release.desc
+      validate: false
+      any:
+        actor: <<person>>
+        director: <<person>>
+        writer: <<person>>
+        producer: <<person>>
+    sort_title: +09_3<<collection_name>>
+
+collections:
+  Adam Sandler:
+    template: { name: Person, person: "Adam Sandler"}
+  Al Pacino:
+    template: { name: Person, person: "Al Pacino"}
+  Alfred Hitchcock:
+    template: { name: Person, person: "Alfred Hitchcock"}
+  Amy Adams:
+    template: { name: Person, person: "Amy Adams"}
+  Angelina Jolie:
+    template: { name: Person, person: "Angelina Jolie"}
+  Anne Hathaway:
+    template: { name: Person, person: "Anne Hathaway"}
+  Anthony Hopkins:
+    template: { name: Person, person: "Anthony Hopkins"}
+  Antonio Banderas:
+    template: { name: Person, person: "Antonio Banderas"}
+  Arnold Schwarzenegger:
+    template: { name: Person, person: "Arnold Schwarzenegger"}
+  Ben Affleck:
+    template: { name: Person, person: "Ben Affleck"}
+  Ben Stiller:
+    template: { name: Person, person: "Ben Stiller"}
+  Bill Murray:
+    template: { name: Person, person: "Bill Murray"}
+  Brad Pitt:
+    template: { name: Person, person: "Brad Pitt"}
+  Bradley Cooper:
+    template: { name: Person, person: "Bradley Cooper"}
+  Brendan Fraser:
+    template: { name: Person, person: "Brendan Fraser"}
+  Bruce Lee:
+    template: { name: Person, person: "Bruce Lee"}
+  Bruce Willis:
+    template: { name: Person, person: "Bruce Willis"}
+  Cameron Diaz:
+    template: { name: Person, person: "Cameron Diaz"}
+  Carrie Fisher:
+    template: { name: Person, person: "Carrie Fisher"}
+  Cate Blanchett:
+    template: { name: Person, person: "Cate Blanchett"}
+  Catherine Zeta-Jones:
+    template: { name: Person, person: "Catherine Zeta-Jones"}
+  Channing Tatum:
+    template: { name: Person, person: "Channing Tatum"}
+  Charlie Chaplin:
+    template: { name: Person, person: "Charlie Chaplin"}
+  Charlize Theron:
+    template: { name: Person, person: "Charlize Theron"}
+  Chris Evans:
+    template: { name: Person, person: "Chris Evans"}
+  Chris Hemsworth:
+    template: { name: Person, person: "Chris Hemsworth"}
+  Chris Pratt:
+    template: { name: Person, person: "Chris Pratt"}
+  Chris Rock:
+    template: { name: Person, person: "Chris Rock"}
+  Christian Bale:
+    template: { name: Person, person: "Christian Bale"}
+  Christopher Nolan:
+    template: { name: Person, person: "Christopher Nolan"}
+  Christopher Walken:
+    template: { name: Person, person: "Christopher Walken"}
+  Chuck Norris:
+    template: { name: Person, person: "Chuck Norris"}
+  Clint Eastwood:
+    template: { name: Person, person: "Clint Eastwood"}
+  Daniel Craig:
+    template: { name: Person, person: "Daniel Craig"}
+  Daniel Radcliffe:
+    template: { name: Person, person: "Daniel Radcliffe"}
+  Dave Bautista:
+    template: { name: Person, person: "Dave Bautista"}
+  Dave Chappelle:
+    template: { name: Person, person: "Dave Chappelle"}
+  Denzel Washington:
+    template: { name: Person, person: "Denzel Washington"}
+  Diane Keaton:
+    template: { name: Person, person: "Diane Keaton"}
+  Don Cheadle:
+    template: { name: Person, person: "Don Cheadle"}
+  Dustin Hoffman:
+    template: { name: Person, person: "Dustin Hoffman"}
+  Dwayne Johnson:
+    template: { name: Person, person: "Dwayne Johnson"}
+  Eddie Murphy:
+    template: { name: Person, person: "Eddie Murphy"}
+  Edward Norton:
+    template: { name: Person, person: "Edward Norton"}
+  Elliot Page:
+    template: { name: Person, person: "Elliot Page"}
+  Emma Stone:
+    template: { name: Person, person: "Emma Stone"}
+  Emma Watson:
+    template: { name: Person, person: "Emma Watson"}
+  Ewan McGregor:
+    template: { name: Person, person: "Ewan McGregor"}
+  George Clooney:
+    template: { name: Person, person: "George Clooney"}
+  Gerard Butler:
+    template: { name: Person, person: "Gerard Butler"}
+  Gwyneth Paltrow:
+    template: { name: Person, person: "Gwyneth Paltrow"}
+  Harrison Ford:
+    template: { name: Person, person: "Harrison Ford"}
+  Hayao Miyazaki:
+    template: { name: Person, person: "Hayao Miyazaki"}
+  Hugh Jackman:
+    template: { name: Person, person: "Hugh Jackman"}
+  Ian McKellen:
+    template: { name: Person, person: "Ian McKellen"}
+  Idris Elba:
+    template: { name: Person, person: "Idris Elba"}
+  J.J. Abrams:
+    template: { name: Person, person: "J.J. Abrams"}
+  Jack Black:
+    template: { name: Person, person: "Jack Black"}
+  Jackie Chan:
+    template: { name: Person, person: "Jackie Chan"}
+  James Cameron:
+    template: { name: Person, person: "James Cameron"}
+  James Franco:
+    template: { name: Person, person: "James Franco"}
+  Jamie Foxx:
+    template: { name: Person, person: "Jamie Foxx"}
+  Jason Bateman:
+    template: { name: Person, person: "Jason Bateman"}
+  Jason Statham:
+    template: { name: Person, person: "Jason Statham"}
+  Jeff Bridges:
+    template: { name: Person, person: "Jeff Bridges"}
+  Jeff Goldblum:
+    template: { name: Person, person: "Jeff Goldblum"}
+  Jennifer Aniston:
+    template: { name: Person, person: "Jennifer Aniston"}
+  Jennifer Lawrence:
+    template: { name: Person, person: "Jennifer Lawrence"}
+  Jesse Eisenberg:
+    template: { name: Person, person: "Jesse Eisenberg"}
+  Jessica Alba:
+    template: { name: Person, person: "Jessica Alba"}
+  Jet Li:
+    template: { name: Person, person: "Jet Li"}
+  Jim Carrey:
+    template: { name: Person, person: "Jim Carrey"}
+  John Candy:
+    template: { name: Person, person: "John Candy"}
+  John Travolta:
+    template: { name: Person, person: "John Travolta"}
+  John Wayne:
+    template: { name: Person, person: "John Wayne"}
+  Johnny Depp:
+    template: { name: Person, person: "Johnny Depp"}
+  Josh Brolin:
+    template: { name: Person, person: "Josh Brolin"}
+  Julia Roberts:
+    template: { name: Person, person: "Julia Roberts"}
+  Keanu Reeves:
+    template: { name: Person, person: "Keanu Reeves"}
+  Kevin Bacon:
+    template: { name: Person, person: "Kevin Bacon"}
+  Kevin Costner:
+    template: { name: Person, person: "Kevin Costner"}
+  Kevin Hart:
+    template: { name: Person, person: "Kevin Hart"}
+  Kevin Smith:
+    template: { name: Person, person: "Kevin Smith"}
+  Kristen Stewart:
+    template: { name: Person, person: "Kristen Stewart"}
+  Leonardo DiCaprio:
+    template: { name: Person, person: "Leonardo DiCaprio"}
+  Liam Neeson:
+    template: { name: Person, person: "Liam Neeson"}
+  Lucy Liu:
+    template: { name: Person, person: "Lucy Liu"}
+  M. Night Shyamalan:
+    template: { name: Person, person: "M. Night Shyamalan"}
+  Mark Ruffalo:
+    template: { name: Person, person: "Mark Ruffalo"}
+  Mark Wahlberg:
+    template: { name: Person, person: "Mark Wahlberg"}
+  Matt Damon:
+    template: { name: Person, person: "Matt Damon"}
+  Matthew McConaughey:
+    template: { name: Person, person: "Matthew McConaughey"}
+  Megan Fox:
+    template: { name: Person, person: "Megan Fox"}
+  Mel Brooks:
+    template: { name: Person, person: "Mel Brooks"}
+  Mel Gibson:
+    template: { name: Person, person: "Mel Gibson"}
+  Melissa McCarthy:
+    template: { name: Person, person: "Melissa McCarthy"}
+  Meryl Streep:
+    template: { name: Person, person: "Meryl Streep"}
+  Michael Bay:
+    template: { name: Person, person: "Michael Bay"}
+  Michael Caine:
+    template: { name: Person, person: "Michael Caine"}
+  Michael Douglas:
+    template: { name: Person, person: "Michael Douglas"}
+  Michael Keaton:
+    template: { name: Person, person: "Michael Keaton"}
+  Michelle Pfeiffer:
+    template: { name: Person, person: "Michelle Pfeiffer"}
+  Mike Myers:
+    template: { name: Person, person: "Mike Myers"}
+  Mila Kunis:
+    template: { name: Person, person: "Mila Kunis"}
+  Milla Jovovich:
+    template: { name: Person, person: "Milla Jovovich"}
+  Morgan Freeman:
+    template: { name: Person, person: "Morgan Freeman"}
+  Natalie Portman:
+    template: { name: Person, person: "Natalie Portman"}
+  Nicolas Cage:
+    template: { name: Person, person: "Nicolas Cage"}
+  Nicole Kidman:
+    template: { name: Person, person: "Nicole Kidman"}
+  Orlando Bloom:
+    template: { name: Person, person: "Orlando Bloom"}
+  Owen Wilson:
+    template: { name: Person, person: "Owen Wilson"}
+  Patrick Stewart:
+    template: { name: Person, person: "Patrick Stewart"}
+  Paul Rudd:
+    template: { name: Person, person: "Paul Rudd"}
+  Quentin Tarantino:
+    template: { name: Person, person: "Quentin Tarantino"}
+  Reese Witherspoon:
+    template: { name: Person, person: "Reese Witherspoon"}
+  Ridley Scott:
+    template: { name: Person, person: "Ridley Scott"}
+  Robert De Niro:
+    template: { name: Person, person: "Robert De Niro"}
+  Robert Downey Jr:
+    template: { name: Person, person: "Robert Downey Jr"}
+  Robin Williams:
+    template: { name: Person, person: "Robin Williams"}
+  Rosario Dawson:
+    template: { name: Person, person: "Rosario Dawson"}
+  Ryan Reynolds:
+    template: { name: Person, person: "Ryan Reynolds"}
+  Sacha Baron Cohen:
+    template: { name: Person, person: "Sacha Baron Cohen"}
+  Samuel L. Jackson:
+    template: { name: Person, person: "Samuel L. Jackson"}
+  Sandra Bullock:
+    template: { name: Person, person: "Sandra Bullock"}
+  Scarlett Johansson:
+    template: { name: Person, person: "Scarlett Johansson"}
+  Sean Connery:
+    template: { name: Person, person: "Sean Connery"}
+  Seth Rogen:
+    template: { name: Person, person: "Seth Rogen"}
+  Shia LaBeouf:
+    template: { name: Person, person: "Shia LaBeouf"}
+  Steve Buscemi:
+    template: { name: Person, person: "Steve Buscemi"}
+  Steve Carell:
+    template: { name: Person, person: "Steve Carell"}
+  Steve Martin:
+    template: { name: Person, person: "Steve Martin"}
+  Steven Seagal:
+    template: { name: Person, person: "Steven Seagal"}
+  Steven Spielberg:
+    template: { name: Person, person: "Steven Spielberg"}
+  Sylvester Stallone:
+    template: { name: Person, person: "Sylvester Stallone"}
+  Tim Allen:
+    template: { name: Person, person: "Tim Allen"}
+  Tim Burton:
+    template: { name: Person, person: "Tim Burton"}
+  Tom Cruise:
+    template: { name: Person, person: "Tom Cruise"}
+  Tom Hanks:
+    template: { name: Person, person: "Tom Hanks"}
+  Tommy Lee-Jones:
+    template: { name: Person, person: "Tommy Lee-Jones"}
+  Vin Diesel:
+    template: { name: Person, person: "Vin Diesel"}
+  Vince Vaughn:
+    template: { name: Person, person: "Vince Vaughn"}
+  Wesley Snipes:
+    template: { name: Person, person: "Wesley Snipes"}
+  Will Ferrell:
+    template: { name: Person, person: "Will Ferrell"}
+  Will Smith:
+    template: { name: Person, person: "Will Smith"}
+  Woody Harrelson:
+    template: { name: Person, person: "Woody Harrelson"}
+  Zack Snyder:
+    template: { name: Person, person: "Zack Snyder"}
+  Zoe Saldana:
+    template: { name: Person, person: "Zoe Saldana"}
