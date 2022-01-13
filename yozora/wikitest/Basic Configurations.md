@@ -6,16 +6,16 @@ For the purpose of this demonstration, the Plex library being used is set up as 
 
 ## config.yml
 ```
-libraries:                                      # Library mappings must have a colon (:) placed after them
-  Audiobooks:
+libraries:
+  Movies:
     metadata_path:
-      - file: config/Audobooks.yml                 # This represents a file on the host filesystem
+      - file: config/Movies.yml                 # This represents a file on the host filesystem
       - git: meisnate12/MovieCharts             # This represents a file on the GitHub repository
   TV Shows:
     metadata_path:
       - file: config/TV Shows.yml               # You can map multiple file/git files
       - file: config/TV Charts.yml
-      - file: config/TV Networks.yml             
+      - file: config/TV Networks.yml
       - git: meisnate12/ShowCharts
   TV Shows - Animé:
     metadata_path:                              # No files will skip the connection to this library
@@ -23,7 +23,7 @@ libraries:                                      # Library mappings must have a c
     metadata_path:
       - file: config/Music.yml
 playlist_files:                                 # playlist_files should be at the same indentation as libraries
-  - file: config/playlists.yml                
+  - file: config/playlists.yml
   - git: meisnate12/Playlists
 ```
 In the above example, `Movies`, `TV Shows`, `Anime` and `Music` are named to match my libraries within Plex. This is essential to allow Plex Meta Manager to know which library it is connecing to.
