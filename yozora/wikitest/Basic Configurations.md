@@ -1,10 +1,11 @@
 Below are example starter configurations to help you get started with Plex Meta Manager.
 
 For the purpose of this demonstration, the Plex library being used is set up as follows:
+
 ![LibraryOverview](https://i.imgur.com/lsNIUMX.png)
 
 ## config.yml
-
+```
 libraries:                                      # Library mappings must have a colon (:) placed after them
   Audiobooks:
     metadata_path:
@@ -24,7 +25,7 @@ libraries:                                      # Library mappings must have a c
 playlist_files:                                 # playlist_files should be at the same indentation as libraries
   - file: config/playlists.yml                
   - git: meisnate12/Playlists
-
+```
 In the above example, `Movies`, `TV Shows`, `Anime` and `Music` are named to match my libraries within Plex. This is essential to allow Plex Meta Manager to know which library it is connecing to.
 
 where you see any .yml file underneath a library, that points to either a git location within the [Plex Meta Manager Config Repo](https://github.com/meisnate12/Plex-Meta-Manager-Configs) or a file within your host's filesystem.
