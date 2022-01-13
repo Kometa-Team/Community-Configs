@@ -8,6 +8,7 @@ collections:
   Tonspuren kontrollieren:
     template: {name: Admin}
     smart_filter:
+      type: episodes
       all:
         title.not: Avatar
         audio_language.not: 

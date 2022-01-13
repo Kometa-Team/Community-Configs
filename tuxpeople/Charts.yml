@@ -1,0 +1,50 @@
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    url_background: https://i.imgur.com/R1zIOo7.png
+    visible_home: true
+    visible_shared: true
+collections:
+  Trending:
+    template: { name: Chart, num: 1 }
+    trakt_trending: 40
+    tmdb_trending_daily: 40
+    tmdb_trending_weekly: 40
+    smart_label: year.desc
+    summary: Movies trending across the internet
+    url_poster: https://i.imgur.com/cxnU9ZL.png
+  Top Rated:
+    template: { name: Chart, num: 2 }
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=100
+    tmdb_top_rated: 100
+    smart_label: critic_rating.desc
+    summary: Top Rated Movies, according to IMDB.
+    url_poster: https://i.imgur.com/AWxpE67.png
+  Popular:
+    template: { name: Chart, num: 3 }
+    smart_label: year.desc
+    tmdb_popular: 40
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
+      limit: 40
+    summary: Popular Movies across the internet
+    url_poster: https://i.imgur.com/oJbU0yr.png
+#  Movies people are watching:
+#    template: { name: Chart, num: 4 }
+#    trakt_list: https://trakt.tv/users/hdlists/lists/top-films-everyone-s-watching
+#    smart_label: year.desc
+#    summary: Movies That Everyone is Watching
+#    url_poster: https://i.imgur.com/8cxTJ1b.png
+  Oscar Best Picture-Winning Movies:
+    template: { name: Chart, num: 5 }
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_best_picture_winners
+    summary: Movies that have won an Oscar
+    smart_label: year.desc
+    url_poster: https://theposterdb.com/api/assets/75802
+  Oscar Winning Movies:
+    template: { name: Chart, num: 6 }
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    summary: Movies that have won an Oscar
+    smart_label: year.desc
+    url_poster: https://i.imgur.com/l0CHbgx.png

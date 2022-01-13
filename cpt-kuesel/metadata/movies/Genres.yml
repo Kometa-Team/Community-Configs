@@ -5,16 +5,11 @@
 
 #  In this file:
 #  [
-#   +4_ = Genres
+#   +4_1 = Genres
 #  ]
 
 #   +5_ = Movies
 
 # templates:
 collections:
-  Korean Cinema:
-    plex_search:
-      country: Republic of Korea
-    smart_label: critic_rating.desc
-    sort_title: +4_Korean Cinema
 

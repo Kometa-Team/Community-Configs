@@ -1,4 +1,4 @@
-### ISO-Language codes (https://www.loc.gov/standards/iso639-2/php/code_list.php) in this file:
+### ISO-Language codes (https://www.loc.gov/standards/iso639-2/php/code_list.php) in my library:
 # de    | German
 # en    | English
 # fr    | French
@@ -10,6 +10,7 @@ templates:
       - english
       - french
       - german
+      - spanish
     default:
       overlay_name: <<collection_name>>
       meta_lang: en-US
@@ -19,18 +20,21 @@ templates:
           - <<english>>
           - <<french>>
           - <<german>>
+          - <<spanish>>
     build_collection: false
-    # item_overlay: <<overlay_name>>
+    item_overlay: <<overlay_name>>
     item_metadata_language: <<meta_lang>>
   overlay:
     optional:
       - english
       - french
       - german
+      - spanish
     default:
       english_not: en
       french_not: fr
       german_not: de
+      spanish_not: es
 
       overlay_name: <<collection_name>>
       meta_lang: en-US
@@ -40,31 +44,31 @@ templates:
           - <<english>>
           - <<french>>
           - <<german>>
+          - <<spanish>>
         audio_language.not:
           - <<english_not>>
           - <<french_not>>
           - <<german_not>>
+          - <<spanish_not>>
     build_collection: false
-    # item_overlay: <<overlay_name>>
+    item_overlay: <<overlay_name>>
     item_metadata_language: <<meta_lang>>
 
 collections:
   dl_english_french:
     template: {name: dl_overlay, english: en, french: fr}
-    item_overlay: dl_english_french
   dl_german_english:
     template: {name: dl_overlay, german: de, english: en, meta_lang: de-DE}
-    item_overlay: dl_german_english
   dl_german_french:
     template: {name: dl_overlay, german: de, french: fr, meta_lang: de-DE}
-    item_overlay: dl_german_french
+  dl_german_spanish:
+    template: {name: dl_overlay, german: de, spanish: es, meta_lang: de-DE}
 
   english:
-    template: {name: overlay, english: en, english_not: de}
-    item_overlay: english
+    template: {name: overlay, english: en, english_not: null}
   french:
-    template: {name: overlay, french: fr, french_not: de}
-    item_overlay: french
+    template: {name: overlay, french: fr, french_not: null}
   german:
-    template: {name: overlay, german: de, german_not: en, meta_lang: de-DE}
-    item_overlay: german
+    template: {name: overlay, german: de, german_not: null, meta_lang: de-DE}
+  spanish:
+    template: {name: overlay, spanish: es, spanish_not: null}
