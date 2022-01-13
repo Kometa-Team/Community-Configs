@@ -26,77 +26,70 @@
 #                   Collections                     #
 #####################################################
 
+
+
+
 templates:
-  Studio:
-    optional:
-      - company
-    tmdb_company: <<company>>
-    sort_title: +03_<<collection_name>>
-    sync_mode: sync
-    smart_label: release.desc
 
   Trakt:
-    sort_title: +03_<<collection_name>>
+    sort_title: +04_<<collection_name>>
     sync_mode: sync
     url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
-    smart_label: originally_available.desc
-    #schedule: weekly (monday)
+    collection_order: custom
+
+  TraktMulti:
+    sort_title: +04_<<collection_name>>
+    sync_mode: sync
+    url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
+    collection_order: release    
 
 collections:
- 
- IMDB Top Rated:
-  template: { name: Trakt} 
-  trakt_list: https://trakt.tv/users/justin/lists/imdb-top-rated-movies
-  summary: "IMDB Top 250 Movies across the internet"
+  TV Show Francais:
+    template: { name: TraktMulti}
+    trakt_list_details: 
+      - https://trakt.tv/users/mraniki/lists/french-series
+      - https://trakt.tv/users/mraniki/lists/tele
 
- Criterion:
-  template: { name: Trakt} 
-  trakt_list:
-   - https://trakt.tv/users/millow123/lists/the-criterion-collection-updated
-   - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
-   - https://trakt.tv/users/yoursvivek/lists/the-criterion-collection
-  summary: "The Criterion Collection"
+  IMDB Top Rated:
+    template: { name: Trakt} 
+    trakt_list_details: 
+      - https://trakt.tv/users/justin/lists/imdb-top-rated-movies
 
- 1001 Movies You Must See Before You Die:
-  template: { name: Trakt} 
-  trakt_list: https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
-  summary: "1001 Movies You Must See Before You Die is a film reference book edited by Steven Jay Schneider with original essays on each film contributed by over 70 film critics."
-    
-DC:
-  template: { name: Trakt}
-  trakt_list: 
-    - https://trakt.tv/users/movistapp/lists/dc-comics
-    - https://trakt.tv/users/tetharion/lists/worlds-of-dc
-    - https://trakt.tv/users/littlgrim/lists/dc
-    - https://trakt.tv/users/rkvine82/lists/dc-comic-shows
-    - https://trakt.tv/users/asterlea/lists/dceu
-    - https://trakt.tv/users/donxy/lists/dc-comics-animated
-    - https://trakt.tv/users/donxy/lists/dc-universe-animated-original-movies
-    - https://trakt.tv/users/donxy/lists/dc-animated-series-universe
-  summary: DC Comics is one of the largest and oldest American comic book companies, with their first comic under the DC banner being published in 1937.
+  Criterion:
+    template: { name: Trakt} 
+    trakt_list_details:
+      - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
 
-Marvel:
-  template: { name: Trakt}
-  trakt_list: 
-    - https://trakt.tv/users/donxy/lists/marvel-cinematic-universe
-    - https://trakt.tv/users/asterlea/lists/marvel-television
-    - https://trakt.tv/users/mediashare2000/lists/marvel-animation
-    - https://trakt.tv/users/signoftheshadow/lists/mcu
-    - https://trakt.tv/users/ifigenia1986/lists/mcu-series
-  summary: Marvel counts among its characters such well-known superheroes as Spider-Man, Iron Man, Captain America, the Hulk, Thor, Wolverine, Ant-Man, the Wasp, Black Widow, Hawkeye, Captain Marvel, Black Panther, Doctor Strange, the Scarlet Witch, Quicksilver, She-Hulk, the Vision, the Falcon, the Winter Soldier, Ghost Rider, Blade, Daredevil, Luke Cage, Iron Fist, Ms. Marvel, Miles Morales, the Punisher, Shang-Chi and Deadpool. 
+  1001 Movies You Must See Before You Die:
+    template: { name: Trakt} 
+    trakt_list_details: 
+      - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
 
-LEGO:
-  template: { name: Studio, company: 4081 }
-  summary: "Lego movies, TV, and shorts"
+  Star Trek:
+    template: { name: Trakt} 
+    url_background: https://i.redd.it/vz20prnp8v551.jpg
+    trakt_list_details: 
+      - https://trakt.tv/users/dgw/lists/star-trek-canon
 
-TV Show Francais:
-  template: { name: Trakt}
-  summary: French TV Show
-  trakt_list: 
-    - https://trakt.tv/users/mraniki/lists/french-series
-    - https://trakt.tv/users/mraniki/lists/tele
+  Star Wars:
+    template: { name: TraktMulti} 
+    url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
+    trakt_list_details: 
+      - https://trakt.tv/users/ruben_vw_/lists/star-wars-canon-timeline
+      - https://trakt.tv/users/darkman1498/lists/star-wars
 
+  Battlestar Galactica:
+    template: { name: Trakt} 
+    url_background: https://wallpapercave.com/wp/vPJGO64.jpg
+    url_poster: https://theposterdb.com/api/assets/160915
+    trakt_list_details: 
+      - https://trakt.tv/users/mraniki/lists/battlestar-galactica-universe
 
+  Shakespeare:
+    template: { name: Trakt} 
+    url_background: https://images.unsplash.com/photo-1598391990342-311775e3d374
+    trakt_list_details:
+      - https://trakt.tv/users/michaeldibben/lists/shakespeare-plays
 
 
 
