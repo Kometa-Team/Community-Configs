@@ -39,7 +39,8 @@ templates:
     sort_title: +03_<<collection_name>>
     sync_mode: sync
     url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
-    smart_label: originally_available.desc
+    #smart_label: originally_available.desc
+    collection_order: custom
     #schedule: weekly (monday)
     
 collections:
@@ -54,36 +55,36 @@ collections:
   DC:
     template: { name: Trakt} 
     trakt_list: 
-      - https://trakt.tv/users/movistapp/lists/dc-comics
-      - https://trakt.tv/users/tetharion/lists/worlds-of-dc
-      - https://trakt.tv/users/littlgrim/lists/dc
-      - https://trakt.tv/users/rkvine82/lists/dc-comic-shows
-      - https://trakt.tv/users/asterlea/lists/dceu
-      - https://trakt.tv/users/donxy/lists/dc-comics-animated
-      - https://trakt.tv/users/donxy/lists/dc-universe-animated-original-movies
-      - https://trakt.tv/users/donxy/lists/dc-animated-series-universe
+      - https://trakt.tv/users/daphne_vb/lists/dc-universe
+      - https://trakt.tv/users/malicekodi2/lists/dc
+      - https://trakt.tv/users/ashleyangel/lists/dc-universe
+    collection_order: release
     summary: DC Comics is one of the largest and oldest American comic book companies, with their first comic under the DC banner being published in 1937.The majority of its publications take place within the fictional DC Universe and feature numerous culturally iconic heroic characters, such as Superman, Batman, and Wonder Woman. It is widely known for some of the most famous and recognizable teams including the Justice League, the Justice Society of America, and the Teen Titans. The universe also features a large number of well-known supervillains such as the Joker, Lex Luthor, and Darkseid. The company has published non-DC Universe-related material, including Watchmen, V for Vendetta, Fables and many titles under their alternative imprint Vertigo. 
 
-  DreamWorks Animation:
-    template: { name: Studio, company: 521 }
-    summary: DreamWorks Animation LLC (also simply known as DreamWorks) is an American animation studio and a subsidiary of Universal Pictures, itself a subsidiary of Comcast's NBCUniversal. It is based in Glendale, California, and produces animated feature films, television programs, and online virtual games.
+  # DreamWorks Animation:
+  #   template: { name: Studio, company: 521 }
+  #   summary: DreamWorks Animation LLC (also simply known as DreamWorks) is an American animation studio and a subsidiary of Universal Pictures, itself a subsidiary of Comcast's NBCUniversal. It is based in Glendale, California, and produces animated feature films, television programs, and online virtual games.
  
   Illumination:
     template: { name: Studio, company: 6704 }
     summary: Illumination is an American film and animation studio founded by Chris Meledandri in 2007 and owned by Universal Pictures, a division of NBCUniversal, which is itself a division of Comcast. Meledandri produces the films, while Universal finances and distributes all the films. The studio is responsible for the Despicable Me and The Secret Life of Pets franchises and the film adaptations of Dr. Seuss’ books The Lorax and How the Grinch Stole Christmas. The Minions, characters from the Despicable Me series, are the studio's mascots.
  
   LEGO:
-    template: { name: Studio, company: 4081 }
     summary: "Lego movies, TV, and shorts"
+    template: { name: Trakt}  
+    trakt_list: 
+      - https://trakt.tv/users/zaylia/lists/the-lego-franchise
 
   Marvel:
-   template: { name: Trakt}  
-   trakt_list: 
+    template: { name: Trakt}  
+    trakt_list: 
       - https://trakt.tv/users/donxy/lists/marvel-cinematic-universe
       - https://trakt.tv/users/asterlea/lists/marvel-television
       - https://trakt.tv/users/mediashare2000/lists/marvel-animation
       - https://trakt.tv/users/signoftheshadow/lists/mcu
-   summary: Marvel counts among its characters such well-known superheroes as Spider-Man, Iron Man, Captain America, the Hulk, Thor, Wolverine, Ant-Man, the Wasp, Black Widow, Hawkeye, Captain Marvel, Black Panther, Doctor Strange, the Scarlet Witch, Quicksilver, She-Hulk, the Vision, the Falcon, the Winter Soldier, Ghost Rider, Blade, Daredevil, Luke Cage, Iron Fist, Ms. Marvel, Miles Morales, the Punisher, Shang-Chi and Deadpool. Superhero teams exist such as the Avengers, the X-Men, the Fantastic Four and the Guardians of the Galaxy. 
+      - https://trakt.tv/users/ifigenia1986/lists/mcu-series
+    collection_order: release
+    summary: Marvel counts among its characters such well-known superheroes as Spider-Man, Iron Man, Captain America, the Hulk, Thor, Wolverine, Ant-Man, the Wasp, Black Widow, Hawkeye, Captain Marvel, Black Panther, Doctor Strange, the Scarlet Witch, Quicksilver, She-Hulk, the Vision, the Falcon, the Winter Soldier, Ghost Rider, Blade, Daredevil, Luke Cage, Iron Fist, Ms. Marvel, Miles Morales, the Punisher, Shang-Chi and Deadpool. Superhero teams exist such as the Avengers, the X-Men, the Fantastic Four and the Guardians of the Galaxy. 
     
   Pixar:
     template: { name: Studio, company: 3 }
@@ -103,6 +104,7 @@ collections:
 
   Walt Disney Pictures:
     template: { name: Trakt} 
+    collection_order: release
     trakt_list:   
       - https://trakt.tv/users/asterlea/lists/walt-disney-pictures-part-2
       - https://trakt.tv/users/asterlea/lists/walt-disney-pictures-part-1

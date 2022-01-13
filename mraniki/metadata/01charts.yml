@@ -23,7 +23,7 @@
 #   +10_ = Movies
 
 ######################################################
-#                   MOVIE  CHART                     #
+#                    CHARTS                          #
 ######################################################
 
 templates:
@@ -32,36 +32,8 @@ templates:
     sync_mode: sync
     url_background: https://bit.ly/PlexMovieBackground
     smart_label: originally_available.desc
-    #schedule: weekly (monday)
-
 
 collections:
-  Trending:
-    sync_mode: sync
-    trakt_trending: 15
-    tmdb_trending_daily: 15
-    tmdb_trending_weekly: 15
-    sort_title: '+01_1Trending'
-    summary: Movies Trending across the internet
-    smart_label: audience_rating.desc
-    radarr_add: true
-    radarr_search: true
-    radarr_monitor: true
-
-  Popular:
-    sync_mode: sync
-    tmdb_popular: 40
-    imdb_list:
-      url: 
-        - https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
-        - https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
-      limit: 40
-    sort_title: '+01_2Popular'
-    summary: Popular Movies across the internet
-    smart_label: audience_rating.desc
-    radarr_add: true
-    radarr_search: true
-    radarr_monitor: true
 
   Watching Now:
     sort_title: +00_1watchingnow
@@ -73,11 +45,34 @@ collections:
       - https://trakt.tv/users/mraniki/lists/tonightmovies
       - https://trakt.tv/users/mraniki/lists/tonightseries
 
+  Trending:
+    sync_mode: sync
+    collection_order: custom
+    #trakt_recommended_daily: 20
+  #  trakt_recommended_weekly: 1
+    tmdb_trending_daily: 30
+  #  tmdb_trending_weekly: 1
+    sort_title: '+01_1Trending'
+    summary: Movies & Shows Trending across the internet
+    url_poster: https://i.imgur.com/kEi4zWu.png
+    visible_home: true
+
+  Popular:
+    sync_mode: sync
+    collection_order: custom
+  # tmdb_popular: 20
+    trakt_popular: 40
+  # trakt_recommended_yearly: 10
+    sort_title: '+01_2Popular'
+    url_poster: https://i.imgur.com/EbhXNCG.png 
+    summary: Popular Movies & Shows across the internet
+
   Dernier Film Francais:
     sort_title: +01_3FilmFrancais
     summary: Dernier Film Francais
     sync_mode: sync
     smart_filter:
+      type: movies
       all:        
         country: France
       sort_by: release.desc 
@@ -88,6 +83,7 @@ collections:
     summary: Film en Francais
     sync_mode: sync
     smart_filter:
+      type: movies
       all:        
         audio_language: fr
       sort_by: release.desc 
