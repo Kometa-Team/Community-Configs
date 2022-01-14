@@ -1,0 +1,32 @@
+collections:
+  IMDB Top 250 Movies:
+    imdb_chart: top_movies
+    summary: IMDB Top 250 Movies
+    collection_order: custom
+    sync_mode: sync
+    sort_title: +1_Top Rated Movies
+    radarr_add: true
+    schedule: monthly(1)
+  Oscar Best Picture Winners:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=best_picture_winner&sort=release_date,desc
+    summary: Oscar Best Picture Winning Movies
+    sort_title: +1_Oscar_Best_Picture_winners
+    sync_mode: sync
+    collection_order: custom
+    radarr_add: true
+    schedule: monthly(1)
+  Christmas Movies:
+    sort_title: +3_Christmas Movies
+    trakt_list:
+      - https://trakt.tv/users/movistapp/lists/christmas-movies
+      - https://trakt.tv/users/2borno2b/lists/christmas-movies-extravanganza
+    imdb_list:
+      - https://www.imdb.com/list/ls025976544/
+      - https://www.imdb.com/list/ls003863000/
+      - https://www.imdb.com/list/ls027454200/
+      - https://www.imdb.com/list/ls027886673/
+      - https://www.imdb.com/list/ls097998599/
+    visible_home: range(12/01-12/31)
+    visible_shared: range(12/01-12/31)
+    schedule: monthly(1)
+    smart_label: random
