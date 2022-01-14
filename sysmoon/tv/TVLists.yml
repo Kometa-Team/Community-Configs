@@ -1,0 +1,19 @@
+######################################################
+#           Trakt List Collections                   #
+######################################################
+templates:
+  TraktList:
+    sort_title: +2_<<num>><<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    item_refresh: true
+collections:
+  TV Picks of the Last Year:
+    template: { name: TraktList, num: 1 }
+    trakt_list: https://trakt.tv/users/benmooney/lists/tv-picks-from-the-last-year?sort=random,asc
+    summary: Top TV Shows which aired in the last 365 days.
+    schedule: weekly(sunday)
+  Trending Reality TV:
+    template: { name: TraktList, num: 2 }
+    trakt_list: https://trakt.tv/users/benmooney/lists/trending-reality-tv?sort=rank,asc
+    summary: Currently trending reality TV shows.

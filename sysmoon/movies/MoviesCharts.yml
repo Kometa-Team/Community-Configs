@@ -1,0 +1,31 @@
+######################################################
+#                Chart Collections                   #
+######################################################
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    item_refresh: true
+collections:
+  Trending Movies:
+    template: { name: Chart, num: 1 }
+    trakt_trending: 40
+    summary: movies Trending across the internet
+    filters:
+      year.gte: 2020
+    visible_home: true
+    visible_shared: true
+  Trending Documentaries:
+    template: { name: Chart, num: 2 }
+    imdb_list: 
+      url: https://www.imdb.com/search/title/?title_type=documentary&release_date=2021-01-01,&genres=documentary
+      limit: 40
+    summary: Popular documentaries across the internet
+    radarr_add: true
+    visible_home: true
+    visible_shared: true
+  Popular Movies:
+    template: { name: Chart, num: 3 }
+    tmdb_popular: 40
+    summary: Popular Movies across the internet
