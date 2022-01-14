@@ -1,0 +1,19 @@
+######################################################
+#                Sonarr Collections                  #
+######################################################
+templates:
+  sonarr_add:
+    sync_mode: sync
+    sonarr_add: true
+    sonarr_search: true
+    build_collection: false
+collections: 
+ Trakt Trending Shows:
+    template: { name: sonarr_add }
+    trakt_trending: 30
+ Trakt Popular Shows:
+    template: { name: sonarr_add }
+    trakt_popular: 30
+ Trakt Recommended Shows:
+    template: { name: sonarr_add }
+    trakt_recommended_weekly: 30

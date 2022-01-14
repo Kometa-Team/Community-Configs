@@ -1,0 +1,22 @@
+######################################################
+#                Radarr Collections                  #
+######################################################
+templates:
+  radarr_add:
+    sync_mode: sync
+    radarr_add: true
+    radarr_search: true
+    build_collection: false
+collections: 
+ Trakt Trending Movies:
+    template: { name: radarr_add }
+    trakt_trending: 30
+ Trakt Box Office Movies:
+    template: { name: radarr_add }
+    trakt_boxoffice: true
+ Trakt Popular Movies:
+    template: { name: radarr_add }
+    trakt_popular: 30
+ StevenLu Popular Movies:
+    template: { name: radarr_add }
+    stevenlu_popular: true
