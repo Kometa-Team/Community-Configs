@@ -1,58 +1,59 @@
+---
 collections:
- Movie Watchlist:
-   trakt_watchlist:
-     - me
-   smart_label: release.desc
-   sync_mode: sync
-   label: admin
-   visible_home: true
-   visible_shared: false 
-   visible_library: false
-   url_poster: https://i.imgur.com/xRfaqAD.jpg
+  Movie Watchlist:
+    trakt_watchlist:
+      - me
+    smart_label: release.desc
+    sync_mode: sync
+    label: admin
+    visible_home: true
+    visible_shared: false
+    visible_library: false
+    url_poster: https://i.imgur.com/xRfaqAD.jpg
 
- Trending Movies:  
-   trakt_trending: 40
-   tmdb_trending_daily: 40
-   tmdb_trending_weekly: 40
-   sort_title: "#1Trending"
-   sync_mode: sync
-   smart_label: added.desc
-   summary: Movies Trending across the internet
-   url_background: https://i.imgur.com/SOVfrIq.png
-   url_poster: https://i.imgur.com/KRKRjWT.jpg
-   visible_home: true
-   visible_shared: true 
-   visible_library: true   
-   
- Top Rated Movies:
-   imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
-   tmdb_top_rated: 250
-   sort_title: "#2Top Rated"
-   sync_mode: sync
-   schedule: weekly(wednesday), weekly(sunday)
-   smart_label: random
-   summary: IMDb Top Rated Movies
-   url_background: https://i.imgur.com/b26VZ9y.jpg
-   url_poster: https://i.imgur.com/4izKiv7.jpg
-   visible_home: false
-   visible_shared: false 
-   visible_library: true 
-   
- 4K Overlay:
-   plex_search:
-     all:
-       resolution: 4K
-       hdr: false
-   item_overlay:
-     name: 4K
-     url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
-   build_collection: false
- 4K-HDR Overlay:
-   plex_search:
-     all:
-       resolution: 4K
-       hdr: true
-   item_overlay:
-     name: 4K-HDR
-     url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K-HDR/overlay.png
-   build_collection: false 
+  Trending Movies:
+    trakt_trending: 40
+    tmdb_trending_daily: 40
+    tmdb_trending_weekly: 40
+    sort_title: "#1Trending"
+    sync_mode: sync
+    smart_label: added.desc
+    summary: Movies Trending across the internet
+    url_background: https://i.imgur.com/SOVfrIq.png
+    url_poster: https://i.imgur.com/KRKRjWT.jpg
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  Top Rated Movies:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
+    tmdb_top_rated: 250
+    sort_title: "#2Top Rated"
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    summary: IMDb Top Rated Movies
+    url_background: https://i.imgur.com/b26VZ9y.jpg
+    url_poster: https://i.imgur.com/4izKiv7.jpg
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  4K Overlay:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    item_overlay:
+      name: 4K
+      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
+    build_collection: false
+  4K-HDR Overlay:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    item_overlay:
+      name: 4K-HDR
+      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K-HDR/overlay.png
+    build_collection: false
