@@ -49,6 +49,11 @@ settings: # Can be individually specified per library as well
   ignore_imdb_ids:
   playlist_sync_to_user: all
   verify_ssl: true
+webhooks: # If you do not use webhooks remove this from the config
+  error: notifiarr
+  run_start: notifiarr
+  run_end: notifiarr
+  changes: notifiarr
 plex: # Can be individually specified per library as well; REQUIRED for the script to run
   url: http://192.168.1.2:32400/
   token: #####################
@@ -63,6 +68,8 @@ tautulli: # Can be individually specified per library as well
   url: http://192.168.1.2:8181/
   apikey: #####################
 omdb:
+  apikey: #####################
+notifiarr: # If you do not use webhooks remove this from the config
   apikey: #####################
 anidb: # Not required for AniDB builders unless you want mature content
   username: 
