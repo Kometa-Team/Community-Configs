@@ -1,21 +1,19 @@
 collections:
-  Lo mejor del año DDC (2010-):
+  Lo mejor del ano DDC (2010-):
     imdb_list: https://www.imdb.com/list/ls027905928
   Criterion Collection:
     imdb_list: https://www.imdb.com/search/title/?lists=ls090936109
   Masters of cinema:
     imdb_list: https://www.imdb.com/list/ls090961611
-  Películas más taquilleras por año:
+  Peliculas mas taquilleras:
     imdb_list: https://www.imdb.com/list/ls090455617
     sync_mode: sync
   IMDB TOP250:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
     sync_mode: sync
-    schedule: daily
-    run_again: true
   Festival de Sitges:
     imdb_list: https://www.imdb.com/list/ls020399290/
-  Premio Ariel - México:
+  Premio Ariel - Mexico:
     imdb_list: https://www.imdb.com/list/ls027901570/
   Festival de Venecia:
     imdb_list: https://www.imdb.com/list/ls083130292/
@@ -33,7 +31,7 @@ collections:
     imdb_list: https://www.imdb.com/list/ls027955354/
   Premio BAFTA - UK:
     imdb_list: https://www.imdb.com/list/ls023087044/
-  Premio Goya - España:
+  Premio Goya - Espana:
     imdb_list: https://www.imdb.com/list/ls027907877/
   Nordic Council Film Prize:
     imdb_list: https://www.imdb.com/list/ls025480301/
@@ -41,7 +39,7 @@ collections:
     imdb_list: https://www.imdb.com/list/ls066638856/
   European Film Award:
     imdb_list: https://www.imdb.com/list/ls091295777/
-  Premio Saturn Ciencia Ficción:
+  Premio Saturn Ciencia Ficcion:
     imdb_list: https://www.imdb.com/list/ls023137452/
   Premio Academia Brasilera:
     imdb_list: https://www.imdb.com/list/ls090455772/
@@ -52,16 +50,16 @@ collections:
   Asian Film Award:
     imdb_list: https://www.imdb.com/list/ls027950956/
   Festival de Annecy:
-    imdb_list: https://www.imdb.com/list/ls023061142/
+    imdb_list: https://www.imdb.com/list/ls505176189/
   Oscar MejorPelicula (Ganadores):
     imdb_list: https://www.imdb.com/list/ls023154823/?sort=list_order,desc
   Oscar Mejor Documental (1990-):
     imdb_list: https://www.imdb.com/list/ls023154831/?sort=list_order,desc
-  Oscar Mejor Guión:
+  Oscar al Mejor Guion:
     imdb_list: https://www.imdb.com/list/ls027955396/?sort=list_order,desc
   Oscar MejorPelicula (Nominados):
     imdb_list: https://www.imdb.com/list/ls023764240/?sort=list_order,desc
-  Oscar Mejor Película Animada:
+  Oscar Mejor Pelicula Animada:
     imdb_list: https://www.imdb.com/list/ls023130861/?sort=list_order,desc
   Oscar Nominados 2021:
     imdb_list: https://www.imdb.com/list/ls088030476/?sort=list_order,desc
@@ -71,15 +69,17 @@ collections:
     imdb_list: https://www.imdb.com/list/ls041854652/?sort=list_order,desc
   Oscar Nominados 2018:
     imdb_list: https://www.imdb.com/list/ls021323514/?sort=list_order,desc
-  Oscar Mejor Película en habla no inglésa:
-    imdb_list: https://www.imdb.com/list/ls051677536/?sort=list_order,desc
+  Oscar Mejor Pelicula Internacional:
+    imdb_list: https://www.imdb.com/list/ls500065417/?sort=list_order,desc
+  Oscar Mejor Fotografia:
+    imdb_list: https://www.imdb.com/list/ls503449482/?sort=list_order,desc
   Cine de los 40s - Taschen:
     imdb_list: https://www.imdb.com/list/ls027483912/
   1001 Movies You Must See Before You Die - Taschen:
     imdb_list: https://www.imdb.com/search/title/?lists=ls023216066
   101 Action Movies You Must See Before You Die - Taschen:
     imdb_list: https://www.imdb.com/list/ls023853367/
-  100 Clásicos del siglo XX - Taschen:
+  100 Clasicos del siglo XX (Taschen):
     imdb_list: https://www.imdb.com/list/ls061947605/
   101 Gangster Movies You Must See Before You Die - Taschen:
     imdb_list: https://www.imdb.com/list/ls023853622/
@@ -113,3 +113,14 @@ collections:
     imdb_list: https://www.imdb.com/list/ls027483775/
   Cine de los 20s - Taschen:
     imdb_list: https://www.imdb.com/list/ls027481496/
+  Universo de Peliculas Animadas de DC (DCAMU):
+    imdb_list: https://www.imdb.com/list/ls085087913/
+  DC Universe Animated Original Movies:
+    imdb_list: https://www.imdb.com/list/ls085085810/
+  Universo cinematografico de Marvel:
+    imdb_list: https://www.imdb.com/list/ls042924161/
+  Universo extendido de DC:
+    imdb_list: https://www.imdb.com/list/ls500069035/
+  Cine de los 2010s:
+    imdb_list: https://www.imdb.com/list/ls500373998/
+    sync_mode: sync
