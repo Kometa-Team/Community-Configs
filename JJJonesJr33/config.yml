@@ -8,9 +8,15 @@ libraries: # Library mappings must have a colon (:) placed after them
   Movies: # Must match you library that is shown within plex
     metadata_path:
       - file: config/Movies.yml
+  Movies 4K: # Must match you library that is shown within plex
+    metadata_path:
+      - file: config/Movies 4K.yml
   TV Shows: # Must match you library that is shown within plex
     metadata_path:
       - file: config/TV Shows.yml
+  TV Shows 4K: # Must match you library that is shown within plex
+    metadata_path:
+      - file: config/TV Shows 4K.yml
   Anime: # Must match you library that is shown within plex
     metadata_path:
       - file: config/Anime.yml
