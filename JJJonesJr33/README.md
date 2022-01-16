@@ -13,7 +13,10 @@ Movie Collections Preview: <br>
 ![Movies](Movies.png)
 <br>
 TV Shows Collections Preview: <br>
-![TV Shows](TV.png)
+![TV Shows](TV.png)<br>
+4K Movie Collections With Overlays Preview: <br>
+![4K Movies with overlays](4K-Movies.png)
+<br>
 
 Special thanks to the users and their configs that I drew inspiration from
 "Hiren-Z, OhMyBahGosh, djnield, Glasti1, tuxpeople" 
