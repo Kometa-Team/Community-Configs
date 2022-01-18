@@ -49,15 +49,6 @@ collections:
     template: {name: Genre, genre: animation}
   Biography:
     template: {name: Genre, genre: biography}
-  Christmas:
-  template: {name: Other Genre}
-    imdb_list:
-      - https://www.imdb.com/list/ls025976544/
-      - https://www.imdb.com/list/ls003863000/
-      - https://www.imdb.com/list/ls027454200/
-      - https://www.imdb.com/list/ls027886673/
-      - https://www.imdb.com/list/ls097998599/
-      - https://www.imdb.com/list/ls000096828/
   Comedy:
     template: {name: Genre, genre: comedy}
   Crime:
@@ -75,14 +66,6 @@ collections:
     imdb_list:
       - https://www.imdb.com/list/ls026270180/
       - https://www.imdb.com/list/ls000093502/
-  Halloween.:
-    template: {name: Other Genre}
-    trakt_list:
-      - https://trakt.tv/users/kairbear08/lists/halloween
-      - https://trakt.tv/users/mybicycle/lists/halloween
-      - https://trakt.tv/users/jayinftl/lists/halloween
-      - https://trakt.tv/users/roswellgeek/lists/halloween
-    name_mapping: Halloween (Season)
   History:
     template: {name: Genre, genre: history}
   Horror:
