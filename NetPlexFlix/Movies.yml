@@ -1,0 +1,145 @@
+######################################################
+#                                                    #
+#   / | / /__  / /_/ __ \/ /__  _  __/ ____/ (_)  __ #
+#  /  |/ / _ \/ __/ /_/ / / _ \| |/_/ /_  / / / |/_/ #
+# / /|  /  __/ /_/ ____/ /  __/>  </ __/ / / />  <   #
+#/_/ |_/\___/\__/_/   /_/\___/_/|_/_/   /_/_/_/|_|   #
+#         Plex Meta Manager Movie.yml Config         #
+#                                                    #
+######################################################
+#                    TEMPLATES                       #
+######################################################
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    smart_label: added.desc
+  Best of:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
+    sort_title: +1_Best of <<year>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Highest rated Movies of <<year>>
+    smart_label: audience_rating.desc
+######################################################
+#                    COLLECTIONS                     #
+######################################################
+collections:
+######################################################
+#                      BEST OF                       #
+######################################################
+  Trending Movies  :
+    template: { name: Chart, num: 2 }
+    trakt_trending: 15
+    tmdb_trending_daily: 15
+    tmdb_trending_weekly: 15
+    summary: Movies Trending now
+    sync_mode: sync
+  Popular Movies:
+    template: { name: Chart, num: 3 }
+    tmdb_popular: 40
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
+      limit: 40
+    summary: Popular Movies now
+    sync_mode: sync
+  Best of 2021:
+    template: { name: Best of, year: 2021 }
+  IMDb Best Recent:
+    smart_label: release.desc
+    sync_mode: sync
+    summary: Movies rated 7 or higher on IMDb, released in the past 6 months.
+    sort_title: '+1_4 IMDb Best Rated'
+    collection_mode: default
+    plex_search:
+      audience_rating.gte: 7.0
+      release: 180
+  IMDB Top 250:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc
+    summary: Movies that are in IMDB's Top 250 Movies of all time list
+    sort_title: '+2 IMDB'
+    collection_order: release
+    collection_mode: default
+  Oscars Best Picture Winners:
+    sort_title: '+2 Oscars Best Picture Winners'
+    trakt_list: https://trakt.tv/users/pjcob/lists/1970-2021-oscars-best-picture-winners?sort=rank,asc
+######################################################
+#                      THEMES                        #
+######################################################
+  Based on True Events:
+    smart_label: originally_available.desc
+    trakt_list: https://trakt.tv/users/manu101/lists/based-inspired-on-actual-events
+    summary: Movies based on true events.
+    sort_title: '+2 Based on true events'
+  Chick Flicks:
+    trakt_list: 
+      - https://trakt.tv/users/29zombies/lists/romantic-comedies
+      - https://trakt.tv/users/yirmaster/lists/chick-flicks
+    summary: Get in touch with your feminine side.
+    sort_title: '+2 Chick Flicks'
+    collection_order: alpha
+    collection_mode: default
+  Heist Movies:
+    imdb_list:
+      - https://www.imdb.com/list/ls068224634/
+      - https://www.imdb.com/list/ls009794682/
+    summary: Movies detailing the preparation for, execution of and aftermath of a (well-)planned and often daring heist.
+    sort_title: '+2 Heist'
+    collection_order: alpha
+    collection_mode: default
+  Member Berries:
+    smart_label: release.desc
+    trakt_list: https://trakt.tv/users/netplexflix/lists/member-berries
+    summary: Member Berry movies are movies that contain a lot of call backs or easter eggs to previous movies in the franchise or related franchises. Often franchise reboots.
+    sort_title: '+2 Member Berries'
+    sync_mode: sync
+  Mindfuck Movies:
+    smart_label: title.asc
+    trakt_list: https://trakt.tv/users/benfranklin/lists/best-mindfucks
+    summary: Movies that play with your mind, confuse you, and leads you on. Plot twists or surreal storylines.
+    sort_title: '+2 Mindfuck'
+  Quick Flicks:
+    smart_label: release.desc
+    summary: Movies 90 minutes or less.
+    sort_title: '+2 Quick Flicks'
+    collection_mode: default
+    plex_search:
+      duration.lte: 90
+      genre.not: Animation
+  Time Travel:
+    smart_label: title.asc
+    trakt_list: https://trakt.tv/users/vagnerr/lists/time-travel
+    summary: Film/show contains time-travel. In any form. Be it time-loop, full on relocation in time, consciousness transfer...
+    sort_title: '+2 Time Travel'
+######################################################
+#                    FRANCHISES                      #
+######################################################
+  A24 Movies:
+    trakt_list: https://trakt.tv/users/fidel-cb/lists/a24-movies-and-tv-shows?sort=released,asc
+    summary: Movies produced by A24. Usually indicative of quality content.
+    sort_title: '+2 A24'
+    collection_order: release
+    collection_mode: default
+  DC Extended Universe:
+    imdb_list: https://www.imdb.com/list/ls021326258/
+    summary: A collection of all DC movies.
+    sort_title: 'DC'
+    collection_order: release
+    collection_mode: default
+  Disney Movies:
+    imdb_list: https://www.imdb.com/search/title/?companies=co0074039
+    summary: A collection of all Disney movies.
+    sort_title: 'Disney Movies'
+    collection_order: release
+    collection_mode: default
+  Marvel Cinematic Universe:
+    imdb_list: https://www.imdb.com/list/ls000024621/
+    summary: A collection of all MCU movies.
+    sort_title: 'MCU'
+    collection_order: release
+    collection_mode: default
+  Pixar Movies:
+    trakt_list: https://trakt.tv/users/pelezi/lists/pixar-movies-and-shorts?sort=released,asc
+    summary: A collection of all Pixar movies.
+    sort_title: 'Pixar Movies'
+    collection_order: release
+    collection_mode: default
