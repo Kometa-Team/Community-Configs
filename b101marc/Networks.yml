@@ -1,0 +1,105 @@
+templates:
+  network:
+    optional:
+      - network
+    tmdb_network: <<network>>
+    sort_title: +2_<<collection_name>>
+    sync_mode: sync
+    smart_label: episode_added.desc
+collections:
+  HBO:
+    template: { name: network, network: "49, 2593, 3186, 3308" }
+  Cinemax:
+    template: { name: network, network: 359 }
+  Showtime:
+    template: { name: network, network: 67 }
+  Netflix:
+    template: { name: network, network: 213 }
+  Hulu:
+    template: { name: network, network: 453 }
+  Syfy:
+    template: { name: network, network: "77, 3701" }
+  Starz:
+    template: { name: network, network: "318, 758, 4906" }
+  HGTV:
+    template: { name: network, network: 210 }
+  TBS:
+    template: { name: network, network: "68, 160, 4888" }
+  National Geographic:
+    template: { name: network, network: "43, 799, 1756, 1825, 3355, 4293, 4476" }
+  Prime Video:
+    template: { name: network, network: 1024 }
+  YouTube:
+    template: { name: network, network: "247, 1436, 4869" }
+  FX:
+    template: { name: network, network: 88 }
+  Disney+:
+    template: { name: network, network: "2739, 2919" }
+  Apple+:
+    template: { name: network, network: 2552 }
+  Discovery:
+    template: { name: network, network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741" }
+  A&E:
+    template: { name: network, network: "129, 2639, 3688" }
+  Bravo:
+    template: { name: network, network: 74 }
+  E!:
+    template: { name: network, network: 76 }
+  Adult Swim:
+    template: { name: network, network: 80 }
+  ESPN:
+    template: { name: network, network: "29, 70, 4132" }
+  USA Network:
+    template: { name: network, network: 30 }
+  TBS:
+    template: { name: network, network: 68 }
+  TNT:
+    template: { name: network, network: 41 }
+  Disney XD:
+    template: { name: network, network: 44 }   
+  BBC:
+    template: { name: network, network: "3, 4, 493, 332" }
+  Paramount+:
+    template: { name: network, network: 4330 }
+  Nickleodeon:
+    template: { name: network, network: "13, 259, 35" }
+  PBS:
+    template: { name: network, network: 14 }
+  CBS:
+    template: { name: network, network: 16}
+  MTV:
+    template: { name: network, network: "33, 17" }
+  Fox:
+    template: { name: network, network: "19, 2686" }
+  WB:
+    template: { name: network, network: 21 }
+  CBC:
+    template: { name: network, network: 23 }
+  BET:
+    template: { name: network, network: 24 }
+  Channel 4:
+    template: { name: network, network: 26 }
+  UPN:
+    template: { name: network, network: 40 }
+  YTV:
+    template: { name: network, network: 46 }
+  Comedy Central:
+    template: { name: network, network: 47 }
+  Cartoon Network:
+    template: { name: network, network: 56 }
+  OutTV:
+    template: { name: network, network: 61 }
+  Shudder:
+    template: { name: network, network: 2949 }
+ The CW:
+   template: { name: network, network: 71 }
+  ABC:
+    template: { name: network, network: "2, 75" } 
+  FX:
+    template: { name: network, network: "88, 1035" }
+  TV Asahi:
+    template: { name: network, network: 103 }
+  IFC:
+    template: { name: network, network: 124 }
+  
+  

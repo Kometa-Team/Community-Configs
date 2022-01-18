@@ -1,0 +1,199 @@
+######################################################
+#                Genre Collections                   #
+######################################################
+templates:
+  IMDb Genre:
+    default:
+      title: feature
+      limit: 100
+    imdb_list:
+      - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1920-01-01,&user_rating=7.0,10.0&num_votes=1000,&genres=<<genre>>
+        limit: <<limit>>
+      - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1920-01-01,&user_rating=7.0,10.0&num_votes=1000,&genres=<<genre>>&sort=user_rating,desc
+        limit: <<limit>>
+    sort_title: +4_<<collection_name>>
+    sync_mode: sync
+    smart_label: random
+  Genre:
+    sort_title: +4_<<collection_name>>
+    plex_search:
+      genre: <<genre>>  
+      critic_rating.gte: 7 
+      limit: 1000
+    sync_mode: sync
+    smart_label: random
+  Other Genre:
+    plex_search:
+      critic_rating.gte: 7 
+      limit: 1000
+    sort_title: +4_<<collection_name>>
+    sync_mode: sync
+    smart_label: random
+  Genre 2:
+    plex_search:
+      genre.and: <<genre>>  
+      critic_rating.gte: 7 
+      limit: 1000 
+    sort_title: +4_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+
+collections:
+  Action:
+    template: {name: Genre, genre: action}
+  Adult:
+    template: {name: Genre, genre: adult}
+  Adventure:
+    template: {name: Genre, genre: adventure}
+  Animation:
+    template: {name: Genre, genre: animation}
+  Biography:
+    template: {name: Genre, genre: biography}
+  Comedy:
+    template: {name: Genre, genre: comedy}
+  Crime:
+    template: {name: Genre, genre: crime}
+  Documentary:
+    template: {name: Genre, genre: documentary, title: documentary}
+  Drama:
+    template: {name: Genre, genre: drama}
+  Family:
+    template: {name: Genre, genre: family}
+  Fantasy:
+    template: {name: Genre, genre: fantasy}
+  Gangster:
+    template: {name: Other Genre}
+    imdb_list:
+      - https://www.imdb.com/list/ls026270180/
+      - https://www.imdb.com/list/ls000093502/
+  History:
+    template: {name: Genre, genre: history}
+  Horror:
+    template: {name: Genre, genre: horror}
+  Martial Arts:
+    template: {name: Other Genre}
+    imdb_list:
+      - https://www.imdb.com/list/ls000099643/
+      - https://www.imdb.com/list/ls068611186/
+      - https://www.imdb.com/list/ls068378513/
+      - https://www.imdb.com/list/ls090404120/
+  Musical:
+    template: {name: Genre, genre: musical}
+  Mystery:
+    template: {name: Genre, genre: mystery}
+  Non-Fiction:
+    template: {name: Genre, genre: non-fiction}
+  Pandemic:
+    template: { name: Other Genre }
+    imdb_list:
+      - url: https://www.imdb.com/search/keyword/?keywords=deadly-virus%2Chealth-crisis%2Cpandemic%2Cpublic-health-epidemic%2Cvirus%2Ccoronavirus&sort=moviemeter,asc&mode=detail&page=1&ref_=kw_ref_key
+        limit: 1000
+      - url: https://www.imdb.com/list/ls041901506/
+      - url: https://www.imdb.com/list/ls092321048/
+  Romance:
+    template: {name: Genre, genre: romance}
+  Romantic Comedy:
+    template: { name: IMDb Genre, genre: "romance,comedy", limit: 1000 }
+    filters:
+      genre: Comedy
+  Romantic Drama:
+    template: { name: IMDb Genre, genre: "romance,drama", limit: 1000 }
+    filters:
+      genre: Drama
+  Sci-Fi:
+    template: {name: Genre, genre: sci-fi}
+  Sports:
+    template: {name: Genre, genre: sport}
+  Thriller:
+    template: {name: Genre, genre: thriller}
+  War:
+    template: {name: Genre, genre: war}
+  Western:
+    template: {name: Genre, genre: western}
+  Shorts:
+    template: {name: Genre, genre: short}
+  Queer:
+    trakt_list:
+    - https://trakt.tv/users/outtherek/lists/queer
+    - https://trakt.tv/users/igiorgis/lists/lgbt-lesbian-gay-bisexual-transgender-movies-tv-shows-the-biggest-list-on-trakt
+    imdb_list:
+    - https://www.imdb.com/list/ls062688328/
+    - https://www.imdb.com/list/ls81657710/
+    - https://www.imdb.com/list/ls006306218/
+    sort_title: +++_Queer
+    sync_mode: append
+    collection_order: release
+  New Queer Cinema:
+    imdb_list: https://www.imdb.com/list/ls006306218/
+    sort_title: +++_New Queer Cinema
+    sync_mode: append
+    collection_order: release
+  Sports Documentaries:
+    template: {name: Genre 2, genre: "sport,documentary"}
+    summary: Sports Documentaries rated 70% and above on Rotten Tomatoes
+  Mind Fuck Movies:
+    template: {name: Other Genre}
+    trakt_list:
+    - https://trakt.tv/users/lish408/lists/mindfuck
+    - https://trakt.tv/users/hdlists/lists/mindfuck-movies
+    - https://trakt.tv/users/benfranklin/lists/best-mindfucks
+  Camp!:
+    template: {name: Other Genre}
+    imdb_list: https://www.imdb.com/list/ls002915233/
+  Blaxploitation:
+    template: {name: Other Genre}
+    imdb_list: https://www.imdb.com/list/ls066690694/
+  Slasher:
+    template: {name: Other Genre}
+    imdb_list: 
+    - https://www.imdb.com/list/ls053988992/
+    - https://www.imdb.com/list/ls029703473/
+    - https://www.imdb.com/list/ls002540370/
+    - https://www.imdb.com/list/ls062357250/
+    trakt_list:
+    - https://trakt.tv/users/hdlists/lists/80s-slasher-movies
+  Psychedelic:
+    template: {name: Other Genre}
+    imdb_list:
+    - https://www.imdb.com/list/ls085976350/
+    trakt_list:
+    - https://trakt.tv/users/ld667/lists/top-150-trippy-psychedelic-movies-of-all-time
+  Time Travel:
+    template: {name: Other Genre}
+    trakt_list: https://trakt.tv/users/vagnerr/lists/time-travel
+  Dystopian:
+    template: {name: Other Genre}
+    trakt_list: https://trakt.tv/users/vagnerr/lists/dystopia
+  Mockumentaries:
+    template: {name: Other Genre}
+    imdb_list:
+    - https://www.imdb.com/list/ls027069047/
+    - https://www.imdb.com/list/ls027792245/
+    - https://www.imdb.com/list/ls052636068/
+    - https://www.imdb.com/list/ls063550121/
+  Based On A True Story:
+    template: {name: Other Genre}
+    trakt_list: https://trakt.tv/users/hdlists/lists/based-on-or-inspired-by-a-true-story
+  TV Movies:
+    template: {name: Genre, genre: tv movies}
+  Music:
+    template: {name: IMDb Genre, genre: music, limit: 500}
+  Black Cinema:
+    template: {name: Other Genre}
+    trakt_list:
+    - https://trakt.tv/users/bluephi8/lists/black-history
+    - https://trakt.tv/users/wilkin25/lists/great-documentaries-black-history-copy
+    - https://trakt.tv/users/hoochzilla/lists/black-cinema
+    - https://trakt.tv/users/cinematicthrowbacks/lists/great-documentaries-black-history
+    - https://trakt.tv/users/oshura/lists/african-american-history-education
+  American History:
+    template: {name: Other Genre}
+    trakt_list: https://trakt.tv/users/snown/lists/american-history-in-film
+  Art History:
+    template: {name: Other Genre}
+    trakt_list:
+    - https://trakt.tv/users/martachilegge/lists/art
+    imdb_list:
+    - https://www.imdb.com/list/ls024857225/
+    - https://www.imdb.com/list/ls000652120/
+    - https://www.imdb.com/list/ls059904656/

@@ -1,0 +1,65 @@
+
+######################################################
+#                Chart Collections                   #
+######################################################
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    smart_label: random
+  Best of:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
+    sort_title: +1_Best of <<year>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of <<year>>
+    smart_label: audience_rating.desc
+collections:
+  Plex Popular:
+    template: { name: Chart, num: 1 }
+    tautulli_popular:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    tautulli_watched:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    summary: Movies Popular on Plex
+  Trending:
+    template: { name: Chart, num: 2 }
+    trakt_trending: 10
+    tmdb_trending_daily: 10
+    tmdb_trending_weekly: 10
+    summary: Movies Trending across the internet
+  Popular:
+    template: { name: Chart, num: 3 }
+    tmdb_popular: 40
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
+      limit: 40
+    summary: Popular Movies across the internet
+  Top Rated:
+    template: { name: Chart, num: 4 }
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250/
+    tmdb_top_rated: 250
+    summary: Top Rated Movies across the internet
+  Oscars:
+    template: { name: Chart, num: 5 }
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    summary: Oscar Winning Movies
+  Best of 2014:
+    template: { name: Best of, year: 2014 }
+  Best of 2015:
+    template: { name: Best of, year: 2015 }
+  Best of 2016:
+    template: { name: Best of, year: 2016 }
+  Best of 2017:
+    template: { name: Best of, year: 2017 }
+  Best of 2018:
+    template: { name: Best of, year: 2018 }
+  Best of 2019:
+    template: { name: Best of, year: 2019 }
+  Best of 2020:
+    template: { name: Best of, year: 2020 }
+  Best of 2021:
+    template: { name: Best of, year: 2021 }

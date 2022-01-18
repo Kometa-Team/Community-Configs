@@ -1,0 +1,54 @@
+###########################################################
+#                Essentials Collections                   #
+###########################################################
+templates: 
+  Essentials:
+    sort_title: +2_Rotten Tomatoes - <<num>><<collection_name>>
+    smart_label: random
+    sync_mode: sync
+  Other Essentials:
+    sort_title: +3_<<num>><<collectionsm_name>>
+    smart_label: random
+    sync_mode: sync
+    
+collections:
+  Rotten Tomatoes - 200 Best Romantic Comedies:
+    template: { name: Essentials, num: 1}
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
+    sync_mode: sync
+    collection_order: release
+  Rotten Tomatoes - 200 Best Horror Movies:
+    template: { name: Essentials, num: 2}
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time
+    sync_mode: sync
+    collection_order: release
+  Rotten Tomatoes - Essential 80's:
+    template: { name: Essentials, num: 3}
+    trakt_list: https://trakt.tv/users/tkcrabtree/lists/rotten-tomatoes-140-essential-80s-movies
+    sync_mode: sync
+    collection_order: release
+  Rotten Tomatoes - Essential Sci-Fi:
+    template: { name: Essentials, num: 4}
+    trakt_list: https://trakt.tv/users/ezaratemx/lists/rotten-tomatoes-150-essential-sci-fi-movies
+    sync_mode: sync
+  Rotten Tomatoes - Essential Family Films:
+    template: { name: Essentials, num: 5}
+    trakt_list: https://trakt.tv/users/giladg/lists/rotten-tomatoes-top-100-kids-family-movies
+    sync_mode: sync
+  Rotten Tomatoes - Essential Grindhouse:
+    template: { name: Essentials, num: 6}
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/the-deuce-top-20
+    sync_mode: append
+  1001 Movies to See Before you Die:
+    trakt_list: https://trakt.tv/users/tkcrabtree/lists/1001-movies-you-must-see-before-you-die-copy
+    template: { name: Other Essentials, num: 1} 
+  90's Cult Classics:
+    template: { name: Other Essentials, num: 3}
+    imdb_list: https://www.imdb.com/list/ls002348409/
+    sync_mode: append
+  80's Cult Classics:
+    trakt_list: https://trakt.tv/users/zyrus/lists/80s-classics
+    template: { name: Other Essentials, num: 2}
+  Sundance Film Festival 2021: 
+    trakt_list: https://trakt.tv/users/hdlists/lists/sundance-2021-movie-guide
+    template: { name: Other Essentials, num: 4}

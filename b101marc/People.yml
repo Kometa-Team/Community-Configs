@@ -1,0 +1,121 @@
+######################################################
+#                People Collections                  #
+######################################################
+
+templates:
+  Person:
+    smart_filter:
+      any:
+        actor: tmdb
+        director: tmdb
+        writer: tmdb
+        producer: tmdb
+      sort_by: random
+      validate: false
+    tmdb_person: <<person>>
+    sort_title: +6_<<collection_name>>
+
+collections:
+  Cheryl Dunye:
+    template: {name: Person, person: 232937}
+  Kevin Smith:
+    template: {name: Person, person: 19303}
+  Quentin Tarantino:
+    template: {name: Person, person: 138}
+  John Waters:
+    template: {name: Person, person: 10367}
+  Martin Scorsese:
+    template: {name: Person, person: 1032}
+  Steven Spielberg:
+    template: {name: Person, person: 488}
+  George Lucas:
+    template: {name: Person, person: 1}
+  Nora Ephron:
+    template: {name: Person, person: 9248}
+  Robert Zemeckis:
+    template: {name: Person, person: 24}
+  Steven Soderbergh:
+    template: {name: Person, person: 1884}
+  James Cameron:
+    template: {name: Person, person: 2710}
+  Ryan Coogler:
+    template: {name: Person, person: 1056121}
+  Spike Lee:
+    template: {name: Person, person: 388}
+  Christopher Nolan:
+    template: {name: Person, person: 525}
+  Gus Van Sant:
+    template: {name: Person, person: 5216}
+  Ang Lee:
+    template: {name: Person, person: 1614}
+  Darren Aronofsky:
+    template: {name: Person, person: 44214}
+  Alfred Hitchcock:
+    template: {name: Person, person: 2636}
+  Bruce Lee:
+    template: {name: Person, person: 12429}
+  Carrie Fisher:
+    template: {name: Person, person: 4}
+  Coen Brothers:
+    template: {name: Person, person: "1223,1224"}
+    summary: "Joel Coen and Ethan Coen, collectively referred to as the Coen Brothers, are American film directors, producers, screenwriters, and editors. Their films span many genres and styles, which they frequently subvert or parody. Their most acclaimed works include: Raising Arizona (1987), Miller's Crossing (1990), Fargo (1996), The Big Lebowski (1998), O Brother, Where Art Thou? (2000), No Country for Old Men (2007), Burn After Reading (2008), A Serious Man (2009), True Grit (2010), Inside Llewyn Davis (2013), and The Ballad of Buster Scruggs (2018)."
+  Hayao Miyazaki:
+    template: {name: Person, person: 608}
+  J.J. Abrams:
+    template: {name: Person, person: 15344}
+  Mel Brooks:
+    template: {name: Person, person: 14639}
+  Ridley Scott:
+    template: {name: Person, person: 578}
+  Stanley Kubrick:
+    template: {name: Person, person: 240}
+  Robin Williams:
+    template: {name: Person, person: 2157}
+  Tim Burton:
+    template: {name: Person, person: 510}
+  Greta Gerwig:
+    template: {name: Person, person: 45400}
+  Saorsie Ronan:
+    template: {name: Person, person: 36592}
+  Aaron Sorkin:
+    template: {name: Person, person: 13520}
+  Barry Jenkins:
+    template: {name: Person, person: 92784}
+  Chadwick Boseman:
+    template: {name: Person, person: 172069}
+  Taika Waititi:
+    template: {name: Person, person: 55934}
+  Wes Craven:
+    template: {name: Person, person: 5140}
+  George A. Romero:
+    template: {name: Person, person: 14999}
+  Diane Keaton:
+    template: {name: Person, person: 3092}
+  Elliot Page:
+    template: {name: Person, person: 27578}
+  Ian McKellen:
+    template: {name: Person, person: 1327}
+  Jackie Chan:
+    template: {name: Person, person: 18896}
+  James Franco:
+    template: {name: Person, person: 17051}
+  Jeff Goldblum:
+    template: {name: Person, person: 4785}
+  Jim Carrey:
+    template: {name: Person, person: 206}
+  Julia Roberts:
+   template: {name: Person, person: 1204}
+  Allison Janney:
+    template: {name: Person, person: 19}
+  Bette Midler:
+    template: {name: Person, person: 73931}
+  Maya Rudolph:
+    template: {name: Person, person: 52792}
+  Amy Poehler:
+    template: {name: Person, person: 56322}
+  Will Smith:
+    template: {name: Person, person: 2888}
+  Viola Davis:
+    template: {name: Person, person: 19492}
+  Don Cheadle:
+    template: {name: Person, person: 1896}
