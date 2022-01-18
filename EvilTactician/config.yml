@@ -1,0 +1,57 @@
+########################################################################
+##                   Plex-Meta-Manager by Evil Tactician              ##
+########################################################################
+
+## This file is a template remove the .template to use the file
+
+libraries: # Library mappings must have a colon (:) placed after them
+  Anime:   # Must match you library that is shown within plex
+    metadata_path:
+      - file: config/Anime.yml
+settings: # Can be individually specified per library as well
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: false
+  asset_depth: 0
+  create_asset_folders: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order: alpha
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_filtered: false
+  show_options: false
+  show_missing: false
+  show_missing_assets: false
+  save_missing: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  playlist_sync_to_user:
+  verify_ssl: true
+plex: # REQUIRED - see https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Attributes
+  url: 
+  token: 
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+tmdb: # REQUIRED for the script to run - to get a key you must follow https://developers.themoviedb.org/3/getting-started/introduction
+  apikey: 
+  language: en
+mal: # REQUIRED for this config to work - set up by following https://github.com/meisnate12/Plex-Meta-Manager/wiki/MyAnimeList-Attributes
+  client_id: 
+  client_secret: 
+  authorization:
+    access_token: 
+    token_type: 
+    expires_in: 
+    refresh_token: 
