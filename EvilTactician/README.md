@@ -15,8 +15,8 @@ I am going to assume you've followed the guides for installing [Plex Meta Manage
 
 ## config.yml
 
-You can either use my ```config.yml```, or you can use it as a cheatsheet for the elements you need in your own.
-Note that mine only contains the sections required for Anime Collections to work.
+You can either use my ```config.yml```, or you can use it as a cheatsheet for the elements you need in your own.<br>
+Note that mine only contains the sections required for Anime Collections to work.<br>
 Don't forget to configure the ```plex:```, ```tmbd:``` and ```mal:``` sections with your details and API keys. There are links in the file to guides for those.
 
 ## Anime.yml
@@ -33,7 +33,7 @@ templates:
     sync_mode: sync
 ```
 
-The above is the template for the Genre Collections.
+The above is the template for the Genre Collections.<br>
 If you wish to change the ```collection_mode```, ```collection_order``` or ```sync_mode```, please do so here. It will apply to all Genre Collections.
 
 ```yaml
@@ -58,8 +58,8 @@ The above is the template for the MAL "Plan to Watch" Collections below.
     template: { name: MAL User, username: Username2 }
 ```
 
-Above is where you specify collections for individual users, based on their MAL profile's "Plan to Watch" list.
-Replace ```Collection1:``` with whatever you want the Collection to be called in Plex.
+Above is where you specify collections for individual users, based on their MAL profile's "Plan to Watch" list.<br>
+Replace ```Collection1:``` with whatever you want the Collection to be called in Plex.<br>
 Replace ```Username1``` with the exact username of the MAL profile you wish to use.
 
 Repeat for as many users as you want - just copy and paste more entries.
@@ -107,8 +107,8 @@ Press ```CTRL-C``` if you want it to stop before it finishes.
 For me it takes approximately 16 minutes.
 
 ## Special Thanks
-JJJonesJr33 - Original Base Anime.yml & Feedback
-Fribb - Creator of https://github.com/Fribb/anime-lists, helped me track down some mapping issues
+JJJonesJr33 - Original Base Anime.yml & Feedback<br>
+Fribb - Creator of https://github.com/Fribb/anime-lists, helped me track down some mapping issues<br>
 Sohjiro - Creator of Plex Meta Manager
 
 There was quite a bit of work involved in this - and you're welcome to use my assets and templates as you see fit as long as you give credit if you re-distribute them anywhere or include them in another project.
