@@ -44,6 +44,7 @@ collections:
     template: { name: Other Essentials, num: 1} 
   90's Cult Classics:
     template: { name: Other Essentials, num: 3}
+    imdb_list: https://www.imdb.com/list/ls002348409/
     sync_mode: append
   80's Cult Classics:
     trakt_list: https://trakt.tv/users/zyrus/lists/80s-classics
