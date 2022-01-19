@@ -45,7 +45,7 @@ collections:
     sync_mode: sync
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
-    url_poster: 
+    #url_poster:# 
     visible_home: false
     visible_shared: false
     visible_library: true
