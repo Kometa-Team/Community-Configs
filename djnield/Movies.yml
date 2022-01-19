@@ -3,6 +3,7 @@ collections:
   Movie Watchlist:
     trakt_watchlist:
       - me
+    sort_title: "#5Watchlist"
     smart_label: release.desc
     sync_mode: sync
     label: admin
