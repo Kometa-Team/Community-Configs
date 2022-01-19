@@ -5,10 +5,10 @@ Anime Collections based on MAL Genres
 ## Included
 * config.yml
 * Anime.yml
-* Custom Artwork*
-* Photoshop Template*
+* Custom Artwork¹
+* Photoshop Template¹
 
-* Please note that these can only be found on my own repo due to their size: [Evil Tactician's Anime Collections](https://github.com/EvilTactician/Anime-Collections-PMM).
+¹ Please note that these can only be found on my own repo due to their size: [Evil Tactician's Anime Collections](https://github.com/EvilTactician/Anime-Collections-PMM).
 
 Preview: <br>
 ![Anime](Anime.png)
