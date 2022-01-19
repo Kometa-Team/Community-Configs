@@ -41,18 +41,18 @@ collections:
 
   Assassins:
     imdb_list: https://www.imdb.com/search/keyword/?keywords=assassination-attempt&ref_=kw_ref_yr&sort=release_date,desc&mode=detail&page=1&title_type=movie&user_rating=5.0%2C&release_date=2000%2C
-    sort_title: +3Assassins
+    sort_title: ++3Assassins
     sync_mode: sync
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
-    #url_poster:# 
+    url_poster: 
     visible_home: false
     visible_shared: false
     visible_library: true
 
   Bank Heists:
     imdb_list: https://www.imdb.com/search/keyword/?keywords=bank-heist&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=7846868c-8414-4178-8f43-9ad6b2ef0baf&pf_rd_r=KABMDEE6CD6YYD5D74BC&pf_rd_s=center-1&pf_rd_t=15051&pf_rd_i=moka&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&user_rating=5.0%2C&release_date=2000%2C
-    sort_title: +4Bank Heists
+    sort_title: ++4Bank Heists
     sync_mode: sync
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
@@ -63,7 +63,7 @@ collections:
 
   Con Artists:
     imdb_list: https://www.imdb.com/search/keyword/?keywords=con-artist%2Ccon-man&ref_=kw_ref_key&sort=release_date,desc&mode=detail&page=1&title_type=movie&release_date=2000%2C
-    sort_title: +5Con Artists
+    sort_title: ++5Con Artists
     sync_mode: sync
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
@@ -74,7 +74,7 @@ collections:
 
   Disasters:
     imdb_list: https://www.imdb.com/search/keyword/?keywords=disaster%2Cdisaster-film&ref_=kw_ref_yr&sort=release_date,desc&mode=detail&page=1&title_type=movie&release_date=2000%2C
-    sort_title: +6Disasters
+    sort_title: ++6Disasters
     sync_mode: sync
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
@@ -85,7 +85,7 @@ collections:
 
   Espionage:
     imdb_list: https://www.imdb.com/search/title/?title_type=feature&user_rating=5.0,&keywords=espionage,+spy
-    sort_title: +7Espionage
+    sort_title: ++7Espionage
     sync_mode: sync
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
@@ -96,7 +96,7 @@ collections:
 
   Fugitives:
     imdb_list: https://www.imdb.com/search/keyword/?keywords=fugitive%2Con-the-run&ref_=kw_ref_gnr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
-    sort_title: +8Fugitives
+    sort_title: ++8Fugitives
     sync_mode: sync
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
@@ -107,7 +107,7 @@ collections:
 
   Hostage:
     imdb_list: https://www.imdb.com/search/keyword/?keywords=hostage%2Ckidnapping&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=7846868c-8414-4178-8f43-9ad6b2ef0baf&pf_rd_r=SYCM3WS8QAKWHVPE2844&pf_rd_s=center-1&pf_rd_t=15051&pf_rd_i=moka&ref_=kw_ref_typ&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Drama%2CThriller&user_rating=5.0%2C&release_date=2000%2C
-    sort_title: +9Hostage
+    sort_title: ++9Hostage
     sync_mode: sync
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
