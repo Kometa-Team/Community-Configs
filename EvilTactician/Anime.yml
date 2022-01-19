@@ -30,6 +30,19 @@ collections:
     template: { name: MAL User, username: Username1 }
   Collection2: # Replace Username2 with a valid MAL Username
     template: { name: MAL User, username: Username2 }
+  Donghua:
+    collection_order: alpha
+    sync_mode: sync
+    plex_search:
+      all:
+        audio_language: zh
+        title.not: aggretsuko
+  Mobile Suit Gundam:
+    collection_order: alpha
+    sync_mode: sync
+    plex_search:
+      all:
+        title: Gundam    
   Cars:
     template: { name: MAL Genre, genre_id: 3 }
   Demons:
