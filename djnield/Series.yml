@@ -4,10 +4,10 @@ collections:
     smart_label: release.desc
     sync_mode: sync
     schedule: weekly(monday), weekly(wednesday), weekly(saturday)
-    sort_title: "#4Best of British"
+    sort_title: ++5Best of British
     trakt_list: https://trakt.tv/users/extrobet/lists/uk-tv
     summary: UK TV at it's best showcasing Crime, Drama & Thrillers from the last two decades
-    url_poster: https://i.imgur.com/6V59VW7.jpg
+    url_poster: https://i.imgur.com/GMgpeoD.png
     filters:
       plays.lt: 1
     visible_home: true
@@ -18,44 +18,45 @@ collections:
     trakt_watchlist:
       - me
     smart_label: release.desc
+    sort_title: ++4Watchlist
     sync_mode: sync
     label: admin
-    url_poster: https://i.imgur.com/28RussS.jpg
+    url_poster: https://i.imgur.com/wzk0Z14.png
     visible_home: true
     visible_shared: false
     visible_library: false
 
   Trending TV:
     smart_label: release.desc
-    sort_title: "#1Trending TV"
+    sort_title: ++1Trending TV
     sync_mode: sync
     trakt_trending: 40
     summary: Shows Trending across the internet
-    url_poster: https://i.imgur.com/fusp1a2.jpg
+    url_poster: https://i.imgur.com/7BK0hQc.jpg
     visible_home: true
     visible_shared: true
     visible_library: true
 
   Popular TV:
     smart_label: release.desc
-    sort_title: "#2Popular TV"
+    sort_title: ++2Popular TV
     sync_mode: sync
     imdb_list:
       url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
       limit: 40
     summary: Popular Shows across the internet
-    url_poster: https://i.imgur.com/0jOvpQm.jpg
+    url_poster: https://i.imgur.com/bKmklIg.jpg
     visible_home: false
     visible_shared: false
     visible_library: true
 
   Top Rated TV:
     smart_label: user_rating.desc
-    sort_title: "#3Top Rated TV"
+    sort_title: ++3Top Rated TV
     sync_mode: sync
     imdb_list:
       url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc
       limit: 100
     tmdb_top_rated: 100
     summary: Top Rated Shows across the internet
-    url_poster: https://i.imgur.com/Ja997V8.jpg
+    url_poster: https://i.imgur.com/Iz12exR.jpg

@@ -3,24 +3,25 @@ collections:
   Movie Watchlist:
     trakt_watchlist:
       - me
+    sort_title: ++3Watchlist
     smart_label: release.desc
     sync_mode: sync
     label: admin
     visible_home: true
     visible_shared: false
     visible_library: false
-    url_poster: https://i.imgur.com/xRfaqAD.jpg
+    url_poster: https://i.imgur.com/wzk0Z14.png
 
   Trending Movies:
     trakt_trending: 40
     tmdb_trending_daily: 40
     tmdb_trending_weekly: 40
-    sort_title: "#1Trending"
+    sort_title: ++1Trending
     sync_mode: sync
     smart_label: added.desc
     summary: Movies Trending across the internet
     url_background: https://i.imgur.com/SOVfrIq.png
-    url_poster: https://i.imgur.com/KRKRjWT.jpg
+    url_poster: https://i.imgur.com/CIGHGv0.jpg
     visible_home: true
     visible_shared: true
     visible_library: true
@@ -28,13 +29,13 @@ collections:
   Top Rated Movies:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
     tmdb_top_rated: 250
-    sort_title: "#2Top Rated"
+    sort_title: ++2Top Rated
     sync_mode: sync
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
     summary: IMDb Top Rated Movies
     url_background: https://i.imgur.com/b26VZ9y.jpg
-    url_poster: https://i.imgur.com/4izKiv7.jpg
+    url_poster: https://i.imgur.com/ACyCCxg.png
     visible_home: false
     visible_shared: false
     visible_library: true
