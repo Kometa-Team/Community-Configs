@@ -136,6 +136,10 @@ collections:
     visible_home: true
     visible_shared: true
 
+  PBS:
+    template: { name: network, network: "PBS, PBS Kids" }
+    url_poster: https://imgur.com/a/3yBsyeh
+
   Prime Video Shows:
     template: { name: network, network: "Amazon, Amazon Prime Video, Prime Video" }
     url_poster: https://i.imgur.com/5gd7Lyw.jpg
