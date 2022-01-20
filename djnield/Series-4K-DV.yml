@@ -6,13 +6,13 @@ collections:
     smart_label: release.desc
     sync_mode: sync
     label: admin
-    url_poster: https://i.imgur.com/28RussS.jpg
+    url_poster: https://i.imgur.com/XAQHJKQ.png
     visible_home: true
     visible_shared: false
     visible_library: false
   Trending TV:
     smart_label: release.desc
-    sort_title: "#1Trending TV"
+    sort_title: ++1Trending TV
     sync_mode: sync
     trakt_trending: 40
     summary: Shows Trending across the internet
@@ -23,7 +23,7 @@ collections:
 
   Popular TV:
     smart_label: release.desc
-    sort_title: "#2Popular TV"
+    sort_title: ++2Popular TV
     sync_mode: sync
     imdb_list:
       url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
@@ -36,7 +36,7 @@ collections:
 
   Top Rated TV:
     smart_label: user_rating.desc
-    sort_title: "#3Top Rated TV"
+    sort_title: ++3Top Rated TV
     sync_mode: sync
     imdb_list:
       url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc

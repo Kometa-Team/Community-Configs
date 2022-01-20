@@ -4,10 +4,10 @@ collections:
     smart_label: release.desc
     sync_mode: sync
     schedule: weekly(monday), weekly(wednesday), weekly(saturday)
-    sort_title: "#4Best of British"
+    sort_title: ++5Best of British
     trakt_list: https://trakt.tv/users/extrobet/lists/uk-tv
     summary: UK TV at it's best showcasing Crime, Drama & Thrillers from the last two decades
-    url_poster: https://i.imgur.com/6V59VW7.jpg
+    url_poster: https://i.imgur.com/GMgpeoD.png
     filters:
       plays.lt: 1
     visible_home: true
@@ -18,16 +18,17 @@ collections:
     trakt_watchlist:
       - me
     smart_label: release.desc
+    sort_title: ++4Watchlist
     sync_mode: sync
     label: admin
-    url_poster: https://i.imgur.com/28RussS.jpg
+    url_poster: https://i.imgur.com/XAQHJKQ.png
     visible_home: true
     visible_shared: false
     visible_library: false
 
   Trending TV:
     smart_label: release.desc
-    sort_title: "#1Trending TV"
+    sort_title: ++1Trending TV
     sync_mode: sync
     trakt_trending: 40
     summary: Shows Trending across the internet
@@ -38,7 +39,7 @@ collections:
 
   Popular TV:
     smart_label: release.desc
-    sort_title: "#2Popular TV"
+    sort_title: ++2Popular TV
     sync_mode: sync
     imdb_list:
       url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
@@ -51,7 +52,7 @@ collections:
 
   Top Rated TV:
     smart_label: user_rating.desc
-    sort_title: "#3Top Rated TV"
+    sort_title: ++3Top Rated TV
     sync_mode: sync
     imdb_list:
       url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc
