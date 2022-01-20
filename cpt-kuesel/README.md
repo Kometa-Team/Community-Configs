@@ -56,11 +56,9 @@ The flags are taken from: https://www.countries-ofthe-world.com/flags-of-the-wor
 I have streamlined addition of new languages and therefore overlays by creating templates for dual language and single language overlays.
 The dual language overlays are used by providing the two language names with the corresponding ISO code in the collection builder.
 For the single language overlays all other languages have to be excluded. This is accomplished by providing them as default values in the template.
-When creating the collection it is now necessary to provide the language with ISO code and also to overwrite the language_not default variable with another ISO code that is NOT the language.
+When creating the collection it is now necessary to provide the language with ISO code and also to overwrite the language_not default variable with null.
 
-In my overlay.psd I have prepared a layer for every flag/language that is represented in my library.
-They are in layer groups and can easily be toggled to quickly create new overlays.
-If you like to use my overlays and can't use my .psd shoot me a message on Discord and I can create any missing language overlay in my style for you.
+They are located in their own repository (https://github.com/cpt-kuesel/media_overlays) and you can open issues for new languages and/or changes over there.
 
 ## Questions?
 You can always shoot me a question in the PMM Discord found on the main GitHub in the support section:
