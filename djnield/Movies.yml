@@ -3,24 +3,25 @@ collections:
   Movie Watchlist:
     trakt_watchlist:
       - me
+    sort_title: ++3Watchlist
     smart_label: release.desc
     sync_mode: sync
     label: admin
     visible_home: true
     visible_shared: false
     visible_library: false
-    url_poster: https://i.imgur.com/xRfaqAD.jpg
+    url_poster: https://i.imgur.com/wzk0Z14.png
 
   Trending Movies:
     trakt_trending: 40
     tmdb_trending_daily: 40
     tmdb_trending_weekly: 40
-    sort_title: "#1Trending"
+    sort_title: ++1Trending
     sync_mode: sync
     smart_label: added.desc
     summary: Movies Trending across the internet
     url_background: https://i.imgur.com/SOVfrIq.png
-    url_poster: https://i.imgur.com/KRKRjWT.jpg
+    url_poster: https://i.imgur.com/CIGHGv0.jpg
     visible_home: true
     visible_shared: true
     visible_library: true
@@ -28,13 +29,134 @@ collections:
   Top Rated Movies:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
     tmdb_top_rated: 250
-    sort_title: "#2Top Rated"
+    sort_title: ++2Top Rated
     sync_mode: sync
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
     summary: IMDb Top Rated Movies
     url_background: https://i.imgur.com/b26VZ9y.jpg
-    url_poster: https://i.imgur.com/4izKiv7.jpg
+    url_poster: https://i.imgur.com/ACyCCxg.png
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  Assassins:
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=assassination-attempt&ref_=kw_ref_yr&sort=release_date,desc&mode=detail&page=1&title_type=movie&user_rating=5.0%2C&release_date=2000%2C
+    sort_title: ++4Assassins
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    url_poster: https://i.imgur.com/xtpqcFs.png
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  Bank Heists:
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=bank-heist&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=7846868c-8414-4178-8f43-9ad6b2ef0baf&pf_rd_r=KABMDEE6CD6YYD5D74BC&pf_rd_s=center-1&pf_rd_t=15051&pf_rd_i=moka&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&user_rating=5.0%2C&release_date=2000%2C
+    sort_title: ++5Bank Heists
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    url_poster: https://i.imgur.com/ZjX03VM.png
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  Con Artists:
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=con-artist%2Ccon-man&ref_=kw_ref_key&sort=release_date,desc&mode=detail&page=1&title_type=movie&release_date=2000%2C
+    sort_title: ++6Con Artists
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    url_poster: https://i.imgur.com/IVjTl6y.png
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  Disasters:
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=disaster%2Cdisaster-film&ref_=kw_ref_yr&sort=release_date,desc&mode=detail&page=1&title_type=movie&release_date=2000%2C
+    sort_title: ++7Disasters
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    url_poster: https://i.imgur.com/TOAbO47.png
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  Espionage:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&user_rating=5.0,&keywords=espionage,+spy
+    sort_title: ++8Espionage
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    url_poster: https://i.imgur.com/IlVrIQB.png
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  Fugitives:
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=fugitive%2Con-the-run&ref_=kw_ref_gnr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
+    sort_title: ++9Fugitives
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    url_poster: https://i.imgur.com/0h5oUIG.png
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  Hostage:
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=hostage%2Ckidnapping&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=7846868c-8414-4178-8f43-9ad6b2ef0baf&pf_rd_r=SYCM3WS8QAKWHVPE2844&pf_rd_s=center-1&pf_rd_t=15051&pf_rd_i=moka&ref_=kw_ref_typ&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Drama%2CThriller&user_rating=5.0%2C&release_date=2000%2C
+    sort_title: +10Hostage
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    url_poster: https://i.imgur.com/aPnfiEK.png
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  Psychological:
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
+    sort_title: +11Psychological
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    url_poster: https://i.imgur.com/NUF09zK.png
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  Revenge:
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=revenge&ref_=kw_ref_yr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Crime%2CDrama%2CMystery%2CThriller&user_rating=5.0%2C&release_date=2000%2C
+    sort_title: +12Revenge
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    url_poster: https://i.imgur.com/Gh5GJn0.png
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  Serial Killers:
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=serial-killer%2Cmurder&ref_=kw_ref_key&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Crime%2CThriller&user_rating=5.0%2C&release_date=2000%2C
+    sort_title: +13Serial Killers
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    url_poster: https://i.imgur.com/PqJYTMh.png
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+
+  Survival:
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=survival%2Csurvivor&ref_=kw_ref_yr&sort=release_date,desc&mode=detail&page=1&title_type=movie&release_date=2000%2C
+    sort_title: +14Survival
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    smart_label: random
+    url_poster: https://i.imgur.com/x4KVDUr.png
     visible_home: false
     visible_shared: false
     visible_library: true
