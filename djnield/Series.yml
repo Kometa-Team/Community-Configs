@@ -7,10 +7,12 @@ collections:
     sort_title: ++5Best of British
     trakt_list: https://trakt.tv/users/extrobet/lists/uk-tv
     summary: UK TV at it's best showcasing Crime, Drama & Thrillers from the last two decades
-    url_poster: https://i.imgur.com/GMgpeoD.png
-    visible_home: true
-    visible_shared: true
-    visible_library: true
+    url_poster: https://i.imgur.com/fd1zKIe.png
+    build_collection: false
+    #visible_home: true
+    #visible_shared: true
+    #visible_library: true
+    #show_filtered: true
 
   TV Watchlist:
     trakt_watchlist:
