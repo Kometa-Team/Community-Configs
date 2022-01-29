@@ -61,15 +61,6 @@ collections:
     summary: Top Rated Shows across the internet
     url_poster: https://i.imgur.com/Iz12exR.jpg
 
-  4K Overlay:
-    plex_search:
-      all:
-        resolution: 4K
-        hdr: false
-    item_overlay:
-      name: 4K
-      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
-    build_collection: false
   4K-HDR Overlay:
     plex_search:
       all:
@@ -78,4 +69,14 @@ collections:
     item_overlay:
       name: 4K-HDR
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K-HDR/overlay.png
+    build_collection: false
+
+  4K Overlay:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    item_overlay:
+      name: 4K
+      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
     build_collection: false
