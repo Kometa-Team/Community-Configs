@@ -8,6 +8,7 @@ collections:
     trakt_list: https://trakt.tv/users/djnield/lists/best-of-british
     summary: UK TV at it's best showcasing Crime, Drama & Thrillers from the last two decades
     url_poster: https://i.imgur.com/fd1zKIe.png
+    url_background: https://wallpaper.dog/large/20509069.jpg
     build_collection: false
     #visible_home: true
     #visible_shared: true
@@ -22,6 +23,7 @@ collections:
     sync_mode: sync
     label: admin
     url_poster: https://i.imgur.com/wzk0Z14.png
+    url_background: https://wallpaper.dog/large/20509069.jpg
     visible_home: true
     visible_shared: false
     visible_library: false
@@ -33,6 +35,7 @@ collections:
     trakt_trending: 40
     summary: Shows Trending across the internet
     url_poster: https://i.imgur.com/7BK0hQc.jpg
+    url_background: https://wallpaper.dog/large/20509069.jpg
     visible_home: true
     visible_shared: true
     visible_library: true
@@ -46,6 +49,7 @@ collections:
       limit: 40
     summary: Popular Shows across the internet
     url_poster: https://i.imgur.com/bKmklIg.jpg
+    url_background: https://wallpaper.dog/large/20509069.jpg
     visible_home: false
     visible_shared: false
     visible_library: true
@@ -60,6 +64,7 @@ collections:
     tmdb_top_rated: 100
     summary: Top Rated Shows across the internet
     url_poster: https://i.imgur.com/Iz12exR.jpg
+    url_background: https://wallpaper.dog/large/20509069.jpg
 
   4K-HDR Overlay:
     plex_search:

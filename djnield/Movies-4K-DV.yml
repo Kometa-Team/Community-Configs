@@ -11,6 +11,7 @@ collections:
     visible_shared: false
     visible_library: false
     url_poster: https://i.imgur.com/wzk0Z14.png
+    url_background: https://wallpaper.dog/large/20509069.jpg
 
   Trending Movies:
     trakt_trending: 40
@@ -20,8 +21,8 @@ collections:
     sync_mode: sync
     smart_label: added.desc
     summary: Movies Trending across the internet
-    url_background: https://i.imgur.com/SOVfrIq.png
-    url_poster: https://i.imgur.com/CIGHGv0.jpg
+    url_poster: https://i.imgur.com/7BK0hQc.jpg
+    url_background: https://wallpaper.dog/large/20509069.jpg
     visible_home: true
     visible_shared: true
     visible_library: true
@@ -34,8 +35,8 @@ collections:
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
     summary: IMDb Top Rated Movies
-    url_background: https://i.imgur.com/b26VZ9y.jpg
-    url_poster: https://i.imgur.com/ACyCCxg.png
+    url_poster: https://i.imgur.com/Iz12exR.jpg
+    url_background: https://wallpaper.dog/large/20509069.jpg
     visible_home: false
     visible_shared: false
     visible_library: true

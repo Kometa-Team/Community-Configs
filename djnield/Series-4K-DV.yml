@@ -4,12 +4,15 @@ collections:
     trakt_watchlist:
       - me
     smart_label: release.desc
+    sort_title: ++4Watchlist
     sync_mode: sync
     label: admin
     url_poster: https://i.imgur.com/wzk0Z14.png
+    url_background: https://wallpaper.dog/large/20509069.jpg
     visible_home: true
     visible_shared: false
     visible_library: false
+
   Trending TV:
     smart_label: release.desc
     sort_title: ++1Trending TV
@@ -17,6 +20,7 @@ collections:
     trakt_trending: 40
     summary: Shows Trending across the internet
     url_poster: https://i.imgur.com/7BK0hQc.jpg
+    url_background: https://wallpaper.dog/large/20509069.jpg
     visible_home: true
     visible_shared: true
     visible_library: true
@@ -30,6 +34,7 @@ collections:
       limit: 40
     summary: Popular Shows across the internet
     url_poster: https://i.imgur.com/bKmklIg.jpg
+    url_background: https://wallpaper.dog/large/20509069.jpg
     visible_home: false
     visible_shared: false
     visible_library: true
@@ -44,6 +49,7 @@ collections:
     tmdb_top_rated: 100
     summary: Top Rated Shows across the internet
     url_poster: https://i.imgur.com/Iz12exR.jpg
+    url_background: https://wallpaper.dog/large/20509069.jpg
 
   DV:
     plex_all: true
