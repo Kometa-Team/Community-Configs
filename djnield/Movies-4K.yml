@@ -10,7 +10,8 @@ collections:
     visible_home: true
     visible_shared: false
     visible_library: false
-    url_poster: https://i.imgur.com/wzk0Z14.png
+    url_poster: https://i.imgur.com/IJMWyvo.png
+    url_background: https://wallpaper.dog/large/20509069.jpg
 
   Trending Movies:
     trakt_trending: 40
@@ -20,8 +21,8 @@ collections:
     sync_mode: sync
     smart_label: added.desc
     summary: Movies Trending across the internet
-    url_background: https://i.imgur.com/SOVfrIq.png
-    url_poster: https://i.imgur.com/CIGHGv0.jpg
+    url_poster: https://i.imgur.com/AVCNmB0.png
+    url_background: https://wallpaper.dog/large/20509069.jpg
     visible_home: true
     visible_shared: true
     visible_library: true
@@ -34,21 +35,12 @@ collections:
     schedule: weekly(wednesday), weekly(sunday)
     smart_label: random
     summary: IMDb Top Rated Movies
-    url_background: https://i.imgur.com/b26VZ9y.jpg
-    url_poster: https://i.imgur.com/ACyCCxg.png
+    url_poster: https://i.imgur.com/7h1vaxl.png
+    url_background: https://wallpaper.dog/large/20509069.jpg
     visible_home: false
     visible_shared: false
     visible_library: true
 
-  4K Overlay:
-    plex_search:
-      all:
-        resolution: 4K
-        hdr: false
-    item_overlay:
-      name: 4K
-      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
-    build_collection: false
   4K-HDR Overlay:
     plex_search:
       all:
@@ -57,4 +49,13 @@ collections:
     item_overlay:
       name: 4K-HDR
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K-HDR/overlay.png
+    build_collection: false
+  4K Overlay:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    item_overlay:
+      name: 4K
+      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
     build_collection: false
