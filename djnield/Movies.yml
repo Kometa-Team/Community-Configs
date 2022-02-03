@@ -1,4 +1,20 @@
 ---
+templates:
+  sub_genre:
+    default:
+      limit: 200
+    sort_title: ++04_<<collection_name>>
+    url_background: https://wallpaper.dog/large/20509069.jpg
+    imdb_list: 
+      - url: https://www.imdb.com/search/title/?title_type=feature,tv_movie&release_date=1990-01-01,&user_rating=5.0,10.0&keywords=<<sub_genre>>&sort=user_rating,desc
+        limit: <<limit>>
+    sync_mode: sync
+    collection_order: custom
+    cache_builders: 2
+    visible_home: false
+    visible_shared: false
+    visible_library: true
+    
 collections:
   Movie Watchlist:
     trakt_watchlist:
@@ -12,6 +28,7 @@ collections:
     visible_library: false
     url_poster: https://i.imgur.com/IJMWyvo.png
     url_background: https://wallpaper.dog/large/20509069.jpg
+    cache_builders: 1
 
   Trending Movies:
     trakt_trending: 40
@@ -26,6 +43,7 @@ collections:
     visible_home: true
     visible_shared: true
     visible_library: true
+    cache_builders: 1
 
   Top Rated Movies:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
@@ -40,135 +58,38 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: true
-
+    cache_builders: 1
+    
   Assassins:
-    imdb_list: https://www.imdb.com/search/keyword/?keywords=assassination-attempt&ref_=kw_ref_yr&sort=release_date,desc&mode=detail&page=1&title_type=movie&user_rating=5.0%2C&release_date=2000%2C
-    sort_title: ++04Assassins
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
-    smart_label: random
+    template: {name: sub_genre, sub_genre: assassination-attempt}
     url_poster: https://i.imgur.com/xtpqcFs.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
   Bank Heists:
-    imdb_list: https://www.imdb.com/search/keyword/?keywords=bank-heist&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=7846868c-8414-4178-8f43-9ad6b2ef0baf&pf_rd_r=KABMDEE6CD6YYD5D74BC&pf_rd_s=center-1&pf_rd_t=15051&pf_rd_i=moka&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&user_rating=5.0%2C&release_date=2000%2C
-    sort_title: ++05Bank Heists
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
-    smart_label: random
+    template: {name: sub_genre, sub_genre: bank-heist}
     url_poster: https://i.imgur.com/ZjX03VM.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
   Con Artists:
-    imdb_list: https://www.imdb.com/search/keyword/?keywords=con-artist%2Ccon-man&ref_=kw_ref_key&sort=release_date,desc&mode=detail&page=1&title_type=movie&release_date=2000%2C
-    sort_title: ++06Con Artists
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
-    smart_label: random
+    template: {name: sub_genre, sub_genre: con-artist,con-man}
     url_poster: https://i.imgur.com/IVjTl6y.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
   Disasters:
-    imdb_list: https://www.imdb.com/search/keyword/?keywords=disaster%2Cdisaster-film&ref_=kw_ref_yr&sort=release_date,desc&mode=detail&page=1&title_type=movie&release_date=2000%2C
-    sort_title: ++07Disasters
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
-    smart_label: random
+    template: {name: sub_genre, sub_genre: disaster,disaster-film}
     url_poster: https://i.imgur.com/TOAbO47.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
   Espionage:
-    imdb_list: https://www.imdb.com/search/title/?title_type=feature&user_rating=5.0,&keywords=espionage,+spy
-    sort_title: ++08Espionage
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
-    smart_label: random
+    template: {name: sub_genre, sub_genre: espionage,spy}
     url_poster: https://i.imgur.com/IlVrIQB.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
   Fugitives:
-    imdb_list: https://www.imdb.com/search/keyword/?keywords=fugitive%2Con-the-run&ref_=kw_ref_gnr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
-    sort_title: ++09Fugitives
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
-    smart_label: random
+    template: {name: sub_genre, sub_genre: fugitive,on-the-run}
     url_poster: https://i.imgur.com/0h5oUIG.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
   Hostage:
-    imdb_list: https://www.imdb.com/search/keyword/?keywords=hostage%2Ckidnapping&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=7846868c-8414-4178-8f43-9ad6b2ef0baf&pf_rd_r=SYCM3WS8QAKWHVPE2844&pf_rd_s=center-1&pf_rd_t=15051&pf_rd_i=moka&ref_=kw_ref_typ&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Drama%2CThriller&user_rating=5.0%2C&release_date=2000%2C
-    sort_title: ++10Hostage
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
-    smart_label: random
+    template: {name: sub_genre, sub_genre: hostage,kidnapping}
     url_poster: https://i.imgur.com/aPnfiEK.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
   Psychological:
-    imdb_list: https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
-    sort_title: ++11Psychological
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
-    smart_label: random
+    template: {name: sub_genre, sub_genre: psychological-thriller}
     url_poster: https://i.imgur.com/NUF09zK.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
   Revenge:
-    imdb_list: https://www.imdb.com/search/keyword/?keywords=revenge&ref_=kw_ref_yr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Crime%2CDrama%2CMystery%2CThriller&user_rating=5.0%2C&release_date=2000%2C
-    sort_title: ++12Revenge
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
-    smart_label: random
+    template: {name: sub_genre, sub_genre: revenge}
     url_poster: https://i.imgur.com/Gh5GJn0.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
   Serial Killers:
-    imdb_list: https://www.imdb.com/search/keyword/?keywords=serial-killer%2Cmurder&ref_=kw_ref_key&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Crime%2CThriller&user_rating=5.0%2C&release_date=2000%2C
-    sort_title: ++13Serial Killers
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
-    smart_label: random
+    template: {name: sub_genre, sub_genre: serial-killer,murder}
     url_poster: https://i.imgur.com/PqJYTMh.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
   Survival:
-    imdb_list: https://www.imdb.com/search/keyword/?keywords=survival%2Csurvivor&ref_=kw_ref_yr&sort=release_date,desc&mode=detail&page=1&title_type=movie&release_date=2000%2C
-    sort_title: ++14Survival
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
-    smart_label: random
+    template: {name: sub_genre, sub_genre: survivor,survival}
     url_poster: https://i.imgur.com/x4KVDUr.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
