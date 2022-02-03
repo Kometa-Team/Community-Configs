@@ -9,7 +9,7 @@ collections:
     tmdb_discover:
       primary_release_date.gte: 01/01/1970
       primary_release_date.lte: 12/31/1979
-      with_original_language: fr 
+      with_original_language: fr
       sort_by: popularity.desc
       limit: 100
     summary: A collection of the Top Content of the 1970s
@@ -42,10 +42,23 @@ collections:
     summary: A collection of the Top Content of the 2000s
   Best of the 2010s:
     template: { name: Chart, num: 5 }
-    tmdb_discover:             
+    tmdb_discover:
       primary_release_date.gte: 01/01/2010
       primary_release_date.lte: 12/31/2019
       with_original_language: fr
       sort_by: popularity.desc
       limit: 100
     summary: A collection of the Top Content of the 2010s
+  Best of the 2020s:
+    template: { name: Chart, num: 6 }
+    tmdb_discover:
+      primary_release_date.gte: 01/01/2020
+      primary_release_date.lte: 12/31/2029
+      with_original_language: fr
+      sort_by: popularity.desc
+      limit: 100
+    summary: A collection of the Top Content of the 2020s
+  Cesar Winners:
+    template: { name: Chart, num: 7 }
+    imdb_list: https://www.imdb.com/list/ls024896765/?sort=release_date,desc
+    summary: Cesar Winning Movies
