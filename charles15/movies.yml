@@ -1,0 +1,54 @@
+collections:
+  Plex Popular Movies:
+    sync_mode: sync
+    tautulli_popular:
+      list_days: 365
+      list_size: 25
+      list_buffer: 30
+    tautulli_watched:
+      list_days: 365
+      list_size: 25
+      list_buffer: 30
+    url_poster: https://theposterdb.com/api/assets/204196
+    summary: Most popular movies on Plex in the last year.
+  Best of All Time:
+    sync_mode: sync
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250/
+    tmdb_top_rated: 250
+    url_poster: https://theposterdb.com/api/assets/136352
+    summary: IMDb & TVDB Top Rated Movies of All Time
+  Best of the 1990s:
+    tmdb_discover:
+      primary_release_date.gte: 01/01/1990
+      primary_release_date.lte: 12/31/1999
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    url_poster: https://theposterdb.com/api/assets/136354
+    summary: TMDB Most Popular Movies of the 1990s
+  Best of the 2000s:
+    tmdb_discover:
+      primary_release_date.gte: 01/01/2000
+      primary_release_date.lte: 12/31/2009
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    url_poster: https://theposterdb.com/api/assets/136355
+    summary: TMDB Most Popular Movies of the 2000s
+  Best of the 2010s:
+    tmdb_discover:
+      primary_release_date.gte: 01/01/2010
+      primary_release_date.lte: 12/31/2019
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    url_poster: https://theposterdb.com/api/assets/136356
+    summary: TMDB Most Popular Movies of the 2010s
+  Best of the 2020s:
+    tmdb_discover:
+      primary_release_date.gte: 01/01/2020
+      primary_release_date.lte: 12/31/2029
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    summary: TMDB Most Popular Movies of the 2020s
