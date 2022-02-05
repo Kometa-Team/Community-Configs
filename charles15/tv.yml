@@ -1,0 +1,24 @@
+######################################################
+#                     TV Shows                       #
+######################################################
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+######################################################
+#                    TV Charts                       #
+######################################################
+collections:
+  Zoidberg Popular Shows:
+    template: {name: Chart, num: 1}
+    collection_order: custom
+    tautulli_popular:
+      list_days: 365
+      list_size: 25
+      list_buffer: 30
+    tautulli_watched:
+      list_days: 365
+      list_size: 25
+      list_buffer: 30
+    url_poster: https://theposterdb.com/api/assets/204195
+    summary: Most popular TV Shows on Plex in the last year.
