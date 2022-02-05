@@ -1,0 +1,3485 @@
+
+######################################################
+#                  Movie Metadata                    #
+######################################################
+
+metadata:
+
+ # Marvel Cinematic Universe (https://theposterdb.com/set/4475)
+  Iron Man:
+    url_poster: https://theposterdb.com/api/assets/9773
+  The Incredible Hulk:
+    url_poster: https://theposterdb.com/api/assets/9775
+  Iron Man 2:
+    url_poster: https://theposterdb.com/api/assets/9776
+  Thor:
+    url_poster: https://theposterdb.com/api/assets/9777
+  "Captain America: The First Avenger":
+    url_poster: https://theposterdb.com/api/assets/9778
+  The Avengers:
+    url_poster: https://theposterdb.com/api/assets/9779
+  Iron Man 3:
+    url_poster: https://theposterdb.com/api/assets/9780
+  "Thor: The Dark World":
+    url_poster: https://theposterdb.com/api/assets/9781
+  "Captain America: The Winter Soldier":
+    url_poster: https://theposterdb.com/api/assets/9783
+  Guardians of the Galaxy:
+    url_poster: https://theposterdb.com/api/assets/9784
+  "Avengers: Age of Ultron":
+    url_poster: https://theposterdb.com/api/assets/9785
+  Ant-Man:
+    url_poster: https://theposterdb.com/api/assets/9786
+  "Captain America: Civil War":
+    url_poster: https://theposterdb.com/api/assets/9787
+  Doctor Strange:
+    url_poster: https://theposterdb.com/api/assets/9788
+  Guardians of the Galaxy Vol. 2:
+    url_poster: https://theposterdb.com/api/assets/9789
+  "Spider-Man: Homecoming":
+    url_poster: https://theposterdb.com/api/assets/9790
+  "Thor: Ragnarok":
+    url_poster: https://theposterdb.com/api/assets/9791
+  Black Panther:
+    url_poster: https://theposterdb.com/api/assets/9792
+  "Avengers: Infinity War":
+    url_poster: https://theposterdb.com/api/assets/9794
+  Ant-Man and the Wasp:
+    url_poster: https://theposterdb.com/api/assets/9795
+  Captain Marvel:
+    url_poster: https://theposterdb.com/api/assets/9796
+  "Avengers: Endgame":
+    url_poster: https://theposterdb.com/api/assets/9797
+  "Spider-Man: Far from Home":
+    url_poster: https://theposterdb.com/api/assets/9798
+  Black Widow:
+    url_poster: https://theposterdb.com/api/assets/54982
+  Eternals:
+    url_poster: https://theposterdb.com/api/assets/153775
+  Shang-Chi and the Legend of the Ten Rings:
+    url_poster: https://theposterdb.com/api/assets/170437
+  "Spider-Man: No Way Home":
+    url_poster: https://theposterdb.com/api/assets/188475
+
+  #Sony/Marvel
+  Spider-Man:
+    url_poster: https://theposterdb.com/api/assets/116707
+  Spider-Man 2:
+    url_poster: https://theposterdb.com/api/assets/116708
+  Spider-Man 3:
+    url_poster: https://theposterdb.com/api/assets/116709
+  The Amazing Spider-Man:
+    url_poster: https://theposterdb.com/api/assets/116710
+  The Amazing Spider-Man 2:
+    url_poster: https://theposterdb.com/api/assets/116711
+  "Spider-Man: Into the Spider-Verse":
+    url_poster: https://theposterdb.com/api/assets/116713
+  Venom:
+    url_poster: https://theposterdb.com/api/assets/116712
+  "Venom: Let There Be Carnage":
+    url_poster: https://theposterdb.com/api/assets/192587
+
+  # Disney Live Action
+  Alice in Wonderland:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/72186
+  Alice Through the Looking Glass:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/72187
+  Maleficent:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/37526
+  The Jungle Book (Live Action):
+    title: The Jungle Book
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/45138
+  "Pete's Dragon":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/45867
+  Beauty and the Beast:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/22413
+  Christopher Robin:
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/12387
+  Dumbo:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/13023
+  The Lion King (Live Action):
+    title: The Lion King
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/48917
+  "Maleficent: Mistress of Evil":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/37527
+  Cruella:
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/154870
+
+  # DCEU
+  Man of Steel:
+    url_poster: https://theposterdb.com/api/assets/7651
+  "Batman v Superman: Dawn of Justice":
+    url_poster: https://theposterdb.com/api/assets/7652
+  "Batman: The Long Halloween, Part Two":
+    url_poster: https://theposterdb.com/api/assets/172875
+  "Batman: The Long Halloween, Part One":
+    url_poster: https://theposterdb.com/api/assets/172874
+  Suicide Squad:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/7653
+  Wonder Woman:
+    url_poster: https://theposterdb.com/api/assets/7654
+  Justice League:
+    url_poster: https://theposterdb.com/api/assets/139248
+  Aquaman:
+    url_poster: https://theposterdb.com/api/assets/7656
+  Shazam!:
+    url_poster: https://theposterdb.com/api/assets/7657
+  Joker:
+    url_poster: https://theposterdb.com/api/assets/79254
+  Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn):
+    url_poster: https://theposterdb.com/api/assets/47803
+  Wonder Woman 1984:
+    url_poster: https://theposterdb.com/api/assets/58528
+  Zack Snyder's Justice League:
+    url_poster: https://theposterdb.com/api/assets/139248
+  The Suicide Squad:
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/167747
+
+  # 28 Days/Weeks/Months
+  28 Days Later:
+    url_poster: https://theposterdb.com/api/assets/79741
+  28 Weeks Later:
+    url_poster: https://theposterdb.com/api/assets/79742
+
+  # Ace Ventura
+  "Ace Ventura: Pet Detective":
+    url_poster: https://theposterdb.com/api/assets/6613
+  "Ace Ventura: When Nature Calls":
+    url_poster: https://theposterdb.com/api/assets/6614
+
+  # Addams Family
+  The Addams Family:
+    year: 1991
+    url_poster: https://theposterdb.com/api/assets/53153
+  Addams Family Values:
+    url_poster: https://theposterdb.com/api/assets/53154
+  Addams Family Reunion:
+    url_poster: https://theposterdb.com/api/assets/53155
+  The Addams Family (Animation):
+    title: The Addams Family
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/53156
+  The Addams Family 2:
+    url_poster: https://theposterdb.com/api/assets/188293
+
+  # Air Bud
+  Air Bud:
+    url_poster: https://theposterdb.com/api/assets/96173
+  "Air Bud: Golden Receiver":
+    url_poster: https://theposterdb.com/api/assets/96174
+  "Air Bud: World Pup":
+    url_poster: https://theposterdb.com/api/assets/96175
+  "Air Bud: Seventh Inning Fetch":
+    url_poster: https://theposterdb.com/api/assets/96176
+  "Air Bud: Spikes Back":
+    url_poster: https://theposterdb.com/api/assets/96177
+
+  # Aladdin
+  Aladdin:
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/89796
+  The Return of Jafar:
+    url_poster: https://theposterdb.com/api/assets/89797
+  Aladdin and the King of Thieves:
+    url_poster: https://theposterdb.com/api/assets/89798
+  Aladdin (Live Action):
+    title: Aladdin
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/89799
+
+  # Alien
+  Alien:
+    url_poster: https://theposterdb.com/api/assets/43459
+  Aliens:
+    url_poster: https://theposterdb.com/api/assets/43460
+  Alien 3:
+    url_poster: https://theposterdb.com/api/assets/43461
+  Alien Resurrection:
+    url_poster: https://theposterdb.com/api/assets/43462
+  Prometheus:
+    url_poster: https://theposterdb.com/api/assets/43465
+  "Alien: Covenant":
+    url_poster: https://theposterdb.com/api/assets/43466
+
+  # All Dogs Go To Heaven
+  All Dogs Go to Heaven:
+    url_poster: https://theposterdb.com/api/assets/146349
+  All Dogs Go to Heaven 2:
+    url_poster: https://theposterdb.com/api/assets/146350
+  An All Dogs Christmas Carol:
+    url_poster: https://theposterdb.com/api/assets/146351
+
+  # Almighty
+  Bruce Almighty:
+    url_poster: https://theposterdb.com/api/assets/51451
+  Evan Almighty:
+    url_poster: https://theposterdb.com/api/assets/51452
+
+  # Alvin and the Chipmunks
+  Alvin and the Chipmunks:
+    url_poster: https://theposterdb.com/api/assets/47179
+  "Alvin and the Chipmunks: The Squeakquel":
+    url_poster: https://theposterdb.com/api/assets/47180
+  "Alvin and the Chipmunks: Chipwrecked":
+    url_poster: https://theposterdb.com/api/assets/47181
+  "Alvin and the Chipmunks: The Road Chip":
+    url_poster: https://theposterdb.com/api/assets/47182
+
+  # American Psycho
+  American Psycho:
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/153800
+  "American Psycho II: All American Girl":
+    url_poster: https://theposterdb.com/api/assets/153801
+
+  # An American Tail
+  An American Tail:
+    url_poster: https://theposterdb.com/api/assets/106340
+  "An American Tail: Fievel Goes West":
+    url_poster: https://theposterdb.com/api/assets/106341
+  "An American Tail: The Treasure of Manhattan Island":
+    url_poster: https://theposterdb.com/api/assets/106342
+  "An American Tail: The Mystery of the Night Monster":
+    url_poster: https://theposterdb.com/api/assets/106343
+
+  # Anaconda
+  Anaconda:
+    url_poster: https://theposterdb.com/api/assets/73799
+  "Anacondas: The Hunt for the Blood Orchid":
+    url_poster: https://theposterdb.com/api/assets/73800
+  "Anaconda 3: Offspring":
+    url_poster: https://theposterdb.com/api/assets/73801
+  "Anacondas: Trail of Blood":
+    url_poster: https://theposterdb.com/api/assets/73802
+
+  # The Amityville Collection
+  The Amityville Horror:
+    year: 1979
+    url_poster: https://theposterdb.com/api/assets/7891
+  "Amityville II: The Possession":
+    url_poster: https://theposterdb.com/api/assets/7892
+  Amityville 3-D:
+    url_poster: https://theposterdb.com/api/assets/7893
+  "Amityville: The Evil Escapes":
+    url_poster: https://theposterdb.com/api/assets/7894
+  The Amityville Curse:
+    url_poster: https://theposterdb.com/api/assets/7895
+  "Amityville 1992: It's About Time":
+    url_poster: https://theposterdb.com/api/assets/7896
+  "Amityville: A New Generation":
+    url_poster: https://theposterdb.com/api/assets/7897
+  "Amityville: Dollhouse":
+    url_poster: https://theposterdb.com/api/assets/7898
+  The Amityville Horror (Reboot):
+    title: The Amityville Horror
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/7899
+  The Amityville Haunting:
+    url_poster: https://theposterdb.com/api/assets/7900
+  The Amityville Asylum:
+    url_poster: https://theposterdb.com/api/assets/7901
+  Amityville Death House:
+    url_poster: https://theposterdb.com/api/assets/7902
+  The Amityville Playhouse:
+    url_poster: https://theposterdb.com/api/assets/7903
+  "Amityville: Vanishing Point":
+    url_poster: https://theposterdb.com/api/assets/7904
+  The Amityville Terror:
+    url_poster: https://theposterdb.com/api/assets/7905
+  Amityville Toybox:
+    url_poster: https://theposterdb.com/api/assets/7906
+  "Amityville: No Escape":
+    url_poster: https://theposterdb.com/api/assets/7907
+  Amityville Exorcism:
+    url_poster: https://theposterdb.com/api/assets/7908
+  "Amityville: The Awakening":
+    url_poster: https://theposterdb.com/api/assets/7909
+  The Amityville Murders:
+    url_poster: https://theposterdb.com/api/assets/7910
+
+  # Anchorman
+  "Anchorman: The Legend of Ron Burgundy":
+    url_poster: https://theposterdb.com/api/assets/17932
+  "Anchorman 2: The Legend Continues":
+    url_poster: https://theposterdb.com/api/assets/17933
+
+  # Annabelle
+  Annabelle:
+    url_poster: https://theposterdb.com/api/assets/34569
+  "Annabelle: Creation":
+    url_poster: https://theposterdb.com/api/assets/34570
+  Annabelle Comes Home:
+    url_poster: https://theposterdb.com/api/assets/34571
+
+  # Atlantis
+  "Atlantis: The Lost Empire":
+    url_poster: https://theposterdb.com/api/assets/20693
+  "Atlantis: Milo's Return":
+    url_poster: https://theposterdb.com/api/assets/20694
+
+  # Austin Powers
+  "Austin Powers: International Man of Mystery":
+    url_poster: https://theposterdb.com/api/assets/35263
+  "Austin Powers: The Spy Who Shagged Me":
+    url_poster: https://theposterdb.com/api/assets/35264
+  "Austin Powers in Goldmember":
+    url_poster: https://theposterdb.com/api/assets/35265
+
+  # AVP
+  Alien vs. Predator:
+    url_poster: https://theposterdb.com/api/assets/43456
+  "Aliens vs Predator: Requiem":
+    url_poster: https://theposterdb.com/api/assets/43457
+
+  # Dark Knight
+  Batman Begins:
+    url_poster: https://theposterdb.com/api/assets/8490
+  The Dark Knight:
+    url_poster: https://theposterdb.com/api/assets/8491
+  The Dark Knight Rises:
+    url_poster: https://theposterdb.com/api/assets/8492
+
+  # Back To The Future
+  Back to the Future:
+    url_poster: https://theposterdb.com/api/assets/158912
+  Back to the Future Part II:
+    url_poster: https://theposterdb.com/api/assets/158913
+  Back to the Future Part III:
+    url_poster: https://theposterdb.com/api/assets/158914
+
+  # Bad Boys
+  Bad Boys:
+    url_poster: https://theposterdb.com/api/assets/43042
+  Bad Boys II:
+    url_poster: https://theposterdb.com/api/assets/43043
+  Bad Boys for Life:
+    url_poster: https://theposterdb.com/api/assets/43044
+
+  # Bad Santa
+  Bad Santa:
+    url_poster: https://theposterdb.com/api/assets/32570
+  Bad Santa 2:
+    url_poster: https://theposterdb.com/api/assets/32571
+
+  # Balto
+  Balto:
+    url_poster: https://theposterdb.com/api/assets/16921
+  "Balto II: Wolf Quest":
+    url_poster: https://theposterdb.com/api/assets/16922
+  "Balto III: Wings of Change":
+    url_poster: https://theposterdb.com/api/assets/16923
+
+  # Bambi
+  Bambi:
+    year: 1942
+    url_poster: https://theposterdb.com/api/assets/46874
+  Bambi II:
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/46875
+
+  # Barbershop
+  Barbershop:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/59248
+  "Barbershop 2: Back in Business":
+    url_poster: https://theposterdb.com/api/assets/59249
+  Beauty Shop:
+    url_poster: https://theposterdb.com/api/assets/59250
+  "Barbershop: The Next Cut":
+    url_poster: https://theposterdb.com/api/assets/59251
+
+  # Batman
+  Batman:
+    url_poster: https://theposterdb.com/api/assets/50894
+  Batman & Robin:
+    url_poster: https://theposterdb.com/api/assets/50897
+  Batman Forever:
+    url_poster: https://theposterdb.com/api/assets/50896
+  Batman Returns:
+    url_poster: https://theposterdb.com/api/assets/50895
+
+  # Batman other
+  Batman vs. Teenage Mutant Ninja Turtles:
+    url_poster: https://theposterdb.com/api/assets/73030
+  "Batman: Hush":
+    url_poster: https://theposterdb.com/api/assets/73031
+  "Batman: The Killing Joke":
+    url_poster: https://theposterdb.com/api/assets/73020
+
+  # Beverly Hills Cop
+  Beverly Hills Cop:
+    url_poster: https://theposterdb.com/api/assets/45077
+  Beverly Hills Cop II:
+    url_poster: https://theposterdb.com/api/assets/45078
+  Beverly Hills Cop III:
+    url_poster: https://theposterdb.com/api/assets/45079
+
+  # Bill & Ted
+  Bill & Ted Face the Music:
+    url_poster: https://theposterdb.com/api/assets/96797
+  Bill & Ted's Bogus Journey:
+    url_poster: https://theposterdb.com/api/assets/96796
+  Bill & Ted's Excellent Adventure:
+    url_poster: https://theposterdb.com/api/assets/96795
+
+  # Blade
+  Blade:
+    url_poster: https://theposterdb.com/api/assets/36518
+  Blade II:
+    url_poster: https://theposterdb.com/api/assets/36519
+  Blade Trinity:
+    url_poster: https://theposterdb.com/api/assets/36520
+
+  # Black Water
+  Black Water:
+    url_poster: https://theposterdb.com/api/assets/185349
+  "Black Water: Abyss":
+    url_poster: https://theposterdb.com/api/assets/185350
+
+  # Blade Runner
+  Blade Runner:
+    url_poster: https://theposterdb.com/api/assets/6082
+  Blade Runner 2049:
+    url_poster: https://theposterdb.com/api/assets/6083
+
+  # The Blues Brothers
+  The Blues Brothers:
+    url_poster: https://theposterdb.com/api/assets/12497
+  Blues Brothers 2000:
+    url_poster: https://theposterdb.com/api/assets/12498
+
+  # The Boondock Saints
+  The Boondock Saints:
+    url_poster: https://theposterdb.com/api/assets/80256
+  "The Boondock Saints II: All Saints Day":
+    url_poster: https://theposterdb.com/api/assets/80257
+
+  # Borat
+  "Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan":
+    url_poster: https://theposterdb.com/api/assets/139171
+  Borat Subsequent Moviefilm:
+    url_poster: https://theposterdb.com/api/assets/139172
+
+  # The Boy
+  The Boy:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/84870
+  "Brahms: The Boy II":
+    url_poster: https://theposterdb.com/api/assets/84871
+
+  # Bring It On
+  Bring It On:
+    url_poster: https://theposterdb.com/api/assets/95110
+  Bring It On Again:
+    url_poster: https://theposterdb.com/api/assets/95111
+  "Bring It On: All or Nothing":
+    url_poster: https://theposterdb.com/api/assets/95112
+  "Bring It On: In It to Win It":
+    url_poster: https://theposterdb.com/api/assets/95113
+  "Bring It On: Fight to the Finish":
+    url_poster: https://theposterdb.com/api/assets/95114
+  "Bring It On: Worldwide #Cheersmack":
+    url_poster: https://theposterdb.com/api/assets/95115
+
+  # Brother Bear
+  Brother Bear:
+    url_poster: https://theposterdb.com/api/assets/21185
+  Brother Bear 2:
+    url_poster: https://theposterdb.com/api/assets/21186
+
+  # The Buddies
+  Air Buddies:
+    url_poster: https://theposterdb.com/api/assets/96332
+  Snow Buddies:
+    url_poster: https://theposterdb.com/api/assets/96333
+  Space Buddies:
+    url_poster: https://theposterdb.com/api/assets/96334
+  Santa Buddies:
+    url_poster: https://theposterdb.com/api/assets/96335
+  Spooky Buddies:
+    url_poster: https://theposterdb.com/api/assets/96336
+  Treasure Buddies:
+    url_poster: https://theposterdb.com/api/assets/96337
+  Super Buddies:
+    url_poster: https://theposterdb.com/api/assets/96338
+
+  # Candyman
+  Candyman:
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/79962
+  "Candyman: Farewell to the Flesh":
+    url_poster: https://theposterdb.com/api/assets/79963
+  "Candyman: Day of the Dead":
+    url_poster: https://theposterdb.com/api/assets/79964
+  Candyman (Reboot):
+    title: Candyman
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/79965
+
+  # Carrie
+  Carrie:
+    year: 1976
+    url_poster: https://theposterdb.com/api/assets/17140
+  "The Rage: Carrie 2":
+    url_poster: https://theposterdb.com/api/assets/17141
+
+  # Cars
+  Cars:
+    url_poster: https://theposterdb.com/api/assets/133
+  Cars 2:
+    url_poster: https://theposterdb.com/api/assets/134
+  Cars 3:
+    url_poster: https://theposterdb.com/api/assets/134
+
+  # Charlie Brown
+  A Charlie Brown Christmas:
+    url_poster: https://theposterdb.com/api/assets/14724
+  A Charlie Brown Thanksgiving:
+    url_poster: https://theposterdb.com/api/assets/14725
+  "It's the Great Pumpkin, Charlie Brown":
+    url_poster: https://theposterdb.com/api/assets/14726
+  A Boy Named Charlie Brown:
+    url_poster: https://theposterdb.com/api/assets/14727
+  "It's Magic, Charlie Brown":
+    url_poster: https://theposterdb.com/api/assets/14728
+  "Happy New Year, Charlie Brown":
+    url_poster: https://theposterdb.com/api/assets/14729
+
+  # Charlie's Angels
+  Charlie's Angels:
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/15410
+  "Charlie's Angels: Full Throttle":
+    url_poster: https://theposterdb.com/api/assets/15411
+  Charlie's Angels (Reboot):
+    title: Charlie's Angels
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/15412
+
+  # Cheaper by the Dozen
+  Cheaper by the Dozen:
+    url_poster: https://theposterdb.com/api/assets/173407
+  Cheaper by the Dozen 2:
+    url_poster: https://theposterdb.com/api/assets/173408
+
+  # Childs Play
+  Child's Play:
+    year: 1988
+    url_poster: https://theposterdb.com/api/assets/94854
+  Child's Play 2:
+    year: 1990
+    url_poster: https://theposterdb.com/api/assets/94855
+  Child's Play 3:
+    year: 1991
+    url_poster: https://theposterdb.com/api/assets/94856
+  Bride of Chucky:
+    year: 1998
+    url_poster: https://theposterdb.com/api/assets/94857
+  Seed of Chucky:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/94858
+  Curse of Chucky:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/94859
+  Cult of Chucky:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/94860
+  Child's Play (Remake):
+    title: Child's Play
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/94861
+
+  # The Chronicles of Narnia
+  "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe":
+    url_poster: https://theposterdb.com/api/assets/86942
+  "The Chronicles of Narnia: Prince Caspian":
+    url_poster: https://theposterdb.com/api/assets/86943
+  "The Chronicles of Narnia: The Voyage of the Dawn Treader":
+    url_poster: https://theposterdb.com/api/assets/86944
+
+  # The Chronicles of Riddick
+  Pitch Black:
+    url_poster: https://theposterdb.com/api/assets/22253
+  The Chronicles of Riddick:
+    url_poster: https://theposterdb.com/api/assets/22254
+  "The Chronicles of Riddick: Dark Fury":
+    url_poster: https://theposterdb.com/api/assets/22424
+  "Riddick: Blindsided":
+    url_poster: https://theposterdb.com/api/assets/22425
+  Riddick:
+    url_poster: https://theposterdb.com/api/assets/22426
+
+  # Cinderella
+  Cinderella:
+    url_poster: https://theposterdb.com/api/assets/57730
+  "Cinderella II: Dreams Come True":
+    url_poster: https://theposterdb.com/api/assets/106297
+  "Cinderella III: A Twist in Time":
+    url_poster: https://theposterdb.com/api/assets/106298
+
+  # Cinderella Story
+  A Cinderella Story:
+    url_poster: https://theposterdb.com/api/assets/105646
+  Another Cinderella Story:
+    url_poster: https://theposterdb.com/api/assets/105647
+  "A Cinderella Story: Once Upon a Song":
+    url_poster: https://theposterdb.com/api/assets/105648
+  "A Cinderella Story: If the Shoe Fits":
+    url_poster: https://theposterdb.com/api/assets/105649
+  "A Cinderella Story: Christmas Wish":
+    url_poster: https://theposterdb.com/api/assets/105650
+
+  # City Slickers
+  City Slickers:
+    url_poster: https://theposterdb.com/api/assets/95270
+  "City Slickers II: The Legend of Curly's Gold":
+    url_poster: https://theposterdb.com/api/assets/95271
+
+  # Clash of the Titans
+  Clash of the Titans:
+    url_poster: https://theposterdb.com/api/assets/34934
+  Wrath of the Titans:
+    url_poster: https://theposterdb.com/api/assets/34935
+
+  # Clerks
+  Clerks:
+    url_poster: https://theposterdb.com/api/assets/35321
+  Clerks II:
+    url_poster: https://theposterdb.com/api/assets/35323
+  The Flying Car:
+    url_poster: https://theposterdb.com/api/assets/35322
+
+  # Cloudy with a Chance of Meatballs
+  Cloudy with a Chance of Meatballs:
+    url_poster: https://theposterdb.com/api/assets/37355
+  Cloudy with a Chance of Meatballs 2:
+    url_poster: https://theposterdb.com/api/assets/37356
+
+  # Cloverfield
+  Cloverfield:
+    url_poster: https://theposterdb.com/api/assets/80059
+  10 Cloverfield Lane:
+    url_poster: https://theposterdb.com/api/assets/80060
+  The Cloverfield Paradox:
+    url_poster: https://theposterdb.com/api/assets/80061
+
+  # The Conjuring
+  The Conjuring:
+    url_poster: https://theposterdb.com/api/assets/156082
+  The Conjuring 2:
+    url_poster: https://theposterdb.com/api/assets/156083
+  The Nun:
+    url_poster: https://theposterdb.com/api/assets/156084
+  "The Conjuring: The Devil Made Me Do It":
+    url_poster: https://theposterdb.com/api/assets/156085
+
+  # Cornetto Trilogy
+  Shaun of the Dead:
+    url_poster: https://theposterdb.com/api/assets/60579
+  Hot Fuzz:
+    url_poster: https://theposterdb.com/api/assets/60580
+  The World's End:
+    url_poster: https://theposterdb.com/api/assets/60581
+
+  # Creed
+  Creed:
+    url_poster: https://theposterdb.com/api/assets/78969
+  Creed II:
+    url_poster: https://theposterdb.com/api/assets/78970
+
+  # Critters
+  Critters:
+    year: 1986
+    url_poster: https://theposterdb.com/api/assets/25485
+  Critters 2:
+    year: 1988
+    url_poster: https://theposterdb.com/api/assets/25486
+  Critters 3:
+    year: 1991
+    url_poster: https://theposterdb.com/api/assets/25487
+  Critters 4:
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/25488
+  Critters Attack!:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/25489
+
+  # Crocodile Dundee
+  Crocodile Dundee:
+    url_poster: https://theposterdb.com/api/assets/911
+  Crocodile Dundee II:
+    url_poster: https://theposterdb.com/api/assets/913
+  Crocodile Dundee in Los Angeles:
+    url_poster: https://theposterdb.com/api/assets/915
+
+  # The Croods
+  The Croods:
+    url_poster: https://theposterdb.com/api/assets/113465
+  "The Croods: A New Age":
+    url_poster: https://theposterdb.com/api/assets/113466
+
+  # Crouching Tiger, Hidden Dragon
+  Crouching Tiger, Hidden Dragon:
+    url_poster: https://theposterdb.com/api/assets/186220
+  "Crouching Tiger, Hidden Dragon: Sword of Destiny":
+    url_poster: https://theposterdb.com/api/assets/186221
+
+  # The Crow
+  The Crow:
+    year: 1994
+    url_poster: https://theposterdb.com/api/assets/111880
+  "The Crow: City of Angels":
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/111881
+  "The Crow: Salvation":
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/111882
+  "The Crow: Wicked Prayer":
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/111883
+
+  # Daddys Home
+  Daddy's Home:
+    url_poster: https://theposterdb.com/api/assets/14100
+  Daddy's Home 2:
+    url_poster: https://theposterdb.com/api/assets/14101
+
+  # Death Note
+  Death Note:
+    url_poster: https://theposterdb.com/api/assets/82086
+  "Death Note: The Last Name":
+    url_poster: https://theposterdb.com/api/assets/82087
+  "L: change the WorLd":
+    url_poster: https://theposterdb.com/api/assets/82088
+  "Death Note: Light Up the New World":
+    url_poster: https://theposterdb.com/api/assets/82089
+
+  # Death Race
+  Death Race:
+    url_poster: https://theposterdb.com/api/assets/16984
+  Death Race 2:
+    url_poster: https://theposterdb.com/api/assets/16985
+  "Death Race: Inferno":
+    url_poster: https://theposterdb.com/api/assets/16986
+  "Death Race: Beyond Anarchy":
+    url_poster: https://theposterdb.com/api/assets/16987
+
+  # The Debt Collector
+  The Debt Collector:
+    url_poster: https://theposterdb.com/api/assets/108497
+  Debt Collectors:
+    url_poster: https://theposterdb.com/api/assets/108498
+
+  # Despicable Me
+  Despicable Me:
+    url_poster: https://theposterdb.com/api/assets/6469
+  Despicable Me 2:
+    url_poster: https://theposterdb.com/api/assets/6470
+  Despicable Me 3:
+    url_poster: https://theposterdb.com/api/assets/6471
+  Minions:
+    url_poster: https://theposterdb.com/api/assets/76510
+  "Minions: The Rise of Gru":
+    url_poster: https://theposterdb.com/api/assets/76511
+
+  # Die Hard
+  Die Hard:
+    url_poster: https://theposterdb.com/api/assets/720
+  Die Hard 2:
+    url_poster: https://theposterdb.com/api/assets/721
+  "Die Hard: With a Vengeance":
+    url_poster: https://theposterdb.com/api/assets/722
+  Live Free or Die Hard:
+    url_poster: https://theposterdb.com/api/assets/723
+  A Good Day to Die Hard:
+    url_poster: https://theposterdb.com/api/assets/724
+
+  # Dirty Harry
+  Dirty Harry:
+    url_poster: https://theposterdb.com/api/assets/852
+  Magnum Force:
+    url_poster: https://theposterdb.com/api/assets/854
+  The Enforcer:
+    url_poster: https://theposterdb.com/api/assets/855
+  Sudden Impact:
+    url_poster: https://theposterdb.com/api/assets/856
+  The Dead Pool:
+    url_poster: https://theposterdb.com/api/assets/857
+
+  # Divergent
+  Divergent:
+    url_poster: https://theposterdb.com/api/assets/53783
+  Insurgent:
+    url_poster: https://theposterdb.com/api/assets/53784
+  Allegiant:
+    url_poster: https://theposterdb.com/api/assets/53785
+
+  # Don't Breathe
+  Don't Breathe:
+    url_poster: https://theposterdb.com/api/assets/173569
+  Don't Breathe 2:
+    url_poster: https://theposterdb.com/api/assets/173570
+
+  # DragonHeart
+  DragonHeart:
+    url_poster: https://theposterdb.com/api/assets/23590
+  "DragonHeart: A New Beginning":
+    url_poster: https://theposterdb.com/api/assets/23591
+  "Dragonheart 3: The Sorcerer's Curse":
+    url_poster: https://theposterdb.com/api/assets/23592
+  "Dragonheart: Battle for the Heartfire":
+    url_poster: https://theposterdb.com/api/assets/23593
+  "Dragonheart: Vengeance":
+    url_poster: https://theposterdb.com/api/assets/166956
+
+  # Dune
+  Dune:
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/197349
+  "Dune: Part Two":
+    url_poster: https://theposterdb.com/api/assets/197350
+
+  # Dumb and Dumber
+  Dumb and Dumber:
+    url_poster: https://theposterdb.com/api/assets/12115
+  "Dumb and Dumberer: When Harry Met Lloyd":
+    url_poster: https://theposterdb.com/api/assets/12116
+  Dumb and Dumber To:
+    url_poster: https://theposterdb.com/api/assets/12117
+
+  # The Emperor's New Groove
+  The Emperor's New Groove:
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/46821
+  Kronk's New Groove:
+    url_poster: https://theposterdb.com/api/assets/46822
+
+  # The Equalizer
+  The Equalizer:
+    url_poster: https://theposterdb.com/api/assets/20230
+  The Equalizer 2:
+    url_poster: https://theposterdb.com/api/assets/20231
+
+  # Escape From ..
+  Escape from New York:
+    url_poster: https://theposterdb.com/api/assets/96948
+  Escape from L.A.:
+    url_poster: https://theposterdb.com/api/assets/96949
+
+  # Escape Plan
+  Escape Plan:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/63907
+  "Escape Plan 2: Hades":
+    url_poster: https://theposterdb.com/api/assets/63908
+  "Escape Plan: The Extractors":
+    url_poster: https://theposterdb.com/api/assets/63909
+
+  # The Expendables
+  The Expendables 2:
+    url_poster: https://theposterdb.com/api/assets/86705
+  The Expendables 3:
+    url_poster: https://theposterdb.com/api/assets/86706
+  The Expendables:
+    url_poster: https://theposterdb.com/api/assets/86704
+
+  # Fantasia
+  Fantasia:
+    year: 1940
+    url_poster: https://theposterdb.com/api/assets/130369
+  Fantasia 2000:
+    url_poster: https://theposterdb.com/api/assets/130370
+
+  # Fantastic Beasts
+  Fantastic Beasts and Where to Find Them:
+    url_poster: https://theposterdb.com/api/assets/27621
+  "Fantastic Beasts: The Crimes of Grindelwald":
+    url_poster: https://theposterdb.com/api/assets/27622
+
+  # Fantastic Four
+  Fantastic Four:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/163906
+  "Fantastic Four: Rise of the Silver Surfer":
+    url_poster: https://theposterdb.com/api/assets/163907
+  Fantastic Four (Reboot):
+    title: Fantastic Four
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/163908
+
+  # The Fast and the Furious
+  The Fast and the Furious:
+    url_poster: https://theposterdb.com/api/assets/110854
+  2 Fast 2 Furious:
+    url_poster: https://theposterdb.com/api/assets/110856
+  "The Fast and the Furious: Tokyo Drift":
+    url_poster: https://theposterdb.com/api/assets/110857
+  Fast & Furious:
+    url_poster: https://theposterdb.com/api/assets/110858
+  Fast Five:
+    url_poster: https://theposterdb.com/api/assets/110860
+  Fast & Furious 6:
+    url_poster: https://theposterdb.com/api/assets/110861
+  Furious 7:
+    url_poster: https://theposterdb.com/api/assets/110862
+  The Fate of the Furious:
+    url_poster: https://theposterdb.com/api/assets/110863
+  "Fast & Furious Presents: Hobbs & Shaw":
+    url_poster: https://theposterdb.com/api/assets/110864
+  F9:
+    url_poster: https://theposterdb.com/api/assets/156988
+
+  # Fifty Shades
+  Fifty Shades of Grey:
+    url_poster: https://theposterdb.com/api/assets/38651
+  Fifty Shades Darker:
+    url_poster: https://theposterdb.com/api/assets/38652
+  Fifty Shades Freed:
+    url_poster: https://theposterdb.com/api/assets/38653
+
+  # Final Destination
+  Final Destination:
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/66196
+  Final Destination 2:
+    url_poster: https://theposterdb.com/api/assets/66197
+  Final Destination 3:
+    url_poster: https://theposterdb.com/api/assets/66198
+  The Final Destination:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/66199
+  Final Destination 5:
+    url_poster: https://theposterdb.com/api/assets/66200
+
+  # Final Fantasy
+  "Final Fantasy: The Spirits Within":
+    url_poster: https://theposterdb.com/api/assets/7213
+  "Final Fantasy VII: Advent Children":
+    url_poster: https://theposterdb.com/api/assets/7214
+  "Final Fantasy VII: Last Order":
+    url_poster: https://theposterdb.com/api/assets/7215
+  "Final Fantasy VII: On the Way to a Smile - Episode Denze":
+    url_poster: https://theposterdb.com/api/assets/7216
+  "Kingsglaive: Final Fantasy XV":
+    url_poster: https://theposterdb.com/api/assets/7217
+
+  # Finding Nemo
+  Finding Nemo:
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/22631
+  Finding Dory:
+    url_poster: https://theposterdb.com/api/assets/22632
+
+  # The Flintstones
+  The Flintstones:
+    year: 1994
+    url_poster: https://theposterdb.com/api/assets/98290
+  The Flintstones in Viva Rock Vegas:
+    url_poster: https://theposterdb.com/api/assets/98291
+
+  # The Fox and the Hound
+  The Fox and the Hound:
+    year: 1981
+    url_poster: https://theposterdb.com/api/assets/78287
+  The Fox and the Hound 2:
+    url_poster: https://theposterdb.com/api/assets/78288
+
+  # Free Willy
+  Free Willy:
+    year: 1993
+    url_poster: https://theposterdb.com/api/assets/17568
+  "Free Willy 2: The Adventure Home":
+    url_poster: https://theposterdb.com/api/assets/17569
+  "Free Willy 3: The Rescue":
+    url_poster: https://theposterdb.com/api/assets/17570
+  "Free Willy: Escape from Pirate's Cove":
+    url_poster: https://theposterdb.com/api/assets/17571
+
+  # Friday
+  Friday:
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/28462
+  Next Friday:
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/28463
+  Friday After Next:
+    url_poster: https://theposterdb.com/api/assets/28464
+
+  # Friday the 13th
+  Friday the 13th:
+    year: 1980
+    url_poster: https://theposterdb.com/api/assets/169889
+  Friday the 13th Part 2:
+    year: 1981
+    url_poster: https://theposterdb.com/api/assets/169890
+  Friday the 13th Part III:
+    year: 1982
+    url_poster: https://theposterdb.com/api/assets/169891
+  "Friday the 13th: The Final Chapter":
+    year: 1984
+    url_poster: https://theposterdb.com/api/assets/169892
+  "Friday the 13th: A New Beginning":
+    year: 1985
+    url_poster: https://theposterdb.com/api/assets/169893
+  "Friday the 13th Part VI: Jason Lives":
+    year: 1986
+    url_poster: https://theposterdb.com/api/assets/169894
+  "Friday the 13th Part VII: The New Blood":
+    year: 1988
+    url_poster: https://theposterdb.com/api/assets/169895
+  "Friday the 13th Part VIII: Jason Takes Manhattan":
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/169896
+  "Jason Goes to Hell: The Final Friday":
+    year: 1993
+    url_poster: https://theposterdb.com/api/assets/169897
+  Jason X:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/169898
+  Freddy vs. Jason:
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/169899
+  Friday the 13th (Reboot):
+    title: Friday the 13th
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/169900
+
+  # Frozen
+  Frozen:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/30789
+  Frozen Fever:
+    url_poster: https://theposterdb.com/api/assets/30790
+  Olaf's Frozen Adventure:
+    url_poster: https://theposterdb.com/api/assets/30791
+  Frozen II:
+    url_poster: https://theposterdb.com/api/assets/30792
+  LEGO Frozen Northern Lights:
+    url_poster: https://theposterdb.com/api/assets/30840
+  Once Upon a Snowman:
+    url_poster: https://theposterdb.com/api/assets/108161
+
+  # G.I. Joe
+  "G.I. Joe: The Rise of Cobra":
+    url_poster: https://theposterdb.com/api/assets/42724
+  "G.I. Joe: Retaliation":
+    url_poster: https://theposterdb.com/api/assets/42725
+  "Snake Eyes: G.I. Joe Origins":
+    url_poster: https://theposterdb.com/api/assets/170291
+
+  # Garfield
+  Garfield:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/85595
+  "Garfield: A Tail of Two Kitties":
+    url_poster: https://theposterdb.com/api/assets/85596
+
+  # George of the Jungle
+  George of the Jungle:
+    year: 1997
+    url_poster: https://theposterdb.com/api/assets/22403
+  George of the Jungle 2:
+    url_poster: https://theposterdb.com/api/assets/22404
+
+  # Ghostbusters
+  Ghostbusters1984:
+    title: Ghostbusters
+    year: 1984
+    url_poster: https://theposterdb.com/api/assets/203164
+  Ghostbusters2016:
+    title: Ghostbusters
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/203166
+  Ghostbusters II:
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/203165
+  "Ghostbusters: Afterlife":
+    url_poster: https://theposterdb.com/api/assets/203167
+
+  # Ghost in the Shell
+  Ghost in the Shell:
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/175260
+  "Ghost in the Shell 2: Innocence":
+    url_poster: https://theposterdb.com/api/assets/175261
+  Ghost in the Shell 2.0:
+    url_poster: https://theposterdb.com/api/assets/175262
+
+  # Ghost Rider
+  Ghost Rider:
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/61953
+  "Ghost Rider: Spirit of Vengeance":
+    url_poster: https://theposterdb.com/api/assets/61954
+
+  # The Girl - Millennium
+  The Girl with the Dragon Tattoo:
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/87829
+  The Girl in the Spider's Web:
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/87830
+
+  # The Godfather Saga
+  The Godfather:
+    url_poster: https://theposterdb.com/api/assets/4857
+  "The Godfather: Part II":
+    url_poster: https://theposterdb.com/api/assets/4858
+  "The Godfather: Part III":
+    url_poster: https://theposterdb.com/api/assets/4859
+
+  # Godzilla (Showa)
+  Godzilla:
+    year: 1954
+    url_poster: https://theposterdb.com/api/assets/125927
+  Godzilla Raids Again:
+    year: 1955
+    url_poster: https://theposterdb.com/api/assets/125928
+  King Kong vs. Godzilla:
+    year: 1962
+    url_poster: https://theposterdb.com/api/assets/125929
+  Mothra vs. Godzilla:
+    year: 1964
+    url_poster: https://theposterdb.com/api/assets/125930
+  Ghidorah, the Three-Headed Monster:
+    year: 1964
+    url_poster: https://theposterdb.com/api/assets/125931
+  Invasion of Astro-Monster:
+    year: 1965
+    url_poster: https://theposterdb.com/api/assets/125932
+  Ebirah, Horror of the Deep:
+    year: 1966
+    url_poster: https://theposterdb.com/api/assets/125933
+  Son of Godzilla:
+    year: 1967
+    url_poster: https://theposterdb.com/api/assets/125934
+  Destroy All Monsters:
+    year: 1968
+    url_poster: https://theposterdb.com/api/assets/125935
+  All Monsters Attack:
+    year: 1969
+    url_poster: https://theposterdb.com/api/assets/125936
+  Godzilla vs. Hedorah:
+    year: 1971
+    url_poster: https://theposterdb.com/api/assets/125937
+  Godzilla vs. Gigan:
+    year: 1972
+    url_poster: https://theposterdb.com/api/assets/125938
+  Godzilla vs. Megalon:
+    year: 1973
+    url_poster: https://theposterdb.com/api/assets/125939
+  Godzilla vs. Mechagodzilla:
+    year: 1974
+    url_poster: https://theposterdb.com/api/assets/125940
+  Terror of Mechagodzilla:
+    year: 1975
+    url_poster: https://theposterdb.com/api/assets/125941
+  Godzilla, King of the Monsters!:
+    year: 1956
+    url_poster: https://theposterdb.com/api/assets/128719
+  Gigantis the Fire Monster:
+    year: 1959
+    url_poster: https://theposterdb.com/api/assets/128720
+
+  # Godzilla (Heisei)
+  The Return of Godzilla:
+    year: 1984
+    url_poster: https://theposterdb.com/api/assets/128722
+  Godzilla 1985:
+    year: 1985
+    url_poster: https://theposterdb.com/api/assets/128723
+  Godzilla vs. Biollante:
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/128724
+  Godzilla vs. King Ghidorah:
+    year: 1991
+    url_poster: https://theposterdb.com/api/assets/128725
+  Godzilla vs. SpaceGodzilla:
+    year: 1994
+    url_poster: https://theposterdb.com/api/assets/128728
+  Godzilla vs. Mothra:
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/128726
+  Godzilla vs. Mechagodzilla II:
+    year: 1993
+    url_poster: https://theposterdb.com/api/assets/128727
+  Godzilla vs. Destoroyah:
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/128729
+
+  # Godzilla (Millennium)
+  "Godzilla 2000: Millennium":
+    year: 1999
+    url_poster: https://theposterdb.com/api/assets/136303
+  Godzilla vs. Megaguirus:
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/136304
+  "Godzilla, Mothra and King Ghidorah: Giant Monsters All-Out Attack":
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/136305
+  Godzilla Against MechaGodzilla:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/136306
+  "Godzilla: Tokyo S.O.S.":
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/136307
+  "Godzilla: Final Wars":
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/136308
+
+  # Godzilla (MonsterVerse)
+  Godzilla (Reboot):
+    title: Godzilla
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/135069
+  "Kong: Skull Island":
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/135070
+  "Godzilla: King of the Monsters":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/135071
+  Godzilla vs. Kong:
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/135072
+
+  # Godzilla (Anime)
+  "Godzilla: Planet of the Monsters":
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/21828
+  "Godzilla: City on the Edge of Battle":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/21829
+  "Godzilla: The Planet Eater":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/21830
+
+  # A Goofy Movie
+  A Goofy Movie:
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/131199
+  An Extremely Goofy Movie:
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/131200
+
+  # Green Street Hooligans
+  Green Street Hooligans:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/97152
+  Green Street Hooligans 2:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/97153
+  "Green Street Hooligans: Underground":
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/97154
+
+  # Grown Ups
+  Grown Ups:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/15308
+  Grown Ups 2:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/15309
+
+  # Goosebumps
+  Goosebumps:
+    url_poster: https://theposterdb.com/api/assets/13947
+  "Goosebumps 2: Haunted Halloween":
+    url_poster: https://theposterdb.com/api/assets/13948
+
+  # Halloween
+  Halloween:
+    year: 1978
+    url_poster: https://theposterdb.com/api/assets/190033
+  Halloween II:
+    url_poster: https://theposterdb.com/api/assets/190034
+  "Halloween III: Season of the Witch":
+    url_poster: https://theposterdb.com/api/assets/190035
+  "Halloween 4: The Return of Michael Myers":
+    url_poster: https://theposterdb.com/api/assets/190036
+  "Halloween 5: The Revenge of Michael Myers":
+    url_poster: https://theposterdb.com/api/assets/190037
+  "Halloween: The Curse of Michael Myers":
+    url_poster: https://theposterdb.com/api/assets/190038
+  "Halloween H20: 20 Years Later":
+    url_poster: https://theposterdb.com/api/assets/190039
+  "Halloween: Resurrection":
+    url_poster: https://theposterdb.com/api/assets/190040
+  Halloween (Alternate Reality):
+    title: Halloween
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/190041
+  Halloween Kills:
+    url_poster: https://theposterdb.com/api/assets/190042
+  Halloween Ends:
+    url_poster: https://theposterdb.com/api/assets/190043
+
+  # The Hangover
+  The Hangover:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/40150
+  The Hangover Part II:
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/40151
+  The Hangover Part III:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/40152
+
+  # Hannibal Lecter
+  Manhunter:
+    year: 1986
+    url_poster: https://theposterdb.com/api/assets/23079
+  The Silence of the Lambs:
+    year: 1991
+    url_poster: https://theposterdb.com/api/assets/23080
+  Hannibal:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/23081
+  Red Dragon:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/23082
+  Hannibal Rising:
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/23083
+
+  # Happy Death Day
+  Happy Death Day:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/49482
+  Happy Death Day 2U:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/49483
+
+  # Harold & Kumar
+  Harold & Kumar Go to White Castle:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/41764
+  Harold & Kumar Escape from Guantanamo Bay:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/41765
+  A Very Harold & Kumar Christmas:
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/41766
+
+  # Harry Potter
+  Harry Potter and the Philosopher's Stone:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/15700
+  Harry Potter and the Chamber of Secrets:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/15701
+  Harry Potter and the Prisoner of Azkaban:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/15702
+  Harry Potter and the Goblet of Fire:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/15703
+  Harry Potter and the Order of the Phoenix:
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/15704
+  Harry Potter and the Half-Blood Prince:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/15705
+  "Harry Potter and the Deathly Hallows: Part 1":
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/15706
+  "Harry Potter and the Deathly Hallows: Part 2":
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/15707
+
+  # ... Has Fallen
+  Olympus Has Fallenz:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/130397
+  London Has Fallen:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/130398
+  Angel Has Fallen:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/130399
+
+  # Hellboy
+  Hellboy:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/11246
+  "Hellboy II: The Golden Army":
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/11247
+  Hellboy (Reboot):
+    title: Hellboy
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/11248
+
+  # Hellboy (Animated)
+  "Hellboy Animated: Sword of Storms":
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/175241
+  "Hellboy Animated: Blood and Iron":
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/175242
+  "Hellboy Animated: Iron Shoes":
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/175243
+  "Hellboy Animated: The Dark Below":
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/175244
+
+  # Hellraiser
+  Hellraiser:
+    year: 1987
+    url_poster: https://theposterdb.com/api/assets/27499
+  "Hellbound: Hellraiser II":
+    year: 1988
+    url_poster: https://theposterdb.com/api/assets/27500
+  "Hellraiser III: Hell on Earth":
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/27501
+  "Hellraiser: Bloodline":
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/27502
+  "Hellraiser: Inferno":
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/27503
+  "Hellraiser: Hellseeker":
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/27504
+  "Hellraiser: Deader":
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/27505
+  "Hellraiser: Hellworld":
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/27506
+  "Hellraiser: Revelations":
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/27507
+  "Hellraiser: Judgment":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/27508
+
+  # High School Musical
+  High School Musical:
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/82922
+  High School Musical 2:
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/82923
+  "High School Musical 3: Senior Year":
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/82924
+
+  # Highlander
+  Highlander:
+    year: 1986
+    url_poster: https://theposterdb.com/api/assets/63712
+  "Highlander II: The Quickening":
+    year: 1991
+    url_poster: https://theposterdb.com/api/assets/63713
+  "Highlander III: The Sorcerer":
+    year: 1994
+    url_poster: https://theposterdb.com/api/assets/63714
+  "Highlander: Endgame":
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/63715
+  "Highlander: The Source":
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/63716
+
+  # Home Alone
+  Home Alone:
+    year: 1990
+    url_poster: https://theposterdb.com/api/assets/23879
+  "Home Alone 2: Lost in New York":
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/23880
+  Home Alone 3:
+    year: 1997
+    url_poster: https://theposterdb.com/api/assets/23881
+  Home Alone 4:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/23882
+  "Home Alone: The Holiday Heist":
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/23883
+  Home Sweet Home Alone:
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/189629
+
+  # Honey, I Shrunk the Kids
+  Honey, I Shrunk the Kids:
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/27435
+  Honey, I Blew Up the Kid:
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/27436
+  Honey, We Shrunk Ourselves:
+    year: 1997
+    url_poster: https://theposterdb.com/api/assets/27437
+
+  # Horrible Bosses
+  Horrible Bosses:
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/41515
+  Horrible Bosses 2:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/41516
+
+  # Hot Tub Time Machine
+  Hot Tub Time Machine:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/14256
+  Hot Tub Time Machine 2:
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/14257
+
+  # Hotel Transylvania
+  Hotel Transylvania:
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/67932
+  Hotel Transylvania 2:
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/67933
+  "Hotel Transylvania 3: Summer Vacation":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/67934
+
+  # House of 1000 Corpses
+  House of 1000 Corpses:
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/109246
+  The Devil's Rejects:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/109247
+  3 from Hell:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/109248
+
+  # How to Train Your Dragon
+  How to Train Your Dragon:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/57148
+  How to Train Your Dragon 2:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/57149
+  "How to Train Your Dragon: The Hidden World":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/57150
+  "How to Train Your Dragon: Homecoming":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/57250
+
+  # The Human Centipede
+  The Human Centipede (First Sequence):
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/153747
+  The Human Centipede 2 (Full Sequence):
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/153748
+  The Human Centipede 3 (Final Sequence):
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/153749
+
+  # The Hunchback of Notre Dame
+  The Hunchback of Notre Dame:
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/78826
+  The Hunchback of Notre Dame II:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/78827
+
+  # The Hunger Games
+  The Hunger Games:
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/18155
+  "The Hunger Games: Catching Fire":
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/18156
+  "The Hunger Games: Mockingjay - Part 1":
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/18157
+  "The Hunger Games: Mockingjay - Part 2":
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/18158
+
+  # The Huntsman
+  Snow White and the Huntsman:
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/54034
+  "The Huntsman: Winter's War":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/54035
+
+  # Ice Age
+  Ice Age:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/19133
+  "Ice Age: The Meltdown":
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/19134
+  "Ice Age: Dawn of the Dinosaurs":
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/19135
+  "Ice Age: Continental Drift":
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/19136
+  "Ice Age: Collision Course":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/19137
+  "Ice Age: A Mammoth Christmas":
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/19141
+  "Ice Age: The Great Egg-Scapade":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/19140
+
+  # The Incredibles
+  The Incredibles:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/18900
+  Incredibles 2:
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/18913
+
+  # Independence Day
+  Independence Day:
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/68633
+  "Independence Day: Resurgence":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/68634
+
+  # Indiana Jones
+  Raiders of the Lost Ark:
+    year: 1981
+    url_poster: https://theposterdb.com/api/assets/158513
+  Indiana Jones and the Temple of Doom:
+    year: 1984
+    url_poster: https://theposterdb.com/api/assets/158514
+  Indiana Jones and the Last Crusade:
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/158515
+  Indiana Jones and the Kingdom of the Crystal Skull:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/158516
+
+  # IP Man
+  Ip Man:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/52648
+  Ip Man 2:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/52649
+  Ip Man 3:
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/52650
+  "Ip Man 4: The Finale":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/52651
+  "The Legend Is Born: Ip Man":
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/66525
+  The Grandmaster:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/66526
+  "Ip Man: The Final Fight":
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/66527
+  "Master Z: Ip Man Legacy":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/66528
+  "Ip Man: Kung Fu Master":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/127152
+
+  # IT
+  It:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/19250
+  It Chapter Two:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/19251
+
+  # James Bond https://theposterdb.com/set/78937
+  Dr. No:
+    year: 1962
+    url_poster: https://theposterdb.com/api/assets/126241
+  From Russia with Love:
+    year: 1963
+    url_poster: https://theposterdb.com/api/assets/126242
+  Goldfinger:
+    year: 1964
+    url_poster: https://theposterdb.com/api/assets/126243
+  Thunderball:
+    year: 1965
+    url_poster: https://theposterdb.com/api/assets/126244
+  Casino Royale:
+    year: 1967
+    url_poster: https://theposterdb.com/api/assets/126245
+  You Only Live Twice:
+    year: 1967
+    url_poster: https://theposterdb.com/api/assets/126246
+  On Her Majesty's Secret Service:
+    year: 1969
+    url_poster: https://theposterdb.com/api/assets/126247
+  Diamonds Are Forever:
+    year: 1971
+    url_poster: https://theposterdb.com/api/assets/126248
+  Live and Let Die:
+    year: 1973
+    url_poster: https://theposterdb.com/api/assets/126249
+  The Man with the Golden Gun:
+    year: 1974
+    url_poster: https://theposterdb.com/api/assets/126250
+  The Spy Who Loved Me:
+    year: 1977
+    url_poster: https://theposterdb.com/api/assets/126251
+  Moonraker:
+    year: 1979
+    url_poster: https://theposterdb.com/api/assets/126252
+  For Your Eyes Only:
+    year: 1981
+    url_poster: https://theposterdb.com/api/assets/126253
+  Octopussy:
+    year: 1983
+    url_poster: https://theposterdb.com/api/assets/126254
+  Never Say Never Again:
+    year: 1983
+    url_poster: https://theposterdb.com/api/assets/126255
+  A View to a Kill:
+    year: 1985
+    url_poster: https://theposterdb.com/api/assets/126256
+  The Living Daylights:
+    year: 1987
+    url_poster: https://theposterdb.com/api/assets/126257
+  Licence to Kill:
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/126258
+  GoldenEye:
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/126259
+  Tomorrow Never Dies:
+    year: 1997
+    url_poster: https://theposterdb.com/api/assets/126260
+  The World Is Not Enough:
+    year: 1999
+    url_poster: https://theposterdb.com/api/assets/126261
+  Die Another Day:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/126262
+  Casino Royale (Remake):
+    title: Casino Royale
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/126263
+  Quantum of Solace:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/126264
+  Skyfall:
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/126265
+  Spectre:
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/126266
+  No Time to Die:
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/126267
+
+  # Jason Bourne
+  The Bourne Identity:
+    url_poster: https://theposterdb.com/api/assets/19520
+  The Bourne Legacy:
+    url_poster: https://theposterdb.com/api/assets/19523
+  The Bourne Supremacy:
+    url_poster: https://theposterdb.com/api/assets/19521
+  The Bourne Ultimatum:
+    url_poster: https://theposterdb.com/api/assets/19522
+  Jason Bourne:
+    url_poster: https://theposterdb.com/api/assets/19524
+
+  # Jaws
+  Jaws:
+    year: 1975
+    url_poster: https://theposterdb.com/api/assets/8289
+  Jaws 2:
+    year: 1978
+    url_poster: https://theposterdb.com/api/assets/8290
+  Jaws 3-D:
+    year: 1983
+    url_poster: https://theposterdb.com/api/assets/8291
+  "Jaws: The Revenge":
+    year: 1987
+    url_poster: https://theposterdb.com/api/assets/8292
+
+  # Jay and Silent Bob
+  Jay and Silent Bob Strike Back:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/97421
+  Jay and Silent Bob Reboot:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/97422
+
+  # John Wick
+  John Wick:
+    url_poster: https://theposterdb.com/api/assets/13286
+  "John Wick: Chapter 2":
+    url_poster: https://theposterdb.com/api/assets/13287
+  "John Wick: Chapter 3 - Parabellum":
+    url_poster: https://theposterdb.com/api/assets/13288
+
+  # Jump Street
+  21 Jump Street:
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/22122
+  22 Jump Street:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/22123
+
+  # The Jungle Book
+  The Jungle Book:
+    year: 1967
+    url_poster: https://theposterdb.com/api/assets/44927
+  The Jungle Book 2:
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/44928
+
+  # Jumanji
+  Jumanji:
+    url_poster: https://theposterdb.com/api/assets/54113
+  "Jumanji: Welcome to the Jungle":
+    url_poster: https://theposterdb.com/api/assets/54114
+  "Jumanji: The Next Level":
+    url_poster: https://theposterdb.com/api/assets/54115
+
+  # Jurassic Park
+  Jurassic Park:
+    url_poster: https://theposterdb.com/api/assets/13235
+  "The Lost World: Jurassic Park":
+    url_poster: https://theposterdb.com/api/assets/13236
+  Jurassic Park III:
+    url_poster: https://theposterdb.com/api/assets/13237
+  Jurassic World:
+    url_poster: https://theposterdb.com/api/assets/13238
+  "Jurassic World: Fallen Kingdom":
+    url_poster: https://theposterdb.com/api/assets/13239
+
+  # The Karate Kid
+  The Karate Kid:
+    year: 1984
+    url_poster: https://theposterdb.com/api/assets/2564
+  The Karate Kid Part II:
+    year: 1986
+    url_poster: https://theposterdb.com/api/assets/2566
+  The Karate Kid Part III:
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/2567
+  The Next Karate Kid:
+    year: 1994
+    url_poster: https://theposterdb.com/api/assets/2569
+  The Karate Kid (Reboot):
+    title: The Karate Kid
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/23615
+
+  # Kick-Ass
+  Kick-Ass:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/9886
+  Kick-Ass 2:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/9887
+
+  # Kill Bill
+  "Kill Bill: Vol. 1":
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/40154
+  "Kill Bill: Vol. 2":
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/40155
+
+  # Kingsman
+  "Kingsman: The Secret Service":
+    url_poster: https://theposterdb.com/api/assets/6652
+  "Kingsman: The Golden Circle":
+    url_poster: https://theposterdb.com/api/assets/6653
+  "The King's Man":
+    url_poster: https://theposterdb.com/api/assets/6654
+
+  # Kung Fu Panda
+  Kung Fu Panda:
+    url_poster: https://theposterdb.com/api/assets/112271
+  Kung Fu Panda 2:
+    url_poster: https://theposterdb.com/api/assets/112272
+  Kung Fu Panda 3:
+    url_poster: https://theposterdb.com/api/assets/112273
+
+  # Lady and the Tramp
+  Lady and the Tramp:
+    year: 1955
+    url_poster: https://theposterdb.com/api/assets/44949
+  "Lady and the Tramp II: Scamp's Adventure":
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/44951
+
+  # Lake Placid
+  Lake Placid:
+    year: 1999
+    url_poster: https://theposterdb.com/api/assets/73817
+  Lake Placid 2:
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/73812
+  Lake Placid 3:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/73813
+  "Lake Placid: The Final Chapter":
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/73814
+  Lake Placid vs. Anaconda:
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/73815
+  "Lake Placid: Legacy":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/73816
+
+  # The Land Before Time
+  The Land Before Time:
+    year: 1988
+    url_poster: https://theposterdb.com/api/assets/105458
+  "The Land Before Time: The Great Valley Adventure":
+    year: 1994
+    url_poster: https://theposterdb.com/api/assets/105459
+  "The Land Before Time III: The Time of the Great Giving":
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/105460
+  "The Land Before Time IV: Journey Through the Mists":
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/105461
+  "The Land Before Time V: The Mysterious Island":
+    year: 1997
+    url_poster: https://theposterdb.com/api/assets/105462
+  "The Land Before Time VI: The Secret of Saurus Rock":
+    year: 1998
+    url_poster: https://theposterdb.com/api/assets/105463
+  "The Land Before Time VII: The Stone of Cold Fire":
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/105464
+  "The Land Before Time VIII: The Big Freeze":
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/105465
+  "The Land Before Time IX: Journey to Big Water":
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/105466
+  "The Land Before Time X: The Great Longneck Migration":
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/105467
+  "The Land Before Time XI: Invasion of the Tinysauruses":
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/105468
+  "The Land Before Time XII: The Great Day of the Flyers":
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/105469
+  "The Land Before Time XIII: The Wisdom of Friends":
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/105470
+  "The Land Before Time XIV: Journey of the Brave":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/105471
+
+  #  Legally Blonde
+  Legally Blonde:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/14287
+  "Legally Blonde 2: Red, White & Blonde":
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/14288
+  Legally Blondes:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/14289
+
+  # The Lego Movie
+  The Lego Movie:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/46060
+  The Lego Batman Movie:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/46061
+  The Lego Ninjago Movie:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/46062
+  "The Lego Movie 2: The Second Part":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/46064
+
+  # Lethal Weapon
+  Lethal Weapon:
+    year: 1987
+    url_poster: https://theposterdb.com/api/assets/12381
+  Lethal Weapon 2:
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/12382
+  Lethal Weapon 3:
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/12383
+  Lethal Weapon 4:
+    year: 1998
+    url_poster: https://theposterdb.com/api/assets/12384
+
+  # Lilo & Stitch
+  Lilo & Stitch:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/48066
+  Stitch! The Movie:
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/48067
+  "Lilo & Stitch 2: Stitch Has a Glitch":
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/48068
+  Leroy & Stitch:
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/48069
+
+  # Living Dead
+  Night of the Living Dead:
+    year: 1968
+    url_poster: https://theposterdb.com/api/assets/60044
+  Dawn of the Dead:
+    year: 1978
+    url_poster: https://theposterdb.com/api/assets/60045
+  Day of the Dead:
+    year: 1985
+    url_poster: https://theposterdb.com/api/assets/60046
+  Land of the Dead:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/60047
+  Diary of the Dead:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/60048
+  Survival of the Dead:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/60049
+
+  # The Lion King
+  The Lion King:
+    year: 1994
+    url_poster: https://theposterdb.com/api/assets/82631
+  "The Lion King II: Simba's Pride":
+    year: 1998
+    url_poster: https://theposterdb.com/api/assets/82632
+  The Lion King 1½:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/82633
+
+  # The Little Mermaid
+  The Little Mermaid:
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/46805
+  "The Little Mermaid II: Return to the Sea":
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/46806
+  "The Little Mermaid: Ariel's Beginning":
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/46807
+
+  # The Lord of the Rings (Animated)
+  The Hobbit:
+    year: 1977
+    url_poster: https://theposterdb.com/api/assets/203017
+  The Lord of the Rings:
+    year: 1978
+    url_poster: https://theposterdb.com/api/assets/203018
+  The Return of the King:
+    year: 1980
+    url_poster: https://theposterdb.com/api/assets/203019
+
+  # Mad Max
+  Mad Max:
+    year: 1979
+    url_poster: https://theposterdb.com/api/assets/134426
+  Mad Max 2:
+    year: 1981
+    url_poster: https://theposterdb.com/api/assets/134427
+  Mad Max Beyond Thunderdome:
+    year: 1985
+    url_poster: https://theposterdb.com/api/assets/134428
+  "Mad Max: Fury Road":
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/134429
+
+  # Madagascar
+  Madagascar:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/932
+  "Madagascar: Escape 2 Africa":
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/933
+  "Madagascar 3: Europe's Most Wanted":
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/934
+  Merry Madagascar:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/111857
+  The Madagascar Penguins in a Christmas Caper:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/112431
+  Madly Madagascar:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/112432
+  Penguins of Madagascar:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/112433
+
+  # Mall Cop
+  "Paul Blart: Mall Cop":
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/65445
+  "Paul Blart: Mall Cop 2":
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/65446
+
+  # The Man With No Name
+  A Fistful of Dollars:
+    year: 1964
+    url_poster: https://theposterdb.com/api/assets/54597
+  For a Few Dollars More:
+    year: 1965
+    url_poster: https://theposterdb.com/api/assets/54598
+  The Good, the Bad and the Ugly:
+    year: 1966
+    url_poster: https://theposterdb.com/api/assets/54599
+
+  # Marvel Rising
+  "Marvel Rising: Secret Warriors":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/172297
+  "Marvel Rising: Chasing Ghosts":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/172298
+  "Marvel Rising: Heart of Iron":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/172299
+  "Marvel Rising: Battle of the Bands":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/172300
+  "Marvel Rising: Operation Shuri":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/172301
+  "Marvel Rising: Playing with Fire":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/172302
+
+  # Mary Poppins
+  Mary Poppins:
+    year: 1964
+    url_poster: https://theposterdb.com/api/assets/2632
+  Mary Poppins Returns:
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/2633
+
+  # The Mask
+  The Mask:
+    year: 1994
+    url_poster: https://theposterdb.com/api/assets/18360
+  Son of the Mask:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/18361
+
+  # The Matrix
+  The Matrix:
+    url_poster: https://theposterdb.com/api/assets/65274
+  The Animatrix:
+    url_poster: https://theposterdb.com/api/assets/65275
+  The Matrix Revolutions:
+    url_poster: https://theposterdb.com/api/assets/65277
+  The Matrix Reloaded:
+    url_poster: https://theposterdb.com/api/assets/65276
+  The Matrix Resurrections:
+    url_poster: https://theposterdb.com/api/assets/198379
+
+  # The Maze Runner
+  The Maze Runner:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/175
+  "Maze Runner: The Scorch Trials":
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/176
+  "Maze Runner: The Death Cure":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/177
+
+  # Mean Girls
+  Mean Girls:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/48320
+  Mean Girls 2:
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/48321
+
+  # Meet the Parents
+  Meet the Parents:
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/35567
+  Meet the Fockers:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/35568
+  Little Fockers:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/35569
+
+  # Men In Black
+  Men in Black:
+    year: 1997
+    url_poster: https://theposterdb.com/api/assets/103971
+  Men in Black II:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/103972
+  Men in Black 3:
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/103973
+  "Men in Black: International":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/103974
+
+  # The Mighty Ducks
+  The Mighty Ducks:
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/107224
+  "D2: The Mighty Ducks":
+    year: 1994
+    url_poster: https://theposterdb.com/api/assets/107225
+  "D3: The Mighty Ducks":
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/107226
+
+  # Middle Earth
+  "The Hobbit: An Unexpected Journey":
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/12310
+  "The Hobbit: The Desolation of Smaug":
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/12311
+  "The Hobbit: The Battle of the Five Armies":
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/12312
+  "The Lord of the Rings: The Fellowship of the Ring":
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/11555
+  "The Lord of the Rings: The Two Towers":
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/11556
+  "The Lord of the Rings: The Return of the King":
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/11557
+
+  # Mission: Impossible
+  "Mission: Impossible":
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/2706
+  "Mission: Impossible II":
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/2707
+  "Mission: Impossible III":
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/2708
+  "Mission: Impossible - Ghost Protocol":
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/2709
+  "Mission: Impossible - Rogue Nation":
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/2710
+  "Mission: Impossible - Fallout":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/2711
+
+  # Monsters, Inc
+  Monsters, Inc.:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/161791
+  Monsters University:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/161792
+
+  # Monty Python
+  And Now for Something Completely Different:
+    year: 1971
+    url_poster: https://theposterdb.com/api/assets/148490
+  Monty Python and the Holy Grail:
+    year: 1975
+    url_poster: https://theposterdb.com/api/assets/148491
+  Life of Brian:
+    year: 1979
+    url_poster: https://theposterdb.com/api/assets/148492
+  The Meaning of Life:
+    year: 1983
+    url_poster: https://theposterdb.com/api/assets/148493
+
+  # Mortal Kombat
+  Mortal Kombat:
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/6107
+  "Mortal Kombat: Annihilation":
+    year: 1997
+    url_poster: https://theposterdb.com/api/assets/6108
+  "Mortal Kombat Legends: Scorpion's Revenge":
+    year: 2020
+    url_poster: https://theposterdb.com/api/assets/63204
+  Mortal Kombat (Reboot):
+    title: Mortal Kombat
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/147283
+
+  # Mulan
+  Mulan:
+    year: 1998
+    url_poster: https://theposterdb.com/api/assets/46222
+  Mulan II:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/46223
+  Mulan (Live Action):
+    title: Mulan
+    year: 2020
+    url_poster: https://theposterdb.com/api/assets/100146
+
+  # The Mummy
+  The Mummy:
+    year: 1999
+    url_poster: https://theposterdb.com/api/assets/69967
+  The Mummy Returns:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/69968
+  "The Mummy: Tomb of the Dragon Emperor":
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/69969
+
+  # The Muppets
+  The Muppet Movie:
+    year: 1979
+    url_poster: https://theposterdb.com/api/assets/13697
+  The Great Muppet Caper:
+    year: 1981
+    url_poster: https://theposterdb.com/api/assets/13698
+  The Muppets Take Manhattan:
+    year: 1984
+    url_poster: https://theposterdb.com/api/assets/13699
+  The Muppet Christmas Carol:
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/13700
+  Muppet Treasure Island:
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/13701
+  Muppets from Space:
+    year: 1999
+    url_poster: https://theposterdb.com/api/assets/13702
+  The Muppets' Wizard of Oz:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/13703
+  The Muppets:
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/13780
+  Muppets Most Wanted:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/13781
+  It's a Very Merry Muppet Christmas Movie:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/13925
+  Muppets Haunted Mansion:
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/185575
+
+  # National Treasure
+  National Treasure:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/71197
+  "National Treasure: Book of Secrets":
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/71199
+
+  # Neighbors
+  Neighbors:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/92863
+  "Neighbors 2: Sorority Rising":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/92864
+
+  # The Neverending Story
+  The Neverending Story:
+    year: 1984
+    url_poster: https://theposterdb.com/api/assets/186992
+  "The NeverEnding Story II: The Next Chapter":
+    year: 1990
+    url_poster: https://theposterdb.com/api/assets/186993
+
+  # Night at the Museum
+  Night at the Museum:
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/83453
+  "Night at the Museum: Battle of the Smithsonian":
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/83454
+  "Night at the Museum: Secret of the Tomb":
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/83455
+
+  # Nightmare on Elm Street
+  A Nightmare on Elm Street:
+    year: 1984
+    url_poster: https://theposterdb.com/api/assets/115953
+  "A Nightmare on Elm Street Part 2: Freddy's Revenge":
+    url_poster: https://theposterdb.com/api/assets/115954
+  "A Nightmare on Elm Street 3: Dream Warriors":
+    url_poster: https://theposterdb.com/api/assets/115955
+  "A Nightmare on Elm Street 4: The Dream Master":
+    url_poster: https://theposterdb.com/api/assets/115956
+  "A Nightmare on Elm Street: The Dream Child":
+    url_poster: https://theposterdb.com/api/assets/115957
+  "Freddy's Dead: The Final Nightmare":
+    url_poster: https://theposterdb.com/api/assets/115958
+  New Nightmare:
+    url_poster: https://theposterdb.com/api/assets/115959
+  A Nightmare on Elm Street (Remake):
+    title: A Nightmare on Elm Street
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/115960
+
+  # Now You See Me
+  Now You See Me:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/10166
+  Now You See Me 2:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/10167
+
+  # Ocean's Too Many
+  Ocean's Eleven:
+    sort_title: Ocean's 11
+    url_poster: https://theposterdb.com/api/assets/64819
+  Ocean's Twelve:
+    sort_title: Ocean's 12
+    url_poster: https://theposterdb.com/api/assets/64820
+  Ocean's Thirteen:
+    sort_title: Ocean's 13
+    url_poster: https://theposterdb.com/api/assets/64821
+  Ocean's Eight:
+    sort_title: Ocean's 8
+    url_poster: https://theposterdb.com/api/assets/64822
+
+  # Ong Bak
+  "Ong Bak: Muay Thai Warrior":
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/49283
+  Ong Bak 2:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/49284
+  Ong Bak 3:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/49285
+
+  # Oz
+  The Wizard of Oz:
+    year: 1939
+    url_poster: https://theposterdb.com/api/assets/60208
+  Return to Oz:
+    year: 1985
+    url_poster: https://theposterdb.com/api/assets/60209
+  Oz the Great and Powerful:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/60210
+
+  # Pacific Rim
+  Pacific Rim:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/3398
+  "Pacific Rim: Uprising":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/3399
+
+  # Paddington
+  Paddington:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/1234
+  Paddington 2:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/1235
+
+  # Percy Jackson
+  "Percy Jackson & the Olympians: The Lightning Thief":
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/52876
+  "Percy Jackson: Sea of Monsters":
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/52877
+
+  # Pet Sematary
+  Pet Sematary:
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/107036
+  Pet Sematary II:
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/107037
+  Pet Sematary (Reboot):
+    title: Pet Sematary
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/107038
+
+  # Peter Pan
+  Peter Pan:
+    year: 1953
+    url_poster: https://theposterdb.com/api/assets/59449
+  Return to Never Land:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/59450
+
+  # Pirates of the Caribbean
+  "Pirates of the Caribbean: The Curse of the Black Pearl":
+    url_poster: https://theposterdb.com/api/assets/49934
+  "Pirates of the Caribbean: Dead Man's Chest":
+    url_poster: https://theposterdb.com/api/assets/49935
+  "Pirates of the Caribbean: At World's End":
+    url_poster: https://theposterdb.com/api/assets/49936
+  "Pirates of the Caribbean: On Stranger Tides":
+    url_poster: https://theposterdb.com/api/assets/49937
+  "Pirates of the Caribbean: Dead Men Tell No Tales":
+    url_poster: https://theposterdb.com/api/assets/49938
+
+  # Pitch Perfect
+  Pitch Perfect:
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/51632
+  Pitch Perfect 2:
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/51633
+  Pitch Perfect 3:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/51634
+
+  # Planes
+  Planes:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/31279
+  "Planes: Fire & Rescue":
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/31280
+
+  # Planet of the Apes
+  Rise of the Planet of the Apes:
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/138600
+  Dawn of the Planet of the Apes:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/138601
+  War for the Planet of the Apes:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/138602
+
+  # Pocahontas
+  Pocahontas:
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/50197
+  "Pocahontas II: Journey to a New World":
+    year: 1998
+    url_poster: https://theposterdb.com/api/assets/50198
+
+  # Police Story
+  Police Story:
+    year: 1985
+    url_poster: https://theposterdb.com/api/assets/92123
+  Police Story 2:
+    year: 1988
+    url_poster: https://theposterdb.com/api/assets/92124
+  "Police Story 3: Super Cop":
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/92125
+  Supercop 2:
+    year: 1993
+    url_poster: https://theposterdb.com/api/assets/92126
+  First Strike:
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/92127
+  New Police Story:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/92128
+  "Police Story: Lockdown":
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/92129
+
+  # Power Rangers
+  "Mighty Morphin Power Rangers: The Movie":
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/13868
+  "Turbo: A Power Rangers Movie":
+    year: 1997
+    url_poster: https://theposterdb.com/api/assets/13869
+  Power Rangers:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/13870
+
+  # Predator
+  Predator:
+    year: 1987
+    url_poster: https://theposterdb.com/api/assets/43443
+  Predator 2:
+    year: 1990
+    url_poster: https://theposterdb.com/api/assets/43444
+  Predators:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/43445
+  The Predator:
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/43446
+
+  # The Princess Diaries
+  The Princess Diaries:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/51484
+  "The Princess Diaries 2: Royal Engagement":
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/51485
+
+  # The Purge
+  The Purge:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/8516
+  "The Purge: Anarchy":
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/8517
+  "The Purge: Election Year":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/8518
+  The First Purge:
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/8519
+
+  # Quarantine
+  Quarantine:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/65659
+  "Quarantine 2: Terminal":
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/65660
+
+  # Rambo
+  First Blood:
+    year: 1982
+    url_poster: https://theposterdb.com/api/assets/2613
+  "Rambo: First Blood Part II":
+    year: 1985
+    url_poster: https://theposterdb.com/api/assets/2615
+  Rambo III:
+    year: 1988
+    url_poster: https://theposterdb.com/api/assets/2617
+  Rambo:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/2619
+  "Rambo: Last Blood":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/2620
+
+  # Red Cliff
+  Red Cliff:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/93009
+  Red Cliff Part II:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/93010
+
+  # The Rescuers
+  The Rescuers:
+    year: 1977
+    url_poster: https://theposterdb.com/api/assets/33340
+  The Rescuers Down Under:
+    year: 1990
+    url_poster: https://theposterdb.com/api/assets/33346
+
+  # Resident Evil
+  Resident Evil:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/11304
+  "Resident Evil: Apocalypse":
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/11305
+  "Resident Evil: Extinction":
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/11306
+  "Resident Evil: Afterlife":
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/11307
+  "Resident Evil: Retribution":
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/11308
+  "Resident Evil: The Final Chapter":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/11309
+
+  # Resident Evil Biohazard
+  "Resident Evil: Degeneration":
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/95489
+  "Resident Evil: Damnation":
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/95490
+  "Resident Evil: Vendetta":
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/95491
+
+  # Ride Along
+  Ride Along:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/19300
+  Ride Along 2:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/19301
+
+  # Rio
+  Rio:
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/85958
+  Rio 2:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/85959
+
+  # Robert Langdon
+  The Da Vinci Code:
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/842
+  Angels & Demons:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/843
+  Inferno:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/844
+
+  # RoboCop
+  RoboCop:
+    year: 1987
+    url_poster: https://theposterdb.com/api/assets/75746
+  RoboCop 2:
+    year: 1990
+    url_poster: https://theposterdb.com/api/assets/75747
+  RoboCop 3:
+    year: 1993
+    url_poster: https://theposterdb.com/api/assets/75748
+  RoboCop (Reboot):
+    title: RoboCop
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/75749
+
+  # Rocky
+  Rocky:
+    year: 1976
+    url_poster: https://theposterdb.com/api/assets/40075
+  Rocky II:
+    year: 1979
+    url_poster: https://theposterdb.com/api/assets/40076
+  Rocky III:
+    year: 1982
+    url_poster: https://theposterdb.com/api/assets/40077
+  Rocky IV:
+    year: 1985
+    url_poster: https://theposterdb.com/api/assets/40079
+  Rocky V:
+    year: 1990
+    url_poster: https://theposterdb.com/api/assets/40080
+  Rocky Balboa:
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/40082
+
+  # Rurouni Kenshin
+  "Rurouni Kenshin Part I: Origins":
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/166494
+  'Rurouni Kenshin Part II: Kyoto Inferno':
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/166495
+  "Rurouni Kenshin Part III: The Legend Ends":
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/166496
+  "Rurouni Kenshin: The Final":
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/166497
+  "Rurouni Kenshin: The Beginning":
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/166498
+
+  # Rush Hour
+  Rush Hour:
+    year: 1998
+    url_poster: https://theposterdb.com/api/assets/13267
+  Rush Hour 2:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/13268
+  Rush Hour 3:
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/13269
+
+  # The Santa Clause
+  The Santa Clause:
+    url_poster: https://theposterdb.com/api/assets/130698
+  The Santa Clause 2:
+    url_poster: https://theposterdb.com/api/assets/130699
+  "The Santa Clause 3: The Escape Clause":
+    url_poster: https://theposterdb.com/api/assets/130700
+
+  # Santa Paws
+  The Search for Santa Paws:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/96435
+  "Santa Paws 2: The Santa Pups":
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/96436
+
+  # Saw
+  Saw:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/155364
+  Saw II:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/155365
+  Saw III:
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/155366
+  Saw IV:
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/155367
+  Saw V:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/155368
+  Saw VI:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/155369
+  Saw 3D:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/155370
+  Jigsaw:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/155371
+  "Spiral":
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/155372
+
+  # Scary Movie
+  Scary Movie:
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/994
+  Scary Movie 2:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/995
+  Scary Movie 3:
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/996
+  Scary Movie 4:
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/997
+  Scary Movie 5:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/998
+
+  # The Scorpion King
+  The Scorpion King:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/90470
+  "The Scorpion King 2: Rise of a Warrior":
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/90471
+  "The Scorpion King 3: Battle for Redemption":
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/90472
+  "The Scorpion King 4: Quest for Power":
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/90473
+  "The Scorpion King: Book of Souls":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/90474
+
+  # Scream
+  Scream:
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/805
+  Scream 2:
+    year: 1997
+    url_poster: https://theposterdb.com/api/assets/806
+  Scream 3:
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/807
+  Scream 4:
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/808
+
+  # The Secret Life of Pets
+  The Secret Life of Pets:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/65775
+  The Secret Life of Pets 2:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/65776
+
+  # Shaft
+  Shaft:
+    year: 1971
+    url_poster: https://theposterdb.com/api/assets/60769
+  Shaft's Big Score!:
+    year: 1972
+    url_poster: https://theposterdb.com/api/assets/60770
+  Shaft in Africa:
+    year: 1973
+    url_poster: https://theposterdb.com/api/assets/60771
+
+  # Shanghai Noon
+  Shanghai Noon:
+    year: 2000
+    url_poster: https://theposterdb.com/api/assets/106518
+  Shanghai Knights:
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/106519
+
+  # Sharknado
+  Sharknado:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/9125
+  "Sharknado 2: The Second One":
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/9126
+  "Sharknado 3: Oh Hell No!":
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/9127
+  "Sharknado 4: The 4th Awakens":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/9128
+  "Sharknado 5: Global Swarming":
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/9129
+  "The Last Sharknado: It's About Time":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/9130
+
+  # Sherlock Holmes
+  Sherlock Holmes:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/2624
+  "Sherlock Holmes: A Game of Shadows":
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/2625
+
+  # The Shining
+  The Shining:
+    year: 1980
+    url_poster: https://theposterdb.com/api/assets/81433
+  Doctor Sleep:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/81434
+
+  # Shrek
+  Shrek:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/6998
+  Shrek 2:
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/6999
+  Shrek the Third:
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/7000
+  Shrek Forever After:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/7001
+
+  # Silent Hill
+  Silent Hill:
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/11691
+  "Silent Hill: Revelation 3D":
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/11693
+
+  # Slap Shot
+  Slap Shot:
+    year: 1977
+    url_poster: https://theposterdb.com/api/assets/98033
+  "Slap Shot 2: Breaking the Ice":
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/98034
+  "Slap Shot 3: The Junior League":
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/98035
+
+  # The Smurfs
+  The Smurfs:
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/59208
+  The Smurfs 2:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/59209
+  "Smurfs: The Lost Village":
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/59210
+
+  # Spy Kids
+  Spy Kids:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/20656
+  "Spy Kids 2: The Island of Lost Dreams":
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/20657
+  "Spy Kids 3-D: Game Over":
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/20658
+  "Spy Kids: All the Time in the World":
+    year: 2011
+    url_poster: https://theposterdb.com/api/assets/20659
+
+  # Star Trek
+  "Star Trek: The Motion Picture":
+    year: 1979
+    url_poster: https://theposterdb.com/api/assets/146185
+  "Star Trek II: The Wrath of Khan":
+    year: 1982
+    url_poster: https://theposterdb.com/api/assets/146186
+  "Star Trek III: The Search for Spock":
+    year: 1984
+    url_poster: https://theposterdb.com/api/assets/146187
+  "Star Trek IV: The Voyage Home":
+    year: 1986
+    url_poster: https://theposterdb.com/api/assets/146188
+  "Star Trek V: The Final Frontier":
+    year: 1989
+    url_poster: https://theposterdb.com/api/assets/146189
+  "Star Trek VI: The Undiscovered Country":
+    year: 1991
+    url_poster: https://theposterdb.com/api/assets/146190
+  "Star Trek: Generations":
+    year: 1994
+    url_poster: https://theposterdb.com/api/assets/146191
+  "Star Trek: First Contact":
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/146192
+  "Star Trek: Insurrection":
+    year: 1998
+    url_poster: https://theposterdb.com/api/assets/146193
+  "Star Trek: Nemesis":
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/146194
+  Star Trek:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/146195
+  Star Trek Into Darkness:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/146196
+  Star Trek Beyond:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/146197
+
+  # Star Wars
+  "Star Wars: Episode IV - A New Hope":
+    url_poster: https://theposterdb.com/api/assets/39680
+  "Star Wars: Episode V - The Empire Strikes Back":
+    url_poster: https://theposterdb.com/api/assets/39681
+  "Star Wars: Episode VI - Return of the Jedi":
+    url_poster: https://theposterdb.com/api/assets/39682
+  "Star Wars: Episode I - The Phantom Menace":
+    url_poster: https://theposterdb.com/api/assets/39683
+  "Star Wars: Episode II - Attack of the Clones":
+    url_poster: https://theposterdb.com/api/assets/39684
+  "Star Wars: Episode III - Revenge of the Sith":
+    url_poster: https://theposterdb.com/api/assets/39685
+  "Star Wars: Episode VII - The Force Awakens":
+    url_poster: https://theposterdb.com/api/assets/39686
+  "Rogue One: A Star Wars Story":
+    url_poster: https://theposterdb.com/api/assets/39687
+  "Star Wars: Episode VIII - The Last Jedi":
+    url_poster: https://theposterdb.com/api/assets/39688
+  "Solo: A Star Wars Story":
+    url_poster: https://theposterdb.com/api/assets/39689
+  "Star Wars: Episode IX - The Rise of Skywalker":
+    url_poster: https://theposterdb.com/api/assets/39690
+  The Star Wars Holiday Special:
+    url_poster: https://theposterdb.com/api/assets/39871
+
+  # Step Up
+  Step Up:
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/20868
+  "Step Up 2: The Streets":
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/20869
+  Step Up 3D:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/20870
+  Step Up Revolution:
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/20871
+  Step Up All In:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/20872
+
+  # Stuart Little
+  Stuart Little:
+    year: 1999
+    url_poster: https://theposterdb.com/api/assets/94629
+  Stuart Little 2:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/94630
+  "Stuart Little 3: Call of the Wild":
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/94631
+
+  # Super Troopers
+  Super Troopers:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/36803
+  Super Troopers 2:
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/36804
+
+  # Superman
+  Superman:
+    url_poster: https://theposterdb.com/api/assets/76662
+  Superman II:
+    url_poster: https://theposterdb.com/api/assets/76663
+  Superman III:
+    url_poster: https://theposterdb.com/api/assets/76664
+  "Superman IV: The Quest for Peace":
+    url_poster: https://theposterdb.com/api/assets/76665
+  Superman Returns:
+    url_poster: https://theposterdb.com/api/assets/76666
+
+  # Surf's Up
+  Surf's Up:
+    year: 2007
+    url_poster: https://theposterdb.com/api/assets/155
+  "Surf's Up 2: WaveMania":
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/156
+
+  # Taken
+  Taken:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/112817
+  Taken 2:
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/112818
+  Taken 3:
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/112819
+
+  # Tarzan
+  Tarzan:
+    year: 1999
+    url_poster: https://theposterdb.com/api/assets/56440
+  Tarzan & Jane:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/56441
+
+  # Ted
+  Ted:
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/66435
+  Ted 2:
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/66436
+
+  # Teenage Mutant Ninja Turtles
+  Teenage Mutant Ninja Turtles:
+    year: 1990
+    url_poster: https://theposterdb.com/api/assets/4622
+  "Teenage Mutant Ninja Turtles II: The Secret of the Ooze":
+    year: 1991
+    url_poster: https://theposterdb.com/api/assets/4623
+  Teenage Mutant Ninja Turtles III:
+    year: 1993
+    url_poster: https://theposterdb.com/api/assets/4624
+
+  # Teenage Mutant Ninja Turtles (Remake)
+  Teenage Mutant Ninja Turtles (Remake):
+    title: Teenage Mutant Ninja Turtles
+    year: 2014
+    url_poster: https://theposterdb.com/api/assets/60982
+  "Teenage Mutant Ninja Turtles: Out of the Shadows":
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/60983
+
+  # The Terminator
+  The Terminator:
+    url_poster: https://theposterdb.com/api/assets/62892
+  "Terminator 2: Judgment Day":
+    url_poster: https://theposterdb.com/api/assets/62893
+  "Terminator 3: Rise of the Machines":
+    url_poster: https://theposterdb.com/api/assets/62894
+  Terminator Salvation:
+    url_poster: https://theposterdb.com/api/assets/62895
+  Terminator Genisys:
+    url_poster: https://theposterdb.com/api/assets/62896
+  "Terminator: Dark Fate":
+    url_poster: https://theposterdb.com/api/assets/62897
+
+  # Texas Chainsaw Massacre
+  Texas Chainsaw Massacre:
+    year: 1974
+    url_poster: https://theposterdb.com/api/assets/27154
+  The Texas Chainsaw Massacre 2:
+    year: 1986
+    url_poster: https://theposterdb.com/api/assets/27155
+  "Leatherface: The Texas Chainsaw Massacre III":
+    year: 1990
+    url_poster: https://theposterdb.com/api/assets/27156
+  "Texas Chainsaw Massacre: The Next Generation":
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/27157
+  Texas Chainsaw 3D:
+    year: 2013
+    url_poster: https://theposterdb.com/api/assets/27158
+  Leatherface:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/27159
+
+  # Texas Chainsaw Massacre (Reboot)
+  The Texas Chainsaw Massacre:
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/110134
+  "The Texas Chainsaw Massacre: The Beginning":
+    year: 2006
+    url_poster: https://theposterdb.com/api/assets/110135
+
+  # Tomb Raider
+  "Lara Croft: Tomb Raider":
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/73137
+  "Lara Croft: Tomb Raider - The Cradle of Life":
+    year: 2003
+    url_poster: https://theposterdb.com/api/assets/73138
+  Tomb Raider:
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/73139
+
+  # Toy Story
+  Toy Story:
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/17799
+  Toy Story 2:
+    year: 1999
+    url_poster: https://theposterdb.com/api/assets/17800
+  Toy Story 3:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/17801
+  Toy Story 4:
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/17802
+
+  # Trainspotting
+  Trainspotting:
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/77313
+  T2 Trainspotting:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/77314
+
+  # Transformers
+  Transformers:
+    url_poster: https://theposterdb.com/api/assets/14176
+  "Transformers: Dark of the Moon":
+    url_poster: https://theposterdb.com/api/assets/14178
+  "Transformers: Revenge of the Fallen":
+    url_poster: https://theposterdb.com/api/assets/14177
+  "Transformers: The Last Knight":
+    url_poster: https://theposterdb.com/api/assets/14180
+  "Transformers: Age of Extinction":
+    url_poster: https://theposterdb.com/api/assets/14179
+  Bumblebee:
+    url_poster: https://theposterdb.com/api/assets/14181
+
+  # The Transporter
+  The Transporter:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/796
+  Transporter 2:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/797
+  Transporter 3:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/798
+  The Transporter Refueled:
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/799
+
+  # Tremors
+  Tremors:
+    year: 1990
+    url_poster: https://theposterdb.com/api/assets/73822
+  "Tremors 2: Aftershocks":
+    year: 1996
+    url_poster: https://theposterdb.com/api/assets/73823
+  "Tremors 3: Back to Perfection":
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/73824
+  "Tremors 4: The Legend Begins":
+    year: 2004
+    url_poster: https://theposterdb.com/api/assets/73825
+  "Tremors 5: Bloodlines":
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/73826
+  "Tremors: A Cold Day in Hell":
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/73827
+  "Tremors: Shrieker Island":
+    year: 2020
+    url_poster: https://theposterdb.com/api/assets/105106
+
+  # Trolls
+  Trolls:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/61567
+  Trolls World Tour:
+    year: 2020
+    url_poster: https://theposterdb.com/api/assets/61568
+  Trolls Holiday:
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/61713
+
+  # TRON
+  Tron:
+    year: 1982
+    url_poster: https://theposterdb.com/api/assets/84592
+  "TRON: Legacy":
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/84593
+  "TRON: Uprising":
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/84594
+
+  # Underworld
+  Underworld:
+    url_poster: https://theposterdb.com/api/assets/65245
+  "Underworld: Evolution":
+    url_poster: https://theposterdb.com/api/assets/65246
+  "Underworld: Rise of the Lycans":
+    url_poster: https://theposterdb.com/api/assets/65247
+  "Underworld: Awakening":
+    url_poster: https://theposterdb.com/api/assets/65248
+  "Underworld: Blood Wars":
+    url_poster: https://theposterdb.com/api/assets/65249
+
+  # Wall Street
+  Wall Street:
+    year: 1987
+    url_poster: https://theposterdb.com/api/assets/82092
+  "Wall Street: Money Never Sleeps":
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/82093
+
+  # Wallace & Gromit
+  A Grand Day Out:
+    year: 1990
+    url_poster: https://theposterdb.com/api/assets/167814
+  The Wrong Trousers:
+    year: 1993
+    url_poster: https://theposterdb.com/api/assets/167815
+  A Close Shave:
+    year: 1995
+    url_poster: https://theposterdb.com/api/assets/167816
+  Wallace & Gromit's Cracking Contraptions:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/167817
+  "Wallace & Gromit: The Curse of the Were-Rabbit":
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/167818
+  A Matter of Loaf and Death:
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/167819
+  Wallace & Gromit's World of Invention:
+    year: 2010
+    url_poster: https://theposterdb.com/api/assets/167820
+
+  # Wayne's World
+  Wayne's World:
+    year: 1992
+    url_poster: https://theposterdb.com/api/assets/68155
+  Wayne's World 2:
+    year: 1993
+    url_poster: https://theposterdb.com/api/assets/68156
+
+  # Wreck-It Ralph
+  Wreck-It Ralph:
+    year: 2012
+    url_poster: https://theposterdb.com/api/assets/31282
+  Ralph Breaks the Internet:
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/31283
+
+  # X-Men
+  X-Men:
+    url_poster: https://theposterdb.com/api/assets/4661
+  X2:
+    url_poster: https://theposterdb.com/api/assets/4662
+  "X-Men: The Last Stand":
+    url_poster: https://theposterdb.com/api/assets/4663
+  "X-Men Origins: Wolverine":
+    url_poster: https://theposterdb.com/api/assets/4648
+  "X-Men: First Class":
+    url_poster: https://theposterdb.com/api/assets/4664
+  The Wolverine:
+    url_poster: https://theposterdb.com/api/assets/4649
+  "X-Men: Days of Future Past":
+    url_poster: https://theposterdb.com/api/assets/4665
+  Deadpool:
+    url_poster: https://theposterdb.com/api/assets/4643
+  "X-Men: Apocalypse":
+    url_poster: https://theposterdb.com/api/assets/4666
+  Logan:
+    url_poster: https://theposterdb.com/api/assets/4650
+  Deadpool 2:
+    url_poster: https://theposterdb.com/api/assets/4644
+  Dark Phoenix:
+    url_poster: https://theposterdb.com/api/assets/109799
+  The New Mutants:
+    url_poster: https://theposterdb.com/api/assets/109800
+  Once Upon a Deadpool:
+    url_poster: https://theposterdb.com/api/assets/6467
+
+  # xXx
+  xXx:
+    year: 2002
+    url_poster: https://theposterdb.com/api/assets/5504
+  "xXx: State of the Union":
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/5505
+  "xXx: Return of Xander Cage":
+    year: 2017
+    url_poster: https://theposterdb.com/api/assets/5506
+
+  # Zombieland
+  Zombieland:
+    year: 2009
+    url_poster: https://theposterdb.com/api/assets/13754
+  "Zombieland: Double Tap":
+    year: 2019
+    url_poster: https://theposterdb.com/api/assets/13755
+
+  # Zoolander
+  Zoolander:
+    year: 2001
+    url_poster: https://theposterdb.com/api/assets/51996
+  Zoolander 2:
+    year: 2016
+    url_poster: https://theposterdb.com/api/assets/51997
+
+  # Zorro
+  The Mask of Zorro:
+    year: 1998
+    url_poster: https://theposterdb.com/api/assets/27775
+  The Legend of Zorro:
+    year: 2005
+    url_poster: https://theposterdb.com/api/assets/27776
+
+  # unsorted
+  Chinatown:
+    url_poster: https://theposterdb.com/api/assets/110518
+  Titanic:
+    url_poster: https://theposterdb.com/api/assets/48395
+  Who Framed Roger Rabbit:
+    url_poster: https://theposterdb.com/api/assets/115828
