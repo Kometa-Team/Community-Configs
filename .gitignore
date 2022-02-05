@@ -1,2 +1,11 @@
+# Ignore everything.  We'll whitelist what we want to pull in.
+/*
+/*/
 
-.DS_Store
+# Git meta files
+!.gitignore
+!.gitattributes
+!README.md
+
+# Whitelisted directories/files
+!/charles15
