@@ -1,0 +1,10 @@
+######################################################
+#                    Playlists                       #
+######################################################
+playlists:
+  Marvel Cinematic Universe:
+    sync_to_users: all
+    sync_mode: sync
+    libraries: Movies, TV Shows
+    trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
+    summary: Marvel Cinematic Universe In Order
