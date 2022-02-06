@@ -17,10 +17,12 @@ templates:
     sort_title: +3_<<collection_name>>
     sync_mode: sync
     smart_label: alpha
+    url_poster: <<poster>>
   Other Genre:
     sort_title: +3_<<collection_name>>
     sync_mode: sync
     smart_label: alpha
+    url_poster: <<poster>>
 
 collections:
 
@@ -67,7 +69,7 @@ collections:
       limit: 100
     summary: Fantasy film is a genre that incorporates imaginative and fantastic themes. These themes usually involve magic, supernatural events, or fantasy worlds. Although it is its own distinct genre, these films can overlap into the horror and science fiction genres. Unlike science fiction, a fantasy film does not need to be rooted in fact. This element allows the audience to be transported into a new and unique world. Often, these films center on an ordinary hero in an extraordinary situation.
   Gangster:
-    template: {name: Genre, poster: https://theposterdb.com/api/assets/62561}
+    template: {name: Other Genre, poster: https://theposterdb.com/api/assets/62561}
     imdb_list:
       - https://www.imdb.com/list/ls026270180/
       - https://www.imdb.com/list/ls000093502/
@@ -106,7 +108,7 @@ collections:
     url_poster: https://i.imgur.com/Tl6QMgA.png
     url_background: https://i.imgur.com/DM1Im1X.jpeg
   Music:
-    template: {name: Genre, poster: https://theposterdb.com/api/assets/51398}
+    template: {name: Other Genre, poster: https://theposterdb.com/api/assets/51398}
     imdb_list:
     - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=music
       limit: 200
@@ -141,7 +143,7 @@ collections:
     smart_label: critic_rating.desc
     sort_title: ++++++++++++++++++_Paranormal Movie Collection
     summary: Paranormal grene of movies from varrious trakt members.
-    url_poster: https://imgur.com/IzwpRht  
+    url_poster: https://imgur.com/IzwpRht
   Parody Movie Collection:
     trakt_list: https://trakt.tv/users/hdlists/lists/top-50-parody-movies-of-all-time
     sync_mode: sync
@@ -184,7 +186,7 @@ collections:
       - https://www.imdb.com/list/ls049792208/
     summary: Stand-up comedy is a comedic style in which a comedian performs in front of a live audience, speaking directly to them through a microphone. Comedians give the illusion that they are dialoguing, but in actuality, they are monologuing a grouping of humorous stories, jokes and one-liners, typically called a shtick, routine, act, or set. Some stand-up comedians use props, music or magic tricks to enhance their acts. Stand-up comedians perform quasi-autobiographical and fictionalized extensions of their offstage selves.
   Sword & Sorcery:
-    template: {name: Genre, poster: https://theposterdb.com/api/assets/74604}
+    template: {name: Other Genre, poster: https://theposterdb.com/api/assets/74604}
     imdb_list: https://www.imdb.com/list/ls022909805
     summary: Sword and Sorcery film is a sub-genre of Fantasy that tend to be more plot-driven. These films rely on heavy action and battle scenes. Common themes in Sword and Sorcery films include a rescue mission, saving a princess, and battling a fantastical monster. The worlds and characters in these films are often much less developed than in other fantasy sub-genres. Of all the Fantasy sub-genres, Sword and Sorcery is most likely to be geared towards a younger audience, as many of these films are animated.
   Thriller:
