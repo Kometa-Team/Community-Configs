@@ -24,7 +24,7 @@ collections:
 
   AMC Shows:
     template: { name: network, network: "AMC, AMC+" }
-    url_poster: https://i.imgur.com/0UV96ev.jpg
+    url_poster: https://i.imgur.com/CaALafB.jpeg
 
   A&E Shows:
     template: { name: network, network: "A&E" }
@@ -47,11 +47,11 @@ collections:
 
   CBS Shows:
     template: { name: network, network: "CBS, CBS All Access, CBS Reality, CBS Reality (UK), CBS.com" }
-    url_poster: https://i.imgur.com/LmTQF62.jpeg
+    url_poster: https://i.imgur.com/jLkXT2o.jpeg
 
   Channel 4 Shows:
     template: { name: network, network: "Channel 4, E4, More4, 4Seven, Film4" }
-    url_poster: https://i.imgur.com/jLkXT2o.jpeg
+    url_poster: https://i.imgur.com/0d49D8z.jpeg
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -126,7 +126,7 @@ collections:
     url_poster: https://i.imgur.com/DPcPQbU.jpeg
 
   NBCUniversal Shows:
-    template: { name: network, network: "Bravo, CNBC, E!, MSNBC, NBC, Oxgen, Peacock, SyFy" }
+    template: { name: network, network: "Bravo, CNBC, E!, MSNBC, NBC, Oxygen, Peacock, SyFy" }
     url_poster: https://i.imgur.com/s3MFG59.jpg
 
   Netflix Shows:
@@ -135,6 +135,10 @@ collections:
     visible_library: true
     visible_home: true
     visible_shared: true
+
+  PBS Shows:
+    template: { name: network, network: "PBS, PBS Kids" }
+    url_poster: https://imgur.com/a/3yBsyeh
 
   Prime Video Shows:
     template: { name: network, network: "Amazon, Amazon Prime Video, Prime Video" }

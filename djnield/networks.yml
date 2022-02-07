@@ -1,0 +1,159 @@
+#####################################################
+#              Network Collections                   #
+######################################################
+
+templates:
+  network:
+    smart_filter:
+      sort_by: release.desc
+      validate: false
+      any:
+        network: <<network>>
+    sort_title: +07_<<collection_name>>
+    url_background: https://wallpaper.dog/large/20509069.jpg
+#    schedule: weekly (sunday)
+
+collections:
+  ABC:
+    template: { name: network, network: "ABC, ABC (AU), ABS (US), ABC Comedy, ABC Family, ABC Me, ABC Spark, ABC.com, ABC1, ABC3" }
+    url_poster: https://i.imgur.com/0CnJi7b.png
+
+  Adult Swim:
+    template: { name: network, network: "Adult Swim" }
+    url_poster: https://i.imgur.com/vhZ1PWn.png
+
+  AMC:
+    template: { name: network, network: "AMC, AMC+" }
+    url_poster: https://i.imgur.com/vMhgtIi.png
+
+  A&E:
+    template: { name: network, network: "A&E" }
+    url_poster: https://i.imgur.com/gtOOaY9.png
+
+  AppleTV+:
+    template: { name: network, network: "Apple Music, Apple TV+" }
+    url_poster: https://i.imgur.com/llRRx4Q.png
+
+  BBC:
+    template: { name: network, network: "BBC, BBC America, BBC Choice, BBC First, BBC Four, BBC HD, BBC iPlayer, BBC One, BBC Two, BBC Three, BBC UKTV, CBBC, Cbeebies" }
+    url_poster: https://i.imgur.com/adMgE1h.png
+
+  Cartoon Network:
+    template: { name: network, network: "Cartoon Network" }
+    url_poster: https://i.imgur.com/an8ARsn.png
+
+  CBS:
+    template: { name: network, network: "CBS, CBS All Access, CBS Reality, CBS Reality (UK), CBS.com" }
+    url_poster: https://i.imgur.com/idV2buB.png
+
+  Channel 4:
+    template: { name: network, network: "Channel 4, E4, More4, 4Seven, Film4" }
+    url_poster: https://i.imgur.com/11jWbp3.png
+
+  Channel 5:
+    template: { name: network, network: "Channel 5" }
+    url_poster: https://i.imgur.com/7GO94Nq.png
+
+  Cinemax:
+    template: { name: network, network: "Cinemax" }
+    url_poster: https://i.imgur.com/UP5Msmk.png
+
+  Comedy Central:
+    template: { name: network, network: "Comedy Central, Comedy Central (UK)" }
+    url_poster: https://i.imgur.com/OLB6lLg.png
+
+  Cooking Channel:
+    template: { name: network, network: "Cooking Channel" }
+    url_poster: https://i.imgur.com/RYrqlfO.png
+
+  Discovery:
+    template: { name: network, network: "Discovery, Discovery Channel, Discovery Channel (AU), Discovery Channel (CA), Discovery Channel (UK), Discovery Health Channel, Discovery Kids, Discovery Life, Discovery Real Time, Discovery Turbo, Discovery Turbo UK, Discovery+" }
+    url_poster: https://i.imgur.com/8NS9trI.png
+
+  Disney+:
+    template: { name: network, network: "Disney Channel, Disney Channel (UK), Disney Junior, Disney XD, Disney+, Disney+ Hostar" }
+    url_poster: https://i.imgur.com/jAyXwKq.png
+
+  ESPN:
+    template: { name: network, network: "ESPN, ESPN+" }
+    url_poster: https://i.imgur.com/mAGzM6V.png
+
+  FOX:
+    template: { name: network, network: "FX, FOX, Fox Action Movies, Fox Business Network, Fox Kids, Fox Premium Series, FOX Sports 1, Fox Sports Networks" }
+    url_poster: https://i.imgur.com/pnkzoFH.png
+
+  HBO:
+    template: { name: network, network: "HBO, HBO Canada, HBO Europe, HBO Max" }
+    url_poster: https://i.imgur.com/f5ppgQM.png
+
+  HGTV:
+    template: { name: network, network: "HGTV, HGTV Canada" }
+    url_poster: https://i.imgur.com/umYgMhI.png
+
+  History:
+    template: { name: network, network: "History, History (CA), History (UK)" }
+    url_poster: https://i.imgur.com/r0hQJHP.png
+
+  Hulu:
+    template: { name: network, network: "Hulu" }
+    url_poster: https://i.imgur.com/Ihh8xuw.png
+
+  Investigation Discovery:
+    template: { name: network, network: "Investigation Discovery" }
+    url_poster: https://i.imgur.com/DTyapFk.png
+
+  ITV:
+    template: { name: network, network: "ITV, ITV2, ITV3, ITV4, ITVBe, CITV" }
+    url_poster: https://i.imgur.com/biq8QOI.png
+
+  MTV:
+    template: { name: network, network: "MTV, MTV (AU/NZ), MTV (UK), MTV2, MTV3" }
+    url_poster: https://i.imgur.com/CoD7ncf.png
+
+  National Geographic:
+    template: { name: network, network: "National Geographic, National Geographic (UK), National Geographic Brasil, National Geographic Channel, National Geographic Wild" }
+    url_poster: https://i.imgur.com/9mLh6ix.png
+
+  Nickelodeon:
+    template: { name: network, network: "Nick Jr., Nickelodeon, Nicktoons, TeenNick" }
+    url_poster: https://i.imgur.com/SikLuH8.png
+
+  NBCUniversal:
+    template: { name: network, network: "Bravo, CNBC, E!, MSNBC, NBC, Oxgen, Peacock, SyFy" }
+    url_poster: https://i.imgur.com/ZQm38Zd.png
+
+  Netflix:
+    template: { name: network, network: "Netflix" }
+    url_poster: https://i.imgur.com/QhpeNVj.png
+
+  PBS:
+    template: { name: network, network: "PBS, PBS Kids" }
+    url_poster: https://i.imgur.com/h0zC1kf.png
+
+  Prime Video:
+    template: { name: network, network: "Amazon, Amazon Prime Video, Prime Video" }
+    url_poster: https://i.imgur.com/CWV3I4F.png
+
+  Showtime:
+    template: { name: network, network: "Showtime" }
+    url_poster: https://i.imgur.com/hu8iiag.png
+
+  Sky:
+    template: { name: network, network: "Sky 1, Sky Arts, Sky Atlantic, Sky Atlantic (UK), Sky Cinema, Sky Crime, Sky Documentaries, Sky Living, Sky Max, Sky Nature, Sky One, Sky Sports, Sky Two, Sky Witness, Sky1" }
+    url_poster: https://i.imgur.com/2ul4NTa.png
+
+  Stan:
+    template: { name: network, network: "Starz" }
+    url_poster: https://i.imgur.com/UedeBCT.png
+
+  Starz:
+    template: { name: network, network: "Starz" }
+    url_poster: https://i.imgur.com/U03cTCr.png
+
+  TBS:
+    template: { name: network, network: "TBS" }
+    url_poster: https://i.imgur.com/XBLc2Pj.png
+
+  YouTube:
+    template: { name: network, network: "YouTube, YouTube Premium" }
+    url_poster: https://i.imgur.com/KVaGJ8W.png
