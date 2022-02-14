@@ -56,6 +56,7 @@ collections:
       name: DV-Atmos
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV-Atmos/overlay.png
     build_collection: false
+    revert_overlay: true
 
   DV:
     plex_all: true
@@ -70,6 +71,7 @@ collections:
       name: DV
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV/overlay.png
     build_collection: false
+    revert_overlay: true
 
   DV-DTS-X:
     plex_all: true
@@ -85,6 +87,7 @@ collections:
       name: DV-DTS-X
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV-DTS-X/overlay.png
     build_collection: false
+    revert_overlay: true
 
   DV-TrueHD:
     plex_all: true
@@ -101,6 +104,7 @@ collections:
       name: DV-TrueHD
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV-TrueHD/overlay.png
     build_collection: false
+    revert_overlay: true
 
   DV-TrueHD-Atmos:
     plex_all: true
@@ -117,6 +121,7 @@ collections:
       name: DV-TrueHD-Atmos
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV-TrueHD-Atmos/overlay.png
     build_collection: false
+    revert_overlay: true
 
   DV-DTS-HD:
     plex_all: true
@@ -132,3 +137,4 @@ collections:
       name: DV-DTS-HD
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV-DTS-HD/overlay.png
     build_collection: false
+    revert_overlay: true
