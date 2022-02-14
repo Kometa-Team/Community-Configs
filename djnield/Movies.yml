@@ -48,7 +48,7 @@ collections:
     tmdb_top_rated: 250
     sort_title: ++02Top Rated
     sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule: hourly (00)
     smart_label: random
     summary: IMDb Top Rated Movies
     url_poster: https://i.imgur.com/7h1vaxl.png
