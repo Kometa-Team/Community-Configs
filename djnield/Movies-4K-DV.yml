@@ -6,6 +6,7 @@ collections:
     sort_title: ++3Watchlist
     smart_label: release.desc
     sync_mode: sync
+    schedule: hourly (00)
     label: admin
     visible_home: true
     visible_shared: false

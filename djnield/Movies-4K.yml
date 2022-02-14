@@ -6,6 +6,7 @@ collections:
     sort_title: ++3Watchlist
     smart_label: release.desc
     sync_mode: sync
+    schedule: hourly (00)
     label: admin
     visible_home: true
     visible_shared: false
@@ -50,9 +51,15 @@ collections:
 #      name: 4K-HDR
 #      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K-HDR/overlay.png
 #    build_collection: false
-  4K Overlay:
+#  4K Overlay:
+#    plex_all: true
+#    build_collection: false
+#    item_overlay:
+#      name: 4K
+#      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
+
+  4K-HDR Overlay:
     plex_all: true
+    item_overlay: 4K-HDR
     build_collection: false
-    item_overlay:
-      name: 4K
-      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
+    revert_overlay: true

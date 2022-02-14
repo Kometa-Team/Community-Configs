@@ -10,7 +10,6 @@ templates:
         limit: <<limit>>
     sync_mode: sync
     collection_order: custom
-    cache_builders: 2
     visible_home: false
     visible_shared: false
     visible_library: true
@@ -22,13 +21,13 @@ collections:
     sort_title: ++03Watchlist
     smart_label: release.desc
     sync_mode: sync
+    schedule: hourly (00)
     label: admin
     visible_home: true
     visible_shared: false
     visible_library: false
     url_poster: https://i.imgur.com/IJMWyvo.png
     url_background: https://wallpaper.dog/large/20509069.jpg
-    cache_builders: 1
 
   Trending Movies:
     trakt_trending: 40
@@ -43,7 +42,6 @@ collections:
     visible_home: true
     visible_shared: true
     visible_library: true
-    cache_builders: 1
 
   Top Rated Movies:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
@@ -58,7 +56,6 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: true
-    cache_builders: 1
     
   Assassins:
     template: {name: sub_genre, sub_genre: assassination-attempt}
