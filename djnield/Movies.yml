@@ -10,6 +10,7 @@ templates:
         limit: <<limit>>
     sync_mode: sync
     collection_order: custom
+    schedule: hourly(00)
     visible_home: false
     visible_shared: false
     visible_library: true

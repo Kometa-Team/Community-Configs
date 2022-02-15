@@ -65,3 +65,4 @@ collections:
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
     build_collection: false
     revert_overlay: false
+    schedule: hourly(18)
