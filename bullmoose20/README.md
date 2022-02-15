@@ -28,7 +28,7 @@ TV Shows Library with Overlays Preview: <br>
 <br>
 <br>
 TV Shows Collections with Overlays Preview: <br>
-![TV Shows with overlays](TVCollection01.png)<br>
+![TV Shows with overlays](TVCollections01.png)<br>
 <br>
 
 Please consider donating towards the project (https://github.com/sponsors/meisnate12).
