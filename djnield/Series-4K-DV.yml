@@ -1,19 +1,5 @@
 ---
 collections:
-  TV Watchlist:
-    trakt_watchlist:
-      - me
-    smart_label: release.desc
-    sort_title: ++4Watchlist
-    sync_mode: sync
-    schedule: hourly (00)
-    label: admin
-    url_poster: https://i.imgur.com/IJMWyvo.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: true
-    visible_shared: false
-    visible_library: false
-
   Trending TV:
     smart_label: release.desc
     sort_title: ++1Trending TV

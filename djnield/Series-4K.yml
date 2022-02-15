@@ -1,34 +1,5 @@
 ---
 collections:
-  Best of British:
-    smart_label: release.desc
-    sync_mode: sync
-    schedule: hourly (18)
-    sort_title: ++5Best of British
-    trakt_list: https://trakt.tv/users/djnield/lists/best-of-british
-    summary: UK TV at it's best showcasing Crime, Drama & Thrillers from the last two decades
-    url_poster: https://i.imgur.com/Jyx4wOc.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    build_collection: false
-    #visible_home: true
-    #visible_shared: true
-    #visible_library: true
-    #show_filtered: true
-
-  TV Watchlist:
-    trakt_watchlist:
-      - me
-    smart_label: release.desc
-    sort_title: ++4Watchlist
-    sync_mode: sync
-    schedule: hourly (00)
-    label: admin
-    url_poster: https://i.imgur.com/IJMWyvo.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: true
-    visible_shared: false
-    visible_library: false
-
   Trending TV:
     smart_label: release.desc
     sort_title: ++1Trending TV
