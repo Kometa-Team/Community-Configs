@@ -8,6 +8,7 @@ For ease of use just unzip everything in the bullmoose20-pmmsetup_<timestamp>.zi
 Playlists Preview: <br>
 ![Playlists](Playlists.png)
 <br>
+<br>
 Movie Library With Overlays Preview: <br>
 ![Movies with overlays](MovieLibrary.png)
 <br>
@@ -23,12 +24,14 @@ Movie Collections Preview Continued: <br>
 Movie Collections Preview Continued: <br>
 ![Movies with overlays](MovieCollection03.png)
 <br>
+<br>
 TV Shows Library with Overlays Preview: <br>
 ![TV Shows with overlays](TVLibrary.png)<br>
 <br>
 <br>
 TV Shows Collections with Overlays Preview: <br>
 ![TV Shows with overlays](TVCollections01.png)<br>
+<br>
 <br>
 
 Please consider donating towards the project (https://github.com/sponsors/meisnate12).
