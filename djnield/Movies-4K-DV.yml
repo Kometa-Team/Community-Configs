@@ -58,20 +58,13 @@ collections:
 #    build_collection: false
 #    revert_overlay: true
 #
-#  DV:
-#    plex_all: true
-#    filters:
-#      filepath: MoviesDV
-#      filepath.not:
-#        - Atmos
-#        - DTS-X
-#        - TrueHD
-#        - DTS-HD
-#    item_overlay:
-#      name: DV
-#      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV/overlay.png
-#    build_collection: false
-#    revert_overlay: true
+  DV:
+    plex_all: true
+    item_overlay:
+      name: DV
+      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV/overlay.png
+    build_collection: false
+    revert_overlay: false
 #
 #  DV-DTS-X:
 #    plex_all: true

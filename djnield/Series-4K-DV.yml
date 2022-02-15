@@ -52,10 +52,10 @@ collections:
 #    url_poster: https://i.imgur.com/7h1vaxl.png
 #    url_background: https://wallpaper.dog/large/20509069.jpg
 
-#  DV:
-#    plex_all: true
-#    item_overlay:
-#      name: DV
-#      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV/overlay.png
-#    build_collection: false
-#    revert_overlay: true
+  DV:
+    plex_all: true
+    item_overlay:
+      name: DV
+      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV/overlay.png
+    build_collection: false
+    revert_overlay: false
