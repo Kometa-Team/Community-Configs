@@ -16,12 +16,12 @@ Movie Collections Preview: <br>
 ![Movies with overlays](MovieCollection01.png)
 <br>
 <br>
-Movie Collections With Overlays Preview: <br>
+Movie Collections Preview Continued: <br>
 ![Movies with overlays](MovieCollection02.png)
 <br>
 <br>
-Movie Collections With Overlays Preview: <br>
-![Movies with overlays](MovieCollection01.png)
+Movie Collections Preview Continued: <br>
+![Movies with overlays](MovieCollection03.png)
 <br>
 TV Shows Library with Overlays Preview: <br>
 ![TV Shows with overlays](TVLibrary.png)<br>
