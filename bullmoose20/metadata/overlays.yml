@@ -38,6 +38,17 @@ collections:
       filepath: '[DV '
     item_overlay: 480p-Dolby
     build_collection: false
+  480p-Dolby-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 480p
+        hdr: true
+    filters:
+      filepath: '[DV '
+    item_overlay: 480p-Dolby-HDR
+    build_collection: false 
   720p:
     test: true
     #revert_overlay: true
@@ -70,6 +81,17 @@ collections:
       filepath: '[DV '
     item_overlay: 720p-Dolby
     build_collection: false
+  720p-Dolby-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 720p
+        hdr: true
+    filters:
+      filepath: '[DV '
+    item_overlay: 720p-Dolby-HDR
+    build_collection: false 
   1080p:
     test: true
     #revert_overlay: true
@@ -102,6 +124,17 @@ collections:
       filepath: '[DV '
     item_overlay: 1080p-Dolby
     build_collection: false
+  1080p-Dolby-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: '[DV '
+    item_overlay: 1080p-Dolby-HDR
+    build_collection: false 
   4K:
     test: true
     #revert_overlay: true
@@ -134,7 +167,18 @@ collections:
       filepath: '[DV '
     item_overlay: 4K-Dolby
     build_collection: false
-  HDR:
+  4K-Dolby-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      filepath: '[DV '
+    item_overlay: 4K-Dolby-HDR
+    build_collection: false 
+ HDR:
     test: true
     #revert_overlay: true
     plex_search:
