@@ -37,7 +37,7 @@ collections:
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV/overlay.png
     build_collection: false
     revert_overlay: false
-    schedule: hourly(18)
+    schedule: hourly(06)
 #
 #  DV-DTS-X:
 #    plex_all: true

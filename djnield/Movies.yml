@@ -10,7 +10,7 @@ templates:
         limit: <<limit>>
     sync_mode: sync
     collection_order: custom
-    schedule: hourly(00)
+    schedule: hourly(18)
     visible_home: false
     visible_shared: false
     visible_library: true
@@ -49,7 +49,7 @@ collections:
     tmdb_top_rated: 250
     sort_title: ++02Top Rated
     sync_mode: sync
-    schedule: hourly (00)
+    schedule: hourly (18)
     smart_label: random
     summary: IMDb Top Rated Movies
     url_poster: https://i.imgur.com/7h1vaxl.png
