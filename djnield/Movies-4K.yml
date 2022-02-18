@@ -13,23 +13,6 @@ collections:
     visible_home: true
     visible_shared: true
     visible_library: true
-
-#  4K-HDR Overlay:
-#    plex_search:
-#      all:
-#        resolution: 4K
-#        hdr: true
-#    item_overlay:
-#      name: 4K-HDR
-#      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K-HDR/overlay.png
-#    build_collection: false
-#  4K Overlay:
-#    plex_all: true
-#    build_collection: false
-#    item_overlay:
-#      name: 4K
-#      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
-
   4K Overlay:
     plex_all: true
     item_overlay:
@@ -37,4 +20,4 @@ collections:
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
     build_collection: false
     revert_overlay: false
-#    schedule: hourly(06)
+    schedule: hourly(06)
