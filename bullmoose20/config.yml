@@ -9,7 +9,7 @@ libraries:                                      # Library mappings must have a c
       - file: config/metadata/movies/MovieCharts.yml
       - file: config/metadata/movies/Holidays.yml
       - file: config/metadata/movies/Studios.yml
-      - file: config/metadata/movies/Genres-smart.yml
+      - file: config/metadata/movies/Genres.yml
       - file: config/metadata/movies/Awards.yml
       - file: config/metadata/movies/GoldenGlobes.yml
       - file: config/metadata/movies/Director.yml
@@ -25,7 +25,7 @@ libraries:                                      # Library mappings must have a c
         - config/assets/studios
         - config/assets/holidays
         - config/assets/genres
-        - config/assets/people_bw
+        - config/assets/people
         - config/assets/yearsanddecades
         - config/assets/playlists
         - config/assets/
@@ -47,8 +47,8 @@ libraries:                                      # Library mappings must have a c
       #- file: config/metadata/shows/TVShows.yml
       - file: config/metadata/shows/ShowCharts.yml
       - file: config/metadata/shows/Studios.yml
-      - file: config/metadata/shows/Genres-smart.yml
-      - file: config/metadata/shows/Networks-smart.yml
+      - file: config/metadata/shows/Genres.yml
+      - file: config/metadata/shows/Networks.yml
       - file: config/metadata/shows/Decades.yml
       - file: config/metadata/overlays.yml
     settings:
