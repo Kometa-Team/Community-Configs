@@ -43,6 +43,10 @@ collections:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250/
     tmdb_top_rated: 250
     summary: Top Rated Movies across the internet
+  IMDb Top 250:
+    template: { name: Chart, num: 5 }
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc
+    summary: Movies that are in IMDB's Top 250 Movies of all time list
   Best of 2010:
     template: { name: Best of, year: 2010 }
   Best of 2011:
