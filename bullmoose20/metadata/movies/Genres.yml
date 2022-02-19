@@ -14,6 +14,7 @@ templates:
         genre: <<genre>>
   Special Genre:
     sort_title: +15_<<collection_name>>
+    collection_mode: hide
     sync_mode: sync
     smart_label: alpha
 collections:
@@ -83,7 +84,7 @@ collections:
       - https://www.imdb.com/list/ls068378513/
       - https://www.imdb.com/list/ls090404120/
     summary: Martial Arts film is a sub-genre of action films that feature numerous martial arts combat between characters. These combats are usually the films' primary appeal and entertainment value, and often are a method of storytelling and character expression and development. Martial Arts are frequently featured in training scenes and other sequences in addition to fights. Martial Arts films commonly include other types of action, such as hand-to-hand combat, stuntwork, chases, and gunfights.
-  Mindf#ck Movies:
+  Mindf#ck:
     template: { name: Special Genre }
     trakt_list:
      - https://trakt.tv/users/hdlists/lists/mindfuck-movies
@@ -128,7 +129,7 @@ collections:
     template: { name: genre, genre: "Science Fiction" }
     #url_poster: https://i.imgur.com/EPi451Z.jpg
   Short:
-    template: {name: Genre, genre: Short}
+    template: {name: genre, genre: short}
     summary: A collection of Short movies
   Sports:
     template: { name: genre, genre: sport }
