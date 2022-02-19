@@ -6,7 +6,7 @@ templates:
     optional:
       - company
     tmdb_company: <<company>>
-    sort_title: +2_<<collection_name>>
+    sort_title: +05_<<collection_name>>
     sync_mode: sync
     smart_label: release.desc
     url_poster: <<poster>>

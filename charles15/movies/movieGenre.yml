@@ -7,13 +7,12 @@ templates:
       title: feature
       url_poster: <<poster>>
     imdb_list:
-      - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>
       - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>&sort=user_rating,desc
-    sort_title: +3_<<collection_name>>
+    sort_title: zzz_<<collection_name>>
     sync_mode: sync
     url_poster: <<poster>>
   Other Genre:
-    sort_title: +3_<<collection_name>>
+    sort_title: zzz_<<collection_name>>
     sync_mode: sync
     url_poster: <<poster>>
 collections:
