@@ -180,6 +180,9 @@ collections:
     template: { name: network, network: "Showtime" }
     #url_poster: https://i.imgur.com/ZhsLqS9.jpg
 
+  Shudder Shows:
+    template: { name: network, network: 2949 }
+
   Sky Shows:
     template: { name: network, network: "Sky 1, Sky Arts, Sky Atlantic, Sky Atlantic (UK), Sky Cinema, Sky Crime, Sky Documentaries, Sky Living, Sky Max, Sky Nature, Sky One, Sky Sports, Sky Two, Sky Witness, Sky1" }
     #url_poster: https://i.imgur.com/qBS4e5P.jpg
