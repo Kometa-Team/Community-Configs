@@ -47,6 +47,14 @@ collections:
     template: { name: Chart, num: 5 }
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc
     summary: Movies that are in IMDB's Top 250 Movies of all time list
+  IMDb Top 100 Superhero Movies:
+    template: { name: Chart, num: 6 }
+    imdb_list: https://www.imdb.com/list/ls008583762/
+    summary: Top 100 Superhero Movies
+  IMDb Top 100 Film Noir:
+    template: { name: Chart, num: 7 }
+    imdb_list: https://www.imdb.com/list/ls027489496/
+    summary: Top 100 Film Noir Movies
   Best of 2010:
     template: { name: Best of, year: 2010 }
   Best of 2011:
