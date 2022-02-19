@@ -1,0 +1,200 @@
+#############################################################
+#                    Overlays                               #
+# for DolbyVision, the string I am searching on is '[DV '   #
+# because the arr's using TRaSH's guides for naming will    #
+# have that string in the filename. Yours may be different  #
+#############################################################
+
+collections:
+  480p:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 480p
+        hdr: false
+    filters:
+      filepath.not: '[DV '
+    item_overlay: 480p
+    build_collection: false
+  480p-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 480p
+        hdr: true
+    filters:
+      filepath.not: '[DV '
+    item_overlay: 480p-HDR
+    build_collection: false
+  480p-Dolby:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 480p
+    filters:
+      filepath: '[DV '
+    item_overlay: 480p-Dolby
+    build_collection: false
+  480p-Dolby-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 480p
+        hdr: true
+    filters:
+      filepath: '[DV '
+    item_overlay: 480p-Dolby-HDR
+    build_collection: false 
+  720p:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 720p
+        hdr: false
+    filters:
+      filepath.not: '[DV '
+    item_overlay: 720p
+    build_collection: false
+  720p-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 720p
+        hdr: true
+    filters:
+      filepath.not: '[DV '
+    item_overlay: 720p-HDR
+    build_collection: false
+  720p-Dolby:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 720p
+    filters:
+      filepath: '[DV '
+    item_overlay: 720p-Dolby
+    build_collection: false
+  720p-Dolby-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 720p
+        hdr: true
+    filters:
+      filepath: '[DV '
+    item_overlay: 720p-Dolby-HDR
+    build_collection: false 
+  1080p:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath.not: '[DV '
+    item_overlay: 1080p
+    build_collection: false
+  1080p-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath.not: '[DV '
+    item_overlay: 1080p-HDR
+    build_collection: false
+  1080p-Dolby:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 1080p
+    filters:
+      filepath: '[DV '
+    item_overlay: 1080p-Dolby
+    build_collection: false
+  1080p-Dolby-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: '[DV '
+    item_overlay: 1080p-Dolby-HDR
+    build_collection: false 
+  4K:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      filepath.not: '[DV '
+    item_overlay: 4K
+    build_collection: false
+  4K-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      filepath.not: '[DV '
+    item_overlay: 4K-HDR
+    build_collection: false
+  4K-Dolby:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      filepath: '[DV '
+    item_overlay: 4K-Dolby
+    build_collection: false
+  4K-Dolby-HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      filepath: '[DV '
+    item_overlay: 4K-Dolby-HDR
+    build_collection: false 
+  HDR:
+    test: true
+    #revert_overlay: true
+    plex_search:
+      all:
+        hdr: true
+    filters:
+      filepath.not: '[DV '
+      resolution.not: 4K
+    item_overlay: HDR
+    build_collection: false
+  Dolby:
+    test: true
+    #revert_overlay: true
+    plex_all: true
+    filters:
+      filepath: '[DV '
+      resolution.not: 4K
+    item_overlay: Dolby
+    build_collection: false

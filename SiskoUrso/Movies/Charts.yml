@@ -9,6 +9,7 @@ templates:
     sort_title: +1_Best of <<year>>
     sync_mode: sync
     summary: Rotten Tomatoes Best Movies of <<year>>
+    url_poster: <<poster>>
     smart_label: audience_rating.desc
 
 collections:
