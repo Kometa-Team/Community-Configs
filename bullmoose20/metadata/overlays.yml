@@ -7,7 +7,7 @@
 
 collections:
   480p:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -18,7 +18,7 @@ collections:
     item_overlay: 480p
     build_collection: false
   480p-HDR:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -29,7 +29,7 @@ collections:
     item_overlay: 480p-HDR
     build_collection: false
   480p-Dolby:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -39,7 +39,7 @@ collections:
     item_overlay: 480p-Dolby
     build_collection: false
   480p-Dolby-HDR:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -50,7 +50,7 @@ collections:
     item_overlay: 480p-Dolby-HDR
     build_collection: false 
   720p:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -61,7 +61,7 @@ collections:
     item_overlay: 720p
     build_collection: false
   720p-HDR:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -72,7 +72,7 @@ collections:
     item_overlay: 720p-HDR
     build_collection: false
   720p-Dolby:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -82,7 +82,7 @@ collections:
     item_overlay: 720p-Dolby
     build_collection: false
   720p-Dolby-HDR:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -93,7 +93,7 @@ collections:
     item_overlay: 720p-Dolby-HDR
     build_collection: false 
   1080p:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -104,7 +104,7 @@ collections:
     item_overlay: 1080p
     build_collection: false
   1080p-HDR:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -115,7 +115,7 @@ collections:
     item_overlay: 1080p-HDR
     build_collection: false
   1080p-Dolby:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -125,7 +125,7 @@ collections:
     item_overlay: 1080p-Dolby
     build_collection: false
   1080p-Dolby-HDR:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -136,7 +136,7 @@ collections:
     item_overlay: 1080p-Dolby-HDR
     build_collection: false 
   4K:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -147,7 +147,7 @@ collections:
     item_overlay: 4K
     build_collection: false
   4K-HDR:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -158,7 +158,7 @@ collections:
     item_overlay: 4K-HDR
     build_collection: false
   4K-Dolby:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -168,7 +168,7 @@ collections:
     item_overlay: 4K-Dolby
     build_collection: false
   4K-Dolby-HDR:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -179,7 +179,7 @@ collections:
     item_overlay: 4K-Dolby-HDR
     build_collection: false 
   HDR:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_search:
       all:
@@ -190,7 +190,7 @@ collections:
     item_overlay: HDR
     build_collection: false
   Dolby:
-    test: true
+    #test: true
     #revert_overlay: true
     plex_all: true
     filters:
