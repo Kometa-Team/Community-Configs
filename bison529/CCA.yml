@@ -1,0 +1,59 @@
+######################################################
+#        Critics Choice Awards Collections           #
+######################################################
+templates:
+  CCA Template:
+    smart_label: audience_rating.desc
+    summary: '<<year>> Critics Choice Awards - جائزة اختيار النقاد للأفلام'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-critic-choice
+    item_label: CCA
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+collections:
+  Critics Choice Awards 2022:
+    sort_title: '+06_09'
+    trakt_list: https://trakt.tv/users/pjcob/lists/2022-critic-s-choice
+    url_poster: https://i.imgur.com/AOQ3Tu5.png
+    summary: '2022 Critics Choice Awards - جائزة اختيار النقاد للأفلام'
+  Critics Choice Awards 2021:
+    sort_title: '+06_08'
+    trakt_list: https://trakt.tv/users/pjcob/lists/2021-critic-s-choice
+    url_poster: https://i.imgur.com/9g22Hh2.png
+    summary: '2021 Critics Choice Awards - جائزة اختيار النقاد للأفلام'
+  Critics Choice Awards 2020:
+    sort_title: '+06_07'
+    trakt_list: https://trakt.tv/users/pjcob/lists/2020-critic-s-choice
+    url_poster: https://i.imgur.com/oTnWenD.png
+    summary: '2020 Critics Choice Awards - جائزة اختيار النقاد للأفلام'
+  Critics Choice Awards 2019:
+    sort_title: '+06_06'
+    trakt_list: https://trakt.tv/users/pjcob/lists/2019-critics-choice
+    url_poster: https://i.imgur.com/TVJ7DTh.png
+    summary: '2019 Critics Choice Awards - جائزة اختيار النقاد للأفلام'
+  Critics Choice Awards 2018:
+    sort_title: '+06_05'
+    trakt_list: https://trakt.tv/users/pjcob/lists/2018-critics-choice
+    url_poster: https://i.imgur.com/qyuFBRB.png
+    summary: '2018 Critics Choice Awards - جائزة اختيار النقاد للأفلام'
+  Critics Choice Awards 2017:
+    sort_title: '+06_04'
+    trakt_list: https://trakt.tv/users/pjcob/lists/2017-critics-choice
+    url_poster: https://i.imgur.com/Kv3n5gB.png
+    summary: '2017 Critics Choice Awards - جائزة اختيار النقاد للأفلام'
+  Critics Choice Awards 2016:
+    sort_title: '+06_03'
+    trakt_list: https://trakt.tv/users/pjcob/lists/2016-critics-choice
+    url_poster: https://i.imgur.com/pOARSOc.png
+    summary: '2016 Critics Choice Awards - جائزة اختيار النقاد للأفلام'
+  Critics Choice Awards 2015:
+    sort_title: '+06_02'
+    trakt_list: https://trakt.tv/users/pjcob/lists/2015-critics-choice
+    url_poster: https://i.imgur.com/hb2yRXq.png
+    summary: '2015 Critics Choice Awards - جائزة اختيار النقاد للأفلام'
+  Critics Choice Awards 2014:
+    sort_title: '+06_01'
+    trakt_list: https://trakt.tv/users/pjcob/lists/2014-critics-choice
+    url_poster: https://i.imgur.com/1GXaFLp.png
+    summary: '2014 Critics Choice Awards - جائزة اختيار النقاد للأفلام'
