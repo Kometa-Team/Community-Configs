@@ -1,0 +1,92 @@
+collections:
+
+  Mindfuck Movies:
+    trakt_list:
+     - https://trakt.tv/users/hdlists/lists/mindfuck-movies
+     - https://trakt.tv/users/benfranklin/lists/best-mindfucks
+    smart_label: critic_rating.desc
+    sync_mode: sync
+    sort_title: +11_01Mindfuck Movies
+    summary: The following films are some of the most mind-boggling movies ever produced - أكثر الافلام محيرة للعقل.
+    url_poster: https://i.imgur.com/Tl6QMgA.png
+
+  Nostalgia Collection:
+    trakt_list: https://trakt.tv/users/hdlists/lists/nostalgiac-movies-from-the-80s-90s
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: +11_02Nostalgia Collection
+    summary: All The Nostalgiac Movies From The 80s & 90s in One Collection - أفلام الحنين الى الماضي
+    url_poster: https://i.imgur.com/vE8dsdd.jpg
+    url_background: https://i.imgur.com/frz0kly.jpg
+
+  Comedy Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/comedy-movies-top-rated-from-1960-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: +11_03Comedy Movies
+    summary: A collection consisting of the top rated comedy movies from the 60's onward - أفلام كوميدية من الستينات فصاعداً.
+    url_poster: https://i.imgur.com/jGLNoxv.jpeg
+
+  Action Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/action-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: +11_04Action Movies
+    summary: A collection consisting of the top rated action movies from the 80's onward - أفلام أكشن والحركة من الثمانينات فصاعداً.
+    url_poster: https://i.imgur.com/ZYij2Mg.jpg
+
+  Drama Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/drama-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: +11_05Drama Movies
+    summary: A collection consisting of the top rated drama movies from the 80's onward - أفلام الدراما من الثمانينات فصاعداً.
+    url_poster: https://i.imgur.com/iyyf1RD.jpg
+
+  Horror Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/horror-movies-top-rated-from-1960-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: +11_06Horror Movies
+    summary: A collection consisting of the top rated horror movies from the 60's onward - أفلام الرعب من الستينات فصاعداً.
+    url_poster: https://i.imgur.com/fukLE8G.jpg
+
+  Crime Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/crime-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: +11_07Crime Movies
+    summary: A collection consisting of the top rated crime movies from the 80's onward - أفلام الجريمة والتحقيقات من الستينات فصاعداً
+    url_poster: https://i.imgur.com/jI9ppNA.jpg
+
+  Sci-Fi/Fantasy Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/fantasy-sci-fi-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: +11_08Sci-Fi Movies
+    summary: A collection consisting of the top rated science fiction/fantasy movies from the 80's onward - أفلام الخيال العلمي و خيال الوهم والخدع من الثمانينات فصاعداً.
+    url_poster: https://i.imgur.com/PE0Hijo.jpg
+
+  Mystery Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/mystery-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: +11_09Mystery Movies
+    summary: A collection consisting of the top rated mystery movies from the 80's onward - أفلام الغموض من الثمانينات فصاعداً.
+    url_poster: https://i.imgur.com/ZCQOuCP.jpg
+
+  Outer Space Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/outer-space-space-exploration-movies
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: +11_10Mystery Movies
+    summary: A collection consisting of the top rated outer space/space exploration movies - أفلام الفضاء واستكشاف الكون.
+    url_poster: https://i.imgur.com/WebP9pU.jpg
+
+  Romantic Comedies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/romantic-comedies-rotten-tomatoes-top-rated
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: +11_11Romantic Comedies
+    summary: A collection consisting of the top rated romantic comedies - أفلام الكوميديا الرومنسية
+    url_poster: https://i.imgur.com/AJ1nD4d.jpg

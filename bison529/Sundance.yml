@@ -1,0 +1,51 @@
+######################################################
+#                Sundance Collections                #
+######################################################
+templates:
+  SFF Template:
+    sort_title: '+07_Sundance Film Festival <<year>>'
+    smart_label: audience_rating.desc
+    summary: 'Sundance Film Festival of <<year>> - مهرجان صاندانس السينمائي'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-sundance
+    item_label: Sundance Film Festival
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+collections:
+  Sundance Film Festival 2021:
+    template: { name: SFF Template, year: 2021 }
+    url_poster: https://i.imgur.com/soYCQli.png
+  Sundance Film Festival 2020:
+    template: { name: SFF Template, year: 2020 }
+    url_poster: https://i.imgur.com/AMSgoOz.png
+  Sundance Film Festival 2019:
+    template: { name: SFF Template, year: 2019 }
+    url_poster: https://i.imgur.com/0rP0jER.png
+  Sundance Film Festival 2018:
+    template: { name: SFF Template, year: 2018 }
+    url_poster: https://i.imgur.com/zH80pST.png
+  Sundance Film Festival 2017:
+    template: { name: SFF Template, year: 2017 }
+    url_poster: https://i.imgur.com/Kn1us3W.png
+  Sundance Film Festival 2016:
+    template: { name: SFF Template, year: 2016 }
+    url_poster: https://i.imgur.com/6pzcarN.png
+  Sundance Film Festival 2015:
+    template: { name: SFF Template, year: 2015 }
+    url_poster: https://i.imgur.com/y59OGfS.png
+  Sundance Film Festival 2014:
+    template: { name: SFF Template, year: 2014 }
+    url_poster: https://i.imgur.com/oPmayNw.png
+  Sundance Film Festival 2013:
+    template: { name: SFF Template, year: 2013 }
+    url_poster: https://i.imgur.com/DhB7Jg4.png
+  Sundance Film Festival 2012:
+    template: { name: SFF Template, year: 2012 }
+    url_poster: https://i.imgur.com/DhB7Jg4.png
+  Sundance Film Festival 2011:
+    template: { name: SFF Template, year: 2011 }
+    url_poster: https://i.imgur.com/TEcji8S.png
+  Sundance Film Festival 2010:
+    template: { name: SFF Template, year: 2010 }
+    url_poster: https://i.imgur.com/w2F2rxS.png

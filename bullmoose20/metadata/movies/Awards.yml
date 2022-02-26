@@ -53,6 +53,7 @@ collections:
   #schedule: yearly (02/21)
 
  Venice:
+  #test: true
   template: { name: Award} 
   trakt_list: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
   summary: "The Venice Film Festival or Venice International Film Festival (Italian: Mostra Internazionale d'Arte Cinematografica della Biennale di Venezia is the world's oldest film festival"

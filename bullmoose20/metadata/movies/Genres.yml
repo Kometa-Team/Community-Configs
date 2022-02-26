@@ -16,12 +16,14 @@ templates:
     sort_title: +15_<<collection_name>>
     collection_mode: hide
     sync_mode: sync
-    smart_label: alpha
+    smart_label: random
 collections:
   Action & adventure:
+    test: true
     template: { name: genre, genre: "Action & adventure" }
     #url_poster: https://i.imgur.com/5rP3mqc.jpg
   Action:
+    test: true
     template: { name: genre, genre: action }
     #url_poster: https://i.imgur.com/5rP3mqc.jpg
   Adventure:
@@ -77,6 +79,7 @@ collections:
     imdb_list: https://www.imdb.com/list/ls062688328/
     summary: LGBTQ+ film is a genre of films where the characters decpict lesbian, gay, bisexual, transgender, queer and intersex people.
   Martial Arts:
+    #test: true
     template: { name: Special Genre }
     imdb_list:
       - https://www.imdb.com/list/ls000099643/
@@ -84,7 +87,8 @@ collections:
       - https://www.imdb.com/list/ls068378513/
       - https://www.imdb.com/list/ls090404120/
     summary: Martial Arts film is a sub-genre of action films that feature numerous martial arts combat between characters. These combats are usually the films' primary appeal and entertainment value, and often are a method of storytelling and character expression and development. Martial Arts are frequently featured in training scenes and other sequences in addition to fights. Martial Arts films commonly include other types of action, such as hand-to-hand combat, stuntwork, chases, and gunfights.
-  Mindf#ck:
+  MindF#ck:
+    test: true
     template: { name: Special Genre }
     trakt_list:
      - https://trakt.tv/users/hdlists/lists/mindfuck-movies
@@ -100,6 +104,7 @@ collections:
     template: { name: genre, genre: mystery }
     #url_poster: https://i.imgur.com/t1ArisJ.jpg
   Pandemic:
+    #test: true
     template: { name: Special Genre }
     imdb_list:
       - url: https://www.imdb.com/search/keyword/?keywords=deadly-virus%2Chealth-crisis%2Cpandemic%2Cpublic-health-epidemic%2Cvirus%2Ccoronavirus&sort=moviemeter,asc&mode=detail&page=1&ref_=kw_ref_key
@@ -135,8 +140,8 @@ collections:
     template: { name: genre, genre: sport }
     #url_poster: https://i.imgur.com/uGtTbYV.jpg
   Spy:
-    template: {name: genre, genre: espionage,spy}
-    #url_poster: https://i.imgur.com/IlVrIQB.png
+    template: {name: genre, genre: "espionage,spy"}
+    #url_poster: https://i.imgur.com/IlVrIQB.jpg
   Stand Up Comedy:
     template: { name: Special Genre }
     imdb_list:
@@ -153,8 +158,10 @@ collections:
     template: { name: genre, genre: thriller }
     #url_poster: https://i.imgur.com/i4K4wXI.jpg
   War:
+    #test: true
     template: { name: genre, genre: war }
     #url_poster: https://i.imgur.com/tPgvWij.jpg
   Western:
+    #test: true
     template: { name: genre, genre: western }
     #url_poster: https://i.imgur.com/NbiRkV6.jpg
