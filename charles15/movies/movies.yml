@@ -105,29 +105,41 @@ collections:
     trakt_list: https://trakt.tv/users/donxy/lists/alien-predator-timeline?sort=rank,asc
     url_poster: https://theposterdb.com/api/assets/146111
     summary: All Alien & Predator movies in the shared universe
-    name_mapping: Alien/Predator Universe
+    name_mapping: AlienPredator Universe
   Rocky Universe:
     template: {name: Series}
-    tmdb_list: https://www.themoviedb.org/collection/1575
-    tmdb_list: https://www.themoviedb.org/collection/553717
+    imdb_list: https://www.imdb.com/list/ls538336139/
+    url_poster: https://theposterdb.com/api/assets/5907
     sort_by: release_date.desc
-    collection_order: custom
+    collection_order: release
     summary: All movies from the Rocky & Creed Universe.
   Fast & Furious Collection:
     template: {name: Series}
-    tmdb_list: https://www.themoviedb.org/collection/9485
+    imdb_list: https://www.imdb.com/list/ls068290878/
+    url_poster: https://theposterdb.com/api/assets/47254
     sort_by: release_date.desc
     collection_order: custom
     summary: All movies in the Fast & Furious Universe.
   Indiana Jones Franchise:
     template: {name: Series}
-    tmdb_list: https://www.themoviedb.org/collection/84
+    imdb_list: https://www.imdb.com/list/ls538364160/
+    url_poster: https://theposterdb.com/api/assets/11385
     sort_by: release_date.desc
     collection_order: custom
     summary: All movies in the Indiana Jones Universe.
   Mission Impossible Collection:
     template: {name: Series}
-    tmdb_list: https://www.themoviedb.org/collection/87359
+    imdb_list: https://www.imdb.com/list/ls066600640
+    url_poster: https://theposterdb.com/api/assets/6475
     sort_by: release_date.desc
     collection_order: custom
-    summary: All movies in the Mission: Impossible Universe.
+    name: "Mission: Impossible Franchise"
+    name_mapping: Mission Impossible
+    summary: "All movies in the Mission: Impossible Universe."
+  James Bond Franchise:
+    template: {name: Series}
+    imdb_list: https://www.imdb.com/list/ls006405458/
+    url_poster: https://theposterdb.com/api/assets/75315
+    sort_by: release_date.desc
+    collection_order: custom
+    summary: "All movies from the James Bond franchise"

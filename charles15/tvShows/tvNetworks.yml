@@ -24,7 +24,7 @@ collections:
   Cartoon Network:
     template: { name: network, network: "56, 217, 1232, 1483, 2193, 3917, 4771"}
   CBS:
-    template: { name: network, network: "16, 2528", "1709", "2621"}
+    template: { name: network, network: "16, 2528, 1709, 2621"}
   Cinemax:
     template: { name: network, network: 359}
   Comedy Central:
@@ -71,3 +71,4 @@ collections:
     template: { name: network, network: 41}
   YouTube:
     template: { name: network, network: "247, 1436, 4869"}
+    
