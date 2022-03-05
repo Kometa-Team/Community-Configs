@@ -1,0 +1,12 @@
+collections:  
+  IMDb Top 250 Movies:
+    sort_title: +08_Top Rated
+    imdb_chart: top_movies
+    summary: IMDb Top 250 as rated by regular IMDb voters
+    collection_order: custom
+    sync_mode: sync
+    url_poster: https://i.imgur.com/u78jtMq.png
+    item_label: IMDb Top 250 Movies
+    visible_library: false
+    visible_home: false
+    visible_shared: false

@@ -1,0 +1,33 @@
+######################################################
+#                Cannes Collections                  #
+######################################################
+templates:
+  Cannes Template:
+    sort_title: '+04_Cannes <<year>>'
+    smart_label: audience_rating.desc
+    summary: '<<year>> Cannes Lions International Festival of Creativity - مهرجان كان ليونز الدولي للإبداع'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-cannes
+    item_label: Cannes
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+collections:
+  Cannes 2021:
+    template: { name: Cannes Template, year: 2021 }
+    url_poster: https://i.imgur.com/CRMixua.png
+  Cannes 2020:
+    template: { name: Cannes Template, year: 2020 }
+    url_poster: https://i.imgur.com/k8T5pcK.png
+  Cannes 2019:
+    template: { name: Cannes Template, year: 2019 }
+    url_poster: https://i.imgur.com/eZKJ6B5.png
+  Cannes 2018:
+    template: { name: Cannes Template, year: 2018 }
+    url_poster: https://i.imgur.com/DL4JvYF.png
+  Cannes 2017:
+    template: { name: Cannes Template, year: 2017 }
+    url_poster: https://i.imgur.com/gshj3Ol.png
+  Cannes 2016:
+    template: { name: Cannes Template, year: 2016 }
+    url_poster: https://i.imgur.com/zLSeIMw.png

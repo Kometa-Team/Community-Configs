@@ -1,0 +1,123 @@
+######################################################
+#                Oscar Collections                   #
+######################################################
+templates:
+    Oscars:
+        sync_mode: sync
+        smart_label: audience_rating.desc
+        visible_library: false
+        visible_home: false
+        visible_shared: false
+collections:
+  Oscar 2022:
+    sort_title: '+02_26'
+  Oscar 2021:
+    sort_title: '+02_25'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-93rd-academy-awards-oscars-2021
+    url_poster: https://i.imgur.com/we9wmIT.jpg
+    summary: 'Academy Awards (Oscars) for 2021 - جائزة الأوسكار'
+  Oscar 2020:
+    sort_title: '+02_24'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-92nd-academy-awards-oscars-2020
+    url_poster: https://i.imgur.com/M5POvtI.png
+    summary: 'Academy Awards (Oscars) for 2020 - جائزة الأوسكار'
+  Oscar 2019:
+    sort_title: '+02_23'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-91st-academy-awards-oscars-2019
+    url_poster: https://i.imgur.com/YlpLaLO.jpg
+    summary: 'Academy Awards (Oscars) for 2019 - جائزة الأوسكار'
+  Oscar 2018:
+    sort_title: '+02_22'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-90th-academy-awards-oscars-2018
+    url_poster: https://i.imgur.com/RDDqFSp.png
+    summary: 'Academy Awards (Oscars) for 2018 - جائزة الأوسكار'
+  Oscar 2017:
+    sort_title: '+02_21'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-89th-academy-awards-oscars-2017
+    url_poster: https://i.imgur.com/PP4IjMm.jpg
+    summary: 'Academy Awards (Oscars) for 2017 - جائزة الأوسكار'
+  Oscar 2016:
+    sort_title: '+02_20'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-88th-academy-awards-oscars-2016
+    url_poster: https://i.imgur.com/uLxywvC.jpg
+    summary: 'Academy Awards (Oscars) for 2016 - جائزة الأوسكار'
+  Oscar 2015:
+    sort_title: '+02_19'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-87th-academy-awards-oscars-2015-15ad9ede-826a-47fd-a239-ccf7a1f625f4
+    url_poster: https://i.imgur.com/zamfX4k.jpg
+    summary: 'Academy Awards (Oscars) for 2015 - جائزة الأوسكار'
+  Oscar 2014:
+    sort_title: '+02_18'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-86th-academy-awards-oscars-2014
+    url_poster: https://i.imgur.com/MfhfJZz.jpg
+    summary: 'Academy Awards (Oscars) for 2014 - جائزة الأوسكار'
+  Oscar 2013:
+    sort_title: '+02_17'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-85th-academy-awards-oscars-2013
+    url_poster: https://i.imgur.com/Pp1b48k.jpg
+    summary: 'Academy Awards (Oscars) for 2013 - جائزة الأوسكار'
+  Oscar 2012:
+    sort_title: '+02_16'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-84th-academy-awards-oscars-2012
+    url_poster: https://i.imgur.com/qxSWjzs.jpg
+    summary: 'Academy Awards (Oscars) for 2012 - جائزة الأوسكار'
+  Oscar 2011:
+    sort_title: '+02_15'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-83rd-academy-awards-oscars-2011
+    url_poster: https://i.imgur.com/goY8lCf.jpg
+    summary: 'Academy Awards (Oscars) for 2011 - جائزة الأوسكار'
+  Oscar 2010:
+    sort_title: '+02_14'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-82nd-academy-awards-oscars-2010
+    url_poster: https://i.imgur.com/tRyrCBS.jpg
+    summary: 'Academy Awards (Oscars) for 2010 - جائزة الأوسكار'
+  Oscar 2009:
+    sort_title: '+02_13'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-81st-academy-awards-oscars-2009
+    url_poster: https://i.imgur.com/f57RKg4.jpg
+    summary: 'Academy Awards (Oscars) for 2009 - جائزة الأوسكار'
+  Oscar 2008:
+    sort_title: '+02_12'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-80th-academy-awards-oscars-2008
+    url_poster: https://i.imgur.com/NhPndKR.jpg
+    summary: 'Academy Awards (Oscars) for 2008 - جائزة الأوسكار'
+  Oscar 2007:
+    sort_title: '+02_11'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-79th-academy-awards-oscars-2007
+    url_poster: https://i.imgur.com/q8FZVTZ.jpg
+    summary: 'Academy Awards (Oscars) for 2007 - جائزة الأوسكار'
+  Oscar 2006:
+    sort_title: '+02_10'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-78th-academy-awards-oscars-2006
+    url_poster: https://i.imgur.com/09zuCzZ.jpg
+    summary: 'Academy Awards (Oscars) for 2006 - جائزة الأوسكار'
+  Oscar 2005:
+    sort_title: '+02_09'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-77th-academy-awards-oscars-2005
+    url_poster: https://i.imgur.com/N5vZ8KJ.jpg
+    summary: 'Academy Awards (Oscars) for 2005 - جائزة الأوسكار'
+  Oscar 2004:
+    sort_title: '+02_08'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-76th-academy-awards-oscars-2004
+    url_poster: https://i.imgur.com/IxDLjg2.jpg
+    summary: 'Academy Awards (Oscars) for 2004 - جائزة الأوسكار'
+  Oscar 2003:
+    sort_title: '+02_07'
+    trakt_list: https://trakt.tv/users/pullsa/lists/the-75th-academy-awards-oscars-2003
+    url_poster: https://i.imgur.com/nR0wAbm.jpg
+    summary: 'Academy Awards (Oscars) for 2003 - جائزة الأوسكار'
+  Oscar 2002:
+    sort_title: '+02_06'
+    trakt_list: https://trakt.tv/users/imirko/lists/oscars-2002
+    url_poster: https://i.imgur.com/0gSZsik.jpg
+    summary: 'Academy Awards (Oscars) for 2002 - جائزة الأوسكار'
+  Oscar 2001:
+    sort_title: '+02_05'
+    trakt_list: https://trakt.tv/users/imirko/lists/oscars-2001
+    url_poster: https://i.imgur.com/Jn0Exl7.jpg
+    summary: 'Academy Awards (Oscars) for 2001 - جائزة الأوسكار'
+  Oscar 2000:
+    sort_title: '+02_04'
+    trakt_list: https://trakt.tv/users/mri8879/lists/the-72nd-academy-awards-oscar-nominees-of-2000
+    url_poster: https://i.imgur.com/NKgS5sc.png
+    summary: 'Academy Awards (Oscars) for 2000 - جائزة الأوسكار'

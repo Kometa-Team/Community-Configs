@@ -6,31 +6,31 @@ A full version of this including all the images/folders/xcf/psd and more that I 
 For ease of use just unzip everything in the bullmoose20-pmmsetup_<timestamp>.zip file to your docker container config folder and edit the config.yml to match your settings. Then run the container, open terminal/console, and use the following command ```python plex_meta_manager.py -r```
 
 Playlists Preview: <br>
-![Playlists](Playlists.png)
+![Playlists](Playlists.jpg)
 <br>
 <br>
 Movie Library With Overlays Preview: <br>
-![Movies with overlays](MovieLibrary.png)
+![Movies with overlays](MovieLibrary.jpg)
 <br>
 <br>
 Movie Collections Preview: <br>
-![Movies with overlays](MovieCollection01.png)
+![Movies with overlays](MovieCollection01.jpg)
 <br>
 <br>
 Movie Collections Preview Continued: <br>
-![Movies with overlays](MovieCollection02.png)
+![Movies with overlays](MovieCollection02.jpg)
 <br>
 <br>
 Movie Collections Preview Continued: <br>
-![Movies with overlays](MovieCollection03.png)
+![Movies with overlays](MovieCollection03.jpg)
 <br>
 <br>
 TV Shows Library with Overlays Preview: <br>
-![TV Shows with overlays](TVLibrary.png)<br>
+![TV Shows with overlays](TVLibrary.jpg)<br>
 <br>
 <br>
 TV Shows Collections with Overlays Preview: <br>
-![TV Shows with overlays](TVCollections01.png)<br>
+![TV Shows with overlays](TVCollections01.jpg)<br>
 <br>
 <br>
 

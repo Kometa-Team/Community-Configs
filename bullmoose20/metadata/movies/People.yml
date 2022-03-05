@@ -17,6 +17,7 @@ templates:
 
 collections:
   Adam Driver:
+    #test: true
     template: { name: Person, person: "Adam Driver" }
   Adam Sandler:
     template: { name: Person, person: "Adam Sandler" }

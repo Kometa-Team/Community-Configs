@@ -5,6 +5,7 @@ playlist_files:
 libraries:                                      # Library mappings must have a colon (:) placed after them
   Movies:
     metadata_path:
+      #- file: config/metadata/movies/Cleaner.yml
       #- file: config/metadata/movies/Movies.yml
       - file: config/metadata/movies/MovieCharts.yml
       - file: config/metadata/movies/Holidays.yml
@@ -44,13 +45,16 @@ libraries:                                      # Library mappings must have a c
           collection_mode: hide
   TV Shows:
     metadata_path:
+      #- file: config/metadata/movies/Cleaner.yml
       #- file: config/metadata/shows/TVShows.yml
       - file: config/metadata/shows/ShowCharts.yml
       - file: config/metadata/shows/Studios.yml
       - file: config/metadata/shows/Genres.yml
       - file: config/metadata/shows/Networks.yml
+      - file: config/metadata/movies/People.yml
       - file: config/metadata/shows/Decades.yml
       - file: config/metadata/overlays.yml
+      
     settings:
       missing_path: config/missing
       asset_directory:
@@ -62,6 +66,7 @@ libraries:                                      # Library mappings must have a c
         - config/assets/yearsanddecades
         - config/assets/playlists
         - config/assets/
+        - config/overlays/
     operations:
       split_duplicates: true
       assets_for_all: true
