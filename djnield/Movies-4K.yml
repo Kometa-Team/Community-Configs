@@ -13,6 +13,7 @@ collections:
     visible_home: true
     visible_shared: true
     visible_library: true
+    cache_builders: 1
   4K Overlay:
     plex_all: true
     item_overlay:
@@ -20,4 +21,4 @@ collections:
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
     build_collection: false
     revert_overlay: false
-    schedule: hourly(06)
+    schedule: hourly(18)

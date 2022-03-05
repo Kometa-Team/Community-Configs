@@ -9,10 +9,11 @@ templates:
         limit: <<limit>>
     sync_mode: sync
     collection_order: custom
-    schedule: weekly (monday)
+    schedule: weekly (monday), weekly (thursday)
     visible_home: false
     visible_shared: false
-    visible_library: true
+    visible_library: false
+    cache_builders: 1
     
 collections:
   Assassins:

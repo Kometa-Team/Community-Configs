@@ -10,6 +10,7 @@ collections:
     url_poster: https://i.imgur.com/Jyx4wOc.png
     url_background: https://wallpaper.dog/large/20509069.jpg
     build_collection: false
+    cache_builders: 1
 
   TV Watchlist:
     trakt_watchlist:
@@ -23,6 +24,7 @@ collections:
     visible_home: true
     visible_shared: false
     visible_library: false
+    cache_builders: 1
 
   Trending TV:
     smart_label: release.desc
@@ -35,3 +37,4 @@ collections:
     visible_home: true
     visible_shared: true
     visible_library: true
+    cache_builders: 1
