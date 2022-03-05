@@ -19,8 +19,6 @@ collections:
     summary: Blue Sky Studios, Inc. is an American computer animation film studio based in Greenwich, Connecticut. It is a subsidiary of 20th Century Animation, a division of Disney Studios Content.
   DreamWorks:
     template: { name: Studio, company: 521, poster: https://theposterdb.com/api/assets/103275 }
-    filters:
-      collection.not: Aardman
     summary: DreamWorks Animation LLC (also simply known as DreamWorks) is an American animation studio and a subsidiary of Universal Pictures, itself a subsidiary of Comcast's NBCUniversal. It is based in Glendale, California, and produces animated feature films, television programs, and online virtual games.
   Illumination Entertainment:
     template: { name: Studio, company: 6704, poster: https://theposterdb.com/api/assets/103276 }
