@@ -1,19 +1,5 @@
 ---
 collections:
-  TV Watchlist:
-    trakt_watchlist:
-      - me
-    smart_label: release.desc
-    sort_title: ++4Watchlist
-    sync_mode: sync
-    schedule: hourly (00)
-    label: admin
-    url_poster: https://i.imgur.com/IJMWyvo.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: true
-    visible_shared: false
-    visible_library: false
-
   Trending TV:
     smart_label: release.desc
     sort_title: ++1Trending TV
@@ -25,37 +11,12 @@ collections:
     visible_home: true
     visible_shared: true
     visible_library: true
-
-#  Popular TV:
-#    smart_label: release.desc
-#    sort_title: ++2Popular TV
-#    sync_mode: sync
-#    imdb_list:
-#      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
-#      limit: 40
-#    summary: Popular Shows across the internet
-#    url_poster: https://i.imgur.com/s90PSic.png
-#    url_background: https://wallpaper.dog/large/20509069.jpg
-#    visible_home: false
-#    visible_shared: false
-#    visible_library: true
-#
-#  Top Rated TV:
-#    smart_label: user_rating.desc
-#    sort_title: ++3Top Rated TV
-#    sync_mode: sync
-#    imdb_list:
-#      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc
-#      limit: 100
-#    tmdb_top_rated: 100
-#    summary: Top Rated Shows across the internet
-#    url_poster: https://i.imgur.com/7h1vaxl.png
-#    url_background: https://wallpaper.dog/large/20509069.jpg
-
+    cache_builders: 1
   DV:
     plex_all: true
     item_overlay:
       name: DV
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV/overlay.png
     build_collection: false
-    revert_overlay: true
+    revert_overlay: false
+    schedule: hourly(18)
