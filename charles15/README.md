@@ -1,6 +1,8 @@
-Sort Order of charles15's Collections
+# charles15's Collections
 
-MOVIES  
+## Sort Order
+
+### Movies 
 01- Popular on Plex  
 02- Charts  
 03- Movie Series  
@@ -11,9 +13,8 @@ MOVIES
 08-  
 09- Genre  
 10- Actors/Persons  
-  
-  
-TV Shows  
+
+### TV Shows  
 01- Popular on Plex  
 02- Charts  
 03- Series  
