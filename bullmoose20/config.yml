@@ -33,7 +33,7 @@ libraries:                                      # Library mappings must have a c
         - config/overlays/
     operations:
       split_duplicates: true
-      assets_for_all: true
+      assets_for_all: false # default was true but trying to speed up my testing
       mass_trakt_rating_update: true
       mass_critic_rating_update: tmdb
       mass_audience_rating_update: tmdb
@@ -69,7 +69,7 @@ libraries:                                      # Library mappings must have a c
         - config/overlays/
     operations:
       split_duplicates: true
-      assets_for_all: true
+      assets_for_all: false # default was true but trying to speed up my testing
       mass_trakt_rating_update: true
       mass_critic_rating_update: tmdb
       mass_audience_rating_update: tmdb
