@@ -1,0 +1,13 @@
+templates:
+  Studio:
+    optional:
+      - company
+    tmdb_company: <<company>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: +<<collection_name>>
+collections:
+
+  "Happy Madison Productions":
+    template: {name: Studio, company: 878, poster: https://theposterdb.com/api/assets/218229 }
