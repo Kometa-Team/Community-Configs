@@ -11,3 +11,9 @@ collections:
 
   "Happy Madison Productions":
     template: {name: Studio, company: 878, poster: https://theposterdb.com/api/assets/218229 }
+    
+  "Pixar Animation Studios":
+    template: {name: Studio, company: 3, poster: https://theposterdb.com/api/assets/189763 }
+    
+  "Studio Ghibli":
+    template: {name: Studio, company: 10342, poster: https://theposterdb.com/api/assets/193453 }
