@@ -1,0 +1,39 @@
+######################################################
+#                BAFTA Collections                   #
+######################################################
+templates:
+  BAFTA Template:
+    sort_title: '+03_BAFTA <<year>>'
+    smart_label: audience_rating.desc
+    summary: '<<year>> BAFTA Awards nominees and winners - المرشحون والفائزون بجوائز الاكاديمية البريطانية للأفلام'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-bafta
+    item_label: BAFTA
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+collections:
+  BAFTA 2021:
+    template: { name: BAFTA Template, year: 2021 }
+    url_poster: https://i.imgur.com/kFJmd4r.png
+  BAFTA 2020:
+    template: { name: BAFTA Template, year: 2020 }
+    url_poster: https://i.imgur.com/VcGsvkT.png
+  BAFTA 2019:
+    template: { name: BAFTA Template, year: 2019 }
+    url_poster: https://i.imgur.com/T4vQT0T.png
+  BAFTA 2018:
+    template: { name: BAFTA Template, year: 2018 }
+    url_poster: https://i.imgur.com/nrW9Bz2.png
+  BAFTA 2017:
+    template: { name: BAFTA Template, year: 2017 }
+    url_poster: https://i.imgur.com/s3mmTkW.png
+  BAFTA 2016:
+    template: { name: BAFTA Template, year: 2016 }
+    url_poster: https://i.imgur.com/mWNjANV.png
+  BAFTA 2015:
+    template: { name: BAFTA Template, year: 2015 }
+    url_poster: https://i.imgur.com/jZDWwtq.png
+  BAFTA 2014:
+    template: { name: BAFTA Template, year: 2014 }
+    url_poster: https://i.imgur.com/cpptLlr.png

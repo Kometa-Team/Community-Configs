@@ -1,0 +1,160 @@
+######################################################
+#               People Collections                   #
+######################################################
+templates:
+  Person:
+    smart_filter:
+      any:
+        actor: tmdb
+        director: tmdb
+        writer: tmdb
+        producer: tmdb
+      sort_by: random
+      validate: false
+    tmdb_person: <<person>>
+    sort_title: +4_<<collection_name>>
+collections:
+  Martin Lamotte: 
+    template: {name: Person, person: 82793}
+  Michel Galabru: 
+    template: {name: Person, person: 24629}
+  Christian Clavier:
+    template: {name: Person, person: 28781}
+  Gérard Jugnot:
+    template: {name: Person, person: 21171}
+  Dominique Lavanant:
+    template: {name: Person, person: 1972}
+  Jacques Villeret: 
+    template: {name: Person, person: 35323}
+  Michel Blanc: 
+    template: {name: Person, person: 21175}
+  Thierry Lhermitte: 
+    template: {name: Person, person: 21177}
+  Josiane Balasko: 
+    template: {name: Person, person: 35137}
+  Roland Giraud: 
+    template: {name: Person, person: 35210}
+  Jean Yanne: 
+    template: {name: Person, person: 24381}
+  Louis de Funès: 
+    template: {name: Person, person: 11187}
+  Alban Ivanov: 
+    template: {name: Person, person: 544681}
+  Vincent Cassel: 
+    template: {name: Person, person: 1925}
+  Guillaume Canet:
+    template: {name: Person, person: 19866}
+  Kristin Scott Thomas:
+    template: {name: Person, person: 5470}
+  André Dussolier: 
+    template: {name: Person, person: 18177}
+  Audrey Tautou: 
+    template: {name: Person, person: 2405}
+  Romain Duris:
+    template: {name: Person, person: 17497}
+  Cécile de France: 
+    template: {name: Person, person: 17522}
+  Gérard Deprdieu: 
+    template: {name: Person, person: 16927}
+  Jamel Debbouze:
+    template: {name: Person, person: 2408}
+  Monica Bellucci: 
+    template: {name: Person, person: 28782}
+  Alexandra Lamy: 
+    template: {name: Person, person: 113617}
+  Jean Dujardin: 
+    template: {name: Person, person: 56024}    
+  Jean-Paul Belmondo: 
+    template: {name: Person, person: 3829}    
+  Michel Serrault: 
+    template: {name: Person, person: 12270}   
+  Jean Pierre Marielle:
+    template: {name: Person, person: 20795}
+  Jean Rochefort:
+    template: {name: Person, person: 24421}
+  Philippe Noiret:
+    template: {name: Person, person: 24366}
+  Niels Arestrup:
+    template: {name: Person, person: 17498}
+  Matthieu Amalric:
+    template: {name: Person, person: 8789}
+  Daniel Auteuil:
+    template: {name: Person, person: 6012}
+  Coluche:
+    template: {name: Person, person: 11214}
+  Benoît Poelvoored:
+    template: {name: Person, person: 47820}
+  Albert Dupontel:
+    template: {name: Person, person: 14606}
+  Eric Elmosnino:
+    template: {name: Person, person: 24465}
+  Francois Cluzet:
+    template: {name: Person, person: 33161}
+  Lino Ventura:
+    template: {name: Person, person: 15397}
+  Alain Delon:
+    template: {name: Person, person: 15135}
+  Fabrice Luchini: 
+    template: {name: Person, person: 28255}
+  Jean Pierre Bacri:
+    template: {name: Person, person: 28281}
+  Laurent Lafitte:
+    template: {name: Person, person: 93532}
+  Omar Sy:
+    template: {name: Person, person: 78423}
+  Nicolas Duvauchelle:
+    template: {name: Person, person: 81054}
+  Matthieu Kassovitz:
+    template: {name: Person, person: 2406}
+  Lambert Wilson:
+    template: {name: Person, person: 2192}
+  Edouard Baer:
+    template: {name: Person, person: 41035}
+  Pierre Niney:
+    template: {name: Person, person: 145121}
+  Guillaume Gallienne:
+    template: {name: Person, person: 6554}
+  Brigitte Bardot:
+    template: {name: Person, person: 3783}
+  Lea Seydoux:
+    template: {name: Person, person: 121529}
+  Marion Cotillard:
+    template: {name: Person, person: 8293}
+  Melanie Laurent:
+    template: {name: Person, person: 19119}
+  Virginie Ledoyen:
+    template: {name: Person, person: 19163}
+  Catherine Deneuve:
+    template: {name: Person, person: 50}
+  Sophie Marceau:
+    template: {name: Person, person: 1957}
+  Emmanuel Beart:
+    template: {name: Person, person: 4885}
+  Karine Viard:
+    template: {name: Person, person: 13688}
+  Jacqueline Maillan:
+    template: {name: Person, person: 39889}
+  Isabelle Adjani:
+    template: {name: Person, person: 6553}
+  Anemone:
+    template: {name: Person, person: 39350}
+  Bernard Blier:
+    template: {name: Person, person: 24379}
+  Jean Lefebvre:
+    template: {name: Person, person: 37457}
+  Jean Paul Rouve:
+    template: {name: Person, person: 16922}
+  Philippe Lacheau:
+    template: {name: Person, person: 186076}
+  Gad Elmaleh:
+    template: {name: Person, person: 51100}
+  Valerie Lemercier:
+    template: {name: Person, person: 62531}
+  Isabelle Nanty:
+    template: {name: Person, person: 2412}
+  Mireille Darc:
+    template: {name: Person, person: 39646}
+  Annie Girardot:
+    template: {name: Person, person: 6014}
+  Jean Carmet:
+    template: {name: Person, person: 24540}

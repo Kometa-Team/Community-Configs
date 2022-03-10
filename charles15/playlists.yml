@@ -1,0 +1,26 @@
+playlists:
+  Marvel Cinematic Universe:
+    sync_to_users: all
+    sync_mode: sync
+    libraries: Movies, TV Shows
+    trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
+    summary: Marvel Cinematic Universe in Chronological Order
+    url_poster: https://theposterdb.com/api/assets/6897
+  Star Wars Franchise:
+    sync_to_users: all
+    sync_mode: sync
+    libraries: Movies, TV Shows
+    tvdb_list: https://thetvdb.com/lists/star-wars
+    summary: All shows and movies from the Star Wars Franchise
+  Arrowverse:
+    sync_to_users: all
+    sync_mode: sync
+    libraries: Movies, TV Shows
+    trakt_list: https://trakt.tv/users/donxy/lists/arrowverse?sort=rank,asc
+    summary: A DC Comics franchise that includes crossovers with Green Arrow, The Flash, Supergirl, and many more.
+  DC Extended Universe:
+    sync_to_users: all
+    sync_mode: sync
+    libraries: Movies, TV Shows
+    trakt_list: https://trakt.tv/users/donxy/lists/dc-extended-universe?sort=rank,asc
+    summary: Movies & Shows from the DC Extended Universe.
