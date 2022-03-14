@@ -1,0 +1,20 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Rio":
+    template: {name: Set, collection: 229932, poster: https://theposterdb.com/api/assets/162967 }
+
+  "Ice Age":
+    template: {name: Set, collection: 8354, poster: https://theposterdb.com/api/assets/162988 }
