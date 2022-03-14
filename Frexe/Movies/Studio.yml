@@ -9,6 +9,9 @@ templates:
     sort_title: +<<collection_name>>
 collections:
 
+  "Blue Sky Studios":
+    template: {name: Studio, company: 9383, poster: https://theposterdb.com/api/assets/183134 }
+
   "Happy Madison Productions":
     template: {name: Studio, company: 878, poster: https://theposterdb.com/api/assets/218229 }
     
