@@ -1,0 +1,35 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Despicable Me":
+    template: {name: Set, collection: 86066, poster: https://theposterdb.com/api/assets/163000 }
+
+  "Minions":
+    template: {name: Set, collection: 544669, poster: https://theposterdb.com/api/assets/192196 }
+
+  "Secret Life of Pets":
+    template: {name: Set, collection: 427084, poster: https://theposterdb.com/api/assets/162965 }
+
+  "Sing":
+    template: {name: Set, collection: 544670, poster: https://theposterdb.com/api/assets/192204 }
+
+  "The Secret Life of Pets":
+    template: {name: Set, collection: 427084, poster: https://theposterdb.com/api/assets/162965 }
+
+  "Dr. Seuss":
+    template: {name: Set, list: 8195256, poster: https://theposterdb.com/api/assets/162035 }
+
+  "Illumination Animation":
+    template: {name: Set, list: 8195257, poster: https://theposterdb.com/api/assets/192201 }
