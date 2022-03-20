@@ -1,0 +1,23 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "American Graffiti":
+    template: {name: Set, collection: 124950, poster: https://theposterdb.com/api/assets/168691 }
+
+  "Indiana Jones":
+    template: {name: Set, collection: 84, poster: https://theposterdb.com/api/assets/163391 }
+
+  "Star Wars":
+    template: {name: Set, collection: 10, poster: https://theposterdb.com/api/assets/164120 }
