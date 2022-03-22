@@ -1,0 +1,1072 @@
+                             
+                                      ######################################################
+                                      #                Movie Collections                   #
+                                      ######################################################
+
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    smart_label: random
+  Genre:
+    url_poster: <<poster>>
+    sort_title: +++++++_<<collection_name>>
+    collection_order: alpha
+  
+  SearchGenre:
+    plex_search:
+    genre: <<genre>>
+    url_poster: <<poster>>
+    sort_title: +++++++_<<collection_name>>
+    collection_order: alpha
+
+  Movie:
+    tmdb_collection: <<collection>>
+    tmdb_summary: <<summary>>
+    url_poster: <<poster>>
+    sort_title: ++++_<<collection_name>>
+    collection_order: release
+  Studio:
+    plex_search:
+    studio: <<studio>>
+    url_poster: <<poster>>
+    sort_title: +++++_<<collection_name>>
+    collection_order: alpha
+  Holiday:
+    smart_label: title.asc
+    summary: |-
+      A timed collection of <<collection_name>> and other movies that may relate to the holiday.
+      
+      NOTE: this collection will only be around until <<end_date>>.
+    sort_title: +0_<<collection_name>>
+    schedule: range(<<start_date>>-<<end_date>>)
+    delete_not_scheduled: true
+    visible_home: true
+    visible_shared: true
+  people:
+    actor: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++_<<collection_name>>
+    collection_order: release
+
+collections:
+  BAFTA Awards & Nominees:
+    template: {name: Genre, poster: https://i.imgur.com/hNt5VUC.png, url_background: https://i.imgur.com/Cy7Qseh.jpg}
+    trakt_list:
+      - https://trakt.tv/users/pjcob/lists/2021-bafta
+      - https://trakt.tv/users/pjcob/lists/2020-bafta
+      - https://trakt.tv/users/pjcob/lists/2019-bafta
+      - https://trakt.tv/users/pjcob/lists/2018-bafta
+      - https://trakt.tv/users/pjcob/lists/2017-bafta
+      - https://trakt.tv/users/pjcob/lists/2016-bafta
+      - https://trakt.tv/users/pjcob/lists/2015-bafta
+      - https://trakt.tv/users/pjcob/lists/2014-bafta   
+    summary: "2014-2021 Bafta Awards and Nominees EXCLUDING: Oscars and Golden Globes nominees"
+  Oscars:
+    template: { name: Genre }
+    imdb_list: https://www.imdb.com/search/title/?companies=co0103091
+    summary: Oscar Winning Movies
+    url_poster: https://i.imgur.com/58hBVXD.png
+    url_background: https://i.imgur.com/0Kao9gY.jpeg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  BFI Top 100 British films:
+    template: { name: Genre }
+    imdb_list:
+    - url:  https://www.imdb.com/list/ls063846014/
+      limit: 100
+    summary: "In 1999 the British Film Institute surveyed 1,000 people from the world of British film and television to produce the BFI 100 list of the greatest British films of the 20th century. Voters were asked to choose up to 100 films that were 'culturally British'."
+    url_poster: https://i.imgur.com/sY3AtfI.png
+    url_background: https://i.imgur.com/yPiWWA1.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Best 100 movies of British Cinema 1940-1950:
+    template: { name: Genre }
+    imdb_list:
+    - url:  https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,1950-12-31&countries=gb
+    summary: British Feature Films Released between 1940-01-01 and 1950-12-31 with IMBD Rating at least 5
+    url_poster: https://i.imgur.com/PHlgelY.png
+    url_background: https://i.imgur.com/1jMapbA.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Movies with an IMBD Rating of 8 from 2000 onwards:
+    template: { name: Genre }
+    imdb_list: 
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=2000-01-01,&user_rating=8.0,&countries=gb
+    summary: Movies Released 2000 onwards with a IMBD Rating at least 8
+    url_poster: https://i.imgur.com/AGGRbFV.png
+    url_background: https://i.imgur.com/HIrmcBt.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Associated British Studios:
+    template: { name: Genre }
+    imdb_list: https://www.imdb.com/search/title/?companies=co0103091
+    summary: Associated British Picture Corporation (ABPC), originally British International Pictures (BIP), was a British film production, distribution and exhibition company active from 1927 until 1970 when it was absorbed into EMI. ABPC also owned approximately 500 cinemas in Britain by 1943
+    url_poster: https://i.imgur.com/SN44tR0.jpg
+    url_background: https://i.imgur.com/1Dz9rRw.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Ealing Studios Collection:
+    template: { name: Genre }
+    imdb_list: https://www.imdb.com/list/ls056285887/
+    summary: Films made by the British production company Ealing Studios and its predecessor Associated Talking Pictures.Prior to 1932 and after 1956, the company's films were made at studios other than Ealing. This list does not include films made at Ealing Studios by other companies.
+    url_poster: https://i.imgur.com/iWxeH1q.png
+    url_background: https://i.imgur.com/iayKe65.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Gainsborough Pictures:
+    template: { name: Genre }
+    imdb_list: https://www.imdb.com/search/title/?companies=co0103051
+    summary: Gainsborough Pictures was a British film studio based on the south bank of the Regent's Canal, in Poole Street, Hoxton in the former Metropolitan Borough of Shoreditch, north London. Gainsborough Studios was active between 1924 and 1951. The company was initially based at Islington Studios, which were built as a power station for the Great Northern & City Railway and later converted to studios.
+    url_poster: https://i.imgur.com/8SOEp9Q.png
+    url_background: https://i.imgur.com/xdwSS8z.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Sky Originals UK:
+    template: { name: Genre }
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1Sky
+    imdb_list: https://www.imdb.com/list/ls044197135/
+    summary: Sky Studios is a production company founded by Sky in June 2019. It develops, produces and funds original drama, comedy and documentary, and has investments in a number of production businesses in the UK and US
+    url_poster: https://i.imgur.com/kkcillK.png
+    url_background: https://i.imgur.com/dc9MCZ7.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  BBC Films:
+    template: { name: Genre }
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1BBC
+    imdb_list: https://www.imdb.com/search/title/?companies=co0103694
+    summary: BBC Film works closely with filmmakers throughout the creative process, offering rigorous opportunity to new filmmakers and a protected, collaborative space for established voices.
+    url_poster: https://i.imgur.com/qg42ETY.png
+    url_background: https://i.imgur.com/qgmC1iH.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  StudioCanal UK:
+    template: { name: Genre }
+    imdb_list: https://www.imdb.com/search/title/?companies=co0240130
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1StudioCanal
+    summary: StudioCanal UK (formerly Optimum Releasing) is the official branch of StudioCanal in the British Isles. The company releases many films, including foreign, anime (mostly Studio Ghibli), independent, art, British, Irish and American films in the United Kingdom and sometimes Ireland.
+    url_poster: https://i.imgur.com/mUMrSrO.png
+    url_background: https://i.imgur.com/rKllc9p.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Best British Gangster Movies:
+    template: { name: Genre }
+    imdb_list: https://www.imdb.com/list/ls022320637/
+    summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
+    url_poster: https://i.imgur.com/uxv9toJ.png
+    url_background: https://i.imgur.com/CaO9TBt.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Best British Comedy Movies:
+    template: { name: Genre }
+    imdb_list: https://www.imdb.com/list/ls055976873/
+    summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
+    url_poster: https://i.imgur.com/nHdloth.png
+    url_background: https://i.imgur.com/pb0ocQX.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Best British Thriller Movies:
+    template: { name: Genre }
+    imdb_list: https://www.imdb.com/list/ls008222136/
+    summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
+    url_poster: https://i.imgur.com/5j8zelL.png
+    url_background: https://i.imgur.com/9WaYYwQ.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Her Majesty's Empire (British Empire war films):
+    template: { name: Genre }
+    imdb_list: https://www.imdb.com/list/ls033929193/
+    summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
+    url_poster: https://i.imgur.com/iKx3qsF.png
+    url_background: https://i.imgur.com/Yep1CNw.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Latest Releases:
+    template: { name: Genre }
+    trakt_list: https://trakt.tv/users/giladg/lists/latest-releases?sort=added,asc
+    sort_title: +++++++++++++++++++++_1AARDVARK
+    summary: "Latest Realeases as published from TRAK.TV"
+    url_poster: https://i.imgur.com/InRiOve.png
+    url_background: https://i.imgur.com/aVVCxPi.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Toronto International Film Festival:
+    template: {name: Genre, poster: , url_background: }
+    trakt_list:
+      - https://trakt.tv/users/vermelholimao/lists/tiff-2020-45th-toronto-international-film-festival?sort=rank,asc
+      - https://trakt.tv/users/vermelholimao/lists/tiff-2019-44th-toronto-international-film-festival?sort=rank,asc
+    summary: "The Toronto International Film Festival is one of the largest publicly attended film festivals in the world, attracting over 480,000 people annually. Since its founding in 1976"
+    url_poster: https://i.imgur.com/RVLeK3o.png
+    url_background: https://i.imgur.com/2zv03KG.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Time Travel Movies:
+    template: {name: Genre}
+    trakt_list:
+      - https://trakt.tv/lists/3940186
+      - https://trakt.tv/lists/20709447
+      - https://trakt.tv/lists/2729898
+      - https://trakt.tv/lists/2729898
+      - https://trakt.tv/lists/4297290
+      - https://trakt.tv/lists/2652307
+    imdb_list:
+      - https://www.imdb.com/list/ls068617191/
+      - https://www.imdb.com/list/ls004426453/
+    summary: "A collection of movies that include time travel."
+    url_poster: https://i.imgur.com/2bAeiN3.png
+    url_background: https://i.imgur.com/Y6wPHkE.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Apple Originals 2021-2025:
+    template: {name: Genre}
+    sync_mode: sync
+    imdb_list:
+    url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0546168
+    summary: All Apple TV Originals From 2021-2025
+    url_poster: https://theposterdb.com/api/assets/80809
+    url_background: https://i.imgur.com/LYigDyz.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Amazon Originals 2021-2025:
+    template: {name: Genre}
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1APPLE
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0319272
+    summary: All Amazon Originals From 2021-2025
+    url_poster: https://i.imgur.com/nU3gqqB.png
+    url_background: https://i.imgur.com/2jfs7oS.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Netflix Originals 2021-2025:
+    template: {name: Genre}
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1Netflix
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0144901
+    summary: All Netflix Originals From 2021-2025
+    url_poster: https://i.imgur.com/7kiE1MU.png
+    url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  HBO Max Originals 2021-2025:
+    template: {name: Genre}
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1HBOMAX
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0754095
+    summary: All HBO Max Originals From 2021-2025
+    url_poster: https://i.redd.it/zxdvw3tk3f151.jpg
+    url_background: https://wallpapercave.com/wp/wp6402755.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  HULU Originals 2021-2025:
+    template: {name: Genre}
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1HULU
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0218858
+    summary: All HULU Originals From 2021-2025
+    url_poster: https://plexcollectionposters.com/images/2019/05/26/Hulu6ddad752a5ce9bac.jpg
+    url_background: https://cdn.vox-cdn.com/thumbor/oR4hqrmTxbX_O4gdJ6np8h-PxFk=/0x439:750x861/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/56311701/Image_uploaded_from_iOS__8_.1503433270.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Disney Plus:
+    template: {name: Genre}
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1Disney+
+    imdb_list:
+      url: https://www.imdb.com/list/ls098575307/
+    summary:
+    url_poster: https://i.imgur.com/vvidO2M.png
+    url_background: https://i.imgur.com/awlG1PY.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Mindfuck Movies - Make you think:
+    template: {name: Genre}
+    trakt_list:
+     - https://trakt.tv/users/hdlists/lists/mindfuck-movies
+     - https://trakt.tv/users/benfranklin/lists/best-mindfucks
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_Mindfuck Movies
+    summary: There’s nothing greater than a film that makes you think. A film that lingers on your mind long after the credits have rolled and is the subject of many conversation and discussion. Trying to piece together the puzzle of what you saw and coming to a conclusion that makes sense or still doesn’t add up.
+    url_poster: https://i.imgur.com/Tl6QMgA.png
+    url_background: https://i.imgur.com/DM1Im1X.jpeg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  (2021 Academy Awards):
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/list/ls500035974/
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_Oscar Nominated Best Picture Movies 2021
+    summary: The 93rd Academy Awards ceremony is scheduled to take place on April 25, more than two months later than last year’s ceremony. The awards will recognize films released during a year in which movie theaters were largely closed.  Streaming services, which were already on the rise as an awards-season presence, are poised to dominate in April, both with their own productions (like Netflix’s “Mank”) and with traditional studio films that were released through streaming platforms because of the pandemic (like Searchlight Pictures’s “Nomadland,” which is streaming on Hulu).
+    url_poster: https://i.imgur.com/HhpBvRR.png
+    url_background: https://i.imgur.com/0Kao9gY.jpeg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  (2022 Academy Awards):
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/list/ls507682673/
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_Oscar Nominated Best Picture Movies 2022
+    summary: "The 94th Academy Awards ceremony is scheduled to take place on Sunday 27TH March, The Oscar nominations for the 94th Academy Awards were announced on Feb. 8 while the ceremony is just around the corner, and for the first time in ten years, there are ten films nominated for Best Picture. As with any year, the Oscar nominees are a diverse array of film titles that range in genre, tone, and subject from political satires, to revisionist westerns, to biographical dramas" 
+    url_poster: https://i.imgur.com/RQbT5x1.png
+    url_background: https://i.imgur.com/WGkqr9q.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true  
+
+  Nostalgia Collection (Classics From The 80s & 90s):
+    template: {name: Genre}
+    trakt_list: https://trakt.tv/users/hdlists/lists/nostalgiac-movies-from-the-80s-90s
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_Nostalgia Collection
+    summary: All The Nostalgiac Movies From The 80s & 90s in One Collection
+    url_poster: https://i.imgur.com/vE8dsdd.jpg
+    url_background: https://i.imgur.com/frz0kly.jpg
+    
+  Outer Space Movie Collection:
+    template: {name: Genre}
+    trakt_list: https://trakt.tv/users/hdlists/lists/outer-space-space-exploration-movies
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_Outer Space Movie Collection
+    summary: Movies That Take Place in Outer Space
+    url_poster: https://i.imgur.com/tOujJnS.jpg
+    url_background: https://i.imgur.com/CUIrEWQ.jpg
+    
+  Parody Movie Collection:
+    template: {name: Genre}
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-50-parody-movies-of-all-time
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_Parody Movie Collection
+    summary: Top 50 Parody Movies of All Time
+    url_poster: https://i.imgur.com/aoz65h5.png
+    url_background: https://i.imgur.com/d8kFQWQ.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+    
+  Sundance Film Festival 2021:
+    template: {name: Genre}
+    trakt_list: https://trakt.tv/users/hdlists/lists/sundance-2021-movie-guide
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_Sundance 2021 Collection
+    summary: Sundance Film Festival 2021 Movie Guide
+    url_poster: https://i.imgur.com/6CqlOaq.png
+    url_background: https://i.imgur.com/goapGVl.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  True Crime Documentaries:
+    template: {name: Genre}
+    trakt_list: https://trakt.tv/users/hdlists/lists/true-crime-documentaries
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_True Crime Documentaries Movies
+    summary: True Crime Documentaries
+    url_poster: https://i.imgur.com/PPbzaKa.png
+    url_background: https://i.imgur.com/SOVfrIq.png
+    radarr_add: false
+    radarr_search: false
+    radarr_monitor: false
+
+  Best Superhero Movies:
+    template: {name: Genre}
+    trakt_list: https://trakt.tv/users/hdlists/lists/best-superhero-movies
+    sort_title: +++++++++++++++++++++_Superhero Movies
+    sync_mode: sync
+    summary: Best Superhero Movies of All Time
+    url_poster: https://i.imgur.com/bce2Ja2.png
+    url_background: https://i.imgur.com/gvFtbmh.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Movies People are Watching:
+    template: {name: Genre}
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-films-everyone-s-watching
+    sort_title: +++++++++++++++++++++_Everyones Watching
+    sync_mode: sync
+    summary: Movies That Everyone is Watching
+    url_poster: https://i.imgur.com/KQOKGNy.png
+    url_background: https://i.imgur.com/Acd6Bxu.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Sherlock Holmes (Basil Rathbone) Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/list/ls066349791/
+    summary: "A series of fourteen films based on Sir Arthur Conan Doyle's Sherlock Holmes stories was released between 1939 and 1946; the British actors Basil Rathbone and Nigel Bruce played Holmes and Dr. John Watson, respectively. The first two films in the series were produced by 20th Century Fox and released in 1939. The studio stopped making the films after these, but Universal Pictures acquired the rights from the Doyle estate and produced a further twelve films. Although the films from 20th Century Fox had large budgets, high production values, and were set in the Victorian era, Universal updated the films to the contemporary era of the Second World War, and produced them as B pictures with lower budgets. Both Rathbone and Bruce continued their roles when the series changed studios, as did Mary Gordon, who played the recurring character, Mrs. Hudson."
+    url_poster: https://i.imgur.com/qXloh1s.jpg
+    url_background: https://i.imgur.com/xmgFBsk.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Alfred Hitchcock Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/list/ls068553242/
+    summary: ""
+    url_poster: https://i.imgur.com/cfnmZdJ.png
+    url_background: https://i.imgur.com/Gc2Xgo5.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Guy Ritchie Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/list/ls069411901/
+    summary: "Guy Stuart Ritchie is an English film director, producer, screenwriter and businessman. His work includes British gangster films, and the Sherlock Holmes films starring Robert Downey Jr. Ritchie left school at age 15 and worked entry-level jobs in the film industry before going on to direct television commercials"
+    url_poster: https://i.imgur.com/n0iNL4p.png
+    url_background: https://i.imgur.com/t1b3f2y.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+
+
+
+
+###########################
+#  Holliday Collections   #
+###########################
+  Valentine's Day Movies:
+    template:
+      name: Holiday
+      start_date: 02/01
+      end_date: 02/29
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+  St. Patrick's Day Movies:
+    template:
+      name: Holiday
+      start_date: 03/01
+      end_date: 03/18
+    imdb_list: https://www.imdb.com/list/ls063934595/
+  Thanksgiving Movies:
+    template:
+      name: Holiday
+      start_date: 11/01
+      end_date: 11/30
+    imdb_list: 
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls091597850/
+  Halloween Movies:
+    template: 
+      name: Holiday
+      start_date: 10/01
+      end_date: 10/31
+    imdb_list:
+      - https://www.imdb.com/list/ls023118929/
+      - https://www.imdb.com/list/ls000099714/
+    tmdb_collection:
+      - 91361    # Halloween Collection
+      - 8581     # A Nightmare on Elm Street Collection
+      - 1733     # The Mummy Collection
+      - 8091     # Alien Collection
+    tmdb_movie:
+      - 23437    # A Nightmare on Elm Street (2010)
+  Christmas Movies:
+    template:
+      name: Holiday
+      start_date: 12/01
+      end_date: 12/31
+    imdb_list: https://www.imdb.com/list/ls000096828/
+  New Year's Day Movies:
+    template:
+      name: Holiday
+      start_date: 12/26
+      end_date: 01/04
+    imdb_list: https://www.imdb.com/list/ls066838460/
+###########################
+#   Studio Collections    #
+########################### 
+  Aardman:
+    template: {name: Studio, studio: "Aardman", poster: https://theposterdb.com/api/assets/26074}
+    summary: Aardman Animations, Ltd. is a British animation studio based in Bristol, England. Aardman is known for films made using stop-motion clay animation techniques, particularly those featuring Plasticine characters Wallace and Gromit.
+  Studio Ghibli:
+    template: {name: Studio, studio: "Studio Ghibli", poster: https://theposterdb.com/api/assets/32223}
+    summary: Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. The studio is best known for its animated feature films, and has also produced several short films, television commercials, and one television film. The studio’s mascot and most recognizable symbol is the character, Totoro, a giant cat-like spirit from the 1988 classic, My Neighbor Totoro.
+  DC Extended Universe:
+    template: {name: Studio, studio: "DC Extended Universe", poster: https://theposterdb.com/api/assets/92689}
+    summary: The DC Extended Universe (DCEU) is a series of superhero films, distributed by Warner Bros. Pictures and based on characters that appear in American comic books by DC Comics. The shared universe, much like the original DC Universe in comic books and the television programs, was established by crossing over common plot elements, settings, cast, and characters. 
+  Marvel Cinematic Universe:
+    template: {name: Studio, studio: "Marvel Enterprise, Marvel Entertainment, Marvel Studios", poster: https://theposterdb.com/api/assets/5912}
+    summary: The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films, independently produced by Marvel Studios and based on characters that appear in American comic books published by Marvel Comics. The franchise includes comic books, short films, television series, and digital series. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters. The first MCU film is Iron Man (2008), which began the films of Phase One culminating in the crossover film The Avengers (2012). Phase Two began with Iron Man 3 (2013) and concluded with Ant-Man (2015). Phase Three began with Captain America - Civil War (2016) and concluded with Spider-Man - Far From Home (2019). The first three phases in the franchise are collectively known as "The Infinity Saga". The films of Phase Four will begin with Black Widow (2021) and are set to conclude with Guardians of the Galaxy Vol. 3 (2023).
+  Blue Sky Animation:
+    template: {name: Studio, studio: "Blue Sky Animation", poster: https://theposterdb.com/poster/33753}
+    summary: Blue Sky Studios, Inc. is an American computer animation film studio based in Greenwich, Connecticut. It is a subsidiary of 20th Century Animation, a division of Disney Studios Content.
+  DreamWorks:
+    template: {name: Studio, studio: "DreamWorks Animation, DreamWorks Pictures", poster: https://theposterdb.com/api/assets/52723}
+    summary: DreamWorks Animation LLC (also simply known as DreamWorks) is an American animation studio and a subsidiary of Universal Pictures, itself a subsidiary of Comcast's NBCUniversal. It is based in Glendale, California, and produces animated feature films, television programs, and online virtual games.
+  Illumination Entertainment:
+    template: {name: Studio, studio: "Illumination Entertainment", poster: https://theposterdb.com/api/assets/8158}
+    summary: Illumination is an American film and animation studio founded by Chris Meledandri in 2007 and owned by Universal Pictures, a division of NBCUniversal, which is itself a division of Comcast. Meledandri produces the films, while Universal finances and distributes all the films. The studio is responsible for the Despicable Me and The Secret Life of Pets franchises and the film adaptations of Dr. Seuss’ books The Lorax and How the Grinch Stole Christmas. The Minions, characters from the Despicable Me series, are the studio's mascots.
+  Pixar:
+    template: {name: Studio, studio: Pixar, poster: https://theposterdb.com/api/assets/38226}
+    summary: Pixar Animation Studios, commonly known as Pixar, is an American computer animation studio based in Emeryville, California, a subsidiary of Disney Studios Content owned by The Walt Disney Company. Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation on February 3, 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4 billion by converting each share of Pixar stock to 2.3 shares of Disney stock, a transaction that resulted in Jobs becoming Disney's largest single shareholder at the time. Pixar is best known for its feature films technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot.
+  Sony Pictures Animation:
+    template: {name: Studio, studio: "Sony Pictures, Sony Pictures Television", poster: https://theposterdb.com/api/assets/131749}
+    summary: Sony Pictures Animation Inc. is an American animation studio owned by Sony Entertainment's Sony Pictures Entertainment through their Motion Picture Group division and founded on May 9, 2002. The studio's films are distributed worldwide by Sony Pictures Releasing under their Columbia Pictures label, while all direct-to-video releases are released by Sony Pictures Home Entertainment.
+  Walt Disney Animation Studios:
+    template: {name: Studio, studio: "Walt Disney Animation Studios", poster: https://theposterdb.com/api/assets/6016}
+    summary: Walt Disney Animation Studios (WDAS), sometimes shortened to Disney Animation, is an American animation studio that creates animated features and short films for The Walt Disney Company. Founded on October 16, 1923 by brothers Walt Disney and Roy O. Disney, it is one of the oldest-running animation studios in the world. It is currently organized as a division of Walt Disney Studios and is headquartered at the Roy E. Disney Animation Building at the Walt Disney Studios lot in Burbank, California.
+  Walt Disney Pictures:
+    template: {name: Studio, studio: "Walt Disney Pictures", poster: https://theposterdb.com/api/assets/16549}
+    summary: Walt Disney Pictures is an American film production studio of The Walt Disney Studios, which is owned by The Walt Disney Company. The studio is the flagship producer of live-action feature films within the Walt Disney Studios unit, and is based at the Walt Disney Studios in Burbank, California. Animated films produced by Walt Disney Animation Studios and Pixar Animation Studios are also released under this brand. Walt Disney Studios Motion Pictures distributes and markets the films produced by Walt Disney Pictures.
+  Warner Bros.:
+    template: {name: Studio, studio: "Warner Animation Group, Warner Bros., Warner Bros. Animation, Warner Bros. Pictures, Warner Independent Pictures (WIP)", poster: https://theposterdb.com/api/assets/47604}
+    summary: Warner Bros.is the third-oldest American movie studio in continuous operation, after Paramount Pictures was founded on May 8, 1912 as Famous Players Film Corporation, and Universal Studios founded on June 8, 1912. Warner Bros. incorporated on April 4, 1923.
+  MGM.:
+    template: {name: Studio, studio: "Metro-Goldwyn-Mayer,MGM,Metro Pictures,Goldwyn Pictures,Louis B. Mayer Pictures"}
+    summary: MGM was formed by Marcus Loew by combining Metro Pictures, Goldwyn Pictures, and Louis B. Mayer Pictures into a single company. It hired a number of well known actors as contract players—its slogan was "more stars than there are in heaven"—and soon became one of Hollywood's "big five" film studios, producing popular movie musicals and winning many Oscars
+    url_poster: https://i.imgur.com/y0oblqt.png
+    url_background: https://i.imgur.com/Afq4FPg.png
+  Action:
+    template: {name: SearchGenre, genre: Action, poster: https://theposterdb.com/api/assets/52018}
+    summary: Action film is a genre wherein physical action takes precedence in the storytelling. The film will often have continuous motion and action including physical stunts, chases, fights, battles, and races. The story usually revolves around a hero that has a goal, but is facing incredible odds to obtain it.
+  Adventure:
+    template: {name: SearchGenre, genre: Adventure, poster: https://theposterdb.com/api/assets/52218}
+    summary: Adventure film is a genre that revolves around the conquests and explorations of a protagonist. The purpose of the conquest can be to retrieve a person or treasure, but often the main focus is simply the pursuit of the unknown. These films generally take place in exotic locations and play on historical myths. Adventure films incorporate suspenseful puzzles and intricate obstacles that the protagonist must overcome in order to achieve the end goal.  
+  Animation:
+    template: {name: SearchGenre, genre: Animation, poster: https://theposterdb.com/api/assets/120090}
+    summary: Animated film is a collection of illustrations that are photographed frame-by-frame and then played in a quick succession. Since its inception, animation has had a creative and imaginative tendency. Being able to bring animals and objects to life, this genre has catered towards fairy tales and children’s stories. However, animation has long been a genre enjoyed by all ages. As of recent, there has even been an influx of animation geared towards adults. Animation is commonly thought of as a technique, thus it’s ability to span over many different genres.
+  Anime:
+    template: {name: SearchGenre, genre: Anime, poster: https://theposterdb.com/api/assets/126743}
+    summary: A collection of Anime movies
+  Biography:
+    template: {name: SearchGenre, genre: Biography, poster: https://theposterdb.com/api/assets/60369}
+    summary: A collection of Biography movies
+  Comedy:
+    template: {name: SearchGenre, genre: Comedy, poster: https://theposterdb.com/api/assets/51397}
+    summary: Comedy is a genre of film that uses humor as a driving force. The aim of a comedy film is to illicit laughter from the audience through entertaining stories and characters. Although the comedy film may take on some serious material, most have a happy ending. Comedy film has the tendency to become a hybrid sub-genre because humor can be incorporated into many other genres. Comedies are more likely than other films to fall back on the success and popularity of an individual star.
+  Crime:
+    template: {name: SearchGenre, genre: Crime, poster: https://theposterdb.com/api/assets/53057}
+    summary: Crime film is a genre that revolves around the action of a criminal mastermind. A Crime film will often revolve around the criminal himself, chronicling his rise and fall. Some Crime films will have a storyline that follows the criminal's victim, yet others follow the person in pursuit of the criminal. This genre tends to be fast paced with an air of mystery – this mystery can come from the plot or from the characters themselves.
+  Documentary:
+    template: {name: SearchGenre, genre: Documentary, poster: https://theposterdb.com/api/assets/51430}
+    summary: Documentary film is a non-fiction genre intended to document reality primarily for the purposes of instruction, education, or maintaining a historical record.
+  Drama:
+    template: {name: SearchGenre, genre: Drama, poster: https://theposterdb.com/api/assets/52016}
+    summary: Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues. Whether heroes or heroines are facing a conflict from the outside or a conflict within themselves, Drama film aims to tell an honest story of human struggles.
+  Family:
+    template: {name: SearchGenre, genre: Family, poster: https://theposterdb.com/api/assets/53059}
+    summary: Fantasy film is a genre that incorporates imaginative and fantastic themes. These themes usually involve magic, supernatural events, or fantasy worlds. Although it is its own distinct genre, these films can overlap into the horror and science fiction genres. Unlike science fiction, a fantasy film does not need to be rooted in fact. This element allows the audience to be transported into a new and unique world. Often, these films center on an ordinary hero in an extraordinary situation.
+  Fantasy:
+    template: {name: SearchGenre, genre: Animation, poster: https://theposterdb.com/api/assets/51476}
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=fantasy
+      limit: 100
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=fantasy&sort=user_rating,desc
+      limit: 100
+    summary: Fantasy film is a genre that incorporates imaginative and fantastic themes. These themes usually involve magic, supernatural events, or fantasy worlds. Although it is its own distinct genre, these films can overlap into the horror and science fiction genres. Unlike science fiction, a fantasy film does not need to be rooted in fact. This element allows the audience to be transported into a new and unique world. Often, these films center on an ordinary hero in an extraordinary situation.
+  Gangster:
+    template: {name: SearchGenre, genre: Gangster, poster: https://theposterdb.com/api/assets/62561}
+    imdb_list:
+      - https://www.imdb.com/list/ls026270180/
+      - https://www.imdb.com/list/ls000093502/
+    summary: Gangster film is a sub-genre of crime films that center on organized crime or the mafia. Often the plot revolves around the rise and fall of an organized crime leader. Many Gangster films explore the destructive nature of organized crime, while others attempt to show the humanity of the individual characters.
+  History:
+    template: {name: SearchGenre, genre: History, poster: https://theposterdb.com/api/assets/58022}
+    summary: History film is a genre that takes historical events and people and interprets them in a larger scale. Historical accuracy is not the main focus, but rather the telling of a grandiose story. The drama of an History film is often accentuated by a sweeping musical score, lavish costumes, and high production value.
+  Horror:
+    template: {name: SearchGenre, genre: Horror, poster: https://theposterdb.com/api/assets/51475}
+    summary: Horror film is a genre that aims to create a sense of fear, panic, alarm, and dread for the audience. These films are often unsettling and rely on scaring the audience through a portrayal of their worst fears and nightmares. Horror films usually center on the arrival of an evil force, person, or event. Many Horror films include mythical creatures such as ghosts, vampires, and zombies. Traditionally, Horror films incorporate a large amount of violence and gore into the plot. Though it has its own style, Horror film often overlaps into Fantasy, Thriller, and Science-Fiction genres.
+  Martial Arts:
+    template: {name: SearchGenre, poster: https://theposterdb.com/api/assets/51773}
+    imdb_list:
+      - https://www.imdb.com/list/ls000099643/
+      - https://www.imdb.com/list/ls068611186/
+      - https://www.imdb.com/list/ls068378513/
+      - https://www.imdb.com/list/ls090404120/
+    summary: Martial Arts film is a sub-genre of action films that feature numerous martial arts combat between characters. These combats are usually the films' primary appeal and entertainment value, and often are a method of storytelling and character expression and development. Martial Arts are frequently featured in training scenes and other sequences in addition to fights. Martial Arts films commonly include other types of action, such as hand-to-hand combat, stuntwork, chases, and gunfights.  
+  Music:
+    template: {name: SearchGenre, poster: https://theposterdb.com/api/assets/51398}
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=music
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=music&sort=user_rating,desc
+      limit: 200
+    summary: Music film is genre that revolves around music being an integral part of the characters lives.
+  Musical:
+    template: {name: SearchGenre, genre: Musical, poster: https://theposterdb.com/api/assets/51427}
+    summary: A Musical interweaves vocal and dance performances into the narrative of the film. The songs of a film can either be used to further the story or simply enhance the experience of the audience. These films are often done on a grand scale and incorporate lavish costumes and sets. Traditional musicals center on a well-known star, famous for their dancing or singing skills (i.e. Fred Astaire, Gene Kelly, Judy Garland). These films explore concepts such are love and success, allowing the audience to escape from reality.
+  Mystery:
+    template: {name: SearchGenre, genre: Mystery, poster: https://theposterdb.com/api/assets/53060}
+    summary: A Mystery film centers on a person of authority, usually a detective, that is trying to solve a mysterious crime. The main protagonist uses clues, investigation, and logical reasoning. The biggest element in these films is a sense of “whodunit” suspense, usually created through visual cues and unusual plot twists.
+  Pandemic:
+    template: {name: SearchGenre, poster: https://theposterdb.com/api/assets/55837}
+    imdb_list: https://www.imdb.com/list/ls092321048/
+    summary: A Pandemic film resolves around widespread viruses, plagues, and diseases.
+  Romance:
+    template: {name: SearchGenre, genre: Romance, poster: https://theposterdb.com/api/assets/53062}
+    summary: "Romance film can be defined as a genre wherein the plot revolves around the love between two protagonists. This genre usually has a theme that explores an issue within love, including but not limited to: love at first sight, forbidden love, love triangles, and sacrificial love. The tone of Romance film can vary greatly. Whether the end is happy or tragic, Romance film aims to evoke strong emotions in the audience."
+  Science Fiction:
+    template: {name: SearchGenre, genre: Science Fiction, poster: https://theposterdb.com/api/assets/51772}
+    summary: Science Fiction (Sci-Fi) film is a genre that incorporates hypothetical, science-based themes into the plot of the film. Often, this genre incorporates futuristic elements and technologies to explore social, political, and philosophical issues. The film itself is usually set in the future, either on earth or in space. Traditionally, a Science Fiction film will incorporate heroes, villains, unexplored locations, fantastical quests, and advanced technology.
+  Short:
+    template: {name: SearchGenre, genre: Short, poster: https://theposterdb.com/api/assets/53063}
+    summary: A collection of Short movies
+  Sports:
+    template: {name: SearchGenre, genre: Sport, poster: https://theposterdb.com/api/assets/60371}
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=sport
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=sport&sort=user_rating,desc
+      limit: 200
+    summary: A Sport Film revolves around a sport setting, event, or an athlete. Often, these films will center on a single sporting event that carries significant importance. Sports films traditionally have a simple plot that builds up to the significant sporting event. This genre is known for incorporating film techniques to build anticipation and intensity. Sport films have a large range of sub-genres, from comedies to dramas, and are more likely than other genres to be based true-life events.
+  Stand Up Comedy:
+    template: {name: SearchGenre, poster: https://theposterdb.com/api/assets/49137}
+    imdb_list:
+      - https://www.imdb.com/list/ls070221411/
+      - https://www.imdb.com/list/ls086584751/
+      - https://www.imdb.com/list/ls086022668/
+      - https://www.imdb.com/list/ls049792208/
+    summary: Stand-up comedy is a comedic style in which a comedian performs in front of a live audience, speaking directly to them through a microphone. Comedians give the illusion that they are dialoguing, but in actuality, they are monologuing a grouping of humorous stories, jokes and one-liners, typically called a shtick, routine, act, or set. Some stand-up comedians use props, music or magic tricks to enhance their acts. Stand-up comedians perform quasi-autobiographical and fictionalized extensions of their offstage selves.
+  Sword & Sorcery:
+    template: {name: SearchGenre, poster: https://theposterdb.com/api/assets/74604}
+    imdb_list: https://www.imdb.com/list/ls022909805
+    summary: Sword and Sorcery film is a sub-genre of Fantasy that tend to be more plot-driven. These films rely on heavy action and battle scenes. Common themes in Sword and Sorcery films include a rescue mission, saving a princess, and battling a fantastical monster. The worlds and characters in these films are often much less developed than in other fantasy sub-genres. Of all the Fantasy sub-genres, Sword and Sorcery is most likely to be geared towards a younger audience, as many of these films are animated.
+  Thriller:
+    template: {name: SearchGenre, genre: Thriller, poster: https://theposterdb.com/api/assets/52019}
+    summary: Thriller Film is a genre that revolves around anticipation and suspense. The aim for Thrillers is to keep the audience alert and on the edge of their seats. The protagonist in these films is set against a problem – an escape, a mission, or a mystery. No matter what sub-genre a Thriller film falls into, it will emphasize the danger that the protagonist faces. The tension with the main problem is built on throughout the film and leads to a highly stressful climax.
+  War:
+    template: {name: SearchGenre, genre: War, poster: https://theposterdb.com/api/assets/51477}
+    summary: War Film is a genre that looks at the reality of war on a grand scale. They often focus on landmark battles as well as political issues within war. This genre usually focuses on a main character and his team of support, giving the audience an inside look into the gritty reality of war.
+  Western:
+    template: {name: SearchGenre, genre: Western, poster: https://theposterdb.com/api/assets/51774}
+    summary: "Western Film is a genre that revolves around stories primarily set in the late 19th century in the American Old West. Most Westerns are set between the American Civil War (1865) and the early 1900s. Common themes within Western Film include: the conquest of the wild west, the cultural separation of the East and the West, the West’s resistance to modern change, the conflict between Cowboys and Indians, outlaws, and treasure/gold hunting. American Western Film usually revolves around a stoic hero and emphasizes the importance of honor and sacrifice."
+
+###########################
+#    Movie Collections    #
+###########################
+  James Bond:
+    template: {name: Movie, collection: 645, summary: 645, poster: https://theposterdb.com/api/assets/115662}
+  X-Men:
+    template: {name: Movie, collection: 748, summary: 748, poster: https://theposterdb.com/api/assets/20 }
+  Mission Impossible:
+    template: {name: Movie, collection: 87359, summary: 87359, poster: https://theposterdb.com/api/assets/65202}
+  Pirates of the Caribbean:
+    template: {name: Movie, collection: 295, summary: 295, poster: https://theposterdb.com/api/assets/71934}
+  Jurassic Park:
+    template: {name: Movie, collection: 328, summary: 328, poster: https://theposterdb.com/api/assets/45080}
+  Harry Potter:
+    template: {name: Movie, collection: 1241, summary: 1241, poster: https://theposterdb.com/api/assets/737}
+###########################
+#    Decade Collections   #
+###########################
+  30's Movies:
+    template: {name: Decade, year: 1930, poster: https://theposterdb.com/api/assets/105675}
+  40's Movies:
+    template: {name: Decade, year: 1940, poster: https://theposterdb.com/api/assets/105676}
+  50's Movies: 
+    template: {name: Decade, year: 1950, poster: https://theposterdb.com/api/assets/105677}
+  60's Movies:
+    template: {name: Decade, year: 1960, poster: https://theposterdb.com/api/assets/105331}
+  70's Movies:
+    template: {name: Decade, year: 1970, poster: https://theposterdb.com/api/assets/105332}
+  80's Movies:
+    template: {name: Decade, year: 1980, poster: https://theposterdb.com/api/assets/105333}
+  90's Movies:
+    template: {name: Decade, year: 1990, poster: https://theposterdb.com/api/assets/105334}
+  00's Movies:
+    plex_search:
+      decade: 2000
+    sort_title: +++_Decade
+    collection_order: alpha
+    url_poster: https://i.imgur.com/qSveQz8.png
+    url_background: https://i.imgur.com/WCgIgBL.jpg
+  10's Movies:
+    plex_search:
+      decade: 2010
+    sort_title: +++_Decade
+    collection_order: alpha
+    url_poster: https://i.imgur.com/LKVEP8t.png
+    url_background: https://i.imgur.com/NwWZ84l.jpg
+  20's Movies:
+    plex_search:
+      decade: 2020
+    sort_title: +++_Decade
+    collection_order: alpha
+    url_poster: https://i.imgur.com/JXbctdQ.png
+    url_background: https://i.imgur.com/3gXUKzb.jpg
+
+
+
+###########################
+#     Trakt Trending      #
+###########################
+  Trakt Trending:
+    trakt_trending: 50
+    sort_title: +++++++++_Trakt Trending
+    summary: Trending Movies from TRAKT
+    url_poster: https://i.imgur.com/Wvpe2AD.png
+    url_background: https://i.imgur.com/lFkLQy3.jpg
+###########################
+#      IMDb Top 250       #
+###########################
+  IMDb Top 250:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc
+    sort_title: ++++++++_IMDb Top 250
+    url_poster: https://i.imgur.com/nYpfN72.png
+    url_background: https://i.imgur.com/6HMkDnv.jpg
+###########################
+#    People Collections   #
+###########################
+  Adam Sandler:
+    writer: tmdb
+    template: {name: people, person: 19292}
+  Al Pacino:
+    template: {name: people, person: 1158}
+  Alfred Hitchcock:
+    director: tmdb
+    template: {name: people, person: 2636}
+    trakt_list: https://trakt.tv/users/movistapp/lists/hitchcock
+  Amy Adams:
+    template: {name: people, person: 9273}
+  Angelina Jolie:
+    template: {name: people, person: 11701}
+  Anne Hathaway:
+    template: {name: people, person: 1813}
+  Anthony Hopkins:
+    template: {name: people, person: 4173}
+  Antonio Banderas:
+    template: {name: people, person: 3131}
+  Arnold Schwarzenegger:
+    template: {name: people, person: 1100}
+  Ben Affleck:
+    template: {name: people, person: 880}
+  Ben Stiller:
+    template: {name: people, person: 7399}
+  Bill Murray:
+    template: {name: people, person: 1532}
+  Brad Pitt:
+    template: {name: people, person: 287}
+  Brendan Fraser:
+    template: {name: people, person: 18269}
+  Bruce Lee:
+    template: {name: people, person: 19429}
+  Bruce Willis:
+    template: {name: people, person: 62}
+  Cameron Diaz:
+    template: {name: people, person: 6941}
+  Carrie Fisher:
+    template: {name: people, person: 4}
+  Cate Blanchett:
+    template: {name: people, person: 112}
+  Catherine Zeta-Jones:
+    template: {name: people, person: 1922}
+  Channing Tatum:
+    template: {name: people, person: 38673}
+  Charlie Chaplin:
+    template: {name: people, person: 13848}
+  Charlize Theron:
+    template: {name: people, person: 6885}
+  Christian Bale:
+    template: {name: people, person: 3894}
+  Chris Evans:
+    template: {name: people, person: 16828}
+  Chris Hemsworth:
+    template: {name: people, person: 74568}
+  Chris Pratt:
+    template: {name: people, person: 73457}
+  Chris Rock:
+    template: {name: people, person: 2632}
+  Christopher Nolan:
+    director: tmdb
+    template: {name: people, person: 525}
+  Christopher Walken:
+    template: {name: people, person: 4690}
+  Chuck Norris:
+    template: {name: people, person: 51576}
+  Clint Eastwood:
+    director: tmdb
+    template: {name: people, person: 190}
+  Coen Brothers:
+    writer: tmdb
+    director: tmdb
+    template: {name: people, person: "1223, 1224"}
+    summary: "Joel Coen and Ethan Coen, collectively referred to as the Coen Brothers, are American film directors, producers, screenwriters, and editors. Their films span many genres and styles, which they frequently subvert or parody. Their most acclaimed works include: Raising Arizona (1987), Miller's Crossing (1990), Fargo (1996), The Big Lebowski (1998), O Brother, Where Art Thou? (2000), No Country for Old Men (2007), Burn After Reading (2008), A Serious Man (2009), True Grit (2010), Inside Llewyn Davis (2013), and The Ballad of Buster Scruggs (2018)."
+  Daniel Craig:
+    template: {name: people, person: 8784}
+  Dave Bautista:
+    template: {name: people, person: 543530}
+  Dave Chappelle:
+    template: {name: people, person: 4169}
+  Denzel Washington:
+    template: {name: people, person: 5292}
+  Diane Keaton:
+    template: {name: people, person: 3092}
+  Don Cheadle:
+    template: {name: people, person: 1896}
+  Dustin Hoffman:
+    template: {name: people, person: 4483}
+  Dwayne Johnson:
+    template: {name: people, person: 18918}
+  Eddie Murphy:
+    template: {name: people, person: 776}
+  Edward Norton:
+    template: {name: people, person: 819}
+  Elliot Page:
+    template: {name: people, person: 27578}
+  Emma Stone:
+    template: {name: people, person: 54693}
+  Emma Watson:
+    template: {name: people, person: 10990}
+  Ewan McGregor:
+    template: {name: people, person: 3061}
+  George Clooney:
+    template: {name: people, person: 1461}
+  Gerard Butler:
+    template: {name: people, person: 17276}
+  Harrison Ford:
+    template: {name: people, person: 3}
+  Hayao Miyazaki:
+    template: {name: people, person: 608}
+  Hugh Jackman:
+    template: {name: people, person: 6968}
+  Ian McKellen:
+    template: {name: people, person: 1327}
+  Ice Cube:
+    template: {name: people, person: 9778}
+  J.J. Abrams:
+    director: tmdb
+    template: {name: people, person: 15344}
+  Jack Black:
+    template: {name: people, person: 70851}
+  Jackie Chan:
+    template: {name: people, person: 18897}
+  James Cameron:
+    director: tmdb
+    template: {name: people, person: 2710}
+  James Franco:
+    template: {name: people, person: 17051}
+  Jamie Foxx:
+    template: {name: people, person: 134}
+  Jason Bateman:
+    template: {name: people, person: 23532}
+  Jason Statham:
+    template: {name: people, person: 976}
+  Jeff Bridges:
+    template: {name: people, person: 1229}
+  Jeff Goldblum:
+    template: {name: people, person: 4785}
+  Jennifer Aniston:
+    template: {name: people, person: 4491}
+  Jennifer Lawrence:
+    template: {name: people, person: 72129}
+  Jesse Eisenberg:
+    template: {name: people, person: 44735}
+  Jessica Alba:
+    template: {name: people, person: 56731}
+  Jet Li:
+    template: {name: people, person: 1336}
+  Jim Carrey:
+    template: {name: people, person: 206}
+  John Candy:
+    template: {name: people, person: 7180}
+  John Travolta:
+    template: {name: people, person: 8891}
+  John Wayne:
+    template: {name: people, person: 4165}
+  Johnny Depp:
+    template: {name: people, person: 85}
+  Julia Roberts:
+    template: {name: people, person: 1204}
+  Kevin Bacon:
+    template: {name: people, person: 4724}
+  Kevin Costner:
+    template: {name: people, person: 1269}
+  Kevin Hart:
+    template: {name: people, person: 55638}
+  Kevin Smith:
+    writer: tmdb
+    director: tmdb
+    template: {name: people, person: 19303}
+  Leonardo DiCaprio:
+    template: {name: people, person: 6193}
+  Liam Neeson:
+    template: {name: people, person: 3896}
+  Lucy Liu:
+    template: {name: people, person: 140}
+  M. Night Shyamalan:
+    director: tmdb
+    template: {name: people, person: 11614}
+  Mark Wahlberg:
+    template: {name: people, person: 13240}
+  Matt Damon:
+    template: {name: people, person: 1892}
+  Matthew McConaughey:
+    template: {name: people, person: 10297}
+  Megan Fox:
+    template: {name: people, person: 19537}
+  Mel Brooks:
+    writer: tmdb
+    director: tmdb
+    template: {name: people, person: 14639}
+  Mel Gibson:
+    director: tmdb
+    template: {name: people, person: 2461}
+  Melissa McCarthy:
+    template: {name: people, person: 55536}
+  Meryl Streep:
+    template: {name: people, person: 5064}
+  Michael Bay:
+    director: tmdb
+    template: {name: people, person: 865}
+  Michael Caine:
+    template: {name: people, person: 3895}
+  Michael Keaton:
+    template: {name: people, person: 2232}
+  Mike Myers:
+    template: {name: people, person: 12073}
+  Mila Kunis:
+    template: {name: people, person: 18973}
+  Milla Jovovich:
+    template: {name: people, person: 63}
+  Morgan Freeman:
+    template: {name: people, person: 192}
+  Natalie Portman:
+    template: {name: people, person: 524}
+  Nicolas Cage:
+    template: {name: people, person: 2963}
+  Nicole Kidman:
+    template: {name: people, person: 2227}
+  Orlando Bloom:
+    template: {name: people, person: 114}
+  Owen Wilson:
+    template: {name: people, person: 887}
+  Patrick Stewart:
+    template: {name: people, person: 2387}
+  Quentin Tarantino:
+    writer: tmdb
+    director: tmdb
+    template: {name: people, person: 138}
+  Reese Witherspoon:
+    template: {name: people, person: 368}
+  Ridley Scott:
+    director: tmdb
+    template: {name: people, person: 578}
+  Robert De Niro:
+    template: {name: people, person: 380}
+  Robert Downey Jr.:
+    template: {name: people, person: 3223}
+  Robin Williams:
+    template: {name: people, person: 2157}
+  Rosario Dawson:
+    template: {name: people, person: 5916}
+  Ryan Reynolds:
+    template: {name: people, person: 10859}
+  Samuel L. Jackson:
+    template: {name: people, person: 2231}
+  Sandra Bullock:
+    template: {name: people, person: 18277}
+  Sacha Baron Cohen:
+    template: {name: people, person: 6730}
+  Scarlett Johansson:
+    template: {name: people, person: 1245}
+  Sean Connery:
+    template: {name: people, person: 738}
+  Seth Rogen:
+    writer: tmdb
+    director: tmdb
+    template: {name: people, person: 19274}
+  Shia LaBeouf:
+    template: {name: people, person: 10959}
+  Steve Buscemi:
+    template: {name: people, person: 884}
+  Steve Carell:
+    template: {name: people, person: 4495}
+  Steve Martin:
+    template: {name: people, person: 67773}
+  Steven Seagal:
+    template: {name: people, person: 23880}
+  Steven Spielberg:
+    director: tmdb
+    template: {name: people, person: 488}
+  Sylvester Stallone:
+    template: {name: people, person: 16483}
+  Tim Burton:
+    writer: tmdb
+    director: tmdb
+    template: {name: people, person: 510}
+  Tom Cruise:
+    template: {name: people, person: 500}
+  Tom Hanks:
+    template: {name: people, person: 31}
+  Tommy Lee Jones:
+    template: {name: people, person: 2176}
+  Vin Diesel:
+    template: {name: people, person: 12835}
+  Vince Vaughn:
+    template: {name: people, person: 4937}
+  Wesley Snipes:
+    template: {name: people, person: 10814}
+  Will Ferrell:
+    template: {name: people, person: 23659}
+  Will Smith:
+    template: {name: people, person: 2888}
+  Woody Harrelson:
+    template: {name: people, person: 57755}
+  Zack Snyder:
+    director: tmdb
+    template: {name: people, person: 15217}
+###########################
+#    Genre Collections    #
+###########################
