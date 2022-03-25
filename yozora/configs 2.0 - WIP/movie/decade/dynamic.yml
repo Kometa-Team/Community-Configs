@@ -1,0 +1,27 @@
+######################################################
+#             Dynamic Decade Collections             #
+#          Created by Yozora and Bullmoose20         #
+######################################################
+
+templates:
+  decade_dynamic:
+    smart_filter:
+      sort_by: critic_rating.desc
+      all:
+        decade: <<value>>
+      limit: 100
+
+dynamic_collections:
+  Decades:         # mapping name does not matter just needs to be unique
+    type: decade
+    title_format: Best of <<key_name>>
+    template: decade_dynamic
+    include:
+      - "1950"
+      - "1960"
+      - "1970"
+      - "1980"
+      - "1990"
+      - "2000"
+      - "2010"
+      - "2020"
