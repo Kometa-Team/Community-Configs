@@ -1,0 +1,32 @@
+######################################################
+#          UK Streaming Service Collections          #
+#          Created by Yozora and Bullmoose20         #
+######################################################
+
+templates:
+  streaming:
+    smart_label: release.desc
+    sync_mode: sync
+
+collections:
+  All 4 Movies:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/all-4-movies
+  Apple TV+ Movies:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/appletv-movies
+  BritBox Movies:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/britbox-movies
+  Disney+ Movies:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/ryalism/disney-movies
+  Netflix Movies:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/ryalism/netflix-movies
+  NOW Movies:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/now-movies
+  Prime Video Movies:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/ryalism/amazon-movies

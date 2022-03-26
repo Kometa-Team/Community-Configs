@@ -1,0 +1,77 @@
+######################################################
+#            Dynamic Genre Collections               #
+#          Created by Yozora and Bullmoose20         #
+######################################################
+
+templates:
+  genre_dynamic:
+    smart_filter:
+      sort_by: release.desc
+      any:
+        genre: <<value>>
+
+dynamic_collections:
+  networks:
+    type: genre
+    template: genre_dynamic
+    title_format: <<key_name>>
+    title_override:
+      Action/Adventure: Action & Adventure
+      Science Fiction: Sci-Fi & Fantasy
+      News: News & Politics
+      War: War & Politics
+    include:
+      - Action
+      - Action/Adventure
+      - Adventure
+      - Animation
+      - Anime
+      - Biography
+      - Children
+      - Comedy
+      - Crime
+      - Documentary
+      - Drama
+      - Family
+      - Fantasy
+      - Food
+      - Game Show
+      - History
+      - Home and Garden
+      - Horror
+      - Martial Arts
+      - Mini-Series
+      - Music
+      - Musical
+      - Mystery
+      - News
+      - Politics
+      - Reality
+      - Romance
+      - Sci-Fi & Fantasy
+      - Science Fiction
+      - Short
+      - Sport
+      - Talk
+      - Talk Show
+      - Thriller
+      - Travel
+      - War
+      - Western
+    addons:
+      Action/Adventure:
+        - Action
+        - Adventure
+      Science Fiction:
+        - Fantasy
+        - SciFi
+        - Sci-Fi
+        - Science-Fiction
+        - SciFi & Fantasy
+        - Science Fiction & Fantasy
+        - Science-Fiction & Fantasy
+        - Sci-Fi & Fantasy
+      News:
+        - Politics
+      War:
+        - Politics

@@ -93,6 +93,7 @@ collections:
 
   HGTV Shows:
     template: { name: network, network: "HGTV, HGTV Canada" }
+    url_poster: https://i.imgur.com/m8aW7PF.jpg
 
   History Shows:
     template: { name: network, network: "History, History (CA), History (UK)" }
@@ -138,7 +139,7 @@ collections:
 
   PBS Shows:
     template: { name: network, network: "PBS, PBS Kids" }
-    url_poster: https://imgur.com/a/3yBsyeh
+    url_poster: https://imgur.com/a/3yBsyeh.jpg
 
   Prime Video Shows:
     template: { name: network, network: "Amazon, Amazon Prime Video, Prime Video" }

@@ -1,0 +1,32 @@
+######################################################
+#          Dynamic Resolution Collections            #
+#          Created by Yozora and Bullmoose20         #
+######################################################
+
+templates:
+  resolution_dynamic:
+    smart_filter:
+      sort_by: release.desc
+      any:
+        resolution: <<value>>
+
+dynamic_collections:
+  Resolutions:         # mapping name does not matter just needs to be unique
+    type: resolution
+    template: resolution_dynamic
+    title_format: <<key_name>> <<library_type>>s
+    addons:
+      480p: 
+        - 144p
+        - 240p
+        - 360p
+        - 576p
+        - SD
+      1080p:
+        - 2K
+    title_override:
+      480p: SD
+      720p: HD Ready
+      1080p: Full HD
+      4K: Ultra HD
+      8K: 8K Ultra HD
