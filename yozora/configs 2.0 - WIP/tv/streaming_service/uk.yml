@@ -1,0 +1,35 @@
+######################################################
+#          UK Streaming Service Collections          #
+#          Created by Yozora and Bullmoose20         #
+######################################################
+
+templates:
+  streaming:
+    smart_label: random
+    sync_mode: sync
+
+collections:
+  All 4 Shows:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/all-4-Shows
+  Apple TV+ Shows:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/appletv-Shows
+  BritBox Shows:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/britbox-Shows
+  Disney+ Shows:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/ryalism/disney-Shows
+  hayu Shows:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/hayu-Shows
+  Netflix Shows:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/ryalism/netflix-Shows
+  NOW Shows:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/now-Shows
+  Prime Video Shows:
+    template: {name: streaming}
+    mdblist_list: https://mdblist.com/lists/ryalism/amazon-Shows

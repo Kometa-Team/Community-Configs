@@ -1,0 +1,42 @@
+######################################################
+#              Golden Globes Collections             #
+######################################################
+templates:
+  GG Template:
+    sort_title: '+05_Golden Globes <<year>>'
+    smart_label: audience_rating.desc
+    summary: 'Golden Globes <<year>> - الغولدن غلوب'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-golden-globes
+    item_label: Golden Globes
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+collections:
+  Golden Globes 2022:
+    template: { name: GG Template, year: 2022 }
+    url_poster: https://i.imgur.com/AfVImRI.png
+  Golden Globes 2021:
+    template: { name: GG Template, year: 2021 }
+    url_poster: https://i.imgur.com/epVGz9B.png
+  Golden Globes 2020:
+    template: { name: GG Template, year: 2020 }
+    url_poster: https://i.imgur.com/revkf8J.png
+  Golden Globes 2019:
+    template: { name: GG Template, year: 2019 }
+    url_poster: https://i.imgur.com/du3AM9T.png
+  Golden Globes 2018:
+    template: { name: GG Template, year: 2018 }
+    url_poster: https://i.imgur.com/7laT52y.png
+  Golden Globes 2017:
+    template: { name: GG Template, year: 2017 }
+    url_poster: https://i.imgur.com/NBehilV.png
+  Golden Globes 2016:
+    template: { name: GG Template, year: 2016 }
+    url_poster: https://i.imgur.com/nr0Nm1i.png
+  Golden Globes 2015:
+    template: { name: GG Template, year: 2015 }
+    url_poster: https://i.imgur.com/ucCgXoM.png
+  Golden Globes 2014:
+    template: { name: GG Template, year: 2014 }
+    url_poster: https://i.imgur.com/H0ojeb6.png

@@ -1,0 +1,48 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Brave":
+    template: {name: Set, movie: "62177, 141423", poster: https://theposterdb.com/api/assets/165297 }
+
+  "Cars":
+    template: {name: Set, collection: 87118, poster: https://theposterdb.com/api/assets/163004 }
+
+  "Finding Nemo":
+    template: {name: Set, collection: 137697, poster: https://theposterdb.com/api/assets/162995 }
+
+  "Inside Out":
+    template: {name: Set, movie: "150540, 355338", poster: https://theposterdb.com/api/assets/162986 }
+
+  "Incredibles":
+    template: {name: Set, movie: "9806, 260513, 13932, 55423", poster: https://theposterdb.com/api/assets/162987 }
+
+  "Monsters, Inc.":
+    template: {name: Set, collection: 137696, poster: https://theposterdb.com/api/assets/162975 }
+
+  "Pixar Animated Shorts":
+    template: {name: Set, movie: "13924, 13925, 13926, 13927, 13928, 13929, 13930, 13062, 13933, 13060, 13042, 24480, 40619, 83564, 200481, 286192, 399106, 514754", poster: https://theposterdb.com/api/assets/193619 }
+
+  "Ratatouille":
+    template: {name: Set, movie: "2062, 13061", poster: https://theposterdb.com/api/assets/162969 }
+
+  "Soul":
+    template: {name: Set, movie: "508442, 811367", poster: https://theposterdb.com/api/assets/162961 }
+
+  "Toy Story":
+    template: {name: Set, collection: 10194, poster: https://theposterdb.com/api/assets/162955 }
+
+  "Up":
+    template: {name: Set, movie: "14160, 72962, 24589",  poster: https://theposterdb.com/api/assets/162953 }
+
+  "WALL-E":
+    template: {name: Set, movie: "10681, 13413",  poster: https://theposterdb.com/api/assets/162951 }

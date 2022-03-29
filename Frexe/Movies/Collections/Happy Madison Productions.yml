@@ -1,0 +1,27 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Benchwarmers":
+    template: {name: Set, collection: 632730, poster: https://theposterdb.com/api/assets/188364 }
+
+  "Deuce Bigalow":
+    template: {name: Set, collection: 95664, poster: https://theposterdb.com/api/assets/166236 }
+
+  "Grown Ups":
+    template: {name: Set, collection: 180546, poster: https://theposterdb.com/api/assets/166240 }
+
+  "Joe Dirt":
+    template: {name: Set, collection: 353325, poster: https://theposterdb.com/api/assets/166247 }
+
+  "Mall Cop":
+    template: {name: Set, collection: 328372, poster: https://theposterdb.com/api/assets/164815 }

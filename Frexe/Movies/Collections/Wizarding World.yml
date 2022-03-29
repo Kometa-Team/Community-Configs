@@ -1,0 +1,20 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Fantastic Beasts":
+    template: {name: Set, collection: 435259, poster: https://theposterdb.com/api/assets/173773 }
+
+  "Harry Potter":
+    template: {name: Set, collection: 1241, poster: https://theposterdb.com/api/assets/162216 }
