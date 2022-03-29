@@ -8,11 +8,12 @@ templates:
   networks_dynamic:
     collection_mode: hide
     smart_filter:
+      title_format: <<key_name>>
       sort_by: release.desc
       any:
         network: <<value>>
     sort_title: +04_<<collection_name>>
-    url_poster: "https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/tv/network/<<key_name>>/<<key_name>>.jpg?raw=true"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<key_name>>/<<key_name>>.jpg
 
 dynamic_collections:
   networks:

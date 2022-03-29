@@ -10,7 +10,7 @@ templates:
     sort_title: +01_<<collection_name>>
     sync_mode: sync
     limit: 100
-    url_poster: "https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/chartandrelease/<<key_name>>/<<key_name>>.jpg?raw=true"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/chartandrelease/<<key_name>>/<<key_name>>.jpg
 
 collections:
   Newly Released Movies:

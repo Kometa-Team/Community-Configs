@@ -10,7 +10,7 @@ templates:
       URL_ENCODE: <<key_name>>
     collection_mode: hide
     sort_title: +09_country<<collection_name>>
-    url_poster: https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/country/white/<<URL_ENCODE>>.jpg?raw=true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/country/white/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: release.desc
       any:

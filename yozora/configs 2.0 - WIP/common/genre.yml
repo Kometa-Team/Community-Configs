@@ -12,7 +12,7 @@ templates:
       any:
         genre: <<value>>
     sort_title: +06_<<collection_name>>
-    url_poster: "https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/genre/<<key_name>>/<<key_name>>.jpg?raw=true"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/genre/<<key_name>>/<<key_name>>.jpg
     title_override:
       Biography: Biopic
     #   Action/Adventure: Action & Adventure    THESE CAN BE ENABLED TO STANDARDIZE THE NAMING CONVENTION OF COMBINED GENRES

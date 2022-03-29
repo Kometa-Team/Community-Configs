@@ -12,7 +12,7 @@ templates:
       any:
         subtitle_language: <<value>>
     sort_title: +08_<<collection_name>>
-    url_poster: https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/subtitle_language/<<key>>.jpg?raw=true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/subtitle_language/<<key>>.jpg
 
 dynamic_collections:
   Subtitle Languages:         # mapping name does not matter just needs to be unique
