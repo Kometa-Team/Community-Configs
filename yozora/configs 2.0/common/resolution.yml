@@ -1,0 +1,37 @@
+######################################################
+#           Dynamic Resolution Collections           #
+#          Created by Yozora and Bullmoose20         #
+#    See Commented Lines Below for Alternative Text  #
+######################################################
+
+templates:
+  resolution_dynamic:
+    collection_mode: hide
+    smart_filter:
+      sort_by: release.desc
+      any:
+        resolution: <<value>>
+    sort_title: +12_<<collection_name>>
+    url_poster: "https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/resolution/<<key_name>>/<<key_name>>.jpg?raw=true"
+
+dynamic_collections:
+  Resolutions:         # mapping name does not matter just needs to be unique
+    type: resolution
+    template: resolution_dynamic
+    title_format: <<key_name>>
+    addons:
+      1080p:
+        - 2K
+### THE BELOW TEXT CAN BE UNCOMMENTED TO COMBINE <480p INTO "SD" AND TO ALSO CHANGE NAMES FROM "1080p" to "FULL HD" etc
+    #   480p: 
+    #     - 144p
+    #     - 240p
+    #     - 360p
+    #     - 576p
+    #     - SD
+    # title_override:
+    #   480p: SD
+    #   720p: HD Ready
+    #   1080p: Full HD
+    #   4K: Ultra HD
+    #   8K: 8K Ultra HD
