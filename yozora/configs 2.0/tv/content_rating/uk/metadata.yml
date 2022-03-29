@@ -1,0 +1,57 @@
+######################################################
+#       Dynamic UK Content Rating Collections        #
+#         Rating Adjustments made by Yozora          #
+#         Created by Yozora and Bullmoose20          #
+######################################################
+
+templates:
+  contentrating_dynamic:
+    collection_mode: hide
+    smart_filter:
+      sort_by: release.desc
+      any:
+        content_rating: <<content_rating>>
+    sort_title: +03_<<collection_name>>
+    url_poster: "https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/content_rating/bbfc_(uk)/<<key_name>>/<<key_name>>.jpg?raw=true"
+
+dynamic_collections:
+  networks:
+    type: content_rating
+    title_format: <<key_name>>
+    template: contentrating_dynamic
+    include:
+      - U
+      - PG
+      - 12
+      - 12A
+      - 15
+      - 18
+    addons:
+      U: 
+        - gb/U
+        - gb/0+
+        - G
+        - TV-Y
+        - TV-G
+      PG:
+        - gb/PG
+        - gb/9+
+        - TV-PG
+        - TV-Y7
+        - TV-Y7-FV
+      12:
+        - gb/12
+      12+:
+        - gb/12A
+        - PG-13
+        - TV-13
+      15:
+        - gb/14+
+        - gb/15
+        - TV-14
+      18:
+        - gb/18
+        - MA-17
+        - NC-17
+        - TVMA
+        - TV-MA
