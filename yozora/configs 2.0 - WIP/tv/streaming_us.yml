@@ -10,7 +10,7 @@ templates:
     smart_label: random
     sync_mode: sync
     sort_title: +02_<<collection_name>>
-    url_poster: "https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/streaming_service/<<key_name>>/<<key_name>>.jpg?raw=true"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/streaming_service/<<key_name>>/<<key_name>>.jpg
 
 collections:
   Apple TV+ Shows:

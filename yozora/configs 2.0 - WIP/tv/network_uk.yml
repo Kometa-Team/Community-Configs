@@ -13,13 +13,13 @@ templates:
       any:
         network: <<value>>
     sort_title: +04_<<collection_name>>
-    url_poster: "https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/tv/network/<<key_name>>/<<key_name>>.jpg?raw=true"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<key_name>>/<<key_name>>.jpg
 
 dynamic_collections:
   networks:
     template: networks_dynamic
-    type: network
     title_format: <<key_name>>
+    type: network
     title_override:
       Amazon: Prime Video
       Channel 4: Channel 4

@@ -12,7 +12,7 @@ templates:
       any:
         content_rating: <<content_rating>>
     sort_title: +03_<<collection_name>>
-    url_poster: "https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/content_rating/bbfc_(uk)/<<key_name>>/<<key_name>>.jpg?raw=true"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/content_rating/bbfc_(uk)/<<key_name>>/<<key_name>>.jpg
 
 dynamic_collections:
   UK Content Ratings:

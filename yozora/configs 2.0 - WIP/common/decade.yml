@@ -13,7 +13,7 @@ templates:
         decade: <<value>>
       limit: 100
     sort_title: +10_<<collection_name>>
-    url_poster: "https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/yearsanddecades/Best of <<key_name>>/Best of <<key_name>>.jpg?raw=true"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/Best of <<key_name>>/Best of <<key_name>>.jpg
 
 dynamic_collections:
   Decades:         # mapping name does not matter just needs to be unique

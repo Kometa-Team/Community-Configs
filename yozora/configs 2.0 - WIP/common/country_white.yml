@@ -10,8 +10,7 @@ templates:
       URL_ENCODE: <<key_name>>
     collection_mode: hide
     sort_title: +09_country<<collection_name>>
-    url_poster: https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/country/white/<<URL_ENCODE>>.jpg?raw=true
-    # url_poster: https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/country/colored/<<URL_ENCODE>>.jpg?raw=true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/country/white/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
@@ -29,7 +28,7 @@ dynamic_collections:
         Hong Kong: Hong%20Kong
         New Zealand: New%20Zealand
         Saudi Arabia: Saudi%20Arabia
-        South Africa: South&20Africa
+        South Africa: South%20Africa
         United Arab Emirates: United%20Arab%20Emirates
         United Kingdon: United%20Kingdom
         United States of America: United%20States%20of%20America
@@ -81,3 +80,4 @@ dynamic_collections:
       # - United Kingdom              Disabled by default due to high volume
       # - United States of America    Disabled by default due to high volume
       - Vietnam
+      
