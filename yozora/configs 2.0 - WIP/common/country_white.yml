@@ -1,0 +1,82 @@
+######################################################
+#           Dynamic Country Collections              #
+#          Created by Yozora and Bullmoose20         #
+#             Artwork Credit to Duhniel              #
+######################################################
+
+templates:
+  country_dynamic:
+    default:
+      URL_ENCODE: <<key_name>>
+    collection_mode: hide
+    sort_title: +09_country<<collection_name>>
+    url_poster: https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/common/country/white/<<URL_ENCODE>>.jpg?raw=true
+    smart_filter:
+      sort_by: release.desc
+      any:
+        country: <<value>>
+
+dynamic_collections:
+  Country:         # mapping name does not matter just needs to be unique
+    type: country
+    title_format: <<key_name>>
+    other_name: Other Countries
+    template: country_dynamic
+    template_variables:
+      URL_ENCODE:
+        Czech Republic: Czech%20Republic
+        Hong Kong: Hong%20Kong
+        New Zealand: New%20Zealand
+        Saudi Arabia: Saudi%20Arabia
+        South Africa: South&20Africa
+        United Arab Emirates: United%20Arab%20Emirates
+        United Kingdon: United%20Kingdom
+        United States of America: United%20States%20of%20America
+        Other Countries: Other%20Countries
+    include:
+      - Australia
+      - Brazil
+      - Bulgaria
+      - Canada
+      - Chile
+      - China
+      - Czech Republic
+      - Denmark
+      - Estonia
+      - France
+      - Greece
+      - Hong Kong
+      - Hungary
+      - Iceland
+      - India
+      - Indonesia
+      - Iran
+      - Ireland
+      - Italy
+      - Japan
+      - Korea
+      - Latvia
+      - Malayasia
+      - Mexico
+      - Netherlands
+      - New Zealand
+      - Norway
+      - Pakistan
+      - Philippines
+      - Poland
+      - Portugal
+      - Romania
+      - Russia
+      - Saudi Arabia
+      - Serbia
+      - South Africa
+      - Spain
+      - Sweden
+      - Switzerland
+      - Thailand
+      - Turkey
+      - Ukraine
+      - United Arab Emirates
+      # - United Kingdom              Disabled by default due to high volume
+      # - United States of America    Disabled by default due to high volume
+      - Vietnam
