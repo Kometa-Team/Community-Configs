@@ -1,0 +1,40 @@
+######################################################
+#          Dynamic Kids Network Collections          #
+#          Created by Yozora and Bullmoose20         #
+#                                                    #
+######################################################
+
+templates:
+  networks_dynamic:
+    collection_mode: hide
+    smart_filter:
+      sort_by: release.desc
+      any:
+        network: <<value>>
+    sort_title: +04_<<collection_name>>
+    url_poster: "https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/tv/network/<<key_name>>/<<key_name>>.jpg?raw=true"
+
+dynamic_collections:
+  networks:
+    template: networks_dynamic
+    title_format: <<key_name>>
+    type: network
+    title_override:
+      Nick Jr.: Nick Jr
+    include:
+      - ABC Kids
+      - Amazon Kids+
+      - Boomerang
+      - Cartoon Network
+      - Cartoonito
+      - Cbeebies
+      - Discovery Kids
+      - Disney Channel
+      - Disney Junior
+      - Disney XD
+      - Fox Kids
+      - Nickelodeon
+      - Nick Jr.
+      - Nicktoons
+      - PBS Kids
+      - Universal Kids
