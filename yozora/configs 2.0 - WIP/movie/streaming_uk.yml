@@ -10,7 +10,7 @@ templates:
     smart_label: release.desc
     sync_mode: sync
     sort_title: +02_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/streaming_service/<<key_name>>/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/streaming_service/<<key_name>>.jpg
     
 collections:
   All 4 Movies:
