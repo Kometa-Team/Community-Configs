@@ -12,7 +12,7 @@ templates:
     tmdb_collection_details: <<collection>>
     sync_mode: sync
     sort_title: +04_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/franchise/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/franchise/<<collection_name>>.jpg
 
 collections:
   DC Universe:

@@ -12,7 +12,7 @@ templates:
       any:
         studio: <<studio>>
     sort_title: +05_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/studio/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/studio/<<studio>>.jpg
 
 collections:
   20th Century Studios:
@@ -37,7 +37,7 @@ collections:
     template: { name: Studio, studio: "Lionsgate" }
     summary: Lionsgate is a Canadian-American entertainment company. It was formed by Frank Giustra on July 10, 1997, domiciled in Vancouver, British Columbia, Canada and is currently headquartered in Santa Monica, California, United States
   Lucasfilm Ltd:
-    template: { name: Studio, studio: "Lucasfim" }
+    template: { name: Studio, studio: "Lucasfilm" }
     summary: Lucasfilm Ltd. LLC is an American film and television production company and a subsidiary of Walt Disney Studios, which is a business segment of the Walt Disney Company
   Marvel Studios:
     template: { name: Studio, studio: "Marvel Studios, Marvel Animation, Marvel Enterprises, Marvel Entertainment, Marvel" }
