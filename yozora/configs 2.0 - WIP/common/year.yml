@@ -13,13 +13,14 @@ templates:
         year: <<value>>
       limit: 100
     sort_title: +11_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/<<key_name>>/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/<<key_name>>.jpg
 
 dynamic_collections:
   Years:         # mapping name does not matter just needs to be unique
     type: year
     template: year_dynamic
     title_format: <<key_name>>
+    other_name: Other Years
     include:
       - "1950"
       - "1951"

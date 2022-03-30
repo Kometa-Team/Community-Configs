@@ -11,13 +11,14 @@ templates:
       any:
         resolution: <<value>>
     sort_title: +12_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/resolution/<<key_name>>/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/resolution/<<key_name>>.jpg
 
 dynamic_collections:
   Resolutions:         # mapping name does not matter just needs to be unique
     type: resolution
     template: resolution_dynamic
-    title_format: <<key_name>>
+    title_format: <<key_name>> <<library_type>>s
+    other_name: Other Resolutions
     addons:
       1080p:
         - 2K

@@ -13,13 +13,14 @@ templates:
         decade: <<value>>
       limit: 100
     sort_title: +10_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/Best of <<key_name>>/Best of <<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/<<key_name>>.jpg
 
 dynamic_collections:
   Decades:         # mapping name does not matter just needs to be unique
     type: decade
     title_format: Best of <<key_name>>
     template: decade_dynamic
+    other_name: Other Decades
     include:
       - "1950"
       - "1960"
