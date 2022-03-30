@@ -18,7 +18,7 @@ dynamic_collections:
   Audio Language:         # mapping name does not matter just needs to be unique
     type: audio_language
     title_format: <<key_name>> Audio
-    # other_name: Other Audio           # space creates a problem in url 
+    other_name: Other Audio
     key_name_override:
       ar: Arabic
       bg: Bulgarian

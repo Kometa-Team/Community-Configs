@@ -12,7 +12,7 @@ templates:
       any:
         genre: <<value>>
     sort_title: +06_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/genre/<<key_name>>/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/genre/<<key_name>>.jpg
     title_override:
       Biography: Biopic
     #   Action/Adventure: Action & Adventure    THESE CAN BE ENABLED TO STANDARDIZE THE NAMING CONVENTION OF COMBINED GENRES
@@ -23,7 +23,7 @@ dynamic_collections:
   networks:
     type: genre
     title_format: <<key_name>>
-
+    other_name: Other Genres
     template: genre_dynamic
     include:
       - Action

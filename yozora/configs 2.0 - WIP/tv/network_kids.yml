@@ -13,13 +13,14 @@ templates:
       any:
         network: <<value>>
     sort_title: +04_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<key_name>>/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<key_name>>.jpg
 
 dynamic_collections:
   networks:
     template: networks_dynamic
     title_format: <<key_name>>
     type: network
+    other_name: Other Networks
     title_override:
       Nick Jr.: Nick Jr
     include:

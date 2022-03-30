@@ -18,7 +18,7 @@ dynamic_collections:
   Subtitle Languages:         # mapping name does not matter just needs to be unique
     type: subtitle_language
     title_format: <<key_name>> Subtitles
-    # other_name: Other Subtitles           # space creates a problem in url
+    other_name: Other Subtitles
     key_name_override:
       ar: Arabic
       bg: Bulgarian

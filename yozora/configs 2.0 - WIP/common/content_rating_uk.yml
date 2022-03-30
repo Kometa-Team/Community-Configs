@@ -12,13 +12,14 @@ templates:
       any:
         content_rating: <<content_rating>>
     sort_title: +03_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/content_rating/bbfc_(uk)/<<key_name>>/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/content_rating/bbfc_(uk)/<<key_name>>.jpg
 
 dynamic_collections:
   UK Content Ratings:
     type: content_rating
     title_format: <<key_name>>
     template: contentrating_dynamic
+    other_name: Other Ratings
     key_name_override:
       "gb/U": U
       "gb/PG": PG
