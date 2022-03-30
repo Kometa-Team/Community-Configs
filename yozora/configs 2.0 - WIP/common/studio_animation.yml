@@ -12,7 +12,7 @@ templates:
       any:
         studio: <<studio>>
     sort_title: +05_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/studio/<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/studio/<<studio>>.jpg
 
 collections:
   20th Century Animation:
