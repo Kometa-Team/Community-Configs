@@ -6,28 +6,35 @@
 
 templates:
   networks_dynamic:
+    default:
+      URL_ENCODE: <<key_name>>
     collection_mode: hide
+    sort_title: +04_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<key_name>>.jpg
     smart_filter:
-      title_format: <<key_name>>
       sort_by: release.desc
       any:
         network: <<value>>
-    sort_title: +04_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<key_name>>.jpg
 
 dynamic_collections:
   networks:
-    template: networks_dynamic
-    title_format: <<key_name>>
     type: network
+    title_format: <<key_name>>
     other_name: Other Networks
-    title_override:
-      Amazon: Prime Video
-      Channel 4: Channel 4
-      Hallmark Channel: Hallmark
-      Nickelodeon: Nick
-      Sky 1: Sky
-      UKTV Food: UKTV
+    template: networks_dynamic
+    template_variables:
+      URL_ENCODE:
+        Adult Swim: Adult%20Swim
+        Animal Planet: Animal%20Planet
+        Cartoon Network: Cartoon%20Network
+        Channel 4: Channel%204
+        Channel 5: Channel%205
+        Comedy Central: Comedy%20Central
+        Disney Channel: Disney%20Channel
+        Investigation Discovery: Investigation%20Discovery
+        National Geographic: National%20Geographic
+        Sky 1: Sky%201
+        UKTV Food: UKTV%20Food
     include:
       - Adult Swim
       - Amazon
@@ -51,6 +58,13 @@ dynamic_collections:
       - TLC
       - UKTV Food
       - YouTube
+    title_override:
+      Amazon: Prime Video
+      Channel 4: Channel 4
+      Hallmark Channel: Hallmark
+      Nickelodeon: Nick
+      Sky 1: Sky
+      UKTV Food: UKTV
     addons:
       Amazon:
         - Amazon (Japan)

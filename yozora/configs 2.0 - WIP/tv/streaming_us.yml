@@ -10,36 +10,36 @@ templates:
     smart_label: random
     sync_mode: sync
     sort_title: +02_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/streaming_service/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/streaming_service/<<URL_ENCODE>>.jpg
 
 collections:
   Apple TV+ Shows:
-    template: {name: streaming}
+    template: {name: streaming, URL_ENCODE: "Apple%20TV+"}
     mdblist_list: https://mdblist.com/lists/yozoraxcii/appletv-Shows
   BET+ Shows:
-    template: {name: streaming}
+    template: {name: streaming, URL_ENCODE: "BET+"}
     mdblist_list: https://mdblist.com/lists/yozoraxcii/bet-Shows
   Disney+ Shows:
-    template: {name: streaming}
+    template: {name: streaming, URL_ENCODE: "Disney+"}
     mdblist_list: https://mdblist.com/lists/ryalism/disney-Shows
   hayu Shows:
-    template: {name: streaming}
+    template: {name: streaming, URL_ENCODE: "hayu"}
     mdblist_list: https://mdblist.com/lists/yozoraxcii/hayu-Shows
   HBO Max Shows:
-    template: {name: streaming}
+    template: {name: streaming, URL_ENCODE: "HBO%20Max"}
     mdblist_list: https://mdblist.com/lists/ryalism/hbo-max-Shows
   Hulu Shows:
-    template: {name: streaming}
+    template: {name: streaming, URL_ENCODE: "Hulu"}
     mdblist_list: https://mdblist.com/lists/ryalism/hulu-Shows
   Netflix Shows:
-    template: {name: streaming}
+    template: {name: streaming, URL_ENCODE: "Netflix"}
     mdblist_list: https://mdblist.com/lists/ryalism/netflix-Shows
   Paramount+ Shows:
-    template: {name: streaming}
+    template: {name: streaming, URL_ENCODE: "Paramount+"}
     mdblist_list: https://mdblist.com/lists/yozoraxcii/paramount-Shows
   Peacock Shows:
-    template: {name: streaming}
+    template: {name: streaming, URL_ENCODE: "Peacock"}
     mdblist_list: https://mdblist.com/lists/yozoraxcii/peacock-Shows
   Prime Video Shows:
-    template: {name: streaming}
+    template: {name: streaming, URL_ENCODE: "Prime%20Video"}
     mdblist_list: https://mdblist.com/lists/ryalism/amazon-Shows
