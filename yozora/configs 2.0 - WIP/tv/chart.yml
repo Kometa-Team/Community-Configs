@@ -10,11 +10,11 @@ templates:
     sort_title: +01_<<collection_name>>
     sync_mode: sync
     limit: 100
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/chart/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/chart/<<URL_ENCODE>>.jpg
 
 collections:
   Newly Released Shows:
-    template: {name: chartandrelease}
+    template: {name: chartandrelease, URL_ENCODE: "Newly%20Released%20Shows"}
     summary: A collection of newly-released shows on TV and on streaming services
     smart_filter:
       all:
@@ -22,7 +22,7 @@ collections:
       sort_by: release.desc
       limit: 100
   New Episodes:
-    template: {name: chartandrelease}
+    template: {name: chartandrelease, URL_ENCODE: "New%20Episodes"}
     summary: A collection of new episodes ready for watching!
     smart_filter:
       all:
@@ -30,14 +30,20 @@ collections:
       sort_by: episode_added.desc
       limit: 100
   TMDb Trending Shows:
-    template: {name: chartandrelease}
+    template: {name: chartandrelease, URL_ENCODE: "TMDb%20Trending%20Shows"}
     tmdb_trending_weekly: 250
     smart_label: random
     sync_mode: sync
     summary: A collection of shows trending on TMDb
   TMDb Popular Shows:
-    template: {name: chartandrelease}
+    template: {name: chartandrelease, URL_ENCODE: "TMDb%20Popular%20Shows"}
     tmdb_popular: 250
     summary: A collection of the most watched shows according to TMDb.
     smart_label: random
+    sync_mode: sync
+  IMDb Top 250:
+    template: {name: chartandrelease, URL_ENCODE: "IMDb%20Top%20250"}
+    imdb_chart: top_movies
+    collection_mode: hide
+    collection_order: custom
     sync_mode: sync

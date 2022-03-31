@@ -6,26 +6,30 @@
 
 templates:
   genre_dynamic:
+    default:
+      URL_ENCODE: <<key_name>>
     collection_mode: hide
+    sort_title: +06_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/genre/<<key_name>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
         genre: <<value>>
-    sort_title: +06_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/genre/<<key_name>>.jpg
 
 dynamic_collections:
-  genres collection:
+  genres:
     type: genre
     title_format: <<key_name>>
     other_name: Other Genres
     template: genre_dynamic
-    title_override:
-      Biography: Biopic
-    #   Action/Adventure: Action & Adventure    THESE CAN BE ENABLED TO STANDARDIZE THE NAMING CONVENTION OF COMBINED GENRES
-    #   Science Fiction: Sci-Fi & Fantasy
-    #   News: News & Politics
-    #   War: War & Politics
+    template_variables:
+      URL_ENCODE:
+        Game Show: Game%20Show
+        Home and Garden: Home%20and%20Garden
+        Martial Arts: Martial%20Arts
+        Sci-Fi & Fantasy: Sci-Fi%20&%20Fantasy
+        Science Fiction: Science%20Fiction
+        Talk Show: Talk%20Show
     include:
       - Action
       - Action/Adventure
@@ -64,6 +68,12 @@ dynamic_collections:
       - Travel
       - War
       - Western
+    title_override:
+      Biography: Biopic
+    #   Action/Adventure: Action & Adventure    # THESE CAN BE ENABLED TO STANDARDIZE THE NAMING CONVENTION OF COMBINED GENRES
+    #   Science Fiction: Sci-Fi & Fantasy
+    #   News: News & Politics
+    #   War: War & Politics
     addons:
       Action:
         - Action/Adventure

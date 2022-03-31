@@ -6,23 +6,34 @@
 
 templates:
   networks_dynamic:
+    default:
+      URL_ENCODE: <<key_name>>
     collection_mode: hide
+    sort_title: +04_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<key_name>>.jpg
     smart_filter:
-      title_format: <<key_name>>
       sort_by: release.desc
       any:
         network: <<value>>
-    sort_title: +04_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<key_name>>.jpg
 
 dynamic_collections:
   networks:
-    template: networks_dynamic
-    title_format: <<key_name>>
     type: network
+    title_format: <<key_name>>
     other_name: Other Networks
-    title_override:
-      Nick Jr.: Nick Jr
+    template: networks_dynamic
+    template_variables:
+      URL_ENCODE:
+        ABC Kids: ABC%20Kids
+        Amazon Kids+: Amazon%20Kids+
+        Cartoon Network: Cartoon%20Network
+        Discovery Kids: Discovery%20Kids
+        Disney Channel: Disney%20Channel
+        Disney Junior: Disney%20Junior
+        Disney XD: Disney%20XD
+        Nick Jr.: Nick%20Jr.
+        PBS Kids: PBS%20Kids
+        Universal Kids: Universal%20Kids
     include:
       - ABC Kids
       - Amazon Kids+
@@ -40,3 +51,5 @@ dynamic_collections:
       - Nicktoons
       - PBS Kids
       - Universal Kids
+    title_override:
+      Nick Jr.: Nick Jr

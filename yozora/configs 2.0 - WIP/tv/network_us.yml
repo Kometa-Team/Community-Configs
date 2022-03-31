@@ -6,21 +6,35 @@
 
 templates:
   networks_dynamic:
+    default:
+      URL_ENCODE: <<key_name>>
     collection_mode: hide
+    sort_title: +04_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<key_name>>.jpg
     smart_filter:
-      title_format: <<key_name>>
       sort_by: release.desc
       any:
         network: <<value>>
-    sort_title: +04_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<key_name>>.jpg
 
 dynamic_collections:
   networks:
-    template: networks_dynamic
-    title_format: <<key_name>>
     type: network
+    title_format: <<key_name>>
     other_name: Other Networks
+    template: networks_dynamic
+    template_variables:
+      URL_ENCODE:
+        Adult Swim: Adult%20Swim
+        Animal Planet: Animal%20Planet
+        BBC America: BBC%20America
+        Cartoon Network: Cartoon%20Network
+        Comedy Central: Comedy%20Central
+        Disney Channel: Disney%20Channel
+        Food Network: Food%20Network
+        Hallmark Channel: Hallmark%20Channel
+        Investigation Discovery: Investigation%20Discovery
+        National Geographic: National%20Geographic
+        The CW: The%20CW
     include:
       - A&E
       - ABC
