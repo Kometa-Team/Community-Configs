@@ -6,19 +6,58 @@
 
 templates:
   audiolanguage:
+    default:
+      URL_ENCODE: <<key>>
     collection_mode: hide
+    sort_title: +07_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/audio_language/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
         audio_language: <<value>>
-    sort_title: +07_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/audio_language/<<key>>.jpg
 
 dynamic_collections:
   Audio Language:         # mapping name does not matter just needs to be unique
     type: audio_language
     title_format: <<key_name>> Audio
     other_name: Other Audio
+    template: audiolanguage
+    template_variables:
+      URL_ENCODE:
+        ar: ar
+        bg: bg
+        cs: cs
+        zh: zh
+        da: da
+        nl: nl
+        en: en
+        et: et
+        fr: fr
+        de: de
+        el: el
+        hu: hu
+        is: is
+        ur: ur
+        id: id
+        it: it
+        ja: ja
+        ko: ko
+        lv: lv
+        ms: ms
+        no: no
+        ph: ph
+        pl: pl
+        pt: pt
+        rm: rm
+        ru: ru
+        sr: sr
+        es: es
+        sv: sv
+        th: th
+        tr: tr
+        ua: ua
+        vi: vi
+        other: Other%20Audio
     key_name_override:
       ar: Arabic
       bg: Bulgarian
@@ -53,7 +92,6 @@ dynamic_collections:
       tr: Turkish
       ua: Ukranian
       vi: Vietnamese
-    template: audiolanguage
     include:
       - ar
       - zh

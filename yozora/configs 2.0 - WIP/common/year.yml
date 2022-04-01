@@ -6,21 +6,26 @@
 
 templates:
   year_dynamic:
+    default:
+      URL_ENCODE: <<key>>
     collection_mode: hide
+    sort_title: +11_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: critic_rating.desc
-      all:
+      any:
         year: <<value>>
       limit: 100
-    sort_title: +11_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/<<key_name>>.jpg
 
 dynamic_collections:
   Years:         # mapping name does not matter just needs to be unique
     type: year
-    template: year_dynamic
     title_format: <<key_name>>
     other_name: Other Years
+    template: year_dynamic
+    template_variables:
+      URL_ENCODE:
+        other: Other%20Years
     include:
       - "1950"
       - "1951"

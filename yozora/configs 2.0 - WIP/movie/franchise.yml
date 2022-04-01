@@ -42,6 +42,9 @@ collections:
   Star Wars:
     template: {name: collection, URL_ENCODE: "Star%20Wars"}
     tmdb_collection_details: 10
+  The Hunger Games:
+    template: {name: collection, URL_ENCODE: "The%20Hunger%20Games"}
+    tmdb_collection_details: 131635
   Wizarding World:
     template: {name: collection, URL_ENCODE: "Wizarding%20World"}
     tmdb_list: https://www.themoviedb.org/list/63607

@@ -1,24 +1,52 @@
 ######################################################
 #           Dynamic Resolution Collections           #
 #          Created by Yozora and Bullmoose20         #
+#                                                    #
 ######################################################
 
 templates:
   resolution_dynamic:
+    default:
+      URL_ENCODE: <<key>>
     collection_mode: hide
+    sort_title: +12_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/resolution/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
         resolution: <<value>>
-    sort_title: +12_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/resolution/<<key_name>>.jpg
 
 dynamic_collections:
   Resolutions:         # mapping name does not matter just needs to be unique
     type: resolution
-    template: resolution_dynamic
     title_format: <<key_name>> <<library_type>>s
     other_name: Other Resolutions
+    template: resolution_dynamic
+    template_variables:
+      URL_ENCODE:
+        144p: 144p
+        240p: 240p
+        360p: 360p
+        480p: 480p
+        576p: 576p
+        720p: 720p
+        SD: SD
+        1080p: 1080p
+        4K: 4K
+        8K: 8K
+        other: Other%Resolutions
+    include:
+      - 144p
+      - 240p
+      - 360p
+      - 480p
+      - 576p
+      - 720p
+      - SD
+      - 1080p
+      - 2K
+      - 4K
+      - 8K
     addons:
       1080p:
         - 2K

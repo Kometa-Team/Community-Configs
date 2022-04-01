@@ -41,9 +41,3 @@ collections:
     summary: A collection of the most watched shows according to TMDb.
     smart_label: random
     sync_mode: sync
-  IMDb Top 250:
-    template: {name: chartandrelease, URL_ENCODE: "IMDb%20Top%20250"}
-    imdb_chart: top_movies
-    collection_mode: hide
-    collection_order: custom
-    sync_mode: sync

@@ -6,21 +6,34 @@
 
 templates:
   decade_dynamic:
+    default:
+      URL_ENCODE: <<key>>
     collection_mode: hide
+    sort_title: +10_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: critic_rating.desc
-      all:
+      any:
         decade: <<value>>
       limit: 100
-    sort_title: +10_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/<<key_name>>.jpg
 
 dynamic_collections:
   Decades:         # mapping name does not matter just needs to be unique
     type: decade
     title_format: Best of <<key_name>>
-    template: decade_dynamic
     other_name: Other Decades
+    template: decade_dynamic
+    template_variables:
+      URL_ENCODE:
+        1950: Best%20of%201950s
+        1960: Best%20of%201960s
+        1970: Best%20of%201970s
+        1980: Best%20of%201980s
+        1990: Best%20of%201990s
+        2000: Best%20of%202000s
+        2010: Best%20of%202010s
+        2020: Best%20of%202020s
+        other: Other%20Decades
     include:
       - "1950"
       - "1960"

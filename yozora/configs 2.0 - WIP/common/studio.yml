@@ -39,6 +39,7 @@ dynamic_collections:
         Universal Pictures: Universal%20Pictures
         Walt Disney Pictures: Walt%20Disney%20Pictures
         Warner Bros. Pictures: Warner%20Bros.%20Pictures
+        Other Studios: Other%20Studios
     include:
       - 20th Century Studios
       - Amazon Studios
@@ -59,7 +60,7 @@ dynamic_collections:
       - Walt Disney Pictures
       - Warner Bros. Pictures
     addons:
-      20th Centruy Studios:
+      20th Century Studios:
         - 20th Century
       Amazon Studios:
         - Amazon

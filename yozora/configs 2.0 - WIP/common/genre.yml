@@ -10,7 +10,7 @@ templates:
       URL_ENCODE: <<key_name>>
     collection_mode: hide
     sort_title: +06_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/genre/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/genre/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
@@ -30,6 +30,7 @@ dynamic_collections:
         Sci-Fi & Fantasy: Sci-Fi%20&%20Fantasy
         Science Fiction: Science%20Fiction
         Talk Show: Talk%20Show
+        other: Other%20Genres
     include:
       - Action
       - Action/Adventure
