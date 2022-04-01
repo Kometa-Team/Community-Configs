@@ -67,10 +67,6 @@ collections:
   Horror:
     template: { name: IMDb Genre, genre: horror }
     summary: Horror film is a genre that aims to create a sense of fear, panic, alarm, and dread for the audience. These films are often unsettling and rely on scaring the audience through a portrayal of their worst fears and nightmares. Horror films usually center on the arrival of an evil force, person, or event. Many Horror films include mythical creatures such as ghosts, vampires, and zombies. Traditionally, Horror films incorporate a large amount of violence and gore into the plot. Though it has its own style, Horror film often overlaps into Fantasy, Thriller, and Science-Fiction genres.
-  LGBTQ+:
-    template: { name: Other Genre }
-    imdb_list: https://www.imdb.com/list/ls062688328/
-    summary: LGBTQ+ film is a genre of films where the characters decpict lesbian, gay, bisexual, transgender, queer and intersex people.
   Martial Arts:
     template: { name: Other Genre }
     imdb_list:
