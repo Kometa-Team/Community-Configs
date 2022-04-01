@@ -6,20 +6,25 @@
 
 templates:
   contentrating_dynamic:
+    default:
+      URL_ENCODE: <<key_name>>
     collection_mode: hide
+    sort_title: +03_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/content_rating/mpaa_(us)/<<key_name>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
         content_rating: <<content_rating>>
-    sort_title: +03_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/content_rating/mpaa_(us)/<<key_name>>.jpg
 
 dynamic_collections:
   US TV Content Ratings:
     type: content_rating
     title_format: <<key_name>>
-    template: contentrating_dynamic
     other_name: Other Ratings
+    template: contentrating_dynamic
+    template_variables:
+      URL_ENCODE:
+        Other Ratings: Other%20Ratings    
     include:
       - TV-G
       - TV-Y
