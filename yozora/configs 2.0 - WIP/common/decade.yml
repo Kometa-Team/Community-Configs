@@ -20,6 +20,7 @@ templates:
 collections:
   Decade Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +13_+Decade Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/Decade%20Collections.jpg
 

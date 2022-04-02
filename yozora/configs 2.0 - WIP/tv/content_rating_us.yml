@@ -7,18 +7,19 @@
 templates:
   contentrating_dynamic:
     default:
-      URL_ENCODE: <<key_name>>
+      URL_ENCODE: <<key>>
     collection_mode: hide
     sort_title: +03_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/content_rating/mpaa_(us)/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
-        content_rating: <<content_rating>>
+        content_rating: <<value>>
 
 collections:
   US TV Ratings Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +03_+US TV Ratings Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/content_rating//mpaa_(us)/US%20TV%20Ratings%20Collections.jpg
 
@@ -30,7 +31,7 @@ dynamic_collections:
     template: contentrating_dynamic
     template_variables:
       URL_ENCODE:
-        Other Ratings: Other%20Ratings    
+        other: Other%20Ratings    
     include:
       - TV-G
       - TV-Y
@@ -49,7 +50,6 @@ dynamic_collections:
       TV-PG:
         - gb/PG
         - gb/9+
-        - TV-PG
       TV-14:
         - gb/12A
         - 12+
@@ -63,4 +63,3 @@ dynamic_collections:
         - MA-17
         - NC-17
         - TVMA
-        - TV-MA

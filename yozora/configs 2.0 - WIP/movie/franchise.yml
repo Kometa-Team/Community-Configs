@@ -17,6 +17,7 @@ templates:
 collections:
   Franchise Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +06_+Franchise Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/franchise/Franchise%20Collections.jpg
   DC Universe:

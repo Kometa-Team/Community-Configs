@@ -19,6 +19,7 @@ templates:
 collections:
   US Network Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +04_+US Network Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/US%20Network%20Collections.jpg
 
@@ -40,9 +41,8 @@ dynamic_collections:
         Hallmark Channel: Hallmark%20Channel
         Investigation Discovery: Investigation%20Discovery
         National Geographic: National%20Geographic
-        Prime Video: Prime%20Video
         The CW: The%20CW
-        other: Other%Networks
+        other: Other%20Networks
     include:
       - A&E
       - ABC
@@ -84,7 +84,6 @@ dynamic_collections:
       - USA Network
       - YouTube
     title_override:
-      Amazon: Prime Video
       Hallmark Channel: Hallmark
       Nickelodeon: Nick
       USA Network: USA

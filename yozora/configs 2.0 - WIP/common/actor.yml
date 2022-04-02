@@ -1,0 +1,24 @@
+######################################################
+#                 Actor Collections                  #
+#          Created by Yozora and Bullmoose20         #
+#                                                    #
+######################################################
+
+  actor template:
+    collection_mode: hide
+    sort_title: +02act_<<collection_name>>
+    tmdb_person: <<actor>>
+    plex_search:
+      all:
+        actor: tmdb
+
+  Top Actors:         # mapping name does not matter just needs to be unique
+    test: true
+    blank_collection: true
+    type: actor
+    template: actor template
+    title_format: <<title>> (Actor)
+    data:
+      depth: 5
+      limit: 25
+

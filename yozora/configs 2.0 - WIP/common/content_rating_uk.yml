@@ -6,17 +6,20 @@
 
 templates:
   contentrating_dynamic:
+    default:
+      URL_ENCODE: <<key>>
     collection_mode: hide
+    sort_title: +03_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/content_rating/bbfc_(uk)/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
-        content_rating: <<content_rating>>
-    sort_title: +03_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/content_rating/bbfc_(uk)/<<key_name>>.jpg
+        content_rating: <<value>>
 
 collections:
   UK Ratings Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +03_+UK Ratings Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/content_rating/bbfc_(uk)/UK%20Ratings%20Collections.jpg
 
@@ -24,8 +27,11 @@ dynamic_collections:
   UK Content Rating:
     type: content_rating
     title_format: <<key_name>>
-    template: contentrating_dynamic
     other_name: Other Ratings
+    template: contentrating_dynamic
+    template_variables:
+      URL_ENCODE:
+        other: Other%20Ratings    
     key_name_override:
       "gb/U": U
       "gb/PG": PG

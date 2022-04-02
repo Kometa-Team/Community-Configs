@@ -1,0 +1,23 @@
+######################################################
+#                Producer Collections                #
+#          Created by Yozora and Bullmoose20         #
+#                                                    #
+######################################################
+
+  producer template:
+    collection_mode: hide
+    sort_title: +02pro_<<collection_name>>
+    tmdb_person: <<producer>>
+    plex_search:
+      all:
+        producer: tmdb
+
+  Top Producers:         # mapping name does not matter just needs to be unique
+    test: true
+    blank_collection: true
+    type: producer
+    template: producer template
+    title_format: <<title>> (Producer)
+    data:
+      depth: 5
+      limit: 25

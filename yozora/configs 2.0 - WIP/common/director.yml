@@ -1,0 +1,24 @@
+######################################################
+#                Director Collections                #
+#          Created by Yozora and Bullmoose20         #
+#                                                    #
+######################################################
+
+  director template:
+    collection_mode: hide
+    sort_title: +02dir_<<collection_name>>
+    tmdb_person: <<director>>
+    plex_search:
+      all:
+        director: tmdb
+ 
+  Top Directors:         # mapping name does not matter just needs to be unique
+    test: true
+    blank_collection: true
+    type: director
+    template: director template
+    title_format: <<title>> (Director)
+    data:
+      depth: 5
+      limit: 25
+

@@ -19,6 +19,7 @@ templates:
 collections:
   Subtitle Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +12_+Subtitle Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/subtitle_language/Subtitle%20Collections.jpg
 

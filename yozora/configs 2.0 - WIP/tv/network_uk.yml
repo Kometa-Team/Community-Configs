@@ -19,6 +19,7 @@ templates:
 collections:
   UK Network Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +04_+UK Network Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/UK%20Network%20Collections.jpg
 
@@ -39,10 +40,7 @@ dynamic_collections:
         Disney Channel: Disney%20Channel
         Investigation Discovery: Investigation%20Discovery
         National Geographic: National%20Geographic
-        Prime Video: Prime%20Video
-        Sky 1: Sky%201
-        UKTV Food: UKTV%20Food
-        other:Other%20Networks
+        other: Other%20Networks
     include:
       - Adult Swim
       - Amazon
@@ -67,7 +65,6 @@ dynamic_collections:
       - UKTV Food
       - YouTube
     title_override:
-      Amazon: Prime Video
       Channel 4: Channel 4
       Hallmark Channel: Hallmark
       Nickelodeon: Nick

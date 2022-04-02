@@ -19,6 +19,7 @@ templates:
 collections:
   Audio Language Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +10_+Audio Language Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/audio_language/Audio%20Language%20Collections.jpg
 

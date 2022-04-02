@@ -19,6 +19,7 @@ templates:
 collections:
   Genre Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +09_+Genre Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/genre/Genre%20Collections.jpg
 
