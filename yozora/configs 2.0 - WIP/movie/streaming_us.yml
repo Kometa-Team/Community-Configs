@@ -10,9 +10,13 @@ templates:
     smart_label: release.desc
     sync_mode: sync
     sort_title: +02_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/streaming_service/<<URL_ENCODE>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/streaming_service/<<URL_ENCODE>>.jpg
 
 collections:
+  US Streaming Collections:
+    blank_collection: true
+    sort_title: +02_+US Streaming Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/streaming_service/US%20Streaming%20Collections.jpg
   Apple TV+ Movies:
     template: {name: streaming, URL_ENCODE: "Apple%20TV+"}
     mdblist_list: https://mdblist.com/lists/yozoraxcii/appletv-movies

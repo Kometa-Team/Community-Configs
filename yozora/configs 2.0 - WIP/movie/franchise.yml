@@ -11,10 +11,14 @@ templates:
       - collection
     tmdb_collection_details: <<collection>>
     sync_mode: sync
-    sort_title: +04_<<collection_name>>
+    sort_title: +06_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/franchise/<<URL_ENCODE>>.jpg
 
 collections:
+  Franchise Collections:
+    blank_collection: true
+    sort_title: +06_+Franchise Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/franchise/Franchise%20Collections.jpg
   DC Universe:
     template: {name: collection, URL_ENCODE: "DC%20Universe"}
     tmdb_list: https://www.themoviedb.org/list/6468

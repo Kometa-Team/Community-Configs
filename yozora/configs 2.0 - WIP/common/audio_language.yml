@@ -9,12 +9,18 @@ templates:
     default:
       URL_ENCODE: <<key>>
     collection_mode: hide
-    sort_title: +07_<<collection_name>>
+    sort_title: +10_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/audio_language/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
         audio_language: <<value>>
+
+collections:
+  Audio Language Collections:
+    blank_collection: true
+    sort_title: +10_+Audio Language Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/audio_language/Audio%20Language%20Collections.jpg
 
 dynamic_collections:
   Audio Language:         # mapping name does not matter just needs to be unique

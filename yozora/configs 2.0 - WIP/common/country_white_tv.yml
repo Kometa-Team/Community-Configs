@@ -5,7 +5,7 @@
 ######################################################
 
 templates:
-  country_dynamic:
+  country_color_tv_dynamic:
     default:
       URL_ENCODE: <<key_name>>
     collection_mode: hide
@@ -14,7 +14,7 @@ templates:
     smart_filter:
       sort_by: release.desc
       any:
-        country: <<value>>
+        origin_country: <<value>>
 
 collections:
   Country Collections:
@@ -23,11 +23,11 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/country/white/Country%20Collections.jpg
 
 dynamic_collections:
-  Country White:         # mapping name does not matter just needs to be unique
-    type: country
+  TMDb Country Color:          # This name is the mapping name
+    type: origin_country
     title_format: <<key_name>>
     other_name: Other Countries
-    template: country_dynamic
+    template: country_color_tv_dynamic
     template_variables:
       URL_ENCODE:
         Czech Republic: Czech%20Republic
@@ -50,40 +50,4 @@ dynamic_collections:
       - Denmark
       - Estonia
       - France
-      - Greece
-      - Hong Kong
-      - Hungary
-      - Iceland
-      - India
-      - Indonesia
-      - Iran
-      - Ireland
-      - Italy
-      - Japan
-      - Korea
-      - Latvia
-      - Malayasia
-      - Mexico
-      - Netherlands
-      - New Zealand
-      - Norway
-      - Pakistan
-      - Philippines
-      - Poland
-      - Portugal
-      - Romania
-      - Russia
-      - Saudi Arabia
-      - Serbia
-      - South Africa
-      - Spain
-      - Sweden
-      - Switzerland
-      - Thailand
-      - Turkey
-      - Ukraine
-      - United Arab Emirates
-      # - United Kingdom              Disabled by default due to high volume
-      # - United States of America    Disabled by default due to high volume
-      - Vietnam
-      
+

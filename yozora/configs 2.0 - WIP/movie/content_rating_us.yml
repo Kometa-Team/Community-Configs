@@ -16,6 +16,12 @@ templates:
       any:
         content_rating: <<value>>
 
+collections:
+  US Ratings Collections:
+    blank_collection: true
+    sort_title: +03_+US Ratings Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/content_rating//mpaa_(us)/US%20Ratings%20Collections.jpg
+
 dynamic_collections:
   US MOVIE Content Ratings:
     type: content_rating
