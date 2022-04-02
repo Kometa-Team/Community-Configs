@@ -4,21 +4,28 @@
 #                                                    #
 ######################################################
 
-  director template:
+templates:
+  director_dynamic:
     collection_mode: hide
-    sort_title: +02dir_<<collection_name>>
+    sort_title: +18_<<collection_name>>
     tmdb_person: <<director>>
     plex_search:
       all:
         director: tmdb
  
-  Top Directors:         # mapping name does not matter just needs to be unique
-    test: true
+collections:
+  Directors Collections:
     blank_collection: true
+    collection_mode: hide
+    sort_title: +18_+Director Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/people/director/Director%20Collections.jpg
+
+dynamic_collections:
+  Top Directors:
     type: director
-    template: director template
+    template: director_dynamic
     title_format: <<title>> (Director)
     data:
       depth: 5
       limit: 25
-
+      
