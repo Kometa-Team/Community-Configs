@@ -7,17 +7,23 @@
 templates:
   studio_dynamic:
     default:
-      URL_ENCODE: <<key_name>>
+      URL_ENCODE: <<key>>
     collection_mode: hide
-    sort_title: +05_<<collection_name>>
+    sort_title: +07_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/studio/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
         studio: <<value>>
 
+collections:
+  Studio Collections:
+    blank_collection: true
+    sort_title: +07_+Studio Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/studio/Studio%20Collections.jpg
+
 dynamic_collections:
-  studios:         # mapping name does not matter just needs to be unique
+  Studio:         # mapping name does not matter just needs to be unique
     type: studio
     title_format: <<key_name>>
     other_name: Other Studios
@@ -39,7 +45,7 @@ dynamic_collections:
         Universal Pictures: Universal%20Pictures
         Walt Disney Pictures: Walt%20Disney%20Pictures
         Warner Bros. Pictures: Warner%20Bros.%20Pictures
-        Other Studios: Other%20Studios
+        other: Other%20Studios
     include:
       - 20th Century Studios
       - Amazon Studios

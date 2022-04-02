@@ -7,17 +7,23 @@
 templates:
   networks_dynamic:
     default:
-      URL_ENCODE: <<key_name>>
+      URL_ENCODE: <<key>>
     collection_mode: hide
     sort_title: +04_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
         network: <<value>>
 
+collections:
+  UK Network Collections:
+    blank_collection: true
+    sort_title: +04_+UK Network Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/UK%20Network%20Collections.jpg
+
 dynamic_collections:
-  networks:
+  Network UK:
     type: network
     title_format: <<key_name>>
     other_name: Other Networks
@@ -33,8 +39,10 @@ dynamic_collections:
         Disney Channel: Disney%20Channel
         Investigation Discovery: Investigation%20Discovery
         National Geographic: National%20Geographic
+        Prime Video: Prime%20Video
         Sky 1: Sky%201
         UKTV Food: UKTV%20Food
+        other:Other%20Networks
     include:
       - Adult Swim
       - Amazon

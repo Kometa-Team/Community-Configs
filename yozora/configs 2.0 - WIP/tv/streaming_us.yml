@@ -13,6 +13,10 @@ templates:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/streaming_service/<<URL_ENCODE>>.jpg
 
 collections:
+  US Streaming Collections:
+    blank_collection: true
+    sort_title: +02_+US Streaming Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/streaming_service/US%20Streaming%20Collections.jpg
   Apple TV+ Shows:
     template: {name: streaming, URL_ENCODE: "Apple%20TV+"}
     mdblist_list: https://mdblist.com/lists/yozoraxcii/appletv-Shows

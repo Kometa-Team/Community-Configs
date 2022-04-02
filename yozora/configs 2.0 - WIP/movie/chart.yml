@@ -13,6 +13,10 @@ templates:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/chart/<<URL_ENCODE>>.jpg
 
 collections:
+  Movie Chart Collections:
+    blank_collection: true
+    sort_title: +01_+Movie Chart Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/chart/Movie%20Chart%20Collections.jpg
   Newly Released Movies:
     template: {name: chartandrelease, URL_ENCODE: "Newly%20Released%20Movies"}
     summary: A collection of newly-released movies in cinema and on streaming services

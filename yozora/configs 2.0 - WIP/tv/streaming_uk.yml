@@ -13,6 +13,10 @@ templates:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/streaming_service/<<URL_ENCODE>>.jpg
 
 collections:
+  UK Streaming Collections:
+    blank_collection: true
+    sort_title: +02_+UK Streaming Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/streaming_service/UK%20Streaming%20Collections.jpg
   All 4 Shows:
     template: {name: streaming, URL_ENCODE: "All%204"}
     mdblist_list: https://mdblist.com/lists/yozoraxcii/all-4-Shows

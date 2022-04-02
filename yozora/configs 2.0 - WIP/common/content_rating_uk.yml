@@ -14,8 +14,14 @@ templates:
     sort_title: +03_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/content_rating/bbfc_(uk)/<<key_name>>.jpg
 
+collections:
+  UK Ratings Collections:
+    blank_collection: true
+    sort_title: +03_+UK Ratings Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/content_rating/bbfc_(uk)/UK%20Ratings%20Collections.jpg
+
 dynamic_collections:
-  UK Content Ratings:
+  UK Content Rating:
     type: content_rating
     title_format: <<key_name>>
     template: contentrating_dynamic

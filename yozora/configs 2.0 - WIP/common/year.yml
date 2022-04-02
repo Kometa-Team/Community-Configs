@@ -9,7 +9,7 @@ templates:
     default:
       URL_ENCODE: <<key>>
     collection_mode: hide
-    sort_title: +11_<<collection_name>>
+    sort_title: +14_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: critic_rating.desc
@@ -17,8 +17,14 @@ templates:
         year: <<value>>
       limit: 100
 
+collections:
+  Year Collections:
+    blank_collection: true
+    sort_title: +14_+Year Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/Year%20Collections.jpg
+
 dynamic_collections:
-  Years:         # mapping name does not matter just needs to be unique
+  Year:         # mapping name does not matter just needs to be unique
     type: year
     title_format: <<key_name>>
     other_name: Other Years

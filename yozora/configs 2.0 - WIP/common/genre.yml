@@ -9,15 +9,21 @@ templates:
     default:
       URL_ENCODE: <<key_name>>
     collection_mode: hide
-    sort_title: +06_<<collection_name>>
+    sort_title: +09_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/genre/<<URL_ENCODE>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
         genre: <<value>>
 
+collections:
+  Genre Collections:
+    blank_collection: true
+    sort_title: +09_+Genre Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/genre/Genre%20Collections.jpg
+
 dynamic_collections:
-  genres:
+  Genre:
     type: genre
     title_format: <<key_name>>
     other_name: Other Genres
