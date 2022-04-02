@@ -15,6 +15,7 @@ templates:
 collections:
   UK Streaming Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +02_+UK Streaming Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/streaming_service/UK%20Streaming%20Collections.jpg
   All 4 Movies:

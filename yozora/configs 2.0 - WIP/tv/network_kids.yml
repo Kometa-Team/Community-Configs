@@ -19,6 +19,7 @@ templates:
 collections:
   Kids Network Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +05_+Kids Network Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/tv/network/Kids%20Network%20Collections.jpg
 

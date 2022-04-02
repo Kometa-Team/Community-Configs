@@ -20,6 +20,7 @@ templates:
 collections:
   Year Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +14_+Year Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/yearsanddecades/Year%20Collections.jpg
 

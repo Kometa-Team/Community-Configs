@@ -1,0 +1,23 @@
+######################################################
+#                Writer Collections                  #
+#          Created by Yozora and Bullmoose20         #
+#                                                    #
+######################################################
+
+  writer template:
+    collection_mode: hide
+    sort_title: +02wri_<<collection_name>>
+    tmdb_person: <<writer>>
+    plex_search:
+      all:
+        writer: tmdb
+      
+  Top Writers:         # mapping name does not matter just needs to be unique
+    test: true
+    blank_collection: true
+    type: writer
+    template: writer template
+    title_format: <<title>> (Writer)
+    data:
+      depth: 5
+      limit: 25

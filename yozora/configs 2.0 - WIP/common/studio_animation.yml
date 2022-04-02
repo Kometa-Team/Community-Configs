@@ -19,6 +19,7 @@ templates:
 collections:
   Studio Animation Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +08_+Studio Animation Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/studio/Studio%20Animation%20Collections.jpg
 
@@ -26,7 +27,7 @@ dynamic_collections:
   Studio Animation:         # mapping name does not matter just needs to be unique
     type: studio
     title_format: <<key_name>>
-    other_name: Other Animation Studios
+    # other_name: Other Animation Studios
     template: studio_dynamic
     template_variables:
       URL_ENCODE:

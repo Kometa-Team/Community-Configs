@@ -19,6 +19,7 @@ templates:
 collections:
   Studio Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +07_+Studio Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/studio/Studio%20Collections.jpg
 

@@ -15,10 +15,18 @@ templates:
       sort_by: release.desc
       any:
         resolution: <<value>>
+  other_poster:
+    collection_mode: hide
+    sort_title: +15_zz<<collection_name>>
+    smart_filter:
+      sort_by: release.desc
+      any:
+        resolution: <<value>>
 
 collections:
   Resolution Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +15_+Resolution Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/resolution/Resolution%20Collections.jpg
 
@@ -27,6 +35,7 @@ dynamic_collections:
     type: resolution
     title_format: <<key_name>> <<library_type>>s
     other_name: Other Resolutions
+    other_template: other_poster
     template: resolution_dynamic
     template_variables:
       URL_ENCODE:
@@ -46,9 +55,9 @@ dynamic_collections:
       - 240p
       - 360p
       - 480p
-      - 576p
+      # - 576p
       - 720p
-      - SD
+      # - SD
       - 1080p
       - 2K
       - 4K

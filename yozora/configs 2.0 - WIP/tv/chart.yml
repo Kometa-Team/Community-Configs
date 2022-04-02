@@ -9,12 +9,13 @@ templates:
     collection_mode: hide
     sort_title: +01_<<collection_name>>
     sync_mode: sync
-    limit: 100
+    limit: 250
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/chart/<<URL_ENCODE>>.jpg
 
 collections:
   TV Chart Collections:
     blank_collection: true
+    collection_mode: hide
     sort_title: +01_+TV Chart Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/chart/TV%20Chart%20Collections.jpg
   Newly Released Shows:
