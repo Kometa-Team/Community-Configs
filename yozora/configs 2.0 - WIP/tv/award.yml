@@ -30,8 +30,8 @@ collections:
     sort_title: +16_+Award Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/award/Award%20Collections.jpg
   
-  Emmy Winners:
-    template: { name: Award, URL_ENCODE: "Emmy%20Winners"} 
+  Emmys Winners:
+    template: { name: Award, URL_ENCODE: "Emmys%20Winners"} 
     imdb_list: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&groups=emmy_winner
     summary: Emmy Winning Shows
     
