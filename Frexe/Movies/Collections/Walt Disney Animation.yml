@@ -1,0 +1,80 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "101 Dalmatians (Animated)":
+    template: {name: Set, collection: , poster: https://theposterdb.com/api/assets/163119 }
+
+  "Aladdin":
+    template: {name: Set, collection: 86027, poster: https://theposterdb.com/api/assets/163021 }
+
+  "Atlantis":
+    template: {name: Set, collection: 100965, poster: https://theposterdb.com/api/assets/163014 }
+
+  "Bambi":
+    template: {name: Set, collection: 87250, poster: https://theposterdb.com/api/assets/163013 }
+
+  "Beauty and the Beast":
+    template: {name: Set, collection: 153010, poster: https://theposterdb.com/api/assets/163010 }
+
+  "Brother Bear":
+    template: {name: Set, collection: 96472, poster: https://theposterdb.com/api/assets/163005 }
+
+  "Cinderella":
+    template: {name: Set, collection: 55419, poster: https://theposterdb.com/api/assets/163002 }
+
+  "Disney's Hercules":
+    template: {name: Set, collection: , poster: https://theposterdb.com/api/assets/191927 }
+
+  "Fantasia":
+    template: {name: Set, collection: 55427, poster: https://theposterdb.com/api/assets/162996 }
+
+  "A Goofy Movie":
+    template: {name: Set, collection: 410261, poster: https://theposterdb.com/api/assets/192178 }
+
+  "Lady and the Tramp":
+    template: {name: Set, collection: 97460, poster: https://theposterdb.com/api/assets/162982 }
+
+  "Lilo & Stitch":
+    template: {name: Set, collection: 97461, poster: https://theposterdb.com/api/assets/163076 }
+
+  "Mulan":
+    template: {name: Set, collection: 87236, poster: https://theposterdb.com/api/assets/162973 }
+
+  "Planes":
+    template: {name: Set, collection: 270252, poster: https://theposterdb.com/api/assets/199867 }
+
+  "Pocahontas":
+    template: {name: Set, collection: 136214, poster: https://theposterdb.com/api/assets/191948 }
+
+  "Tarzan (Animation)":
+    template: {name: Set, collection: 106768, poster: https://theposterdb.com/api/assets/162958 }
+
+  "The Emperor's New Groove":
+    template: {name: Set, collection: 178117, poster: https://theposterdb.com/api/assets/162998 }
+
+  "The Fox and the Hound":
+    template: {name: Set, collection: 100970, poster: https://theposterdb.com/api/assets/163001 }
+
+  "The Hunchback of Notre Dame":
+    template: {name: Set, collection: 97456, poster: https://theposterdb.com/api/assets/162989 }
+
+  "The Jungle Book (Animated)":
+    template: {name: Set, collection: 97459, poster: https://theposterdb.com/api/assets/162985 }
+
+  "The Lion King":
+    template: {name: Set, collection: 94032, poster: https://theposterdb.com/api/assets/162978 }
+
+  "The Little Mermaid":
+    template: {name: Set, collection: 33085, poster: https://theposterdb.com/api/assets/162977 }
