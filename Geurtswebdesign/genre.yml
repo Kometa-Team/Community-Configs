@@ -5,7 +5,7 @@ templates:
   IMDb Genre:
     default:
       title: feature
-      limit: 100
+      limit: 500
     imdb_list:
       - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>
         limit: <<limit>>
@@ -76,10 +76,10 @@ collections:
       - https://www.imdb.com/list/ls090404120/
     summary: Martial Arts film is a sub-genre of action films that feature numerous martial arts combat between characters. These combats are usually the films' primary appeal and entertainment value, and often are a method of storytelling and character expression and development. Martial Arts are frequently featured in training scenes and other sequences in addition to fights. Martial Arts films commonly include other types of action, such as hand-to-hand combat, stuntwork, chases, and gunfights.
   Music:
-    template: { name: IMDb Genre, genre: music, limit: 200 }
+    template: { name: IMDb Genre, genre: music }
     summary: Music film is genre that revolves around music being an integral part of the characters lives.
   Musical:
-    template: { name: IMDb Genre, genre: musical, limit: 200 }
+    template: { name: IMDb Genre, genre: musical }
     summary: A Musical interweaves vocal and dance performances into the narrative of the film. The songs of a film can either be used to further the story or simply enhance the experience of the audience. These films are often done on a grand scale and incorporate lavish costumes and sets. Traditional musicals center on a well-known star, famous for their dancing or singing skills (i.e. Fred Astaire, Gene Kelly, Judy Garland). These films explore concepts such are love and success, allowing the audience to escape from reality.
   Mystery:
     template: { name: IMDb Genre, genre: mystery }
