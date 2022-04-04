@@ -10,6 +10,8 @@ templates:
     trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-golden-globes
     item_label: Golden Globes
 collections:
+  Golden Globes 2022:
+    template: { name: GG Template, year: 2022 }
   Golden Globes 2021:
     template: { name: GG Template, year: 2021 }
   Golden Globes 2020:
