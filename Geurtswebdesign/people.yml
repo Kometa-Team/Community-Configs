@@ -12,7 +12,7 @@ templates:
       sort_by: random
       validate: false
     tmdb_person: <<person>>
-    sort_title: +4_<<collection_name>>
+    sort_title: +3_<<collection_name>>
 collections:
   Adam Sandler:
     template: {name: Person, person: 19292}
