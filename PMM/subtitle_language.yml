@@ -62,6 +62,7 @@ dynamic_collections:
       - th
       - tr
       - ua
+<<<<<<< HEAD
       - vi
     key_name_override:
       ar: Arabic
@@ -97,3 +98,6 @@ dynamic_collections:
       tr: Turkish
       ua: Ukranian
       vi: Vietnamese
+=======
+      - vi
+>>>>>>> meisnate12/sohjiro

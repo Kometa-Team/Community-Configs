@@ -18,11 +18,14 @@ templates:
     visible_home: true
     visible_shared: true
 collections:
+<<<<<<< HEAD
   Seasonal Collections:
     blank_collection: true
     collection_mode: hide
     sort_title: +00_+Resolution Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/seasonal.jpg
+=======
+>>>>>>> meisnate12/sohjiro
   Independence Day Movies:
     template:
       name: Holiday

@@ -10,10 +10,13 @@ templates:
     summary: A collection of <<collection_name>> and other movies that may relate to the season.
     sort_title: +00_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/<<season>>.jpg
+<<<<<<< HEAD
     delete_not_scheduled: true
     visible_home: true
     visible_shared: true
 
+=======
+>>>>>>> meisnate12/sohjiro
 collections:
   Seasonal Collections:
     blank_collection: true

@@ -5,7 +5,11 @@
 ######################################################
 
 templates:
+<<<<<<< HEAD
   studio_animation_dynamic:
+=======
+  studio_dynamic:
+>>>>>>> meisnate12/sohjiro
     collection_mode: hide
     sort_title: +08_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/<<key_encoded>>.jpg
