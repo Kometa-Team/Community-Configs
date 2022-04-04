@@ -1,18 +1,14 @@
 ######################################################
-#       Dynamic UK Content Rating Collections        #
+#       Dynamic US TV Content Rating Collections     #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #         Rating Adjustments made by Yozora          #
-#                                                    #
-#  Call this file from you Configuration File Using: #
-#     metadata_path:                                 #
-#       - git: PMM/content_rating_uk                 #
 ######################################################
 
 templates:
   contentrating_dynamic:
     collection_mode: hide
     sort_title: +03_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/content_rating/uk/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/content_rating/us/<<key_name>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
@@ -29,58 +25,45 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/content_rating.jpg
 
 dynamic_collections:
-  UK Content Rating:
+  US Show Content Rating:
     type: content_rating
     title_format: <<key_name>>
     other_name: Other Ratings
     template: contentrating_dynamic
     other_template: ["other", "contentrating_dynamic"]
     include:
-      - U
-      - PG
-      - 12
-      - 12A
-      - 15
-      - 18
-      - R18
+      - TV-G
+      - TV-Y
+      - TV-PG
+      - TV-14
+      - TV-MA
       - NR
     addons:
-      U:
+      TV-G: 
         - gb/U
         - gb/0+
+        - U
         - G
-        - TV-Y
-        - TV-G
-        - E
-        - gb/E
-      PG:
-        - gb/PG
-        - gb/9+
-        - TV-PG
+      TV-Y:
         - TV-Y7
         - TV-Y7-FV
-      12:
-        - gb/12
-      12A:
+      TV-PG:
+        - gb/PG
+        - gb/9+
+      TV-14:
         - gb/12A
         - 12+
         - PG-13
         - TV-13
-      15:
-        - gb/15
         - gb/14+
-        - TV-14
-      18:
+        - gb/15
+      TV-MA:
+        - 18
         - gb/18
         - MA-17
-        - TVMA
-        - TV-MA
-        - R
-      R18:
-        - gb/R18
-        - gb/X
-        - X
         - NC-17
+        - R
+        - TVMA
       NR:
         - Approved
         - N/A
