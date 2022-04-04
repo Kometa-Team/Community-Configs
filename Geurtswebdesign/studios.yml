@@ -13,31 +13,37 @@ collections:
   DC Extended Universe:
     template: {name: Studio}
     imdb_list: https://www.imdb.com/list/ls077827588/
+    url_poster: https://images.theposterdb.com/prod/public/images/posters/optimized/collections/460717/dj5QiI3bseKx31j5JLM0PclTXC1KSuRPflLC4DP0.webp
     summary: The DC Extended Universe (DCEU) is a media franchise and shared universe centered on superheros from DC Comics.
     collection_order: release
   Marvel Cinematic Universe:
     template: {name: Studio}
     imdb_list: https://www.imdb.com/list/ls009410711/
+    url_poster: https://images.theposterdb.com/prod/public/images/posters/optimized/collections/1993/TzzxhGUvbVynBGInhiuEkeuxWbK7fyl0oI1Trl51.webp
     summary: A collection of movies and shows created by Marvel Studios, comprising of the Marvel Cinematic Universe.
     collection_order: release
   Marvel Phase One:
     template: {name: Studio}
     imdb_list: https://www.imdb.com/list/ls074408893/
+    url_poster: https://images.theposterdb.com/prod/public/images/posters/optimized/collections/1993/51CPMKZSxxGQonkJgvB7l3pF3rY6CQlohIb3hstX.webp
     summary: A collection of movies and shows created by Marvel Studios, comprising of the Marvel Cinematic Universe.
     collection_order: release
   Marvel Phase Two:
     template: {name: Studio}
     imdb_list: https://www.imdb.com/list/ls067756302/
+    url_poster: https://images.theposterdb.com/prod/public/images/posters/optimized/collections/1993/bVnZMs0lGts1xcPSpXSGMUuBpgizsEffciMzYUsb.webp
     summary: A collection of movies and shows created by Marvel Studios, comprising of the Marvel Cinematic Universe.
     collection_order: release
   Marvel Phase Three:
     template: {name: Studio}
     imdb_list: https://www.imdb.com/list/ls074450054/
+    url_poster: https://images.theposterdb.com/prod/public/images/posters/optimized/collections/1993/zd1oncWoWWKb5k3XPDhqfS8yHhUR4Go9LjYI8OSz.webp
     summary: A collection of movies and shows created by Marvel Studios, comprising of the Marvel Cinematic Universe.
     collection_order: release
   Marvel Phase Four:
     template: {name: Studio}
     imdb_list: https://www.imdb.com/list/ls048352040/
+    url_poster: 
     summary: A collection of movies and shows created by Marvel Studios, comprising of the Marvel Cinematic Universe.
     collection_order: release
  Blue Sky:
