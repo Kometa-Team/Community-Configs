@@ -4,7 +4,7 @@
 templates:
   Best of:
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
-    sort_title: +1_Best of <<year>>
+    sort_title: +4_Best of <<year>>
     sync_mode: sync
     summary: Rotten Tomatoes Best Movies of <<year>>
     smart_label: audience_rating.desc
