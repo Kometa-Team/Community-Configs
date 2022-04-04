@@ -10,6 +10,8 @@ templates:
     trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-critic-s-choice
     item_label: CCA
 collections:
+  Critics Choice Awards 2022:
+    template: { name: CCA Template, year: 2022 }
   Critics Choice Awards 2021:
     template: { name: CCA Template, year: 2021 }
   Critics Choice Awards 2020:

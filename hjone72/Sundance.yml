@@ -7,7 +7,7 @@ templates:
     smart_label: audience_rating.desc
     summary: 'Sundance Film Festival of <<year>>'
     sync_mode: append
-    trakt_list: https://trakt.tv/users/vermelholimao/lists/sundance-film-festival-<<year>>
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-sundance?sort=rank,asc
     item_label: Sundance Film Festival
   SFF Genre Template:
     sort_title: '*Sundance Film Festival <<genre>>'
@@ -19,10 +19,14 @@ templates:
     summary: 'Sundance Film Festival: <<genre>>'
     sync_mode: append
 collections:
+  Sundance Film Festival Horrors:
+    template: { name:  SFF Genre Template, genre: Horror }
   Sundance Film Festival Romance:
     template: { name:  SFF Genre Template, genre: Romance }
   Sundance Film Festival Comedies:
     template: { name:  SFF Genre Template, genre: Comedies }
+  Sundance Film Festival 2022:
+    template: { name: SFF Template, year: 2022 }
   Sundance Film Festival 2021:
     template: { name: SFF Template, year: 2021 }
   Sundance Film Festival 2020:
