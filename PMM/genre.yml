@@ -33,6 +33,7 @@ dynamic_collections:
     template: genre_dynamic
     title_override:
       Biography: Biopic
+      Action & adventure: Action & Adventure
     addons:
       Action:
         - Action/Adventure

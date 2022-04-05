@@ -1,6 +1,7 @@
 ######################################################
 #                Awards Collections                  #
-#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#      Created by Yozora, Bullmoose20, hjone72,      #
+#                   & Sohjiro                        #
 #                                                    #
 #  Call this from your config.yml (Movie only):      #
 #     metadata_path:                                 #
@@ -15,18 +16,69 @@ templates:
     smart_label: audience_rating.desc
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<url_encoded>>.jpg
 
-  GG Template:
+  BAFTA Template:
     sort_title: '+16_<<collection_name>>'
     collection_mode: hide
     smart_label: audience_rating.desc
-    summary: 'Golden Globes <<year>>'
+    summary: '<<year>> BAFTA awards'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-bafta
+    item_label: BAFTA
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<url_encoded>>.jpg
+
+  Cannes Template:
+    sort_title: +16_<<collection_name>>
+    collection_mode: hide
+    smart_label: audience_rating.desc
+    summary: '<<year>> Cannes awards'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-cannes
+    item_label: Cannes
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<url_encoded>>.jpg
+
+  CCA Template:
+    sort_title: +16_<<collection_name>>
+    collection_mode: hide
+    smart_label: audience_rating.desc
+    summary: '<<year>> Critics Choice Awards'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-critic-s-choice
+    item_label: CCA
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<url_encoded>>.jpg
+
+ GG Template:
+    sort_title: '+16_<<collection_name>>'
+    collection_mode: hide
+    smart_label: audience_rating.desc
+    summary: '<<year>> Golden Globes'
     sync_mode: append
     trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-golden-globes
     item_label: Golden Globes
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<url_encoded>>.jpg
 
+  ISA Template:
+    sort_title: '+16_<<collection_name>>'
+    collection_mode: hide
+    smart_label: audience_rating.desc
+    summary: 'Independent Spirit Awards <<year>>'
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-independent-spirits
+    item_label: ISA
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<url_encoded>>.jpg
+
+  Oscars:
+    sort_title: '+16_<<collection_name>>'
+    collection_mode: hide
+    smart_label: audience_rating.desc
+    summary: Academy Awards (Oscars) for <<year>>
+    sync_mode: append
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-oscars
+    item_label: Oscars
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<url_encoded>>.jpg
+
   SFF Template:
     sort_title: '+16_<<collection_name>>'
+    collection_mode: hide
     smart_label: audience_rating.desc
     summary: 'Sundance Film Festival of <<year>>'
     sync_mode: append
@@ -40,6 +92,81 @@ collections:
     collection_mode: hide
     sort_title: +16_+Award Collections
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/award.jpg
+
+  BAFTA 2022:
+    template: { name: BAFTA Template, year: 2022, url: "BAFTA 2022" }
+
+  BAFTA 2021:
+    template: { name: BAFTA Template, year: 2021, url: "BAFTA 2021" }
+
+  BAFTA 2020:
+    template: { name: BAFTA Template, year: 2020, url: "BAFTA 2020" }
+
+  BAFTA 2019:
+    template: { name: BAFTA Template, year: 2019, url: "BAFTA 2019" }
+
+  BAFTA 2018:
+    template: { name: BAFTA Template, year: 2018, url: "BAFTA 2018" }
+
+  BAFTA 2017:
+    template: { name: BAFTA Template, year: 2017, url: "BAFTA 2017" }
+
+  BAFTA 2016:
+    template: { name: BAFTA Template, year: 2016, url: "BAFTA 2016" }
+
+  BAFTA 2015:
+    template: { name: BAFTA Template, year: 2015, url: "BAFTA 2015" }
+
+  BAFTA 2014:
+    template: { name: BAFTA Template, year: 2014, url: "BAFTA 2014" }
+
+  Cannes 2022:
+    template: { name: Cannes Template, year: 2022, url: "Cannes 2022" }
+
+  Cannes 2021:
+    template: { name: Cannes Template, year: 2021, url: "Cannes 2021" }
+
+  Cannes 2020:
+    template: { name: Cannes Template, year: 2020, url: "Cannes 2020" }
+
+  Cannes 2019:
+    template: { name: Cannes Template, year: 2019, url: "Cannes 2019" }
+
+  Cannes 2018:
+    template: { name: Cannes Template, year: 2018, url: "Cannes 2018" }
+
+  Cannes 2017:
+    template: { name: Cannes Template, year: 2017, url: "Cannes 2017" }
+
+  Cannes 2016:
+    template: { name: Cannes Template, year: 2016, url: "Cannes 2016" }
+
+  Critics Choice Awards 2022:
+    template: { name: CCA Template, year: 2022, url: "CCA 2022" }
+
+  Critics Choice Awards 2021:
+    template: { name: CCA Template, year: 2021, url: "CCA 2021" }
+
+  Critics Choice Awards 2020:
+    template: { name: CCA Template, year: 2020, url: "CCA 2020" }
+
+  Critics Choice Awards 2019:
+    template: { name: CCA Template, year: 2019, url: "CCA 2019" }
+
+  Critics Choice Awards 2018:
+    template: { name: CCA Template, year: 2018, url: "CCA 2018" }
+
+  Critics Choice Awards 2017:
+    template: { name: CCA Template, year: 2017, url: "CCA 2017" }
+
+  Critics Choice Awards 2016:
+    template: { name: CCA Template, year: 2016, url: "CCA 2016" }
+
+  Critics Choice Awards 2015:
+    template: { name: CCA Template, year: 2015, url: "CCA 2015" }
+
+  Critics Choice Awards 2014:
+    template: { name: CCA Template, year: 2014, url: "CCA 2014" }
 
   Golden Globes 2022:
     template: { name: GG Template, year: 2022, url: "Golden Globes 2022" }
@@ -67,7 +194,73 @@ collections:
     
   Golden Globes 2014:
     template: { name: GG Template, year: 2014, url: "Golden Globes 2014" }
-    
+ 
+  Independent Spirit Awards 2022:
+    template: { name: ISA Template, year: 2022, url: "ISA 2022" }
+
+  Independent Spirit Awards 2021:
+    template: { name: ISA Template, year: 2021, url: "ISA 2021" }
+
+  Independent Spirit Awards 2020:
+    template: { name: ISA Template, year: 2020, url: "ISA 2020" }
+
+  Independent Spirit Awards 2019:
+    template: { name: ISA Template, year: 2019, url: "ISA 2019" }
+
+  Independent Spirit Awards 2018:
+    template: { name: ISA Template, year: 2018, url: "ISA 2018" }
+
+  Independent Spirit Awards 2017:
+    template: { name: ISA Template, year: 2017, url: "ISA 2017" }
+
+  Independent Spirit Awards 2016:
+    template: { name: ISA Template, year: 2016, url: "ISA 2016" }
+
+  Independent Spirit Awards 2015:
+    template: { name: ISA Template, year: 2015, url: "ISA 2015" }
+
+  Independent Spirit Awards 2014:
+    template: { name: ISA Template, year: 2014, url: "ISA 2014" }
+
+  Oscars 2010:
+    template: { name: Oscars, year: 2010, url: "Oscars 2010" }
+
+  Oscars 2011:
+    template: { name: Oscars, year: 2011, url: "Oscars 2011" }
+
+  Oscars 2012:
+    template: { name: Oscars, year: 2012, url: "Oscars 2012" }
+
+  Oscars 2013:
+    template: { name: Oscars, year: 2013, url: "Oscars 2013" }
+
+  Oscars 2014:
+    template: { name: Oscars, year: 2014, url: "Oscars 2014" }
+
+  Oscars 2015:
+    template: { name: Oscars, year: 2015, url: "Oscars 2015" }
+
+  Oscars 2016:
+    template: { name: Oscars, year: 2016, url: "Oscars 2016" }
+
+  Oscars 2017:
+    template: { name: Oscars, year: 2017, url: "Oscars 2017" }
+
+  Oscars 2018:
+    template: { name: Oscars, year: 2018, url: "Oscars 2018" }
+
+  Oscars 2019:
+    template: { name: Oscars, year: 2019, url: "Oscars 2019" }
+
+  Oscars 2020:
+    template: { name: Oscars, year: 2020, url: "Oscars 2020" }
+
+  Oscars 2021:
+    template: { name: Oscars, year: 2021, url: "Oscars 2021" }
+
+  Oscars 2022:
+    template: { name: Oscars, year: 2022, url: "Oscars 2022" }
+   
   Oscars Winners:
     template: { name: Award, url: "Oscar Winners" } 
     imdb_list: "https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner"
@@ -81,7 +274,7 @@ collections:
     #schedule: yearly (03/28)
  
   Oscars Nominated:
-    template: { name: Award, url: "Oscars Nominated" } 
+    template: { name: Award, url: "Oscars Nominations" } 
     trakt_list: https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2022
     summary: 2022 Oscar nominations
         
