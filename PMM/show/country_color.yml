@@ -2,6 +2,10 @@
 #           Dynamic Country Collections              #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #             Artwork Credit to Duhniel              #
+#                                                    #
+#  Call this from your config.yml (TV only):         #
+#     metadata_path:                                 #
+#       - git: PMM/show/country_color                #
 ######################################################
 
 templates:
@@ -44,6 +48,7 @@ dynamic_collections:
       - dk
       - ee
       - fr
+      - de
       - gr
       - hk
       - hu
@@ -60,7 +65,7 @@ dynamic_collections:
       - mx
       - nl
       - nz
-      - mo
+      - no
       - pk
       - ph
       - pl

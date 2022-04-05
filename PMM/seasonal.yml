@@ -2,6 +2,9 @@
 #                Seasonal CA Collections             #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this from your config.yml (TV or Movie):     #
+#     metadata_path:                                 #
+#       - git: PMM/seasonal                          #
 ######################################################
 
 templates:
@@ -18,6 +21,11 @@ templates:
     visible_home: true
     visible_shared: true
 collections:
+  Seasonal Collections:
+    blank_collection: true
+    collection_mode: hide
+    sort_title: +00_+Resolution Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/seasonal.jpg
   Independence Day Movies:
     template:
       name: Holiday

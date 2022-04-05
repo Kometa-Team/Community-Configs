@@ -2,6 +2,9 @@
 #           Dynamic Resolution Collections           #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this from your config.yml (TV or Movie):     #
+#     metadata_path:                                 #
+#       - git: PMM/resolution_standards              #
 ######################################################
 
 templates:
@@ -52,3 +55,4 @@ dynamic_collections:
       720: HD Ready
       1080: Full HD
       4k: Ultra HD
+      

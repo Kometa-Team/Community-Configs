@@ -1,27 +1,32 @@
 ######################################################
 #       Dynamic US Content Rating Collections        #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
 #         Rating Adjustments made by Yozora          #
-#          Created by Yozora and Bullmoose20         #
+#                                                    #
+#  Call this file from you Configuration File Using: #
+#     metadata_path:                                 #
+#       - git: PMM/content_rating_us                 #
 ######################################################
 
 templates:
   contentrating_dynamic:
-    default:
-      URL_ENCODE: <<key>>
     collection_mode: hide
     sort_title: +03_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/content_rating/mpaa_(us)/<<URL_ENCODE>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/content_rating/us/<<key_name>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
         content_rating: <<value>>
+  other:
+    sort_title: +03_~<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/content_rating/other.jpg
 
 collections:
-  US Ratings Collections:
+  Ratings Collections:
     blank_collection: true
     collection_mode: hide
-    sort_title: +03_+US Ratings Collections
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/movie/content_rating/mpaa_(us)/US%20Ratings%20Collections.jpg
+    sort_title: +03_+Ratings Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/content_rating.jpg
 
 dynamic_collections:
   US MOVIE Content Ratings:
@@ -29,16 +34,14 @@ dynamic_collections:
     title_format: <<key_name>>
     other_name: Other Ratings
     template: contentrating_dynamic
-    template_variables:
-      URL_ENCODE:
-        other: Other%20Ratings    
+    other_template: ["other", "contentrating_dynamic"]
     include:
       - G
       - PG
       - PG-13
       - R     
-      # - NR
-      # - NC-17     Hidden by default due to nature of content
+      - NR
+      - NC-17
     addons:
       G: 
         - gb/U
@@ -68,20 +71,20 @@ dynamic_collections:
         - gb/14+
         - gb/15
         - TV-14
-      # NR:
-      #   - Approved
-      #   - N/A
-      #   - NOT RATED
-      #   - Not Rated
-      #   - "gb/NR"
-      #   - Unrated
-      #   - gb/Not Rated
-      #   - gb/Rejected
-      #   - gb/Unrated
-      #   - None
-      # NC-17:
-      #   - gb/R18
-      #   - gb/X
-      #   - R18
-      #   - X
+      NR:
+        - Approved
+        - N/A
+        - NOT RATED
+        - Not Rated
+        - "gb/NR"
+        - Unrated
+        - gb/Not Rated
+        - gb/Rejected
+        - gb/Unrated
+        - None
+      NC-17:
+        - gb/R18
+        - gb/X
+        - R18
+        - X
 

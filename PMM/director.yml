@@ -2,6 +2,9 @@
 #                Director Collections                #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this from your config.yml (Movie only):      #
+#     metadata_path:                                 #
+#       - git: PMM/director                          #
 ######################################################
 
 templates:

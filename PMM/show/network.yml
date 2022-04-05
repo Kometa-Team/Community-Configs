@@ -2,6 +2,9 @@
 #           Dynamic US Network Collections           #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this from your config.yml (TV only):         #
+#     metadata_path:                                 #
+#       - git: PMM/show/network                      #
 ######################################################
 
 templates:

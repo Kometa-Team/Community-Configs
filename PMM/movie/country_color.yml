@@ -2,6 +2,10 @@
 #           Dynamic Country Collections              #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #             Artwork Credit to Duhniel              #
+#                                                    #
+#  Call this from your config.yml (TV or Movie):     #
+#     metadata_path:                                 #
+#       - git: PMM/movie/country_color               #
 ######################################################
 
 templates:
@@ -44,6 +48,7 @@ dynamic_collections:
       - Denmark
       - Estonia
       - France
+      - Germany
       - Greece
       - Hong Kong
       - Hungary

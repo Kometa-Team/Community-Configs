@@ -2,6 +2,9 @@
 #              Dynamic Genre Collections             #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this from your config.yml (TV or Movie):     #
+#     metadata_path:                                 #
+#       - git: PMM/genre                             #
 ######################################################
 
 templates:

@@ -1,27 +1,30 @@
 ######################################################
 #           Dynamic Resolution Collections           #
-#          Created by Yozora and Bullmoose20         #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this file from you Configuration File Using: #
+#     metadata_path:                                 #
+#       - git: PMM/resolution_standards              #
 ######################################################
 
 templates:
   resolution_dynamic:
-    default:
-      URL_ENCODE: <<key>>
     collection_mode: hide
     sort_title: +15_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/resolution/<<URL_ENCODE>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/resolution/standards/<<key>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
         resolution: <<value>>
+  other:
+    sort_title: +15_~<<collection_name>>
 
 collections:
   Resolution Collections:
     blank_collection: true
     collection_mode: hide
     sort_title: +15_+Resolution Collections
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/resolution/Resolution%20Collections.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/resolution.jpg
 
 dynamic_collections:
   Resolution Standards:         # mapping name does not matter just needs to be unique
@@ -29,38 +32,26 @@ dynamic_collections:
     title_format: <<key_name>> <<library_type>>s
     other_name: Other Resolutions
     template: resolution_dynamic
-    template_variables:
-      URL_ENCODE:
-        480p: SD
-        720p: HD%20Ready
-        1080p: Full%20HD
-        4K: Ultra%20HD
-        8K: 8K%20Ultra%20HD
-        other: Other%Resolutions
+    other_template: ["other", "resolution_dynamic"]
     include:
-      - 144p
-      - 240p
-      - 360p
-      - 480p
-      - 576p
-      - 720p
-      - SD
-      - 1080p
-      - 2K
-      - 4K
-      - 8K
+      - 480
+      - 720
+      - 1080
+      - 4k
+      - 8k
     addons:
-      480p: 
-        - 144p
-        - 240p
-        - 360p
-        - 576p
-        - SD
-      1080p:
-        - 2K
+      480:
+        - 144
+        - 240
+        - 360
+        - 576
+        - sd
+      1080:
+        - 2k
+      4k:
+        - 8k
     title_override:
-      480p: SD
-      720p: HD Ready
-      1080p: Full HD
-      4K: Ultra HD
-      8K: 8K Ultra HD
+      480: SD
+      720: HD Ready
+      1080: Full HD
+      4k: Ultra HD

@@ -1,27 +1,32 @@
 ######################################################
 #       Dynamic UK Content Rating Collections        #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
 #         Rating Adjustments made by Yozora          #
-#          Created by Yozora and Bullmoose20         #
+#                                                    #
+#  Call this file from you Configuration File Using: #
+#     metadata_path:                                 #
+#       - git: PMM/content_rating_uk                 #
 ######################################################
 
 templates:
   contentrating_dynamic:
-    default:
-      URL_ENCODE: <<key>>
     collection_mode: hide
     sort_title: +03_<<collection_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/content_rating/bbfc_(uk)/<<URL_ENCODE>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/content_rating/uk/<<key_name>>.jpg
     smart_filter:
       sort_by: release.desc
       any:
         content_rating: <<value>>
+  other:
+    sort_title: +03_~<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/content_rating/other.jpg
 
 collections:
-  UK Ratings Collections:
+  Ratings Collections:
     blank_collection: true
     collection_mode: hide
-    sort_title: +03_+UK Ratings Collections
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/common/content_rating/bbfc_(uk)/UK%20Ratings%20Collections.jpg
+    sort_title: +03_+Ratings Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/content_rating.jpg
 
 dynamic_collections:
   UK Content Rating:
@@ -29,70 +34,61 @@ dynamic_collections:
     title_format: <<key_name>>
     other_name: Other Ratings
     template: contentrating_dynamic
-    template_variables:
-      URL_ENCODE:
-        other: Other%20Ratings    
-    key_name_override:
-      "gb/U": U
-      "gb/PG": PG
-      "gb/12": 12
-      "gb/12A": 12A
-      "gb/15": 15
-      "gb/18": 18
-      # NR: Not Rated
-      # "gb/R18": R18
-
+    other_template: ["other", "contentrating_dynamic"]
     include:
-      - "gb/U"
-      - "gb/PG"
-      - "gb/12"
-      - "gb/12A"
-      - "gb/15"
-      - "gb/18"
-      # - "NR"          Hidden by default
-      # - "gb/R18"      Hidden by default due to nature of content
+      - U
+      - PG
+      - 12
+      - 12A
+      - 15
+      - 18
+      - R18
+      - NR
     addons:
-      "gb/U": 
-        - U
+      U:
+        - gb/U
         - gb/0+
         - G
         - TV-Y
         - TV-G
         - E
         - gb/E
-      "gb/PG":
-        - PG
+      PG:
+        - gb/PG
         - gb/9+
         - TV-PG
         - TV-Y7
         - TV-Y7-FV
-      "gb/12":
-        - 12
-      "gb/12A":
+      12:
+        - gb/12
+      12A:
+        - gb/12A
         - 12+
         - PG-13
         - TV-13
-      "gb/15":
+      15:
+        - gb/15
         - gb/14+
         - TV-14
-      "gb/18":
+      18:
+        - gb/18
         - MA-17
         - TVMA
         - TV-MA
         - R
-      # NR:
-      #   - Approved
-      #   - N/A
-      #   - NOT RATED
-      #   - Not Rated
-      #   - "gb/NR"
-      #   - Unrated
-      #   - gb/Not Rated
-      #   - gb/Rejected
-      #   - gb/Unrated
-      #   - None
-      # "gb/R18":
-      #   - R18
-      #   - gb/X
-      #   - X
-      #   - NC-17
+      R18:
+        - gb/R18
+        - gb/X
+        - X
+        - NC-17
+      NR:
+        - Approved
+        - N/A
+        - NOT RATED
+        - Not Rated
+        - "gb/NR"
+        - Unrated
+        - gb/Not Rated
+        - gb/Rejected
+        - gb/Unrated
+        - None
