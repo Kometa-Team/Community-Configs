@@ -10,6 +10,8 @@ templates:
     trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-bafta
     item_label: BAFTA
 collections:
+  BAFTA 2022:
+    template: { name: BAFTA Template, year: 2022 }
   BAFTA 2021:
     template: { name: BAFTA Template, year: 2021 }
   BAFTA 2020:
