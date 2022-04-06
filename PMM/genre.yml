@@ -2,6 +2,9 @@
 #              Dynamic Genre Collections             #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/genre                             #
 ######################################################
 
 templates:
@@ -34,11 +37,14 @@ dynamic_collections:
       Action:
         - Action/Adventure
         - Action & Adventure
+        - Action & adventure
       Adventure:
         - Action/Adventure
         - Action & Adventure
+        - Action & adventure
       Action & Adventure:
         - Action/Adventure
+        - Action & adventure
       Biography:
         - Biopic
       Family:

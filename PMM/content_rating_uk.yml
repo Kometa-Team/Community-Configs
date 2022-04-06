@@ -2,6 +2,10 @@
 #       Dynamic UK Content Rating Collections        #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #         Rating Adjustments made by Yozora          #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/content_rating_uk                 #
 ######################################################
 
 templates:

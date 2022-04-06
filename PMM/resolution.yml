@@ -2,6 +2,9 @@
 #           Dynamic Resolution Collections           #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/resolution                        #
 ######################################################
 
 templates:
@@ -35,3 +38,4 @@ dynamic_collections:
         - 360
         - sd
         - 576
+        

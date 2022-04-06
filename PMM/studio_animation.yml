@@ -2,10 +2,13 @@
 #        Dynamic Animation Studio Collections        #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/studio_animation                  #
 ######################################################
 
 templates:
-  studio_dynamic:
+  studio_animation_dynamic:
     collection_mode: hide
     sort_title: +08_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/<<key_encoded>>.jpg

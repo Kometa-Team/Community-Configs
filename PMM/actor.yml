@@ -2,6 +2,9 @@
 #                 Actor Collections                  #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/actor                             #
 ######################################################
 
 templates:

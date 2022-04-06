@@ -2,6 +2,10 @@
 #       Dynamic US TV Content Rating Collections     #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #         Rating Adjustments made by Yozora          #
+#                                                    #
+#  Call this from your config.yml (Show only):       #
+#     metadata_path:                                 #
+#       - git: PMM/show/content_rating_us            #
 ######################################################
 
 templates:

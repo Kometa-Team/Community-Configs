@@ -2,6 +2,9 @@
 #          Dynamic Audio Language Collections        #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/audio_language                    #
 ######################################################
 
 templates:
