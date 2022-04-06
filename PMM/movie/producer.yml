@@ -1,34 +1,34 @@
 ######################################################
-#                 Actor Collections                  #
+#                Producer Collections                #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
-#  Call this from your config.yml (Movie or Show):   #
+#  Call this from your config.yml (Movie only):      #
 #     metadata_path:                                 #
-#       - git: PMM/actor                             #
+#       - git: PMM/movie/producer                    #
 ######################################################
 
 templates:
-  actor_dynamic:
+  producer_dynamic:
     collection_mode: hide
-    sort_title: +17_<<collection_name>>
+    sort_title: +19_<<collection_name>>
     tmdb_person: <<value>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/people/<<value_encoded>>.jpg
     smart_filter:
       all:
-        actor: tmdb
+        producer: tmdb
 
 collections:
-  Actors Collections:
+  Producers Collections:
     blank_collection: true
     collection_mode: hide
-    sort_title: +17_+Actor Collections
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/actor.jpg
+    sort_title: +19_+Producer Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/producer.jpg
 
 dynamic_collections:
-  Top Actors:
-    type: actor
-    template: actor_dynamic
-    title_format: <<title>> (Actor)
+  Top Producers:         # mapping name does not matter just needs to be unique
+    type: producer
+    template: producer_dynamic
+    title_format: <<title>> (Producer)
     data:
       depth: 5
       limit: 25

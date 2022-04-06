@@ -1,34 +1,34 @@
 ######################################################
-#                 Actor Collections                  #
+#                Director Collections                #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
-#  Call this from your config.yml (Movie or Show):   #
+#  Call this from your config.yml (Movie only):      #
 #     metadata_path:                                 #
-#       - git: PMM/actor                             #
+#       - git: PMM/movie/director                    #
 ######################################################
 
 templates:
-  actor_dynamic:
+  director_dynamic:
     collection_mode: hide
-    sort_title: +17_<<collection_name>>
+    sort_title: +18_<<collection_name>>
     tmdb_person: <<value>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/people/<<value_encoded>>.jpg
     smart_filter:
       all:
-        actor: tmdb
-
+        director: tmdb
+ 
 collections:
-  Actors Collections:
+  Directors Collections:
     blank_collection: true
     collection_mode: hide
-    sort_title: +17_+Actor Collections
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/actor.jpg
+    sort_title: +18_+Director Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/director.jpg
 
 dynamic_collections:
-  Top Actors:
-    type: actor
-    template: actor_dynamic
-    title_format: <<title>> (Actor)
+  Top Directors:
+    type: director
+    template: director_dynamic
+    title_format: <<title>> (Director)
     data:
       depth: 5
       limit: 25

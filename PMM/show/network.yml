@@ -2,7 +2,7 @@
 #           Dynamic US Network Collections           #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
-#  Call this from your config.yml (TV only):         #
+#  Call this from your config.yml (Show only):         #
 #     metadata_path:                                 #
 #       - git: PMM/show/network                      #
 ######################################################
@@ -138,7 +138,7 @@ dynamic_collections:
       Fox:
         - Fox Action Movies
         - Fox Business Network
-        - FOX EspaÃ±a
+        - FOX España
         - Fox Kids
         - Fox Nation
         - Fox Premium Series
@@ -156,7 +156,7 @@ dynamic_collections:
         - HBO Asia
         - HBO Canada
         - HBO Comedy
-        - HBO EspaÃ±a
+        - HBO España
         - HBO Europe
         - HBO Family
         - HBO Latin America
