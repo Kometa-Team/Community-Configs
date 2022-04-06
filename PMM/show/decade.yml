@@ -2,6 +2,9 @@
 #             Dynamic Decade Collections             #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
+#  Call this from your config.yml (Show only):       #
+#     metadata_path:                                 #
+#       - git: PMM/show/decade                       #
 ######################################################
 
 templates:
@@ -12,7 +15,7 @@ templates:
     smart_filter:
       sort_by: critic_rating.desc
       any:
-        decade: <<value>>
+        year: <<value>>
       limit: 100
 
 collections:

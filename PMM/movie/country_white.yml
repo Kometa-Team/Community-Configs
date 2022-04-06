@@ -2,6 +2,10 @@
 #           Dynamic Country Collections              #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #             Artwork Credit to Duhniel              #
+#                                                    #
+#  Call this from your config.yml (Movie only):      #
+#     metadata_path:                                 #
+#       - git: PMM/movie/country_white               #
 ######################################################
 
 templates:
@@ -44,6 +48,7 @@ dynamic_collections:
       - Denmark
       - Estonia
       - France
+      - Germany
       - Greece
       - Hong Kong
       - Hungary
@@ -78,4 +83,8 @@ dynamic_collections:
       - Ukraine
       - United Arab Emirates
       - Vietnam
+    addons:
+      Korea:
+        - Republic of Korea
+        - South Korea
       
