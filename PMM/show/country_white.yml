@@ -28,7 +28,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/country.jpg
 
 dynamic_collections:
-  TMDb Country White:          # This name is the mapping name
+  TMDb Country White:
     type: origin_country
     title_format: <<key_name>>
     other_name: Other Countries

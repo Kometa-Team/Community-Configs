@@ -25,7 +25,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/resolution.jpg
 
 dynamic_collections:    
-  Resolution:         # mapping name does not matter just needs to be unique
+  Resolution:
     type: resolution
     title_format: <<key_name>> <<library_type>>s
     template: resolution_dynamic
