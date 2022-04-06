@@ -28,7 +28,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/country.jpg
 
 dynamic_collections:
-  Country White:         # mapping name does not matter just needs to be unique
+  Country White:
     type: country
     title_format: <<key_name>>
     other_name: Other Countries

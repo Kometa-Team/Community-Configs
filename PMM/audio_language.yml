@@ -27,7 +27,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/audio_language.jpg
 
 dynamic_collections:
-  Audio Language:         # mapping name does not matter just needs to be unique
+  Audio Language:
     type: audio_language
     title_format: <<key_name>> Audio
     other_name: Other Audio

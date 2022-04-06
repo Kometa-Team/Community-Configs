@@ -27,7 +27,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/subtitle_language.jpg
 
 dynamic_collections:
-  Subtitle Language:         # mapping name does not matter just needs to be unique
+  Subtitle Language:
     type: subtitle_language
     title_format: <<key_name>> Subtitles
     other_name: Other Subtitles

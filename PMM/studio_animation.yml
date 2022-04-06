@@ -25,7 +25,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/studio_animation.jpg
 
 dynamic_collections:
-  Studio Animation:         # mapping name does not matter just needs to be unique
+  Studio Animation:
     type: studio
     title_format: <<key_name>>
     template: studio_animation_dynamic

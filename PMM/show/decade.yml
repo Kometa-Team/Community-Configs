@@ -26,7 +26,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/decade.jpg
 
 dynamic_collections:
-  Decade:         # mapping name does not matter just needs to be unique
+  Decade:
     type: decade
     title_format: Best of <<key_name>>
     template: decade_dynamic

@@ -12,7 +12,7 @@ templates:
     collection_mode: hide
     sort_title: +20_<<collection_name>>
     tmdb_person: <<value>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/people/<<value_encoded>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/people/<<key_encoded>>.jpg
     smart_filter:
       all:
         writer: tmdb
@@ -25,7 +25,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/writer.jpg
 
 dynamic_collections:
-  Top Writers:         # mapping name does not matter just needs to be unique
+  Top Writers:
     type: writer
     template: writer_dynamic
     title_format: <<title>> (Writer)

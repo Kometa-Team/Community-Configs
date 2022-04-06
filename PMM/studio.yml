@@ -33,7 +33,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/studio.jpg
 
 dynamic_collections:
-  Studio:         # mapping name does not matter just needs to be unique
+  Studio:
     type: studio
     title_format: <<key_name>>
     template: studio_dynamic
