@@ -12,7 +12,7 @@ templates:
     collection_mode: hide
     sort_title: +19_<<collection_name>>
     tmdb_person: <<value>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/people/<<value_encoded>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/people/<<key_name_encoded>>.jpg
     smart_filter:
       all:
         producer: tmdb

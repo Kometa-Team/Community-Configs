@@ -46,7 +46,7 @@ templates:
     item_label: CCA
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<url_encoded>>.jpg
 
- GG Template:
+  GG Template:
     sort_title: '+16_<<collection_name>>'
     collection_mode: hide
     smart_label: audience_rating.desc
