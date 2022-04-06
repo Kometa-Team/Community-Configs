@@ -1,0 +1,29 @@
+######################################################
+#                Awards Collections                  #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Show only):       #
+#     metadata_path:                                 #
+#       - git: PMM/show/award                        #
+######################################################
+
+templates:
+  Award:
+    sort_title: +16_<<collection_name>>
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: audience_rating.desc
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<image>>/winner.jpg
+   
+collections:
+  Award Collections:
+    blank_collection: true
+    collection_mode: hide
+    sort_title: +16_+Award Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/award.jpg
+
+  Emmys Winners:
+    template: { name: Award, image: emmys }
+    imdb_list: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&groups=emmy_winner
+    summary: Emmy Winning Shows
+
