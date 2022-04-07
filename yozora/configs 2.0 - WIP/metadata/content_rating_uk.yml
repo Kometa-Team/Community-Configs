@@ -1,0 +1,94 @@
+######################################################
+#       Dynamic UK Content Rating Collections        #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#         Rating Adjustments made by Yozora          #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/content_rating_uk                 #
+######################################################
+
+templates:
+  contentrating_dynamic:
+    collection_mode: hide
+    sort_title: +03_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/content_rating/uk/<<key_name>>.jpg
+    smart_filter:
+      sort_by: release.desc
+      any:
+        content_rating: <<value>>
+  other:
+    sort_title: +03_~<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/content_rating/other.jpg
+
+collections:
+  Ratings Collections:
+    blank_collection: true
+    collection_mode: hide
+    sort_title: +03_+Ratings Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/content_rating.jpg
+
+dynamic_collections:
+  UK Content Rating:
+    type: content_rating
+    title_format: <<key_name>>
+    other_name: Other Ratings
+    template: contentrating_dynamic
+    other_template: ["other", "contentrating_dynamic"]
+    include:
+      - U
+      - PG
+      - 12
+      - 12A
+      - 15
+      - 18
+      - R18
+      - NR
+    addons:
+      U:
+        - gb/U
+        - gb/0+
+        - G
+        - TV-Y
+        - TV-G
+        - E
+        - gb/E
+      PG:
+        - gb/PG
+        - gb/9+
+        - TV-PG
+        - TV-Y7
+        - TV-Y7-FV
+      12:
+        - gb/12
+      12A:
+        - gb/12A
+        - 12+
+        - PG-13
+        - TV-13
+      15:
+        - gb/15
+        - gb/14+
+        - TV-14
+      18:
+        - gb/18
+        - MA-17
+        - TVMA
+        - TV-MA
+        - R
+      R18:
+        - gb/R18
+        - gb/X
+        - X
+        - NC-17
+      NR:
+        - Approved
+        - N/A
+        - NOT RATED
+        - Not Rated
+        - "gb/NR"
+        - Unrated
+        - gb/Not Rated
+        - gb/Rejected
+        - gb/Unrated
+        - None

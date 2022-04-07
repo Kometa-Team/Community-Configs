@@ -1,0 +1,38 @@
+######################################################
+#                Awards Collections                  #
+# Created by Yozora, Bullmoose20, hjone72, & Sohjiro #
+#                                                    #
+#  Call this from your config.yml (Movie only):      #
+#     metadata_path:                                 #
+#       - git: PMM/movie/award                       #
+######################################################
+
+templates:
+  Award:
+    sort_title: +16_<<collection_name>>
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: audience_rating.desc
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<image>>/winner.jpg
+
+collections:
+  Award Collections:
+    blank_collection: true
+    collection_mode: hide
+    sort_title: +16_+Award Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/award.jpg
+
+  Cesar:
+    template: { name: Award, image: cesar }
+    trakt_list: https://trakt.tv/users/fauxliege/lists/cesar-meilleur-film
+    summary: "The César Award is the national film award of France. It is delivered in the Nuit des César ceremony and was first awarded in 1976."
+
+  Berlinale:
+    template: { name: Award, image: berlinale }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
+    summary: "The Berlin International Film Festival, usually called the Berlinale, is a film festival held annually in Berlin, Germany."
+
+  Venice:
+    template: { name: Award, image: venice }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
+    summary: "The Venice Film Festival or Venice International Film Festival (Italian: Mostra Internazionale d'Arte Cinematografica della Biennale di Venezia is the world's oldest film festival"

@@ -1,0 +1,85 @@
+######################################################
+#           Dynamic Country Collections              #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#             Artwork Credit to Duhniel              #
+#                                                    #
+#  Call this from your config.yml (Show only):       #
+#     metadata_path:                                 #
+#       - git: PMM/show/country_color                #
+######################################################
+
+templates:
+  country_color_tv_dynamic:
+    collection_mode: hide
+    sort_title: +11_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/color/<<key_name_encoded>>.jpg
+    smart_label: release.desc
+    plex_all: true
+    filters:
+      origin_country: <<value>>
+  other:
+    sort_title: +11_~<<collection_name>>
+
+collections:
+  Country Collections:
+    blank_collection: true
+    collection_mode: hide
+    sort_title: +11_+Country Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/country.jpg
+
+dynamic_collections:
+  TMDb Country Color:
+    type: origin_country
+    title_format: <<key_name>>
+    other_name: Other Countries
+    template: country_color_tv_dynamic
+    other_template: ["other", "country_color_tv_dynamic"]
+    exclude:
+      - uk            # Excluded by default due to high volume
+      - us            # Excluded by default due to high volume
+    include:
+      - au
+      - br
+      - bg
+      - ca
+      - cl
+      - cn
+      - cz
+      - dk
+      - ee
+      - fr
+      - de
+      - gr
+      - hk
+      - hu
+      - is
+      - in
+      - id
+      - ir
+      - ie
+      - it
+      - jp
+      - kr
+      - lv
+      - my
+      - mx
+      - nl
+      - nz
+      - no
+      - pk
+      - ph
+      - pl
+      - pt
+      - ro
+      - ru
+      - sa
+      - rs
+      - za
+      - es
+      - se
+      - ch
+      - th
+      - tr
+      - ua
+      - ae
+      - vn
