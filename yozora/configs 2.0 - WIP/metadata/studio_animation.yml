@@ -1,0 +1,44 @@
+######################################################
+#        Dynamic Animation Studio Collections        #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/studio_animation                  #
+######################################################
+
+templates:
+  studio_animation_dynamic:
+    collection_mode: hide
+    sort_title: +08_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/<<key_encoded>>.jpg
+    smart_filter:
+      sort_by: release.desc
+      any:
+        studio: <<value>>
+
+collections:
+  Studio Animation Collections:
+    blank_collection: true
+    collection_mode: hide
+    sort_title: +08_+Studio Animation Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/studio_animation.jpg
+
+dynamic_collections:
+  Studio Animation:
+    type: studio
+    title_format: <<key_name>>
+    template: studio_animation_dynamic
+    include:
+      - 20th Century Animation
+      - Blue Sky Studios
+      - DreamWorks Animation
+      - Illumination Entertainment
+      - Marvel Animation
+      - Paramount Animation
+      - Pixar Animation Studios
+      - Sony Pictures Animation
+      - Studio Ghibli
+      - Universal Animation Studios
+      - Walt Disney Animation Studios
+      - Warner Animation Group
