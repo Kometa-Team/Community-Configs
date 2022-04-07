@@ -9,6 +9,7 @@
 
 templates:
   Golden:
+    cache_builders: 1
     sort_title: +16_<<collection_name>>
     collection_mode: hide
     smart_label: audience_rating.desc
