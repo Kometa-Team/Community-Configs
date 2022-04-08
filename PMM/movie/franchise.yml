@@ -9,6 +9,8 @@
 
 templates:
   collection:
+    cache_builders: 1
+    collection_mode: hide
     optional:
       - collection
       - movie
@@ -17,7 +19,9 @@ templates:
     tmdb_movie: <<movie>>
     name_mapping: <<name_mapping>>
     sync_mode: sync
+    sort_title: +06_<<collection_name>>
     collection_order: release
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<url_encoded>>.jpg
 
 dynamic_collections:
   TMDb Collections:
@@ -97,6 +101,11 @@ dynamic_collections:
         10: Star Wars Skywalker Saga
 
 collections:
+  Franchise Collections:
+    blank_collection: true
+    collection_mode: hide
+    sort_title: +06_+Franchise Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/franchise.jpg
   Charlie Brown:
     template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls054850259/
@@ -188,12 +197,6 @@ collections:
 
 
 
-
-  Franchise Collections:
-    blank_collection: true
-    collection_mode: hide
-    sort_title: +06_+Franchise Collections
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/franchise.jpg
   DC Universe:
     template: { name: collection, url: "DC Universe" }
     tmdb_list: https://www.themoviedb.org/list/6468

@@ -9,6 +9,7 @@
 
 templates:
   Award:
+    cache_builders: 1
     sort_title: +16_<<collection_name>>
     collection_mode: hide
     sync_mode: sync

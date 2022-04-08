@@ -9,18 +9,20 @@
 
 templates:
   Cannes:
+    cache_builders: 1
     sort_title: +16_<<collection_name>>
     collection_mode: hide
     smart_label: audience_rating.desc
     summary: <<year>> Cannes awards
     trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-cannes
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannas/<<year>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<year>>.jpg
 
   Award:
+    cache_builders: 1
     sort_title: +16_<<collection_name>>
     collection_mode: hide
     smart_label: audience_rating.desc
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannas/<<image>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<image>>.jpg
 
 collections:
 
@@ -28,22 +30,22 @@ collections:
     template: { name: Cannes, year: 2022 }
 
   Cannes 2021:
-    template: { name: Cannas, year: 2021 }
+    template: { name: Cannes, year: 2021 }
 
   Cannes 2020:
-    template: { name: Cannas, year: 2020 }
+    template: { name: Cannes, year: 2020 }
 
   Cannes 2019:
-    template: { name: Cannas, year: 2019 }
+    template: { name: Cannes, year: 2019 }
 
   Cannes 2018:
-    template: { name: Cannas, year: 2018 }
+    template: { name: Cannes, year: 2018 }
 
   Cannes 2017:
-    template: { name: Cannas, year: 2017 }
+    template: { name: Cannes, year: 2017 }
 
   Cannes 2016:
-    template: { name: Cannas, year: 2016 }
+    template: { name: Cannes, year: 2016 }
 
   Cannes - Palme d'or:
     template: { name: Award, image: winner }

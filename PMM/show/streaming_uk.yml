@@ -2,13 +2,14 @@
 #          UK Streaming Service Collections          #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
-#  Call this from your config.yml (Movie only):      #
+#  Call this from your config.yml (Show only):       #
 #     metadata_path:                                 #
 #       - git: PMM/show/streaming_uk                 #
 ######################################################
 
 templates:
   streaming:
+    cache_builders: 1
     collection_mode: hide
     smart_label: release.desc
     sync_mode: sync
@@ -20,7 +21,7 @@ collections:
     blank_collection: true
     collection_mode: hide
     sort_title: +02_+Streaming Collections
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/streaming.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/streaming_uk.jpg
   All 4 Shows:
     template: {name: streaming, url: "All 4"}
     mdblist_list: https://mdblist.com/lists/yozoraxcii/all-4-Shows

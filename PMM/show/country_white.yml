@@ -10,6 +10,7 @@
 
 templates:
   country_white_tv_dynamic:
+    cache_builders: 1
     collection_mode: hide
     sort_title: +11_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name_encoded>>.jpg

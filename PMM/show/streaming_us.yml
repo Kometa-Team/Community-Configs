@@ -2,13 +2,14 @@
 #          US Streaming Service Collections          #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
-#  Call this from your config.yml (Movie only):      #
+#  Call this from your config.yml (Show only):       #
 #     metadata_path:                                 #
 #       - git: PMM/show/streaming_us                 #
 ######################################################
 
 templates:
   streaming:
+    cache_builders: 1
     collection_mode: hide
     smart_label: random
     sync_mode: sync
@@ -20,7 +21,7 @@ collections:
     blank_collection: true
     collection_mode: hide
     sort_title: +02_+Streaming Collections
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/streaming.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/streaming_us.jpg
   Apple TV+ Shows:
     template: {name: streaming, url: "Apple TV+"}
     mdblist_list: https://mdblist.com/lists/yozoraxcii/appletv-Shows

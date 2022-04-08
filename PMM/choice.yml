@@ -9,23 +9,27 @@
 
 templates:
   Choice:
+    cache_builders: 1
     sort_title: +16_<<collection_name>>
     collection_mode: hide
     smart_label: audience_rating.desc
     summary: <<year>> Critics Choice Awards
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-critic-s-choice
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-critics-choice
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<year>>.jpg
 
 collections:
 
   Critics Choice Awards 2022:
     template: { name: Choice, year: 2022 }
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-critic-s-choice
 
   Critics Choice Awards 2021:
     template: { name: Choice, year: 2021 }
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-critic-s-choice
 
   Critics Choice Awards 2020:
     template: { name: Choice, year: 2020 }
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-critic-s-choice
 
   Critics Choice Awards 2019:
     template: { name: Choice, year: 2019 }

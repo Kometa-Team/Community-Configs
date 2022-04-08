@@ -10,6 +10,7 @@
 
 templates:
   country_color_tv_dynamic:
+    cache_builders: 1
     collection_mode: hide
     sort_title: +11_<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/color/<<key_name_encoded>>.jpg
@@ -28,7 +29,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/country.jpg
 
 dynamic_collections:
-  TMDb Country Color:          # This name is the mapping name
+  TMDb Country Color:
     type: origin_country
     title_format: <<key_name>>
     other_name: Other Countries
