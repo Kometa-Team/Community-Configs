@@ -1,0 +1,171 @@
+templates:
+
+  separator:
+    default:
+      collection_section: "00"
+    optional:
+      - schedule_separator
+      - collection_mode
+    schedule: <<schedule_separator>>
+    collection_mode: <<collection_mode>>
+    sort_title: !<<collection_section>>_!<<collection_name>>
+    blank_collection: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<separator>>.jpg
+
+  shared:
+    default:
+      collection_section: "00"
+      sort: <<collection_name>>
+      pre: _
+    optional:
+      - collection_mode
+      - radarr_add
+      - sonarr_add
+    radarr_add: <<radarr_add>>
+    sonarr_add: <<sonarr_add>>
+    collection_mode: <<collection_mode>>
+    sort_title: !<<collection_section>><<pre>><<sort>>
+
+  other_collection:
+    default:
+      collection_section: "00"
+      sort: <<collection_name>>
+      pre: _~
+    optional:
+      - schedule_other
+    schedule: <<schedule_other>>
+    sort_title: !<<collection_section>><<pre>><<sort>>
+
+  schedule_year_collections:
+    optional:
+      - schedule_year_collections
+    schedule: <<schedule_year_collections>>
+
+  award:
+    optional:
+      - image
+    cache_builders: 1
+    sync_mode: sync
+    smart_label: audience_rating.desc
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<image>>.jpg
+
+  streaming:
+    cache_builders: 1
+    smart_label: release.desc
+    sync_mode: sync
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/streaming/<<image_encoded>>.jpg
+
+  All4:
+    optional:
+      - schedule_all_4
+    schedule: <<schedule_all_4>>
+
+  AppleTV:
+    optional:
+      - schedule_apple_tv
+    schedule: <<schedule_apple_tv>>
+
+  BET:
+    optional:
+      - schedule_bet
+    schedule: <<schedule_bet>>
+
+  BritBox:
+    optional:
+      - schedule_brit_box
+    schedule: <<schedule_brit_box>>
+
+  Disney:
+    optional:
+      - schedule_disney
+    schedule: <<schedule_disney>>
+
+  hayu:
+    optional:
+      - schedule_hayu
+    schedule: <<schedule_hayu>>
+
+  HBOMax:
+    optional:
+      - schedule_hbo_max
+    schedule: <<schedule_hbo_max>>
+
+  Hulu:
+    optional:
+      - schedule_hulu
+    schedule: <<schedule_hulu>>
+
+  Netflix:
+    optional:
+      - schedule_netflix
+    schedule: <<schedule_netflix>>
+
+  NOW:
+    optional:
+      - schedule_now
+    schedule: <<schedule_now>>
+
+  Paramount:
+    optional:
+      - schedule_paramount
+    schedule: <<schedule_paramount>>
+
+  Peacock:
+    optional:
+      - schedule_peacock
+    schedule: <<schedule_peacock>>
+
+  Prime:
+    optional:
+      - schedule_prime
+    schedule: <<schedule_prime>>
+
+  Independence:
+    optional:
+      - schedule_independence
+    schedule: <<schedule_independence>>
+
+  Easter:
+    optional:
+      - schedule_easter
+    schedule: <<schedule_easter>>
+
+  Valentine:
+    optional:
+      - schedule_valentine
+    schedule: <<schedule_valentine>>
+
+  StPatrick:
+    optional:
+      - schedule_st_patrick
+    schedule: <<schedule_st_patrick>>
+
+  Thanksgiving:
+    optional:
+      - schedule_thanksgiving
+    schedule: <<schedule_thanksgiving>>
+
+  ThanksgivingUS:
+    optional:
+      - schedule_thanksgiving_us
+    schedule: <<schedule_thanksgiving_us>>
+
+  ThanksgivingCA:
+    optional:
+      - schedule_thanksgiving_ca
+    schedule: <<schedule_thanksgiving_ca>>
+
+  Halloween:
+    optional:
+      - schedule_halloween
+    schedule: <<schedule_halloween>>
+
+  Christmas:
+    optional:
+      - schedule_christmas
+    schedule: <<schedule_christmas>>
+
+  NewYears:
+    optional:
+      - schedule_new_years
+    schedule: <<schedule_new_years>>
