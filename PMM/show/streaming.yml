@@ -1,0 +1,140 @@
+######################################################
+#          US Streaming Service Collections          #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Show only):       #
+#     metadata_path:                                 #
+#       - git: PMM/show/streaming_us                 #
+#         template_variables:                        #
+#           schedule_all_4: never                    #
+#           schedule_apple_tv: never                 #
+#           schedule_bet: never                      #
+#           schedule_brit_box: never                 #
+#           schedule_disney: never                   #
+#           schedule_hayu: never                     #
+#           schedule_hbo_max: never                  #
+#           schedule_hulu: never                     #
+#           schedule_netflix: never                  #
+#           schedule_now: never                      #
+#           schedule_paramount: never                #
+#           schedule_peacock: never                  #
+#           schedule_prime: never                    #
+#           collection_mode: hide                    #
+#           collection_section: "02"                 #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "02"
+
+templates:
+collections:
+  Streaming Collections:
+    template:
+      - name: separator
+        separator: streaming
+
+  All 4:
+    template:
+      - name: All4
+      - name: streaming
+        image: All 4
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/all-4-Shows
+
+  Apple TV+:
+    template:
+      - name: AppleTV
+      - name: streaming
+        image: Apple TV+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/appletv-Shows
+
+  BET+:
+    template:
+      - name: BET
+      - name: streaming
+        image: BET+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/bet-Shows
+
+  BritBox:
+    template:
+      - name: BritBox
+      - name: streaming
+        image: BritBox
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/britbox-Shows
+
+  Disney+:
+    template:
+      - name: Disney
+      - name: streaming
+        image: Disney+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/ryalism/disney-Shows
+
+  hayu:
+    template:
+      - name: hayu
+      - name: streaming
+        image: hayu
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/hayu-Shows
+
+  HBO Max:
+    template:
+      - name: HBOMax
+      - name: streaming
+        image: HBO Max
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/ryalism/hbo-max-Shows
+
+  Hulu:
+    template:
+      - name: Hulu
+      - name: streaming
+        image: Hulu
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/ryalism/hulu-Shows
+
+  Netflix:
+    template:
+      - name: Netflix
+      - name: streaming
+        image: Netflix
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/ryalism/netflix-Shows
+
+  NOW:
+    template:
+      - name: NOW
+      - name: streaming
+        image: NOW
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/now-Shows
+
+  Paramount+:
+    template:
+      - name: Paramount
+      - name: streaming
+        image: Paramount+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/paramount-Shows
+
+  Peacock:
+    template:
+      - name: Peacock
+      - name: streaming
+        image: Peacock
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/peacock-Shows
+
+  Prime Video:
+    template:
+      - name: Prime
+      - name: streaming
+        image: Prime Video
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/ryalism/amazon-Shows

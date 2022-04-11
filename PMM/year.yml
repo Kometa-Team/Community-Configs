@@ -1,0 +1,44 @@
+######################################################
+#              Dynamic Year Collections              #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/year                              #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           schedule_other: never                    #
+#           collection_mode: hide                    #
+#           collection_section: 13                   #
+#           limit: 10                                #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 13
+
+templates:
+  year_dynamic:
+    default:
+      limit: 10
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/year/best/<<key>>.jpg
+    smart_filter:
+      sort_by: critic_rating.desc
+      any:
+        year: <<value>>
+      limit: <<limit>>
+
+collections:
+  Year Collections:
+    template:
+      - name: separator
+        separator: year
+
+dynamic_collections:
+  Year:
+    type: year
+    title_format: Best of <<key_name>>
+    template:
+      - year_dynamic
+      - shared

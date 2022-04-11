@@ -1,0 +1,43 @@
+######################################################
+#                Producer Collections                #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie only):      #
+#     metadata_path:                                 #
+#       - git: PMM/movie/producer                    #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: 19                   #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 19
+
+templates:
+  producer_dynamic:
+    tmdb_person: <<value>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/people/<<key_encoded>>.jpg
+    smart_filter:
+      all:
+        producer: tmdb
+
+collections:
+  Producers Collections:
+    template:
+      - name: separator
+        separator: producer
+
+dynamic_collections:
+  Top Producers:
+    type: producer
+    template:
+      - producer_dynamic
+      - shared
+    title_format: <<title>> (Producer)
+    data:
+      depth: 5
+      limit: 25
+      

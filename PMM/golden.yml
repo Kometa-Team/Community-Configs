@@ -1,0 +1,98 @@
+######################################################
+#             Golden Globes Collections              #
+# Created by Yozora, Bullmoose20, hjone72, & Sohjiro #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/golden                            #
+#         template_variables:                        #
+#           schedule_year_collections: never         #
+#           collection_mode: hide                    #
+#           collection_section: 16                   #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 16
+
+templates:
+  Golden:
+    summary: <<year>> Golden Globes
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-golden-globes
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<year>>.jpg
+
+collections:
+
+  Golden Globes 2022:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2022
+      - name: award
+      - name: shared
+
+  Golden Globes 2021:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2021
+      - name: award
+      - name: shared
+    
+  Golden Globes 2020:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2020
+      - name: award
+      - name: shared
+    
+  Golden Globes 2019:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2019
+      - name: award
+      - name: shared
+    
+  Golden Globes 2018:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2018
+      - name: award
+      - name: shared
+    
+  Golden Globes 2017:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2017
+      - name: award
+      - name: shared
+    
+  Golden Globes 2016:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2016
+      - name: award
+      - name: shared
+    
+  Golden Globes 2015:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2015
+      - name: award
+      - name: shared
+    
+  Golden Globes 2014:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2014
+      - name: award
+      - name: shared
+ 

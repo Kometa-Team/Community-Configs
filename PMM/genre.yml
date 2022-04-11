@@ -1,0 +1,75 @@
+######################################################
+#              Dynamic Genre Collections             #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/genre                             #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: "06"                 #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "06"
+
+templates:
+  genre_dynamic:
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/<<key_name_encoded>>.jpg
+    smart_filter:
+      sort_by: release.desc
+      any:
+        genre: <<value>>
+
+collections:
+  Genre Collections:
+    template:
+      - name: separator
+        separator: genre
+
+dynamic_collections:
+  Genre:
+    type: genre
+    title_format: <<key_name>>
+    template:
+      - genre_dynamic
+      - shared
+    title_override:
+      Biography: Biopic
+    addons:
+      Action:
+        - Action/Adventure
+        - Action & Adventure
+        - Action & adventure
+      Adventure:
+        - Action/Adventure
+        - Action & Adventure
+        - Action & adventure
+      Action & Adventure:
+        - Action/Adventure
+        - Action & adventure
+      Biography:
+        - Biopic
+      Family:
+        - Kids & Family
+      Fantasy:
+        - SciFi & Fantasy
+        - Science Fiction & Fantasy
+        - Science-Fiction & Fantasy
+        - Sci-Fi & Fantasy
+      Politics:
+        - War & Politics
+      Science Fiction:
+        - SciFi
+        - Sci-Fi
+        - Science-Fiction
+        - SciFi & Fantasy
+        - Science Fiction & Fantasy
+        - Sci-Fi & Fantasy
+      Talk Show:
+        - Talk
+      War:
+        - War & Politics
