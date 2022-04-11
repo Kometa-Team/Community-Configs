@@ -1,0 +1,33 @@
+######################################################
+#                Awards Collections                  #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Show only):       #
+#     metadata_path:                                 #
+#       - git: PMM/show/award                        #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: 16                   #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 16
+
+templates:
+collections:
+  Award Collections:
+    template:
+      - name: separator
+        separator: award
+
+  Emmys Winners:
+    template:
+      - name: award
+        image: emmys/winner
+      - name: shared
+    imdb_list: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&groups=emmy_winner
+    summary: Emmy Winning Shows
+

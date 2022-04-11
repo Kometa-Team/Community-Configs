@@ -1,0 +1,79 @@
+######################################################
+#        Dynamic Subtitle Language Collections       #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/subtitle_language                 #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           schedule_other: never                    #
+#           collection_mode: hide                    #
+#           collection_section: 11                   #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 11
+
+templates:
+  subtitle_language_dynamic:
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/subtitle_language/<<key>>.jpg
+    smart_filter:
+      sort_by: release.desc
+      any:
+        subtitle_language: <<value>>
+
+collections:
+  Subtitle Language Collections:
+    template:
+      - name: separator
+        separator: subtitle_language
+
+dynamic_collections:
+  Subtitle Language:
+    type: subtitle_language
+    title_format: <<key_name>> Subtitles
+    other_name: Other Subtitles
+    template:
+      - subtitle_language_dynamic
+      - shared
+    other_template:
+      - other_collection
+      - subtitle_language_dynamic
+      - shared
+    exclude:
+      - en      # Disabled by default due to high volume
+    include:
+      - ar
+      - zh
+      - cs
+      - da
+      - nl
+      - et
+      - fr
+      - de
+      - el
+      - hu
+      - is
+      - ur
+      - id
+      - it
+      - ja
+      - ko
+      - lv
+      - ms
+      - no
+      - ph
+      - pl
+      - pt
+      - rm
+      - ru
+      - sr
+      - es
+      - sv
+      - th
+      - tr
+      - ua
+      - vi

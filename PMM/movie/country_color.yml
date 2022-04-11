@@ -1,0 +1,100 @@
+######################################################
+#           Dynamic Country Collections              #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#             Artwork Credit to Duhniel              #
+#                                                    #
+#  Call this from your config.yml (Movie only):      #
+#     metadata_path:                                 #
+#       - git: PMM/movie/country_color               #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           schedule_other: never                    #
+#           collection_mode: hide                    #
+#           collection_section: "09"                 #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "09"
+
+templates:
+  country_color_dynamic:
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/color/<<key_name_encoded>>.jpg
+    smart_filter:
+      sort_by: release.desc
+      any:
+        country: <<value>>
+
+collections:
+  Country Collections:
+    template:
+      - name: separator
+        separator: country
+
+dynamic_collections:
+  Country Color:
+    type: country
+    title_format: <<key_name>>
+    other_name: Other Countries
+    template:
+      - country_color_dynamic
+      - shared
+    other_template:
+      - other_collection
+      - country_color_dynamic
+      - shared
+    exclude:
+      - United Kingdom            # Excluded by default due to high volume
+      - United States of America  # Excluded by default due to high volume
+    include:
+      - Australia
+      - Brazil
+      - Bulgaria
+      - Canada
+      - Chile
+      - China
+      - Czech Republic
+      - Denmark
+      - Estonia
+      - France
+      - Germany
+      - Greece
+      - Hong Kong
+      - Hungary
+      - Iceland
+      - India
+      - Indonesia
+      - Iran
+      - Ireland
+      - Italy
+      - Japan
+      - Korea
+      - Latvia
+      - Malayasia
+      - Mexico
+      - Netherlands
+      - New Zealand
+      - Norway
+      - Pakistan
+      - Philippines
+      - Poland
+      - Portugal
+      - Romania
+      - Russia
+      - Saudi Arabia
+      - Serbia
+      - South Africa
+      - Spain
+      - Sweden
+      - Switzerland
+      - Thailand
+      - Turkey
+      - Ukraine
+      - United Arab Emirates
+      - Vietnam
+    addons:
+      Korea:
+        - Republic of Korea
+        - South Korea
+     

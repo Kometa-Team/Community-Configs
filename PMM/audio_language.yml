@@ -1,0 +1,79 @@
+######################################################
+#          Dynamic Audio Language Collections        #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/audio_language                    #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           schedule_other: never                    #
+#           collection_mode: hide                    #
+#           collection_section: 10                   #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 10
+
+templates:
+  audio_language_dynamic:
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/audio_language/<<key>>.jpg
+    smart_filter:
+      sort_by: release.desc
+      any:
+        audio_language: <<value>>
+
+collections:
+  Audio Language Collections:
+    template:
+      - name: separator
+        separator: audio_language
+
+dynamic_collections:
+  Audio Language:
+    type: audio_language
+    title_format: <<key_name>> Audio
+    other_name: Other Audio
+    template:
+      - audio_language_dynamic
+      - shared
+    other_template:
+      - other_collection
+      - audio_language_dynamic
+      - shared
+    exclude:
+      - en      # Disabled by default due to high volume
+    include:
+      - ar
+      - zh
+      - cs
+      - da
+      - nl
+      - et
+      - fr
+      - de
+      - el
+      - hu
+      - is
+      - ur
+      - id
+      - it
+      - ja
+      - ko
+      - lv
+      - ms
+      - no
+      - ph
+      - pl
+      - pt
+      - rm
+      - ru
+      - sr
+      - es
+      - sv
+      - th
+      - tr
+      - ua
+      - vi
