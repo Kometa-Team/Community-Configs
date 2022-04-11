@@ -8,7 +8,7 @@ templates:
       - collection_mode
     schedule: <<schedule_separator>>
     collection_mode: <<collection_mode>>
-    sort_title: !<<collection_section>>_!<<collection_name>>
+    sort_title: "!<<collection_section>>_!<<collection_name>>"
     blank_collection: true
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<separator>>.jpg
 
@@ -16,7 +16,7 @@ templates:
     default:
       collection_section: "00"
       sort: <<collection_name>>
-      pre: _
+      pre: "_"
     optional:
       - collection_mode
       - radarr_add
@@ -24,17 +24,17 @@ templates:
     radarr_add: <<radarr_add>>
     sonarr_add: <<sonarr_add>>
     collection_mode: <<collection_mode>>
-    sort_title: !<<collection_section>><<pre>><<sort>>
+    sort_title: "!<<collection_section>><<pre>><<sort>>"
 
   other_collection:
     default:
       collection_section: "00"
       sort: <<collection_name>>
-      pre: _~
+      pre: "_~"
     optional:
       - schedule_other
     schedule: <<schedule_other>>
-    sort_title: !<<collection_section>><<pre>><<sort>>
+    sort_title: "!<<collection_section>><<pre>><<sort>>"
 
   schedule_year_collections:
     optional:
