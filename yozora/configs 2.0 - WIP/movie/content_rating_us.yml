@@ -37,8 +37,8 @@ dynamic_collections:
       - PG
       - PG-13
       - R     
-      # - NR
-      # - NC-17     Hidden by default due to nature of content
+      - NR
+      - NC-17
     addons:
       G: 
         - gb/U
@@ -68,20 +68,20 @@ dynamic_collections:
         - gb/14+
         - gb/15
         - TV-14
-      # NR:
-      #   - Approved
-      #   - N/A
-      #   - NOT RATED
-      #   - Not Rated
-      #   - "gb/NR"
-      #   - Unrated
-      #   - gb/Not Rated
-      #   - gb/Rejected
-      #   - gb/Unrated
-      #   - None
-      # NC-17:
-      #   - gb/R18
-      #   - gb/X
-      #   - R18
-      #   - X
+      NR:
+        - Approved
+        - N/A
+        - NOT RATED
+        - Not Rated
+        - "gb/NR"
+        - Unrated
+        - gb/Not Rated
+        - gb/Rejected
+        - gb/Unrated
+        - None
+      NC-17:
+        - gb/R18
+        - gb/X
+        - R18
+        - X
 
