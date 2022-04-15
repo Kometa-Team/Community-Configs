@@ -152,7 +152,7 @@ collections:
   Rent:
     template: {name: collection}
     tmdb_list_details: 7072241
-  "Star Wars: Legends":
+  Star Wars:
     template: {name: collection}
     tmdb_movie: 348350, 330459
     summary: "Star Wars Anthology Films and other Star Wars Movies"
@@ -213,9 +213,6 @@ collections:
   Marvel Cinematic Universe:
     template: {name: collection, url: "Marvel Cinematic Universe" }
     imdb_list: https://www.imdb.com/list/ls091745515
-  Star Wars:
-    template: {name: collection, url: "Star Wars" }
-    tmdb_collection_details: 10
   The Hunger Games:
     template: {name: collection, url: "The Hunger Games" }
     tmdb_collection_details: 131635
