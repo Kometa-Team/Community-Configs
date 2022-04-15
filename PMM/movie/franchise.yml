@@ -25,6 +25,11 @@ dynamic_collections:
     type: tmdb_collection
     remove_suffix: "Collection"
     template: collection
+<<<<<<< HEAD
+=======
+    title_override:
+      10: Star Wars Universe
+>>>>>>> 91dda2dcc7771122f915f320fb66c8d89990cff7
     addons:
       8091:       # Alien
         - 135416    # Prometheus
