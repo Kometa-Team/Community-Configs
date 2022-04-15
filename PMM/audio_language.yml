@@ -72,9 +72,9 @@ dynamic_collections:
       - km     # Central Khmer
       - ch     # Chamorro
       - ce     # Chechen
-      - ny     # Chichewa, Chewa, Nyanja
+      - ny     # Chichewa, Chewa, Nyanja 
       - zh     # Chinese
-      - cu     # Church Slavic, Old Slavonic, Church Slavonic, Old Bulgarian, Old Church Slavonic
+      - cu     # ChurchÂ Slavic, Old Slavonic, Church Slavonic, Old Bulgarian,Â OldÂ ChurchÂ Slavonic
       - cv     # Chuvash
       - kw     # Cornish
       - co     # Corsican
@@ -83,7 +83,7 @@ dynamic_collections:
       - cs     # Czech
       - da     # Danish
       - dv     # Divehi, Dhivehi, Maldivian
-      - nl     # Dutch, Flemish
+      - nl     # Dutch,Â Flemish
       - dz     # Dzongkha
       - en     # English
       - eo     # Esperanto
@@ -99,7 +99,7 @@ dynamic_collections:
       - lg     # Ganda
       - ka     # Georgian
       - de     # German
-      - el     # Greek, Modern (1453–)
+      - el     # Greek, Modern (1453â€“)
       - gn     # Guarani
       - gu     # Gujarati
       - ht     # Haitian, Haitian Creole
@@ -113,7 +113,7 @@ dynamic_collections:
       - io     # Ido
       - ig     # Igbo
       - id     # Indonesian
-      - ia     # Interlingua (International Auxiliary Language Association)
+      - ia     # InterlinguaÂ (International Auxiliary Language Association)
       - ie     # Interlingue, Occidental
       - iu     # Inuktitut
       - ik     # Inupiaq
@@ -159,7 +159,7 @@ dynamic_collections:
       - nd     # North Ndebele
       - se     # Northern Sami
       - no     # Norwegian
-      - nb     # Norwegian Bokmål
+      - nb     # Norwegian BokmÃ¥l
       - nn     # Norwegian Nynorsk
       - oc     # Occitan
       - oj     # Ojibwa
@@ -173,7 +173,7 @@ dynamic_collections:
       - pt     # Portuguese
       - pa     # Punjabi, Panjabi
       - qu     # Quechua
-      - ro     # Romanian, Moldavian, Moldovan
+      - ro     # Romanian,Â Moldavian, Moldovan
       - rm     # Romansh
       - rn     # Rundi
       - ru     # Russian
@@ -205,7 +205,7 @@ dynamic_collections:
       - th     # Thai
       - bo     # Tibetan
       - ti     # Tigrinya
-      - to     # Tonga (Tonga Islands)
+      - to     # TongaÂ (Tonga Islands)
       - ts     # Tsonga
       - tn     # Tswana
       - tr     # Turkish
@@ -217,7 +217,7 @@ dynamic_collections:
       - uz     # Uzbek
       - ve     # Venda
       - vi     # Vietnamese
-      - vo     # Volapük
+      - vo     # VolapÃ¼k
       - wa     # Walloon
       - cy     # Welsh
       - fy     # Western Frisian
@@ -227,3 +227,4 @@ dynamic_collections:
       - yo     # Yoruba
       - za     # Zhuang, Chuang
       - zu     # Zulu
+
