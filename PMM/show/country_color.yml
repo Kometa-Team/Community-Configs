@@ -43,9 +43,6 @@ dynamic_collections:
       - other_collection
       - country_color_tv_dynamic
       - shared
-    exclude:
-      - uk            # Excluded by default due to high volume
-      - us            # Excluded by default due to high volume
     include:
       - au
       - br
@@ -92,5 +89,7 @@ dynamic_collections:
       - ua
       - ae
       - vn
+      - us
+      - gb
     key_name_override:
       kr: Korea

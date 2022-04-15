@@ -1,10 +1,10 @@
 ######################################################
-#          US Streaming Service Collections          #
+#             Streaming Service Collections          #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
 #  Call this from your config.yml (Show only):       #
 #     metadata_path:                                 #
-#       - git: PMM/show/streaming_us                 #
+#       - git: PMM/show/streaming                    #
 #         template_variables:                        #
 #           schedule_all_4: never                    #
 #           schedule_apple_tv: never                 #

@@ -44,9 +44,6 @@ dynamic_collections:
       - other_collection
       - country_white_dynamic
       - shared
-    exclude:
-      - United Kingdom            # Excluded by default due to high volume
-      - United States of America  # Excluded by default due to high volume
     include:
       - Australia
       - Brazil
@@ -92,6 +89,8 @@ dynamic_collections:
       - Turkey
       - Ukraine
       - United Arab Emirates
+      - United Kingdom
+      - United States of America
       - Vietnam
     addons:
       Korea:
