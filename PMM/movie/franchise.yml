@@ -25,8 +25,6 @@ dynamic_collections:
     type: tmdb_collection
     remove_suffix: "Collection"
     template: collection
-    title_override:
-      10: Star Wars Universe
     addons:
       8091:       # Alien
         - 135416    # Prometheus
@@ -38,6 +36,7 @@ dynamic_collections:
         - 557495    # LEGO DC Super Hero Girls
       86066:      # Despicable Me
         - 544669    # Minions
+        - 438148    #Minions The Rise of Gru
       9485:       # The Fast and the Furious
         - 688042    # Hobbs & Shaw
       86115:      # Garfield
@@ -63,7 +62,7 @@ dynamic_collections:
         176097: 14177     # Barbershop: Beauty Shop
         448150: 567604    # Deadpool: Once Upon a Deadpool
         9735: 6466, 222724  # Friday the 13th: Freddy vs. Jason, Crystal Lake Memories: The Complete History of Friday the 13th
-        386382: 326359, 460793  # Frozen: Frozen Fever, Olaf's Frozen Adventure
+        386382: 326359, 460793 # Frozen: Frozen Fever, Olaf's Frozen Adventure
         2980: 43074 # Ghostbusters: Ghostbusters
         374509: 18983 # Godzilla (Showa): Godzilla, King of the Monsters!
         374511: 39256 # Godzilla (Heisei): Godzilla 1985
@@ -75,14 +74,14 @@ dynamic_collections:
         8580: 38575 # The Karate Kid: The Karate Kid
         14740: 161143, 25472, 270946  # Madagascar: Madly Madagascar, Merry Madagascar, Penguins of Madagascar
         9818: 664767  # Mortal Kombat: Mortal Kombat Legends: Scorpion's Revenge
-        171732: 39410 # Rebirth of Mothra: Mothra
+        39410: 39410 # Mothra: Rebirth of Mothra
         8581: 6466, 23437 # A Nightmare on Elm Street: Freddy vs. Jason, A Nightmare on Elm Street
         627517: 13155, 68728  # Oz: Return to Oz, Oz the Great and Powerful
         10789: 157433 # Pet Sematary: Pet Sematary
         708816: 305470, 306264  # Power Rangers: Power Rangers, Power Rangers Super Megaforce: The Legendary Battle
         190435: 687354, 11667 # Street Fighter (Animated): Street Fighter Assassin's Fist, Street Fighter
         1582: 1273  # Teenage Mutant Ninja Turtles: TMNT
-        10194: 130925 # Toy Story: Partysaurus Rex
+        10194: 130925, 256835, 213121, 77887, 594530, 82424 # Toy Story: Partysaurus Rex, Toy Story That Time Forgot, Toy Story of Terror, Hawaiian Vacation, Lamp Life, Small Fry
         63043: 73362  # TRON: TRON: The Next Day
         748: 567604 # X-Men: Once Upon a Deadpool
       name_mapping:
@@ -114,25 +113,9 @@ collections:
     template: {name: collection}
     imdb_list: https://www.imdb.com/list/ls022264056/
     summary: A collection of films based off or closely associated with the Final Fantasy video games.
-  George Carlin Stand Up:
-    template: {name: collection}
-    imdb_list: https://www.imdb.com/list/ls070221411/
-    summary: Collection of George Carlin's Stand Up Comedy HBO Specials
-  George Lopez Stand Up:
-    template: {name: collection}
-    imdb_list: https://www.imdb.com/list/ls086584751/
-    summary: Collection of George Lopez's Stand Up Comedy Specials
   Halo:
     template: {name: collection}
     tmdb_list_details: 7070832
-  Jeff Dunham Stand Up:
-    template: {name: collection}
-    imdb_list: https://www.imdb.com/list/ls086022668/
-    summary: Collection of Jeff Dunham's Stand Up Comedy Specials
-  Kevin Hart Stand Up:
-    template: {name: collection}
-    imdb_list: https://www.imdb.com/list/ls049792208/
-    summary: Collection of Kevin Hart's Stand Up Comedy Specials
   The Man with No Name:
     template: {name: collection}
     imdb_list: https://www.imdb.com/list/ls023916334/
@@ -147,12 +130,19 @@ collections:
     summary: Monty Python is a British surreal comedy troupe who created sketch comedy television shows and movies
   Pokémon:
     template: {name: collection}
-    imdb_list: https://www.imdb.com/list/ls062687939/
+    smart_filter:
+      all:
+        title: Pokémon
+      sort_by: release.asc
     summary: Pokémon is a media franchise created by video game designer Satoshi Tajiri that centers on fictional creatures called Pokémon. As of 2020, there have been 23 animated films and one live action film. The first nineteen animated films are based on the anime television series of the same name, with the original film being remade into the 22nd. The 20th, 21st and 23rd animated films are set in an alternate continuity to the anime.
-  Rent:
+  Scooby-Doo!:
     template: {name: collection}
-    tmdb_list_details: 7072241
-  Star Wars:
+    smart_filter:
+      all:
+        title: Scooby-Doo
+      sort_by: release.asc
+    summary: Brainiac Velma, jock Fred, fashionista Daphne, hippie Shaggy, and Shaggy's highstrung, talking Great Dane, Scooby-Doo, climb into their green van, the Mystery Machine, and hit the road in search of weird phenomena to solve. And even when Scooby and the gang aren't actively searching for them, mysteries just have a way of falling into their laps. Ruh-roh!
+  "Star Wars Legends":
     template: {name: collection}
     tmdb_movie: 348350, 330459
     summary: "Star Wars Anthology Films and other Star Wars Movies"
@@ -170,55 +160,17 @@ collections:
     template: {name: collection}
     imdb_list: https://www.imdb.com/list/ls022101006/
     summary: The Unbreakable trilogy, officially known as the Eastrail 177 Trilogy, is an American superhero thriller and psychological horror film series. The films were written, produced, and directed by M. Night Shyamalan. The trilogy consists of Unbreakable (2000), Split (2016), and Glass (2019).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   DC Universe:
     template: { name: collection, url: "DC Universe" }
     tmdb_list: https://www.themoviedb.org/list/6468
     summary: The DC Universe (DCU) is the fictional shared universe where most stories in American comic book titles published by DC Comics take place. DC superheroes such as Superman, Batman, Wonder Woman, Martian Manhunter, The Flash, Green Lantern and Aquaman are from this universe, as well as teams such as the Justice League and the Teen Titans.
-  Fast & Furious:
-    template: {name: collection, url: "Fast & Furious" }
-    tmdb_collection_details: 9485
   In Association with Marvel:
     template: {name: collection, url: "In Association with Marvel" }
     imdb_list: https://www.imdb.com/list/ls538850776/
     summary: Movies based on Marvel Comics properties, or not directly part of the Marvel Cinematic Universe
-  James Bond 007:
-    template: {name: collection, url: "James Bond 007" }
-    tmdb_collection_details: 645
-  Jurassic Park:
-    template: {name: collection, url: "Jurassic Park" }
-    tmdb_collection_details: 328
-  Lord of the Rings:
-    template: {name: collection, url: "Lord of the Rings" }
-    imdb_list: https://www.imdb.com/list/ls083718341/
-    summary: A collection of Films based on J.R.R Tolkien Novels.
   Marvel Cinematic Universe:
     template: {name: collection, url: "Marvel Cinematic Universe" }
     imdb_list: https://www.imdb.com/list/ls091745515
-  The Hunger Games:
-    template: {name: collection, url: "The Hunger Games" }
-    tmdb_collection_details: 131635
   Wizarding World:
     template: {name: collection, url: "Wizarding World" }
     tmdb_list: https://www.themoviedb.org/list/63607
-  X-Men:
-    template: {name: collection, url: "X-Men" }
-    tmdb_collection_details: 748
