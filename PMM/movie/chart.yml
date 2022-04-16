@@ -28,9 +28,8 @@ collections:
     smart_filter:
       all:
         genre.not: Horror
-        release.after: 01/07/2021
-        any:
-          country: United Kingdom, United States of America, Canada
+        release.after: 01/01/2022
+        audio_language: English
       sort_by: release.desc
   TMDb Trending Movies:
     template: {name: chartandrelease, url: "TMDb Trending Movies"}
