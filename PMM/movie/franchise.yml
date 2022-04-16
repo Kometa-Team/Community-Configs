@@ -152,7 +152,7 @@ collections:
   Rent:
     template: {name: collection}
     tmdb_list_details: 7072241
-  Star Wars:
+  "Star Wars: Legends":
     template: {name: collection}
     tmdb_movie: 348350, 330459
     summary: "Star Wars Anthology Films and other Star Wars Movies"
@@ -208,17 +208,19 @@ collections:
     tmdb_collection_details: 328
   Lord of the Rings:
     template: {name: collection, url: "Lord of the Rings" }
-    imdb_list: https://www.imdb.com/list/ls083718341/
-    summary: A collection of Films based on J.R.R Tolkien Novels.
+    tmdb_collection_details: 119  
   Marvel Cinematic Universe:
     template: {name: collection, url: "Marvel Cinematic Universe" }
     imdb_list: https://www.imdb.com/list/ls091745515
+  Star Wars:
+    template: {name: collection, url: "Star Wars" }
+    tmdb_collection_details: 10  
   The Hunger Games:
     template: {name: collection, url: "The Hunger Games" }
     tmdb_collection_details: 131635
   Wizarding World:
     template: {name: collection, url: "Wizarding World" }
-    tmdb_list: https://www.themoviedb.org/list/63607
+    tmdb_collection_details: 1241, 435259
   X-Men:
     template: {name: collection, url: "X-Men" }
     tmdb_collection_details: 748
