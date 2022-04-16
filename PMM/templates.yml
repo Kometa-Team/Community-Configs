@@ -49,6 +49,12 @@ templates:
     smart_label: audience_rating.desc
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<image>>.jpg
 
+  chart:
+    cache_builders: 1
+    sync_mode: sync
+    limit: 250
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<image_encoded>>.jpg
+
   streaming:
     cache_builders: 1
     smart_label: release.desc

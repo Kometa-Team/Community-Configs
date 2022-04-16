@@ -5,23 +5,22 @@
 #  Call this from your config.yml (Movie only):      #
 #     metadata_path:                                 #
 #       - git: PMM/movie/chart                       #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: 01                   #
 ######################################################
 
-templates:
-  chartandrelease:
-    cache_builders: 1
-    collection_mode: hide
-    sort_title: +01_<<collection_name>>
-    sync_mode: sync
-    limit: 250
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<url_encoded>>.jpg
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
 
 collections:
-  Movie Chart Collections:
-    blank_collection: true
-    collection_mode: hide
-    sort_title: +01_+Movie Chart Collections
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/movie_chart.jpg
+  TV Chart Collections:
+    template:
+      - name: separator
+        separator: movie_chart
   Newly Released Movies:
     template: {name: chartandrelease, url: "Newly Released Movies"}
     summary: A collection of newly-released movies in cinema and on streaming services
