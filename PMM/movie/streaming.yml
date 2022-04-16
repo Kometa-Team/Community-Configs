@@ -39,7 +39,7 @@ collections:
       - name: streaming
         image: All 4
       - name: shared
-    mdblist_list: https://mdblist.com/lists/yozoraxcii/all-4-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/all-4-movies
 
   Apple TV+:
     template:
@@ -47,7 +47,7 @@ collections:
       - name: streaming
         image: Apple TV+
       - name: shared
-    mdblist_list: https://mdblist.com/lists/yozoraxcii/appletv-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/appletv-movies
 
   BET+:
     template:
@@ -55,7 +55,7 @@ collections:
       - name: streaming
         image: BET+
       - name: shared
-    mdblist_list: https://mdblist.com/lists/yozoraxcii/bet-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/bet-movies
 
   BritBox:
     template:
@@ -63,7 +63,7 @@ collections:
       - name: streaming
         image: BritBox
       - name: shared
-    mdblist_list: https://mdblist.com/lists/yozoraxcii/britbox-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/britbox-movies
 
   Disney+:
     template:
@@ -71,7 +71,7 @@ collections:
       - name: streaming
         image: Disney+
       - name: shared
-    mdblist_list: https://mdblist.com/lists/ryalism/disney-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/disney-movies
 
   HBO Max:
     template:
@@ -79,7 +79,7 @@ collections:
       - name: streaming
         image: HBO Max
       - name: shared
-    mdblist_list: https://mdblist.com/lists/ryalism/hbo-max-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/hbo-max-movies
 
   Hulu:
     template:
@@ -87,7 +87,7 @@ collections:
       - name: streaming
         image: Hulu
       - name: shared
-    mdblist_list: https://mdblist.com/lists/ryalism/hulu-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/hulu-movies
 
   Netflix:
     template:
@@ -95,7 +95,7 @@ collections:
       - name: streaming
         image: Netflix
       - name: shared
-    mdblist_list: https://mdblist.com/lists/ryalism/netflix-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/netflix-movies
 
   NOW:
     template:
@@ -103,7 +103,7 @@ collections:
       - name: streaming
         image: NOW
       - name: shared
-    mdblist_list: https://mdblist.com/lists/yozoraxcii/now-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/now-movies
 
   Paramount+:
     template:
@@ -111,7 +111,7 @@ collections:
       - name: streaming
         image: Paramount+
       - name: shared
-    mdblist_list: https://mdblist.com/lists/yozoraxcii/paramount-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/paramount-movies
 
   Peacock:
     template:
@@ -119,7 +119,7 @@ collections:
       - name: streaming
         image: Peacock
       - name: shared
-    mdblist_list: https://mdblist.com/lists/yozoraxcii/peacock-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/peacock-movies
 
   Prime Video:
     template:
@@ -127,4 +127,4 @@ collections:
       - name: streaming
         image: Prime Video
       - name: shared
-    mdblist_list: https://mdblist.com/lists/ryalism/amazon-movies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/amazon-prime-video-movies
