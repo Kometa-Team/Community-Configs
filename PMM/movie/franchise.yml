@@ -9,6 +9,7 @@
 
 templates:
   collection:
+  sort_title: +01_~<<collection_name>>
     optional:
       - collection
       - movie
