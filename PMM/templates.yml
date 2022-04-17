@@ -49,6 +49,62 @@ templates:
     smart_label: audience_rating.desc
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<image>>.jpg
 
+  chart:
+    cache_builders: 1
+    sync_mode: sync
+    limit: 250
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<image_encoded>>.jpg
+
+  chart_show:
+    sync_mode: sync
+    limit: 250
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<image_encoded>>.jpg
+
+  Newly_Released_Movies:
+    optional:
+      - schedule_Newly_Released_Movies
+    schedule: <<schedule_Newly_Released_Movies>>
+
+  TMDb_Trending_Movies:
+    optional:
+      - schedule_TMDb_Trending_Movies
+    schedule: <<schedule_TMDb_Trending_Movies>>
+
+  TMDb_Popular_Movies:
+    optional:
+      - schedule_TMDb_Popular_Movies
+    schedule: <<schedule_TMDb_Popular_Movies>>
+
+  TMDb_Now_Playing_Movies:
+    optional:
+      - schedule_TMDb_Now_Playing_Movies
+    schedule: <<schedule_TMDb_Now_Playing_Movies>>
+
+  IMDb_Top_250_Movies:
+    optional:
+      - schedule_IMDb_Top_250_Movies
+    schedule: <<schedule_IMDb_Top_250_Movies>>
+
+  Newly_Released_Shows:
+    optional:
+      - schedule_Newly_Released_Shows
+    schedule: <<schedule_Newly_Released_Shows>>
+
+  New_Episodes:
+    optional:
+      - schedule_New_Episodes
+    schedule: <<schedule_New_Episodes>>
+
+  TMDb_Trending_Shows:
+    optional:
+      - schedule_TMDb_Trending_Shows
+    schedule: <<schedule_TMDb_Trending_Shows>>
+
+  TMDb_Popular_Shows:
+    optional:
+      - schedule_TMDb_Popular_Shows
+    schedule: <<schedule_TMDb_Popular_Shows>>
+
   streaming:
     cache_builders: 1
     smart_label: release.desc
