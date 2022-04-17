@@ -13,7 +13,6 @@
 
 external_templates:
   git: PMM/templates
-  # file: config/metadata/templates.yml
   template_variables:
     collection_section: "01"
 
