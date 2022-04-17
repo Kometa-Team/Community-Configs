@@ -5,48 +5,66 @@
 #  Call this from your config.yml (Show only):       #
 #     metadata_path:                                 #
 #       - git: PMM/show/chart                        #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: 01                   #
 ######################################################
 
-templates:
-  chartandrelease:
-    cache_builders: 1
-    collection_mode: hide
-    sort_title: +01_<<collection_name>>
-    sync_mode: sync
-    limit: 250
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<url_encoded>>.jpg
+external_templates:
+  git: PMM/templates
+  # file: config/metadata/templates.yml
+  template_variables:
+    collection_section: "01"
 
 collections:
   TV Chart Collections:
-    blank_collection: true
-    collection_mode: hide
-    sort_title: +01_+TV Chart Collections
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/tv_chart.jpg
+    template:
+      - name: separator
+        separator: tv_chart
+
   Newly Released Shows:
-    template: {name: chartandrelease, url: "Newly Released Shows"}
+    template:
+      - name: Newly_Released_Shows
+      - name: chart_show
+        image: Newly Released Shows
+      - name: shared
     summary: A collection of newly-released shows on TV and on streaming services
     smart_filter:
       all:
         year.gte: 2021
       sort_by: release.desc
       limit: 100
+
   New Episodes:
-    template: {name: chartandrelease, url: "New Episodes"}
+    template:
+      - name: New_Episodes
+      - name: chart_show
+        image: New Episodes
+      - name: shared
     summary: A collection of new episodes ready for watching!
     smart_filter:
       all:
         episode_air_date: 30
       sort_by: episode_added.desc
       limit: 100
+
   TMDb Trending Shows:
-    template: {name: chartandrelease, url: "TMDb Trending Shows"}
+    template:
+      - name: TMDb_Trending_Shows
+      - name: chart_show
+        image: TMDb Trending Shows
+      - name: shared
     tmdb_trending_weekly: 250
     smart_label: random
-    sync_mode: sync
     summary: A collection of shows trending on TMDb
+
   TMDb Popular Shows:
-    template: {name: chartandrelease, url: "TMDb Popular Shows"}
+    template:
+      - name: TMDb_Popular_Shows
+      - name: chart_show
+        image: TMDb Popular Shows
+      - name: shared
     tmdb_popular: 250
     summary: A collection of the most watched shows according to TMDb.
     smart_label: random
-    sync_mode: sync

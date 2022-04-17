@@ -13,16 +13,22 @@
 
 external_templates:
   git: PMM/templates
+  # file: config/metadata/templates.yml
   template_variables:
     collection_section: "01"
 
 collections:
-  TV Chart Collections:
+  Movie Chart Collections:
     template:
       - name: separator
         separator: movie_chart
+
   Newly Released Movies:
-    template: {name: chartandrelease, url: "Newly Released Movies"}
+    template:
+      - name: Newly_Released_Movies
+      - name: chart
+        image: Newly Released Movies
+      - name: shared
     summary: A collection of newly-released movies in cinema and on streaming services
     smart_filter:
       all:
@@ -30,25 +36,42 @@ collections:
         release.after: 01/01/2022
         audio_language: English
       sort_by: release.desc
+
   TMDb Trending Movies:
-    template: {name: chartandrelease, url: "TMDb Trending Movies"}
+    template:
+      - name: TMDb_Trending_Movies
+      - name: chart
+        image: TMDb Trending Movies
+      - name: shared
     tmdb_trending_weekly: 250
     summary: A collection of movies trending on TMDb
-    sync_mode: sync
+
   TMDb Popular Movies:
-    template: {name: chartandrelease, url: "TMDb Popular Movies"}
+    template:
+      - name: TMDb_Popular_Movies
+      - name: chart
+        image: TMDb Popular Movies
+      - name: shared
     tmdb_popular: 250
     summary: A collection of the most watched movies according to TMDb.
     smart_label: random
+
   TMDb Now Playing Movies:
-    template: {name: chartandrelease, url: "TMDb Now Playing Movies"}
+    template:
+      - name: TMDb_Now_Playing_Movies
+      - name: chart
+        image: TMDb Now Playing Movies
+      - name: shared
     tmdb_now_playing: 250
     summary: A collection of movies that people are currently watching.
     smart_label: random
+
   IMDb Top 250 Movies:
-    sort_title: +01_z<<collection_name>>
-    template: {name: chartandrelease, url: "IMDb Top 250 Movies"}
+    # sort_title: !01_~<<collection_name>>
+    template:
+      - name: IMDb_Top_250_Movies
+      - name: chart
+        image: IMDb Top 250 Movies
+      - name: shared
     imdb_chart: top_movies
-    collection_mode: hide
     collection_order: custom
-    sync_mode: sync
