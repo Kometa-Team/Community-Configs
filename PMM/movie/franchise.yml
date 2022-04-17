@@ -99,66 +99,66 @@ dynamic_collections:
 
 collections:
   Charlie Brown:
-    template: {name: collection}
+    template: {name: collection, url: "Charlie Brown" }
     imdb_list: https://www.imdb.com/list/ls054850259/
     summary: Collection of Movies and TV Specials with the beloved Peanuts characters.
   Cloverfield:
-    template: {name: collection}
+    template: {name: collection, url: "Cloverfield" }
     imdb_list: https://www.imdb.com/list/ls021933730/
     summary: Cloverfield is an American science fiction anthology film series and media franchise created and produced by J. J. Abrams consisting of three films, viral marketing websites linking the films together, and a tie-in manga to the first film titled Cloverfield/Kishin (2008), all set in a shared fictional universe referred to as the "Cloververse". The franchise as a whole deals with creatures from other dimensions attacking Earth throughout various decades, all as a repercussion of an experiment by an astronaut team aboard the Cloverfield Station in outer-space. Each film depicts the reality-altering effects of their study, which was meant to find a new energy source replacing the planet's depleted resources, only to open portals for assault from various beasts from deep space.
   Cornetto Trilogy:
-    template: {name: collection}
+    template: {name: collection, url: "Cornetto Trilogy" }
     imdb_list: https://www.imdb.com/list/ls068623110/
     summary: An anthology series of British comedic genre films directed by Edgar Wright, written by Wright and Simon Pegg, produced by Nira Park, and starring Pegg and Nick Frost. The trilogy consists of Shaun of the Dead (2004), Hot Fuzz (2007), and The World's End (2013).
   Final Fantasy:
-    template: {name: collection}
+    template: {name: collection, url: "Final Fantasy" }
     imdb_list: https://www.imdb.com/list/ls022264056/
     summary: A collection of films based off or closely associated with the Final Fantasy video games.
   Halo:
-    template: {name: collection}
+    template: {name: collection, url: "Halo" }
     tmdb_list_details: 7070832
   The Man with No Name:
-    template: {name: collection}
+    template: {name: collection, url: "The Man with No Name" }
     imdb_list: https://www.imdb.com/list/ls023916334/
     summary: An Italian film series consisting of three Spaghetti Western films directed by Sergio Leone. The films are titled A Fistful of Dollars (1964), For a Few Dollars More (1965) and The Good, the Bad and the Ugly (1966). The series has become known for establishing the Spaghetti Western genre, and inspiring the creation of many more Spaghetti Western films. The three films are consistently listed among the best rated Western films in history.
   Marx Brothers:
-    template: {name: collection}
+    template: {name: collection, url: "Marx Brothers" }
     imdb_list: https://www.imdb.com/list/ls068486735/
     summary: The Marx Brothers were an American family comedy act that was successful in vaudeville, on Broadway, and in motion pictures from 1905 to 1949. Five of the Marx Brothers' thirteen feature films were selected by the American Film Institute (AFI) as among the top 100 comedy films, with two of them, Duck Soup (1933) and A Night at the Opera (1935), in the top fifteen. They are widely considered by critics, scholars, and fans to be among the greatest and most influential comedians of the 20th century.
   Monty Python:
-    template: {name: collection}
+    template: {name: collection, url: "Mony Python" }
     imdb_list: https://www.imdb.com/list/ls072012494/
     summary: Monty Python is a British surreal comedy troupe who created sketch comedy television shows and movies
   Pokémon:
-    template: {name: collection}
+    template: {name: collection, url: "Pokémon" }
     smart_filter:
       all:
         title: Pokémon
       sort_by: release.asc
     summary: Pokémon is a media franchise created by video game designer Satoshi Tajiri that centers on fictional creatures called Pokémon. As of 2020, there have been 23 animated films and one live action film. The first nineteen animated films are based on the anime television series of the same name, with the original film being remade into the 22nd. The 20th, 21st and 23rd animated films are set in an alternate continuity to the anime.
   Scooby-Doo!:
-    template: {name: collection}
+    template: {name: collection, url: "Scooby-Doo" }
     smart_filter:
       all:
         title: Scooby-Doo
       sort_by: release.asc
     summary: Brainiac Velma, jock Fred, fashionista Daphne, hippie Shaggy, and Shaggy's highstrung, talking Great Dane, Scooby-Doo, climb into their green van, the Mystery Machine, and hit the road in search of weird phenomena to solve. And even when Scooby and the gang aren't actively searching for them, mysteries just have a way of falling into their laps. Ruh-roh!
   "Star Wars Legends":
-    template: {name: collection}
+    template: {name: collection, url: "Star Wars Legends" }
     tmdb_movie: 348350, 330459
     summary: "Star Wars Anthology Films and other Star Wars Movies"
     name_mapping: Star Wars Legends
   The Three Stooges:
-    template: {name: collection}
+    template: {name: collection, url: "The Three Stooges" }
     imdb_list: https://www.imdb.com/list/ls075972675/
     tmdb_movie: 76489
     summary: The Three Stooges were an American vaudeville and comedy team active from 1922 until 1970, best known for their 190 short subject films by Columbia Pictures that have been regularly airing on television since 1958.
   Tom and Jerry:
-    template: {name: collection}
+    template: {name: collection, url: "Tom and Jerry" }
     imdb_list: https://www.imdb.com/list/ls022966050/
     summary: Tom and Jerry's animated feature-length films based on the series.
   Unbreakable:
-    template: {name: collection}
+    template: {name: collection, url: "Unbreakable" }
     imdb_list: https://www.imdb.com/list/ls022101006/
     summary: The Unbreakable trilogy, officially known as the Eastrail 177 Trilogy, is an American superhero thriller and psychological horror film series. The films were written, produced, and directed by M. Night Shyamalan. The trilogy consists of Unbreakable (2000), Split (2016), and Glass (2019).
   DC Universe:
