@@ -134,14 +134,14 @@ collections:
     smart_filter:
       all:
         title: Pokémon
-      sort_by: release.asc
+      # sort_by: release.asc
     summary: Pokémon is a media franchise created by video game designer Satoshi Tajiri that centers on fictional creatures called Pokémon. As of 2020, there have been 23 animated films and one live action film. The first nineteen animated films are based on the anime television series of the same name, with the original film being remade into the 22nd. The 20th, 21st and 23rd animated films are set in an alternate continuity to the anime.
   Scooby-Doo!:
     template: {name: collection, url: "Scooby-Doo" }
     smart_filter:
       all:
         title: Scooby-Doo
-      sort_by: release.asc
+      # sort_by: release.asc
     summary: Brainiac Velma, jock Fred, fashionista Daphne, hippie Shaggy, and Shaggy's highstrung, talking Great Dane, Scooby-Doo, climb into their green van, the Mystery Machine, and hit the road in search of weird phenomena to solve. And even when Scooby and the gang aren't actively searching for them, mysteries just have a way of falling into their laps. Ruh-roh!
   "Star Wars Legends":
     template: {name: collection, url: "Star Wars Legends" }
