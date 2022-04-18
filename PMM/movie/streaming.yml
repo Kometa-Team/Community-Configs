@@ -18,6 +18,7 @@
 #           schedule_paramount: never                #
 #           schedule_peacock: never                  #
 #           schedule_prime: never                    #
+#           schedule_separator: never                #
 #           collection_mode: hide                    #
 #           collection_section: "02"                 #
 ######################################################
@@ -35,7 +36,7 @@ collections:
 
   All 4:
     template:
-      - name: All4
+      - name: All4 Movies
       - name: streaming
         image: All 4
       - name: shared
@@ -43,7 +44,7 @@ collections:
 
   Apple TV+:
     template:
-      - name: AppleTV
+      - name: AppleTV Movies
       - name: streaming
         image: Apple TV+
       - name: shared
@@ -51,7 +52,7 @@ collections:
 
   BET+:
     template:
-      - name: BET
+      - name: BET Movies
       - name: streaming
         image: BET+
       - name: shared
@@ -59,7 +60,7 @@ collections:
 
   BritBox:
     template:
-      - name: BritBox
+      - name: BritBox Movies
       - name: streaming
         image: BritBox
       - name: shared
@@ -67,7 +68,7 @@ collections:
 
   Disney+:
     template:
-      - name: Disney
+      - name: Disney Movies
       - name: streaming
         image: Disney+
       - name: shared
@@ -75,7 +76,7 @@ collections:
 
   HBO Max:
     template:
-      - name: HBOMax
+      - name: HBOMax Movies
       - name: streaming
         image: HBO Max
       - name: shared
@@ -83,7 +84,7 @@ collections:
 
   Hulu:
     template:
-      - name: Hulu
+      - name: Hulu Movies
       - name: streaming
         image: Hulu
       - name: shared
@@ -91,7 +92,7 @@ collections:
 
   Netflix:
     template:
-      - name: Netflix
+      - name: Netflix Movies
       - name: streaming
         image: Netflix
       - name: shared
@@ -99,7 +100,7 @@ collections:
 
   NOW:
     template:
-      - name: NOW
+      - name: NOW Movies
       - name: streaming
         image: NOW
       - name: shared
@@ -107,7 +108,7 @@ collections:
 
   Paramount+:
     template:
-      - name: Paramount
+      - name: Paramount Movies
       - name: streaming
         image: Paramount+
       - name: shared
@@ -115,7 +116,7 @@ collections:
 
   Peacock:
     template:
-      - name: Peacock
+      - name: Peacock Movies
       - name: streaming
         image: Peacock
       - name: shared
@@ -123,7 +124,7 @@ collections:
 
   Prime Video:
     template:
-      - name: Prime
+      - name: Prime Movies
       - name: streaming
         image: Prime Video
       - name: shared
