@@ -41,6 +41,21 @@ templates:
       - schedule_year_collections
     schedule: <<schedule_year_collections>>
 
+  visible:
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  visible_libraryonly:
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  visible_pinnedonly:
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+
   award:
     optional:
       - image
