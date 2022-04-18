@@ -18,7 +18,7 @@ templates:
     name_mapping: <<name_mapping>>
     sync_mode: sync
     collection_order: release
-    sort_title: +01_~<<collection_name>>
+    sort_title: !01_~<<collection_name>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<url_encoded>>.jpg
 
 dynamic_collections:
