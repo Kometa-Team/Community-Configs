@@ -6,6 +6,6 @@ Movie Charts Preview: <br>
 ![Movies](Movies.png)
 <br>
 TV Shows Genres Preview: <br>
-![TV Shows](TV.png)<br>
+![Series](Series.png)<br>
 
 
