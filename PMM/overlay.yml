@@ -41,7 +41,7 @@ overlays:
     overlay:
       name: 480P
       group: res
-      priority: 10
+      weight: 10
     plex_search:
       validate: true
       all:
@@ -51,7 +51,7 @@ overlays:
     overlay:
       name: 480P-HDR
       group: res
-      priority: 20
+      weight: 20
     plex_search:
       all:
         resolution.regex: '(?i)480|sd'
@@ -61,7 +61,7 @@ overlays:
     overlay:
       name: 480P-DV
       group: res
-      priority: 30
+      weight: 30
     plex_search:
       all:
         resolution.regex: '(?i)480|sd'
@@ -72,7 +72,7 @@ overlays:
     overlay:
       name: 720P
       group: res
-      priority: 40
+      weight: 40
     plex_search:
       validate: true
       all:
@@ -82,7 +82,7 @@ overlays:
     overlay:
       name: 720P-HDR
       group: res
-      priority: 50
+      weight: 50
     plex_search:
       all:
         resolution.regex: '(?i)720|hd'
@@ -92,7 +92,7 @@ overlays:
     overlay:
       name: 720P-DV
       group: res
-      priority: 60
+      weight: 60
     plex_search:
       all:
         resolution.regex: '(?i)720|hd'
@@ -103,7 +103,7 @@ overlays:
     overlay:
       name: 1080P
       group: res
-      priority: 70
+      weight: 70
     plex_search:
       all:
         resolution.regex: '(?i)1080|2k'
@@ -112,7 +112,7 @@ overlays:
     overlay:
       name: 1080P-HDR
       group: res
-      priority: 80
+      weight: 80
     plex_search:
       all:
         resolution.regex: '(?i)1080|2k'
@@ -122,7 +122,7 @@ overlays:
     overlay:
       name: 1080P-DV
       group: res
-      priority: 90
+      weight: 90
     plex_search:
       all:
         resolution.regex: '(?i)1080|2k'
@@ -133,7 +133,7 @@ overlays:
     overlay:
       name: 4K
       group: res
-      priority: 100
+      weight: 100
     plex_search:
       all:
         resolution.regex: '(?i)2160|4k'
@@ -142,7 +142,7 @@ overlays:
     overlay:
       name: 4K-HDR
       group: res
-      priority: 110
+      weight: 110
     plex_search:
       all:
         resolution.regex: '(?i)2160|4k'
@@ -152,7 +152,7 @@ overlays:
     overlay:
       name: 4K-DV
       group: res
-      priority: 120
+      weight: 120
     plex_search:
       all:
         resolution.regex: '(?i)2160|4k'
@@ -167,7 +167,7 @@ overlays:
     overlay:
       name: DVD
       group: quality
-      priority: 10
+      weight: 10
     plex_all: true
     filters:
       filepath.regex: '(?i)\[DVD'
@@ -176,7 +176,7 @@ overlays:
     overlay:
       name: HDTV
       group: quality
-      priority: 20
+      weight: 20
     plex_all: true
     filters:
       filepath.regex: '(?i)HD[ ._-]?TV'
@@ -185,7 +185,7 @@ overlays:
     overlay:
       name: WEB
       group: quality
-      priority: 30
+      weight: 30
     plex_all: true
     filters:
       filepath.regex: '(?i)\[Web[ ._-]?(dl|rip)'
@@ -194,7 +194,7 @@ overlays:
     overlay:
       name: Blu-Ray
       group: quality
-      priority: 40
+      weight: 40
     plex_all: true
     filters:
       filepath.regex: '(?i)\[Blu[ ._-]?ray|\[BD|\[BR|\[HD[ ._-]?DVD'
@@ -203,7 +203,7 @@ overlays:
     overlay:
       name: Remux
       group: quality
-      priority: 50
+      weight: 50
     plex_all: true
     filters:
       filepath.regex: '(?i)\[Remux'
@@ -216,7 +216,7 @@ overlays:
     overlay:
       name: Dolby-Digital
       group: audio
-      priority: 10
+      weight: 10
     plex_all: true
     filters:
       audio_track_title.regex: '(?i)\bDD[^a-z+]|eac3'
@@ -225,7 +225,7 @@ overlays:
     overlay:
       name: DTS
       group: audio
-      priority: 20
+      weight: 20
     plex_all: true
     filters:
       audio_track_title.regex: '(?i)\bDTS(\b|\d)'
@@ -234,7 +234,7 @@ overlays:
     overlay:
       name: DTS-ES
       group: audio
-      priority: 30
+      weight: 30
     plex_all: true
     filters:
       audio_track_title.regex: '(?i)dts[ ._-]?(es|(hd[. ]?)?(hr|hi))'
@@ -243,7 +243,7 @@ overlays:
     overlay:
       name: DTS-HD
       group: audio
-      priority: 40
+      weight: 40
     plex_all: true
     filters:
       audio_track_title.regex: 
@@ -254,7 +254,7 @@ overlays:
     overlay:
       name: Dolby-TrueHD
       group: audio
-      priority: 50
+      weight: 50
     plex_all: true
     filters:
       audio_track_title.regex: '(?i)true[ .-]?hd'
@@ -263,7 +263,7 @@ overlays:
     overlay:
       name: Dolby-Digital-Plus
       group: audio
-      priority: 60
+      weight: 60
     plex_all: true
     filters:
       audio_track_title.regex: '(?i)[^-]DD[P+](?!A)|eac3'
@@ -272,7 +272,7 @@ overlays:
     overlay:
       name: Dolby-Atmos
       group: audio
-      priority: 70
+      weight: 70
     plex_all: true
     filters:
       audio_track_title.regex: '(?i)atmos'
@@ -281,7 +281,7 @@ overlays:
     overlay:
       name: DTS-X
       group: audio
-      priority: 80
+      weight: 80
     plex_all: true
     filters:
       audio_track_title.regex: '(?i)dts[ ._:-]?x(?!\\d)'
@@ -317,7 +317,7 @@ overlays:
   #   overlay:
   #     name: Amazon
   #     group: audio
-  #     priority: 200
+  #     weight: 200
   #   plex_all: true
   #   filters:
   #     filepath.regex: '(?i)\b(amzn|amazon)\b'
@@ -326,7 +326,7 @@ overlays:
   #   overlay:
   #     name: AppleTV
   #     group: audio
-  #     priority: 200
+  #     weight: 200
   #   plex_all: true
   #   filters:
   #     filepath.regex: '(?i)\b(atvp|aptv|Apple TV\+)\b'
@@ -335,7 +335,7 @@ overlays:
   #   overlay:
   #     name: Disney
   #     group: audio
-  #     priority: 200
+  #     weight: 200
   #   plex_all: true
   #   filters:
   #     filepath.regex: '(?i)\b(dsnp|dsny|disney|Disney\+)\b'
@@ -344,7 +344,7 @@ overlays:
   #   overlay:
   #     name: HBO-Max
   #     group: audio
-  #     priority: 200
+  #     weight: 200
   #   plex_all: true
   #   filters:
   #     filepath.regex: '(?i)\b(hmax|hbom|HBO Max)\b'
@@ -353,7 +353,7 @@ overlays:
   #   overlay:
   #     name: Hulu
   #     group: audio
-  #     priority: 200
+  #     weight: 200
   #   plex_all: true
   #   filters:
   #     filepath.regex: '(?i)\b(hulu)\b"'
@@ -362,7 +362,7 @@ overlays:
   #   overlay:
   #     name: Netflix
   #     group: audio
-  #     priority: 200
+  #     weight: 200
   #   plex_all: true
   #   filters:
   #     filepath.regex: '(?i)\b(nf|netflix)\b'
@@ -371,7 +371,7 @@ overlays:
   #   overlay:
   #     name: Peacock
   #     group: audio
-  #     priority: 200
+  #     weight: 200
   #   plex_all: true
   #   filters:
   #     filepath.regex: '(?i)\b(pcok|peacock)\b'
@@ -380,7 +380,7 @@ overlays:
   #   overlay:
   #     name: Paramount
   #     group: audio
-  #     priority: 200
+  #     weight: 200
   #   plex_all: true
   #   filters:
   #     filepath.regex: '(?i)\b(pmtp|Paramount Plus)\b'
@@ -389,7 +389,7 @@ overlays:
   #   overlay:
   #     name: Criterion
   #     group: ribbon
-  #     priority: 10
+  #     weight: 10
   #   plex_all: true
   #   filters:
   #     filepath.regex: 
@@ -400,7 +400,7 @@ overlays:
   #   overlay:
   #     name: IMDB-Top-250
   #     group: ribbon
-  #     priority: 20
+  #     weight: 20
   #   imdb_chart: top_movies
 
   # Direct Play:
