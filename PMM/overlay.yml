@@ -284,7 +284,7 @@ overlays:
       priority: 80
     plex_all: true
     filters:
-      audio_track_title.regex: '(?i)dts[ ._-]?x(?!\\d)'
+      audio_track_title.regex: '(?i)dts[ ._:-]?x(?!\\d)'
 
   Dual Audio:
     overlay:
