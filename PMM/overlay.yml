@@ -1,0 +1,411 @@
+######################################################
+#                  PMM OVERLAYS                      #
+#        Credit to Magic815 for base images          #
+#      refer to https://trash-guides.info/ for       #
+# naming of files that filepath.regex was written    #
+#             for in this config file                #
+#      refer to https://regexr.com/ (and set to      #
+# PCRE (Server) Engine or use https://regex101.com/  #
+#              for more help on regex                #
+######################################################
+
+
+#####################################################################################################################
+#               Test Filenames for regex verification:                                                              #
+# Superbad (2007) [imdb-tt0829482][WEBDL-2160p][AC3 5.1][h265]                                                      #
+# Stand and Deliver (1988) [imdb-tt0094027][WEBRip-1080p][AAC 2.0][x265]                                            #
+# The Incredible Hulk (2008) [imdb-tt0800080][Bluray-2160p][HDR10][DTS-X 7.1][x265]                                 #
+# Star Trek Beyond (2016) [imdb-tt2660888][Bluray-2160p][HDR10][TrueHD Atmos 7.1][x265]                             #
+# The Next Step (2013) - S06E22 - His Girl Summer [HDTV-1080p][AC3 2.0][x265][imdb-tt2374744]                       #
+# The Carbonaro Effect (2014) - S04E05 - Simon Soft [HDTV-720p][AC3 5.1][x265][imdb-tt3559912]                      #
+# Moon Knight (2022) - S01E01 - The Goldfish Problem [WEBDL-2160p][DV][EAC3 Atmos 5.1][x265][imdb-tt10234724]       #
+# Tenet (2020) Imax [imdb-tt6723592][IMAX][Remux-2160p][HDR10][EAC3 5.1][h265]                                      #
+# Star Trek Into Darkness (2013) Imax [imdb-tt1408101][IMAX][Remux-2160p][PQ][AAC 7.1][h265]                        #
+# V for Vendetta (2006) [imdb-tt0434409][Remux-2160p][DV HDR10][AAC 7.1][h265]                                      #
+# The Wolverine (2013) Extended [imdb-tt1430132][Remux-1080p][DTS-HD MA 7.1][x265]                                  #
+# Shreks Thrilling Tales (2012) [imdb-tt2486724][DVD][AC3 5.1][x265]                                                #
+# Frosty Returns (1992) [imdb-tt0106973][DVD][AAC 2.0][x265]                                                        #
+# Harry Potter and the Chamber of Secrets (2002) [imdb-tt0295297][Remux-2160p][PQ][DTS-X 7.1][h265]                 #
+# A Long Way Down (2014) [imdb-tt0458413][Remux-1080p][DTS-HD MA 5.1][h265]                                         #
+# Shrek Forever After (2010) [imdb-tt0892791][Bluray-1080p][DTS-ES 6.1][x265]                                       #
+# Bridget Joness Diary (2001) [imdb-tt0243155][Bluray-1080p][DTS 5.1][x265]                                         #
+# The Mummy (1999) [imdb-tt0120616][BR-DISK][DTS-HD MA 5.1][x265]                                                   #
+#####################################################################################################################
+
+overlays:
+######################################################
+#                    RESOLUTION                      #
+######################################################
+
+  480P:
+    overlay:
+      name: 480P
+      group: res
+      priority: 10
+    plex_search:
+      validate: true
+      all:
+        resolution.regex: '(?i)480|sd'
+
+  480P-HDR:
+    overlay:
+      name: 480P-HDR
+      group: res
+      priority: 20
+    plex_search:
+      all:
+        resolution.regex: '(?i)480|sd'
+        hdr: true
+
+  480P-DV:
+    overlay:
+      name: 480P-DV
+      group: res
+      priority: 30
+    plex_search:
+      all:
+        resolution.regex: '(?i)480|sd'
+    filters:
+      has_dolby_vision: true
+
+  720P:
+    overlay:
+      name: 720P
+      group: res
+      priority: 40
+    plex_search:
+      validate: true
+      all:
+        resolution.regex: '(?i)720|hd'
+
+  720P-HDR:
+    overlay:
+      name: 720P-HDR
+      group: res
+      priority: 50
+    plex_search:
+      all:
+        resolution.regex: '(?i)720|hd'
+        hdr: true
+
+  720P-DV:
+    overlay:
+      name: 720P-DV
+      group: res
+      priority: 60
+    plex_search:
+      all:
+        resolution.regex: '(?i)720|hd'
+    filters:
+      has_dolby_vision: true
+
+  1080P:
+    overlay:
+      name: 1080P
+      group: res
+      priority: 70
+    plex_search:
+      all:
+        resolution.regex: '(?i)1080|2k'
+
+  1080P-HDR:
+    overlay:
+      name: 1080P-HDR
+      group: res
+      priority: 80
+    plex_search:
+      all:
+        resolution.regex: '(?i)1080|2k'
+        hdr: true
+
+  1080P-DV:
+    overlay:
+      name: 1080P-DV
+      group: res
+      priority: 90
+    plex_search:
+      all:
+        resolution.regex: '(?i)1080|2k'
+    filters:
+      has_dolby_vision: true
+
+  4K:
+    overlay:
+      name: 4K
+      group: res
+      priority: 100
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+
+  4K-HDR:
+    overlay:
+      name: 4K-HDR
+      group: res
+      priority: 110
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+        hdr: true
+
+  4K-DV:
+    overlay:
+      name: 4K-DV
+      group: res
+      priority: 120
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+    filters:
+      has_dolby_vision: true
+
+######################################################
+#                      QUALITY                       #
+######################################################
+
+  DVD:
+    overlay:
+      name: DVD
+      group: quality
+      priority: 10
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\[DVD'
+
+  HDTV:
+    overlay:
+      name: HDTV
+      group: quality
+      priority: 20
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)HD[ ._-]?TV'
+
+  WEB:
+    overlay:
+      name: WEB
+      group: quality
+      priority: 30
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\[Web[ ._-]?(dl|rip)'
+
+  Blu-Ray:
+    overlay:
+      name: Blu-Ray
+      group: quality
+      priority: 40
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\[Blu[ ._-]?ray|\[BD|\[BR|\[HD[ ._-]?DVD'
+
+  Remux:
+    overlay:
+      name: Remux
+      group: quality
+      priority: 50
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\[Remux'
+
+######################################################
+#                       AUDIO                        #
+######################################################
+
+  Dolby-Digital:
+    overlay:
+      name: Dolby-Digital
+      group: audio
+      priority: 10
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)\bDD[^a-z+]|eac3'
+
+  DTS:
+    overlay:
+      name: DTS
+      group: audio
+      priority: 20
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)\bDTS(\b|\d)'
+
+  DTS-ES:
+    overlay:
+      name: DTS-ES
+      group: audio
+      priority: 30
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)dts[ ._-]?(es|(hd[. ]?)?(hr|hi))'
+
+  DTS-HD:
+    overlay:
+      name: DTS-HD
+      group: audio
+      priority: 40
+    plex_all: true
+    filters:
+      audio_track_title.regex: 
+        - '(?i)dts[ .-]?(ma\b|hd[ .-]?ma|hd)(?!china|r)'
+        - '(?i)dts[ ._-]?(hd[. ]?)?(hr|hi)'
+
+  Dolby-TrueHD:
+    overlay:
+      name: Dolby-TrueHD
+      group: audio
+      priority: 50
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)true[ .-]?hd'
+
+  Dolby-Digital-Plus:
+    overlay:
+      name: Dolby-Digital-Plus
+      group: audio
+      priority: 60
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)[^-]DD[P+](?!A)|eac3'
+
+  Dolby-Atmos:
+    overlay:
+      name: Dolby-Atmos
+      group: audio
+      priority: 70
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)atmos'
+
+  DTS-X:
+    overlay:
+      name: DTS-X
+      group: audio
+      priority: 80
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)dts[ ._-]?x(?!\\d)'
+
+  Dual Audio:
+    overlay:
+      name: Dual-Audio
+    plex_all: true
+    filters:
+      audio_language.count_gte: 2
+      audio_language.count_lt: 3
+
+  Multi Audio:
+    overlay:
+      name: Multi-Audio
+    plex_all: true
+    filters:
+      audio_language.count_gt: 2
+
+######################################################
+#                    MISCELLANEOUS                   #
+#                 ENABLE AS REQUIRED                 #
+#          THESE MAY OVERRIDE OTHER OVERLAYS         #
+######################################################
+  IMAX:
+    overlay:
+      name: IMAX
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\[IMAX\]'
+
+  # Amazon:
+  #   overlay:
+  #     name: Amazon
+  #     group: audio
+  #     priority: 200
+  #   plex_all: true
+  #   filters:
+  #     filepath.regex: '(?i)\b(amzn|amazon)\b'
+
+  # Apple TV+:
+  #   overlay:
+  #     name: AppleTV
+  #     group: audio
+  #     priority: 200
+  #   plex_all: true
+  #   filters:
+  #     filepath.regex: '(?i)\b(atvp|aptv|Apple TV\+)\b'
+
+  # Disney+:
+  #   overlay:
+  #     name: Disney
+  #     group: audio
+  #     priority: 200
+  #   plex_all: true
+  #   filters:
+  #     filepath.regex: '(?i)\b(dsnp|dsny|disney|Disney\+)\b'
+
+  # HBO Max:
+  #   overlay:
+  #     name: HBO-Max
+  #     group: audio
+  #     priority: 200
+  #   plex_all: true
+  #   filters:
+  #     filepath.regex: '(?i)\b(hmax|hbom|HBO Max)\b'
+
+  # Hulu:
+  #   overlay:
+  #     name: Hulu
+  #     group: audio
+  #     priority: 200
+  #   plex_all: true
+  #   filters:
+  #     filepath.regex: '(?i)\b(hulu)\b"'
+
+  # Netflix:
+  #   overlay:
+  #     name: Netflix
+  #     group: audio
+  #     priority: 200
+  #   plex_all: true
+  #   filters:
+  #     filepath.regex: '(?i)\b(nf|netflix)\b'
+
+  # Peacock:
+  #   overlay:
+  #     name: Peacock
+  #     group: audio
+  #     priority: 200
+  #   plex_all: true
+  #   filters:
+  #     filepath.regex: '(?i)\b(pcok|peacock)\b'
+
+  # Paramount+:
+  #   overlay:
+  #     name: Paramount
+  #     group: audio
+  #     priority: 200
+  #   plex_all: true
+  #   filters:
+  #     filepath.regex: '(?i)\b(pmtp|Paramount Plus)\b'
+
+  # Criterion Collection:
+  #   overlay:
+  #     name: Criterion
+  #     group: ribbon
+  #     priority: 10
+  #   plex_all: true
+  #   filters:
+  #     filepath.regex: 
+  #       - '(?i)Criterion'
+  #       - '(?i)\[CC\]'
+
+  # IMDB Top 250:
+  #   overlay:
+  #     name: IMDB-Top-250
+  #     group: ribbon
+  #     priority: 20
+  #   imdb_chart: top_movies
+
+  # Direct Play:
+    # overlay:
+      # name: Direct-Play
+    # plex_search:
+      # all:
+        # resolution.regex: '(?i)4k'
