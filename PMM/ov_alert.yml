@@ -26,5 +26,5 @@ overlays:
       name: Direct-Play
       repo: PMM/overlays/Direct-Play
     plex_search:
-      all:
-        resolution.regex: '(?i)4k'
+      any:
+        resolution.regex: '(?i)2160|4k'
