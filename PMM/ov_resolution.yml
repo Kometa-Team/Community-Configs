@@ -38,7 +38,7 @@ overlays:
       group: res
       weight: 20
     plex_search:
-      any:
+      all:
         resolution.regex: '(?i)480|sd'
         hdr: true
 
@@ -49,7 +49,7 @@ overlays:
       group: res
       weight: 30
     plex_search:
-      any:
+      all:
         resolution.regex: '(?i)480|sd'
     filters:
       has_dolby_vision: true
@@ -72,7 +72,7 @@ overlays:
       group: res
       weight: 50
     plex_search:
-      any:
+      all:
         resolution.regex: '(?i)720|hd'
         hdr: true
 
@@ -83,7 +83,7 @@ overlays:
       group: res
       weight: 60
     plex_search:
-      any:
+      all:
         resolution.regex: '(?i)720|hd'
     filters:
       has_dolby_vision: true
@@ -105,7 +105,7 @@ overlays:
       group: res
       weight: 80
     plex_search:
-      any:
+      all:
         resolution.regex: '(?i)1080|2k'
         hdr: true
 
@@ -116,7 +116,7 @@ overlays:
       group: res
       weight: 90
     plex_search:
-      any:
+      all:
         resolution.regex: '(?i)1080|2k'
     filters:
       has_dolby_vision: true
@@ -138,7 +138,7 @@ overlays:
       group: res
       weight: 110
     plex_search:
-      any:
+      all:
         resolution.regex: '(?i)2160|4k'
         hdr: true
 
@@ -149,7 +149,7 @@ overlays:
       group: res
       weight: 120
     plex_search:
-      any:
+      all:
         resolution.regex: '(?i)2160|4k'
     filters:
       has_dolby_vision: true
