@@ -12,7 +12,7 @@
 #  Call this from your config.yml (Movie or Show):   #
 #     overlay_path:                                  #
 #       - remove_overlays: false                     #
-#       - git: PMM/ov_alert                          #
+#       - git: PMM/ov_alert_l                        #
 #                                                    #
 ######################################################
 
@@ -26,6 +26,6 @@ overlays:
       name: Direct-Play
       repo: PMM/overlays/Direct-Play
     plex_search:
-      type: movies
+      type: episodes
       any:
         resolution.regex: '(?i)2160|4k'
