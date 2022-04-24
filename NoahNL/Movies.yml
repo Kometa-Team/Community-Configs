@@ -1,0 +1,114 @@
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+  genre:
+    plex_search:
+      genre: <<genre>>
+    sort_title: +5_<<num>><<collection_name>>
+    collection_order: alpha
+  Holiday:
+    smart_label: title.asc
+    summary: |-
+      A timed collection of <<collection_name>> and other movies that may relate to the holiday.
+      
+      NOTE: this collection will only be around until <<end_date>>.
+    sort_title: +0_<<collection_name>>
+    schedule: range(<<start_date>>-<<end_date>>)
+    delete_not_scheduled: true
+    visible_home: true
+    visible_shared: true
+collections:
+
+  Valentine's Day Movies:
+    template:
+      name: Holiday
+      start_date: 02/01
+      end_date: 02/29
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+    url_poster: https://imgur.com/V9jJXux
+  St. Patrick's Day Movies:
+    template:
+      name: Holiday
+      start_date: 03/01
+      end_date: 03/18
+    imdb_list: https://www.imdb.com/list/ls063934595/
+    url_poster: https://imgur.com/wt5RImO
+  Thanksgiving Movies:
+    template:
+      name: Holiday
+      start_date: 11/01
+      end_date: 11/30
+    imdb_list: 
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls091597850/
+    url_poster: https://imgur.com/InC0hhO
+  Halloween Movies:
+    template: 
+      name: Holiday
+      start_date: 10/01
+      end_date: 10/31
+    imdb_list:
+      - https://www.imdb.com/list/ls023118929/
+      - https://www.imdb.com/list/ls000099714/
+    tmdb_collection:
+      - 91361    # Halloween Collection
+      - 8581     # A Nightmare on Elm Street Collection
+      - 1733     # The Mummy Collection
+      - 8091     # Alien Collection
+    tmdb_movie:
+      - 23437    # A Nightmare on Elm Street (2010)
+    url_poster: https://imgur.com/nyxHv2x
+  Christmas Movies:
+    template:
+      name: Holiday
+      start_date: 12/01
+      end_date: 12/31
+    imdb_list: https://www.imdb.com/list/ls000096828/
+    url_poster: https://imgur.com/QwpFuM9
+  New Year's Day Movies:
+    template:
+      name: Holiday
+      start_date: 12/26
+      end_date: 01/04
+    imdb_list: https://www.imdb.com/list/ls066838460/  
+    url_poster: https://imgur.com/Wy7NUL8
+
+  Trending:
+    template: { name: Chart, num: 1 }
+    collection_order: custom
+    sync_mode: sync
+    trakt_trending: 100
+    summary: Movies Trending across the internet
+    item_assets: false
+    url_poster: https://imgur.com/4bglXqV
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  Popular:
+    template: { name: Chart, num: 2 }
+    collection_order: custom
+    sync_mode: sync
+    trakt_popular: 100
+    summary: Movies Popular across the internet
+    item_assets: false
+    url_poster: https://imgur.com/gwjHIfT
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  IMDB top 250 Movies:
+    template: { name: Chart, num: 5 }
+    sync_mode: sync
+    imdb_chart: top_movies
+    collection_order: custom
+    summary: Top movies from IMDB
+    item_assets: false
+    url_poster: https://imgur.com/k4Oy7Xy
+    visible_home: true
+    visible_shared: true
+    visible_library: true
