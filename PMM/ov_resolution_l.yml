@@ -12,7 +12,7 @@
 #  Call this from your config.yml (Movie or Show):   #
 #     overlay_path:                                  #
 #       - remove_overlays: false                     #
-#       - git: PMM/ov_resolution                     #
+#       - git: PMM/ov_resolution_l                   #
 #                                                    #
 ######################################################
 
@@ -21,145 +21,145 @@
 ######################################################
 overlays:
 
-  480P:
+  480P-L:
     overlay:
-      name: 480P
-      repo: PMM/overlays/480P
+      name: 480P-L
+      repo: PMM/overlays/480P-L
       group: res
       weight: 10
     plex_search:
-      type: movies
+      type: episodes
       any:
         resolution.regex: '(?i)480|sd'
 
-  480P-HDR:
+  480P-HDR-L:
     overlay:
-      name: 480P-HDR
-      repo: PMM/overlays/480P-HDR
+      name: 480P-HDR-L
+      repo: PMM/overlays/480P-HDR-L
       group: res
       weight: 20
     plex_search:
-      type: movies
+      type: episodes
       all:
         resolution.regex: '(?i)480|sd'
         hdr: true
 
-  480P-DV:
+  480P-DV-L:
     overlay:
-      name: 480P-DV
-      repo: PMM/overlays/480P-DV
+      name: 480P-DV-L
+      repo: PMM/overlays/480P-DV-L
       group: res
       weight: 30
     plex_search:
-      type: movies
+      type: episodes
       all:
         resolution.regex: '(?i)480|sd'
     filters:
       has_dolby_vision: true
 
-  720P:
+  720P-L:
     overlay:
-      name: 720P
-      repo: PMM/overlays/720P
+      name: 720P-L
+      repo: PMM/overlays/720P-L
       group: res
       weight: 40
     plex_search:
-      type: movies
+      type: episodes
       any:
         resolution.regex: '(?i)720|hd'
 
-  720P-HDR:
+  720P-HDR-L:
     overlay:
-      name: 720P-HDR
-      repo: PMM/overlays/720P-HDR
+      name: 720P-HDR-L
+      repo: PMM/overlays/720P-HDR-L
       group: res
       weight: 50
     plex_search:
-      type: movies
+      type: episodes
       all:
         resolution.regex: '(?i)720|hd'
         hdr: true
 
-  720P-DV:
+  720P-DV-L:
     overlay:
-      name: 720P-DV
-      repo: PMM/overlays/720P-DV
+      name: 720P-DV-L
+      repo: PMM/overlays/720P-DV-L
       group: res
       weight: 60
     plex_search:
-      type: movies
+      type: episodes
       all:
         resolution.regex: '(?i)720|hd'
     filters:
       has_dolby_vision: true
 
-  1080P:
+  1080P-L:
     overlay:
-      name: 1080P
-      repo: PMM/overlays/1080P
+      name: 1080P-L
+      repo: PMM/overlays/1080P-L
       group: res
       weight: 70
     plex_search:
-      type: movies
+      type: episodes
       any:
         resolution.regex: '(?i)1080|2k'
 
-  1080P-HDR:
+  1080P-HDR-L:
     overlay:
-      name: 1080P-HDR
-      repo: PMM/overlays/1080P-HDR
+      name: 1080P-HDR-L
+      repo: PMM/overlays/1080P-HDR-L
       group: res
       weight: 80
     plex_search:
-      type: movies
+      type: episodes
       all:
         resolution.regex: '(?i)1080|2k'
         hdr: true
 
-  1080P-DV:
+  1080P-DV-L:
     overlay:
-      name: 1080P-DV
-      repo: PMM/overlays/1080P-DV
+      name: 1080P-DV-L
+      repo: PMM/overlays/1080P-DV-L
       group: res
       weight: 90
     plex_search:
-      type: movies
+      type: episodes
       all:
         resolution.regex: '(?i)1080|2k'
     filters:
       has_dolby_vision: true
 
-  4K:
+  4K-L:
     overlay:
-      name: 4K
-      repo: PMM/overlays/4K
+      name: 4K-L
+      repo: PMM/overlays/4K-L
       group: res
       weight: 100
     plex_search:
-      type: movies
+      type: episodes
       any:
         resolution.regex: '(?i)2160|4k'
 
-  4K-HDR:
+  4K-HDR-L:
     overlay:
-      name: 4K-HDR
-      repo: PMM/overlays/4K-HDR
+      name: 4K-HDR-L
+      repo: PMM/overlays/4K-HDR-L
       group: res
       weight: 110
     plex_search:
-      type: movies
+      type: episodes
       all:
         resolution.regex: '(?i)2160|4k'
         hdr: true
 
-  4K-DV:
+  4K-DV-L:
     overlay:
-      name: 4K-DV
-      repo: PMM/overlays/4K-DV
+      name: 4K-DV-L
+      repo: PMM/overlays/4K-DV-L
       group: res
       weight: 120
     plex_search:
-      type: movies
+      type: episodes
       all:
         resolution.regex: '(?i)2160|4k'
     filters:
