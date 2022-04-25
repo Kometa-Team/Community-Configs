@@ -126,7 +126,6 @@ overlays:
       weight: 60
     plex_all: true
     filters:
-    filters:
       audio_track_title.regex:
         - '(?i)[^-]DD[P+](?!A)|eac3'
         - '(?i)\bAAC 7\b'
