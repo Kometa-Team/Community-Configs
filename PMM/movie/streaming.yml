@@ -34,9 +34,9 @@ collections:
       - name: separator
         separator: streaming
 
-  All 4:
+  All 4 Movies:
     template:
-      - name: All4 Movies
+      - name: All4
       - name: streaming
         image: All 4
       - name: shared
@@ -44,87 +44,87 @@ collections:
 
   Apple TV+:
     template:
-      - name: AppleTV Movies
+      - name: AppleTV
       - name: streaming
         image: Apple TV+
       - name: shared
     mdblist_list: https://mdblist.com/lists/plexmetamanager/appletv-movies
 
-  BET+:
+  BET+ Movies:
     template:
-      - name: BET Movies
+      - name: BET
       - name: streaming
         image: BET+
       - name: shared
     mdblist_list: https://mdblist.com/lists/plexmetamanager/bet-movies
 
-  BritBox:
+  BritBox Movies:
     template:
-      - name: BritBox Movies
+      - name: BritBox
       - name: streaming
         image: BritBox
       - name: shared
     mdblist_list: https://mdblist.com/lists/plexmetamanager/britbox-movies
 
-  Disney+:
+  Disney+ Movies:
     template:
-      - name: Disney Movies
+      - name: Disney
       - name: streaming
         image: Disney+
       - name: shared
     mdblist_list: https://mdblist.com/lists/plexmetamanager/disney-movies
 
-  HBO Max:
+  HBO Max Movies:
     template:
-      - name: HBOMax Movies
+      - name: HBOMax
       - name: streaming
         image: HBO Max
       - name: shared
     mdblist_list: https://mdblist.com/lists/plexmetamanager/hbo-max-movies
 
-  Hulu:
+  Hulu Movies:
     template:
-      - name: Hulu Movies
+      - name: Hulu
       - name: streaming
         image: Hulu
       - name: shared
     mdblist_list: https://mdblist.com/lists/plexmetamanager/hulu-movies
 
-  Netflix:
+  Netflix Movies:
     template:
-      - name: Netflix Movies
+      - name: Netflix
       - name: streaming
         image: Netflix
       - name: shared
     mdblist_list: https://mdblist.com/lists/plexmetamanager/netflix-movies
 
-  NOW:
+  NOW Movies:
     template:
-      - name: NOW Movies
+      - name: NOW
       - name: streaming
         image: NOW
       - name: shared
     mdblist_list: https://mdblist.com/lists/plexmetamanager/now-movies
 
-  Paramount+:
+  Paramount+ Movies:
     template:
-      - name: Paramount Movies
+      - name: Paramount
       - name: streaming
         image: Paramount+
       - name: shared
     mdblist_list: https://mdblist.com/lists/plexmetamanager/paramount-movies
 
-  Peacock:
+  Peacock Movies:
     template:
-      - name: Peacock Movies
+      - name: Peacock
       - name: streaming
         image: Peacock
       - name: shared
     mdblist_list: https://mdblist.com/lists/plexmetamanager/peacock-movies
 
-  Prime Video:
+  Prime Video Movies:
     template:
-      - name: Prime Movies
+      - name: Prime
       - name: streaming
         image: Prime Video
       - name: shared
