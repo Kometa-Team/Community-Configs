@@ -104,7 +104,9 @@ overlays:
     plex_all: true
     collection_level: episode
     filters:
-      audio_track_title.regex: '(?i)\bDD[^a-z+]|eac3'
+      audio_track_title.regex: 
+        - '(?i)\bDD[^a-z+]|(?<!e)ac3'
+        - '(?i)\bAAC \b[s5]?'
 
   DTS-L:
     overlay:
@@ -161,7 +163,9 @@ overlays:
     plex_all: true
     collection_level: episode
     filters:
-      audio_track_title.regex: '(?i)[^-]DD[P+](?!A)|eac3'
+      audio_track_title.regex:
+        - '(?i)[^-]DD[P+](?!A)|eac3'
+        - '(?i)\bAAC 7\b'
 
   Dolby-Atmos-L:
     overlay:
