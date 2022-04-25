@@ -1,0 +1,186 @@
+######################################################
+#                  PMM OVERLAYS                      #
+#        Credit to Magic815 for base images          #
+#      refer to https://trash-guides.info/ for       #
+# naming of files that filepath.regex was written    #
+#             for in this config file                #
+#      refer to https://regexr.com/ (and set to      #
+# PCRE (Server) Engine or use https://regex101.com/  #
+#              for more help on regex                #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     overlay_path:                                  #
+#       - remove_overlays: false                     #
+#       - git: PMM/ov_audio_codec                    #
+#                                                    #
+######################################################
+
+#####################################################################################################################
+#               Test text for regex verification:                                                                   #
+# Title: DD 2.0
+# Title: DD 5.1
+# Title: DD-EX 640 Kbs Compatibility Track
+# Title: DDP 5.1 640k
+# Title: Dolby Digital
+# Title: Dolby Digital Audio / 2.0 / 48 kHz / 192 kbps
+# Title: Dolby TrueHD/Atmos Audio / 7.1-Atmos / 48 kHz / 3050 kbps / 24-bit
+# Title: Dolby TrueHD Audio / 5.1 / 48 kHz / 3203 kbps / 24-bit
+# Title: Dolby TrueHD Audio / 7.1 / 48 kHz / 3788 kbps / 24-bit
+# Title: dts
+# Title: DTS Audio / 5.1 / 48 kHz / 1509 kbps / 24-bit
+# Title: DTS-HD
+# Title: DTS-HD High-Res Audio / 5.1 / 48 kHz / 2046 kbps / 16-bit
+# Title: DTS-HD MA 2.0
+# Title: DTS-HD MA 5.1
+# Title: DTS-HD MA5.1
+# Title: DTS-HD,MA5.1
+# Title: DTS-HD.MA5.1
+# Title: DTS-HD MA 5.1 @ 3483 kbps / 24-bit
+# Title: DTS-HD MA 7.1
+# Title: DTS-HD Master Audio
+# Title: TrueHD
+# Title: TrueHD 5.1
+# Title: TrueHD 7.1 Atmos
+# Title: True HD Atmos 7.1
+# Title: TrueHD Atmos / 7.1
+# Title: TrueHD Atmos 7.1
+# Title: 1.0 DTS-HD-MA (1977 35mm mono mix)
+# Title: 2.0 DTS-HD-MA (1977 35mm stereo mix 2018)
+# Title: 2.0 Dolby Digital 1993 Stereo Remix
+# Title: AC-3 5.1
+# Title: AC-3 5.1 @448 kb/s
+# Title: AC-3 5.1-EX
+# Title: AC3
+# Title: AC3 2.0 / 320 kbps / original (best studio version available)
+# Title: AC3 5.1
+# Title: AC3 5.1-EX
+# Title: DD 5.1
+# Title: DDP 5.1
+# Title: DTS
+# Title: DTS 2.0
+# Title: DTS 5.1
+# Title: DTS @ 768 Kbps
+# Title: DTS core 5.1 @ 1.5 Mbps
+# Title: DTS-HD
+# Title: DTS-HD MA 5.1
+# Title: DTS-HD MA 7.1
+# Title: DTS-HD Master Audio / 5.1 / 48 kHz / 1947 kbps / 16-bit
+# Title: DTS5.1 / DTS-HD MA7.1
+# Title: DTS:X 7.1
+# Title: DTS:X Master Audio / 7.1-X / 48 kHz / 3508 kbps / 24bit
+# Title: Dolby Digital 5.1
+# Title: Dolby SVA 35mm / FLAC Audio / Lt/Rt / 48 kHz / 1184 kbps / 24-bit
+# Title: Dolby TrueHD 5.1
+# Title: Dolby TrueHD 7.1 48 kHz 4867 kbps 24-bit (AC3 Embedded 5.1 48 kHz  640 kbps)
+# Title: EAC3 5.1
+# Title: EAC3 7.1
+# Title: English / DD 2.0 / 48 kHz / 192 kbps / 16-bit
+# Title: English / DTS-HD MA 5.1 / 48 kHz
+# Title: English / DTS-HD Master Audio / 7.1 
+# Title: English DTS 5.1 @ 1509 kbps
+# Title: English DTS-HD
+# Title: English TrueHD7.1
+# Title: TrueHD
+# Title: TrueHD 5.1
+# Title: TrueHD 7.1 Atmos
+# Title: TrueHD Atmos 7.1
+# Title: TrueHD, English, 5.1 channels, 48kHz @ 3349 kbps
+# Title: TrueHD/Atmos Audio 7.1
+# Title: Truehd Atmos 7.1
+#####################################################################################################################
+
+######################################################
+#                     AUDIO_CODEC                    #
+######################################################
+overlays:
+
+  Dolby-Digital-L:
+    overlay:
+      name: Dolby-Digital-L
+      repo: PMM/overlays/Dolby-Digital-L
+      group: audio
+      weight: 10
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)\bDD[^a-z+]|eac3'
+
+  DTS-L:
+    overlay:
+      name: DTS-L
+      repo: PMM/overlays/DTS-L
+      group: audio
+      weight: 20
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)\bDTS(\b|\d)'
+
+  DTS-ES-L:
+    overlay:
+      name: DTS-ES-L
+      repo: PMM/overlays/DTS-ES-L
+      group: audio
+      weight: 30
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)dts[ ._-]?(es|(hd[. ]?)?(hr|hi))'
+
+  DTS-HD-L:
+    overlay:
+      name: DTS-HD-L
+      repo: PMM/overlays/DTS-HD-L
+      group: audio
+      weight: 40
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: 
+        - '(?i)dts[ .-]?(ma\b|hd[ .-]?ma|hd)(?!china|r)'
+        - '(?i)dts[ ._-]?(hd[. ]?)?(hr|hi)'
+
+  Dolby-TrueHD-L:
+    overlay:
+      name: Dolby-TrueHD-L
+      repo: PMM/overlays/Dolby-TrueHD-L
+      group: audio
+      weight: 50
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)true[ .-]?hd'
+
+  Dolby-Digital-Plus-L:
+    overlay:
+      name: Dolby-Digital-Plus-L
+      repo: PMM/overlays/Dolby-Digital-Plus-L
+      group: audio
+      weight: 60
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)[^-]DD[P+](?!A)|eac3'
+
+  Dolby-Atmos-L:
+    overlay:
+      name: Dolby-Atmos-L
+      repo: PMM/overlays/Dolby-Atmos-L
+      group: audio
+      weight: 70
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)atmos'
+
+  DTS-X-L:
+    overlay:
+      name: DTS-X-L
+      repo: PMM/overlays/DTS-X-L
+      group: audio
+      weight: 80
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)dts[ ._:-]?x(?!\\d)'
