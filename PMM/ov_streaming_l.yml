@@ -12,7 +12,7 @@
 #  Call this from your config.yml (Movie or Show):   #
 #     overlay_path:                                  #
 #       - remove_overlays: false                     #
-#       - git: PMM/ov_streaming                      #
+#       - git: PMM/ov_streaming_l                    #
 #                                                    #
 ######################################################
 
@@ -21,82 +21,90 @@
 ######################################################
 overlays:
 
-  Amazon:
+  Amazon-L:
     overlay:
-      name: Amazon
-      repo: PMM/overlays/Amazon
+      name: Amazon-L
+      repo: PMM/overlays/Amazon-L
       group: audio
       weight: 200
     plex_all: true
+    collection_level: episode
     filters:
       filepath.regex: '(?i)\b(amzn|amazon)\b'
 
-  Apple TV+:
+  Apple TV+-L:
     overlay:
-      name: AppleTV
-      repo: PMM/overlays/AppleTV
+      name: AppleTV-L
+      repo: PMM/overlays/AppleTV-L
       group: audio
       weight: 200
     plex_all: true
+    collection_level: episode
     filters:
       filepath.regex: '(?i)\b(atvp|aptv|Apple TV\+)\b'
 
-  Disney+:
+  Disney+-L:
     overlay:
-      name: Disney
-      repo: PMM/overlays/Disney
+      name: Disney-L
+      repo: PMM/overlays/Disney-L
       group: audio
       weight: 200
     plex_all: true
+    collection_level: episode
     filters:
       filepath.regex: '(?i)\b(dsnp|dsny|disney|Disney\+)\b'
 
-  HBO Max:
+  HBO Max-L:
     overlay:
-      name: HBO-Max
-      repo: PMM/overlays/HBO-Max
+      name: HBO-Max-L
+      repo: PMM/overlays/HBO-Max-L
       group: audio
       weight: 200
     plex_all: true
+    collection_level: episode
     filters:
       filepath.regex: '(?i)\b(hmax|hbom|HBO Max)\b'
 
-  Hulu:
+  Hulu-L:
     overlay:
-      name: Hulu
-      repo: PMM/overlays/Hulu
+      name: Hulu-L
+      repo: PMM/overlays/Hulu-L
       group: audio
       weight: 200
     plex_all: true
+    collection_level: episode
     filters:
       filepath.regex: '(?i)\b(hulu)\b"'
 
-  Netflix:
+  Netflix-L:
     overlay:
-      name: Netflix
-      repo: PMM/overlays/Netflix
+      name: Netflix-L
+      repo: PMM/overlays/Netflix-L
       group: audio
       weight: 200
     plex_all: true
+    collection_level: episode
     filters:
       filepath.regex: '(?i)\b(nf|netflix)\b'
 
-  Paramount+:
+  Paramount+-L:
     overlay:
-      name: Paramount
-      repo: PMM/overlays/Paramount
+      name: Paramount-L
+      repo: PMM/overlays/Paramount-L
       group: audio
       weight: 200
     plex_all: true
+    collection_level: episode
     filters:
       filepath.regex: '(?i)\b(pmtp|Paramount Plus)\b'
 
-  Peacock:
+  Peacock-L:
     overlay:
-      name: Peacock
-      repo: PMM/overlays/Peacock
+      name: Peacock-L
+      repo: PMM/overlays/Peacock-L
       group: audio
       weight: 200
     plex_all: true
+    collection_level: episode
     filters:
       filepath.regex: '(?i)\b(pcok|peacock)\b'
