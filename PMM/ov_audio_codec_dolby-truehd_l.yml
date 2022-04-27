@@ -12,7 +12,7 @@
 #  Call this from your config.yml (Movie or Show):   #
 #     overlay_path:                                  #
 #       - remove_overlays: false                     #
-#       - git: PMM/ov_audio_codec                    #
+#       - git: PMM/ov_audio_codec_dolby-truehd_l     #
 #                                                    #
 ######################################################
 
@@ -64,88 +64,13 @@
 ######################################################
 overlays:
 
-  Dolby-Digital:
+  Dolby-TrueHD-L:
     overlay:
-      name: Dolby-Digital
-      repo: PMM/overlays/Dolby-Digital
-      group: audio
-      weight: 10
-    plex_all: true
-    filters:
-      audio_track_title.regex: 
-        - '(?i)\bDD[^a-z+]|(?<!e)ac3'
-        - '(?i)\bAAC \b[s5]?'
-
-  DTS:
-    overlay:
-      name: DTS
-      repo: PMM/overlays/DTS
-      group: audio
-      weight: 20
-    plex_all: true
-    filters:
-      audio_track_title.regex: '(?i)\bDTS(\b|\d)'
-
-  DTS-ES:
-    overlay:
-      name: DTS-ES
-      repo: PMM/overlays/DTS-ES
-      group: audio
-      weight: 30
-    plex_all: true
-    filters:
-      audio_track_title.regex: '(?i)dts[ ._-]?(es|(hd[. ]?)?(hr|hi))'
-
-  DTS-HD:
-    overlay:
-      name: DTS-HD
-      repo: PMM/overlays/DTS-HD
-      group: audio
-      weight: 40
-    plex_all: true
-    filters:
-      audio_track_title.regex: 
-        - '(?i)dts[ .-]?(ma\b|hd[ .-]?ma|hd)(?!china|r)'
-        - '(?i)dts[ ._-]?(hd[. ]?)?(hr|hi)'
-
-  Dolby-TrueHD:
-    overlay:
-      name: Dolby-TrueHD
-      repo: PMM/overlays/Dolby-TrueHD
+      name: Dolby-TrueHD-L
+      repo: PMM/overlays/Dolby-TrueHD-L
       group: audio
       weight: 50
     plex_all: true
+    collection_level: episode
     filters:
       audio_track_title.regex: '(?i)true[ .-]?hd'
-
-  Dolby-Digital-Plus:
-    overlay:
-      name: Dolby-Digital-Plus
-      repo: PMM/overlays/Dolby-Digital-Plus
-      group: audio
-      weight: 60
-    plex_all: true
-    filters:
-      audio_track_title.regex:
-        - '(?i)[^-]DD[P+](?!A)|eac3'
-        - '(?i)\bAAC 7\b'
-
-  Dolby-Atmos:
-    overlay:
-      name: Dolby-Atmos
-      repo: PMM/overlays/Dolby-Atmos
-      group: audio
-      weight: 70
-    plex_all: true
-    filters:
-      audio_track_title.regex: '(?i)atmos'
-
-  DTS-X:
-    overlay:
-      name: DTS-X
-      repo: PMM/overlays/DTS-X
-      group: audio
-      weight: 80
-    plex_all: true
-    filters:
-      audio_track_title.regex: '(?i)dts[ ._:-]?x(?!\\d)'

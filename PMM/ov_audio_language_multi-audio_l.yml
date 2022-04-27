@@ -12,7 +12,7 @@
 #  Call this from your config.yml (Movie or Show):   #
 #     overlay_path:                                  #
 #       - remove_overlays: false                     #
-#       - git: PMM/ov_audio_language_l               #
+#       - git: PMM/ov_audio_language_multi-audio_l   #
 #                                                    #
 ######################################################
 
@@ -20,16 +20,6 @@
 #                    AUDIO_LANGUAGE                  #
 ######################################################
 overlays:
-
-  Dual Audio-L:
-    overlay:
-      name: Dual-Audio-L
-      repo: PMM/overlays/Dual-Audio-L
-    plex_all: true
-    collection_level: episode
-    filters:
-      audio_language.count_gte: 2
-      audio_language.count_lt: 3
 
   Multi Audio-L:
     overlay:
