@@ -1,0 +1,55 @@
+######################################################
+#                  PMM OVERLAYS                      #
+#        Credit to Magic815 for base images          #
+#      refer to https://trash-guides.info/ for       #
+# naming of files that filepath.regex was written    #
+#             for in this config file                #
+#      refer to https://regexr.com/ (and set to      #
+# PCRE (Server) Engine or use https://regex101.com/  #
+#              for more help on regex                #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     overlay_path:                                  #
+#       - remove_overlays: false                     #
+#       - git: PMM/ov_video_format_remux_l           #
+#                                                    #
+######################################################
+
+#####################################################################################################################
+#               Test Filenames for regex verification:                                                              #
+# Superbad (2007) [imdb-tt0829482][WEBDL-2160p][AC3 5.1][h265]                                                      #
+# Stand and Deliver (1988) [imdb-tt0094027][WEBRip-1080p][AAC 2.0][x265]                                            #
+# The Incredible Hulk (2008) [imdb-tt0800080][Bluray-2160p][HDR10][DTS-X 7.1][x265]                                 #
+# Star Trek Beyond (2016) [imdb-tt2660888][Bluray-2160p][HDR10][TrueHD Atmos 7.1][x265]                             #
+# The Next Step (2013) - S06E22 - His Girl Summer [HDTV-1080p][AC3 2.0][x265][imdb-tt2374744]                       #
+# The Carbonaro Effect (2014) - S04E05 - Simon Soft [HDTV-720p][AC3 5.1][x265][imdb-tt3559912]                      #
+# Moon Knight (2022) - S01E01 - The Goldfish Problem [WEBDL-2160p][DV][EAC3 Atmos 5.1][x265][imdb-tt10234724]       #
+# Tenet (2020) Imax [imdb-tt6723592][IMAX][Remux-2160p][HDR10][EAC3 5.1][h265]                                      #
+# Star Trek Into Darkness (2013) Imax [imdb-tt1408101][IMAX][Remux-2160p][PQ][AAC 7.1][h265]                        #
+# V for Vendetta (2006) [imdb-tt0434409][Remux-2160p][DV HDR10][AAC 7.1][h265]                                      #
+# The Wolverine (2013) Extended [imdb-tt1430132][Remux-1080p][DTS-HD MA 7.1][x265]                                  #
+# Shreks Thrilling Tales (2012) [imdb-tt2486724][DVD][AC3 5.1][x265]                                                #
+# Frosty Returns (1992) [imdb-tt0106973][DVD][AAC 2.0][x265]                                                        #
+# Harry Potter and the Chamber of Secrets (2002) [imdb-tt0295297][Remux-2160p][PQ][DTS-X 7.1][h265]                 #
+# A Long Way Down (2014) [imdb-tt0458413][Remux-1080p][DTS-HD MA 5.1][h265]                                         #
+# Shrek Forever After (2010) [imdb-tt0892791][Bluray-1080p][DTS-ES 6.1][x265]                                       #
+# Bridget Joness Diary (2001) [imdb-tt0243155][Bluray-1080p][DTS 5.1][x265]                                         #
+# The Mummy (1999) [imdb-tt0120616][BR-DISK][DTS-HD MA 5.1][x265]                                                   #
+# The Mummy (1999) [imdb-tt0120616][Criterion][DTS-HD MA 5.1][x265]                                                 #
+#####################################################################################################################
+
+######################################################
+#                    VIDEO_FORMAT                    #
+######################################################
+overlays:
+
+  Remux-L:
+    overlay:
+      name: Remux-L
+      repo: PMM/overlays/Remux-L
+      group: quality
+      weight: 50
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\[Remux'

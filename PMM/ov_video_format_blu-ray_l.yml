@@ -12,7 +12,7 @@
 #  Call this from your config.yml (Movie or Show):   #
 #     overlay_path:                                  #
 #       - remove_overlays: false                     #
-#       - git: PMM/ov_video_format                   #
+#       - git: PMM/ov_video_format_blu-ray_l         #
 #                                                    #
 ######################################################
 
@@ -44,53 +44,12 @@
 ######################################################
 overlays:
 
-  DVD:
+  Blu-Ray-L:
     overlay:
-      name: DVD
-      repo: PMM/overlays/DVD
-      group: quality
-      weight: 10
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\[DVD'
-
-  HDTV:
-    overlay:
-      name: HDTV
-      repo: PMM/overlays/HDTV
-      group: quality
-      weight: 20
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)HD[ ._-]?TV'
-
-  WEB:
-    overlay:
-      name: WEB
-      repo: PMM/overlays/WEB
-      group: quality
-      weight: 30
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\[Web[ ._-]?(dl|rip)'
-
-  Blu-Ray:
-    overlay:
-      name: Blu-Ray
-      repo: PMM/overlays/Blu-Ray
+      name: Blu-Ray-L
+      repo: PMM/overlays/Blu-Ray-L
       group: quality
       weight: 40
     plex_all: true
     filters:
       filepath.regex: '(?i)\[Blu[ ._-]?ray|\[BD|\[BR|\[HD[ ._-]?DVD'
-
-  Remux:
-    overlay:
-      name: Remux
-      repo: PMM/overlays/Remux
-      group: quality
-      weight: 50
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\[Remux'
-
