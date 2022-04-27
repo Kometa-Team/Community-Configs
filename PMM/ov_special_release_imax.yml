@@ -12,7 +12,7 @@
 #  Call this from your config.yml (Movie or Show):   #
 #     overlay_path:                                  #
 #       - remove_overlays: false                     #
-#       - git: PMM/ov_special_release_l              #
+#       - git: PMM/ov_special_release_imax           #
 #                                                    #
 ######################################################
 
@@ -44,24 +44,10 @@
 ######################################################
 overlays:
 
-  IMAX-L:
+  IMAX:
     overlay:
-      name: IMAX-L
-      repo: PMM/overlays/IMAX-L
+      name: IMAX
+      repo: PMM/overlays/IMAX
     plex_all: true
-    collection_level: episode
     filters:
       filepath.regex: '(?i)\[IMAX\]'
-
-  Criterion Collection-L:
-    overlay:
-      name: Criterion-L
-      repo: PMM/overlays/Criterion-L
-      group: ribbon
-      weight: 10
-    plex_all: true
-    collection_level: episode
-    filters:
-      filepath.regex: 
-        - '(?i)Criterion'
-        - '(?i)\[CC\]'
