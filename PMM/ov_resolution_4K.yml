@@ -1,0 +1,33 @@
+######################################################
+#                  PMM OVERLAYS                      #
+#        Credit to Magic815 for base images          #
+#      refer to https://trash-guides.info/ for       #
+# naming of files that filepath.regex was written    #
+#             for in this config file                #
+#      refer to https://regexr.com/ (and set to      #
+# PCRE (Server) Engine or use https://regex101.com/  #
+#              for more help on regex                #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     overlay_path:                                  #
+#       - remove_overlays: false                     #
+#       - git: PMM/ov_resolution_4K                  #
+#                                                    #
+######################################################
+
+######################################################
+#                    RESOLUTION                      #
+######################################################
+overlays:
+
+  4K:
+    overlay:
+      name: 4K
+      repo: PMM/overlays/4K
+      group: res
+      weight: 100
+    plex_search:
+      type: episodes
+      any:
+        resolution.regex: '(?i)2160|4k'
