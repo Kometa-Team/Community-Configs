@@ -1,0 +1,64 @@
+#####################################################
+#              Decade Collections                   #
+#####################################################
+
+collections:
+  Best of 1970s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=1970-01-01,1979-12-31&num_votes=10000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/GZcR8rJ.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07_11970
+    sync_mode: sync
+    collection_order: custom
+
+  Best of 1980s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=1980-01-01,1989-12-31&num_votes=10000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/FK6ru1R.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07_11980
+    sync_mode: sync
+    collection_order: custom
+
+  Best of 1990s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=1990-01-01,1999-12-31&num_votes=10000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/pZJdBSW.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07_11990
+    sync_mode: sync
+    collection_order: custom
+
+  Best of 2000s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=2000-01-01,2009-12-31&num_votes=10000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/VquakZx.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07_12000
+    sync_mode: sync
+    collection_order: custom
+
+  Best of 2010s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=2010-01-01,2019-12-31&num_votes=10000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/NEPK2kG.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07_12010
+    sync_mode: sync
+    collection_order: custom
+
+  Best of 2020s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=2020-01-01,2029-12-31&num_votes=1000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/YWTD1gJ.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07_12020
+    sync_mode: sync
+    collection_order: custom
