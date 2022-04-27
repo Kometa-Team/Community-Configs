@@ -1,0 +1,90 @@
+templates:
+  Genre:
+    default:
+      exclude: Children, Anime
+    sort_title: +02_<<collection_name>>
+    url_background: https://wallpaper.dog/large/20509069.jpg
+    smart_filter:
+      sort_by: release.desc
+      validate: false
+      all:
+        genre.not: <<exclude>>
+        audio_language: en
+        genre: <<genre>>
+
+collections:
+  Action:
+    template: { name: Genre, genre: action}
+    url_poster: https://i.imgur.com/5rP3mqc.jpg
+  Adventure:
+    template: { name: Genre, genre: adventure }
+    url_poster: https://i.imgur.com/fZMIfdy.jpg
+  Animation:
+    template: { name: Genre, genre: animation, exclude: null }
+    url_poster: https://i.imgur.com/W9355wl.jpg
+  Comedy:
+    template: { name: Genre, genre: comedy }
+    url_poster: https://i.imgur.com/dIMKbt9.jpg
+  Competition:
+    template: { name: Genre, genre: "game show" }
+    url_poster: https://i.imgur.com/tAApO7d.jpg
+  Cooking:
+    template: { name: Genre, genre: "cooking, food" }
+    url_poster: https://i.imgur.com/dVXspVv.jpg
+  Crime:
+    template: { name: Genre, genre: crime }
+    url_poster: https://i.imgur.com/1FYD7Cz.jpg
+  Documentary:
+    template: { name: Genre, genre: "Biography, Documentary" }
+    url_poster: https://i.imgur.com/KRH25hE.jpg
+  Drama:
+    template: { name: Genre, genre: drama }
+    url_poster: https://i.imgur.com/RwOUFLI.jpg
+  Family:
+    template: { name: Genre, genre: family, exclude: null }
+    url_poster: https://i.imgur.com/k4VAgNR.jpg
+  Fantasy:
+    template: { name: Genre, genre: fantasy, exclude: null }
+    url_poster: https://i.imgur.com/IdeoNnr.jpg
+  History:
+    template: { name: Genre, genre: history }
+    url_poster: https://i.imgur.com/1n070o0.jpg
+  Horror:
+    template: { name: Genre, genre: horror }
+    url_poster: https://i.imgur.com/M6msOoq.jpg
+  Music:
+    template: { name: Genre, genre: music, exclude: null}
+    url_poster: https://i.imgur.com/eCJZSue.jpg
+  Musical:
+    template: { name: Genre, genre: musical, exclude: null}
+    url_poster: https://i.imgur.com/xBTTyNx.jpg
+  Mystery:
+    template: { name: Genre, genre: mystery }
+    url_poster: https://i.imgur.com/t1ArisJ.jpg
+  Reality:
+    template: { name: Genre, genre: reality }
+    url_poster: https://i.imgur.com/aDp1CZ9.jpg
+  Romance:
+    template: { name: Genre, genre: romance }
+    url_poster: https://i.imgur.com/0Jm9Jck.jpg
+  Romantic Comedy:
+    template: { name: Genre, genre: "romance,comedy" }
+    url_poster: https://i.imgur.com/7XVf34s.jpg
+  Romantic Drama:
+    template: { name: Genre, genre: "romance,drama" }
+    url_poster: https://i.imgur.com/ccutmOd.jpg
+  Sci-Fi:
+    template: { name: Genre, genre: sci-fi }
+    url_poster: https://i.imgur.com/EPi451Z.jpg
+  Sports:
+    template: { name: Genre, genre: sport }
+    url_poster: https://i.imgur.com/uGtTbYV.jpg
+  Thriller:
+    template: { name: Genre, genre: thriller }
+    url_poster: https://i.imgur.com/i4K4wXI.jpg
+  War:
+    template: { name: Genre, genre: war }
+    url_poster: https://i.imgur.com/tPgvWij.jpg
+  Western:
+    template: { name: Genre, genre: western }
+    url_poster: https://i.imgur.com/NbiRkV6.jpg
