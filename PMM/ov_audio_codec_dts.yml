@@ -1,0 +1,76 @@
+######################################################
+#                  PMM OVERLAYS                      #
+#        Credit to Magic815 for base images          #
+#      refer to https://trash-guides.info/ for       #
+# naming of files that filepath.regex was written    #
+#             for in this config file                #
+#      refer to https://regexr.com/ (and set to      #
+# PCRE (Server) Engine or use https://regex101.com/  #
+#              for more help on regex                #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     overlay_path:                                  #
+#       - remove_overlays: false                     #
+#       - git: PMM/ov_audio_codec_dts                #
+#                                                    #
+######################################################
+
+#####################################################################################################################
+#               Test text for regex verification:                                                                   #
+# English (TRUEHD 7.1)
+# English (AC3 5.1)
+# English (AC3 Stereo)
+# Français (DTS 5.1)
+# English (EAC3 5.1)
+# English (DTS 5.1)
+# English (DTS-HD MA 5.1)
+# Français (DTS Stereo)
+# English (DTS Stereo)
+# English (AAC Stereo)
+# English (TRUEHD 5.1)
+# English (AAC 7.1)
+# English (DTS-HD MA 7.1)
+# English (AAC 5.1)
+# Français (AC3 5.1)
+# English (AC3 Mono)
+# Unknown (DTS 5.1)
+# English (EAC3 7.1)
+# Unknown (AC3 Stereo)
+# Français (DTS-HD HRA 7.1)
+# Français (EAC3 5.1)
+# Italiano (EAC3 5.1)
+# Italiano (DCA 5.1)
+# 한국어 (AC3 Stereo)
+# Français (DTS-HD MA 5.1)
+# English (FLAC Stereo)
+# Unknown (AAC 5.1)
+# English (EAC3 Stereo)
+# Français (AC3 Stereo)
+# English (VORBIS Stereo)
+# Unknown (AC3 5.1)
+# Türkçe (AC3 5.1)
+# Unknown (TRUEHD 5.1)
+# Unknown (AAC Stereo)
+# English (DTS-HD MA Stereo)
+# English (DTS-HD MA Mono)
+# English (AC3 3.0)
+# English (DTS-HD MA 6.1)
+# English (DTS-ES 6.1)
+#####################################################################################################################
+
+######################################################
+#                     AUDIO_CODEC                    #
+######################################################
+overlays:
+
+  DTS:
+    overlay:
+      name: DTS
+      repo: PMM/overlays/DTS
+      group: audio
+      weight: 20
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)\bDTS(\b|\d)'
