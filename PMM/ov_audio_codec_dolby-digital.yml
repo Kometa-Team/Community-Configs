@@ -71,7 +71,6 @@ overlays:
       group: audio
       weight: 10
     plex_all: true
-    collection_level: episode
     filters:
       audio_track_title.regex: 
         - '(?i)\bDD[^a-z+]|(?<!e)ac3'

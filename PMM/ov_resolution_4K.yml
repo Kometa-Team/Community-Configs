@@ -28,6 +28,5 @@ overlays:
       group: res
       weight: 100
     plex_search:
-      type: episodes
       any:
         resolution.regex: '(?i)2160|4k'

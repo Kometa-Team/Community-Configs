@@ -28,7 +28,6 @@ overlays:
       group: res
       weight: 60
     plex_search:
-      type: episodes
       all:
         resolution.regex: '(?i)720|hd'
     filters:

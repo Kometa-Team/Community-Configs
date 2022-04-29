@@ -26,7 +26,6 @@ overlays:
       name: Dual-Audio  
       repo: PMM/overlays/Dual-Audio  
     plex_all: true
-    collection_level: episode
     filters:
       audio_language.count_gte: 2
       audio_language.count_lt: 3

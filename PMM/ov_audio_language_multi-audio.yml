@@ -26,6 +26,5 @@ overlays:
       name: Multi-Audio  
       repo: PMM/overlays/Multi-Audio  
     plex_all: true
-    collection_level: episode
     filters:
       audio_language.count_gt: 2
