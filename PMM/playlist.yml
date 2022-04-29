@@ -1,0 +1,56 @@
+#############################################################
+#                         Playlists                         #
+#     Created by Yozora, Bullmoose20, hjone72, & Sohjiro    #
+#                                                           #
+#              REQUIRES TRAKT AUTHENTICATION                #
+# See https://metamanager.wiki/en/nightly/config/trakt.html #
+#               ADJUST LIBRARIES AS NEEDED                  #
+#                                                           #
+#      Call this from your config.yml (Movie or Show):      #
+#                 playlist_files:                           #
+#                   - git: PMM/playlists                    #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+
+playlists:
+  Marvel Cinematic Universe (Timeline Order):
+    template:
+      - name: playlist
+      - name: shared
+    libraries: Movies, TV
+    trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
+    summary: The Marvel Cinematic Universeis a collection of movies and television series that tell a singular narrative related to Marvel characters, settings and stories. The MCU is a product from Disney and Marvel that brings us heroes from Black Panther and Doctor Strange to Spider-Man and Iron Man.
+
+  Star Trek (Timeline Order):
+    template:
+      - name: playlist
+      - name: shared
+    libraries: Movies, TV
+    trakt_list: https://trakt.tv/users/pedrohcramos/lists/star-trek-timeline?sort=rank,asc
+    summary: Few film franchises have lasted as long as Star Trek. Through five decades and three different crews, the Star Trek films have saved more than a few worlds (and the whales), traveling through time more than once to do it. With them being set in so many different time periods, their actual chronological order might get a little confusing. No need to fret as this is the proper order… in linear time, anyway. On a quantum level is a whole other thing. 
+
+  Star Wars (Timeline Order):
+    template:
+      - name: playlist
+      - name: shared
+    libraries: Movies, TV
+    trakt_list: https://trakt.tv/users/p4ik/lists/star-wars-timeline-canon?sort=rank,asc
+    summary: A long time ago in a galaxy far, far away, a farm boy on a desert planet dreamed of joining a rebellion and saving a princess from a dark lord, and thus, one of the most successful cinematic sagas of all time was born. What began with one space opera in 1977 quickly grew into a media empire that included toys, comic books, video games, TV series, and memorabilia in every possible form. Today, more than 40 years after it first arrived, Star Wars remains a global pop culture phenomenon, and the story still isn't over. 
+
+  Star Wars The Clone Wars (Timeline Order):
+    template:
+      - name: playlist
+      - name: shared
+    libraries: Movies, TV
+    trakt_list: https://trakt.tv/users/tomfin46/lists/star-wars-the-clone-wars-chronological-episode-order
+    summary: As more star systems get swept into the Clone Wars, the valiant Jedi knights struggle to maintain order. Anakin Skywalker and his Padawan learner Ahsoka Tano embark on a mission that brings them face-to-face with Jabba the Hutt. Plotting against them is evil Count Dooku and his agent, Asajj Ventress, who would ensure that the Jedis fail. Meanwhile, Yoda and Obi-Wan Kenobi lead the clone army against the forces of the Dark Side.
+
+  Pokémon (Timeline Order):
+    template:
+      - name: playlist
+      - name: shared
+    libraries: Movies,TV
+    trakt_list: https://trakt.tv/users/munch54/lists/pokemon-watching-order?sort=rank,asc
+    summary: Ash Ketchum, his yellow pet Pikachu, and his human friends explore a world of powerful creatures. Ten-year-old Ash aspires to be the greatest Pokémon (pocket monster) trainer in the world. To do this, he enlists the help of many friends, and his own Pokémon, Pikachu.

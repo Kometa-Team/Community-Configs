@@ -41,21 +41,6 @@ templates:
       - schedule_year_collections
     schedule: <<schedule_year_collections>>
 
-  visible:
-    visible_library: true
-    visible_home: true
-    visible_shared: true
-
-  visible_libraryonly:
-    visible_library: true
-    visible_home: false
-    visible_shared: false
-
-  visible_pinnedonly:
-    visible_library: false
-    visible_home: true
-    visible_shared: true
-
   award:
     optional:
       - image
@@ -109,6 +94,11 @@ templates:
     optional:
       - schedule_New_Episodes
     schedule: <<schedule_New_Episodes>>
+
+  playlist:
+    cache_builders: 1
+    sync_mode: sync
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<image_encoded>>.jpg
 
   TMDb_Trending_Shows:
     optional:
