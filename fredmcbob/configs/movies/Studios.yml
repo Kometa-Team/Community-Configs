@@ -1,0 +1,18 @@
+######################################################
+#                Studio Collections                  #
+######################################################
+templates:
+  Studio:
+    optional:
+      - company
+    tmdb_company: <<company>>
+    sort_title: +2_<<collection_name>>
+    sync_mode: sync
+    smart_label: release.desc
+collections:
+  Studio Ghibli:
+    template: { name: Studio, company: 10342 }
+    summary: Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. The studio is best known for its animated feature films, and has also produced several short films, television commercials, and one television film. The studio’s mascot and most recognizable symbol is the character, Totoro, a giant cat-like spirit from the 1988 classic, My Neighbor Totoro.
+    url_poster: https://theposterdb.com/api/assets/193453
+    url_background: https://wallpapercave.com/wp/aWaXW72.jpg
+
