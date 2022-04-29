@@ -1,0 +1,171 @@
+#####################################
+#         Studio Collections        #
+#####################################
+collections:
+  DC Extended Universe:
+    trakt_list:
+      - https://trakt.tv/users/1coolguy/lists/dc-tv-shows?sort=released,asc
+      - https://trakt.tv/users/tiska82/lists/dc-tv-shows?sort=added,asc
+      - https://trakt.tv/users/sroyalty/lists/dc-tv-shows-arrakis?sort=released,asc
+      - https://trakt.tv/users/donxy/lists/dc-extended-universe?sort=rank,asc
+    sort_title: "*106"
+  Marvel Cinematic Universe:
+    trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
+    sort_title: "*104"
+
+
+#####################################
+#         General Collections       #
+#####################################
+  Car Shows:
+    imdb_list: 
+      - url: https://www.imdb.com/list/ls070925151/
+      - url: https://www.imdb.com/search/keyword/?keywords=car&ref_=kw_ref_typ&mode=detail&page=1&genres=Sport&sort=moviemeter,asc&title_type=tvSeries
+      - url: https://www.imdb.com/search/keyword/?keywords=car&ref_=kw_ref_typ&mode=detail&page=1&genres=Documentary&sort=moviemeter,asc&title_type=tvSeries
+    sort_title: "*106"
+  Documentaries:
+    tmdb_discover:
+      with_genres: 99
+    sort_title: "*108"
+  30 Rock Top 100 Episodes:
+    collection_order: custom
+    collection_level: episode
+    sync_mode: sync
+    imdb_list:
+      url: https://www.imdb.com/search/title/?series=tt0496424&sort=user_rating,desc
+      limit: 100
+    sort_title: "*109"
+    summary: The top 100 30 Rock episodes by IMDb user rating
+  Family Guy Top 100 Episodes:
+    collection_order: custom
+    collection_level: episode
+    sync_mode: sync
+    imdb_list:
+      url: https://www.imdb.com/search/title/?series=tt0182576&sort=user_rating,desc
+      limit: 100
+    sort_title: "*110"
+    summary: The top 100 Family Guy episodes by IMDb user rating
+  Futurama Top 100 Episodes:
+    collection_order: custom
+    collection_level: episode
+    sync_mode: sync
+    imdb_list:
+      url: https://www.imdb.com/search/title/?series=tt0149460&sort=user_rating,desc
+      limit: 100
+    sort_title: "*111"
+    summary: The top 100 Futurama episodes by IMDb user rating
+  It's Always Sunny Top 100 Episodes:
+    collection_order: custom
+    collection_level: episode
+    sync_mode: sync
+    imdb_list:
+      url: https://www.imdb.com/search/title/?series=tt0472954&sort=user_rating,desc
+      limit: 100
+    sort_title: "*112"
+    summary: The top 100 It's Always Sunny in Philadelphia episodes by IMDb user rating
+  The Simpsons Top 100 Episodes:
+    collection_order: custom
+    collection_level: episode
+    sync_mode: sync
+    imdb_list:
+      url: https://www.imdb.com/search/title/?series=tt0096697&sort=user_rating,desc
+      limit: 100
+    sort_title: "*113"
+    summary: The top 100 Simpsons episodes by IMDb user rating
+  South Park Top 100 Episodes:
+    collection_order: custom
+    collection_level: episode
+    sync_mode: sync
+    imdb_list:
+      url: https://www.imdb.com/search/title/?series=tt0121955&sort=user_rating,desc
+      limit: 100
+    sort_title: "*114"
+    summary: The top 100 South Park episodes by IMDb user rating
+  ABC:
+    tmdb_network: 2
+    sort_title: "*115"
+  Amazon:
+    tmdb_network: 1024
+    sort_title: "*116"
+  AMC:
+    tmdb_network: 174
+    sort_title: "*117"
+  Apple TV+:
+    tmdb_network: 2552
+    sort_title: "*118"
+  CBS:
+    tmdb_network: 
+      - 16
+      - 1709
+    sort_title: "*119"
+  Comedy Central:
+    tmdb_network: 47
+    sort_title: "*120"
+  The CW:
+    tmdb_network: 71
+    sort_title: "*122"
+  Disney+:
+    tmdb_network: 2739
+    sort_title: "*124"
+  FOX:
+    tmdb_network: 19
+    sort_title: "*126"
+  FX:
+    tmdb_network: 88
+    sort_title: "*128"
+  HBO:
+    tmdb_network: 
+      - 49
+      - 3186
+    sort_title: "*130"
+  HGTV:
+    tmdb_network: 210
+    sort_title: "*132"
+  Hulu:
+    tmdb_network: 453
+    sort_title: "*134"
+  NBC:
+    tmdb_network: 6
+    sort_title: "*136"
+  Netflix:
+    tmdb_network: 213
+    sort_title: "*138"
+  Nick:
+    tmdb_network: 
+      - 13
+      - 224
+      - 35
+    sort_title: "*140"
+  PBS:
+    tmdb_network: 14
+    sort_title: "*142"
+  Showtime:
+    tmdb_network: 67
+    sort_title: "*144"
+  Kids Cartoons:
+    trakt_list:
+      - https://trakt.tv/users/kylesheila/lists/kids-cartoons?sort=title,asc
+      - https://trakt.tv/users/ondrisel/lists/classic-cartoons?sort=rank,asc
+    summary: A collection of kids cartoons
+    sort_title: "*160"
+  Anthony Bourdain:
+    plex_search:
+      all:
+        actor: Anthony Bourdain
+    tmdb_biography: 1223677
+    sort_title: "*146"
+  Archie Bunker:
+    plex_search:
+      all:
+        actor: Carroll O'Connor
+    summary: Archibald "Archie" Bunker is a fictional character from the 1970s American television sitcom All in the Family and its spin-off Archie Bunker's Place, played by Carroll O'Connor. Bunker, a main character of the series, is a World War II veteran, blue-collar worker, and family man. All in the Family premiered on January 12, 1971, where he was depicted as the head of the Bunker family. In 1979, the show was retooled and renamed Archie Bunker's Place; it finally went off the air in 1983. Bunker lived at the fictional address of 704 Hauser Street in the borough of Queens, in New York City. All in the Family got many of its laughs by playing on Archie's bigotry, although the dynamic tension between Archie and his liberal son-in-law, Mike, provided an ongoing political and social sounding board for a variety of topics.
+    sort_title: "*148"
+  Judd Apatow:
+    tmdb_biography: 41039
+    trakt_list: https://trakt.tv/users/ramair02/lists/judd-apatow-tv-shows?sort=released,desc
+    sort_title: "*150"
+  Norman Lear:
+    tmdb_producer: 170497
+    tmdb_actor: 170497
+    tmdb_show: 1964
+    sort_title: "*152"
