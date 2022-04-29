@@ -96,8 +96,11 @@ templates:
     schedule: <<schedule_New_Episodes>>
 
   playlist:
+    default:
+      libraries: Movies, TV
     cache_builders: 1
     sync_mode: sync
+    libraries: <libraries>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<image_encoded>>.jpg
 
   TMDb_Trending_Shows:
