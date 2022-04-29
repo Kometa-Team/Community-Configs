@@ -49,5 +49,6 @@ overlays:
       name: IMAX-L
       repo: PMM/overlays/IMAX-L
     plex_all: true
+    collection_level: episode
     filters:
       filepath.regex: '(?i)\[IMAX\]'

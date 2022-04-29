@@ -28,6 +28,5 @@ overlays:
       group: res
       weight: 10
     plex_search:
-      type: episodes
       any:
         resolution.regex: '(?i)480|sd'

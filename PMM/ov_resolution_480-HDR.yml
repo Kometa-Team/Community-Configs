@@ -28,7 +28,6 @@ overlays:
       group: res
       weight: 20
     plex_search:
-      type: episodes
       all:
         resolution.regex: '(?i)480|sd'
         hdr: true

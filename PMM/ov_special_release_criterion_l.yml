@@ -51,6 +51,7 @@ overlays:
       group: ribbon
       weight: 10
     plex_all: true
+    collection_level: episode
     filters:
       filepath.regex: 
         - '(?i)Criterion'
