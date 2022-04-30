@@ -21,7 +21,7 @@ playlists:
       - name: shared
     libraries: Movies, TV
     trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
-    summary: The Marvel Cinematic Universeis a collection of movies and television series that tell a singular narrative related to Marvel characters, settings and stories. The MCU is a product from Disney and Marvel that brings us heroes from Black Panther and Doctor Strange to Spider-Man and Iron Man.
+    summary: The Marvel Cinematic Universe is a collection of movies and television series that tell a singular narrative related to Marvel characters, settings and stories. The MCU is a product from Disney and Marvel that brings us heroes from Black Panther and Doctor Strange to Spider-Man and Iron Man.
 
   Star Trek (Timeline Order):
     template:
@@ -54,3 +54,45 @@ playlists:
     libraries: Movies,TV
     trakt_list: https://trakt.tv/users/munch54/lists/pokemon-watching-order?sort=rank,asc
     summary: Ash Ketchum, his yellow pet Pikachu, and his human friends explore a world of powerful creatures. Ten-year-old Ash aspires to be the greatest Pokémon (pocket monster) trainer in the world. To do this, he enlists the help of many friends, and his own Pokémon, Pikachu.
+
+  James Bond (Timeline Order):
+    template:
+      - name: playlist
+      - name: shared
+    libraries: Movies, TV
+    trakt_list: https://trakt.tv/users/any/lists/james-bond?sort=rank,asc
+
+  Fast & Furious (Timeline Order):
+    template:
+      - name: playlist
+      - name: shared
+    libraries: Movies, TV
+    trakt_list: https://trakt.tv/users/mausk/lists/fast-furious?sort=rank,desc
+
+  Harry Potter (Timeline Order):
+    template:
+      - name: playlist
+      - name: shared
+    libraries: Movies, TV
+    trakt_list: https://trakt.tv/users/goldveia/lists/harry-potter?sort=rank,asc  
+
+  Lord of the Rings (Timeline Order):
+    template:
+      - name: playlist
+      - name: shared
+    libraries: Movies, TV
+    trakt_list: https://trakt.tv/users/spite84/lists/lord-of-the-rings?sort=rank,asc
+
+  Jurassic Park (Timeline Order):
+    template:
+      - name: playlist
+      - name: shared
+    libraries: Movies, TV
+    trakt_list: https://trakt.tv/users/iamgabriel/lists/jurassic?sort=rank,asc
+
+  Hunger Games (Timeline Order):
+    template:
+      - name: playlist
+      - name: shared
+    libraries: Movies, TV
+    trakt_list: https://trakt.tv/users/gapunk78/lists/hunger-games?sort=rank,asc
