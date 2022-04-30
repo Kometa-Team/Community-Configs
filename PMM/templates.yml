@@ -423,5 +423,5 @@ templates:
       libraries: Movies, TV
     cache_builders: 1
     sync_mode: sync
-    libraries: <libraries>
+    libraries: <<libraries>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<image_encoded>>.jpg
