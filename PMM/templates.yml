@@ -1,0 +1,427 @@
+templates:
+
+  separator:
+    default:
+      collection_section: "00"
+    optional:
+      - schedule_separator
+      - collection_mode
+    schedule: <<schedule_separator>>
+    collection_mode: <<collection_mode>>
+    sort_title: "!<<collection_section>>_!<<collection_name>>"
+    blank_collection: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<separator>>.jpg
+
+  shared:
+    default:
+      collection_section: "00"
+      sort: <<collection_name>>
+      pre: "_"
+    optional:
+      - collection_mode
+      - radarr_add
+      - sonarr_add
+    radarr_add: <<radarr_add>>
+    sonarr_add: <<sonarr_add>>
+    collection_mode: <<collection_mode>>
+    sort_title: "!<<collection_section>><<pre>><<sort>>"
+
+  other_collection:
+    default:
+      collection_section: "00"
+      sort: <<collection_name>>
+      pre: "_~"
+    optional:
+      - schedule_other
+    schedule: <<schedule_other>>
+    sort_title: "!<<collection_section>><<pre>><<sort>>"
+
+  schedule_year_collections:
+    optional:
+      - schedule_year_collections
+    schedule: <<schedule_year_collections>>
+
+  award:
+    optional:
+      - image
+    cache_builders: 1
+    sync_mode: sync
+    smart_label: audience_rating.desc
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<image>>.jpg
+
+  chart:
+    cache_builders: 1
+    sync_mode: sync
+    limit: 250
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<image_encoded>>.jpg
+
+  chart_show:
+    sync_mode: sync
+    limit: 250
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<image_encoded>>.jpg
+
+  Newly_Released_Movies:
+    optional:
+      - schedule_Newly_Released_Movies
+      - visible_library_Newly_Released_Movies
+      - visible_home_Newly_Released_Movies
+      - visible_shared_Newly_Released_Movies
+    schedule: <<schedule_Newly_Released_Movies>>
+    visible_library: <<visible_library_Newly_Released_Movies>>
+    visible_home: <<visible_home_Newly_Released_Movies>>
+    visible_shared: <<visible_shared_Newly_Released_Movies>>
+
+  TMDb_Trending_Movies:
+    optional:
+      - schedule_TMDb_Trending_Movies
+      - visible_library_TMDb_Trending_Movies
+      - visible_home_TMDb_Trending_Movies
+      - visible_shared_TMDb_Trending_Movies
+    schedule: <<schedule_TMDb_Trending_Movies>>
+    visible_library: <<visible_library_TMDb_Trending_Movies>>
+    visible_home: <<visible_home_TMDb_Trending_Movies>>
+    visible_shared: <<visible_shared_TMDb_Trending_Movies>>
+
+  TMDb_Popular_Movies:
+    optional:
+      - schedule_TMDb_Popular_Movies
+      - visible_library_TMDb_Popular_Movies
+      - visible_home_TMDb_Popular_Movies
+      - visible_shared_TMDb_Popular_Movies
+    schedule: <<schedule_TMDb_Popular_Movies>>
+    visible_library: <<visible_library_TMDb_Popular_Movies>>
+    visible_home: <<visible_home_TMDb_Popular_Movies>>
+    visible_shared: <<visible_shared_TMDb_Popular_Movies>>
+
+  TMDb_Now_Playing_Movies:
+    optional:
+      - schedule_TMDb_Now_Playing_Movies
+      - visible_library_TMDb_Now_Playing_Movies
+      - visible_home_TMDb_Now_Playing_Movies
+      - visible_shared_TMDb_Now_Playing_Movies
+    schedule: <<schedule_TMDb_Now_Playing_Movies>>
+    visible_library: <<visible_library_TMDb_Now_Playing_Movies>>
+    visible_home: <<visible_home_TMDb_Now_Playing_Movies>>
+    visible_shared: <<visible_shared_TMDb_Now_Playing_Movies>>
+
+  IMDb_Top_250_Movies:
+    optional:
+      - schedule_IMDb_Top_250_Movies
+      - visible_library_IMDb_Top_250_Movies
+      - visible_home_IMDb_Top_250_Movies
+      - visible_shared_IMDb_Top_250_Movies
+    schedule: <<schedule_IMDb_Top_250_Movies>>
+    visible_library: <<visible_library_IMDb_Top_250_Movies>>
+    visible_home: <<visible_home_IMDb_Top_250_Movies>>
+    visible_shared: <<visible_shared_IMDb_Top_250_Movies>>
+
+  Newly_Released_Shows:
+    optional:
+      - schedule_Newly_Released_Shows
+      - visible_library_Newly_Released_Shows
+      - visible_home_Newly_Released_Shows
+      - visible_shared_Newly_Released_Shows
+    schedule: <<schedule_Newly_Released_Shows>>
+    visible_library: <<visible_library_Newly_Released_Shows>>
+    visible_home: <<visible_home_Newly_Released_Shows>>
+    visible_shared: <<visible_shared_Newly_Released_Shows>>
+
+  New_Episodes:
+    optional:
+      - schedule_New_Episodes
+      - visible_library_New_Episodes
+      - visible_home_New_Episodes
+      - visible_shared_New_Episodes
+    schedule: <<schedule_New_Episodes>>
+    visible_library: <<visible_library_New_Episodes>>
+    visible_home: <<visible_home_New_Episodes>>
+    visible_shared: <<visible_shared_New_Episodes>>
+
+  TMDb_Trending_Shows:
+    optional:
+      - schedule_TMDb_Trending_Shows
+      - visible_library_TMDb_Trending_Shows
+      - visible_home_TMDb_Trending_Shows
+      - visible_shared_TMDb_Trending_Shows
+    schedule: <<schedule_TMDb_Trending_Shows>>
+    visible_library: <<visible_library_TMDb_Trending_Shows>>
+    visible_home: <<visible_home_TMDb_Trending_Shows>>
+    visible_shared: <<visible_shared_TMDb_Trending_Shows>>
+
+  TMDb_Popular_Shows:
+    optional:
+      - schedule_TMDb_Popular_Shows
+      - visible_library_TMDb_Popular_Shows
+      - visible_home_TMDb_Popular_Shows
+      - visible_shared_TMDb_Popular_Shows
+    schedule: <<schedule_TMDb_Popular_Shows>>
+    visible_library: <<visible_library_TMDb_Popular_Shows>>
+    visible_home: <<visible_home_TMDb_Popular_Shows>>
+    visible_shared: <<visible_shared_TMDb_Popular_Shows>>
+
+  streaming:
+    cache_builders: 1
+    smart_label: release.desc
+    sync_mode: sync
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/streaming/<<image_encoded>>.jpg
+
+  All4:
+    optional:
+      - schedule_all_4
+      - visible_library_all_4
+      - visible_home_all_4
+      - visible_shared_all_4
+    schedule: <<schedule_all_4>>
+    visible_library: <<visible_library_all_4>>
+    visible_home: <<visible_home_all_4>>
+    visible_shared: <<visible_shared_all_4>>
+
+  AppleTV:
+    optional:
+      - schedule_apple_tv
+      - visible_library_apple_tv
+      - visible_home_apple_tv
+      - visible_shared_apple_tv
+    schedule: <<schedule_apple_tv>>
+    visible_library: <<visible_library_apple_tv>>
+    visible_home: <<visible_home_apple_tv>>
+    visible_shared: <<visible_shared_apple_tv>>
+
+  BET:
+    optional:
+      - schedule_bet
+      - visible_library_bet
+      - visible_home_bet
+      - visible_shared_bet
+    schedule: <<schedule_bet>>
+    visible_library: <<visible_library_bet>>
+    visible_home: <<visible_home_bet>>
+    visible_shared: <<visible_shared_bet>>
+
+  BritBox:
+    optional:
+      - schedule_brit_box
+      - visible_library_brit_box
+      - visible_home_brit_box
+      - visible_shared_brit_box
+    schedule: <<schedule_brit_box>>
+    visible_library: <<visible_library_brit_box>>
+    visible_home: <<visible_home_brit_box>>
+    visible_shared: <<visible_shared_brit_box>>
+
+  Disney:
+    optional:
+      - schedule_disney
+      - visible_library_disney
+      - visible_home_disney
+      - visible_shared_disney
+    schedule: <<schedule_disney>>
+    visible_library: <<visible_library_disney>>
+    visible_home: <<visible_home_disney>>
+    visible_shared: <<visible_shared_disney>>
+
+  hayu:
+    optional:
+      - schedule_hayu
+      - visible_library_hayu
+      - visible_home_hayu
+      - visible_shared_hayu
+    schedule: <<schedule_hayu>>
+    visible_library: <<visible_library_hayu>>
+    visible_home: <<visible_home_hayu>>
+    visible_shared: <<visible_shared_hayu>>
+
+  HBOMax:
+    optional:
+      - schedule_hbo_max
+      - visible_library_hbo_max
+      - visible_home_hbo_max
+      - visible_shared_hbo_max
+    schedule: <<schedule_hbo_max>>
+    visible_library: <<visible_library_hbo_max>>
+    visible_home: <<visible_home_hbo_max>>
+    visible_shared: <<visible_shared_hbo_max>>
+
+  Hulu:
+    optional:
+      - schedule_hulu
+      - visible_library_hulu
+      - visible_home_hulu
+      - visible_shared_hulu
+    schedule: <<schedule_hulu>>
+    visible_library: <<visible_library_hulu>>
+    visible_home: <<visible_home_hulu>>
+    visible_shared: <<visible_shared_hulu>>
+
+  Netflix:
+    optional:
+      - schedule_netflix
+      - visible_library_netflix
+      - visible_home_netflix
+      - visible_shared_netflix
+    schedule: <<schedule_netflix>>
+    visible_library: <<visible_library_netflix>>
+    visible_home: <<visible_home_netflix>>
+    visible_shared: <<visible_shared_netflix>>
+
+  NOW:
+    optional:
+      - schedule_now
+      - visible_library_now
+      - visible_home_now
+      - visible_shared_now
+    schedule: <<schedule_now>>
+    visible_library: <<visible_library_now>>
+    visible_home: <<visible_home_now>>
+    visible_shared: <<visible_shared_now>>
+
+  Paramount:
+    optional:
+      - schedule_paramount
+      - visible_library_paramount
+      - visible_home_paramount
+      - visible_shared_paramount
+    schedule: <<schedule_paramount>>
+    visible_library: <<visible_library_paramount>>
+    visible_home: <<visible_home_paramount>>
+    visible_shared: <<visible_shared_paramount>>
+
+  Peacock:
+    optional:
+      - schedule_peacock
+      - visible_library_peacock
+      - visible_home_peacock
+      - visible_shared_peacock
+    schedule: <<schedule_peacock>>
+    visible_library: <<visible_library_peacock>>
+    visible_home: <<visible_home_peacock>>
+    visible_shared: <<visible_shared_peacock>>
+
+  Prime:
+    optional:
+      - schedule_prime
+      - visible_library_prime
+      - visible_home_prime
+      - visible_shared_prime
+    schedule: <<schedule_prime>>
+    visible_library: <<visible_library_prime>>
+    visible_home: <<visible_home_prime>>
+    visible_shared: <<visible_shared_prime>>
+
+  Independence:
+    optional:
+      - schedule_independence
+      - visible_library_independence
+      - visible_home_independence
+      - visible_shared_independence
+    schedule: <<schedule_independence>>
+    visible_library: <<visible_library_independence>>
+    visible_home: <<visible_home_independence>>
+    visible_shared: <<visible_shared_independence>>
+
+  Easter:
+    optional:
+      - schedule_easter
+      - visible_library_easter
+      - visible_home_easter
+      - visible_shared_easter
+    schedule: <<schedule_easter>>
+    visible_library: <<visible_library_easter>>
+    visible_home: <<visible_home_easter>>
+    visible_shared: <<visible_shared_easter>>
+
+  Valentine:
+    optional:
+      - schedule_valentine
+      - visible_library_valentine
+      - visible_home_valentine
+      - visible_shared_valentine
+    schedule: <<schedule_valentine>>
+    visible_library: <<visible_library_valentine>>
+    visible_home: <<visible_home_valentine>>
+    visible_shared: <<visible_shared_valentine>>
+
+  StPatrick:
+    optional:
+      - schedule_st_patrick
+      - visible_library_st_patrick
+      - visible_home_st_patrick
+      - visible_shared_st_patrick
+    schedule: <<schedule_st_patrick>>
+    visible_library: <<visible_library_st_patrick>>
+    visible_home: <<visible_home_st_patrick>>
+    visible_shared: <<visible_shared_st_patrick>>
+
+  Thanksgiving:
+    optional:
+      - schedule_thanksgiving
+      - visible_library_thanksgiving
+      - visible_home_thanksgiving
+      - visible_shared_thanksgiving
+    schedule: <<schedule_thanksgiving>>
+    visible_library: <<visible_library_thanksgiving>>
+    visible_home: <<visible_home_thanksgiving>>
+    visible_shared: <<visible_shared_thanksgiving>>
+
+  ThanksgivingUS:
+    optional:
+      - schedule_thanksgiving_us
+      - visible_library_thanksgiving_us
+      - visible_home_thanksgiving_us
+      - visible_shared_thanksgiving_us
+    schedule: <<schedule_thanksgiving_us>>
+    visible_library: <<visible_library_thanksgiving_us>>
+    visible_home: <<visible_home_thanksgiving_us>>
+    visible_shared: <<visible_shared_thanksgiving_us>>
+
+  ThanksgivingCA:
+    optional:
+      - schedule_thanksgiving_ca
+      - visible_library_thanksgiving_ca
+      - visible_home_thanksgiving_ca
+      - visible_shared_thanksgiving_ca
+    schedule: <<schedule_thanksgiving_ca>>
+    visible_library: <<visible_library_thanksgiving_ca>>
+    visible_home: <<visible_home_thanksgiving_ca>>
+    visible_shared: <<visible_shared_thanksgiving_ca>>
+
+  Halloween:
+    optional:
+      - schedule_halloween
+      - visible_library_halloween
+      - visible_home_halloween
+      - visible_shared_halloween
+    schedule: <<schedule_halloween>>
+    visible_library: <<visible_library_halloween>>
+    visible_home: <<visible_home_halloween>>
+    visible_shared: <<visible_shared_halloween>>
+
+  Christmas:
+    optional:
+      - schedule_christmas
+      - visible_library_christmas
+      - visible_home_christmas
+      - visible_shared_christmas
+    schedule: <<schedule_christmas>>
+    visible_library: <<visible_library_christmas>>
+    visible_home: <<visible_home_christmas>>
+    visible_shared: <<visible_shared_christmas>>
+
+  NewYears:
+    optional:
+      - schedule_new_years
+      - visible_library_new_years
+      - visible_home_new_years
+      - visible_shared_new_years
+    schedule: <<schedule_new_years>>
+    visible_library: <<visible_library_new_years>>
+    visible_home: <<visible_home_new_years>>
+    visible_shared: <<visible_shared_new_years>>
+
+  playlist:
+    default:
+      libraries: Movies, TV
+    cache_builders: 1
+    sync_mode: sync
+    libraries: <<libraries>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<image_encoded>>.jpg

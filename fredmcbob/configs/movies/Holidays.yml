@@ -1,0 +1,76 @@
+#####################################################
+#            Holiday Collections                    #
+#####################################################
+
+collections:
+  Christmas Movies:
+    sync_mode: append
+    smart_label: release.desc
+    sort_title: +02_Christmas
+    summary: "Why does Santa have three gardens? So he can ho ho ho."
+    trakt_list: 
+      - https://trakt.tv/users/movistapp/lists/christmas-movies
+      - https://trakt.tv/users/2borno2b/lists/christmas-movies-extravanganza
+      - https://trakt.tv/users/pualani78/lists/christmas-2020
+      - https://trakt.tv/users/veninjak/lists/complete-christmas-2021-copy
+    url_poster: https://theposterdb.com/poster/212635/view?
+    schedule: range(11/01-01/05)
+    delete_not_scheduled: true
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  Easter Movies:
+    sync_mode: sync
+    smart_label: random
+    sort_title: +02_Easter
+    trakt_list:
+      - https://trakt.tv/users/smwixted/lists/easter
+    summary: "What music does the Easter Bunny listen to? Hip-hop."
+    url_poster: https://theposterdb.com/api/assets/212636/
+    schedule: range(04/01-04/18)
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  Halloween Movies:
+    sync_mode: sync
+    smart_label: random
+    sort_title: +02_Halloween
+    trakt_list:
+      - https://trakt.tv/users/29zombies/lists/halloween
+      - https://trakt.tv/users/galacticboy/lists/not-so-spooky-halloween
+      - https://trakt.tv/users/triadcool/lists/halloween?sort=released,asc
+      - https://trakt.tv/users/evil-vin/lists/halloween-2021?sort=released,asc
+    summary: "What's a monster's favorite bean? A human bean."
+    url_poster: https://theposterdb.com/poster/212637
+    schedule: range(11/01-11/31)
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  Thanksgiving Movies:
+    sync_mode: sync
+    smart_label: random
+    sort_title: +02_Thanksgiving
+    trakt_list:
+      - https://trakt.tv/users/triadcool/lists/valentine
+    summary: "What do you call a ghost turkey? A Poultrygeist!"
+    url_poster: https://theposterdb.com/api/assets/212638/
+    schedule: range (11/14-11/25)
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  Valentine's Movies:
+    sync_mode: sync
+    smart_label: random
+    sort_title: +02_Valentine
+    trakt_list:
+      - https://trakt.tv/users/triadcool/lists/valentine
+    summary: "What did the watermelon say to his fiance? You are one in a melon."
+    url_poster: https://theposterdb.com/poster/212641
+    schedule: range (02/01-02/14)
+    visible_home: true
+    visible_shared: true
+    visible_library: true

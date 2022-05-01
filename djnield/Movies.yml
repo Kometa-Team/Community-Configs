@@ -1,19 +1,4 @@
 ---
-templates:
-  sub_genre:
-    default:
-      limit: 200
-    sort_title: ++04_<<collection_name>>
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    imdb_list: 
-      - url: https://www.imdb.com/search/title/?title_type=feature,tv_movie&release_date=1990-01-01,&user_rating=5.0,10.0&keywords=<<sub_genre>>&sort=user_rating,desc
-        limit: <<limit>>
-    sync_mode: sync
-    collection_order: custom
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-    
 collections:
   Movie Watchlist:
     trakt_watchlist:
@@ -28,6 +13,7 @@ collections:
     visible_library: false
     url_poster: https://i.imgur.com/IJMWyvo.png
     url_background: https://wallpaper.dog/large/20509069.jpg
+    cache_builders: 1
 
   Trending Movies:
     trakt_trending: 40
@@ -42,13 +28,14 @@ collections:
     visible_home: true
     visible_shared: true
     visible_library: true
+    cache_builders: 1
 
   Top Rated Movies:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
     tmdb_top_rated: 250
     sort_title: ++02Top Rated
     sync_mode: sync
-    schedule: hourly (00)
+    schedule: hourly (18)
     smart_label: random
     summary: IMDb Top Rated Movies
     url_poster: https://i.imgur.com/7h1vaxl.png
@@ -56,37 +43,4 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: true
-    
-  Assassins:
-    template: {name: sub_genre, sub_genre: assassination-attempt}
-    url_poster: https://i.imgur.com/xtpqcFs.png
-  Bank Heists:
-    template: {name: sub_genre, sub_genre: bank-heist}
-    url_poster: https://i.imgur.com/ZjX03VM.png
-  Con Artists:
-    template: {name: sub_genre, sub_genre: con-artist,con-man}
-    url_poster: https://i.imgur.com/IVjTl6y.png
-  Disasters:
-    template: {name: sub_genre, sub_genre: disaster,disaster-film}
-    url_poster: https://i.imgur.com/TOAbO47.png
-  Espionage:
-    template: {name: sub_genre, sub_genre: espionage,spy}
-    url_poster: https://i.imgur.com/IlVrIQB.png
-  Fugitives:
-    template: {name: sub_genre, sub_genre: fugitive,on-the-run}
-    url_poster: https://i.imgur.com/0h5oUIG.png
-  Hostage:
-    template: {name: sub_genre, sub_genre: hostage,kidnapping}
-    url_poster: https://i.imgur.com/aPnfiEK.png
-  Psychological:
-    template: {name: sub_genre, sub_genre: psychological-thriller}
-    url_poster: https://i.imgur.com/NUF09zK.png
-  Revenge:
-    template: {name: sub_genre, sub_genre: revenge}
-    url_poster: https://i.imgur.com/Gh5GJn0.png
-  Serial Killers:
-    template: {name: sub_genre, sub_genre: serial-killer,murder}
-    url_poster: https://i.imgur.com/PqJYTMh.png
-  Survival:
-    template: {name: sub_genre, sub_genre: survivor,survival}
-    url_poster: https://i.imgur.com/x4KVDUr.png
+    cache_builders: 1

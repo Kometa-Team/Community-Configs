@@ -1,19 +1,5 @@
 ---
 collections:
-  Movie Watchlist:
-    trakt_watchlist:
-      - me
-    sort_title: ++3Watchlist
-    smart_label: release.desc
-    sync_mode: sync
-    schedule: hourly (00)
-    label: admin
-    visible_home: true
-    visible_shared: false
-    visible_library: false
-    url_poster: https://i.imgur.com/IJMWyvo.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-
   Trending Movies:
     trakt_trending: 40
     tmdb_trending_daily: 40
@@ -27,37 +13,7 @@ collections:
     visible_home: true
     visible_shared: true
     visible_library: true
-
-  Top Rated Movies:
-    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
-    tmdb_top_rated: 250
-    sort_title: ++2Top Rated
-    sync_mode: sync
-    schedule: hourly (00)
-    smart_label: random
-    summary: IMDb Top Rated Movies
-    url_poster: https://i.imgur.com/7h1vaxl.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
-#  4K-HDR Overlay:
-#    plex_search:
-#      all:
-#        resolution: 4K
-#        hdr: true
-#    item_overlay:
-#      name: 4K-HDR
-#      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K-HDR/overlay.png
-#    build_collection: false
-#  4K Overlay:
-#    plex_all: true
-#    build_collection: false
-#    item_overlay:
-#      name: 4K
-#      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
-
+    cache_builders: 1
   4K Overlay:
     plex_all: true
     item_overlay:
@@ -65,3 +21,4 @@ collections:
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/4K/overlay.png
     build_collection: false
     revert_overlay: false
+    schedule: hourly(18)

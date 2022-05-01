@@ -1,0 +1,36 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Angry Birds":
+    template: {name: Set, collection: 531315, poster: https://theposterdb.com/api/assets/178907 }
+
+  "Cloudy with a Chance of Meatballs":
+    template: {name: Set, collection: 177467, poster: https://theposterdb.com/api/assets/178904 }
+
+  "Goosebumps":
+    template: {name: Set, collection: 508783, poster: https://theposterdb.com/api/assets/161010 }
+
+  "Hotel Transylvania":
+    template: {name: Set, collection: 185103, poster: https://theposterdb.com/api/assets/178876 }
+
+  "Open Season":
+    template: {name: Set, collection: 66761, poster: https://theposterdb.com/api/assets/178905 }
+
+  "Peter Rabbit":
+    template: {name: Set, collection: 595693, poster: https://theposterdb.com/api/assets/165298 }
+
+  "Smurfs":
+    template: {name: Set, collection: 134897, poster: https://theposterdb.com/api/assets/162962 }
+
+  "Surf's Up":
+    template: {name: Set, collection: 436295, poster: https://theposterdb.com/api/assets/178906 }

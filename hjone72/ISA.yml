@@ -10,6 +10,8 @@ templates:
     trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-independent-spirits
     item_label: ISA
 collections:
+  Independent Spirit Awards 2022:
+    template: { name: ISA Template, year: 2022 }
   Independent Spirit Awards 2021:
     template: { name: ISA Template, year: 2021 }
   Independent Spirit Awards 2020:
