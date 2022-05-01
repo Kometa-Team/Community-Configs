@@ -8,6 +8,10 @@ templates:
   Series:
     sort_title: +03_<<collection_name>>
     sync_mode: sync
+  IMDb Series:
+    sort_title: +03_<<collection_name>>
+    imdb_list: https://www.imdb.com/list/<<IMDbList>>/
+    sync_mode: sync
 collections:
 ######################################################
 #                    Movie Charts                    #
@@ -107,29 +111,25 @@ collections:
     summary: All Alien & Predator movies in the shared universe
     name_mapping: AlienPredator Universe
   Rocky Universe:
-    template: {name: Series}
-    imdb_list: https://www.imdb.com/list/ls538336139/
+    template: {name: IMDb Series, IMDbList: ls538336139 }
     url_poster: https://theposterdb.com/api/assets/5907
     sort_by: release_date.desc
     collection_order: release
     summary: All movies from the Rocky & Creed Universe.
   Fast & Furious Collection:
-    template: {name: Series}
-    imdb_list: https://www.imdb.com/list/ls068290878/
+    template: {name: IMDb Series, IMDbList: ls068290878 }
     url_poster: https://theposterdb.com/api/assets/47254
     sort_by: release_date.desc
     collection_order: custom
     summary: All movies in the Fast & Furious Universe.
   Indiana Jones Franchise:
-    template: {name: Series}
-    imdb_list: https://www.imdb.com/list/ls538364160/
+    template: {name: IMDb Series, IMDbList: ls538364160 }
     url_poster: https://theposterdb.com/api/assets/11385
     sort_by: release_date.desc
     collection_order: custom
     summary: All movies in the Indiana Jones Universe.
   Mission Impossible Collection:
-    template: {name: Series}
-    imdb_list: https://www.imdb.com/list/ls066600640
+    template: {name: IMDb Series, IMDbList: ls066600640 }
     url_poster: https://theposterdb.com/api/assets/6475
     sort_by: release_date.desc
     collection_order: custom
@@ -137,8 +137,7 @@ collections:
     name_mapping: Mission Impossible
     summary: "All movies in the Mission: Impossible Universe."
   James Bond Franchise:
-    template: {name: Series}
-    imdb_list: https://www.imdb.com/list/ls006405458/
+    template: {name: IMDb Series, IMDbList: ls006405458 }
     url_poster: https://theposterdb.com/api/assets/75315
     sort_by: release_date.desc
     collection_order: custom
