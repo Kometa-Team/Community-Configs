@@ -133,9 +133,20 @@ templates:
       - visible_home_New_Episodes
       - visible_shared_New_Episodes
     schedule: <<schedule_New_Episodes>>
+<<<<<<< HEAD
     visible_library: <<visible_library_New_Episodes>>
     visible_home: <<visible_home_New_Episodes>>
     visible_shared: <<visible_shared_New_Episodes>>
+=======
+
+  playlist:
+    default:
+      libraries: Movies, TV
+    cache_builders: 1
+    sync_mode: sync
+    libraries: <<libraries>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<image_encoded>>.jpg
+>>>>>>> 447abb5432a8e7797ade1dd69120725e538a8015
 
   TMDb_Trending_Shows:
     optional:
