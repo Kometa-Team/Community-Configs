@@ -96,6 +96,11 @@ collections:
     url_poster: https://theposterdb.com/api/assets/165412
     url_background: https://www.themoviedb.org/t/p/original/t2Y4KYSgi77NCebkbInkD0cMrbl.jpg
 
+  Curious George:
+    template: {name: collection, collection: "55428"}
+    url_poster: https://theposterdb.com/api/assets/29684
+    url_background: https://www.themoviedb.org/t/p/original/qC533xWXnpR8SG3zrll8aKmeQXV.jpg
+
   The Dark Knight:
     template: {name: collection, collection: "263"}
     url_poster: https://theposterdb.com/api/assets/52697
@@ -106,6 +111,11 @@ collections:
     tmdb_list_details: 3
     url_poster: https://i.imgur.com/TJr35Au.jpeg
     url_background: https://wallpaper.dog/large/17164614.jpg
+
+  Despicable Me:
+    template: {name: collection, collection: "86066"}
+    url_poster: https://theposterdb.com/api/assets/163000
+    url_background: https://www.themoviedb.org/t/p/original/1xRyksv55FaBLM5R7t1ZPp9GPnC.jpg
 
   Die Hard:
     template: {name: collection, collection: "1570"}
@@ -199,10 +209,20 @@ collections:
     url_poster: https://theposterdb.com/api/assets/162044
     url_background: https://www.themoviedb.org/t/p/original/4f9kGJeKQTWjK0aAVootsdinDju.jpg
 
+  How to Train Your Dragon:
+    template: {name: collection, collection: "89137"} 
+    url_poster: https://theposterdb.com/api/assets/162990
+    url_background: https://www.themoviedb.org/t/p/original/wAHEsXSQ1jOcGDq5xkmVcpGqr4C.jpg
+
   Hunger Games:
     template: {name: collection, collection: "131635"} 
     url_poster: https://theposterdb.com/api/assets/163851
     url_background: https://www.themoviedb.org/t/p/original/zWiiLNg8yXv0he3tCH6XignPaYV.jpg
+
+  Ice Age:
+    template: {name: collection, collection: "8354"} 
+    url_poster: https://theposterdb.com/api/assets/162988
+    url_background: https://www.themoviedb.org/t/p/original/2Mb92Ssoe1eUecvrCe2pEvgAlmv.jpg
 
   Indiana Jones:
     template: {name: collection, collection: "84"} 
@@ -260,6 +280,16 @@ collections:
     url_poster: https://theposterdb.com/api/assets/164805
     url_background: https://www.themoviedb.org/t/p/original/4RvHJHSuQUKRzUx8h6a8VAxvbIE.jpg
 
+  Land Before Time:
+    template: {name: collection, collection: "325470"}
+    url_poster: https://theposterdb.com/api/assets/162981
+    url_background: https://www.themoviedb.org/t/p/original/alkvR9vTtuZEmd5ygsayOfxYOMa.jpg
+
+  Lego Movie:
+    template: {name: collection, collection: "19163"}
+    url_poster: https://theposterdb.com/api/assets/163075
+    url_background: https://www.themoviedb.org/t/p/original/vAyMNou7M2SOXjPIzLhltTvAqD1.jpg
+
   Leprechaun:
     template: {name: collection, collection: "19285"}
     url_poster: https://theposterdb.com/api/assets/161112
@@ -269,6 +299,11 @@ collections:
     template: {name: collection, collection: "945"}
     url_poster: https://theposterdb.com/api/assets/164803
     url_background: https://www.themoviedb.org/t/p/original/7PH31kIhz6BnzoP9cxG7JbkB6fT.jpg
+
+  Lion King:
+    template: {name: collection, collection: "94032", "762512"}
+    url_poster: https://theposterdb.com/api/assets/162978
+    url_background: https://www.themoviedb.org/t/p/original/A9IEaj9cPAwEgFnTmteB70oxgJY.jpg
 
   Living Dead:
     template: {name: collection, collection: "261590"}
@@ -280,6 +315,11 @@ collections:
     trakt_list: https://trakt.tv/users/lutgnature/lists/lord-of-the-rings-hobbit
     url_poster: https://i.imgur.com/xFbp0IR.jpeg
     url_background: https://wallpaperaccess.com/full/838293.jpg
+
+  Madagascar:
+    template: {name: collection, collection: "14740"}
+    url_poster: https://theposterdb.com/api/assets/162976
+    url_background: https://www.themoviedb.org/t/p/original/lzTIAbvMeGWB7PUrmBZXulGA28M.jpg
 
   Mad Max:
     template: {name: collection, collection: "8945"}
@@ -352,6 +392,17 @@ collections:
     template: {name: collection, collection: "304"}
     url_poster: https://theposterdb.com/api/assets/164814
     url_background: https://www.themoviedb.org/t/p/original/7WUSrq8DqSkVgv1vmhBvav5bPoB.jpg
+
+  Open Season:
+    template: {name: collection, collection: "66761"}
+    url_poster: https://theposterdb.com/api/assets/178905
+    url_background: https://www.themoviedb.org/t/p/original/cnaLzqjxlqGMIp7AGCizfVXUhSn.jpg
+
+  Peanuts:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/novela/lists/peanuts
+    url_poster: https://theposterdb.com/api/assets/188207
+    url_background: https://wallpapertag.com/wallpaper/full/5/6/9/508442-peanuts-characters-wallpaper-1920x1080-download-free.jpg
 
   Pirates of the Caribbean:
     template: {name: collection, collection: "295"}
@@ -428,6 +479,11 @@ collections:
     url_poster: https://theposterdb.com/api/assets/162221
     url_background: https://www.themoviedb.org/t/p/original/avXhefNpY1FFATWKnumB5UKiDxb.jpg
 
+  Shrek:
+    template: {name: collection, collection: "2150"}
+    url_poster: https://theposterdb.com/api/assets/160988
+    url_background: https://www.themoviedb.org/t/p/original/mM0i9QqSggwJaz9cry94lJZNQ43.jpg
+
   Spider-man Universe:
     template: {name: collection}
     trakt_list: https://trakt.tv/users/james_97/lists/spider-verse
@@ -454,6 +510,11 @@ collections:
     template: {name: collection, collection: "111751"}
     url_poster: https://theposterdb.com/api/assets/161860
     url_background: https://www.themoviedb.org/t/p/original/1zIwt7gUyxKhOKYXN5XNGdGxwHg.jpg
+
+  Toy Story:
+    template: {name: collection, collection: "10194"}
+    url_poster: https://theposterdb.com/api/assets/162955
+    url_background: https://www.themoviedb.org/t/p/original/rlvLMH5ceid9ESsuYppA8IZb0Rk.jpg
 
   Thor:
     template: {name: collection, collection: "131296"}
