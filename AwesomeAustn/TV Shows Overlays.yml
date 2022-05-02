@@ -1,0 +1,61 @@
+overlays:
+
+############################
+#    STREAMING SERVICES    #
+############################
+
+  Netflix Series:
+    overlay: Netflix Series
+    plex_search:
+      all:
+        collection: Netflix
+  Apple TV+:
+    overlay: Apple TV+
+    plex_search:
+      all:
+        collection: Apple TV+
+  Prime Video:
+    overlay: Prime Video
+    plex_search:
+      all:
+        collection: Prime Video
+  Hulu:
+    overlay: Hulu
+    plex_search:
+      all:
+        collection: Hulu
+  HBO Max:
+    overlay: HBO Max
+    plex_search:
+      all:
+        collection: HBO Max
+  Paramount+:
+    overlay: Paramount+
+    plex_search:
+      all:
+        collection: Paramount+
+  Disney+:
+    overlay: Disney+
+    plex_search:
+      all:
+        collection: Disney+
+
+############################
+#         STUDIOS          #
+############################
+
+  Marvel:
+    overlay: Marvel
+    plex_search:
+      all:
+        collection: Marvel
+#  Marvel Studos:
+#    overlay: Marvel Studios
+#    plex_search:
+#      all:
+#        collection: Marvel Studios
+  DC:
+    overlay: DC
+    plex_search:
+      all:
+        collection: DC

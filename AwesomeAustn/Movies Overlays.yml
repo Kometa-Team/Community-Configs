@@ -1,0 +1,500 @@
+overlays:
+
+############################
+#          CHARTS          #
+############################
+
+  IMDb:
+    overlay: IMDb
+    plex_search:
+      all:
+        collection: IMDb Top 250
+
+#################################
+#   IMDB & STREAMING SERVICES   #
+#################################
+
+  IMDb Netflix Film:
+    overlay:
+      - IMDb
+      - Netflix Film
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Netflix
+  IMDb Apple TV+:
+    overlay:
+      - IMDb
+      - Apple TV+
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Apple TV+
+  IMDb Prime Video:
+    overlay:
+      - IMDb
+      - Prime Video
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Prime Video
+  IMDb Hulu:
+    overlay:
+      - IMDb
+      - Hulu
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Hulu
+  IMDb HBO Max:
+    overlay:
+      - IMDb
+      - HBO Max
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - HBO Max
+  IMDb Paramount+:
+    overlay:
+      - IMDb
+      - Paramount+
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Paramount+
+
+############################
+#      IMDB & STUDIOS      #
+############################
+
+  IMDb Pixar:
+    overlay:
+      - IMDb
+      - Pixar
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Pixar
+  IMDb Marvel:
+    overlay:
+      - IMDb
+      - Marvel
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Marvel
+#  IMDb Marvel Studios:
+#    overlay:
+#      - IMDb
+#      - Marvel Studios
+#    plex_search:
+#      all:
+#        collection:
+#          - IMDb Top 250
+#          - Marvel Studios
+#    schedule: weekly(friday)
+  IMDb DC:
+    overlay:
+      - IMDb
+      - DC
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - DC
+  IMDb Walt Disney Animation Studios:
+    overlay:
+      - IMDb
+      - Walt Disney Animation Studios
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Walt Disney Animation Studios
+
+#########################################
+#   IMDB, AUDIO, & STREAMING SERVICES   #
+#########################################
+
+  IMDb TrueHD Atmos:
+    overlay:
+      - IMDb
+      - TrueHD Atmos
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+    filters:
+      filepath: TrueHD Atmos
+  IMDb TrueHD Atmos Netflix Film:
+    overlay:
+      - IMDb
+      - TrueHD Atmos
+      - Netflix Film
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Netflix
+    filters:
+      filepath: TrueHD Atmos
+  IMDb TrueHD Atmos Apple TV+:
+    overlay:
+      - IMDb
+      - TrueHD Atmos
+      - Apple TV+
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Apple TV+
+    filters:
+      filepath: TrueHD Atmos
+  IMDb TrueHD Atmos Prime Video:
+    overlay:
+      - IMDb
+      - TrueHD Atmos
+      - Prime Video
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Prime Video
+    filters:
+      filepath: TrueHD Atmos
+  IMDb TrueHD Atmos Hulu:
+    overlay:
+      - IMDb
+      - TrueHD Atmos
+      - Hulu
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Hulu
+    filters:
+      filepath: TrueHD Atmos
+  IMDb TrueHD Atmos HBO Max:
+    overlay:
+      - IMDb
+      - TrueHD Atmos
+      - HBO Max
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - HBO Max
+    filters:
+      filepath: TrueHD Atmos
+  IMDb TrueHD Atmos Paramount+:
+    overlay:
+      - IMDb
+      - TrueHD Atmos
+      - Paramount+
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Paramount+
+    filters:
+      filepath: TrueHD Atmos
+
+##############################
+#   IMDB, AUDIO, & STUDIOS   #
+##############################
+
+  IMDb TrueHD Atmos Pixar:
+    overlay:
+      - IMDb
+      - TrueHD Atmos
+      - Pixar
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Pixar
+    filters:
+      filepath: TrueHD Atmos
+  IMDb TrueHD Atmos Marvel:
+    overlay:
+      - IMDb
+      - TrueHD Atmos
+      - Marvel
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Marvel
+    filters:
+      filepath: TrueHD Atmos
+#  IMDb TrueHD Atmos Marvel Studios:
+#    overlay:
+#      - IMDb
+#      - TrueHD Atmos
+#      - Marvel Studios
+#    plex_search:
+#      all:
+#        collection:
+#          - IMDb Top 250
+#          - Marvel Studios
+#    filters:
+#      filepath: TrueHD Atmos
+#    schedule: weekly(friday)
+  IMDb TrueHD Atmos DC:
+    overlay:
+      - IMDb
+      - TrueHD Atmos
+      - DC
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - DC
+    filters:
+      filepath: TrueHD Atmos
+  IMDb TrueHD Atmos Walt Disney Animation Studios:
+    overlay:
+      - IMDb
+      - TrueHD Atmos
+      - Walt Disney Animation Studios
+    plex_search:
+      all:
+        collection:
+          - IMDb Top 250
+          - Walt Disney Animation Studios
+    filters:
+      filepath: TrueHD Atmos
+
+############################
+#          AUDIO           #
+############################
+
+  TrueHD Atmos:
+    overlay: TrueHD Atmos
+    plex_all: true
+    filters:
+      filepath: TrueHD Atmos
+  DTS-HD MA:
+    overlay: DTS-HD MA
+    plex_all: true
+    filters:
+      filepath: DTS-HD MA
+
+##################################
+#   AUDIO & STREAMING SERVICES   #
+##################################
+
+  TrueHD Atmos Netflix Film:
+    overlay:
+      - TrueHD Atmos
+      - Netflix Film
+    plex_search:
+      all:
+        collection: Netflix
+    filters:
+      filepath: TrueHD Atmos
+  TrueHD Atmos Apple TV+:
+    overlay:
+      - TrueHD Atmos
+      - Apple TV+
+    plex_search:
+      all:
+        collection: Apple TV+
+    filters:
+      filepath: TrueHD Atmos
+  TrueHD Atmos Prime Video:
+    overlay:
+      - TrueHD Atmos
+      - Prime Video
+    plex_search:
+      all:
+        collection: Prime Video
+    filters:
+      filepath: TrueHD Atmos
+  TrueHD Atmos Hulu:
+    overlay:
+      - TrueHD Atmos
+      - Hulu
+    plex_search:
+      all:
+        collection: Hulu
+    filters:
+      filepath: TrueHD Atmos
+  TrueHD Atmos HBO Max:
+    overlay:
+      - TrueHD Atmos
+      - HBO Max
+    plex_search:
+      all:
+        collection: HBO Max
+    filters:
+      filepath: TrueHD Atmos
+  TrueHD Atmos Paramount+:
+    overlay:
+      - TrueHD Atmos
+      - Paramount+
+    plex_search:
+      all:
+        collection: Paramount+
+    filters:
+      filepath: TrueHD Atmos
+  TrueHD Atmos Pixar:
+    overlay:
+      - TrueHD Atmos
+      - Pixar
+    plex_search:
+      all:
+        collection: Pixar
+    filters:
+      filepath: TrueHD Atmos
+  TrueHD Atmos Marvel:
+    overlay:
+      - TrueHD Atmos
+      - Marvel
+    plex_search:
+      all:
+        collection: Marvel
+    filters:
+      filepath: TrueHD Atmos
+#  TrueHD Atmos Marvel Studios:
+#    overlay:
+#      - TrueHD Atmos
+#      - Marvel Studios
+#    plex_search:
+#      all:
+#        collection: Marvel Studios
+#    filters:
+#      filepath: TrueHD Atmos
+#    schedule: weekly(friday)
+  TrueHD Atmos DC:
+    overlay:
+      - TrueHD Atmos
+      - DC
+    plex_search:
+      all:
+        collection: DC
+    filters:
+      filepath: TrueHD Atmos
+  TrueHD Atmos Walt Disney Animation Studios:
+    overlay:
+      - TrueHD Atmos
+      - Walt Disney Animation Studios
+    plex_search:
+      all:
+        collection: Walt Disney Animation Studios
+    filters:
+      filepath: TrueHD Atmos
+
+############################
+#    STREAMING SERVICES    #
+############################
+
+  Netflix Film:
+    overlay: Netflix Film
+    plex_search:
+      all:
+        collection: Netflix
+  Netflix Stand-up:
+    overlay: Netflix Stand-up
+    plex_search:
+      all:
+        collection: Netflix Stand-up
+  Apple TV+:
+    overlay: Apple TV+
+    plex_search:
+      all:
+        collection: Apple TV+
+  Prime Video:
+    overlay: Prime Video
+    plex_search:
+      all:
+        collection: Prime Video
+  Hulu:
+    overlay: Hulu
+    plex_search:
+      all:
+        collection: Hulu
+  HBO Max:
+    overlay: HBO Max
+    plex_search:
+      all:
+        collection: HBO Max
+  Paramount+:
+    overlay: Paramount+
+    plex_search:
+      all:
+        collection: Paramount+
+
+############################
+#         STUDIOS          #
+############################
+
+  Pixar:
+    overlay: Pixar
+    plex_search:
+      all:
+        collection: Pixar
+  Marvel:
+    overlay: Marvel
+    plex_search:
+      all:
+        collection: Marvel
+#  Marvel Studios:
+#    overlay: Marvel Studios
+#    plex_search:
+#      all:
+#        collection: Marvel Studios
+#    schedule: weekly(friday)
+  DC:
+    overlay: DC
+    plex_search:
+      all:
+        collection: DC
+  Walt Disney Animation Studios:
+    overlay: Walt Disney Animation Studios
+    plex_search:
+      all:
+        collection: Walt Disney Animation Studios
+
+############################
+#          OSCARS          #
+############################
+
+  Best Picture:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Picture
+  Best Animated Feature Film:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Animated Feature Film
+  Best Cinematograpghy:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Cinematograpghy
+  Best Film Editing:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Film Editing
+  Best Sound:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Sound
+  Best Visual Effects:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Visual Effects
