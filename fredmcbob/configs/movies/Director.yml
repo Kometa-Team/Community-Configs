@@ -5,7 +5,8 @@ templates:
   people:
     actor: tmdb
     tmdb_person: <<person>>
-    sort_title: ++_<<collection_name>>
+#    sort_title: ++_<<collection_name>>
+    sort_title: +35_<<collection_name>>
     collection_order: release
 collections:
   Kevin Smith:
