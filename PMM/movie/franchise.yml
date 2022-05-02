@@ -7,6 +7,11 @@
 #       - git: PMM/movie/franchise                   #
 ######################################################
 
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 01
+
 templates:
   collection:
     optional:
@@ -17,11 +22,8 @@ templates:
     tmdb_movie: <<movie>>
     name_mapping: <<name_mapping>>
     sync_mode: sync
-    collection_order: release
-    sort_title: "!01_~<<collection_name>>"
-    collection_mode: hide
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<url_encoded>>.jpg
-
+ 
 dynamic_collections:
   TMDb Collections:
     type: tmdb_collection
@@ -99,6 +101,10 @@ dynamic_collections:
         10: Star Wars Skywalker Saga
 
 collections:
+  Franchise Collections:
+    template:
+      - name: separator
+        separator: franchise
   Charlie Brown:
     template: {name: collection, url: "Charlie Brown" }
     imdb_list: https://www.imdb.com/list/ls054850259/
