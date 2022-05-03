@@ -149,7 +149,7 @@ collections:
     url_background: https://www.themoviedb.org/t/p/original/tuORKw8hnP7Gd03BdBV6TmySR2G.jpg
 
   Fast and the Furious:
-    template: {name: collection, collection: "688042" "9485"}
+    template: {name: collection, collection: "688042, 9485"}
     url_poster: https://theposterdb.com/api/assets/16478
     url_background: https://images5.alphacoders.com/811/thumb-1920-811727.jpg
 
@@ -164,7 +164,7 @@ collections:
     url_background: https://www.themoviedb.org/t/p/original/y3aWOInifbGKXM34KjtcMITrZRZ.jpg
 
   Frankenstein:
-    template: {name: collection, collection: "218406", "123720"}
+    template: {name: collection, collection: "218406, 123720"}
     url_poster: https://theposterdb.com/api/assets/161003
     url_background: https://www.themoviedb.org/t/p/original/oR3GHwhvOcjn124b7wOZl9SHh8G.jpg
 
@@ -184,12 +184,12 @@ collections:
     url_background: https://www.themoviedb.org/t/p/original/2Bb1thtviUIbbBX8a6BOGPECORM.jpg
 
   Godzilla:
-    template: {name: collection, collection: "535313", "535790", "374509", "374511", "374512", "813157", }
+    template: {name: collection, collection: "535313, 535790, 374509, 374511, 374512, 813157", }
     url_poster: https://theposterdb.com/api/assets/200795
     url_background: https://www.themoviedb.org/t/p/original/u0HG8Yzepp4f0lPzsqk6El2njCe.jpg
 
   Halloween:
-    template: {name: collection, collection: "91361" "126209"} 
+    template: {name: collection, collection: "91361, 126209"} 
     url_poster: https://theposterdb.com/api/assets/161050
     url_background: https://www.themoviedb.org/t/p/original/oSgcxTchdiLaXVP0CEtds0gKMul.jpg
 
@@ -300,7 +300,7 @@ collections:
     url_background: https://www.themoviedb.org/t/p/original/7PH31kIhz6BnzoP9cxG7JbkB6fT.jpg
 
   Lion King:
-    template: {name: collection, collection: "94032", "762512"}
+    template: {name: collection, collection: "94032, 762512"}
     url_poster: https://theposterdb.com/api/assets/162978
     url_background: https://www.themoviedb.org/t/p/original/A9IEaj9cPAwEgFnTmteB70oxgJY.jpg
 
@@ -409,7 +409,7 @@ collections:
     url_background: https://www.themoviedb.org/t/p/original/8Jg0Z5kOoPQRHBNiQs1s9hMT1qt.jpg
 
   Planet of the Apes:
-    template: {name: collection, collection: "173710", "1709"}
+    template: {name: collection, collection: "173710, 1709"}
     url_poster: https://theposterdb.com/api/assets/184312
     url_background: https://www.themoviedb.org/t/p/original/pQL1yJGrOqqPehmnT2LQW8R2knG.jpg
 
@@ -424,7 +424,7 @@ collections:
     url_background: https://www.themoviedb.org/t/p/original/aFk6IdYtcpYGVVURybM4f8U7TeS.jpg
 
   Predator:
-    template: {name: collection, collection: "399" "115762"}
+    template: {name: collection, collection: "399,115762"}
     url_poster: https://theposterdb.com/api/assets/163975
     url_background: https://www.themoviedb.org/t/p/original/fXVzk9OxQwROCuiWvd0Cv76qmZi.jpg
 
@@ -454,7 +454,7 @@ collections:
     url_background: https://www.themoviedb.org/t/p/original/mdrNIAa3Ryd0g5HsdPsnaDuzmyN.jpg
 
   Rocky:
-    template: {name: collection, collection: "1575" "553717"}
+    template: {name: collection, collection: "1575, 553717"}
     url_poster: https://theposterdb.com/api/assets/163422
     url_background: https://www.themoviedb.org/t/p/original/w4h6gjdWPvmu5R9H6zeGDPo1ZuV.jpg
 
