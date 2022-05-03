@@ -19,7 +19,7 @@ external_templates:
 templates:
   Golden:
     summary: <<year>> Golden Globes
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-golden-globes
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short,tv_series,tv_miniseries&release_date=<<year>>-01-01,<<year>>-12-31&groups=golden_globe_winner
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<year>>.jpg
 
 collections:
@@ -95,4 +95,116 @@ collections:
         year: 2014
       - name: award
       - name: shared
- 
+
+  Golden Globes 2013:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2013
+      - name: award
+      - name: shared
+
+  Golden Globes 2012:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2012
+      - name: award
+      - name: shared
+
+  Golden Globes 2011:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2011
+      - name: award
+      - name: shared
+
+  Golden Globes 2010:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2010
+      - name: award
+      - name: shared
+
+  Golden Globes 2009:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2009
+      - name: award
+      - name: shared
+
+  Golden Globes 2008:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2008
+      - name: award
+      - name: shared
+
+  Golden Globes 2007:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2007
+      - name: award
+      - name: shared
+
+  Golden Globes 2006:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2006
+      - name: award
+      - name: shared
+
+  Golden Globes 2005:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2005
+      - name: award
+      - name: shared
+
+  Golden Globes 2004:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2004
+      - name: award
+      - name: shared
+
+  Golden Globes 2003:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2003
+      - name: award
+      - name: shared
+
+  Golden Globes 2002:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2002
+      - name: award
+      - name: shared
+
+  Golden Globes 2001:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2001
+      - name: award
+      - name: shared
+
+  Golden Globes 2000:
+    template: 
+      - name: schedule_year_collections
+      - name: Golden
+        year: 2000
+      - name: award
+      - name: shared
+
