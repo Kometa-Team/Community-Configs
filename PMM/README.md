@@ -1,17 +1,25 @@
-# Plex Meta Manager Configs
+# Plex Meta Manager Default Collections & Overlays
 
-Do not open any support requests regarding files found in this directory. This is strictly a Work In Progress (WIP)
-<br>
-![WIP](WIP.jpg)
-<br>
-<br>
+This directory is a central hub for git-based collections and overlays.
 
-Sample yml config file as of 2022-05-03:
-## This file is a template remove the .template to use the file
+The intention of this directory is to offer a "drag and drop" setup for creating the most popular collections and overlays, whilst offering full flexibility of users being able to choose what they do and do not want.
+All images associated with this directory are held on GitHub, allowing us to centrally make changes that will deploy to all users of this setup when they next run PMM.
 
+Credits go to Bullmoose20, Sohjiro and Yozora for the concept, design and implementation.
+Special thanks to Magic815 for the overlay image inspiration and base template.
+
+## Configurations
+
+### Collections & Overlays
+
+This is an out-of-the-box library mapping that can be copy-and-pasted directly into your config.yml file, replacing everything within the `libraries:` section.
+
+Please ensure to rename the libraries to match your environment.
+
+<details>
+  <summary>Click to expand!</summary>
 libraries:                                      # Library mappings must have a colon (:) placed after them
   Movies:
-    missing_path: config/missing/Movies_missing.yml
     metadata_path:
     - repo: PMM/actor
       template_variables:
@@ -131,23 +139,9 @@ libraries:                                      # Library mappings must have a c
     - repo: PMM/ov_video_format_hdtv
     - repo: PMM/ov_video_format_remux
     - repo: PMM/ov_video_format_web
-    - remove_overlays: true
-    settings:
-      asset_directory:
-        - config/assets
-
-    operations:
-      split_duplicates: true
-      assets_for_all: false
-      mass_trakt_rating_update: true
-      mass_critic_rating_update: tmdb
-      mass_audience_rating_update: tmdb
-      mass_genre_update: tmdb
-      mass_content_rating_update: omdb
-      mass_originally_available_update: tmdb
-      mass_imdb_parental_labels: without_none
+    - remove_overlays: false
+ 
   TV Shows:
-    missing_path: config/missing/TV Shows_missing.yml
     metadata_path:
     - repo: PMM/actor
       template_variables:
@@ -240,123 +234,33 @@ libraries:                                      # Library mappings must have a c
     - repo: PMM/ov_video_format_remux_l
     - repo: PMM/ov_video_format_web_l
     - remove_overlays: false
-    settings:
-      asset_directory:
-        - config/assets
-
-    operations:
-      split_duplicates: true
-      assets_for_all: false
-      mass_trakt_rating_update: true
-      mass_critic_rating_update: tmdb
-      mass_audience_rating_update: tmdb
-      mass_genre_update: tmdb
-      mass_content_rating_update: omdb
-      mass_originally_available_update: tmdb
-      mass_imdb_parental_labels: without_none
 playlist_files:
   - repo: PMM/playlist
-settings:                                       # Can be individually specified per library as well
-  cache: true
-  cache_expiration: 60
-  asset_folders: true
-  asset_depth: 3
-  create_asset_folders: false
-  dimensional_asset_rename: true
-  sync_mode: sync
-  delete_below_minimum: true
-  delete_not_scheduled: false
-  run_again_delay: 2
-  missing_only_released: true
-  only_filter_missing: false
-  show_unmanaged: true
-  show_filtered: true
-  show_options: true
-  show_missing: true
-  show_missing_assets: true
-  show_missing_season_assets: true
-  save_missing: true
-  tvdb_language: eng
-  ignore_ids:
-  ignore_imdb_ids:
-  minimum_items: 1
-  default_collection_order:
-  download_url_assets: false
-  verify_ssl: true
-  item_refresh_delay: 0
-  asset_directory: config/assets
-  missing_path: config/missing
-  playlist_sync_to_users: all
-  show_missing_episode_assets: false
-  show_asset_not_needed: true
-  blank_collection: true
-  custom_repo: https://github.com/meisnate12/Plex-Meta-Manager-Configs/sohjiro/
-  check_nightly: true
-webhooks:                                       # Can be individually specified per library as well
-  error: notifiarr
-  run_start: notifiarr
-  run_end: notifiarr
-  changes:
-    - notifiarr
-  version:
-plex:                                           # Can be individually specified per library as well; REQUIRED for the script to run
-  url: http://192.168.2.242:32400
-  token: p*********************2
-  timeout: 60
-  clean_bundles: true
-  empty_trash: true
-  optimize: true
-tmdb:                                           # REQUIRED for the script to run
-  apikey: 1*********************8
-  language: en
-  cache_expiration: 60
-  region:
-tautulli:                                       # Can be individually specified per library as well
-  url: http://192.168.2.242:8181
-  apikey: 6*********************9
-omdb:
-  apikey: 9*********************6
-  cache_expiration: 60
-notifiarr:
-  apikey: d*********************6
-radarr:                                         # Can be individually specified per library as well
-  url: http://192.168.2.242:7878
-  token: 3*********************4
-  root_folder_path: /data/media/movies
-  monitor: true
-  availability: announced
-  quality_profile: Any
-  tag: pmm
-  search: false
-  radarr_path:
-  plex_path:
-  add_existing: false
-  add_missing: false
-sonarr:                                         # Can be individually specified per library as well
-  url: http://192.168.2.242:8989
-  token: a*********************8
-  root_folder_path: /data/media/tv
-  monitor: all
-  quality_profile: Any
-  language_profile: English
-  series_type: standard
-  season_folder: true
-  tag: pmm
-  search: false
-  cutoff_search: false
-  sonarr_path:
-  plex_path:
-  add_existing: false
-  add_missing: false
-trakt:
-  client_id: f*********************4
-  client_secret: 6*********************d
-  authorization:
-    access_token: 7*********************0
-    token_type: Bearer
-    expires_in: 7889237
-    refresh_token: 2*********************d
-    scope: public
-    created_at: 1650161441
-  pin:
+</details>
 
+Playlists Preview: <br>
+![Playlists](Playlists.jpg)
+<br>
+<br>
+Movie Library With Overlays Preview: <br>
+![Movies with overlays](movies-overlays.jpg)
+<br>
+<br>
+Movie Collections Preview: <br>
+![Movies Collections](movies-collections.jpg)
+<br>
+<br>
+TV Shows Library with Overlays Preview: <br>
+![TV Shows with overlays](shows-overlays.jpg)<br>
+<br>
+<br>
+TV Shows Collections Preview: <br>
+![TV Shows Collections](shows-collections.jpg)<br>
+<br>
+<br>
+
+Report any issues in the PMM Discord Channels
+
+Submit other requests (image or other) via PMM Discord Channels
+
+Please consider donating towards the project (https://github.com/sponsors/meisnate12).
