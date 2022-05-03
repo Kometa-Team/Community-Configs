@@ -18,6 +18,7 @@ Please ensure to rename the libraries to match your environment.
 
 <details>
   <summary>Click to expand!</summary>
+```yml
 libraries:                                      # Library mappings must have a colon (:) placed after them
   Movies:
     metadata_path:
@@ -237,9 +238,9 @@ libraries:                                      # Library mappings must have a c
 playlist_files:
   - repo: PMM/playlist
 </details>
-
+```
 Playlists Preview: <br>
-![Playlists](Playlists.jpg)
+![Playlists](playlist.jpg)
 <br>
 <br>
 Movie Library With Overlays Preview: <br>
