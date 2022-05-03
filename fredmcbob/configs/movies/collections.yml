@@ -10,7 +10,7 @@ templates:
     tmdb_movie: <<movie>>
     sort_title: +09_<<collection_name>>
     sync_mode: sync
-    collection_order: custom
+    collection_order: release
 #    schedule: weekly(friday)
 
 collections:
