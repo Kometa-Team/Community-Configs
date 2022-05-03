@@ -80,8 +80,8 @@ collections:
     url_background: https://www.themoviedb.org/t/p/original/ojjzZUQlqKTsN1T7s5OAVZSjYMH.jpg
 
   Cloverfield:
-    template: {name: collection, collection: "420"}trakt_list:
-      - https://trakt.tv/users/guixamaral/lists/cloverfield
+    template: {name: collection, collection: "420"}
+    trakt_list: https://trakt.tv/users/guixamaral/lists/cloverfield
     url_poster: https://theposterdb.com/api/assets/215650
     url_background: https://i.redd.it/d3w5o9idpbl71.jpg
 
