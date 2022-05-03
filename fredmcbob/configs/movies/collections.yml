@@ -109,7 +109,7 @@ collections:
   DC Comics Universe:
     template: {name: collection}
     tmdb_list_details: 3
-    url_poster: https://i.imgur.com/TJr35Au.jpeg
+    url_poster: https://theposterdb.com/api/assets/52780
     url_background: https://wallpaper.dog/large/17164614.jpg
 
   Despicable Me:
@@ -149,9 +149,8 @@ collections:
     url_background: https://www.themoviedb.org/t/p/original/tuORKw8hnP7Gd03BdBV6TmySR2G.jpg
 
   Fast and the Furious:
-    template: {name: collection}
-    trakt_list: https://trakt.tv/users/ireallylovevids/lists/fast-and-furious
-    url_poster: https://i.imgur.com/dPnWh1B.jpeg
+    template: {name: collection, collection: "688042" "9485"}
+    url_poster: https://theposterdb.com/api/assets/16478
     url_background: https://images5.alphacoders.com/811/thumb-1920-811727.jpg
 
   Fifty Shades:
@@ -313,7 +312,7 @@ collections:
   Lord of the Rings:
     template: {name: collection}
     trakt_list: https://trakt.tv/users/lutgnature/lists/lord-of-the-rings-hobbit
-    url_poster: https://i.imgur.com/xFbp0IR.jpeg
+    url_poster: https://theposterdb.com/api/assets/52722
     url_background: https://wallpaperaccess.com/full/838293.jpg
 
   Madagascar:
@@ -487,13 +486,13 @@ collections:
   Spider-man Universe:
     template: {name: collection}
     trakt_list: https://trakt.tv/users/james_97/lists/spider-verse
-    url_poster: https://i.imgur.com/keYWzrL.jpeg
+    url_poster: https://theposterdb.com/api/assets/162401
     url_background: https://i.ibb.co/P59wtVs/download.jpg
 
   Star Wars:
     template: {name: collection}
     trakt_list: https://trakt.tv/users/draackje/lists/star-wars
-    url_poster: https://i.imgur.com/jlLZuOr.jpeg
+    url_poster: https://theposterdb.com/api/assets/52755
     url_background: https://wallpaperaccess.com/full/1101749.jpg
 
   Star Trek:
@@ -544,7 +543,7 @@ collections:
   Wizarding World of Harry Potter:
     template: {name: collection}
     tmdb_list_details: 63607
-    url_poster: https://i.imgur.com/qjNHdhY.jpeg
+    url_poster: https://theposterdb.com/api/assets/77116
     url_background: https://wallpaperaccess.com/full/562430.jpg
     sort_title: +09_Harry Potter
 
@@ -561,7 +560,7 @@ collections:
   X-Men:
     template: {name: collection}
     trakt_list: https://trakt.tv/users/bertjj/lists/x-men
-    url_poster: https://i.imgur.com/GFamrIY.jpeg
+    url_poster: https://theposterdb.com/api/assets/52741
     url_background: https://s2.best-wallpaper.net/wallpaper/3840x2160/1607/X-Men-Days-of-Future-Past-Ultra-HD_3840x2160.jpg
 
   Worricker:
