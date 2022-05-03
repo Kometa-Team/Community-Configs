@@ -18,7 +18,7 @@ Please ensure to rename the libraries to match your environment.
 
 <details>
   <summary>Click to expand!</summary>
-```yml
+```yaml
 libraries:                                      # Library mappings must have a colon (:) placed after them
   Movies:
     metadata_path:
