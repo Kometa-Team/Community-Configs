@@ -208,6 +208,11 @@ collections:
     url_poster: https://theposterdb.com/api/assets/162044
     url_background: https://www.themoviedb.org/t/p/original/4f9kGJeKQTWjK0aAVootsdinDju.jpg
 
+  Hobbit:
+    template: {name: collection, collection: "121938"} 
+    url_poster: https://theposterdb.com/api/assets/187486
+    url_background: https://www.themoviedb.org/t/p/original/7wO7MSnP5UcwR2cTHdJFF1vP4Ie.jpg
+
   How to Train Your Dragon:
     template: {name: collection, collection: "89137"} 
     url_poster: https://theposterdb.com/api/assets/162990
@@ -310,10 +315,9 @@ collections:
     url_background: https://www.themoviedb.org/t/p/original/8OufxZdzdi6LhEoeRwnwIsf1uSb.jpg
 
   Lord of the Rings:
-    template: {name: collection}
-    trakt_list: https://trakt.tv/users/lutgnature/lists/lord-of-the-rings-hobbit
+    template: {name: collection, collection: "119"}
     url_poster: https://theposterdb.com/api/assets/52722
-    url_background: https://wallpaperaccess.com/full/838293.jpg
+    url_background: https://www.themoviedb.org/t/p/original/jg4qGbVuwXzbuvoDUeW1ooCseAC.jpg
 
   Madagascar:
     template: {name: collection, collection: "14740"}
@@ -345,6 +349,12 @@ collections:
     template: {name: collection, collection: "86055"}
     url_poster: https://theposterdb.com/api/assets/163929
     url_background: https://www.themoviedb.org/t/p/original/7GFwqcU7fUBWgRIfJIvcsPfjkAq.jpg
+
+  Middle Earth:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/lutgnature/lists/lord-of-the-rings-hobbit
+    url_poster: https://theposterdb.com/api/assets/76892
+    url_background: https://wallpaperaccess.com/full/838293.jpg
 
   Mighty Ducks:
     template: {name: collection, collection: "10709"}
