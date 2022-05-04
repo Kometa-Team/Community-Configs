@@ -139,11 +139,12 @@ templates:
 
   playlist:
     default:
-      libraries: Movies, TV
+      libraries: Movies, TV Shows
     cache_builders: 1
+    sync_to_users: all
     sync_mode: sync
     libraries: <<libraries>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<image_encoded>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<playlist_name_encoded>>.jpg
 
   TMDb_Trending_Shows:
     optional:
