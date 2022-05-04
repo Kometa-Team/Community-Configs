@@ -17,6 +17,7 @@ templates:
       collection_section: "00"
       sort: <<collection_name>>
       pre: "_"
+    cache_builders: 1
     optional:
       - collection_mode
       - radarr_add
@@ -56,11 +57,13 @@ templates:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<image_encoded>>.jpg
 
   chart_show:
+    cache_builders: 1
     sync_mode: sync
     limit: 250
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<image_encoded>>.jpg
 
   Newly_Released_Movies:
+    cache_builders: 1
     optional:
       - schedule_Newly_Released_Movies
       - visible_library_Newly_Released_Movies
@@ -72,6 +75,7 @@ templates:
     visible_shared: <<visible_shared_Newly_Released_Movies>>
 
   TMDb_Trending_Movies:
+    cache_builders: 1
     optional:
       - schedule_TMDb_Trending_Movies
       - visible_library_TMDb_Trending_Movies
@@ -83,6 +87,7 @@ templates:
     visible_shared: <<visible_shared_TMDb_Trending_Movies>>
 
   TMDb_Popular_Movies:
+    cache_builders: 1
     optional:
       - schedule_TMDb_Popular_Movies
       - visible_library_TMDb_Popular_Movies
@@ -94,6 +99,7 @@ templates:
     visible_shared: <<visible_shared_TMDb_Popular_Movies>>
 
   TMDb_Now_Playing_Movies:
+    cache_builders: 1
     optional:
       - schedule_TMDb_Now_Playing_Movies
       - visible_library_TMDb_Now_Playing_Movies
@@ -105,6 +111,7 @@ templates:
     visible_shared: <<visible_shared_TMDb_Now_Playing_Movies>>
 
   IMDb_Top_250_Movies:
+    cache_builders: 1
     optional:
       - schedule_IMDb_Top_250_Movies
       - visible_library_IMDb_Top_250_Movies
@@ -116,6 +123,7 @@ templates:
     visible_shared: <<visible_shared_IMDb_Top_250_Movies>>
 
   Newly_Released_Shows:
+    cache_builders: 1
     optional:
       - schedule_Newly_Released_Shows
       - visible_library_Newly_Released_Shows
@@ -127,6 +135,7 @@ templates:
     visible_shared: <<visible_shared_Newly_Released_Shows>>
 
   New_Episodes:
+    cache_builders: 1
     optional:
       - schedule_New_Episodes
       - visible_library_New_Episodes
@@ -147,6 +156,7 @@ templates:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<playlist_name_encoded>>.jpg
 
   TMDb_Trending_Shows:
+    cache_builders: 1
     optional:
       - schedule_TMDb_Trending_Shows
       - visible_library_TMDb_Trending_Shows
@@ -158,6 +168,7 @@ templates:
     visible_shared: <<visible_shared_TMDb_Trending_Shows>>
 
   TMDb_Popular_Shows:
+    cache_builders: 1
     optional:
       - schedule_TMDb_Popular_Shows
       - visible_library_TMDb_Popular_Shows
