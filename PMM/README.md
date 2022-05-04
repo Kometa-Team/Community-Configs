@@ -18,6 +18,7 @@ Please ensure to rename the libraries to match your environment.
 
 <details>
   <summary>Click to expand!</summary>
+
 ```yaml
 libraries:                                      # Library mappings must have a colon (:) placed after them
   Movies:
@@ -237,8 +238,9 @@ libraries:                                      # Library mappings must have a c
     - remove_overlays: false
 playlist_files:
   - repo: PMM/playlist
-</details>
 ```
+</details>
+
 Playlists Preview: <br>
 ![Playlists](playlist.jpg)
 <br>
