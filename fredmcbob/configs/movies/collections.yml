@@ -29,6 +29,16 @@ collections:
     url_poster: https://theposterdb.com/api/assets/160775
     url_background: https://www.themoviedb.org/t/p/original/kPfuozrsE7pmFFolkR0xFicZDJT.jpg
 
+  Austin Powers:
+    template: {name: collection, collection: "1006"}
+    url_poster: https://theposterdb.com/api/assets/163540
+    url_background: https://www.themoviedb.org/t/p/original/3QJMI8nqQcwU5JBPy26m8TUXtTN.jpg
+
+  Back to the Future:
+    template: {name: collection, collection: "264"}
+    url_poster: https://theposterdb.com/api/assets/163128
+    url_background: https://www.themoviedb.org/t/p/original/AqQotqj7XOI6GjB28nhMMa8YzOT.jpg
+
   Bad Boys:
     template: {name: collection, collection: "14890"}
     url_poster: https://theposterdb.com/api/assets/162377
@@ -48,6 +58,11 @@ collections:
     template: {name: collection, collection: "91746"}
     url_poster: https://theposterdb.com/api/assets/163640
     url_background: https://www.themoviedb.org/t/p/original/cPjeCcWV9YzQcLtaxZOr6hnKwoP.jpg
+
+  Blade:
+    template: {name: collection, collection: "735"}
+    url_poster: https://theposterdb.com/api/assets/171125/
+    url_background: https://www.themoviedb.org/t/p/original/gSWCo8z7bNNSKA7HGeu2oSfYGsd.jpg
 
   Bourne:
     template: {name: collection, collection: "31562"}
@@ -182,6 +197,11 @@ collections:
     template: {name: collection, collection: "2980"}
     url_poster: https://theposterdb.com/api/assets/174560
     url_background: https://www.themoviedb.org/t/p/original/2Bb1thtviUIbbBX8a6BOGPECORM.jpg
+
+  Godfather:
+    template: {name: collection, collection: "230"}
+    url_poster: https://theposterdb.com/api/assets/76903
+    url_background: https://www.themoviedb.org/t/p/original/3WZTxpgscsmoUk81TuECXdFOD0R.jpg
 
   Godzilla:
     template: {name: collection, collection: "535313, 535790, 374509, 374511, 374512, 813157", }
