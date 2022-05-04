@@ -41,12 +41,12 @@ collections:
 
   Bad Boys:
     template: {name: collection, collection: "14890"}
-    url_poster: https://theposterdb.com/api/assets/162377
+    url_poster: https://theposterdb.com/api/assets/163544
     url_background: https://www.themoviedb.org/t/p/original/k9hhSHg5GS4UgWQC6MHBOZrarji.jpg
 
   Batman:
     template: {name: collection, collection: "948485, 120794, 263"}
-    url_poster: https://theposterdb.com/api/assets/168446
+    url_poster: https://theposterdb.com/api/assets/162377
     url_background: https://images3.alphacoders.com/723/72397.jpg
 
   Before:
@@ -73,6 +73,11 @@ collections:
     template: {name: collection, collection: "131295"}
     url_poster: https://theposterdb.com/api/assets/162381
     url_background: https://www.themoviedb.org/t/p/original/7kVucUYqz8fZkOmFtA8opDwJFXM.jpg
+
+  Cars:
+    template: {name: collection, collection: "87118"}
+    url_poster: hhttps://theposterdb.com/api/assets/163004
+    url_background: https://www.themoviedb.org/t/p/original/lPmIpu42F6zRDCRlSjHcP3P7AlK.jpg
 
   Cheech & Chong:
     template: {name: collection, collection: "33071"}
@@ -116,7 +121,7 @@ collections:
     url_poster: https://theposterdb.com/api/assets/29684
     url_background: https://www.themoviedb.org/t/p/original/qC533xWXnpR8SG3zrll8aKmeQXV.jpg
 
-  The Dark Knight:
+  Dark Knight:
     template: {name: collection, collection: "263"}
     url_poster: https://theposterdb.com/api/assets/52697
     url_background: https://www.themoviedb.org/t/p/original/xfKot7lqaiW4XpL5TtDlVBA9ei9.jpg
@@ -157,6 +162,11 @@ collections:
     template: {name: collection, collection: "1960"}
     url_poster: https://theposterdb.com/api/assets/160866
     url_background: https://www.themoviedb.org/t/p/original/52ucWq0dQLUTb6PPH9q4jm9MY7f.jpg
+
+  Ernest:
+    template: {name: collection, collection: "330555"}
+    url_poster: https://theposterdb.com/api/assets/163384
+    url_background: https://www.themoviedb.org/t/p/original/vTlcbHNWrAf77AZFDZ9yCjHm8ag.jpg
 
   Exorcist:
     template: {name: collection, collection: "12263"}
@@ -205,7 +215,7 @@ collections:
 
   Godzilla:
     template: {name: collection, collection: "535313, 535790, 374509, 374511, 374512, 813157", }
-    url_poster: https://theposterdb.com/api/assets/200795
+    url_poster: https://theposterdb.com/api/assets/160929
     url_background: https://www.themoviedb.org/t/p/original/u0HG8Yzepp4f0lPzsqk6El2njCe.jpg
 
   Halloween:
@@ -232,6 +242,11 @@ collections:
     template: {name: collection, collection: "121938"} 
     url_poster: https://theposterdb.com/api/assets/187486
     url_background: https://www.themoviedb.org/t/p/original/7wO7MSnP5UcwR2cTHdJFF1vP4Ie.jpg
+
+  Home Alone:
+    template: {name: collection, collection: "9888"} 
+    url_poster: https://theposterdb.com/api/assets/168202
+    url_background: https://www.themoviedb.org/t/p/original/tpmfRWL1ecFxFOOeqvp6hDf41ac.jpg
 
   How to Train Your Dragon:
     template: {name: collection, collection: "89137"} 
@@ -385,6 +400,11 @@ collections:
     template: {name: collection, collection: "87359"}
     url_poster: https://theposterdb.com/api/assets/164810
     url_background: https://www.themoviedb.org/t/p/original/jYl0UuJFcmhymv9ZNO14lPLDY1Z.jpg
+
+  Monsters Inc:
+    template: {name: collection, collection: "137696"}
+    url_poster: https://theposterdb.com/api/assets/162975
+    url_background: https://www.themoviedb.org/t/p/original/x4Mq7gDRhbqDjw4SkemLvd1yzF3.jpg
 
   Monty Python:
     template: {name: collection}
