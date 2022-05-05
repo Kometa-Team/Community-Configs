@@ -21,13 +21,13 @@
 #           schedule_prime: never                    #
 #           schedule_separator: never                #
 #           collection_mode: hide                    #
-#           collection_section: "02"                 #
+#           collection_section: "03"                 #
 ######################################################
 
 external_templates:
   git: PMM/templates
   template_variables:
-    collection_section: "02"
+    collection_section: "03"
 
 collections:
   Streaming Collections:
