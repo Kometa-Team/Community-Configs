@@ -8,13 +8,13 @@
 #         template_variables:                        #
 #           schedule_separator: never                #
 #           collection_mode: hide                    #
-#           collection_section: 01                   #
+#           collection_section: "02"                 #
 ######################################################
 
 external_templates:
   git: PMM/templates
   template_variables:
-    collection_section: "01"
+    collection_section: "02"
 
 collections:
   Movie Chart Collections:
