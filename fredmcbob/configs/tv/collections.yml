@@ -1,0 +1,22 @@
+######################################################
+#                  TV Collections                    #
+######################################################
+templates:
+  Show:
+    tvdb_show: <<show>>
+    sort_title: +09_<<collection_name>>
+
+collections:
+  Marvel Cinematic Universe:
+    template: {name: Show, show: "362392, 362496, 362472, 367147,367146, 331980, 281662, 284190, 304219, 317953, 326490, 263365, 281485, 341455, 320558, 332027, 328552"}
+    smart_label: year.asc
+    url_poster: https://theposterdb.com/api/assets/162417
+    url_background: https://images.hdqwalls.com/download/marvel-cinematic-universe-jm-3840x2400.jpg
+  Stargate:
+    template: {name: Show, show: "72449, 70851, 83237, 339552"}
+    url_poster: https://theposterdb.com/api/assets/228932
+  Star Wars:
+    template: {name: Show, show: "70399, 72244, 73697, 83268, 250498, 283468, 330710, 351575, 356114, 361753, 380352, 385376, 393187, 393190, 393197, 393199, 393214, 393218, 393589"}
+    smart_label: year.asc
+    url_poster: https://theposterdb.com/api/assets/52755
+    url_background: https://wallpaperaccess.com/full/1101749.jpg
