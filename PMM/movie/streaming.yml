@@ -1,5 +1,5 @@
 ######################################################
-#              Streaming Service Collections         #
+#             Streaming Service Collections          #
 #      Created by Yozora, Bullmoose20, & Sohjiro     #
 #                                                    #
 #  Call this from your config.yml (Movie only):      #
@@ -42,7 +42,7 @@ collections:
       - name: shared
     mdblist_list: https://mdblist.com/lists/plexmetamanager/all-4-movies
 
-  Apple TV+:
+  Apple TV+ Movies:
     template:
       - name: AppleTV
       - name: streaming
