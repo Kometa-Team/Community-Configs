@@ -233,11 +233,12 @@ collections:
   Marvel Cinematic Universe:
     template:
       - name: shared
+      - name: franchise
         image: Marvel Cinematic Universe
     imdb_list: https://www.imdb.com/list/ls091745515
   Wizarding World:
     template:
       - name: shared
       - name: franchise
-        image: TMDb Trending Movies
+        image: Wizarding World
     tmdb_list: https://www.themoviedb.org/list/63607
