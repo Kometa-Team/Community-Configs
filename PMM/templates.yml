@@ -62,6 +62,11 @@ templates:
     limit: 250
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<image_encoded>>.jpg
 
+  franchise:
+    cache_builders: 1
+    sync_mode: sync
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<image_encoded>>.jpg
+
   Newly_Released_Movies:
     cache_builders: 1
     optional:
