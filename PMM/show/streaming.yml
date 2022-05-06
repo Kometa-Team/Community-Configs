@@ -1,0 +1,140 @@
+######################################################
+#             Streaming Service Collections          #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Show only):       #
+#     metadata_path:                                 #
+#       - git: PMM/show/streaming                    #
+#         template_variables:                        #
+#           schedule_all_4: never                    #
+#           schedule_apple_tv: never                 #
+#           schedule_bet: never                      #
+#           schedule_brit_box: never                 #
+#           schedule_disney: never                   #
+#           schedule_hayu: never                     #
+#           schedule_hbo_max: never                  #
+#           schedule_hulu: never                     #
+#           schedule_netflix: never                  #
+#           schedule_now: never                      #
+#           schedule_paramount: never                #
+#           schedule_peacock: never                  #
+#           schedule_prime: never                    #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: "03"                 #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "03"
+
+collections:
+  Streaming Collections:
+    template:
+      - name: separator
+        separator: streaming
+
+  All 4 Shows:
+    template:
+      - name: All4
+      - name: streaming
+        image: All 4
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/all-4-Shows
+
+  Apple TV+ Shows:
+    template:
+      - name: AppleTV
+      - name: streaming
+        image: Apple TV+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/appletv-Shows
+
+  BET+ Shows:
+    template:
+      - name: BET
+      - name: streaming
+        image: BET+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/bet-Shows
+
+  BritBox Shows:
+    template:
+      - name: BritBox
+      - name: streaming
+        image: BritBox
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/britbox-Shows
+
+  Disney+ Shows:
+    template:
+      - name: Disney 
+      - name: streaming
+        image: Disney+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/disney-Shows
+
+  hayu Shows:
+    template:
+      - name: hayu
+      - name: streaming
+        image: hayu
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/hayu-Shows
+
+  HBO Max Shows:
+    template:
+      - name: HBOMax
+      - name: streaming
+        image: HBO Max
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/hbo-max-Shows
+
+  Hulu Shows:
+    template:
+      - name: Hulu
+      - name: streaming
+        image: Hulu
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/hulu-Shows
+
+  Netflix Shows:
+    template:
+      - name: Netflix
+      - name: streaming
+        image: Netflix
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/netflix-Shows
+
+  NOW Shows:
+    template:
+      - name: NOW
+      - name: streaming
+        image: NOW
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/now-Shows
+
+  Paramount+ Shows:
+    template:
+      - name: Paramount
+      - name: streaming
+        image: Paramount+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/paramount-Shows
+
+  Peacock Shows:
+    template:
+      - name: Peacock
+      - name: streaming
+        image: Peacock
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/peacock-Shows
+
+  Prime Video Shows:
+    template:
+      - name: Prime
+      - name: streaming
+        image: Prime Video
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/amazon-prime-video-shows

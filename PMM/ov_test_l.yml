@@ -1,0 +1,422 @@
+######################################################
+#                  PMM OVERLAYS                      #
+#        Credit to Magic815 for base images          #
+#      refer to https://trash-guides.info/ for       #
+# naming of files that filepath.regex was written    #
+#             for in this config file                #
+#      refer to https://regexr.com/ (and set to      #
+# PCRE (Server) Engine or use https://regex101.com/  #
+#              for more help on regex                #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     overlay_path:                                  #
+#       - remove_overlays: false                     #
+#       - git: PMM/ov_resolution_1080-HDR_l          #
+#                                                    #
+######################################################
+
+######################################################
+#                    RESOLUTION                      #
+######################################################
+overlays:
+
+  1080P-HDR-L:
+    overlay:
+      name: 1080P-HDR-L
+      repo: PMM/overlays/1080P-HDR-L
+      group: res
+      weight: 80
+    plex_search:
+      type: episodes
+      all:
+        resolution.regex: '(?i)1080|2k'
+        hdr: true
+  1080P-DV-L:
+    overlay:
+      name: 1080P-DV-L
+      repo: PMM/overlays/1080P-DV-L
+      group: res
+      weight: 90
+    plex_search:
+      type: episodes
+      all:
+        resolution.regex: '(?i)1080|2k'
+    filters:
+      has_dolby_vision: true
+  Multi Audio-L:
+    overlay:
+      name: Multi-Audio-L
+      repo: PMM/overlays/Multi-Audio-L
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_language.count_gt: 2
+  Dual Audio-L:
+    overlay:
+      name: Dual-Audio-L
+      repo: PMM/overlays/Dual-Audio-L
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_language.count_gte: 2
+      audio_language.count_lt: 3
+  DTS-X-L:
+    overlay:
+      name: DTS-X-L
+      repo: PMM/overlays/DTS-X-L
+      group: audio
+      weight: 80
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)dts[ ._:-]?x(?!\\d)'
+  DTS-HD-L:
+    overlay:
+      name: DTS-HD-L
+      repo: PMM/overlays/DTS-HD-L
+      group: audio
+      weight: 40
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: 
+        - '(?i)dts[ .-]?(ma\b|hd[ .-]?ma|hd)(?!china|r)'
+        - '(?i)dts[ ._-]?(hd[. ]?)?(hr|hi)'
+  DTS-L:
+    overlay:
+      name: DTS-L
+      repo: PMM/overlays/DTS-L
+      group: audio
+      weight: 20
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)\bDTS(\b|\d)'
+  1080P-L:
+    overlay:
+      name: 1080P-L
+      repo: PMM/overlays/1080P-L
+      group: res
+      weight: 70
+    plex_search:
+      type: episodes
+      any:
+        resolution.regex: '(?i)1080|2k'
+  720P-DV-L:
+    overlay:
+      name: 720P-DV-L
+      repo: PMM/overlays/720P-DV-L
+      group: res
+      weight: 60
+    plex_search:
+      type: episodes
+      all:
+        resolution.regex: '(?i)720|hd'
+    filters:
+      has_dolby_vision: true
+  480P-HDR-L:
+    overlay:
+      name: 480P-HDR-L
+      repo: PMM/overlays/480P-HDR-L
+      group: res
+      weight: 20
+    plex_search:
+      type: episodes
+      all:
+        resolution.regex: '(?i)480|sd'
+        hdr: true
+  480P-DV-L:
+    overlay:
+      name: 480P-DV-L
+      repo: PMM/overlays/480P-DV-L
+      group: res
+      weight: 30
+    plex_search:
+      type: episodes
+      all:
+        resolution.regex: '(?i)480|sd'
+    filters:
+      has_dolby_vision: true
+  480P-L:
+    overlay:
+      name: 480P-L
+      repo: PMM/overlays/480P-L
+      group: res
+      weight: 10
+    plex_search:
+      type: episodes
+      any:
+        resolution.regex: '(?i)480|sd'
+  4K-HDR-L:
+    overlay:
+      name: 4K-HDR-L
+      repo: PMM/overlays/4K-HDR-L
+      group: res
+      weight: 110
+    plex_search:
+      type: episodes
+      all:
+        resolution.regex: '(?i)2160|4k'
+        hdr: true
+  4K-DV-L:
+    overlay:
+      name: 4K-DV-L
+      repo: PMM/overlays/4K-DV-L
+      group: res
+      weight: 120
+    plex_search:
+      type: episodes
+      all:
+        resolution.regex: '(?i)2160|4k'
+    filters:
+      has_dolby_vision: true
+  4K-L:
+    overlay:
+      name: 4K-L
+      repo: PMM/overlays/4K-L
+      group: res
+      weight: 100
+    plex_search:
+      type: episodes
+      any:
+        resolution.regex: '(?i)2160|4k'
+  HBO Max-L:
+    overlay:
+      name: HBO-Max-L
+      repo: PMM/overlays/HBO-Max-L
+      group: audio
+      weight: 200
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\b(hmax|hbom|HBO Max)\b'
+  Disney+-L:
+    overlay:
+      name: Disney-L
+      repo: PMM/overlays/Disney-L
+      group: audio
+      weight: 200
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\b(dsnp|dsny|disney|Disney\+)\b'
+  Apple TV+-L:
+    overlay:
+      name: AppleTV-L
+      repo: PMM/overlays/AppleTV-L
+      group: audio
+      weight: 200
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\b(atvp|aptv|Apple TV\+)\b'
+  Amazon-L:
+    overlay:
+      name: Amazon-L
+      repo: PMM/overlays/Amazon-L
+      group: audio
+      weight: 200
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\b(amzn|amazon)\b'
+  IMAX-L:
+    overlay:
+      name: IMAX-L
+      repo: PMM/overlays/IMAX-L
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\[IMAX\]'
+  Criterion Collection-L:
+    overlay:
+      name: Criterion-L
+      repo: PMM/overlays/Criterion-L
+      group: ribbon
+      weight: 10
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: 
+        - '(?i)Criterion'
+        - '(?i)\[CC\]'
+  720P-HDR-L:
+    overlay:
+      name: 720P-HDR-L
+      repo: PMM/overlays/720P-HDR-L
+      group: res
+      weight: 50
+    plex_search:
+      type: episodes
+      all:
+        resolution.regex: '(?i)720|hd'
+        hdr: true
+  720P-L:
+    overlay:
+      name: 720P-L
+      repo: PMM/overlays/720P-L
+      group: res
+      weight: 40
+    plex_search:
+      type: episodes
+      any:
+        resolution.regex: '(?i)720|hd'
+  Remux-L:
+    overlay:
+      name: Remux-L
+      repo: PMM/overlays/Remux-L
+      group: quality
+      weight: 50
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\[Remux'
+  HDTV-L:
+    overlay:
+      name: HDTV-L
+      repo: PMM/overlays/HDTV-L
+      group: quality
+      weight: 20
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)HD[ ._-]?TV'
+  DVD-L:
+    overlay:
+      name: DVD-L
+      repo: PMM/overlays/DVD-L
+      group: quality
+      weight: 10
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\[DVD'
+  Blu-Ray-L:
+    overlay:
+      name: Blu-Ray-L
+      repo: PMM/overlays/Blu-Ray-L
+      group: quality
+      weight: 40
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\[Blu[ ._-]?ray|\[BD|\[BR|\[HD[ ._-]?DVD'
+  Peacock-L:
+    overlay:
+      name: Peacock-L
+      repo: PMM/overlays/Peacock-L
+      group: audio
+      weight: 200
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\b(pcok|peacock)\b'
+  Paramount+-L:
+    overlay:
+      name: Paramount-L
+      repo: PMM/overlays/Paramount-L
+      group: audio
+      weight: 200
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\b(pmtp|Paramount Plus)\b'
+  Netflix-L:
+    overlay:
+      name: Netflix-L
+      repo: PMM/overlays/Netflix-L
+      group: audio
+      weight: 200
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\b(nf|netflix)\b'
+  Hulu-L:
+    overlay:
+      name: Hulu-L
+      repo: PMM/overlays/Hulu-L
+      group: audio
+      weight: 200
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\b(hulu)\b"'
+  WEB-L:
+    overlay:
+      name: WEB-L
+      repo: PMM/overlays/WEB-L
+      group: quality
+      weight: 30
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex: '(?i)\[Web[ ._-]?(dl|rip)'
+  DTS-ES-L:
+    overlay:
+      name: DTS-ES-L
+      repo: PMM/overlays/DTS-ES-L
+      group: audio
+      weight: 30
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)dts[ ._-]?(es|(hd[. ]?)?(hr|hi))'
+  Dolby-TrueHD-L:
+    overlay:
+      name: Dolby-TrueHD-L
+      repo: PMM/overlays/Dolby-TrueHD-L
+      group: audio
+      weight: 50
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)true[ .-]?hd'
+  Dolby-Digital-L:
+    overlay:
+      name: Dolby-Digital-L
+      repo: PMM/overlays/Dolby-Digital-L
+      group: audio
+      weight: 10
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: 
+        - '(?i)\bDD[^a-z+]|(?<!e)ac3'
+        - '(?i)\bAAC \b[s5]?'
+  Dolby-Atmos-L:
+    overlay:
+      name: Dolby-Atmos-L
+      repo: PMM/overlays/Dolby-Atmos-L
+      group: audio
+      weight: 70
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex: '(?i)atmos'
+  Dolby-Digital-Plus-L:
+    overlay:
+      name: Dolby-Digital-Plus-L
+      repo: PMM/overlays/Dolby-Digital-Plus-L
+      group: audio
+      weight: 60
+    plex_all: true
+    collection_level: episode
+    filters:
+      audio_track_title.regex:
+        - '(?i)[^-]DD[P+](?!A)|eac3'
+        - '(?i)\bAAC 7\b'
+  Direct Play-L:
+    overlay:
+      name: Direct-Play-L
+      repo: PMM/overlays/Direct-Play-L
+    plex_search:
+      type: episodes
+      any:
+        resolution.regex: '(?i)2160|4k'
+
+
+
+
+
+

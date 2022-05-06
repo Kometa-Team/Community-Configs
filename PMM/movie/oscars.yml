@@ -1,0 +1,156 @@
+######################################################
+#                Oscars Collections                  #
+# Created by Yozora, Bullmoose20, hjone72, & Sohjiro #
+#                                                    #
+#  Call this from your config.yml (Movie only):      #
+#     metadata_path:                                 #
+#       - git: PMM/movie/oscars                      #
+#         template_variables:                        #
+#           schedule_year_collections: never         #
+#           collection_mode: hide                    #
+#           collection_section: 16                   #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 16
+
+templates:
+  Oscars:
+    summary: Academy Awards (Oscars) for <<year>>
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-oscars
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/<<year>>.jpg
+
+collections:
+
+  Oscars Best Picture Winners:
+    template:
+      - name: award
+        image: oscars/best
+      - name: shared
+        sort: Oscars !1
+    imdb_list: https://www.imdb.com/search/title/?groups=oscar_best_picture_winners
+    summary: The Academy Award for Best Picture is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929.
+
+  Oscars Winners:
+    template:
+      - name: award
+        image: oscars/winner
+      - name: shared
+        sort: Oscars !2
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    summary: Oscar Winning Movies
+
+  Oscars Nominated:
+    template:
+      - name: award
+        image: oscars/nomination
+      - name: shared
+        sort: Oscars !3
+    trakt_list: https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2022
+    summary: 2022 Oscar nominations
+
+  Oscars 2010:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2010
+      - name: award
+      - name: shared
+
+  Oscars 2011:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2011
+      - name: award
+      - name: shared
+
+  Oscars 2012:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2012
+      - name: award
+      - name: shared
+
+  Oscars 2013:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2013
+      - name: award
+      - name: shared
+
+  Oscars 2014:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2014
+      - name: award
+      - name: shared
+
+  Oscars 2015:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2015
+      - name: award
+      - name: shared
+
+  Oscars 2016:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2016
+      - name: award
+      - name: shared
+
+  Oscars 2017:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2017
+      - name: award
+      - name: shared
+
+  Oscars 2018:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2018
+      - name: award
+      - name: shared
+
+  Oscars 2019:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2019
+      - name: award
+      - name: shared
+
+  Oscars 2020:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2020
+      - name: award
+      - name: shared
+
+  Oscars 2021:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2021
+      - name: award
+      - name: shared
+
+  Oscars 2022:
+    template: 
+      - name: schedule_year_collections
+      - name: Oscars
+        year: 2022
+      - name: award
+      - name: shared

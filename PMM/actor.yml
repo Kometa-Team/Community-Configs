@@ -1,0 +1,43 @@
+######################################################
+#                 Actor Collections                  #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/actor                             #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: 17                   #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 17
+
+templates:
+  actor_dynamic:
+    tmdb_person: <<value>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/people/<<key_encoded>>.jpg
+    smart_filter:
+      all:
+        actor: tmdb
+
+collections:
+  Actors Collections:
+    template:
+      - name: separator
+        separator: actor
+
+dynamic_collections:
+  Top Actors:
+    type: actor
+    template:
+      - actor_dynamic
+      - shared
+    title_format: <<title>> (Actor)
+    data:
+      depth: 5
+      limit: 25
+      

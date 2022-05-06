@@ -1,0 +1,69 @@
+######################################################
+#         Smart Charts & Releases Collections        #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Show only):       #
+#     metadata_path:                                 #
+#       - git: PMM/show/chart                        #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: "01"                 #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
+
+collections:
+  TV Chart Collections:
+    template:
+      - name: separator
+        separator: tv_chart
+
+  Newly Released Shows:
+    template:
+      - name: Newly_Released_Shows
+      - name: chart_show
+        image: Newly Released Shows
+      - name: shared
+    summary: A collection of newly-released shows on TV and on streaming services
+    smart_filter:
+      all:
+        year.gte: 2022
+      sort_by: release.desc
+      limit: 100
+
+  New Episodes:
+    template:
+      - name: New_Episodes
+      - name: chart_show
+        image: New Episodes
+      - name: shared
+    summary: A collection of new episodes ready for watching!
+    smart_filter:
+      all:
+        episode_air_date: 30
+      sort_by: episode_added.desc
+      limit: 100
+
+  TMDb Trending Shows:
+    template:
+      - name: TMDb_Trending_Shows
+      - name: chart_show
+        image: TMDb Trending Shows
+      - name: shared
+    tmdb_trending_weekly: 250
+    collection_order: custom
+    summary: A collection of shows trending on TMDb
+
+  TMDb Popular Shows:
+    template:
+      - name: TMDb_Popular_Shows
+      - name: chart_show
+        image: TMDb Popular Shows
+      - name: shared
+    tmdb_popular: 250
+    summary: A collection of the most watched shows according to TMDb.
+    collection_order: custom

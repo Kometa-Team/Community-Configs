@@ -1,0 +1,43 @@
+######################################################
+#             Dynamic Decade Collections             #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie only):      #
+#     metadata_path:                                 #
+#       - git: PMM/movie/decade                      #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: 12                   #
+#           limit: 100                               #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 12
+
+templates:
+  decade_dynamic:
+    default:
+      limit: 100
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/<<key>>.jpg
+    smart_filter:
+      sort_by: critic_rating.desc
+      any:
+        decade: <<value>>
+      limit: <<limit>>
+
+collections:
+  Decade Collections:
+    template:
+      - name: separator
+        separator: decade
+
+dynamic_collections:
+  Decade:
+    type: decade
+    title_format: Best of <<key_name>>
+    template:
+      - decade_dynamic
+      - shared

@@ -1,0 +1,131 @@
+######################################################
+#             Streaming Service Collections          #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie only):      #
+#     metadata_path:                                 #
+#       - git: PMM/movie/streaming                   #
+#         template_variables:                        #
+#           schedule_all_4: never                    #
+#           schedule_apple_tv: never                 #
+#           schedule_bet: never                      #
+#           schedule_brit_box: never                 #
+#           schedule_disney: never                   #
+#           schedule_hbo_max: never                  #
+#           schedule_hulu: never                     #
+#           schedule_netflix: never                  #
+#           schedule_now: never                      #
+#           schedule_paramount: never                #
+#           schedule_peacock: never                  #
+#           schedule_prime: never                    #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: "03"                 #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "03"
+
+collections:
+  Streaming Collections:
+    template:
+      - name: separator
+        separator: streaming
+
+  All 4 Movies:
+    template:
+      - name: All4
+      - name: streaming
+        image: All 4
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/all-4-movies
+
+  Apple TV+ Movies:
+    template:
+      - name: AppleTV
+      - name: streaming
+        image: Apple TV+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/appletv-movies
+
+  BET+ Movies:
+    template:
+      - name: BET
+      - name: streaming
+        image: BET+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/bet-movies
+
+  BritBox Movies:
+    template:
+      - name: BritBox
+      - name: streaming
+        image: BritBox
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/britbox-movies
+
+  Disney+ Movies:
+    template:
+      - name: Disney
+      - name: streaming
+        image: Disney+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/disney-movies
+
+  HBO Max Movies:
+    template:
+      - name: HBOMax
+      - name: streaming
+        image: HBO Max
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/hbo-max-movies
+
+  Hulu Movies:
+    template:
+      - name: Hulu
+      - name: streaming
+        image: Hulu
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/hulu-movies
+
+  Netflix Movies:
+    template:
+      - name: Netflix
+      - name: streaming
+        image: Netflix
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/netflix-movies
+
+  NOW Movies:
+    template:
+      - name: NOW
+      - name: streaming
+        image: NOW
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/now-movies
+
+  Paramount+ Movies:
+    template:
+      - name: Paramount
+      - name: streaming
+        image: Paramount+
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/paramount-movies
+
+  Peacock Movies:
+    template:
+      - name: Peacock
+      - name: streaming
+        image: Peacock
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/peacock-movies
+
+  Prime Video Movies:
+    template:
+      - name: Prime
+      - name: streaming
+        image: Prime Video
+      - name: shared
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/amazon-prime-video-movies

@@ -1,0 +1,50 @@
+######################################################
+#           Dynamic Resolution Collections           #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/resolution                        #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           schedule_other: never                    #
+#           collection_mode: hide                    #
+#           collection_section: 15                   #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 15
+
+templates:
+  resolution_dynamic:
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/resolution/<<key>>.jpg
+    smart_filter:
+      sort_by: release.desc
+      any:
+        resolution: <<value>>
+
+collections:
+  Resolution Collections:
+    template:
+      - name: separator
+        separator: resolution
+
+dynamic_collections:    
+  Resolution:
+    type: resolution
+    title_format: <<key_name>> <<library_type>>s
+    template:
+      - resolution_dynamic
+      - shared
+    addons:
+      1080:
+        - 2k
+      480:
+        - 144
+        - 240
+        - 360
+        - sd
+        - 576
+        

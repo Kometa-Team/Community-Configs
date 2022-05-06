@@ -1,0 +1,43 @@
+######################################################
+#                Director Collections                #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie only):      #
+#     metadata_path:                                 #
+#       - git: PMM/movie/director                    #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: 18                   #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 18
+
+templates:
+  director_dynamic:
+    tmdb_person: <<value>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/people/<<key_encoded>>.jpg
+    smart_filter:
+      all:
+        director: tmdb
+ 
+collections:
+  Directors Collections:
+    template:
+      - name: separator
+        separator: director
+
+dynamic_collections:
+  Top Directors:
+    type: director
+    template:
+      - director_dynamic
+      - shared
+    title_format: <<title>> (Director)
+    data:
+      depth: 5
+      limit: 25
+      

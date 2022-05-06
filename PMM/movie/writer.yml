@@ -1,0 +1,43 @@
+######################################################
+#                Writer Collections                  #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie only):      #
+#     metadata_path:                                 #
+#       - git: PMM/writer                            #
+#         template_variables:                        #
+#           schedule_separator: never                #
+#           collection_mode: hide                    #
+#           collection_section: 20                   #
+######################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 20
+
+templates:
+  writer_dynamic:
+    tmdb_person: <<value>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/people/<<key_encoded>>.jpg
+    smart_filter:
+      all:
+        writer: tmdb
+      
+collections:
+  Writers Collections:
+    template:
+      - name: separator
+        separator: writer
+
+dynamic_collections:
+  Top Writers:
+    type: writer
+    template:
+      - writer_dynamic
+      - shared
+    title_format: <<title>> (Writer)
+    data:
+      depth: 5
+      limit: 25
+      
