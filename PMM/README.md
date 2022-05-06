@@ -247,36 +247,28 @@ playlist_files:
   - repo: PMM/playlist
 ```
 </details>
-<details>
-  <summary>Click to show Playlists Preview:</summary>
+
+
 Playlists Preview: <br>
 ![Playlists](playlist.jpg)
 <br>
 <br>
-</details>
-<details>
-  <summary>Click to show Movie Library With Overlays Preview:</summary>
+
 Movie Library With Overlays Preview: <br>
 ![Movies with overlays](movies-overlays.jpg)
 <br>
 <br>
-</details>
-<details>
-  <summary>Click to show Movie Collections Preview:</summary>
+
 Movie Collections Preview: <br>
 ![Movies Collections](movies-collections.jpg)
 <br>
 <br>
-</details>
-<details>
-  <summary>Click to show TV Shows Library with Overlays Preview:</summary>
+
 TV Shows Library with Overlays Preview: <br>
 ![TV Shows with overlays](shows-overlays.jpg)<br>
 <br>
 <br>
-</details>
-<details>
-  <summary>Click to show TV Shows Collections Preview:</summary>
+
 TV Shows Collections Preview: <br>
 ![TV Shows Collections](shows-collections.jpg)<br>
 <br>
