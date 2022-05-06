@@ -16,93 +16,95 @@ external_templates:
   template_variables:
     collection_section: "02"
 
-templates:
-  collection:
-    optional:
-      - collection
-      - movie
-      - name_mapping
-    tmdb_collection_details: <<collection>>
-    tmdb_movie: <<movie>>
-    name_mapping: <<name_mapping>>
-    sync_mode: sync
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<url_encoded>>.jpg
+# templates:
+  # collection:
+    # optional:
+      # - name: collection
+      # - movie
+      # - name_mapping
+    # tmdb_collection_details: <<collection>>
+    # tmdb_movie: <<movie>>
+    # name_mapping: <<name_mapping>>
+    # sync_mode: sync
+    # url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<url_encoded>>.jpg
  
-dynamic_collections:
-  TMDb Collections:
-    type: tmdb_collection
-    remove_suffix: "Collection"
-    template: collection
-    addons:
-      8091:       # Alien
-        - 135416    # Prometheus
-      2806:       # American Pie
-        - 298820    # American Pie (Spin-off)
-      87800:      # Appleseed
-        - 371526    # Appleseed XIII
-      477208:     # DC Super Hero Girls
-        - 557495    # LEGO DC Super Hero Girls
-      86066:      # Despicable Me
-        - 544669    # Minions
-        - 438148    #Minions The Rise of Gru
-      9485:       # The Fast and the Furious
-        - 688042    # Hobbs & Shaw
-      86115:      # Garfield
-        - 373918    # Garfield CGI
-      91361:      # Halloween
-        - 126209    # Halloween (Rob Zombie Series)
-      9818:       # Mortal Kombat
-        - 931431    # Mortal Kombat
-      495:        # Shaft
-        - 608103    # Shaft (Reboot)
-      1582:       # Teenage Mutant Ninja Turtles
-        - 401562    # Teenage Mutant Ninja Turtles (Remake)
-      111751:     # Texas Chainsaw Massacre
-        - 425175    # Texas Chainsaw (Reboot)
-      2467:       # Tomb Raider
-        - 621142    # Tomb Raider (Reboot)
-      748:        # X-Men
-        - 453993    # The Wolverine
-        - 448150    # Deadpool
-    template_variables:
-      movie:
-        105995: 336560    # Anaconda: Lake Placid vs. Anaconda
-        176097: 14177     # Barbershop: Beauty Shop
-        448150: 567604    # Deadpool: Once Upon a Deadpool
-        9735: 6466, 222724  # Friday the 13th: Freddy vs. Jason, Crystal Lake Memories: The Complete History of Friday the 13th
-        386382: 326359, 460793 # Frozen: Frozen Fever, Olaf's Frozen Adventure
-        2980: 43074 # Ghostbusters: Ghostbusters
-        374509: 18983 # Godzilla (Showa): Godzilla, King of the Monsters!
-        374511: 39256 # Godzilla (Heisei): Godzilla 1985
-        535313: 293167  # Godzilla: Kong: Skull Island
-        9743: 11454 # The Hannibal Lecter: Manhunter
-        8354: 79218, 717095, 387893 # Ice Age: Ice Age: A Mammoth Christmas, Ice Age Continental Drift: Scrat Got Your Tongue, Ice Age: The Great Egg-Scapade
-        70068: 658009, 643413, 450001, 751391, 44249, 182127, 44865 # Ip Man: Ip Man: Kung Fu Master, Ip Man and Four Kings, Master Z: Ip Man Legacy, Young Ip Man: Crisis Time, The Legend Is Born: Ip Man, Ip Man: The Final Fight, The Grandmaster
-        328: 630322 # Jurassic Park: Battle at Big Rock
-        8580: 38575 # The Karate Kid: The Karate Kid
-        14740: 161143, 25472, 270946  # Madagascar: Madly Madagascar, Merry Madagascar, Penguins of Madagascar
-        9818: 664767  # Mortal Kombat: Mortal Kombat Legends: Scorpion's Revenge
-        39410: 39410 # Mothra: Rebirth of Mothra
-        8581: 6466, 23437 # A Nightmare on Elm Street: Freddy vs. Jason, A Nightmare on Elm Street
-        627517: 13155, 68728  # Oz: Return to Oz, Oz the Great and Powerful
-        10789: 157433 # Pet Sematary: Pet Sematary
-        708816: 305470, 306264  # Power Rangers: Power Rangers, Power Rangers Super Megaforce: The Legendary Battle
-        190435: 687354, 11667 # Street Fighter (Animated): Street Fighter Assassin's Fist, Street Fighter
-        1582: 1273  # Teenage Mutant Ninja Turtles: TMNT
-        10194: 130925, 256835, 213121, 77887, 594530, 82424 # Toy Story: Partysaurus Rex, Toy Story That Time Forgot, Toy Story of Terror, Hawaiian Vacation, Lamp Life, Small Fry
-        63043: 73362  # TRON: TRON: The Next Day
-        748: 567604 # X-Men: Once Upon a Deadpool
-      name_mapping:
-        1565: 28 Days-Weeks Later
-        508334: Angels in the
-        115838: Escape From
-        386534: Has Fallen
-        87359: Mission Impossible
-        133352: Resident Evil Biohazard
-        115575: Star Trek Alternate Reality
-        115570: Star Trek The Next Generation
-        151: Star Trek The Original Series
-        10: Star Wars Skywalker Saga
+# dynamic_collections:
+  # TMDb Collections:
+    # type: tmdb_collection
+    # remove_suffix: "Collection"
+    # template: 
+      # - name: shared
+      # - name: franchise
+    # addons:
+      # 8091:       # Alien
+        # - 135416    # Prometheus
+      # 2806:       # American Pie
+        # - 298820    # American Pie (Spin-off)
+      # 87800:      # Appleseed
+        # - 371526    # Appleseed XIII
+      # 477208:     # DC Super Hero Girls
+        # - 557495    # LEGO DC Super Hero Girls
+      # 86066:      # Despicable Me
+        # - 544669    # Minions
+        # - 438148    #Minions The Rise of Gru
+      # 9485:       # The Fast and the Furious
+        # - 688042    # Hobbs & Shaw
+      # 86115:      # Garfield
+        # - 373918    # Garfield CGI
+      # 91361:      # Halloween
+        # - 126209    # Halloween (Rob Zombie Series)
+      # 9818:       # Mortal Kombat
+        # - 931431    # Mortal Kombat
+      # 495:        # Shaft
+        # - 608103    # Shaft (Reboot)
+      # 1582:       # Teenage Mutant Ninja Turtles
+        # - 401562    # Teenage Mutant Ninja Turtles (Remake)
+      # 111751:     # Texas Chainsaw Massacre
+        # - 425175    # Texas Chainsaw (Reboot)
+      # 2467:       # Tomb Raider
+        # - 621142    # Tomb Raider (Reboot)
+      # 748:        # X-Men
+        # - 453993    # The Wolverine
+        # - 448150    # Deadpool
+    # template_variables:
+      # movie:
+        # 105995: 336560    # Anaconda: Lake Placid vs. Anaconda
+        # 176097: 14177     # Barbershop: Beauty Shop
+        # 448150: 567604    # Deadpool: Once Upon a Deadpool
+        # 9735: 6466, 222724  # Friday the 13th: Freddy vs. Jason, Crystal Lake Memories: The Complete History of Friday the 13th
+        # 386382: 326359, 460793 # Frozen: Frozen Fever, Olaf's Frozen Adventure
+        # 2980: 43074 # Ghostbusters: Ghostbusters
+        # 374509: 18983 # Godzilla (Showa): Godzilla, King of the Monsters!
+        # 374511: 39256 # Godzilla (Heisei): Godzilla 1985
+        # 535313: 293167  # Godzilla: Kong: Skull Island
+        # 9743: 11454 # The Hannibal Lecter: Manhunter
+        # 8354: 79218, 717095, 387893 # Ice Age: Ice Age: A Mammoth Christmas, Ice Age Continental Drift: Scrat Got Your Tongue, Ice Age: The Great Egg-Scapade
+        # 70068: 658009, 643413, 450001, 751391, 44249, 182127, 44865 # Ip Man: Ip Man: Kung Fu Master, Ip Man and Four Kings, Master Z: Ip Man Legacy, Young Ip Man: Crisis Time, The Legend Is Born: Ip Man, Ip Man: The Final Fight, The Grandmaster
+        # 328: 630322 # Jurassic Park: Battle at Big Rock
+        # 8580: 38575 # The Karate Kid: The Karate Kid
+        # 14740: 161143, 25472, 270946  # Madagascar: Madly Madagascar, Merry Madagascar, Penguins of Madagascar
+        # 9818: 664767  # Mortal Kombat: Mortal Kombat Legends: Scorpion's Revenge
+        # 39410: 39410 # Mothra: Rebirth of Mothra
+        # 8581: 6466, 23437 # A Nightmare on Elm Street: Freddy vs. Jason, A Nightmare on Elm Street
+        # 627517: 13155, 68728  # Oz: Return to Oz, Oz the Great and Powerful
+        # 10789: 157433 # Pet Sematary: Pet Sematary
+        # 708816: 305470, 306264  # Power Rangers: Power Rangers, Power Rangers Super Megaforce: The Legendary Battle
+        # 190435: 687354, 11667 # Street Fighter (Animated): Street Fighter Assassin's Fist, Street Fighter
+        # 1582: 1273  # Teenage Mutant Ninja Turtles: TMNT
+        # 10194: 130925, 256835, 213121, 77887, 594530, 82424 # Toy Story: Partysaurus Rex, Toy Story That Time Forgot, Toy Story of Terror, Hawaiian Vacation, Lamp Life, Small Fry
+        # 63043: 73362  # TRON: TRON: The Next Day
+        # 748: 567604 # X-Men: Once Upon a Deadpool
+      # name_mapping:
+        # 1565: 28 Days-Weeks Later
+        # 508334: Angels in the
+        # 115838: Escape From
+        # 386534: Has Fallen
+        # 87359: Mission Impossible
+        # 133352: Resident Evil Biohazard
+        # 115575: Star Trek Alternate Reality
+        # 115570: Star Trek The Next Generation
+        # 151: Star Trek The Original Series
+        # 10: Star Wars Skywalker Saga
 
 collections:
   Franchise Collections:
@@ -110,79 +112,132 @@ collections:
       - name: separator
         separator: franchise
   Charlie Brown:
-    template: {name: collection, url: "Charlie Brown" }
+    template:
+      - name: shared
+      - name: franchise
+        image: Charlie Brown
     imdb_list: https://www.imdb.com/list/ls054850259/
     summary: Collection of Movies and TV Specials with the beloved Peanuts characters.
   Cloverfield:
-    template: {name: collection, url: "Cloverfield" }
+    template:
+      - name: shared
+      - name: franchise
+        image: Cloverfield
     imdb_list: https://www.imdb.com/list/ls021933730/
     summary: Cloverfield is an American science fiction anthology film series and media franchise created and produced by J. J. Abrams consisting of three films, viral marketing websites linking the films together, and a tie-in manga to the first film titled Cloverfield/Kishin (2008), all set in a shared fictional universe referred to as the "Cloververse". The franchise as a whole deals with creatures from other dimensions attacking Earth throughout various decades, all as a repercussion of an experiment by an astronaut team aboard the Cloverfield Station in outer-space. Each film depicts the reality-altering effects of their study, which was meant to find a new energy source replacing the planet's depleted resources, only to open portals for assault from various beasts from deep space.
   Cornetto Trilogy:
-    template: {name: collection, url: "Cornetto Trilogy" }
+    template:
+      - name: shared
+      - name: franchise
+        image: Cornetto Trilogy
     imdb_list: https://www.imdb.com/list/ls068623110/
     summary: An anthology series of British comedic genre films directed by Edgar Wright, written by Wright and Simon Pegg, produced by Nira Park, and starring Pegg and Nick Frost. The trilogy consists of Shaun of the Dead (2004), Hot Fuzz (2007), and The World's End (2013).
   Final Fantasy:
-    template: {name: collection, url: "Final Fantasy" }
+    template:
+      - name: shared
+      - name: franchise
+        image: Final Fantasy
     imdb_list: https://www.imdb.com/list/ls022264056/
     summary: A collection of films based off or closely associated with the Final Fantasy video games.
   Halo:
-    template: {name: collection, url: "Halo" }
+    template:
+      - name: shared
+      - name: franchise
+        image: Halo
     tmdb_list_details: 7070832
   The Man with No Name:
-    template: {name: collection, url: "The Man with No Name" }
+    template:
+      - name: shared
+      - name: franchise
+        image: The Man with No Name
     imdb_list: https://www.imdb.com/list/ls023916334/
     summary: An Italian film series consisting of three Spaghetti Western films directed by Sergio Leone. The films are titled A Fistful of Dollars (1964), For a Few Dollars More (1965) and The Good, the Bad and the Ugly (1966). The series has become known for establishing the Spaghetti Western genre, and inspiring the creation of many more Spaghetti Western films. The three films are consistently listed among the best rated Western films in history.
   Marx Brothers:
-    template: {name: collection, url: "Marx Brothers" }
+    template:
+      - name: shared
+      - name: franchise
+        image: Marx Brothers
     imdb_list: https://www.imdb.com/list/ls068486735/
     summary: The Marx Brothers were an American family comedy act that was successful in vaudeville, on Broadway, and in motion pictures from 1905 to 1949. Five of the Marx Brothers' thirteen feature films were selected by the American Film Institute (AFI) as among the top 100 comedy films, with two of them, Duck Soup (1933) and A Night at the Opera (1935), in the top fifteen. They are widely considered by critics, scholars, and fans to be among the greatest and most influential comedians of the 20th century.
   Monty Python:
-    template: {name: collection, url: "Monty Python" }
+    template:
+      - name: shared
+      - name: franchise
+        image: Monty Python
     imdb_list: https://www.imdb.com/list/ls072012494/
     summary: Monty Python is a British surreal comedy troupe who created sketch comedy television shows and movies
   Pokémon:
-    template: {name: collection, url: "Pokémon" }
+    template:
+      - name: shared
+      - name: franchise
+        image: Pokémon
     smart_filter:
       all:
         title: Pokémon
       # sort_by: release.asc
     summary: Pokémon is a media franchise created by video game designer Satoshi Tajiri that centers on fictional creatures called Pokémon. As of 2020, there have been 23 animated films and one live action film. The first nineteen animated films are based on the anime television series of the same name, with the original film being remade into the 22nd. The 20th, 21st and 23rd animated films are set in an alternate continuity to the anime.
   Scooby-Doo!:
-    template: {name: collection, url: "Scooby-Doo" }
+    template:
+      - name: shared
+      - name: franchise
+        image: Scooby-Doo
     smart_filter:
       all:
         title: Scooby-Doo
       # sort_by: release.asc
     summary: Brainiac Velma, jock Fred, fashionista Daphne, hippie Shaggy, and Shaggy's highstrung, talking Great Dane, Scooby-Doo, climb into their green van, the Mystery Machine, and hit the road in search of weird phenomena to solve. And even when Scooby and the gang aren't actively searching for them, mysteries just have a way of falling into their laps. Ruh-roh!
-  "Star Wars Legends":
-    template: {name: collection, url: "Star Wars Legends" }
+  Star Wars Legends:
+    template:
+      - name: shared
+      - name: franchise
+        image: Star Wars Legends
     tmdb_movie: 348350, 330459
     summary: "Star Wars Anthology Films and other Star Wars Movies"
     name_mapping: Star Wars Legends
   The Three Stooges:
-    template: {name: collection, url: "The Three Stooges" }
+    template:
+      - name: shared
+      - name: franchise
+        image: The Three Stooges
     imdb_list: https://www.imdb.com/list/ls075972675/
     tmdb_movie: 76489
     summary: The Three Stooges were an American vaudeville and comedy team active from 1922 until 1970, best known for their 190 short subject films by Columbia Pictures that have been regularly airing on television since 1958.
   Tom and Jerry:
-    template: {name: collection, url: "Tom and Jerry" }
+    template:
+      - name: shared
+      - name: franchise
+        image: Tom and Jerry
     imdb_list: https://www.imdb.com/list/ls022966050/
     summary: Tom and Jerry's animated feature-length films based on the series.
   Unbreakable:
-    template: {name: collection, url: "Unbreakable" }
+    template:
+      - name: shared
+      - name: franchise
+        image: Unbreakable
     imdb_list: https://www.imdb.com/list/ls022101006/
     summary: The Unbreakable trilogy, officially known as the Eastrail 177 Trilogy, is an American superhero thriller and psychological horror film series. The films were written, produced, and directed by M. Night Shyamalan. The trilogy consists of Unbreakable (2000), Split (2016), and Glass (2019).
   DC Universe:
-    template: { name: collection, url: "DC Universe" }
+    template:
+      - name: shared
+      - name: franchise
+        image: DC Universe
     tmdb_list: https://www.themoviedb.org/list/6468
     summary: The DC Universe (DCU) is the fictional shared universe where most stories in American comic book titles published by DC Comics take place. DC superheroes such as Superman, Batman, Wonder Woman, Martian Manhunter, The Flash, Green Lantern and Aquaman are from this universe, as well as teams such as the Justice League and the Teen Titans.
   In Association with Marvel:
-    template: {name: collection, url: "In Association with Marvel" }
+    template:
+      - name: shared
+      - name: franchise
+        image: In Association with Marvel
     imdb_list: https://www.imdb.com/list/ls538850776/
     summary: Movies based on Marvel Comics properties, or not directly part of the Marvel Cinematic Universe
   Marvel Cinematic Universe:
-    template: {name: collection, url: "Marvel Cinematic Universe" }
+    template:
+      - name: shared
+        image: Marvel Cinematic Universe
     imdb_list: https://www.imdb.com/list/ls091745515
   Wizarding World:
-    template: {name: collection, url: "Wizarding World" }
+    template:
+      - name: shared
+      - name: franchise
+        image: TMDb Trending Movies
     tmdb_list: https://www.themoviedb.org/list/63607
