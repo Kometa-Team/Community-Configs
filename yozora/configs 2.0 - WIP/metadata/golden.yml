@@ -1,0 +1,47 @@
+######################################################
+#             Golden Globes Collections              #
+# Created by Yozora, Bullmoose20, hjone72, & Sohjiro #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/golden                            #
+######################################################
+
+templates:
+  Golden:
+    sort_title: +16_<<collection_name>>
+    collection_mode: hide
+    smart_label: audience_rating.desc
+    summary: <<year>> Golden Globes
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-golden-globes
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<year>>.jpg
+
+collections:
+
+  Golden Globes 2022:
+    template: { name: Golden, year: 2022 }
+
+  Golden Globes 2021:
+    template: { name: Golden, year: 2021 }
+    
+  Golden Globes 2020:
+    template: { name: Golden, year: 2020 }
+    
+  Golden Globes 2019:
+    template: { name: Golden, year: 2019 }
+    
+  Golden Globes 2018:
+    template: { name: Golden, year: 2018 }
+    
+  Golden Globes 2017:
+    template: { name: Golden, year: 2017 }
+    
+  Golden Globes 2016:
+    template: { name: Golden, year: 2016 }
+    
+  Golden Globes 2015:
+    template: { name: Golden, year: 2015 }
+    
+  Golden Globes 2014:
+    template: { name: Golden, year: 2014 }
+ 

@@ -1,0 +1,47 @@
+######################################################
+#       Independent Spirit Awards Collections        #
+# Created by Yozora, Bullmoose20, hjone72, & Sohjiro #
+#                                                    #
+#  Call this from your config.yml (Movie only):      #
+#     metadata_path:                                 #
+#       - git: PMM/movie/spirit                      #
+######################################################
+
+templates:
+  Spirit:
+    sort_title: +16_<<collection_name>>
+    collection_mode: hide
+    smart_label: audience_rating.desc
+    summary: Independent Spirit Awards <<year>>
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-independent-spirits
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<year>>.jpg
+
+
+collections:
+
+  Independent Spirit Awards 2022:
+    template: { name: Spirit, year: 2022 }
+
+  Independent Spirit Awards 2021:
+    template: { name: Spirit, year: 2021 }
+
+  Independent Spirit Awards 2020:
+    template: { name: Spirit, year: 2020 }
+
+  Independent Spirit Awards 2019:
+    template: { name: Spirit, year: 2019 }
+
+  Independent Spirit Awards 2018:
+    template: { name: Spirit, year: 2018 }
+
+  Independent Spirit Awards 2017:
+    template: { name: Spirit, year: 2017 }
+
+  Independent Spirit Awards 2016:
+    template: { name: Spirit, year: 2016 }
+
+  Independent Spirit Awards 2015:
+    template: { name: Spirit, year: 2015 }
+
+  Independent Spirit Awards 2014:
+    template: { name: Spirit, year: 2014 }

@@ -1,0 +1,58 @@
+######################################################
+#           Dynamic Resolution Collections           #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     metadata_path:                                 #
+#       - git: PMM/resolution_standards              #
+######################################################
+
+templates:
+  resolution_dynamic:
+    collection_mode: hide
+    sort_title: +15_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/resolution/standards/<<key>>.jpg
+    smart_filter:
+      sort_by: release.desc
+      any:
+        resolution: <<value>>
+  other:
+    sort_title: +15_~<<collection_name>>
+
+collections:
+  Resolution Collections:
+    blank_collection: true
+    collection_mode: hide
+    sort_title: +15_+Resolution Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/resolution.jpg
+
+dynamic_collections:
+  Resolution Standards:
+    type: resolution
+    title_format: <<key_name>> <<library_type>>s
+    other_name: Other Resolutions
+    template: resolution_dynamic
+    other_template: ["other", "resolution_dynamic"]
+    include:
+      - 480
+      - 720
+      - 1080
+      - 4k
+      - 8k
+    addons:
+      480:
+        - 144
+        - 240
+        - 360
+        - 576
+        - sd
+      1080:
+        - 2k
+      4k:
+        - 8k
+    title_override:
+      480: SD
+      720: HD Ready
+      1080: Full HD
+      4k: Ultra HD
+      

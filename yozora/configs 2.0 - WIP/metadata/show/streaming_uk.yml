@@ -1,0 +1,47 @@
+######################################################
+#          UK Streaming Service Collections          #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Show only):       #
+#     metadata_path:                                 #
+#       - git: PMM/show/streaming_uk                 #
+######################################################
+
+templates:
+  streaming:
+    collection_mode: hide
+    smart_label: release.desc
+    sync_mode: sync
+    sort_title: +02_<<collection_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/streaming/<<url_encoded>>.jpg
+
+collections:
+  Streaming Collections:
+    blank_collection: true
+    collection_mode: hide
+    sort_title: +02_+Streaming Collections
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/streaming_uk.jpg
+  All 4 Shows:
+    template: {name: streaming, url: "All 4"}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/all-4-Shows
+  Apple TV+ Shows:
+    template: {name: streaming, url: "Apple TV+"}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/appletv-Shows
+  BritBox Shows:
+    template: {name: streaming, url: "BritBox"}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/britbox-Shows
+  Disney+ Shows:
+    template: {name: streaming, url: "Disney+"}
+    mdblist_list: https://mdblist.com/lists/ryalism/disney-Shows
+  hayu Shows:
+    template: {name: streaming, url: "hayu"}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/hayu-Shows
+  Netflix Shows:
+    template: {name: streaming, url: "Netflix"}
+    mdblist_list: https://mdblist.com/lists/ryalism/netflix-Shows
+  NOW Shows:
+    template: {name: streaming, url: "NOW"}
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/now-Shows
+  Prime Video Shows:
+    template: {name: streaming, url: "Prime Video"}
+    mdblist_list: https://mdblist.com/lists/ryalism/amazon-Shows
