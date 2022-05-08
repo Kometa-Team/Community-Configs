@@ -1,0 +1,53 @@
+libraries:                                      # This is called out once within the config.yml file                                       
+  Movies:                                       # Each library must match the Plex library name
+    metadata_path:
+      - file: config/Movies.yml
+    overlay_path:
+      - remove_overlays: false
+      - file: config/Movies Overlays.yml
+  TV Shows:
+    metadata_path:
+      - file: config/TV Shows.yml
+    overlay_path:
+      - remove_overlays: false
+      - file: config/TV Shows Overlays.yml
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  sync_mode: append
+  show_unmanaged: false
+  show_filtered: false
+  show_missing: false
+  save_missing: false
+  run_again_delay: 2
+  asset_folders: false
+  assets_for_all: false
+  released_missing_only: false
+  create_asset_folders: false
+  missing_only_released: false
+  delete_below_minimum: false
+  notifiarr_collection_creation: false
+  notifiarr_collection_addition: false
+  notifiarr_collection_removing: false
+  tvdb_language: eng
+  show_missing_assets: false
+  only_filter_missing: false
+  delete_not_scheduled: false
+  show_missing_season_assets: false
+  ignore_ids:
+  ignore_imdb_ids:
+  asset_depth: 0
+  show_options: false
+  dimensional_asset_rename: false
+  minimum_items: 1
+  default_collection_order: release
+  download_url_assets: false
+  verify_ssl: true
+  item_refresh_delay: 0
+  playlist_sync_to_users: all
+  custom_repo:
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  check_nightly: true
+  playlist_report: true
