@@ -314,6 +314,12 @@ collections:
     url_poster: https://theposterdb.com/api/assets/92958
     url_background: https://www.themoviedb.org/t/p/original/1ok5JGCsDt4Sh3CkFeXh2F2KB7F.jpg
 
+  Kevin Smith:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/strangerer/lists/kevin-smith-movies
+    url_poster: https://theposterdb.com/api/assets/82586
+    url_background: https://yesofcorsa.com/wp-content/uploads/2017/03/Kevin-Smith-Wallpaper-HQ-1024x683.jpg
+
   Kingsman:
     template: {name: collection, collection: "391860"}
     url_poster: https://theposterdb.com/api/assets/164805
