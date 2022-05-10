@@ -34,6 +34,11 @@ collections:
     url_poster: https://theposterdb.com/api/assets/163540
     url_background: https://www.themoviedb.org/t/p/original/3QJMI8nqQcwU5JBPy26m8TUXtTN.jpg
 
+  Avengers:
+    template: {name: collection, collection: "86311"}
+    url_poster: https://theposterdb.com/api/assets/162376/
+    url_background: https://www.themoviedb.org/t/p/original/94ubpd0Ro0vDf31wkSojP20VZJ7.jpg
+
   Back to the Future:
     template: {name: collection, collection: "264"}
     url_poster: https://theposterdb.com/api/assets/163128
