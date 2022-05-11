@@ -22,135 +22,75 @@ templates:
     trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-oscars
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/<<year>>.jpg
 
-collections:
-
-  Oscars Best Picture Winners:
-    template:
-      - name: award
-        image: oscars/best
-      - name: shared
-        sort: Oscars !1
+  oscars_bpw_dynamic:
+    default:
+      limit: 10
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/best/<<key_name>>.jpg
+    summary: The <<key_name>> Academy Awards (Oscars) for Best Picture is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929. 
     imdb_list: https://www.imdb.com/search/title/?groups=oscar_best_picture_winners
-    summary: The Academy Award for Best Picture is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929.
+    limit: <<limit>>
+    filters:
+      year: <<value>>
+
+  oscars_bpn_dynamic:
+    default:
+      limit: 10
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/nomination/<<key_name>>.jpg
+    summary: The <<key_name>> Academy Awards (Oscars) for Best Picture Nominees.
+    imdb_list: https://www.imdb.com/search/title/?groups=oscar_best_picture_nominees
+    limit: <<limit>>
+    filters:
+      year: <<value>>
+
+  oscars_winners_dynamic:
+    default:
+      limit: 10
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner/<<key_name>>.jpg
+    summary: The Academy Awards (Oscars) Winners for <<key_name>>
+    imdb_list: https://www.imdb.com/search/title/?groups=oscar_winner
+    limit: <<limit>>
+    filters:
+      year: <<value>>
+
+  oscars_nominees_dynamic:
+    default:
+      limit: 10
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/nomination/<<key_name>>.jpg
+    summary: The Academy Awards (Oscars) Nominations for <<key_name>>
+    imdb_list: https://www.imdb.com/search/title/?groups=oscar_nominees
+    limit: <<limit>>
+    filters:
+      year: <<value>>
+
+dynamic_collections:
+  Oscars Best Picture Winners:
+    type: year
+    title_format: Oscars Best Picture Winners <<key_name>>
+    template: 
+      - schedule_year_collections
+      - oscars_bpw_dynamic
+      - shared
+
+  Oscars Best Picture Nominees:
+    type: year
+    title_format: Oscars Best Picture Nominees <<key_name>>
+    template: 
+      - schedule_year_collections
+      - oscars_bpn_dynamic
+      - shared
 
   Oscars Winners:
-    template:
-      - name: award
-        image: oscars/winner
-      - name: shared
-        sort: Oscars !2
-    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
-    summary: Oscar Winning Movies
-
-  Oscars Nominated:
-    template:
-      - name: award
-        image: oscars/nomination
-      - name: shared
-        sort: Oscars !3
-    trakt_list: https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2022
-    summary: 2022 Oscar nominations
-
-  Oscars 2010:
+    type: year
+    title_format: Oscars Winners <<key_name>>
     template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2010
-      - name: award
-      - name: shared
+      - schedule_year_collections
+      - oscars_winners_dynamic
+      - shared
 
-  Oscars 2011:
+  Oscars Nominees:
+    type: year
+    title_format: Oscars Nominees <<key_name>>
     template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2011
-      - name: award
-      - name: shared
-
-  Oscars 2012:
-    template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2012
-      - name: award
-      - name: shared
-
-  Oscars 2013:
-    template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2013
-      - name: award
-      - name: shared
-
-  Oscars 2014:
-    template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2014
-      - name: award
-      - name: shared
-
-  Oscars 2015:
-    template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2015
-      - name: award
-      - name: shared
-
-  Oscars 2016:
-    template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2016
-      - name: award
-      - name: shared
-
-  Oscars 2017:
-    template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2017
-      - name: award
-      - name: shared
-
-  Oscars 2018:
-    template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2018
-      - name: award
-      - name: shared
-
-  Oscars 2019:
-    template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2019
-      - name: award
-      - name: shared
-
-  Oscars 2020:
-    template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2020
-      - name: award
-      - name: shared
-
-  Oscars 2021:
-    template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2021
-      - name: award
-      - name: shared
-
-  Oscars 2022:
-    template: 
-      - name: schedule_year_collections
-      - name: Oscars
-        year: 2022
-      - name: award
-      - name: shared
+      - schedule_year_collections
+      - oscars_nominees_dynamic
+      - shared
