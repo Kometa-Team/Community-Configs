@@ -16,17 +16,28 @@ external_templates:
   template_variables:
     collection_section: 16
 
+templates:
+  emmys_dynamic:
+    default:
+      limit: 10
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/winner/<<key_name>>.jpg
+    summary: <<key_name>> Emmy Winning Shows
+    imdb_list: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&groups=emmy_winner
+    limit: <<limit>>
+    filters:
+      year: <<value>>
+      
 collections:
   Award Collections:
     template:
       - name: separator
         separator: award
 
+dynamic_collections:
   Emmys Winners:
-    template:
-      - name: award
-        image: emmys/winner
-      - name: shared
-    imdb_list: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&groups=emmy_winner
-    summary: Emmy Winning Shows
-
+    type: year
+    title_format: Emmys Winners <<key_name>>
+    template: 
+      - schedule_year_collections
+      - emmys_dynamic
+      - shared
