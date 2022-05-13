@@ -1,0 +1,17 @@
+overlays:
+
+############################
+#          ICHIMOKU        #
+############################ 
+ 
+   4K:
+    overlay: 4Ktv
+    plex_search:
+      all:
+        collection: 4K
+   4K-HDR:
+    overlay: 4K-HDRtv
+    plex_search:
+      all:
+        collection: 4K-HDR  
+   
