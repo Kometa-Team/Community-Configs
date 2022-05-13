@@ -25,7 +25,7 @@ templates:
     cache_builders: 1
     sync_mode: sync
     collection_order: custom
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<url_encoded>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<image_encoded>>.jpg
 
 collections:
   Franchise Collections:
@@ -106,4 +106,4 @@ collections:
       - name: shared
       - name: multi-franchise
         image: The Mummy
-    trakt_lis: https://trakt.tv/users/rzepkowski/lists/the-mummy-movies
+    trakt_list: https://trakt.tv/users/rzepkowski/lists/the-mummy-movies

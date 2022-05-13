@@ -26,7 +26,7 @@ templates:
     sync_mode: sync
     collection_order: <<collection_order>>
     radarr_add_missing: <<radarr_add_missing>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<url_encoded>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<image_encoded>>.jpg
 
 dynamic_collections:
   TMDb Collections:

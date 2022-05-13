@@ -4,7 +4,7 @@
 #############################################################
 #  Call this from your config.yml (Movie or Show)           #
 #    metadata_path:                                         #
-#      - git: PMM/award/emmy                                      #
+#      - git: PMM/award/emmy                                #
 #        template_variables:                                #
 #          schedule_year_collections: never                 #
 #          imdb_sort: user_rating,desc                      #
