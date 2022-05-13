@@ -1,15 +1,16 @@
-######################################################
-#              Dynamic Studio Collections            #
-#      Created by Yozora, Bullmoose20, & Sohjiro     #
-#                                                    #
-#  Call this from your config.yml (Movie or Show):   #
-#     metadata_path:                                 #
-#       - git: PMM/studio                            #
-#         template_variables:                        #
-#           schedule_separator: never                #
-#           collection_mode: hide                    #
-#           collection_section: "07"                 #
-######################################################
+#############################################################
+#                Dynamic Studio Collections                 #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#    metadata_path:                                         #
+#      - git: PMM/studio                                    #
+#        template_variables:                                #
+#          schedule_separator: never                        #
+#          sort_by: release.desc                            #
+#          collection_mode: hide                            #
+#          collection_section: "07"                         #
+#############################################################
 
 external_templates:
   git: PMM/templates
@@ -18,9 +19,11 @@ external_templates:
 
 templates:
   studio_dynamic:
+    default:
+      sort_by: release.desc
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/<<key_encoded>>.jpg
     smart_filter:
-      sort_by: release.desc
+      sort_by: <<sort_by>>
       any:
         studio.is: <<value>>
 
@@ -59,6 +62,7 @@ dynamic_collections:
     addons:
       20th Century Studios:
         - 20th Century
+        - 20th Century Animation
       Amazon Studios:
         - Amazon
       Blue Sky Studios:
@@ -68,6 +72,7 @@ dynamic_collections:
         - TriStar
       DreamWorks Studios:
         - DreamWorks
+        - DreamWorks Animation
       Illumination Entertainment:
         - Illumination Films
       Lucasfilm Ltd:
@@ -83,11 +88,18 @@ dynamic_collections:
         - New Line
       Paramount Pictures:
         - Paramount
+        - Paramount Animation
+      Pixar:
+        - Pixar Animation Studios
       Sony Pictures:
         - Sony
+        - Sony Pictures Animation
       Universal Pictures:
         - Universal
+        - Universal Animation Studios
       Walt Disney Pictures:
         - Disney
+        - Walt Disney Animation Studios
       Warner Bros. Pictures:
         - Warner
+        - Warner Animation Group

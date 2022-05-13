@@ -1,0 +1,52 @@
+#############################################################
+#                   Sundance Collections                    #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#     Credit to pjcob & maxwelldeux for the Trakt Lists     #
+#############################################################
+#  REQUIRES TRAKT AUTHENTICATION                            #
+#  https://metamanager.wiki/en/latest/config/trakt.html     #
+#                                                           #
+#  Call this from your config.yml (Movie only)              #
+#    metadata_path:                                         #
+#      - git: PMM/award/sundance                            #
+#        template_variables:                                #
+#          schedule_year_collections: never                 #
+#          collection_order: custom                         #
+#          collection_mode: hide                            #
+#          collection_section: 16                           #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 16
+
+templates:
+  Sundance:
+    allowed_library_types: movie
+    summary: Sundance Film Festival of <<year>>
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-sundance
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<year>>.jpg
+
+collections:
+  Sundance Grand Jury Winners:
+    template:
+      - name: award
+        image: sundance/grand_jury_winner
+      - name: shared
+        sort: Sundance !1
+    allowed_library_types: movie
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/sundance-film-festival-grand-jury-prize
+
+dynamic_collections:
+  Sundance Film Festival:
+    type: number
+    data:
+      starting: current_year-5
+      ending: current_year
+    title_format: Sundance Film Festival <<key>>
+    template:
+      - name: schedule_year_collections
+      - name: Sundance
+      - name: award
+      - name: shared

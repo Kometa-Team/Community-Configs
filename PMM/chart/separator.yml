@@ -1,0 +1,23 @@
+#############################################################
+#                Charts Separator Collection                #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#    metadata_path:                                         #
+#      - git: PMM/chart/separator                           #
+#        template_variables:                                #
+#          schedule_separator: never                        #
+#          collection_mode: hide                            #
+#          collection_section: "01"                         #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
+
+collections:
+  Chart Collections:
+    template:
+      - name: separator
+        separator: chart

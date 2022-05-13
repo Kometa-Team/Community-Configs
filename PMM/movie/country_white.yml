@@ -1,17 +1,18 @@
-######################################################
-#           Dynamic Country Collections              #
-#      Created by Yozora, Bullmoose20, & Sohjiro     #
-#             Artwork Credit to Duhniel              #
-#                                                    #
-#  Call this from your config.yml (Movie only):      #
-#     metadata_path:                                 #
-#       - git: PMM/movie/country_white               #
-#         template_variables:                        #
-#           schedule_separator: never                #
-#           schedule_other: never                    #
-#           collection_mode: hide                    #
-#           collection_section: "09"                 #
-######################################################
+#############################################################
+#                Dynamic Country Collections                #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#                 Artwork Credit to Duhniel                 #
+#############################################################
+#  Call this from your config.yml (Movie only)              #
+#    metadata_path:                                         #
+#      - git: PMM/movie/country_white                       #
+#        template_variables:                                #
+#          schedule_separator: never                        #
+#          schedule_other: never                            #
+#          sort_by: release.desc                            #
+#          collection_mode: hide                            #
+#          collection_section: "09"                         #
+#############################################################
 
 external_templates:
   git: PMM/templates
@@ -20,9 +21,11 @@ external_templates:
 
 templates:
   country_white_dynamic:
+    default:
+      sort_by: release.desc
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name_encoded>>.jpg
     smart_filter:
-      sort_by: release.desc
+      sort_by: <<sort_by>>
       any:
         country: <<value>>
 

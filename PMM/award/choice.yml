@@ -1,0 +1,51 @@
+#############################################################
+#             Critics Choice Awards Collections             #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to pjcob for the Trakt Lists            #
+#############################################################
+#  REQUIRES TRAKT AUTHENTICATION                            #
+#  https://metamanager.wiki/en/latest/config/trakt.html     #
+#                                                           #
+#  Call this from your config.yml (Movie or Show)           #
+#    metadata_path:                                         #
+#      - git: PMM/award/choice                                    #
+#        template_variables:                                #
+#          schedule_year_collections: never                 #
+#          collection_order: custom                         #
+#          collection_mode: hide                            #
+#          collection_section: 16                           #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 16
+
+templates:
+  Choice:
+    default:
+      url: critic-s
+    summary: <<key>> Critics Choice Awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-<<url>>-choice
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<key>>.jpg
+
+dynamic_collections:
+  Critics Choice Awards:
+    type: number
+    data:
+      starting: current_year-5
+      ending: current_year
+    title_format: Critics Choice Awards <<key>>
+    template:
+      - name: schedule_year_collections
+      - name: Choice
+      - name: award
+      - name: shared
+    template_variables:
+      url:
+        2019: critics
+        2018: critics
+        2017: critics
+        2016: critics
+        2015: critics
+        2014: critics

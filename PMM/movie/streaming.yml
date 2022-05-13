@@ -1,27 +1,76 @@
-######################################################
-#             Streaming Service Collections          #
-#      Created by Yozora, Bullmoose20, & Sohjiro     #
-#                                                    #
-#  Call this from your config.yml (Movie only):      #
-#     metadata_path:                                 #
-#       - git: PMM/movie/streaming                   #
-#         template_variables:                        #
-#           schedule_all_4: never                    #
-#           schedule_apple_tv: never                 #
-#           schedule_bet: never                      #
-#           schedule_brit_box: never                 #
-#           schedule_disney: never                   #
-#           schedule_hbo_max: never                  #
-#           schedule_hulu: never                     #
-#           schedule_netflix: never                  #
-#           schedule_now: never                      #
-#           schedule_paramount: never                #
-#           schedule_peacock: never                  #
-#           schedule_prime: never                    #
-#           schedule_separator: never                #
-#           collection_mode: hide                    #
-#           collection_section: "03"                 #
-######################################################
+#############################################################
+#               Streaming Service Collections               #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie only)              #
+#    metadata_path:                                         #
+#      - git: PMM/movie/streaming                           #
+#        template_variables:                                #
+#          sort_by: release.desc                            #
+#          collection_mode: hide                            #
+#          collection_section: "03"                         #
+#          schedule_separator: never                        #
+#                                                           #
+#          schedule_all_4: never                            #
+#          visible_library_all_4: true                      #
+#          visible_home_all_4: true                         #
+#          visible_shared_all_4: true                       #
+#                                                           #
+#          schedule_apple_tv: never                         #
+#          visible_library_apple_tv: true                   #
+#          visible_home_apple_tv: true                      #
+#          visible_shared_apple_tv: true                    #
+#                                                           #
+#          schedule_bet: never                              #
+#          visible_library_bet: true                        #
+#          visible_home_bet: true                           #
+#          visible_shared_bet: true                         #
+#                                                           #
+#          schedule_brit_box: never                         #
+#          visible_library_brit_box: true                   #
+#          visible_home_brit_box: true                      #
+#          visible_shared_brit_box: true                    #
+#                                                           #
+#          schedule_disney: never                           #
+#          visible_library_disney: true                     #
+#          visible_home_disney: true                        #
+#          visible_shared_disney: true                      #
+#                                                           #
+#          schedule_hbo_max: never                          #
+#          visible_library_hbo_max: true                    #
+#          visible_home_hbo_max: true                       #
+#          visible_shared_hbo_max: true                     #
+#                                                           #
+#          schedule_hulu: never                             #
+#          visible_library_hulu: true                       #
+#          visible_home_hulu: true                          #
+#          visible_shared_hulu: true                        #
+#                                                           #
+#          schedule_netflix: never                          #
+#          visible_library_netflix: true                    #
+#          visible_home_netflix: true                       #
+#          visible_shared_netflix: true                     #
+#                                                           #
+#          schedule_now: never                              #
+#          visible_library_now: true                        #
+#          visible_home_now: true                           #
+#          visible_shared_now: true                         #
+#                                                           #
+#          schedule_paramount: never                        #
+#          visible_library_paramount: true                  #
+#          visible_home_paramount: true                     #
+#          visible_shared_paramount: true                   #
+#                                                           #
+#          schedule_peacock: never                          #
+#          visible_library_peacock: true                    #
+#          visible_home_peacock: true                       #
+#          visible_shared_peacock: true                     #
+#                                                           #
+#          schedule_prime: never                            #
+#          visible_library_prime: true                      #
+#          visible_home_prime: true                         #
+#          visible_shared_prime: true                       #
+#############################################################
 
 external_templates:
   git: PMM/templates

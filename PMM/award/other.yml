@@ -1,0 +1,46 @@
+#############################################################
+#                    Awards Collections                     #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#         Credit to maxwelldeux for the Trakt Lists         #
+#############################################################
+#  REQUIRES TRAKT AUTHENTICATION                            #
+#  https://metamanager.wiki/en/latest/config/trakt.html     #
+#                                                           #
+#  Call this from your config.yml (Movie only)              #
+#    metadata_path:                                         #
+#      - git: PMM/award/other                               #
+#        template_variables:                                #
+#          collection_order: custom                         #
+#          collection_mode: hide                            #
+#          collection_section: 16                           #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 16
+
+collections:
+  Cesar:
+    template:
+      - name: award
+        image: cesar/winner
+      - name: shared
+    allowed_library_types: movie
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/cesar-award-best-french-film
+
+  Berlinale:
+    template:
+      - name: award
+        image: berlinale/winner
+      - name: shared
+    allowed_library_types: movie
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
+
+  Venice:
+    template:
+      - name: award
+        image: venice/winner
+      - name: shared
+    allowed_library_types: movie
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion

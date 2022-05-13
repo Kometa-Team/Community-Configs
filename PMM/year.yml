@@ -1,17 +1,18 @@
-######################################################
-#              Dynamic Year Collections              #
-#      Created by Yozora, Bullmoose20, & Sohjiro     #
-#                                                    #
-#  Call this from your config.yml (Movie or Show):   #
-#     metadata_path:                                 #
-#       - git: PMM/year                              #
-#         template_variables:                        #
-#           schedule_separator: never                #
-#           schedule_other: never                    #
-#           collection_mode: hide                    #
-#           collection_section: 13                   #
-#           limit: 10                                #
-######################################################
+#############################################################
+#                 Dynamic Year Collections                  #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#    metadata_path:                                         #
+#      - git: PMM/year                                      #
+#        template_variables:                                #
+#          schedule_separator: never                        #
+#          schedule_other: never                            #
+#          sort_by: release.desc                            #
+#          collection_mode: hide                            #
+#          collection_section: 13                           #
+#          limit: 10                                        #
+#############################################################
 
 external_templates:
   git: PMM/templates
@@ -22,9 +23,10 @@ templates:
   year_dynamic:
     default:
       limit: 10
+      sort_by: critic_rating.desc
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/year/best/<<key>>.jpg
     smart_filter:
-      sort_by: critic_rating.desc
+      sort_by: <<sort_by>>
       any:
         year: <<value>>
       limit: <<limit>>

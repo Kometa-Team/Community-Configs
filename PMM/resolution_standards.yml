@@ -1,16 +1,17 @@
-######################################################
-#           Dynamic Resolution Collections           #
-#      Created by Yozora, Bullmoose20, & Sohjiro     #
-#                                                    #
-#  Call this from your config.yml (Movie or Show):   #
-#     metadata_path:                                 #
-#       - git: PMM/resolution_standards              #
-#         template_variables:                        #
-#           schedule_separator: never                #
-#           schedule_other: never                    #
-#           collection_mode: hide                    #
-#           collection_section: 15                   #
-######################################################
+#############################################################
+#              Dynamic Resolution Collections               #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#    metadata_path:                                         #
+#      - git: PMM/resolution_standards                      #
+#        template_variables:                                #
+#          schedule_separator: never                        #
+#          schedule_other: never                            #
+#          sort_by: release.desc                            #
+#          collection_mode: hide                            #
+#          collection_section: 15                           #
+#############################################################
 
 external_templates:
   git: PMM/templates
@@ -19,9 +20,11 @@ external_templates:
 
 templates:
   resolution_dynamic:
+    default:
+      sort_by: release.desc
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/resolution/standards/<<key>>.jpg
     smart_filter:
-      sort_by: release.desc
+      sort_by: <<sort_by>>
       any:
         resolution: <<value>>
 

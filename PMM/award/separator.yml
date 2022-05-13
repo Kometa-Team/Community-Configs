@@ -1,0 +1,23 @@
+#############################################################
+#                Awards Separator Collection                #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#    metadata_path:                                         #
+#      - git: PMM/award/separator                           #
+#        template_variables:                                #
+#          schedule_separator: never                        #
+#          collection_mode: hide                            #
+#          collection_section: 16                           #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 16
+
+collections:
+  Award Collections:
+    template:
+      - name: separator
+        separator: award

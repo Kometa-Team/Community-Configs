@@ -1,15 +1,16 @@
-######################################################
-#              Dynamic Genre Collections             #
-#      Created by Yozora, Bullmoose20, & Sohjiro     #
-#                                                    #
-#  Call this from your config.yml (Movie or Show):   #
-#     metadata_path:                                 #
-#       - git: PMM/genre                             #
-#         template_variables:                        #
-#           schedule_separator: never                #
-#           collection_mode: hide                    #
-#           collection_section: "06"                 #
-######################################################
+#############################################################
+#                 Dynamic Genre Collections                 #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#    metadata_path:                                         #
+#      - git: PMM/genre                                     #
+#        template_variables:                                #
+#          schedule_separator: never                        #
+#          sort_by: release.desc                            #
+#          collection_mode: hide                            #
+#          collection_section: "06"                         #
+#############################################################
 
 external_templates:
   git: PMM/templates
@@ -18,9 +19,11 @@ external_templates:
 
 templates:
   genre_dynamic:
+    default:
+      sort_by: release.desc
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/<<key_name_encoded>>.jpg
     smart_filter:
-      sort_by: release.desc
+      sort_by: <<sort_by>>
       any:
         genre: <<value>>
 
@@ -42,15 +45,18 @@ dynamic_collections:
     addons:
       Action:
         - Action/Adventure
+        - Action/adventure
         - Action & Adventure
         - Action & adventure
+        - Action and Adventure
+        - Action and adventure
       Adventure:
         - Action/Adventure
+        - Action/adventure
         - Action & Adventure
         - Action & adventure
-      Action & Adventure:
-        - Action/Adventure
-        - Action & adventure
+        - Action and Adventure
+        - Action and adventure
       Biography:
         - Biopic
       Family:

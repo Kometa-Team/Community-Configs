@@ -1,16 +1,17 @@
-######################################################
-#           Dynamic US Network Collections           #
-#      Created by Yozora, Bullmoose20, & Sohjiro     #
-#                                                    #
-#  Call this from your config.yml (Show only):       #
-#     metadata_path:                                 #
-#       - git: PMM/show/network                      #
-#         template_variables:                        #
-#           schedule_separator: never                #
-#           schedule_other: never                    #
-#           collection_mode: hide                    #
-#           collection_section: "04"                 #
-######################################################
+#############################################################
+#                Dynamic Network Collections                #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Show only)               #
+#    metadata_path:                                         #
+#      - git: PMM/show/network                              #
+#        template_variables:                                #
+#          schedule_separator: never                        #
+#          schedule_other: never                            #
+#          sort_by: release.desc                            #
+#          collection_mode: hide                            #
+#          collection_section: "04"                         #
+#############################################################
 
 external_templates:
   git: PMM/templates
@@ -19,9 +20,11 @@ external_templates:
 
 templates:
   networks_dynamic:
+    default:
+      sort_by: release.desc
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/network/<<key_encoded>>.jpg
     smart_filter:
-      sort_by: release.desc
+      sort_by: <<sort_by>>
       any:
         network: <<value>>
 

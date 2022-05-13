@@ -1,30 +1,33 @@
-######################################################
-#                Seasonal CA Collections             #
-#      Created by Yozora, Bullmoose20, & Sohjiro     #
-#                                                    #
-#  Call this from your config.yml (Movie only):      #
-#     metadata_path:                                 #
-#       - git: PMM/movie/seasonal                    #
-#         template_variables:                        #
-#           schedule_independence: never             #
-#           schedule_easter: never                   #
-#           schedule_valentine: never                #
-#           schedule_st_patrick: never               #
-#           schedule_thanksgiving_us: never          #
-#           schedule_thanksgiving_ca: never          #
-#           schedule_halloween: never                #
-#           schedule_christmas: never                #
-#           schedule_new_years: never                #
-#           collection_mode: hide                    #
-#           collection_section: "00"                 #
-######################################################
+#############################################################
+#                   Seasonal Collections                    #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie only)              #
+#    metadata_path:                                         #
+#      - git: PMM/movie/seasonal                            #
+#        template_variables:                                #
+#          schedule_independence: never                     #
+#          schedule_easter: never                           #
+#          schedule_valentine: never                        #
+#          schedule_st_patrick: never                       #
+#          schedule_thanksgiving_us: never                  #
+#          schedule_thanksgiving_ca: never                  #
+#          schedule_halloween: never                        #
+#          schedule_christmas: never                        #
+#          schedule_new_years: never                        #
+#          sort_by: title.asc                               #
+#          collection_mode: hide                            #
+#          collection_section: "00"                         #
+#############################################################
 
 external_templates:
   git: PMM/templates
 
 templates:
   Holiday:
-    smart_label: title.asc
+    default:
+      sort_by: title.asc
+    smart_label: <<sort_by>>
     summary: |-
       A timed collection of <<collection_name>> and other movies that may relate to the season.
       
@@ -36,7 +39,7 @@ templates:
     visible_shared: true
 
 collections:
-  Independence Day Movies:
+  Independence Day:
     template:
       - name: Independence
       - name: Holiday
@@ -48,7 +51,7 @@ collections:
       - https://www.imdb.com/list/ls068664510/
       - https://www.imdb.com/list/ls080925875/
 
-  Easter Movies:
+  Easter:
     template:
       - name: Easter
       - name: Holiday
@@ -60,7 +63,7 @@ collections:
       - https://www.imdb.com/list/ls062665509/
       - https://www.imdb.com/list/ls051733651/
 
-  Valentine's Day Movies:
+  Valentine's Day:
     template:
       - name: Valentine
       - name: Holiday
@@ -73,7 +76,7 @@ collections:
       - https://www.imdb.com/list/ls057783436/
       - https://www.imdb.com/list/ls064427905/
 
-  St. Patrick's Day Movies:
+  St. Patrick's Day:
     template:
       - name: StPatrick
       - name: Holiday
@@ -83,8 +86,8 @@ collections:
       - name: shared
     imdb_list: https://www.imdb.com/list/ls063934595/
 
-  Thanksgiving Movies US:
-    collection_name: Thanksgiving Movies
+  Thanksgiving US:
+    collection_name: Thanksgiving
     template:
       - name: ThanksgivingUS
       - name: Holiday
@@ -96,8 +99,8 @@ collections:
       - https://www.imdb.com/list/ls000835734/
       - https://www.imdb.com/list/ls091597850/
 
-  Thanksgiving Movies CA:
-    collection_name: Thanksgiving Movies
+  Thanksgiving CA:
+    collection_name: Thanksgiving
     template:
       - name: ThanksgivingCA
       - name: Holiday
@@ -109,7 +112,7 @@ collections:
       - https://www.imdb.com/list/ls000835734/
       - https://www.imdb.com/list/ls091597850/
 
-  Halloween Movies:
+  Halloween:
     template:
       - name: Halloween
       - name: Holiday
@@ -128,7 +131,7 @@ collections:
     tmdb_movie:
       - 23437    # A Nightmare on Elm Street (2010)
 
-  Christmas Movies:
+  Christmas:
     template:
       - name: Christmas
       - name: Holiday
@@ -138,7 +141,7 @@ collections:
       - name: shared
     imdb_list: https://www.imdb.com/list/ls000096828/
 
-  New Year's Day Movies:
+  New Year's Day:
     template:
       - name: NewYears
       - name: Holiday

@@ -1,0 +1,50 @@
+#############################################################
+#                 Golden Globes Collections                 #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#         Credit to maxwelldeux for the Trakt Lists         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#    metadata_path:                                         #
+#      - git: PMM/award/golden                                    #
+#        template_variables:                                #
+#          schedule_year_collections: never                 #
+#          imdb_sort: user_rating,desc                      #
+#          collection_order: custom                         #
+#          collection_mode: hide                            #
+#          collection_section: 16                           #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 16
+
+templates:
+  Golden:
+    default:
+      imdb_sort: moviemeter,asc
+    summary: <<key>> Golden Globe Winners
+    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
+
+collections:
+  Golden Globe Best Motion Pictures:
+    template:
+      - name: award
+        image: golden/best_picture_winner
+      - name: shared
+        sort: Golden Globes !1
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/golden-globe-award-best-motion-picture
+
+dynamic_collections:
+  Golden Globes Awards:
+    type: number
+    data:
+      starting: current_year-5
+      ending: current_year
+    title_format: Golden Globes <<key>>
+    template:
+      - name: schedule_year_collections
+      - name: Golden
+      - name: award
+      - name: shared
