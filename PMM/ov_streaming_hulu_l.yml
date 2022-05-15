@@ -30,4 +30,4 @@ overlays:
     plex_all: true
     collection_level: episode
     filters:
-      filepath.regex: '(?i)\b(hulu)\b"'
+      filepath.regex: '(?i)\b(hulu)\b'
