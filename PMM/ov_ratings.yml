@@ -1,0 +1,17 @@
+overlays:
+  audience_rating:
+    overlay:
+      name: text(audience_rating)
+      x_coordinate: 675
+      y_coordinate: 30
+      font: config/metadata/fonts/Inter-Medium.ttf
+      font_size: 63
+      font_color: #FFFFFF
+    plex_all: true
+  audience_rating_banner:
+    overlay:
+      name: banner
+      file: config/metadata/overlays/ov_aud_back.png
+      x_coordinate: 660
+      y_coordinate: 15
+    plex_all: true
