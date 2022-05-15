@@ -53,4 +53,4 @@ overlays:
     plex_all: true
     collection_level: episode
     filters:
-      filepath.regex: '(?i)\[Web[ ._-]?(dl|rip)'
+      filepath.regex: '(?i)Web[ ._-]?(dl|rip)'
