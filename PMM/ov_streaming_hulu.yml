@@ -29,4 +29,4 @@ overlays:
       weight: 200
     plex_all: true
     filters:
-      filepath.regex: '(?i)\b(hulu)\b"'
+      filepath.regex: '(?i)\b(hulu)\b'
