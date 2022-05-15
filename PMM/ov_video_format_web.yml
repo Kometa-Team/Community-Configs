@@ -52,4 +52,4 @@ overlays:
       weight: 30
     plex_all: true
     filters:
-      filepath.regex: '(?i)\[Web[ ._-]?(dl|rip)'
+      filepath.regex: '(?i)Web[ ._-]?(dl|rip)'
