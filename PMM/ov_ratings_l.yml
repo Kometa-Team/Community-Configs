@@ -1,0 +1,19 @@
+overlays:
+  audience_rating_l:
+    overlay:
+      name: text(audience_rating)
+      x_coordinate: 1680
+      y_coordinate: 30
+      font: config/metadata/fonts/Inter-Medium.ttf
+      font_size: 63
+      font_color: #FFFFFF
+    plex_all: true
+    collection_level: episode
+  audience_rating_banner_l:
+    overlay:
+      name: banner
+      file: config/metadata/overlays/ov_aud_back.png
+      x_coordinate: 1665
+      y_coordinate: 15
+    plex_all: true
+    collection_level: episode
