@@ -8,7 +8,7 @@
 #                                                           #
 #  Call this from your config.yml (Movie or Show)           #
 #    metadata_path:                                         #
-#      - git: PMM/award/choice                                    #
+#      - git: PMM/award/choice                              #
 #        template_variables:                                #
 #          schedule_year_collections: never                 #
 #          collection_order: custom                         #
@@ -25,22 +25,23 @@ templates:
   Choice:
     default:
       url: critic-s
-    summary: <<key>> Critics Choice Awards
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-<<url>>-choice
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<key>>.jpg
+    summary: <<value>> Critics Choice Awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<value>>-<<url>>-choice
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<value>>.jpg
 
 dynamic_collections:
   Critics Choice Awards:
     type: number
+    sync: true
     data:
       starting: current_year-5
       ending: current_year
-    title_format: Critics Choice Awards <<key>>
+    title_format: Critics Choice Awards <<key_name>>
     template:
-      - name: schedule_year_collections
-      - name: Choice
-      - name: award
-      - name: shared
+      - schedule_year_collections
+      - Choice
+      - award
+      - shared
     template_variables:
       url:
         2019: critics

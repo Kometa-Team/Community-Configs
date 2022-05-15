@@ -24,19 +24,20 @@ external_templates:
 templates:
   Spirit:
     allowed_library_types: movie
-    summary: <<year>> Independent Spirit Awards
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-independent-spirits
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<year>>.jpg
+    summary: <<value>> Independent Spirit Awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<value>>-independent-spirits
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<value>>.jpg
 
 dynamic_collections:
   Independent Spirit Awards Awards:
     type: number
+    sync: true
     data:
       starting: current_year-5
       ending: current_year
-    title_format: Independent Spirit Awards <<key>>
+    title_format: Independent Spirit Awards <<key_name>>
     template:
-      - name: schedule_year_collections
-      - name: Spirit
-      - name: award
-      - name: shared
+      - schedule_year_collections
+      - Spirit
+      - award
+      - shared

@@ -24,9 +24,9 @@ external_templates:
 templates:
   Cannes:
     allowed_library_types: movie
-    summary: <<year>> Cannes awards
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-cannes
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<year>>.jpg
+    summary: <<value>> Cannes awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<value>>-cannes
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<value>>.jpg
 
 collections:
   Cannes - Palme d'or:
@@ -41,13 +41,14 @@ collections:
 dynamic_collections:
   Cannes Awards:
     type: number
+    sync: true
     data:
       starting: current_year-5
       ending: current_year
-    title_format: Cannes <<key>>
+    title_format: Cannes <<key_name>>
     template:
-      - name: schedule_year_collections
-      - name: Cannes
-      - name: award
-      - name: shared
+      - schedule_year_collections
+      - Cannes
+      - award
+      - shared
 

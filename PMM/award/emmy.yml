@@ -22,19 +22,20 @@ templates:
   Emmy:
     default:
       imdb_sort: moviemeter,asc
-    summary: <<key>> Emmy Winners
-    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=emmy_winner&sort=<<imdb_sort>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmy/<<key>>.jpg
+    summary: <<value>> Emmy Winners
+    imdb_list: https://www.imdb.com/search/title/?release_date=<<value>>-01-01,<<value>>-12-31&groups=emmy_winner&sort=<<imdb_sort>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmy/<<value>>.jpg
 
 dynamic_collections:
   Emmy Awards:
     type: number
+    sync: true
     data:
       starting: current_year-5
       ending: current_year
-    title_format: Emmys <<key>>
+    title_format: Emmys <<key_name>>
     template:
-      - name: schedule_year_collections
-      - name: Emmy
-      - name: award
-      - name: shared
+      - schedule_year_collections
+      - Emmy
+      - award
+      - shared

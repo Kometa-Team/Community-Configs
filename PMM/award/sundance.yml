@@ -24,9 +24,9 @@ external_templates:
 templates:
   Sundance:
     allowed_library_types: movie
-    summary: Sundance Film Festival of <<year>>
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-sundance
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<year>>.jpg
+    summary: Sundance Film Festival of <<value>>
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<value>>-sundance
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<value>>.jpg
 
 collections:
   Sundance Grand Jury Winners:
@@ -41,12 +41,13 @@ collections:
 dynamic_collections:
   Sundance Film Festival:
     type: number
+    sync: true
     data:
       starting: current_year-5
       ending: current_year
-    title_format: Sundance Film Festival <<key>>
+    title_format: Sundance Film Festival <<key_name>>
     template:
-      - name: schedule_year_collections
-      - name: Sundance
-      - name: award
-      - name: shared
+      - schedule_year_collections
+      - Sundance
+      - award
+      - shared

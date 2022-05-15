@@ -24,9 +24,9 @@ external_templates:
 templates:
   BAFTA:
     allowed_library_types: movie
-    summary: <<year>> BAFTA awards
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-bafta
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<year>>.jpg
+    summary: <<value>> BAFTA awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<value>>-bafta
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<value>>.jpg
 
 collections:
   BAFTA Best Films:
@@ -41,12 +41,13 @@ collections:
 dynamic_collections:
   BAFTA Awards:
     type: number
+    sync: true
     data:
       starting: current_year-5
       ending: current_year
-    title_format: BAFTA <<key>>
+    title_format: BAFTA <<key_name>>
     template:
-      - name: schedule_year_collections
-      - name: BAFTA
-      - name: award
-      - name: shared
+      - schedule_year_collections
+      - BAFTA
+      - award
+      - shared

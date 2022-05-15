@@ -5,7 +5,7 @@
 #############################################################
 #  Call this from your config.yml (Movie or Show)           #
 #    metadata_path:                                         #
-#      - git: PMM/award/golden                                    #
+#      - git: PMM/award/golden                              #
 #        template_variables:                                #
 #          schedule_year_collections: never                 #
 #          imdb_sort: user_rating,desc                      #
@@ -23,9 +23,9 @@ templates:
   Golden:
     default:
       imdb_sort: moviemeter,asc
-    summary: <<key>> Golden Globe Winners
-    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
+    summary: <<value>> Golden Globe Winners
+    imdb_list: https://www.imdb.com/search/title/?release_date=<<value>>-01-01,<<value>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<value>>.jpg
 
 collections:
   Golden Globe Best Motion Pictures:
@@ -39,12 +39,13 @@ collections:
 dynamic_collections:
   Golden Globes Awards:
     type: number
+    sync: true
     data:
       starting: current_year-5
       ending: current_year
-    title_format: Golden Globes <<key>>
+    title_format: Golden Globes <<key_name>>
     template:
-      - name: schedule_year_collections
-      - name: Golden
-      - name: award
-      - name: shared
+      - schedule_year_collections
+      - Golden
+      - award
+      - shared

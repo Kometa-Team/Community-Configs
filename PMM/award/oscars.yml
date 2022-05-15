@@ -23,9 +23,9 @@ templates:
     default:
       imdb_sort: moviemeter,asc
     allowed_library_types: movie
-    summary: Academy Awards (Oscars) Winners for <<year>>
-    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=oscar_winner&sort=<<imdb_sort>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner/<<year>>.jpg
+    summary: Academy Awards (Oscars) Winners for <<value>>
+    imdb_list: https://www.imdb.com/search/title/?release_date=<<value>>-01-01,<<value>>-12-31&groups=oscar_winner&sort=<<imdb_sort>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner/<<value>>.jpg
 
 collections:
 
@@ -52,12 +52,13 @@ collections:
 dynamic_collections:
   Oscars Winners Awards:
     type: number
+    sync: true
     data:
       starting: current_year-5
       ending: current_year
-    title_format: Oscars Winners <<key>>
+    title_format: Oscars Winners <<key_name>>
     template:
-      - name: schedule_year_collections
-      - name: Oscars
-      - name: award
-      - name: shared
+      - schedule_year_collections
+      - Oscars
+      - award
+      - shared
