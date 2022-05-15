@@ -24,9 +24,9 @@ external_templates:
 templates:
   Cannes:
     allowed_library_types: movie
-    summary: <<value>> Cannes awards
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<value>>-cannes
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<value>>.jpg
+    summary: <<key_name>> Cannes awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key_name>>-cannes
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key_name>>.jpg
 
 collections:
   Cannes - Palme d'or:

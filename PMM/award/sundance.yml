@@ -24,9 +24,9 @@ external_templates:
 templates:
   Sundance:
     allowed_library_types: movie
-    summary: Sundance Film Festival of <<value>>
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<value>>-sundance
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<value>>.jpg
+    summary: Sundance Film Festival of <<key_name>>
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key_name>>-sundance
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<key_name>>.jpg
 
 collections:
   Sundance Grand Jury Winners:

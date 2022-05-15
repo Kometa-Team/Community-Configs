@@ -11,7 +11,7 @@ overlays:
   audience_rating_banner:
     overlay:
       name: banner
-      file: config/metadata/overlays/ov_aud_back.png
+      repo: PMM/overlays/ov_aud_back.png
       x_coordinate: 660
       y_coordinate: 15
     plex_all: true
