@@ -1,3 +1,20 @@
+######################################################
+#                  PMM OVERLAYS                      #
+#        Credit to Magic815 for base images          #
+#      refer to https://trash-guides.info/ for       #
+# naming of files that filepath.regex was written    #
+#             for in this config file                #
+#      refer to https://regexr.com/ (and set to      #
+# PCRE (Server) Engine or use https://regex101.com/  #
+#              for more help on regex                #
+#      Created by Yozora, Bullmoose20, & Sohjiro     #
+#                                                    #
+#  Call this from your config.yml (Movie or Show):   #
+#     overlay_path:                                  #
+#       - remove_overlays: false                     #
+#       - git: PMM/ov_ratings                        #
+#                                                    #
+######################################################
 overlays:
   audience_rating:
     overlay:
@@ -11,7 +28,7 @@ overlays:
   audience_rating_banner:
     overlay:
       name: banner
-      repo: PMM/overlays/ov_aud_back.png
+      repo: PMM/overlays/ov_aud_back
       x_coordinate: 660
       y_coordinate: 15
     plex_all: true
