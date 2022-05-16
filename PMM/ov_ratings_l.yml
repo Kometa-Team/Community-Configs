@@ -19,8 +19,8 @@ overlays:
   audience_rating_l:
     overlay:
       name: text(audience_rating)
-      x_coordinate: 1680
-      y_coordinate: 30
+      vertical_offset: 1680
+      horizontal_offset: 30
       font: config/metadata/fonts/Inter-Medium.ttf
       font_size: 63
       font_color: #FFFFFF
@@ -30,7 +30,7 @@ overlays:
     overlay:
       name: banner
       repo: PMM/overlays/ov_aud_back
-      x_coordinate: 1665
-      y_coordinate: 15
+      vertical_offset: 1665
+      horizontal_offset: 15
     plex_all: true
     collection_level: episode
