@@ -44,9 +44,9 @@
 ######################################################
 overlays:
 
-  IMAX-L:
+  IMAX-E-L:
     overlay:
-      name: IMAX-L
+      name: IMAX-E-L
       repo: PMM/overlays/IMAX-E-L
     plex_all: true
     collection_level: episode

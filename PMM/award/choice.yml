@@ -25,9 +25,9 @@ templates:
   Choice:
     default:
       url: critic-s
-    summary: <<key_name>> Critics Choice Awards
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key_name>>-<<url>>-choice
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<key_name>>.jpg
+    summary: <<key>> Critics Choice Awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-<<url>>-choice
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<key>>.jpg
 
 dynamic_collections:
   Critics Choice Awards:

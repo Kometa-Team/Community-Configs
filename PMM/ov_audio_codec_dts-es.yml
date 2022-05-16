@@ -64,12 +64,21 @@
 ######################################################
 overlays:
 
-  DTS-ES:
+  DTS-ES-Audio-Regex:
     overlay:
-      name: DTS-ES
+      name: DTS-ES-Audio-Regex
       repo: PMM/overlays/DTS-ES
       group: audio
       weight: 30
     plex_all: true
     filters:
       audio_track_title.regex: '(?i)dts[ ._-]?(es|(hd[. ]?)?(hr|hi))'
+  DTS-ES-Filepath-Regex:
+    overlay:
+      name: DTS-ES-Filepath-Regex
+      repo: PMM/overlays/DTS-ES
+      group: audio
+      weight: 30
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)dts[ ._-]?(es|(hd[. ]?)?(hr|hi))'

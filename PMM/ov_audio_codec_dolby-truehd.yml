@@ -64,12 +64,21 @@
 ######################################################
 overlays:
 
-  Dolby-TrueHD:
+  Dolby-TrueHD-Audio-Regex:
     overlay:
-      name: Dolby-TrueHD
+      name: Dolby-TrueHD-Audio-Regex
       repo: PMM/overlays/Dolby-TrueHD
       group: audio
       weight: 50
     plex_all: true
     filters:
       audio_track_title.regex: '(?i)true[ .-]?hd'
+  Dolby-TrueHD-Filepath-Regex:
+    overlay:
+      name: Dolby-TrueHD-Filepath-Regex
+      repo: PMM/overlays/Dolby-TrueHD
+      group: audio
+      weight: 50
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)true[ .-]?hd'

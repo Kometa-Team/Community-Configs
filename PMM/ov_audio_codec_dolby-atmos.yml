@@ -64,12 +64,21 @@
 ######################################################
 overlays:
 
-  Dolby-Atmos:
+  Dolby-Atmos-Audio-Regex:
     overlay:
-      name: Dolby-Atmos
+      name: Dolby-Atmos-Audio-Regex
       repo: PMM/overlays/Dolby-Atmos
       group: audio
       weight: 70
     plex_all: true
     filters:
       audio_track_title.regex: '(?i)atmos'
+  Dolby-Atmos-Filepath-Regex:
+    overlay:
+      name: Dolby-Atmos-Filepath-Regex
+      repo: PMM/overlays/Dolby-Atmos
+      group: audio
+      weight: 70
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)atmos'

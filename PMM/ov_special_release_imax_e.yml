@@ -44,9 +44,9 @@
 ######################################################
 overlays:
 
-  IMAX:
+  IMAX-E:
     overlay:
-      name: IMAX
+      name: IMAX-E
       repo: PMM/overlays/IMAX-E
     plex_all: true
     filters:

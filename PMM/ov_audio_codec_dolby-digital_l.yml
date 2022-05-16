@@ -64,9 +64,9 @@
 ######################################################
 overlays:
 
-  Dolby-Digital-L:
+  Dolby-Digital-L-Audio-Regex:
     overlay:
-      name: Dolby-Digital-L
+      name: Dolby-Digital-L-Audio-Regex
       repo: PMM/overlays/Dolby-Digital-L
       group: audio
       weight: 10
@@ -74,5 +74,17 @@ overlays:
     collection_level: episode
     filters:
       audio_track_title.regex: 
+        - '(?i)\bDD[^a-z+]|(?<!e)ac3'
+        - '(?i)\bAAC \b[s5]?'
+  Dolby-Digital-L-Filepath-Regex:
+    overlay:
+      name: Dolby-Digital-L-Filepath-Regex
+      repo: PMM/overlays/Dolby-Digital-L
+      group: audio
+      weight: 10
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex:
         - '(?i)\bDD[^a-z+]|(?<!e)ac3'
         - '(?i)\bAAC \b[s5]?'

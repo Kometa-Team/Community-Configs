@@ -23,9 +23,9 @@ templates:
   Golden:
     default:
       imdb_sort: moviemeter,asc
-    summary: <<value>> Golden Globe Winners
-    imdb_list: https://www.imdb.com/search/title/?release_date=<<value>>-01-01,<<value>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<value>>.jpg
+    summary: <<key>> Golden Globe Winners
+    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
 
 collections:
   Golden Globe Best Motion Pictures:

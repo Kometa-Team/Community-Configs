@@ -24,9 +24,9 @@ external_templates:
 templates:
   Spirit:
     allowed_library_types: movie
-    summary: <<key_name>> Independent Spirit Awards
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key_name>>-independent-spirits
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<key_name>>.jpg
+    summary: <<key>> Independent Spirit Awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-independent-spirits
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<key>>.jpg
 
 dynamic_collections:
   Independent Spirit Awards Awards:
