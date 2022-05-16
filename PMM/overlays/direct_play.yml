@@ -1,5 +1,5 @@
 #############################################################
-#               Direct Play Alert Collections               #
+#                Direct Play Banner Overlay                 #
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
 #            Credit to Magic815 for base images             #
 #############################################################
@@ -8,16 +8,28 @@
 #                                                           #
 #  Call this from your config.yml (Movie or Show):          #
 #    overlay_path:                                          #
-#      - git: PMM/overlays/alert                                  #
-#                                                           #
+#      - git: PMM/overlays/direct_play                      #
+#        template_variables:                                #
+#          overlay_level: episode                           #
 #############################################################
+
+templates:
+  Overlay Level:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
 
 overlays:
   Direct Play:
+    template:
+      name: Overlay Level
     overlay:
       name: Direct-Play
       repo: PMM/overlays/images/Direct-Play
+      horizontal_offset: 0
+      horizontal_align: center
+      vertical_offset: 120
+      vertical_align: bottom
     plex_search:
-      type: movies
       any:
         resolution.regex: '(?i)2160|4k'

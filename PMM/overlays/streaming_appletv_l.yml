@@ -25,7 +25,7 @@ overlays:
     overlay:
       name: AppleTV-L
       repo: PMM/overlays/AppleTV-L
-      group: audio
+      group: audio_codec
       weight: 200
     plex_all: true
     collection_level: episode

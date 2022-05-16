@@ -25,7 +25,7 @@ overlays:
     overlay:
       name: Paramount
       repo: PMM/overlays/Paramount
-      group: audio
+      group: audio_codec
       weight: 200
     plex_all: true
     filters:

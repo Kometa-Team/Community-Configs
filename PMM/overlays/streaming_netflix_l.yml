@@ -25,7 +25,7 @@ overlays:
     overlay:
       name: Netflix-L
       repo: PMM/overlays/Netflix-L
-      group: audio
+      group: audio_codec
       weight: 200
     plex_all: true
     collection_level: episode

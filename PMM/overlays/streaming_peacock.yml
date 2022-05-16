@@ -25,7 +25,7 @@ overlays:
     overlay:
       name: Peacock
       repo: PMM/overlays/Peacock
-      group: audio
+      group: audio_codec
       weight: 200
     plex_all: true
     filters:
