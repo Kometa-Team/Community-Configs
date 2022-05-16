@@ -1,0 +1,23 @@
+#############################################################
+#               Direct Play Alert Collections               #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Designed for TRaSH Guides filename naming scheme         #
+#  https://trash-guides.info/                               #
+#                                                           #
+#  Call this from your config.yml (Movie or Show):          #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/alert                                  #
+#                                                           #
+#############################################################
+
+overlays:
+  Direct Play:
+    overlay:
+      name: Direct-Play
+      repo: PMM/overlays/images/Direct-Play
+    plex_search:
+      type: movies
+      any:
+        resolution.regex: '(?i)2160|4k'
