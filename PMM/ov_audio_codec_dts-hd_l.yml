@@ -64,9 +64,9 @@
 ######################################################
 overlays:
 
-  DTS-HD-L:
+  DTS-HD-L-Audio-Regex:
     overlay:
-      name: DTS-HD-L
+      name: DTS-HD-L-Audio-Regex
       repo: PMM/overlays/DTS-HD-L
       group: audio
       weight: 40
@@ -74,5 +74,17 @@ overlays:
     collection_level: episode
     filters:
       audio_track_title.regex: 
+        - '(?i)dts[ .-]?(ma\b|hd[ .-]?ma|hd)(?!china|r)'
+        - '(?i)dts[ ._-]?(hd[. ]?)?(hr|hi)'
+  DTS-HD-L-Filepath-Regex:
+    overlay:
+      name: DTS-HD-L-Filepath-Regex
+      repo: PMM/overlays/DTS-HD-L
+      group: audio
+      weight: 40
+    plex_all: true
+    collection_level: episode
+    filters:
+      filepath.regex:
         - '(?i)dts[ .-]?(ma\b|hd[ .-]?ma|hd)(?!china|r)'
         - '(?i)dts[ ._-]?(hd[. ]?)?(hr|hi)'

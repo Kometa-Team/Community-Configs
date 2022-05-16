@@ -64,12 +64,21 @@
 ######################################################
 overlays:
 
-  DTS-X:
+  DTS-X-Audio-Regex:
     overlay:
-      name: DTS-X
+      name: DTS-X-Audio-Regex
       repo: PMM/overlays/DTS-X
       group: audio
       weight: 80
     plex_all: true
     filters:
       audio_track_title.regex: '(?i)dts[ ._:-]?x(?!\\d)'
+  DTS-X-Filepath-Regex:
+    overlay:
+      name: DTS-X-Filepath-Regex
+      repo: PMM/overlays/DTS-X
+      group: audio
+      weight: 80
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)dts[ ._:-]?x(?!\\d)'
