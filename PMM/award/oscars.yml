@@ -23,7 +23,7 @@ templates:
     default:
       imdb_sort: moviemeter,asc
     allowed_library_types: movie
-    summary: Academy Awards (Oscars) Winners for <<key>> <<value>>
+    summary: Academy Awards (Oscars) Winners for <<key>>
     imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=oscar_winner&sort=<<imdb_sort>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner/<<key>>.jpg
 
