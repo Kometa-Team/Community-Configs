@@ -69,7 +69,7 @@ templates:
 
   Dolby-Atmos:
     default:
-      DTS: movie, show
+      Dolby-Atmos: movie, show
     allowed_library_types: <<Dolby-Atmos>>
 
   DTS-X:
