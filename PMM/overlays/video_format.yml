@@ -8,7 +8,7 @@
 #                                                           #
 #  Call this from your config.yml (Movie or Show):          #
 #    overlay_path:                                          #
-#      - git: PMM/overlays/video_format_std                 #
+#      - git: PMM/overlays/video_format                     #
 #        template_variables:                                #
 #          overlay_level: episode                           #
 #          horizontal_offset: 15                            #
@@ -34,14 +34,20 @@ templates:
       vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
-      name: <<overlay_name>>
-      repo: PMM/overlays/images/<<overlay>>
+      name: text(<<overlay_name>>)
       group: quality
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
+      font: fonts/Inter-ExtraBold.ttf
+      font_size: 55
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 265
+      back_height: 85
 
   Remux:
     default:
