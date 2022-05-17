@@ -15,7 +15,6 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: PMM/overlays/images/<<overlay>>
-      group: quality
       horizontal_offset: 0
       horizontal_align: right
       vertical_offset: 0
