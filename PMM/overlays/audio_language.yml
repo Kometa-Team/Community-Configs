@@ -31,7 +31,7 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: PMM/overlays/images/<<overlay>>
-      group: audio_codec
+      group: audio_language
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
