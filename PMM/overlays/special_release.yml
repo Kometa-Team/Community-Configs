@@ -38,6 +38,21 @@ templates:
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
 
+  Criterion:
+    default:
+      Criterion: true
+    allowed_library_types: <<Criterion>>
+
+  IMAX-E:
+    default:
+      IMAX-E: true
+    allowed_library_types: <<IMAX-E>>
+
+  IMAX:
+    default:
+      IMAX: true
+    allowed_library_types: <<IMAX>>
+
 overlays:
 
   Criterion:
