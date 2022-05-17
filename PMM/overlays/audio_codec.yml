@@ -6,7 +6,7 @@
 #  Designed for TRaSH Guides filename naming scheme         #
 #  https://trash-guides.info/                               #
 #                                                           #
-#  Call this from your config.yml (Show Only):              #
+#  Call this from your config.yml (Movie or Show):          #
 #    overlay_path:                                          #
 #      - git: PMM/overlays/audio_codec                      #
 #        template_variables:                                #
@@ -84,7 +84,6 @@ overlays:
       - name: AudioCodec
         weight: 10
       - name: Dolby-Digital
-    allowed_library_types:
     plex_all: true
     filters:
       audio_track_title.regex:
