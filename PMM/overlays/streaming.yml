@@ -31,7 +31,7 @@ templates:
       - overlay_level
     default:
       overlay: <<overlay_name>>
-      horizontal_offset: 0
+      horizontal_offset: 135
       horizontal_align: center
       vertical_offset: 15
       vertical_align: top
