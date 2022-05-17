@@ -47,9 +47,13 @@ overlays:
   Remux:
     overlay:
       name: Remux
-      repo: PMM/overlays/Remux
+      repo: PMM/overlays/images/Remux
       group: quality
       weight: 50
+      horizontal_align: left
+      horizontal_offset: 15
+      vertical_align: bottom
+      vertical_offset: 15
     plex_all: true
     filters:
       filepath.regex: '(?i)\[Remux'

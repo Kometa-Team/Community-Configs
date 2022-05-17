@@ -47,9 +47,13 @@ overlays:
   HDTV:
     overlay:
       name: HDTV
-      repo: PMM/overlays/HDTV
+      repo: PMM/overlays/images/HDTV
       group: quality
       weight: 20
+      horizontal_align: left
+      horizontal_offset: 15
+      vertical_align: bottom
+      vertical_offset: 15
     plex_all: true
     filters:
       filepath.regex: '(?i)HD[ ._-]?TV'

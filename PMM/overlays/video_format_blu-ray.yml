@@ -47,9 +47,13 @@ overlays:
   Blu-Ray:
     overlay:
       name: Blu-Ray
-      repo: PMM/overlays/Blu-Ray
+      repo: PMM/overlays/images/Blu-Ray
       group: quality
       weight: 40
+      horizontal_align: left
+      horizontal_offset: 15
+      vertical_align: bottom
+      vertical_offset: 15
     plex_all: true
     filters:
       filepath.regex: '(?i)\[Blu[ ._-]?ray|\[BD|\[BR|\[HD[ ._-]?DVD'

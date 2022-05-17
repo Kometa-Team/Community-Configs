@@ -47,9 +47,13 @@ overlays:
   WEB:
     overlay:
       name: WEB
-      repo: PMM/overlays/WEB
+      repo: PMM/overlays/images/WEB
       group: quality
       weight: 30
+      horizontal_align: left
+      horizontal_offset: 15
+      vertical_align: bottom
+      vertical_offset: 15
     plex_all: true
     filters:
       filepath.regex: '(?i)Web[ ._-]?(dl|rip)'

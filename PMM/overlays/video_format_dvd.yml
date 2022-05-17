@@ -47,9 +47,13 @@ overlays:
   DVD:
     overlay:
       name: DVD
-      repo: PMM/overlays/DVD
+      repo: PMM/overlays/images/DVD
       group: quality
       weight: 10
+      horizontal_align: left
+      horizontal_offset: 15
+      vertical_align: bottom
+      vertical_offset: 15
     plex_all: true
     filters:
       filepath.regex: '(?i)\[DVD'
