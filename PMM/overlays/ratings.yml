@@ -17,6 +17,8 @@
 
 templates:
   Audience Rating:
+    optional:
+      - overlay_level
     default:
       rating_type: audience_rating
       horizontal_offset: 225
