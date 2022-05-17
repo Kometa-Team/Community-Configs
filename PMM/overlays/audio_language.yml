@@ -1,45 +1,58 @@
 #############################################################
-#              Audience Rating Banner Overlay               #
+#                  Audio Language Overlay                   #
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
 #            Credit to Magic815 for base images             #
 #############################################################
+#  Designed for TRaSH Guides filename naming scheme         #
+#  https://trash-guides.info/                               #
+#                                                           #
 #  Call this from your config.yml (Movie or Show):          #
 #    overlay_path:                                          #
-#      - git: PMM/overlays/ratings                          #
+#      - git: PMM/overlays/audio_language                   #
 #        template_variables:                                #
-#          rating_type: audience_rating                     #
 #          overlay_level: episode                           #
-#          horizontal_offset: 225                           #
+#          horizontal_offset: 0                             #
 #          horizontal_align: center                         #
 #          vertical_offset: 15                              #
-#          vertical_align: top                              #
+#          vertical_align: bottom                           #
 #############################################################
 
 templates:
-  Audience Rating:
+  AudioLanguage:
+    optional:
+      - overlay_level
     default:
-      rating_type: audience_rating
-      horizontal_offset: 225
+      overlay: <<overlay_name>>
+      horizontal_offset: 0
       horizontal_align: center
       vertical_offset: 15
-      vertical_align: top
+      vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
-      name: text(<<rating_type>>)
+      name: <<overlay_name>>
+      repo: PMM/overlays/images/<<overlay>>
+      group: audio_codec
+      weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-      font: fonts/Inter-Medium.ttf
-      font_size: 63
-      font_color: "#FFFFFF"
-      back_color: "#00000099"
-      back_radius: 30
-      back_width: 150
-      back_height: 105
 
 overlays:
-  audience_rating:
+
+  Dual-Audio:
     template:
-      name: Audience Rating
+      - name: AudioLanguage
+        weight: 10
     plex_all: true
+    filters:
+      audio_language.count_gte: 2
+      audio_language.count_lt: 3
+
+  Multi-Audio:
+    template:
+      - name: AudioLanguage
+        weight: 20
+    plex_all: true
+    filters:
+      audio_language.count_gt: 2

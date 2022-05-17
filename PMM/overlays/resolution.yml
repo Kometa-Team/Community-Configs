@@ -1,0 +1,223 @@
+#############################################################
+#                    Resolution Overlay                     #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Designed for TRaSH Guides filename naming scheme         #
+#  https://trash-guides.info/                               #
+#                                                           #
+#  Call this from your config.yml (Movie or Show):          #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/resolution                       #
+#        template_variables:                                #
+#          overlay_level: episode                           #
+#          horizontal_offset: 15                            #
+#          horizontal_align: left                           #
+#          vertical_offset: 15                              #
+#          vertical_align: top                              #
+#          4K: false                                        #
+#          1080P: false                                     #
+#          720P: false                                      #
+#          480P: false                                      #
+#          DV: false                                        #
+#          HDR: false                                       #
+#############################################################
+
+templates:
+  Resolution:
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 15
+      vertical_align: top
+    collection_level: <<overlay_level>>
+    overlay:
+      name: <<overlay_name>>
+      repo: PMM/overlays/images/<<overlay>>
+      group: res
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+  4K-DV:
+    default:
+      4K: true
+      DV: true
+    allowed_library_types: <<4K>>, <<DV>>
+
+  4K-HDR:
+    default:
+      4K: true
+      HDR: true
+    allowed_library_types: <<4K>>, <<HDR>>
+
+  4K:
+    default:
+      4K: true
+    allowed_library_types: <<4K>>
+
+  1080P-DV:
+    default:
+      1080P: true
+      DV: true
+    allowed_library_types: <<1080P>>, <<DV>>
+
+  1080P-HDR:
+    default:
+      1080P: true
+      HDR: true
+    allowed_library_types: <<1080P>>, <<HDR>>
+
+  1080P:
+    default:
+      1080P: true
+    allowed_library_types: <<1080P>>
+
+  720P-DV:
+    default:
+      720P: true
+      DV: true
+    allowed_library_types: <<720P>>, <<DV>>
+
+  720P-HDR:
+    default:
+      720P: true
+      HDR: true
+    allowed_library_types: <<720P>>, <<HDR>>
+
+  720P:
+    default:
+      720P: true
+    allowed_library_types: <<720P>>
+
+  480P-DV:
+    default:
+      480P: true
+      DV: true
+    allowed_library_types: <<480P>>, <<DV>>
+
+  480P-HDR:
+    default:
+      480P: true
+      HDR: true
+    allowed_library_types: <<480P>>, <<HDR>>
+
+  480P:
+    default:
+      480P: true
+    allowed_library_types: <<480P>>
+
+overlays:
+
+  4K-DV:
+    template:
+      - name: Resolution
+        weight: 120
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+    filters:
+      has_dolby_vision: true
+
+  4K-HDR:
+    template:
+      - name: Resolution
+        weight: 110
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+
+  4K:
+    template:
+      - name: Resolution
+        weight: 100
+    plex_search:
+      any:
+        resolution.regex: '(?i)2160|4k'
+        hdr: true
+
+  1080P-DV:
+    template:
+      - name: Resolution
+        weight: 90
+    plex_search:
+      all:
+        resolution.regex: '(?i)1080|2k'
+    filters:
+      has_dolby_vision: true
+
+  1080P-HDR:
+    template:
+      - name: Resolution
+        weight: 80
+    plex_search:
+      all:
+        resolution.regex: '(?i)1080|2k'
+        hdr: true
+
+  1080P:
+    template:
+      - name: Resolution
+        weight: 70
+    plex_search:
+      any:
+        resolution.regex: '(?i)1080|2k'
+
+  720P-DV:
+    template:
+      - name: Resolution
+        weight: 60
+    plex_search:
+      all:
+        resolution.regex: '(?i)720|hd'
+    filters:
+      has_dolby_vision: true
+
+  720P-HDR:
+    template:
+      - name: Resolution
+        weight: 50
+    plex_search:
+      all:
+        resolution.regex: '(?i)720|hd'
+        hdr: true
+
+  720P:
+    template:
+      - name: Resolution
+        weight: 40
+    plex_search:
+      any:
+        resolution.regex: '(?i)720|hd'
+
+  480P-DV:
+    template:
+      - name: Resolution
+        weight: 30
+    plex_search:
+      all:
+        resolution.regex: '(?i)480|sd'
+    filters:
+      has_dolby_vision: true
+
+  480P-HDR:
+    template:
+      - name: Resolution
+        weight: 20
+    plex_search:
+      all:
+        resolution.regex: '(?i)480|sd'
+        hdr: true
+
+  480P:
+    template:
+      - name: Resolution
+        weight: 10
+    plex_search:
+      any:
+        resolution.regex: '(?i)480|sd'

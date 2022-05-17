@@ -10,6 +10,11 @@
 #    overlay_path:                                          #
 #      - git: PMM/overlays/audio_codec                      #
 #        template_variables:                                #
+#          overlay_level: episode                           #
+#          horizontal_offset: 0                             #
+#          horizontal_align: center                         #
+#          vertical_offset: 15                              #
+#          vertical_align: top                              #
 #          Dolby-Digital: false                             #
 #          DTS: false                                       #
 #          DTS-ES: false                                    #
@@ -18,7 +23,6 @@
 #          Dolby-Digital-Plus: false                        #
 #          Dolby-Atmos: false                               #
 #          DTS-X: false                                     #
-#          overlay_level: episode                           #
 #############################################################
 
 templates:
@@ -27,54 +31,59 @@ templates:
       - overlay_level
     default:
       overlay: <<overlay_name>>
+      horizontal_offset: 0
+      horizontal_align: center
+      vertical_offset: 15
+      vertical_align: top
     collection_level: <<overlay_level>>
     overlay:
       name: <<overlay_name>>
       repo: PMM/overlays/images/<<overlay>>
       group: audio_codec
       weight: <<weight>>
-      horizontal_offset: 0
-      horizontal_align: center
-      vertical_offset: 15
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
 
   Dolby-Digital:
     default:
-      Dolby-Digital: movie, show
+      Dolby-Digital: true
     allowed_library_types: <<Dolby-Digital>>
 
   DTS:
     default:
-      DTS: movie, show
+      DTS: true
     allowed_library_types: <<DTS>>
 
   DTS-ES:
     default:
-      DTS-ES: movie, show
+      DTS-ES: true
     allowed_library_types: <<DTS-ES>>
 
   DTS-HD:
     default:
-      DTS-HD: movie, show
+      DTS-HD: true
     allowed_library_types: <<DTS-HD>>
 
   Dolby-TrueHD:
     default:
-      Dolby-TrueHD: movie, show
+      Dolby-TrueHD: true
     allowed_library_types: <<Dolby-TrueHD>>
 
   Dolby-Digital-Plus:
     default:
-      Dolby-Digital-Plus: movie, show
+      Dolby-Digital-Plus: true
     allowed_library_types: <<Dolby-Digital-Plus>>
 
   Dolby-Atmos:
     default:
-      Dolby-Atmos: movie, show
+      Dolby-Atmos: true
     allowed_library_types: <<Dolby-Atmos>>
 
   DTS-X:
     default:
-      DTS-X: movie, show
+      DTS-X: true
     allowed_library_types: <<DTS-X>>
 
 overlays:

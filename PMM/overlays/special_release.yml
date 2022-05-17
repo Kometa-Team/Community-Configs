@@ -1,5 +1,5 @@
 #############################################################
-#                Direct Play Banner Overlay                 #
+#                  Special Release Overlay                  #
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
 #            Credit to Magic815 for base images             #
 #############################################################
@@ -8,37 +8,63 @@
 #                                                           #
 #  Call this from your config.yml (Movie or Show):          #
 #    overlay_path:                                          #
-#      - git: PMM/overlays/direct_play                      #
+#      - git: PMM/overlays/special_release                  #
 #        template_variables:                                #
 #          overlay_level: episode                           #
-#          horizontal_offset: 0                             #
-#          horizontal_align: center                         #
-#          vertical_offset: 135                             #
+#          horizontal_offset: 15                            #
+#          horizontal_align: left                           #
+#          vertical_offset: 113                             #
 #          vertical_align: bottom                           #
 #############################################################
 
 templates:
-  Overlay Level:
+  SpecialRelease:
     optional:
       - overlay_level
     default:
-      horizontal_offset: 0
-      horizontal_align: center
-      vertical_offset: 135
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 113
       vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
-      name: Direct-Play
-      repo: PMM/overlays/images/Direct-Play
+      name: <<overlay_name>>
+      repo: PMM/overlays/images/<<overlay>>
+      group: special
+      weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
 
 overlays:
-  Direct Play:
+
+  Criterion:
     template:
-      name: Overlay Level
-    plex_search:
-      any:
-        resolution.regex: '(?i)2160|4k'
+      - name: SpecialRelease
+        weight: 30
+      - name: Criterion
+    plex_all: true
+    filters:
+      filepath.regex:
+        - '(?i)Criterion'
+        - '(?i)\[CC\]'
+
+  IMAX-E:
+    template:
+      - name: SpecialRelease
+        weight: 20
+      - name: IMAX-E
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\[IMAX Enhanced\]'
+
+  IMAX:
+    template:
+      - name: SpecialRelease
+        weight: 10
+      - name: IMAX
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\[IMAX\]'

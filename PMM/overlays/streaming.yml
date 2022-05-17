@@ -1,0 +1,161 @@
+#############################################################
+#                    Streaming Overlay                      #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Designed for TRaSH Guides filename naming scheme         #
+#  https://trash-guides.info/                               #
+#                                                           #
+#  Call this from your config.yml (Movie or Show):          #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/streaming                        #
+#        template_variables:                                #
+#          overlay_level: episode                           #
+#          horizontal_offset: 0                             #
+#          horizontal_align: center                         #
+#          vertical_offset: 15                              #
+#          vertical_align: top                              #
+#          Amazon: false                                    #
+#          AppleTV: false                                   #
+#          Disney: false                                    #
+#          HBO-Max: false                                   #
+#          Hulu: false                                      #
+#          Netflix: false                                   #
+#          Paramount: false                                 #
+#          Peacock: false                                   #
+#############################################################
+
+templates:
+  Streaming:
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 0
+      horizontal_align: center
+      vertical_offset: 15
+      vertical_align: top
+    collection_level: <<overlay_level>>
+    overlay:
+      name: <<overlay_name>>
+      repo: PMM/overlays/images/<<overlay>>
+      group: audio_codec
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+  Amazon:
+    default:
+      Amazon: true
+    allowed_library_types: <<Amazon>>
+
+  AppleTV:
+    default:
+      AppleTV: true
+    allowed_library_types: <<AppleTV>>
+
+  Disney:
+    default:
+      Disney: true
+    allowed_library_types: <<Disney>>
+
+  HBO-Max:
+    default:
+      HBO-Max: true
+    allowed_library_types: <<HBO-Max>>
+
+  Hulu:
+    default:
+      Hulu: true
+    allowed_library_types: <<Hulu>>
+
+  Netflix:
+    default:
+      Netflix: true
+    allowed_library_types: <<Netflix>>
+
+  Paramount:
+    default:
+      Paramount: true
+    allowed_library_types: <<Paramount>>
+
+  Peacock:
+    default:
+      Peacock: true
+    allowed_library_types: <<Peacock>>
+
+overlays:
+
+  Amazon:
+    template:
+      - name: Streaming
+        weight: 200
+      - name: Amazon
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\b(amzn|amazon)\b'
+
+  AppleTV:
+    template:
+      - name: Streaming
+        weight: 200
+      - name: AppleTV
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\b(atvp|aptv|Apple TV\+)\b'
+
+  Disney:
+    template:
+      - name: Streaming
+        weight: 200
+      - name: Disney
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\b(dsnp|dsny|disney|Disney\+)\b'
+
+  HBO-Max:
+    template:
+      - name: Streaming
+        weight: 200
+      - name: HBO-Max
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\b(hmax|hbom|HBO Max)\b'
+
+  Hulu:
+    template:
+      - name: Streaming
+        weight: 200
+      - name: Hulu
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\b(hulu)\b'
+
+  Netflix:
+    template:
+      - name: Streaming
+        weight: 200
+      - name: Netflix
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\b(nf|netflix)\b'
+
+  Paramount:
+    template:
+      - name: Streaming
+        weight: 200
+      - name: Paramount
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\b(pmtp|Paramount Plus)\b'
+
+  Peacock:
+    template:
+      - name: Streaming
+        weight: 200
+      - name: Peacock
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\b(pcok|peacock)\b'

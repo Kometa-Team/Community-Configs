@@ -1,0 +1,29 @@
+#############################################################
+#                   IMDb Top 250 Overlays                   #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Call this from your config.yml (Movie or Show):          #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/imdb_top_250                     #
+#############################################################
+
+templates:
+  IMDbTop250:
+    default:
+      overlay: <<overlay_name>>
+    overlay:
+      name: <<overlay_name>>
+      repo: PMM/overlays/images/<<overlay>>
+      group: quality
+      horizontal_offset: 0
+      horizontal_align: right
+      vertical_offset: 0
+      vertical_align: bottom
+
+overlays:
+
+  IMDB-Top-250:
+    template:
+      - name: IMDbTop250
+    imdb_chart: top_movies
