@@ -24,7 +24,7 @@ templates:
       imdb_sort: moviemeter,asc
     summary: <<key>> Emmy Winners
     imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=emmy_winner&sort=<<imdb_sort>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/winner/<<key>>.jpg
 
 dynamic_collections:
   Emmy Awards:
