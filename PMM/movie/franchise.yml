@@ -25,7 +25,7 @@ templates:
       - radarr_add_missing
       - name_mapping
     cache_builders: 1
-    tmdb_collection_details: <<collection>>
+    tmdb_collection_details: <<value>>
     tmdb_movie: <<movie>>
     name_mapping: <<name_mapping>>
     sync_mode: sync
