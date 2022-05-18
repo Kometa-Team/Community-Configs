@@ -11,9 +11,9 @@
 #      - git: PMM/overlays/streaming                        #
 #        template_variables:                                #
 #          overlay_level: episode                           #
-#          horizontal_offset: 0                             #
-#          horizontal_align: center                         #
-#          vertical_offset: 15                              #
+#          horizontal_offset: 15                            #
+#          horizontal_align: left                           #
+#          vertical_offset: 135                             #
 #          vertical_align: top                              #
 #          Amazon: false                                    #
 #          AppleTV: false                                   #
@@ -31,9 +31,9 @@ templates:
       - overlay_level
     default:
       overlay: <<overlay_name>>
-      horizontal_offset: 135
-      horizontal_align: center
-      vertical_offset: 15
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 135
       vertical_align: top
     collection_level: <<overlay_level>>
     overlay:
