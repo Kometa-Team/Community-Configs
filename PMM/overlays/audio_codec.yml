@@ -21,6 +21,8 @@
 #          # Set the vertical align for the overlay         #
 #          vertical_align: top                              #
 #                                                           #
+#          # Use the Opus overlay                           #
+#          Opus: true                                       #
 #          # Use the Dolby-Digital overlay                  #
 #          Dolby-Digital: true                              #
 #          # Use the DTS overlay                            #
@@ -59,6 +61,11 @@ templates:
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
+
+  Opus:
+    default:
+      Opus: true
+    allowed_library_types: <<Opus>>
 
   Dolby-Digital:
     default:
@@ -101,6 +108,24 @@ templates:
     allowed_library_types: <<DTS-X>>
 
 overlays:
+
+  Opus:
+    template:
+      - name: AudioCodec
+        weight: 5
+      - name: Opus
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)\bOPUS(\b|\d)'
+
+  Opus-Filepath:
+    template:
+      - name: AudioCodec
+        weight: 5
+      - name: Opus
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bOPUS(\b|\d)'
 
   Dolby-Digital:
     template:
