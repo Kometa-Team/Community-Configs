@@ -4,9 +4,21 @@ templates:
     default:
       collection_section: "00"
     optional:
-      - schedule_separator
+      - use_separator
       - collection_mode
-    schedule: <<schedule_separator>>
+    allowed_library_types: <<use_separator>>
+    collection_mode: <<collection_mode>>
+    sort_title: "!<<collection_section>>_!<<collection_name>>"
+    blank_collection: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<separator>>.jpg
+
+  separator off:
+    default:
+      collection_section: "00"
+      use_separator: false
+    optional:
+      - collection_mode
+    allowed_library_types: <<use_separator>>
     collection_mode: <<collection_mode>>
     sort_title: "!<<collection_section>>_!<<collection_name>>"
     blank_collection: true
@@ -32,8 +44,8 @@ templates:
       sort: <<collection_name>>
       pre: "_~"
     optional:
-      - schedule_other
-    schedule: <<schedule_other>>
+      - use_other
+    allowed_library_types: <<use_other>>
     sort_title: "!<<collection_section>><<pre>><<sort>>"
 
   award:
@@ -75,10 +87,10 @@ templates:
     sync_mode: sync
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/streaming/<<image_encoded>>.jpg
 
-  schedule_year_collections:
+  use_year_collections:
     optional:
-      - schedule_year_collections
-    schedule: <<schedule_year_collections>>
+      - use_year_collections
+    allowed_library_types: <<use_year_collections>>
 
 ######################################################
 #                  Chart Templates                   #
@@ -388,28 +400,6 @@ templates:
     visible_library: <<visible_library_thanksgiving>>
     visible_home: <<visible_home_thanksgiving>>
     visible_shared: <<visible_shared_thanksgiving>>
-
-  ThanksgivingUS:
-    optional:
-      - schedule_thanksgiving_us
-      - visible_library_thanksgiving_us
-      - visible_home_thanksgiving_us
-      - visible_shared_thanksgiving_us
-    schedule: <<schedule_thanksgiving_us>>
-    visible_library: <<visible_library_thanksgiving_us>>
-    visible_home: <<visible_home_thanksgiving_us>>
-    visible_shared: <<visible_shared_thanksgiving_us>>
-
-  ThanksgivingCA:
-    optional:
-      - schedule_thanksgiving_ca
-      - visible_library_thanksgiving_ca
-      - visible_home_thanksgiving_ca
-      - visible_shared_thanksgiving_ca
-    schedule: <<schedule_thanksgiving_ca>>
-    visible_library: <<visible_library_thanksgiving_ca>>
-    visible_home: <<visible_home_thanksgiving_ca>>
-    visible_shared: <<visible_shared_thanksgiving_ca>>
 
   Halloween:
     optional:
