@@ -10,16 +10,28 @@
 #    overlay_path:                                          #
 #      - git: PMM/overlays/resolution                       #
 #        template_variables:                                #
-#          overlay_level: episode                           #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
 #          horizontal_offset: 15                            #
+#          # Set the horizontal align for the overlay       #
 #          horizontal_align: left                           #
+#          # Set the vertical offset for the overlay        #
 #          vertical_offset: 15                              #
+#          # Set the vertical align for the overlay         #
 #          vertical_align: top                              #
+#                                                           #
+#          # Use the 4K overlay                             #
 #          4K: false                                        #
+#          # Use the 1080P overlay                          #
 #          1080P: false                                     #
+#          # Use the 720P overlay                           #
 #          720P: false                                      #
+#          # Use the 480P overlay                           #
 #          480P: false                                      #
+#          # Use the DV overlay                             #
 #          DV: false                                        #
+#          # Use the HDR overlay                            #
 #          HDR: false                                       #
 #############################################################
 

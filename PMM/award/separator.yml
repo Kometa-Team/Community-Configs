@@ -6,8 +6,11 @@
 #    metadata_path:                                         #
 #      - git: PMM/award/separator                           #
 #        template_variables:                                #
-#          schedule_separator: never                        #
-#          collection_mode: hide                            #
+#          # Turn the separator collection on/off           #
+#          use_separator: true                              #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
 #          collection_section: 16                           #
 #############################################################
 

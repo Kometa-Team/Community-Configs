@@ -6,9 +6,13 @@
 #    metadata_path:                                         #
 #      - git: PMM/writer                                    #
 #        template_variables:                                #
-#          schedule_separator: never                        #
+#          # Turn the separator collection on/off           #
+#          use_separator: true                              #
+#          # Sets how the collection is sorted              #
 #          sort_by: release.desc                            #
-#          collection_mode: hide                            #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
 #          collection_section: 20                           #
 #############################################################
 

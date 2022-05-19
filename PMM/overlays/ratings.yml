@@ -8,10 +8,15 @@
 #      - git: PMM/overlays/ratings                          #
 #        template_variables:                                #
 #          rating_type: audience_rating                     #
-#          overlay_level: episode                           #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
 #          horizontal_offset: 225                           #
+#          # Set the horizontal align for the overlay       #
 #          horizontal_align: center                         #
+#          # Set the vertical offset for the overlay        #
 #          vertical_offset: 15                              #
+#          # Set the vertical align for the overlay         #
 #          vertical_align: top                              #
 #############################################################
 

@@ -6,17 +6,29 @@
 #    metadata_path:                                         #
 #      - git: PMM/movie/seasonal                            #
 #        template_variables:                                #
-#          schedule_independence: never                     #
-#          schedule_easter: never                           #
-#          schedule_valentine: never                        #
-#          schedule_st_patrick: never                       #
-#          schedule_thanksgiving_us: never                  #
-#          schedule_thanksgiving_ca: never                  #
-#          schedule_halloween: never                        #
-#          schedule_christmas: never                        #
-#          schedule_new_years: never                        #
+#          # Turn the separator collection on/off           #
+#          use_separator: false                             #
+#          # Turn the Independence Day collection on/off    #
+#          schedule_independence: range(06/23-07/11)        #
+#          # Turn the Easter collection on/off              #
+#          schedule_easter: range(03/22-04/25)              #
+#          # Turn the Valentine's Day collection on/off     #
+#          schedule_valentine: range(02/01-02/29)           #
+#          # Turn the St. Patrick's Day collection on/off   #
+#          schedule_st_patrick: range(03/01-03/18)          #
+#          # Turn the Thanksgiving collection on/off        #
+#          schedule_thanksgiving: range(11/01-11/30)        #
+#          # Turn the Halloween collection on/off           #
+#          schedule_halloween: range(10/01-10/31)           #
+#          # Turn the Christmas collection on/off           #
+#          schedule_christmas: range(12/01-12/31)           #
+#          # Turn the New Year's Day collection on/off      #
+#          schedule_new_years: range(12/26-01/04)           #
+#          # Sets how the collection is sorted              #
 #          sort_by: title.asc                               #
-#          collection_mode: hide                            #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
 #          collection_section: "00"                         #
 #############################################################
 
@@ -28,23 +40,23 @@ templates:
     default:
       sort_by: title.asc
     smart_label: <<sort_by>>
-    summary: |-
-      A timed collection of <<collection_name>> and other movies that may relate to the season.
-      
-      NOTE: this collection will only be around until <<end_date>>.
-    schedule: range(<<start_date>>-<<end_date>>)
+    summary: A collection of <<collection_name>> and other movies that may relate to the season.
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/<<season>>.jpg
     delete_not_scheduled: true
     visible_home: true
     visible_shared: true
 
 collections:
+  Seasonal Collections:
+    template:
+      - name: separator off
+        separator: seasonal
+
   Independence Day:
     template:
       - name: Independence
+        schedule_independence: range(06/23-07/11)
       - name: Holiday
-        start_date: 06/23
-        end_date: 07/11
         season: independence
       - name: shared
     imdb_list: 
@@ -54,9 +66,8 @@ collections:
   Easter:
     template:
       - name: Easter
+        schedule_easter: range(03/22-04/25)
       - name: Holiday
-        start_date: 03/22
-        end_date: 04/25
         season: easter
       - name: shared
     imdb_list: 
@@ -66,9 +77,8 @@ collections:
   Valentine's Day:
     template:
       - name: Valentine
+        schedule_valentine: range(02/01-02/29)
       - name: Holiday
-        start_date: 02/01
-        end_date: 02/29
         season: valentine
       - name: shared
     imdb_list:
@@ -79,45 +89,29 @@ collections:
   St. Patrick's Day:
     template:
       - name: StPatrick
+        schedule_st_patrick: range(03/01-03/18)
       - name: Holiday
-        start_date: 03/01
-        end_date: 03/18
         season: patrick
       - name: shared
     imdb_list: https://www.imdb.com/list/ls063934595/
 
-  Thanksgiving US:
+  Thanksgiving:
     collection_name: Thanksgiving
     template:
-      - name: ThanksgivingUS
+      - name: Thanksgiving
+        schedule_thanksgiving: range(11/01-11/30)
       - name: Holiday
-        start_date: 11/01
-        end_date: 11/30
         season: thanksgiving
       - name: shared
     imdb_list: 
       - https://www.imdb.com/list/ls000835734/
       - https://www.imdb.com/list/ls091597850/
 
-  Thanksgiving CA:
-    collection_name: Thanksgiving
-    template:
-      - name: ThanksgivingCA
-      - name: Holiday
-        start_date: 10/05
-        end_date: 10/20
-        season: thanksgiving
-      - name: shared
-    imdb_list:
-      - https://www.imdb.com/list/ls000835734/
-      - https://www.imdb.com/list/ls091597850/
-
   Halloween:
     template:
       - name: Halloween
+        schedule_halloween: range(10/01-10/31)
       - name: Holiday
-        start_date: 10/01
-        end_date: 10/31
         season: halloween
       - name: shared
     imdb_list:
@@ -134,9 +128,8 @@ collections:
   Christmas:
     template:
       - name: Christmas
+        schedule_christmas: range(12/01-12/31)
       - name: Holiday
-        start_date: 12/01
-        end_date: 12/31
         season: christmas
       - name: shared
     imdb_list: https://www.imdb.com/list/ls000096828/
@@ -144,9 +137,8 @@ collections:
   New Year's Day:
     template:
       - name: NewYears
+        schedule_new_years: range(12/26-01/04)
       - name: Holiday
-        start_date: 12/26
-        end_date: 01/04
         season: years
       - name: shared
     imdb_list: https://www.imdb.com/list/ls066838460/

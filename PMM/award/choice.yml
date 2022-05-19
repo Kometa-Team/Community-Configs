@@ -10,9 +10,13 @@
 #    metadata_path:                                         #
 #      - git: PMM/award/choice                              #
 #        template_variables:                                #
-#          schedule_year_collections: never                 #
+#          # Turn the individual year collections on/off    #
+#          use_year_collections: true                       #
+#          # Sets the collection order of the collection    #
 #          collection_order: custom                         #
-#          collection_mode: hide                            #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
 #          collection_section: 16                           #
 #############################################################
 
@@ -38,7 +42,7 @@ dynamic_collections:
       ending: current_year
     title_format: Critics Choice Awards <<key_name>>
     template:
-      - schedule_year_collections
+      - use_year_collections
       - Choice
       - award
       - shared

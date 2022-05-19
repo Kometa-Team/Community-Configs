@@ -10,8 +10,11 @@
 #    metadata_path:                                         #
 #      - git: PMM/award/other                               #
 #        template_variables:                                #
+#          # Sets the collection order of the collection    #
 #          collection_order: custom                         #
-#          collection_mode: hide                            #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
 #          collection_section: 16                           #
 #############################################################
 

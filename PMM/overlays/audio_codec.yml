@@ -10,19 +10,33 @@
 #    overlay_path:                                          #
 #      - git: PMM/overlays/audio_codec                      #
 #        template_variables:                                #
-#          overlay_level: episode                           #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
 #          horizontal_offset: 0                             #
+#          # Set the horizontal align for the overlay       #
 #          horizontal_align: center                         #
+#          # Set the vertical offset for the overlay        #
 #          vertical_offset: 15                              #
+#          # Set the vertical align for the overlay         #
 #          vertical_align: top                              #
-#          Dolby-Digital: false                             #
-#          DTS: false                                       #
-#          DTS-ES: false                                    #
-#          DTS-HD: false                                    #
-#          Dolby-TrueHD: false                              #
-#          Dolby-Digital-Plus: false                        #
-#          Dolby-Atmos: false                               #
-#          DTS-X: false                                     #
+#                                                           #
+#          # Use the Dolby-Digital overlay                  #
+#          Dolby-Digital: true                              #
+#          # Use the DTS overlay                            #
+#          DTS: true                                        #
+#          # Use the DTS-ES overlay                         #
+#          DTS-ES: true                                     #
+#          # Use the DTS-HD overlay                         #
+#          DTS-HD: true                                     #
+#          # Use the Dolby-TrueHD overlay                   #
+#          Dolby-TrueHD: true                               #
+#          # Use the Dolby-Digital-Plus overlay             #
+#          Dolby-Digital-Plus: true                         #
+#          # Use the Dolby-Atmos overlay                    #
+#          Dolby-Atmos: true                                #
+#          # Use the DTS-X overlay                          #
+#          DTS-X: true                                      #
 #############################################################
 
 templates:

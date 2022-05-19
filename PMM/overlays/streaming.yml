@@ -10,18 +10,32 @@
 #    overlay_path:                                          #
 #      - git: PMM/overlays/streaming                        #
 #        template_variables:                                #
-#          overlay_level: episode                           #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
 #          horizontal_offset: 15                            #
+#          # Set the horizontal align for the overlay       #
 #          horizontal_align: left                           #
+#          # Set the vertical offset for the overlay        #
 #          vertical_offset: 135                             #
+#          # Set the vertical align for the overlay         #
 #          vertical_align: top                              #
+#                                                           #
+#          # Use the Amazon overlay                         #
 #          Amazon: false                                    #
+#          # Use the AppleTV overlay                        #
 #          AppleTV: false                                   #
+#          # Use the Disney overlay                         #
 #          Disney: false                                    #
+#          # Use the HBO-Max overlay                        #
 #          HBO-Max: false                                   #
+#          # Use the Hulu overlay                           #
 #          Hulu: false                                      #
+#          # Use the Netflix overlay                        #
 #          Netflix: false                                   #
+#          # Use the Paramount overlay                      #
 #          Paramount: false                                 #
+#          # Use the Peacock overlay                        #
 #          Peacock: false                                   #
 #############################################################
 

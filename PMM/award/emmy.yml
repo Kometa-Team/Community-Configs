@@ -6,10 +6,14 @@
 #    metadata_path:                                         #
 #      - git: PMM/award/emmy                                #
 #        template_variables:                                #
-#          schedule_year_collections: never                 #
+#          # Turn the individual year collections on/off    #
+#          use_year_collections: true                       #
+#          # Sets the sort of the IMDb Search               #
 #          imdb_sort: user_rating,desc                      #
 #          collection_order: custom                         #
-#          collection_mode: hide                            #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
 #          collection_section: 16                           #
 #############################################################
 
@@ -35,7 +39,7 @@ dynamic_collections:
       ending: current_year
     title_format: Emmys <<key_name>>
     template:
-      - schedule_year_collections
+      - use_year_collections
       - Emmy
       - award
       - shared

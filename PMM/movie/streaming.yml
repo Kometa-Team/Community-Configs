@@ -6,70 +6,122 @@
 #    metadata_path:                                         #
 #      - git: PMM/movie/streaming                           #
 #        template_variables:                                #
+#          # Turn the separator collection on/off           #
+#          use_separator: true                              #
+#          # Sets how the collection is sorted              #
 #          sort_by: release.desc                            #
-#          collection_mode: hide                            #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
 #          collection_section: "03"                         #
-#          schedule_separator: never                        #
 #                                                           #
-#          schedule_all_4: never                            #
-#          visible_library_all_4: true                      #
-#          visible_home_all_4: true                         #
-#          visible_shared_all_4: true                       #
+#          # Turn the All 4 collection on/off               #
+#          use_all-4: true                                  #
+#          # Set visible_library for All 4                  #
+#          visible_library_all-4: true                      #
+#          # Set visible_home for All 4                     #
+#          visible_home_all-4: true                         #
+#          # Set visible_shared for All 4                   #
+#          visible_shared_all-4: true                       #
 #                                                           #
-#          schedule_apple_tv: never                         #
-#          visible_library_apple_tv: true                   #
-#          visible_home_apple_tv: true                      #
-#          visible_shared_apple_tv: true                    #
+#          # Turn the Apple TV+ collection on/off           #
+#          use_appletv: true                                #
+#          # Set visible_library for Apple TV+              #
+#          visible_library_appletv: true                    #
+#          # Set visible_home for Apple TV+                 #
+#          visible_home_appletv: true                       #
+#          # Set visible_shared for Apple TV+               #
+#          visible_shared_appletv: true                     #
 #                                                           #
-#          schedule_bet: never                              #
+#          # Turn the BET+ collection on/off                #
+#          use_bet: true                                    #
+#          # Set visible_library for BET+                   #
 #          visible_library_bet: true                        #
+#          # Set visible_home for BET+                      #
 #          visible_home_bet: true                           #
+#          # Set visible_shared for BET+                    #
 #          visible_shared_bet: true                         #
 #                                                           #
-#          schedule_brit_box: never                         #
-#          visible_library_brit_box: true                   #
-#          visible_home_brit_box: true                      #
-#          visible_shared_brit_box: true                    #
+#          # Turn the BritBox collection on/off             #
+#          use_britbox: true                                #
+#          # Set visible_library for BritBox                #
+#          visible_library_britbox: true                    #
+#          # Set visible_home for BritBox                   #
+#          visible_home_britbox: true                       #
+#          # Set visible_shared for BritBox                 #
+#          visible_shared_britbox: true                     #
 #                                                           #
-#          schedule_disney: never                           #
+#          # Turn the Disney+ collection on/off             #
+#          use_disney: true                                 #
+#          # Set visible_library for Disney+                #
 #          visible_library_disney: true                     #
+#          # Set visible_home for Disney+                   #
 #          visible_home_disney: true                        #
+#          # Set visible_shared for Disney+                 #
 #          visible_shared_disney: true                      #
 #                                                           #
-#          schedule_hbo_max: never                          #
-#          visible_library_hbo_max: true                    #
-#          visible_home_hbo_max: true                       #
-#          visible_shared_hbo_max: true                     #
+#          # Turn the HBO Max collection on/off             #
+#          use_hbo-max: true                                #
+#          # Set visible_library for HBO Max                #
+#          visible_library_hbo-max: true                    #
+#          # Set visible_home for HBO Max                   #
+#          visible_home_hbo-max: true                       #
+#          # Set visible_shared for HBO Max                 #
+#          visible_shared_hbo-max: true                     #
 #                                                           #
-#          schedule_hulu: never                             #
+#          # Turn the Hulu collection on/off                #
+#          use_hulu: true                                   #
+#          # Set visible_library for Hulu                   #
 #          visible_library_hulu: true                       #
+#          # Set visible_home for Hulu                      #
 #          visible_home_hulu: true                          #
+#          # Set visible_shared for Hulu                    #
 #          visible_shared_hulu: true                        #
 #                                                           #
-#          schedule_netflix: never                          #
+#          # Turn the Netflix collection on/off             #
+#          use_netflix: true                                #
+#          # Set visible_library for Netflix                #
 #          visible_library_netflix: true                    #
+#          # Set visible_home for Netflix                   #
 #          visible_home_netflix: true                       #
+#          # Set visible_shared for Netflix                 #
 #          visible_shared_netflix: true                     #
 #                                                           #
-#          schedule_now: never                              #
+#          # Turn the NOW collection on/off                 #
+#          use_now: true                                    #
+#          # Set visible_library for NOW                    #
 #          visible_library_now: true                        #
+#          # Set visible_home for NOW                       #
 #          visible_home_now: true                           #
+#          # Set visible_shared for NOW                     #
 #          visible_shared_now: true                         #
 #                                                           #
-#          schedule_paramount: never                        #
+#          # Turn the Paramount+ collection on/off          #
+#          use_paramount: true                              #
+#          # Set visible_library for Paramount+             #
 #          visible_library_paramount: true                  #
+#          # Set visible_home for Paramount+                #
 #          visible_home_paramount: true                     #
+#          # Set visible_shared for Paramount+              #
 #          visible_shared_paramount: true                   #
 #                                                           #
-#          schedule_peacock: never                          #
+#          # Turn the Peacock collection on/off             #
+#          use_peacock: true                                #
+#          # Set visible_library for Peacock                #
 #          visible_library_peacock: true                    #
+#          # Set visible_home for Peacock                   #
 #          visible_home_peacock: true                       #
+#          # Set visible_shared for Peacock                 #
 #          visible_shared_peacock: true                     #
 #                                                           #
-#          schedule_prime: never                            #
-#          visible_library_prime: true                      #
-#          visible_home_prime: true                         #
-#          visible_shared_prime: true                       #
+#          # Turn the Prime Video collection on/off         #
+#          use_amazon-prime-video: true                     #
+#          # Set visible_library for Prime Video            #
+#          visible_library_amazon-prime-video: true         #
+#          # Set visible_home for Prime Video               #
+#          visible_home_amazon-prime-video: true            #
+#          # Set visible_shared for Prime Video             #
+#          visible_shared_amazon-prime-video: true          #
 #############################################################
 
 external_templates:
@@ -77,104 +129,48 @@ external_templates:
   template_variables:
     collection_section: "03"
 
+templates:
+  streaming:
+    default:
+      sort_by: release.desc
+    optional:
+      - use_<<key>>
+      - visible_library_<<key>>
+      - visible_home_<<key>>
+      - visible_shared_<<key>>
+    allowed_library_types: <<use_<<key>>>>
+    visible_library: <<visible_library_<<key>>>>
+    visible_home: <<visible_home_<<key>>>>
+    visible_shared: <<visible_shared_<<key>>>>
+    cache_builders: 1
+    smart_label: <<sort_by>>
+    sync_mode: sync
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/<<key>>-movies
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/streaming/<<key_name_encoded>>.jpg
+
 collections:
   Streaming Collections:
     template:
       - name: separator
         separator: streaming
 
-  All 4 Movies:
+dynamic_collections:
+  Streaming:
+    type: custom
+    data:
+      all-4: All 4
+      appletv: Apple TV+
+      bet: BET+
+      britbox: BritBox
+      disney: Disney+
+      hbo-max: HBO Max
+      hulu: Hulu
+      netflix: Netflix
+      now: NOW
+      paramount: Paramount+
+      peacock: Peacock
+      amazon-prime-video: Prime Video
+    title_format: <<key_name>> Movies
     template:
-      - name: All4
-      - name: streaming
-        image: All 4
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/all-4-movies
-
-  Apple TV+ Movies:
-    template:
-      - name: AppleTV
-      - name: streaming
-        image: Apple TV+
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/appletv-movies
-
-  BET+ Movies:
-    template:
-      - name: BET
-      - name: streaming
-        image: BET+
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/bet-movies
-
-  BritBox Movies:
-    template:
-      - name: BritBox
-      - name: streaming
-        image: BritBox
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/britbox-movies
-
-  Disney+ Movies:
-    template:
-      - name: Disney
-      - name: streaming
-        image: Disney+
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/disney-movies
-
-  HBO Max Movies:
-    template:
-      - name: HBOMax
-      - name: streaming
-        image: HBO Max
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/hbo-max-movies
-
-  Hulu Movies:
-    template:
-      - name: Hulu
-      - name: streaming
-        image: Hulu
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/hulu-movies
-
-  Netflix Movies:
-    template:
-      - name: Netflix
-      - name: streaming
-        image: Netflix
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/netflix-movies
-
-  NOW Movies:
-    template:
-      - name: NOW
-      - name: streaming
-        image: NOW
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/now-movies
-
-  Paramount+ Movies:
-    template:
-      - name: Paramount
-      - name: streaming
-        image: Paramount+
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/paramount-movies
-
-  Peacock Movies:
-    template:
-      - name: Peacock
-      - name: streaming
-        image: Peacock
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/peacock-movies
-
-  Prime Video Movies:
-    template:
-      - name: Prime
-      - name: streaming
-        image: Prime Video
-      - name: shared
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/amazon-prime-video-movies
+      - streaming
+      - shared

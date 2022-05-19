@@ -11,6 +11,7 @@
 #    playlist_files:                                        #
 #      - git: PMM/playlists                                 #
 #        template_variables:                                #
+#          # Sets the names of the libraries to use         #
 #          libraries: Movies, TV Shows                      #
 #############################################################
 

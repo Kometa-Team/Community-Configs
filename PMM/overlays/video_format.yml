@@ -10,15 +10,26 @@
 #    overlay_path:                                          #
 #      - git: PMM/overlays/video_format                     #
 #        template_variables:                                #
-#          overlay_level: episode                           #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
 #          horizontal_offset: 15                            #
+#          # Set the horizontal align for the overlay       #
 #          horizontal_align: left                           #
+#          # Set the vertical offset for the overlay        #
 #          vertical_offset: 15                              #
+#          # Set the vertical align for the overlay         #
 #          vertical_align: bottom                           #
+#                                                           #
+#          # Use the Remux overlay                          #
 #          Remux: false                                     #
+#          # Use the Blu-Ray overlay                        #
 #          Blu-Ray: false                                   #
+#          # Use the WEB overlay                            #
 #          WEB: false                                       #
+#          # Use the HDTV overlay                           #
 #          HDTV: false                                      #
+#          # Use the DVD overlay                            #
 #          DVD: false                                       #
 #############################################################
 

@@ -13,6 +13,6 @@
 
 This is a repo for users to share their [Plex Meta Manager](https://github.com/meisnate12/Plex-Meta-Manager) configs with other users. Just create a fork and add a folder with your github name and put your configs inside and then submit a pull request.
 
-There is a default set of Plex Meta Manager Sponsored Configs located in the [PMM Folder](https://github.com/meisnate12/Plex-Meta-Manager-Configs/tree/master/PMM) for more information on how to use them visit the [Defaults Metadata Guid](https://metamanager.wiki/en/latest/home/guides/defaults.html).
+The default set of Plex Meta Manager Sponsored Configs is located in the [PMM Folder](https://github.com/meisnate12/Plex-Meta-Manager-Configs/tree/master/PMM). For more information on how to use them visit the [Defaults Metadata Guide](https://metamanager.wiki/en/latest/home/guides/defaults.html).
 
 Please consider [donating](https://github.com/sponsors/meisnate12) towards the project.
