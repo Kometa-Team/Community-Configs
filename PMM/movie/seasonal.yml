@@ -15,7 +15,7 @@
 #          # Turn the Valentine's Day collection on/off     #
 #          schedule_valentine: range(02/01-02/29)           #
 #          # Turn the St. Patrick's Day collection on/off   #
-#          schedule_st_patrick: range(03/01-03/18)          #
+#          schedule_patrick: range(03/01-03/18)             #
 #          # Turn the Thanksgiving collection on/off        #
 #          schedule_thanksgiving: range(11/01-11/30)        #
 #          # Turn the Halloween collection on/off           #
@@ -23,7 +23,7 @@
 #          # Turn the Christmas collection on/off           #
 #          schedule_christmas: range(12/01-12/31)           #
 #          # Turn the New Year's Day collection on/off      #
-#          schedule_new_years: range(12/26-01/04)           #
+#          schedule_years: range(12/26-01/04)               #
 #          # Sets how the collection is sorted              #
 #          sort_by: title.asc                               #
 #          # Sets the collection mode of the collection     #
@@ -39,12 +39,19 @@ templates:
   Holiday:
     default:
       sort_by: title.asc
+      visible_home_<<season>>: true
+      visible_shared_<<season>>: true
+    optional:
+      - schedule_<<season>>
+      - visible_library_<<season>>
+    schedule: <<schedule_<<season>>>>
+    visible_library: <<visible_library_<<season>>>>
+    visible_home: <<visible_home_<<season>>>>
+    visible_shared: <<visible_shared_<<season>>>>
     smart_label: <<sort_by>>
     summary: A collection of <<collection_name>> and other movies that may relate to the season.
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/<<season>>.jpg
     delete_not_scheduled: true
-    visible_home: true
-    visible_shared: true
 
 collections:
   Seasonal Collections:
@@ -54,10 +61,9 @@ collections:
 
   Independence Day:
     template:
-      - name: Independence
-        schedule_independence: range(06/23-07/11)
       - name: Holiday
         season: independence
+        schedule_independence: range(06/23-07/11)
       - name: shared
     imdb_list: 
       - https://www.imdb.com/list/ls068664510/
@@ -65,10 +71,9 @@ collections:
 
   Easter:
     template:
-      - name: Easter
-        schedule_easter: range(03/22-04/25)
       - name: Holiday
         season: easter
+        schedule_easter: range(03/22-04/25)
       - name: shared
     imdb_list: 
       - https://www.imdb.com/list/ls062665509/
@@ -76,10 +81,9 @@ collections:
 
   Valentine's Day:
     template:
-      - name: Valentine
-        schedule_valentine: range(02/01-02/29)
       - name: Holiday
         season: valentine
+        schedule_valentine: range(02/01-02/29)
       - name: shared
     imdb_list:
       - https://www.imdb.com/list/ls000094398/
@@ -88,20 +92,18 @@ collections:
 
   St. Patrick's Day:
     template:
-      - name: StPatrick
-        schedule_st_patrick: range(03/01-03/18)
       - name: Holiday
         season: patrick
+        schedule_st_patrick: range(03/01-03/18)
       - name: shared
     imdb_list: https://www.imdb.com/list/ls063934595/
 
   Thanksgiving:
     collection_name: Thanksgiving
     template:
-      - name: Thanksgiving
-        schedule_thanksgiving: range(11/01-11/30)
       - name: Holiday
         season: thanksgiving
+        schedule_thanksgiving: range(11/01-11/30)
       - name: shared
     imdb_list: 
       - https://www.imdb.com/list/ls000835734/
@@ -109,10 +111,9 @@ collections:
 
   Halloween:
     template:
-      - name: Halloween
-        schedule_halloween: range(10/01-10/31)
       - name: Holiday
         season: halloween
+        schedule_halloween: range(10/01-10/31)
       - name: shared
     imdb_list:
       - https://www.imdb.com/list/ls023118929/
@@ -127,18 +128,16 @@ collections:
 
   Christmas:
     template:
-      - name: Christmas
-        schedule_christmas: range(12/01-12/31)
       - name: Holiday
         season: christmas
+        schedule_christmas: range(12/01-12/31)
       - name: shared
     imdb_list: https://www.imdb.com/list/ls000096828/
 
   New Year's Day:
     template:
-      - name: NewYears
-        schedule_new_years: range(12/26-01/04)
       - name: Holiday
         season: years
+        schedule_new_years: range(12/26-01/04)
       - name: shared
     imdb_list: https://www.imdb.com/list/ls066838460/
