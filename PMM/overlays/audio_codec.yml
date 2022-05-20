@@ -121,6 +121,7 @@ overlays:
   Opus-Filepath:
     template:
       - name: AudioCodec
+        overlay: Opus
         weight: 5
       - name: Opus
     plex_all: true
