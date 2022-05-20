@@ -11,6 +11,8 @@
 #          use_separator: true                              #
 #          # Turn the other collection on/off               #
 #          use_other: true                                  #
+#          # Sets the style of posters: color or white      #
+#          style: white                                     #
 #          # Sets how the collection is sorted              #
 #          sort_by: release.desc                            #
 #          # Sets the collection mode of the collection     #
@@ -25,10 +27,11 @@ external_templates:
     collection_section: "09"
 
 templates:
-  country_color_tv_dynamic:
+  country_tv_dynamic:
     default:
       sort_by: release.desc
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/color/<<key_name_encoded>>.jpg
+      style: white
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/<<style>>/<<key_name_encoded>>.jpg
     collection_order: <<sort_by>>
     plex_all: true
     filters:
@@ -46,11 +49,11 @@ dynamic_collections:
     title_format: <<key_name>>
     other_name: Other Countries
     template:
-      - country_color_tv_dynamic
+      - country_tv_dynamic
       - shared
     other_template:
       - other_collection
-      - country_color_tv_dynamic
+      - country_tv_dynamic
       - shared
     include:
       # - af     # Afghanistan

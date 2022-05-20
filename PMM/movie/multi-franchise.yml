@@ -36,7 +36,7 @@ collections:
     template:
       - name: separator
         separator: franchise
-  Star Wars:
+  Star Wars Universe:
     template:
       - name: shared
       - name: multi-franchise
@@ -74,7 +74,7 @@ collections:
         image: Alien Predator
     trakt_list: https://trakt.tv/users/donxy/lists/alien-predator-timeline
     name_mapping: Alien Predator
-  X-Men:
+  X-Men Universe:
     template:
       - name: shared
       - name: multi-franchise
@@ -105,7 +105,7 @@ collections:
         image: Rocky Creed
     trakt_list: https://trakt.tv/users/strangerer/lists/rocky
     name_mapping: Rocky Creed
-  The Mummy:
+  The Mummy Universe:
     template:
       - name: shared
       - name: multi-franchise
