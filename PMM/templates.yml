@@ -4,9 +4,21 @@ templates:
     default:
       collection_section: "00"
     optional:
-      - schedule_separator
+      - use_separator
       - collection_mode
-    schedule: <<schedule_separator>>
+    allowed_library_types: <<use_separator>>
+    collection_mode: <<collection_mode>>
+    sort_title: "!<<collection_section>>_!<<collection_name>>"
+    blank_collection: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<separator>>.jpg
+
+  separator off:
+    default:
+      collection_section: "00"
+      use_separator: false
+    optional:
+      - collection_mode
+    allowed_library_types: <<use_separator>>
     collection_mode: <<collection_mode>>
     sort_title: "!<<collection_section>>_!<<collection_name>>"
     blank_collection: true
@@ -17,13 +29,12 @@ templates:
       collection_section: "00"
       sort: <<collection_name>>
       pre: "_"
-    cache_builders: 1
     optional:
       - collection_mode
-      - radarr_add
-      - sonarr_add
-    radarr_add: <<radarr_add>>
-    sonarr_add: <<sonarr_add>>
+      - radarr_add_missing
+      - sonarr_add_missing
+    radarr_add_missing: <<radarr_add_missing>>
+    sonarr_add_missing: <<sonarr_add_missing>>
     collection_mode: <<collection_mode>>
     sort_title: "!<<collection_section>><<pre>><<sort>>"
 
@@ -33,21 +44,18 @@ templates:
       sort: <<collection_name>>
       pre: "_~"
     optional:
-      - schedule_other
-    schedule: <<schedule_other>>
+      - use_other
+    allowed_library_types: <<use_other>>
     sort_title: "!<<collection_section>><<pre>><<sort>>"
 
-  schedule_year_collections:
-    optional:
-      - schedule_year_collections
-    schedule: <<schedule_year_collections>>
-
   award:
+    default:
+      collection_order: custom
     optional:
       - image
     cache_builders: 1
     sync_mode: sync
-    smart_label: audience_rating.desc
+    collection_order: <<collection_order>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<image>>.jpg
 
   chart:
@@ -62,13 +70,33 @@ templates:
     limit: 250
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<image_encoded>>.jpg
 
-  franchise:
+  playlist:
+    default:
+      libraries: Movies, TV Shows
     cache_builders: 1
+    sync_to_users: all
     sync_mode: sync
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<image_encoded>>.jpg
+    libraries: <<libraries>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<playlist_name_encoded>>.jpg
+
+  streaming:
+    default:
+      sort_by: release.desc
+    cache_builders: 1
+    smart_label: <<sort_by>>
+    sync_mode: sync
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/streaming/<<image_encoded>>.jpg
+
+  use_year_collections:
+    optional:
+      - use_year_collections
+    allowed_library_types: <<use_year_collections>>
+
+######################################################
+#                  Chart Templates                   #
+######################################################
 
   Newly_Released_Movies:
-    cache_builders: 1
     optional:
       - schedule_Newly_Released_Movies
       - visible_library_Newly_Released_Movies
@@ -80,7 +108,6 @@ templates:
     visible_shared: <<visible_shared_Newly_Released_Movies>>
 
   TMDb_Trending_Movies:
-    cache_builders: 1
     optional:
       - schedule_TMDb_Trending_Movies
       - visible_library_TMDb_Trending_Movies
@@ -92,7 +119,6 @@ templates:
     visible_shared: <<visible_shared_TMDb_Trending_Movies>>
 
   TMDb_Popular_Movies:
-    cache_builders: 1
     optional:
       - schedule_TMDb_Popular_Movies
       - visible_library_TMDb_Popular_Movies
@@ -104,7 +130,6 @@ templates:
     visible_shared: <<visible_shared_TMDb_Popular_Movies>>
 
   TMDb_Now_Playing_Movies:
-    cache_builders: 1
     optional:
       - schedule_TMDb_Now_Playing_Movies
       - visible_library_TMDb_Now_Playing_Movies
@@ -116,7 +141,6 @@ templates:
     visible_shared: <<visible_shared_TMDb_Now_Playing_Movies>>
 
   IMDb_Top_250_Movies:
-    cache_builders: 1
     optional:
       - schedule_IMDb_Top_250_Movies
       - visible_library_IMDb_Top_250_Movies
@@ -128,7 +152,6 @@ templates:
     visible_shared: <<visible_shared_IMDb_Top_250_Movies>>
 
   Newly_Released_Shows:
-    cache_builders: 1
     optional:
       - schedule_Newly_Released_Shows
       - visible_library_Newly_Released_Shows
@@ -140,7 +163,6 @@ templates:
     visible_shared: <<visible_shared_Newly_Released_Shows>>
 
   New_Episodes:
-    cache_builders: 1
     optional:
       - schedule_New_Episodes
       - visible_library_New_Episodes
@@ -151,17 +173,7 @@ templates:
     visible_home: <<visible_home_New_Episodes>>
     visible_shared: <<visible_shared_New_Episodes>>
 
-  playlist:
-    default:
-      libraries: Movies, TV Shows
-    cache_builders: 1
-    sync_to_users: all
-    sync_mode: sync
-    libraries: <<libraries>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<playlist_name_encoded>>.jpg
-
   TMDb_Trending_Shows:
-    cache_builders: 1
     optional:
       - schedule_TMDb_Trending_Shows
       - visible_library_TMDb_Trending_Shows
@@ -173,7 +185,6 @@ templates:
     visible_shared: <<visible_shared_TMDb_Trending_Shows>>
 
   TMDb_Popular_Shows:
-    cache_builders: 1
     optional:
       - schedule_TMDb_Popular_Shows
       - visible_library_TMDb_Popular_Shows
@@ -184,11 +195,9 @@ templates:
     visible_home: <<visible_home_TMDb_Popular_Shows>>
     visible_shared: <<visible_shared_TMDb_Popular_Shows>>
 
-  streaming:
-    cache_builders: 1
-    smart_label: release.desc
-    sync_mode: sync
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/streaming/<<image_encoded>>.jpg
+######################################################
+#                Streaming Templates                 #
+######################################################
 
   All4:
     optional:
@@ -333,6 +342,10 @@ templates:
     visible_home: <<visible_home_prime>>
     visible_shared: <<visible_shared_prime>>
 
+######################################################
+#                 Holiday Templates                  #
+######################################################
+
   Independence:
     optional:
       - schedule_independence
@@ -387,28 +400,6 @@ templates:
     visible_library: <<visible_library_thanksgiving>>
     visible_home: <<visible_home_thanksgiving>>
     visible_shared: <<visible_shared_thanksgiving>>
-
-  ThanksgivingUS:
-    optional:
-      - schedule_thanksgiving_us
-      - visible_library_thanksgiving_us
-      - visible_home_thanksgiving_us
-      - visible_shared_thanksgiving_us
-    schedule: <<schedule_thanksgiving_us>>
-    visible_library: <<visible_library_thanksgiving_us>>
-    visible_home: <<visible_home_thanksgiving_us>>
-    visible_shared: <<visible_shared_thanksgiving_us>>
-
-  ThanksgivingCA:
-    optional:
-      - schedule_thanksgiving_ca
-      - visible_library_thanksgiving_ca
-      - visible_home_thanksgiving_ca
-      - visible_shared_thanksgiving_ca
-    schedule: <<schedule_thanksgiving_ca>>
-    visible_library: <<visible_library_thanksgiving_ca>>
-    visible_home: <<visible_home_thanksgiving_ca>>
-    visible_shared: <<visible_shared_thanksgiving_ca>>
 
   Halloween:
     optional:
