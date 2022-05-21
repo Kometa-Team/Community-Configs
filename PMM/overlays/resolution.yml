@@ -143,6 +143,7 @@ overlays:
     plex_search:
       all:
         resolution.regex: '(?i)2160|4k'
+        hdr: true
 
   4K:
     template:
@@ -151,7 +152,6 @@ overlays:
     plex_search:
       any:
         resolution.regex: '(?i)2160|4k'
-        hdr: true
 
   1080P-DV:
     template:
