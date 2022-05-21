@@ -7,6 +7,8 @@
 #  https://trash-guides.info/                               #
 #                                                           #
 #  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
 #    overlay_path:                                          #
 #      - git: PMM/overlays/resolution                       #
 #        template_variables:                                #
@@ -22,17 +24,17 @@
 #          vertical_align: top                              #
 #                                                           #
 #          # Use the 4K overlay                             #
-#          4K: false                                        #
+#          4K: true                                         #
 #          # Use the 1080P overlay                          #
-#          1080P: false                                     #
+#          1080P: true                                      #
 #          # Use the 720P overlay                           #
-#          720P: false                                      #
+#          720P: true                                       #
 #          # Use the 480P overlay                           #
-#          480P: false                                      #
+#          480P: true                                       #
 #          # Use the DV overlay                             #
-#          DV: false                                        #
+#          DV: true                                         #
 #          # Use the HDR overlay                            #
-#          HDR: false                                       #
+#          HDR: true                                        #
 #############################################################
 
 templates:

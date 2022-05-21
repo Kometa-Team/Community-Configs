@@ -6,8 +6,10 @@
 #  https://metamanager.wiki/en/latest/config/trakt.html     #
 #                                                           #
 #  Call this from your config.yml (Movie only)              #
+#  If nothing is specified these are the defaults           #
+#                                                           #
 #    metadata_path:                                         #
-#      - git: PMM/movie/franchise                           #
+#      - git: PMM/movie/universe                            #
 #        template_variables:                                #
 #          # Turn the separator collection on/off           #
 #          use_separator: true                              #
@@ -32,7 +34,7 @@ templates:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<image_encoded>>.jpg
 
 collections:
-  Franchise Collections:
+  Universe Collections:
     template:
       - name: separator
         separator: universe

@@ -7,6 +7,8 @@
 #  https://trash-guides.info/                               #
 #                                                           #
 #  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
 #    overlay_path:                                          #
 #      - git: PMM/overlays/video_format                     #
 #        template_variables:                                #
@@ -22,15 +24,15 @@
 #          vertical_align: bottom                           #
 #                                                           #
 #          # Use the Remux overlay                          #
-#          Remux: false                                     #
+#          Remux: true                                      #
 #          # Use the Blu-Ray overlay                        #
-#          Blu-Ray: false                                   #
+#          Blu-Ray: true                                    #
 #          # Use the WEB overlay                            #
-#          WEB: false                                       #
+#          WEB: true                                        #
 #          # Use the HDTV overlay                           #
-#          HDTV: false                                      #
+#          HDTV: true                                       #
 #          # Use the DVD overlay                            #
-#          DVD: false                                       #
+#          DVD: true                                        #
 #############################################################
 
 templates:

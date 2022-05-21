@@ -3,6 +3,8 @@
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
 #############################################################
 #  Call this from your config.yml (Movie only)              #
+#  If nothing is specified these are the defaults           #
+#                                                           #
 #    metadata_path:                                         #
 #      - git: PMM/movie/director                            #
 #        template_variables:                                #

@@ -7,6 +7,8 @@
 #  https://trash-guides.info/                               #
 #                                                           #
 #  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
 #    overlay_path:                                          #
 #      - git: PMM/overlays/streaming                        #
 #        template_variables:                                #
@@ -22,21 +24,21 @@
 #          vertical_align: top                              #
 #                                                           #
 #          # Use the Amazon overlay                         #
-#          Amazon: false                                    #
+#          Amazon: true                                     #
 #          # Use the AppleTV overlay                        #
-#          AppleTV: false                                   #
+#          AppleTV: true                                    #
 #          # Use the Disney overlay                         #
-#          Disney: false                                    #
+#          Disney: true                                     #
 #          # Use the HBO-Max overlay                        #
-#          HBO-Max: false                                   #
+#          HBO-Max: true                                    #
 #          # Use the Hulu overlay                           #
-#          Hulu: false                                      #
+#          Hulu: true                                       #
 #          # Use the Netflix overlay                        #
-#          Netflix: false                                   #
+#          Netflix: true                                    #
 #          # Use the Paramount overlay                      #
-#          Paramount: false                                 #
+#          Paramount: true                                  #
 #          # Use the Peacock overlay                        #
-#          Peacock: false                                   #
+#          Peacock: true                                    #
 #############################################################
 
 templates:

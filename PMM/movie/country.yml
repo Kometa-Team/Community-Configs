@@ -4,6 +4,8 @@
 #                 Artwork Credit to Duhniel                 #
 #############################################################
 #  Call this from your config.yml (Movie only)              #
+#  If nothing is specified these are the defaults           #
+#                                                           #
 #    metadata_path:                                         #
 #      - git: PMM/movie/country_color                       #
 #        template_variables:                                #

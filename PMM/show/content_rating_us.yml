@@ -3,6 +3,8 @@
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
 #############################################################
 #  Call this from your config.yml (Show only)               #
+#  If nothing is specified these are the defaults           #
+#                                                           #
 #    metadata_path:                                         #
 #      - git: PMM/show/content_rating_us                    #
 #        template_variables:                                #

@@ -7,6 +7,8 @@
 #  https://trash-guides.info/                               #
 #                                                           #
 #  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
 #    overlay_path:                                          #
 #      - git: PMM/overlays/audio_language                   #
 #        template_variables:                                #
