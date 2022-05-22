@@ -1,5 +1,5 @@
 #############################################################
-#                         Playlists                         #
+#                         Playlist                          #
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
 #############################################################
 #  REQUIRES TRAKT AUTHENTICATION                            #
@@ -11,7 +11,7 @@
 #  If nothing is specified these are the defaults           #
 #                                                           #
 #    playlist_files:                                        #
-#      - git: PMM/playlists                                 #
+#      - git: PMM/playlist                                  #
 #        template_variables:                                #
 #          # Sets the names of the libraries to use         #
 #          libraries: Movies, TV Shows                      #
