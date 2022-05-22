@@ -24,33 +24,35 @@
 #          vertical_align: top                              #
 #                                                           #
 #          # Use the Amazon overlay                         #
-#          Amazon: true                                     #
+#          use_amazon: true                                 #
 #          # Use the AppleTV overlay                        #
-#          AppleTV: true                                    #
+#          use_appletv: true                                #
 #          # Use the Disney overlay                         #
-#          Disney: true                                     #
+#          use_disney: true                                 #
 #          # Use the HBO-Max overlay                        #
-#          HBO-Max: true                                    #
+#          use_hbomax: true                                 #
 #          # Use the Hulu overlay                           #
-#          Hulu: true                                       #
+#          use_hulu: true                                   #
 #          # Use the Netflix overlay                        #
-#          Netflix: true                                    #
+#          use_netflix: true                                #
 #          # Use the Paramount overlay                      #
-#          Paramount: true                                  #
+#          use_paramount: true                              #
 #          # Use the Peacock overlay                        #
-#          Peacock: true                                    #
+#          use_peacock: true                                #
 #############################################################
 
 templates:
   Streaming:
     optional:
       - overlay_level
+      - use_<<key>>
     default:
       overlay: <<overlay_name>>
       horizontal_offset: 15
       horizontal_align: left
       vertical_offset: 135
       vertical_align: top
+    allowed_library_types: <<use_<<key>>>>
     collection_level: <<overlay_level>>
     overlay:
       name: <<overlay_name>>
@@ -61,46 +63,9 @@ templates:
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-
-  Amazon:
-    default:
-      Amazon: true
-    allowed_library_types: <<Amazon>>
-
-  AppleTV:
-    default:
-      AppleTV: true
-    allowed_library_types: <<AppleTV>>
-
-  Disney:
-    default:
-      Disney: true
-    allowed_library_types: <<Disney>>
-
-  HBO-Max:
-    default:
-      HBO-Max: true
-    allowed_library_types: <<HBO-Max>>
-
-  Hulu:
-    default:
-      Hulu: true
-    allowed_library_types: <<Hulu>>
-
-  Netflix:
-    default:
-      Netflix: true
-    allowed_library_types: <<Netflix>>
-
-  Paramount:
-    default:
-      Paramount: true
-    allowed_library_types: <<Paramount>>
-
-  Peacock:
-    default:
-      Peacock: true
-    allowed_library_types: <<Peacock>>
+    plex_all: true
+    filters:
+      filepath.regex: <<regex>>
 
 overlays:
 
@@ -108,70 +73,54 @@ overlays:
     template:
       - name: Streaming
         weight: 200
-      - name: Amazon
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\b(amzn|amazon)\b'
+        key: amazon
+        regex: '(?i)\b(amzn|amazon)\b'
 
   AppleTV:
     template:
       - name: Streaming
         weight: 200
-      - name: AppleTV
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\b(atvp|aptv|Apple TV\+)\b'
+        key: appletv
+        regex: '(?i)\b(atvp|aptv|Apple TV\+)\b'
 
   Disney:
     template:
       - name: Streaming
         weight: 200
-      - name: Disney
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\b(dsnp|dsny|disney|Disney\+)\b'
+        key: disney
+        regex: '(?i)\b(dsnp|dsny|disney|Disney\+)\b'
 
   HBO-Max:
     template:
       - name: Streaming
         weight: 200
-      - name: HBO-Max
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\b(hmax|hbom|HBO Max)\b'
+        key: hbomax
+        regex: '(?i)\b(hmax|hbom|HBO Max)\b'
 
   Hulu:
     template:
       - name: Streaming
         weight: 200
-      - name: Hulu
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\b(hulu)\b'
+        key: hulu
+        regex: '(?i)\b(hulu)\b'
 
   Netflix:
     template:
       - name: Streaming
         weight: 200
-      - name: Netflix
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\b(nf|netflix)\b'
+        key: netflix
+        regex: '(?i)\b(nf|netflix)\b'
 
   Paramount:
     template:
       - name: Streaming
         weight: 200
-      - name: Paramount
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\b(pmtp|Paramount Plus)\b'
+        key: paramount
+        regex: '(?i)\b(pmtp|Paramount Plus)\b'
 
   Peacock:
     template:
       - name: Streaming
         weight: 200
-      - name: Peacock
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\b(pcok|peacock)\b'
+        key: peacock
+        regex: '(?i)\b(pcok|peacock)\b'

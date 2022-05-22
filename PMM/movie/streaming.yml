@@ -18,13 +18,13 @@
 #          collection_section: "03"                         #
 #                                                           #
 #          # Turn the All 4 collection on/off               #
-#          use_all-4: true                                  #
+#          use_all4: true                                   #
 #          # Set visible_library for All 4                  #
-#          visible_library_all-4: true                      #
+#          visible_library_all4: true                       #
 #          # Set visible_home for All 4                     #
-#          visible_home_all-4: true                         #
+#          visible_home_all4: true                          #
 #          # Set visible_shared for All 4                   #
-#          visible_shared_all-4: true                       #
+#          visible_shared_all4: true                        #
 #                                                           #
 #          # Turn the Apple TV+ collection on/off           #
 #          use_appletv: true                                #
@@ -63,13 +63,13 @@
 #          visible_shared_disney: true                      #
 #                                                           #
 #          # Turn the HBO Max collection on/off             #
-#          use_hbo-max: true                                #
+#          use_hbomax: true                                 #
 #          # Set visible_library for HBO Max                #
-#          visible_library_hbo-max: true                    #
+#          visible_library_hbomax: true                     #
 #          # Set visible_home for HBO Max                   #
-#          visible_home_hbo-max: true                       #
+#          visible_home_hbomax: true                        #
 #          # Set visible_shared for HBO Max                 #
-#          visible_shared_hbo-max: true                     #
+#          visible_shared_hbomax: true                      #
 #                                                           #
 #          # Turn the Hulu collection on/off                #
 #          use_hulu: true                                   #
@@ -117,13 +117,13 @@
 #          visible_shared_peacock: true                     #
 #                                                           #
 #          # Turn the Prime Video collection on/off         #
-#          use_amazon-prime-video: true                     #
+#          use_amazon: true                                 #
 #          # Set visible_library for Prime Video            #
-#          visible_library_amazon-prime-video: true         #
+#          visible_library_amazon: true                     #
 #          # Set visible_home for Prime Video               #
-#          visible_home_amazon-prime-video: true            #
+#          visible_home_amazon: true                        #
 #          # Set visible_shared for Prime Video             #
-#          visible_shared_amazon-prime-video: true          #
+#          visible_shared_amazon: true                      #
 #############################################################
 
 external_templates:
@@ -160,18 +160,18 @@ dynamic_collections:
   Streaming:
     type: custom
     data:
-      all-4: All 4
+      all4: All 4
       appletv: Apple TV+
       bet: BET+
       britbox: BritBox
       disney: Disney+
-      hbo-max: HBO Max
+      hbomax: HBO Max
       hulu: Hulu
       netflix: Netflix
       now: NOW
       paramount: Paramount+
       peacock: Peacock
-      amazon-prime-video: Prime Video
+      amazon: Prime Video
     title_format: <<key_name>> Movies
     template:
       - streaming
