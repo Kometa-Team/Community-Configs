@@ -4,15 +4,21 @@ templates:
       - collection
       - movie
       - list
+      - imdb
     tmdb_collection_details: <<collection>>
     tmdb_movie: <<movie>>
     tmdb_list: <<list>>
+    imdb_list: <<imdb>>
     sync_mode: sync
     collection_order: release
     url_poster: <<poster>>
     sort_title: <<collection_name>>
+
 collections:
 
+############################################### 365 Days ##############################################
+  "365 Days":
+    template: {name: Set, collection: 829561, poster: https://theposterdb.com/api/assets/233228 }
 ########################################## A Christmas Story ##########################################
   "A Christmas Story":
     template: {name: Set, collection: 201873, poster: https://theposterdb.com/api/assets/168203 }
@@ -28,6 +34,10 @@ collections:
 ######################################## Back to the Future ###########################################
   "Back to the Future":
     template: {name: Set, collection: 264, poster: https://theposterdb.com/api/assets/163128 }
+
+########################################### Fear Street ###############################################
+  "Fear Street":
+    template: {name: Set, collection: 790370, poster: https://theposterdb.com/api/assets/167164 }
 
 ############################################## Bad Santa ##############################################
   "Bad Santa":
@@ -53,6 +63,10 @@ collections:
   "Candyman":
     template: {name: Set, collection: 98580, poster: https://theposterdb.com/api/assets/163641 }
 
+############################################### Die Hard ##############################################
+  "Die Hard":
+    template: {name: Set, collection: 1570, poster: https://theposterdb.com/api/assets/164773 }
+
 ################################################# Doom ################################################
   "Doom":
     template: {name: Set, collection: 634390, poster: https://theposterdb.com/api/assets/179772 }
@@ -72,6 +86,14 @@ collections:
 ####################################################### G.I. Joe #######################################
   "G.I. Joe":
     template: {name: Set, collection: 135468, poster: https://theposterdb.com/api/assets/164787 }
+
+################################################# Godfather ############################################
+  "Godfather":
+    template: {name: Set, collection: 230, poster: https://theposterdb.com/api/assets/164789 }
+
+################################################ Halloween #############################################
+  "Halloween":
+    template: {name: Set, collection: 126209, poster: https://theposterdb.com/api/assets/177081 }
 
 ################################################ Hangover #############################################
   "Hangover":
@@ -129,6 +151,10 @@ collections:
   "Naked Gun":
     template: {name: Set, collection: 37139, poster: https://theposterdb.com/api/assets/164812 }
 
+############################################# Genesis ##################################################
+  "Neon Genesis Evangelion":
+    template: {name: Set, collection: 96850, poster: https://theposterdb.com/api/assets/218163 }
+
 ################################################## OZ ##################################################
   "Oz":
     template: {name: Set, collection: 627517, poster: https://theposterdb.com/api/assets/160957 }
@@ -137,13 +163,25 @@ collections:
   "Pirates of the Caribbean":
     template: {name: Set, collection: 295, poster: https://theposterdb.com/api/assets/163404 }
 
+################################################ Porky's ###############################################
+  "Porky's":
+    template: {name: Set, collection: 109592, poster: https://theposterdb.com/api/assets/166262 }
+
+######################################## Quentin Tarantino's ############################################
+  "Quentin Tarantino":
+    template: {name: Set, list: 8201544, poster: https://theposterdb.com/api/assets/167512 }
+
 ################################################ Rambo #################################################
   "Rambo":
     template: {name: Set, collection: 5039, poster: https://theposterdb.com/api/assets/164821 }
 
-################################################ Scream ################################################
-  "Scream":
-    template: {name: Set, collection: 2602, poster: https://theposterdb.com/api/assets/161544 }
+######################################## The Seven Deadly Sins ##########################################
+  "Seven Deadly Sins - Saga":
+    template: {name: Set, collection: 703485, poster: https://theposterdb.com/api/assets/213548 }
+
+######################################## Sonic the Hedgehog #############################################
+  "Sonic the Hedgehog":
+    template: {name: Set, collection: 720879, poster: https://theposterdb.com/api/assets/234937 }
 
 ################################################ Space Jam #############################################
   "Space Jam":
@@ -164,6 +202,10 @@ collections:
 ############################ The Addams Family (Animated) Collection ####################################
   "The Addams Family (Animated)":
     template: {name: Set, collection: 750822, poster: https://theposterdb.com/api/assets/163022 }
+
+######################################## Chronicles of Riddick ##########################################
+  "Chronicles of Riddick":
+    template: {name: Set, collection: 2794, poster: https://theposterdb.com/api/assets/163647 }
 
 ####################################### The Dukes of Hazzard (Reboot) ###################################
   "The Dukes of Hazzard (Reboot)":
