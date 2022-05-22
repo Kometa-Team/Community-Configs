@@ -1,0 +1,80 @@
+######################################################
+#                Studio Collections                  #
+######################################################
+templates:
+  Studio:
+    optional:
+      - company
+    tmdb_company: <<company>>
+    sort_title: +1_<<collection_name>>
+    sync_mode: sync
+    smart_label: release.desc
+collections:
+  DC Extended Universe:
+    template: {name: Studio}
+    imdb_list: https://www.imdb.com/list/ls077827588/
+    url_poster: https://images.theposterdb.com/prod/public/images/posters/optimized/collections/460717/dj5QiI3bseKx31j5JLM0PclTXC1KSuRPflLC4DP0.webp
+    summary: The DC Extended Universe (DCEU) is a media franchise and shared universe centered on superheros from DC Comics.
+    collection_order: release
+  Marvel Cinematic Universe:
+    template: {name: Studio}
+    imdb_list: https://www.imdb.com/list/ls009410711/
+    url_poster: https://images.theposterdb.com/prod/public/images/posters/optimized/collections/1993/TzzxhGUvbVynBGInhiuEkeuxWbK7fyl0oI1Trl51.webp
+    summary: A collection of movies and shows created by Marvel Studios, comprising of the Marvel Cinematic Universe.
+    collection_order: release
+  Marvel Phase One:
+    template: {name: Studio}
+    imdb_list: https://www.imdb.com/list/ls074408893/
+    url_poster: https://images.theposterdb.com/prod/public/images/posters/optimized/collections/1993/51CPMKZSxxGQonkJgvB7l3pF3rY6CQlohIb3hstX.webp
+    summary: A collection of movies and shows created by Marvel Studios, comprising of the Marvel Cinematic Universe.
+    collection_order: release
+  Marvel Phase Two:
+    template: {name: Studio}
+    imdb_list: https://www.imdb.com/list/ls067756302/
+    url_poster: https://images.theposterdb.com/prod/public/images/posters/optimized/collections/1993/bVnZMs0lGts1xcPSpXSGMUuBpgizsEffciMzYUsb.webp
+    summary: A collection of movies and shows created by Marvel Studios, comprising of the Marvel Cinematic Universe.
+    collection_order: release
+  Marvel Phase Three:
+    template: {name: Studio}
+    imdb_list: https://www.imdb.com/list/ls074450054/
+    url_poster: https://images.theposterdb.com/prod/public/images/posters/optimized/collections/1993/zd1oncWoWWKb5k3XPDhqfS8yHhUR4Go9LjYI8OSz.webp
+    summary: A collection of movies and shows created by Marvel Studios, comprising of the Marvel Cinematic Universe.
+    collection_order: release
+  Marvel Phase Four:
+    template: {name: Studio}
+    imdb_list: https://www.imdb.com/list/ls048352040/
+    url_poster: 
+    summary: A collection of movies and shows created by Marvel Studios, comprising of the Marvel Cinematic Universe.
+    collection_order: release
+ Blue Sky:
+    template: { name: Studio, company: 9383 }
+    url_poster: https://theposterdb.com/api/assets/38152
+    summary: Blue Sky Studios, Inc. is an American computer animation film studio based in Greenwich, Connecticut. It is a subsidiary of 20th Century Animation, a division of Disney Studios Content.
+  DreamWorks:
+    template: { name: Studio, company: 521 }
+    filters:
+      collection.not: Aardman
+    summary: DreamWorks Animation LLC (also simply known as DreamWorks) is an American animation studio and a subsidiary of Universal Pictures, itself a subsidiary of Comcast's NBCUniversal. It is based in Glendale, California, and produces animated feature films, television programs, and online virtual games.
+  Illumination Entertainment:
+    template: { name: Studio, company: 6704 }
+    summary: Illumination is an American film and animation studio founded by Chris Meledandri in 2007 and owned by Universal Pictures, a division of NBCUniversal, which is itself a division of Comcast. Meledandri produces the films, while Universal finances and distributes all the films. The studio is responsible for the Despicable Me and The Secret Life of Pets franchises and the film adaptations of Dr. Seuss’ books The Lorax and How the Grinch Stole Christmas. The Minions, characters from the Despicable Me series, are the studio's mascots.
+  Pixar:
+    template: { name: Studio, company: 3 }
+    summary: Pixar Animation Studios, commonly known as Pixar, is an American computer animation studio based in Emeryville, California, a subsidiary of Disney Studios Content owned by The Walt Disney Company. Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation on February 3, 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4 billion by converting each share of Pixar stock to 2.3 shares of Disney stock, a transaction that resulted in Jobs becoming Disney's largest single shareholder at the time. Pixar is best known for its feature films technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot.
+  Studio Ghibli:
+    template: { name: Studio, company: 10342 }
+    summary: Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. The studio is best known for its animated feature films, and has also produced several short films, television commercials, and one television film. The studio’s mascot and most recognizable symbol is the character, Totoro, a giant cat-like spirit from the 1988 classic, My Neighbor Totoro.
+  Sony Pictures Animation:
+    template: { name: Studio, company: 2251 }
+    summary: Sony Pictures Animation Inc. is an American animation studio owned by Sony Entertainment's Sony Pictures Entertainment through their Motion Picture Group division and founded on May 9, 2002. The studio's films are distributed worldwide by Sony Pictures Releasing under their Columbia Pictures label, while all direct-to-video releases are released by Sony Pictures Home Entertainment.
+  Warner Animation Group:
+    template: { name: Studio, company: 25120 }
+    summary: The Warner Animation Group (WAG) is an American animation studio that is the feature animation division of Warner Bros. Entertainment. Established on January 7, 2013, the studio is the successor to the dissolved 2D traditional hand-drawn animation studio Warner Bros. Feature Animation, which shut down in 2003 and the dissolved family film division Warner Bros. Family Entertainment, which shut down in 2009. The entity is also a sister animation studio of the regular animation studio Warner Bros. Animation
+  Walt Disney Animation Studios:
+    template: { name: Studio }
+    imdb_list: https://www.imdb.com/list/ls059383351/
+    summary: Walt Disney Animation Studios (WDAS), sometimes shortened to Disney Animation, is an American animation studio that creates animated features and short films for The Walt Disney Company. Founded on October 16, 1923 by brothers Walt Disney and Roy O. Disney, it is one of the oldest-running animation studios in the world. It is currently organized as a division of Walt Disney Studios and is headquartered at the Roy E. Disney Animation Building at the Walt Disney Studios lot in Burbank, California.
+  Walt Disney Pictures:
+    template: { name: Studio }
+    imdb_list: https://www.imdb.com/list/ls077114097/
+    summary: Walt Disney Pictures is an American film production studio of The Walt Disney Studios, which is owned by The Walt Disney Company. The studio is the flagship producer of live-action feature films within the Walt Disney Studios unit, and is based at the Walt Disney Studios in Burbank, California. Animated films produced by Walt Disney Animation Studios and Pixar Animation Studios are also released under this brand. Walt Disney Studios Motion Pictures distributes and markets the films produced by Walt Disney Pictures.

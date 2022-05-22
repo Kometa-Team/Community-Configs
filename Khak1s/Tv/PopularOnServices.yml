@@ -1,0 +1,90 @@
+collections:
+  Popular TV on Apple TV +:
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +0_Popular on Apple TV
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_episode,tv_miniseries,tv_short&companies=co0546168
+      limit: 50
+    summary: Popular on Apple TV + now
+    url_poster: https://theposterdb.com/api/assets/206165
+
+  Popular TV on Netflix:
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +0_Popular on Netflix
+    imdb_list:
+      url:  https://www.imdb.com/search/title/?title_type=tv_series,tv_episode,tv_miniseries,tv_short&companies=co0144901
+      limit: 50
+    summary: Popular on Netflix now
+    url_poster: https://theposterdb.com/api/assets/205048
+
+  Popular TV on Prime Video:
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +0_Popular on Prime Video
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_episode,tv_miniseries,tv_short&companies=co0476953
+      limit: 50
+    summary: Popular on Prime Video now
+    url_poster: https://theposterdb.com/api/assets/222004
+
+  Popular TV on Hulu:
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +0_Popular on Hulu
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_episode,tv_miniseries,tv_short&companies=co0218858
+      limit: 50
+    summary: Popular on Hulu now
+    url_poster: https://theposterdb.com/api/assets/206161
+
+  Popular TV on Paramount+:
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +0_Popular on Paramount+
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_episode,tv_miniseries,tv_short&companies=co0820547
+      limit: 50
+    summary: Popular on Paramount+ now
+    url_poster: https://theposterdb.com/api/assets/168828
+
+  Popular TV on Peacock:
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +0_Popular on Peacock
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_episode,tv_miniseries,tv_short&companies=co0764707
+      limit: 50
+    summary: Popular on Peacock now
+    url_poster: https://theposterdb.com/api/assets/205411
+
+  Popular TV on Discovery+:
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +0_Popular on Discovery+
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_episode,tv_miniseries,tv_short&companies=co0834810
+      limit: 50
+    summary: Popular on Discovery+ now
+    url_poster: https://theposterdb.com/api/assets/145524
+
+  Popular TV on Disney+:
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +0_Popular on Disney+
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_episode,tv_miniseries,tv_short&companies=co0721120
+      limit: 50
+    summary: Popular on Disney+ now
+    url_poster: https://theposterdb.com/api/assets/204745
+
+  Popular TV on HBO Max:
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +0_Popular on HBO Max
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_episode,tv_miniseries,tv_short&companies=co0754095
+      limit: 50
+    summary: Popular on HBO Max now
+    url_poster: https://theposterdb.com/api/assets/168825
