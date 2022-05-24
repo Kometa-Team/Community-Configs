@@ -45,6 +45,7 @@ collections:
   Top Rated Global:
     template: { name: Chart, num: 4 }
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250/
+    url_poster: https://theposterdb.com/api/assets/213605
     summary: Top Rated Movies across the internet
   Oscars:
     template: { name: Chart, num: 6, poster: https://theposterdb.com/api/assets/192593 }
