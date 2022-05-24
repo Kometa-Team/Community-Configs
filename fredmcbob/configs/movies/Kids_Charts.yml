@@ -3,7 +3,7 @@
 ######################################################
 
 collections:
-  Trending Movies:
+  Trending Kids Movies:
     sort_title: +01_1Trending
     sync_mode: sync
     collection_order: custom
@@ -15,7 +15,7 @@ collections:
     visible_home: true
     visible_shared: false
 
-  Popular Movies:
+  Popular Kids Movies:
     sort_title: +01_2Popular
     sync_mode: sync
     smart_label: random
@@ -27,7 +27,7 @@ collections:
     visible_home: false
     visible_shared: false
 
-  Newly Released Movies:
+  Newly Released Kids Movies:
     sort_title: +01_3NewReleases
     sync_mode: sync
     smart_label: added.desc
