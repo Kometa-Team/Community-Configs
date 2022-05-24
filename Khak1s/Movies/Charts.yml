@@ -1,0 +1,82 @@
+templates:
+  Chart:
+    url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/<<poster>>.jpg
+    sort_title: +00<<num>><<collection_name>>
+  RT:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
+    sort_title: +007 Best of <<year>>
+    url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/RT_<<poster>>-dark.jpg
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of <<year>>
+    smart_label: audience_rating.desc
+  Trakt: 
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    visible_library: <<library>>
+    visible_home: <<home>>
+    visible_shared: <<shared>>
+    summary: trakt.tv - <<summary>>
+    radarr_add: <<a>>
+    radarr_search: <<s>>
+    radarr_monitor: <<m>>
+collections:
+# Recents
+  Recently Added:
+    template: { name: Chart, poster: Recently_Added-yellow-dark, num: 1 }
+    smart_filter:
+      sort_by: added.desc
+      all:
+        added: 7
+  Recently Released:
+    template: { name: Chart, poster: Recently_Released-yellow-dark, num: 2 }
+    smart_filter:
+      sort_by: release.desc
+      all:
+        release: 30
+# Trakt
+  Trending Movies Right Now:
+    trakt_chart:
+      chart: trending
+      limit: 100
+    template: 
+      - { name: Trakt, library: true, home: true, shared: true, summary: Trending movies right now., a: false, s: false, m: false }
+      - { name: Chart, poster: Trakt_Trending-dark, num: 3 }
+  Popular Movies This Week:
+    trakt_chart:
+      chart: watched
+      time_period: weekly
+      limit: 150
+    template: 
+      - { name: Trakt, library: false, home: false, shared: false, summary: The most watched movies for the last 7 days. Sorted by number of unique watchers., a: false, s: false, m: false }
+      - { name: Chart, poster: Trakt_Weekly-dark, num: 4 }
+  Popular Movies This Year:
+    trakt_chart:
+      chart: watched
+      time_period: yearly
+      limit: 200
+    template:
+      - { name: Trakt, library: true, home: true, shared: true, summary: The most watched movies for the last year. Sorted by number of unique watchers., a: false, s: false, m: false }
+      - { name: Chart, poster: Trakt_Yearly-dark, num: 5 }
+  Box Office:
+    trakt_boxoffice: true
+    template: 
+      - { name: Trakt, library: false, home: false, shared: false, summary: Top 10 grossing movies in the U.S. box office last weekend. Updated every Monday morning., a: true, s: true, m: true }
+      - { name: Chart, poster: Box_Office-dark, num: 6 }
+# Best of
+  Best of 2018:
+    template: { name: RT, year: 2018, poster: 18 }
+  Best of 2019:
+    template: { name: RT, year: 2019, poster: 19 }
+  Best of 2020:
+    template: { name: RT, year: 2020, poster: 20 }
+  Best of 2021:
+    template: { name: RT, year: 2021, poster: 21 }
+  Best of 2022:
+    template: { name: RT, year: 2022, poster: 22 }
+# IMDB Top 250
+  IMDB Top 250:
+    imdb_chart: top_movies
+    template: { name: Chart, poster: Top_250-darker, num: 8 }
+    summary: IMDb Top 250 as rated by regular IMDb voters.
+    collection_order: custom
