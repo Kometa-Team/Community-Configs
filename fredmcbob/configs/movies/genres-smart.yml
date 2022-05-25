@@ -15,76 +15,76 @@ templates:
 collections:
   Action:
     template: { name: Genre, genre: action}
-    url_poster: https://i.imgur.com/5rP3mqc.jpg
+    url_poster: https://theposterdb.com/api/assets/204253
   Adventure:
     template: { name: Genre, genre: adventure }
-    url_poster: https://i.imgur.com/fZMIfdy.jpg
+    url_poster: https://theposterdb.com/api/assets/204254
   Animation:
     template: { name: Genre, genre: animation, exclude: null }
-    url_poster: https://i.imgur.com/W9355wl.jpg
+    url_poster: https://theposterdb.com/api/assets/204255
   Comedy:
     template: { name: Genre, genre: comedy }
-    url_poster: https://i.imgur.com/dIMKbt9.jpg
+    url_poster: https://theposterdb.com/api/assets/204256
   Competition:
     template: { name: Genre, genre: "game show" }
-    url_poster: https://i.imgur.com/dIMKbt9.jpg
+    url_poster: https://theposterdb.com/api/assets/213616
   Cooking:
     template: { name: Genre, genre: "cooking, food" }
-    url_poster: https://i.imgur.com/dVXspVv.jpg
+    url_poster: https://theposterdb.com/api/assets/213351
   Crime:
     template: { name: Genre, genre: crime }
-    url_poster: https://i.imgur.com/1FYD7Cz.jpg
+    url_poster: https://theposterdb.com/api/assets/204257
   Documentary:
     template: { name: Genre, genre: "Biography, Documentary" }
-    url_poster: https://i.imgur.com/KRH25hE.jpg
+    url_poster: https://theposterdb.com/api/assets/213141
   Drama:
     template: { name: Genre, genre: drama }
-    url_poster: https://i.imgur.com/RwOUFLI.jpg
+    url_poster: https://theposterdb.com/api/assets/204259
   Family:
     template: { name: Genre, genre: family, exclude: null }
-    url_poster: https://i.imgur.com/k4VAgNR.jpg
+    url_poster: https://theposterdb.com/api/assets/204260
   Fantasy:
     template: { name: Genre, genre: fantasy, exclude: null }
-    url_poster: https://i.imgur.com/IdeoNnr.jpg
+    url_poster: https://theposterdb.com/api/assets/204261
   History:
     template: { name: Genre, genre: history }
-    url_poster: https://i.imgur.com/1n070o0.jpg
+    url_poster: https://theposterdb.com/api/assets/204263
   Horror:
     template: { name: Genre, genre: horror }
-    url_poster: https://i.imgur.com/M6msOoq.jpg
+    url_poster: https://theposterdb.com/api/assets/204264
   Music:
     template: { name: Genre, genre: music, exclude: null}
-    url_poster: https://i.imgur.com/eCJZSue.jpg
+    url_poster: https://theposterdb.com/api/assets/204265
   Musical:
     template: { name: Genre, genre: musical, exclude: null}
-    url_poster: https://i.imgur.com/xBTTyNx.jpg
+    url_poster: https://theposterdb.com/api/assets/204266
   Mystery:
     template: { name: Genre, genre: mystery }
-    url_poster: https://i.imgur.com/t1ArisJ.jpg
+    url_poster: https://theposterdb.com/api/assets/204267
   Reality:
     template: { name: Genre, genre: reality }
-    url_poster: https://i.imgur.com/aDp1CZ9.jpg
+    url_poster: https://theposterdb.com/api/assets/213345
   Romance:
     template: { name: Genre, genre: romance }
-    url_poster: https://i.imgur.com/0Jm9Jck.jpg
+    url_poster: https://theposterdb.com/api/assets/204270
   Romantic Comedy:
     template: { name: Genre, genre: "romance,comedy" }
-    url_poster: https://i.imgur.com/7XVf34s.jpg
+    url_poster: https://theposterdb.com/api/assets/204269
   Romantic Drama:
     template: { name: Genre, genre: "romance,drama" }
-    url_poster: https://i.imgur.com/ccutmOd.jpg
+    url_poster: https://theposterdb.com/api/assets/213142
   Sci-Fi:
     template: { name: Genre, genre: sci-fi }
-    url_poster: https://i.imgur.com/EPi451Z.jpg
+    url_poster: https://theposterdb.com/api/assets/204271
   Sports:
     template: { name: Genre, genre: sport }
-    url_poster: https://i.imgur.com/uGtTbYV.jpg
+    url_poster: https://theposterdb.com/api/assets/204272
   Thriller:
     template: { name: Genre, genre: thriller }
-    url_poster: https://i.imgur.com/i4K4wXI.jpg
+    url_poster: https://theposterdb.com/api/assets/204274
   War:
     template: { name: Genre, genre: war }
-    url_poster: https://i.imgur.com/tPgvWij.jpg
+    url_poster: https://theposterdb.com/api/assets/204275
   Western:
     template: { name: Genre, genre: western }
-    url_poster: https://i.imgur.com/NbiRkV6.jpg
+    url_poster: https://theposterdb.com/api/assets/204276
