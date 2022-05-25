@@ -1,0 +1,87 @@
+######################################################
+#                Movie Collections                   #
+######################################################
+
+############################################
+#            User/Config Credits           #
+#      Give Credit Where Credit is Due     #
+#               JJJonesJr33                #
+# Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople #
+############################################
+
+###########################
+#        Templates        #
+###########################
+templates:
+    Holiday:
+        url_poster: <<poster>>
+        sort_title: +++++++_<<collection_name>>
+        collection_order: release
+        delete_not_scheduled: true
+        run_again: true
+        visible_home: true
+        visible_shared: true
+        sync_mode: sync
+
+collections:
+###########################
+#  Holliday Collections   #
+###########################
+  Christmas:
+    schedule: range(12/01-12/31)
+    template: {name: Holiday, poster: https://theposterdb.com/api/assets/69443}
+    sort_title: +++++_Christmas
+    trakt_list:
+      - https://trakt.tv/users/movistapp/lists/christmas-movies
+      - https://trakt.tv/users/2borno2b/lists/christmas-movies-extravanganza
+      - https://trakt.tv/users/pualani78/lists/christmas-2020
+      - https://trakt.tv/users/veninjak/lists/complete-christmas-2021-copy
+    imdb_list:
+      - https://www.imdb.com/list/ls025976544/
+      - https://www.imdb.com/list/ls003863000/
+      - https://www.imdb.com/list/ls027454200/
+      - https://www.imdb.com/list/ls027886673/
+      - https://www.imdb.com/list/ls097998599/
+    summary: Christmas film is a genre that revolves around the plot involving Christmas.
+  Halloween:
+    schedule: range(10/01-10/31)
+    sort_title: +++++_Halloween
+    template: {name: Holiday, poster: https://theposterdb.com/api/assets/111218}
+    trakt_list:
+      - https://trakt.tv/users/kairbear08/lists/halloween
+      - https://trakt.tv/users/mybicycle/lists/halloween
+      - https://trakt.tv/users/jayinftl/lists/halloween
+      - https://trakt.tv/users/roswellgeek/lists/halloween
+    summary: Halloween film is a genre that revolves around the plot involving Halloween.
+  New Year's Eve Movies:
+    schedule: range(12/26-01/05)
+    sort_title: +++++_New_Year
+    template: {name: Holiday, holiday: "New Year's Eve"}
+    imdb_list: https://www.imdb.com/list/ls066838460/
+  Valentine's Day Movies:
+    schedule: range(02/01-02/14)
+    sort_title: +++++_Valentine
+    template: {name: Holiday, holiday: "Valentine's Day"}
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+  St. Patrick's Day Movies:
+    schedule: range(03/01-03/17)
+    sort_title: +++++_St_Patrick
+    template: {name: Holiday, holiday: "St. Patrick's Day"}
+    imdb_list: https://www.imdb.com/list/ls063934595/
+  Thanksgiving Movies:
+    schedule: range(10/01-10/31)
+    sort_title: +++++_Thanksgiving
+    template: {name: Holiday, holiday: Thanksgiving, poster: https://theposterdb.com/api/assets/112251}
+    imdb_list: 
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls091597850/
+  Easter Movies:
+    schedule: range(3/22-4/25)
+    sort_title: +++++_Easter
+    template: {name: Holiday, holiday: Easter, poster: https://theposterdb.com/api/assets/60970}
+    imdb_list: 
+      - https://www.imdb.com/list/ls062665509/
+      - https://www.imdb.com/list/ls051733651/

@@ -55,6 +55,7 @@ templates:
       - radarr_add_missing
       - sonarr_add_missing
       - library_types
+      - check_library
     allowed_library_types:
       - <<use_<<key>>>>
       - <<check_library>>
@@ -113,9 +114,13 @@ templates:
     smart_label: <<sort_by>>
     sync_mode: sync
     mdblist_list: https://mdblist.com/lists/plexmetamanager/<<key>>-<<library_type>>s
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/streaming/<<image_encoded>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/streaming/<<key_name_encoded>>.jpg
 
   use_year_collections:
     optional:
       - use_year_collections
     allowed_library_types: <<use_year_collections>>
+
+  customsync:
+    collection_order: custom
+    sync_mode: sync

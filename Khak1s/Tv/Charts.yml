@@ -1,0 +1,53 @@
+templates:
+  Chart:
+    url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/<<poster>>.jpg
+    sort_title: +00<<num>><<collection_name>>
+  Trakt: 
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    visible_library: <<library>>
+    visible_home: <<home>>
+    visible_shared: <<shared>>
+    summary: trakt.tv - <<summary>>
+    radarr_add: <<a>>
+    radarr_search: <<s>>
+    radarr_monitor: <<m>>
+collections:
+# Recents
+  Recently Added:
+    template: { name: Chart, poster: Recently_Added-yellow-dark, num: 1 }
+    smart_filter:
+      sort_by: added.desc
+      all:
+        added: 7
+  Recently Released:
+    template: { name: Chart, poster: Recently_Released-yellow-dark, num: 2 }
+    smart_filter:
+      sort_by: release.desc
+      all:
+        release: 30
+# Trakt
+  Trending TV Right Now:
+    trakt_chart:
+      chart: trending
+      limit: 25
+    template: 
+      - { name: Trakt, library: true, home: true, shared: true, summary: Trending TV Shows right now., a: false, s: false, m: false }
+      - { name: Chart, poster: Trakt_Trending-dark, num: 3 }
+  Popular TV This Week:
+    trakt_chart:
+      chart: watched
+      time_period: weekly
+      limit: 50
+    template: 
+      - { name: Trakt, library: false, home: false, shared: false, summary: The most watched TV Shows for the last 7 days. Sorted by number of unique watchers., a: false, s: false, m: false }
+      - { name: Chart, poster: Trakt_Weekly-dark, num: 4 }
+  Popular TV This Year:
+    trakt_chart:
+      chart: watched
+      time_period: yearly
+      limit: 100
+    template:
+      - { name: Trakt, library: true, home: true, shared: true, summary: The most watched TV Shows for the last year. Sorted by number of unique watchers., a: false, s: false, m: false }
+      - { name: Chart, poster: Trakt_Yearly-dark, num: 5 }
