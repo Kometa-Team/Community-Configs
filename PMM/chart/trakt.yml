@@ -1,0 +1,112 @@
+#############################################################
+#                  Trakt Chart Collections                  #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  REQUIRES TRAKT AUTHENTICATION                            #
+#  https://metamanager.wiki/en/latest/config/trakt.html     #
+#                                                           #
+#  Call this from your config.yml (Movie or Show)           #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    metadata_path:                                         #
+#      - git: PMM/chart/trakt                               #
+#        template_variables:                                #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
+#          collection_section: "01"                         #
+#                                                           #
+#          # Turn the Trakt Collected collection on/off     #
+#          use_collected: true                              #
+#          # Determines collection order in it's section    #
+#          order_collected:                                 #
+#          # Set visible_library for Trakt Collected        #
+#          visible_library_collected:                       #
+#          # Set visible_home for Trakt Collected           #
+#          visible_home_collected:                          #
+#          # Set visible_shared for Trakt Collected         #
+#          visible_shared_collected:                        #
+#          # Set limit for Trakt Collected                  #
+#          limit_collected: 250                             #
+#                                                           #
+#          # Turn the Trakt Popular collection on/off       #
+#          use_popular: true                                #
+#          # Determines collection order in it's section    #
+#          order_popular:                                   #
+#          # Set visible_library for Trakt Popular          #
+#          visible_library_popular:                         #
+#          # Set visible_home for Trakt Popular             #
+#          visible_home_popular:                            #
+#          # Set visible_shared for Trakt Popular           #
+#          visible_shared_popular:                          #
+#          # Set limit for Trakt Popular                    #
+#          limit_popular: 250                               #
+#                                                           #
+#          # Turn the Trakt Recommended collection on/off   #
+#          use_recommended: true                            #
+#          # Determines collection order in it's section    #
+#          order_recommended:                               #
+#          # Set visible_library for Trakt Recommended      #
+#          visible_library_recommended:                     #
+#          # Set visible_home for Trakt Recommended         #
+#          visible_home_recommended:                        #
+#          # Set visible_shared for Trakt Recommended       #
+#          visible_shared_recommended:                      #
+#          # Set limit for Trakt Recommended                #
+#          limit_recommended: 250                           #
+#                                                           #
+#          # Turn the Trakt Trending collection on/off      #
+#          use_trending: true                               #
+#          # Determines collection order in it's section    #
+#          order_trending:                                  #
+#          # Set visible_library for Trakt Trending         #
+#          visible_library_trending:                        #
+#          # Set visible_home for Trakt Trending            #
+#          visible_home_trending:                           #
+#          # Set visible_shared for Trakt Trending          #
+#          visible_shared_trending:                         #
+#          # Set limit for Trakt Trending                   #
+#          limit_trending: 250                              #
+#                                                           #
+#          # Turn the Trakt Watched collection on/off       #
+#          use_watched: true                                #
+#          # Determines collection order in it's section    #
+#          order_watched:                                   #
+#          # Set visible_library for Trakt Watched          #
+#          visible_library_watched:                         #
+#          # Set visible_home for Trakt Watched             #
+#          visible_home_watched:                            #
+#          # Set visible_shared for Trakt Watched           #
+#          visible_shared_watched:                          #
+#          # Set limit for Trakt Watched                    #
+#          limit_watched: 250                               #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
+
+templates:
+  trakt:
+    default:
+      limit_<<key>>: 100
+    trakt_chart:
+      chart: <<key>>
+      limit: <<limit_<<key>>>>
+    summary: A collection of Trakt's Weekly <<library_type>> List
+
+dynamic_collections:
+  Trakt:
+    type: custom
+    data:
+      collected: Collected
+      popular: Popular
+      recommended: Recommended
+      trending: Trending
+      watched: Watched
+    title_format: Trakt <<key_name>>
+    template:
+      - trakt
+      - customsync
+      - chart_shared
