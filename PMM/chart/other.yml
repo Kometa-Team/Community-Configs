@@ -1,0 +1,80 @@
+#############################################################
+#                  Other Chart Collections                  #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    metadata_path:                                         #
+#      - git: PMM/chart/other                               #
+#        template_variables:                                #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
+#          collection_section: "01"                         #
+#                                                           #
+#          # Turn the StevenLu's Popular collection on/off  #
+#          use_stevenlu: true                               #
+#          # Determines collection order in it's section    #
+#          order_stevenlu:                                  #
+#          # Set visible_library for StevenLu's Popular     #
+#          visible_library_stevenlu:                        #
+#          # Set visible_home for StevenLu's Popular        #
+#          visible_home_stevenlu:                           #
+#          # Set visible_shared for StevenLu's Popular      #
+#          visible_shared_stevenlu:                         #
+#                                                           #
+#          # Turn the AniDB Popular collection on/off       #
+#          use_anidb: true                                  #
+#          # Determines collection order in it's section    #
+#          order_anidb:                                     #
+#          # Set visible_library for AniDB Popular          #
+#          visible_library_anidb:                           #
+#          # Set visible_home for AniDB Popular             #
+#          visible_home_anidb:                              #
+#          # Set visible_shared for AniDB Popular           #
+#          visible_shared_anidb:                            #
+#                                                           #
+#          # Turn the Pirated Movies collection on/off      #
+#          use_pirated: true                                #
+#          # Determines collection order in it's section    #
+#          order_pirated:                                   #
+#          # Set visible_library for Pirated Movies         #
+#          visible_library_pirated:                         #
+#          # Set visible_home for Pirated Movies            #
+#          visible_home_pirated:                            #
+#          # Set visible_shared for Pirated Movies          #
+#          visible_shared_pirated:                          #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
+
+collections:
+  StevenLu's Popular Movies:
+    summary: A collection of StevenLu's Most Popular Movies
+    stevenlu_popular: true
+    template:
+      - name: customsync
+      - name: chart_shared
+        key: stevenlu
+        check_library: movie
+
+  AniDB Popular:
+    summary: A collection of Popular Anime on AniDB
+    anidb_popular: 30
+    template:
+      - name: customsync
+      - name: chart_shared
+        key: anidb
+
+  Top 10 Pirated Movies of the Week:
+    mdblist: https://mdblist.com/lists/hdlists/top-ten-pirated-movies-of-the-week-torrent-freak-com/
+    summary: TorrentFreak.com's Weekly Top Ten Pirated Movies
+    template:
+      - name: customsync
+      - name: chart_shared
+        key: pirated
+

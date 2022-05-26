@@ -1,0 +1,85 @@
+#############################################################
+#                  IMDb Chart Collections                   #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    metadata_path:                                         #
+#      - git: PMM/chart/imdb                                #
+#        template_variables:                                #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
+#          collection_section: "01"                         #
+#                                                           #
+#          # Turn the IMDb Popular collection on/off        #
+#          use_popular: true                                #
+#          # Determines collection order in it's section    #
+#          order_popular:                                   #
+#          # Set visible_library for IMDb Popular           #
+#          visible_library_popular:                         #
+#          # Set visible_home for IMDb Popular              #
+#          visible_home_popular:                            #
+#          # Set visible_shared for IMDb Popular            #
+#          visible_shared_popular:                          #
+#                                                           #
+#          # Turn the IMDb Top 250 collection on/off        #
+#          use_top: true                                    #
+#          # Determines collection order in it's section    #
+#          order_top:                                       #
+#          # Set visible_library for IMDb Top 250           #
+#          visible_library_top:                             #
+#          # Set visible_home for IMDb Top 250              #
+#          visible_home_top:                                #
+#          # Set visible_shared for IMDb Top 250            #
+#          visible_shared_top:                              #
+#                                                           #
+#          # Turn the IMDb Lowest collection on/off         #
+#          use_lowest: true                                 #
+#          # Determines collection order in it's section    #
+#          order_trending:                                  #
+#          # Set visible_library for IMDb Lowest            #
+#          visible_library_lowest:                          #
+#          # Set visible_home for IMDb Lowest               #
+#          visible_home_lowest:                             #
+#          # Set visible_shared for IMDb Lowest             #
+#          visible_shared_lowest:                           #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
+
+templates:
+
+  imdb:
+    imdb_chart: <<chart>>_<<library_type>>s
+    collection_order: custom
+    sync_mode: sync
+
+collections:
+
+  IMDb Popular:
+    template:
+      - name: imdb
+        chart: popular
+      - name: chart_shared
+        key: popular
+
+  IMDb Top 250:
+    template:
+      - name: imdb
+        chart: top
+      - name: chart_shared
+        key: top
+
+  IMDb Lowest Rated:
+    imdb_chart: lowest_rated
+    collection_order: custom
+    sync_mode: sync
+    template:
+      - name: chart_shared
+        key: lowest
+        check_library: movie

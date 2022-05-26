@@ -1,0 +1,59 @@
+#############################################################
+#                    Cannes Collections                     #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#     Credit to pjcob & maxwelldeux for the Trakt Lists     #
+#############################################################
+#  REQUIRES TRAKT AUTHENTICATION                            #
+#  https://metamanager.wiki/en/latest/config/trakt.html     #
+#                                                           #
+#  Call this from your config.yml (Movie only)              #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    metadata_path:                                         #
+#      - git: PMM/award/cannes                              #
+#        template_variables:                                #
+#          # Turn the individual year collections on/off    #
+#          use_year_collections: true                       #
+#          # Sets the collection order of the collection    #
+#          collection_order: custom                         #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
+#          collection_section: 16                           #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 16
+
+templates:
+  Cannes:
+    allowed_library_types: movie
+    summary: <<key>> Cannes awards
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-cannes
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key>>.jpg
+
+collections:
+  Cannes - Palme d'or:
+    template:
+      - name: award
+        image: cannes/winner
+      - name: shared
+        sort: Cannes !
+    allowed_library_types: movie
+    trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-palme-d-or
+
+dynamic_collections:
+  Cannes Awards:
+    type: number
+    sync: true
+    data:
+      starting: current_year-5
+      ending: current_year
+    title_format: Cannes <<key_name>>
+    template:
+      - use_year_collections
+      - Cannes
+      - award
+      - shared

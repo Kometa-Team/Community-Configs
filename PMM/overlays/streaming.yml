@@ -1,0 +1,126 @@
+#############################################################
+#                    Streaming Overlay                      #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Designed for TRaSH Guides filename naming scheme         #
+#  https://trash-guides.info/                               #
+#                                                           #
+#  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/streaming                        #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
+#          horizontal_offset: 15                            #
+#          # Set the horizontal align for the overlay       #
+#          horizontal_align: left                           #
+#          # Set the vertical offset for the overlay        #
+#          vertical_offset: 135                             #
+#          # Set the vertical align for the overlay         #
+#          vertical_align: top                              #
+#                                                           #
+#          # Use the Amazon overlay                         #
+#          use_amazon: true                                 #
+#          # Use the AppleTV overlay                        #
+#          use_appletv: true                                #
+#          # Use the Disney overlay                         #
+#          use_disney: true                                 #
+#          # Use the HBO-Max overlay                        #
+#          use_hbomax: true                                 #
+#          # Use the Hulu overlay                           #
+#          use_hulu: true                                   #
+#          # Use the Netflix overlay                        #
+#          use_netflix: true                                #
+#          # Use the Paramount overlay                      #
+#          use_paramount: true                              #
+#          # Use the Peacock overlay                        #
+#          use_peacock: true                                #
+#############################################################
+
+templates:
+  Streaming:
+    optional:
+      - overlay_level
+      - use_<<slug>>
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 135
+      vertical_align: top
+    allowed_library_types: <<use_<<slug>>>>
+    collection_level: <<overlay_level>>
+    overlay:
+      name: <<overlay_name>>
+      git: PMM/overlays/images/<<overlay>>
+      group: streaming
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+    plex_all: true
+    filters:
+      filepath.regex: <<regex>>
+
+overlays:
+
+  Amazon:
+    template:
+      - name: Streaming
+        weight: 200
+        slug: amazon
+        regex: '(?i)\b(amzn|amazon)\b'
+
+  AppleTV:
+    template:
+      - name: Streaming
+        weight: 200
+        slug: appletv
+        regex: '(?i)\b(atvp|aptv|Apple TV\+)\b'
+
+  Disney:
+    template:
+      - name: Streaming
+        weight: 200
+        slug: disney
+        regex: '(?i)\b(dsnp|dsny|disney|Disney\+)\b'
+
+  HBO-Max:
+    template:
+      - name: Streaming
+        weight: 200
+        slug: hbomax
+        regex: '(?i)\b(hmax|hbom|HBO Max)\b'
+
+  Hulu:
+    template:
+      - name: Streaming
+        weight: 200
+        slug: hulu
+        regex: '(?i)\b(hulu)\b'
+
+  Netflix:
+    template:
+      - name: Streaming
+        weight: 200
+        slug: netflix
+        regex: '(?i)\b(nf|netflix)\b'
+
+  Paramount:
+    template:
+      - name: Streaming
+        weight: 200
+        slug: paramount
+        regex: '(?i)\b(pmtp|Paramount Plus)\b'
+
+  Peacock:
+    template:
+      - name: Streaming
+        weight: 200
+        slug: peacock
+        regex: '(?i)\b(pcok|peacock)\b'

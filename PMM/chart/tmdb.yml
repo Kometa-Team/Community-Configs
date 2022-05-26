@@ -1,0 +1,156 @@
+#############################################################
+#                  TMDb Chart Collections                   #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    metadata_path:                                         #
+#      - git: PMM/chart/tmdb                                #
+#        template_variables:                                #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
+#          collection_section: "01"                         #
+#                                                           #
+#          # Turn the TMDb Airing Today collection on/off   #
+#          use_airing: true                                 #
+#          # Determines collection order in it's section    #
+#          order_airing:                                    #
+#          # Set visible_library for TMDb Airing Today      #
+#          visible_library_airing:                          #
+#          # Set visible_home for TMDb Airing Today         #
+#          visible_home_airing:                             #
+#          # Set visible_shared for TMDb Airing Today       #
+#          visible_shared_airing:                           #
+#          # Set limit for TMDb Airing Today                #
+#          limit_airing: 100                                #
+#                                                           #
+#          # Turn the TMDb On The Air collection on/off     #
+#          use_air: true                                    #
+#          # Determines collection order in it's section    #
+#          order_air:                                       #
+#          # Set visible_library for TMDb On The Air        #
+#          visible_library_air:                             #
+#          # Set visible_home for TMDb On The Air           #
+#          visible_home_air:                                #
+#          # Set visible_shared for TMDb On The Air         #
+#          visible_shared_air:                              #
+#          # Set limit for TMDb On The Air                  #
+#          limit_air: 100                                   #
+#                                                           #
+#          # Turn the TMDb Popular collection on/off        #
+#          use_popular: true                                #
+#          # Determines collection order in it's section    #
+#          order_popular:                                   #
+#          # Set visible_library for TMDb Popular           #
+#          visible_library_popular:                         #
+#          # Set visible_home for TMDb Popular              #
+#          visible_home_popular:                            #
+#          # Set visible_shared for TMDb Popular            #
+#          visible_shared_popular:                          #
+#          # Set limit for TMDb Popular                     #
+#          limit_popular: 100                               #
+#                                                           #
+#          # Turn the TMDb Top Rated collection on/off      #
+#          use_top: true                                    #
+#          # Determines collection order in it's section    #
+#          order_top:                                       #
+#          # Set visible_library for TMDb Top Rated         #
+#          visible_library_top:                             #
+#          # Set visible_home for TMDb Top Rated            #
+#          visible_home_top:                                #
+#          # Set visible_shared for TMDb Top Rated          #
+#          visible_shared_top:                              #
+#          # Set limit for TMDb Top Rated                   #
+#          limit_top: 100                                   #
+#                                                           #
+#          # Turn the TMDb Trending collection on/off       #
+#          use_trending: true                               #
+#          # Determines collection order in it's section    #
+#          order_trending:                                  #
+#          # Set visible_library for TMDb Trending          #
+#          visible_library_trending:                        #
+#          # Set visible_home for TMDb Trending             #
+#          visible_home_trending:                           #
+#          # Set visible_shared for TMDb Trending           #
+#          visible_shared_trending:                         #
+#          # Set limit for TMDb Trending                    #
+#          limit_trending: 100                              #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
+
+templates:
+
+  airing:
+    default:
+      limit_airing: 100
+    tmdb_airing_today: <<limit_airing>>
+    summary: A collection of shows with episodes airing today
+
+  air:
+    default:
+      limit_air: 100
+    tmdb_on_the_air: <<limit_air>>
+    summary: A collection of shows that are still activaly airing episodes
+
+  popular:
+    default:
+      limit_popular: 100
+    tmdb_popular: <<limit_popular>>
+    summary: A collection of the most watched <<library_type>>s according to TMDb.
+
+  top:
+    default:
+      limit_top: 100
+    tmdb_top_rated: <<limit_top>>
+    summary: A collection of the top rated <<library_type>>s according to TMDb.
+
+  trending:
+    default:
+      limit_trending: 100
+    tmdb_trending_weekly: <<limit_trending>>
+    summary: A collection of <<library_type>>s trending on TMDb
+
+collections:
+
+  TMDb Airing Today:
+    template:
+      - name: airing
+      - name: customsync
+      - name: chart_shared
+        key: airing
+        check_library: show
+
+  TMDb On The Air:
+    template:
+      - name: air
+      - name: customsync
+      - name: chart_shared
+        key: air
+        check_library: show
+
+  TMDb Popular:
+    template:
+      - name: popular
+      - name: customsync
+      - name: chart_shared
+        key: popular
+
+  TMDb Top Rated:
+    template:
+      - name: top
+      - name: customsync
+      - name: chart_shared
+        key: top
+
+  TMDb Trending:
+    template:
+      - name: trending
+      - name: customsync
+      - name: chart_shared
+        key: trending
