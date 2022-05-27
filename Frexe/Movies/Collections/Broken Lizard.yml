@@ -1,0 +1,22 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+      - imdb
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    imdb_list: <<imdb>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Broken Lizard":
+    template: {name: Set, list: 8197250, poster: https://theposterdb.com/api/assets/201073 }
+
+  "Super Troopers":
+    template: {name: Set, collection: 449462, poster: https://theposterdb.com/api/assets/166267 }

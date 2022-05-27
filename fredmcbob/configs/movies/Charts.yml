@@ -13,7 +13,7 @@ collections:
     url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
     visible_library: true
     visible_home: true
-    visible_shared: true
+    visible_shared: false
 
   Popular Movies:
     sort_title: +01_2Popular
@@ -25,7 +25,7 @@ collections:
     url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
     visible_library: true
     visible_home: false
-    visible_shared: true
+    visible_shared: false
 
   Newly Released Movies:
     sort_title: +01_3NewReleases
@@ -37,4 +37,4 @@ collections:
     url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
     visible_library: true
     visible_home: false
-    visible_shared: true
+    visible_shared: false

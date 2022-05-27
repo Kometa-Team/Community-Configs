@@ -1,0 +1,54 @@
+#############################################################
+#              Audience Rating Banner Overlay               #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/ratings                          #
+#        template_variables:                                #
+#          rating_type: audience_rating                     #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
+#          horizontal_offset: 225                           #
+#          # Set the horizontal align for the overlay       #
+#          horizontal_align: center                         #
+#          # Set the vertical offset for the overlay        #
+#          vertical_offset: 15                              #
+#          # Set the vertical align for the overlay         #
+#          vertical_align: top                              #
+#############################################################
+
+templates:
+  Audience Rating:
+    optional:
+      - overlay_level
+    default:
+      rating_type: audience_rating
+      horizontal_offset: 225
+      horizontal_align: center
+      vertical_offset: 15
+      vertical_align: top
+    collection_level: <<overlay_level>>
+    overlay:
+      name: text(<<rating_type>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: fonts/Inter-Medium.ttf
+      font_size: 63
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 150
+      back_height: 105
+
+overlays:
+  audience_rating:
+    template:
+      name: Audience Rating
+    plex_all: true

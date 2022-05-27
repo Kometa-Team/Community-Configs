@@ -1,0 +1,50 @@
+collections:
+  Apple Originals:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: +03_APPLE
+    imdb_list:
+      url:   https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0546168
+    summary: All Apple TV Originals From 2021-2025
+    url_poster: https://i.imgur.com/O9iWork.png
+    url_background: https://wallpaper-house.com/data/out/8/wallpaper2you_228774.png
+
+  Amazon Originals:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: +03_Amazon
+    imdb_list:
+      url:   https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0319272
+    summary: All Amazon Originals From 2021-2025
+    url_poster: https://i.imgur.com/nU3gqqB.png
+    url_background: https://i.imgur.com/2jfs7oS.png
+
+  Netflix Originals:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: +03_Netflix
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0144901
+    summary: All Netflix Originals From 2021-2025
+    url_poster: https://i.imgur.com/7kiE1MU.png
+    url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
+
+  HBO Max Originals:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: +03_HBOMAX
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0754095
+    summary: All HBO Max Originals From 2021-2025
+    url_poster: https://i.redd.it/zxdvw3tk3f151.jpg
+    url_background: https://wallpapercave.com/wp/wp6402755.png
+
+  HULU Originals:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: +03_HULU
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0218858
+    summary: All HULU Originals From 2021-2025
+    url_poster: https://plexcollectionposters.com/images/2019/05/26/Hulu6ddad752a5ce9bac.jpg
+    url_background: https://cdn.vox-cdn.com/thumbor/oR4hqrmTxbX_O4gdJ6np8h-PxFk=/0x439:750x861/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/56311701/Image_uploaded_from_iOS__8_.1503433270.jpg

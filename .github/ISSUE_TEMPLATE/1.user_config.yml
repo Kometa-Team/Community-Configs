@@ -1,0 +1,45 @@
+name: User Config Issue
+description: Post here if there is an issue with the configuration of the config files or for missing images from the config files. Not for Errors.
+title: '[Bug]: '
+labels: ['bug']
+assignees: 'meisnate12'
+
+body:
+  - type: markdown
+    attributes:
+      value: >
+        **THIS IS NOT THE PLACE TO ASK FOR SUPPORT!**
+        Please use [Ple Meta Manager Discord](https://discord.gg/NfH6mGFuAB) and post your question under the `plex-meta-manager` channel for support issues and other Plex Meta Manager Errors.
+  - type: input
+    id: file
+    attributes:
+      label: Link to File
+      description: Link to the config File in question
+      placeholder: https://github.com/meisnate12/Plex-Meta-Manager-Configs/blob/master/PMM/actor.yml
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version Number
+      description: Can be found at the beginning of your log file
+      placeholder: eg. 1.16.0
+    validations:
+      required: true
+  - type: dropdown
+    id: branch
+    attributes:
+      label: What branch are you on?
+      options:
+        - master
+        - develop
+        - nightly
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: A clear and concise description of the bug.
+    validations:
+      required: true

@@ -1,0 +1,124 @@
+#############################################################
+#                 AniList Chart Collections                 #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    metadata_path:                                         #
+#      - git: PMM/chart/anilist                             #
+#        template_variables:                                #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
+#          collection_section: "01"                         #
+#                                                           #
+#          # Turn the AniList Popular collection on/off     #
+#          use_popular: true                                #
+#          # Determines collection order in it's section    #
+#          order_popular:                                   #
+#          # Set visible_library for AniList Popular        #
+#          visible_library_popular:                         #
+#          # Set visible_home for AniList Popular           #
+#          visible_home_popular:                            #
+#          # Set visible_shared for AniList Popular         #
+#          visible_shared_popular:                          #
+#          # Set limit for AniList Popular                  #
+#          limit_popular: 100                               #
+#                                                           #
+#          # Turn the AniList Top Rated collection on/off   #
+#          use_top: true                                    #
+#          # Determines collection order in it's section    #
+#          order_top:                                       #
+#          # Set visible_library for AniList Top Rated      #
+#          visible_library_top:                             #
+#          # Set visible_home for AniList Top Rated         #
+#          visible_home_top:                                #
+#          # Set visible_shared for AniList Top Rated       #
+#          visible_shared_top:                              #
+#          # Set limit for AniList Top Rated                #
+#          limit_top: 100                                   #
+#                                                           #
+#          # Turn the AniList Trending collection on/off    #
+#          use_trending: true                               #
+#          # Determines collection order in it's section    #
+#          order_trending:                                  #
+#          # Set visible_library for AniList Trending       #
+#          visible_library_trending:                        #
+#          # Set visible_home for AniList Trending          #
+#          visible_home_trending:                           #
+#          # Set visible_shared for AniList Trending        #
+#          visible_shared_trending:                         #
+#          # Set limit for AniList Trending                 #
+#          limit_trending: 100                              #
+#                                                           #
+#          # Turn the AniList Season collection on/off      #
+#          use_season: true                                 #
+#          # Determines collection order in it's section    #
+#          order_season:                                    #
+#          # Set visible_library for AniList Season         #
+#          visible_library_season:                          #
+#          # Set visible_home for AniList Season            #
+#          visible_home_season:                             #
+#          # Set visible_shared for AniList Season          #
+#          visible_shared_season:                           #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "01"
+
+templates:
+
+  popular:
+    default:
+      limit_popular: 100
+    anilist_popular: <<limit_popular>>
+    summary: A collection of the most popular Anime according to AniList.
+
+  top:
+    default:
+      limit_top: 100
+    anilist_top_rated: <<limit_top>>
+    summary: A collection of the top rated Anime according to AniList.
+
+  trending:
+    default:
+      limit_trending: 100
+    anilist_trending: <<limit_trending>>
+    summary: A collection of trending Anime according to AniList.
+
+collections:
+
+  AniList Popular:
+    template:
+      - name: popular
+      - name: customsync
+      - name: chart_shared
+        key: popular
+
+  AniList Top Rated:
+    template:
+      - name: top
+      - name: customsync
+      - name: chart_shared
+        key: top
+
+  AniList Trending:
+    template:
+      - name: trending
+      - name: customsync
+      - name: chart_shared
+        key: trending
+
+  AniList Season:
+    anilist_search:
+      season: current
+      year:
+      sort_by: popular
+    summary: A collection of Anime from the Current Season according to AniList.
+    template:
+      - name: customsync
+      - name: chart_shared
+        key: season

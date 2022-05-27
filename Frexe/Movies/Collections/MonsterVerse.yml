@@ -1,0 +1,32 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Godzilla":
+    template: {name: Set, collection: 535313, poster: https://theposterdb.com/api/assets/160929 }
+
+  "Godzilla Anime":
+    template: {name: Set, collection: 535790, poster: https://theposterdb.com/api/assets/200795 }
+
+  "King Kong":
+    template: {name: Set, collection: 135498, poster: https://theposterdb.com/api/assets/160930 }
+
+  "Daimajin":
+    template: {name: Set, collection: 245334, poster: https://theposterdb.com/api/assets/160928 }
+
+  "Gamera":
+    template: {name: Set, collection: 161766, poster: https://theposterdb.com/api/assets/160935 }
+
+  "Rebirth of Mothra":
+    template: {name: Set, collection: 171732, poster: https://theposterdb.com/api/assets/160933 }

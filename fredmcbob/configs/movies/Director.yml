@@ -1,0 +1,22 @@
+######################################################
+#               People Collections                   #
+######################################################
+templates:
+  people:
+    actor: tmdb
+    tmdb_person: <<person>>
+#    sort_title: ++_<<collection_name>>
+    sort_title: +35_<<collection_name>>
+    collection_order: release
+collections:
+#  Kevin Smith:
+#    writer: tmdb
+#    director: tmdb
+#    template: {name: people, person: 19303}
+#    url_poster: https://theposterdb.com/api/assets/82586/download?performed_by=Yaarrrr
+#    url_background: https://yesofcorsa.com/wp-content/uploads/2017/03/Kevin-Smith-Wallpaper-HQ-1024x683.jpg
+  Quentin Tarantino:
+    director: tmdb
+    template: {name: people, person: 138}
+    url_poster: https://theposterdb.com/api/assets/167512
+    url_background: https://i.pinimg.com/originals/26/a3/d7/26a3d7cf8567caa5c979be6946bd4861.png
