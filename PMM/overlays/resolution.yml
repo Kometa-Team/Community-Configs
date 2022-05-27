@@ -24,17 +24,17 @@
 #          vertical_align: top                              #
 #                                                           #
 #          # Use the 4K overlay                             #
-#          4K: true                                         #
+#          use_4k: true                                     #
 #          # Use the 1080P overlay                          #
-#          1080P: true                                      #
+#          use_1080p: true                                  #
 #          # Use the 720P overlay                           #
-#          720P: true                                       #
+#          use_720p: true                                   #
 #          # Use the 480P overlay                           #
-#          480P: true                                       #
+#          use_480p: true                                   #
 #          # Use the DV overlay                             #
-#          DV: true                                         #
+#          use_dv: true                                     #
 #          # Use the HDR overlay                            #
-#          HDR: true                                        #
+#          use_hdr: true                                    #
 #############################################################
 
 templates:
@@ -60,76 +60,77 @@ templates:
 
   4K-DV:
     default:
-      4K: true
-      DV: true
-    allowed_library_types: <<4K>>, <<DV>>
+      use_4k: true
+      use_dv: true
+    allowed_library_types: <<use_4k>>, <<use_dv>>
 
   4K-HDR:
     default:
-      4K: true
-      HDR: true
-    allowed_library_types: <<4K>>, <<HDR>>
+      use_4k: true
+      use_hdr: true
+    allowed_library_types: <<use_4k>>, <<use_hdr>>
 
   4K:
     default:
-      4K: true
-    allowed_library_types: <<4K>>
+      use_4k: true
+    allowed_library_types: <<use_4k>>
 
   1080P-DV:
     default:
-      1080P: true
-      DV: true
-    allowed_library_types: <<1080P>>, <<DV>>
+      use_1080p: true
+      use_dv: true
+    allowed_library_types: <<use_1080p>>, <<use_dv>>
 
   1080P-HDR:
     default:
-      1080P: true
-      HDR: true
-    allowed_library_types: <<1080P>>, <<HDR>>
+      use_1080p: true
+      use_hdr: true
+    allowed_library_types: <<use_1080p>>, <<use_hdr>>
 
   1080P:
     default:
-      1080P: true
-    allowed_library_types: <<1080P>>
+      use_1080p: true
+    allowed_library_types: <<use_1080p>>
 
   720P-DV:
     default:
-      720P: true
-      DV: true
-    allowed_library_types: <<720P>>, <<DV>>
+      use_720p: true
+      use_dv: true
+    allowed_library_types: <<use_720p>>, <<use_dv>>
 
   720P-HDR:
     default:
-      720P: true
-      HDR: true
-    allowed_library_types: <<720P>>, <<HDR>>
+      use_720p: true
+      use_hdr: true
+    allowed_library_types: <<use_720p>>, <<use_hdr>>
 
   720P:
     default:
-      720P: true
-    allowed_library_types: <<720P>>
+      use_720p: true
+    allowed_library_types: <<use_720p>>
 
   480P-DV:
     default:
-      480P: true
-      DV: true
-    allowed_library_types: <<480P>>, <<DV>>
+      use_480p: true
+      use_dv: true
+    allowed_library_types: <<use_480p>>, <<use_dv>>
 
   480P-HDR:
     default:
-      480P: true
-      HDR: true
-    allowed_library_types: <<480P>>, <<HDR>>
+      use_480p: true
+      use_hdr: true
+    allowed_library_types: <<use_480p>>, <<use_hdr>>
 
   480P:
     default:
-      480P: true
-    allowed_library_types: <<480P>>
+      use_480p: true
+    allowed_library_types: <<use_480p>>
 
 overlays:
 
   4K-DV:
     template:
+      - name: 4K-DV
       - name: Resolution
         weight: 120
     plex_search:
@@ -140,6 +141,7 @@ overlays:
 
   4K-HDR:
     template:
+      - name: 4K-HDR
       - name: Resolution
         weight: 110
     plex_search:
@@ -149,6 +151,7 @@ overlays:
 
   4K:
     template:
+      - name: 4K
       - name: Resolution
         weight: 100
     plex_search:
@@ -157,6 +160,7 @@ overlays:
 
   1080P-DV:
     template:
+      - name: 1080P-DV
       - name: Resolution
         weight: 90
     plex_search:
@@ -167,6 +171,7 @@ overlays:
 
   1080P-HDR:
     template:
+      - name: 1080P-HDR
       - name: Resolution
         weight: 80
     plex_search:
@@ -176,6 +181,7 @@ overlays:
 
   1080P:
     template:
+      - name: 1080P
       - name: Resolution
         weight: 70
     plex_search:
@@ -184,6 +190,7 @@ overlays:
 
   720P-DV:
     template:
+      - name: 720P-DV
       - name: Resolution
         weight: 60
     plex_search:
@@ -194,6 +201,7 @@ overlays:
 
   720P-HDR:
     template:
+      - name: 720P-HDR
       - name: Resolution
         weight: 50
     plex_search:
@@ -203,6 +211,7 @@ overlays:
 
   720P:
     template:
+      - name: 720P
       - name: Resolution
         weight: 40
     plex_search:
@@ -211,6 +220,7 @@ overlays:
 
   480P-DV:
     template:
+      - name: 480P-DV
       - name: Resolution
         weight: 30
     plex_search:
@@ -221,6 +231,7 @@ overlays:
 
   480P-HDR:
     template:
+      - name: 480P-HDR
       - name: Resolution
         weight: 20
     plex_search:
@@ -230,6 +241,7 @@ overlays:
 
   480P:
     template:
+      - name: 480P
       - name: Resolution
         weight: 10
     plex_search:

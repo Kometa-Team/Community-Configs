@@ -54,6 +54,8 @@ templates:
       - collection_mode
       - radarr_add_missing
       - sonarr_add_missing
+      - radarr_tag
+      - sonarr_tag
       - library_types
       - check_library
     allowed_library_types:
@@ -64,6 +66,8 @@ templates:
     visible_shared: <<visible_shared_<<key>>>>
     radarr_add_missing: <<radarr_add_missing>>
     sonarr_add_missing: <<sonarr_add_missing>>
+    radarr_tag: <<radarr_tag>>
+    sonarr_tag: <<sonarr_tag>>
     collection_mode: <<collection_mode>>
     sort_title: "!<<collection_section>><<pre>><<order_<<key>>>><<sort>>"
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<collection_name_encoded>>.jpg
