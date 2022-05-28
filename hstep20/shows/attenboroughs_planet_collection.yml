@@ -1,0 +1,42 @@
+#Uses https://theposterdb.com/poster/208857
+collections:
+  Attenborough's Planet Collection:
+    trakt_list:
+      - https://trakt.tv/users/agent531c/lists/the-planet-collection?sort=released%2Casc
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/208857
+    collection_order: release
+    sort_title: ++++++++_attenboroughs_planet
+
+metadata:
+  79257: #Planet Earth:
+    url_poster: https://theposterdb.com/api/assets/208862
+  318408: #Planet Earth II:
+    url_poster: https://theposterdb.com/api/assets/238236
+  413197: #Planet Earth III:
+    url_poster: https://theposterdb.com/api/assets/238237
+
+  251418: #Frozen Planet:
+    url_poster: https://theposterdb.com/api/assets/238232
+  417395: #Frozen Planet II:
+    url_poster: https://theposterdb.com/api/assets/238233
+
+  359250: #The Green Planet:
+    url_poster: https://theposterdb.com/api/assets/238241
+
+  74372: #The Blue Planet:
+    url_poster: https://theposterdb.com/api/assets/238240
+  330942: #Blue Planet II:
+    url_poster: https://theposterdb.com/api/assets/238231
+
+  359251: #Seven Worlds, One Planet:
+    url_poster: https://theposterdb.com/api/assets/238239
+
+  418505: #Prehistoric Planet(2022):
+    url_poster: https://theposterdb.com/api/assets/238238
+
+  355229: # Our Planet:
+    url_poster: https://theposterdb.com/api/assets/238234
+
+  359365: # A Perfect Planet:
+    url_poster: https://theposterdb.com/api/assets/238230
