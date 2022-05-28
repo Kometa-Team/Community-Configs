@@ -71,7 +71,7 @@ collections:
         key: anidb
 
   Top 10 Pirated Movies of the Week:
-    mdblist: https://mdblist.com/lists/hdlists/top-ten-pirated-movies-of-the-week-torrent-freak-com/
+    mdblist_list: https://mdblist.com/lists/hdlists/top-ten-pirated-movies-of-the-week-torrent-freak-com/
     summary: TorrentFreak.com's Weekly Top Ten Pirated Movies
     template:
       - name: customsync
