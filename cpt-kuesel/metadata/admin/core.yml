@@ -1,0 +1,44 @@
+external_templates:
+  - file: metadata/admin/_templates.yml
+templates:
+  label_collector:
+    default:
+      label_collector: true
+    allowed_library_types: <<label_collector>>
+  german_metadata:
+    default:
+      german_metadata: true
+    allowed_library_types: <<german_metadata>>
+  non_german_metadata:
+    default:
+      non_german_metadata: true
+    allowed_library_types: <<non_german_metadata>>
+collections:
+  label_collector:
+    template: {name: label_collector}
+    blank_collection: true
+    collection_mode: hide
+    label:
+      - admin
+      - german_metadata
+      - non_german_metadata
+  german_metadata:
+    template: {name: german_metadata}
+    build_collection: false
+    plex_search:
+      all:
+        audio_language: de
+        label.not: german_metadata
+    item_metadata_language: de-DE
+    item_label: german_metadata
+    non_item_remove_label: german_metadata
+  non_german_metadata:
+    template: {name: non_german_metadata}
+    build_collection: false
+    plex_search:
+      all:
+        audio_language.not: de
+        label.not: non_german_metadata
+    item_metadata_language: en-US
+    item_label: non_german_metadata
+    non_item_remove_label: non_german_metadata
