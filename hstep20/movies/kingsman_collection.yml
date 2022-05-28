@@ -1,0 +1,19 @@
+#Uses posterdblink
+
+collections:
+  The Kingsman Collection:
+    tmdb_collection: https://www.themoviedb.org/collection/391860
+    tmdb_summary: https://www.themoviedb.org/collection/391860
+    #or trakt_list 
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/6634
+    sort_title: ++++++++_kingsman_collection
+    collection_order: release
+
+metadata:
+  207703: #"Kingsman: The Secret Service":
+    url_poster: https://theposterdb.com/api/assets/179
+  343668: #"Kingsman: The Golden Circle":
+    url_poster: https://theposterdb.com/api/assets/180
+  476669: #The King's Man:
+    url_poster: https://theposterdb.com/api/assets/50420

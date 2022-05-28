@@ -1,0 +1,19 @@
+#Uses https://theposterdb.com/poster/163679 and https://theposterdb.com/poster/864
+
+collections:
+  Night at the Museum Collection:
+    tmdb_collection: https://www.themoviedb.org/collection/85943
+    tmdb_summary: https://www.themoviedb.org/collection/85943
+    #or trakt_list 
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/163679
+    sort_title: ++++++++_night_at_the_museum
+    collection_order: release
+
+metadata:
+  1593: #Night at the Museum:
+    url_poster: https://theposterdb.com/poster/865
+  18360: #"Night at the Museum: Battle of the Smithsonian":
+    url_poster: https://theposterdb.com/api/assets/866
+  181533: #"Night at the Museum: Secret of the Tomb":
+    url_poster: https://theposterdb.com/api/assets/867

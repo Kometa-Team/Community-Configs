@@ -1,0 +1,17 @@
+#Uses https://theposterdb.com/poster/24549
+collections:
+  The Lord of the Rings Trilogy:
+    tmdb_collection: https://www.themoviedb.org/collection/119
+    tmdb_summary: https://www.themoviedb.org/collection/119
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/24549
+    sort_title: ++++++++_lord_of_the_rings_trilogy
+    collection_order: release
+
+metadata:
+  120: #"The Lord of the Rings: The Fellowship of the Ring":
+    url_poster: https://theposterdb.com/api/assets/24550
+  121: #"The Lord of the Rings: The Two Towers":
+    url_poster: https://theposterdb.com/api/assets/24551
+  122: #"The Lord of the Rings: The Return of the King":
+    url_poster: https://theposterdb.com/api/assets/24552
