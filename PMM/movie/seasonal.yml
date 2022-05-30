@@ -96,7 +96,7 @@ collections:
     template:
       - name: Holiday
         season: patrick
-        schedule_st_patrick: range(03/01-03/18)
+        schedule_patrick: range(03/01-03/18)
       - name: shared
     imdb_list: https://www.imdb.com/list/ls063934595/
 
@@ -140,6 +140,6 @@ collections:
     template:
       - name: Holiday
         season: years
-        schedule_new_years: range(12/26-01/04)
+        schedule_years: range(12/26-01/04)
       - name: shared
     imdb_list: https://www.imdb.com/list/ls066838460/
