@@ -29,7 +29,11 @@ The way I have my PMM setup is via mutiple docker containers in Unraid. I have o
 <br>
 
 Special thanks to the PMM users and their configs that I drew inspiration from
+<br>
 "**Glasti1**, **Hiren-Z**, **OhMyBahGosh**, **tuxpeople**, **cpt-kuesel**, **meisnate12**, **TheUnchainedZebra**, **Evil Tacctician**"
+
 The users who created, supported, and helped with creating poasters
+<br>
  "**mikenobbs** & **Yozora** 
+
 And all the users of Reddit who have contributed to the cause! :D
