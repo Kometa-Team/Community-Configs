@@ -1,5 +1,6 @@
 **Proper Movie, TV Shows, and Anime configs for Single PMM Instance & Multiple PMM Instances Setup**
 
+**NOTICE 5/31/2022** - Overlays have been temporarily removed until I am able to update for the latest PMM release.
 
 **Single Instance** (Simple Setup)
 
