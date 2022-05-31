@@ -17,14 +17,19 @@ The way I have my PMM setup is via mutiple docker containers in Unraid. I have o
 <br>
 **Anime Collections Preview**: <br>
 ![Anime (Updated)](https://user-images.githubusercontent.com/29973406/171267124-09064e96-ce22-4c89-affd-dc1b1a61e6f1.png)
+<br>
 **Movie Collections Preview**: <br>
 ![Movies (Updated)](https://user-images.githubusercontent.com/29973406/171275735-2b85aaf8-db28-4de9-b2e1-e8d0cd92f5ca.png)
+<br>
 **Movie Collections 4K Preview**: <br>
 ![Movies 4K (Updated)](https://user-images.githubusercontent.com/29973406/171275782-96c8e20b-7bbd-402b-b7fc-3ae9a7204bdd.png)
+<br>
 **TV Shows Collections Preview**: <br>
 ![TV](https://user-images.githubusercontent.com/29973406/171267202-af90b4d3-d2b5-4d18-a5c9-923d7c7c79ff.png)
 <br>
 
-Special thanks to the users and their configs that I drew inspiration from
-"Hiren-Z, OhMyBahGosh, djnield, Glasti1, tuxpeople" 
-And also to the users of Reddit who have contributed to the cause!
+Special thanks to the PMM users and their configs that I drew inspiration from
+"**Glasti1**, **Hiren-Z**, **OhMyBahGosh**, **tuxpeople**, **cpt-kuesel**, **meisnate12**, **TheUnchainedZebra**, **Evil Tacctician**"
+The users who created, supported, and helped with creating poasters
+ "**mikenobbs** & **Yozora** 
+And all the users of Reddit who have contributed to the cause! :D
