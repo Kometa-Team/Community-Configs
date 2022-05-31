@@ -7,7 +7,7 @@ For ease of use just copy everything in this folder to your docker container con
 FYI: For the Anime config to work you must set up MyAnimeList in your main config using https://github.com/meisnate12/Plex-Meta-Manager/wiki/MyAnimeList-Attributes
 
 Anime Collections Preview: <br>
-![Anime](Anime.png)
+![Anime](Anime (Updated).png)
 <br>
 Movie Collections Preview: <br>
 ![Movies](Movies.png)
