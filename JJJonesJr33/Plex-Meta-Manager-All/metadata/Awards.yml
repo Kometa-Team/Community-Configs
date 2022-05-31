@@ -1,0 +1,40 @@
+####################################
+##    Movie Awards Collections    ##
+####################################
+
+##########################################################
+##                 User/Config Credits                  ##
+##          Giving Credit Where Credit is Due           ##
+##                    JJJonesJr33                       ##
+## Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel ##
+##    meisnate12, TheUnchainedZebra, Evil Tacctician    ##
+##########################################################
+
+############################
+##    Awards Templates    ##
+############################
+
+templates:
+    Awards:
+        sort_title: +++++++++_<<collection_name>>
+        collection_mode: hide
+        collection_order: release
+        
+####################################
+##       Collections Lists        ##
+####################################
+
+collections:
+
+  Award Winning Movies:
+    sort_title: +++++++++_Award_Winning_Movies
+    url_poster: https://theposterdb.com/api/assets/213569
+    imdb_list: 
+      - url: "https://www.imdb.com/search/title/?title_type=feature,short,documentary&groups=emmy_winner&sort=year,desc"
+      - url: "https://www.imdb.com/search/title/?title_type=feature,short,documentary&groups=golden_globe_winner&sort=year,desc"
+      - url: "https://www.imdb.com/search/title/?title_type=feature,short,documentary&groups=oscar_winner&sort=year,desc"
+    summary: "A collection of winning movies from the Emmys, Oscars and Golden Globe award ceremonies over the years"
+    smart_label: year.desc
+  # visible_home: range(11/01-02/28)
+  # visible_shared: range(11/01-02/28)
+  # schedule: range(11/01-02/28)
