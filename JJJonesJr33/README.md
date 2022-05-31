@@ -1,11 +1,20 @@
-Proper Movie, TV Shows, and Anime configs.
+**Proper Movie, TV Shows, and Anime configs for Single PMM Instance & Multiple PMM Instances Setup**
 
-The base config can also be found as config.yml 
 
-For ease of use just copy everything in this folder to your docker container config folder and edit the config.yml to match your settings. Then run the container, open terminal, and use the following command ```python plex_meta_manager.py -r```
+**Single Instance** (Simple Setup)
 
-FYI: For the Anime config to work you must set up MyAnimeList in your main config using https://github.com/meisnate12/Plex-Meta-Manager/wiki/MyAnimeList-Attributes
+If you are using a single instance of PMM - Copy everything in ```Plex-Meta-Manager-All``` to your docker container location and edit the config.yml to match your settings. Then run the container, open a terminal window, and use the following command ```python plex_meta_manager.py -r```
 
+
+**Multiple Instances** (Advanced Setup)
+
+The way I have my PMM setup is via mutiple docker containers in Unraid. I have one for **Anime**, **Movies**, and **TV Shows**. The reason this was done was to speed up the process for each main category. On smaller collections this may not be as necessarily, however for larger collections like mine this is a must. To set them up copy ```Plex-Meta-Manager-Anime```, ```Plex-Meta-Manager-Movies```, and ```Plex-Meta-Manager-TV``` to their each own docker container location and edit the config.yml in each to match your settings. To run the containers, open a terminal window for each, and use the following command ```python plex_meta_manager.py -r```
+
+
+Unraid Setup
+<br>
+![Unraid](https://user-images.githubusercontent.com/29973406/171271756-d1ef3a43-c6ff-40c8-991c-52ab4ae3ba49.png)
+<br>
 Anime Collections Preview: <br>
 ![Anime (Updated)](https://user-images.githubusercontent.com/29973406/171267124-09064e96-ce22-4c89-affd-dc1b1a61e6f1.png)
 <br>
