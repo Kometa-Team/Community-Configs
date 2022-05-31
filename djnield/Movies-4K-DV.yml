@@ -1,19 +1,5 @@
 ---
 collections:
-  Movie Watchlist:
-    trakt_watchlist:
-      - me
-    sort_title: ++3Watchlist
-    smart_label: release.desc
-    sync_mode: sync
-    schedule: hourly (00)
-    label: admin
-    visible_home: true
-    visible_shared: false
-    visible_library: false
-    url_poster: https://i.imgur.com/IJMWyvo.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-
   Trending Movies:
     trakt_trending: 40
     tmdb_trending_daily: 40
@@ -27,114 +13,12 @@ collections:
     visible_home: true
     visible_shared: true
     visible_library: true
-
-  Top Rated Movies:
-    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
-    tmdb_top_rated: 250
-    sort_title: ++2Top Rated
-    sync_mode: sync
-    schedule: hourly (00)
-    smart_label: random
-    summary: IMDb Top Rated Movies
-    url_poster: https://i.imgur.com/7h1vaxl.png
-    url_background: https://wallpaper.dog/large/20509069.jpg
-    visible_home: false
-    visible_shared: false
-    visible_library: true
-
-  DV-Atmos:
-    plex_all: true
-    filters:
-      filepath:
-        - MoviesDV
-        - Atmos
-      filepath.not:
-        - DTS-X
-        - TrueHD
-        - DTS-HD
-    item_overlay:
-      name: DV-Atmos
-      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV-Atmos/overlay.png
-    build_collection: false
-    revert_overlay: true
-
+    cache_builders: 1
   DV:
     plex_all: true
-    filters:
-      filepath: MoviesDV
-      filepath.not:
-        - Atmos
-        - DTS-X
-        - TrueHD
-        - DTS-HD
     item_overlay:
       name: DV
       url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV/overlay.png
     build_collection: false
-    revert_overlay: true
-
-  DV-DTS-X:
-    plex_all: true
-    filters:
-      filepath:
-        - MoviesDV
-        - DTS-X
-      filepath.not:
-        - Atmos
-        - TrueHD
-        - DTS-HD
-    item_overlay:
-      name: DV-DTS-X
-      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV-DTS-X/overlay.png
-    build_collection: false
-    revert_overlay: true
-
-  DV-TrueHD:
-    plex_all: true
-    filters:
-      filepath:
-        - MoviesDV
-        - TrueHD
-      filepath.not:
-        - DTS-X
-        - DTS-HD
-        - Atmos
-        - EAC3
-    item_overlay:
-      name: DV-TrueHD
-      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV-TrueHD/overlay.png
-    build_collection: false
-    revert_overlay: true
-
-  DV-TrueHD-Atmos:
-    plex_all: true
-    filters:
-      filepath:
-        - MoviesDV
-        - TrueHD
-        - Atmos
-      filepath.not:
-        - DTS-X
-        - DTS-HD
-        - EAC3
-    item_overlay:
-      name: DV-TrueHD-Atmos
-      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV-TrueHD-Atmos/overlay.png
-    build_collection: false
-    revert_overlay: true
-
-  DV-DTS-HD:
-    plex_all: true
-    filters:
-      filepath:
-        - MoviesDV
-        - DTS-HD
-      filepath.not:
-        - DTS-X
-        - TrueHD
-        - Atmos
-    item_overlay:
-      name: DV-DTS-HD
-      url: https://github.com/djnield/Plex-Meta-Manager-Configs/raw/master/djnield/overlays/DV-DTS-HD/overlay.png
-    build_collection: false
-    revert_overlay: true
+    revert_overlay: false
+    schedule: hourly(18)

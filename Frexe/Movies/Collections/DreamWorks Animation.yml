@@ -1,0 +1,38 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Boss Baby":
+    template: {name: Set, collection: 519457, poster: https://theposterdb.com/api/assets/163006 }
+
+  "Croods":
+    template: {name: Set, collection: 464577, poster: https://theposterdb.com/api/assets/162999 }
+
+  "How to Train Your Dragon":
+    template: {name: Set, collection: 89137, poster: https://theposterdb.com/api/assets/162990 }
+
+  "Kung Fu Panda":
+    template: {name: Set, collection: 77816, poster: https://theposterdb.com/api/assets/162983 }
+
+  "Madagascar":
+    template: {name: Set, collection: 14740, poster: https://theposterdb.com/api/assets/162976 }
+
+  "Shrek":
+    template: {name: Set, collection: 2150, poster: https://theposterdb.com/api/assets/160988 }
+
+  "Spirit":
+    template: {name: Set, collection: 806483, poster: https://theposterdb.com/api/assets/167856 }
+
+  "Trolls":
+    template: {name: Set, collection: 489724, poster: https://theposterdb.com/api/assets/162954 }

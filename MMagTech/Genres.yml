@@ -1,0 +1,67 @@
+######################################################
+#          Adventure Collection Playlist             #
+######################################################
+collections:
+  Action:
+    trakt_list: https://trakt.tv/users/mmagtech/lists/action
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++_1Action Movies
+    summary: A collection consisting of the top rated action movies from the 80's onward
+    url_poster: https://theposterdb.com/api/assets/52662
+
+  Adventure:
+    trakt_list: https://trakt.tv/users/mmagtech/lists/adventure
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++_2Adventure Movies
+    summary: A collection consisting of the top rated action movies from the 80's onward
+    url_poster: https://theposterdb.com/api/assets/52672
+
+  Comedy:
+    trakt_list: https://trakt.tv/users/mmagtech/lists/comedy
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++_3Comedy Movies
+    summary: A collection consisting of the top rated comedy movies from the 80s's onward
+    url_poster: https://theposterdb.com/api/assets/52677
+
+  Drama:
+    trakt_list: https://trakt.tv/users/mmagtech/lists/drama
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++_5Drama Movies
+    summary: A collection consisting of the top rated drama movies from the 80's onward
+    url_poster: https://theposterdb.com/api/assets/52676
+
+  Horror:
+    trakt_list: https://trakt.tv/users/mmagtech/lists/horror
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++_6Horror Movies
+    summary: A collection consisting of the top rated horror movies from the 80's onward
+    url_poster: https://theposterdb.com/api/assets/52659
+
+  Space:
+    trakt_list: https://trakt.tv/users/mmagtech/lists/space
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++_7Space
+    summary: A collection consisting of the top rated outer space movies
+    url_poster: https://theposterdb.com/api/assets/167952
+
+  War:
+    trakt_list: https://trakt.tv/users/mmagtech/lists/war
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++_8War Movies
+    summary:  A collection consisting of the top rated war movies from the 60's onward
+    url_poster: https://theposterdb.com/api/assets/52688
+
+  Western:
+    trakt_list: https://trakt.tv/users/mmagtech/lists/western
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++_9Western Movies
+    summary:  A collection consisting of the top rated western movies from the 50's onward
+    url_poster: https://theposterdb.com/api/assets/52686

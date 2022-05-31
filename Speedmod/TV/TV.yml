@@ -1,0 +1,35 @@
+  Trending:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    trakt_trending: 40
+    summary: Shows Trending across the internet
+    url_poster: https://i.imgur.com/AVCNmB0.png
+    url_background: https://wallpaper.dog/large/20509069.jpg
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  Popular TV:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
+      limit: 40
+    summary: Popular Shows across the internet
+    url_poster: https://i.imgur.com/s90PSic.png
+    url_background: https://wallpaper.dog/large/20509069.jpg
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  Top Rated TV:
+    smart_label: user_rating.desc
+    sort_title: ++3Top Rated TV
+    sync_mode: sync
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc
+      limit: 100
+      tmdb_top_rated: 100
+    summary: Top Rated Shows across the internet
+    url_poster: https://i.imgur.com/7h1vaxl.png
+    url_background: https://wallpaper.dog/large/20509069.jpg

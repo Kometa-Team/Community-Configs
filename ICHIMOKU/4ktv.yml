@@ -1,0 +1,30 @@
+collections:
+############################
+#          ICHIMOKU        #
+############################
+  
+   4K:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    url_poster: https://i.imgur.com/0B3q9ma.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*01"
+    schedule: daily
+   4K-HDR:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    url_poster: https://i.imgur.com/IzJSG74.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*02"
+    schedule: daily
+   

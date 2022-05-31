@@ -1,0 +1,92 @@
+#############################################################
+#                  Special Release Overlay                  #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Designed for TRaSH Guides filename naming scheme         #
+#  https://trash-guides.info/                               #
+#                                                           #
+#  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/special_release                  #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
+#          horizontal_offset: 15                            #
+#          # Set the horizontal align for the overlay       #
+#          horizontal_align: left                           #
+#          # Set the vertical offset for the overlay        #
+#          vertical_offset: 113                             #
+#          # Set the vertical align for the overlay         #
+#          vertical_align: bottom                           #
+#############################################################
+
+templates:
+  SpecialRelease:
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 113
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: <<overlay_name>>
+      git: PMM/overlays/images/<<overlay>>
+      group: special
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+  Criterion:
+    default:
+      Criterion: true
+    allowed_library_types: <<Criterion>>
+
+  IMAX-E:
+    default:
+      IMAX-E: true
+    allowed_library_types: <<IMAX-E>>
+
+  IMAX:
+    default:
+      IMAX: true
+    allowed_library_types: <<IMAX>>
+
+overlays:
+
+  Criterion:
+    template:
+      - name: SpecialRelease
+        weight: 30
+      - name: Criterion
+    plex_all: true
+    filters:
+      filepath.regex:
+        - '(?i)Criterion'
+        - '(?i)\[CC\]'
+
+  IMAX-E:
+    template:
+      - name: SpecialRelease
+        weight: 20
+      - name: IMAX-E
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\[IMAX Enhanced\]'
+
+  IMAX:
+    template:
+      - name: SpecialRelease
+        weight: 10
+      - name: IMAX
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\[IMAX\]'

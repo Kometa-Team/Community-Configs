@@ -1,0 +1,145 @@
+#############################################################
+#                   Seasonal Collections                    #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie only)              #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    metadata_path:                                         #
+#      - git: PMM/movie/seasonal                            #
+#        template_variables:                                #
+#          # Turn the separator collection on/off           #
+#          use_separator: false                             #
+#          # Turn the Independence Day collection on/off    #
+#          schedule_independence: range(06/23-07/11)        #
+#          # Turn the Easter collection on/off              #
+#          schedule_easter: range(03/22-04/25)              #
+#          # Turn the Valentine's Day collection on/off     #
+#          schedule_valentine: range(02/01-02/29)           #
+#          # Turn the St. Patrick's Day collection on/off   #
+#          schedule_patrick: range(03/01-03/18)             #
+#          # Turn the Thanksgiving collection on/off        #
+#          schedule_thanksgiving: range(11/01-11/30)        #
+#          # Turn the Halloween collection on/off           #
+#          schedule_halloween: range(10/01-10/31)           #
+#          # Turn the Christmas collection on/off           #
+#          schedule_christmas: range(12/01-12/31)           #
+#          # Turn the New Year's Day collection on/off      #
+#          schedule_years: range(12/26-01/04)               #
+#          # Sets how the collection is sorted              #
+#          sort_by: title.asc                               #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
+#          collection_section: "00"                         #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+
+templates:
+  Holiday:
+    default:
+      sort_by: title.asc
+      visible_home_<<season>>: true
+      visible_shared_<<season>>: true
+    optional:
+      - schedule_<<season>>
+      - visible_library_<<season>>
+    schedule: <<schedule_<<season>>>>
+    visible_library: <<visible_library_<<season>>>>
+    visible_home: <<visible_home_<<season>>>>
+    visible_shared: <<visible_shared_<<season>>>>
+    smart_label: <<sort_by>>
+    summary: A collection of <<collection_name>> and other movies that may relate to the season.
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/<<season>>.jpg
+    delete_not_scheduled: true
+
+collections:
+  Seasonal Collections:
+    template:
+      - name: separator off
+        separator: seasonal
+
+  Independence Day:
+    template:
+      - name: Holiday
+        season: independence
+        schedule_independence: range(06/23-07/11)
+      - name: shared
+    imdb_list: 
+      - https://www.imdb.com/list/ls068664510/
+      - https://www.imdb.com/list/ls080925875/
+
+  Easter:
+    template:
+      - name: Holiday
+        season: easter
+        schedule_easter: range(03/22-04/25)
+      - name: shared
+    imdb_list: 
+      - https://www.imdb.com/list/ls062665509/
+      - https://www.imdb.com/list/ls051733651/
+
+  Valentine's Day:
+    template:
+      - name: Holiday
+        season: valentine
+        schedule_valentine: range(02/01-02/29)
+      - name: shared
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+
+  St. Patrick's Day:
+    template:
+      - name: Holiday
+        season: patrick
+        schedule_patrick: range(03/01-03/18)
+      - name: shared
+    imdb_list: https://www.imdb.com/list/ls063934595/
+
+  Thanksgiving:
+    collection_name: Thanksgiving
+    template:
+      - name: Holiday
+        season: thanksgiving
+        schedule_thanksgiving: range(11/01-11/30)
+      - name: shared
+    imdb_list: 
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls091597850/
+
+  Halloween:
+    template:
+      - name: Holiday
+        season: halloween
+        schedule_halloween: range(10/01-10/31)
+      - name: shared
+    imdb_list:
+      - https://www.imdb.com/list/ls023118929/
+      - https://www.imdb.com/list/ls000099714/
+    tmdb_collection:
+      - 91361    # Halloween Collection
+      - 8581     # A Nightmare on Elm Street Collection
+      - 1733     # The Mummy Collection
+      - 8091     # Alien Collection
+    tmdb_movie:
+      - 23437    # A Nightmare on Elm Street (2010)
+
+  Christmas:
+    template:
+      - name: Holiday
+        season: christmas
+        schedule_christmas: range(12/01-12/31)
+      - name: shared
+    imdb_list: https://www.imdb.com/list/ls000096828/
+
+  New Year's Day:
+    template:
+      - name: Holiday
+        season: years
+        schedule_years: range(12/26-01/04)
+      - name: shared
+    imdb_list: https://www.imdb.com/list/ls066838460/

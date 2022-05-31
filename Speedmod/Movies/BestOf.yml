@@ -1,0 +1,259 @@
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    url_poster: <<poster>>
+    smart_label: random
+    visible_home: true
+    visible_shared: true
+  Best of:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
+    sort_title: +1_Best of <<year>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of <<year>>
+    url_poster: <<poster>>
+    smart_label: audience_rating.desc
+    visible_home: true
+    visible_shared: true
+
+collections:
+
+######################################################
+#                Chart Collections                   #
+######################################################
+
+  Plex Popular:
+    template: { name: Chart, num: 1, poster: https://theposterdb.com/api/assets/136359 }
+    tautulli_popular:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    tautulli_watched:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    summary: Movies Popular on Plex
+  Trending:
+    template: { name: Chart, num: 2, poster: https://theposterdb.com/api/assets/169001 }
+    trakt_trending: 20
+    tmdb_trending_daily: 20
+    tmdb_trending_weekly: 20
+    sort_title: +++++++++++++++++++_1Trending
+    sync_mode: sync
+    smart_label: year.desc
+    summary: Movies Trending across the internet
+    url_background: https://i.imgur.com/SOVfrIq.png          
+  Popular:
+    template: { name: Chart, num: 3, poster: https://theposterdb.com/api/assets/205416 }
+    tmdb_popular: 40
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
+      limit: 40
+    sort_title: +++++++++++++++++++_2Popular
+    sync_mode: sync
+    smart_label: year.desc
+    summary: Popular Movies across the internet
+  Top Rated Global:
+    template: { name: Chart, num: 4 }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?groups=top_250&count=250/
+    tmdb_top_rated: 250
+    sort_title: +++++++++++++++++++_3Top Rated
+    summary: Top Rated Movies across the internet
+  Oscars:
+    template: { name: Chart, num: 6, poster: https://theposterdb.com/api/assets/192593 }
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    summary: Oscar Winning Movies
+  Best of 2014:
+    template: { name: Best of, year: 2014, poster: https://theposterdb.com/api/assets/205154 }
+  Best of 2015:
+    template: { name: Best of, year: 2015, poster: https://theposterdb.com/api/assets/205155 }
+  Best of 2016:
+    template: { name: Best of, year: 2016, poster: https://theposterdb.com/api/assets/205156 }
+  Best of 2017:
+    template: { name: Best of, year: 2017, poster: https://theposterdb.com/api/assets/205157 }
+  Best of 2018:
+    template: { name: Best of, year: 2018, poster: https://theposterdb.com/api/assets/205158 }
+  Best of 2019:
+    template: { name: Best of, year: 2019, poster: https://theposterdb.com/api/assets/205159 }
+  Best of 2020:
+    template: { name: Best of, year: 2020, poster: https://theposterdb.com/api/assets/205160 }
+  Best of 2021:
+    template: { name: Best of, year: 2021, poster: https://theposterdb.com/api/assets/205161 }
+  Best of 2022:
+    template: { name: Best of, year: 2022, poster: https://theposterdb.com/api/assets/205162 }
+
+  Top Ten Pirated Weekly:
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-ten-pirated-movies-of-the-week-torrent-freak-com
+    smart_label: year.desc
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1APirated Weekly
+    summary: Most Pirated Movies of The Week
+    url_background: https://i.imgur.com/SOVfrIq.png
+    url_poster: https://i.imgur.com/dYdjSOu.png
+
+  80s Movies:
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/rottentomatoes-com-s-best-of-the-80s
+      - https://trakt.tv/users/zyrus/lists/80s-classics
+    smart_label: critic_rating.desc
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_80s Movies
+    summary: The Best Movies From The 80s
+    url_poster: https://i.imgur.com/k9c4ieG.png
+    url_background: https://i.imgur.com/ITnaga1.jpg
+
+  90s Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/rottentomatoes-com-s-best-of-the-90s
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_90s Movies
+    summary: The Best Movies From The 90s
+    url_poster: https://i.imgur.com/Nq8fxp8.png
+    url_background: https://i.imgur.com/g2yfzfx.jpg
+
+  Sundance Film Festival 2021:
+    trakt_list: https://trakt.tv/users/hdlists/lists/sundance-2021-movie-guide
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_Sundance 2021 Collection
+    summary: Sundance Film Festival 2021 Movie Guide
+    url_poster: https://i.imgur.com/6CqlOaq.png
+    url_background: https://i.imgur.com/goapGVl.jpg
+
+  Highest Rated Movies of 2021:
+    trakt_list: https://trakt.tv/users/hdlists/lists/2021-best-rated-movies-so-far
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_12021 Top Rated popular
+    summary: The Top Rated Movies of 2021 on RottenTomatoes.com
+    url_poster: https://i.imgur.com/w7Ucfa5.png
+    url_background: https://i.imgur.com/trITIgI.jpg
+
+  Most Popular Movies of 2020:
+    trakt_list: https://trakt.tv/users/hdlists/lists/most-popular-movies-of-2020
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_20z20 Most popular
+    summary: The Most Popular Movies of 2020
+    url_poster: https://i.imgur.com/LLURmaF.png
+    url_background: https://i.imgur.com/gO3Rlft.jpg
+
+  Reddit Top 250 From 2017:
+    trakt_list: https://trakt.tv/users/tehrobot/lists/reddit
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_Reddit Top 250
+    summary: Reddit's list of top 250 movies from the list made in 2017.
+    url_poster: https://i.redd.it/lcm7fe9bnib61.png
+
+  Top Movies of 2021:
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-movies-for-2021
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_2021 Top Movies
+    summary: Top Movies of 2021
+    url_poster: https://i.imgur.com/qnfjiew.png
+    url_background: https://i.imgur.com/aiRCYHH.jpg
+
+  Movies People are Watching:
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-films-everyone-s-watching
+    sort_title: +++++++++++++++++++++_Everyones Watching
+    sync_mode: sync
+    smart_label: year.desc
+    summary: Movies That Everyone is Watching
+    url_poster: https://i.imgur.com/GQca9tU.png
+    
+  Apple Originals:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1APPLE
+    imdb_list:
+      url:   https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2010-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0546168
+    summary: All Apple TV Originals
+    url_poster: https://i.imgur.com/O9iWork.png
+    url_background: https://wallpaper-house.com/data/out/8/wallpaper2you_228774.png
+    
+  Amazon Originals:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1APPLE
+    imdb_list:
+      url:   https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2010-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0319272
+    summary: All Amazon Originals
+    url_poster: https://i.imgur.com/nU3gqqB.png
+    url_background: https://i.imgur.com/2jfs7oS.png
+    
+  Netflix Originals:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1Netflix
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2010-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0144901
+    summary: All Netflix Originals
+    url_poster: https://i.imgur.com/7kiE1MU.png
+    url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
+    
+  HBO Max Originals:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1HBOMAX
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2010-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0754095
+    summary: All HBO Max Originals
+    url_poster: https://i.redd.it/zxdvw3tk3f151.jpg
+    url_background: https://wallpapercave.com/wp/wp6402755.png
+    
+  HULU Originals:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1HULU
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2010-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0218858
+    summary: All HULU Originals
+    url_poster: https://plexcollectionposters.com/images/2019/05/26/Hulu6ddad752a5ce9bac.jpg
+    url_background: https://cdn.vox-cdn.com/thumbor/oR4hqrmTxbX_O4gdJ6np8h-PxFk=/0x439:750x861/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/56311701/Image_uploaded_from_iOS__8_.1503433270.jpg
+
+  Best Picture Nominees (2021 Academy Awards):
+    trakt_list: https://trakt.tv/users/hdlists/lists/2021-academy-award-nominated-for-best-picture-93rd-academy-awards-oscar-s
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_Oscar Nominated Best Picture Movies 2021
+    summary: The 93rd Academy Awards ceremony is scheduled to take place on April 25, more than two months later than last year’s ceremony. The awards will recognize films released during a year in which movie theaters were largely closed.  Streaming services, which were already on the rise as an awards-season presence, are poised to dominate in April, both with their own productions (like Netflix’s “Mank”) and with traditional studio films that were released through streaming platforms because of the pandemic (like Searchlight Pictures’s “Nomadland,” which is streaming on Hulu).
+    url_poster: https://i.imgur.com/HhpBvRR.png
+    url_background: https://i.imgur.com/0Kao9gY.jpeg
+    
+  Oscar Nominated Movies (2021 Academy Awards):
+    trakt_list: https://trakt.tv/users/hdlists/lists/2021-academy-award-nominated-movies-93rd-academy-awards-oscar-s
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_Oscar Nominated Movies 2021
+    summary: The 93rd Academy Awards ceremony is scheduled to take place on April 25, more than two months later than last year’s ceremony. The awards will recognize films released during a year in which movie theaters were largely closed.  Streaming services, which were already on the rise as an awards-season presence, are poised to dominate in April, both with their own productions (like Netflix’s “Mank”) and with traditional studio films that were released through streaming platforms because of the pandemic (like Searchlight Pictures’s “Nomadland,” which is streaming on Hulu).
+    url_poster: https://i.imgur.com/H05ESeK.png
+    url_background: https://i.imgur.com/0Kao9gY.jpeg
+
+  Documentary Collection:
+    trakt_list: https://trakt.tv/users/hdlists/lists/documentary-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_Documentary Collection
+    summary: Top Rated Documentaries from 1980 onward
+    url_poster: https://i.imgur.com/2AtAgce.jpg
+    url_background: https://i.imgur.com/lJQwoDH.jpg
+
+  True Crime Documentaries:
+    trakt_list: https://trakt.tv/users/hdlists/lists/true-crime-documentaries
+    sync_mode: sync
+    smart_label: year.desc
+    sort_title: ++++++++++++++++++_True Crime Documentaries Movies
+    summary: True Crime Documentaries
+    url_poster: https://i.imgur.com/PPbzaKa.png
+    url_background: https://i.imgur.com/SOVfrIq.png
+    
+  Best Superhero Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/best-superhero-movies
+    sort_title: +++++++++++++++++++++_Superhero Movies
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    summary: Best Superhero Movies of All Time
+    url_poster: https://i.imgur.com/lqXRQdd.png

@@ -1,0 +1,20 @@
+#Uses https://theposterdb.com/poster/6997
+
+collections:
+  Shrek Collection:
+    tmdb_collection: https://www.themoviedb.org/collection/2150-shrek-collection
+    tmdb_summary: https://www.themoviedb.org/collection/2150-shrek-collection
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/6997
+    sort_title: ++++++++_shrek
+    collection_order: release
+
+metadata:
+  808: #"Shrek":
+    url_poster: https://theposterdb.com/api/assets/6998
+  809: #"Shrek 2":
+    url_poster: https://theposterdb.com/api/assets/6999
+  810: #"Shrek the Third":
+    url_poster: https://theposterdb.com/api/assets/7000
+  10192: #"Shrek Forever After":
+    url_poster: https://theposterdb.com/api/assets/7001

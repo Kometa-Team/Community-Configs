@@ -3,17 +3,14 @@ collections:
   Best of British:
     smart_label: release.desc
     sync_mode: sync
-    schedule: weekly(monday), weekly(wednesday), weekly(saturday)
+    schedule: hourly (06)
     sort_title: ++5Best of British
     trakt_list: https://trakt.tv/users/djnield/lists/best-of-british
     summary: UK TV at it's best showcasing Crime, Drama & Thrillers from the last two decades
     url_poster: https://i.imgur.com/Jyx4wOc.png
     url_background: https://wallpaper.dog/large/20509069.jpg
     build_collection: false
-    #visible_home: true
-    #visible_shared: true
-    #visible_library: true
-    #show_filtered: true
+    cache_builders: 1
 
   TV Watchlist:
     trakt_watchlist:
@@ -27,6 +24,7 @@ collections:
     visible_home: true
     visible_shared: false
     visible_library: false
+    cache_builders: 1
 
   Trending TV:
     smart_label: release.desc
@@ -39,29 +37,4 @@ collections:
     visible_home: true
     visible_shared: true
     visible_library: true
-
-#  Popular TV:
-#    smart_label: release.desc
-#    sort_title: ++2Popular TV
-#    sync_mode: sync
-#    imdb_list:
-#      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
-#      limit: 40
-#    summary: Popular Shows across the internet
-#    url_poster: https://i.imgur.com/s90PSic.png
-#    url_background: https://wallpaper.dog/large/20509069.jpg
-#    visible_home: false
-#    visible_shared: false
-#    visible_library: true
-#
-#  Top Rated TV:
-#    smart_label: user_rating.desc
-#    sort_title: ++3Top Rated TV
-#    sync_mode: sync
-#    imdb_list:
-#      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc
-#      limit: 100
-#    tmdb_top_rated: 100
-#    summary: Top Rated Shows across the internet
-#    url_poster: https://i.imgur.com/7h1vaxl.png
-#    url_background: https://wallpaper.dog/large/20509069.jpg
+    cache_builders: 1

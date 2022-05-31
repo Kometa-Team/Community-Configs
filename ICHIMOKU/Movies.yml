@@ -1,0 +1,638 @@
+collections:
+
+############################
+#         POPULAR          #
+############################
+
+  IMDb Top 250:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&sort=user_rating,desc
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*101a"
+    summary: Movies from the server that appear on IMDB's top 250.
+    schedule: daily
+    url_poster: https://i.imgur.com/FGgT7dt.png
+    url_background: https://i.imgur.com/juAQnOG.jpg
+  Trakt Trending:
+    trakt_trending: 100
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*101b"
+    schedule: daily
+    url_poster: https://i.imgur.com/1qbVXLi.png
+  Top Ten Pirated Weekly:
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-ten-pirated-movies-of-the-week-torrent-freak-com
+    smart_label: year.desc
+    sync_mode: sync
+    sort_title: "*101c"
+    schedule: daily
+    summary: Most Pirated Movies of The Week
+    url_background: https://i.imgur.com/juAQnOG.jpg
+    url_poster: https://i.imgur.com/DSWADRL.png
+  Movies People are Watching:
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-films-everyone-s-watching
+    sort_title: "*101d"
+    sync_mode: sync
+    smart_label: year.desc
+    summary: Movies That Everyone is Watching
+    schedule: daily
+    url_poster: https://i.imgur.com/GQca9tU.png
+    url_background: https://i.imgur.com/juAQnOG.jpg
+  New Releases:
+    trakt_list: https://trakt.tv/users/giladg/lists/latest-releases
+    url_poster: https://i.ibb.co/VNwwdZQ/New-Releases.jpg
+    url_background: https://i.imgur.com/juAQnOG.jpg
+    sort_title: "*101e"
+    schedule: daily
+    sync_mode: sync
+    smart_label: critic_rating.desc
+  1001 Movies You Must See Before You Die:
+    trakt_list: https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
+    summary: "1001 Movies You Must See Before You Die is a film reference book edited by Steven Jay Schneider with original essays on each film contributed by over 70 film critics."
+    url_poster: https://i.imgur.com/WmgioMY.png
+    url_background: https://i.imgur.com/rVa7jiJ.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*101f"
+    schedule: daily 
+
+############################
+#         DISCOVER         #
+############################
+
+  Animated Kids Most Popular:
+    tmdb_discover:
+      limit: 1000
+      with_genres: 16
+      certification_country: US
+      certification: G|PG
+      sort_by: popularity.desc
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    summary: A collection of the most popular Animated Kids movies from TMDb
+    sort_title: "*150"
+    schedule: daily
+    url_poster: https://i.imgur.com/WDRj8a9.png
+    url_background: https://i.imgur.com/juAQnOG.jpg
+
+############################
+#    TRAKT COLLECTIONS     #
+############################
+
+# Made by Magic
+
+  Trending Now (Unplayed):
+    trakt_chart:
+      chart: trending
+      limit: 200
+    sort_title: "!B Trending Now"
+    url_poster: https://i.imgur.com/tnuP538.png
+    url_background: https://i.imgur.com/juAQnOG.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_filtering: user
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    smart_label:
+      sort_by: release.desc
+      all:
+        label: <<smart_label>>
+        unplayed: true
+    schedule: daily
+  Most Watched This Week (Unplayed):
+    trakt_chart:
+      chart: watched
+      time_period: weekly
+      limit: 200
+    sort_title: "!B Watched This Week"
+    url_poster: https://i.imgur.com/2aqBTSM.png
+    url_background: https://i.imgur.com/juAQnOG.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_filtering: user
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    smart_label:
+      sort_by: release.desc
+      all:
+        label: <<smart_label>>
+        unplayed: true
+    schedule: daily
+  Most Watched This Year (Unplayed):
+    trakt_chart:
+      chart: watched
+      time_period: yearly
+      limit: 200
+    sort_title: "!B Watched This Year"
+    url_poster: https://i.imgur.com/AdOXjVU.png
+    url_background: https://i.imgur.com/juAQnOG.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_filtering: user
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    smart_label:
+      sort_by: release.desc
+      all:
+        label: <<smart_label>>
+        unplayed: true
+    schedule: daily
+
+############################
+#         BEST OF          #
+############################
+
+  Best Picture:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&groups=best_picture_winner,oscar_best_picture_nominees
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105"
+    schedule: daily
+    url_poster: https://i.imgur.com/nNTPdYS.png
+    url_background: https://i.imgur.com/juAQnOG.jpg
+  Best Cinematography:
+    imdb_list: https://www.imdb.com/list/ls560369098
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105c"
+    schedule: daily
+    url_poster: https://i.imgur.com/habRJJ5.png
+    url_background: https://i.imgur.com/juAQnOG.jpg
+  Best Film Editing:
+    imdb_list: https://www.imdb.com/list/ls560364494
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105d"
+    schedule: daily
+    url_poster: https://i.imgur.com/9wPQYhQ.png
+    url_background: https://i.imgur.com/juAQnOG.jpg
+  Best Sound:
+    imdb_list: https://www.imdb.com/list/ls560369669
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105e"
+    schedule: daily
+    url_poster: https://i.imgur.com/afy5uFu.png
+    url_background: https://i.imgur.com/juAQnOG.jpg
+  Best Visual Effects:
+    imdb_list: https://www.imdb.com/list/ls560368042
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105f"
+    schedule: daily
+    url_poster: https://i.imgur.com/hER3chA.png
+    url_background: https://i.imgur.com/juAQnOG.jpg
+  Oscars:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    url_poster: https://theposterdb.com/api/assets/192593
+    url_background: https://i.imgur.com/rVa7jiJ.jpg
+    summary: Oscar Winning Movies
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105h"
+    schedule: daily
+  Best of 1970s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?release_date=1970-01-01,1979-12-31&num_votes=10000,&sort=num_votes,desc
+      limit: 250
+    url_poster: https://i.imgur.com/mSXwYk6.jpg
+    url_background: https://i.imgur.com/rVa7jiJ.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105i"
+    schedule: daily
+  Best of 1980s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?release_date=1980-01-01,1989-12-31&num_votes=10000,&sort=num_votes,desc
+      limit: 250
+    url_poster: https://i.imgur.com/8U4DOAZ.jpg
+    url_background: https://i.imgur.com/rVa7jiJ.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105j"
+    schedule: daily
+  Best of 1990s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?release_date=1990-01-01,1999-12-31&num_votes=10000,&sort=num_votes,desc
+      limit: 250
+    url_poster: https://i.imgur.com/las5Lh7.jpg
+    url_background: https://i.imgur.com/rVa7jiJ.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105k"
+    schedule: daily
+  Best of 2000s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?release_date=2000-01-01,2009-12-31&num_votes=10000,&sort=num_votes,desc
+      limit: 250
+    url_poster: https://i.imgur.com/z6XuCkF.jpg
+    url_background: https://i.imgur.com/rVa7jiJ.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105l"
+    schedule: daily
+  Best of 2010s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?release_date=2010-01-01,2019-12-31&num_votes=10000,&sort=num_votes,desc
+      limit: 250
+    url_poster: https://i.imgur.com/FBZM94Q.jpg
+    url_background: https://i.imgur.com/rVa7jiJ.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105m"
+    schedule: daily
+  Best of 2020s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?release_date=2020-01-01,2029-12-31&num_votes=1000,&sort=num_votes,desc
+      limit: 250
+    url_poster: https://i.imgur.com/SXpU7kU.jpg
+    url_background: https://i.imgur.com/rVa7jiJ.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: custom
+    sort_title: "*105n"
+    schedule: daily
+
+############################
+#         NETWORKS         #
+############################
+
+  Apple TV+:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=movie&release_date=2015-01-01,2025-12-31&&companies=co0546168&countries=us&languages=en&sort=release_date,desc&count=250
+    summary: All Apple TV Originals From 2015-2025
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*600"
+    schedule: daily
+    url_poster: https://i.imgur.com/O9iWork.png
+    url_background: https://wallpaper-house.com/data/out/8/wallpaper2you_228774.png
+  Netflix:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=movie&release_date=2015-01-01,2025-12-31&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0144901
+    summary: All Netflix Originals From 2015-2025
+    url_poster: https://i.imgur.com/7kiE1MU.png
+    url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*601"
+    schedule: daily
+  Prime Video:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=movie&release_date=2015-01-01,2025-12-31&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0319272
+    summary: All Amazon Originals From 2015-2025
+    url_poster: https://i.imgur.com/nU3gqqB.png
+    url_background: https://i.imgur.com/2jfs7oS.png
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*602"
+    schedule: daily
+  Hulu:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=movie&release_date=2015-01-01,2025-12-31&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0218858
+    summary: All HULU Originals From 20185-2025
+    url_poster: https://plexcollectionposters.com/images/2019/05/26/Hulu6ddad752a5ce9bac.jpg
+    url_background: https://cdn.vox-cdn.com/thumbor/oR4hqrmTxbX_O4gdJ6np8h-PxFk=/0x439:750x861/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/56311701/Image_uploaded_from_iOS__8_.1503433270.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*603"
+    schedule: daily
+  HBO Max:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=movie&release_date=2015-01-01,2025-12-31&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0754095
+    summary: All HBO Max Originals From 2015-2025
+    url_poster: https://i.redd.it/zxdvw3tk3f151.jpg
+    url_background: https://wallpapercave.com/wp/wp6402755.png
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*604"
+    schedule: daily
+  Paramount+:
+    imdb_list: 
+      url: https://www.imdb.com/search/title/?title_type=movie&release_date=2015-01-01,2025-12-31&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0820547
+    sync_mode: sync
+    summary: All Paramount+ Originals From 2015-2025
+    url_poster: https://i.imgur.com/gReLEbo.png
+    url_background: https://i.imgur.com/rVa7jiJ.jpg
+    collection_mode: default
+    collection_order: release
+    sort_title: "*606"
+    schedule: daily
+############################
+#          GENRES          #
+############################
+
+  Action:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=action
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=action&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Action
+    sync_mode: sync
+    summary: Action film is a genre wherein physical action takes precedence in the storytelling. The film will often have continuous motion and action including physical stunts, chases, fights, battles, and races. The story usually revolves around a hero that has a goal, but is facing incredible odds to obtain it.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/52018
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Adventure:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=adventure
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=adventure&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Adventure
+    sync_mode: sync
+    summary: Adventure film is a genre that revolves around the conquests and explorations of a protagonist. The purpose of the conquest can be to retrieve a person or treasure, but often the main focus is simply the pursuit of the unknown. These films generally take place in exotic locations and play on historical myths. Adventure films incorporate suspenseful puzzles and intricate obstacles that the protagonist must overcome in order to achieve the end goal.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/52218
+    url_background: https://i.imgur.com/THA8wCM.jpg
+      
+  Animation:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=animation
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=animation&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Animation
+    sync_mode: sync
+    summary: Animated film is a collection of illustrations that are photographed frame-by-frame and then played in a quick succession. Since its inception, animation has had a creative and imaginative tendency. Being able to bring animals and objects to life, this genre has catered towards fairy tales and children’s stories. However, animation has long been a genre enjoyed by all ages. As of recent, there has even been an influx of animation geared towards adults. Animation is commonly thought of as a technique, thus it’s ability to span over many different genres.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/120090
+    url_background: https://i.imgur.com/THA8wCM.jpg
+   
+  Comedy:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=comedy
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=comedy&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Comedy
+    sync_mode: sync
+    summary: Comedy is a genre of film that uses humor as a driving force. The aim of a comedy film is to illicit laughter from the audience through entertaining stories and characters. Although the comedy film may take on some serious material, most have a happy ending. Comedy film has the tendency to become a hybrid sub-genre because humor can be incorporated into many other genres. Comedies are more likely than other films to fall back on the success and popularity of an individual star.
+    collection_order: alpha
+    url_poster:  https://theposterdb.com/api/assets/51397
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Crime:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=crime
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=crime&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Crime
+    sync_mode: sync
+    summary: Crime film is a genre that revolves around the action of a criminal mastermind. A Crime film will often revolve around the criminal himself, chronicling his rise and fall. Some Crime films will have a storyline that follows the criminal's victim, yet others follow the person in pursuit of the criminal. This genre tends to be fast paced with an air of mystery – this mystery can come from the plot or from the characters themselves.
+    collection_order: alpha
+    url_poster:  https://theposterdb.com/api/assets/53057
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Drama:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=drama
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=drama&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Drama
+    sync_mode: sync
+    summary: Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues. Whether heroes or heroines are facing a conflict from the outside or a conflict within themselves, Drama film aims to tell an honest story of human struggles.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/52016
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Family:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=family
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=family&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Family
+    sync_mode: sync
+    summary: Family film is a genre that is contains appropriate content for younger viewers. Family film aims to appeal not only to children, but to a wide range of ages. While the storyline may appeal to a younger audience, there are components of the film that are geared towards adults- such as witty jokes and humor. This genre may fall into many other genres, including comedy, adventure, fantasy, and animated film.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/53059
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Fantasy:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=fantasy
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=fantasy&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Fantasy
+    sync_mode: sync
+    summary: Fantasy film is a genre that incorporates imaginative and fantastic themes. These themes usually involve magic, supernatural events, or fantasy worlds. Although it is its own distinct genre, these films can overlap into the horror and science fiction genres. Unlike science fiction, a fantasy film does not need to be rooted in fact. This element allows the audience to be transported into a new and unique world. Often, these films center on an ordinary hero in an extraordinary situation.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/51476
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Gangster:
+    imdb_list:
+      - https://www.imdb.com/list/ls026270180/
+      - https://www.imdb.com/list/ls000093502/
+    sort_title: ++_Gangster
+    sync_mode: sync
+    summary: Gangster film is a sub-genre of crime films that center on organized crime or the mafia. Often the plot revolves around the rise and fall of an organized crime leader. Many Gangster films explore the destructive nature of organized crime, while others attempt to show the humanity of the individual characters.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/62561
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+   
+  History:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=history
+      limit: 100
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=history&sort=user_rating,desc
+      limit: 100
+    sort_title: ++_History
+    sync_mode: sync
+    summary: History film is a genre that takes historical events and people and interprets them in a larger scale. Historical accuracy is not the main focus, but rather the telling of a grandiose story. The drama of an History film is often accentuated by a sweeping musical score, lavish costumes, and high production value.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/58022
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Horror:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=horror
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=horror&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Horror
+    sync_mode: sync
+    summary: Horror film is a genre that aims to create a sense of fear, panic, alarm, and dread for the audience. These films are often unsettling and rely on scaring the audience through a portrayal of their worst fears and nightmares. Horror films usually center on the arrival of an evil force, person, or event. Many Horror films include mythical creatures such as ghosts, vampires, and zombies. Traditionally, Horror films incorporate a large amount of violence and gore into the plot. Though it has its own style, Horror film often overlaps into Fantasy, Thriller, and Science-Fiction genres.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/51475
+    url_background: https://i.imgur.com/THA8wCM.jpg
+   
+  Music:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=music
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=music&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Music
+    sync_mode: sync
+    summary: Music film is genre that revolves around music being an integral part of the characters lives.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/51398
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Musical:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=musical
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=musical&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Musical
+    sync_mode: sync
+    summary: A Musical interweaves vocal and dance performances into the narrative of the film. The songs of a film can either be used to further the story or simply enhance the experience of the audience. These films are often done on a grand scale and incorporate lavish costumes and sets. Traditional musicals center on a well-known star, famous for their dancing or singing skills (i.e. Fred Astaire, Gene Kelly, Judy Garland). These films explore concepts such are love and success, allowing the audience to escape from reality.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/51427
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Mystery:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=mystery
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=mystery&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Mystery
+    sync_mode: sync
+    summary: A Mystery film centers on a person of authority, usually a detective, that is trying to solve a mysterious crime. The main protagonist uses clues, investigation, and logical reasoning. The biggest element in these films is a sense of “whodunit” suspense, usually created through visual cues and unusual plot twists.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/53060
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Pandemic:
+    imdb_list: https://www.imdb.com/list/ls092321048/
+    sort_title: ++_Pandemic
+    sync_mode: sync
+    summary: A Pandemic film resolves around widespread viruses, plagues, and diseases.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/55837
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Romance:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=romance
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=romance&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Romance
+    sync_mode: sync
+    summary: "Romance film can be defined as a genre wherein the plot revolves around the love between two protagonists. This genre usually has a theme that explores an issue within love, including but not limited to: love at first sight, forbidden love, love triangles, and sacrificial love. The tone of Romance film can vary greatly. Whether the end is happy or tragic, Romance film aims to evoke strong emotions in the audience."
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/53062
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Science Fiction:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=sci-fi
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=sci-fi&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Sci-Fi
+    sync_mode: sync
+    summary: Science Fiction (Sci-Fi) film is a genre that incorporates hypothetical, science-based themes into the plot of the film. Often, this genre incorporates futuristic elements and technologies to explore social, political, and philosophical issues. The film itself is usually set in the future, either on earth or in space. Traditionally, a Science Fiction film will incorporate heroes, villains, unexplored locations, fantastical quests, and advanced technology.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/51772
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Sports:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=sport
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=sport&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Sport
+    sync_mode: sync
+    summary: A Sport Film revolves around a sport setting, event, or an athlete. Often, these films will center on a single sporting event that carries significant importance. Sports films traditionally have a simple plot that builds up to the significant sporting event. This genre is known for incorporating film techniques to build anticipation and intensity. Sport films have a large range of sub-genres, from comedies to dramas, and are more likely than other genres to be based true-life events.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/60371
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Stand Up Comedy:
+    imdb_list:
+      - https://www.imdb.com/list/ls070221411/
+      - https://www.imdb.com/list/ls086584751/
+      - https://www.imdb.com/list/ls086022668/
+      - https://www.imdb.com/list/ls049792208/
+      - https://www.imdb.com/list/ls041728102/
+      - https://www.imdb.com/list/ls055644766/
+      - https://www.imdb.com/list/ls064092097/
+    sort_title: ++_Stand Up Comedy
+    sync_mode: sync
+    summary: Stand-up comedy is a comedic style in which a comedian performs in front of a live audience, speaking directly to them through a microphone. Comedians give the illusion that they are dialoguing, but in actuality, they are monologuing a grouping of humorous stories, jokes and one-liners, typically called a shtick, routine, act, or set. Some stand-up comedians use props, music or magic tricks to enhance their acts. Stand-up comedians perform quasi-autobiographical and fictionalized extensions of their offstage selves.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/49137
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Sword & Sorcery:
+    imdb_list: https://www.imdb.com/list/ls022909805
+    sort_title: ++_Sword & Sorcery
+    sync_mode: sync
+    summary: Sword and Sorcery film is a sub-genre of Fantasy that tend to be more plot-driven. These films rely on heavy action and battle scenes. Common themes in Sword and Sorcery films include a rescue mission, saving a princess, and battling a fantastical monster. The worlds and characters in these films are often much less developed than in other fantasy sub-genres. Of all the Fantasy sub-genres, Sword and Sorcery is most likely to be geared towards a younger audience, as many of these films are animated.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/74604
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Thriller:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=thriller
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=thriller&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Thriller
+    sync_mode: sync
+    summary: Thriller Film is a genre that revolves around anticipation and suspense. The aim for Thrillers is to keep the audience alert and on the edge of their seats. The protagonist in these films is set against a problem – an escape, a mission, or a mystery. No matter what sub-genre a Thriller film falls into, it will emphasize the danger that the protagonist faces. The tension with the main problem is built on throughout the film and leads to a highly stressful climax.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/52019
+    url_background: https://i.imgur.com/THA8wCM.jpg
+  War:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=war
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=war&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_War
+    sync_mode: sync
+    summary: War Film is a genre that looks at the reality of war on a grand scale. They often focus on landmark battles as well as political issues within war. This genre usually focuses on a main character and his team of support, giving the audience an inside look into the gritty reality of war.
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/51477
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    
+  Western:
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=western
+      limit: 200
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=10000,&genres=western&sort=user_rating,desc
+      limit: 200
+    sort_title: ++_Western
+    sync_mode: sync
+    summary: "Western Film is a genre that revolves around stories primarily set in the late 19th century in the American Old West. Most Westerns are set between the American Civil War (1865) and the early 1900s. Common themes within Western Film include: the conquest of the wild west, the cultural separation of the East and the West, the West’s resistance to modern change, the conflict between Cowboys and Indians, outlaws, and treasure/gold hunting. American Western Film usually revolves around a stoic hero and emphasizes the importance of honor and sacrifice."
+    collection_order: alpha
+    url_poster: https://theposterdb.com/api/assets/51774
+    url_background: https://i.imgur.com/THA8wCM.jpg

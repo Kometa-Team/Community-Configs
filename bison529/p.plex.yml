@@ -1,0 +1,15 @@
+collections:
+  Plex Popular:
+    sort_title: +02_Popular on Plex
+    tautulli_popular:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    tautulli_watched:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    sync_mode: sync
+    collection_order: alpha
+    url_poster: https://i.imgur.com/iUHXhM2.png
+    summary: Most watched and most popular on Plex over the last month - الاكثر مشاهدة وشعبية في سيرفر بليكس خلال الشهر الماضي.

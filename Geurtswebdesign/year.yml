@@ -1,0 +1,58 @@
+######################################################
+#                Chart Collections                   #
+######################################################
+templates:
+  Best of:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
+    sort_title: +4_Best of <<year>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of <<year>>
+    smart_label: audience_rating.desc
+collections:	
+######################################################
+#                   Best of Year                     #
+######################################################	
+  Best of 2000:
+    template: { name: Best of, year: 2000 }
+  Best of 2001:
+    template: { name: Best of, year: 2001 }
+  Best of 2002:
+    template: { name: Best of, year: 2002 }
+  Best of 2003:
+    template: { name: Best of, year: 2003 }
+  Best of 2004:
+    template: { name: Best of, year: 2004 }
+  Best of 2005:
+    template: { name: Best of, year: 2005 }
+  Best of 2006:
+    template: { name: Best of, year: 2006 }
+  Best of 2007:
+    template: { name: Best of, year: 2007 }
+  Best of 2008:
+    template: { name: Best of, year: 2008 }
+  Best of 2009:
+    template: { name: Best of, year: 2009 }
+  Best of 2010:
+    template: { name: Best of, year: 2010 }
+  Best of 2011:
+    template: { name: Best of, year: 2011 }
+  Best of 2012:
+    template: { name: Best of, year: 2012 }
+  Best of 2013:
+    template: { name: Best of, year: 2013 }
+  Best of 2014:
+    template: { name: Best of, year: 2014 }
+  Best of 2015:
+    template: { name: Best of, year: 2015 }
+  Best of 2016:
+    template: { name: Best of, year: 2016 }
+  Best of 2017:
+    template: { name: Best of, year: 2017 }
+  Best of 2018:
+    template: { name: Best of, year: 2018 }
+  Best of 2019:
+    template: { name: Best of, year: 2019 }
+  Best of 2020:
+    template: { name: Best of, year: 2020 }
+  Best of 2021:
+    template: { name: Best of, year: 2021 }

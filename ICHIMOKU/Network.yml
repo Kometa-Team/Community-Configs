@@ -1,0 +1,143 @@
+templates:
+  network:
+    optional:
+      - network
+    tmdb_network: <<network>>
+    sort_title: +2_<<collection_name>>
+    sync_mode: sync
+    smart_label: episode_added.desc    
+collections:
+
+######################################################
+#                Network Collection                  #
+######################################################
+
+  Netflix:
+    template: { name: network, network: 213 }
+    url_poster: https://i.imgur.com/auDN9hg.jpg
+  Apple TV+:
+    template: { name: network, network: 2552 }
+    url_poster: https://i.imgur.com/uyccKmu.jpg
+  ABC:    
+    template: { name: network, network: "5345, 5250, 18 ,2" }
+    url_poster: https://i.imgur.com/AqVNJ0b.jpg
+  AMC:    
+    template: { name: network, network: "174, 4661" }
+    url_poster: https://i.imgur.com/aBYa2dt.jpg
+  BBC:    
+    template: { name: network, network: "4, 493, 126, 1051, 100, 414, 3590, 428, 3278, 3, 332, 1001" }
+    url_poster: https://i.imgur.com/Ux7xpxh.jpg
+  CBS:    
+    template: { name: network, network: "16, 1709, 2528, 2621" }
+    url_poster: https://i.imgur.com/6vLFziW.jpg
+  FOX:    
+    template: { name: network, network: "19, 1414, 5201, 1067, 1640" }
+    url_poster: https://i.imgur.com/PXQbb34.jpg
+  HBO:    
+    template: { name: network, network: "49, 2593, 3186, 3308"   }
+    url_poster: https://i.imgur.com/mptBqqN.jpg
+  NBC:    
+    template: { name: network, network: "2462, 6" }
+    url_poster: https://i.imgur.com/T2tc2d8.jpg
+  Showtime:    
+    template: { name: network, network: 67 }
+    url_poster: https://i.imgur.com/hZqHG0X.jpg
+  Starz:    
+    template: { name: network, network: 318  }
+    url_poster: https://i.imgur.com/3lqUZL5.jpg
+  SyFy:    
+    template: { name: network, network: "77, 3701" }
+    url_poster: https://i.imgur.com/M8TFtK8.jpg
+  Cinemax:    
+    template: { name: network, network: 359 }
+    url_poster: https://i.imgur.com/nIJgwMd.jpg
+  Hulu:    
+    template: { name: network, network: "453, 1772" }
+    url_poster: https://i.imgur.com/GNj3hbm.jpg
+  HGTV:    
+    template: { name: network, network: 210 }
+    url_poster: https://i.imgur.com/lwAqfAr.jpg
+  TBS:    
+    template: { name: network, network: "68, 160, 4888, 5012" }
+    url_poster: https://i.imgur.com/OwN1WLi.jpg
+  National Geographic:    
+    template: { name: network, network: "43, 799, 1756, 1825, 3355, 4293, 4476, 5432" }
+    url_poster: https://i.imgur.com/mKgajLq.jpg
+  Prime Video:    
+    template: { name: network, network: 1024 }
+    url_poster: https://i.imgur.com/YHyjYjO.jpg
+  YouTube:    
+    template: { name: network, network: "247, 1436, 4869" }
+    url_poster: https://i.imgur.com/cRwu5YY.jpg
+  FX:    
+    template: { name: network, network: "5405, 1641, 88" }
+    url_poster: https://i.imgur.com/wct2KCn.jpg
+  Disney+:    
+    template: { name: network, network: "2739, 2919, 3919" }
+    url_poster: https://i.imgur.com/E5OUKnS.jpg
+  Discovery:    
+    template: { name: network, network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741" }
+    url_poster: https://i.imgur.com/Nv4Gi45.jpg
+  A&E:     
+    template: { name: network, network: "5202, 3688, 2639, 129" }
+    url_poster: https://i.imgur.com/MiJ47o1.jpg
+  Disney XD:    
+    template: { name: network, network: "5137, 2326, 2324, 44" }
+    url_poster: https://i.imgur.com/M1xM9gF.jpg
+  Apple Music:
+    template: { name: network, network: 1932 }
+    url_poster: https://i.imgur.com/PtOhfDu.jpg
+  Cartoon Network:
+    template: { name: network, network: "3917, 2193, 1232, 217, 56" }
+    url_poster: https://i.imgur.com/4UDTpuO.jpg
+  Comedy Central:
+    template: { name: network, network: "4535, 3082, 2436, 2178, 1226, 1087, 278, 47" }
+    url_poster: https://i.imgur.com/1K2TbST.jpg
+  Cooking Channel:
+    template: { name: network, network: "802" }
+    url_poster: https://i.imgur.com/mj3lBRD.jpg
+  Crime & Investigation Network:
+    template: { name: network, network: "1771" }
+    url_poster: https://i.imgur.com/f7fkUAu.jpg
+  Crime + Investigation:
+    template: { name: network, network: "2393, 2392" }
+    url_poster: https://i.imgur.com/Ah5HuS0.jpg
+  Crime+Investigation:
+    template: { name: network, network: "1402" }
+    url_poster: https://i.imgur.com/O2aBeKO.jpg
+  ESPN:
+    template: { name: network, network: "2540, 29, 1004, 297, 5374, 4132, 70, 81" }
+    url_poster: https://i.imgur.com/FddGTrL.jpg
+  ITV:
+    template: { name: network, network: "9, 149, 590, 261, " }
+    url_poster: https://i.imgur.com/FHeE1Lg.jpg
+  Investigation Discovery:
+    template: { name: network, network: "4562, 244" }
+    url_poster: https://i.imgur.com/NMEcBLo.jpg
+  MTV:
+    template: { name: network, network: "2972, 488, 33, 931, 304, 381, 867, 335, 976, 454, 924, 3402, 410, 2234, 2116, 1173, 2294, 959, 1008, 17, 295" }
+    url_poster: https://i.imgur.com/N2ZSYbS.jpg
+  Nickelodeon:
+    template: { name: network, network: "5267, 4015, 2314, 794, 775, 474, 416, 286, 13" }
+    url_poster: https://i.imgur.com/DEYru3B.jpg
+  Nicktoons:
+    template: { name: network, network: "224" }
+    url_poster: https://i.imgur.com/K9wuYte.jpg
+  SBS:
+    template: { name: network, network: "5124, 223, 156, 856, 3970, 2375, 1034" }
+    url_poster: https://i.imgur.com/b8rhHQ3.jpg
+  Stan:
+    template: { name: network, network: "1255" }
+    url_poster: https://i.imgur.com/oDD1P8N.jpg
+  Syfy:
+    template: { name: network, network: "3701, 77" }
+    url_poster: https://i.imgur.com/HbpE5aF.jpg
+  Toon Disney:
+    template: { name: network, network: "142" }
+    url_poster: https://i.imgur.com/OmTcFFV.jpg
+  Toons.TV:
+    template: { name: network, network: "1174" }
+    url_poster: https://i.imgur.com/LEEmaYs.jpg
+  Paramount+:
+    template: { name: network, network: "4330" }
+    url_poster: https://i.imgur.com/cc2D5XF.jpg

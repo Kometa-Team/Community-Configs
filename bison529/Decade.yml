@@ -1,0 +1,76 @@
+#####################################################
+#              Decade Collections                   #
+#####################################################
+
+collections:
+  Best of 1970s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=1970-01-01,1979-12-31&num_votes=10000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/2gEMA21.jpeg
+    sort_title: +10_01Decade
+    sync_mode: sync
+    collection_order: custom
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  Best of 1980s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=1980-01-01,1989-12-31&num_votes=10000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/ZpcZmvB.jpeg
+    sort_title: +10_02Decade
+    sync_mode: sync
+    collection_order: custom
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  Best of 1990s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=1990-01-01,1999-12-31&num_votes=10000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/OqqQAlb.jpeg
+    sort_title: +10_03Decade
+    sync_mode: sync
+    collection_order: custom
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  Best of 2000s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=2000-01-01,2009-12-31&num_votes=10000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/a7do3gJ.jpeg
+    sort_title: +10_04Decade
+    sync_mode: sync
+    collection_order: custom
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  Best of 2010s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=2010-01-01,2019-12-31&num_votes=10000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/PmHtndU.jpeg
+    sort_title: +10_05Decade
+    sync_mode: sync
+    collection_order: custom
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  Best of 2020s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=2020-01-01,2029-12-31&num_votes=1000,&sort=user_rating,desc
+      limit: 150
+    url_poster: https://i.imgur.com/nPnyEqe.jpeg
+    sort_title: +10_06Decade
+    sync_mode: sync
+    collection_order: custom
+    visible_library: false
+    visible_home: false
+    visible_shared: false

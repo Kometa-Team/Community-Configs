@@ -1,0 +1,341 @@
+overlays:
+
+############################
+#          CHARTS          #
+############################
+
+  IMDb:
+    overlay: IMDb
+    plex_search:
+      all:
+        collection: IMDb Top 250
+
+############################
+#    STREAMING SERVICES    #
+############################
+
+  Netflix Film:
+    overlay: Netflix Film
+    plex_search:
+      all:
+        collection: Netflix
+  Netflix Stand-up:
+    overlay: Netflix Stand-up
+    plex_search:
+      all:
+        collection: Netflix Stand-up
+  Apple TV+:
+    overlay: Apple TV+
+    plex_search:
+      all:
+        collection: Apple TV+
+  Prime Video:
+    overlay: Prime Video
+    plex_search:
+      all:
+        collection: Prime Video
+  Hulu:
+    overlay: Hulu
+    plex_search:
+      all:
+        collection: Hulu
+  HBO Max:
+    overlay: HBO Max
+    plex_search:
+      all:
+        collection: HBO Max
+  Paramount+:
+    overlay: Paramount+
+    plex_search:
+      all:
+        collection: Paramount+
+
+############################
+#         STUDIOS          #
+############################
+
+  20th Century Fox:
+    overlay: 20th Century Fox
+    plex_search:
+      all:
+        studio: 20th Century Fox
+  Amazon Studios:
+    overlay: Amazon Studios
+    plex_search:
+      all:
+        studio: Amazon Studios
+  Amblin Entertainment:
+    overlay: Amblin Entertainment
+    plex_search:
+      all:
+        studio: Amblin Entertainment
+  Bad Robot:
+    overlay: Bad Robot
+    plex_search:
+      all:
+        studio: Bad Robot
+  Blue Sky Studios:
+    overlay: Blue Sky Studios
+    plex_search:
+      all:
+        studio: Blue Sky Studios
+  Chernin Entertainment:
+    overlay: Chernin Entertainment
+    plex_search:
+      all:
+        studio: Chernin Entertainment
+  Columbia Pictures:
+    overlay: Columbia Pictures
+    plex_search:
+      all:
+        studio: Columbia Pictures
+  Davis Entertainment:
+    overlay: Davis Entertainment
+    plex_search:
+      all:
+        studio: Davis Entertainment
+  DC:
+    overlay: DC
+    plex_search:
+      all:
+        collection: DC
+  Dimension Films:
+    overlay: Dimension Films
+    plex_search:
+      all:
+        studio: Dimension Films
+  Disney Channel:
+    overlay: Disney Channel
+    plex_search:
+      all:
+        studio: Disney Channel
+  DreamWorks:
+    overlay: DreamWorks
+    plex_search:
+      all:
+        studio: DreamWorks
+  DreamWorks Animation:
+    overlay: DreamWorks Animation
+    plex_search:
+      all:
+        studio: DreamWorks Animation
+  Eon Productions:
+    overlay: Eon Productions
+    plex_search:
+      all:
+        studio: Eon Productions
+  Focus Features:
+    overlay: Focus Features
+    plex_search:
+      all:
+        studio: Focus Features
+  Fox 2000 Pictures:
+    overlay: Fox 2000 Pictures
+    plex_search:
+      all:
+        studio: Fox 2000 Pictures
+  Fox Searchlight Pictures:
+    overlay: Fox Searchlight Pictures
+    plex_search:
+      all:
+        studio: Fox Searchlight Pictures
+  Happy Madison Productions:
+    overlay: Happy Madison Productions
+    plex_search:
+      all:
+        studio: Happy Madison Productions
+  HBO:
+    overlay: HBO
+    plex_search:
+      all:
+        studio: HBO
+  Illumination:
+    overlay: Illumination
+    plex_search:
+      all:
+        studio: Illumination
+  Legendary Pictures:
+    overlay: Legendary Pictures
+    plex_search:
+      all:
+        studio: Legendary Pictures
+  Lionsgate:
+    overlay: Lionsgate
+    plex_search:
+      all:
+        studio: Lionsgate
+  Lucasfilm:
+    overlay: Lucasfilm
+    plex_search:
+      all:
+        studio: Lucasfilm
+  Marvel:
+    overlay: Marvel
+    plex_search:
+      all:
+        collection: Marvel
+#  Marvel Studios:
+#    overlay: Marvel Studios
+#    plex_search:
+#      all:
+#        collection: Marvel Studios
+  Metro-Goldwyn-Mayer:
+    overlay: Metro-Goldwyn-Mayer
+    plex_search:
+      all:
+        studio: Metro-Goldwyn-Mayer
+  Miramax:
+    overlay: Miramax
+    plex_search:
+      all:
+        studio: Miramax
+  Original Film:
+    overlay: Original Film
+    plex_search:
+      all:
+        studio: Original Film
+  Orion Pictures:
+    overlay: Orion Pictures
+    plex_search:
+      all:
+        studio: Orion Pictures
+  Paramount:
+    overlay: Paramount
+    plex_search:
+      all:
+        studio: Paramount
+  Pixar:
+    overlay: Pixar
+    plex_search:
+      all:
+        collection: Pixar
+  Regency:
+    overlay: Regency
+    plex_search:
+      all:
+        studio: Regency
+  Screen Gems:
+    overlay: Screen Gems
+    plex_search:
+      all:
+        studio: Screen Gems
+  Silver Pictures:
+    overlay: Silver Pictures
+    plex_search:
+      all:
+        studio: Silver Pictures
+  Sony Pictures:
+    overlay: Sony Pictures
+    plex_search:
+      all:
+        studio: Sony Pictures
+  Summit Entertainment:
+    overlay: Summit Entertainment
+    plex_search:
+      all:
+        studio: Summit Entertainment
+  The Weinstein Company:
+    overlay: The Weinstein Company
+    plex_search:
+      all:
+        studio: The Weinstein Company
+  Touchstone Pictures:
+    overlay: Touchstone Pictures
+    plex_search:
+      all:
+        studio: Touchstone Pictures
+  TriStar Pictures:
+    overlay: TriStar Pictures
+    plex_search:
+      all:
+        studio: TriStar Pictures
+  United Artists:
+    overlay: United Artists
+    plex_search:
+      all:
+        studio: United Artists
+  Universal Pictures:
+    overlay: Universal Pictures
+    plex_search:
+      all:
+        studio: Universal Pictures
+  Village Roadshow Pictures:
+    overlay: Village Roadshow Pictures
+    plex_search:
+      all:
+        studio: Village Roadshow Pictures
+  Walt Disney Animation Studios:
+    overlay: Walt Disney Animation Studios
+    plex_search:
+      all:
+        collection: Walt Disney Animation Studios
+  Walt Disney Pictures:
+    overlay: Walt Disney Pictures
+    plex_search:
+      all:
+        studio: Walt Disney Pictures
+  Walt Disney Productions:
+    overlay: Walt Disney
+    plex_search:
+      all:
+        studio: Walt Disney Productions
+  Warner Bros. Animation:
+    overlay: Warner Bros. Pictures
+    plex_search:
+      all:
+        studio: Warner Bros. Animation
+  Warner Bros. Pictures:
+    overlay: Warner Bros. Pictures
+    plex_search:
+      all:
+        studio: Warner Bros. Pictures
+
+############################
+#          AUDIO           #
+############################
+
+  TrueHD Atmos:
+    overlay: TrueHD Atmos
+    plex_all: true
+    filters:
+      filepath: TrueHD Atmos
+  DTS-HD MA:
+    overlay: DTS-HD MA
+    plex_all: true
+    filters:
+      filepath: DTS-HD MA
+
+############################
+#          OSCARS          #
+############################
+
+  Best Picture:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Picture
+  Best Animated Feature Film:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Animated Feature Film
+  Best Cinematograpghy:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Cinematograpghy
+  Best Film Editing:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Film Editing
+  Best Sound:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Sound
+  Best Visual Effects:
+    overlay: Oscars
+    plex_search:
+      all:
+        collection: Best Visual Effects
