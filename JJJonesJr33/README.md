@@ -1,7 +1,11 @@
 **Proper Movie, TV Shows, and Anime configs for Single PMM Instance & Multiple PMM Instances Setup**
-
+______________________________________________________________________________________________________________________
 **NOTICE 5/31/2022** - Overlays have been temporarily removed until I am able to update for the latest PMM release.
+______________________________________________________________________________________________________________________
+**TPDB** You can find all my poasters here https://theposterdb.com/user/jjjonesjr33
 
+Have questions, or need support? Get ahold of me on one of my **socials** at https://jjjonesjr33.com/
+______________________________________________________________________________________________________________________
 **Single Instance** (Simple Setup)
 
 If you are using a single instance of PMM - Copy everything in ```Plex-Meta-Manager-All``` to your docker container location and edit the config.yml to match your settings. Then run the container, open a terminal window, and use the following command ```python plex_meta_manager.py -r```
@@ -31,10 +35,10 @@ The way I have my PMM setup is via mutiple docker containers in Unraid. I have o
 
 Special thanks to the PMM users and their configs that I drew inspiration from
 <br>
-"**Glasti1**, **Hiren-Z**, **OhMyBahGosh**, **tuxpeople**, **cpt-kuesel**, **meisnate12**, **TheUnchainedZebra**, **Evil Tacctician**"
+**Glasti1**, **Hiren-Z**, **OhMyBahGosh**, **tuxpeople**, **cpt-kuesel**, **meisnate12**, **TheUnchainedZebra**, **Evil Tacctician**
 
 The users who created, supported, and helped with creating poasters
 <br>
- "**mikenobbs** & **Yozora** 
+ **mikenobbs** & **Yozora**
 
 And all the users of Reddit who have contributed to the cause! :D
