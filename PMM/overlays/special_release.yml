@@ -80,7 +80,7 @@ overlays:
       - name: IMAX-E
     plex_all: true
     filters:
-      filepath.regex: '(?i)\[IMAX Enhanced\]'
+      filepath.regex: '(?i)\bIMAX Enhanced\b'
 
   IMAX:
     template:
@@ -89,4 +89,4 @@ overlays:
       - name: IMAX
     plex_all: true
     filters:
-      filepath.regex: '(?i)\[IMAX\]'
+      filepath.regex: '(?i)\bIMAX\b'
