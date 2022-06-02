@@ -47,7 +47,7 @@ templates:
   AudioCodec:
     optional:
       - overlay_level
-      - <<use_<<slug>>>>
+      - use_<<slug>>
     default:
       overlay: <<overlay_name>>
       horizontal_offset: 0
@@ -82,7 +82,7 @@ overlays:
       - name: AudioCodec
         overlay: Opus
         weight: 5
-        slug: Opus
+        slug: opus
     plex_all: true
     filters:
       filepath.regex: '(?i)\bOPUS(\b|\d)'

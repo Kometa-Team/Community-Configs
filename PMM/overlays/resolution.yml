@@ -41,8 +41,8 @@ templates:
   Resolution:
     optional:
       - overlay_level
-      - <<use_<<opt1>>>>
-      - <<use_<<opt2>>>>
+      - use_<<opt1>>
+      - use_<<opt2>>
     default:
       overlay: <<overlay_name>>
       horizontal_offset: 15
@@ -62,86 +62,30 @@ templates:
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-
-  4K-DV:
+  NoResolution:
     optional:
-      - use_1
-      - use_2
+      - overlay_level
+      - use_<<opt1>>
+      - use_<<opt2>>
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 15
+      vertical_align: top
+    collection_level: <<overlay_level>>
     allowed_library_types:
-      - <<use_1>>
-      - <<use_2>>
-
-  4K-HDR:
-    default:
-      use_4k: true
-      use_hdr: true
-    allowed_library_types: <<use_4k>>, <<use_hdr>>
-
-  4K:
-    default:
-      use_4k: true
-    allowed_library_types: <<use_4k>>
-
-  1080P-DV:
-    default:
-      use_1080p: true
-      use_dv: true
-    allowed_library_types: <<use_1080p>>, <<use_dv>>
-
-  1080P-HDR:
-    default:
-      use_1080p: true
-      use_hdr: true
-    allowed_library_types: <<use_1080p>>, <<use_hdr>>
-
-  1080P:
-    default:
-      use_1080p: true
-    allowed_library_types: <<use_1080p>>
-
-  720P-DV:
-    default:
-      use_720p: true
-      use_dv: true
-    allowed_library_types: <<use_720p>>, <<use_dv>>
-
-  720P-HDR:
-    default:
-      use_720p: true
-      use_hdr: true
-    allowed_library_types: <<use_720p>>, <<use_hdr>>
-
-  720P:
-    default:
-      use_720p: true
-    allowed_library_types: <<use_720p>>
-
-  480P-DV:
-    default:
-      use_480p: true
-      use_dv: true
-    allowed_library_types: <<use_480p>>, <<use_dv>>
-
-  480P-HDR:
-    default:
-      use_480p: true
-      use_hdr: true
-    allowed_library_types: <<use_480p>>, <<use_hdr>>
-
-  480P:
-    default:
-      use_480p: true
-    allowed_library_types: <<use_480p>>
-
-  DV:
-    default:
-      use_dv: true
-    allowed_library_types: <<use_dv>>
-
-  HDR:
-    default:
-      use_hdr: true
-    allowed_library_types: <<use_hdr>>
+      - <<use_<<opt1>>>>
+      - <<use_<<opt2>>>>
+    overlay:
+      name: <<overlay_name>>
+      git: PMM/overlays/images/<<overlay>>
+      group: res
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
 
 overlays:
 

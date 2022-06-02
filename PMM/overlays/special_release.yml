@@ -35,7 +35,7 @@ templates:
   SpecialRelease:
     optional:
       - overlay_level
-      - <<use_<<slug>>>>
+      - use_<<slug>>
     default:
       overlay: <<overlay_name>>
       horizontal_offset: 15
