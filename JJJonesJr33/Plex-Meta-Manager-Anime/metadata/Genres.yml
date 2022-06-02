@@ -1,0 +1,165 @@
+#############################
+##    Anime Collections    ##
+#############################
+
+##########################################################
+##                 User/Config Credits                  ##
+##          Giving Credit Where Credit is Due           ##
+##                    JJJonesJr33                       ##
+## Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel ##
+##    meisnate12, TheUnchainedZebra, Evil Tacctician    ##
+##########################################################
+
+###########################
+##    Anime Templates    ##
+###########################
+
+templates:
+  MAL Genre:
+    mal_genre:
+      genre_id: <<genre_id>>
+    url_poster: <<poster>>
+    collection_order: alpha
+    collection_mode: hide
+    sync_mode: sync
+  MAL User:
+    sort_title: ~<<collection_name>>
+    url_poster: <<poster>>
+    mal_userlist:
+      username: <<username>>
+      status: plan_to_watch
+      sort_by: title
+      limit: 500
+    collection_order: alpha
+    collection_mode: hide
+    sync_mode: sync    
+
+#############################
+##    Genre Collections    ##
+#############################
+
+collections:
+  # Collection1: # Replace Username1 with a valid MAL Username
+    # template: { name: MAL User, username: Username1, poster:  }
+  # Collection2: # Replace Username2 with a valid MAL Username
+    # template: { name: MAL User, username: Username2, poster:  }
+  Top Airing Anime:
+    mal_airing: 10
+    collection_order: custom
+    sort_title: ++++++++_Top_Airing
+    sync_mode: sync
+  Most Popular Anime:
+    mal_popular: 20
+    collection_order: custom
+    sort_title: ++++++++_Most_Popular
+    sync_mode: sync
+  Most Favorited Anime:
+    mal_favorite: 20
+    collection_order: custom
+    sort_title: ++++++++_Most_Favorited
+    sync_mode: sync
+  Seasonal Winter:
+    mal_season:
+      season: winter
+    collection_order: custom
+    sort_title: +++++++_Winter
+    sync_mode: sync
+  Seasonal Spring:
+    mal_season:
+      season: spring
+    collection_order: custom
+    sort_title: +++++++_Spring
+    sync_mode: sync
+  Seasonal Summer:
+    mal_season:
+      season: summer
+    collection_order: custom
+    sort_title: +++++++_Summer
+    sync_mode: sync
+  Seasonal Fall:
+    mal_season:
+      season: fall
+    collection_order: custom
+    sort_title: +++++++_Fall
+    sync_mode: sync
+  Cars:
+    template: { name: MAL Genre, genre_id: 3, poster: https://i.imgur.com/NFyJnpU.png}
+  Demons:
+    template: { name: MAL Genre, genre_id: 6, poster: https://theposterdb.com/api/assets/213650}
+  Ecchi:
+    template: { name: MAL Genre, genre_id: 9, poster: https://i.imgur.com/nff9QiA.png}
+  Game:
+    template: { name: MAL Genre, genre_id: 11, poster: https://theposterdb.com/api/assets/213657}
+  Harem:
+    template: { name: MAL Genre, genre_id: 35, poster: https://i.imgur.com/tGNdAoS.png}
+  Mecha:
+    template: { name: MAL Genre, genre_id: 18, poster: https://theposterdb.com/api/assets/213668}
+  Military:
+    template: { name: MAL Genre, genre_id: 38, poster: https://i.imgur.com/Qy3lro1.png}
+  Psychological:
+    template: { name: MAL Genre, genre_id: 40, poster: https://i.imgur.com/SXprRBs.png}
+  Samurai:
+    template: { name: MAL Genre, genre_id: 21, poster: https://theposterdb.com/api/assets/213669}
+  School:
+    template: { name: MAL Genre, genre_id: 23, poster: https://i.imgur.com/B4IOl5a.png}
+  Shoujo:
+    template: { name: MAL Genre, genre_id: 25, poster: https://i.imgur.com/7GVaP7r.png}
+  Shounen:
+    template: { name: MAL Genre, genre_id: 27, poster: https://i.imgur.com/t5vDnQg.png}
+  Slice of Life:
+    template: { name: MAL Genre, genre_id: 36, poster: https://theposterdb.com/api/assets/213663}
+  Space:
+    template: { name: MAL Genre, genre_id: 29, poster: https://theposterdb.com/api/assets/213661}
+  Supernatural:
+    template: { name: MAL Genre, genre_id: 37, poster: https://theposterdb.com/api/assets/213670}
+  Super Power:
+    template: { name: MAL Genre, genre_id: 31, poster: https://theposterdb.com/api/assets/213659}
+  Vampire:
+    template: { name: MAL Genre, genre_id: 32, poster: https://theposterdb.com/api/assets/213671}
+  Action:
+    template: { name: MAL Genre, genre_id: 1, poster: https://theposterdb.com/api/assets/213642}
+  Adventure:
+    template: { name: MAL Genre, genre_id: 2, poster: https://theposterdb.com/api/assets/213632}
+  Comedy:
+    template: { name: MAL Genre, genre_id: 4, poster: https://theposterdb.com/api/assets/213629}
+  Drama:
+    template: { name: MAL Genre, genre_id: 8, poster: https://theposterdb.com/api/assets/213630}
+  Fantasy:
+    template: { name: MAL Genre, genre_id: 10, poster: https://theposterdb.com/api/assets/213631}
+  Historical:
+    template: { name: MAL Genre, genre_id: 13, poster: https://theposterdb.com/api/assets/213640}
+  Horror:
+    template: { name: MAL Genre, genre_id: 14, poster: https://theposterdb.com/api/assets/213641}
+  Martial Arts:
+    template: { name: MAL Genre, genre_id: 17, poster: https://theposterdb.com/api/assets/213628}
+  Music:
+    template: { name: MAL Genre, genre_id: 19, poster: https://theposterdb.com/api/assets/213639}
+  Mystery:
+    template: { name: MAL Genre, genre_id: 7, poster: https://theposterdb.com/api/assets/213638}
+  Romance:
+    template: { name: MAL Genre, genre_id: 22, poster: https://theposterdb.com/api/assets/213637}
+  Sci-Fi:
+    template: { name: MAL Genre, genre_id: 24, poster: https://theposterdb.com/api/assets/213635}
+  Sports:
+    template: { name: MAL Genre, genre_id: 30, poster: https://theposterdb.com/api/assets/213634}
+  Boys Love:
+    template: { name: MAL Genre, genre_id: 28, poster: https://i.imgur.com/H0XhR9g.png}
+  Girls Love:
+    template: { name: MAL Genre, genre_id: 26, poster: https://i.imgur.com/P0XhZdI.png}
+  Gourmet:
+    template: { name: MAL Genre, genre_id: 47, poster: https://theposterdb.com/api/assets/213666}
+  Erotica:
+    template: { name: MAL Genre, genre_id: 49, poster: https://i.imgur.com/NBPx6PY.png}
+  Hentai:
+    template: { name: MAL Genre, genre_id: 12, poster: https://i.imgur.com/NBPx6PY.png}
+  Parody:
+    template: { name: MAL Genre, genre_id: 20, poster: https://i.imgur.com/BhsCNRD.png}
+  Police:
+    template: { name: MAL Genre, genre_id: 39, poster: https://i.imgur.com/i6bDZVq.png}
+  Thriller:
+    template: { name: MAL Genre, genre_id: 41, poster: https://theposterdb.com/api/assets/213633}
+  # Unmatched:
+    # plex_collectionless:
+       # exclude: Test
+    # sort_title: ~_Unmatched
+    # collection_order: alpha

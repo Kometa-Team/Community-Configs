@@ -1,0 +1,81 @@
+###############################
+##    Decades Collections    ##
+###############################
+
+##########################################################
+##                 User/Config Credits                  ##
+##          Giving Credit Where Credit is Due           ##
+##                    JJJonesJr33                       ##
+## Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel ##
+##    meisnate12, TheUnchainedZebra, Evil Tacctician    ##
+##########################################################
+
+############################
+##    Decade Templates    ##
+############################
+
+templates:        
+  Decade:
+    smart_filter:
+      any:
+        decade: <<decade>>
+      collection_order: release
+      collection_mode: hide
+
+####################################
+##       Collections Lists        ##
+####################################
+
+collections:
+  2030's Films:
+    template: {name: Decade, decade: 2030}
+    url_poster: https://theposterdb.com/api/assets/213590
+    sort_title: +++++_2030's Films
+  2020's Films:
+    template: {name: Decade, decade: 2020}
+    url_poster: https://theposterdb.com/api/assets/213589
+    sort_title: +++++_2020's Films
+  2010's Films:
+    template: {name: Decade, decade: 2010}
+    url_poster: https://theposterdb.com/api/assets/213588
+    sort_title: +++++_2010's Films
+  2000's Films:
+    template: {name: Decade, decade: 2000}
+    url_poster: https://theposterdb.com/api/assets/213587
+    sort_title: +++++_2000's Films
+  1990's Films:
+    template: {name: Decade, decade: 1990}
+    url_poster: https://theposterdb.com/api/assets/213586
+    sort_title: +++++_1990's Films
+  1980's Films:
+    template: {name: Decade, decade: 1980}
+    url_poster: https://theposterdb.com/api/assets/213585
+    sort_title: +++++_1980's Films
+  1970's Films:
+    template: {name: Decade, decade: 1970}
+    url_poster: https://theposterdb.com/api/assets/213584
+    sort_title: +++++_1970's Films
+  1960's Films:
+    template: {name: Decade, decade: 1960}
+    url_poster: https://theposterdb.com/api/assets/213583
+    sort_title: +++++_1960's Films
+  1950's Films:
+    template: {name: Decade, decade: 1950}
+    url_poster: https://theposterdb.com/api/assets/213582
+    sort_title: +++++_1950's Films
+  1940's Films:
+    template: {name: Decade, decade: 1940}
+    url_poster: https://theposterdb.com/api/assets/213581
+    sort_title: +++++_1940's Films
+  1930's Films:
+    template: {name: Decade, decade: 1930}
+    url_poster: https://theposterdb.com/api/assets/213580
+    sort_title: +++++_1930's Films
+  1920's Films:
+    template: {name: Decade, decade: 1920}
+    url_poster: https://theposterdb.com/api/assets/213579
+    sort_title: +++++_1920's Films
+  1910's Films:
+    template: {name: Decade, decade: 1910}
+    url_poster: https://theposterdb.com/api/assets/213578
+    sort_title: +++++_1910's Films
