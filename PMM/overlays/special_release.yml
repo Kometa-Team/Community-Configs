@@ -22,6 +22,13 @@
 #          vertical_offset: 113                             #
 #          # Set the vertical align for the overlay         #
 #          vertical_align: bottom                           #
+#                                                           #
+#          # Use the Criterion overlay                      #
+#          use_criterion: true                              #
+#          # Use the IMAX-E overlay                         #
+#          use_enhanced: true                               #
+#          # Use the IMAX overlay                           #
+#          use_imax: true                                   #
 #############################################################
 
 templates:
@@ -35,6 +42,7 @@ templates:
       vertical_offset: 113
       vertical_align: bottom
     collection_level: <<overlay_level>>
+    allowed_library_types: <<use_<<slug>>>>
     overlay:
       name: <<overlay_name>>
       git: PMM/overlays/images/<<overlay>>
@@ -45,28 +53,13 @@ templates:
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
 
-  Criterion:
-    default:
-      Criterion: true
-    allowed_library_types: <<Criterion>>
-
-  IMAX-E:
-    default:
-      IMAX-E: true
-    allowed_library_types: <<IMAX-E>>
-
-  IMAX:
-    default:
-      IMAX: true
-    allowed_library_types: <<IMAX>>
-
 overlays:
 
   Criterion:
     template:
       - name: SpecialRelease
         weight: 30
-      - name: Criterion
+        slug: criterion
     plex_all: true
     filters:
       filepath.regex:
@@ -77,7 +70,7 @@ overlays:
     template:
       - name: SpecialRelease
         weight: 20
-      - name: IMAX-E
+        slug: enhanced
     plex_all: true
     filters:
       filepath.regex: '(?i)\bIMAX Enhanced\b'
@@ -86,7 +79,7 @@ overlays:
     template:
       - name: SpecialRelease
         weight: 10
-      - name: IMAX
+        slug: imax
     plex_all: true
     filters:
       filepath.regex: '(?i)\bIMAX\b'

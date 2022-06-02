@@ -52,8 +52,8 @@ templates:
       horizontal_align: left
       vertical_offset: 135
       vertical_align: top
-    allowed_library_types: <<use_<<slug>>>>
     collection_level: <<overlay_level>>
+    allowed_library_types: <<use_<<slug>>>>
     overlay:
       name: <<overlay_name>>
       git: PMM/overlays/images/<<overlay>>
@@ -63,9 +63,7 @@ templates:
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-    plex_all: true
-    filters:
-      filepath.regex: <<regex>>
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/<<slug>>-<<library_type>>s
 
 overlays:
 
@@ -74,53 +72,45 @@ overlays:
       - name: Streaming
         weight: 200
         slug: amazon
-        regex: '(?i)\b(amzn|amazon)\b'
 
   AppleTV:
     template:
       - name: Streaming
         weight: 200
         slug: appletv
-        regex: '(?i)\b(atvp|aptv|Apple TV\+)\b'
 
   Disney:
     template:
       - name: Streaming
         weight: 200
         slug: disney
-        regex: '(?i)\b(dsnp|dsny|disney|Disney\+)\b'
 
   HBO-Max:
     template:
       - name: Streaming
         weight: 200
         slug: hbomax
-        regex: '(?i)\b(hmax|hbom|HBO Max)\b'
 
   Hulu:
     template:
       - name: Streaming
         weight: 200
         slug: hulu
-        regex: '(?i)\b(hulu)\b'
 
   Netflix:
     template:
       - name: Streaming
         weight: 200
         slug: netflix
-        regex: '(?i)\b(nf|netflix)\b'
 
   Paramount:
     template:
       - name: Streaming
         weight: 200
         slug: paramount
-        regex: '(?i)\b(pmtp|Paramount Plus)\b'
 
   Peacock:
     template:
       - name: Streaming
         weight: 200
         slug: peacock
-        regex: '(?i)\b(pcok|peacock)\b'

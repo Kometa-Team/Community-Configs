@@ -126,6 +126,16 @@ templates:
       use_480p: true
     allowed_library_types: <<use_480p>>
 
+  DV:
+    default:
+      use_dv: true
+    allowed_library_types: <<use_dv>>
+
+  HDR:
+    default:
+      use_hdr: true
+    allowed_library_types: <<use_hdr>>
+
 overlays:
 
   4K-DV:
@@ -247,3 +257,21 @@ overlays:
     plex_search:
       any:
         resolution.regex: '(?i)480|sd'
+
+  DV:
+    template:
+      - name: DV
+      - name: Resolution
+        weight: 5
+    plex_all: true
+    filters:
+      has_dolby_vision: true
+
+  HDR:
+    template:
+      - name: HDR
+      - name: Resolution
+        weight: 0
+    plex_search:
+      all:
+        hdr: true
