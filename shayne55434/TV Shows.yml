@@ -10,16 +10,10 @@ templates:
     sync_mode: sync
 
 collections:
-#  4K Overlay:
-#    plex_search:
-#      all:
-#        resolution: 4K
-#    item_overlay: 4K-Mini
-#    item_assets: true
-#    build_collection: false
 ######################################################
 #                       Charts                       #
 ######################################################
+
   Plex Popular:
     template: { name: Chart, num: 1 }
     tautulli_popular:
@@ -59,7 +53,8 @@ collections:
 ######################################################
 #                     TV Series                      #
 ######################################################
-  24:
+
+  "24":
     tmdb_show: 1973
     item_assets: true
     build_collection: false
@@ -117,6 +112,10 @@ collections:
     build_collection: false
   The Legend of Korra:
     tmdb_show: 33880
+    item_assets: true
+    build_collection: false
+  Letterkenny:
+    tmdb_show: 65798
     item_assets: true
     build_collection: false
   Loki:
@@ -199,6 +198,10 @@ collections:
     tmdb_show: 688
     item_assets: true
     build_collection: false
+  The Witcher:
+    tmdb_show: 71912
+    item_assets: true
+    build_collection: false
   Yellowstone:
     tmdb_show: 73586
     item_assets: true
@@ -207,16 +210,17 @@ collections:
 ######################################################
 #                Network Collections                 #
 ######################################################
+
   A&E:
     template: { name: network, network: "129, 2639, 3688" }
   ABC:
     template: { name: network, network: "2, 75, 2791" }
   Adult Swim:
-    template: { name: network, network: 80 }
+    template: { name: network, network: "80" }
   Apple+:
-    template: { name: network, network: 2552 }
+    template: { name: network, network: "2552" }
   Amazon:
-    template: { name: network, network: 1024 }
+    template: { name: network, network: "1024" }
   AMC:
     template: { name: network, network: "174, 4661" }
   Cartoon Network:
@@ -224,33 +228,33 @@ collections:
   CBS:
     template: { name: network, network: "16, 2528", "1709", "2621" }
   Cinemax:
-    template: { name: network, network: 359 }
+    template: { name: network, network: "359" }
   Discovery:
     template: { name: network, network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741" }
   Disney+:
     template: { name: network, network: "2739, 2919" }
   Fox:
-    template: { name: network, network: 19 }
+    template: { name: network, network: "19" }
   Freeform:
-    template: { name: network, network: 1267 }
+    template: { name: network, network: "1267" }
   FX:
-    template: { name: network, network: 88 }
+    template: { name: network, network: "88" }
   FXX:
-    template: { name: network, network: 1035 }
+    template: { name: network, network: "1035" }
   HBO:
     template: { name: network, network: "49, 2593, 3186, 3308" }
   HGTV:
-    template: { name: network, network: 210 }
+    template: { name: network, network: "210" }
   Hulu:
-    template: { name: network, network: 453 }
+    template: { name: network, network: "453" }
   National Geographic:
     template: { name: network, network: "43, 799, 1756, 1825, 3355, 4293, 4476" }
   Netflix:
-    template: { name: network, network: 213 }
+    template: { name: network, network: "213" }
   Prime Video:
-    template: { name: network, network: 1024 }
+    template: { name: network, network: "1024" }
   Showtime:
-    template: { name: network, network: 67 }
+    template: { name: network, network: "67" }
   Starz:
     template: { name: network, network: "318, 758, 4906" }
   Syfy:

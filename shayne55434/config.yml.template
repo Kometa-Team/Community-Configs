@@ -1,0 +1,209 @@
+libraries:                                      # Library mappings must have a colon (:) placed after them
+  Movies:
+    metadata_path:
+      - file: config/Movies.yml
+    overlay_path:
+      - remove_overlays: false
+      - git: PMM/overlays/imdb_top_250
+    settings:
+      asset_directory: 
+        - config/assets/movies
+        - config/assets/movie_collections
+  TV Shows:
+    metadata_path:
+      - file: config/TV Shows.yml
+    settings:
+      asset_directory:
+        - config/assets/tv_shows
+        - config/assets/tv_show_collections
+    operations:
+      assets_for_all: true
+  Anime:
+    metadata_path:
+      - file: config/Anime.yml
+    settings:
+      asset_directory: config/assets/anime
+      assets_for_all: true
+    sonarr:
+      root_folder_path: /mnt/unionfs/media/anime
+      series_type: anime
+  Kid's TV:
+    metadata_path:
+      - file: config/KidsTV.yml
+    settings:
+      asset_directory:
+        - config/assets/tv_shows
+        - config/assets/tv_show_collections
+    operations:
+      assets_for_all: true
+    sonarr:
+      root_folder_path: /mnt/unionfs/media/kidstv
+  4K Movies:
+    metadata_path:
+      - file: config/Movies.yml
+    overlay_path:
+      - remove_overlays: false
+      - git: PMM/overlays/imdb_top_250
+      - file: config/Overlays.yml
+        template_variables:
+        # Which overlay(s) should be used?
+          4K_banner: true
+    settings:
+      asset_directory: 
+        - config/assets/movies
+        - config/assets/movie_collections
+    operations:
+      assets_for_all: true
+    radarr:
+      url: http://radarr4k:7878
+      token: <redacted>
+      version: v3
+      root_folder_path: /mnt/media/4kmovies
+      monitor: true
+      availability: released
+      quality_profile: Ultra-HD
+      tag:
+      search: false
+      add_missing: false
+      add_existing: false
+      upgrade_existing: true
+      radarr_path:
+      plex_path:
+  4K TV Shows:
+    metadata_path:
+      - file: config/TV Shows.yml
+    overlay_path:
+      - remove_overlays: false
+      - file: config/Overlays.yml
+        template_variables:
+          # Which overlay(s) should be used?
+          4K: true
+    settings:
+      asset_directory:
+        - config/assets/tv_shows
+        - config/assets/tv_show_collections
+    operations:
+      assets_for_all: true
+    sonarr:
+      url: http://sonarr4k:8989
+      token: <redacted>
+      root_folder_path: /mnt/media/4ktvshows
+      monitor: all
+      quality_profile: Ultra-HD
+      language_profile: English
+      series_type: standard
+      season_folder: true
+      tag:
+      search: false
+      cutoff_search: false
+      add_existing: false
+      add_missing: false
+      upgrade_existing: true
+      sonarr_path:
+      plex_path:
+settings:                                       # Can be individually specified per library as well
+  # General Settings
+  cache: true
+  cache_expiration: 60
+  run_again_delay: 2
+  save_report: true
+  tvdb_language: eng
+  item_refresh_delay: 0
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+  # Asset Settings
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 1
+  create_asset_folders: true
+  prioritize_assets: false
+  dimensional_asset_rename: true
+  download_url_assets: false
+  show_missing_assets: true
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: false
+  # Collection Settings
+  sync_mode: sync
+  minimum_items: 3
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  missing_only_released: true
+  only_filter_missing: false
+  show_unmanaged: true
+  show_filtered: false
+  show_options: false
+  show_missing: false
+  ignore_ids:
+  ignore_imdb_ids:
+  # Playlist Settings
+  playlist_sync_to_user: all
+  playlist_report: false
+webhooks:                                       # Can be individually specified per library as well
+  error: https://discord.com/api/webhooks/<redacted>/<redacted>
+  version:
+  run_start:
+  run_end: https://discord.com/api/webhooks/<redacted>/<redacted>
+  changes:
+plex:                                           # Can be individually specified per library as well
+  url: http://plex:32400
+  token: <redacted>
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+tmdb:
+  apikey: <redacted>
+  language: en
+  cache_expiration: 60
+  region:
+tautulli:                                       # Can be individually specified per library as well
+  url: http://tautulli:8181
+  apikey: <redacted>
+radarr:                                         # Can be individually specified per library as well
+  url: http://radarr:7878
+  token: <redacted>
+  root_folder_path: /mnt/media/movies
+  quality_profile: Any
+  monitor: true
+  availability: announced
+  search: false
+  add_existing: false
+  add_missing: false
+  upgrade_existing: false
+  tag:
+  radarr_path:
+  plex_path:
+sonarr:                                         # Can be individually specified per library as well
+  url: http://sonarr:8989
+  token: <redacted>
+  root_folder_path: /mnt/media/tvshows
+  quality_profile: Any
+  monitor: all
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  search: false
+  cutoff_search: false
+  add_missing: false
+  add_existing: false
+  upgrade_existing: false
+  tag:
+  sonarr_path:
+  plex_path:
+omdb:
+  apikey: <redacted>
+  cache_expiration: 60
+trakt:
+  client_id: <redacted>
+  client_secret: <redacted>
+  authorization:
+    access_token:
+    token_type:
+    expires_in:
+    refresh_token:
+    scope:
+    created_at: 
+  pin:

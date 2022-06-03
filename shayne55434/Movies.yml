@@ -122,16 +122,10 @@ templates:
     delete_below_minimum: true
 
 collections:
-  4K Overlay:
-    plex_search:
-      all:
-        resolution: 4K
-    item_overlay: 4K
-    item_assets: true
-    build_collection: false
 ######################################################
 #                Studio Collections                  #
 ######################################################
+
   Pixar:
     template: {name: Studio, company: 3}
     summary: Pixar Animation Studios, commonly known as Pixar, is an American computer animation studio based in Emeryville, California, a subsidiary of Disney Studios Content owned by The Walt Disney Company. Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation on February 3, 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4 billion by converting each share of Pixar stock to 2.3 shares of Disney stock, a transaction that resulted in Jobs becoming Disney's largest single shareholder at the time. Pixar is best known for its feature films technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot.
@@ -180,6 +174,8 @@ collections:
       url: https://www.imdb.com/list/ls000096828/
       limit: 100
     summary: Top 100 Christmas movies, accoring to https://www.imdb.com/list/ls000096828/.
+    visible_home: range(12/01-12/31)
+    visible_shared: range(12/01-12/31)
     #schedule: monthly(1)
   Top Horror Movies:
     template: {name: Chart Alpha, num: 7}
@@ -188,6 +184,8 @@ collections:
     summary: Top horror movies, accoring to https://trakt.tv/users/w1nt3r/lists/time-out-s-100-best-horror-films?sort=rank,asc.
     radarr_add: true
     radarr_search: true
+    visible_home: range(10/01-10/31)
+    visible_shared: range(10/01-10/31)
     #schedule: monthly(1)
   Best of 1980s:
     template: {name: Chart Alpha, num: 8}
@@ -204,20 +202,27 @@ collections:
     trakt_list: https://trakt.tv/users/sp1ti/lists/a-v-club-s-best-films-of-the-00s?sort=rank,asc
     summary: Best of the 2000s, according to https://trakt.tv/users/sp1ti/lists/a-v-club-s-best-films-of-the-00s?sort=rank,asc.
     #schedule: monthly(1)
-  Best of 2017:
-    template: {name: Best of, year: 2017}
+  Best of 2010s:
+    template: {name: Chart Alpha, num: 9.2}
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/a-v-club-s-the-best-movies-of-the-2010s?sort=rank,asc
+    summary: Best of the 2010s, according to https://trakt.tv/users/maxwelldeux/lists/a-v-club-s-the-best-movies-of-the-2010s?sort=rank,asc.
     #schedule: monthly(1)
-  Best of 2018:
-    template: {name: Best of, year: 2018}
-    #schedule: monthly(1)
-  Best of 2019:
-    template: {name: Best of, year: 2019}
-    #schedule: monthly(1)
+  # Best of 2017:
+  #   template: {name: Best of, year: 2017}
+  #   #schedule: monthly(1)
+  # Best of 2018:
+  #   template: {name: Best of, year: 2018}
+  #   #schedule: monthly(1)
+  # Best of 2019:
+  #   template: {name: Best of, year: 2019}
+  #   #schedule: monthly(1)
   Best of 2020:
     template: {name: Best of, year: 2020}
     #schedule: monthly(1)
   Best of 2021:
     template: {name: Best of, year: 2021}
+  Best of 2022:
+    template: {name: Best of, year: 2022}
   Oscars:
     template: {name: Chart Release}
     imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
@@ -227,6 +232,7 @@ collections:
 ######################################################
 #                TMDb Collections                    #
 ######################################################
+
   101 Dalmatians:
     template: {name: Collection, collection: "100693, 124916", movie: 337404}
     #schedule: monthly(1)
@@ -325,7 +331,7 @@ collections:
     #schedule: monthly(1)
   Cloverfield:
     template: {name: Collection}
-    imdb_list: https://www.imdb.com/list/ls021933730/
+    imdb_list: https://www.imdb.com/list/ls023762626/
     summary: Cloverfield is an American science fiction anthology film series and media franchise created and produced by J. J. Abrams consisting of three films, viral marketing websites linking the films together, and a tie-in manga to the first film titled Cloverfield/Kishin (2008), all set in a shared fictional universe referred to as the "Cloververse". The franchise as a whole deals with creatures from other dimensions attacking Earth throughout various decades, all as a repercussion of an experiment by an astronaut team aboard the Cloverfield Station in outer-space. Each film depicts the reality-altering effects of their study, which was meant to find a new energy source replacing the planet's depleted resources, only to open portals for assault from various beasts from deep space.
     #schedule: monthly(1)
   Cornetto Trilogy:
@@ -345,6 +351,8 @@ collections:
     #schedule: monthly(1)
   Deadpool:
     template: {name: Collection, collection: 448150, movie: 567604}
+    visible_home: yearly(02/14)
+    visible_shared: yearly(02/14)
     #schedule: monthly(1)
   Death Race:
     template: {name: Collection, collection: 86116}
@@ -432,6 +440,8 @@ collections:
     #schedule: monthly(1)
   Halloween:
     template: {name: Collection, collection: "91361, 126209"}
+    visible_home: range(10/01-10/31)
+    visible_shared: range(10/01-10/31)
     #schedule: monthly(1)
   Halloweentown:
     template: {name: Collection, collection: 87252}
