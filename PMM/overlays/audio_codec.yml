@@ -82,7 +82,7 @@ overlays:
       - name: AudioCodec
         overlay: Opus
         weight: 5
-        slug: Opus
+        slug: opus
     plex_all: true
     filters:
       filepath.regex: '(?i)\bOPUS(\b|\d)'
