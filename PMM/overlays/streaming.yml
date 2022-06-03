@@ -3,17 +3,12 @@
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
 #            Credit to Magic815 for base images             #
 #############################################################
-#  Designed for TRaSH Guides filename naming scheme         #
-#  https://trash-guides.info/                               #
-#                                                           #
 #  Call this from your config.yml (Movie or Show):          #
 #  If nothing is specified these are the defaults           #
 #                                                           #
 #    overlay_path:                                          #
 #      - git: PMM/overlays/streaming                        #
 #        template_variables:                                #
-#          # Set episode or season to overlay               #
-#          overlay_level:                                   #
 #          # Set the horizontal offset for the overlay      #
 #          horizontal_offset: 15                            #
 #          # Set the horizontal align for the overlay       #
@@ -52,7 +47,6 @@ templates:
       horizontal_align: left
       vertical_offset: 135
       vertical_align: top
-    collection_level: <<overlay_level>>
     allowed_library_types: <<use_<<slug>>>>
     overlay:
       name: <<overlay_name>>
