@@ -3,7 +3,7 @@
 libraries: # Library mappings must have a colon (:) placed after them
   Anime:
     metadata_path:
-    - /config/metadata/Anime.yml
+    - /config/metadata/anime.yml
     settings:
       missing_path: config/missing
       asset_directory:
@@ -120,6 +120,35 @@ mdblist:
   cache_expiration: 60
 notifiarr:
   apikey: 
+radarr: # Can be individually specified per library as well
+  url: http://192.168.1.2:7878/
+  token: ################################
+  add_missing: ture
+  add_existing: false
+  root_folder_path: /media/movies
+  monitor: true
+  availability: released
+  quality_profile: 1080p
+  tag:
+  search: true
+  radarr_path: /media
+  plex_path: /media/movies
+sonarr:
+  url: http://192.168.1.12:32789
+  token: ################################
+  add_missing: ture
+  add_existing: false
+  root_folder_path: /media/shows
+  monitor: all
+  quality_profile: 1080p
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  tag: 
+  search: true
+  cutoff_search: false
+  sonarr_path: /media
+  plex_path: /media/shows
 anidb: # Not required for AniDB builders unless you want mature content
   username: 
   password: 
