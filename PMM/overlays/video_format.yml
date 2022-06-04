@@ -24,21 +24,22 @@
 #          vertical_align: bottom                           #
 #                                                           #
 #          # Use the Remux overlay                          #
-#          Remux: true                                      #
+#          use_remux: true                                  #
 #          # Use the Blu-Ray overlay                        #
-#          Blu-Ray: true                                    #
+#          use_bluray: true                                 #
 #          # Use the WEB overlay                            #
-#          WEB: true                                        #
+#          use_web: true                                    #
 #          # Use the HDTV overlay                           #
-#          HDTV: true                                       #
+#          use_hdtv: true                                   #
 #          # Use the DVD overlay                            #
-#          DVD: true                                        #
+#          use_dvd: true                                    #
 #############################################################
 
 templates:
   VideoFormat:
     optional:
       - overlay_level
+      - use_<<slug>>
     default:
       overlay: <<overlay_name>>
       horizontal_offset: 15
@@ -46,6 +47,7 @@ templates:
       vertical_offset: 15
       vertical_align: bottom
     collection_level: <<overlay_level>>
+    allowed_library_types: <<use_<<slug>>>>
     overlay:
       name: text(<<overlay_name>>)
       group: quality
@@ -62,38 +64,13 @@ templates:
       back_width: 265
       back_height: 85
 
-  Remux:
-    default:
-      Remux: true
-    allowed_library_types: <<Remux>>
-
-  Blu-Ray:
-    default:
-      Blu-Ray: true
-    allowed_library_types: <<Blu-Ray>>
-
-  WEB:
-    default:
-      WEB: true
-    allowed_library_types: <<WEB>>
-
-  HDTV:
-    default:
-      HDTV: true
-    allowed_library_types: <<HDTV>>
-
-  DVD:
-    default:
-      DVD: true
-    allowed_library_types: <<DVD>>
-
 overlays:
 
   Remux:
     template:
       - name: VideoFormat
         weight: 50
-      - name: Remux
+        slug: remux
     plex_all: true
     filters:
       filepath.regex: '(?i)\[Remux'
@@ -102,7 +79,7 @@ overlays:
     template:
       - name: VideoFormat
         weight: 40
-      - name: Blu-Ray
+        slug: bluray
     plex_all: true
     filters:
       filepath.regex: '(?i)\[Blu[ ._-]?ray|\[BD|\[BR|\[HD[ ._-]?DVD'
@@ -111,7 +88,7 @@ overlays:
     template:
       - name: VideoFormat
         weight: 30
-      - name: WEB
+        slug: web
     plex_all: true
     filters:
       filepath.regex: '(?i)Web[ ._-]?(dl|rip)'
@@ -120,7 +97,7 @@ overlays:
     template:
       - name: VideoFormat
         weight: 20
-      - name: HDTV
+        slug: hdtv
     plex_all: true
     filters:
       filepath.regex: '(?i)HD[ ._-]?TV'
@@ -129,7 +106,7 @@ overlays:
     template:
       - name: VideoFormat
         weight: 10
-      - name: DVD
+        slug: dvd
     plex_all: true
     filters:
       filepath.regex: '(?i)\[DVD'

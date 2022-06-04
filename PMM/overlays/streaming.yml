@@ -3,17 +3,12 @@
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
 #            Credit to Magic815 for base images             #
 #############################################################
-#  Designed for TRaSH Guides filename naming scheme         #
-#  https://trash-guides.info/                               #
-#                                                           #
 #  Call this from your config.yml (Movie or Show):          #
 #  If nothing is specified these are the defaults           #
 #                                                           #
 #    overlay_path:                                          #
 #      - git: PMM/overlays/streaming                        #
 #        template_variables:                                #
-#          # Set episode or season to overlay               #
-#          overlay_level:                                   #
 #          # Set the horizontal offset for the overlay      #
 #          horizontal_offset: 15                            #
 #          # Set the horizontal align for the overlay       #
@@ -39,6 +34,8 @@
 #          use_paramount: true                              #
 #          # Use the Peacock overlay                        #
 #          use_peacock: true                                #
+#          # Use the YouTube overlay                        #
+#          use_youtube: true                                #
 #############################################################
 
 templates:
@@ -53,7 +50,6 @@ templates:
       vertical_offset: 135
       vertical_align: top
     allowed_library_types: <<use_<<slug>>>>
-    collection_level: <<overlay_level>>
     overlay:
       name: <<overlay_name>>
       git: PMM/overlays/images/<<overlay>>
@@ -63,64 +59,60 @@ templates:
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-    plex_all: true
-    filters:
-      filepath.regex: <<regex>>
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/<<slug>>-<<library_type>>s
 
 overlays:
-
-  Amazon:
-    template:
-      - name: Streaming
-        weight: 200
-        slug: amazon
-        regex: '(?i)\b(amzn|amazon)\b'
-
-  AppleTV:
-    template:
-      - name: Streaming
-        weight: 200
-        slug: appletv
-        regex: '(?i)\b(atvp|aptv|Apple TV\+)\b'
-
-  Disney:
-    template:
-      - name: Streaming
-        weight: 200
-        slug: disney
-        regex: '(?i)\b(dsnp|dsny|disney|Disney\+)\b'
-
-  HBO-Max:
-    template:
-      - name: Streaming
-        weight: 200
-        slug: hbomax
-        regex: '(?i)\b(hmax|hbom|HBO Max)\b'
-
-  Hulu:
-    template:
-      - name: Streaming
-        weight: 200
-        slug: hulu
-        regex: '(?i)\b(hulu)\b'
 
   Netflix:
     template:
       - name: Streaming
         weight: 200
         slug: netflix
-        regex: '(?i)\b(nf|netflix)\b'
+
+  Amazon:
+    template:
+      - name: Streaming
+        weight: 190
+        slug: amazon
+
+  Disney:
+    template:
+      - name: Streaming
+        weight: 180
+        slug: disney
+
+  HBO-Max:
+    template:
+      - name: Streaming
+        weight: 170
+        slug: hbomax
+
+  YouTube:
+    template:
+      - name: Streaming
+        weight: 160
+        slug: youtube
+
+  Hulu:
+    template:
+      - name: Streaming
+        weight: 150
+        slug: hulu
 
   Paramount:
     template:
       - name: Streaming
-        weight: 200
+        weight: 140
         slug: paramount
-        regex: '(?i)\b(pmtp|Paramount Plus)\b'
+
+  AppleTV:
+    template:
+      - name: Streaming
+        weight: 130
+        slug: appletv
 
   Peacock:
     template:
       - name: Streaming
-        weight: 200
+        weight: 120
         slug: peacock
-        regex: '(?i)\b(pcok|peacock)\b'
