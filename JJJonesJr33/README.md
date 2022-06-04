@@ -2,9 +2,13 @@
 ______________________________________________________________________________________________________________________
 **NOTICE 5/31/2022** - Overlays have been temporarily removed until I am able to update for the latest PMM release.
 ______________________________________________________________________________________________________________________
-**TPDB** You can find all my poasters here https://theposterdb.com/user/jjjonesjr33
+**TPDB**: You can find all my poasters at [The Poster Database](https://theposterdb.com/user/jjjonesjr33)
 
-Have questions, or need support? Get ahold of me on one of my **socials** at https://jjjonesjr33.com/
+Have questions, or need support for one of my configs? Get ahold of me via direct message on discord - **JJJonesJr33#0001** 
+ 
+Also if you want to check out all the other things I do follow me on my [**socials**](https://jjjonesjr33.com/)
+______________________________________________________________________________________________________________________
+**PLEX META MANAGER**: For all other PMM related questions or issues, join the [PMM Discord Server](https://discord.gg/uvXgYS73Qf)
 ______________________________________________________________________________________________________________________
 **Single Instance** (Simple Setup)
 
