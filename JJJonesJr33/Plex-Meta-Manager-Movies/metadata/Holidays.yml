@@ -1,18 +1,21 @@
-###############################
-##    Holiday Collections    ##
-###############################
+##############################################################
+##                  Holiday Collections                     ##
+##                Created by JJJonesJr33                    ##
+##                      Version 2.0                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##               Yozora, Bullmoose20, & Sohjiro             ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
 
-##########################################################
-##                 User/Config Credits                  ##
-##          Giving Credit Where Credit is Due           ##
-##                    JJJonesJr33                       ##
-## Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel ##
-##    meisnate12, TheUnchainedZebra, Evil Tacctician    ##
-##########################################################
-
-#############################
-##    Holiday Templates    ##
-#############################
+#######################
+##     Templates     ##
+#######################
 
 templates:
     Holiday:
@@ -26,14 +29,14 @@ templates:
         visible_shared: true
         sync_mode: sync
 
-####################################
-##       Collections Lists        ##
-####################################
+#############################
+##       Collections       ##
+#############################
 
 # FYI: To set the collections on a schedule to where they don't show all year long uncomment "schedule" and and change "delete_not_scheduled:" to "true"
 
 collections:
-  Christmas:
+  Christmas: #IMDB lists have been removed as they have all been merged into christmas-static-list
     template: {name: Holiday, holiday: "Christmas", poster: https://theposterdb.com/api/assets/212635}
     visible_home: range(12/01-12/31)
     visible_shared: range(12/01-12/31)
@@ -41,16 +44,7 @@ collections:
     sort_title: +++++++_Christmas
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/christmas
-      - https://trakt.tv/users/movistapp/lists/christmas-movies
-      - https://trakt.tv/users/2borno2b/lists/christmas-movies-extravanganza
-      - https://trakt.tv/users/pualani78/lists/christmas-2020
-      - https://trakt.tv/users/veninjak/lists/complete-christmas-2021-copy
-    imdb_list:
-      - https://www.imdb.com/list/ls025976544/
-      - https://www.imdb.com/list/ls003863000/
-      - https://www.imdb.com/list/ls027454200/
-      - https://www.imdb.com/list/ls027886673/
-      - https://www.imdb.com/list/ls097998599/
+      - https://trakt.tv/users/jjjonesjr33/lists/christmas-static-list
     summary: This collection revolves around the plot involving Christmas.
   Halloween:
     template: {name: Holiday, holiday: "Halloween", poster: https://theposterdb.com/api/assets/212637}
@@ -59,13 +53,10 @@ collections:
     #schedule: range(10/01-10/31)
     sort_title: +++++++_Halloween
     trakt_list:
-      - https://trakt.tv/users/kairbear08/lists/halloween
-      - https://trakt.tv/users/mybicycle/lists/halloween
-      - https://trakt.tv/users/jayinftl/lists/halloween
-      - https://trakt.tv/users/roswellgeek/lists/halloween
+      - https://trakt.tv/users/jjjonesjr33/lists/halloween
     summary: This collection revolves around the plot involving Halloween.
   New Year's Eve Movies:
-    template: {name: Holiday, holiday: "New Year's Eve", poster: }
+    template: {name: Holiday, holiday: "New Year's Eve", poster: https://i.imgur.com/YCYXhAX.png}
     visible_home: range(12/26-01/05)
     visible_shared: range(12/26-01/05)
     #schedule: range(12/26-01/05)
@@ -74,7 +65,7 @@ collections:
       - https://www.imdb.com/list/ls066838460/
     summary: This collection revolves around the plot involving New Year's Eve.
   Independence Day:
-    template: {name: Holiday, holiday: "Independence Day", poster: }
+    template: {name: Holiday, holiday: "Independence Day", poster: https://theposterdb.com/api/assets/240645}
     visible_home: range(07/01-01/05)
     visible_shared: range(07/01-01/05)
     #schedule: range(07/01-01/05)
@@ -94,7 +85,7 @@ collections:
       - https://www.imdb.com/list/ls064427905/
     summary: This collection revolves around the plot involving Valentine's Day.
   St. Patrick's Day Movies:
-    template: {name: Holiday, holiday: "St. Patrick's Day", poster: }
+    template: {name: Holiday, holiday: "St. Patrick's Day", poster: https://theposterdb.com/api/assets/240644}
     visible_home: range(03/01-03/17)
     visible_shared: range(03/01-03/17)
     #schedule: range(03/01-03/17)
