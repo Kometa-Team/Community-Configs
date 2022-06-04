@@ -15,26 +15,24 @@ libraries: # Library mappings must have a colon (:) placed after them
   Movies:
     library_name: Movies
     metadata_path:
-    - /config/metadata/Holidays.yml
-    - /config/metadata/IMDB.yml
-    - /config/metadata/Suggestions.yml
-    - /config/metadata/Awards.yml
-    # - /config/metadata/Collections.yml
-    - /config/metadata/Decades.yml
-    - /config/metadata/Genres.yml
-    # - /config/metadata/People.yml
-    # - /config/metadata/Studios.yml
+    - /config/metadata/genres.yml
+    - /config/metadata/holidays.yml
+    # - /config/metadata/studios.yml
+    - /config/metadata/suggestions.yml
+    - /config/metadata/awards.yml
+    # - /config/metadata/collections.yml
+    - /config/metadata/decades.yml
     settings:
       missing_path: config/missing
       asset_directory:
       - config/assets/
       - config/assets/movies
       - config/assets/awards
+      - config/assets/collections
       - config/assets/decades
       - config/assets/genres
       - config/assets/holidays
-    # - config/assets/people
-    # - config/assets/studios
+      - config/assets/studios
       - config/assets/suggestions
     operations:
       assets_for_all: false
@@ -43,14 +41,14 @@ libraries: # Library mappings must have a colon (:) placed after them
   TV Shows:
     library_name: TV Shows
     metadata_path:
-    - /config/metadata/Kids.yml
-    - /config/metadata/Networks.yml
+    - /config/metadata/kids.yml
+    - /config/metadata/networks.yml
     settings:
       missing_path: config/missing
       asset_directory:
+      - config/assets/
       - config/assets/kids
       - config/assets/networks
-      - config/assets/
     operations:
       assets_for_all: false
       split_duplicates: false
@@ -99,7 +97,7 @@ webhooks:
   run_end: notifiarr
   changes: notifiarr
   version:
-plex: # REQUIRED - see https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Attributes
+plex: # REQUIRED - see https://metamanager.wiki/en/latest/config/plex.html
   url: http://192.168.1.2:32400/
   token: 
   timeout: 60
@@ -117,13 +115,16 @@ tautulli: # Can be individually specified per library as well
 omdb:
   apikey: 
   cache_expiration: 60
+mdblist:
+  apikey: 
+  cache_expiration: 60
 notifiarr:
   apikey: 
 anidb: # Not required for AniDB builders unless you want mature content
   username: 
   password: 
   language: en
-mal: # REQUIRED for this config to work - set up by following https://github.com/meisnate12/Plex-Meta-Manager/wiki/MyAnimeList-Attributes
+mal: # REQUIRED for this config to work - set up by following https://metamanager.wiki/en/latest/config/myanimelist.html
   client_id: 
   client_secret: 
   authorization:
@@ -131,3 +132,14 @@ mal: # REQUIRED for this config to work - set up by following https://github.com
     token_type: 
     expires_in: 
     refresh_token: 
+trakt:
+  client_id: 
+  client_secret: 
+  authorization:
+    access_token: 
+    token_type: Bearer
+    expires_in: 
+    refresh_token: 
+    scope: public
+    created_at: 
+  pin:
