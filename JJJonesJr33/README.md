@@ -4,7 +4,7 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________________
 **TPDB**: You can find all my poasters at [**The Poster Database**](https://theposterdb.com/user/jjjonesjr33)
 
-Have questions, or need support for one of my configs? Get ahold of me via direct message on discord - **JJJonesJr33#0001** 
+Have questions, or need support for one of my configs? Get ahold of me via direct message on discord - `JJJonesJr33#0001` 
  
 Also if you want to check out all the other things I do follow me on my [**Socials**](https://jjjonesjr33.com/)
 ______________________________________________________________________________________________________________________
