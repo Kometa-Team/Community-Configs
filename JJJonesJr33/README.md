@@ -41,7 +41,7 @@ Special thanks to the PMM users and their configs that I drew inspiration from
 <br>
 **Bullmoose20**, **Cpt-Kuesel**, **Evil Tacctician**, **Glasti1**, **Hiren-Z**, **Meisnate12**, **OhMyBahGosh**, **Sohjiro**, **TheUnchainedZebra**, **Tuxpeople**, & **Yozora**
 
-The users who created, supported, and helped with creating poasters
+The users who created, supported, and helped with creating posters
 <br>
 **Evil Tacctician**, **Mikenobbs**, & **Yozora**
 
