@@ -33,6 +33,8 @@
 #          use_hdtv: true                                   #
 #          # Use the DVD overlay                            #
 #          use_dvd: true                                    #
+#          # Use the SDTV overlay                            #
+#          use_sdtv: true                                    #
 #############################################################
 
 templates:
@@ -110,3 +112,12 @@ overlays:
     plex_all: true
     filters:
       filepath.regex: '(?i)\[DVD'
+
+  SDTV:
+    template:
+      - name: VideoFormat
+        weight: 5
+        slug: sdtv
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)SD[ ._-]?TV'
