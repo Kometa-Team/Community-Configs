@@ -229,7 +229,7 @@ overlays:
   HDR:
     template:
       - name: Resolution
-        weight: 0
+        weight: 1
         opt1: hdr
     plex_search:
       all:
