@@ -80,7 +80,7 @@ templates:
   favorited:
     default:
       limit_favorited: 100
-      mal_favorite: <<limit_favorited>>
+    mal_favorite: <<limit_favorited>>
     summary: A collection of the Most Favorited Anime according to MyAnimeList.
 
   top:
