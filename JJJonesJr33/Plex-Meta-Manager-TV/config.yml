@@ -4,8 +4,8 @@ libraries: # Library mappings must have a colon (:) placed after them
   TV Shows:
     library_name: TV Shows
     metadata_path:
-    - /config/metadata/Kids.yml
-    - /config/metadata/Networks.yml
+    - /config/metadata/kids.yml
+    - /config/metadata/networks.yml
     settings:
       missing_path: config/missing
       asset_directory:
