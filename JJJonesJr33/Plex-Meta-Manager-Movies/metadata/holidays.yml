@@ -66,9 +66,9 @@ collections:
     summary: This collection revolves around the plot involving New Year's Eve.
   Independence Day:
     template: {name: Holiday, holiday: "Independence Day", poster: https://theposterdb.com/api/assets/240645}
-    visible_home: range(07/01-01/05)
-    visible_shared: range(07/01-01/05)
-    #schedule: range(07/01-01/05)
+    visible_home: range(07/01-07/05)
+    visible_shared: range(07/01-07/05)
+    #schedule: range(07/01-07/05)
     sort_title: +++++++_Independence Day
     imdb_list: 
       - https://www.imdb.com/list/ls552600367/
