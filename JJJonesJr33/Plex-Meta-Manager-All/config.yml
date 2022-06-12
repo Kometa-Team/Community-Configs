@@ -18,7 +18,7 @@ libraries: # Library mappings must have a colon (:) placed after them
     - /config/metadata/genres.yml
     - /config/metadata/holidays.yml
     # - /config/metadata/studios.yml
-    - /config/metadata/suggestions.yml
+    - /config/metadata/movie_suggestions.yml
     - /config/metadata/awards.yml
     # - /config/metadata/collections.yml
     - /config/metadata/decades.yml
@@ -33,7 +33,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       - config/assets/genres
       - config/assets/holidays
       - config/assets/studios
-      - config/assets/suggestions
+      - config/assets/movie_suggestions
     operations:
       assets_for_all: false
       split_duplicates: false
@@ -43,12 +43,14 @@ libraries: # Library mappings must have a colon (:) placed after them
     metadata_path:
     - /config/metadata/kids.yml
     - /config/metadata/networks.yml
+    - /config/metadata/tv_suggestions.yml
     settings:
       missing_path: config/missing
       asset_directory:
       - config/assets/
       - config/assets/kids
       - config/assets/networks
+      - config/assets/tv_suggestions
     operations:
       assets_for_all: false
       split_duplicates: false
