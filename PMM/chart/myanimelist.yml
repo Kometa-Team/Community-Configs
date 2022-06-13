@@ -74,7 +74,7 @@ templates:
   popular:
     default:
       limit_popular: 100
-    mal_popular: <<limit_popular>>
+      mal_popular: <<limit_popular>>
     summary: A collection of the most popular Anime according to MyAnimeList.
 
   favorited:
