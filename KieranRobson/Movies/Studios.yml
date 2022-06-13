@@ -1,0 +1,26 @@
+templates:
+    Studio:
+        url_poster: <<poster>>
+        sort_title: +++++++_<<collection_name>>
+        collection_order: release
+        delete_not_scheduled: true
+        run_again: true
+        visible_home: true
+        visible_shared: true
+        sync_mode: sync
+collections:
+  Disney Animated:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/11845}
+    sort_title: +++++++DisneyAnimated
+    trakt_list:
+      - https://trakt.tv/users/kieranr27/lists/studio-disney-animation-copy?sort=released,desc
+  Disney Live-Action:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/71183}
+    sort_title: +++++++DisneyLiveAction
+    imdb_list:
+      -  https://www.imdb.com/list/ls083312980/
+  Dreamworks:
+    template: {name: Studio, poster: https://theposterdb.com/api/assets/57647}
+    sort_title: +++++++Dreamworks
+    imdb_list:
+      - https://www.imdb.com/list/ls063182572/

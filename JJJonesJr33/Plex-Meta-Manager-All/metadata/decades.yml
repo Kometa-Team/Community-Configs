@@ -1,5 +1,5 @@
 ##############################################################
-##               Dynamic Decade Collections                 ##
+##                Dynamic Decade Collections                ##
 ##                Created by JJJonesJr33                    ##
 ##                      Version 2.0                         ##
 ##############################################################
@@ -22,9 +22,9 @@ templates:
     smart_filter:
       any:
         decade: <<decade>>
+      sort_by: release.desc
       url_poster: https://theposterdb.com/api/assets/<<poster>>
       sort_title: +++++_<<collection_name>>
-      sort_by: critic_rating.desc
       collection_order: release
       collection_mode: hide
 

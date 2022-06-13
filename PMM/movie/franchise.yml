@@ -12,6 +12,8 @@
 #          radarr_add_missing: true                         #
 #          # Sets the collection order of the collection    #
 #          collection_order: alpha                          #
+#          # Sets the minimum items of the collection       #
+#          minimum_items: 2                                 #
 #############################################################
 
 external_templates:
@@ -23,12 +25,14 @@ templates:
   collection:
     default:
       collection_order: release
+      minimum_items: 2
     optional:
       - collection
       - movie
       - radarr_add_missing
       - name_mapping
     cache_builders: 1
+    minimum_items: <<minimum_items>>
     tmdb_collection_details: <<value>>
     tmdb_movie: <<movie>>
     name_mapping: <<name_mapping>>
