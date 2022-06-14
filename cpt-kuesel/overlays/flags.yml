@@ -1,0 +1,221 @@
+external_templates:
+  - file: metadata/admin/_templates.yml
+  - file: metadata/admin/_switches.yml
+
+overlays:
+  german:
+    template:
+      - name: sw_german
+      - name: it_items
+        it_language: de
+      - name: ol_builder
+        ol_overlay: german
+        ol_file: german
+        ol_weight: 89
+  english:
+    template:
+      - name: sw_english
+      - name: it_items
+        it_language: en
+      - name: ol_builder
+        ol_overlay: english
+        ol_file: english
+        ol_weight: 88
+  french:
+    template:
+      - name: sw_french
+      - name: it_items
+        it_language: fr
+      - name: ol_builder
+        ol_overlay: french
+        ol_file: french
+        ol_weight: 87
+  japanese:
+    template:
+      - name: sw_japanese
+      - name: it_items
+        it_language: ja
+      - name: ol_builder
+        ol_overlay: japanese
+        ol_file: japanese
+        ol_weight: 86
+  korean:
+    template:
+      - name: sw_korean
+      - name: it_items
+        it_language: ko
+      - name: ol_builder
+        ol_overlay: korean
+        ol_file: korean
+        ol_weight: 85
+  chinese:
+    template:
+      - name: sw_chinese
+      - name: it_items
+        it_language: zh
+      - name: ol_builder
+        ol_overlay: chinese
+        ol_file: chinese
+        ol_weight: 84
+  danish:
+    template:
+      - name: sw_danish
+      - name: it_items
+        it_language: da
+      - name: ol_builder
+        ol_overlay: danish
+        ol_file: danish
+        ol_weight: 83
+  russian:
+    template:
+      - name: sw_russian
+      - name: it_items
+        it_language: ru
+      - name: ol_builder
+        ol_overlay: russian
+        ol_file: russian
+        ol_weight: 82
+  spanish:
+    template:
+      - name: sw_spanish
+      - name: it_items
+        it_language: es
+      - name: ol_builder
+        ol_overlay: spanish
+        ol_file: spanish
+        ol_weight: 81
+  italian:
+    template:
+      - name: sw_italian
+      - name: it_items
+        it_language: it
+      - name: ol_builder
+        ol_overlay: italian
+        ol_file: italian
+        ol_weight: 80
+  portuguese:
+    template:
+      - name: sw_portuguese
+      - name: it_items
+        it_language: pt
+      - name: ol_builder
+        ol_overlay: portuguese
+        ol_file: portuguese
+        ol_weight: 79
+  hindi:
+    template:
+      - name: sw_hindi
+      - name: it_items
+        it_language: hi
+      - name: ol_builder
+        ol_overlay: hindi
+        ol_file: indian
+        ol_weight: 78
+  telugu:
+    template:
+      - name: sw_telugu
+      - name: it_items
+        it_language: te
+      - name: ol_builder
+        ol_overlay: telugu
+        ol_file: indian
+        ol_weight: 77
+  farsi:
+    template:
+      - name: sw_farsi
+      - name: it_items
+        it_language: fa
+      - name: ol_builder
+        ol_overlay: farsi
+        ol_file: iranian
+        ol_weight: 76
+  thai:
+    template:
+      - name: sw_thai
+      - name: it_items
+        it_language: th
+      - name: ol_builder
+        ol_overlay: thai
+        ol_file: thai
+        ol_weight: 75
+  dutch:
+    template:
+      - name: sw_dutch
+      - name: it_items
+        it_language: nl
+      - name: ol_builder
+        ol_overlay: dutch
+        ol_file: dutch
+        ol_weight: 74
+  norwegian:
+    template:
+      - name: sw_norwegian
+      - name: it_items
+        it_language: no
+      - name: ol_builder
+        ol_overlay: norwegian
+        ol_file: norwegian
+        ol_weight: 73
+  icelandic:
+    template:
+      - name: sw_icelandic
+      - name: it_items
+        it_language: is
+      - name: ol_builder
+        ol_overlay: icelandic
+        ol_file: icelandic
+        ol_weight: 72
+  swedish:
+    template:
+      - name: sw_swedish
+      - name: it_items
+        it_language: sv
+      - name: ol_builder
+        ol_overlay: swedish
+        ol_file: swedish
+        ol_weight: 71
+  turkish:
+    template:
+      - name: sw_turkish
+      - name: it_items
+        it_language: tr
+      - name: ol_builder
+        ol_overlay: turkish
+        ol_file: turkish
+        ol_weight: 70
+  polish:
+    template:
+      - name: sw_polish
+      - name: it_items
+        it_language: pl
+      - name: ol_builder
+        ol_overlay: polish
+        ol_file: polish
+        ol_weight: 69
+  czech:
+    template:
+      - name: sw_czech
+      - name: it_items
+        it_language: cs
+      - name: ol_builder
+        ol_overlay: czech
+        ol_file: czech
+        ol_weight: 68
+  ukrainian:
+    template:
+      - name: sw_ukrainian
+      - name: it_items
+        it_language: uk
+      - name: ol_builder
+        ol_overlay: ukrainian
+        ol_file: ukrainian
+        ol_weight: 67
+  hungarian:
+    template:
+      - name: sw_hungarian
+      - name: it_items
+        it_language: hu
+      - name: ol_builder
+        ol_overlay: hungarian
+        ol_file: hungarian
+        ol_weight: 66

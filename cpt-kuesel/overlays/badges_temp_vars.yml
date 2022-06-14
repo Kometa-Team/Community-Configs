@@ -1,0 +1,15 @@
+external_templates:
+  - file: metadata/admin/_templates.yml
+  - file: metadata/admin/_switches.yml
+
+overlays:
+  uhd:
+    template:
+      - name: sw_uhd
+      - name: it_items
+      - name: ol_builder
+  hdr:
+    template:
+      - name: sw_hdr
+      - name: it_items
+      - name: ol_builder

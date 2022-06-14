@@ -1,0 +1,125 @@
+external_templates:
+  - file: metadata/admin/_templates.yml
+  - file: metadata/admin/_switches.yml
+
+overlays:
+  german:
+    template:
+      - name: sw_german
+      - name: it_items
+      - name: ol_builder
+  english:
+    template:
+      - name: sw_english
+      - name: it_items
+      - name: ol_builder
+  french:
+    template:
+      - name: sw_french
+      - name: it_items
+      - name: ol_builder
+  japanese:
+    template:
+      - name: sw_japanese
+      - name: it_items
+      - name: ol_builder
+  korean:
+    template:
+      - name: sw_korean
+      - name: it_items
+      - name: ol_builder
+  chinese:
+    template:
+      - name: sw_chinese
+      - name: it_items
+      - name: ol_builder
+  danish:
+    template:
+      - name: sw_danish
+      - name: it_items
+      - name: ol_builder
+  russian:
+    template:
+      - name: sw_russian
+      - name: it_items
+      - name: ol_builder
+  spanish:
+    template:
+      - name: sw_spanish
+      - name: it_items
+      - name: ol_builder
+  italian:
+    template:
+      - name: sw_italian
+      - name: it_items
+      - name: ol_builder
+  portuguese:
+    template:
+      - name: sw_portuguese
+      - name: it_items
+      - name: ol_builder
+  hindi:
+    template:
+      - name: sw_hindi
+      - name: it_items
+      - name: ol_builder
+  telugu:
+    template:
+      - name: sw_telugu
+      - name: it_items
+      - name: ol_builder
+  farsi:
+    template:
+      - name: sw_farsi
+      - name: it_items
+      - name: ol_builder
+  thai:
+    template:
+      - name: sw_thai
+      - name: it_items
+      - name: ol_builder
+  dutch:
+    template:
+      - name: sw_dutch
+      - name: it_items
+      - name: ol_builder
+  norwegian:
+    template:
+      - name: sw_norwegian
+      - name: it_items
+      - name: ol_builder
+  icelandic:
+    template:
+      - name: sw_icelandic
+      - name: it_items
+      - name: ol_builder
+  swedish:
+    template:
+      - name: sw_swedish
+      - name: it_items
+      - name: ol_builder
+  turkish:
+    template:
+      - name: sw_turkish
+      - name: it_items
+      - name: ol_builder
+  polish:
+    template:
+      - name: sw_polish
+      - name: it_items
+      - name: ol_builder
+  czech:
+    template:
+      - name: sw_czech
+      - name: it_items
+      - name: ol_builder
+  ukrainian:
+    template:
+      - name: sw_ukrainian
+      - name: it_items
+      - name: ol_builder
+  hungarian:
+    template:
+      - name: sw_hungarian
+      - name: it_items
+      - name: ol_builder

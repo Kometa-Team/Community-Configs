@@ -1,5 +1,5 @@
 external_templates:
-  - file: metadata/admin/_templates.yml
+  - file: metadata/admin/_templates
 templates:
   label_collector:
     default:
@@ -22,6 +22,8 @@ collections:
       - admin
       - german_metadata
       - non_german_metadata
+      - local_only
+      - bottom_portrait
   german_metadata:
     template: {name: german_metadata}
     build_collection: false

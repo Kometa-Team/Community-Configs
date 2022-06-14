@@ -1,0 +1,20 @@
+queues:
+  default_portrait_flags:
+    - horizontal_offset: 250
+      vertical_offset: 0
+    - horizontal_offset: 500
+      vertical_offset: 0
+  default_portrait_badges:
+    - horizontal_offset: 0
+      vertical_offset: 0
+    - horizontal_offset: 750
+      vertical_offset: 0
+
+overlays:
+  queue_pseudo_overlay:
+    plex_search:
+      all:
+        year.lt: 1800
+    overlay:
+      name: none
+      file: overlays/none.png
