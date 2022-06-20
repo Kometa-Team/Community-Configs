@@ -27,7 +27,7 @@ templates:
     # schedule: range(11/01-02/28)
       collection_mode: hide
       collection_order: release
-      smart_label: year.desc
+      sync_mode: sync
         
 #############################
 ##       Collections       ##
