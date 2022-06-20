@@ -25,7 +25,6 @@ templates:
     collection_order: release
     # visible_home: range(01/01-12/31)
     # visible_shared: range(01/01-12/31)
-    smart_label: year.desc
     sync_mode: sync
   Tautulli:
     url_poster: https://theposterdb.com/api/assets/<<poster>>
