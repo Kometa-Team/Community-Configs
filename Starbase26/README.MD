@@ -1,2 +1,2 @@
-- Starbase26
--- Plex Meta Manager Configuration Files
+# Starbase26
+## Plex Meta Manager Configuration Files
