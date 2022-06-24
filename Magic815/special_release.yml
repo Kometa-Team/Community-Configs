@@ -56,21 +56,10 @@ templates:
 
 overlays:
 
-  # Criterion:
-    # template:
-      # - name: SpecialRelease
-        # weight: 30
-        # slug: criterion
-    # plex_all: true
-    # filters:
-      # filepath.regex:
-        # - '(?i)Criterion'
-        # - '(?i)\[CC\]'
-
   IMAX-E:
     template:
       - name: SpecialRelease
-        weight: 20
+        weight: 30
         slug: enhanced
     plex_all: true
     filters:
@@ -79,8 +68,19 @@ overlays:
   IMAX:
     template:
       - name: SpecialRelease
-        weight: 10
+        weight: 20
         slug: imax
     plex_all: true
     filters:
       filepath.regex: '(?i)\bIMAX\b'
+
+  Criterion:
+    template:
+      - name: SpecialRelease
+        weight: 10
+        slug: criterion
+    plex_all: true
+    filters:
+      filepath.regex:
+        - '(?i)Criterion'
+        - '(?i)\[CC\]'
