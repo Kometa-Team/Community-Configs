@@ -49,6 +49,7 @@ dynamic_collections:
   Year:
     type: number
     title_format: Best of <<key_name>>
+    sync: true
     data:
       starting: current_year-10
       ending: current_year
