@@ -1,0 +1,13 @@
+######################################################
+#            Standard TV Show Collections            #
+######################################################
+collections:
+  Marvel Cinematic Universe:
+    tmdb_keyword: 180547
+#    collection_order: custom
+    sort_title: +50_Marvel Cinematic Universe
+    url_poster: https://theposterdb.com/api/assets/879
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films produced by Marvel Studios. The films are based on characters that appear in American comic books published by Marvel Comics. The franchise also includes television series, short films, digital series, and literature. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters."
