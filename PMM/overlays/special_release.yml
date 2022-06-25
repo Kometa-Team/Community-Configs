@@ -29,6 +29,16 @@
 #          use_enhanced: true                               #
 #          # Use the IMAX overlay                           #
 #          use_imax: true                                   #
+#          # Use the Director's Cut overlay                 #
+#          use_directorscut: true                           #
+#          # Use the Uncut overlay                          #
+#          use_uncut: true                                  #
+#          # Use the Extended overlay                       #
+#          use_extended: true                               #
+#          # Use the Remastered overlay                     #
+#          use_remastered: true                             #
+#          # Use the Special overlay                        #
+#          use_special: true                                #
 #############################################################
 
 templates:
@@ -46,7 +56,7 @@ templates:
     allowed_library_types: <<use_<<slug>>>>
     overlay:
       name: <<overlay_name>>
-      git: PMM/overlays/images/<<overlay>>
+      file: config/metadata/overlays/images/<<overlay>>.png
       group: special
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
@@ -55,6 +65,51 @@ templates:
       vertical_align: <<vertical_align>>
 
 overlays:
+
+  DirectorsCut:
+    template:
+      - name: SpecialRelease
+        weight: 80
+        slug: directorscut
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bDirectorsCut\b'
+
+  Uncut:
+    template:
+      - name: SpecialRelease
+        weight: 70
+        slug: uncut
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bUncut\b'
+
+  Extended:
+    template:
+      - name: SpecialRelease
+        weight: 60
+        slug: extended
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bExtended\b'
+
+  Remastered:
+    template:
+      - name: SpecialRelease
+        weight: 50
+        slug: remastered
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bRemaster\b'
+
+  Special:
+    template:
+      - name: SpecialRelease
+        weight: 40
+        slug: special
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bSpecial\b'
 
   Criterion:
     template:
