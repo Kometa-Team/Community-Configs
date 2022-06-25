@@ -56,7 +56,7 @@ templates:
     allowed_library_types: <<use_<<slug>>>>
     overlay:
       name: <<overlay_name>>
-      git: PMM/overlays/images/<<overlay>>
+      file: config/metadata/overlays/images/<<overlay>>.png
       group: special
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
