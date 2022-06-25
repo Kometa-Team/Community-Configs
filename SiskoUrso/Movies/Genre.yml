@@ -1,7 +1,7 @@
 templates:
   Genre:
     plex_search:
-    genre: <<genre>>
+      genre: <<genre>>
     url_poster: <<poster>>
     sort_title: +3_<<collection_name>>
     collection_order: alpha
@@ -23,6 +23,12 @@ templates:
     sync_mode: sync
     smart_label: alpha
     url_poster: <<poster>>
+  Trakt:
+    sort_title: +3_<<collection_name>>
+    trakt_list_details: <<list>>
+    url_poster: <<poster>>
+    sync_mode: sync
+    collection_order: custom
 
 collections:
 
@@ -178,12 +184,7 @@ collections:
       limit: 200
     summary: A Sport Film revolves around a sport setting, event, or an athlete. Often, these films will center on a single sporting event that carries significant importance. Sports films traditionally have a simple plot that builds up to the significant sporting event. This genre is known for incorporating film techniques to build anticipation and intensity. Sport films have a large range of sub-genres, from comedies to dramas, and are more likely than other genres to be based true-life events.
   Stand Up Comedy:
-    template: {name: Other Genre, poster: https://theposterdb.com/api/assets/49137}
-    imdb_list:
-      - https://www.imdb.com/list/ls070221411/
-      - https://www.imdb.com/list/ls086584751/
-      - https://www.imdb.com/list/ls086022668/
-      - https://www.imdb.com/list/ls049792208/
+    template: {name: Trakt, list: https://trakt.tv/users/giladg/lists/stand-up-comedy, poster: https://theposterdb.com/api/assets/74610}
     summary: Stand-up comedy is a comedic style in which a comedian performs in front of a live audience, speaking directly to them through a microphone. Comedians give the illusion that they are dialoguing, but in actuality, they are monologuing a grouping of humorous stories, jokes and one-liners, typically called a shtick, routine, act, or set. Some stand-up comedians use props, music or magic tricks to enhance their acts. Stand-up comedians perform quasi-autobiographical and fictionalized extensions of their offstage selves.
   Submarine:
     template: {name: Other Genre, poster: https://theposterdb.com/api/assets/89095}
@@ -199,7 +200,7 @@ collections:
   Time Travel:
     template: {name: Other Genre, poster: https://theposterdb.com/api/assets/81440}
     imdb_list: https://www.imdb.com/search/keyword/?keywords=time-travel%2Ctime-machine&ref_=kw_ref_key&sort=moviemeter,asc&mode=detail&page=1&title_type=movie
-    summary: Time Travel is a collection of movies that contains time-travel. In any form. Be it time-loop, full on relocation in time, consciousness transfer... Warning You may find yourself screaming Paradox!,  That's just a risk you have to take.  
+    summary: Time Travel is a collection of movies that contains time-travel. In any form. Be it time-loop, full on relocation in time, consciousness transfer... Warning You may find yourself screaming Paradox!,  That's just a risk you have to take.
   War:
     template: {name: Genre, genre: War, poster: https://theposterdb.com/api/assets/51477}
     summary: War Film is a genre that looks at the reality of war on a grand scale. They often focus on landmark battles as well as political issues within war. This genre usually focuses on a main character and his team of support, giving the audience an inside look into the gritty reality of war.
