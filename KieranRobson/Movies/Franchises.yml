@@ -1,0 +1,149 @@
+templates:
+    Franchise:
+        url_poster: <<poster>>
+        sort_title: +++++++_<<collection_name>>
+        collection_order: release
+        delete_not_scheduled: true
+        run_again: true
+        visible_home: true
+        visible_shared: true
+        sync_mode: sync
+collections:
+  Marvel Cinematic Universe:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/162885}
+    sort_title: +++++MCU
+    imdb_list:
+      - https://www.imdb.com/list/ls039269245/
+    summary: An American media franchise and shared fictional universe that is centered on a series of superhero films, independently produced by Marvel Studios and based on characters that appear in publications by Marvel Comics. The franchise has expanded to include comic books, short films, and television series.
+  Fast and Furious:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/166162}
+    sort_title: +++++Fast
+    imdb_list:
+      - https://www.imdb.com/list/ls068935667/
+    summary: The Fast and the Furious is an American media franchise centered on a series of action films that is largely concerned with illegal street racing, heists and spies. The franchise also includes short films, a television series, live shows, and theme park attractions.
+  Pirates of the Caribbean:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/53941}
+    sort_title: +++++Pirates
+    imdb_list:
+      - https://www.imdb.com/list/ls023657263/
+    summary: A series of fantasy swashbuckler films based on Walt Disney's theme park ride of the same name. The films follow the adventures of Captain Jack Sparrow and take place in a fictional historical setting; a world ruled by the British Empire, the East India Trading Company and the Spanish Empire, with pirates representing freedom from the ruling powers.
+  Star Wars:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/58758}
+    sort_title: +++++StarWars
+    imdb_list:
+      - https://www.imdb.com/list/ls046295261/
+    summary: Star Wars is an American epic space-opera multimedia franchise created by George Lucas, which began with the eponymous 1977 film and quickly became a worldwide pop-culture phenomenon.
+  The Wizarding World:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/85944}
+    sort_title: +++++Wizarding
+    imdb_list:
+      - https://www.imdb.com/list/ls060991914/
+    summary: The Wizarding World is a fantasy media franchise and shared fictional universe centred on a series of films, based on the Harry Potter novel series by J. K. Rowling. 
+  Back to the Future:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/63511}
+    sort_title: +++++Back
+    imdb_list:
+      - https://www.imdb.com/list/ls093597379/?sort=release_date,asc&st_dt=&mode=detail&page=1
+    summary: Back to the Future is an American science fiction comedy franchise created by Robert Zemeckis and Bob Gale. The franchise follows the adventures of a high school student, Marty McFly, and an eccentric scientist, Dr. Emmett "Doc" Brown, as they use a DeLorean time machine to time travel to different periods in the history of the fictional town of Hill Valley, California.
+  Indiana Jones:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/105678}
+    sort_title: +++++Iniana
+    imdb_list:
+      - https://www.imdb.com/list/ls027779939/?sort=release_date,asc&st_dt=&mode=detail&page=1
+    summary: The Adventure films series from the Director George Lucas and Steven Spielberg, starring Harrison Ford as the archaeologist Dr. Henry Walton "Indiana" Jones.
+  Marvel:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/164107}
+    sort_title: +++++Marvel
+    trakt_list:
+      - https://trakt.tv/users/isis-jansen/lists/marvel?sort=rank,desc
+    summary: Marvel Comics is the brand name and primary imprint of Marvel Worldwide Inc., formerly Marvel Publishing, Inc. and Marvel Comics Group, a publisher of American comic books and related media. In 2009, The Walt Disney Company acquired Marvel Entertainment, Marvel Worldwide's parent company.
+  Middle Earth:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/115119}
+    sort_title: +++++MiddleEarth
+    imdb_list:
+      - https://www.imdb.com/list/ls055713151/?sort=release_date,asc&st_dt=&mode=detail&page=1
+    summary: The Lord of the Rings is an epic high-fantasy novel by English author and scholar J. R. R. Tolkien. Set in Middle-earth, intended to be Earth at some distant time in the past, the story began as a sequel to Tolkien's 1937 children's book The Hobbit, but eventually developed into a much larger work.
+  Bourne:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/5420}
+    sort_title: +++++Bourne
+    imdb_list:
+      - https://www.imdb.com/list/ls026772377/
+    summary: The Bourne franchise consists of action-thriller installments based on the character Jason Bourne, created by author Robert Ludlum. The franchise includes five theatrical films, and a spin-off prequel television series. 
+  X-Men:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/163839}
+    sort_title: +++++XMEN
+    imdb_list:
+      - https://www.imdb.com/list/ls026465600/
+    summary: X-Men is an American superhero film series based on the fictional superhero team of the same name, who originally appeared in a series of comic books created by Stan Lee and Jack Kirby and published by Marvel Comics.
+  Batman:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/27394}
+    sort_title: +++++Batman
+    trakt_list:
+      - https://trakt.tv/users/maz/lists/batman-anthology-1989-1997?sort=rank,asc
+    summary: Batman is a superhero appearing in American comic books published by DC Comics. 
+  The Dark Knight:     
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/44451}
+    sort_title: +++++BatmanDarkKnight
+    imdb_list:
+      - https://www.imdb.com/list/ls047442692/
+    summary: Batman is a superhero appearing in American comic books published by DC Comics.
+  James Bond:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/115662}
+    sort_title: +++++JamesBond
+    trakt_list:
+      - https://trakt.tv/users/rd1701/lists/bond?sort=released,asc
+    summary: The James Bond film series is a British series of spy films based on the fictional character of MI6 agent James Bond, codename "007". With all of the action, adventure, gadgetry & film scores that Bond is famous for.
+  DC Extended Universe:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/40928}
+    sort_title: +++++DCEU
+    imdb_list:
+      - https://www.imdb.com/list/ls062501894/
+    summary: The DC Extended Universe (DCEU) is an American media franchise and shared universe centered on a series of superhero films and television series produced by DC Films and distributed by Warner Bros. Pictures.
+  Transformers:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/159630}
+    sort_title: +++++Transformers
+    imdb_list:
+      - https://www.imdb.com/list/ls033452628/
+    summary: The Transformers series follows the continuing battle between the Autobots and the Decepticons and ultimately, the triumph of good over evil. This collection includes the Theatrically Released Films of the transformers saga only.
+  Hunger Games:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/69294}
+    sort_title: +++++HungerGames
+    imdb_list:
+      - https://www.imdb.com/list/ls069064647/
+    summary: A science fiction film series based on the novel of the same name by Suzanne Collins. The film series takes place in a dystopian post-apocalyptic future in the nation of Panem, featuring the protagonist, Katniss Everdeen.
+  Planet of the apes (Originial):
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/21715}
+    sort_title: +++++PlanetOfTheApesOld
+    trakt_list:
+      - https://trakt.tv/users/franco45/lists/planet-of-the-apes?sort=rank,asc
+    summary: The original 5 classic films collection.
+  Planet of the apes (Reboot):
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/21735}
+    sort_title: +++++PlanetOfTheApesReboot
+    trakt_list:
+      - https://trakt.tv/users/wdvhucb/lists/planet-of-the-apes-reboot?sort=rank,asc
+    summary: Rick Jaffa & Amanda Silver's reboot/remake of the Planet of the Apes inspired by news articles on apes raised as humans and advances in genetics. Jaffa conceived an idea for a film about a genetically enhanced chimp raised in a human household. The film series focuses on a chimpanzee, Caesar who when given a substance designed to help the brain repair itself, gains advanced intelligence which leads to an ape uprising.
+  The Cornetto Trilogy:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/234}
+    sort_title: +++++CornettoTrilogy
+    imdb_list:
+      - https://www.imdb.com/list/ls068623110/
+    summary: The Three Flavours Cornetto trilogy (also known as the Cornetto trilogy or the Blood and Ice Cream trilogy) is an anthology series of British comedic genre films directed by Edgar Wright, written by Wright and Simon Pegg, produced by Nira Park, and starring Pegg and Nick Frost. The trilogy consists of Shaun of the Dead (2004), Hot Fuzz (2007), and The World's End (2013). 
+  Fifty Shades of Grey:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/38636}
+    sort_title: +++++FiftyShades
+    imdb_list:
+      - https://www.imdb.com/list/ls021034687/
+    summary: Fifty Shades of Grey is a 2011 erotic romance novel by British author E. L. James.[1] It became the first instalment in the Fifty Shades novel series that follows the deepening relationship between a college graduate, Anastasia Steele, and a young business magnate, Christian Grey. It is notable for its explicitly erotic scenes featuring elements of sexual practices involving BDSM (bondage/discipline, dominance/submission, and sadism/masochism). Originally self-published as an ebook and print-on-demand in June 2011, the publishing rights to the novel were acquired by Vintage Books in March 2012.
+  Divergent:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/5426}
+    sort_title: +++++Divergent
+    imdb_list:
+      - https://www.imdb.com/list/ls079078568/
+    summary: The series consists of three science fiction action films set in a dystopian society.
+  Maze Runner:
+    template: {name: Franchise, poster: https://theposterdb.com/api/assets/174}
+    sort_title: +++++MazeRunner
+    imdb_list:
+      - https://www.imdb.com/list/ls020767998/
+    summary: Maze Runner is a North American film trilogy, consisting of science-fiction dystopian action adventure films based on The Maze Runner novels by the North American author James Dashner. 

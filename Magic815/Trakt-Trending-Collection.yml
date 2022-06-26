@@ -1,0 +1,21 @@
+##############################################
+#         Trakt Trending Collections         #
+##############################################
+collections:
+  Trending Now:
+    trakt_chart:
+      chart: trending
+      limit: 100
+    sort_title: "!B Trending Now"
+    url_poster: https://raw.githubusercontent.com/Magic815/Plex-Meta-Manager-Configs/master/Magic815/posters/Trakt-Trending-Now.png
+    sync_mode: sync
+    collection_mode: hide
+    collection_filtering: user
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    smart_label:
+      sort_by: release.desc
+      all:
+        label: <<smart_label>>
+        unplayed: true

@@ -1,0 +1,24 @@
+templates:
+  ol_builder:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: <<ol_type>>_<<ol_language>>_<<ol_posx>>_<<ol_posy>>
+      file: overlays/<<ol_folder>>/<<ol_file>>.png
+      group: <<ol_group>>
+      weight: <<ol_weight>>
+      horizontal_offset: <<ol_posx>>
+      vertical_offset: <<ol_posy>>
+  ol_items:
+    optional:
+      - it_language
+      - it_hdr
+      - it_resolution
+      - it_resolution_not
+    plex_all: true
+    filters:
+      audio_language: <<it_language>>
+      hdr: <<it_hdr>>
+      resolution: <<it_resolution>>
+      resolution.not: <<it_resolution_not>>

@@ -1,0 +1,17 @@
+#Uses https://theposterdb.com/poster/108170 and https://theposterdb.com/set/40548
+collections:
+  Back to the Future Trilogy:
+    tmdb_collection: https://www.themoviedb.org/collection/264
+    tmdb_summary: https://www.themoviedb.org/collection/264
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/108170
+    sort_title: ++++++++_back_to_the_future_trilogy
+    collection_order: release
+
+metadata:
+  105: #"Back to the Future"
+    url_poster: https://theposterdb.com/api/assets/63512
+  165: #"Back to the Future Part II"
+    url_poster: https://theposterdb.com/api/assets/63513
+  196: #"Back to the Future Part III":
+    url_poster: https://theposterdb.com/api/assets/63514

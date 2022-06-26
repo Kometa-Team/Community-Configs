@@ -1,0 +1,19 @@
+#Uses https://theposterdb.com/poster/46059
+
+collections:
+  The Lego Movie Collection:
+    trakt_list: https://trakt.tv/users/conanrocks/lists/movies-lego-movie?sort=rank%2Casc
+    tmdb_summary: https://www.themoviedb.org/collection/325470
+    #or trakt_list 
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/46059
+    sort_title: ++++++++_lego_movies
+    collection_order: release
+
+metadata:
+  137106: #The Lego Movie:
+    url_poster: https://theposterdb.com/api/assets/46060
+  280217: #"The Lego Movie 2: The Second Part":
+    url_poster: https://theposterdb.com/api/assets/46064
+  324849: #The Lego Batman Movie:
+    url_poster: https://theposterdb.com/api/assets/46061

@@ -1,0 +1,19 @@
+#Uses https://theposterdb.com/set/37562
+
+collections:
+  Despicable Me Collection:
+    tmdb_collection: https://www.themoviedb.org/collection/86066
+    tmdb_summary: https://www.themoviedb.org/collection/86066
+    #or trakt_list 
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/138807
+    sort_title: ++++++++_despicable_me
+    collection_order: release
+
+metadata:
+  20352: #Despicable Me
+    url_poster: https://theposterdb.com/api/assets/58832
+  93456: #Despicable Me 2
+    url_poster: https://theposterdb.com/api/assets/58830
+  324852: #Despicable Me 3
+    url_poster: https://theposterdb.com/api/assets/58831

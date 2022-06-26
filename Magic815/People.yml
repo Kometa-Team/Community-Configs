@@ -1,0 +1,54 @@
+######################################################
+#               People Collections                   #
+######################################################
+templates:
+  Person:
+    smart_filter:
+      any:
+        director: tmdb
+      sort_by: release.asc
+      validate: false
+    tmdb_person: <<person>>
+    sort_title: +40_<<collection_name>>
+collections:
+#  Alfred Hitchcock:
+#    template: {name: Person, person: 2636}
+  Christopher Nolan:
+    template: {name: Person, person: 525}
+    collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/47425
+    cache_builders: 1
+  Coen Brothers:
+    template: {name: Person, person: "1223, 1224"}
+    collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/115506
+    summary: "Joel Coen and Ethan Coen, collectively referred to as the Coen Brothers, are American film directors, producers, screenwriters, and editors. Their films span many genres and styles, which they frequently subvert or parody. Their most acclaimed works include: Raising Arizona (1987), Miller's Crossing (1990), Fargo (1996), The Big Lebowski (1998), O Brother, Where Art Thou? (2000), No Country for Old Men (2007), Burn After Reading (2008), A Serious Man (2009), True Grit (2010), Inside Llewyn Davis (2013), and The Ballad of Buster Scruggs (2018)."
+    cache_builders: 1
+  James Cameron:
+    template: {name: Person, person: 2710}
+    collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/47447
+    cache_builders: 1
+#  Kevin Smith:
+#    template: {name: Person, person: 19303}
+#  M. Night Shyamalan:
+#    template: {name: Person, person: 11614}
+#  Michael Bay:
+#    template: {name: Person, person: 865}
+  Quentin Tarantino:
+    template: {name: Person, person: 138}
+    collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/47468
+    cache_builders: 1
+  Steven Spielberg:
+    template: {name: Person, person: 488}
+    collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/47477
+    cache_builders: 1
+  Tim Burton:
+    template: {name: Person, person: 510}
+    collection_mode: hide
+    url_poster: https://theposterdb.com/api/assets/54729
+    cache_builders: 1
+#  Zack Snyder:
+#    template: {name: Person, person: 15217}
