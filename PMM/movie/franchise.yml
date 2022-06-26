@@ -43,7 +43,7 @@ templates:
 dynamic_collections:
   TMDb Collections:
     type: tmdb_collection
-    remove_suffix: "Collection"
+#     remove_suffix: "Collection"
     template: collection
     addons:
       8091:       # Alien
