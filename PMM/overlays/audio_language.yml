@@ -32,7 +32,7 @@ templates:
       overlay: <<overlay_name>>
       horizontal_offset: 0
       horizontal_align: center
-      vertical_offset: 15
+      vertical_offset: 30
       vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
