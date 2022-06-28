@@ -1,0 +1,11 @@
+######################################################
+#               IMDb Top 250 Collection              #
+######################################################
+collections:
+  IMDb Top 250:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc
+    sort_title: ++++++++_IMDb Top 250
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Configs/master/Magic815/posters/IMDb-Top-250.jpg
+    collection_mode: hide
+    sync_mode: sync
+    cache_builders: 1

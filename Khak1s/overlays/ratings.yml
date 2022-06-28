@@ -1,0 +1,83 @@
+overlays:
+################################## Issue identified with using imdb rating and rt at the same time. Workign out the issue and will update the config once resolved.
+#  critic_rating:
+#    overlay:
+#      name: text(critic_rating)
+#      horizontal_align: left
+#      vertical_align: bottom
+#      font: fonts/Inter-Medium.ttf
+#      font_size: 63
+#      font_color: "#FFFFFF"
+#      back_color: "#00000099"
+#      back_radius: 30
+#      back_width: 300
+#      back_height: 105
+#      horizontal_offset: 0
+#      vertical_offset: 0
+#      git: PMM/overlays/images/raw/IMDB_Rating
+#    plex_search:
+#      all:
+#        critic_rating.gte: 0.1
+#        critic_rating.lte: 9.9
+
+
+  rating-rotten:
+    overlay:
+      name: text(audience_rating)
+      horizontal_align: center
+      vertical_align: bottom
+      font: fonts/Inter-Medium.ttf
+      font_size: 63
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 300
+      back_height: 105
+      horizontal_offset: 0
+      vertical_offset: 0
+      git: PMM/overlays/images/raw/RT_Rating_aud_rotten
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 6.0
+
+
+  rating-fresh:
+    overlay:
+      name: text(audience_rating)
+      horizontal_align: center
+      vertical_align: bottom
+      font: fonts/Inter-Medium.ttf
+      font_size: 63
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 300
+      back_height: 105
+      horizontal_offset: 0
+      vertical_offset: 0
+      git: PMM/overlays/images/raw/RT_Rating_aud_fresh
+    plex_search:
+      all:
+        audience_rating.gte: 6.1
+        audience_rating.lte: 9.9
+
+  cert-fresh:
+    mdblist_list: https://mdblist.com/lists/andrewkennedy/certified-fresh-since-1901/
+    overlay:
+      name: text(audience_rating)
+      horizontal_align: center
+      vertical_align: bottom
+      font: fonts/Inter-Medium.ttf
+      font_size: 63
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 300
+      back_height: 105
+      horizontal_offset: 0
+      vertical_offset: 0
+      git: PMM/overlays/images/raw/RT_Rating_cert_fresh
+    suppress_overlays:
+      - rating-fresh
+      - rating-rotten

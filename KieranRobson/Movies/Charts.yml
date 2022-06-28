@@ -1,0 +1,31 @@
+templates:
+  charts:
+        url_poster: <<poster>>
+        sort_title: +++++++_<<collection_name>>
+        collection_order: release
+        delete_not_scheduled: true
+        run_again: true
+        visible_home: true
+        visible_shared: true
+        sync_mode: sync
+collections:
+  IMDb Top 250:
+    template: {name: charts, poster: https://i.imgur.com/eALDu11.png}
+    imdb_list: 
+      - https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc
+    sort_title: ++++++++_IMDb Top 250
+  Trakt Top 250:
+      template: {name: charts, poster: https://i.imgur.com/ecdlylK.png}
+      trakt_list: 
+        - https://trakt.tv/users/justin/lists/trakt-popular-movies?sort=rank,asc
+      sort_title: ++++++++Trakt Top 250
+  Letterboxd Top 250:
+    template: {name: charts, poster: https://i.imgur.com/E9QkAHG.png}
+    letterboxd_list: 
+      - https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/
+    sort_title: ++++++++Letterboxd Top 250
+  Reddit Top 250:
+    template: {name: charts, poster: https://i.imgur.com/HJeEcYs.png}
+    trakt_list: 
+      - https://trakt.tv/users/jaygreene/lists/reddit-top-250-2019-edition?sort=rank,asc
+    sort_title: ++++++++Reddit Top 250

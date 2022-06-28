@@ -1,0 +1,93 @@
+##############################################################
+##               Suggestions Collections                    ##
+##                Created by JJJonesJr33                    ##
+##                      Version 2.0                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##               Yozora, Bullmoose20, & Sohjiro             ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:
+  suggestion:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: ++++++++++_<<collection_name>>
+    collection_mode: hide
+    sync_mode: sync
+  Tautulli:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: ++++++++++_<<collection_name>>
+    collection_mode: hide
+    collection_order: alpha
+    sync_mode: sync
+      
+#############################
+##       Collections       ##
+#############################
+
+collections:
+
+################
+##    Plex    ##
+################
+
+  Recently Aired:
+    template: { name: suggestion, poster: 213602}
+    smart_filter:
+      all:
+        episode_air_date: 7
+      sort_by: episode_added.desc
+    summary: Episodes that have aired within the last week.
+    
+  New Episodes:
+    template: { name: suggestion, poster: 213598}
+    smart_filter:
+      all:
+        episode_added: 7
+      sort_by: episode_added.desc
+    summary: Episodes that have been added within the last week.
+
+  Recently Added:
+    template: { name: suggestion, poster: 213601}
+    smart_filter:
+      all:
+        added: 7
+      sort_by: added.desc
+    summary: Shows that have been added within the last week.
+
+    
+######################
+##     Tautulli     ##
+######################
+
+  People Watching:
+    template: {name: Tautulli, poster: 213600}
+    tautulli_watched:
+      list_days: 30
+      list_size: 10
+      list_buffer: 20
+    summary: Most Watched Movies from all the users on Plex
+    
+    # New Episodes
+    # url_poster: https://theposterdb.com/api/assets/213598
+    
+    # Recently Added
+    # url_poster: https://theposterdb.com/api/assets/213601
+    
+    # Recently Aired
+    # url_poster: https://theposterdb.com/api/assets/213602
+    
+    # Recently Released
+    # url_poster: https://theposterdb.com/api/assets/213603
+    
+    # Top Rated
+    # url_poster: https://theposterdb.com/api/assets/213605

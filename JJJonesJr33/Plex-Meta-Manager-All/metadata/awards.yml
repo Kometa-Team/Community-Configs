@@ -26,8 +26,8 @@ templates:
     # visible_shared: range(11/01-02/28)
     # schedule: range(11/01-02/28)
       collection_mode: hide
-      collection_order: release
-      smart_label: year.desc
+      collection_order: release.desc
+      sync_mode: sync
         
 #############################
 ##       Collections       ##

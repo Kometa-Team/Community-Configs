@@ -1,0 +1,63 @@
+######################################################
+#                Studio Collections                  #
+######################################################
+collections:
+  Disney Animation Studios:
+    imdb_list: https://www.imdb.com/list/ls059383351/
+    sort_title: +25_Disney Animation Studios
+    url_poster: https://theposterdb.com/api/assets/11845
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "Walt Disney Animation Studios (WDAS), sometimes shortened to Disney Animation, is an American animation studio that creates animated features and short films for The Walt Disney Company. Founded on October 16, 1923 by brothers Walt Disney and Roy O. Disney, it is one of the oldest-running animation studios in the world. It is currently organized as a division of Walt Disney Studios and is headquartered at the Roy E. Disney Animation Building at the Walt Disney Studios lot in Burbank, California."
+    cache_builders: 1
+  Pixar:
+    tmdb_company: 3
+    sort_title: +25_Pixar
+    url_poster: https://theposterdb.com/api/assets/18894
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "Pixar Animation Studios, commonly known as Pixar, is an American computer animation studio based in Emeryville, California, a subsidiary of Disney Studios Content owned by The Walt Disney Company. Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation on February 3, 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4 billion by converting each share of Pixar stock to 2.3 shares of Disney stock, a transaction that resulted in Jobs becoming Disney's largest single shareholder at the time. Pixar is best known for its feature films technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot."
+    cache_builders: 1
+  Studio Ghibli:
+    tmdb_company: 10342 
+    sort_title: +25_Studio Ghibli
+    url_poster: https://theposterdb.com/api/assets/100576
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. The studio is best known for its animated feature films, and has also produced several short films, television commercials, and one television film. The studio’s mascot and most recognizable symbol is the character, Totoro, a giant cat-like spirit from the 1988 classic, My Neighbor Totoro."
+    cache_builders: 1
+#  Blue Sky:
+#    template: { name: Studio, company: 9383 }
+#    summary: Blue Sky Studios, Inc. is an American computer animation film studio based in Greenwich, Connecticut. It is a subsidiary of 20th Century Animation, a division of Disney Studios Content.
+#  DC Extended Universe:
+#    template: {name: Studio}
+#    imdb_list: https://www.imdb.com/list/ls077827588/
+#    summary: "The DC Extended Universe (DCEU) is a media franchise and shared universe centered on superheros from DC Comics."
+#  DreamWorks:
+#    template: { name: Studio, company: 521 }
+#    summary: DreamWorks Animation LLC (also simply known as DreamWorks) is an American animation studio and a subsidiary of Universal Pictures, itself a subsidiary of Comcast's NBCUniversal. It is based in Glendale, California, and produces animated feature films, television programs, and online virtual games.
+#  Entertainment Television:
+#    template: { name: Studio, company: 25968 }
+#    summary: E! (an initialism for Entertainment Television) is an American basic cable channel which primarily focuses on pop culture, celebrity focused reality shows, and movies, owned by the NBCUniversal Television and Streaming division of NBCUniversal, a subsidiary of Comcast.
+#  Illumination Entertainment:
+#    template: { name: Studio, company: 6704 }
+#    summary: Illumination is an American film and animation studio founded by Chris Meledandri in 2007 and owned by Universal Pictures, a division of NBCUniversal, which is itself a division of Comcast. Meledandri produces the films, while Universal finances and distributes all the films. The studio is responsible for the Despicable Me and The Secret Life of Pets franchises and the film adaptations of Dr. Seuss’ books The Lorax and How the Grinch Stole Christmas. The Minions, characters from the Despicable Me series, are the studio's mascots.
+#  Sony Pictures:
+#    template: { name: Studio, company: 34 }
+#    summary: Sony Pictures Entertainment Inc. is an American diversified multinational mass media and entertainment studio conglomerate that produces, acquires, and distributes filmed entertainment through multiple platforms. Through an intermediate holding company called Sony Film Holding Inc., it is operated as a subsidiary of Sony Entertainment Inc., which is itself a subsidiary of the multinational technology and media conglomerate Sony Group Corporation. Based at the Sony Pictures Studios lot in Culver City, California as one of the "Big Five" major American film studios, it encompasses Sony's motion picture, television production and distribution units. Its sales in the fiscal year 2020 was reported to be $7.16 billion.
+#  Sony Pictures Animation:
+#    template: { name: Studio, company: 2251 }
+#    summary: Sony Pictures Animation Inc. is an American animation studio owned by Sony Entertainment's Sony Pictures Entertainment through their Motion Picture Group division and founded on May 9, 2002. The studio's films are distributed worldwide by Sony Pictures Releasing under their Columbia Pictures label, while all direct-to-video releases are released by Sony Pictures Home Entertainment.
+#  Warner Bros. Pictures:
+#    template: { name: Studio, company: 174 }
+#    summary: Warner Bros. Entertainment Inc. is an American diversified multinational mass media and entertainment conglomerate headquartered at the Warner Bros. Studios complex in Burbank, California, and a subsidiary of AT&T's WarnerMedia through its Studios & Networks division. Founded in 1923 by four brothers Harry, Albert, Sam, and Jack Warner, the company established itself as a leader in the American film industry before diversifying into animation, television, and video games, and is one of the "Big Five" major American film studios, as well as a member of the Motion Picture Association.
+#  Warner Animation Group:
+#    template: { name: Studio, company: 25120 }
+#    summary: The Warner Animation Group (WAG) is an American animation studio that is the feature animation division of Warner Bros. Entertainment. Established on January 7, 2013, the studio is the successor to the dissolved 2D traditional hand-drawn animation studio Warner Bros. Feature Animation, which shut down in 2003 and the dissolved family film division Warner Bros. Family Entertainment, which shut down in 2009. The entity is also a sister animation studio of the regular animation studio Warner Bros. Animation
+#  Walt Disney Pictures:
+#    template: { name: Studio }
+#    imdb_list: https://www.imdb.com/list/ls077114097/
+#    summary: Walt Disney Pictures is an American film production studio of The Walt Disney Studios, which is owned by The Walt Disney Company. The studio is the flagship producer of live-action feature films within the Walt Disney Studios unit, and is based at the Walt Disney Studios in Burbank, California. Animated films produced by Walt Disney Animation Studios and Pixar Animation Studios are also released under this brand. Walt Disney Studios Motion Pictures distributes and markets the films produced by Walt Disney Pictures.
