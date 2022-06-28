@@ -48,8 +48,15 @@ dynamic_collections:
         - 661031
     exclude:
       - 10                    # Exclude Star Wars, added via Letterboxd List below
-    template_variables:
-      add_movies:
+      - 809185                # Exclude Army of the Dead, added via Letterboxd List below
+    template_variables:       # Movies that have TMDb Collections where I have multiple versions of the first one,
+      minimum_items:          # that should not be a collection until the second movie actually gets released.
+        475557: 3             # Joker
+        870339: 3             # The Accountant
+        948485: 3             # The Batman
+        726871: 3             # Dune
+        861415: 3             # Free Guy
+      add_movies:             # Add Movies to collections, which did not meet TMDbs criteria
         304: "402900"         # Add "Ocean's 8" to "Ocean's Movies"
         2344: "55931"         # Add "Animatrix" to "The Matrix"
         2883: "414419"        # Add "Kill Bill: The Whole Bloody Affair" to "Kill Bill"
@@ -59,13 +66,7 @@ dynamic_collections:
         44215: "2164"         # Add "Stargate" to "Stargate"
         448150: "567604"      # Add "Once upon a Deadpool" to "Deadpool"
         535313: "293167"      # Add "Kong: Skull Island" to "The Monsterverse"
-      minimum_items:          # Movies that have TMDb Collections where I have multiple versions of the first one,
-        475557: 3             # that should not be a collection until the second movie actually gets released.
-        870339: 3
-        948485: 3
-        726871: 3
-        861415: 3
-      name_mapping:
+      name_mapping:           # Asset folders which differ in name from the collection
         119: The Lord of the Rings
         131: Three Colors
         230: The Godfather

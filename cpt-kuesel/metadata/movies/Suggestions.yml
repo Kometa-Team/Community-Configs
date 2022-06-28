@@ -12,5 +12,4 @@ collections:
     visible_shared: true
     visible_library: true
   Family Watchlist:
-    template: {name: lbxd_list, lbxd_list: watchlist, lbxd_type: null, lbxd_smart: random}
-    label: family
+    template: {name: lbxd_wlist, lbxd_smart: random}

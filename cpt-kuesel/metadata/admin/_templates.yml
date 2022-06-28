@@ -14,25 +14,34 @@ templates:
       - it_uhd
       - it_hdr
       - it_queue
+    default:
+      it_default: "bottom, up_corners, down_corners, left_side, right_side, sides" # list of comma separated labels used to change overlay positions, call as null when using one of those labels with it_queue
     plex_search:
       all:
-        - audio_language: <<it_language>>
-          resolution: <<it_uhd>>
-          hdr: <<it_hdr>>
-        - any:
-            - label: <<it_queue>>
-            - all:
-                label.not:
-                  - bottom_portrait
+        audio_language: <<it_language>>
+        resolution: <<it_uhd>>
+        hdr: <<it_hdr>>
+        label: <<it_queue>>
+        label.not: <<it_default>>
   lbxd_list:
     optional:
       - lbxd_order
       - lbxd_smart
     default:
       lbxd_user: jkbsmm
-      lbxd_type: list/
       lbxd_sort: <<collection_name>>
-    letterboxd_list: https://letterboxd.com/<<lbxd_user>>/<<lbxd_type>><<lbxd_list>>/
+    letterboxd_list: https://letterboxd.com/<<lbxd_user>>/list/<<lbxd_list>>/
+    collection_order: <<lbxd_order>>
+    smart_label: <<lbxd_smart>>
+    sort_title: <<lbxd_sort>>
+  lbxd_wlist:
+    optional:
+      - lbxd_order
+      - lbxd_smart
+    default:
+      lbxd_user: jkbsmm
+      lbxd_sort: <<collection_name>>
+    letterboxd_list: https://letterboxd.com/<<lbxd_user>>/watchlist/
     collection_order: <<lbxd_order>>
     smart_label: <<lbxd_smart>>
     sort_title: <<lbxd_sort>>
