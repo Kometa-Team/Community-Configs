@@ -25,7 +25,6 @@ templates:
       sort_by: release.desc
       url_poster: https://theposterdb.com/api/assets/<<poster>>
       sort_title: +++++_<<collection_name>>
-      collection_order: release
       collection_mode: hide
 
 #############################

@@ -21,7 +21,7 @@ templates:
     Holiday:
         sort_title: +++++++_<<collection_name>>
         url_poster: <<poster>>
-        collection_order: release
+        collection_order: release.desc
         collection_mode: hide
         delete_not_scheduled: false
         run_again: true
