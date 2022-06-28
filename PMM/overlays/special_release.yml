@@ -73,7 +73,7 @@ overlays:
         slug: directorscut
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bDirector\b'
+      filepath.regex: '(?i)\bDirector|Directors\b'
 
   Uncut-Edition:
     template:
