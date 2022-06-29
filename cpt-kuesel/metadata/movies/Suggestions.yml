@@ -1,0 +1,15 @@
+external_templates:
+  - file: metadata/admin/_templates.yml
+collections:
+  Movie of the Day:
+    plex_search:
+      all:
+        year.gte: 1800
+      sort_by: random
+      limit: 1
+    schedule: hourly(1)
+    smart_label: random
+    visible_shared: true
+    visible_library: true
+  Family Watchlist:
+    template: {name: lbxd_wlist, lbxd_smart: random}

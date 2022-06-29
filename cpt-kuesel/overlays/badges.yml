@@ -1,0 +1,23 @@
+external_templates:
+  - file: metadata/admin/_templates.yml
+  - file: metadata/admin/_switches.yml
+
+overlays:
+  uhd:
+    template:
+      - name: sw_uhd
+      - name: it_items
+        it_uhd: 4k
+      - name: ol_builder
+        ol_overlay: uhd
+        ol_file: 4k
+        ol_weight: 50
+  hdr:
+    template:
+      - name: sw_hdr
+      - name: it_items
+        it_hdr: true
+      - name: ol_builder
+        ol_overlay: hdr
+        ol_file: hdr
+        ol_weight: 49

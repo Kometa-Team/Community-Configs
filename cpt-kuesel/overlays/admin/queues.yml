@@ -1,0 +1,97 @@
+queues:
+  default_portrait_flags:
+    - horizontal_offset: 250
+      vertical_offset: 0
+    - horizontal_offset: 500
+      vertical_offset: 0
+  default_portrait_badges:
+    - horizontal_offset: 0
+      vertical_offset: 0
+    - horizontal_offset: 750
+      vertical_offset: 0
+
+  default_landscape_flags:
+    - horizontal_offset: 240
+      vertical_offset: 0
+    - horizontal_offset: 480
+      vertical_offset: 0
+  default_landscape_badges:
+    - horizontal_offset: 0
+      vertical_offset: 0
+    - horizontal_offset: 0
+      vertical_offset: 180
+
+  bottom_portrait_flags:
+    - horizontal_offset: 250
+      vertical_offset: 1350
+    - horizontal_offset: 500
+      vertical_offset: 1350
+  bottom_portrait_badges:
+    - horizontal_offset: 0
+      vertical_offset: 1350
+    - horizontal_offset: 750
+      vertical_offset: 1350
+
+  up_corners_portrait_flags:
+    - horizontal_offset: 0
+      vertical_offset: 0
+    - horizontal_offset: 750
+      vertical_offset: 0
+  up_corners_portrait_badges:
+    - horizontal_offset: 0
+      vertical_offset: 150
+    - horizontal_offset: 750
+      vertical_offset: 150
+
+  down_corners_portrait_flags:
+    - horizontal_offset: 0
+      vertical_offset: 1350
+    - horizontal_offset: 750
+      vertical_offset: 1350
+  down_corners_portrait_badges:
+    - horizontal_offset: 0
+      vertical_offset: 1200
+    - horizontal_offset: 750
+      vertical_offset: 1200
+
+  left_side_portrait_flags:
+    - horizontal_offset: 0
+      vertical_offset: 600
+    - horizontal_offset: 0
+      vertical_offset: 750
+  left_side_portrait_badges:
+    - horizontal_offset: 750
+      vertical_offset: 450
+    - horizontal_offset: 750
+      vertical_offset: 900
+
+  right_side_portrait_flags:
+    - horizontal_offset: 0
+      vertical_offset: 600
+    - horizontal_offset: 750
+      vertical_offset: 750
+  right_side_portrait_badges:
+    - horizontal_offset: 0
+      vertical_offset: 450
+    - horizontal_offset: 750
+      vertical_offset: 900
+
+  sides_portrait_flags:
+    - horizontal_offset: 0
+      vertical_offset: 600
+    - horizontal_offset: 750
+      vertical_offset: 600
+  sides_portrait_badges:
+    - horizontal_offset: 0
+      vertical_offset: 750
+    - horizontal_offset: 750
+      vertical_offset: 750
+
+overlays:
+  queue_pseudo_overlay:
+    plex_search:
+      all:
+        year.lt: 1800
+    overlay:
+      name: none
+      file: overlays/none.png
