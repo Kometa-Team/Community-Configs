@@ -13,42 +13,189 @@
 #          # Set episode or season to overlay               #
 #          overlay_level:                                   #
 #          # Set the horizontal offset for the overlay      #
-#          horizontal_offset: 225                           #
+#          horizontal_offset: 255                           #
 #          # Set the horizontal align for the overlay       #
 #          horizontal_align: center                         #
 #          # Set the vertical offset for the overlay        #
 #          vertical_offset: 15                              #
 #          # Set the vertical align for the overlay         #
 #          vertical_align: top                              #
+#          # Set the rating source for the overlay          #
+#          rating_source: TMDb                              #
+#          # Set the rating type for the overlay            #
+#          rating_type: audience_rating                     #
+#          # Set the RT rating type for the overlay         #
+#          rt: aud                                          #
+#          # Set the font for the overlay                   #
+#          font: fonts/Avenir_95_Black.ttf                  #
+#          # Set the back width for the overlay             #
+#          back_width: 300                                  #
 #############################################################
 
 templates:
-  Audience Rating:
+  my_rating:
     optional:
       - overlay_level
     default:
+      rating_source: TMDb
       rating_type: audience_rating
-      horizontal_offset: 225
+      horizontal_offset: 255
       horizontal_align: center
       vertical_offset: 15
       vertical_align: top
+      weight: 1
+      font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
+      back_width: 300
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
+      group: ratings
+      weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-      font: fonts/Inter-Medium.ttf
+      font: <<font>>
       font_size: 63
       font_color: "#FFFFFF"
       back_color: "#00000099"
       back_radius: 30
-      back_width: 150
+      back_width: <<back_width>>
       back_height: 105
+      git: PMM/overlays/images/raw/<<rating_source>>
+      addon_position: left
+      addon_offset: 25
+
+  RT_rotten:
+    optional:
+      - overlay_level
+    default:
+      rating_type: audience_rating
+      rt: Aud
+      horizontal_offset: 255
+      horizontal_align: center
+      vertical_offset: 15
+      vertical_align: top
+      weight: 50
+      font: config/metadata/overlays/fonts/Adlib.ttf
+      back_width: 250
+    collection_level: <<overlay_level>>
+    # plex_search:
+      # all:
+        # <<rating_type>>.gt: 0.0
+        # <<rating_type>>.lt: 6.0
+    overlay:
+      name: text(<<rating_type>>)
+      group: ratings
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: <<font>>
+      font_size: 63
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: <<back_width>>
+      back_height: 105
+      git: PMM/overlays/images/raw/RT-<<rt>>-Rotten
+      addon_position: left
+      addon_offset: 25
+
+  RT_fresh:
+    optional:
+      - overlay_level
+    default:
+      rating_type: audience_rating
+      rt: Aud
+      horizontal_offset: 255
+      horizontal_align: center
+      vertical_offset: 15
+      vertical_align: top
+      weight: 60
+      font: config/metadata/overlays/fonts/Adlib.ttf
+      back_width: 250
+    collection_level: <<overlay_level>>
+    # plex_search:
+      # all:
+        # <<rating_type>>.gte: 6.0
+        # <<rating_type>>.lt: 10.0
+    overlay:
+      name: text(<<rating_type>>)
+      group: ratings
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: <<font>>
+      font_size: 63
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: <<back_width>>
+      back_height: 105
+      git: PMM/overlays/images/raw/RT-<<rt>>-Fresh
+      addon_position: left
+      addon_offset: 25
+
+  RT_cert_fresh:
+    optional:
+      - overlay_level
+    default:
+      rating_type: audience_rating
+      horizontal_offset: 255
+      horizontal_align: center
+      vertical_offset: 15
+      vertical_align: top
+      weight: 70
+      font: config/metadata/overlays/fonts/Adlib.ttf
+      back_width: 250
+    collection_level: <<overlay_level>>
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
+    overlay:
+      name: text(<<rating_type>>)
+      group: ratings
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: <<font>>
+      font_size: 63
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: <<back_width>>
+      back_height: 105
+      git: PMM/overlays/images/raw/RT-Cert-Fresh
+      addon_position: left
+      addon_offset: 25
 
 overlays:
-  audience_rating:
+
+  my-rating:
     template:
-      name: Audience Rating
+      - name: my_rating
     plex_all: true
+
+  rating-rotten:
+    template:
+      - name: RT_rotten
+    plex_search:
+      all:
+        audience_rating.gt: 0.0
+        audience_rating.lt: 6.0
+
+  rating-fresh:
+    template:
+      - name: RT_fresh
+    plex_search:
+      all:
+        audience_rating.gte: 6.0
+        audience_rating.lt: 10.0
+
+  cert-fresh:
+    template:
+      - name: RT_cert_fresh
