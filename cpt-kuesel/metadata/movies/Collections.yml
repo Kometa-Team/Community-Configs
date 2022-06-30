@@ -49,6 +49,7 @@ dynamic_collections:
     exclude:
       - 10                    # Exclude Star Wars, added via Letterboxd List below
       - 809185                # Exclude Army of the Dead, added via Letterboxd List below
+      - 993589                # Exclude Hulk (Collection), I don't want to combine MCU Incredible Hulk with Bana Hulk as a collection
     template_variables:       # Movies that have TMDb Collections where I have multiple versions of the first one,
       minimum_items:          # that should not be a collection until the second movie actually gets released.
         475557: 3             # Joker
