@@ -138,7 +138,7 @@ overlays:
         slug: enhanced
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bIMAX Enhanced\b'
+      filepath.regex: '(?i)\bIMAX Enhanced\b|^(?=.*(DSNP|Disney\+|CORE(?=[ ._-]web[ ._-]?(dl|rip)\b)|\bBC(?=[ ._-]web[ ._-]?(dl|rip)\b)|IMAX[- .]Enhanced)\b)(?=.*\b(IMAX|IMAX[- .]Enhanced)\b).*'
 
   IMAX:
     template:
