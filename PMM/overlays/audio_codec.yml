@@ -136,7 +136,7 @@ overlays:
         slug: es
     plex_all: true
     filters:
-      audio_track_title.regex: '(?i)dts[ ._-]?(es|(hd[. ]?)?(hr|hi))'
+      audio_track_title.regex: '(?i)dts[-. ]?es\b'
 
   DTS-ES-Filepath:
     template:
@@ -146,7 +146,7 @@ overlays:
         slug: es
     plex_all: true
     filters:
-      filepath.regex: '(?i)dts[ ._-]?(es|(hd[. ]?)?(hr|hi))'
+      filepath.regex: '(?i)dts[-. ]?es\b'
 
   DTS-HD:
     template:
