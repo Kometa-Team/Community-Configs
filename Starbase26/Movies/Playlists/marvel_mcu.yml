@@ -1,0 +1,32 @@
+playlists:
+    
+  MCU Phase 1:
+    sync_mode: sync
+    libraries: Films
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/kevinnl/lists/mcu-phase-1
+    summary: Marvel Cinematic Universe (Phase 1)
+    
+  MCU Phase 2:
+    sync_mode: sync
+    libraries: Films
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/kevinnl/lists/mcu-phase-2
+    summary: Marvel Cinematic Universe (Phase 2)
+    
+  MCU Phase 3:
+    sync_mode: sync
+    libraries: Films
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/kevinnl/lists/mcu-phase-3
+    summary: Marvel Cinematic Universe (Phase 3)
+    radarr_add_missing: true
+    
+  MCU Phase 4:
+    sync_mode: sync
+    libraries: Films
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/kevinnl/lists/mcu-phase-4
+    summary: Marvel Cinematic Universe (Phase 4)
+    radarr_add_missing: true
+    

@@ -1,0 +1,25 @@
+external_templates:
+  - folder: /config/Templates
+    template_variables:
+      section: '!10'
+      add_missing: true
+
+
+collections:
+
+  "Wolf Films":
+    template:
+      name: Film
+      tmdb_movie:
+        - 525657  # Daughter of the Wolf (2019)
+        - 85951   # Silver Wolf (1999)
+      collection:
+        - 178654  # White Fang
+      tmdb_list:
+        - 8207882 # White Wolves List
+  
+  "Girl Power":
+    template:
+      name: Film
+      tmdb_movie:
+        - 759175  # The Princess (2022)

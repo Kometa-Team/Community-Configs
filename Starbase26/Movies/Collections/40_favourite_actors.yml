@@ -1,0 +1,26 @@
+external_templates:
+  - folder: /config/Templates
+    template_variables:
+      collection_section: '!40'
+      add_missing: true
+
+
+
+collections:
+
+
+  Chris Hemsworth:
+    template:
+      name: plex_actor
+      value: 'Chris Hemsworth'
+      name_sort: Hemsworth, Chris
+    url_poster: https://theposterdb.com/api/assets/125672
+
+
+  Sandra Bullock:
+    template:
+      name: plex_actor
+      value: 'Sandra Bullock'
+      name_sort: Bullock, Sandra
+    url_poster: https://theposterdb.com/api/assets/126801
+

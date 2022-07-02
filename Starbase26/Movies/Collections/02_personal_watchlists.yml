@@ -1,0 +1,20 @@
+external_templates:
+  - folder: /config/Templates
+    template_variables:
+      section: '!02'
+      add_missing: true
+      sync_mode: append
+
+
+collections:
+
+  Kevins Watchlist:
+    template:
+      name: Film
+      trakt_list: https://trakt.tv/users/kevinnl/watchlist
+      imdb_list: https://www.imdb.com/user/ur25330399/watchlist 
+  
+  Eksters Watchlist:
+    template:
+      name: Film
+      #imdb_list: https://www.imdb.com/user/<<SWEETY'S USERID>>/watchlist 

@@ -1,0 +1,35 @@
+#########################################################
+# Supernatural Disasters:
+#   - Alien Invasions
+#   - Zombies
+#########################################################
+external_templates: 
+  - folder: /config/Templates
+    template_variables:
+      collection_section: '!21'
+      radarr_add_missing: true
+
+collections:
+
+  #######################################################
+  # Zombie Collection
+  #######################################################
+  Zombies:
+    url_poster: https://theposterdb.com/api/assets/160803
+    template:
+      name: Film
+      tmdb_movie: 
+        - 6479      # I am Legend (2007)
+        - 72190     # World War Z (2013)
+        - 71324     # Panic at Rock Island (2011) 
+      collection:
+        - 1565      # 28 Days/Weeks/Months Later Collection
+
+  Alien Invasions:
+    url_poster: https://theposterdb.com/api/assets/98559
+    template:
+      name: Film
+      tmdb_movie:
+        - 74      # War of the Worlds
+      collection:
+        - 304378  # Independence Day Collection

@@ -1,0 +1,24 @@
+external_templates:
+  - folder: /config/Templates
+    template_variables:
+      section: '!00'
+
+collections:
+
+  Movie Night:
+    schedule: range(06/23-06/26)
+    file_poster: poster.jpg
+    radarr_add_missing: true
+    template: 
+      name: Film
+      tmdb_movie:
+        - 277834        # Moana (2016)
+        - 560057        # The Sea Beast (2022)
+        - 62177         # Brave (2012)
+        - 354912        # Coco
+        - 3933          # Corpse Bride
+      collection:
+        - 94602         # Puss in Boots Collection
+        - 806483        # Spirit Collection
+        - 10194         # Toy Story Collection
+        - 97461         # Lilo & Stitch Collection
