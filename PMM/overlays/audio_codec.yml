@@ -239,7 +239,7 @@ overlays:
         slug: x
     plex_all: true
     filters:
-      audio_track_title.regex: '(?i)dts[ ._:-]?x(?!\\d)'
+      audio_track_title.regex: '(?i)dts[-. ]?x(?!\d)'
 
   DTS-X-Filepath:
     template:
@@ -249,4 +249,4 @@ overlays:
         slug: x
     plex_all: true
     filters:
-      filepath.regex: '(?i)dts[ ._:-]?x(?!\\d)'
+      filepath.regex: '(?i)dts[-. ]?x(?!\d)'
