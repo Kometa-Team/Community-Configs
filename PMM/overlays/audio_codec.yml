@@ -22,7 +22,8 @@
 #          vertical_offset: 15                              #
 #          # Set the vertical align for the overlay         #
 #          vertical_align: top                              #
-#                                                           #
+#          # Sets the style of overlay: standard or compact #
+#          style: standard                                  #
 #          # Use the Opus overlay                           #
 #          use_opus: true                                   #
 #          # Use the Dolby-Digital overlay                  #
@@ -33,6 +34,8 @@
 #          use_es: true                                     #
 #          # Use the DTS-HD overlay                         #
 #          use_hd: true                                     #
+#          # Use the DTS-HD-HRA overlay                     #
+#          use_hra: true                                     #
 #          # Use the Dolby-TrueHD overlay                   #
 #          use_truehd: true                                 #
 #          # Use the Dolby-Digital-Plus overlay             #
@@ -54,11 +57,12 @@ templates:
       horizontal_align: center
       vertical_offset: 15
       vertical_align: top
+      style: standard
     collection_level: <<overlay_level>>
     allowed_library_types: <<use_<<slug>>>>
     overlay:
       name: <<overlay_name>>
-      git: PMM/overlays/images/<<overlay>>
+      git: PMM/overlays/images/<<style>>/<<overlay>>
       group: audio_codec
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
@@ -87,7 +91,6 @@ overlays:
     filters:
       filepath.regex: '(?i)\bOPUS(\b|\d)'
 
-# Placeholder no image yet or planned.
   MP3:
     template:
       - name: AudioCodec
@@ -128,7 +131,6 @@ overlays:
       filepath.regex:
         - '(?i)\bDD[^a-z+]|(?<!e)ac3'
 
-# Placeholder no image yet or planned.
   AAC:
     template:
       - name: AudioCodec
@@ -208,11 +210,29 @@ overlays:
       filepath.regex:
         - '(?i)^(?!.*(atmos))(?=.*\b([^-]DD[P+](?!A)|eac3)\b).*'
 
-# Placeholder no image yet or planned.
-  PCM:
+  DTS-HD-HRA:
     template:
       - name: AudioCodec
         weight: 2000
+        slug: hra
+    plex_all: true
+    filters:
+      audio_track_title.regex: '(?i)dts[ ._-]?(hd[. ]?)?(hr|hi)'
+
+  DTS-HD-HRA-Filepath:
+    template:
+      - name: AudioCodec
+        overlay: DTS-HD-HRA
+        weight: 2000
+        slug: hra
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)dts[ ._-]?(hd[. ]?)?(hr|hi)'
+
+  PCM:
+    template:
+      - name: AudioCodec
+        weight: 2200
         slug: pcm
     plex_all: true
     filters:
@@ -221,18 +241,17 @@ overlays:
   PCM-Filepath:
     template:
       - name: AudioCodec
-        overlay: pcm
-        weight: 2000
+        overlay: PCM
+        weight: 2200
         slug: pcm
     plex_all: true
     filters:
       filepath.regex: '(?i)\b(l?)PCM(\b|\d)'
 
-# Placeholder no image yet or planned.
   FLAC:
     template:
       - name: AudioCodec
-        weight: 2000
+        weight: 2250
         slug: flac
     plex_all: true
     filters:
@@ -241,35 +260,31 @@ overlays:
   FLAC-Filepath:
     template:
       - name: AudioCodec
-        overlay: flac
-        weight: 2000
+        overlay: FLAC
+        weight: 2250
         slug: flac
     plex_all: true
     filters:
       filepath.regex: '(?i)\bFLAC(\b|\d)'
 
-  DTS-HD:
+  DTS-HD-MA:
     template:
       - name: AudioCodec
         weight: 2500
         slug: hd
     plex_all: true
     filters:
-      audio_track_title.regex:
-        - '(?i)dts[ .-]?(ma\b|hd[ .-]?ma|hd)(?!china|r)'
-        - '(?i)dts[ ._-]?(hd[. ]?)?(hr|hi)'
+      audio_track_title.regex: '(?i)dts[ .-]?(ma\b|hd[ .-]?ma|hd)(?!china|r)'
 
-  DTS-HD-Filepath:
+  DTS-HD-MA-Filepath:
     template:
       - name: AudioCodec
-        overlay: DTS-HD
+        overlay: DTS-HD-MA
         weight: 2500
         slug: hd
     plex_all: true
     filters:
-      filepath.regex:
-        - '(?i)dts[ .-]?(ma\b|hd[ .-]?ma|hd)(?!china|r)'
-        - '(?i)dts[ ._-]?(hd[. ]?)?(hr|hi)'
+      filepath.regex: '(?i)dts[ .-]?(ma\b|hd[ .-]?ma|hd)(?!china|r)'
 
 # Match TrueHD without Atmos
   Dolby-TrueHD:
