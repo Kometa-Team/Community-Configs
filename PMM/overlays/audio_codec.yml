@@ -110,26 +110,6 @@ overlays:
     filters:
       filepath.regex: '(?i)\bmp3(\b|\d)'
 
-# AAC 2.0 Audio
-  AAC:
-    template:
-      - name: AudioCodec
-        weight: 700
-        slug: aac
-    plex_all: true
-    filters:
-      audio_track_title.regex: '(?i)(?=.*(\baac[ .]?stereo\b))|(?=.*(\baac[ .]2[ .]0\b))'
-
-  AAC-Filepath:
-    template:
-      - name: AudioCodec
-        overlay: AAC
-        weight: 700
-        slug: aac
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)(?=.*(\baac[ .]?stereo\b))|(?=.*(\baac[ .]2[ .]0\b))'
-
   Dolby-Digital:
     template:
       - name: AudioCodec
@@ -151,7 +131,6 @@ overlays:
       filepath.regex:
         - '(?i)\bDD[^a-z+]|(?<!e)ac3'
 
-# AAC multi channel
   AAC:
     template:
       - name: AudioCodec
@@ -159,7 +138,7 @@ overlays:
         slug: aac
     plex_all: true
     filters:
-      audio_track_title.regex: '(?i)^(?!.*(stereo|2[ .]0))(?=.*\b(aac(\b|\d))).*'
+      audio_track_title.regex: '(?i)\bAAC(\b|\d)'
 
   AAC-Filepath:
     template:
@@ -169,7 +148,7 @@ overlays:
         slug: aac
     plex_all: true
     filters:
-      filepath.regex: '(?i)^(?!.*(stereo|2[ .]0))(?=.*\b(aac(\b|\d))).*'
+      filepath.regex: '(?i)\bAAC(\b|\d)'
 
   DTS:
     template:
@@ -336,7 +315,7 @@ overlays:
     plex_all: true
     filters:
       audio_track_title.regex:
-        - '(?i)((?=.*([^-]DD[P+](?!A)|eac3))(?=.*\b(atmos(\b|\d))))|(?=.*\b(DDPA(\b|\d)))'
+      - '(?i)((?=.*([^-]DD[P+](?!A)|eac3))(?=.*\b(atmos(\b|\d))))|(?=.*\b(DDPA(\b|\d)))'
 
   Dolby-Digital-Plus-Atmos-Filepath:
     template:
@@ -347,7 +326,8 @@ overlays:
     plex_all: true
     filters:
       filepath.regex:
-        - '(?i)((?=.*([^-]DD[P+](?!A)|eac3))(?=.*\b(atmos(\b|\d))))|(?=.*\b(DDPA(\b|\d)))'
+      - '(?i)((?=.*([^-]DD[P+](?!A)|eac3))(?=.*\b(atmos(\b|\d))))|(?=.*\b(DDPA(\b|\d)))'
+
 
 # Match ATMOS (undefined), meaning it doesn't know the base audio DD+ or TrueHD
   Dolby-Atmos:
