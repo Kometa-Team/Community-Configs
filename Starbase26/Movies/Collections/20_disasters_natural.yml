@@ -1,0 +1,133 @@
+external_templates: 
+  - folder: /config/Templates
+    template_variables:
+      collection_section: '!20'
+      radarr_add_missing: true
+
+collections:
+
+  #########################################################
+  #########################################################
+  #                 NATURAL DISASTERS                     #
+  #########################################################
+  #########################################################
+  
+
+
+  #########################################################
+  # Asteroids
+  Asteroids:
+    template:
+      name: Film
+      tmdb_movie:
+        - 95      # Armageddon (1998)
+        - 8656    # Deep Impact(1998)
+        - 31757   # Meteor (2009)
+        - 8656    # Deep Impact (1998)
+      collection:
+        - 840465  # Greenland (2020) Collection
+
+
+  #########################################################
+  # Climate Change
+  Climate Change:
+    template:
+      name: Film
+      poster: https://theposterdb.com/api/assets/245441
+      tmdb_movie:
+        - 274855  # GeoStorm (2017)
+
+
+  #########################################################
+  # Earthquakes
+  Earthquakes:
+    template:
+      name: Film
+      tmdb_movie: 
+        - 254128  # San Andreas (2015)
+        - 35962   # Aftershock: Earthquake in New York (1999)
+      
+
+  #########################################################
+  # Forest Fires
+  Forest Fires:
+    template:
+      name: Film
+      tmdb_movie:
+        - 395991  # Only the Brave (2017)
+      
+
+  #########################################################
+  # Hurricanes
+  Hurricanes:
+    template:
+      name: Film
+      tmdb_movie:
+        - 172803  # Hours (2013) - Katrino in new orleans
+        - 511987  # Crawl (2019) - Ook bij Crocodiles
+        - 430040  # The Hurricane Heist (2018)
+
+  #########################################################
+  # Ice 
+  Ice:
+    template:
+      name: Film
+      tmdb_movie:
+        - 435     # The Day After Tomorrow (2004)
+        - 45556   # Arctic Blast (2010)
+  
+
+  #########################################################
+  # Planets:
+  Planet:
+    template: 
+      name: Film
+      tmdb_movie:
+        - 9341    # The Core (2003)
+      
+
+  #########################################################
+  # Tornado's
+  Tornado's:
+    template:
+      name: Film
+      tmdb_movie: 
+        - 216282  # Into the Storm (2014)
+        - 664     # Twister (1996)
+        - 24617   # Atomic Twister (2002)
+  
+
+  #########################################################
+  # Tsunami's
+  Floods and Waves:
+    template: 
+      name: Film
+      tmdb_movie:
+        - 80278   # The Impossible (2012)
+        - 503     # Poseidon (2006)
+        - 6309    # Flood (2007)
+        - 336882  # The Wave (2015) 
+        - 29602   # De Storm (2009)
+  
+  #########################################################
+  # Viruses
+  Virus:
+    template:
+      name: Film
+      tmdb_movie:    
+        - 9423    # Virus (1999)
+        - 39538   # Contagion (2011)
+        - 6950    # Outbreak (1995)
+        - 24676   # Fatal Contact: Bird Flu in America (2006) 
+
+#########################################################
+  # Volcano's
+  Volcano's:
+    template:
+      name: Film
+      tmdb_movie:
+        - 76649   # Pompeii (2014)
+        - 14161   # 2012 (2009)
+        - 10357   # Volcano (1997)
+        - 9619    # Dante's Peak (1997)
+        - 18230   # Supervolcano (2005)

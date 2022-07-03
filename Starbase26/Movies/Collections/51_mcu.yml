@@ -1,0 +1,53 @@
+external_templates:
+  - folder: /config/Templates
+    template_variables:
+      section: '!51'
+
+collections:
+
+  Doctor Strange:
+    template:
+      name: Film
+      collection: 618529
+      poster: https://theposterdb.com/api/assets/11820
+
+  Captain Marvel:
+    template:
+      name: Film
+      collection: 623911
+      poster: https://theposterdb.com/api/assets/63348
+    radarr_add_missing: true
+
+  Captain America:
+    template:
+      name: Film
+      collection: 131295
+      poster: https://theposterdb.com/api/assets/4814
+    radarr_add_missing: true
+  
+  Thor:
+    template:
+      name: Film
+      collection: 131296
+      poster: https://theposterdb.com/api/assets/4819
+  
+  Guardians of the Galaxy:
+    template:
+      name: Film
+      collection: 284433
+      poster: https://theposterdb.com/api/assets/4365
+    radarr_add_missing: true
+  
+  Black Panther:
+    template:
+      name: Film
+      collection: 529892
+      poster: https://theposterdb.com/api/assets/14270
+    radarr_add_missing: true
+    
+  Ant-Man:
+    template:
+      name: Film
+      collection: 422834
+      poster: https://theposterdb.com/api/assets/4818
+    radarr_add_missing: true

@@ -1,0 +1,15 @@
+external_templates:
+  - folder: /config/Templates
+    template_variables:
+      use_separator: true
+      add_missing: true
+
+
+collections:
+
+
+  "Alpha and Omega":
+    template:
+      name: Film
+      collection: 241729
+      poster: https://theposterdb.com/api/assets/224694

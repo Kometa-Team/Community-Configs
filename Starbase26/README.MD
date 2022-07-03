@@ -1,1 +1,4 @@
-# Starbase26 - Plex Meta Manager Configuration Files
+# Starbase26 - Configuration Files
+---
+last updated: 2022-07-02
+---

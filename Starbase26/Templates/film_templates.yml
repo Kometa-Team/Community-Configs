@@ -1,0 +1,21 @@
+templates:
+
+  ###########################################################################
+  # Film related templates:
+  Film:
+    optional:
+      - section
+      - collection
+      - tmdb_movie
+      - trakt_list
+      - tmdb_list
+      - add_missing
+      - collection_section
+      - poster
+    sort_title: <<section>>_<<collection_name>>
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<tmdb_movie>>
+    tmdb_list: <<tmdb_list>>
+    collection_order: release
+    radarr_add_missing: <<add_missing>>
+    url_poster: <<poster>>
