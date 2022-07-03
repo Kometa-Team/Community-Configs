@@ -39,6 +39,8 @@
 #          use_remastered: true                             #
 #          # Use the Special overlay                        #
 #          use_special: true                                #
+#          # Use the Final Cut overlay                      #
+#          use_finalcut: true                               #
 #############################################################
 
 templates:
@@ -75,6 +77,15 @@ overlays:
     filters:
       filepath.regex: '(?i)\bDirector|Directors\b'
 
+  Extended-Edition:
+    template:
+      - name: SpecialRelease
+        weight: 80
+        slug: extended
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bExtended\b'
+
   Uncut-Edition:
     template:
       - name: SpecialRelease
@@ -93,24 +104,6 @@ overlays:
     filters:
       filepath.regex: '(?i)\bUnrated\b'
 
-  Extended-Edition:
-    template:
-      - name: SpecialRelease
-        weight: 80
-        slug: extended
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\bExtended\b'
-
-  Remastered:
-    template:
-      - name: SpecialRelease
-        weight: 10
-        slug: remastered
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\bRemaster\b'
-
   Special-Edition:
     template:
       - name: SpecialRelease
@@ -119,17 +112,6 @@ overlays:
     plex_all: true
     filters:
       filepath.regex: '(?i)\bSpecial\b'
-
-  Criterion:
-    template:
-      - name: SpecialRelease
-        weight: 20
-        slug: criterion
-    plex_all: true
-    filters:
-      filepath.regex:
-        - '(?i)Criterion'
-        - '(?i)\[CC\]'
 
   IMAX-E:
     template:
@@ -148,3 +130,33 @@ overlays:
     plex_all: true
     filters:
       filepath.regex: '(?i)\bIMAX\b'
+
+  Criterion:
+    template:
+      - name: SpecialRelease
+        weight: 20
+        slug: criterion
+    plex_all: true
+    filters:
+      filepath.regex:
+        - '(?i)Criterion'
+        - '(?i)\[CC\]'
+
+  Final-Cut:
+    template:
+      - name: SpecialRelease
+        weight: 15
+        slug: finalcut
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bFinal Cut\b'
+
+  Remastered:
+    template:
+      - name: SpecialRelease
+        weight: 10
+        slug: remastered
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bRemaster\b'
+
