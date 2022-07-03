@@ -8,7 +8,9 @@ external_templates:
 
 collections:
 
-
+  ###
+  # Chris Hemsworth
+  ###
   Chris Hemsworth:
     template:
       name: plex_actor
@@ -16,7 +18,9 @@ collections:
       name_sort: Hemsworth, Chris
     url_poster: https://theposterdb.com/api/assets/125672
 
-
+  ###
+  # Sandra Bullock
+  ###
   Sandra Bullock:
     template:
       name: plex_actor
@@ -24,3 +28,6 @@ collections:
       name_sort: Bullock, Sandra
     url_poster: https://theposterdb.com/api/assets/126801
 
+  ###
+  # Sigourney Weaver
+  ###
