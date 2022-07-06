@@ -19,9 +19,9 @@
 #          # Set the horizontal align for the overlay       #
 #          horizontal_align: left                           #
 #          # Set the vertical offset for the overlay        #
-#          vertical_offset: 113                             #
+#          vertical_offset: 99                              #
 #          # Set the vertical align for the overlay         #
-#          vertical_align: bottom                           #
+#          vertical_align: top                              #
 #                                                           #
 #          # Use the Criterion overlay                      #
 #          use_criterion: true                              #
@@ -75,7 +75,7 @@ overlays:
         slug: directorscut
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bDirector|Directors\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bDirector|Directors\b'
 
   Extended-Edition:
     template:
@@ -84,7 +84,7 @@ overlays:
         slug: extended
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bExtended\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bExtended\b'
 
   Uncut-Edition:
     template:
@@ -93,7 +93,7 @@ overlays:
         slug: uncut
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bUncut\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bUncut\b'
 
   Unrated-Edition:
     template:
@@ -102,7 +102,7 @@ overlays:
         slug: unrated
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bUnrated\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bUnrated\b'
 
   Special-Edition:
     template:
@@ -111,7 +111,7 @@ overlays:
         slug: special
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bSpecial\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bSpecial\b'
 
   IMAX-E:
     template:
@@ -149,7 +149,7 @@ overlays:
         slug: finalcut
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bFinal Cut\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bFinal Cut\b'
 
   Remastered:
     template:
@@ -158,5 +158,5 @@ overlays:
         slug: remastered
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bRemaster\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bRemaster\b'
 
