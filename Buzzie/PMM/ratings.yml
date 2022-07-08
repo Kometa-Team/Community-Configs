@@ -1,0 +1,183 @@
+templates:
+
+  IMDB_Ratingred:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: IMDB_Ratingred
+      file: config/overlays/Movies/Ratings/<<overlay_name>>.png
+      horizontal_offset: 10
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  Audience_Rating:
+    optional:
+      - overlay_level
+    default:
+      rating_type: audience_rating
+      horizontal_offset: 159
+      horizontal_align: left
+      vertical_offset: 33
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: text(<<rating_type>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: fonts/Roboto-Bold.ttf
+      font_size: 60
+      font_color: "#FFFFFF"
+
+  Letterboxd_Ratingred:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: Letterboxd_Ratingred
+      file: config/overlays/Movies/Ratings/<<overlay_name>>.png
+      horizontal_offset: 270
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  Critic_Rating:
+    optional:
+      - overlay_level
+    default:
+      rating_type: critic_rating
+      horizontal_offset: 417
+      horizontal_align: left
+      vertical_offset: 33
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: text(<<rating_type>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: fonts/Roboto-Bold.ttf
+      font_size: 60
+      font_color: "#FFFFFF"
+
+  RT-Crit-Freshred:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: RT-Crit-Freshred
+      file: config/overlays/Movies/Ratings/<<overlay_name>>.png      
+      horizontal_offset: 530
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+      
+  RT-Crit-Rottenred:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: RT-Crit-Rottenred
+      file: config/overlays/Movies/Ratings/<<overlay_name>>.png
+      horizontal_offset: 530
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  User_Rating:
+    optional:
+      - overlay_level
+    default:
+      rating_type: user_rating
+      horizontal_offset: 640
+      horizontal_align: left
+      vertical_offset: 33
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: text(<<rating_type>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: fonts/Roboto-Bold.ttf
+      font_size: 60
+      font_color: "#FFFFFF"  
+  
+  RT-Cert-Fresh:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    mdblist_list: https://mdblist.com/lists/order937/cinema_only_certified_fresh/
+    overlay:
+      name: <<overlay_name>>
+      file: config/overlays/Movies/Ratings/<<overlay_name>>.png
+      group: logo
+      weight: <<weight>>
+      horizontal_offset: 10
+      horizontal_align: left
+      vertical_offset: 100
+      vertical_align: bottom
+
+overlays:
+  rating_IMDB:
+    template:
+      - name: IMDB_Ratingred
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 9.9
+  audience_rating:
+    template:
+      name: Audience_Rating
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 9.9
+
+  rating_Letterboxd:
+    template:
+      - name: Letterboxd_Ratingred
+    plex_search:
+      all:
+        critic_rating.gte: 0.1
+        critic_rating.lte: 9.9
+  critic_rating:
+    template:
+      name: Critic_Rating
+    plex_search:
+      all:
+        critic_rating.gte: 0.1
+        critic_rating.lte: 9.9
+  
+  rating_Rotten:
+    template:
+      - name: RT-Crit-Rottenred
+    plex_search:
+      all:
+        user_rating.gte: 0.1
+        user_rating.lte: 6.0
+
+  rating_Fresh:
+    template:
+      - name: RT-Crit-Freshred
+    plex_search:
+      all:
+        user_rating.gte: 6.1
+        user_rating.lte: 9.9
+  
+  user_rating:
+    template:
+      name: User_Rating
+    plex_search:
+      all:
+        user_rating.gte: 0.1
+        user_rating.lte: 9.9
+        
+  RT-Cert-Freshred:
+    template:
+      - name: RT-Cert-Fresh
+        weight: 40
+
+
