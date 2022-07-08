@@ -1,0 +1,131 @@
+###############################################################
+#                      IMDB Best Of                           #
+# https://www.imdb.com/user/ur22726822/lists?ref_=ttls_otl_sm #
+#                                                             #
+###############################################################
+templates:
+  Best of:
+    imdb_list: <<list>>
+    sort_title: +01_08_Best of <<year>>
+    url_poster: <<poster>>
+    sync_mode: sync
+    summary: IMDB Best of list of the year <<year>>
+    smart_label: audience_rating.desc
+    collection_mode: hide
+    schedule:
+     - weekly(sunday)
+     - hourly(04)
+
+collections:
+
+# Best of
+  Best of 1986:
+    template: { name: Best of, list: https://www.imdb.com/list/ls020817024/?sort=user_rating,desc, year: 1986, poster: https://i.imgur.com/HHZsRNG.jpg }
+
+  Best of 1987:
+    template: { name: Best of, list: https://www.imdb.com/list/ls020160403/?sort=user_rating,desc, year: 1987, poster: https://i.imgur.com/SGq6Mqa.jpg }
+
+  Best of 1988:
+    template: { name: Best of, list: https://www.imdb.com/list/ls068864736/?sort=user_rating,desc, year: 1988, poster: https://i.imgur.com/aRt0HFD.jpg }
+
+  Best of 1989:
+    template: { name: Best of, list: https://www.imdb.com/list/ls068862670/?sort=user_rating,desc, year: 1989, poster: https://i.imgur.com/Wnyx9U3.jpg }
+
+  Best of 1990:
+    template: { name: Best of, list: https://www.imdb.com/list/ls068928101/?sort=user_rating,desc, year: 1990, poster: https://i.imgur.com/jK34ZwS.jpg }
+
+  Best of 1991:
+    template: { name: Best of, list: https://www.imdb.com/list/ls068922447/?sort=user_rating,desc, year: 1991, poster: https://i.imgur.com/NTIGbW6.jpg }
+
+  Best of 1992:
+    template: { name: Best of, list: https://www.imdb.com/list/ls068927918/?sort=user_rating,desc, year: 1992, poster: https://i.imgur.com/M7Xe1OV.jpg }
+
+  Best of 1993:
+    template: { name: Best of, list: https://www.imdb.com/list/ls068629773/?sort=user_rating,desc, year: 1993, poster: https://i.imgur.com/sXvkDuB.jpg }
+
+  Best of 1994:
+    template: { name: Best of, list: https://www.imdb.com/list/ls068001609/?sort=user_rating,desc, year: 1994, poster: https://i.imgur.com/tRtfQNI.jpg }
+
+  Best of 1995:
+    template: { name: Best of, list: https://www.imdb.com/list/ls069884197/?sort=user_rating,desc, year: 1995, poster: https://i.imgur.com/w6BQSLH.jpg }
+
+  Best of 1996:
+    template: { name: Best of, list: https://www.imdb.com/list/ls069849831/?sort=user_rating,desc, year: 1996, poster: https://i.imgur.com/bYtBjLj.jpg }
+
+  Best of 1997:
+    template: { name: Best of, list: https://www.imdb.com/list/ls069825094/?sort=user_rating,desc, year: 1997, poster: https://i.imgur.com/yhgMfxr.jpg }
+
+  Best of 1998:
+    template: { name: Best of, list: https://www.imdb.com/list/ls069868368/?sort=user_rating,desc, year: 1998, poster: https://i.imgur.com/ZgJOlFA.jpg }
+
+  Best of 1999:
+    template: { name: Best of, list: https://www.imdb.com/list/ls069299259/?sort=user_rating,desc, year: 1999, poster: https://i.imgur.com/cfHIFZy.jpg }
+
+  Best of 2000:
+    template: { name: Best of, list: https://www.imdb.com/list/ls069294381/?sort=user_rating,desc, year: 2000, poster: https://i.imgur.com/48xhm6x.jpg }
+
+  Best of 2001:
+    template: { name: Best of, list: https://www.imdb.com/list/ls069371016/?sort=user_rating,desc, year: 2001, poster: https://i.imgur.com/K8S6DQv.jpg }
+
+  Best of 2002:
+    template: { name: Best of, list: https://www.imdb.com/list/ls069359470/?sort=user_rating,desc, year: 2002, poster: https://i.imgur.com/Wdtr8vd.jpg }
+
+  Best of 2003:
+    template: { name: Best of, list: https://www.imdb.com/list/ls069188567/?sort=user_rating,desc, year: 2003, poster: https://i.imgur.com/gUcLuXs.jpg }
+
+  Best of 2004:
+    template: { name: Best of, list: https://www.imdb.com/list/ls064629009/?sort=user_rating,desc, year: 2004, poster: https://i.imgur.com/p2LGOIe.jpg }
+
+  Best of 2005:
+    template: { name: Best of, list: https://www.imdb.com/list/ls064627001/?sort=user_rating,desc, year: 2005, poster: https://i.imgur.com/J4XtFqO.jpg }
+
+  Best of 2006:
+    template: { name: Best of, list: https://www.imdb.com/list/ls062792751/?sort=user_rating,desc, year: 2006, poster: https://i.imgur.com/lUrIdyK.jpg }
+
+  Best of 2007:
+    template: { name: Best of, list: https://www.imdb.com/list/ls062790270/?sort=user_rating,desc, year: 2007, poster: https://i.imgur.com/HKHcxm6.jpg }
+
+  Best of 2008:
+    template: { name: Best of, list: https://www.imdb.com/list/ls062747132/?sort=user_rating,desc, year: 2008, poster: https://i.imgur.com/SiiQm0y.jpg }
+
+  Best of 2009:
+    template: { name: Best of, list: https://www.imdb.com/list/ls066238840/?sort=user_rating,desc, year: 2009, poster: https://i.imgur.com/te5fBy8.jpg }
+
+  Best of 2010:
+    template: { name: Best of, list: https://www.imdb.com/list/ls066349780/?sort=user_rating,desc, year: 2010, poster: https://i.imgur.com/rzo6yah.jpg }
+
+  Best of 2011:
+    template: { name: Best of, list: https://www.imdb.com/list/ls066349931/?sort=user_rating,desc, year: 2011, poster: https://i.imgur.com/MoZ5qOK.jpg }
+
+  Best of 2012:
+    template: { name: Best of, list: https://www.imdb.com/list/ls066390935/?sort=user_rating,desc, year: 2012, poster: https://i.imgur.com/ps2oScQ.jpg }
+
+  Best of 2013:
+    template: { name: Best of, list: https://www.imdb.com/list/ls066397123/?sort=user_rating,desc, year: 2013, poster: https://i.imgur.com/w97jADo.jpg }
+
+  Best of 2014:
+    template: { name: Best of, list: https://www.imdb.com/list/ls066676142/?sort=user_rating,desc, year: 2014, poster: https://i.imgur.com/PSwyAnj.jpg }
+
+  Best of 2015:
+    template: { name: Best of, list: https://www.imdb.com/list/ls031332959/?sort=user_rating,desc, year: 2015, poster: https://i.imgur.com/40TSdrA.jpg }
+
+  Best of 2016:
+    template: { name: Best of, list: https://www.imdb.com/list/ls060384749/?sort=user_rating,desc, year: 2016, poster: https://i.imgur.com/jvsvVwl.jpg }
+
+  Best of 2017:
+    template: { name: Best of, list: https://www.imdb.com/list/ls064170490/?sort=user_rating,desc, year: 2017, poster: https://i.imgur.com/2sGkTyO.jpg }
+
+  Best of 2018:
+    template: { name: Best of, list: https://www.imdb.com/list/ls023048722/?sort=user_rating,desc, year: 2018, poster: https://i.imgur.com/368D7NR.jpg }
+
+  Best of 2019:
+    template: { name: Best of, list: https://www.imdb.com/list/ls046632801/?sort=user_rating,desc, year: 2019, poster: https://i.imgur.com/3sw8kC5.jpg }
+
+  Best of 2020:
+    template: { name: Best of, list: https://www.imdb.com/list/ls092198478/?sort=user_rating,desc, year: 2020, poster: https://i.imgur.com/MngYAaG.jpg }
+
+  Best of 2021:
+    template: { name: Best of, list: https://www.imdb.com/list/ls089069734/?sort=user_rating,desc, year: 2021, poster: https://i.imgur.com/EnmAI5S.jpg }
+
+  Best of 2022:
+    template: { name: Best of, list: https://www.imdb.com/list/ls539905788/?sort=user_rating,desc, year: 2022, poster: https://i.imgur.com/JOYYulr.jpg }

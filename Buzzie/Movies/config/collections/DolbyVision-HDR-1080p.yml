@@ -1,0 +1,95 @@
+#########################################################
+#    4K Dolby Vision, 4K HDR & 1080P FHD Collections    #
+#########################################################
+collections:
+  DolbyVision:
+    plex_all: true
+    sort_title: +01_09_<<collection_name>>
+    url_poster: https://i.imgur.com/CeSHUDB.jpg
+    filters:
+      has_dolby_vision: true
+      
+  HDR:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    sort_title: +01_09_<<collection_name>>
+    url_poster: https://i.imgur.com/1JGkaL9.jpg
+    filters:
+      has_dolby_vision: false
+
+  1080p:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    sort_title: +01_09_<<collection_name>>
+    url_poster: https://i.imgur.com/y479gbs.jpg
+    filters:
+      has_dolby_vision: false
+      
+  IMAX-Enhanced:
+    plex_all: true
+    sort_title: +01_09_<<collection_name>>
+    url_poster: https://i.imgur.com/1x2Uvy0.png
+    filters:
+      filepath.regex: (IMAX Enhanced)
+
+  Remux:
+    plex_all: true
+    sort_title: +01_09_<<collection_name>>
+    url_poster: https://i.imgur.com/G5jNWnH.png
+    filters:
+      filepath.regex: (HQ-Remux|LQ-Remux|Remux-2160p|Remux-1080p)
+
+  Encodes:
+    plex_all: true
+    sort_title: +01_09_<<collection_name>>
+    url_poster: https://i.imgur.com/vdACVQ2.png
+    filters:
+      filepath.regex: (HQ2|LQ2)
+      
+  WEB-DL:
+    plex_all: true
+    sort_title: +01_09_<<collection_name>>
+    url_poster: https://i.imgur.com/UgQ4NGu.png
+    filters:
+      filepath.regex: (HQ-WEBDL|LQ-WEBDL|WEBDL|WEBRip)
+      
+  4K-Remux:
+    plex_search:
+      all:
+        resolution: 4K
+    sort_title: +01_09_<<collection_name>>
+    url_poster: https://i.imgur.com/mkffQKH.jpg
+    filters:
+      filepath.regex: (HQ-Remux|LQ-Remux|Remux-2160p)
+      
+  FHD-Remux:
+    plex_search:
+      all:
+        resolution: 1080p
+    sort_title: +01_09_<<collection_name>>
+    url_poster: https://i.imgur.com/U3en86q.png
+    filters:
+      filepath.regex: (HQ-Remux|LQ-Remux|Remux-1080p)
+
+  4K-Encodes:
+    plex_search:
+      all:
+        resolution: 4K
+    sort_title: +01_09_<<collection_name>>
+    url_poster: https://i.imgur.com/B8DFG8h.png
+    filters:
+      filepath.regex: (HQ2|LQ2)
+
+  FHD-Encodes:
+    plex_search:
+      all:
+        resolution: 1080p
+    sort_title: +01_09_<<collection_name>>
+    url_poster: https://i.imgur.com/nfx5UR5.png
+    filters:
+      filepath.regex: (HQ2|LQ2)
+      

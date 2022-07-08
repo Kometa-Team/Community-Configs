@@ -1,0 +1,80 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_mode: hide
+    collection_order: release
+    Radarr_add_missing: true
+    url_poster: <<poster>>
+    sort_title: +03_<<collection_name>>
+    schedule:
+     - weekly(sunday)
+     - hourly(02)
+
+collections:
+
+  "Ant-Man":
+    template: {name: Set, collection: 422834, poster: https://theposterdb.com/api/assets/162374 }
+
+  "Avengers":
+    template: {name: Set, collection: 86311, poster: https://theposterdb.com/api/assets/162376 }
+
+  "Black Panther":
+    template: {name: Set, collection: 529892, poster: https://theposterdb.com/api/assets/162378 }
+
+  "Blade Runner":
+    template: {name: Set, collection: 422837, poster: https://theposterdb.com/api/assets/163611 }
+
+  "Captain America":
+    template: {name: Set, collection: 131295, poster: https://theposterdb.com/api/assets/162381 }
+
+  "Captain Marvel":
+    template: {name: Set, collection: 623911, poster: https://theposterdb.com/api/assets/162387 }
+
+  "Daredevil":
+    template: {name: Set, movie: "9480, 9947", poster: https://theposterdb.com/api/assets/171145 }
+
+  "Deadpool":
+    template: {name: Set, collection: 448150, poster: https://theposterdb.com/api/assets/171133 }
+
+  "Doctor Strange":
+    template: {name: Set, collection: 618529, poster: https://theposterdb.com/api/assets/162388 }
+
+  "Fantastic Four":
+    template: {name: Set, collection: 9744, poster: https://theposterdb.com/api/assets/171129 }
+
+  "Ghost Rider":
+    template: {name: Set, collection: 90306, poster: https://theposterdb.com/api/assets/171142 }
+
+  "Guardians of the Galaxy":
+    template: {name: Set, collection: 284433, poster: https://theposterdb.com/api/assets/162393 }
+
+  "Iron Man":
+    template: {name: Set, collection: 131292, poster: https://theposterdb.com/api/assets/162395 }
+
+  "The Punisher":
+    template: {name: Set, movie: "8867, 7220, 13056, 120605", poster: https://theposterdb.com/api/assets/171137 }
+
+  "Spider-Man":
+    template: {name: Set, collection: 556, poster: https://theposterdb.com/api/assets/171148 }
+
+  "Amazing Spider-Man":
+    template: {name: Set, collection: 125574, poster: https://theposterdb.com/api/assets/171152 }
+
+  "Spider-Man (Avengers)":
+    template: {name: Set, collection: 531241, poster: https://theposterdb.com/api/assets/171853 }
+
+  "Thor":
+    template: {name: Set, collection: 131296, poster: https://theposterdb.com/api/assets/162406 }
+
+  "Wolverine":
+    template: {name: Set, collection: 453993, poster: https://theposterdb.com/api/assets/171121 }
+
+  "X-Men":
+    template: {name: Set, collection: 748, poster: https://theposterdb.com/api/assets/171112 }
