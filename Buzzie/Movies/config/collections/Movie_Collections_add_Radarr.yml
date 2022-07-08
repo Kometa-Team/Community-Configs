@@ -1,0 +1,72 @@
+###########################
+#        Templates        #
+###########################
+templates:
+    tmdb:
+      optional:
+        - collections
+        - lists
+        - movies
+        - tmdb_summary
+        - summary
+        - company
+      tmdb_collection: <<collections>>
+      tmdb_list: <<lists>>
+      tmdb_movie: <<movies>>
+      tmdb_summary: <<tmdb_summary>>
+      summary: <<summary>>
+      url_poster: <<poster>>
+      sync_mode: sync    
+      sort_title: +03_<<collection_name>>
+      radarr_add_missing: true
+      collection_order: release
+      collection_mode: hide
+      schedule:
+       - weekly(sunday)
+       - hourly(02)
+  
+    imdb:
+      url_poster: <<poster>>
+      summary: <<summary>>
+      sort_title: +03_<<collection_name>>
+      radarr_add_missing: true
+      sync_mode: sync
+      collection_mode: hide      
+      schedule:
+       - weekly(sunday)
+       - hourly(02)
+
+#####################################
+#      Movie Collections            #
+#####################################
+collections:
+  The Bourne Collection:
+    template: {name: tmdb, collections: 31562, tmdb_summary: 31562, poster: https://theposterdb.com/api/assets/5420}
+  The Fast and the Furious:
+    template: {name: tmdb, collections: "9485", tmdb_summary: 9485, poster: https://theposterdb.com/api/assets/10036}
+  Star Trek:
+    template: {name: imdb, summary: "Star Trek is an American media franchise based on the science fiction television series created by Gene Roddenberry. The first television series, simply called Star Trek and now referred to as The Original Series, debuted in 1966 and aired for three seasons on NBC. The Star Trek canon includes the original series, seven spin-off television series, two animated series, and thirteen films.", poster: "https://theposterdb.com/api/assets/21270"}
+    imdb_list:
+      - https://www.imdb.com/list/ls062347197/
+  "Mission: Impossible":
+    template: {name: tmdb, collections: "87359", tmdb_summary: 87359, poster: https://theposterdb.com/api/assets/12118}
+  Pirates of the Caribbean:
+    template: {name: tmdb, collections: "295", tmdb_summary: 295, poster: https://theposterdb.com/api/assets/72259}
+  Terminator:
+    template: {name: tmdb, collections: "528", tmdb_summary: 528, poster: https://theposterdb.com/api/assets/26461}
+  Transformers:
+    template: {name: tmdb, collections: "8650", movies: 424783, tmdb_summary: 8650, poster: https://theposterdb.com/api/assets/33217}
+  Batman:
+    template: {name: tmdb, collections: "120794", tmdb_summary: 120794, poster: https://theposterdb.com/api/assets/52698}
+  John Wick:
+    template: {name: tmdb, collections: "404609", tmdb_summary: 404609, poster: https://theposterdb.com/api/assets/17550}
+  The Godfather:
+    template: {name: tmdb, collections: "230", tmdb_summary: 230, poster: https://theposterdb.com/api/assets/8934}
+  Taken:
+    template: {name: tmdb, collections: "135483", tmdb_summary: 135483, poster: https://theposterdb.com/api/assets/8826}
+  Kingsman:
+    template: {name: tmdb, collections: "391860", tmdb_summary: 391860, poster: https://theposterdb.com/api/assets/6634}
+  Star Wars:
+    template: {name: tmdb, collections: "10", movies: "348350, 330459", tmdb_summary: 10, poster: https://theposterdb.com/api/assets/5846}
+    plex_search:
+      title: "Star Wars" 

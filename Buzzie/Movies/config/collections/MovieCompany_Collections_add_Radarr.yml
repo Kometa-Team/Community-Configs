@@ -1,0 +1,41 @@
+###########################
+#        Templates        #
+###########################
+templates:
+    tmdb:
+      optional:
+        - collections
+        - lists
+        - movies
+        - tmdb_summary
+        - summary
+        - company
+      tmdb_collection: <<collections>>
+      tmdb_list: <<lists>>
+      tmdb_movie: <<movies>>
+      tmdb_summary: <<tmdb_summary>>
+      tmdb_company: <<tmdb_company>>
+      summary: <<summary>>
+      url_poster: <<poster>>
+      sync_mode: sync    
+      sort_title: +03_<<collection_name>>
+      radarr_add_missing: true
+      collection_order: release
+      collection_mode: hide
+      schedule:
+       - weekly(sunday)
+       - hourly(02)
+
+#####################################
+#      Movie Company Collections    #
+#####################################
+collections:
+  Marvel Cinematic Universe:
+   template: {name: tmdb, tmdb_company: "420", tmdb_summary: 420, poster: https://theposterdb.com/api/assets/879}
+   filter:
+    tmdb_genre.not: Animation
+
+  DC Extended Universe:
+   template: {name: tmdb, tmdb_company: "128064, 9993", tmdb_summary: 9993, poster: https://theposterdb.com/api/assets/79223}
+   filter:
+    tmdb_genre.not: Animation
