@@ -28,7 +28,7 @@ templates:
       - lbxd_order
       - lbxd_smart
     default:
-      lbxd_user: jkbsmm
+      lbxd_user: cpt_kuesel
       lbxd_sort: <<collection_name>>
     letterboxd_list: https://letterboxd.com/<<lbxd_user>>/list/<<lbxd_list>>/
     collection_order: <<lbxd_order>>
@@ -39,7 +39,7 @@ templates:
       - lbxd_order
       - lbxd_smart
     default:
-      lbxd_user: jkbsmm
+      lbxd_user: cpt_kuesel
       lbxd_sort: <<collection_name>>
     letterboxd_list: https://letterboxd.com/<<lbxd_user>>/watchlist/
     collection_order: <<lbxd_order>>
