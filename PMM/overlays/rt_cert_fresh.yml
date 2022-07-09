@@ -1,26 +1,26 @@
 #############################################################
-#                   IMDb Top 250 Overlay                    #
+#          Rotten Tomatoes Certified Fresh Overlay          #
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
 #            Credit to Magic815 for base images             #
 #############################################################
 #  Call this from your config.yml (Movie or Show):          #
 #    overlay_path:                                          #
-#      - git: PMM/overlays/imdb_top_250                     #
+#      - git: PMM/overlays/rt_cert_fresh                    #
 #        template_variables:                                #
 #          # Set episode or season to overlay               #
 #          overlay_level:                                   #
 #          # Set the weight for the overlay                 #
-#          weight: 20                                       #
+#          weight: 10                                       #
 #############################################################
 
 templates:
-  IMDbTop250:
+  RTCertFresh:
     optional:
       - overlay_level
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
     default:
       overlay: <<overlay_name>>
-      weight: 20
-    imdb_chart: top_<<library_type>>s
+      weight: 10
     overlay:
       name: <<overlay_name>>
       git: PMM/overlays/images/<<overlay>>
@@ -33,6 +33,6 @@ templates:
 
 overlays:
 
-  IMDB-Top-250:
+  RT-Cert-Fresh-Ribbon:
     template:
-      - name: IMDbTop250
+      - name: RTCertFresh
