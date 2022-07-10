@@ -52,17 +52,25 @@ metadata:
     # title: <title> # override stupid german translations of movie names
     # <<: *<overlay_positions>
 
+  11: # Star Wars (1977)
+    <<: *Up_corners
   146: # Crouching Tiger, Hidden Dragon
     title: Crouching Tiger, Hidden Dragon
     <<: *Bottom
   253: # Live and Let Die (1973)
     <<: *Up_corners
+  479: # Shaft (2000)
+    <<: *Bottom
   603: # The Matrix (1999)
     <<: *Up_corners
   604: # The Matrix Reloaded (2003)
     <<: *Up_corners
   605: # The Matrix Revolutions (2003)
     <<: *Up_corners
+  607: # Men in Black (1997)
+    <<: *Bottom
+  608: # Men in Black II (2002)
+    <<: *Bottom
   646: # Dr. No (1962)
     <<: *Up_corners
   655: # Paris, Texas
@@ -83,6 +91,8 @@ metadata:
     <<: *Up_corners
   691: # The Spy Who Loved Me (1977)
     <<: *Up_corners
+  694: # Doctor Sleep (2019)
+    <<: *Bottom
   698: # Moonraker (1979)
     <<: *Up_corners
   699: # For Your Eyes Only (1981)
@@ -99,15 +109,35 @@ metadata:
     <<: *Up_corners
   714: # Tomorrow Never Dies (1997)
     <<: *Up_corners
-  8386: # How High
+  1487: # Hellboy (2004)
+    <<: *Up_corners
+  1891: # The Empire Strikes Back (1980)
+    <<: *Up_corners
+  1892: # Return of the Jedi (1983)
+    <<: *Up_corners
+  1893: # Star Wars: Episode I - The Phantom Menace (1999)
+    <<: *Up_corners
+  1894: # Star Wars: Episode II - Attack of the Clones (2002)
+    <<: *Up_corners
+  1895: # Star Wars: Episode III - Revenge of the Sith (2005)
+    <<: *Up_corners
+  8386: # How High (2001)
     title: How High
   10764: # Quantum of Solace (2008)
     <<: *Up_corners
-  55931: # The Animatrix (2003)
+  11253: # Hellboy II: The Golden Army (2008)
+    <<: *Up_corners
+  24428: # The Avengers (2012)
     <<: *Up_corners
   36643: # The World Is Not Enough (1999)
     <<: *Up_corners
   36557: # Casino Royale (2006)
+    <<: *Up_corners
+  36657: # X-Men (2000)
+    <<: *Up_corners
+  36658: # X2 (2003)
+    <<: *Up_corners
+  36668: # X-Men: The Last Stand (2006)
     <<: *Up_corners
   36669: # Die Another Day (2002)
     <<: *Up_corners
@@ -116,9 +146,27 @@ metadata:
     <<: *Up_corners
   37724: # Skyfall (2012)
     <<: *Up_corners
+  41154: # Men in Black 3 (2012)
+    <<: *Bottom
+  49538: # X-Men: First Class (2011)
+    <<: *Up_corners
+  55931: # The Animatrix (2003)
+    <<: *Up_corners
+  99861: # Avengers: Age of Ultron (2015)
+    <<: *Up_corners
+  127585: # X-Men: Days of Future Past (2014)
+    <<: *Up_corners
+  140607: # Star Wars: The Force Awakens (2015)
+    <<: *Up_corners
   158015: # The Purge (2013)
     <<: *Bottom
+  181808: # Star Wars: The Last Jedi (2017)
+    <<: *Up_corners
+  181812: # Star Wars: The Rise of Skywalker (2019)
+    <<: *Up_corners
   206647: # Spectre (2015)
+    <<: *Up_corners
+  246655: # X-Men: Apocalypse (2016)
     <<: *Up_corners
   259316: # Fantastic Beasts and Where to Find Them (2016)
     <<: *Bottom
@@ -126,12 +174,28 @@ metadata:
     <<: *Bottom
   238636: # The Purge: Anarchy (2014)
     <<: *Bottom
+  245891: # John Wick (2014)
+    <<: *Sides
+  287947: # Shazam! (2019)
+    <<: *Up_corners
   297762: # Wonder Woman (2017)
+    <<: *Up_corners
+  299534: # Avengers: Endgame (2019)
+    <<: *Up_corners
+  299536: # Avengers: Infinity War (2018)
+    <<: *Up_corners
+  299537: # Captain Marvel (2019)
     <<: *Up_corners
   315635: # Spider-Man: Homecoming (2017)
     <<: *Up_corners
   316727: # The Purge: Election Year (2016)
     <<: *Bottom
+  320288: # Dark Phoenix (2019)
+    <<: *Up_corners
+  324552: # John Wick: Chapter 2 (2017)
+    <<: *Sides
+  330459: # Rogue One: A Star Wars Story (2016)
+    <<: *Up_corners
   335787: # Uncharted (2022)
     <<: *Up_corners
   335983: # Venom (2018)
@@ -142,8 +206,14 @@ metadata:
     <<: *Bottom
   340102: # The New Mutants (2020)
     <<: *Up_corners
+  348350: # Solo: A Star Wars Story (2018)
+    <<: *Up_corners
+  359724: # Ford v Ferrari (2019)
+    <<: *Down_corners
   370172: # No Time to Die (2021)
     <<: *Up_corners
+  399579: # Alita: Battle Angel (2019)
+    <<: *Bottom
   414906: # The Batman (2022)
     <<: *Up_corners
   429617: # Spider-Man: Far From Home (2019)
@@ -157,28 +227,58 @@ metadata:
   453395: # Doctor Strange in the Multiverse of Madness
     title: Doctor Strange in the Multiverse of Madness
     <<: *Up_corners
+  456740: # Hellboy (2019)
+    <<: *Up_corners
   457840: # Psych: The Movie (2017)
     <<: *Down_corners
+  458156: # John Wick: Chapter 3 - Parabellum (2019)
+    <<: *Sides
   464052: # Wonder Woman 1984 (2020)
     <<: *Up_corners
   467909: # In the Heights (2021)
     <<: *Down_corners
   471498: # Oxygen (2021)
     <<: *Bottom
+  473033: # Uncut Gems (2019)
+    <<: *Up_corners
+  475557: # Joker (2019)
+    <<: *Up_corners
   479259: # Lost Girls & Love Hotels (2020)
     <<: *Down_corners
+  479455: # Men in Black: International (2019)
+    <<: *Bottom
+  480001: # The Art of Self-Defense (2019)
+    <<: *Left_side
+  484641: # Anna (2019)
+    <<: *Down_corners
+  486131: # Shaft (2019)
+    <<: *Bottom
   495764: # Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn) (2020)
     <<: *Up_corners
   497698: # Black Widow (2021)
     <<: *Up_corners
   499932: # The Devil All the Time (2020)
     <<: *Up_corners
+  501170: # Doctor Sleep (2019)
+    <<: *Bottom
+  504608: # Rocketman (2019)
+    <<: *Bottom
   520016: # Driven (2019)
     <<: *Bottom
+  522039: # The Last Black Man in San Francisco (2019)
+    <<: *Up_corners
   524434: # Eternals (2021)
     <<: *Up_corners
   526896: # Morbius (2022)
     <<: *Up_corners
+  531428: # Portrait of a Lady on Fire (2019)
+    <<: *Up_corners
+  535265: # Killers Anonymous (2019)
+    <<: *Up_corners
+  535581: # The Dead Don't Die (2019)
+    <<: *Up_corners
+  546554: # Knives Out (2019)
+    <<: *Bottom
   547016: # The Old Guard (2020)
     <<: *Up_corners
   559907: # The Green Knight (2021)
@@ -187,6 +287,10 @@ metadata:
     <<: *Down_corners
   566525: # Shang-Chi and the Legend of the Ten Rings (2021)
     <<: *Up_corners
+  567410: # System Crasher (2019)
+    <<: *Bottom
+  568160: # Weathering with You (2019)
+    <<: *Bottom
   575088: # Baba Yaga: Terror of the Dark Forest (2020)
     <<: *Up_corners
   576845: # Last Night in Soho (2021)
