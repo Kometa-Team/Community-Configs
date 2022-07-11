@@ -23,8 +23,7 @@ templates:
       weight: 10
     overlay:
       name: <<overlay_name>>
-      # git: PMM/overlays/images/<<overlay>>
-      file: config/metadata/overlays/images/<<overlay>>.png
+      git: PMM/overlays/images/<<overlay>>
       group: ribbon
       weight: <<weight>>
       horizontal_offset: 0
@@ -41,8 +40,7 @@ templates:
       weight: 10
     overlay:
       name: <<overlay_name>>
-      # git: PMM/overlays/images/<<overlay>>
-      file: config/metadata/overlays/images/<<overlay>>.png
+      git: PMM/overlays/images/<<overlay>>
       group: ribbon
       weight: <<weight>>
       horizontal_offset: 0
