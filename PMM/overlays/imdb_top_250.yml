@@ -10,7 +10,7 @@
 #          # Set episode or season to overlay               #
 #          overlay_level:                                   #
 #          # Set the weight for the overlay                 #
-#          weight: 20                                       #
+#          weight: 30                                       #
 #############################################################
 
 templates:
@@ -19,7 +19,7 @@ templates:
       - overlay_level
     default:
       overlay: <<overlay_name>>
-      weight: 20
+      weight: 30
     imdb_chart: top_<<library_type>>s
     overlay:
       name: <<overlay_name>>

@@ -10,7 +10,7 @@
 #          # Set episode or season to overlay               #
 #          overlay_level:                                   #
 #          # Set the weight for the overlay                 #
-#          weight: 10                                       #
+#          weight: 20                                       #
 #############################################################
 
 templates:
@@ -20,7 +20,7 @@ templates:
     mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
     default:
       overlay: <<overlay_name>>
-      weight: 10
+      weight: 20
     overlay:
       name: <<overlay_name>>
       git: PMM/overlays/images/<<overlay>>
