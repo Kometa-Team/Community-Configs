@@ -17,7 +17,7 @@ templates:
   MCMustSeeMovies:
     optional:
       - overlay_level
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/metacriticmustsee
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/metacriticmustseemovies
     default:
       overlay: <<overlay_name>>
       weight: 10
