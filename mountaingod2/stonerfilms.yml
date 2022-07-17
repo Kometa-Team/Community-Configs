@@ -37,7 +37,7 @@ templates:
     visible_shared: <<visible_shared_<<season>>>>
     smart_label: <<sort_by>>
     summary: A collection of <<collection_name>> and other movies that may relate to the season.
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/<<season>>.jpg
+    url_poster: https://raw.githubusercontent.com/MountainGod2/Plex-Meta-Manager-Images/master/seasonal/<<season>>.jpg
     delete_not_scheduled: true
 
 collections:
@@ -46,10 +46,10 @@ collections:
       - name: separator off
         separator: seasonal
 
-  420:
+  Stoner Films:
     template:
       - name: Holiday
         season: 420
-        schedule_420: range(04/16-04/24)
+        schedule_420: range(04/15-04/24)
       - name: shared
     imdb_list: https://www.imdb.com/list/ls075204988/
