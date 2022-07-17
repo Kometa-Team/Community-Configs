@@ -1,0 +1,47 @@
+###########################
+#        Templates        #
+###########################
+templates:
+    tmdb:
+      optional:
+        - collections
+        - lists
+        - movies
+        - tmdb_summary
+        - summary
+      tmdb_collection: <<collections>>
+      tmdb_list: <<lists>>
+      tmdb_movie: <<movies>>
+      tmdb_summary: <<tmdb_summary>>
+      summary: <<summary>>
+      url_poster: <<poster>>
+      sync_mode: sync    
+      sort_title: +03_<<collection_name>>
+      collection_order: release
+      collection_mode: hide
+      schedule:
+       - weekly(sunday)
+       - hourly(02)
+  
+    imdb:
+      url_poster: <<poster>>
+      summary: <<summary>>
+      sort_title: +03_<<collection_name>>
+      sync_mode: sync
+      collection_mode: hide
+      schedule:
+       - weekly(sunday)
+       - hourly(02)
+
+#####################################
+#      Movie Collections            #
+#####################################
+collections:
+  Disney Animation:
+    template: {name: tmdb, lists: "7103808, 7103807", summary: "A collection of Disney Animation movies.", poster: https://theposterdb.com/api/assets/68411}
+  Disney Fairies:
+    template: {name: tmdb, collections: "315595", tmdb_summary: 315595, poster: https://theposterdb.com/api/assets/167996}
+  Disney ReImaginings:
+    template: {name: imdb, summary: "Live-action remakes produced by Walt Disney Pictures of its animated films.", poster: https://theposterdb.com/api/assets/68410}
+    imdb_list:
+      - https://www.imdb.com/list/ls083312980/

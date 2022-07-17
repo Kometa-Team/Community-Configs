@@ -1,0 +1,133 @@
+external_templates:
+  - file: metadata/admin/_templates.yml
+templates:
+  movie_collections:
+    default:
+      minimum_items: 2
+    optional:
+      - add_movies
+      - name_mapping
+    collection_order: release
+    tmdb_collection: <<value>>
+    tmdb_summary: <<value>>
+    tmdb_background: <<value>>
+    tmdb_movie: <<add_movies>>
+    minimum_items: <<minimum_items>>
+    name_mapping: <<name_mapping>>
+dynamic_collections:
+  TMDb Collections:
+    type: tmdb_collection
+    template: movie_collections
+    remove_suffix:
+      - Collection
+      - Filmreihe
+    title_override:
+      304: Ocean's Movies
+      2344: The Matrix
+      9485: Fast & Furious
+      34055: Pokémon
+      86055: Men In Black
+      115575: Star Trek Alternate Reality
+      115838: "Escape From ..."
+      135483: Taken
+      290973: Crouching Tiger, Hidden Dragon
+      382685: Now You See Me
+      386382: Frozen
+      535313: The Monsterverse
+      575987: The Girl - Millennium
+      608101: "The Hitman's Bodyguard"
+      735384: Hercule Poirot
+      747168: Borat Moviefilms
+      975677: The First Myth Universe
+    addons:
+      34055:                  # Combine all Pokémon Movie Collections into one
+        - 661025
+        - 661026
+        - 661028
+        - 661029
+        - 661031
+    exclude:
+      - 10                    # Exclude Star Wars, added via Letterboxd List below
+      - 809185                # Exclude Army of the Dead, added via Letterboxd List below
+      - 993589                # Exclude Hulk (Collection), I don't want to combine MCU Incredible Hulk with Bana Hulk as a collection
+    template_variables:       # Movies that have TMDb Collections where I have multiple versions of the first one,
+      minimum_items:          # that should not be a collection until the second movie actually gets released.
+        475557: 3             # Joker
+        870339: 3             # The Accountant
+        948485: 3             # The Batman
+        726871: 3             # Dune
+        861415: 3             # Free Guy
+      add_movies:             # Add Movies to collections, which did not meet TMDbs criteria
+        304: "402900"         # Add "Ocean's 8" to "Ocean's Movies"
+        2344: "55931"         # Add "Animatrix" to "The Matrix"
+        2883: "414419"        # Add "Kill Bill: The Whole Bloody Affair" to "Kill Bill"
+        9485: "384018"        # Add "Fast & Furious: Hobbs & Shaw" to "Fast & Furious"
+        17178: "828853"       # Add "Jackass 4.5" to "Jackass"
+        17235: "456740"       # Add "Hellboy (2019)" to "Hellboy"
+        44215: "2164"         # Add "Stargate" to "Stargate"
+        448150: "567604"      # Add "Once upon a Deadpool" to "Deadpool"
+        535313: "293167"      # Add "Kong: Skull Island" to "The Monsterverse"
+      name_mapping:           # Asset folders which differ in name from the collection
+        119: The Lord of the Rings
+        131: Three Colors
+        230: The Godfather
+        264: Back to the Future
+        295: Pirates of the Caribbean
+        420: The Chronicles of Narnia
+        528: The Terminator
+        1565: 28 Days-Weeks Later
+        1570: Die Hard
+        1960: Evil Dead
+        2366: Jaws
+        3963: The Crimson Rivers
+        4438: The Space Odyssey Series
+        31562: The Bourne
+        37139: Naked Gun
+        91746: Bill & Ted's Most Excellent Movies
+        87186: The Boondock Saints
+        87359: Mission Impossible
+        115762: Alien vs Predator
+        115838: Escape From
+        121938: The Hobbit
+        137696: Monsters, Inc
+        137697: Finding Nemo
+        163902: RED
+        173710: Planet of the Apes (Reboot)
+        261307: Alice in Wonderland
+        353325: Joe Dirt
+        435259: Fantastic Beasts
+        464577: The Croods
+        468222: The Incredibles
+        477962: It
+        530064: The Shining
+        647077: Coming to America
+        720879: Sonic the Hedgehog
+collections:
+  Alien + Predator Universe:
+    template: {name: lbxd_list, lbxd_list: alien-predator-universe, lbxd_smart: year.asc}
+  Army of the Dead:
+    template: {name: lbxd_list, lbxd_list: army-of-the-dead, lbxd_order: custom}
+  Cloverfield:
+    template: {name: lbxd_list, lbxd_list: cloverfield}
+  Cornetto Trilogy:
+    template: {name: lbxd_list, lbxd_list: cornetto-trilogy}
+  Eastrail 177:
+    template: {name: lbxd_list, lbxd_list: eastrail-177}
+  Grindhouse:
+    template: {name: lbxd_list, lbxd_list: grindhouse}
+  Marvel Cinematic Universe:
+    template: {name: lbxd_list, lbxd_list: marvel-cinematic-universe, lbxd_smart: year.desc}
+  Middle Earth:
+    template: {name: lbxd_list, lbxd_list: middle-earth, lbxd_smart: year.desc}
+  Monty Python:
+    template: {name: lbxd_list, lbxd_list: monty-python, lbxd_smart: year.asc}
+  Spider-Man Universe:
+    template: {name: lbxd_list, lbxd_list: spider-man-universe, lbxd_smart: year.asc}
+  Star Wars:
+    template: {name: lbxd_list, lbxd_list: star-wars, lbxd_order: custom}
+  Vengeance:
+    template: {name: lbxd_list, lbxd_list: vengeance-trilogy, lbxd_order: custom}
+  Wizarding World:
+    template: {name: lbxd_list, lbxd_list: wizarding-world, lbxd_smart: year.desc}
+  Worlds of DC:
+    template: {name: lbxd_list, lbxd_list: worlds-of-dc, lbxd_smart: year.desc}

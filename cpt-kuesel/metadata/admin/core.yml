@@ -1,0 +1,81 @@
+external_templates:
+  - file: metadata/admin/_templates
+templates:
+  label_collector:
+    default:
+      label_collector: true
+    allowed_library_types: <<label_collector>>
+  german_metadata:
+    default:
+      german_metadata: true
+    allowed_library_types: <<german_metadata>>
+  non_german_metadata:
+    default:
+      non_german_metadata: true
+    allowed_library_types: <<non_german_metadata>>
+  local_only:
+    default:
+      local_only: false
+    allowed_library_types: <<local_only>>
+collections:
+  label_collector:
+    template: {name: label_collector}
+    blank_collection: true
+    collection_mode: hide
+    label:
+      - admin
+      - german_metadata
+      - non_german_metadata
+      - bottom
+      - up_corners
+      - down_corners
+      - left_side
+      - right_side
+      - sides
+  remove_non_german_metadata:
+    template: {name: non_german_metadata}
+    build_collection: false
+    plex_search:
+      all:
+        audio_language: de
+        label: non_german_metadata
+    item_label.remove: non_german_metadata
+  remove_german_metadata:
+    template: {name: german_metadata}
+    build_collection: false
+    plex_search:
+      all:
+        audio_language.not: de
+        label: german_metadata
+    item_label.remove: german_metadata
+  german_metadata:
+    template: {name: german_metadata}
+    build_collection: false
+    plex_search:
+      all:
+        audio_language: de
+        label.not: german_metadata
+    item_metadata_language: de-DE
+    item_label: german_metadata
+    item_label.remove: non_german_metadata
+  non_german_metadata:
+    template: {name: non_german_metadata}
+    build_collection: false
+    plex_search:
+      all:
+        audio_language.not: de
+        label.not: non_german_metadata
+    item_metadata_language: en-US
+    item_label: non_german_metadata
+    item_label.remove: german_metadata
+  local_only:
+    template:
+      - name: local_only
+      - name: it_items
+        it_default: null
+        it_resolution: 4k
+      - name: it_items
+        it_default: null
+        it_hdr: true
+    build_collection: false
+    item_label: local_only

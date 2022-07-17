@@ -1,62 +1,16 @@
 metadata:
-  Crouching Tiger, Hidden Dragon:
-    alt_title: Tiger & Dragon
-  James Bond 007 - Sag niemals nie:
-    alt_title: Sag niemals nie
-  Paris, Texas:
-    alt_title: Motel Chronicles
+  # <tmdb-id>: # <movie_name>
+    # title: # override stupid german translations of movie names
+    # label: # <overlay_positions>
 
-  # --- The Matrix Collection --- #
-  Animatrix:
-    sort_title: Matrix 0
-  Matrix:
-    sort_title: Matrix 1
-  Matrix Reloaded:
-    sort_title: Matrix 2
-  Matrix Revolutions:
-    sort_title: Matrix 3
-  Matrix Resurrections:
-    sort_title: Matrix 4
-  # --- The Matrix Collection --- #
-  # --- The Middle Earth Collection --- #
-  Der Hobbit - Eine unerwartete Reise:
-    sort_title: Middle Earth 1
-  Der Hobbit - Smaugs Einöde:
-    sort_title: Middle Earth 2
-  Der Hobbit - Die Schlacht der fünf Heere:
-    sort_title: Middle Earth 3
-  Der Herr der Ringe - Die Gefährten:
-    sort_title: Middle Earth 4
-  Der Herr der Ringe - Die zwei Türme:
-    sort_title: Middle Earth 5
-  Der Herr der Ringe - Die Rückkehr des Königs:
-    sort_title: Middle Earth 6
-  # --- The Middle Earth Collection --- #
-  # --- Wizarding World --- #
-  Phantastische Tierwesen und wo sie zu finden sind:
-    sort_title: Wizarding World 1
-  "Phantastische Tierwesen: Grindelwalds Verbrechen":
-    sort_title: Wizarding World 2
-  # Phantastische Tierwesen 3:
-  #   sort_title: Wizarding World 3
-  # Phantastische Tierwesen 4:
-  #   sort_title: Wizarding World 4
-  # Phantastische Tierwesen 5:
-  #   sort_title: Wizarding World 5
-  Harry Potter und der Stein der Weisen:
-    sort_title: Wizarding World 6
-  Harry Potter und die Kammer des Schreckens:
-    sort_title: Wizarding World 7
-  Harry Potter und der Gefangene von Askaban:
-    sort_title: Wizarding World 8
-  Harry Potter und der Feuerkelch:
-    sort_title: Wizarding World 9
-  Harry Potter und der Orden des Phönix:
-    sort_title: Wizarding World 10
-  Harry Potter und der Halbblutprinz:
-    sort_title: Wizarding World 11
-  Harry Potter und die Heiligtümer des Todes - Teil 1:
-    sort_title: Wizarding World 12
-  Harry Potter und die Heiligtümer des Todes - Teil 2:
-    sort_title: Wizarding World 13
-  # --- Wizarding World --- #
+  146: # Crouching Tiger, Hidden Dragon
+    title: Crouching Tiger, Hidden Dragon
+    label: bottom
+  655: # Paris, Texas
+    title: Paris, Texas
+  8386: # How High
+    title: How High
+  36670: # James Bond 007 - Sag niemals nie
+    title: James Bond 007 - Sag niemals nie
+  263341: # Crouching Tiger, Hidden Dragon: Sword of Destiny
+    label: bottom

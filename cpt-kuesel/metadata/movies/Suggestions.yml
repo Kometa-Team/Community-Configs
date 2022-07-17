@@ -1,27 +1,15 @@
-# Prefixes for cpt-kuesels Movie Collections:
-# zzz_ - Sorted to the bottom, these collections are shared to the home and the library tab already
-
-templates:
-  Suggestion:
-    optional:
-      - letterboxd
-    letterboxd_list: https://letterboxd.com/<<letterboxd>>
-    visible_shared: true
-    visible_library: true
-    label: <<collection_name>>
-    smart_label: random
-    sort_title: zzz_<<collection_name>>
+external_templates:
+  - file: metadata/admin/_templates.yml
 collections:
   Movie of the Day:
-    template: {name: Suggestion}
     plex_search:
       all:
         year.gte: 1800
       sort_by: random
       limit: 1
     schedule: hourly(1)
+    smart_label: random
+    visible_shared: true
+    visible_library: true
   Family Watchlist:
-    template: {name: Suggestion, letterboxd: jkbsmm/list/family-watchlist/}
-  Julian's Watchlist:
-    template: {name: Suggestion, letterboxd: jkbsmm/watchlist/}
-    
+    template: {name: lbxd_wlist, lbxd_smart: random}

@@ -1,0 +1,18 @@
+
+#Uses https://theposterdb.com/poster/71196 and https://theposterdb.com/poster/11460
+
+collections:
+  National Treasure Collection:
+    tmdb_collection: https://www.themoviedb.org/collection/52984
+    tmdb_summary: https://www.themoviedb.org/collection/52984
+    #or trakt_list 
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/71196
+    sort_title: ++++++++_national_treasure
+    collection_order: release
+
+metadata:
+  2059: #"National Treasure":
+    url_poster: https://theposterdb.com/api/assets/11461
+  6637: #"National Treasure: Book of Secrets":
+    url_poster: https://theposterdb.com/poster/11462

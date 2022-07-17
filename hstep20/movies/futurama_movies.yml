@@ -1,0 +1,21 @@
+#Uses posterdblink
+
+collections:
+  Futurama Movie Collection:
+    tmdb_collection: https://www.themoviedb.org/collection/13800
+    tmdb_summary: https://www.themoviedb.org/collection/13800
+    #or trakt_list 
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/29186
+    sort_title: ++++++++_futurama_movies
+    collection_order: release
+
+metadata:
+  7249: #"Futurama: Into the Wild Green Yonder":
+    url_poster: https://theposterdb.com/api/assets/17751
+  12889: #"Futurama: Bender's Big Score":
+    url_poster: https://theposterdb.com/api/assets/17748
+  13253: #"Futurama: The Beast with a Billion Backs":
+    url_poster: https://theposterdb.com/api/assets/17749
+  15060: #"Futurama: Bender's Game"
+    url_poster: https://theposterdb.com/api/assets/17750

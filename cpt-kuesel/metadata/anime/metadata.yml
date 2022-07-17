@@ -1,17 +1,31 @@
 metadata:
-  "Avatar: The Legend of Korra":
-    alt_title: The Legend of Korra
-  Gintama:
+  # <tvdb-id>: # <show_name>
+    # title: # override stupid translations of show names
+    # label: # <overlay_positions>
+    # seasons:
+      # <number>:
+        # title: # custom season name
+        # summary: # custom summary for season
+        # label: # <overlay_positions>
+        # episodes:
+          # <number>:
+            # title: # custom episode name
+            # summary: # custom summary for episode
+            # label: # <overlay_positions>
+
+  79895: # Gintama
     seasons:
       0:
         title: "The Semi-Final"
         summary: Two special Episodes to watch before the 2021 movie "The Very Final".
-    episodes:
-      S00E18:
-        title: The Semi-Final - Don't Spread the Wrapping Cloth Without Thinking Ahead
-        summary: As the war temporarily calms down and Edo rebuilds, Gintoki finds Shinpachi—who is still unaware of his return—on a bridge. However, as a fight quickly breaks out between the Yorozuya and the Tenshouin Naraku, suspicion grows, forcing Gintoki to use what is nearest—a loincloth—to mask his identity. Saved for the time being, Gintoki enters the Yorozuya office, but unbeknownst to him, someone else is already waiting there...
-      S00E19:
-        title: The Semi-Final - Don't Make Up Your Mind Right Before The Important Decision
-        summary: Meanwhile, Kondou departs Earth to marry Princess Bubbles in an attempt to improve diplomatic relations. After boarding the Gorilla Amanto mother ship, he realizes that he doesn't speak their language. Confused, Kondou tries conversing with them, only to inadvertently gain their support. However, someone associated with the princess crashes the ongoing ceremony. Will the wedding continue, or has Kondou just been saved from becoming the next Gorilla Prince?
-  Kemono Jihen:
-    alt_title: Monster Incidents
+        episodes:
+          18:
+            title: The Semi-Final - Don't Spread the Wrapping Cloth Without Thinking Ahead
+            summary: As the war temporarily calms down and Edo rebuilds, Gintoki finds Shinpachi—who is still unaware of his return—on a bridge. However, as a fight quickly breaks out between the Yorozuya and the Tenshouin Naraku, suspicion grows, forcing Gintoki to use what is nearest—a loincloth—to mask his identity. Saved for the time being, Gintoki enters the Yorozuya office, but unbeknownst to him, someone else is already waiting there...
+          19:
+            title: The Semi-Final - Don't Make Up Your Mind Right Before The Important Decision
+            summary: Meanwhile, Kondou departs Earth to marry Princess Bubbles in an attempt to improve diplomatic relations. After boarding the Gorilla Amanto mother ship, he realizes that he doesn't speak their language. Confused, Kondou tries conversing with them, only to inadvertently gain their support. However, someone associated with the princess crashes the ongoing ceremony. Will the wedding continue, or has Kondou just been saved from becoming the next Gorilla Prince?
+  251085: # "Avatar: The Legend of Korra"
+    title: "Avatar: The Legend of Korra"
+  390382: # Kemono Jihen
+    title: Kemono Jihen

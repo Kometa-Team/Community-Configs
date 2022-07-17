@@ -1,0 +1,162 @@
+#############################################################
+#                  Special Release Overlay                  #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Designed for TRaSH Guides filename naming scheme         #
+#  https://trash-guides.info/                               #
+#                                                           #
+#  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/special_release                  #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
+#          horizontal_offset: 15                            #
+#          # Set the horizontal align for the overlay       #
+#          horizontal_align: left                           #
+#          # Set the vertical offset for the overlay        #
+#          vertical_offset: 99                              #
+#          # Set the vertical align for the overlay         #
+#          vertical_align: top                              #
+#                                                           #
+#          # Use the Criterion overlay                      #
+#          use_criterion: true                              #
+#          # Use the IMAX-E overlay                         #
+#          use_enhanced: true                               #
+#          # Use the IMAX overlay                           #
+#          use_imax: true                                   #
+#          # Use the Director's Cut overlay                 #
+#          use_directorscut: true                           #
+#          # Use the Uncut overlay                          #
+#          use_uncut: true                                  #
+#          # Use the Extended overlay                       #
+#          use_extended: true                               #
+#          # Use the Remastered overlay                     #
+#          use_remastered: true                             #
+#          # Use the Special overlay                        #
+#          use_special: true                                #
+#          # Use the Final Cut overlay                      #
+#          use_finalcut: true                               #
+#############################################################
+
+templates:
+  SpecialRelease:
+    optional:
+      - overlay_level
+      - use_<<slug>>
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 99
+      vertical_align: top
+    collection_level: <<overlay_level>>
+    allowed_library_types: <<use_<<slug>>>>
+    overlay:
+      name: <<overlay_name>>
+      git: PMM/overlays/images/<<overlay>>
+      group: special
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+overlays:
+
+  Directors-Cut:
+    template:
+      - name: SpecialRelease
+        weight: 90
+        slug: directorscut
+    plex_all: true
+    filters:
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bDirector|Directors\b'
+
+  Extended-Edition:
+    template:
+      - name: SpecialRelease
+        weight: 80
+        slug: extended
+    plex_all: true
+    filters:
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bExtended\b'
+
+  Uncut-Edition:
+    template:
+      - name: SpecialRelease
+        weight: 70
+        slug: uncut
+    plex_all: true
+    filters:
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bUncut\b'
+
+  Unrated-Edition:
+    template:
+      - name: SpecialRelease
+        weight: 60
+        slug: unrated
+    plex_all: true
+    filters:
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bUnrated\b'
+
+  Special-Edition:
+    template:
+      - name: SpecialRelease
+        weight: 50
+        slug: special
+    plex_all: true
+    filters:
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bSpecial\b'
+
+  IMAX-E:
+    template:
+      - name: SpecialRelease
+        weight: 40
+        slug: enhanced
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bIMAX Enhanced\b|^(?=.*(DSNP|Disney\+|CORE(?=[ ._-]web[ ._-]?(dl|rip)\b)|\bBC(?=[ ._-]web[ ._-]?(dl|rip)\b)|IMAX[- .]Enhanced)\b)(?=.*\b(IMAX|IMAX[- .]Enhanced)\b).*'
+
+  IMAX:
+    template:
+      - name: SpecialRelease
+        weight: 30
+        slug: imax
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bIMAX\b'
+
+  Criterion:
+    template:
+      - name: SpecialRelease
+        weight: 20
+        slug: criterion
+    plex_all: true
+    filters:
+      filepath.regex:
+        - '(?i)Criterion'
+        - '(?i)\[CC\]'
+
+  Final-Cut:
+    template:
+      - name: SpecialRelease
+        weight: 15
+        slug: finalcut
+    plex_all: true
+    filters:
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bFinal Cut\b'
+
+  Remastered:
+    template:
+      - name: SpecialRelease
+        weight: 10
+        slug: remastered
+    plex_all: true
+    filters:
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bRemaster\b'
+
