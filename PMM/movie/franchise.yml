@@ -12,6 +12,8 @@
 #          radarr_add_missing: true                         #
 #          # Sets the collection order of the collection    #
 #          collection_order: alpha                          #
+#          # Sets the sort title                            #
+#          sort_title: "!02_<<collection_name>>"            #
 #          # Sets the minimum items of the collection       #
 #          minimum_items: 2                                 #
 #############################################################
@@ -31,11 +33,13 @@ templates:
       - movie
       - radarr_add_missing
       - name_mapping
+      - sort_title
     cache_builders: 1
     minimum_items: <<minimum_items>>
     tmdb_collection_details: <<value>>
     tmdb_movie: <<movie>>
     name_mapping: <<name_mapping>>
+    sort_title: <<sort_title>>
     sync_mode: sync
     collection_order: <<collection_order>>
     radarr_add_missing: <<radarr_add_missing>>

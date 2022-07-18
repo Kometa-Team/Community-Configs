@@ -61,11 +61,14 @@ They are:
 
     | Has a 4k and a HDR overlay builder.
 
-  - overlays/_posters/*
+  - overlays/_posters/[250x150]/* | overlays/_posters/[183x113]/*
 
-    | In this folder are all the files used as overlay for Movies, Shows and Seasons with dimensions 250x150.
+    | In this folder are all the files used as overlay for Movies, Shows and Seasons with dimensions 250x150 or 183x113.
+    Choose the size you want to use and move them up in overlays/_posters.
 
-  - overlays/_titlecards/*
+    | My configs use size 250x150.
+
+  - overlays/_titlecards/[240x180]*
 
     | In this folder are all the files used as overlay for Episodes with dimensions 240x180.
 

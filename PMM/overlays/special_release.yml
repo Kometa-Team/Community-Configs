@@ -19,9 +19,9 @@
 #          # Set the horizontal align for the overlay       #
 #          horizontal_align: left                           #
 #          # Set the vertical offset for the overlay        #
-#          vertical_offset: 113                             #
+#          vertical_offset: 99                              #
 #          # Set the vertical align for the overlay         #
-#          vertical_align: bottom                           #
+#          vertical_align: top                              #
 #                                                           #
 #          # Use the Criterion overlay                      #
 #          use_criterion: true                              #
@@ -39,6 +39,8 @@
 #          use_remastered: true                             #
 #          # Use the Special overlay                        #
 #          use_special: true                                #
+#          # Use the Final Cut overlay                      #
+#          use_finalcut: true                               #
 #############################################################
 
 templates:
@@ -73,25 +75,7 @@ overlays:
         slug: directorscut
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bDirector|Directors\b'
-
-  Uncut-Edition:
-    template:
-      - name: SpecialRelease
-        weight: 70
-        slug: uncut
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\bUncut\b'
-
-  Unrated-Edition:
-    template:
-      - name: SpecialRelease
-        weight: 60
-        slug: unrated
-    plex_all: true
-    filters:
-      filepath.regex: '(?i)\bUnrated\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bDirector|Directors\b'
 
   Extended-Edition:
     template:
@@ -100,16 +84,25 @@ overlays:
         slug: extended
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bExtended\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bExtended\b'
 
-  Remastered:
+  Uncut-Edition:
     template:
       - name: SpecialRelease
-        weight: 10
-        slug: remastered
+        weight: 70
+        slug: uncut
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bRemaster\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bUncut\b'
+
+  Unrated-Edition:
+    template:
+      - name: SpecialRelease
+        weight: 60
+        slug: unrated
+    plex_all: true
+    filters:
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bUnrated\b'
 
   Special-Edition:
     template:
@@ -118,7 +111,25 @@ overlays:
         slug: special
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bSpecial\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bSpecial\b'
+
+  IMAX-E:
+    template:
+      - name: SpecialRelease
+        weight: 40
+        slug: enhanced
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bIMAX Enhanced\b|^(?=.*(DSNP|Disney\+|CORE(?=[ ._-]web[ ._-]?(dl|rip)\b)|\bBC(?=[ ._-]web[ ._-]?(dl|rip)\b)|IMAX[- .]Enhanced)\b)(?=.*\b(IMAX|IMAX[- .]Enhanced)\b).*'
+
+  IMAX:
+    template:
+      - name: SpecialRelease
+        weight: 30
+        slug: imax
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bIMAX\b'
 
   Criterion:
     template:
@@ -131,20 +142,21 @@ overlays:
         - '(?i)Criterion'
         - '(?i)\[CC\]'
 
-  IMAX-E:
+  Final-Cut:
     template:
       - name: SpecialRelease
-        weight: 40
-        slug: enhanced
+        weight: 15
+        slug: finalcut
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bIMAX Enhanced\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bFinal Cut\b'
 
-  IMAX:
+  Remastered:
     template:
       - name: SpecialRelease
-        weight: 30
-        slug: imax
+        weight: 10
+        slug: remastered
     plex_all: true
     filters:
-      filepath.regex: '(?i)\bIMAX\b'
+      filepath.regex: '(?<=[0-9]{4}[)}>\]]\s)\bRemaster\b'
+
