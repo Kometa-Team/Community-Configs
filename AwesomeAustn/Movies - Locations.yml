@@ -1,0 +1,16 @@
+# Idea by tikilab                                                       Template created by me
+
+templates:
+  Locations:  
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&locations=<<location>>
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+    summary: Movies shot in <<location>>.
+    schedule: weekly(friday)
+
+collections:
+  Arizona:
+    template: {name: Locations, location: arizona}
+  Las Vegas:
+    template: {name: Locations, location: las vegas}

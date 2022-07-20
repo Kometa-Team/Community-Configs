@@ -1,0 +1,59 @@
+# Made by Drazzizzi                                                     # Slightly modified by me
+
+templates:
+  Holiday:
+    smart_label: title.asc
+    delete_not_scheduled: true
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+    sort_title: "!12_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    summary: A timed collection of <<holiday>> movies and other movies that may relate to the holiday. This collection will automatically disappear once the holiday period is over.
+
+collections:
+  Valentines Day Movies:
+    schedule: range(02/01-02/14)
+    template: {name: Holiday, holiday: "Valentine's Day"}
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398
+      - https://www.imdb.com/list/ls057783436
+      - https://www.imdb.com/list/ls064427905
+  St. Patricks Day Movies:
+    schedule: range(03/01-03/17)
+    template: {name: Holiday, holiday: "St. Patrick's Day"}
+    imdb_list: https://www.imdb.com/list/ls063934595
+  Thanksgiving Movies:
+    schedule: range(10/01-10/14)
+    template: {name: Holiday, holiday: Thanksgiving}
+    imdb_list: 
+      - https://www.imdb.com/list/ls000835734
+      - https://www.imdb.com/list/ls091597850
+  Halloween Movies (Big List):                                          # Named Big List because I already have one named Halloween Movies
+    schedule: range(10/01-10/31)
+    template: {name: Holiday, holiday: Halloween}
+    imdb_list:
+      - https://www.imdb.com/list/ls023118929
+      - https://www.imdb.com/list/ls000099714
+      - https://www.imdb.com/list/ls000058693
+      - https://www.imdb.com/search/title/?genres=horror&keywords=haunted-house&sort=moviemeter,asc
+    tmdb_collection:
+      - 91361    # Halloween Collection
+      - 8581     # A Nightmare on Elm Street Collection
+      - 1733     # The Mummy Collection
+      - 8091     # Alien Collection
+    tmdb_movie:                                                         # Added by me
+      - 23437    # A Nightmare on Elm Street (2010)
+  Christmas Movies (Big List):                                          # Named Big List because I already have one named Christmas Movies
+    schedule: range(12/01-12/31)
+    template: {name: Holiday, holiday: Christmas}
+    imdb_list: 
+      - https://www.imdb.com/list/ls000096828
+      - https://www.imdb.com/list/ls097394442
+      - https://www.imdb.com/list/ls068976997
+      - https://www.imdb.com/list/ls027567380
+  New Years Eve Movies:
+    schedule: range(12/26-01/05)
+    template: {name: Holiday, holiday: "New Year's Eve"}
+    imdb_list: https://www.imdb.com/list/ls066838460

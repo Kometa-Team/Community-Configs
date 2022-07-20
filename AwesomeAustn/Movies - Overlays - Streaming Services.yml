@@ -1,0 +1,41 @@
+overlays:
+
+############################
+#    STREAMING SERVICES    #
+############################
+
+  Apple TV+:
+    overlay: Apple TV+
+    plex_search:
+      all:
+        collection: Apple TV+
+  HBO Max:
+    overlay: HBO Max
+    plex_search:
+      all:
+        collection: HBO Max
+  Hulu:
+    overlay: Hulu
+    plex_search:
+      all:
+        collection: Hulu
+  Netflix Film:
+    overlay: Netflix Film
+    plex_search:
+      all:
+        collection: Netflix
+  Netflix Stand-up:
+    overlay: Netflix Stand-up
+    plex_search:
+      all:
+        collection: Netflix Stand-up
+  Paramount+:
+    overlay: Paramount+
+    plex_search:
+      all:
+        collection: Paramount+
+  Prime Video:
+    overlay: Prime Video
+    plex_search:
+      all:
+        collection: Prime Video

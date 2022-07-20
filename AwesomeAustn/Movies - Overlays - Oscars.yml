@@ -1,0 +1,17 @@
+overlays:
+
+############################
+#          OSCARS          #
+############################
+
+  Oscars:
+    overlay: Oscars
+    plex_search:
+      any:
+        collection:
+          - Best Animated Feature Film
+          - Best Cinematography
+          - Best Film Editing
+          - Best Picture
+          - Best Sound
+          - Best Visual Effects
