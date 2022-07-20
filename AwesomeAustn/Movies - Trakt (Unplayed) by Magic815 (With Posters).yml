@@ -1,0 +1,62 @@
+# Made by Magic815                                                      I modified the titles, sort_title, and commented out the poster
+
+collections:
+  Trakt Trending Now (Unplayed):
+    trakt_chart:
+      chart: trending
+      limit: 100
+    sort_title: "!01_Trakt_01 Trending Now (Unplayed)"
+#   url_poster: https://raw.githubusercontent.com/Magic815/Plex-Meta-Manager-Configs/main/collection%20posters/Trakt-Trending-Now.png
+    url_poster: https://github.com/AwesomeAustn/Plex-Meta-Manager-Images/blob/master/AwesomeAustn/Sets/Trakt%20Trending%20Now%20(Unplayed).png
+    sync_mode: sync
+    collection_mode: hide
+    collection_filtering: user
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    smart_label:
+      sort_by: release.desc
+      all:
+        label: <<smart_label>>
+        unplayed: true
+    schedule: daily
+  Trakt This Week (Unplayed):
+    trakt_chart:
+      chart: watched
+      time_period: weekly
+      limit: 100
+    sort_title: "!01_Trakt_02 This Week (Unplayed)"
+#   url_poster: https://raw.githubusercontent.com/Magic815/Plex-Meta-Manager-Configs/main/collection%20posters/Trakt-Most-Watched-This-Week.png
+    url_poster: https://github.com/AwesomeAustn/Plex-Meta-Manager-Images/blob/master/AwesomeAustn/Sets/Trakt%20This%20Week%20(Unplayed).png
+    sync_mode: sync
+    collection_mode: hide
+    collection_filtering: user
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    smart_label:
+      sort_by: release.desc
+      all:
+        label: <<smart_label>>
+        unplayed: true
+    schedule: daily
+  Trakt This Year (Unplayed):
+    trakt_chart:
+      chart: watched
+      time_period: yearly
+      limit: 200
+    sort_title: "!01_Trakt_03 This Year (Unplayed)"
+#   url_poster: https://raw.githubusercontent.com/Magic815/Plex-Meta-Manager-Configs/main/collection%20posters/Trakt-Most-Watched-This-Year.png
+    url_poster: https://github.com/AwesomeAustn/Plex-Meta-Manager-Images/blob/master/AwesomeAustn/Sets/Trakt%20This%20Year%20(Unplayed).png
+    sync_mode: sync
+    collection_mode: hide
+    collection_filtering: user
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    smart_label:
+      sort_by: release.desc
+      all:
+        label: <<smart_label>>
+        unplayed: true
+    schedule: daily

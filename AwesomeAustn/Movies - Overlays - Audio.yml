@@ -1,0 +1,16 @@
+overlays:
+
+############################
+#          AUDIO           #
+############################
+
+  DTS-HD MA:
+    overlay: DTS-HD MA
+    plex_all: true
+    filters:
+      filepath: DTS-HD MA
+  TrueHD Atmos:
+    overlay: TrueHD Atmos
+    plex_all: true
+    filters:
+      filepath: TrueHD Atmos

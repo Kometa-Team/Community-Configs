@@ -1,0 +1,82 @@
+overlays:
+
+############################
+#         RATINGS          #
+############################
+
+  IMDb Rating:
+    plex_all: true
+    overlay:
+      name: text(user_rating)
+      horizontal_offset: 780
+      horizontal_align: left
+      vertical_offset: 539
+      vertical_align: top
+      font: /config/overlays/Fonts/Impact.ttf
+      font_size: 70
+      font_color: "#FFFFFF"
+      back_color: "#000000B3"
+      back_radius: 25
+      back_width: 190
+      back_height: 185
+      file: /config/overlays/IMDb Rating.png
+      addon_offset: 20
+      addon_position: top
+# TMDb Rating:
+#   plex_all: true
+#   overlay:
+#     name: text(user_rating)
+#     horizontal_offset: 780
+#     horizontal_align: left
+#     vertical_offset: 539
+#     vertical_align: top
+#     font: /config/overlays/Fonts/Avenir Black.ttf
+#     font_size: 70
+#     font_color: "#FFFFFF"
+#     back_color: "#000000B3"
+#     back_radius: 25
+#     back_width: 190
+#     back_height: 185
+#     file: /config/overlays/TMDb Rating.png
+#     addon_offset: 20
+#     addon_position: top
+  Rotten Tomatoes Audience Good:
+    plex_search:
+      audience_rating.gte: 6.0
+      audience_rating.lt: 10.0
+    overlay:
+      name: text(audience_rating%)
+      horizontal_offset: 780
+      horizontal_align: left
+      vertical_offset: 744
+      vertical_align: top
+      font: /config/overlays/Fonts/Franklin Gothic Demi.ttf
+      font_size: 70
+      font_color: "#FFFFFF"
+      back_color: "#000000B3"
+      back_radius: 25
+      back_width: 190
+      back_height: 217
+      file: /config/overlays/Rotten Tomatoes Popcorn Upright.png
+      addon_offset: 20
+      addon_position: top
+  Rotten Tomatoes Audience Bad:
+    plex_search:
+      audience_rating.gt: 0.0
+      audience_rating.lte: 5.9
+    overlay:
+      name: text(audience_rating%)
+      horizontal_offset: 780
+      horizontal_align: left
+      vertical_offset: 744
+      vertical_align: top
+      font: /config/overlays/Fonts/Franklin Gothic Demi.ttf
+      font_size: 70
+      font_color: "#FFFFFF"
+      back_color: "#000000B3"
+      back_radius: 25
+      back_width: 190
+      back_height: 217
+      file: /config/overlays/Rotten Tomatoes Popcorn Spilled.png
+      addon_offset: 20
+      addon_position: top
