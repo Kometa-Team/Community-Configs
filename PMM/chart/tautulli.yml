@@ -16,20 +16,33 @@
 #          # Sets the value at the start of the sort title  #
 #          collection_section: "01"                         #
 #                                                           #
-#          # Turn the Plex Popular collection on/off        #
-#          use_popular: true                                #
-#          # Determines collection order in it's section    #
-#          order_popular:                                   #
-#          # Set visible_library for Plex Popular           #
-#          visible_library_popular:                         #
-#          # Set visible_home for Plex Popular              #
-#          visible_home_popular:                            #
-#          # Set visible_shared for Plex Popular            #
-#          visible_shared_popular:                          #
-#          # Set list_size for Plex Popular                 #
-#          list_size_popular:                               #
-#          # Set list_days for Plex Popular                 #
-#          list_days_popular:                               #
+#          # For each collection use the "key" to set       #
+#          # the options.                                   #
+#          # Available collections                          #
+#          #   KEY              COLLECTION                  #
+#          #   popular          Plex Popular                #
+#          #   watched          Plex Watched                #
+#                                                           #
+#          # Available options. Replace "key" with the      #
+#          # desired collection's key from the chart above. #
+#                                                           #
+#          # Turn the collection on/off                     #
+#          use_key: true                                    #
+#          # Determines collection order in its section     #
+#          order_key:                                       #
+#          # Set visible_library for the collection         #
+#          visible_library_key:                             #
+#          # Set visible_home for the collection            #
+#          visible_home_key:                                #
+#          # Set visible_shared for the collection          #
+#          visible_shared_key:                              #
+#          # Set list_days for the collection               #
+#          list_days_key: 30                                #
+#          # Set list_size for the collection               #
+#          list_size_key: 20                                #
+#          item_radarr_tag_key:                             #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag_key:                             #
 #############################################################
 
 external_templates:
@@ -38,7 +51,7 @@ external_templates:
     collection_section: "01"
 
 templates:
-  tautulli:
+  tautulli_popular:
     default:
       list_days_popular: 30
       list_size_popular: 20
@@ -47,11 +60,26 @@ templates:
       list_days: <<list_days_popular>>
       list_size: <<list_size_popular>>
       list_buffer: 20
+  tautulli_watched:
+    default:
+      list_days_watched: 30
+      list_size_watched: 20
+    summary: A collection of Top <<library_type>>s Watched on Plex
+    tautulli_watched:
+      list_days: <<list_days_watched>>
+      list_size: <<list_size_watched>>
+      list_buffer: 20
 
 collections:
   Plex Popular:
     template:
-      - name: tautulli
+      - name: tautulli_popular
       - name: customsync
       - name: chart_shared
         key: popular
+  Plex Watched:
+    template:
+      - name: tautulli_watched
+      - name: customsync
+      - name: chart_shared
+        key: watched

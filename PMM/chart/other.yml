@@ -13,38 +13,39 @@
 #          # Sets the value at the start of the sort title  #
 #          collection_section: "01"                         #
 #                                                           #
-#          # Turn the StevenLu's Popular collection on/off  #
-#          use_stevenlu: true                               #
-#          # Determines collection order in it's section    #
-#          order_stevenlu:                                  #
-#          # Set visible_library for StevenLu's Popular     #
-#          visible_library_stevenlu:                        #
-#          # Set visible_home for StevenLu's Popular        #
-#          visible_home_stevenlu:                           #
-#          # Set visible_shared for StevenLu's Popular      #
-#          visible_shared_stevenlu:                         #
+#          # For each collection use the "key" to set       #
+#          # the options.                                   #
+#          # Available collections                          #
+#          #   KEY              COLLECTION                  #
+#          #   stevenlu         StevenLu's Popular Movies   #
+#          #   anidb            AniDB Popular               #
+#          #   pirated          Top 10 Pirated Movies       #
 #                                                           #
-#          # Turn the AniDB Popular collection on/off       #
-#          use_anidb: true                                  #
-#          # Determines collection order in it's section    #
-#          order_anidb:                                     #
-#          # Set visible_library for AniDB Popular          #
-#          visible_library_anidb:                           #
-#          # Set visible_home for AniDB Popular             #
-#          visible_home_anidb:                              #
-#          # Set visible_shared for AniDB Popular           #
-#          visible_shared_anidb:                            #
+#          # Available options. Replace "key" with the      #
+#          # desired collection's key from the chart above. #
 #                                                           #
-#          # Turn the Pirated Movies collection on/off      #
-#          use_pirated: true                                #
-#          # Determines collection order in it's section    #
-#          order_pirated:                                   #
-#          # Set visible_library for Pirated Movies         #
-#          visible_library_pirated:                         #
-#          # Set visible_home for Pirated Movies            #
-#          visible_home_pirated:                            #
-#          # Set visible_shared for Pirated Movies          #
-#          visible_shared_pirated:                          #
+#          # Turn the collection on/off                     #
+#          use_key: true                                    #
+#          # Determines collection order in its section     #
+#          order_key:                                       #
+#          # Set visible_library for the collection         #
+#          visible_library_key:                             #
+#          # Set visible_home for the collection            #
+#          visible_home_key:                                #
+#          # Set visible_shared for the collection          #
+#          visible_shared_key:                              #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing_key:                          #
+#          # Adds missing from the collection to sonarr     #
+#          radarr_add_missing_key:                          #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag_key:                                  #
+#          # Sonarr Tag for added missing                   #
+#          sonarr_tag_key:                                  #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag_key:                             #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag_key:                             #
 #############################################################
 
 external_templates:
