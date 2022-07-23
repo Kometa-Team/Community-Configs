@@ -1,47 +1,65 @@
 templates:
   ol_builder:
+    ignore_blank_results: true
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
+    conditionals:
+      ol_folder:
+        default: _posters
+        conditions:
+          - overlay_level: episode
+            value: _titlecards
     overlay:
-      name: <<ol_type>>_<<ol_overlay>>_<<ol_queue>>_<<ol_weight>>
+      name: <<ol_overlay>>_<<ol_queue>>_<<ol_weight>>
       file: overlays/<<ol_folder>>/<<ol_file>>.png
       queue: <<ol_queue>>
       weight: <<ol_weight>>
   it_items:
+    ignore_blank_results: true
     optional:
       - it_language
       - it_uhd
       - it_hdr
-      - it_queue
-    default:
-      it_default: "bottom, up_corners, down_corners, left_side, right_side, sides" # list of comma separated labels used to change overlay positions, call as null when using one of those labels with it_queue
+      - it_pos
+    conditionals:
+      it_pos_filter: # labels used to change overlay positions
+        default: "Bottom, Up_corners, Down_corners, Left_side, Right_side, Sides"
+        conditions:
+          - it_pos: Bottom
+            value: "Up_corners, Down_corners, Left_side, Right_side, Sides"
+          - it_pos: Up_corners
+            value: "Bottom, Down_corners, Left_side, Right_side, Sides"
+          - it_pos: Down_corners
+            value: "Bottom, Up_corners, Left_side, Right_side, Sides"
+          - it_pos: Left_side
+            value: "Bottom, Up_corners, Down_corners, Right_side, Sides"
+          - it_pos: Right_side
+            value: "Bottom, Up_corners, Down_corners, Left_side, Sides"
+          - it_pos: Sides
+            value: "Bottom, Up_corners, Down_corners, Left_side, Right_side"
     plex_search:
       all:
         audio_language: <<it_language>>
         resolution: <<it_uhd>>
         hdr: <<it_hdr>>
-        label: <<it_queue>>
-        label.not: <<it_default>>
+        label: <<it_pos>>
+        label.not: <<it_pos_filter>>
   lbxd_list:
+    ignore_blank_results: true
     optional:
       - lbxd_order
       - lbxd_smart
     default:
       lbxd_user: cpt_kuesel
       lbxd_sort: <<collection_name>>
-    letterboxd_list: https://letterboxd.com/<<lbxd_user>>/list/<<lbxd_list>>/
-    collection_order: <<lbxd_order>>
-    smart_label: <<lbxd_smart>>
-    sort_title: <<lbxd_sort>>
-  lbxd_wlist:
-    optional:
-      - lbxd_order
-      - lbxd_smart
-    default:
-      lbxd_user: cpt_kuesel
-      lbxd_sort: <<collection_name>>
-    letterboxd_list: https://letterboxd.com/<<lbxd_user>>/watchlist/
+    conditionals:
+      lboxd_url:
+        default: https://letterboxd.com/<<lbxd_user>>/list/<<lbxd_list>>/
+        conditions:
+          - lboxd_list: watchlist
+            value: https://letterboxd.com/<<lbxd_user>>/<<lbxd_list>>/
+    letterboxd_list: <<lbxd_url>>
     collection_order: <<lbxd_order>>
     smart_label: <<lbxd_smart>>
     sort_title: <<lbxd_sort>>
