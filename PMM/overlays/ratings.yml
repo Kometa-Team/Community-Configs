@@ -13,11 +13,11 @@
 #                                                           #
 #          # Set rating type for rating1, rating2, and/or   #
 #                rating3                                    #
-#          # Rating Types: critic, audience, user           #
+#          # Rating Types: user, critic, audience           #
 #                                                           #
-#          rating1: critic                                  #
-#          rating2: audience                                #
-#          rating3: user                                    #
+#          rating1: user                                    #
+#          rating2: critic                                  #
+#          rating3: audience                                #
 #                                                           #
 #          # Set rating image for rating1, rating2, and/or  #
 #                rating3                                    #
