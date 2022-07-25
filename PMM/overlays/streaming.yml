@@ -50,6 +50,7 @@ templates:
       vertical_offset: 150
       vertical_align: bottom
     allowed_library_types: <<use_<<slug>>>>
+    ignore_blank_results: true
     overlay:
       name: <<overlay_name>>
       git: PMM/overlays/images/raw/<<overlay>>

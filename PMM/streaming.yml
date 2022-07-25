@@ -157,6 +157,7 @@ templates:
     visible_library: <<visible_library_<<key>>>>
     visible_home: <<visible_home_<<key>>>>
     visible_shared: <<visible_shared_<<key>>>>
+    ignore_blank_results: true
     cache_builders: 1
     smart_label: <<sort_by>>
     sync_mode: sync
