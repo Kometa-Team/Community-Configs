@@ -79,6 +79,7 @@ templates:
             value: <<standard_value>>
     collection_level: <<overlay_level>>
     allowed_library_types: <<use_<<slug>>>>
+    ignore_blank_results: true
     overlay:
       name: <<overlay_name>>
       git: PMM/overlays/images/raw/<<style>>/<<overlay>>
@@ -92,7 +93,7 @@ templates:
       back_radius: 30
       back_width: 305
       back_height: <<height>>
-      
+
 overlays:
 
   Opus:

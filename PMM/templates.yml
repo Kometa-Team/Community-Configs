@@ -109,6 +109,7 @@ templates:
     cache_builders: 1
     sync_mode: sync
     collection_order: <<collection_order>>
+    ignore_blank_results: true
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<image>>.jpg
 
   playlist:

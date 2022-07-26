@@ -1,5 +1,5 @@
 #############################################################
-#                     Ratings Overlay                       #
+#                      Ratings Overlay                      #
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
 #            Credit to Magic815 for base images             #
 #############################################################
@@ -13,19 +13,19 @@
 #                                                           #
 #          # Set rating type for rating1, rating2, and/or   #
 #                rating3                                    #
-#          # Rating Types: user, critic, audience           #
+#          # Rating Types: critic, audience, user           #
 #                                                           #
-#          rating1: user                                    #
-#          rating2: critic                                  #
-#          rating3: audience                                #
+#          rating1: critic                                  #
+#          rating2: audience                                #
+#          rating3: user                                    #
 #                                                           #
 #          # Set rating image for rating1, rating2, and/or  #
 #                rating3                                    #
 #          # Rating Images: anidb, imdb, letterboxd, tmdb,  #
 #                metacritic, rt_popcorn, rt_tomato, trakt   #
 #                                                           #
-#          rating1_image: rt_tomato                         #
-#          rating2_image: imdb                              #
+#          rating1_image: imdb                              #
+#          rating2_image: rt_popcorn                        #
 #          rating3_image: tmdb                              #
 #                                                           #
 #          # Sets the position to display the ratings       #
@@ -45,18 +45,41 @@
 #          overlay_level:                                   #
 #                                                           #
 #  Movies:                                                  #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/ratings                          #
+#        template_variables:                                #
+#          rating1: critic                                  #
+#          rating2: audience                                #
+#          rating3: user                                    #
+#          rating1_image: imdb                              #
+#          rating2_image: rt_popcorn                        #
+#          rating3_image: tmdb                              #
 #    operations:                                            #
 #      mass_critic_rating_update: imdb                      #
-#      mass_audience_rating_update: tmdb                    #
-#      mass_user_rating_update: mdb_tomatoes                #
+#      mass_audience_rating_update: mdb_tomatoesaudience    #
+#      mass_user_rating_update: tmdb                        #
 #  TV Shows:                                                #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/ratings                          #
+#        template_variables:                                #
+#          rating1: critic                                  #
+#          rating2: audience                                #
+#          rating3: user                                    #
+#          rating1_image: imdb                              #
+#          rating2_image: rt_popcorn                        #
+#          rating3_image: tmdb                              #
+#      - git: PMM/overlays/ratings                          #
+#        template_variables:                                #
+#          rating1: critic                                  #
+#          rating2: audience                                #
+#          rating1_image: imdb                              #
+#          rating2_image: tmdb                              #
 #    operations:                                            #
 #      mass_critic_rating_update: imdb                      #
-#      mass_audience_rating_update: tmdb                    #
-#      mass_user_rating_update: mdb_tomatoes                #
+#      mass_audience_rating_update: mdb_tomatoesaudience    #
+#      mass_user_rating_update: tmdb                        #
 #      mass_episode_critic_rating_update: imdb              #
 #      mass_episode_audience_rating_update: tmdb            #
-#                                                           #
 #############################################################
 
 templates:
@@ -73,9 +96,7 @@ templates:
       horizontal_position: left
       vertical_position: center
       rating_alignment: vertical
-      rating1: none
-      rating2: none
-      rating3: none
+      rating<<rating_num>>: none
       center_offset: 0
       standard_offset: 30
       v2_offset: 235
