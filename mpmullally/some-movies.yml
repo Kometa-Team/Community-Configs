@@ -1,0 +1,1262 @@
+######################################################
+#                 Collections                        #
+######################################################
+templates:
+  Decade:
+    sort_title: 01_Decade_<<collection_name>>
+    collection_order: alpha
+    sync_mode: sync
+  Popular:
+    sort_title: 02_Popular_<<collection_name>>
+    collection_order: custom
+    sync_mode: sync
+  DC Marvel:
+    sort_title: 03_DC_Marvel_<<collection_name>>
+    collection_order: release
+  Studio:
+    sort_title: 04_Studio_<<collection_name>>
+    collection_order: alpha
+  Disney:
+    sort_title: 05_Disney <<collection_name>>
+    collection_order: alpha
+  Genre:
+    sort_title: 06_Genre_<<collection_name>>
+    collection_order: custom
+    sync_mode: sync
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    tmdb_director: <<director>>
+    tmdb_writer: <<writer>>
+    sync_mode: sync
+    collection_order: release
+    sort_title: 07_Person_<<collection_name>>    
+
+collections:
+  30s Movies:
+    decade: 1930
+    template:
+      name: Decade
+  40s Movies:
+    decade: 1940
+    template:
+      name: Decade
+  50s Movies:
+    decade: 1950
+    template:
+      name: Decade
+  60s Movies:
+    decade: 1960
+    template:
+      name: Decade
+  70s Movies:
+    decade: 1970
+    template:
+      name: Decade
+  80s Movies:
+    decade: 1980
+    template:
+      name: Decade
+  90s Movies:
+    decade: 1990
+    template:
+      name: Decade
+  Most Popular Movies (90 Days):
+    tautulli_popular:
+      list_days: 90
+      list_size: 25
+      list_buffer: 20
+    collection_mode: show_items
+    template:
+      name: Popular
+  IMDb Top 250:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc
+    collection_mode: show_items
+    template:
+      name: Popular
+  Certified Fresh:
+    trakt_list: https://trakt.tv/users/linaspurinis/lists/certified-fresh
+    collection_mode: show_items
+    template:
+      name: Popular
+  Trakt Trending:
+    trakt_chart:
+      chart: trending
+      limit: 30
+    template:
+      name: Popular
+  Most Pirated (This Week):
+    trakt_list: https://trakt.tv/users/linaspurinis/lists/top-10-pirated-movies-of-the-week?sort=rank,asc
+    collection_mode: show_items
+    template:
+      name: Popular
+  Oscars Best Picture Winners:
+    imdb_list: https://www.imdb.com/search/title/?count=100&groups=oscar_best_picture_winners&sort=year%2Cdesc
+    collection_mode: show_items
+    template:
+      name: Popular
+  Good Bad Movies:
+    trakt_list:
+      - https://trakt.tv/users/philrivers/lists/the-50-best-good-bad-movies?sort=rank,asc
+      - https://trakt.tv/users/acelove/lists/good-bad-movies?sort=title,asc
+      - https://trakt.tv/users/gristlemctough/lists/bad-movies?sort=title,asc
+      - https://trakt.tv/users/maxwelldeux/lists/badmovies-org-best-b-movies?sort=rank,asc
+    collection_mode: show_items
+    template:
+      name: Popular
+    collection_order: alpha
+  Cult Classics:
+    trakt_list:
+      - https://trakt.tv/users/mr-mc86/lists/cult-classics?sort=rank,asc
+      - https://trakt.tv/users/mekwall/lists/cult-films?sort=rank,asc
+    collection_mode: show_items
+    template:
+      name: Popular
+    collection_order: alpha
+  Marvel Cinematic Universe:
+    trakt_list: https://trakt.tv/users/tetharion/lists/marvel-cinematic-universe?sort=rank,asc
+    summary: The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films, independently produced by Marvel Studios and based on characters that appear in American comic books published by Marvel Comics. The franchise includes comic books, short films, television series, and digital series. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters. The first MCU film is Iron Man (2008), which began the films of Phase One culminating in the crossover film The Avengers (2012). Phase Two began with Iron Man 3 (2013) and concluded with Ant-Man (2015). Phase Three began with Captain America - Civil War (2016) and concluded with Spider-Man - Far From Home (2019). The first three phases in the franchise are collectively known as "The Infinity Saga". The films of Phase Four will begin with Black Widow (2021) and are set to conclude with Guardians of the Galaxy Vol. 3 (2023).
+    collection_mode: show_items
+    sync_mode: append
+    template:
+      name: DC Marvel
+  In Association with Marvel:
+    trakt_list: https://trakt.tv/users/ishalioh/lists/marvel-non-mcu-live-action?sort=released,asc
+    collection_mode: show_items
+    sync_mode: append
+    template:
+      name: DC Marvel
+  DC Extended Universe:
+    trakt_list: https://trakt.tv/users/donxy/lists/dc-extended-universe
+    sync_mode: append
+    template:
+      name: DC Marvel
+  Blue Sky Animation:
+    tmdb_company: 9383
+    summary: Blue Sky Studios, Inc. is an American computer animation film studio based in Greenwich, Connecticut. It is a subsidiary of 20th Century Animation, a division of Disney Studios Content.
+    sync_mode: append
+    template:
+      name: Studio
+  DreamWorks:
+    tmdb_company: 521
+    summary: DreamWorks Animation LLC (also simply known as DreamWorks) is an American animation studio and a subsidiary of Universal Pictures, itself a subsidiary of Comcast's NBCUniversal. It is based in Glendale, California, and produces animated feature films, television programs, and online virtual games.
+    sync_mode: append
+    template:
+      name: Studio
+  Illumination Entertainment:
+    summary: Illumination is an American film and animation studio founded by Chris Meledandri in 2007 and owned by Universal Pictures, a division of NBCUniversal, which is itself a division of Comcast. Meledandri produces the films, while Universal finances and distributes all the films. The studio is responsible for the Despicable Me and The Secret Life of Pets franchises and the film adaptations of Dr. Seuss’ books The Lorax and How the Grinch Stole Christmas. The Minions, characters from the Despicable Me series,
+            are the studio's mascots.
+    tmdb_company: 6704
+    sync_mode: append
+    template:
+      name: Studio
+  Pixar:
+    tmdb_company: 3
+    summary: Pixar Animation Studios, commonly known as Pixar, is an American computer animation studio based in Emeryville, California, a subsidiary of Disney Studios Content owned by The Walt Disney Company. Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation on February 3, 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4 billion by converting each share of Pixar stock to 2.3 shares of Disney stock, a transaction that resulted in Jobs becoming Disney's largest single shareholder at the time. Pixar is best known for its feature films technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot.
+    sync_mode: append
+    template:
+      name: Studio
+  Sony Pictures Animation:
+    tmdb_company: 2251
+    summary: Sony Pictures Animation Inc. is an American animation studio owned by Sony Entertainment's Sony Pictures Entertainment through their Motion Picture Group division and founded on May 9, 2002. The studio's films are distributed worldwide by Sony Pictures Releasing under their Columbia Pictures label, while all direct-to-video releases are released by Sony Pictures Home Entertainment.
+    sync_mode: append
+    template:
+      name: Studio
+  Studio Ghibli:
+    tmdb_company: 10342
+    summary: Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. It is best known for its animated feature films, and has also produced several short subjects, television commercials, and two television films. Its mascot and most recognizable symbol is a character named Totoro, a giant catlike spirit from the 1988 anime film My Neighbor Totoro. Among the studio's highest-grossing films are Spirited Away (2001), Howl's Moving Castle (2004) and Ponyo (2008). The studio was founded on June 15, 1985 by directors Hayao Miyazaki and Isao Takahata and producer Toshio Suzuki, after the successful performance of Topcraft's Nausicaä of the Valley of the Wind (1984). It has also collaborated with video game studios on the visual development of several games.
+    template:
+      name: Studio
+  Warner Animation Group:
+    tmdb_company: 25120
+    summary: The Warner Animation Group (WAG) is an American animation studio that is the feature animation division of Warner Bros. Entertainment. Established on January 7, 2013, the studio is the successor to the dissolved 2D traditional hand-drawn animation studio Warner Bros. Feature Animation, which shut down in 2003 and the dissolved family film division Warner Bros. Family Entertainment, which shut down in 2009. The entity is also a sister animation studio of the regular animation studio Warner Bros. Animation.
+    sync_mode: append
+    template:
+      name: Studio
+  Walt Disney Animation Studios:
+    imdb_list: https://www.imdb.com/list/ls059383351/
+    summary: Walt Disney Animation Studios (WDAS), sometimes shortened to Disney Animation, is an American animation studio that creates animated features and short films for The Walt Disney Company. Founded on October 16, 1923 by brothers Walt Disney and Roy O. Disney, it is one of the oldest-running animation studios in the world. It is currently organized as a division of Walt Disney Studios and is headquartered at the Roy E. Disney Animation Building at the Walt Disney Studios lot in Burbank, California.
+    sync_mode: append
+    template:
+      name: Disney
+  Walt Disney Pictures:
+    imdb_list: https://www.imdb.com/list/ls077114097/
+    summary: Walt Disney Pictures is an American film production studio of The Walt Disney Studios, which is owned by The Walt Disney Company. The studio is the flagship producer of live-action feature films within the Walt Disney Studios unit, and is based at the Walt Disney Studios in Burbank, California. Animated films produced by Walt Disney Animation Studios and Pixar Animation Studios are also released under this brand. Walt Disney Studios Motion Pictures distributes and markets the films produced by Walt Disney Pictures.
+    sync_mode: append
+    template:
+      name: Disney
+  Best of Action:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=action&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Adventure:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=adventure&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Biopic:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=biography&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Car Films:
+    letterboxd_list: https://letterboxd.com/alexquinney/list/cars/
+    trakt_list: https://trakt.tv/users/rockcrusher/lists/cars?sort=title,asc
+    template:
+      name: Genre
+    collection_order: alpha
+  Best of Comedy:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=comedy&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Crime:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=crime&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Drama:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=drama&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Family:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=family&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Fantasy:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&&num_votes=100000,genres=fantasy&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Gangster:
+    trakt_list: https://trakt.tv/users/iktnikola/lists/101-gangster-movies-you-must-see-before-you-die?sort=rank,asc
+    template:
+      name: Genre
+  Best of History:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=history&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Horror:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=horror&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Music:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=music&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Mystery:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=mystery&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Pandemic:
+    trakt_list: https://trakt.tv/users/caspian024/lists/virus-epidemic?sort=popularity,asc
+    template:
+      name: Genre
+  Best of Romance:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=romance&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Romantic Comedy:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=comedy,romance&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Romantic Drama:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=drama,romance&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Sci-Fi:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=sci-fi&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Sports:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=sport&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Thriller:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=thriller&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of War:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=war&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Best of Western:
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,2021-01-31&user_rating=7.5,10.0&num_votes=100000,&genres=western&countries=us&languages=en&adult=include&count=250
+    template:
+      name: Genre
+  Christmas:
+    trakt_list:
+      - https://trakt.tv/users/movistapp/lists/christmas-movies
+      - https://trakt.tv/users/2borno2b/lists/christmas-movies-extravanganza
+    sync_mode: append
+    template:
+      name: Genre
+    collection_order: release
+  Aaron Sorkin:
+    template: 
+      name: Actor
+      person: 13520
+      writer: 13520
+      director: 13520
+  Adam Sandler:
+    template: 
+      name: Actor
+      person: 19292
+      writer: 19292
+  Al Pacino:
+    template: 
+      name: Actor
+      person: 1158
+  Alejandro G. Inarritu:   
+    template:
+      name: Actor
+      director: 223
+  Alfred Hitchcock:
+    template: 
+      name: Actor
+      person: 2636
+      director: 2636
+    trakt_list: https://trakt.tv/users/movistapp/lists/hitchcock
+  Amy Adams:
+    template: 
+      name: Actor
+      person: 9273
+  Angelina Jolie:
+    template: 
+      name: Actor
+      person: 11701
+  Anthony Hopkins:
+    template: 
+      name: Actor
+      person: 4173
+  Arnold Schwarzenegger:
+    template: 
+      name: Actor
+      person: 1100
+  The Beatles:
+    template: 
+      name: Actor
+      person: 10592, 10593, 10594, 10215
+    tmdb_list: 7069428
+  Ben Affleck:
+    template: 
+      name: Actor
+      person: 880
+  Ben Stiller:
+    template: 
+      name: Actor
+      person: 7399
+  Bill Murray:
+    template: 
+      name: Actor
+      person: 1532
+  Brad Pitt:
+    template: 
+      name: Actor
+      person: 287
+  Bruce Lee:
+    template: 
+      name: Actor
+      person: 19429
+  Bruce Willis:
+    template: 
+      name: Actor
+      person: 62
+  Cary Grant:
+    template: 
+      name: Actor
+      person: 2638
+  Charles Bronson:
+    template: 
+      name: Actor
+      person: 4960
+  Charlie Chaplin:
+    template: 
+      name: Actor
+      person: 13848
+  Charlize Theron:
+    template: 
+      name: Actor
+      person: 6885
+  Cheech & Chong:
+    tmdb_collection: 33071
+    collection_order: release
+    sort_title: 06_Person_<<collection>>
+  Chevy Chase:
+    template: 
+      name: Actor
+      person: 54812
+  Christian Bale:
+    template: 
+      name: Actor
+      person: 3894
+  Christopher Nolan:
+    template:
+      name: Actor
+      director: 525
+  Chuck Norris:
+    template: 
+      name: Actor
+      person: 51576
+  Clint Eastwood:
+    template: 
+      name: Actor
+      person: 190
+      director: 190
+  Coen Brothers:
+    template:
+      name: Actor
+      writer: 1223, 1224
+      director: 1223, 1224
+  Dave Chappelle:
+    template: 
+      name: Actor
+      person: 4169
+  Denzel Washington:
+    template: 
+      name: Actor
+      person: 5292
+  Diane Keaton:
+    template: 
+      name: Actor
+      person: 3092
+  Dustin Hoffman:
+    template: 
+      name: Actor
+      person: 4483
+  Eddie Murphy:
+    template: 
+      name: Actor
+      person: 776
+  Edward Norton:
+    template: 
+      name: Actor
+      person: 819
+  Elvis Presley:
+    template: 
+      name: Actor
+      person: 21457
+  Emma Stone:
+    template: 
+      name: Actor
+      person: 54693
+  Francis Ford Coppola:
+    template: 
+      name: Actor
+      person: 1776
+      director: 1776
+  Gene Hackman:
+    template: 
+      name: Actor
+      person: 193
+  Gene Wilder:
+    template: 
+      name: Actor
+      person: 3460
+  George Clooney:
+    template: 
+      name: Actor
+      person: 1461
+  Gregory Peck:
+    template: 
+      name: Actor
+      person: 8487
+  Harrison Ford:
+    template: 
+      name: Actor
+      person: 3
+  Humphrey Bogart:
+    template: 
+      name: Actor
+      person: 4110
+  Jack Nicholson:
+    template: 
+      name: Actor
+      person: 514
+  James Cameron:
+    template: 
+      name: Actor
+      person: 2710
+      director: 2710
+  James Dean:
+    template: 
+      name: Actor
+      person: 2749
+  James Franco:
+    template: 
+      name: Actor
+      person: 17051
+  Jamie Foxx:
+    template: 
+      name: Actor
+      person: 134
+  Jeff Bridges:
+    template: 
+      name: Actor
+      person: 1229
+  Jennifer Aniston:
+    template: 
+      name: Actor
+      person: 4491
+  Jennifer Lawrence:
+    template: 
+      name: Actor
+      person: 72129
+  Jim Carrey:
+    template: 
+      name: Actor
+      person: 206
+  John Candy:
+    template: 
+      name: Actor
+      person: 7180
+  John Travolta:
+    template: 
+      name: Actor
+      person: 8891
+  John Wayne:
+    template: 
+      name: Actor
+      person: 4165
+  Johnny Depp:
+    template: 
+      name: Actor
+      person: 85
+  Jordan Peele:
+    template: 
+      name: Actor
+      person: 291263
+  Judd Apatow:
+    template: 
+      name: Actor
+      person: 41039
+      writer: 41039
+      director: 41039
+  Julia Roberts:
+    template: 
+      name: Actor
+      person: 1204
+  Kevin Costner:
+    template: 
+      name: Actor
+      person: 1269
+  Kevin Smith:
+    template: 
+      name: Actor
+      person: 19303
+      director: 19303
+      writer: 19303
+  Laurel & Hardy:
+    template: 
+      name: Actor
+      person: 89670, 78057
+  Leonardo DiCaprio:
+    template: 
+      name: Actor
+      person: 6193
+    summary: Laurel and Hardy were a comedy duo act during the early Classical Hollywood era of American cinema. The team was composed of Englishman Stan Laurel (1890-1965) and American Oliver Hardy (1892-1957). They became well known during the late 1920s to the mid-1940s for their slapstick comedy, with Laurel playing the clumsy and childlike fried of the pompous bully Hardy.
+  Mark Wahlberg:
+    template: 
+      name: Actor
+      person: 13240
+  Marlon Brando:
+    template: 
+      name: Actor
+      person: 3084
+  Martin Scorsese:
+    template: 
+      name: Actor
+      person: 1032
+      director: 1032
+      writer: 1032
+  Matt Damon:
+    template: 
+      name: Actor
+      person: 1892
+  Matthew McConaughey:
+    template: 
+      name: Actor
+      person: 10297
+  Mel Brooks:
+    template: 
+      name: Actor
+      person: 14639
+      director: 14639
+      writer: 14639
+  Mel Gibson:
+    template: 
+      name: Actor
+      person: 2461
+      director: 2461
+  Meryl Streep:
+    template: 
+      name: Actor
+      person: 5064
+  Michael Caine:
+    template: 
+      name: Actor
+      person: 3895
+  Michael Keaton:
+    template: 
+      name: Actor
+      person: 2232
+  Morgan Freeman:
+    template: 
+      name: Actor
+      person: 192
+  Nicolas Cage:
+    template: 
+      name: Actor
+      person: 2963
+  Nicole Kidman:
+    template: 
+      name: Actor
+      person: 2227
+  Oliver Stone:
+    template: 
+      name: Actor
+      person: 1152
+      director: 1152
+      writer: 1152
+  Pryor & Wilder:
+    template: 
+      name: Actor
+      person: 9309, 3460
+  Quentin Tarantino:
+    template: 
+      name: Actor
+      person: 138
+      director: 138
+      writer: 138
+  Reese Witherspoon:
+    template: 
+      name: Actor
+      person: 368
+  Richard Gere:
+    template: 
+      name: Actor
+      person: 1205
+  Richard Pryor:
+    template: 
+      name: Actor
+      person: 9309
+  Ridley Scott:
+    template:
+      name: Actor
+      director: 578
+  Robert De Niro:
+    template: 
+      name: Actor
+      person: 380
+  Robert Downey Jr.:
+    template: 
+      name: Actor
+      person: 3223
+  Robert Duvall:
+    template: 
+      name: Actor
+      person: 3087
+  Robin Williams:
+    template: 
+      name: Actor
+      person: 2157
+  Samuel L. Jackson:
+    template: 
+      name: Actor
+      person: 2231
+  Scarlett Johansson:
+    template: 
+      name: Actor
+      person: 1245
+  Sean Connery:
+    template: 
+      name: Actor
+      person: 738
+  Sean Penn:
+    template: 
+      name: Actor
+      person: 2228
+  Seth Rogen:
+    template: 
+      name: Actor
+      person: 19274
+      writer: 19274
+  Stanley Kubrick:
+    template: 
+      name: Actor
+      person: 240
+      director: 240
+  Steve Carell:
+    template: 
+      name: Actor
+      person: 4495
+  Steve Martin:
+    template: 
+      name: Actor
+      person: 67773
+  Steven Seagal:
+    template: 
+      name: Actor
+      person: 23880
+  Steven Spielberg:
+    template: 
+      name: Actor
+      person: 488
+      director: 488
+  Sylvester Stallone:
+    template: 
+      name: Actor
+      person: 16483
+  Tim Burton:
+    template: 
+      name: Actor
+      person: 510
+      director: 510
+      writer: 510
+  Tom Cruise:
+    template: 
+      name: Actor
+      person: 500
+  Tom Hanks:
+    template: 
+      name: Actor
+      person: 31
+  Tommy Lee Jones:
+    template: 
+      name: Actor
+      person: 2176
+  Wesley Snipes:
+    template: 
+      name: Actor
+      person: 10814
+  Will Ferrell:
+    template: 
+      name: Actor
+      person: 23659
+  Will Smith:
+    template: 
+      name: Actor
+      person: 2888
+  Woody Allen:
+    template: 
+      name: Actor
+      person: 1243
+      director: 1243
+      writer: 1243
+  Woody Harrelson:
+    template: 
+      name: Actor
+      person: 57755
+  101 Dalmatians (Animated):
+    tmdb_collection: 100693
+  101 Dalmatians (Live-Action):
+    tmdb_collection: 124916
+  Ace Ventura:
+    tmdb_collection: 3167
+  The Addams Family:
+    tmdb_collection: 11716
+  The Addams Family (animated):
+    tmdb_collection: 750822
+  Airplane:
+    tmdb_collection: 91663
+  Aladdin:
+    tmdb_collection: 86027
+  Alice in Wonderland:
+    tmdb_collection: 261307
+  Alien:
+    tmdb_collection: 8091
+  Almighty:
+    tmdb_collection: 124949
+  Alvin and the Chipmunks:
+    tmdb_collection: 167613
+  The Amazing Spider-Man:
+    tmdb_collection: 125574
+  American Pie:
+    tmdb_collection: 2806
+  An American Tail:
+    tmdb_collection: 8783
+  Analyze:
+    tmdb_collection: 110127
+  Anchorman:
+    tmdb_collection: 93791
+  The Angry Birds:
+    tmdb_collection: 531315
+  Ant-Man:
+    tmdb_collection: 422834
+  Austin Powers:
+    tmdb_collection: 1006
+  Avatar:
+    tmdb_collection: 87096
+  The Avengers:
+    tmdb_collection: 86311
+  AVP:
+    tmdb_collection: 115762
+  Babe:
+    tmdb_collection: 9435
+  Back to the Future:
+    tmdb_collection: 264
+  Bad Boys:
+    tmdb_collection: 14890
+  Bad Moms:
+    tmdb_collection: 487376
+  Bad Santa:
+    tmdb_collection: 423173
+  Batman:
+    trakt_list: https://trakt.tv/users/movistapp/lists/batman
+    summary: Batman is a superhero who appears in American comic books published by DC Comics. Batman was created by artist Bob Kane and writer Bill Finger, and debuted in the 27th issue of the comic book Detective Comics on March 30, 1939. In the DC Universe continuity, Batman is the alias of Bruce Wayne, a wealthy American playboy, philanthropist, and owner of Wayne Enterprises based in Gotham City. Kane, Finger, and future DC writers accompanied Batman with supporting characters, including his sidekick Robin, allies Alfred Pennyworth and James Gordon, and foes such as Catwoman, the Scarecrow, the Penguin, and his archenemy, the Joker. Batman's origin story features him swearing vengeance against criminals after witnessing the murder of his parents Thomas and Martha; he trains himself physically and intellectually, crafts a bat-inspired persona, and monitors the Gotham streets at night.
+  Beethoven:
+    tmdb_collection: 168880
+  Best F(r)iends:
+    tmdb_collection: 507070
+  Beverly Hills Chihuahua:
+    tmdb_collection: 87256
+  Beverly Hills Cop:
+    tmdb_collection: 85861
+  Big Momma's House:
+    tmdb_collection: 44979
+  Bill & Ted's Most Excellent:
+    tmdb_collection: 91746
+  Blade:
+    tmdb_collection: 735
+  Blade Runner:
+    tmdb_collection: 422837
+  The Blues Brothers:
+    tmdb_collection: 112636
+  The Boondock Saints:
+    tmdb_collection: 87186
+  Borat Moviefilms:
+    tmdb_collection: 747168
+  Bourne:
+    tmdb_collection: 31562
+  Caballeros:
+    tmdb_collection: 271668
+  Caddyshack:
+    tmdb_collection: 104847
+  Captain America:
+    tmdb_collection: 131295
+  Cars:
+    tmdb_collection: 87118
+  Child's Play:
+    tmdb_collection: 10455
+  Chili Palmer:
+    tmdb_collection: 91698
+  The Chronicles of Narnia:
+    tmdb_collection: 420
+  The Chronicles of Riddick:
+    tmdb_collection: 2794
+  City Slickers:
+    tmdb_collection: 150156
+  Clerks:
+    tmdb_collection: 182813
+  Clint Eastwood's Iwo Jima:
+    tmdb_collection: 261382
+  Coming to America:
+    tmdb_collection: 647077
+  Conan the Barbarian:
+    tmdb_collection: 43055
+  The Conjuring:
+    tmdb_collection: 313086
+  Crank:
+    tmdb_collection: 64751
+  Creed:
+    tmdb_collection: 553717
+  Crocodile Dundee:
+    tmdb_collection: 9332
+  The Croods:
+    tmdb_collection: 464577
+  Daddy's Home:
+    tmdb_collection: 473971
+  The Dark Knight:
+    tmdb_collection: 263
+  Deadpool:
+    tmdb_collection: 448150
+  Death Wish:
+    tmdb_collection: 14377
+  Deep Blue Sea:
+    tmdb_collection: 518165
+  The Delta Force:
+    tmdb_collection: 126166
+  Despicable Me:
+    tmdb_collection: 86066
+  Dick Tracy:
+    tmdb_collection: 224011
+  Die Hard:
+    tmdb_collection: 1570
+  Dirty Harry:
+    tmdb_collection: 10456
+  Dr. Dolittle:
+    tmdb_collection: 3169 
+  Dumb and Dumber:
+    tmdb_collection: 96665
+  The Equalizer:
+    tmdb_collection: 523855
+  Ernest:
+    tmdb_collection: 330555
+  Escape Plan:
+    tmdb_collection: 525891
+  The Expendables:
+    tmdb_collection: 126125
+  Fantasia:
+    tmdb_collection: 55427
+  Fantastic Beasts:
+    tmdb_collection: 435259
+  Fantastic Four:
+    tmdb_collection: 9744
+  The Fast and the Furious:
+    tmdb_collection: 9485
+  Fifty Shades:
+    tmdb_collection: 344830
+  Final Destination:
+    tmdb_collection: 8864
+  Finding Nemo:
+    tmdb_collection: 137697
+  Fletch:
+    tmdb_collection: 104833
+  Friday:
+    tmdb_collection: 43563
+  Friday the 13th:
+    tmdb_collection: 9735
+  Frozen:
+    tmdb_collection: 386382
+  Futurama:
+    tmdb_collection: 13800
+  Ghost Rider:
+    tmdb_collection: 90306
+  Ghostbusters:
+    tmdb_collection: 2980
+  The Godfather:
+    tmdb_collection: 230
+  Godzilla:
+    tmdb_collection: 535313
+  A Goofy Movie:
+    tmdb_collection: 410261
+  Gremlins:
+    tmdb_collection: 89151
+  Grown Ups:
+    tmdb_collection: 180546
+  Grumpy Old Men:
+    tmdb_collection: 119050
+  Guardians of the Galaxy:
+    tmdb_collection: 284433
+  Halloween:
+    tmdb_collection: 91361
+  Halloween (Rob Zombie Series):
+    tmdb_collection: 126209
+  The Hangover:
+    tmdb_collection: 86119
+  Hannibal Lecter:
+    tmdb_collection: 9743
+  Harold & Kumar:
+    tmdb_collection: 30663
+  Harry Potter:
+    tmdb_collection: 1241
+  '... Has Fallen':
+    tmdb_collection: 386534
+  Hellboy:
+    tmdb_collection: 17235
+  Hercules:
+    tmdb_collection: 314023
+  The Hills Have Eyes:
+    tmdb_collection: 8918
+  The Hobbit:
+    tmdb_collection: 121938
+  Hot Tub Time Machine:
+    tmdb_collection: 313576
+  Home Alone:
+    tmdb_collection: 9888
+  Honey, I Shurnk the Kids:
+    tmdb_collection: 72119
+  Horrible Bosses:
+    tmdb_collection: 280588
+  Hostel:
+    tmdb_collection: 86578
+  House of 1000 Corpses:
+    tmdb_collection: 105625
+  How to Train Your Dragon:
+    tmdb_collection: 89137
+  The Hunger Games:
+    tmdb_collection: 131635
+  I Know What You Did Last Summer:
+    tmdb_collection: 3601
+  Ice Age:
+    tmdb_collection: 8354
+  The Incredibles:
+    tmdb_collection: 468222
+  Independence Day:
+    tmdb_collection: 304378
+  Indiana Jones:
+    tmdb_collection: 84
+  Inspector Gadget:
+    tmdb_collection: 237445
+  Iron Man:
+    tmdb_collection: 131292
+  It:
+    tmdb_collection: 477962
+  Jack Ryan:
+    tmdb_collection: 192492
+  Jackass:
+    tmdb_collection: 17178
+  James Bond:
+    tmdb_collection: 645
+  Jaws:
+    tmdb_collection: 2366
+  Joe Dirt:
+    tmdb_collection: 353325
+  John Wick:
+    tmdb_collection: 404609
+  Jumanji:
+    tmdb_collection: 495527
+  Jump Street:
+    tmdb_collection: 212562
+  Jurassic Park:
+    tmdb_collection: 328
+  The Karate Kid:
+    tmdb_collection: 8580
+  Kill Bill:
+    tmdb_collection: 2883
+  Knocked Up:
+    tmdb_collection: 779062
+  Kung Fu Panda:
+    tmdb_collection: 77816
+  Legally Blonde:
+    tmdb_collection: 86024
+  The Lego Movie:
+    tmdb_collection: 325470
+  Lethal Weapon:
+    tmdb_collection: 945
+  Look Who's Talking:
+    tmdb_collection: 9521
+  The Lord of the Rings:
+    tmdb_collection: 119
+  Mad Max:
+    tmdb_collection: 8945
+  Madagascar:
+    tmdb_collection: 14740
+  Major League:
+    tmdb_collection: 97771
+  Maleficent:
+    tmdb_collection: 531331
+  Mall Cop:
+    tmdb_collection: 328372
+  Mamma Mia!:
+    tmdb_collection: 458558
+  Man of Steel:
+    tmdb_collection: 209131
+  The Man With No Name:
+    tmdb_movie:
+      - 391
+      - 938
+      - 429
+  Marshal Samuel Gerard:
+    tmdb_movie:
+      - 5503
+      - 11808
+  Mary Poppins:
+    tmdb_collection: 527439
+  The Matrix:
+    tmdb_collection: 2344
+  Meet the Parents:
+    tmdb_collection: 51509
+  Men In Black:
+    tmdb_collection: 86055
+  The Mighty Ducks:
+    tmdb_collection: 10709
+  Minions:
+    tmdb_collection: 544669
+  Miss Congeniality:
+    tmdb_collection: 93220
+  Missing in Action:
+    tmdb_collection: 46512
+  Mission Impossible:
+    tmdb_collection: 87359
+  Monsters, Inc.:
+    tmdb_collection: 137696
+  The Muppets:
+    tmdb_collection: 256377
+  Naked Gun:
+    tmdb_collection: 37139
+  National Lampoon's:
+    tmdb_collection:
+      - 108693
+      - 43220
+  Neighbors:
+    tmdb_collection: 400700
+  Night at the Museum:
+    tmdb_collection: 85943
+  A Nightmare on Elm Street:
+    tmdb_collection: 8581
+  Now You See Me:
+    tmdb_collection: 382685
+  The Nutty Professor:
+    tmdb_collection: 86028
+  Ocean's:
+    tmdb_collection: 304
+  The Odd Couple:
+    tmdb_collection: 221966
+  Paddington:
+    tmdb_collection: 488924
+  Peter Pan:
+    tmdb_collection: 55422
+  Philo & Clyde:
+    tmdb_collection: 168182
+  The Pink Panther (Original):
+    tmdb_collection: 937
+  The Pink Panther (Steve Martin):
+    tmdb_collection: 130440
+  Pirates of the Caribbean:
+    tmdb_collection: 295
+  Planet of the Apes Original:
+    tmdb_collection: 1709
+  Planet of the Apes (Reboot):
+    tmdb_collection: 173710
+  Police Academy:
+    tmdb_collection: 9338
+  Poltergeist:
+    tmdb_collection: 10453
+  Predator:
+    tmdb_collection: 399
+  Problem Child:
+    tmdb_collection: 180854
+  Prometheus:
+    tmdb_collection: 135416
+  The Punisher:
+    tmdb_collection: 635362
+  The Purge:
+    tmdb_collection: 256322
+  Rambo:
+    tmdb_collection: 5039
+  The Rescuers:
+    tmdb_collection: 57971
+  Ride Along:
+    tmdb_collection: 376650
+  The Ring:
+    tmdb_collection: 14563
+  Rio:
+    tmdb_collection: 229932
+  Robert Langdon:
+    tmdb_collection: 115776
+  RoboCop:
+    tmdb_collection: 5547
+  Rocky:
+    tmdb_collection: 1575
+  Romancing the Stone:
+    tmdb_collection: 89264
+  Rush Hour:
+    tmdb_collection: 90863
+  The Santa Clause:
+    tmdb_collection: 53159
+  Saw:
+    tmdb_collection: 656
+  Scary Movie:
+    tmdb_collection: 4246
+  Scream:
+    tmdb_collection: 2602
+  The Secret Life of Pets:
+    tmdb_collection: 427084
+  Sex and the City:
+    tmdb_collection: 50457
+  Shaft:
+    tmdb_collection: 495
+  Shaft (Reboot):
+    tmdb_collection: 608103
+  Sherlock Holmes:
+    tmdb_collection: 102322
+  The Shining:
+    tmdb_collection: 530064
+  Short Circuit:
+    tmdb_collection: 86347
+  Shrek:
+    tmdb_collection: 2150
+  Sicario:
+    tmdb_collection: 496796
+  Sin City:
+    tmdb_collection: 135179
+  Sister Act:
+    tmdb_collection: 103573
+  Smokey and the Bandit:
+    tmdb_collection: 87220
+  Smurfs:
+    tmdb_collection: 134897
+  Space Jam:
+    tmdb_collection: 722961
+  Speed:
+    tmdb_collection: 43064
+  Spider-Man:
+    tmdb_collection: 556
+  Spider-Man (Avengers):
+    tmdb_collection: 531241
+  SpongeBob:
+    tmdb_collection: 275402
+  Stakeout:
+    tmdb_collection: 162028
+  Star Wars:
+    tmdb_collection: 10
+  The Sting:
+    tmdb_collection: 330605
+  Super Troopers:
+    tmdb_collection: 449462
+  Superman:
+    tmdb_collection: 8537
+  Taken:
+    tmdb_collection: 135483
+  Ted:
+    tmdb_collection: 266672
+  Teenage Mutant Ninja Turtles:
+    tmdb_collection: 1582
+  Teenage Mutant Ninja Turtles (Remake):
+    tmdb_collection: 401562
+  Terminator:
+    tmdb_collection: 528
+  Texas Chainsaw (Reboot):
+    tmdb_collection: 425175
+  Texas Chainsaw Massacre:
+    tmdb_collection: 111751
+  Thor:
+    tmdb_collection: 131296
+  Top Gun:
+    tmdb_collection: 531330
+  Toy Story:
+    tmdb_collection: 10194
+  Trainspotting:
+    tmdb_collection: 424202
+  Transformers:
+    tmdb_collection: 8650
+  The Transporter:
+   tmdb_collection: 9518
+  Tremors:
+    tmdb_collection: 91799
+  Trolls:
+    tmdb_collection: 489724
+  TRON:
+    tmdb_collection: 63043
+  Under Siege:
+    tmdb_collection: 112399
+  View Askewniverse:
+    trakt_list: https://trakt.tv/users/eloy86/lists/view-askewniverse
+    summary: The View Askewniverse is a fictional universe created by writer/director Kevin Smith, featured in several films, comics and a television series; it is named for Smith's production company, View Askew Productions. The characters Jay and Silent Bob appear in almost all the View Askewniverse media, and characters from one story often reappear or are referred to in others. Smith often casts the same actors for multiple characters in the universe, sometimes even in the same film; Smith himself portrays the character of Silent Bob.
+  Wall Street:
+    tmdb_collection: 52783
+  Wayne's World:
+    tmdb_collection: 8979
+  Weekend at Bernie's:
+    tmdb_collection: 118221
+  The Whole Nine/Ten Yards:
+    tmdb_collection: 103577
+    name_mapping: The Whole Nine-Ten Yards
+  Wolverine:
+    tmdb_collection: 453993
+  Wonder Woman:
+    tmdb_collection: 468552
+  Wreck-It Ralph:
+    tmdb_collection: 404825
+  X-Men:
+    tmdb_collection: 748
+  xXx:
+    tmdb_collection: 52785
+  Young Guns:
+    tmdb_collection: 9329
+  Zombieland:
+    tmdb_collection: 537982
+  Zoolander:
+    tmdb_collection: 352789
+  Zorro:
+    tmdb_collection: 1657
+dynamic_collections:
+  TMDb Collections:          # This name is the mapping name
+    type: tmdb_collection
+    remove_suffix: "Collection"
