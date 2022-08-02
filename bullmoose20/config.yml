@@ -43,13 +43,13 @@ libraries:                                        # Library mappings must have a
           starting: 2010
           ending: current_year
     - git: PMM/chart/anilist
-    - git: PMM/chart/basic
     - git: PMM/chart/imdb
     - git: PMM/chart/myanimelist
     - git: PMM/chart/other
     - git: PMM/chart/tautulli
     - git: PMM/chart/tmdb
     - git: PMM/chart/trakt
+    - git: PMM/chart/basic          # Keep this as the last chart item so that collection_mode: hide works properly on library tab for CHART COLLECTION
     - git: PMM/actor
       template_variables:
         style: bw
@@ -194,13 +194,13 @@ libraries:                                        # Library mappings must have a
           starting: 1947
           ending: current_year
     - git: PMM/chart/anilist
-    - git: PMM/chart/basic
     - git: PMM/chart/imdb
     - git: PMM/chart/myanimelist
     - git: PMM/chart/other
     - git: PMM/chart/tautulli
     - git: PMM/chart/tmdb
     - git: PMM/chart/trakt
+    - git: PMM/chart/basic          # Keep this as the last chart item so that collection_mode: hide works properly on library tab for CHART COLLECTION
     - git: PMM/actor
       template_variables:
         style: bw
