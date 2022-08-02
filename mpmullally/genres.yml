@@ -1,0 +1,195 @@
+##########################################################################
+##########################################################################
+##                                       _ _    _                       ##
+##             _ __ ___  _ __ __ _ _ __ (_) | _(_)                      ##
+##            | '_ ` _ \| '__/ _` | '_ \| | |/ / |                      ##
+##            | | | | | | | | (_| | | | | |   <| |                      ##
+##            |_| |_| |_|_|  \__,_|_| |_|_|_|\_\_|                      ##
+##                                                                      ##
+##                                                                      ##
+##               Collection for Plex-Meta-Manager                       ##
+##########################################################################
+##########################################################################
+
+#   +01_ = Charts
+#   +02_ = Holidays
+#   +03_ = Studios or Network
+#   +04_ = Collection
+#   +05_ = Countries
+#   +06_ = Genres
+#   +07_ = Awards
+#   +08_ = Decades
+#   +09_ = People
+#   +10_ = Movies
+
+#####################################################
+#                Genre Collections                  #
+#####################################################
+
+templates:
+  GenreMulti:
+    sort_title: +06_<<collection_name>>
+    sync_mode: sync
+    url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
+    collection_order: release
+    
+  Genre:
+    sort_title: +06_<<collection_name>>
+    sync_mode: sync
+    url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
+    collection_order: custom
+
+collections:
+ 
+  Action:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/fresnobiker/lists/action-movies-2000-to-2021
+      - https://trakt.tv/users/g0g0/lists/heroic-killer-bad-ass
+      - https://trakt.tv/users/movistapp/lists/action
+      - https://trakt.tv/users/grimreaper1972/lists/action-tv
+      - https://trakt.tv/users/buzdekay/lists/action
+    url_background: https://images.unsplash.com/photo-1588281345136-9893252095bd
+    url_poster: https://theposterdb.com/api/assets/203054
+
+  Adventure:
+    template: { name: GenreMulti}
+    url_poster: https://theposterdb.com/api/assets/203108
+    trakt_list: 
+      - https://trakt.tv/users/movistapp/lists/adventure
+      - https://trakt.tv/users/krissykk/lists/adventure-drama-comedy-discovery-novels-1of2
+ 
+  Animation:
+    template: { name: Genre}
+    url_poster: https://theposterdb.com/api/assets/203119
+    trakt_list: 
+      - https://trakt.tv/users/movistapp/lists/animation
+
+  Comedy:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/movistapp/lists/comedy
+      - https://trakt.tv/users/krissykk/lists/comedy-comedy-drama
+      - https://trakt.tv/users/amymarie1982/lists/comedies
+      - https://trakt.tv/users/norman05/lists/sitcoms
+      - https://trakt.tv/users/coldkeys/lists/classic-american-comedy
+      - https://trakt.tv/users/pauls67/lists/british-comedy
+
+  Documentary:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/hdlists/lists/documentary-movies-top-rated-from-1980-to-today
+      - https://trakt.tv/users/kayaaron13/lists/ranker-greatest-documentaries-of-all-time
+      - https://trakt.tv/users/sp1ti/lists/the-documentary-blog-s-top-50-documentaries-of-the-decade
+      - https://trakt.tv/users/firetv4k/lists/nature-documentaries
+      - https://trakt.tv/users/firetv4k/lists/science-documentaries
+      - https://trakt.tv/users/michaeldibben/lists/documentaries-scientific-factual
+      - https://trakt.tv/users/oxnard/lists/documentaries
+      - https://trakt.tv/users/hammers-lists/lists/martial-arts-documentaries
+      - https://trakt.tv/users/cscott1/lists/history-science-documentaries
+      - https://trakt.tv/users/kttylttrbreath/lists/interesting-and-or-quality-documentaries
+
+  Drama:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/movistapp/lists/drama
+      - https://trakt.tv/users/majeed_pk/lists/drama-movies-_-the-essential-list
+      - https://trakt.tv/users/krissykk/lists/drama-11910764
+
+  Dystopian:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/mezuror/lists/dystopian
+      - https://trakt.tv/users/remontant/lists/dystopian-movies
+    summary: A dystopia, or cacotopia, is a speculated ideal society with minimal crime, violence and poverty that is undesirable or frightening.
+
+  Fantasy:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/movistapp/lists/fantasy
+      - https://trakt.tv/users/6911557d-5846-4d10-97c8-af0ed44a5dc7/lists/fantasy
+      - https://trakt.tv/users/ld667/lists/best-fantasy-movies-of-all-time
+
+  Gangster:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/bmonomad/lists/gangster
+      - https://trakt.tv/users/moses456/lists/hood_gangsters_ghetto-movies
+      - https://trakt.tv/users/whitecoat21/lists/cartel-gang-mafia
+      - https://trakt.tv/users/debonair-pirate/lists/mobsters
+      - https://trakt.tv/users/krissykk/lists/documentary-movies-famous-gangsters-organized-crime
+      - https://trakt.tv/users/majeed_pk/lists/best-mafia-gangsters-tv-shows
+
+  History:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/movistapp/lists/history
+      - https://trakt.tv/users/additup/lists/period-drama-history
+
+  Musical:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/mpsimala/lists/musicals
+      - https://trakt.tv/users/guavalove/lists/musical-television
+      - https://trakt.tv/users/trakker/lists/musical-tv
+      - https://trakt.tv/users/asterlea/lists/top-musicals
+      - https://trakt.tv/users/maxwelldeux/lists/bfi-s-100-film-musicals
+
+  Romance:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/movistapp/lists/romance
+      - https://trakt.tv/users/rdjones247/lists/films-romance
+      - https://trakt.tv/users/krissykk/lists/romance-comedy-and-drama-mixed-movies?sort=title,asc
+ 
+  Sci-Fi:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/movistapp/lists/science-fiction
+      - https://trakt.tv/users/canconfirm/lists/sci-fi
+      - https://trakt.tv/users/chazlarson/lists/looper-best-scifi-of-2021
+      - https://trakt.tv/users/evilbyte/lists/hard-science-fiction
+      - https://trakt.tv/users/zapin/lists/best-sci-fi-series
+
+  Sports:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/lish408/lists/sports-documentary-series-film
+
+  War:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/movistapp/lists/war
+      - https://trakt.tv/users/maxtrontv/lists/war-tv-shows
+      - https://trakt.tv/users/majeed_pk/lists/wwii-tv-series
+      - https://trakt.tv/users/debonair-pirate/lists/war
+      - https://trakt.tv/users/majeed_pk/lists/wwii-tv-series
+      - https://trakt.tv/users/jonatos1972/lists/war
+
+  Western:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/kayaaron13/lists/ranker-top-western-movies
+      - https://trakt.tv/users/movistapp/lists/western
+      - https://trakt.tv/users/bambos/lists/western-tv-series-watchlist
+      - https://trakt.tv/users/artscience84/lists/cowboy-hat
+      - https://trakt.tv/users/kodiuser000000/lists/tv-westerns
+    summary: Western Film is a genre that revolves around stories primarily set in the late 19th century in the American Old West. 
+    
+  Zombie:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/ld667/lists/the-most-epic-zombie-films-since-2000
+      - https://trakt.tv/users/almj24/lists/zombies
+      - https://trakt.tv/users/mraniki/lists/zombie
+
+
+
+
+
+
+
+
+
+
+

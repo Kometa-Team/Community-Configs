@@ -1,0 +1,40 @@
+# Made by Overlord
+
+collections:
+#  Remove Label:
+#    build_collection: false
+#      plex_all: true # or whatever kinda of search you want
+#      label.remove: Movie Day Remove
+
+  Movie of the Day:
+    sort_title: zzzz_MovieDay
+    smart_label: random
+    sync_mode: sync
+    plex_search:
+      limit: 1
+      all:
+        year.gte: 1970
+        genre.not: documentary
+        critic_rating.gte: 7.0
+        audience_rating.gte: 8.0
+        label.not: Movie of the Day Remove
+    filters:
+      has_collection: false
+    summary: Randomly picked and highly rated! Excludes the MCU, Harry Potter, X-Men, and so on. Also excludes movies that have prequels or sequels.
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  Movie of the Day Remove:
+    sort_title: zzzz_MovieDayRemove
+    smart_label: random
+    sync_mode: append
+    plex_search:
+      limit: 25000
+      all:
+        year.gte: 1970
+        genre.not: documentary
+        critic_rating.gte: 7.0
+        audience_rating.gte: 8.0
+        label: Movie of the Day
+    summary: Movies featured on "Movie of the Day" collection will be put into this collection to not be considered again.

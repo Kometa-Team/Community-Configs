@@ -13,70 +13,43 @@
 #          # Sets the value at the start of the sort title  #
 #          collection_section: "01"                         #
 #                                                           #
-#          # Turn the TMDb Airing Today collection on/off   #
-#          use_airing: true                                 #
-#          # Determines collection order in it's section    #
-#          order_airing:                                    #
-#          # Set visible_library for TMDb Airing Today      #
-#          visible_library_airing:                          #
-#          # Set visible_home for TMDb Airing Today         #
-#          visible_home_airing:                             #
-#          # Set visible_shared for TMDb Airing Today       #
-#          visible_shared_airing:                           #
-#          # Set limit for TMDb Airing Today                #
-#          limit_airing: 100                                #
+#          # For each collection use the "key" to set       #
+#          # the options.                                   #
+#          # Available collections                          #
+#          #   KEY              COLLECTION                  #
+#          #   airing           TMDb Airing Today           #
+#          #   air              TMDb On The Air             #
+#          #   popular          TMDb Popular                #
+#          #   top              TMDb Top Rated              #
+#          #   trending         TMDb Trending               #
 #                                                           #
-#          # Turn the TMDb On The Air collection on/off     #
-#          use_air: true                                    #
-#          # Determines collection order in it's section    #
-#          order_air:                                       #
-#          # Set visible_library for TMDb On The Air        #
-#          visible_library_air:                             #
-#          # Set visible_home for TMDb On The Air           #
-#          visible_home_air:                                #
-#          # Set visible_shared for TMDb On The Air         #
-#          visible_shared_air:                              #
-#          # Set limit for TMDb On The Air                  #
-#          limit_air: 100                                   #
+#          # Available options. Replace "key" with the      #
+#          # desired collection's key from the chart above. #
 #                                                           #
-#          # Turn the TMDb Popular collection on/off        #
-#          use_popular: true                                #
-#          # Determines collection order in it's section    #
-#          order_popular:                                   #
-#          # Set visible_library for TMDb Popular           #
-#          visible_library_popular:                         #
-#          # Set visible_home for TMDb Popular              #
-#          visible_home_popular:                            #
-#          # Set visible_shared for TMDb Popular            #
-#          visible_shared_popular:                          #
-#          # Set limit for TMDb Popular                     #
-#          limit_popular: 100                               #
-#                                                           #
-#          # Turn the TMDb Top Rated collection on/off      #
-#          use_top: true                                    #
-#          # Determines collection order in it's section    #
-#          order_top:                                       #
-#          # Set visible_library for TMDb Top Rated         #
-#          visible_library_top:                             #
-#          # Set visible_home for TMDb Top Rated            #
-#          visible_home_top:                                #
-#          # Set visible_shared for TMDb Top Rated          #
-#          visible_shared_top:                              #
-#          # Set limit for TMDb Top Rated                   #
-#          limit_top: 100                                   #
-#                                                           #
-#          # Turn the TMDb Trending collection on/off       #
-#          use_trending: true                               #
-#          # Determines collection order in it's section    #
-#          order_trending:                                  #
-#          # Set visible_library for TMDb Trending          #
-#          visible_library_trending:                        #
-#          # Set visible_home for TMDb Trending             #
-#          visible_home_trending:                           #
-#          # Set visible_shared for TMDb Trending           #
-#          visible_shared_trending:                         #
-#          # Set limit for TMDb Trending                    #
-#          limit_trending: 100                              #
+#          # Turn the collection on/off                     #
+#          use_key: true                                    #
+#          # Determines collection order in its section     #
+#          order_key:                                       #
+#          # Set visible_library for the collection         #
+#          visible_library_key:                             #
+#          # Set visible_home for the collection            #
+#          visible_home_key:                                #
+#          # Set visible_shared for the collection          #
+#          visible_shared_key:                              #
+#          # Set limit for the collection                   #
+#          limit_key: 100                                   #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing_key:                          #
+#          # Adds missing from the collection to sonarr     #
+#          radarr_add_missing_key:                          #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag_key:                                  #
+#          # Sonarr Tag for added missing                   #
+#          sonarr_tag_key:                                  #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag_key:                             #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag_key:                             #
 #############################################################
 
 external_templates:

@@ -19,6 +19,7 @@ collections:
 ############################################### 365 Days ##############################################
   "365 Days":
     template: {name: Set, collection: 829561, poster: https://theposterdb.com/api/assets/233228 }
+
 ########################################## A Christmas Story ##########################################
   "A Christmas Story":
     template: {name: Set, collection: 201873, poster: https://theposterdb.com/api/assets/168203 }
@@ -31,17 +32,49 @@ collections:
   "Alien":
     template: {name: Set, collection: 8091, poster: https://theposterdb.com/api/assets/168446 }
 
+######################################## American Pie #################################################
+  "American Pie":
+    template: {name: Set, collection: 2806, poster: https://theposterdb.com/api/assets/166224 }
+
+######################################### Anchorman ###################################################
+  "Anchorman":
+    template: {name: Set, collection: 93791, poster: https://theposterdb.com/api/assets/166225 }
+
+####################################### Asterix & Obelix ##############################################
+  "Asterix & Obelix":
+    template: {name: Set, collection: 2396, poster: https://theposterdb.com/api/assets/239266 }
+
+######################################## Austin Powers ################################################
+  "Austin Powers":
+    template: {name: Set, collection: 1006, poster: https://theposterdb.com/api/assets/163540 }
+
 ######################################## Back to the Future ###########################################
   "Back to the Future":
     template: {name: Set, collection: 264, poster: https://theposterdb.com/api/assets/163128 }
 
-########################################### Fear Street ###############################################
-  "Fear Street":
-    template: {name: Set, collection: 790370, poster: https://theposterdb.com/api/assets/167164 }
+############################################# Bad Ass #################################################
+  "Bad Ass":
+    template: {name: Set, collection: 261286, poster: https://theposterdb.com/api/assets/163542 }
+
+############################################# Bad Moms ################################################
+  "Bad Moms":
+    template: {name: Set, collection: 487376, poster: https://theposterdb.com/api/assets/166227 }
 
 ############################################## Bad Santa ##############################################
   "Bad Santa":
     template: {name: Set, collection: 423173, poster: https://theposterdb.com/api/assets/168205 }
+
+############################################# Barbershop ##############################################
+  "Barbershop":
+    template: {name: Set, collection: 176097, poster: https://theposterdb.com/api/assets/166228 }
+
+##################################### Beavis and Butt-Head ############################################
+  "Beavis and Butt-Head":
+    template: {name: Set, collection: 939227, poster: https://theposterdb.com/api/assets/245853 }
+
+########################################### Fear Street ###############################################
+  "Fear Street":
+    template: {name: Set, collection: 790370, poster: https://theposterdb.com/api/assets/167164 }
 
 ################################################ Before ###############################################
   "Before":
@@ -67,9 +100,25 @@ collections:
   "Die Hard":
     template: {name: Set, collection: 1570, poster: https://theposterdb.com/api/assets/164773 }
 
+############################################### Dollars ###############################################
+  "Dollars":
+    template: {name: Set, list: 8205842, poster: https://theposterdb.com/api/assets/211754 }
+
+################################################# Don't Breathe #######################################
+  "Don't Breathe":
+    template: {name: Set, collection: 748919, poster: https://theposterdb.com/api/assets/175434 }
+
 ################################################# Doom ################################################
   "Doom":
     template: {name: Set, collection: 634390, poster: https://theposterdb.com/api/assets/179772 }
+
+############################################## Dr. Dolittle ###########################################
+  "Dr. Dolittle":
+    template: {name: Set, collection: 3169, poster: https://theposterdb.com/api/assets/162026 }
+
+######################################### Dumb and Dumber #############################################
+  "Dumb and Dumber":
+    template: {name: Set, collection: 96665, poster: https://theposterdb.com/api/assets/165413 }
 
 ################################################ Exorcist #############################################
   "Exorcist":
@@ -111,6 +160,14 @@ collections:
   "Hitman's Bodyguard":
     template: {name: Set, collection: 608101, poster: https://theposterdb.com/api/assets/164793 }
 
+############################################# Horrible Bosses #########################################
+  "Horrible Bosses":
+    template: {name: Set, collection: 280588, poster: https://theposterdb.com/api/assets/164794 }
+
+############################################## Inbetweeners ###########################################
+  "Inbetweeners":
+    template: {name: Set, collection: 279959, poster: https://theposterdb.com/api/assets/230744 }
+
 ################################################ Jackass ##############################################
   "Jackass":
     template: {name: Set, collection: 17178, poster: https://theposterdb.com/api/assets/163419 }
@@ -126,6 +183,10 @@ collections:
 ################################################ John Wick ############################################
   "John Wick":
     template: {name: Set, collection: 404609, poster: https://theposterdb.com/api/assets/164798 }
+
+################################################ Jump Street ##########################################
+  "Jump Street":
+    template: {name: Set, collection: 212562, poster: https://theposterdb.com/api/assets/164800 }
 
 ################################################ Jurassic Park ########################################
   "Jurassic Park":
@@ -163,6 +224,10 @@ collections:
   "Pirates of the Caribbean":
     template: {name: Set, collection: 295, poster: https://theposterdb.com/api/assets/163404 }
 
+################################################ Planet ################################################
+  "Planet":
+    template: {name: Set, collection: 268103, poster: https://theposterdb.com/api/assets/237873 }
+
 ################################################ Porky's ###############################################
   "Porky's":
     template: {name: Set, collection: 109592, poster: https://theposterdb.com/api/assets/166262 }
@@ -174,6 +239,14 @@ collections:
 ################################################ Rambo #################################################
   "Rambo":
     template: {name: Set, collection: 5039, poster: https://theposterdb.com/api/assets/164821 }
+
+################################################ Road Trip #############################################
+  "Road Trip":
+    template: {name: Set, collection: 96679, poster: https://theposterdb.com/api/assets/189032 }
+
+################################################ Scooby-Doo ############################################
+  "Scooby-Doo! Animated":
+    template: {name: Set, list: 8205632, poster: https://theposterdb.com/api/assets/241179 }
 
 ######################################## The Seven Deadly Sins ##########################################
   "Seven Deadly Sins - Saga":
@@ -214,6 +287,9 @@ collections:
 ############################################## The Flintstones ##########################################
   "The Flintstones":
     template: {name: Set, collection: 351684, poster: https://theposterdb.com/api/assets/160943 }
+
+  "View Askewniverse":
+    template: {name: Set, list: 8208754, poster: https://theposterdb.com/api/assets/166272 }
 
 ############################################## Vice Academy #############################################
   "Vice Academy":

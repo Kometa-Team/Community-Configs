@@ -35,6 +35,7 @@ templates:
       vertical_offset: 30
       vertical_align: bottom
     collection_level: <<overlay_level>>
+    ignore_blank_results: true
     overlay:
       name: <<overlay_name>>
       git: PMM/overlays/images/<<overlay>>

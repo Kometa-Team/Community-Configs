@@ -1,0 +1,53 @@
+overlays:
+
+############################                                            I supressed some overlays because of network changes
+#    STREAMING SERVICES    #                                            to prevent overlapping, and I chose the current network
+############################                                            This does not work for all shows
+
+  Apple TV+:
+    overlay: Apple TV+
+    plex_search:
+      all:
+        collection: Apple TV+
+  Disney+:
+    overlay: Disney+
+    suppress_overlays:
+      - Cartoon Network
+      - Comedy Central
+      - FOX
+    plex_search:
+      all:
+        collection: Disney+
+  HBO Max:
+    overlay: HBO Max
+    plex_search:
+      all:
+        collection: HBO Max
+  Hulu:
+    overlay: Hulu
+    suppress_overlays:
+      - The CW
+      - Disney+
+    plex_search:
+      all:
+        collection: Hulu
+  Netflix Series:
+    overlay: Netflix Series
+    suppress_overlays:
+      - BBC
+      - CBC Television
+      - FOX
+      - NBC
+    plex_search:
+      all:
+        collection: Netflix
+  Paramount+:
+    overlay: Paramount+
+    plex_search:
+      all:
+        collection: Paramount+
+  Prime Video:
+    overlay: Prime Video
+    plex_search:
+      all:
+        collection: Prime Video

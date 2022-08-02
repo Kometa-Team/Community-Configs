@@ -16,70 +16,43 @@
 #          # Sets the value at the start of the sort title  #
 #          collection_section: "01"                         #
 #                                                           #
-#          # Turn the Trakt Collected collection on/off     #
-#          use_collected: true                              #
-#          # Determines collection order in it's section    #
-#          order_collected:                                 #
-#          # Set visible_library for Trakt Collected        #
-#          visible_library_collected:                       #
-#          # Set visible_home for Trakt Collected           #
-#          visible_home_collected:                          #
-#          # Set visible_shared for Trakt Collected         #
-#          visible_shared_collected:                        #
-#          # Set limit for Trakt Collected                  #
-#          limit_collected: 250                             #
+#          # For each collection use the "key" to set       #
+#          # the options.                                   #
+#          # Available collections                          #
+#          #   KEY              COLLECTION                  #
+#          #   collected        Trakt Collected             #
+#          #   popular          Trakt Popular               #
+#          #   recommended      Trakt Recommended           #
+#          #   trending         Trakt Trending              #
+#          #   watched          Trakt Watched               #
 #                                                           #
-#          # Turn the Trakt Popular collection on/off       #
-#          use_popular: true                                #
-#          # Determines collection order in it's section    #
-#          order_popular:                                   #
-#          # Set visible_library for Trakt Popular          #
-#          visible_library_popular:                         #
-#          # Set visible_home for Trakt Popular             #
-#          visible_home_popular:                            #
-#          # Set visible_shared for Trakt Popular           #
-#          visible_shared_popular:                          #
-#          # Set limit for Trakt Popular                    #
-#          limit_popular: 250                               #
+#          # Available options. Replace "key" with the      #
+#          # desired collection's key from the chart above. #
 #                                                           #
-#          # Turn the Trakt Recommended collection on/off   #
-#          use_recommended: true                            #
-#          # Determines collection order in it's section    #
-#          order_recommended:                               #
-#          # Set visible_library for Trakt Recommended      #
-#          visible_library_recommended:                     #
-#          # Set visible_home for Trakt Recommended         #
-#          visible_home_recommended:                        #
-#          # Set visible_shared for Trakt Recommended       #
-#          visible_shared_recommended:                      #
-#          # Set limit for Trakt Recommended                #
-#          limit_recommended: 250                           #
-#                                                           #
-#          # Turn the Trakt Trending collection on/off      #
-#          use_trending: true                               #
-#          # Determines collection order in it's section    #
-#          order_trending:                                  #
-#          # Set visible_library for Trakt Trending         #
-#          visible_library_trending:                        #
-#          # Set visible_home for Trakt Trending            #
-#          visible_home_trending:                           #
-#          # Set visible_shared for Trakt Trending          #
-#          visible_shared_trending:                         #
-#          # Set limit for Trakt Trending                   #
-#          limit_trending: 250                              #
-#                                                           #
-#          # Turn the Trakt Watched collection on/off       #
-#          use_watched: true                                #
-#          # Determines collection order in it's section    #
-#          order_watched:                                   #
-#          # Set visible_library for Trakt Watched          #
-#          visible_library_watched:                         #
-#          # Set visible_home for Trakt Watched             #
-#          visible_home_watched:                            #
-#          # Set visible_shared for Trakt Watched           #
-#          visible_shared_watched:                          #
-#          # Set limit for Trakt Watched                    #
-#          limit_watched: 250                               #
+#          # Turn the collection on/off                     #
+#          use_key: true                                    #
+#          # Determines collection order in its section     #
+#          order_key:                                       #
+#          # Set visible_library for the collection         #
+#          visible_library_key:                             #
+#          # Set visible_home for the collection            #
+#          visible_home_key:                                #
+#          # Set visible_shared for the collection          #
+#          visible_shared_key:                              #
+#          # Set limit for the collection                   #
+#          limit_key: 100                                   #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing_key:                          #
+#          # Adds missing from the collection to sonarr     #
+#          radarr_add_missing_key:                          #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag_key:                                  #
+#          # Sonarr Tag for added missing                   #
+#          sonarr_tag_key:                                  #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag_key:                             #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag_key:                             #
 #############################################################
 
 external_templates:
