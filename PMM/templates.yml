@@ -115,6 +115,19 @@ templates:
   playlist:
     default:
       libraries: Movies, TV Shows
+    optional:
+      - radarr_add_missing
+      - sonarr_add_missing
+      - radarr_tag
+      - sonarr_tag
+      - item_radarr_tag
+      - item_sonarr_tag
+    radarr_add_missing: <<radarr_add_missing>>
+    sonarr_add_missing: <<sonarr_add_missing>>
+    radarr_tag: <<radarr_tag>>
+    sonarr_tag: <<sonarr_tag>>
+    item_radarr_tag: <<item_radarr_tag>>
+    item_sonarr_tag: <<item_sonarr_tag>>
     cache_builders: 1
     sync_to_users: all
     sync_mode: sync
