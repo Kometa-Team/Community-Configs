@@ -21,5 +21,6 @@ libraries:
 ![Movies (Updated)](https://i.imgur.com/dewg0vk.png)
 <br>
 
-## Series:
-![Series]<img src="https://i.imgur.com/Ofl003p.png"
+**Series Collections Preview**: <br>
+![Series (Updated)](https://i.imgur.com/Ofl003p.png)
+<br>
