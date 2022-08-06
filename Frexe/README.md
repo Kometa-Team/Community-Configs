@@ -17,8 +17,9 @@ libraries:
     - folder: metadata/TV-Shows/Metadata/Anime
     - folder: metadata/TV-Shows/Metadata/TV
 ```
-## Movies:
-# <img src="https://i.imgur.com/dewg0vk.png"
+**Movies Collections Preview**: <br>
+![Movies (Updated)](https://i.imgur.com/dewg0vk.png)
+<br>
 
 ## Series:
-# <img src="https://i.imgur.com/Ofl003p.png"
+![Series]<img src="https://i.imgur.com/Ofl003p.png"
