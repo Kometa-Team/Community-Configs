@@ -1,0 +1,207 @@
+overlays:
+
+############################                                            I suppressed some overlays because of network changes
+#         NETWORKS         #                                            to prevent overlapping, and I chose the originaL network
+############################                                            This does not work for all shows
+
+  ABC:
+    overlay: ABC
+    suppress_overlays:
+      - CBS
+      - Comedy Central
+      - Discovery
+      - FOX
+      - Science
+      - The WB
+    plex_search:
+      any:
+        network:
+          - ABC
+          - ABC Family
+  AMC:
+    overlay: AMC
+    plex_search:
+      all:
+        network: AMC
+  Animal Planet:
+    overlay: Animal Planet
+    plex_search:
+      all:
+        network: Animal Planet
+  BBC:
+    overlay: BBC
+    suppress_overlays:
+      - FX
+      - PBS
+    plex_search:
+      any:
+        network:
+          - BBC One
+          - BBC Television
+          - BBC Two
+  Cartoon Network:
+    overlay: Cartoon Network
+    suppress_overlays:
+      - CBS
+      - NBC
+      - PBS
+    plex_search:
+      all:
+        network: Cartoon Network
+  CBC Television:
+    overlay: CBC Television
+    plex_search:
+      all:
+        network: CBC Television
+  CBS:
+    overlay: CBS
+    suppress_overlays:
+      - The CW
+    plex_search:
+      all:
+        network: CBS
+  CNN:
+    overlay: CNN
+    plex_search:
+      all:
+        network: CNN
+  Comedy Central:
+    overlay: Comedy Central
+    plex_search:
+      all:
+        network: Comedy Central
+  The CW:
+    overlay: The CW
+    plex_search:
+      all:
+        network: The CW
+  Discovery:
+    overlay: Discovery
+    suppress_overlays:
+      - Science
+    plex_search:
+      all:
+        network: Discovery
+  Disney Channel:
+    overlay: Disney Channel-2                                           # 2 because the regular one is a studio for movies
+    suppress_overlays:
+      - ABC
+    plex_search:
+      all:
+        network: Disney Channel
+  FOX:
+    overlay: FOX
+    suppress_overlays:
+      - Comedy Central
+      - Hulu
+      - National Geographic
+      - NBC
+    plex_search:
+      all:
+        network: FOX
+  Food Network:
+    overlay: Food Network
+    plex_search:
+      all:
+        network: Food Network
+  FX:
+    overlay: FX
+    suppress_overlays:
+      - FXX
+    plex_search:
+      all:
+        network: FX
+  FXX:
+    overlay: FXX
+    plex_search:
+      all:
+        network: FXX
+  HBO:
+    overlay: HBO-2                                                      # 2 because the regular one is a studio for movies
+    plex_search:
+      all:
+        network: HBO
+  History:
+    overlay: History
+    suppress_overlays:
+      - Prime Video
+    plex_search:
+      all:
+        network: History
+  MTV:
+    overlay: MTV
+    plex_search:
+      all:
+        network: MTV
+  National Geographic:
+    overlay: National Geographic
+    plex_search:
+      all:
+        network: National Geographic
+  NBC:
+    overlay: NBC
+    suppress_overlays:
+      - ABC
+      - USA Network
+    plex_search:
+      any:
+        network:
+          - NBC
+          - NBCSN
+  Nickelodeon:
+    overlay: Nickelodeon
+    suppress_overlays:
+      - ABC
+    plex_search:
+      all:
+        network: Nickelodeon
+  PBS:
+    overlay: PBS
+    plex_search:
+      all:
+        network: PBS
+  Science:
+    overlay: Science
+    plex_search:
+      any:
+        network:
+          - Science
+          - Science Channel
+  Showtime:
+    overlay: Showtime
+    suppress_overlays:
+      - Syfy
+    plex_search:
+      all:
+        network: Showtime
+  Starz:
+    overlay: Starz
+    plex_search:
+      all:
+        network: Starz
+  Syfy:
+    overlay: Syfy
+    suppress_overlays:
+      - Prime Video
+    plex_search:
+      all:
+        network: Syfy
+  Travel Channel:
+    overlay: Travel Channel
+    plex_search:
+      all:
+        network: Travel Channel
+  USA Network:
+    overlay: USA Network
+    suppress_overlays:
+      - Syfy
+    plex_search:
+      all:
+        network: USA Network
+  The WB:
+    overlay: The WB
+    suppress_overlays:
+      - The CW
+    plex_search:
+      all:
+        network: The WB

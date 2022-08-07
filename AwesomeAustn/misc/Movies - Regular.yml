@@ -4,11 +4,6 @@ collections:
 #         REGULAR          #                                            Some collections may be missing because the Plex database
 ############################                                            backup only lists the first two collections for some reason
 
-  ... Has Fallen:
-    tmdb_movie:
-      - 117263  # Olympus Has Fallen
-      - 267860  # London Has Fallen
-      - 423204  # Angel Has Fallen
   101 Dalmatians (Live-action series):
     tmdb_movie:
       - 11674   # 101 Dalmatians
@@ -217,6 +212,10 @@ collections:
       - 13313   # Beauty and the Beast: The Enchanted Christmas
       - 20235   # Belle's Magical World
       - 321612  # Beauty and the Beast
+  Beavis and Butt-Head:
+    tmdb_movie:
+      - 3179    # Beavis and Butt-Head Do America
+      - 828947  # Beavis and Butt-Head Do the Universe
   Behind Enemy Lines:
     tmdb_movie:
       - 8007    # Behind Enemy Lines
@@ -242,7 +241,7 @@ collections:
       - 96      # Beverly Hills Cop II
       - 306     # Beverly Hills Cop III
       - 280180  # Beverly Hills Cop 4
-  "Bill & Ted's Excellent Adventure":
+  Bill & Ted's Excellent Adventure:
     tmdb_movie:
       - 1648    # Bill & Ted's Excellent Adventure
       - 1649    # Bill & Ted's Bogus Journey
@@ -304,7 +303,7 @@ collections:
       - 920     # Cars
       - 49013   # Cars 2
       - 260514  # Cars 3
-  "Charlie's Angels":
+  Charlie's Angels:
     tmdb_movie:
       - 458897  # Charlie's Angels
       - 4327    # Charlie's Angels
@@ -325,7 +324,7 @@ collections:
       - 31609   # Cheech & Chong Get Out of My Room
       - 36566   # Cheech & Chong's Hey Watch This
       - 184322  # Cheech & Chong's Animated Movie
-  "Child's Play":
+  Child's Play:
     tmdb_movie:
       - 10585   # Child's Play
       - 11186   # Child's Play 2
@@ -402,33 +401,6 @@ collections:
       - 138843  # The Conjuring
       - 259693  # The Conjuring 2
       - 423108  # The Conjuring: The Devil Made Me Do It
-  Dane Cook:
-    tmdb_movie:
-      - 15501   # Dane Cook: Vicious Circle
-      - 13024   # Dane Cook: Rough Around the Edges
-      - 27278   # Dane Cook: Isolated Incident
-  Die Hard:
-    tmdb_movie:
-      - 562     # Die Hard
-      - 1573    # Die Hard 2
-      - 1572    # Die Hard: With a Vengeance
-      - 1571    # Live Free or Die Hard
-      - 47964   # A Good Day to Die Hard
-  Home Alone:
-    tmdb_movie:
-      - 771     # Home Alone
-      - 772     # Home Alone 2: Lost in New York
-      - 9714    # Home Alone 3
-      - 12536   # Home Alone 4
-      - 134375  # Home Alone: The Holiday Heist
-      - 654974  # Home Sweet Home Alone
-  "National Lampoon's Vacation":
-    tmdb_movie:
-      - 11153   # National Lampoon's Vacation
-      - 11418   # National Lampoon's European Vacation
-      - 5825    # National Lampoon's Christmas Vacation
-      - 11419   # Vegas Vacation
-      - 296099  # Vacation
   Cinderella:
     tmdb_movie:
       - 11224   # Cinderella
@@ -448,14 +420,10 @@ collections:
       - 2292    # Clerks
       - 2295    # Clerks II
       - 635891  # Clerks III
-  "Clint Eastwood's Iwo Jima":
+  Clint Eastwood's Iwo Jima:
     tmdb_movie:
       - 3683    # Flags of Our Fathers
       - 1251    # Letters from Iwo Jima
-  Cloudy with a Chance of Meatballs:
-    tmdb_movie:
-      - 22794   # Cloudy with a Chance of Meatballs
-      - 109451  # Cloudy with a Chance of Meatballs 2
   Cloudy with a Chance of Meatballs:
     tmdb_movie:
       - 22794   # Cloudy with a Chance of Meatballs
@@ -493,10 +461,15 @@ collections:
       - 431     # Cube
       - 437     # Cube 2: Hypercube
       - 438     # Cube Zero
-  "Daddy's Home":
+  Daddy's Home:
     tmdb_movie:
       - 274167  # Daddy's Home
       - 419680  # Daddy's Home 2
+  Dane Cook:
+    tmdb_movie:
+      - 15501   # Dane Cook: Vicious Circle
+      - 13024   # Dane Cook: Rough Around the Edges
+      - 27278   # Dane Cook: Isolated Incident
   Daniel Tosh:
     tmdb_movie:
       - 108176  # Daniel Tosh: Completely Serious
@@ -524,7 +497,12 @@ collections:
       - 624932  # Dave Chappelle: Sticks & Stones
       - 000000  # Dave Chappelle: Sticks & Stones: Epilogue: The Punchline
       - 662059  # Dave Chappelle: The Kennedy Center Mark Twain Prize for American Humor
+      - 714842  # 8:46
+      - 770665  # Dave Chappelle: Unforgiven
+      - 796181  # Dave Chappelle: Redemption Song
       - 879540  # Dave Chappelle: The Closer
+      - 833811  # Dave Chappelle: Live in Real Life
+      - 997010  # Dave Chappelle: What's in a Name?
   Deadpool:
     tmdb_movie:
       - 293660  # Deadpool
@@ -553,7 +531,7 @@ collections:
     tmdb_movie:
       - 10402   # Deuce Bigalow: Male Gigolo
       - 11453   # Deuce Bigalow: European Gigolo
-  Deuce Bigalow:
+  Die Hard:
     tmdb_movie:
       - 562     # Die Hard
       - 1573    # Die Hard 2
@@ -589,6 +567,10 @@ collections:
       - 70465   # Dosage III
       - 69377   # Dosage IV
       - 36195   # Dosage V
+  Downton Abbey:
+    tmdb_movie:
+      - 535544  # Downton Abbey
+      - 820446  # Downton Abbey: A New Era
   Dragon Ball:
     tmdb_movie:
       - 39144   # Dragon Ball: Curse of the Blood Rubies
@@ -905,6 +887,11 @@ collections:
       - 12444   # Harry Potter and the Deathly Hallows: Part 1
       - 12445   # Harry Potter and the Deathly Hallows: Part 2
       - 899082  # Harry Potter 20th Anniversary: Return to Hogwarts
+  Has Fallen:
+    tmdb_movie:
+      - 117263  # Olympus Has Fallen
+      - 267860  # London Has Fallen
+      - 423204  # Angel Has Fallen
   Hellboy:
     tmdb_movie:
       - 1487    # Hellboy
@@ -924,7 +911,7 @@ collections:
     tmdb_movie:
       - 1620    # Hitman
       - 249070  # Hitman: Agent 47
-  "The Hitman's Bodyguard":
+  The Hitman's Bodyguard:
     tmdb_movie:
       - 390043  # The Hitman's Bodyguard
       - 522931  # Hitman's Wife's Bodyguard
@@ -933,6 +920,14 @@ collections:
       - 49051   # The Hobbit: An Unexpected Journey
       - 57158   # The Hobbit: The Desolation of Smaug
       - 122917  # The Hobbit: The Battle of the Five Armies
+  Home Alone:
+    tmdb_movie:
+      - 771     # Home Alone
+      - 772     # Home Alone 2: Lost in New York
+      - 9714    # Home Alone 3
+      - 12536   # Home Alone 4
+      - 134375  # Home Alone: The Holiday Heist
+      - 654974  # Home Sweet Home Alone
   Honey, I Shrunk the Kids:
     tmdb_movie:
       - 9354    # Honey, I Shrunk the Kids
@@ -1180,6 +1175,7 @@ collections:
       - 129415  # Katt Williams: Kattpacalypse
       - 287299  # Katt Williams: Priceless: Afterlife
       - 497522  # Katt Williams: Great America
+      - 972009  # Katt Williams: World War III
   Kevin Hart:
     tmdb_movie:
       - 27866   # Kevin Hart: I'm a Grown Little Man
@@ -1223,8 +1219,14 @@ collections:
   Kung Fu Panda:
     tmdb_movie:
       - 9502    # Kung Fu Panda
+      - 15854   # Kung Fu Panda: Secrets of the Furious Five
+      - 50393   # Kung Fu Panda Holiday
       - 49444   # Kung Fu Panda 2
+      - 81003   # Kung Fu Panda: Secrets of the Masters
+      - 381693  # Kung Fu Panda: Secrets of the Scroll
       - 140300  # Kung Fu Panda 3
+      - 456661  # Panda Paws
+      - 919432  # Kung Fu Panda: The Emperor's Quest
   The Land Before Time:
     tmdb_movie:
       - 12144   # The Land Before Time
@@ -1348,7 +1350,6 @@ collections:
       - 14543   # The Matrix Revisited
       - 591955  # The Matrix Reloaded Revisited
       - 503880  # The Matrix Revolutions Revisited
-    collection_order: custom
   The Maze Runner:
     tmdb_movie:
       - 198663  # The Maze Runner
@@ -1434,14 +1435,14 @@ collections:
     tmdb_movie:
       - 14043   # Nancy Drew
       - 519473  # Nancy Drew and the Hidden Staircase
-  "National Lampoon's Vacation":
+  National Lampoon's Vacation:
     tmdb_movie:
       - 11153   # National Lampoon's Vacation
       - 11418   # National Lampoon's European Vacation
       - 5825    # National Lampoon's Christmas Vacation
       - 11419   # Vegas Vacation
       - 296099  # Vacation
-  "National Lampoon's Van Wilder":
+  National Lampoon's Van Wilder:
     tmdb_movie:
       - 11452   # National Lampoon's Van Wilder
       - 10032   # Van Wilder 2: The Rise of Taj
@@ -1480,7 +1481,7 @@ collections:
       - 75656   # Now You See Me
       - 291805  # Now You See Me 2
       - 425274  # Now You See Me 3
-  "Ocean's":
+  Ocean's:
     tmdb_movie:
       - 161     # Ocean's Eleven
       - 163     # Ocean's Twelve
@@ -1525,7 +1526,7 @@ collections:
       - 429577  # The Mayflower Voyagers
       - 23998   # It's Christmastime Again, Charlie Brown
       - 227973  # The Peanuts Movie
-  "Pee-wee's":
+  Pee-wee's:
     tmdb_movie:
       - 5683    # Pee-wee's Big Adventure
       - 347689  # Pee-wee's Big Holiday
@@ -1610,7 +1611,7 @@ collections:
       - 11825   # Police Academy 5: Assignment Miami Beach
       - 11895   # Police Academy 6: City Under Siege
       - 11546   # Police Academy: Mission to Moscow
-  "Porky's":
+  Porky's:
     tmdb_movie:
       - 10246   # Porky's
       - 19698   # Porky's II: The Next Day
@@ -1640,6 +1641,10 @@ collections:
       - 316727  # The Purge: Election Year
       - 442249  # The First Purge
       - 602223  # The Forever Purge
+  Queen:
+    tmdb_movie:
+      - 82419   # Queen: Live Aid
+      - 468591  # Queen: Rock Montreal
   A Quiet Place:
     tmdb_movie:
       - 447332  # A Quiet Place
@@ -1651,7 +1656,7 @@ collections:
       - 1370    # Rambo III
       - 7555    # Rambo
       - 522938  # Rambo: Last Blood
-  Rambo:
+  Red:
     tmdb_movie:
       - 39514   # RED
       - 146216  # RED 2
@@ -1678,6 +1683,16 @@ collections:
       - 71679   # Resident Evil: Retribution
       - 173897  # Resident Evil: The Final Chapter
       - 460458  # Resident Evil: Welcome to Raccoon City
+  Ricky Gervais:
+    tmdb_movie:
+      - 198306  # Ricky Gervais Live: Animals
+      - 198307  # Ricky Gervais Live 2: Politics
+      - 198308  # Ricky Gervais Live 3: Fame
+      - 198391  # Ricky Gervais Live 4: Science
+      - 13480   # Ricky Gervais: Out of England
+      - 52252   # Ricky Gervais: Out of England 2
+      - 508933  # Ricky Gervais: Humanity
+      - 973164  # Ricky Gervais: SuperNature
   Ride Along:
     tmdb_movie:
       - 168530  # Ride Along
@@ -1830,6 +1845,7 @@ collections:
       - 16023   # South Park: Imaginationland
       - 874299  # South Park: Post COVID
       - 874300  # South Park: Post COVID: The Return of COVID
+      - 974691  # South Park: The Streaming Wars
   Spider-Man:
     tmdb_movie:
       - 557     # Spider-Man
@@ -2113,7 +2129,7 @@ collections:
       - 562835  # Warren Miller's Face of Winter
       - 576222  # Ski Bum: The Warren Miller Story
       - 643841  # Warren Miller's Timeless
-  "Wayne's World":
+  Wayne's World:
     tmdb_movie:
       - 8872    # Wayne's World
       - 8873    # Wayne's World 2
@@ -2209,6 +2225,16 @@ collections:
       - 732450  # Batman: Soul of the Dragon
       - 736073  # Batman: The Long Halloween, Part One
       - 736074  # Batman: The Long Halloween, Part Two
+  Concerts:
+    collection:
+      - Roger Waters
+      - Queen
+    tmdb_movie:
+      - 121441  # Bob Marley: Live in Concert
+      - 137366  # Led Zeppelin: Celebration Day
+      - 193613  # Metallica: Through the Never
+      - 31494   # Mötley Crüe: Carnival of Sins
+      - 235222  # The Rolling Stones: Sweet Summer Sun - Hyde Park Live
   The Conjuring Universe:
     tmdb_movie:
       - 138843  # The Conjuring
@@ -2220,12 +2246,10 @@ collections:
       - 521029  # Annabelle Comes Home
       - 423108  # The Conjuring: The Devil Made Me Do It
   Dragon Ball Movies:                                                   # Dragon Ball by itself is already a collection
-    plex_search:
-      all:
-        collection:
-          - Dragon Ball
-          - Dragon Ball Super
-          - Dragon Ball Z
+    collection:
+      - Dragon Ball
+      - Dragon Ball Super
+      - Dragon Ball Z
   Marvel Cinematic Universe:
     tmdb_movie:
       - 1726    # Iron Man
@@ -2270,11 +2294,9 @@ collections:
       - 617126  # Fantastic Four                                        [TITLE MAY CHANGE] [NO DATE | MAY BE OUT OF ORDER]
       - 533535  # Deadpool 3                                            [TITLE MAY CHANGE] [NO DATE | MAY BE OUT OF ORDER]
   Middle Earth:
-    plex_search:
-      all:
-        collection:
-          - The Lord of the Rings
-          - The Hobbit
+    collection:
+      - The Lord of the Rings
+      - The Hobbit
   Pixar:
     tmdb_movie:
       - 862     # Toy Story
@@ -2304,19 +2326,15 @@ collections:
       - 508947  # Turning Red
       - 718789  # Lightyear
   Star Trek:
-    plex_search:
-      all:
-        collection:
-          - "Star Trek: The Original Series"
-          - "Star Trek: The Next Generation"
-          - "Star Trek: Alternate Reality"
+    collection:
+      - "Star Trek: The Original Series"
+      - "Star Trek: The Next Generation"
+      - "Star Trek: Alternate Reality"
   Superman / Batman:
     tmdb_movie:
       - 22855   # Superman/Batman: Public Enemies
       - 45162   # Superman/Batman: Apocalypse
   Wizarding World:
-    plex_search:
-      all:
-        collection:
-          - Harry Potter
-          - Fantastic Beasts
+    collection:
+      - Harry Potter
+      - Fantastic Beasts

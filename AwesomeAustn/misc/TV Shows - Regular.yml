@@ -81,14 +81,37 @@ collections:
     tvdb_show:
       - 75978   # Family Guy
       - 93991   # The Cleveland Show
+  Fraggle Rock:
+    tvdb_show:
+      - 76085   # Fraggle Rock
+      - 331511  # Fraggle Rock (UK)
+      - 139151  # Fraggle Rock: The Animated Series
+      - 380853  # Fraggle Rock: Rock On!
+      - 412536  # Fraggle Rock: Back to the Rock
+  Helpsters:
+    tvdb_show:
+      - 369782  # Helpsters
+      - 381154  # Helpsters Help You
   Heroes:
     tvdb_show:
       - 79501   # Heroes
       - 279201  # Heroes Reborn
-  "How It's Made":
+  How It's Made:
     tvdb_show:
       - 79485   # How It's Made
       - 270898  # How It's Made: Dream Cars
+  Impractical Jokers:
+    tvdb_show:
+      - 254243  # Impractical Jokers
+      - 409849  # Impractical Jokers: Family Night
+      - 398829  # Impractical Jokers: Dirty Little Secrets
+      - 314842  # Impractical Jokers: Inside Jokes
+      - 332937  # Impractical Jokers: After Party
+  Kung Ku Panda:
+    tvdb_show:
+      - 250632  # Kung Fu Panda: Legends of Awesomeness
+      - 353844  # Kung Fu Panda: The Paws of Destiny
+      - 419961  # Kung Fu Panda: The Dragon Knight
   LEGO Masters:
     tvdb_show:
       - 333541  # LEGO Masters (UK)
@@ -118,6 +141,11 @@ collections:
     tvdb_show:
       - 153531  # Mighty Ships
       - 288313  # Mighty Cruise Ships
+  Money Heist:
+    tvdb_show:
+      - 327417  # Money Heist
+      - 409534  # Money Heist: From Tokyo to Berlin
+      - 401314  # Money Heist: Korea - Joint Economic Area
   Narcos:
     tvdb_show:
       - 282670  # Narcos
@@ -149,6 +177,10 @@ collections:
     tvdb_show:
       - 79257   # Planet Earth
       - 318408  # Planet Earth II
+  Resident Evil:
+    tvdb_show:
+      - 110642  # Resident Evil: Infinite Darkness
+      - 108296  # Resident Evil
   Rugrats:
     tvdb_show:
       - 77038   # Rugrats
@@ -239,7 +271,7 @@ collections:
     tvdb_show:
       - 76666   # Dragon Ball
       - 81472   # Dragon Ball Z
-      - 88031   # Dragon Ball Kai                                       Dragon Ball Z Kai
+      - 88031   # Dragon Ball Z Kai                                     A.K.A. Dragon Ball Kai
       - 247958  # Anohana: The Flower We Saw That Day
       - 259647  # Kokoro Connect
       - 295068  # Dragon Ball Super
@@ -247,13 +279,25 @@ collections:
     tvdb_show:
       - 253463  # Black Mirror
       - 371980  # Severance
+  Planet:
+    tvdb_show:
+      - 74372   # The Blue Planet
+      - 330942  # Blue Planet II
+      - 251418  # Frozen Planet
+      - 417395  # Frozen Planet II
+      - 359250  # The Green Planet
+      - 355229  # Our Planet
+      - 359365  # A Perfect Planet
+      - 79257   # Planet Earth
+      - 318408  # Planet Earth II
+      - 413197  # Planet Earth III
+      - 418505  # Prehistoric Planet (2022)
+      - 359251  # Seven Worlds, One Planet
   War:
     tvdb_show:
       - 79309   # The World at War
       - 124511  # WWII in HD
       - 281640  # The World Wars
-    plex_search:
-      all:
-        collection:
+    collection:
           - Band of Brothers
           - Apocalypse

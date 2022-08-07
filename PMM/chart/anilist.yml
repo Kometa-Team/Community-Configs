@@ -13,55 +13,42 @@
 #          # Sets the value at the start of the sort title  #
 #          collection_section: "01"                         #
 #                                                           #
-#          # Turn the AniList Popular collection on/off     #
-#          use_popular: true                                #
-#          # Determines collection order in it's section    #
-#          order_popular:                                   #
-#          # Set visible_library for AniList Popular        #
-#          visible_library_popular:                         #
-#          # Set visible_home for AniList Popular           #
-#          visible_home_popular:                            #
-#          # Set visible_shared for AniList Popular         #
-#          visible_shared_popular:                          #
-#          # Set limit for AniList Popular                  #
-#          limit_popular: 100                               #
+#          # For each collection use the "key" to set       #
+#          # the options.                                   #
+#          # Available collections                          #
+#          #   KEY              COLLECTION                  #
+#          #   popular          AniList Popular             #
+#          #   top              AniList Top Rated           #
+#          #   trending         AniList Trending            #
+#          #   season           AniList Season              #
 #                                                           #
-#          # Turn the AniList Top Rated collection on/off   #
-#          use_top: true                                    #
-#          # Determines collection order in it's section    #
-#          order_top:                                       #
-#          # Set visible_library for AniList Top Rated      #
-#          visible_library_top:                             #
-#          # Set visible_home for AniList Top Rated         #
-#          visible_home_top:                                #
-#          # Set visible_shared for AniList Top Rated       #
-#          visible_shared_top:                              #
-#          # Set limit for AniList Top Rated                #
-#          limit_top: 100                                   #
+#          # Available options. Replace "key" with the      #
+#          # desired collection's key from the chart above. #
 #                                                           #
-#          # Turn the AniList Trending collection on/off    #
-#          use_trending: true                               #
+#          # Turn the collection on/off                     #
+#          use_key: true                                    #
 #          # Determines collection order in it's section    #
-#          order_trending:                                  #
-#          # Set visible_library for AniList Trending       #
-#          visible_library_trending:                        #
-#          # Set visible_home for AniList Trending          #
-#          visible_home_trending:                           #
-#          # Set visible_shared for AniList Trending        #
-#          visible_shared_trending:                         #
-#          # Set limit for AniList Trending                 #
-#          limit_trending: 100                              #
-#                                                           #
-#          # Turn the AniList Season collection on/off      #
-#          use_season: true                                 #
-#          # Determines collection order in it's section    #
-#          order_season:                                    #
-#          # Set visible_library for AniList Season         #
-#          visible_library_season:                          #
-#          # Set visible_home for AniList Season            #
-#          visible_home_season:                             #
-#          # Set visible_shared for AniList Season          #
-#          visible_shared_season:                           #
+#          order_key:                                       #
+#          # Set visible_library for the collection         #
+#          visible_library_key:                             #
+#          # Set visible_home for the collection            #
+#          visible_home_key:                                #
+#          # Set visible_shared for the collection          #
+#          visible_shared_key:                              #
+#          # Set limit for the collection                   #
+#          limit_key: 100                                   #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing_key:                          #
+#          # Adds missing from the collection to sonarr     #
+#          radarr_add_missing_key:                          #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag_key:                                  #
+#          # Sonarr Tag for added missing                   #
+#          sonarr_tag_key:                                  #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag_key:                             #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag_key:                             #
 #############################################################
 
 external_templates:

@@ -1,0 +1,884 @@
+############################
+#        TEMPLATES         #
+############################
+
+templates:
+  Charts:
+    sort_title: "!01_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: daily
+  Oscars:
+    sort_title: "!02_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release.desc
+    collection_mode: hide
+    schedule: yearly(03/01)
+  AFI's 100:
+    sort_title: "!03_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: yearly(03/01)
+  Best Of - Rotten Tomatoes - Years:
+    sort_title: "!04_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: yearly(03/01)
+  Best Of - Rotten Tomatoes - Genres:
+    sort_title: "!05_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: yearly(03/01)
+  Custom:
+    sort_title: "!06_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+    schedule: monthly(10)
+  Regular:
+    sort_title: "!07_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: monthly(10)
+  Genres:
+    sort_title: "!08_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+    schedule: weekly(friday)
+  IMDb Genres:
+    default:
+      type: feature
+      year_min: 1980
+      rating_min: 7
+      votes_min: 50000
+      limit: 100
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=<<type>>,&genres=<<genre>>,&release_date=<<year_min>>-01-01,&user_rating=<<rating_min>>,10&num_votes=<<votes_min>>,&sort=user_rating,desc
+      limit: <<limit>>
+    sort_title: "!08_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    summary: A collection of <<genre>> movies from <<year_min>> to now, with a minimum rating of <<rating_min>> and at least <<votes_min>> votes from IMDb. Sorted by rating.
+    schedule: weekly(friday)
+  IMDb Keywords:
+    default:
+      type: movie
+      year_min: 1980
+      rating_min: 7
+      votes_min: 50000
+      limit: 100
+    imdb_list:
+      url: https://www.imdb.com/search/keyword/?keywords=<<keyword>>&title_type=<<type>>,&release_date=<<year_min>>-01-01,&user_rating=<<rating_min>>,10&num_votes=<<votes_min>>,&sort=user_rating,desc
+      limit: <<limit>>
+    sort_title: "!09_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    summary: A collection of <<keyword>> movies from <<year_min>> to now, with a minimum rating of <<rating_min>> and at least <<votes_min>> votes from IMDb. Sorted by rating.
+    schedule: weekly(friday)
+  Streaming Services:
+    sort_title: "!10_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: daily
+  Studios:
+    sort_title: "!11_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: daily
+  Holidays:
+    sort_title: "!12_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+  Years:
+    sort_title: "!13_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: weekly(friday)
+  Audio:
+    sort_title: "!14_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+    schedule: daily
+  Random:
+    sort_title: "!15_<<collection_name>>"
+    smart_filter:
+      all:
+        genre: <<genre>>
+        year.gte: 1980
+      sort_by: random
+      limit: 5
+    collection_mode: hide
+    summary: Random <<genre>> movies every time it loads.
+    schedule: never                                                     # Not scheduled to run because it only needs to run once
+  Actors:
+    actor: tmdb
+    tmdb_person: <<person>>
+    sort_title: "!16_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: weekly(friday)
+  Directors:
+    director: tmdb
+    tmdb_person: <<person>>
+    sort_title: "!17_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: weekly(friday)
+  Dolby:
+    sort_title: "!18_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: weekly(friday)
+
+############################
+#       COLLECTIONS        #
+############################
+
+collections:
+
+############################
+#          CHARTS          #
+############################
+
+  IMDb Top 250:
+    template: {name: Charts}
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&sort=user_rating,desc
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/IMDb%20Top%20250.png
+  TMDb Most Popular:
+    template: {name: Charts}
+    tmdb_popular: 30
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/TMDb%20Most%20Popular.png
+  TMDb Top Rated:
+    template: {name: Charts}
+    tmdb_top_rated: 30
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/TMDb%20Top%20Rated.png
+  TMDb Weekly Trending:
+    template: {name: Charts}
+    tmdb_trending_weekly: 30
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/TMDb%20Weekly%20Trending.png
+  Top 10 Pirated Movies:
+    template: {name: Charts}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/top-10-pirated-movies-of-the-week
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Top%2010%20Pirated%20Movies.png
+# Trakt Trending:                                                       # I'm using Movies - Trakt (Unplayed) by Magic815 instead
+#   template: {name: Charts}
+#   trakt_trending: 30
+
+############################
+#         BEST OF          #
+############################
+
+  AFI's 100:
+    template: {name: "AFI's 100"}
+    imdb_list: https://www.imdb.com/list/ls027841309
+    summary: AFI's 100 Years... 100 Movies – 10th Anniversary Edition (2007) is an updated edition to AFI"s 100 Years... 100 Movies, a list of the top 100 greatest American films of all time. Honoring the 10th anniversary of this award-winning series, a jury of 1,500 film artists, critics, and historians determined that Citizen Kane remained the greatest movie of all time. AFI stands for American Film Institute.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/AFI's%20100.png
+  Best Animated Feature Film:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560364561
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Best%20Animated%20Feature%20Film.png
+  Best Cinematography:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560369098
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Best%20Cinematography.png
+  Best Film Editing:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560364494
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Best%20Film%20Editing.png
+  Best Picture:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560768259
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Best%20Picture.png
+  Best Sound:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560369669
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Best%20Sound.png
+  Best Visual Effects:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560368042
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Best%20Visual%20Effects.png
+  Rotten Tomatoes - Best All Time:
+    template: {name: Best Of - Rotten Tomatoes - Years}
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-top-100-movies-of-all-time
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rotten%20Tomatoes%20-%20Best%20All%20Time.png
+# Rotten Tomatoes - Best of 2014:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2014
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rotten%20Tomatoes%20-%20Best%20of%202014.png
+# Rotten Tomatoes - Best of 2015:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2015
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rotten%20Tomatoes%20-%20Best%20of%202015.png
+# Rotten Tomatoes - Best of 2016:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2016
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rotten%20Tomatoes%20-%20Best%20of%202016.png
+# Rotten Tomatoes - Best of 2017:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2017
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rotten%20Tomatoes%20-%20Best%20of%202017.png
+# Rotten Tomatoes - Best of 2018:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2018
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rotten%20Tomatoes%20-%20Best%20of%202018.png
+# Rotten Tomatoes - Best of 2019:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2019
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rotten%20Tomatoes%20-%20Best%20of%202019.png
+# Rotten Tomatoes - Best of 2020:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2020
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rotten%20Tomatoes%20-%20Best%20of%202020.png
+  Rotten Tomatoes - Best Horror:
+    template: {name: Best Of - Rotten Tomatoes - Genres}
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rotten%20Tomatoes%20-%20Best%20Horror.png
+  Rotten Tomatoes - Best LGBT:
+    template: {name: Best Of - Rotten Tomatoes - Genres}
+    trakt_list: https://trakt.tv/users/saara-v-a/lists/rotten-tomatoes-150-best-lgbt-movies-of-all-time-copy
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rotten%20Tomatoes%20-%20Best%20LGBT.png
+  Rotten Tomatoes - Best Rom Com:
+    template: {name: Best Of - Rotten Tomatoes - Genres}
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rotten%20Tomatoes%20-%20Best%20Rom%20Com.png
+
+############################
+#          CUSTOM          #
+############################
+
+  Classic Disney Animated Movies:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls088609910
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Classic%20Disney%20Animated%20Movies.png
+  Classic Disney Channel Movies:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls560667605
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Classic%20Disney%20Channel%20Movies.png
+  Classic Sports Movies:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls088609451
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Classic%20Sports%20Movies.png
+  Dance:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls057029570                    # List by cala708
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Dance.png
+  Disney Channel:
+    template: {name: Custom}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/disney-channel-movies
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Disney%20Channel.png
+  Disney Parks:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls560201046
+    plex_search:
+      any:
+        title:
+          - Ultimate Walt Disney World                                  # It got removed for some reason while on the IMDb list
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Disney%20Parks.png
+  Epidemics and Pandemics:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls505219442
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Epidemics%20and%20Pandemics.png
+  Heists, Scams, Cons, and Robbers:
+    template: {name: Custom}
+    imdb_list:
+      - https://www.imdb.com/list/ls021415585                           # List by ivandjordjevic-43807
+      - https://www.imdb.com/list/ls075742206                           # List by martin-m-kiryakov
+      - https://www.imdb.com/list/ls098660180                           # List by malthe-tuxen
+      - https://www.imdb.com/list/ls068224634                           # List by tariquldipu
+      - https://www.imdb.com/list/ls009794682                           # List by dormerjam-1
+      - https://www.imdb.com/list/ls059928685                           # List by skmediadreams
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Heists%2C%20Scams%2C%20Cons%2C%20and%20Robbers.png
+  Historical Black Movies:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls560237349
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Historical%20Black%20Movies.png
+  Inspirational & Heart Warming:
+    template: {name: Custom}
+    imdb_list:
+      - https://www.imdb.com/list/ls069754038                           # List by AnonymousCritic
+      - https://www.imdb.com/list/ls079599062                           # List by harrismcteyd
+      - https://www.imdb.com/list/ls052687231                           # List by cybernik7
+    tmdb_movie:
+      - 227306  # Unbroken
+      - 14292   # Miracle
+      - 14534   # Rudy
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Inspirational%20%26%20Heart%20Warming.png
+  LGBT:
+    template: {name: Custom}
+    collection: Rotten Tomatoes - Best LGBT
+    tmdb_movie:
+      - 79837   # End of Love
+      - 365126  # Jess & James
+      - 48650   # Room in Rome
+      - 261776  # The Third One
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/LGBT.png
+  Mindfuck:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls084006834
+    summary: Movies that are mind bending, trippy, have big twists, have open endings, or make you think about them for days. Not all may apply. I have not watched them all. I gathered lists from multiple websites and Reddit posts.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Mindfuck.png
+  Mindfuck by HD Movie Lists:
+    template: {name: Custom}
+    mdblist_list: https://mdblist.com/lists/hdlists/mindfuck-movies
+    summary: A Growing Collection of Mindfuck Movies!
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Mindfuck%20by%20HD%20Movie%20Lists.png
+  Mindfuck by LISH:
+    template: {name: Custom}
+    trakt_list: https://trakt.tv/users/lish408/lists/mindfuck
+    summary: Complex plot. Big plot twist. Ending twist.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Mindfuck%20by%20LISH.png
+  Music:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls021457968                    # List by ivandjordjevic-43807
+    tmdb_movie:
+      - 424694  # Bohemian Rhapsody
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Music.png
+  My Favorites:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls550502260
+    summary: Obviously, I need to update this.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/My%20Favorites.png
+  Natural Disasters:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls505219626
+    tmdb_movie:
+      - 646380  # Don't Look Up
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Natural%20Disasters.png
+  Parody:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls088925450
+    mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Parody.png
+  Pride Month:
+    template: {name: Custom}
+    collection: LGBT
+    collection_order: random
+    schedule: range(06/01-06/30)
+    delete_not_scheduled: true
+    visible_library: false
+    visible_home: range(06/01-06/30)
+    visible_shared: range(06/01-06/30)
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Pride%20Month.png
+  Prison:
+    template: {name: Custom}
+    imdb_list:
+      - https://www.imdb.com/list/ls021403323                           # List by ivandjordjevic-43807
+      - https://www.imdb.com/list/ls055859064                           # List by fredrickholmlia
+      - https://www.imdb.com/list/ls053382995                           # List by sultanen_co
+    tmdb_movie:
+      - 440471  # Escape Plan 2: Hades
+      - 480042  # Escape Plan: The Extractors
+      - 348893  # Boyka: Undisputed IV
+      - 51620   # Death Race 2
+      - 156717  # Death Race: Inferno
+      - 401478  # Death Race: Beyond Anarchy
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Prison.png
+  Rock Climbing:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls084590179
+    plex_search:
+      any:
+        title:
+          - Dosage I                                                    # It got removed for some reason while on the IMDb list
+          - Dosage II                                                   # It got removed for some reason while on the IMDb list
+          - Dosage III                                                  # It got removed for some reason while on the IMDb list
+          - Dosage IV                                                   # It got removed for some reason while on the IMDb list
+          - Dosage V                                                    # It got removed for some reason while on the IMDb list
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Rock%20Climbing.png
+  Space Masterpieces:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls084547446
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Space%20Masterpieces.png
+  Spy & Agent:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls021488235                    # List by ivandjordjevic-43807
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Spy%20%26%20Agent.png
+  Stand-up Comedy:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls088617302
+#   imdb_list: https://www.imdb.com/list/ls041728102                    # List by sandrikoti. I would rather use my list above
+    plex_search:
+      any:
+        title:
+          - "Dave Chappelle: Sticks & Stones: Epilogue: The Punchline"
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Stand-up%20Comedy.png
+  Time Travel:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls068617191
+    summary: The ability to travel through time is by far my favorite movie story line. Who hasn"t, at least once in their lifetime, wished they could turn back the hands of time to buy a winning lottery ticket or to set something right that once went wrong? The movies listed below have a wide range of inventive ways on how the subjects are moved across time. Many of these films use either a mental ability, a magical device or time machine, some seem to have help from a higher power, and sometimes the person just wakes up in a different time. If you love TV shows like Outlander, Timeless, Doctor Who or Quantum Leap, then this list of the best time-traveling films is for you. -rlhron
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Time%20Travel.png
+  True Stories:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls021398170                    # List by ivandjordjevic-43807
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/True%20Stories.png
+  Unexpectedly Amazing:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls574663351                    # List by BuzzFeed. https://www.reddit.com/r/AskReddit/comments/7uzuxq/what_was_the_most_unexpectedly_amazing_movie/?sort=top
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Unexpectedly%20Amazing.png
+  Video Games (Live-action):
+    template: {name: Custom}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/movies-based-on-video-games-live-action
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Video%20Games%20(Live-action).png
+
+############################
+#         REGULAR          #
+############################
+
+  Cirque du Soleil:
+    template: {name: Regular}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/cirque-du-soleil
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Cirque%20du%20Soleil.png
+  James Bond:
+    template: {name: Regular}
+    imdb_list: https://www.imdb.com/list/ls084710852
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/James%20Bond.png
+  Star Trek:
+    template: {name: Regular}
+    imdb_list: https://www.imdb.com/list/ls084767125
+    plex_search:
+      any:
+        title:
+          - "Star Trek: Legacy"                                         # Fan edit
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Star%20Trek.png
+  Star Wars:
+    template: {name: Regular}
+    imdb_list: https://www.imdb.com/list/ls084761910
+    plex_search:
+      any:
+        title:
+          - "Star Wars: The Mandalorian Part I"
+          - "Star Wars: The Mandalorian Part II"
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Star%20Wars.png
+  X-Men:
+    template: {name: Regular}
+    imdb_list: https://www.imdb.com/list/ls560205320
+    plex_search:
+      any:
+        title:
+          - "X-Men: Days of Future Past (Rogue)"
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/X-Men.png
+
+############################
+#          GENRES          #
+############################
+
+  "'80s Comedy":
+    template: {name: Genres}
+    plex_search:
+      all:
+        decade: 1980
+        genre: Comedy
+    sort_title: "!08_Comedy 1980s"
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/'80s%20Comedy.png
+  "'90s Comedy":
+    template: {name: Genres}
+    plex_search:
+      all:
+        decade: 1990
+        genre: Comedy
+    sort_title: "!08_Comedy 1990s"
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/'90s%20Comedy.png
+
+############################
+#       IMDB GENRES        #
+############################
+
+  Action:
+    template: {name: IMDb Genres, genre: action}
+    summary: Action film is a genre wherein physical action takes precedence in the storytelling. The film will often have continuous motion and action including physical stunts, chases, fights, battles, and races. The story usually revolves around a hero that has a goal, but is facing incredible odds to obtain it.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Action.png
+  Animation:
+    template: {name: IMDb Genres, genre: animation}
+    summary: Animated film is a collection of illustrations that are photographed frame-by-frame and then played in a quick succession. Since its inception, animation has had a creative and imaginative tendency. Being able to bring animals and objects to life, this genre has catered towards fairy tales and children’s stories. However, animation has long been a genre enjoyed by all ages. As of recent, there has even been an influx of animation geared towards adults. Animation is commonly thought of as a technique, thus it’s ability to span over many different genres.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Animation.png
+  Biography:
+    template: {name: IMDb Genres, genre: biography}
+    summary: A Biography drama incorporates dramatic elements into a biographical film. These films differ from Historical and "based in truth" films because they specifically chronicle the life of a person or a group of people. Biography films attempt to show a comprehensive and accurate picture of the specific subject, thus they tend to be serious and intense.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Biography.png
+  Comedy:
+    template: {name: IMDb Genres, genre: comedy}
+    summary: Comedy is a genre of film that uses humor as a driving force. The aim of a comedy film is to illicit laughter from the audience through entertaining stories and characters. Although the comedy film may take on some serious material, most have a happy ending. Comedy film has the tendency to become a hybrid sub-genre because humor can be incorporated into many other genres. Comedies are more likely than other films to fall back on the success and popularity of an individual star.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Comedy.png
+  Crime:
+    template: {name: IMDb Genres, genre: crime}
+    summary: Crime film is a genre that revolves around the action of a criminal mastermind. A Crime film will often revolve around the criminal himself, chronicling his rise and fall. Some Crime films will have a storyline that follows the criminal's victim, yet others follow the person in pursuit of the criminal. This genre tends to be fast paced with an air of mystery – this mystery can come from the plot or from the characters themselves.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Crime.png
+  Documentary:
+    template: {name: IMDb Genres, genre: documentary}
+    imdb_list:
+      url: https://www.imdb.com/search/title/?genres=documentary,&release_date=1990-01-01,&user_rating=7,10&num_votes=50000,&sort=user_rating,desc
+      limit: 100
+    summary: A collection of documentary movies from 1990 to now, with a minimum rating of 7 and at least 50000 votes from IMDb.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Documentary.png
+  Drama:
+    template: {name: IMDb Genres, genre: drama}
+    summary: Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues. Whether heroes or heroines are facing a conflict from the outside or a conflict within themselves, Drama film aims to tell an honest story of human struggles.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Drama.png
+  Fantasy:
+    template: {name: IMDb Genres, genre: fantasy}
+    summary: Fantasy film is a genre that incorporates imaginative and fantastic themes. These themes usually involve magic, supernatural events, or fantasy worlds. Although it is its own distinct genre, these films can overlap into the horror and science fiction genres. Unlike science fiction, a fantasy film does not need to be rooted in fact. This element allows the audience to be transported into a new and unique world. Often, these films center on an ordinary hero in an extraordinary situation.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Fantasy.png
+  Historical:
+    template: {name: IMDb Genres, genre: history}
+    summary: Historical is a sub-genre of Drama film that examines a specific time in history or group of people. Many Historical films aim to portray true events and people. However, most Historical films are only loosely based on these events and people. These films tend to focus on the more glorified societies and people in history such as the Romans, specific Kings and Queens, or important political figures.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Historical.png
+  Horror:
+    template: {name: IMDb Genres, genre: horror}
+    summary: Horror film is a genre that aims to create a sense of fear, panic, alarm, and dread for the audience. These films are often unsettling and rely on scaring the audience through a portrayal of their worst fears and nightmares. Horror films usually center on the arrival of an evil force, person, or event. Many Horror films include mythical creatures such as ghosts, vampires, and zombies. Traditionally, Horror films incorporate a large amount of violence and gore into the plot. Though it has its own style, Horror film often overlaps into Fantasy, Thriller, and Science-Fiction genres.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Horror.png
+  Mystery:
+    template: {name: IMDb Genres, genre: mystery}
+    summary: A Mystery/Suspense film centers on a person of authority, usually a detective, that is trying to solve a mysterious crime. The main protagonist uses clues, investigation, and logical reasoning. The biggest element in these films is a sense of "whodunit" suspense, usually created through visual cues and unusual plot twists.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Mystery.png
+  Romance:
+    template: {name: IMDb Genres, genre: romance}
+    summary: "Romance film can be defined as a genre wherein the plot revolves around the love between two protagonists. This genre usually has a theme that explores an issue within love, including but not limited to: love at first sight, forbidden love, love triangles, and sacrificial love. The tone of Romance film can vary greatly. Whether the end is happy or tragic, Romance film aims to evoke strong emotions in the audience."
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Romance.png
+  Romantic Comedy:
+    template: {name: IMDb Genres, genre: romance,comedy}
+    summary: Romantic-Comedy is a genre that attempts to catch the viewer’s heart with the combination of love and humor. This sub-genre is light-hearted and usually places the two protagonists in humorus situation. Romantic-Comedy film revolves around a romantic ideal, such as true love. In the end, the ideal triumphs over the situation or obstacle, thus creating a happy ending.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Romantic%20Comedy.png
+  Science Fiction:
+    template: {name: IMDb Genres, genre: sci-fi}
+    summary: Science Fiction film is a genre that incorporates hypothetical, science-based themes into the plot of the film. Often, this genre incorporates futuristic elements and technologies to explore social, political, and philosophical issues. The film itself is usually set in the future, either on earth or in space. Traditionally, a Science Fiction film will incorporate heroes, villains, unexplored locations, fantastical quests, and advanced technology.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Science%20Fiction.png
+  Thriller:
+    template: {name: IMDb Genres, genre: thriller}
+    summary: Thriller Film is a genre that revolves around anticipation and suspense. The aim for Thrillers is to keep the audience alert and on the edge of their seats. The protagonist in these films is set against a problem – an escape, a mission, or a mystery. No matter what sub-genre a Thriller film falls into, it will emphasize the danger that the protagonist faces. The tension with the main problem is built on throughout the film and leads to a highly stressful climax.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Thriller.png
+  Western:
+    template: {name: IMDb Genres, genre: western}
+    summary: "Western Film is a genre that revolves around stories primarily set in the late 19th century in the American Old West. Most Westerns are set between the American Civil War (1865) and the early 1900s. Common themes within Western Film include: the conquest of the wild west, the cultural separation of the East and the West, the West’s resistance to modern change, the conflict between Cowboys and Indians, outlaws, and treasure/gold hunting. American Western Film usually revolves around a stoic hero and emphasizes the importance of honor and sacrifice."
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Thriller.png
+
+############################
+#      IMDB KEYWORDS       #
+############################
+
+  Superhero:
+    template: {name: IMDb Keywords, keyword: superhero}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Superhero.png
+
+############################
+#    STREAMING SERVICES    #
+############################
+
+  Apple TV+:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls084062897
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Apple%20TV%2B.png
+  HBO Max:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls084378296
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/HBO%20Max.png
+  Hulu:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls084378943
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Hulu.png
+  Netflix:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls084069524
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Netflix.png
+  Netflix Stand-up:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls560028451
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Netflix%20Stand-up.png
+  Paramount+:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls574137821
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Paramount%2B.png
+  Prime Video:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls084378896
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Prime%20Video.png
+
+############################
+#         STUDIOS          #
+############################
+
+  DC:
+    template: {name: Studios}
+    imdb_list:
+      - https://www.imdb.com/list/ls084123848
+      - https://www.imdb.com/list/ls084122077
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/DC.png
+# DC:
+#   template: {name: Studios}
+#   tmdb_company: 429
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/DC.png
+# DC:
+#   template: {name: Studios}
+#   collection:
+#     - DC Animated Movies
+#     - DC Live Action
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/DC.png
+  DC (Animated):
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084123848
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/DC%20(Animated).png
+  DC (Animated Movie Universe):
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084121860
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/DC%20(Animated%20Movie%20Universe).png
+  DC (Extended Universe):
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084122673
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/DC%20(Extended%20Universe).png
+  DC (Live-action):
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084122077
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/DC%20(Live-action).png
+  DC (Showcase):
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084122453
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/DC%20(Showcase).png
+  Marvel:
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084048577
+    plex_search:
+      any:
+        title:
+          - "Marvel's Infinity Saga: The Sacred Timeline"               # Fan edit
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Marvel.png
+  Marvel Cinematic Universe:
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084049253
+    plex_search:
+      any:
+        title:
+          - "Marvel's Infinity Saga: The Sacred Timeline"               # Fan edit
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Marvel%20Cinematic%20Universe.png
+  Marvel Cinematic Universe (Chronological):
+    template: {name: Studios}
+    trakt_list: https://trakt.tv/users/jawann2002/lists/marvel-cinematic-universe-movies?sort=rank,asc
+    plex_search:
+      any:
+        title:
+          - "Marvel's Infinity Saga: The Sacred Timeline"               # Fan edit
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Marvel%20Cinematic%20Universe.png
+# Marvel Cinematic Universe (Chronological):                            # This includes the TV Shows also
+#   template: {name: Studios}
+#   trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
+#   plex_search:
+#     any:
+#       title:
+#         - "Marvel's Infinity Saga: The Sacred Timeline"               # Fan edit
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Marvel%20Cinematic%20Universe.png
+  Pixar:
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084018331
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Pixar.png
+  Pixar Shorts:
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084018915
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Pixar%20Shorts.png
+  Pixar SparkShorts:
+    template: {name: Studios}
+    tmdb_list: https://www.themoviedb.org/list/7107731
+    summary: SparkShorts is a series of American independent animated short films produced by Pixar Animation Studios. It consists of a program in which Pixar's employees are given six months and limited budgets to develop animated short films that were originally released on Pixar's YouTube channel, and later on Disney+.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Pixar%20SparkShorts.png
+  Walt Disney Animation Studios:
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls579363081
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Walt%20Disney%20Animation%20Studios.png
+
+############################
+#         HOLIDAYS         #
+############################
+
+  Christmas Movies:
+    template: {name: Holidays}
+    imdb_list: https://www.imdb.com/list/ls084064285
+    schedule: yearly(11/30)
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Christmas%20Movies.png
+  Halloween Movies:
+    template: {name: Holidays}
+    imdb_list: https://www.imdb.com/list/ls084064776
+    schedule: yearly(09/30)
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Halloween%20Movies.png
+
+############################
+#          YEARS           #
+############################
+
+  2020 Movies:
+    template: {name: Years}
+    plex_search:
+      all:
+        year: 2020
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/2020%20Movies.png
+  2021 Movies:
+    template: {name: Years}
+    plex_search:
+      all:
+        year: 2021
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/2021%20Movies.png
+  2022 Movies:
+    template: {name: Years}
+    plex_search:
+      all:
+        year: 2022
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/2022%20Movies.png
+
+############################
+#          AUDIO           #
+############################
+
+  DTS-HD Master Audio:
+    template: {name: Audio}
+    plex_all: true
+    filters:
+      filepath: DTS-HD MA
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/DTS-HD%20Master%20Audio.png
+  TrueHD Atmos:
+    template: {name: Audio}
+    plex_all: true
+    filters:
+      filepath: TrueHD Atmos
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/TrueHD%20Atmos.png
+
+############################
+#          RANDOM          #
+############################
+
+  Random Movies:
+    sort_title: "!15_! Random Movies"
+    smart_filter:
+      all:
+        year.gte: 1980
+      sort_by: random
+      limit: 5
+    collection_mode: hide
+    summary: Random movies every time it loads.
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    schedule: never                                                     # Not scheduled to run because it only needs to run once
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Movies.png
+  Random Action:
+    template: {name: Random, genre: Action}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Action.png
+  Random Animation:
+    template: {name: Random, genre: Animation}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Animation.png
+  Random Biography:
+    template: {name: Random, genre: Biography}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Biography.png
+  Random Comedy:
+    template: {name: Random, genre: Comedy}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Comedy.png
+  Random Crime:
+    template: {name: Random, genre: Crime}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Crime.png
+  Random Documentary:
+    template: {name: Random, genre: Documentary}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Documentary.png
+  Random Drama:
+    template: {name: Random, genre: Drama}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Drama.png
+  Random Fantasy:
+    template: {name: Random, genre: Fantasy}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Fantasy.png
+  Random History:
+    template: {name: Random, genre: History}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20History.png
+  Random Horror:
+    template: {name: Random, genre: Horror}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Horror.png
+  Random Mystery:
+    template: {name: Random, genre: Mystery}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Mystery.png
+  Random Romance:
+    template: {name: Random, genre: Romance}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Romance.png
+  Random Romantic Comedy:
+    template: {name: Random, genre: Romance, Comedy}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Romantic%20Comedy.png
+  Random Science Fiction:
+    template: {name: Random, genre: Science Fiction}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Science%20Fiction.png
+  Random Thriller:
+    template: {name: Random, genre: Thriller}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Thriller.png
+  Random Western:
+    template: {name: Random, genre: Western}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Western.png
+
+############################
+#          ACTORS          #
+############################
+
+  Charlize Theron:
+    template: {name: Actors, person: 6885}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Charlize%20Theron.jpeg
+  Dwayne Johnson:
+    template: {name: Actors, person: 18918}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Dwayne%20Johnson.jpeg
+  Gal Gadot:
+    template: {name: Actors, person: 90633}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Gal%20Gadot.jpeg
+  Jason Bateman:
+    template: {name: Actors, person: 23532}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Jason%20Bateman.jpg
+  Keanu Reeves:
+    template: {name: Actors, person: 6384}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Keanu%20Reeves.jpeg
+  Leonardo DiCaprio:
+    template: {name: Actors, person: 6193}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Leonardo%20DiCaprio.jpeg
+  Mark Wahlberg:
+    template: {name: Actors, person: 13240}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Mark%20Wahlberg.jpg
+  Morgan Freeman:
+    template: {name: Actors, person: 192}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Morgan%20Freeman.jpeg
+  Scarlett Johansson:
+    template: {name: Actors, person: 1245}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Scarlett%20Johansson.jpeg
+  Will Ferrell:
+    template: {name: Actors, person: 23659}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Will%20Ferrell.jpg
+
+############################
+#        DIRECTORS         #
+############################
+
+  Christopher Nolan:
+    template: {name: Directors, person: 525}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Christopher%20Nolan.jpeg
+  Clint Eastwood:
+    template: {name: Directors, person: 190}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Clint%20Eastwood.jpeg
+  Quentin Tarantino:
+    template: {name: Directors, person: 138}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Quentin%20Tarantino.jpeg
+
+############################
+#          DOLBY           #
+############################
+
+# Dolby Atmos:
+#   template: {name: Dolby}
+#   mdblist_list: https://mdblist.com/lists/blisskodi/dolby-atmos-film
+# Dolby Atmos & Dolby Vision:
+#   template: {name: Dolby}
+#   mdblist_list: https://mdblist.com/lists/blisskodi/dolby-atmos-dolby-vision-film
+# Dolby Vision:
+#   template: {name: Dolby}
+#   mdblist_list: https://mdblist.com/lists/blisskodi/dolby-vision-film

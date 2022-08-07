@@ -1,1141 +1,752 @@
+############################
+#        TEMPLATES         #
+############################
+
 templates:
-
-#####################################
-#   HOLIDAY TEMPLATE BY DRAZZIZZI   #
-#####################################
-
-  Holiday:
-    smart_label: title.asc
-    summary: A timed collection of <<holiday>> movies and other movies that may relate to the holiday. This collection will automatically disappear once the holiday period is over.
-    delete_not_scheduled: true
-    sort_title: '!AA'
-    visible_home: true
-    visible_shared: true
+  Charts:
+    sort_title: "!01_<<collection_name>>"
     sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: daily
+  Oscars:
+    sort_title: "!02_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release.desc
+    collection_mode: hide
+    schedule: yearly(03/01)
+  AFI's 100:
+    sort_title: "!03_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: yearly(03/01)
+  Best Of - Rotten Tomatoes - Years:
+    sort_title: "!04_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: yearly(03/01)
+  Best Of - Rotten Tomatoes - Genres:
+    sort_title: "!05_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: yearly(03/01)
+  Custom:
+    sort_title: "!06_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+    schedule: monthly(10)
+  Regular:
+    sort_title: "!07_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: monthly(10)
+  Genres:
+    sort_title: "!08_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+    schedule: weekly(friday)
+  IMDb Genres:
+    default:
+      type: feature
+      year_min: 1980
+      rating_min: 7
+      votes_min: 50000
+      limit: 100
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=<<type>>,&genres=<<genre>>,&release_date=<<year_min>>-01-01,&user_rating=<<rating_min>>,10&num_votes=<<votes_min>>,&sort=user_rating,desc
+      limit: <<limit>>
+    sort_title: "!08_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    summary: A collection of <<genre>> movies from <<year_min>> to now, with a minimum rating of <<rating_min>> and at least <<votes_min>> votes from IMDb. Sorted by rating.
+    schedule: weekly(friday)
+  IMDb Keywords:
+    default:
+      type: movie
+      year_min: 1980
+      rating_min: 7
+      votes_min: 50000
+      limit: 100
+    imdb_list:
+      url: https://www.imdb.com/search/keyword/?keywords=<<keyword>>&title_type=<<type>>,&release_date=<<year_min>>-01-01,&user_rating=<<rating_min>>,10&num_votes=<<votes_min>>,&sort=user_rating,desc
+      limit: <<limit>>
+    sort_title: "!09_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    summary: A collection of <<keyword>> movies from <<year_min>> to now, with a minimum rating of <<rating_min>> and at least <<votes_min>> votes from IMDb. Sorted by rating.
+    schedule: weekly(friday)
+  Streaming Services:
+    sort_title: "!10_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: daily
+  Studios:
+    sort_title: "!11_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: daily
+  Holidays:
+    sort_title: "!12_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+  Years:
+    sort_title: "!13_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: weekly(friday)
+  Audio:
+    sort_title: "!14_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+    schedule: daily
+  Random:
+    sort_title: "!15_<<collection_name>>"
+    smart_filter:
+      all:
+        genre: <<genre>>
+        year.gte: 1980
+      sort_by: random
+      limit: 5
+    collection_mode: hide
+    summary: Random <<genre>> movies every time it loads.
+    schedule: never                                                     # Not scheduled to run because it only needs to run once
+  Actors:
+    actor: tmdb
+    tmdb_person: <<person>>
+    sort_title: "!16_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: weekly(friday)
+  Directors:
+    director: tmdb
+    tmdb_person: <<person>>
+    sort_title: "!17_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: weekly(friday)
+  Dolby:
+    sort_title: "!18_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: weekly(friday)
+
+############################
+#       COLLECTIONS        #
+############################
 
 collections:
 
 ############################
-#         POPULAR          #
+#          CHARTS          #
 ############################
 
   IMDb Top 250:
+    template: {name: Charts}
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&sort=user_rating,desc
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*100"
-    schedule: daily
-  TMDb Top Rated:
-    tmdb_top_rated: 30
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*101"
-    schedule: daily
   TMDb Most Popular:
+    template: {name: Charts}
     tmdb_popular: 30
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*102"
-    schedule: daily
+  TMDb Top Rated:
+    template: {name: Charts}
+    tmdb_top_rated: 30
   TMDb Weekly Trending:
+    template: {name: Charts}
     tmdb_trending_weekly: 30
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*103"
-    schedule: daily
-  Trakt Trending:
-    trakt_trending: 30
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*104"
-    schedule: daily
-
-############################
-#         DISCOVER         #
-############################
-
-  Animated Kids Most Popular:
-    tmdb_discover:
-      limit: 30
-      with_genres: 16
-      certification_country: US
-      certification: G|PG
-      sort_by: popularity.desc
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    summary: A collection of the most popular Animated Kids movies from TMDb
-    sort_title: "*150"
-    schedule: daily
-
-############################
-#    TRAKT COLLECTIONS     #
-############################
-
-# Made by Magic
-
-  Trending Now (Unplayed):
-    trakt_chart:
-      chart: trending
-      limit: 100
-    sort_title: "!B Trending Now"
-    url_poster: https://raw.githubusercontent.com/Magic815/Plex-Meta-Manager-Configs/main/collection%20posters/Trakt-Trending-Now.png
-    sync_mode: sync
-    collection_mode: default
-    collection_filtering: user
-    visible_library: true
-    visible_home: true
-    visible_shared: true
-    smart_label:
-      sort_by: release.desc
-      all:
-        label: <<smart_label>>
-        unplayed: true
-    schedule: daily
-  Most Watched This Week (Unplayed):
-    trakt_chart:
-      chart: watched
-      time_period: weekly
-      limit: 100
-    sort_title: "!B Watched This Week"
-    url_poster: https://raw.githubusercontent.com/Magic815/Plex-Meta-Manager-Configs/main/collection%20posters/Trakt-Most-Watched-This-Week.png
-    sync_mode: sync
-    collection_mode: default
-    collection_filtering: user
-    visible_library: false
-    visible_home: false
-    visible_shared: false
-    smart_label:
-      sort_by: release.desc
-      all:
-        label: <<smart_label>>
-        unplayed: true
-    schedule: daily
-  Most Watched This Year (Unplayed):
-    trakt_chart:
-      chart: watched
-      time_period: yearly
-      limit: 200
-    sort_title: "!B Watched This Year"
-    url_poster: https://raw.githubusercontent.com/Magic815/Plex-Meta-Manager-Configs/main/collection%20posters/Trakt-Most-Watched-This-Year.png
-    sync_mode: sync
-    collection_mode: default
-    collection_filtering: user
-    visible_library: false
-    visible_home: false
-    visible_shared: false
-    smart_label:
-      sort_by: release.desc
-      all:
-        label: <<smart_label>>
-        unplayed: true
-    schedule: daily
+  Top 10 Pirated Movies:
+    template: {name: Charts}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/top-10-pirated-movies-of-the-week
+# Trakt Trending:                                                       # I'm using this instead: Movies - Trakt (Unplayed) by Magic815
+#   template: {name: Charts}
+#   trakt_trending: 30
 
 ############################
 #         BEST OF          #
 ############################
 
-  Best Picture:
-    imdb_list: https://www.imdb.com/list/ls560768259
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*105"
-    schedule: yearly(03/01)
-  Best Animated Feature Film:
-    imdb_list: https://www.imdb.com/list/ls560364561
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*105b"
-    schedule: yearly(03/01)
-  Best Cinematography:
-    imdb_list: https://www.imdb.com/list/ls560369098
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*105c"
-    schedule: yearly(03/01)
-  Best Film Editing:
-    imdb_list: https://www.imdb.com/list/ls560364494
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*105d"
-    schedule: yearly(03/01)
-  Best Sound:
-    imdb_list: https://www.imdb.com/list/ls560369669
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*105e"
-    schedule: yearly(03/01)
-  Best Visual Effects:
-    imdb_list: https://www.imdb.com/list/ls560368042
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*105f"
-    schedule: yearly(03/01)
-  "AFI's 100":
+  AFI's 100:
+    template: {name: "AFI's 100"}
     imdb_list: https://www.imdb.com/list/ls027841309
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*106"
     summary: AFI's 100 Years... 100 Movies – 10th Anniversary Edition (2007) is an updated edition to AFI"s 100 Years... 100 Movies, a list of the top 100 greatest American films of all time. Honoring the 10th anniversary of this award-winning series, a jury of 1,500 film artists, critics, and historians determined that Citizen Kane remained the greatest movie of all time. AFI stands for American Film Institute.
-    schedule: yearly(01/30)
-  Rotten Tomatoes - Best of 2014:
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2014
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*107"
-    schedule: yearly(01/30)
-  Rotten Tomatoes - Best of 2015:
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2015
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*108"
-    schedule: yearly(01/30)
-  Rotten Tomatoes - Best of 2016:
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2016
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*109"
-    schedule: yearly(01/30)
-  Rotten Tomatoes - Best of 2017:
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2017
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*110"
-    schedule: yearly(01/30)
-  Rotten Tomatoes - Best of 2018:
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2018
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*111"
-    schedule: yearly(01/30)
-  Rotten Tomatoes - Best of 2019:
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2019
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*112"
-    schedule: yearly(01/30)
-  Rotten Tomatoes - Best of 2020:
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2020
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*113"
-    schedule: yearly(01/30)
+  Best Animated Feature Film:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560364561
+  Best Cinematography:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560369098
+  Best Film Editing:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560364494
+  Best Picture:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560768259
+  Best Sound:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560369669
+  Best Visual Effects:
+    template: {name: Oscars}
+    imdb_list: https://www.imdb.com/list/ls560368042
   Rotten Tomatoes - Best All Time:
+    template: {name: Best Of - Rotten Tomatoes - Years}
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-top-100-movies-of-all-time
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*114"
-    schedule: monthly(10)
-  Rotten Tomatoes - Best Rom Com:
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*115"
-    schedule: monthly(10)
+# Rotten Tomatoes - Best of 2014:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2014
+# Rotten Tomatoes - Best of 2015:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2015
+# Rotten Tomatoes - Best of 2016:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2016
+# Rotten Tomatoes - Best of 2017:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2017
+# Rotten Tomatoes - Best of 2018:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2018
+# Rotten Tomatoes - Best of 2019:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2019
+# Rotten Tomatoes - Best of 2020:
+#   template: {name: Best Of - Rotten Tomatoes - Years}
+#   trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-2020
   Rotten Tomatoes - Best Horror:
+    template: {name: Best Of - Rotten Tomatoes - Genres}
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*116"
-    schedule: monthly(10)
   Rotten Tomatoes - Best LGBT:
+    template: {name: Best Of - Rotten Tomatoes - Genres}
     trakt_list: https://trakt.tv/users/saara-v-a/lists/rotten-tomatoes-150-best-lgbt-movies-of-all-time-copy
-    sync_mode: sync
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*117"
-    schedule: monthly(10)
+  Rotten Tomatoes - Best Rom Com:
+    template: {name: Best Of - Rotten Tomatoes - Genres}
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
 
 ############################
 #          CUSTOM          #
 ############################
 
-  Mindfuck:
-    imdb_list: https://www.imdb.com/list/ls084006834
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*400"
-    summary: Movies that are mind bending, trippy, have big twists, have open endings, or make you think about them for days. Not all may apply. I have not watched them all. I gathered lists from multiple websites and Reddit posts.
-    schedule: monthly(10)
-  Mindfuck by LISH:
-    trakt_list: https://trakt.tv/users/lish408/lists/mindfuck
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*400b"
-    summary: Complex plot. Big plot twist. Ending twist.
-    schedule: monthly(10)
-  Mindfuck by HD Movie Lists:
-    mdblist_list: https://mdblist.com/lists/hdlists/mindfuck-movies
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*400c"
-    summary: A Growing Collection of Mindfuck Movies!
-    schedule: monthly(10)
-  James Bond:
-    imdb_list: https://www.imdb.com/list/ls084710852
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*401"
-    schedule: monthly(10)
-  Space Masterpieces:
-    imdb_list: https://www.imdb.com/list/ls084547446
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*402"
-    schedule: monthly(10)
-  Star Trek:
-    imdb_list: https://www.imdb.com/list/ls084767125
-    sync_mode: append                                                   # Append for Star Trek: Legacy
-    collection_mode: default
-    collection_order: release
-    sort_title: "*403"
-    schedule: monthly(10)
-  Star Wars:
-    imdb_list: https://www.imdb.com/list/ls084761910
-    sync_mode: append                                                   # Append for Star Wars: The Mandalorian Parts I and II
-    collection_mode: default
-    collection_order: release
-    sort_title: "*404"
-    schedule: monthly(10)
-  Rock Climbing:
-    imdb_list: https://www.imdb.com/list/ls084590179
-    sync_mode: append                                                   # Append for Dosage Collection. It got removed for some reason while on the IMDb list
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*405"
-    schedule: monthly(10)
-  Abbott & Costello:
-    imdb_list: https://www.imdb.com/list/ls084772233
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*406"
-    schedule: yearly(01/30)
-  Inspirational & Heart Warming:
-    imdb_list:
-      - https://www.imdb.com/list/ls069754038
-      - https://www.imdb.com/list/ls079599062
-      - https://www.imdb.com/list/ls052687231
-    tmdb_movie:
-      - 227306
-      - 14292
-      - 14534
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*407"
-    schedule: monthly(10)
-  True Stories:
-    imdb_list: https://www.imdb.com/list/ls021398170
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*408"
-    schedule: monthly(10)
+  Classic Disney Animated Movies:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls088609910
+  Classic Disney Channel Movies:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls560667605
+  Classic Sports Movies:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls088609451
+  Dance:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls057029570                    # List by cala708
+  Disney Parks:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls560201046
+    plex_search:
+      any:
+        title:
+          - Ultimate Walt Disney World                                  # It got removed for some reason while on the IMDb list
+  Epidemics and Pandemics:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls505219442
   Heists, Scams, Cons, and Robbers:
+    template: {name: Custom}
     imdb_list:
-      - https://www.imdb.com/list/ls021415585
-      - https://www.imdb.com/list/ls075742206
-      - https://www.imdb.com/list/ls098660180
-      - https://www.imdb.com/list/ls068224634
-      - https://www.imdb.com/list/ls009794682
-      - https://www.imdb.com/list/ls059928685
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*409"
-    schedule: monthly(10)
-  Music:
-    imdb_list: https://www.imdb.com/list/ls021457968
-    tmdb_movie: 424694
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*410"
-    schedule: monthly(10)
-  Spy & Agent:
-    imdb_list: https://www.imdb.com/list/ls021488235
-    tmdb_movie: 458156
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*411"
-    schedule: monthly(10)
-  Prison:
+      - https://www.imdb.com/list/ls021415585                           # List by ivandjordjevic-43807
+      - https://www.imdb.com/list/ls075742206                           # List by martin-m-kiryakov
+      - https://www.imdb.com/list/ls098660180                           # List by malthe-tuxen
+      - https://www.imdb.com/list/ls068224634                           # List by tariquldipu
+      - https://www.imdb.com/list/ls009794682                           # List by dormerjam-1
+      - https://www.imdb.com/list/ls059928685                           # List by skmediadreams
+  Historical Black Movies:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls560237349
+  Inspirational & Heart Warming:
+    template: {name: Custom}
     imdb_list:
-      - https://www.imdb.com/list/ls021403323
-      - https://www.imdb.com/list/ls055859064
-      - https://www.imdb.com/list/ls053382995
+      - https://www.imdb.com/list/ls069754038                           # List by AnonymousCritic
+      - https://www.imdb.com/list/ls079599062                           # List by harrismcteyd
+      - https://www.imdb.com/list/ls052687231                           # List by cybernik7
     tmdb_movie:
-      - 440471
-      - 480042
-      - 348893
-      - 51620
-      - 156717
-      - 401478
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*412"
-    schedule: monthly(10)
+      - 227306  # Unbroken
+      - 14292   # Miracle
+      - 14534   # Rudy
   LGBT:
-    plex_collection: Rotten Tomatoes - Best LGBT
+    template: {name: Custom}
+    collection: Rotten Tomatoes - Best LGBT
     tmdb_movie:
-      - 79837
-      - 261776
-      - 365126
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*413"
-    schedule: monthly(10)
-  Time Travel:
-    imdb_list: https://www.imdb.com/list/ls068617191
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*414"
-    summary: The ability to travel through time is by far my favorite movie story line. Who hasn"t, at least once in their lifetime, wished they could turn back the hands of time to buy a winning lottery ticket or to set something right that once went wrong? The movies listed below have a wide range of inventive ways on how the subjects are moved across time. Many of these films use either a mental ability, a magical device or time machine, some seem to have help from a higher power, and sometimes the person just wakes up in a different time. If you love TV shows like Outlander, Timeless, Doctor Who or Quantum Leap, then this list of the best time-traveling films is for you. -rlhron
-    schedule: monthly(10)
+      - 79837   # End of Love
+      - 365126  # Jess & James
+      - 48650   # Room in Rome
+      - 261776  # The Third One
+      - 342672  # 4th Man Out
+  Mindfuck:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls084006834
+    summary: Movies that are mind bending, trippy, have big twists, have open endings, or make you think about them for days. Not all may apply. I have not watched them all. I gathered lists from multiple websites and Reddit posts.
+  Mindfuck by HD Movie Lists:
+    template: {name: Custom}
+    mdblist_list: https://mdblist.com/lists/hdlists/mindfuck-movies
+    summary: A Growing Collection of Mindfuck Movies!
+  Mindfuck by LISH:
+    template: {name: Custom}
+    trakt_list: https://trakt.tv/users/lish408/lists/mindfuck
+    summary: Complex plot. Big plot twist. Ending twist.
+  Music:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls021457968                    # List by ivandjordjevic-43807
+    tmdb_movie:
+      - 424694  # Bohemian Rhapsody
+  My Favorites:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls550502260
+    summary: Obviously, I need to update this.
   Natural Disasters:
+    template: {name: Custom}
     imdb_list: https://www.imdb.com/list/ls505219626
     tmdb_movie:
-      - 646380
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*415"
-    schedule: monthly(10)
-  Epidemics and Pandemics:
-    imdb_list: https://www.imdb.com/list/ls505219442
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*416"
-    schedule: monthly(10)
-  Unexpectedly Amazing:
-    imdb_list: https://www.imdb.com/list/ls574663351
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*417"
-    summary: List gathered by Crystal Ro at BuzzFeed from https://www.reddit.com/r/AskReddit/comments/7uzuxq/what_was_the_most_unexpectedly_amazing_movie/?sort=top
-    schedule: yearly(01/30)
+      - 646380  # Don't Look Up
   Parody:
+    template: {name: Custom}
     imdb_list: https://www.imdb.com/list/ls088925450
     mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*418"
-    schedule: monthly(10)
-  Video Games (Live-action):
-    mdblist_list: https://mdblist.com/lists/awesomeaustn/movies-based-on-video-games-live-action
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*419"
-    schedule: monthly(10)
-  Cirque du Soleil:
-    mdblist_list: https://mdblist.com/lists/awesomeaustn/cirque-du-soleil
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*420"
-    schedule: monthly(10)
-  Historical Black Movies:
-    imdb_list: https://www.imdb.com/list/ls560237349
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*421"
-    schedule: monthly(10)
-  Classic Disney Animated Movies:
-    imdb_list: https://www.imdb.com/list/ls088609910
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    schedule: yearly(01/30)
-  Classic Sports Movies:
-    imdb_list: https://www.imdb.com/list/ls088609451
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    schedule: yearly(01/30)
-  Disney Channel Original Movies:
-    imdb_list: https://www.imdb.com/list/ls560667605
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    schedule: yearly(01/30)
-  Stand-up Comedy:
-    imdb_list: https://www.imdb.com/list/ls088617302
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    schedule: monthly(10)
-#  Stand-up Comedy:
-#    imdb_list: https://www.imdb.com/list/ls041728102
-#    sync_mode: sync
-#    collection_mode: default
-#    collection_order: alpha
-#    schedule: monthly(10)
-  X-Men:
-    imdb_list: https://www.imdb.com/list/ls560205320
-    sync_mode: append                                                   # Special Editions not included in the list (Rogue)
-    collection_mode: default
-    collection_order: alpha
-    schedule: monthly(10)
-  Disney Parks:
-    imdb_list: https://www.imdb.com/list/ls560201046
-    sync_mode: append                                                   # Append for Ultimate Walt Disney World. It got removed for some reason while on the IMDb list
-    collection_mode: default
-    collection_order: alpha
-    schedule: monthly(10)
-  My Favorite Movies:
-    imdb_list: https://www.imdb.com/list/ls550502260
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*450"
-    schedule: monthly(10)
-
-############################
-#         STUDIOS          #
-############################
-
-  Pixar:
-    imdb_list: https://www.imdb.com/list/ls084018331
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*500"
-    schedule: weekly(friday)
-  Pixar Shorts:
-    imdb_list: https://www.imdb.com/list/ls084018915
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*501"
-    schedule: weekly(friday)
-  Pixar SparkShorts:
-    tmdb_list: https://www.themoviedb.org/list/7107731
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*502"
-    summary: SparkShorts is a series of American independent animated short films produced by Pixar Animation Studios. It consists of a program in which Pixar's employees are given six months and limited budgets to develop animated short films that were originally released on Pixar's YouTube channel, and later on Disney+.
-    schedule: weekly(friday)
-  Marvel:
-    imdb_list: https://www.imdb.com/list/ls084048577
-    sync_mode: append                                                   # Append for Marvel's Infinity Saga: The Sacred Timeline
-    collection_mode: default
-    collection_order: release
-    sort_title: "*503"
-    schedule: weekly(friday)
-  Marvel Cinematic Universe:
-    imdb_list: https://www.imdb.com/list/ls084049253
-    sync_mode: append                                                   # Append for Marvel's Infinity Saga: The Sacred Timeline
-    collection_mode: default
-    collection_order: release
-    sort_title: "*504"
-    schedule: weekly(friday)
-  Marvel Cinematic Universe (Chronological):
-    trakt_list: https://trakt.tv/users/jawann2002/lists/marvel-cinematic-universe-movies?sort=rank,asc
-    sync_mode: append                                                   # Append for Marvel's Infinity Saga: The Sacred Timeline
-    collection_mode: default
-    collection_order: custom
-    sort_title: "*504b"
-    schedule: weekly(friday)
-    file_poster: /config/assets/Marvel Cinematic Universe.png
-#  Marvel Cinematic Universe (Chronological):                           # This includes the TV Shows also
-#    trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
-#    sync_mode: append                                                   # Append for Marvel's Infinity Saga: The Sacred Timeline
-#    collection_mode: default
-#    collection_order: custom
-#    sort_title: "*504b"
-#    schedule: weekly(friday)
-#    file_poster: /config/assets/Marvel Cinematic Universe.png
-  DC:
+  Pride Month:
+    template: {name: Custom}
+    collection: LGBT
+    collection_order: random
+    schedule: range(06/01-06/30)
+    delete_not_scheduled: true
+    visible_library: false
+    visible_home: range(06/01-06/30)
+    visible_shared: range(06/01-06/30)
+  Prison:
+    template: {name: Custom}
     imdb_list:
-      - https://www.imdb.com/list/ls084123848
-      - https://www.imdb.com/list/ls084122077
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*505"
-    file_poster: /config/assets/DC-2.png
-    schedule: weekly(friday)
-#  DC:
-#    tmdb_company: 429
-#    sync_mode: sync
-#    collection_mode: default
-#    collection_order: release
-#    sort_title: "*505"
-#    file_poster: /config/assets/DC-2.png
-#    schedule: weekly(friday)
-#  DC:
-#    plex_collection:
-#      - DC Animated Movies
-#      - DC Live Action
-#    sync_mode: sync
-#    collection_mode: default
-#    collection_order: release
-#    sort_title: "*505"
-#    file_poster: /config/assets/DC-2.png
-#    schedule: weekly(friday)
-  DC Animated Movies:
-    imdb_list: https://www.imdb.com/list/ls084123848
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*506"
-    schedule: weekly(friday)
-  DC Animated Movie Universe:
-    imdb_list: https://www.imdb.com/list/ls084121860
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*507"
-    schedule: weekly(friday)
-  DC Showcase:
-    imdb_list: https://www.imdb.com/list/ls084122453
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*508"
-    schedule: weekly(friday)
-  DC Live Action:
-    imdb_list: https://www.imdb.com/list/ls084122077
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*509"
-    schedule: weekly(friday)
-  DC Extended Universe:
-    imdb_list: https://www.imdb.com/list/ls084122673
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*510"
-    schedule: weekly(friday)
-  Walt Disney Animation Studios:
-    imdb_list: https://www.imdb.com/list/ls579363081
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*511"
-    schedule: weekly(friday)
+      - https://www.imdb.com/list/ls021403323                           # List by ivandjordjevic-43807
+      - https://www.imdb.com/list/ls055859064                           # List by fredrickholmlia
+      - https://www.imdb.com/list/ls053382995                           # List by sultanen_co
+    tmdb_movie:
+      - 440471  # Escape Plan 2: Hades
+      - 480042  # Escape Plan: The Extractors
+      - 348893  # Boyka: Undisputed IV
+      - 51620   # Death Race 2
+      - 156717  # Death Race: Inferno
+      - 401478  # Death Race: Beyond Anarchy
+  Rock Climbing:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls084590179
+    plex_search:
+      any:
+        title:
+          - Dosage I                                                    # It got removed for some reason while on the IMDb list
+          - Dosage II                                                   # It got removed for some reason while on the IMDb list
+          - Dosage III                                                  # It got removed for some reason while on the IMDb list
+          - Dosage IV                                                   # It got removed for some reason while on the IMDb list
+          - Dosage V                                                    # It got removed for some reason while on the IMDb list
+  Space Masterpieces:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls084547446
+  Spy & Agent:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls021488235                    # List by ivandjordjevic-43807
+  Stand-up Comedy:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls088617302
+#   imdb_list: https://www.imdb.com/list/ls041728102                    # List by sandrikoti. I would rather use my list above
+    plex_search:
+      any:
+        title:
+          - "Dave Chappelle: Sticks & Stones: Epilogue: The Punchline"
+  Time Travel:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls068617191                    # List by rlhron
+    summary: The ability to travel through time is by far my favorite movie story line. Who hasn"t, at least once in their lifetime, wished they could turn back the hands of time to buy a winning lottery ticket or to set something right that once went wrong? The movies listed below have a wide range of inventive ways on how the subjects are moved across time. Many of these films use either a mental ability, a magical device or time machine, some seem to have help from a higher power, and sometimes the person just wakes up in a different time. If you love TV shows like Outlander, Timeless, Doctor Who or Quantum Leap, then this list of the best time-traveling films is for you. -rlhron
+  True Stories:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls021398170                    # List by ivandjordjevic-43807
+  Unexpectedly Amazing:
+    template: {name: Custom}
+    imdb_list: https://www.imdb.com/list/ls574663351                    # List by BuzzFeed. https://www.reddit.com/r/AskReddit/comments/7uzuxq/what_was_the_most_unexpectedly_amazing_movie/?sort=top
+  Video Games (Live-action):
+    template: {name: Custom}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/movies-based-on-video-games-live-action
 
 ############################
-#         NETWORKS         #
+#         REGULAR          #
 ############################
 
-  Apple TV+:
-    imdb_list: https://www.imdb.com/list/ls084062897
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*600"
-    schedule: daily
-  Netflix:
-    imdb_list: https://www.imdb.com/list/ls084069524
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*601"
-    schedule: daily
-  Netflix Stand-up:
-    imdb_list: https://www.imdb.com/list/ls560028451
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*602"
-    schedule: daily
-  Prime Video:
-    imdb_list: https://www.imdb.com/list/ls084378896
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*603"
-    schedule: daily
-  Hulu:
-    imdb_list: https://www.imdb.com/list/ls084378943
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*604"
-    schedule: daily
-  HBO Max:
-    imdb_list: https://www.imdb.com/list/ls084378296
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*605"
-    schedule: daily
-  Paramount+:
-    imdb_list: https://www.imdb.com/list/ls574137821
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*606"
-    schedule: daily
-
-############################
-#         HOLIDAYS         #
-############################
-
-  Halloween Movies:
-    imdb_list: https://www.imdb.com/list/ls084064776
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*700"
-    schedule: yearly(09/30)
-  Christmas Movies:
-    imdb_list: https://www.imdb.com/list/ls084064285
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*701"
-    schedule: yearly(11/30)
+  Cirque du Soleil:
+    template: {name: Regular}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/cirque-du-soleil
+  James Bond:
+    template: {name: Regular}
+    imdb_list: https://www.imdb.com/list/ls084710852
+  Star Trek:
+    template: {name: Regular}
+    imdb_list: https://www.imdb.com/list/ls084767125
+    plex_search:
+      any:
+        title:
+          - "Star Trek: Legacy"                                         # Fan edit
+  Star Wars:
+    template: {name: Regular}
+    imdb_list: https://www.imdb.com/list/ls084761910
+    plex_search:
+      any:
+        title:
+          - "Star Wars: The Mandalorian Part I"
+          - "Star Wars: The Mandalorian Part II"
+  X-Men:
+    template: {name: Regular}
+    imdb_list: https://www.imdb.com/list/ls560205320
+    plex_search:
+      any:
+        title:
+          - "X-Men: Days of Future Past (Rogue)"
 
 ############################
 #          GENRES          #
 ############################
 
-  Comedy:
-    plex_search:
-      all:
-        genre: Comedy
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of Comedy movies
-    sort_title: "*200"
-    schedule: weekly(friday)
   "'80s Comedy":
+    template: {name: Genres}
     plex_search:
       all:
         decade: 1980
         genre: Comedy
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of 80s Comedy movies
-    sort_title: "*201"
-    schedule: weekly(friday)
+    sort_title: "!08_Comedy 1980s"
   "'90s Comedy":
+    template: {name: Genres}
     plex_search:
       all:
         decade: 1990
         genre: Comedy
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of 90s Comedy movies
-    sort_title: "*202"
-    schedule: weekly(friday)
+    sort_title: "!08_Comedy 1990s"
+
+############################
+#       IMDB GENRES        #
+############################
+
   Action:
-    plex_search:
-      all:
-        genre: Action
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of Action movies
-    sort_title: "*204"
-    schedule: weekly(friday)
-  Drama:
-    plex_search:
-      all:
-        genre: Drama
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of Drama movies
-    sort_title: "*205"
-    schedule: weekly(friday)
-  Documentary:
-    plex_search:
-      all:
-        genre: Documentary
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of Documentaries
-    sort_title: "*206"
-    schedule: weekly(friday)
-  Romantic Comedy:
-    plex_search:
-      all:
-        genres: Romance, Comedy
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of Romantic Comedies
-    sort_title: "*207"
-    schedule: weekly(friday)
-  Biography:
-    plex_search:
-      all:
-        genre: Biography
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of Biographies
-    sort_title: "*208"
-    schedule: weekly(friday)
-  Mystery:
-    plex_search:
-      all:
-        genre: Mystery
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of Mysteries
-    sort_title: "*209"
-    schedule: weekly(friday)
-  Crime:
-    plex_search:
-      all:
-        genre: Crime
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of Crime movies
-    sort_title: "*210"
-    schedule: weekly(friday)
-  Science Fiction:
-    plex_search:
-      all:
-        genre: Science Fiction
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of Science Fiction movies
-    sort_title: "*211"
-    schedule: weekly(friday)
+    template: {name: IMDb Genres, genre: action}
+    summary: Action film is a genre wherein physical action takes precedence in the storytelling. The film will often have continuous motion and action including physical stunts, chases, fights, battles, and races. The story usually revolves around a hero that has a goal, but is facing incredible odds to obtain it.
   Animation:
+    template: {name: IMDb Genres, genre: animation}
+    summary: Animated film is a collection of illustrations that are photographed frame-by-frame and then played in a quick succession. Since its inception, animation has had a creative and imaginative tendency. Being able to bring animals and objects to life, this genre has catered towards fairy tales and children’s stories. However, animation has long been a genre enjoyed by all ages. As of recent, there has even been an influx of animation geared towards adults. Animation is commonly thought of as a technique, thus it’s ability to span over many different genres.
+  Biography:
+    template: {name: IMDb Genres, genre: biography}
+    summary: A Biography drama incorporates dramatic elements into a biographical film. These films differ from Historical and "based in truth" films because they specifically chronicle the life of a person or a group of people. Biography films attempt to show a comprehensive and accurate picture of the specific subject, thus they tend to be serious and intense.
+  Comedy:
+    template: {name: IMDb Genres, genre: comedy}
+    summary: Comedy is a genre of film that uses humor as a driving force. The aim of a comedy film is to illicit laughter from the audience through entertaining stories and characters. Although the comedy film may take on some serious material, most have a happy ending. Comedy film has the tendency to become a hybrid sub-genre because humor can be incorporated into many other genres. Comedies are more likely than other films to fall back on the success and popularity of an individual star.
+  Crime:
+    template: {name: IMDb Genres, genre: crime}
+    summary: Crime film is a genre that revolves around the action of a criminal mastermind. A Crime film will often revolve around the criminal himself, chronicling his rise and fall. Some Crime films will have a storyline that follows the criminal's victim, yet others follow the person in pursuit of the criminal. This genre tends to be fast paced with an air of mystery – this mystery can come from the plot or from the characters themselves.
+  Documentary:
+    template: {name: IMDb Genres, genre: documentary}
+    imdb_list:
+      url: https://www.imdb.com/search/title/?genres=documentary,&release_date=1990-01-01,&user_rating=7,10&num_votes=50000,&sort=user_rating,desc
+      limit: 100
+    summary: A collection of documentary movies from 1990 to now, with a minimum rating of 7 and at least 50000 votes from IMDb.
+  Drama:
+    template: {name: IMDb Genres, genre: drama}
+    summary: Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues. Whether heroes or heroines are facing a conflict from the outside or a conflict within themselves, Drama film aims to tell an honest story of human struggles.
+  Fantasy:
+    template: {name: IMDb Genres, genre: fantasy}
+    summary: Fantasy film is a genre that incorporates imaginative and fantastic themes. These themes usually involve magic, supernatural events, or fantasy worlds. Although it is its own distinct genre, these films can overlap into the horror and science fiction genres. Unlike science fiction, a fantasy film does not need to be rooted in fact. This element allows the audience to be transported into a new and unique world. Often, these films center on an ordinary hero in an extraordinary situation.
+  Historical:
+    template: {name: IMDb Genres, genre: history}
+    summary: Historical is a sub-genre of Drama film that examines a specific time in history or group of people. Many Historical films aim to portray true events and people. However, most Historical films are only loosely based on these events and people. These films tend to focus on the more glorified societies and people in history such as the Romans, specific Kings and Queens, or important political figures.
+  Horror:
+    template: {name: IMDb Genres, genre: horror}
+    summary: Horror film is a genre that aims to create a sense of fear, panic, alarm, and dread for the audience. These films are often unsettling and rely on scaring the audience through a portrayal of their worst fears and nightmares. Horror films usually center on the arrival of an evil force, person, or event. Many Horror films include mythical creatures such as ghosts, vampires, and zombies. Traditionally, Horror films incorporate a large amount of violence and gore into the plot. Though it has its own style, Horror film often overlaps into Fantasy, Thriller, and Science-Fiction genres.
+  Mystery:
+    template: {name: IMDb Genres, genre: mystery}
+    summary: A Mystery/Suspense film centers on a person of authority, usually a detective, that is trying to solve a mysterious crime. The main protagonist uses clues, investigation, and logical reasoning. The biggest element in these films is a sense of "whodunit" suspense, usually created through visual cues and unusual plot twists.
+  Romance:
+    template: {name: IMDb Genres, genre: romance}
+    summary: "Romance film can be defined as a genre wherein the plot revolves around the love between two protagonists. This genre usually has a theme that explores an issue within love, including but not limited to: love at first sight, forbidden love, love triangles, and sacrificial love. The tone of Romance film can vary greatly. Whether the end is happy or tragic, Romance film aims to evoke strong emotions in the audience."
+  Romantic Comedy:
+    template: {name: IMDb Genres, genre: romance,comedy}
+    summary: Romantic-Comedy is a genre that attempts to catch the viewer’s heart with the combination of love and humor. This sub-genre is light-hearted and usually places the two protagonists in humorus situation. Romantic-Comedy film revolves around a romantic ideal, such as true love. In the end, the ideal triumphs over the situation or obstacle, thus creating a happy ending.
+  Science Fiction:
+    template: {name: IMDb Genres, genre: sci-fi}
+    summary: Science Fiction film is a genre that incorporates hypothetical, science-based themes into the plot of the film. Often, this genre incorporates futuristic elements and technologies to explore social, political, and philosophical issues. The film itself is usually set in the future, either on earth or in space. Traditionally, a Science Fiction film will incorporate heroes, villains, unexplored locations, fantastical quests, and advanced technology.
+  Thriller:
+    template: {name: IMDb Genres, genre: thriller}
+    summary: Thriller Film is a genre that revolves around anticipation and suspense. The aim for Thrillers is to keep the audience alert and on the edge of their seats. The protagonist in these films is set against a problem – an escape, a mission, or a mystery. No matter what sub-genre a Thriller film falls into, it will emphasize the danger that the protagonist faces. The tension with the main problem is built on throughout the film and leads to a highly stressful climax.
+  Western:
+    template: {name: IMDb Genres, genre: western}
+    summary: "Western Film is a genre that revolves around stories primarily set in the late 19th century in the American Old West. Most Westerns are set between the American Civil War (1865) and the early 1900s. Common themes within Western Film include: the conquest of the wild west, the cultural separation of the East and the West, the West’s resistance to modern change, the conflict between Cowboys and Indians, outlaws, and treasure/gold hunting. American Western Film usually revolves around a stoic hero and emphasizes the importance of honor and sacrifice."
+
+############################
+#      IMDB KEYWORDS       #
+############################
+
+  Superhero:
+    template: {name: IMDb Keywords, keyword: superhero}
+
+############################
+#    STREAMING SERVICES    #
+############################
+
+  Apple TV+:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls084062897
+  HBO Max:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls084378296
+  Hulu:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls084378943
+  Netflix:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls084069524
+  Netflix Stand-up:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls560028451
+  Paramount+:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls574137821
+  Prime Video:
+    template: {name: Streaming Services}
+    imdb_list: https://www.imdb.com/list/ls084378896
+
+############################
+#         STUDIOS          #
+############################
+
+  DC:
+    template: {name: Studios}
+    imdb_list:
+      - https://www.imdb.com/list/ls084123848
+      - https://www.imdb.com/list/ls084122077
+# DC:
+#   template: {name: Studios}
+#   tmdb_company: 429
+# DC:
+#   template: {name: Studios}
+#   collection:
+#     - DC Animated Movies
+#     - DC Live Action
+  DC (Animated):
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084123848
+  DC (Animated Movie Universe):
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084121860
+  DC (Extended Universe):
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084122673
+  DC (Live-action):
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084122077
+  DC (Showcase):
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084122453
+  Disney Channel:
+    template: {name: Studios}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/disney-channel-movies
+  Marvel:
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084048577
     plex_search:
-      all:
-        genre: Animation
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    summary: A collection of Animated movies
-    sort_title: "*212"
-    schedule: weekly(friday)
+      any:
+        title:
+          - "Marvel's Infinity Saga: The Sacred Timeline"               # Fan edit
+  Marvel Cinematic Universe:
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084049253
+    plex_search:
+      any:
+        title:
+          - "Marvel's Infinity Saga: The Sacred Timeline"               # Fan edit
+  Marvel Cinematic Universe (Chronological):
+    template: {name: Studios}
+    trakt_list: https://trakt.tv/users/jawann2002/lists/marvel-cinematic-universe-movies?sort=rank,asc
+    plex_search:
+      any:
+        title:
+          - "Marvel's Infinity Saga: The Sacred Timeline"               # Fan edit
+    file_poster: /config/assets/Marvel Cinematic Universe.png
+# Marvel Cinematic Universe (Chronological):                            # This includes the TV Shows also
+#   template: {name: Studios}
+#   trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
+#   plex_search:
+#     any:
+#       title:
+#         - "Marvel's Infinity Saga: The Sacred Timeline"               # Fan edit
+#   file_poster: /config/assets/Marvel Cinematic Universe.png
+  Pixar:
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084018331
+  Pixar Shorts:
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls084018915
+  Pixar SparkShorts:
+    template: {name: Studios}
+    tmdb_list: https://www.themoviedb.org/list/7107731
+    summary: SparkShorts is a series of American independent animated short films produced by Pixar Animation Studios. It consists of a program in which Pixar's employees are given six months and limited budgets to develop animated short films that were originally released on Pixar's YouTube channel, and later on Disney+.
+  Walt Disney Animation Studios:
+    template: {name: Studios}
+    imdb_list: https://www.imdb.com/list/ls579363081
+
+############################
+#         HOLIDAYS         #
+############################
+
+  Christmas Movies:
+    template: {name: Holidays}
+    imdb_list: https://www.imdb.com/list/ls084064285
+    schedule: yearly(11/30)
+  Halloween Movies:
+    template: {name: Holidays}
+    imdb_list: https://www.imdb.com/list/ls084064776
+    schedule: yearly(09/30)
 
 ############################
 #          YEARS           #
 ############################
 
   2020 Movies:
+    template: {name: Years}
     plex_search:
       all:
         year: 2020
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    summary: A collection of movies in 2020
-    sort_title: "*300"
-    schedule: weekly(friday)
   2021 Movies:
+    template: {name: Years}
     plex_search:
       all:
         year: 2021
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    summary: A collection of movies in 2021
-    sort_title: "*301"
-    schedule: weekly(friday)
   2022 Movies:
+    template: {name: Years}
     plex_search:
       all:
         year: 2022
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    summary: A collection of movies in 2022
-    sort_title: "*302"
-    schedule: weekly(friday)
 
 ############################
 #          AUDIO           #
 ############################
 
-  TrueHD Atmos:
-    plex_all: true
-    filters:
-      filepath: TrueHD Atmos
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*750"
-    schedule: daily
   DTS-HD Master Audio:
+    template: {name: Audio}
     plex_all: true
     filters:
       filepath: DTS-HD MA
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: "*751"
-    schedule: daily
+  TrueHD Atmos:
+    template: {name: Audio}
+    plex_all: true
+    filters:
+      filepath: TrueHD Atmos
+
+############################
+#          RANDOM          #
+############################
+
+  Random Movies:
+    sort_title: "!15_! Random Movies"
+    smart_filter:
+      all:
+        year.gte: 1980
+      sort_by: random
+      limit: 5
+    collection_mode: hide
+    summary: Random movies every time it loads.
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+    schedule: never                                                     # Not scheduled to run because it only needs to run once
+  Random Action:
+    template: {name: Random, genre: Action}
+  Random Animation:
+    template: {name: Random, genre: Animation}
+  Random Biography:
+    template: {name: Random, genre: Biography}
+  Random Comedy:
+    template: {name: Random, genre: Comedy}
+  Random Crime:
+    template: {name: Random, genre: Crime}
+  Random Documentary:
+    template: {name: Random, genre: Documentary}
+  Random Drama:
+    template: {name: Random, genre: Drama}
+  Random Fantasy:
+    template: {name: Random, genre: Fantasy}
+  Random History:
+    template: {name: Random, genre: History}
+  Random Horror:
+    template: {name: Random, genre: Horror}
+  Random Mystery:
+    template: {name: Random, genre: Mystery}
+  Random Romance:
+    template: {name: Random, genre: Romance}
+  Random Romantic Comedy:
+    template: {name: Random, genre: Romance, Comedy}
+  Random Science Fiction:
+    template: {name: Random, genre: Science Fiction}
+  Random Thriller:
+    template: {name: Random, genre: Thriller}
+  Random Western:
+    template: {name: Random, genre: Western}
 
 ############################
 #          ACTORS          #
 ############################
 
-  Dwayne Johnson:
-    tmdb_actor: 18918
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*800"
-    schedule: weekly(friday)
-  Leonardo DiCaprio:
-    tmdb_actor: 6193
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*801"
-    schedule: weekly(friday)
-  Keanu Reeves:
-    tmdb_actor: 6384
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*802"
-    schedule: weekly(friday)
-  Morgan Freeman:
-    tmdb_actor: 192
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*803"
-    schedule: weekly(friday)
-  Scarlett Johansson:
-    tmdb_actor: 1245
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*850"
-    schedule: weekly(friday)
-  Gal Gadot:
-    tmdb_actor: 90633
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*851"
-    schedule: weekly(friday)
   Charlize Theron:
-    tmdb_actor: 6885
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*852"
-    schedule: weekly(friday)
+    template: {name: Actors, person: 6885}
+  Dwayne Johnson:
+    template: {name: Actors, person: 18918}
+  Gal Gadot:
+    template: {name: Actors, person: 90633}
+  Jason Bateman:
+    template: {name: Actors, person: 23532}
+  Keanu Reeves:
+    template: {name: Actors, person: 6384}
+  Leonardo DiCaprio:
+    template: {name: Actors, person: 6193}
+  Mark Wahlberg:
+    template: {name: Actors, person: 13240}
+  Morgan Freeman:
+    template: {name: Actors, person: 192}
+  Scarlett Johansson:
+    template: {name: Actors, person: 1245}
+  Will Ferrell:
+    template: {name: Actors, person: 23659}
 
 ############################
 #        DIRECTORS         #
 ############################
 
   Christopher Nolan:
-    tmdb_director: 525
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*900"
-    schedule: weekly(friday)
-  Quentin Tarantino:
-    tmdb_director: 138
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*901"
-    schedule: weekly(friday)
+    template: {name: Directors, person: 525}
   Clint Eastwood:
-    tmdb_director: 190
-    tmdb_writer: 190
-    tmdb_actor: 190
-    sync_mode: sync
-    collection_mode: default
-    collection_order: release
-    sort_title: "*902"
-    schedule: weekly(friday)
-
-############################
-#  HOLIDAYS BY DRAZZIZZI   #
-############################
-
-  Valentines Day Movies:
-    schedule: range(02/01-02/14)
-    template: {name: Holiday, holiday: "Valentine's Day"}
-    imdb_list:
-      - https://www.imdb.com/list/ls000094398
-      - https://www.imdb.com/list/ls057783436
-      - https://www.imdb.com/list/ls064427905
-    collection_order: release
-  St. Patricks Day Movies:
-    schedule: range(03/01-03/17)
-    template: {name: Holiday, holiday: "St. Patrick's Day"}
-    imdb_list: https://www.imdb.com/list/ls063934595
-    collection_order: release
-  Thanksgiving Movies:
-    schedule: range(10/01-10/14)
-    sort_title: '!AA'
-    template: {name: Holiday, holiday: Thanksgiving}
-    imdb_list: 
-      - https://www.imdb.com/list/ls000835734
-      - https://www.imdb.com/list/ls091597850
-    collection_order: release
-  Halloween Movies (Big List):                                          # Named Big List because I already have one named Halloween Movies
-    schedule: range(10/01-10/31)
-    sort_title: '!AB'
-    template: {name: Holiday, holiday: Halloween}
-    imdb_list:
-      - https://www.imdb.com/list/ls023118929
-      - https://www.imdb.com/list/ls000099714
-      - https://www.imdb.com/list/ls000058693
-      - https://www.imdb.com/search/title/?genres=horror&keywords=haunted-house&sort=moviemeter,asc
-    tmdb_collection:
-      - 91361    # Halloween Collection
-      - 8581     # A Nightmare on Elm Street Collection
-      - 1733     # The Mummy Collection
-      - 8091     # Alien Collection
-    tmdb_movie:
-      - 23437    # A Nightmare on Elm Street (2010)
-    collection_order: release
-  Christmas Movies (Big List):                                          # Named Big List because I already have one named Christmas Movies
-    schedule: range(12/01-12/31)
-    sort_title: '!AB'
-    template: {name: Holiday, holiday: Christmas}
-    imdb_list: 
-      - https://www.imdb.com/list/ls000096828
-      - https://www.imdb.com/list/ls097394442
-      - https://www.imdb.com/list/ls068976997
-      - https://www.imdb.com/list/ls027567380
-    collection_order: release
-  New Years Eve Movies:
-    schedule: range(12/26-01/05)
-    sort_title: '!AA'
-    template: {name: Holiday, holiday: "New Year's Eve"}
-    imdb_list: https://www.imdb.com/list/ls066838460
-
-############################
-#         LOCATION         #
-############################
-
-# Arizona made by tikilab
-
-  Arizona:
-    imdb_list: https://www.imdb.com/search/title/?title_type=feature&locations=arizona
-    sync_mode: sync
-    collection_mode: default
-    collection_order: alpha
-    sort_title: Arizona
-    summary: Films shot in Arizona.
-    schedule: weekly(friday)
+    template: {name: Directors, person: 190}
+  Quentin Tarantino:
+    template: {name: Directors, person: 138}
 
 ############################
 #          DOLBY           #
 ############################
 
-#  Dolby Atmos:
-#    mdblist_list: https://mdblist.com/lists/blisskodi/dolby-atmos-film
-#    sync_mode: sync
-#    collection_mode: default
-#    collection_order: custom
-#    sort_title: "*950"
-#    schedule: weekly(friday)
-#    The default sort_by when it’s not specified is score.desc
-#  Dolby Vision:
-#    mdblist_list: https://mdblist.com/lists/blisskodi/dolby-vision-film
-#    sync_mode: sync
-#    collection_mode: default
-#    collection_order: custom
-#    sort_title: "*951"
-#    schedule: weekly(friday)
-#    The default sort_by when it’s not specified is score.desc
-#  Dolby Atmos & Dolby Vision:
-#    mdblist_list: https://mdblist.com/lists/blisskodi/dolby-atmos-dolby-vision-film
-#    sync_mode: sync
-#    collection_mode: default
-#    collection_order: custom
-#    sort_title: "*952"
-#    schedule: weekly(friday)
-#    The default sort_by when it’s not specified is score.desc
-
-############################
-#     MOVIE OF THE DAY     #
-############################
-
-#  Made by overlord
-
-#  Remove Label:
-#    build_collection: false
-#      plex_all: true # or whatever kinda of search you want
-#      label.remove: Movie Day Remove
-
-  Movie of the Day:
-    sort_title: zzzz_MovieDay
-    smart_label: random
-    sync_mode: sync
-    plex_search:
-      limit: 1
-      all:
-        year.gte: 1970
-        genre.not: documentary
-        critic_rating.gte: 7.0
-        audience_rating.gte: 8.0
-        label.not: Movie of the Day Remove
-    filters:
-      has_collection: false
-    summary: Randomly picked and highly rated! Excludes the MCU, Harry Potter, X-Men, and so on. Also excludes movies that have prequels or sequels.
-    visible_library: true
-    visible_home: true
-    visible_shared: true
-
-  Movie of the Day Remove:
-    sort_title: zzzz_MovieDayRemove
-    smart_label: random
-    sync_mode: append
-    plex_search:
-      limit: 25000
-      all:
-        year.gte: 1970
-        genre.not: documentary
-        critic_rating.gte: 7.0
-        audience_rating.gte: 8.0
-        label: Movie of the Day
-    summary: Movies featured on "Movie of the Day" collection will be put into this collection to not be considered again.
+# Dolby Atmos:
+#   template: {name: Dolby}
+#   mdblist_list: https://mdblist.com/lists/blisskodi/dolby-atmos-film
+# Dolby Atmos & Dolby Vision:
+#   template: {name: Dolby}
+#   mdblist_list: https://mdblist.com/lists/blisskodi/dolby-atmos-dolby-vision-film
+# Dolby Vision:
+#   template: {name: Dolby}
+#   mdblist_list: https://mdblist.com/lists/blisskodi/dolby-vision-film

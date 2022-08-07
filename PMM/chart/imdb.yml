@@ -13,38 +13,39 @@
 #          # Sets the value at the start of the sort title  #
 #          collection_section: "01"                         #
 #                                                           #
-#          # Turn the IMDb Popular collection on/off        #
-#          use_popular: true                                #
-#          # Determines collection order in it's section    #
-#          order_popular:                                   #
-#          # Set visible_library for IMDb Popular           #
-#          visible_library_popular:                         #
-#          # Set visible_home for IMDb Popular              #
-#          visible_home_popular:                            #
-#          # Set visible_shared for IMDb Popular            #
-#          visible_shared_popular:                          #
+#          # For each collection use the "key" to set       #
+#          # the options.                                   #
+#          # Available collections                          #
+#          #   KEY              COLLECTION                  #
+#          #   popular          IMDb Popular                #
+#          #   top              IMDb Top 250                #
+#          #   lowest           IMDb Lowest Rated           #
 #                                                           #
-#          # Turn the IMDb Top 250 collection on/off        #
-#          use_top: true                                    #
-#          # Determines collection order in it's section    #
-#          order_top:                                       #
-#          # Set visible_library for IMDb Top 250           #
-#          visible_library_top:                             #
-#          # Set visible_home for IMDb Top 250              #
-#          visible_home_top:                                #
-#          # Set visible_shared for IMDb Top 250            #
-#          visible_shared_top:                              #
+#          # Available options. Replace "key" with the      #
+#          # desired collection's key from the chart above. #
 #                                                           #
-#          # Turn the IMDb Lowest collection on/off         #
-#          use_lowest: true                                 #
-#          # Determines collection order in it's section    #
-#          order_trending:                                  #
-#          # Set visible_library for IMDb Lowest            #
-#          visible_library_lowest:                          #
-#          # Set visible_home for IMDb Lowest               #
-#          visible_home_lowest:                             #
-#          # Set visible_shared for IMDb Lowest             #
-#          visible_shared_lowest:                           #
+#          # Turn the collection on/off                     #
+#          use_key: true                                    #
+#          # Determines collection order in its section     #
+#          order_key:                                       #
+#          # Set visible_library for the collection         #
+#          visible_library_key:                             #
+#          # Set visible_home for the collection            #
+#          visible_home_key:                                #
+#          # Set visible_shared for the collection          #
+#          visible_shared_key:                              #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing_key:                          #
+#          # Adds missing from the collection to sonarr     #
+#          radarr_add_missing_key:                          #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag_key:                                  #
+#          # Sonarr Tag for added missing                   #
+#          sonarr_tag_key:                                  #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag_key:                             #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag_key:                             #
 #############################################################
 
 external_templates:

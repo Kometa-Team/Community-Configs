@@ -27,11 +27,14 @@ templates:
   studio_dynamic:
     default:
       sort_by: release.desc
+    optional:
+      - contains
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/<<key_encoded>>.jpg
     smart_filter:
       sort_by: <<sort_by>>
       any:
         studio.is: <<value>>
+        studio: <<contains>>
 
 collections:
   Studio Collections:
@@ -109,3 +112,6 @@ dynamic_collections:
       Warner Bros. Pictures:
         - Warner
         - Warner Animation Group
+    template_variables:
+      contains:
+        20th Century Studios: 20th Century

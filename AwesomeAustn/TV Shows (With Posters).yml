@@ -1,0 +1,432 @@
+############################
+#        TEMPLATES         #
+############################
+
+templates:
+  Charts:
+    sort_title: "!01_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: daily
+  Oscars:
+    sort_title: "!02_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: yearly(03/01)
+  AFI's 100:
+    sort_title: "!03_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: yearly(03/01)
+  Best Of - Rotten Tomatoes - Years:
+    sort_title: "!04_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: yearly(03/01)
+  Best Of - Rotten Tomatoes - Genres:
+    sort_title: "!05_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: yearly(03/01)
+  Custom:
+    sort_title: "!06_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+    schedule: monthly(10)
+  Regular:
+    sort_title: "!07_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: monthly(10)
+  Genres:
+    sort_title: "!08_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+    schedule: weekly(friday)
+  IMDb Genres:
+    default:
+      type: tv_series,mini_series
+      year_min: 1980
+      rating_min: 7
+      votes_min: 50000
+      limit: 100
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=<<type>>,&genres=<<genre>>,&release_date=<<year_min>>-01-01,&user_rating=<<rating_min>>,10&num_votes=<<votes_min>>,&sort=user_rating,desc
+      limit: <<limit>>
+    sort_title: "!08_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    summary: A collection of <<genre>> shows from <<year_min>> to now, with a minimum rating of <<rating_min>> and at least <<votes_min>> votes from IMDb. Sorted by rating.
+    schedule: weekly(friday)
+  IMDb Keywords:
+    default:
+      type: tvSeries,tvMiniSeries
+      year_min: 1980
+      rating_min: 7
+      votes_min: 50000
+      limit: 100
+    imdb_list:
+      url: https://www.imdb.com/search/keyword/?keywords=<<keyword>>&title_type=<<type>>,&release_date=<<year_min>>-01-01,&user_rating=<<rating_min>>,10&num_votes=<<votes_min>>,&sort=user_rating,desc
+      limit: <<limit>>
+    sort_title: "!09_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    summary: A collection of <<keyword>> shows from <<year_min>> to now, with a minimum rating of <<rating_min>> and at least <<votes_min>> votes from IMDb. Sorted by rating.
+    schedule: weekly(friday)
+  Streaming Services:
+    sort_title: "!10_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: daily
+  Studios:
+    sort_title: "!11_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: daily
+  Holidays:
+    sort_title: "!12_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+  Years:
+    sort_title: "!13_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: weekly(friday)
+  Audio:
+    sort_title: "!14_<<collection_name>>"
+    sync_mode: sync
+    collection_order: alpha
+    collection_mode: hide
+    schedule: daily
+  Random:
+    sort_title: "!15_<<collection_name>>"
+    collection_level: episode
+    smart_filter:
+      all:
+        title.is: <<show>>
+      sort_by: random
+      limit: 1
+    collection_mode: hide
+    summary: Random <<show>> episode every time it loads.
+    schedule: never                                                     # Not scheduled to run because it only needs to run once
+  Actors:
+    actor: tmdb
+    tmdb_person: <<person>>
+    sort_title: "!16_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: weekly(friday)
+  Directors:
+    director: tmdb
+    tmdb_person: <<person>>
+    sort_title: "!17_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+    schedule: weekly(friday)
+  Dolby:
+    sort_title: "!18_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    schedule: weekly(friday)
+
+############################
+#       COLLECTIONS        #
+############################
+
+collections:
+
+############################
+#          CHARTS          #
+############################
+
+  IMDb Most Popular:
+    template: {name: Charts}
+    imdb_chart: popular_shows
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/IMDb%20Most%20Popular.png
+  TMDb Most Popular:
+    template: {name: Charts}
+    tmdb_popular: 100
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/TMDb%20Most%20Popular.png
+  Trakt Trending:
+    template: {name: Charts}
+    trakt_trending: 30
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Trakt%20Trending.png
+
+############################
+#         BEST OF          #
+############################
+
+############################
+#          CUSTOM          #
+############################
+
+  Baking:
+    template: {name: Custom}
+    tmdb_list: https://www.themoviedb.org/list/8168660
+    tvdb_show:
+      - 407030  # Bake Squad                                            # This is needed because it gives this error without out [Convert Error: No TVDb ID Found for TMDb ID:]
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Baking.png
+  Classic Cartoons:
+    template: {name: Custom}
+    tmdb_list: https://www.themoviedb.org/list/7088117
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Classic%20Cartoons.png
+  Disney Channel:
+    template: {name: Custom}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/disney-channel-shows
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Disney%20Channel.png
+  My Favorites:
+    template: {name: Custom}
+    tmdb_list: https://www.themoviedb.org/list/7111217
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/My%20Favorites.png
+  Nature Documentary:
+    template: {name: Custom}
+    tmdb_list: https://www.themoviedb.org/list/7087971
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Nature%20Documentary.png
+  Prison:
+    template: {name: Custom}
+    tmdb_list: https://www.themoviedb.org/list/7104835
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Prison.png
+
+############################
+#         REGULAR          #
+############################
+
+  Arrowverse:
+    template: {name: Regular}
+    tmdb_list: https://www.themoviedb.org/list/7109881
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Arrowverse.png
+  Star Trek:
+    template: {name: Regular}
+    tmdb_list: https://www.themoviedb.org/list/7071553
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Star%20Trek-2.png
+  Star Wars (Animated):
+    template: {name: Regular}
+    tmdb_list: https://www.themoviedb.org/list/7091278
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Star%20Wars%20(Animated).png
+  Star Wars (Live-action):
+    template: {name: Regular}
+    tmdb_list: https://www.themoviedb.org/list/8173369
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Star%20Wars%20(Live-action).png
+
+############################
+#          GENRES          #
+############################
+
+############################
+#       IMDB GENRES        #
+############################
+
+  Animation:
+    template: {name: IMDb Genres, genre: animation}
+    summary: Animated film is a collection of illustrations that are photographed frame-by-frame and then played in a quick succession. Since its inception, animation has had a creative and imaginative tendency. Being able to bring animals and objects to life, this genre has catered towards fairy tales and children’s stories. However, animation has long been a genre enjoyed by all ages. As of recent, there has even been an influx of animation geared towards adults. Animation is commonly thought of as a technique, thus it’s ability to span over many different genres.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Animation.png
+  Comedy:
+    template: {name: IMDb Genres, genre: comedy}
+    summary: Comedy is a genre of film that uses humor as a driving force. The aim of a comedy film is to illicit laughter from the audience through entertaining stories and characters. Although the comedy film may take on some serious material, most have a happy ending. Comedy film has the tendency to become a hybrid sub-genre because humor can be incorporated into many other genres. Comedies are more likely than other films to fall back on the success and popularity of an individual star.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Comedy.png
+  Drama:
+    template: {name: IMDb Genres, genre: drama}
+    summary: Drama film is a genre that relies on the emotional and relational development of realistic characters. While Drama film relies heavily on this kind of development, dramatic themes play a large role in the plot as well. Often, these dramatic themes are taken from intense, real life issues. Whether heroes or heroines are facing a conflict from the outside or a conflict within themselves, Drama film aims to tell an honest story of human struggles.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Drama.png
+  Fantasy:
+    template: {name: IMDb Genres, genre: fantasy}
+    summary: Fantasy film is a genre that incorporates imaginative and fantastic themes. These themes usually involve magic, supernatural events, or fantasy worlds. Although it is its own distinct genre, these films can overlap into the horror and science fiction genres. Unlike science fiction, a fantasy film does not need to be rooted in fact. This element allows the audience to be transported into a new and unique world. Often, these films center on an ordinary hero in an extraordinary situation.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Fantasy.png
+  Romantic Comedy:
+    template: {name: IMDb Genres, genre: romance,comedy}
+    summary: Romantic-Comedy is a genre that attempts to catch the viewer’s heart with the combination of love and humor. This sub-genre is light-hearted and usually places the two protagonists in humorus situation. Romantic-Comedy film revolves around a romantic ideal, such as true love. In the end, the ideal triumphs over the situation or obstacle, thus creating a happy ending.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Romantic%20Comedy.png
+  Science Fiction:
+    template: {name: IMDb Genres, genre: sci-fi}
+    summary: Science Fiction film is a genre that incorporates hypothetical, science-based themes into the plot of the film. Often, this genre incorporates futuristic elements and technologies to explore social, political, and philosophical issues. The film itself is usually set in the future, either on earth or in space. Traditionally, a Science Fiction film will incorporate heroes, villains, unexplored locations, fantastical quests, and advanced technology.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Science%20Fiction.png
+
+############################
+#      IMDB KEYWORDS       #
+############################
+
+  Superhero:
+    template: {name: IMDb Keywords, keyword: superhero}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Drama.png
+
+############################
+#    STREAMING SERVICES    #
+############################
+
+  Apple TV+:
+    template: {name: Streaming Services}
+    tmdb_list: https://www.themoviedb.org/list/7071557
+    tvdb_show:
+      - 409820  # Get Rolling with Otis                                 # This is needed because it gives this error without out [Convert Error: No TVDb ID Found for TMDb ID:]
+      - 420014  # Lovely Little Farm                                    # This is needed because it gives this error without out [Convert Error: No TVDb ID Found for TMDb ID:]
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Apple%20TV%2B.png
+# Apple TV+:
+#   template: {name: Streaming Services}
+#   tmdb_network: 2552
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Apple%20TV%2B.png
+  Apple TV+ (Score):
+    template: {name: Streaming Services}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/apple-tv-sorted-by-score
+    collection_order: custom
+    summary: Sorted by a combined score of IMDb, Trakt, TMDb, Letterboxed, Rotten Tomatoes, Audience, Metacritic, and RogerEbert.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Apple%20TV%2B%20(Score).png
+  Disney+:
+    template: {name: Streaming Services}
+    tmdb_network: 2739
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Disney%2B.png
+  Disney+ (Score):
+    template: {name: Streaming Services}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/disney-sorted-by-score
+    collection_order: custom
+    summary: Sorted by a combined score of IMDb, Trakt, TMDb, Letterboxed, Rotten Tomatoes, Audience, Metacritic, and RogerEbert.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Disney%2B%20(Score).png
+  HBO Max:
+    template: {name: Streaming Services}
+    tmdb_network: 3186
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/HBO%20Max.png
+  Hulu:
+    template: {name: Streaming Services}
+    tmdb_network: 453
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Hulu.png
+  Netflix:
+    template: {name: Streaming Services}
+    tmdb_list: https://www.themoviedb.org/list/7107927
+    tvdb_show:
+      - 294560  # Wet Hot American Summer                               # This is needed because it gives this error without out [Convert Error: No TVDb ID Found for TMDb ID:]
+      - 317325  # Trailer Park Boys: Out of the Park                    # This is needed because it gives this error without out [Convert Error: No TVDb ID Found for TMDb ID:]
+      - 391434  # Shaun the Sheep: Adventures from Mossy Bottom         # This is needed because it gives this error without out [Convert Error: No TVDb ID Found for TMDb ID:]
+      - 407030  # Bake Squad                                            # This is needed because it gives this error without out [Convert Error: No TVDb ID Found for TMDb ID:]
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Netflix.png
+# Netflix:
+#   template: {name: Streaming Services}
+#   tmdb_network: 213
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Netflix.png
+  Netflix (Score):
+    template: {name: Streaming Services}
+    mdblist_list: https://mdblist.com/lists/awesomeaustn/netflix-sorted-by-score
+    collection_order: custom
+    summary: Sorted by a combined score of IMDb, Trakt, TMDb, Letterboxed, Rotten Tomatoes, Audience, Metacritic, and RogerEbert.
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Netflix%20(Score).png
+  Paramount+:
+    template: {name: Streaming Services}
+    tmdb_network: 4330
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Paramount%2B.png
+  Prime Video:
+    template: {name: Streaming Services}
+    tmdb_network: 1024
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Prime%20Video.png
+
+############################
+#         STUDIOS          #
+############################
+
+  DC:
+    template: {name: Studios}
+    tmdb_list: https://www.themoviedb.org/list/7071946
+    tvdb_show:
+      - 78650   # The Flash                                             # This is needed because it gives this error without out [Convert Error: No TVDb ID Found for TMDb ID:]
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/DC-2.png
+  Marvel:
+    template: {name: Studios}
+    tmdb_list: https://www.themoviedb.org/list/7071556
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Marvel.png
+# Marvel Cinematic Universe (Chronological):                           # This includes the Movies also
+#   template: {name: Studios}
+#   trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
+#   collection_order: custom
+#   url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Marvel%20Cinematic%20Universe.png
+  Marvel Studios:
+    template: {name: Studios}
+    tmdb_company: 420
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Marvel%20Studios.png
+
+############################
+#         HOLIDAYS         #
+############################
+
+############################
+#          YEARS           #
+############################
+
+  2020 Shows:
+    template: {name: Years}
+    plex_search:
+      all:
+        year: 2020
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/2020%20Shows.png
+  2021 Shows:
+    template: {name: Years}
+    plex_search:
+      all:
+        year: 2021
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/2021%20Shows.png
+  2022 Shows:
+    template: {name: Years}
+    plex_search:
+      all:
+        year: 2022
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/2022%20Shows.png
+
+############################
+#          AUDIO           #
+############################
+
+############################
+#          RANDOM          #
+############################
+
+  Random 30 Rock:
+    template: {name: Random, show: 30 Rock}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%2030%20Rock.png
+  Random Becker:
+    template: {name: Random, show: Becker}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Becker.png
+  Random Impractical Jokers:
+    template: {name: Random, show: Impractical Jokers}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Impractical%20Jokers.png
+  Random Malcolm in the Middle:
+    template: {name: Random, show: Malcolm in the Middle}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Malcolm%20in%20the%20Middle.png
+  Random Seinfeld:
+    template: {name: Random, show: Seinfeld}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Seinfeld.png
+  Random Superstore:
+    template: {name: Random, show: Superstore}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Random%20Superstore.png
+
+############################
+#          ACTORS          #
+############################
+
+  Jason Bateman:
+    template: {name: Actors, person: 23532}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Jason%20Bateman.jpg
+
+############################
+#        DIRECTORS         #
+############################
+
+############################
+#          DOLBY           #
+############################
+
+# Dolby Atmos & Dolby Vision:
+#   template: {name: Dolby}
+#   mdblist_list: https://mdblist.com/lists/blisskodi/dolby-atmos-dolby-vision-tv

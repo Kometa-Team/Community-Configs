@@ -17,7 +17,7 @@ templates:
   RTCertFresh:
     optional:
       - overlay_level
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfresh<<library_type>>s
     default:
       overlay: <<overlay_name>>
       weight: 20
