@@ -220,6 +220,7 @@ libraries:                                        # Library mappings must have a
           ending: current_year
     - git: PMM/show/country
     - git: PMM/show/decade
+    - git: PMM/show/franchise
     - git: PMM/show/network
     - git: PMM/streaming
     overlay_path:
