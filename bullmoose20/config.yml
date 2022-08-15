@@ -54,25 +54,25 @@ libraries:                                        # Library mappings must have a
       template_variables:
         style: bw
         data:
-          depth: 5
+          depth: 10
           limit: 150
     - git: PMM/movie/director
       template_variables:
         style: bw
         data:
-          depth: 5
+          depth: 10
           limit: 150
     - git: PMM/movie/producer
       template_variables:
         style: bw
         data:
-          depth: 5
+          depth: 10
           limit: 150
     - git: PMM/movie/writer
       template_variables:
         style: bw
         data:
-          depth: 5
+          depth: 10
           limit: 150
     - git: PMM/audio_language
     - git: PMM/movie/content_rating_us           # Choose content_rating_uk or content_rating_us
@@ -205,7 +205,7 @@ libraries:                                        # Library mappings must have a
       template_variables:
         style: bw
         data:
-          depth: 5
+          depth: 10
           limit: 150
     - git: PMM/audio_language
     - git: PMM/show/content_rating_us            # Choose content_rating_uk or content_rating_us
@@ -220,6 +220,7 @@ libraries:                                        # Library mappings must have a
           ending: current_year
     - git: PMM/show/country
     - git: PMM/show/decade
+    - git: PMM/show/franchise
     - git: PMM/show/network
     - git: PMM/streaming
     overlay_path:
