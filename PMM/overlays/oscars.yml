@@ -1,0 +1,38 @@
+#############################################################
+#                   Oscars Overlay                          #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Call this from your config.yml (Movie):                  #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/oscars                           #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the weight for the overlay                 #
+#          weight: 40                                       #
+#############################################################
+
+templates:
+  Oscars:
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+      weight: 40
+    imdb_list: https://www.imdb.com/search/title/?groups=best_picture_winner
+    overlay:
+      name: <<overlay_name>>
+      git: PMM/overlays/images/<<overlay>>
+      group: ribbon
+      weight: <<weight>>
+      horizontal_offset: 0
+      horizontal_align: right
+      vertical_offset: 0
+      vertical_align: bottom
+
+overlays:
+
+  Oscars-Ribbon:
+    template:
+      - name: Oscars
