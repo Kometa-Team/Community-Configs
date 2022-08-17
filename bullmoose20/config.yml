@@ -43,36 +43,36 @@ libraries:                                        # Library mappings must have a
           starting: 2010
           ending: current_year
     - git: PMM/chart/anilist
-    - git: PMM/chart/basic
     - git: PMM/chart/imdb
     - git: PMM/chart/myanimelist
     - git: PMM/chart/other
     - git: PMM/chart/tautulli
     - git: PMM/chart/tmdb
     - git: PMM/chart/trakt
+    - git: PMM/chart/basic          # Keep this as the last chart item so that collection_mode: hide works properly on library tab for CHART COLLECTION
     - git: PMM/actor
       template_variables:
-        style: rainier
+        style: bw
         data:
-          depth: 5
+          depth: 10
           limit: 150
     - git: PMM/movie/director
       template_variables:
-        style: rainier
+        style: bw
         data:
-          depth: 5
+          depth: 10
           limit: 150
     - git: PMM/movie/producer
       template_variables:
-        style: rainier
+        style: bw
         data:
-          depth: 5
+          depth: 10
           limit: 150
     - git: PMM/movie/writer
       template_variables:
-        style: rainier
+        style: bw
         data:
-          depth: 5
+          depth: 10
           limit: 150
     - git: PMM/audio_language
     - git: PMM/movie/content_rating_us           # Choose content_rating_uk or content_rating_us
@@ -167,7 +167,7 @@ libraries:                                        # Library mappings must have a
       delete_unmanaged_collections: true
       mass_critic_rating_update: imdb
       mass_audience_rating_update: tmdb
-      mass_user_rating_update: mdb_tomatoes
+      mass_user_rating_update: mdb_tomatoesaudience
       mass_genre_update: tmdb
       mass_content_rating_update: omdb
       mass_originally_available_update: tmdb
@@ -194,18 +194,18 @@ libraries:                                        # Library mappings must have a
           starting: 1947
           ending: current_year
     - git: PMM/chart/anilist
-    - git: PMM/chart/basic
     - git: PMM/chart/imdb
     - git: PMM/chart/myanimelist
     - git: PMM/chart/other
     - git: PMM/chart/tautulli
     - git: PMM/chart/tmdb
     - git: PMM/chart/trakt
+    - git: PMM/chart/basic          # Keep this as the last chart item so that collection_mode: hide works properly on library tab for CHART COLLECTION
     - git: PMM/actor
       template_variables:
-        style: rainier
+        style: bw
         data:
-          depth: 5
+          depth: 10
           limit: 150
     - git: PMM/audio_language
     - git: PMM/show/content_rating_us            # Choose content_rating_uk or content_rating_us
@@ -220,6 +220,7 @@ libraries:                                        # Library mappings must have a
           ending: current_year
     - git: PMM/show/country
     - git: PMM/show/decade
+    - git: PMM/show/franchise
     - git: PMM/show/network
     - git: PMM/streaming
     overlay_path:
@@ -374,7 +375,7 @@ libraries:                                        # Library mappings must have a
       delete_unmanaged_collections: true
       mass_critic_rating_update: imdb
       mass_audience_rating_update: tmdb
-      mass_user_rating_update: mdb_tomatoes
+      mass_user_rating_update: mdb_tomatoesaudience
       mass_episode_critic_rating_update: imdb
       mass_episode_audience_rating_update: tmdb
       mass_genre_update: tmdb
@@ -425,9 +426,9 @@ settings:                                       # Can be individually specified 
   custom_git:
   custom_repo:
 webhooks:                                       # Can be individually specified per library as well
-  error: (redacted)
-  run_start: (redacted)
-  run_end: (redacted)
+  error: notifiarr
+  run_start: notifiarr
+  run_end: notifiarr
   changes:
   - notifiarr
   version:
