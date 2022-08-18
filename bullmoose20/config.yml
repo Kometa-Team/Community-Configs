@@ -111,6 +111,9 @@ libraries:                                        # Library mappings must have a
         # style: standard
     - git: PMM/overlays/audio_language
     # - git: PMM/overlays/direct_play
+    - git: PMM/overlays/oscars
+      template_variables:
+        weight: 40
     - git: PMM/overlays/imdb_top_250
       template_variables:
         weight: 30
