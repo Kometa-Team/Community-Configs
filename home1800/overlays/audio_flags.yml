@@ -13,7 +13,7 @@
 #  If nothing is specified these are the defaults           #
 #                                                           #
 #    overlay_path:                                          #
-#      - git: home1800/overlays/audio_language              #
+#      - git: home1800/overlays/audio_flags                 #
 #        template_variables:                                #
 #          # Set episode or season to overlay               #
 #          overlay_level:                                   #
