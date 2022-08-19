@@ -4,3 +4,5 @@ Always wanted Language Flags, no I've got them. Focused on German Combinations m
 First fork ever, so no clue if it'll work. I'm just gonna imitate everything everybody else is doing and hope for the best.
 
 wanted to automate the flag-combination generating, but no willing to get into imagemagick at this moment
+
+Combinations up to three flags, won't do more to combat clutter. Also, I only need original language + german and optionally english if available.
