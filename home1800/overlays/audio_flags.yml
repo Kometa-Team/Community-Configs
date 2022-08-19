@@ -51,6 +51,7 @@ templates:
 
 overlays:
 
+# single language flags
   ger-audio:
     template:
       - name: AudioLanguage
@@ -102,7 +103,7 @@ overlays:
 
 ################################
 
-
+# dual language (german + any)
   ger+fr-audio:
     template:
       - name: AudioLanguage
@@ -146,6 +147,7 @@ overlays:
       
 ################################
 
+# dual language (english + any)
   eng+ger-audio:
     template:
       - name: AudioLanguage
@@ -196,6 +198,7 @@ overlays:
 
 ################################
 
+# triple language (english + german + any)
   eng+ger+ja-audio:
     template:
       - name: AudioLanguage
