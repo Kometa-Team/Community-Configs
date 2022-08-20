@@ -231,7 +231,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|KO|DE)[A-Z+]*(EN|KO|DE)[A-Z+]*(EN|KO|DE)[A-Z+]*\]\.*
 
-  eng+ger+spa-audio:
+  eng+ger+spa-audio.png:
     template:
       - name: AudioLanguage
         weight: 20
