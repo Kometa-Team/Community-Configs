@@ -4,6 +4,7 @@ libraries:                                        # Library mappings must have a
   Movies:
     report_path: config/missing/Movies_missing.yml
     template_variables:
+      sep_style: purple
       collection_mode: hide
     metadata_path:
     - git: PMM/award/bafta
@@ -52,6 +53,9 @@ libraries:                                        # Library mappings must have a
     - git: PMM/chart/basic          # Keep this as the last chart item so that collection_mode: hide works properly on library tab for CHART COLLECTION
     - git: PMM/actor
       template_variables:
+        exclude:
+          - Brett Favre
+          - Tom Brady
         style: bw
         data:
           depth: 10
@@ -179,6 +183,7 @@ libraries:                                        # Library mappings must have a
   TV Shows:
     report_path: config/missing/TV_missing.yml
     template_variables:
+      sep_style: stb
       collection_mode: hide
     metadata_path:
     - git: PMM/award/choice
@@ -320,7 +325,7 @@ libraries:                                        # Library mappings must have a
 
         horizontal_position: right
         overlay_level: episode
-    # - file: config/metadata/overlays/ratings
+    # - git: PMM/overlays/ratings
       # template_variables:
         # # rating1: user
         # # rating1_image: rt_tomato
