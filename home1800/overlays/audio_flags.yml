@@ -41,7 +41,7 @@ templates:
     ignore_blank_results: true
     overlay:
       name: <<overlay_name>>
-      repo: home1800/overlays/images/<<overlay>>
+      repo: home1800/overlays/images/flag-overlays/<<overlay>>
       group: audio_language
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
@@ -52,7 +52,7 @@ templates:
 overlays:
 
 # single language flags
-  ger-audio:
+  de:
     template:
       - name: AudioLanguage
         weight: 5
@@ -60,7 +60,7 @@ overlays:
     filter:
       filepath.regex: .*\[DE\]\.*
 
-  spa-audio:
+  es:
     template:
       - name: AudioLanguage
         weight: 5
@@ -68,7 +68,7 @@ overlays:
     filter:
       filepath.regex: .*\[ES\]\.*
 
-  kor-audio:
+  kr:
     template:
       - name: AudioLanguage
         weight: 5
@@ -76,7 +76,7 @@ overlays:
     filter:
       filepath.regex: .*\[KO\]\.*
 
-  nor-audio:
+  no:
     template:
       - name: AudioLanguage
         weight: 5
@@ -84,7 +84,7 @@ overlays:
     filter:
       filepath.regex: .*\[NB\]\.*
 
-  fr-audio:
+  fr:
     template:
       - name: AudioLanguage
         weight: 5
@@ -92,7 +92,7 @@ overlays:
     filter:
       filepath.regex: .*\[FR\]\.*
 
-  ja-audio:
+  jp:
     template:
       - name: AudioLanguage
         weight: 5
@@ -104,7 +104,7 @@ overlays:
 ################################
 
 # dual language (german + any)
-  ger+fr-audio:
+  de+fr:
     template:
       - name: AudioLanguage
         weight: 10
@@ -112,7 +112,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(FR|DE)[A-Z+]*(FR|DE)[A-Z+]*\]\.*
 
-  ger+ja-audio:
+  de+jp:
     template:
       - name: AudioLanguage
         weight: 10
@@ -120,7 +120,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(JA|DE)[A-Z+]*(JA|DE)[A-Z+]*\]\.*
 
-  ger+kor-audio:
+  de+kr:
     template:
       - name: AudioLanguage
         weight: 10
@@ -128,7 +128,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(KO|DE)[A-Z+]*(KO|DE)[A-Z+]*\]\.*
 
-  ger+nor-audio:
+  de+no:
     template:
       - name: AudioLanguage
         weight: 10
@@ -136,7 +136,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(NB|DE)[A-Z+]*(NB|DE)[A-Z+]*\]\.*
 
-  ger+spa-audio:
+  de+es:
     template:
       - name: AudioLanguage
         weight: 10
@@ -148,7 +148,7 @@ overlays:
 ################################
 
 # dual language (english + any)
-  eng+ger-audio:
+  us+de:
     template:
       - name: AudioLanguage
         weight: 10
@@ -156,7 +156,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|DE)[A-Z+]*(EN|DE)[A-Z+]*\]\.*
 
-  eng+fr-audio:
+  us+fr:
     template:
       - name: AudioLanguage
         weight: 10
@@ -164,7 +164,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|FR)[A-Z+]*(EN|FR)[A-Z+]*\]\.*
 
-  eng+ja-audio:
+  us+jp:
     template:
       - name: AudioLanguage
         weight: 10
@@ -172,7 +172,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|JA)[A-Z+]*(EN|JA)[A-Z+]*\]\.*
 
-  eng+kor-audio:
+  us+kr:
     template:
       - name: AudioLanguage
         weight: 10
@@ -180,7 +180,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|KO)[A-Z+]*(EN|KO)[A-Z+]*\]\.*
 
-  eng+nor-audio:
+  us+no:
     template:
       - name: AudioLanguage
         weight: 10
@@ -188,7 +188,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|NB)[A-Z+]*(EN|NB)[A-Z+]*\]\.*
 
-  eng+spa-audio:
+  us+es:
     template:
       - name: AudioLanguage
         weight: 10
@@ -199,7 +199,7 @@ overlays:
 ################################
 
 # triple language (english + german + any)
-  eng+ger+ja-audio:
+  us+de+jp:
     template:
       - name: AudioLanguage
         weight: 20
@@ -207,7 +207,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|JA|DE)[A-Z+]*(EN|JA|DE)[A-Z+]*(EN|JA|DE)[A-Z+]*\]\.*
 
-  eng+ger+fr-audio:
+  us+de+fr:
     template:
       - name: AudioLanguage
         weight: 20
@@ -215,7 +215,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|FR|DE)[A-Z+]*(EN|FR|DE)[A-Z+]*(EN|FR|DE)[A-Z+]*\]\.*
 
-  eng+ger+nor-audio:
+  us+de+no:
     template:
       - name: AudioLanguage
         weight: 20
@@ -223,7 +223,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|NB|DE)[A-Z+]*(EN|NB|DE)[A-Z+]*(EN|NB|DE)[A-Z+]*\]\.*
 
-  eng+ger+kor-audio:
+  us+de+kr:
     template:
       - name: AudioLanguage
         weight: 20
@@ -231,7 +231,7 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|KO|DE)[A-Z+]*(EN|KO|DE)[A-Z+]*(EN|KO|DE)[A-Z+]*\]\.*
 
-  eng+ger+spa-audio:
+  us+de+es:
     template:
       - name: AudioLanguage
         weight: 20
