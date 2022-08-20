@@ -41,7 +41,7 @@ templates:
     ignore_blank_results: true
     overlay:
       name: <<overlay_name>>
-      repo: home1800/overlays/images/flag-overlays/<<overlay>>
+      git: home1800/overlays/images/flag-overlays/<<overlay>>
       group: audio_language
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
