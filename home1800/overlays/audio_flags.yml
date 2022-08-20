@@ -41,7 +41,7 @@ templates:
     ignore_blank_results: true
     overlay:
       name: <<overlay_name>>
-      url: https://github.com/home1800/Plex-Meta-Manager-Configs/master/home1800/overlays/images/<<overlay>>.png
+      url: https://github.com/home1800/Plex-Meta-Manager-Configs/master/home1800/overlays/images/<<overlay>>
       group: audio_language
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
