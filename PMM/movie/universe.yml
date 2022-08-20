@@ -13,6 +13,9 @@
 #        template_variables:                                #
 #          # Turn the separator collection on/off           #
 #          use_separator: true                              #
+#          # Separator style (red, blue, green, gray,       #
+#              purple, stb, orig)                           #
+#          sep_style: orig                                  #
 #          # Add Missing Movies to Radarr                   #
 #          radarr_add_missing: true                         #
 #          # Sets the collection order of the collection    #

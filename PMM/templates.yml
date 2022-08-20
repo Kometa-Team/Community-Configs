@@ -2,6 +2,7 @@ templates:
 
   separator:
     default:
+      sep_style: orig
       collection_section: "00"
     optional:
       - use_separator
@@ -10,10 +11,11 @@ templates:
     collection_mode: <<collection_mode>>
     sort_title: "!<<collection_section>>_!<<collection_name>>"
     blank_collection: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<separator>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<sep_style>>/<<separator>>.jpg
 
   separator off:
     default:
+      sep_style: orig
       collection_section: "00"
       use_separator: false
     optional:
@@ -22,7 +24,7 @@ templates:
     collection_mode: <<collection_mode>>
     sort_title: "!<<collection_section>>_!<<collection_name>>"
     blank_collection: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<separator>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<sep_style>>/<<separator>>.jpg
 
   shared:
     default:
