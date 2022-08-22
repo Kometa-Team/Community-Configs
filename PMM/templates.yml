@@ -48,7 +48,7 @@ templates:
     item_radarr_tag: <<item_radarr_tag>>
     item_sonarr_tag: <<item_sonarr_tag>>
     collection_mode: <<collection_mode>>
-    sort_title: "!<<collection_section>><<pre>><<order_<<key>>>><<sort>>"
+    sort_title: "!<<collection_section>><<pre>><<order>><<key>><<sort>>"
 
   chart_shared:
     default:
