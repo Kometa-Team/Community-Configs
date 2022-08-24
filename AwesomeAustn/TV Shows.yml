@@ -12,7 +12,7 @@ templates:
   Oscars:
     sort_title: "!02_<<collection_name>>"
     sync_mode: sync
-    collection_order: custom
+    collection_order: release.desc
     collection_mode: hide
     schedule: yearly(03/01)
   AFI's 100:
@@ -159,9 +159,13 @@ collections:
   IMDb Most Popular:
     template: {name: Charts}
     imdb_chart: popular_shows
+  IMDb Top 250:
+    template: {name: Charts}
+    imdb_list: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=50000,&sort=user_rating,desc
+    limit: 250
   TMDb Most Popular:
     template: {name: Charts}
-    tmdb_popular: 100
+    tmdb_popular: 30
   Trakt Trending:
     template: {name: Charts}
     trakt_trending: 30
@@ -265,6 +269,8 @@ collections:
   Disney+:
     template: {name: Streaming Services}
     tmdb_network: 2739
+    tvdb_show:
+      - 393201  # I Am Groot                                            # This is listed as movies on TMDb
   Disney+ (Score):
     template: {name: Streaming Services}
     mdblist_list: https://mdblist.com/lists/awesomeaustn/disney-sorted-by-score
@@ -308,6 +314,7 @@ collections:
     tmdb_list: https://www.themoviedb.org/list/7071946
     tvdb_show:
       - 78650   # The Flash                                             # This is needed because it gives this error without out [Convert Error: No TVDb ID Found for TMDb ID:]
+      - 365677  # Harley Quinn                                          # List is Live-action only
     file_poster: /config/assets/DC-2.png                                # 2 because the regular one is a poster for movies
   Disney Channel:
     template: {name: Studios}
@@ -315,13 +322,17 @@ collections:
   Marvel:
     template: {name: Studios}
     tmdb_list: https://www.themoviedb.org/list/7071556
-# Marvel Cinematic Universe (Chronological):                           # This includes the Movies also
+    tvdb_show:
+      - 393201  # I Am Groot                                            # This is listed as movies on TMDb
+# Marvel Cinematic Universe (Chronological):                            # This includes the Movies also
 #   template: {name: Studios}
 #   trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
 #   collection_order: custom
   Marvel Studios:
     template: {name: Studios}
     tmdb_company: 420
+    tvdb_show:
+      - 393201  # I Am Groot                                            # This is listed as movies on TMDb
 
 ############################
 #         HOLIDAYS         #

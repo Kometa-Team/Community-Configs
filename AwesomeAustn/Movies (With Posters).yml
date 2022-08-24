@@ -824,36 +824,138 @@ collections:
 #          ACTORS          #
 ############################
 
+  Adam Sandler:
+    template: {name: Actors, person: 19292}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Adam%20Sandler.jpg
+  Ben Affleck:
+    template: {name: Actors, person: 880}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Ben%20Affleck.jpg
+  Ben Stiller:
+    template: {name: Actors, person: 7399}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Ben%20Stiller.jpg
+  Bill Murray:
+    template: {name: Actors, person: 1532}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Bill%20Murray.jpg
+  Brad Pitt:
+    template: {name: Actors, person: 287}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Brad%20Pitt.jpg
+  Bradley Cooper:
+    template: {name: Actors, person: 51329}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Bradley%20Cooper.jpg
+  Bruce Willis:
+    template: {name: Actors, person: 62}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Bruce%20Willis.jpg
+  Cameron Diaz:
+    template: {name: Actors, person: 6941}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Cameron%20Diaz.jpg
   Charlize Theron:
     template: {name: Actors, person: 6885}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Charlize%20Theron.jpeg
+  Chris Evans:
+    template: {name: Actors, person: 16828}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Chris%20Evans.jpg
   Dwayne Johnson:
     template: {name: Actors, person: 18918}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Dwayne%20Johnson.jpeg
   Gal Gadot:
     template: {name: Actors, person: 90633}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Gal%20Gadot.jpeg
+  Hugh Jackman:
+    template: {name: Actors, person: 6968}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Hugh%20Jackman.jpg
+  J.K. Simmons:
+    template: {name: Actors, person: 18999}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/J.K.%20Simmons.jpg
+  Jackie Chan:
+    template: {name: Actors, person: 18897}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Jackie%20Chan.jpg
+  James Franco:
+    template: {name: Actors, person: 17051}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/James%20Franco.jpg
   Jason Bateman:
     template: {name: Actors, person: 23532}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Jason%20Bateman.jpg
+  Jason Statham:
+    template: {name: Actors, person: 976}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Jason%20Statham.jpg
+  Jim Carrey:
+    template: {name: Actors, person: 206}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Jim%20Carrey.jpg
+  John Goodman:
+    template: {name: Actors, person: 1230}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/John%20Goodman.jpg
+  Johnny Depp:
+    template: {name: Actors, person: 85}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Johnny%20Depp.jpg
+  Johnny Knoxville:
+    template: {name: Actors, person: 9656}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Johnny%20Knoxville.jpg
+  Jonah Hill:
+    template: {name: Actors, person: 21007}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Jonah%20Hill.jpg
   Keanu Reeves:
     template: {name: Actors, person: 6384}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Keanu%20Reeves.jpeg
   Leonardo DiCaprio:
     template: {name: Actors, person: 6193}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Leonardo%20DiCaprio.jpeg
+  Liam Neeson:
+    template: {name: Actors, person: 3896}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Liam%20Neeson.jpg
   Mark Wahlberg:
     template: {name: Actors, person: 13240}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Mark%20Wahlberg.jpg
+  Matt Damon:
+    template: {name: Actors, person: 1892}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Matt%20Damon.jpg
+  Michael Caine:
+    template: {name: Actors, person: 3895}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Michael%20Caine.jpg
   Morgan Freeman:
     template: {name: Actors, person: 192}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Morgan%20Freeman.jpeg
+  Paul Rudd:
+    template: {name: Actors, person: 22226}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Paul%20Rudd.jpg
+  Robert Downey Jr.:
+    template: {name: Actors, person: 3223}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Robert%20Downey%20Jr..jpg
+  Ryan Reynolds:
+    template: {name: Actors, person: 10859}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Ryan%20Reynolds.jpg
+  Samuel L. Jackson:
+    template: {name: Actors, person: 2231}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Samuel%20L.%20Jackson.jpg
   Scarlett Johansson:
     template: {name: Actors, person: 1245}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Scarlett%20Johansson.jpeg
+  Seann William Scott:
+    template: {name: Actors, person: 1245}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Seann%20William%20Scott.jpg
+  Seth Rogen:
+    template: {name: Actors, person: 19274}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Seth%20Rogen.jpg
+  Tom Cruise:
+    template: {name: Actors, person: 500}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Tom%20Cruise.jpg
+  Tom Hanks:
+    template: {name: Actors, person: 31}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Tom%20Hanks.jpg
+  Vin Diesel:
+    template: {name: Actors, person: 12835}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Vin%20Diesel.jpg
   Will Ferrell:
     template: {name: Actors, person: 23659}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Will%20Ferrell.jpg
+  Will Smith:
+    template: {name: Actors, person: 2888}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Will%20Smith.jpg
+  Willem Dafoe:
+    template: {name: Actors, person: 5293}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Willem%20Dafoe.jpg
+  Woody Harrelson:
+    template: {name: Actors, person: 57755}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Woody%20Harrelson.jpg
 
 ############################
 #        DIRECTORS         #
@@ -865,6 +967,9 @@ collections:
   Clint Eastwood:
     template: {name: Directors, person: 190}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Clint%20Eastwood.jpeg
+  Jordan Peele:
+    template: {name: Directors, person: 291263}
+    url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Jordan%20Peele.jpg
   Quentin Tarantino:
     template: {name: Directors, person: 138}
     url_poster: https://raw.githubusercontent.com/AwesomeAustn/Plex-Meta-Manager-Images/master/AwesomeAustn/Sets/Quentin%20Tarantino.jpeg
