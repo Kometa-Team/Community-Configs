@@ -11,6 +11,7 @@ Combinations up to three flags, won't do more to combat clutter. Also, I only ne
 - norwegian
 - japanese
 - french
+- italian
 
 ## Supported combinations ##
 ### (dual language) ###
