@@ -11,6 +11,9 @@
 #        template_variables:                                #
 #          # Turn the separator collection on/off           #
 #          use_separator: true                              #
+#          # Separator style (red, blue, green, gray,       #
+#              purple, stb, orig)                           #
+#          sep_style: orig                                  #
 #          # Turn the other collection on/off               #
 #          use_other: true                                  #
 #          # Sets the style of posters: color or white      #

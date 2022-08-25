@@ -10,6 +10,9 @@
 #        template_variables:                                #
 #          # Turn the separator collection on/off           #
 #          use_separator: false                             #
+#          # Separator style (red, blue, green, gray,       #
+#              purple, stb, orig)                           #
+#          sep_style: orig                                  #
 #          # Turn the Independence Day collection on/off    #
 #          schedule_independence: range(06/23-07/11)        #
 #          # Turn the Easter collection on/off              #

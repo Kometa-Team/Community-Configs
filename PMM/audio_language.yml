@@ -12,6 +12,9 @@
 #          use_separator: true                              #
 #          # Turn the other collection on/off               #
 #          use_other: true                                  #
+#          # Separator style (red, blue, green, gray,       #
+#              purple, stb, orig)                           #
+#          sep_style: orig                                  #
 #          # Sets how the collection is sorted              #
 #          sort_by: release.desc                            #
 #          # Sets the collection mode of the collection     #

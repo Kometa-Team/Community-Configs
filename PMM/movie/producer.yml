@@ -12,6 +12,9 @@
 #          style: bw                                        #
 #          # Turn the separator collection on/off           #
 #          use_separator: true                              #
+#          # Separator style (red, blue, green, gray,       #
+#              purple, stb, orig)                           #
+#          sep_style: orig                                  #
 #          # Sets how the collection is sorted              #
 #          sort_by: release.desc                            #
 #          # Sets the collection mode of the collections    #
