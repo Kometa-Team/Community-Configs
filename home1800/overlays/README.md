@@ -21,7 +21,7 @@ Combinations up to three flags, won't do more to combat clutter. Also, I only ne
 - english + german + any third language
 
 ## Flags ##
-wanted to automate the flag-combination generating to enable more combinations, but no willing to get into imagemagick at this moment
+wanted to automate the flag-combination generating to enable more combinations, but no willing to get into imagemagick at this moment. I've created templates with gimp.
 
 # Recent Ratings # 
 
