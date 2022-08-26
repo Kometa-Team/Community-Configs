@@ -153,8 +153,10 @@ overlays:
     suppress_overlays:
       - ABC
     plex_search:
-      all:
-        network: Nickelodeon
+      any:
+        network:
+          - Nickelodeon
+          - Nicktoons
   PBS:
     overlay: PBS
     plex_search:

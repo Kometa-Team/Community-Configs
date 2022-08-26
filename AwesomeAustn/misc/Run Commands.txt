@@ -1,0 +1,48 @@
+docker exec -it PlexMetaManager /bin/bash
+
+Run Everything:
+python plex_meta_manager.py -r
+or
+python plex_meta_manager.py --run
+________________
+
+Run Collections:
+python plex_meta_manager.py -r -cl "Harry Potter, Star Wars"
+or
+python plex_meta_manager.py --run --collections "Harry Potter, Star Wars"
+_____________________
+
+Run Collections Only:
+python plex_meta_manager.py -r -cl "Harry Potter, Star Wars" -co
+or
+python plex_meta_manager.py --run --collections "Harry Potter, Star Wars" --collections-only
+_____________
+
+Run Overlays:
+python plex_meta_manager.py -r -ov
+or
+python plex_meta_manager.py --run --overlays
+______________
+
+Run Libraries:
+python plex_meta_manager.py -r -rl "Movies, TV Shows"
+or
+python plex_meta_manager.py --run --run-libraries "Movies, TV Shows"
+__________________________________
+
+Run Overlays on a Certain Library:
+python plex_meta_manager.py -r -rl "TV Shows" -ov
+or
+python plex_meta_manager.py --run --run-libraries "TV Shows" --overlays
+_____________________________________
+
+Run Collections on a Certain Library:
+python plex_meta_manager.py -r -rl "TV Shows" -cl "Netflix (Score)" -co
+or
+python plex_meta_manager.py --run --run-libraries "TV Shows" --collections "Netflix (Score)" --collections-only
+________________
+
+Ignore Schedule:
+python plex_meta_manager.py -r -is
+or
+python plex_meta_manager.py --run --ignore-schedules

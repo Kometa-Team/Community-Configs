@@ -156,15 +156,15 @@ collections:
 #          CHARTS          #
 ############################
 
+  IMDb Most Popular:
+    template: {name: Charts}
+    imdb_chart: popular_movies
   IMDb Top 250:
     template: {name: Charts}
-    imdb_list: https://www.imdb.com/search/title/?groups=top_250&sort=user_rating,desc
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&groups=top_250&sort=user_rating,desc
   TMDb Most Popular:
     template: {name: Charts}
     tmdb_popular: 30
-  TMDb Top Rated:
-    template: {name: Charts}
-    tmdb_top_rated: 30
   TMDb Weekly Trending:
     template: {name: Charts}
     tmdb_trending_weekly: 30
@@ -309,6 +309,7 @@ collections:
     imdb_list: https://www.imdb.com/list/ls021457968                    # List by ivandjordjevic-43807
     tmdb_movie:
       - 424694  # Bohemian Rhapsody
+      - 614934  # Elvis
   My Favorites:
     template: {name: Custom}
     imdb_list: https://www.imdb.com/list/ls550502260
@@ -705,26 +706,94 @@ collections:
 #          ACTORS          #
 ############################
 
+  Adam Sandler:
+    template: {name: Actors, person: 19292}
+  Ben Affleck:
+    template: {name: Actors, person: 880}
+  Ben Stiller:
+    template: {name: Actors, person: 7399}
+  Bill Murray:
+    template: {name: Actors, person: 1532}
+  Brad Pitt:
+    template: {name: Actors, person: 287}
+  Bradley Cooper:
+    template: {name: Actors, person: 51329}
+  Bruce Willis:
+    template: {name: Actors, person: 62}
+  Cameron Diaz:
+    template: {name: Actors, person: 6941}
   Charlize Theron:
     template: {name: Actors, person: 6885}
+  Chris Evans:
+    template: {name: Actors, person: 16828}
   Dwayne Johnson:
     template: {name: Actors, person: 18918}
   Gal Gadot:
     template: {name: Actors, person: 90633}
+  Hugh Jackman:
+    template: {name: Actors, person: 6968}
+  J.K. Simmons:
+    template: {name: Actors, person: 18999}
+  Jackie Chan:
+    template: {name: Actors, person: 18897}
+  James Franco:
+    template: {name: Actors, person: 17051}
   Jason Bateman:
     template: {name: Actors, person: 23532}
+  Jason Statham:
+    template: {name: Actors, person: 976}
+  Jim Carrey:
+    template: {name: Actors, person: 206}
+  John Goodman:
+    template: {name: Actors, person: 1230}
+  Johnny Depp:
+    template: {name: Actors, person: 85}
+  Johnny Knoxville:
+    template: {name: Actors, person: 9656}
+  Jonah Hill:
+    template: {name: Actors, person: 21007}
   Keanu Reeves:
     template: {name: Actors, person: 6384}
   Leonardo DiCaprio:
     template: {name: Actors, person: 6193}
+  Liam Neeson:
+    template: {name: Actors, person: 3896}
   Mark Wahlberg:
     template: {name: Actors, person: 13240}
+  Matt Damon:
+    template: {name: Actors, person: 1892}
+  Michael Caine:
+    template: {name: Actors, person: 3895}
   Morgan Freeman:
     template: {name: Actors, person: 192}
+  Paul Rudd:
+    template: {name: Actors, person: 22226}
+  Robert Downey Jr.:
+    template: {name: Actors, person: 3223}
+  Ryan Reynolds:
+    template: {name: Actors, person: 10859}
+  Samuel L. Jackson:
+    template: {name: Actors, person: 2231}
   Scarlett Johansson:
     template: {name: Actors, person: 1245}
+  Seann William Scott:
+    template: {name: Actors, person: 1245}
+  Seth Rogen:
+    template: {name: Actors, person: 19274}
+  Tom Cruise:
+    template: {name: Actors, person: 500}
+  Tom Hanks:
+    template: {name: Actors, person: 31}
+  Vin Diesel:
+    template: {name: Actors, person: 12835}
   Will Ferrell:
     template: {name: Actors, person: 23659}
+  Will Smith:
+    template: {name: Actors, person: 2888}
+  Willem Dafoe:
+    template: {name: Actors, person: 5293}
+  Woody Harrelson:
+    template: {name: Actors, person: 57755}
 
 ############################
 #        DIRECTORS         #
@@ -734,6 +803,8 @@ collections:
     template: {name: Directors, person: 525}
   Clint Eastwood:
     template: {name: Directors, person: 190}
+  Jordan Peele:
+    template: {name: Directors, person: 291263}
   Quentin Tarantino:
     template: {name: Directors, person: 138}
 

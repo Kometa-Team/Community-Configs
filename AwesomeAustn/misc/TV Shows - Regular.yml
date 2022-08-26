@@ -177,6 +177,13 @@ collections:
     tvdb_show:
       - 79257   # Planet Earth
       - 318408  # Planet Earth II
+  Pretty Little Liars:
+    tvdb_show:
+      - 146711  # Pretty Little Liars
+      - 000000  # Pretty Dirty Secrets
+      - 268126  # Ravenswood
+      - 358590  # Pretty Little Liars: The Perfectionists
+      - 389085  # Pretty Little Liars: Original Sin
   Resident Evil:
     tvdb_show:
       - 110642  # Resident Evil: Infinite Darkness
@@ -229,6 +236,11 @@ collections:
       - 70851   # Stargate: Atlantis
       - 83237   # Stargate: Universe
       - 339552  # Stargate: Origins
+  Street Food:
+    tvdb_show:
+      - 87832   # Street Food
+      - 105488  # Street Food: Latin America
+      - 205857  # Street Food: USA
   Tiger King:
     tvdb_show:
       - 377269  # Tiger King
@@ -275,6 +287,9 @@ collections:
       - 247958  # Anohana: The Flower We Saw That Day
       - 259647  # Kokoro Connect
       - 295068  # Dragon Ball Super
+  Food:
+    collection:
+      - Street Food
   Mind Fuck:
     tvdb_show:
       - 253463  # Black Mirror
@@ -299,5 +314,5 @@ collections:
       - 124511  # WWII in HD
       - 281640  # The World Wars
     collection:
-          - Band of Brothers
-          - Apocalypse
+      - Band of Brothers
+      - Apocalypse
