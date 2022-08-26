@@ -1,6 +1,6 @@
 # bullmoose20 PMM files
 ## Basics
-I run PMM nightly (not lsio image) and Plex(hotio image) with Unraid:
+I run PMM nightly (not lsio image) and Plex(hotio image) within Unraid:
 
 <br>
 
