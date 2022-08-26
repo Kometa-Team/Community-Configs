@@ -29,12 +29,6 @@ collections:
       - Admin
       - German_metadata
       - Non_german_metadata
-      - Bottom
-      - Up_corners
-      - Down_corners
-      - Left_side
-      - Right_side
-      - Sides
   remove_non_german_metadata:
     template: {name: non_german_metadata}
     build_collection: false

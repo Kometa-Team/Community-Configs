@@ -11,5 +11,5 @@ collections:
     smart_label: random
     visible_shared: true
     visible_library: true
-  Family Watchlist:
-    template: {name: lbxd_wlist, lbxd_smart: random}
+  Watchlist:
+    template: {name: lbxd_list, lbxd_list: watchlist, lbxd_sort: "!1_Watchlist", lbxd_smart: random}

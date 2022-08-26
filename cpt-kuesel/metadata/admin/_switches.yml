@@ -1,106 +1,97 @@
 templates:
-  sw_german:
+  use_german:
     default:
-      sw_german: false
-    allowed_library_types: <<sw_german>>
-  sw_english:
+      use_german: false
+    allowed_library_types: <<use_german>>
+  use_english:
     default:
-      sw_english: false
-    allowed_library_types: <<sw_english>>
-  sw_french:
+      use_english: false
+    allowed_library_types: <<use_english>>
+  use_french:
     default:
-      sw_french: false
-    allowed_library_types: <<sw_french>>
-  sw_japanese:
+      use_french: false
+    allowed_library_types: <<use_french>>
+  use_japanese:
     default:
-      sw_japanese: false
-    allowed_library_types: <<sw_japanese>>
-  sw_korean:
+      use_japanese: false
+    allowed_library_types: <<use_japanese>>
+  use_korean:
     default:
-      sw_korean: false
-    allowed_library_types: <<sw_korean>>
-  sw_chinese:
+      use_korean: false
+    allowed_library_types: <<use_korean>>
+  use_chinese:
     default:
-      sw_chinese: false
-    allowed_library_types: <<sw_chinese>>
-  sw_danish:
+      use_chinese: false
+    allowed_library_types: <<use_chinese>>
+  use_danish:
     default:
-      sw_danish: false
-    allowed_library_types: <<sw_danish>>
-  sw_russian:
+      use_danish: false
+    allowed_library_types: <<use_danish>>
+  use_russian:
     default:
-      sw_russian: false
-    allowed_library_types: <<sw_russian>>
-  sw_spanish:
+      use_russian: false
+    allowed_library_types: <<use_russian>>
+  use_spanish:
     default:
-      sw_spanish: false
-    allowed_library_types: <<sw_spanish>>
-  sw_italian:
+      use_spanish: false
+    allowed_library_types: <<use_spanish>>
+  use_italian:
     default:
-      sw_italian: false
-    allowed_library_types: <<sw_italian>>
-  sw_portuguese:
+      use_italian: false
+    allowed_library_types: <<use_italian>>
+  use_portuguese:
     default:
-      sw_portuguese: false
-    allowed_library_types: <<sw_portuguese>>
-  sw_hindi:
+      use_portuguese: false
+    allowed_library_types: <<use_portuguese>>
+  use_hindi:
     default:
-      sw_hindi: false
-    allowed_library_types: <<sw_hindi>>
-  sw_telugu:
+      use_hindi: false
+    allowed_library_types: <<use_hindi>>
+  use_telugu:
     default:
-      sw_telugu: false
-    allowed_library_types: <<sw_telugu>>
-  sw_farsi:
+      use_telugu: false
+    allowed_library_types: <<use_telugu>>
+  use_farsi:
     default:
-      sw_farsi: false
-    allowed_library_types: <<sw_farsi>>
-  sw_thai:
+      use_farsi: false
+    allowed_library_types: <<use_farsi>>
+  use_thai:
     default:
-      sw_thai: false
-    allowed_library_types: <<sw_thai>>
-  sw_dutch:
+      use_thai: false
+    allowed_library_types: <<use_thai>>
+  use_dutch:
     default:
-      sw_dutch: false
-    allowed_library_types: <<sw_dutch>>
-  sw_norwegian:
+      use_dutch: false
+    allowed_library_types: <<use_dutch>>
+  use_norwegian:
     default:
-      sw_norwegian: false
-    allowed_library_types: <<sw_norwegian>>
-  sw_icelandic:
+      use_norwegian: false
+    allowed_library_types: <<use_norwegian>>
+  use_icelandic:
     default:
-      sw_icelandic: false
-    allowed_library_types: <<sw_icelandic>>
-  sw_swedish:
+      use_icelandic: false
+    allowed_library_types: <<use_icelandic>>
+  use_swedish:
     default:
-      sw_swedish: false
-    allowed_library_types: <<sw_swedish>>
-  sw_turkish:
+      use_swedish: false
+    allowed_library_types: <<use_swedish>>
+  use_turkish:
     default:
-      sw_turkish: false
-    allowed_library_types: <<sw_turkish>>
-  sw_polish:
+      use_turkish: false
+    allowed_library_types: <<use_turkish>>
+  use_polish:
     default:
-      sw_polish: false
-    allowed_library_types: <<sw_polish>>
-  sw_czech:
+      use_polish: false
+    allowed_library_types: <<use_polish>>
+  use_czech:
     default:
-      sw_czech: false
-    allowed_library_types: <<sw_czech>>
-  sw_ukrainian:
+      use_czech: false
+    allowed_library_types: <<use_czech>>
+  use_ukrainian:
     default:
-      sw_ukrainian: false
-    allowed_library_types: <<sw_ukrainian>>
-  sw_hungarian:
+      use_ukrainian: false
+    allowed_library_types: <<use_ukrainian>>
+  use_hungarian:
     default:
-      sw_hungarian: false
-    allowed_library_types: <<sw_hungarian>>
-
-  sw_uhd:
-    default:
-      sw_uhd: false
-    allowed_library_types: <<sw_uhd>>
-  sw_hdr:
-    default:
-      sw_hdr: false
-    allowed_library_types: <<sw_hdr>>
+      use_hungarian: false
+    allowed_library_types: <<use_hungarian>>
