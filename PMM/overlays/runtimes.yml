@@ -1,0 +1,27 @@
+#############################################################
+#                Episodes Runtime Overlay                   #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Call this from your config.yml (Show):                   #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/runtimes                         #
+#############################################################
+
+overlays:
+  text_runtime_info:
+    builder_level: episode
+    overlay:
+      name: "text(Runtime: <<runtimeH>>h <<runtimeM>>m)"
+      horizontal_offset: 15
+      horizontal_align: right
+      vertical_offset: 30
+      vertical_align: bottom
+      font: fonts/Inter-Medium.ttf
+      font_size: 63
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 600
+      back_height: 105
+    plex_all: true
