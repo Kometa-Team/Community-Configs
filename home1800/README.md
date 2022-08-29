@@ -1,8 +1,5 @@
 ![image](https://user-images.githubusercontent.com/69302307/187302551-32c9d7f7-8915-450f-8b34-1f5d253499b4.png)
 
-
-First fork ever, so no clue if it'll work. I'm just gonna imitate everything everybody else is doing and hope for the best.
-
 # Overlays # 
 ## Audio Flags ##
 Mainly focused on combinations of english and/or german with a third language
