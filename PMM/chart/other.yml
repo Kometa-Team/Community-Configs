@@ -78,4 +78,4 @@ collections:
       - name: customsync
       - name: chart_shared
         key: pirated
-
+        check_library: movie
