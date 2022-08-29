@@ -1,0 +1,26 @@
+#############################################################
+#                    Episode Info Overlay                   #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Call this from your config.yml (Show):                   #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/episode_info                     #
+#############################################################
+
+overlays:
+  text_episode_info:
+    builder_level: episode
+    overlay:
+      name: text(S<<season_number0>>E<<episode_number0>>)
+      horizontal_align: center
+      vertical_offset: 30
+      vertical_align: bottom
+      font: fonts/Inter-Medium.ttf
+      font_size: 63
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 300
+      back_height: 105
+    plex_all: true
