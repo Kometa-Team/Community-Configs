@@ -1,4 +1,4 @@
-# Language Flags # 
+# Audio Flags # 
 
 Always wanted Language Flags, now I've got them. Focused on German combinations mainly. 
 Combinations up to three flags, won't do more to combat clutter. Also, I only need original language + german and optionally english if available.
@@ -14,6 +14,9 @@ Combinations up to three flags, won't do more to combat clutter. Also, I only ne
 - italian
 
 ## Supported combinations ##
+### (single language) ###
+- every language listed
+
 ### (dual language) ###
 - english with every language listed
 - german with every language listed
