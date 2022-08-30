@@ -3,6 +3,12 @@
 Always wanted Audio Language Flags, now I've got them. Focused on English and German combinations mainly. 
 Combinations up to three flags, won't do more to combat clutter. Also, I only need original language + german and optionally english if available.
 
+## Setup ###
+
+This config works by regex matching the filename and applying flags accordingly.
+Requires {MediaInfo AudioLanguages} in radarr naming or manually add the languages in whatever standard radarr uses in '[]' braces.
+
+
 ## Supported Languages ##
 - english
 - german
