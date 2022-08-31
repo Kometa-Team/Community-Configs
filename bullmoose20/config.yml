@@ -66,8 +66,8 @@ libraries:                                        # Library mappings must have a
     - git: PMM/movie/producer
       template_variables:
         exclude:
-          - Jeremy Kleiner
-          - Thomas Hayslip
+        - Jeremy Kleiner
+        - Thomas Hayslip
         style: bw
         data:
           depth: 10
@@ -212,7 +212,7 @@ libraries:                                        # Library mappings must have a
     - git: PMM/actor
       template_variables:
         exclude:
-          - Macy Nyman
+        - Macy Nyman
         style: bw
         data:
           depth: 10
@@ -327,26 +327,6 @@ libraries:                                        # Library mappings must have a
 
         horizontal_position: right
         overlay_level: episode
-    # - git: PMM/overlays/ratings
-      # template_variables:
-        # # rating1: user
-        # # rating1_image: rt_tomato
-        # # rating1_font: config/metadata/overlays/fonts/Adlib.ttf
-        # # rating1_font_size: 63
-
-        # rating2: critic
-        # rating2_image: imdb
-        # rating2_font: config/metadata/overlays/fonts/Impact.ttf
-        # rating2_font_size: 70
-
-        # rating3: audience
-        # rating3_image: tmdb
-        # rating3_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
-        # rating3_font_size: 70
-
-        # horizontal_position: right
-        # side: right
-        # overlay_level: season
     - git: PMM/overlays/resolution
     - git: PMM/overlays/resolution
       template_variables:
