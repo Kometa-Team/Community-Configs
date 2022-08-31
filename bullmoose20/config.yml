@@ -172,9 +172,9 @@ libraries:                                        # Library mappings must have a
       split_duplicates: true
       assets_for_all: false
       delete_unmanaged_collections: true
+      mass_user_rating_update: mdb_tomatoes
       mass_critic_rating_update: imdb
       mass_audience_rating_update: tmdb
-      mass_user_rating_update: mdb_tomatoes
       mass_genre_update: tmdb
       mass_content_rating_update: omdb
       mass_originally_available_update: tmdb
@@ -354,6 +354,12 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/resolution
       template_variables:
         overlay_level: season
+    - git: PMM/overlays/episode_info
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/runtimes
+      template_variables:
+        overlay_level: episode
     - git: PMM/overlays/special_release
     - git: PMM/overlays/special_release
       template_variables:
