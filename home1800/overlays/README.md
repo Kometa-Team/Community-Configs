@@ -1,7 +1,13 @@
-# Language Flags # 
+# Audio Flags # 
 
-Always wanted Language Flags, now I've got them. Focused on German combinations mainly. 
+Always wanted Audio Language Flags, now I've got them. Focused on English and German combinations mainly. 
 Combinations up to three flags, won't do more to combat clutter. Also, I only need original language + german and optionally english if available.
+
+## Setup ###
+
+This config works by regex matching the filename and applying flags accordingly.
+Requires {MediaInfo AudioLanguages} in radarr naming or manually add the languages in whatever standard radarr uses in '[]' braces.
+
 
 ## Supported Languages ##
 - english
@@ -11,17 +17,21 @@ Combinations up to three flags, won't do more to combat clutter. Also, I only ne
 - norwegian
 - japanese
 - french
+- italian
 
 ## Supported combinations ##
+### (single language) ###
+- any language listed
+
 ### (dual language) ###
-- english with every language listed
-- german with every language listed
+- english with any language listed
+- german with any language listed
 
 ### (triple language) ###
 - english + german + any third language
 
 ## Flags ##
-wanted to automate the flag-combination generating to enable more combinations, but no willing to get into imagemagick at this moment
+wanted to automate the flag-combination generating to enable more combinations, but no willing to get into imagemagick at this moment. I've created templates with gimp.
 
 # Recent Ratings # 
 

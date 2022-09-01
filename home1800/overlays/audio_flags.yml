@@ -100,6 +100,14 @@ overlays:
     filter:
       filepath.regex: .*\[JA\]\.*
 
+  it:
+    template:
+      - name: AudioLanguage
+        weight: 5
+    plex_all: true
+    filter:
+      filepath.regex: .*\[IT\]\.*
+
 
 ################################
 
@@ -143,6 +151,14 @@ overlays:
     plex_all: true
     filter:
       filepath.regex: .*\[[A-Z+]*(ES|DE)[A-Z+]*(ES|DE)[A-Z+]*\]\.*
+
+  de+it:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(IT|DE)[A-Z+]*(IT|DE)[A-Z+]*\]\.*
 
       
 ################################
@@ -196,6 +212,14 @@ overlays:
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|ES)[A-Z+]*(EN|ES)[A-Z+]*\]\.*
 
+  us+it:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|IT)[A-Z+]*(EN|IT)[A-Z+]*\]\.*
+
 ################################
 
 # triple language (english + german + any)
@@ -238,3 +262,11 @@ overlays:
     plex_all: true
     filter:
       filepath.regex: .*\[[A-Z+]*(EN|ES|DE)[A-Z+]*(EN|ES|DE)[A-Z+]*(EN|ES|DE)[A-Z+]*\]\.*
+
+  us+de+it:
+    template:
+      - name: AudioLanguage
+        weight: 20
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|IT|DE)[A-Z+]*(EN|IT|DE)[A-Z+]*(EN|IT|DE)[A-Z+]*\]\.*
