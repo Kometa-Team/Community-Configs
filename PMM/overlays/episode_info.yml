@@ -32,7 +32,6 @@ templates:
     collection_level: <<overlay_level>>
     overlay:
       name: text(S<<season_number0>>E<<episode_number0>>)
-      back_color: "#00000099"
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
@@ -47,7 +46,6 @@ templates:
 
 overlays:
   episode_info:
-    # builder_level: episode
-      template:
+    template:
       - name: text_episode_info
     plex_all: true
