@@ -6,16 +6,37 @@
 #  Call this from your config.yml (Show):                   #
 #    overlay_path:                                          #
 #      - git: PMM/overlays/episode_info                     #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
+#          horizontal_offset: 0                             #
+#          # Set the horizontal align for the overlay       #
+#          horizontal_align: center                         #
+#          # Set the vertical offset for the overlay        #
+#          vertical_offset: 30                              #
+#          # Set the vertical align for the overlay         #
+#          vertical_align: bottom                           #
 #############################################################
 
-overlays:
+templates:
   text_episode_info:
-    builder_level: episode
-    overlay:
-      name: text(S<<season_number0>>E<<episode_number0>>)
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 0
       horizontal_align: center
       vertical_offset: 30
       vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: text(S<<season_number0>>E<<episode_number0>>)
+      back_color: "#00000099"
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
       font: fonts/Inter-Medium.ttf
       font_size: 63
       font_color: "#FFFFFF"
@@ -23,4 +44,10 @@ overlays:
       back_radius: 30
       back_width: 300
       back_height: 105
+
+overlays:
+  episode_info:
+    # builder_level: episode
+      template:
+      - name: text_episode_info
     plex_all: true

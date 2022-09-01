@@ -6,17 +6,37 @@
 #  Call this from your config.yml (Show):                   #
 #    overlay_path:                                          #
 #      - git: PMM/overlays/runtimes                         #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
+#          horizontal_offset: 15                            #
+#          # Set the horizontal align for the overlay       #
+#          horizontal_align: right                          #
+#          # Set the vertical offset for the overlay        #
+#          vertical_offset: 30                              #
+#          # Set the vertical align for the overlay         #
+#          vertical_align: bottom                           #
 #############################################################
 
-overlays:
+templates:
   text_runtime_info:
-    builder_level: episode
-    overlay:
-      name: "text(Runtime: <<runtimeH>>h <<runtimeM>>m)"
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
       horizontal_offset: 15
       horizontal_align: right
       vertical_offset: 30
       vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: "text(Runtime: <<runtimeH>>h <<runtimeM>>m)"
+      back_color: "#00000099"
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
       font: fonts/Inter-Medium.ttf
       font_size: 63
       font_color: "#FFFFFF"
@@ -24,4 +44,10 @@ overlays:
       back_radius: 30
       back_width: 600
       back_height: 105
+
+overlays:
+  runtime_info:
+    # builder_level: episode
+      template:
+      - name: text_runtime_info
     plex_all: true
