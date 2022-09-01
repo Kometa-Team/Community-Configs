@@ -164,6 +164,7 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/special_release
     - git: PMM/overlays/streaming
     - git: PMM/overlays/video_format
+    - git: PMM/overlays/mediastinger
     settings:
       asset_directory:
       - config/assets
@@ -359,6 +360,13 @@ libraries:                                        # Library mappings must have a
       template_variables:
         overlay_level: episode
     - git: PMM/overlays/video_format
+      template_variables:
+        overlay_level: season
+    - git: PMM/overlays/mediastinger
+    - git: PMM/overlays/mediastinger
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/mediastinger
       template_variables:
         overlay_level: season
     settings:
