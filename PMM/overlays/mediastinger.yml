@@ -38,6 +38,9 @@ templates:
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
+      back_radius: 30
+      back_width: 105
+      back_height: 105
 
 overlays:
   Mediastinger:
