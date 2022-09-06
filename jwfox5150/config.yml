@@ -13,12 +13,11 @@ settings:
   cache: true
   cache_expiration: 60
   asset_directory:
-    - //config/assets
+  - //config/assets
   asset_folders: true
   create_asset_folders: false
   show_missing_season_assets: false
   sync_mode: append
-  collection_minimum: 1
   delete_below_minimum: false
   delete_not_scheduled: false
   run_again_delay: 0
@@ -35,33 +34,47 @@ settings:
   asset_depth: 0
   dimensional_asset_rename: false
   show_options: false
-  playlist_sync_to_user: all
+  minimum_items: 1
+  download_url_assets: false
+  default_collection_order:
+  verify_ssl: true
+  playlist_sync_to_users: all
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  item_refresh_delay: 0
+  custom_repo:
+  prioritize_assets: false
+  playlist_report: true
+  check_nightly: false
 plex:
-  url: ####
-  token: ####
+  url: ############
+  token: ############
   timeout: 60
   clean_bundles: false
   empty_trash: false
   optimize: false
 tmdb:
-  apikey: ####
+  apikey: ############
   language: en
+  cache_expiration: 60
+  region:
 tautulli:
-  url: ####
-  apikey: ####
+  url: ############
+  apikey: ############
 radarr:
-  url: ####
-  token: ####
-  add: false
-  root_folder_path: ####
+  url: ############
+  token: ############
+  root_folder_path: /movies
   monitor: true
-  availability: ####
-  quality_profile: ####
-  tag: pmm
+  availability: released
+  quality_profile: ############
+  tag: ############
   search: true
   add_existing: false
   radarr_path:
   plex_path:
+  add_missing: false
+  upgrade_existing: false
 trakt:
-  client_id: ####
-  client_secret: #####
+  client_id: ############
+  client_secret: ############
