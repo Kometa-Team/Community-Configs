@@ -22,7 +22,9 @@ I've also included a config file which I use as a base for all of these. If you 
 - Shrek Collection
   
 ## Shows
-- David Attenboroughs 'Planet' series
+
+## Cross Library
+- David Attenborough Documentaries
 
 ##### Future Collections
 Some future collections I plan to do include:
