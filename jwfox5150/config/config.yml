@@ -1,5 +1,14 @@
 libraries:
   Movies:
+  Movies (4K):
+    overlay_path:
+      - file: config/overlays.yml
+  TV Shows (4K):
+    overlay_path:
+      - file: config/overlays.yml
+  TV Shows:
+    overlay_path:
+      - file: config/overlays.yml
 settings:
   cache: true
   cache_expiration: 60
