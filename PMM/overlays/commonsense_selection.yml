@@ -5,7 +5,7 @@
 #############################################################
 #  Call this from your config.yml (Movie or Show):          #
 #    overlay_path:                                          #
-#      - git: PMM/overlays/facommonsense_selection          #
+#      - git: PMM/overlays/commonsense_selection            #
 #        template_variables:                                #
 #          # Set episode or season to overlay               #
 #          overlay_level:                                   #
