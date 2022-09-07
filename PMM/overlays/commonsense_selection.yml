@@ -1,11 +1,11 @@
 #############################################################
-#          Commonsense Selection Families Overlay           #
+#             Commonsense Selection Overlay                 #
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
 #            Credit to Magic815 for base images             #
 #############################################################
 #  Call this from your config.yml (Movie or Show):          #
 #    overlay_path:                                          #
-#      - git: PMM/overlays/css_families                     #
+#      - git: PMM/overlays/facommonsense_selection          #
 #        template_variables:                                #
 #          # Set episode or season to overlay               #
 #          overlay_level:                                   #
@@ -17,7 +17,7 @@ templates:
   CSSFamMovies:
     optional:
       - overlay_level
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/cssfamiliesshowsmovies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/cssfamiliesmovies
     default:
       overlay: <<overlay_name>>
       weight: 5
