@@ -29,21 +29,9 @@ collections:
     trakt_list:
       - https://trakt.tv/users/agent531c/lists/the-planet-collection?sort=released%2Casc
     sync_mode: sync
-    # 'Orb' Poster
     url_poster: https://theposterdb.com/api/assets/238229
-    # Normal Poster
-    #url_poster: https://theposterdb.com/api/assets/238196
     collection_order: alpha
     sort_title: ++++++++_attenboroughs_planet
-
-  Attenborough's Planet Collection:
-    trakt_list:
-      - https://trakt.tv/users/agent531c/lists/the-planet-collection?sort=released%2Casc
-    sync_mode: sync
-
-    collection_order: alpha
-    sort_title: ++++++++_attenboroughs_planet
-
 
   # Only the 'Life' documentaries
   Attenborough's Life Collection:
@@ -70,71 +58,36 @@ metadata:
 #
 #====================================================================================
   79257: #Planet Earth:
-    # Orb Posters
     template: {Name: Show, s_pid: 208862, s0_pid: 238213, s1_pid: 238212}
-    # Normal Posters
-    # template: {Name: Show, s_pid: 238212, s0_pid: 238213, s1_pid: 238214}
   318408: #Planet Earth II:
-    # Orb Posters
     template: {Name: Show, s_pid: 238236, s0_pid: 238217, s1_pid: 238218}
-    # Normal Posters
-    # template: {Name: Show, s_pid: , s0_pid: , s1_pid: 238218}
   413197: #Planet Earth III:
-    # Orb Posters
     template: {Name: Show, s_pid: 238237} 
-    # Normal Posters
-    # template: {Name: Show, s_pid: , s0_pid: , s1_pid: }
 
   251418: #Frozen Planet:
-    # Orb Posters
     template: {Name: Show, s_pid: 238232, s0_pid: 238207, s1_pid: 238208}
-    # Normal Posters
-    # template: {Name: Show, s_pid: 238206, s0_pid: 238207, s1_pid: 238208}
   417395: #Frozen Planet II:
-    # Orb Posters
     template: {Name: Show, s_pid: 238233}
-    # Normal Posters
-    # template: {Name: Show, s_pid: 238203, s0_pid: 238204, s1_pid: 238205}
 
   359250: #The Green Planet:
-    # Orb Posters
     template: {Name: Show, s_pid: 238241, s1_pid: 238228}
-    # Normal Posters
-    # template: {Name: Show, s_pid: 238227, s1_pid: 238228}
 
   74372: #The Blue Planet:
-    # Orb Posters
     template: {Name: Show, s_pid: 238240, s0_pid: 238225, s1_pid: 238226}
-    # Normal Posters
-    # template: {Name: Show, s_pid: 238224, s0_pid: 238225, s1_pid: 238226}
   330942: #Blue Planet II:
     template: {Name: Show, s_pid: 238231, s0_pid: 238204, s1_pid: 238205}
-    # Normal Posters
-    # template: {Name: Show, s_pid: , s0_pid: , s1_pid: }
 
   359251: #Seven Worlds, One Planet:
-    # Orb Posters
     template: {Name: Show, s_pid: 238239, s1_pid: 238223}
-    # Normal Posters
-    # template: {Name: Show, s_pid: 238222, s1_pid: 238223}
 
   418505: #Prehistoric Planet(2022):
-    # Orb Posters
     template: {Name: Show, s_pid: 238238, s0_pid: 238220, s1_pid: 238221}
-    # Normal Posters
-    # template: {Name: Show, s_pid: 238219, s0_pid: 238220, s1_pid: 238221}
 
   355229: # Our Planet:
-    # Orb Posters
     template: {Name: Show, s_pid: 238234, s0_pid: 238210, s1_pid: 238211}
-    # Normal Posters
-    # template: {Name: Show, s_pid: 238209, s0_pid: 238210, s1_pid: 238211}
 
   359365: # A Perfect Planet:
-    # Orb Posters
     template: {Name: Show, s_pid: 238230, s0_pid: 238201, s1_pid: 238202}
-    # Normal Posters
-    # template: {Name: Show, s_pid: 238200, s0_pid: 238201, s1_pid: 238202}
 
 
 
@@ -415,8 +368,6 @@ metadata:
   823800: # Planet Earth: A Celebration
     # Orb Version
     url_poster: https://theposterdb.com/api/assets/121587
-    # Normal Version
-    # url_poster: https://theposterdb.com/api/assets/238215
 
   819633: # Puerto Rico: Island of Enchantment
     url_poster: https://theposterdb.com/api/assets/238132
