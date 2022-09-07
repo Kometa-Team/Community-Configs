@@ -13,6 +13,15 @@ templates:
     visible_library: true
     radarr_add: true
 
+  Collection:
+    optional:
+      - collection
+      - movie
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    sync_mode: sync
+    collection_order: release
+
 collections:
 # list-driven
   Mindfuck Movies:
@@ -53,11 +62,41 @@ collections:
 
   Documentaries:
     trakt_list: https://trakt.tv/users/hdlists/lists/documentary-movies-top-rated-from-1980-to-today
+    tmdb_company:
+      - 18894
+      - 6790
+      - 3507
     sync_mode: sync
-    smart_label: critic_rating.desc
+    sort_by: title.desc
     sort_title: --Documentaries
-    summary: A collection consisting of the top rated documentary movies from the 80's onward, sorted by critical acclaim.
+    summary: A collection consisting of documentaries.
     url_poster: https://i.imgur.com/Ti5JdFv.jpg
+    radarr_add: true
+    radarr_quality: Bluray 1080p with all
+
+  Discovery Channel:
+    tmdb_company: 6790
+    sync_mode: sync
+    sort_by: title.desc
+    sort_title: -Discovery Channel
+    summary: A collection of movies/documentaries produced by The Discovery Channel.
+    url_poster: https://github.com/Drapersniper/Posters/raw/main/networks/Discovery/poster.jpg
+
+  History Channel:
+    tmdb_company: 3507
+    sync_mode: sync
+    sort_by: title.desc
+    sort_title: -History Channel
+    summary: A collection of movies/documentaries produced by The History Channel.
+    url_poster: https://github.com/Drapersniper/Posters/raw/main/networks/History/poster.jpg
+
+  Smithsonian Channel:
+    tmdb_company: 18894
+    sync_mode: sync
+    sort_by: title.desc
+    sort_title: -Smithsonian Channel
+    summary: A collection of movies/documentaries produced by The Smithsonian Channel.
+    url_poster: https://github.com/Drapersniper/Posters/raw/main/networks/Smithsonian%20Channel/poster.jpg
 
   Action Movies:
     trakt_list: https://trakt.tv/users/hdlists/lists/action-movies-top-rated-from-1980-to-today
@@ -129,7 +168,7 @@ collections:
     tmdb_trending_weekly: 100
     sort_title: ---Trending
     sync_mode: sync
-    smart_label: year.desc
+    smart_label: critic_rating.desc
     summary: Movies trending across the internet
     url_background: https://i.imgur.com/SOVfrIq.png
     url_poster: https://i.imgur.com/4vpMZoA.png
@@ -188,7 +227,7 @@ collections:
     template:
       name: Holiday
       start_date: 02/01
-      end_date: 02/29
+      end_date: 02/28
     imdb_list:
       - https://www.imdb.com/list/ls000094398/
       - https://www.imdb.com/list/ls057783436/

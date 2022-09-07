@@ -1,0 +1,80 @@
+libraries:
+  Movies:
+  Movies (4K):
+    overlay_path:
+      - file: config/overlays.yml
+  TV Shows (4K):
+    overlay_path:
+      - file: config/overlays.yml
+  TV Shows:
+    overlay_path:
+      - file: config/overlays.yml
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory:
+  - //config/assets
+  asset_folders: true
+  create_asset_folders: false
+  show_missing_season_assets: false
+  sync_mode: append
+  delete_below_minimum: false
+  delete_not_scheduled: false
+  run_again_delay: 0
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_filtered: false
+  show_missing: true
+  show_missing_assets: true
+  save_missing: true
+  tvdb_language: default
+  ignore_ids:
+  ignore_imdb_ids:
+  asset_depth: 0
+  dimensional_asset_rename: false
+  show_options: false
+  minimum_items: 1
+  download_url_assets: false
+  default_collection_order:
+  verify_ssl: true
+  playlist_sync_to_users: all
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  item_refresh_delay: 0
+  custom_repo:
+  prioritize_assets: false
+  playlist_report: true
+  check_nightly: false
+plex:
+  url: ############
+  token: ############
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+tmdb:
+  apikey: ############
+  language: en
+  cache_expiration: 60
+  region:
+tautulli:
+  url: ############
+  apikey: ############
+radarr:
+  url: ############
+  token: ############
+  root_folder_path: /movies
+  monitor: true
+  availability: released
+  quality_profile: ############
+  tag: ############
+  search: true
+  add_existing: false
+  radarr_path:
+  plex_path:
+  add_missing: false
+  upgrade_existing: false
+trakt:
+  client_id: ############
+  client_secret: ############
