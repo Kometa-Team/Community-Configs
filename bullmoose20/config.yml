@@ -121,12 +121,15 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/imdb_top_250
       template_variables:
         weight: 30
-    - git: PMM/overlays/mc_must_see
-      template_variables:
-        weight: 10
     - git: PMM/overlays/rt_cert_fresh
       template_variables:
         weight: 20
+    - git: PMM/overlays/mc_must_see
+      template_variables:
+        weight: 10
+    - git: PMM/overlays/commonsense_selection
+      template_variables:
+        weight: 5
     - git: PMM/overlays/ratings
       template_variables:
         rating1: user
@@ -269,6 +272,17 @@ libraries:                                        # Library mappings must have a
       template_variables:
         weight: 30
         overlay_level: episode
+    - git: PMM/overlays/rt_cert_fresh
+      template_variables:
+        weight: 20
+    - git: PMM/overlays/rt_cert_fresh
+      template_variables:
+        weight: 20
+        overlay_level: season
+    - git: PMM/overlays/rt_cert_fresh
+      template_variables:
+        weight: 20
+        overlay_level: episode
     - git: PMM/overlays/mc_must_see
       template_variables:
         weight: 10
@@ -280,16 +294,16 @@ libraries:                                        # Library mappings must have a
       template_variables:
         weight: 10
         overlay_level: episode
-    - git: PMM/overlays/rt_cert_fresh
+    - git: PMM/overlays/commonsense_selection
       template_variables:
-        weight: 20
-    - git: PMM/overlays/rt_cert_fresh
+        weight: 5
+    - git: PMM/overlays/commonsense_selection
       template_variables:
-        weight: 20
+        weight: 5
         overlay_level: season
-    - git: PMM/overlays/rt_cert_fresh
+    - git: PMM/overlays/commonsense_selection
       template_variables:
-        weight: 20
+        weight: 5
         overlay_level: episode
     - git: PMM/overlays/ratings
       template_variables:
