@@ -17,8 +17,9 @@
 #          # the options.                                   #
 #          # Available collections                          #
 #          #   KEY              COLLECTION                  #
-#          #   stevenlu         StevenLu's Popular Movies   #
 #          #   anidb            AniDB Popular               #
+#          #   commonsense      Common Sense Selected       #
+#          #   stevenlu         StevenLu's Popular Movies   #
 #          #   pirated          Top 10 Pirated Movies       #
 #                                                           #
 #          # Available options. Replace "key" with the      #
@@ -53,7 +54,27 @@ external_templates:
   template_variables:
     collection_section: "01"
 
+templates:
+  css:
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/cssfamilies<<library_type>>s
+    summary: A collection of Common Sense <<library_type>>s. Common Sense recognizes outstanding entertainment with an official seal for quality and impact. Common Sense Selections include age-appropriate media with the potential to spark family conversations, entertain families of all kinds, and have a positive, lasting effect on society.
+
 collections:
+  AniDB Popular:
+    summary: A collection of Popular Anime on AniDB
+    anidb_popular: 30
+    template:
+      - name: customsync
+      - name: chart_shared
+        key: anidb
+
+  Common Sense Selection:
+    template:
+      - name: css
+      - name: customsync
+      - name: chart_shared
+        key: commonsense
+
   StevenLu's Popular Movies:
     summary: A collection of StevenLu's Most Popular Movies
     stevenlu_popular: true
@@ -62,14 +83,6 @@ collections:
       - name: chart_shared
         key: stevenlu
         check_library: movie
-
-  AniDB Popular:
-    summary: A collection of Popular Anime on AniDB
-    anidb_popular: 30
-    template:
-      - name: customsync
-      - name: chart_shared
-        key: anidb
 
   Top 10 Pirated Movies of the Week:
     mdblist_list: https://mdblist.com/lists/hdlists/top-ten-pirated-movies-of-the-week-torrent-freak-com/
