@@ -57,18 +57,3 @@ collections:
     #radarr_add: true
     #radarr_search: true
     #radarr_monitor: true
-
-  # Stingers
-  Media Stingers:
-    tmdb_keyword: 
-     - 179430
-     - 179431
-    smart_label: originally_available.desc
-    sync_mode: sync
-    sort_title: "!002_Stingers"
-    summary: Movies with things during or after the credits
-    #url_poster: 
-    #url_background: 
-    #radarr_add: true
-    #radarr_search: true
-    #radarr_monitor: true
