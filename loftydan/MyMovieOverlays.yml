@@ -4,7 +4,7 @@
 ###########################################################################################################
 
 templates:
-  JRMH1:
+  myCollections:
     optional:
       - overlay_level
       - use_<<slug>>
@@ -18,7 +18,7 @@ templates:
     allowed_library_types: <<use_<<slug>>>>
     overlay:
       name: <<overlay_name>>
-      #git: PMM/overlays/images/<<overlay>>
+      file: loftydan/overlays/<<overlay>>
       group: jrmh1Group
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
@@ -31,7 +31,7 @@ overlays:
 
   BOOKS:
     template:
-      - name: JRMH1
+      - name: myCollections
         weight: 100
         slug: books
     plex_search:
@@ -40,7 +40,7 @@ overlays:
 
   COMIC BOOKS:
     template:
-      - name: JRMH1
+      - name: myCollections
         weight: 101
         slug: comics
     plex_search:
@@ -49,7 +49,7 @@ overlays:
 
   TRUE EVENTS:
     template:
-      - name: JRMH1
+      - name: myCollections
         weight: 105
         slug: events
     plex_search:
@@ -58,7 +58,7 @@ overlays:
 
   VIDEO GAMES:
     template:
-      - name: JRMH1
+      - name: myCollections
         weight: 103
         slug: games
     plex_search:
@@ -67,7 +67,7 @@ overlays:
 
   # STINGERS:
   #   template:
-  #     - name: JRMH1
+  #     - name: myCollections
   #       weight: 1
   #       slug: stingers
   #   plex_search:
