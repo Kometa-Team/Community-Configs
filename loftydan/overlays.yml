@@ -1,7 +1,6 @@
 #############################################################
-#                   Audio Codec Overlays                    #
-#         Created by Yozora, Bullmoose20, & Sohjiro         #
-#            Credit to Magic815 for base images             #
+#                   Overlays                                #
+#         Created by loftydan & iJRMH.                      #
 #############################################################
 #                                                           #
 #  Call this from your config.yml (Movie or Show):          #
@@ -44,7 +43,7 @@ templates:
     ignore_blank_results: true
     overlay:
       name: <<overlay_name>>
-      file: loftydan/overlays/<<style>>/<<overlay>>
+      file: loftydan/overlays/<<style>>/<<overlay>>.png
       group: myCollections
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
