@@ -1,0 +1,177 @@
+#############################################################
+#                       Age Overlay                         #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#                                                           #
+#  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/age                              #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
+#          horizontal_offset: 15                            #
+#          # Set the horizontal align for the overlay       #
+#          horizontal_align: left                           #
+#          # Set the vertical offset for the overlay        #
+#          vertical_offset: 270                             #
+#          # Set the vertical align for the overlay         #
+#          vertical_align: bottom                           #
+#                                                           #
+#    operations:                                            #
+#      mass_content_rating_update: mdb_commonsense          #
+#############################################################
+
+templates:
+  Content-Rating:
+    conditionals:
+      rating_style:
+        default: "+"
+        conditions:
+          - overlay_name: NR
+            value: ""     
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 270
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    ignore_blank_results: true
+    overlay:
+      name: text(<<overlay_name>><<rating_style>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: fonts/Inter-Medium.ttf
+      font_size: 55
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 300
+      back_height: 105
+      git: PMM/overlays/images/raw/commonsense
+      addon_position: left
+      addon_offset: 15
+
+overlays:
+  1:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating.regex: '(?i)\b1\b|\b0\b|\bG\b|\bTV-Y\b|\bTV-G\b'
+  2:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating: 2
+  3:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating: 3
+  4:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating: 4
+  5:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating: 5
+  6:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating.regex: '(?i)\b6\b|\bGP\b|\bPG\b|\bM\/PG\b|\bTV-PG\b'
+  7:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating.regex: '(?i)\b7\b|\bTV-Y7\b|\bTV-Y7-FV\b'
+  8:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating: 8
+  9:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating: 9
+  10:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating: 10
+  11:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating: 11
+  12:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating: 12
+  13:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating.regex: '(?i)\b13\b|\bPG-13\b'
+  14:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating.regex: '(?i)\b14\b|\bTV-14\b'
+  15:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating: 15
+  16:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating.regex: '(?i)\b16\b|\bPassed\b|\bApproved\b|\bOpen\b'
+  17:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating: 17
+  18:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating.regex: '(?i)\b18\b|\bNC-17\b|\bM\b|\bTV-MA\b|\bR\b|\bX\b'
+  NR:
+    template:
+      - name: Content-Rating
+    plex_search:
+      any:
+        content_rating.regex: '(?i)\bNone\b|\bNR\b|\bNot Rated\b|\bUnrated\b'
