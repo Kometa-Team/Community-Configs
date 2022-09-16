@@ -77,12 +77,12 @@ collections:
   Newly Released:
     template:
       - name: released
-      - name: chart_shared
+      - name: smart_chart_shared
         key: released
 
   New Episodes:
     template:
       - name: episodes
-      - name: chart_shared
+      - name: smart_chart_shared
         key: episodes
         check_library: show

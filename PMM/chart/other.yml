@@ -29,6 +29,8 @@
 #          use_key: true                                    #
 #          # Determines collection order in its section     #
 #          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
 #          # Set visible_library for the collection         #
 #          visible_library_key:                             #
 #          # Set visible_home for the collection            #
@@ -64,14 +66,12 @@ collections:
     summary: A collection of Popular Anime on AniDB
     anidb_popular: 30
     template:
-      - name: customsync
       - name: chart_shared
         key: anidb
 
   Common Sense Selection:
     template:
       - name: css
-      - name: customsync
       - name: chart_shared
         key: commonsense
 
@@ -79,7 +79,6 @@ collections:
     summary: A collection of StevenLu's Most Popular Movies
     stevenlu_popular: true
     template:
-      - name: customsync
       - name: chart_shared
         key: stevenlu
         check_library: movie
@@ -88,7 +87,6 @@ collections:
     mdblist_list: https://mdblist.com/lists/hdlists/top-ten-pirated-movies-of-the-week-torrent-freak-com/
     summary: TorrentFreak.com's Weekly Top Ten Pirated Movies
     template:
-      - name: customsync
       - name: chart_shared
         key: pirated
         check_library: movie

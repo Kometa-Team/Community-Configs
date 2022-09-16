@@ -33,6 +33,8 @@
 #          use_key: true                                    #
 #          # Determines collection order in its section     #
 #          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
 #          # Set visible_library for the collection         #
 #          visible_library_key:                             #
 #          # Set visible_home for the collection            #
@@ -81,5 +83,4 @@ dynamic_collections:
     title_format: Trakt <<key_name>>
     template:
       - trakt
-      - customsync
       - chart_shared
