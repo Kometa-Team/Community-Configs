@@ -7,7 +7,7 @@ templates:
     people:
         actor: tmdb
         tmdb_person: <<person>>
-        sort_title: "!17_!_<<collection_name>>"
+        sort_title: "!17_!<<collection_name>>"
         collection_order: release
 
 collections:
