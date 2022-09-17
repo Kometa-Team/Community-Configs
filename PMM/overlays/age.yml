@@ -21,6 +21,9 @@
 #          # Set the vertical align for the overlay         #
 #          vertical_align: bottom                           #
 #                                                           #
+#          # Use the NR overlay                             #
+#          use_nr: true                                     #
+#                                                           #
 #    operations:                                            #
 #      mass_content_rating_update: mdb_commonsense          #
 #############################################################
@@ -35,6 +38,7 @@ templates:
             value: ""     
     optional:
       - overlay_level
+      - use_<<slug>>
     default:
       overlay: <<overlay_name>>
       horizontal_offset: 15
@@ -42,6 +46,7 @@ templates:
       vertical_offset: 270
       vertical_align: bottom
     collection_level: <<overlay_level>>
+    allowed_library_types: <<use_<<slug>>>>
     ignore_blank_results: true
     overlay:
       name: text(<<overlay_name>><<rating_style>>)
@@ -172,6 +177,7 @@ overlays:
   NR:
     template:
       - name: Content-Rating
+        slug: nr
     plex_search:
       any:
         content_rating.regex: '(?i)\bNone\b|\bNR\b|\bNot Rated\b|\bUnrated\b'
