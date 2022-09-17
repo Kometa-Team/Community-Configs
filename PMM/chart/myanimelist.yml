@@ -30,6 +30,8 @@
 #          use_key: true                                    #
 #          # Determines collection order in it's section    #
 #          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
 #          # Set visible_library for the collection         #
 #          visible_library_key:                             #
 #          # Set visible_home for the collection            #
@@ -88,28 +90,24 @@ collections:
   MyAnimeList Popular:
     template:
       - name: popular
-      - name: customsync
       - name: chart_shared
         key: popular
 
   MyAnimeList Favorited:
     template:
       - name: favorited
-      - name: customsync
       - name: chart_shared
         key: favorited
 
   MyAnimeList Top Rated:
     template:
       - name: top
-      - name: customsync
       - name: chart_shared
         key: top
 
   MyAnimeList Top Airing:
     template:
       - name: airing
-      - name: customsync
       - name: chart_shared
         key: airing
 
@@ -119,6 +117,5 @@ collections:
       sort_by: score
     summary: A collection of Anime from the Current Season according to MyAnimeList.
     template:
-      - name: customsync
       - name: chart_shared
         key: season

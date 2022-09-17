@@ -30,6 +30,8 @@
 #          use_key: true                                    #
 #          # Determines collection order in its section     #
 #          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
 #          # Set visible_library for the collection         #
 #          visible_library_key:                             #
 #          # Set visible_home for the collection            #
@@ -94,7 +96,6 @@ collections:
   TMDb Airing Today:
     template:
       - name: airing
-      - name: customsync
       - name: chart_shared
         key: airing
         check_library: show
@@ -102,7 +103,6 @@ collections:
   TMDb On The Air:
     template:
       - name: air
-      - name: customsync
       - name: chart_shared
         key: air
         check_library: show
@@ -110,20 +110,17 @@ collections:
   TMDb Popular:
     template:
       - name: popular
-      - name: customsync
       - name: chart_shared
         key: popular
 
   TMDb Top Rated:
     template:
       - name: top
-      - name: customsync
       - name: chart_shared
         key: top
 
   TMDb Trending:
     template:
       - name: trending
-      - name: customsync
       - name: chart_shared
         key: trending

@@ -30,6 +30,8 @@
 #          use_key: true                                    #
 #          # Determines collection order in its section     #
 #          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
 #          # Set visible_library for the collection         #
 #          visible_library_key:                             #
 #          # Set visible_home for the collection            #
@@ -74,12 +76,10 @@ collections:
   Plex Popular:
     template:
       - name: tautulli_popular
-      - name: customsync
       - name: chart_shared
         key: popular
   Plex Watched:
     template:
       - name: tautulli_watched
-      - name: customsync
       - name: chart_shared
         key: watched

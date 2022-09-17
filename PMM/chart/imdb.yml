@@ -28,6 +28,8 @@
 #          use_key: true                                    #
 #          # Determines collection order in its section     #
 #          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
 #          # Set visible_library for the collection         #
 #          visible_library_key:                             #
 #          # Set visible_home for the collection            #
@@ -57,8 +59,6 @@ templates:
 
   imdb:
     imdb_chart: <<chart>>_<<library_type>>s
-    collection_order: custom
-    sync_mode: sync
 
 collections:
 
@@ -78,8 +78,6 @@ collections:
 
   IMDb Lowest Rated:
     imdb_chart: lowest_rated
-    collection_order: custom
-    sync_mode: sync
     template:
       - name: chart_shared
         key: lowest
