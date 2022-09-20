@@ -4,7 +4,9 @@ Added several [visual styles for Separators](https://github.com/meisnate12/Plex-
 
 # OVERLAY CHANGES
 Added [Common Sense Age Rating](https://www.commonsensemedia.org/) overlays, called with `- git: PMM/overlays/age` and to be used in combination with operation `mass_content_rating_update: mdb_commonsense`
+- See (this image)[https://media.discordapp.net/attachments/1018513616653262908/1020094756329623624/unknown.png]
 Added Common Sense Selection overlays, called with `- git: PMM/overlays/commonsense_selection`
+- See (this image)[https://i.ibb.co/2cyjM1c/Untitled.png]
 Added [mediastinger](http://www.mediastinger.com/) overlays to indicate mid-credits and post-credits scenes, called with `- git: PMM/overlays/mediastinger`
 - See #3 on "Jurassic World: Fallen Kingdom" in (this image)[https://metamanager.wiki/en/nightly/_images/movie-overlays1-annotated.png]
 Added Oscars Ribbon overlay for [Best Picture Winners](https://www.imdb.com/search/title/?groups=best_picture_winner), called with `- git: PMM/overlays/oscars`
