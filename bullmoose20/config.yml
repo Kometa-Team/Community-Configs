@@ -110,7 +110,6 @@ libraries:                                        # Library mappings must have a
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
-    - git: PMM/overlays/versions
     - git: PMM/overlays/age
     - git: PMM/overlays/audio_codec
       # template_variables:
@@ -168,6 +167,7 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/resolution
     - git: PMM/overlays/special_release
     - git: PMM/overlays/streaming
+    - git: PMM/overlays/versions
     - git: PMM/overlays/video_format
     - git: PMM/overlays/mediastinger
     settings:
@@ -242,16 +242,6 @@ libraries:                                        # Library mappings must have a
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
-    - git: PMM/overlays/versions
-    - git: PMM/overlays/versions
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/versions
-      template_variables:
-        overlay_level: season
-    - git: PMM/overlays/versions
-      template_variables:
-        overlay_level: show
     - git: PMM/overlays/age
     - git: PMM/overlays/age
       template_variables:
@@ -388,6 +378,16 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/streaming
       template_variables:
         overlay_level: season
+    - git: PMM/overlays/versions
+    - git: PMM/overlays/versions
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/versions
+      template_variables:
+        overlay_level: season
+    - git: PMM/overlays/versions
+      template_variables:
+        overlay_level: show
     - git: PMM/overlays/video_format
     - git: PMM/overlays/video_format
       template_variables:
