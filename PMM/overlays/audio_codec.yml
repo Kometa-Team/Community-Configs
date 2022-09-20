@@ -22,8 +22,15 @@
 #          vertical_offset: 15                              #
 #          # Set the vertical align for the overlay         #
 #          vertical_align: top                              #
+#          # Set the back color for the overlay             #
+#          back_color: "#00000099"                          #
+#          # Set the back radius for the overlay            #
+#          back_radius: 30                                  #
+#          # Set the back width for the overlay             #
+#          back_width: 300                                  #
 #          # Sets the style of overlay: standard or compact #
 #          style: compact                                   #
+#                                                           #
 #          # Use the Opus overlay                           #
 #          use_opus: true                                   #
 #          # Use the MP3 overlay                            #
@@ -71,6 +78,9 @@ templates:
       vertical_align: top
       style: compact
       standard_value: 105
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 305
     conditionals:
       height:
         default: 105
@@ -89,9 +99,9 @@ templates:
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-      back_color: "#00000099"
-      back_radius: 30
-      back_width: 305
+      back_color: <<back_color>>
+      back_radius: <<back_radius>>
+      back_width: <<back_width>>
       back_height: <<height>>
 
 overlays:
