@@ -101,7 +101,7 @@ libraries:                                        # Library mappings must have a
         schedule_easter: daily
         schedule_valentine: daily
         schedule_patrick: daily
-        schedule_thanksgiving: daily
+        schedule_thanksgiving: range(10/01-10/31)
         schedule_halloween: daily
         schedule_christmas: daily
         schedule_years: daily
@@ -110,6 +110,8 @@ libraries:                                        # Library mappings must have a
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
+    - git: PMM/overlays/versions
+    - git: PMM/overlays/age
     - git: PMM/overlays/audio_codec
       # template_variables:
         # style: standard
@@ -173,14 +175,14 @@ libraries:                                        # Library mappings must have a
       - config/assets
 
     operations:
-      split_duplicates: true
+      split_duplicates: false
       assets_for_all: false
       delete_unmanaged_collections: true
       mass_user_rating_update: mdb_tomatoes
       mass_critic_rating_update: imdb
       mass_audience_rating_update: tmdb
       mass_genre_update: tmdb
-      mass_content_rating_update: omdb
+      mass_content_rating_update: mdb_commonsense
       mass_originally_available_update: tmdb
       mass_imdb_parental_labels: without_none
 
@@ -240,6 +242,23 @@ libraries:                                        # Library mappings must have a
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
+    - git: PMM/overlays/versions
+    - git: PMM/overlays/versions
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/versions
+      template_variables:
+        overlay_level: season
+    - git: PMM/overlays/versions
+      template_variables:
+        overlay_level: show
+    - git: PMM/overlays/age
+    - git: PMM/overlays/age
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/age
+      template_variables:
+        overlay_level: season
     - git: PMM/overlays/audio_codec
     - git: PMM/overlays/audio_codec
       template_variables:
@@ -349,7 +368,7 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/resolution
       template_variables:
         overlay_level: season
-    - git: PMM/overlays/episode_info
+    - file: config/metadata/overlays/episode_info
       template_variables:
         overlay_level: episode
     - git: PMM/overlays/runtimes
@@ -377,18 +396,18 @@ libraries:                                        # Library mappings must have a
       template_variables:
         overlay_level: season
     - git: PMM/overlays/mediastinger
-    - git: PMM/overlays/mediastinger
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/mediastinger
-      template_variables:
-        overlay_level: season
+    # - git: PMM/overlays/mediastinger
+      # template_variables:
+        # overlay_level: episode
+    # - git: PMM/overlays/mediastinger
+      # template_variables:
+        # overlay_level: season
     settings:
       asset_directory:
       - config/assets
 
     operations:
-      split_duplicates: true
+      split_duplicates: false
       assets_for_all: false
       delete_unmanaged_collections: true
       mass_critic_rating_update: imdb
@@ -397,7 +416,7 @@ libraries:                                        # Library mappings must have a
       mass_episode_critic_rating_update: imdb
       mass_episode_audience_rating_update: tmdb
       mass_genre_update: tmdb
-      mass_content_rating_update: omdb
+      mass_content_rating_update: mdb_commonsense
       mass_originally_available_update: tmdb
       mass_imdb_parental_labels: without_none
 playlist_files:
