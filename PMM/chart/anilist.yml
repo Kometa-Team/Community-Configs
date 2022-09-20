@@ -43,7 +43,11 @@
 #          radarr_add_missing_key:                          #
 #          # Adds missing from the collection to sonarr     #
 #          sonarr_add_missing_key:                          #
-#          # Radarr Tag for added missing                   #
+#          # Radarr Folder to add to                        #
+#          radarr_folder_key:                               #
+#          # Sonarr Folder to add to                        #
+#          sonarr_folder_key:                               #
+#          # Radarr Tag for existing items                  #
 #          radarr_tag_key:                                  #
 #          # Sonarr Tag for added missing                   #
 #          sonarr_tag_key:                                  #

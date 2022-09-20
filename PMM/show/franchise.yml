@@ -18,6 +18,14 @@
 #          minimum_items: 2                                 #
 #          # Sets weather to actually build the collection  #
 #          build_collection: true                           #
+#          # Adds missing from the collection to sonarr     #
+#          sonarr_add_missing:                              #
+#          # Sonarr Folder to add to                        #
+#          sonarr_folder:                                   #
+#          # Sonarr Tag for added missing                   #
+#          sonarr_tag:                                      #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag:                                 #
 #############################################################
 
 templates:

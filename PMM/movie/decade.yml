@@ -21,6 +21,8 @@
 #          collection_section: 12                           #
 #          # Sets the number of items per collection        #
 #          limit: 100                                       #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
 #############################################################
 
 external_templates:

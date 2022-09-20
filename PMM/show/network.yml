@@ -21,6 +21,8 @@
 #          collection_mode:                                 #
 #          # Sets the value at the start of the sort title  #
 #          collection_section: "04"                         #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag:                                 #
 #############################################################
 
 external_templates:

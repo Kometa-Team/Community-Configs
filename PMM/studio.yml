@@ -19,6 +19,10 @@
 #          collection_mode:                                 #
 #          # Sets the value at the start of the sort title  #
 #          collection_section: "07"                         #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag:                                 #
 #############################################################
 
 external_templates:
