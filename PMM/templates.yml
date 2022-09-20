@@ -37,12 +37,16 @@ templates:
       - collection_mode
       - radarr_add_missing
       - sonarr_add_missing
+      - radarr_folder
+      - sonarr_folder
       - radarr_tag
       - sonarr_tag
       - item_radarr_tag
       - item_sonarr_tag
     radarr_add_missing: <<radarr_add_missing>>
     sonarr_add_missing: <<sonarr_add_missing>>
+    radarr_folder: <<radarr_folder>>
+    sonarr_folder: <<sonarr_folder>>
     radarr_tag: <<radarr_tag>>
     sonarr_tag: <<sonarr_tag>>
     item_radarr_tag: <<item_radarr_tag>>
@@ -103,6 +107,8 @@ templates:
       - collection_mode
       - radarr_add_missing
       - sonarr_add_missing
+      - radarr_folder
+      - sonarr_folder
       - radarr_tag
       - sonarr_tag
       - item_radarr_tag
@@ -119,6 +125,8 @@ templates:
     visible_shared: <<visible_shared_<<key>>>>
     radarr_add_missing: <<radarr_add_missing_<<key>>>>
     sonarr_add_missing: <<sonarr_add_missing_<<key>>>>
+    radarr_folder: <<radarr_folder_<<key>>>>
+    sonarr_folder: <<sonarr_folder_<<key>>>>
     radarr_tag: <<radarr_tag_<<key>>>>
     sonarr_tag: <<sonarr_tag_<<key>>>>
     item_radarr_tag: <<item_radarr_tag_<<key>>>>
