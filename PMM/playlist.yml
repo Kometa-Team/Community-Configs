@@ -40,6 +40,10 @@
 #          radarr_add_missing_key: true                     #
 #          # Sonarr Add Missing                             #
 #          sonarr_add_missing_key: true                     #
+#          # Radarr Folder to add to                        #
+#          radarr_folder_key:                               #
+#          # Sonarr Folder to add to                        #
+#          sonarr_folder_key:                               #
 #          # Radarr Tag for missing items                   #
 #          radarr_tag_key:                                  #
 #          # Sonarr Tag for missing items                   #
@@ -56,6 +60,8 @@ templates:
       libraries: Movies, TV Shows
       radarr_add_missing_<<key>>: <<radarr_add_missing>>
       sonarr_add_missing_<<key>>: <<sonarr_add_missing>>
+      radarr_folder_<<key>>: <<radarr_folder>>
+      sonarr_folder_<<key>>: <<sonarr_folder>>
       radarr_tag_<<key>>: <<radarr_tag>>
       sonarr_tag_<<key>>: <<sonarr_tag>>
       item_radarr_tag_<<key>>: <<item_radarr_tag>>
@@ -65,6 +71,8 @@ templates:
       - use_<<key>>
       - radarr_add_missing
       - sonarr_add_missing
+      - radarr_folder
+      - sonarr_folder
       - radarr_tag
       - sonarr_tag
       - item_radarr_tag
@@ -73,6 +81,8 @@ templates:
       - <<use_<<key>>>>
     radarr_add_missing: <<radarr_add_missing_<<key>>>>
     sonarr_add_missing: <<sonarr_add_missing_<<key>>>>
+    radarr_folder: <<radarr_folder_<<key>>>>
+    sonarr_folder: <<sonarr_folder_<<key>>>>
     radarr_tag: <<radarr_tag_<<key>>>>
     sonarr_tag: <<sonarr_tag_<<key>>>>
     item_radarr_tag: <<item_radarr_tag_<<key>>>>

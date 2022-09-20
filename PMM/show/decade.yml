@@ -21,6 +21,8 @@
 #          collection_section: 12                           #
 #          # Sets the number of items per collection        #
 #          limit: 100                                       #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag:                                 #
 #############################################################
 
 external_templates:
