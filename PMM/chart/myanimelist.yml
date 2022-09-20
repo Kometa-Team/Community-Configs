@@ -92,34 +92,49 @@ templates:
 collections:
 
   MyAnimeList Popular:
+    variables:
+      key: popular
     template:
       - name: popular
-      - name: chart_shared
-        key: popular
+      - name: shared
+      - name: arr
+      - name: custom
 
   MyAnimeList Favorited:
+    variables:
+      key: favorited
     template:
       - name: favorited
-      - name: chart_shared
-        key: favorited
+      - name: shared
+      - name: arr
+      - name: custom
 
   MyAnimeList Top Rated:
+    variables:
+      key: top
     template:
       - name: top
-      - name: chart_shared
-        key: top
+      - name: shared
+      - name: arr
+      - name: custom
 
   MyAnimeList Top Airing:
+    variables:
+      key: airing
     template:
       - name: airing
-      - name: chart_shared
-        key: airing
+      - name: shared
+      - name: arr
+      - name: custom
 
   MyAnimeList Season:
+    variables:
+      key: season
     mal_season:
       season: current
       sort_by: score
     summary: A collection of Anime from the Current Season according to MyAnimeList.
     template:
-      - name: chart_shared
-        key: season
+      - name: shared
+      - name: arr
+      - name: custom

@@ -44,12 +44,15 @@ templates:
 
 collections:
   BAFTA Best Films:
+    variables:
+      key: best
     template:
-      - name: award
-        image: bafta/winner
       - name: shared
         sort: BAFTA !
-    allowed_library_types: movie
+        library_type: movie
+        image: award/bafta/winner
+      - name: arr
+      - name: custom
     trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
 
 dynamic_collections:
@@ -63,5 +66,6 @@ dynamic_collections:
     template:
       - use_year_collections
       - BAFTA
-      - award
       - shared
+      - arr
+      - custom

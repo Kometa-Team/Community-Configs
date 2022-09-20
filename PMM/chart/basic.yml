@@ -75,14 +75,16 @@ collections:
         separator: chart
 
   Newly Released:
+    variables:
+      key: released
     template:
       - name: released
-      - name: smart_chart_shared
-        key: released
+      - name: shared
 
   New Episodes:
+    variables:
+      key: episodes
     template:
       - name: episodes
-      - name: smart_chart_shared
-        key: episodes
-        check_library: show
+      - name: shared
+        library_type: show

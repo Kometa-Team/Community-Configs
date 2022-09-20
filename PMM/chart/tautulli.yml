@@ -74,12 +74,19 @@ templates:
 
 collections:
   Plex Popular:
+    variables:
+      key: popular
     template:
       - name: tautulli_popular
-      - name: chart_shared
-        key: popular
+      - name: shared
+      - name: arr
+      - name: custom
+
   Plex Watched:
+    variables:
+      key: watched
     template:
       - name: tautulli_watched
-      - name: chart_shared
-        key: watched
+      - name: shared
+      - name: arr
+      - name: custom

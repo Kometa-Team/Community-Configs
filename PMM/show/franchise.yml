@@ -46,7 +46,10 @@ templates:
     sync_mode: sync
     collection_order: <<collection_order>>
     sonarr_add_missing: <<sonarr_add_missing>>
-    build_collection: <<build_collection>>
+    sonarr_folder: <<sonarr_folder>>
+    sonarr_tag: <<sonarr_tag>>
+    item_sonarr_tag: <<item_sonarr_tag>>
+
 dynamic_collections:
   Show Franchise Collections:
     type: custom

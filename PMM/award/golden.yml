@@ -51,11 +51,14 @@ templates:
 
 collections:
   Golden Globe Best Motion Pictures:
+    variables:
+      key: best
     template:
-      - name: award
-        image: golden/best_picture_winner
       - name: shared
         sort: Golden Globes !1
+        image: award/golden/best_picture_winner
+      - name: arr
+      - name: custom
     trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/golden-globe-award-best-motion-picture
 
 dynamic_collections:
@@ -69,5 +72,6 @@ dynamic_collections:
     template:
       - use_year_collections
       - Golden
-      - award
       - shared
+      - arr
+      - custom
