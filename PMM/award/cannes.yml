@@ -44,12 +44,15 @@ templates:
 
 collections:
   Cannes - Palme d'or:
+    variables:
+      key: palme
     template:
-      - name: award
-        image: cannes/winner
       - name: shared
         sort: Cannes !
-    allowed_library_types: movie
+        library_type: movie
+        image: award/cannes/winner
+      - name: arr
+      - name: custom
     trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-palme-d-or
 
 dynamic_collections:
@@ -63,5 +66,6 @@ dynamic_collections:
     template:
       - use_year_collections
       - Cannes
-      - award
       - shared
+      - arr
+      - custom

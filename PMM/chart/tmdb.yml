@@ -98,33 +98,48 @@ templates:
 collections:
 
   TMDb Airing Today:
+    variables:
+      key: airing
     template:
       - name: airing
-      - name: chart_shared
-        key: airing
-        check_library: show
+      - name: shared
+        library_type: show
+      - name: arr
+      - name: custom
 
   TMDb On The Air:
+    variables:
+      key: air
     template:
       - name: air
-      - name: chart_shared
-        key: air
-        check_library: show
+      - name: shared
+        library_type: show
+      - name: arr
+      - name: custom
 
   TMDb Popular:
+    variables:
+      key: popular
     template:
       - name: popular
-      - name: chart_shared
-        key: popular
+      - name: shared
+      - name: arr
+      - name: custom
 
   TMDb Top Rated:
+    variables:
+      key: top
     template:
       - name: top
-      - name: chart_shared
-        key: top
+      - name: shared
+      - name: arr
+      - name: custom
 
   TMDb Trending:
+    variables:
+      key: trending
     template:
       - name: trending
-      - name: chart_shared
-        key: trending
+      - name: shared
+      - name: arr
+      - name: custom

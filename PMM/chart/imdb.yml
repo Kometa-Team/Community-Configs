@@ -67,22 +67,31 @@ templates:
 collections:
 
   IMDb Popular:
+    variables:
+      key: popular
     template:
       - name: imdb
         chart: popular
-      - name: chart_shared
-        key: popular
+      - name: shared
+      - name: arr
+      - name: custom
 
   IMDb Top 250:
+    variables:
+      key: top
     template:
       - name: imdb
         chart: top
-      - name: chart_shared
-        key: top
+      - name: shared
+      - name: arr
+      - name: custom
 
   IMDb Lowest Rated:
+    variables:
+      key: lowest
     imdb_chart: lowest_rated
     template:
-      - name: chart_shared
-        key: lowest
-        check_library: movie
+      - name: shared
+        library_type: movie
+      - name: arr
+      - name: custom

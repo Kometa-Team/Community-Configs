@@ -35,25 +35,34 @@ external_templates:
 
 collections:
   Cesar:
+    variables:
+      key: cesar
     template:
-      - name: award
-        image: cesar/winner
       - name: shared
-    allowed_library_types: movie
+        library_type: movie
+        image: award/cesar/winner
+      - name: arr
+      - name: custom
     trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/cesar-award-best-french-film
 
   Berlinale:
+    variables:
+      key: berlinale
     template:
-      - name: award
-        image: berlinale/winner
       - name: shared
-    allowed_library_types: movie
+        library_type: movie
+        image: award/berlinale/winner
+      - name: arr
+      - name: custom
     trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
 
   Venice:
+    variables:
+      key: venice
     template:
-      - name: award
-        image: venice/winner
       - name: shared
-    allowed_library_types: movie
+        library_type: movie
+        image: award/venice/winner
+      - name: arr
+      - name: custom
     trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion

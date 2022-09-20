@@ -62,8 +62,9 @@ dynamic_collections:
     template:
       - use_year_collections
       - Choice
-      - award
       - shared
+      - arr
+      - custom
     template_variables:
       url:
         2019: critics

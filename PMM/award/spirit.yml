@@ -52,5 +52,6 @@ dynamic_collections:
     template:
       - use_year_collections
       - Spirit
-      - award
       - shared
+      - arr
+      - custom

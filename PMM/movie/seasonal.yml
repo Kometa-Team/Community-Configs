@@ -131,7 +131,6 @@ collections:
       - name: Holiday
         key: independence
         schedule_independence: range(06/23-07/11)
-      - name: shared
     imdb_list: 
       - https://www.imdb.com/list/ls068664510/
       - https://www.imdb.com/list/ls080925875/
@@ -141,7 +140,6 @@ collections:
       - name: Holiday
         key: easter
         schedule_easter: range(03/15-04/30)
-      - name: shared
     imdb_list: 
       - https://www.imdb.com/list/ls062665509/
       - https://www.imdb.com/list/ls051733651/
@@ -151,7 +149,6 @@ collections:
       - name: Holiday
         key: valentine
         schedule_valentine: range(02/01-02/29)
-      - name: shared
     imdb_list:
       - https://www.imdb.com/list/ls000094398/
       - https://www.imdb.com/list/ls057783436/
@@ -162,7 +159,6 @@ collections:
       - name: Holiday
         key: patrick
         schedule_patrick: range(03/01-03/18)
-      - name: shared
     imdb_list: https://www.imdb.com/list/ls063934595/
 
   Thanksgiving:
@@ -170,7 +166,6 @@ collections:
       - name: Holiday
         key: thanksgiving
         schedule_thanksgiving: range(11/01-11/30)
-      - name: shared
     imdb_list: 
       - https://www.imdb.com/list/ls000835734/
       - https://www.imdb.com/list/ls091597850/
@@ -180,7 +175,6 @@ collections:
       - name: Holiday
         key: halloween
         schedule_halloween: range(10/01-10/31)
-      - name: shared
     imdb_list:
       - https://www.imdb.com/list/ls023118929/
       - https://www.imdb.com/list/ls000099714/
@@ -197,7 +191,6 @@ collections:
       - name: Holiday
         key: christmas
         schedule_christmas: range(12/01-12/31)
-      - name: shared
     imdb_list: https://www.imdb.com/list/ls000096828/
 
   New Year's Day:
@@ -205,5 +198,4 @@ collections:
       - name: Holiday
         key: years
         schedule_years: range(12/26-01/04)
-      - name: shared
     imdb_list: https://www.imdb.com/list/ls066838460/

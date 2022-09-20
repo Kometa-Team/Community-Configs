@@ -48,6 +48,9 @@ templates:
     sync_mode: sync
     collection_order: <<collection_order>>
     radarr_add_missing: <<radarr_add_missing>>
+    radarr_folder: <<radarr_folder>>
+    radarr_tag: <<radarr_tag>>
+    item_radarr_tag: <<item_radarr_tag>>
 
 dynamic_collections:
   TMDb Collections:

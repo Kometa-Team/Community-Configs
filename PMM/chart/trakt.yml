@@ -87,4 +87,6 @@ dynamic_collections:
     title_format: Trakt <<key_name>>
     template:
       - trakt
-      - chart_shared
+      - shared
+      - arr
+      - custom

@@ -47,7 +47,7 @@
 #          radarr_folder_key:                               #
 #          # Sonarr Folder to add to                        #
 #          sonarr_folder_key:                               #
-#          # Radarr Tag for existing items                  #
+#          # Radarr Tag for added missing                   #
 #          radarr_tag_key:                                  #
 #          # Sonarr Tag for added missing                   #
 #          sonarr_tag_key:                                  #
@@ -85,29 +85,41 @@ templates:
 collections:
 
   AniList Popular:
+    variables:
+      key: popular
     template:
       - name: popular
-      - name: chart_shared
-        key: popular
+      - name: shared
+      - name: arr
+      - name: custom
 
   AniList Top Rated:
+    variables:
+      key: top
     template:
       - name: top
-      - name: chart_shared
-        key: top
+      - name: shared
+      - name: arr
+      - name: custom
 
   AniList Trending:
+    variables:
+      key: trending
     template:
       - name: trending
-      - name: chart_shared
-        key: trending
+      - name: shared
+      - name: arr
+      - name: custom
 
   AniList Season:
+    variables:
+      key: season
     anilist_search:
       season: current
       year:
       sort_by: popular
     summary: A collection of Anime from the Current Season according to AniList.
     template:
-      - name: chart_shared
-        key: season
+      - name: shared
+      - name: arr
+      - name: custom
