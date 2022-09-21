@@ -33,7 +33,7 @@ templates:
       key: <<collection_name>>
       pre: "_"
       order_<<key>>: ""
-      image: chart/<<key_encoded>>
+      image: chart/<<collection_name_encoded>>
       item_radarr_tag_<<key>>: <<item_radarr_tag>>
       item_sonarr_tag_<<key>>: <<item_sonarr_tag>>
     optional:
