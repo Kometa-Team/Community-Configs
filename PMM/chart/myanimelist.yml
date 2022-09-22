@@ -98,7 +98,7 @@ templates:
   season:
     default:
       limit_airing: 100
-      summary: A collection of Anime from the Current Season according to MyAnimeList.
+      summary_season: A collection of Anime from the Current Season according to MyAnimeList.
     mal_season:
       season: current
       sort_by: score
