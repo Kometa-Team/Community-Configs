@@ -38,6 +38,9 @@ templates:
       - name_mapping
       - sort_title
       - build_collection
+      - radarr_folder
+      - radarr_tag
+      - item_radarr_tag
     cache_builders: 1
     minimum_items: <<minimum_items>>
     tmdb_collection_details: <<value>>
