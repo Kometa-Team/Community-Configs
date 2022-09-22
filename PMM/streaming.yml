@@ -80,20 +80,9 @@ templates:
   streaming:
     default:
       sort_by: release.desc
-      key: <<collection_name>>
-    optional:
-      - use_<<key>>
-      - visible_library_<<key>>
-      - visible_home_<<key>>
-      - visible_shared_<<key>>
-    allowed_library_types:
-      - <<use_<<key>>>>
-    visible_library: <<visible_library_<<key>>>>
-    visible_home: <<visible_home_<<key>>>>
-    visible_shared: <<visible_shared_<<key>>>>
     ignore_blank_results: true
     cache_builders: 1
-    smart_label: <<sort_by>>
+    smart_label: <<sort_by_<<key>>>>
     sync_mode: sync
     mdblist_list: https://mdblist.com/lists/plexmetamanager/<<key>>-<<library_type>>s
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/streaming/<<key_name_encoded>>.jpg
