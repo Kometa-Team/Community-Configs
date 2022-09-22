@@ -49,7 +49,7 @@ collections:
     template:
       - name: shared
         sort: Oscars !1
-        library_type: movie
+        allowed_libraries: movie
         image: award/oscars/best_picture_winner
       - name: arr
       - name: custom
@@ -62,7 +62,7 @@ collections:
     template:
       - name: shared
         sort: Oscars !2
-        library_type: movie
+        allowed_libraries: movie
         image: award/oscars/best_director_winner
       - name: arr
       - name: custom

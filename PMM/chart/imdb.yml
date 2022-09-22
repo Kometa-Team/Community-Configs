@@ -92,6 +92,6 @@ collections:
     imdb_chart: lowest_rated
     template:
       - name: shared
-        library_type: movie
+        allowed_libraries: movie
       - name: arr
       - name: custom

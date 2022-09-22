@@ -38,7 +38,7 @@ templates:
       item_sonarr_tag_<<key>>: <<item_sonarr_tag>>
     optional:
       - use_<<key>>
-      - library_type
+      - allowed_libraries
       - collection_mode
       - visible_library_<<key>>
       - visible_home_<<key>>
@@ -47,7 +47,7 @@ templates:
       - item_sonarr_tag
     allowed_library_types:
       - <<use_<<key>>>>
-      - <<library_type>>
+      - <<allowed_libraries>>
     ignore_blank_results: true
     collection_mode: <<collection_mode>>
     visible_library: <<visible_library_<<key>>>>

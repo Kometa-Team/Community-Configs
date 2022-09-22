@@ -49,7 +49,7 @@ collections:
     template:
       - name: shared
         sort: Cannes !
-        library_type: movie
+        allowed_libraries: movie
         image: award/cannes/winner
       - name: arr
       - name: custom
