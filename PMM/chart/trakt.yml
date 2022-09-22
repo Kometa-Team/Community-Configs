@@ -30,7 +30,7 @@
 #          # desired collection's key from the chart above. #
 #                                                           #
 #          # Customize summary of collection                #
-#          summary: A collection of ...                     #
+#          summary_key: A collection of ...                 #
 #          # Turn the collection on/off                     #
 #          use_key: true                                    #
 #          # Determines collection order in its section     #
@@ -72,11 +72,11 @@ templates:
   trakt:
     default:
       limit_<<key>>: 100
-      summary: A collection of Trakt's Weekly <<library_type>> List
+      summary: A collection of Trakt's Weekly <<collection_name>> List
     trakt_chart:
       chart: <<key>>
       limit: <<limit_<<key>>>>
-    summary: <<summary>>
+    summary: <<summary_<<key>>>>
 
 dynamic_collections:
   Trakt:

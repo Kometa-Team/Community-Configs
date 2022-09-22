@@ -26,6 +26,8 @@
 #          # Available options. Replace "key" with the      #
 #          # desired collection's key from the chart above. #
 #                                                           #
+#          # Customize summary of collection                #
+#          summary_key: A collection of ...                 #
 #          # Turn the collection on/off                     #
 #          use_key: true                                    #
 #          # Determines collection order in its section     #
@@ -57,7 +59,8 @@ templates:
     default:
       list_days_popular: 30
       list_size_popular: 20
-    summary: A collection of <<library_type>>s Popular on Plex
+      summary_popular: A collection of <<library_type>>s Popular on Plex
+    summary: <<summary_<<key>>>>
     tautulli_popular:
       list_days: <<list_days_popular>>
       list_size: <<list_size_popular>>
@@ -66,7 +69,8 @@ templates:
     default:
       list_days_watched: 30
       list_size_watched: 20
-    summary: A collection of Top <<library_type>>s Watched on Plex
+      summary_watched: A collection of Top <<library_type>>s Watched on Plex
+    summary: <<summary_<<key>>>>
     tautulli_watched:
       list_days: <<list_days_watched>>
       list_size: <<list_size_watched>>

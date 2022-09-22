@@ -24,6 +24,8 @@
 #          # Available options. Replace "key" with the      #
 #          # desired collection's key from the chart above. #
 #                                                           #
+#          # Customize summary of collection                #
+#          summary_key: A collection of ...                 #
 #          # Turn the collection on/off                     #
 #          use_key: true                                    #
 #          # Determines collection order in its section     #
@@ -62,7 +64,10 @@ external_templates:
 templates:
 
   imdb:
+    default:
+      summary_<<key>>: "List of <<collection_name>> <<library_type>>s"  
     imdb_chart: <<chart>>_<<library_type>>s
+    summary: <<summary_<<key>>>>
 
 collections:
 
