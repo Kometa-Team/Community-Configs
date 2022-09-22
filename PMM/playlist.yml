@@ -54,6 +54,9 @@
 #          item_sonarr_tag_key:                             #
 #############################################################
 
+external_templates:
+  git: PMM/templates
+
 templates:
   playlist:
     default:
