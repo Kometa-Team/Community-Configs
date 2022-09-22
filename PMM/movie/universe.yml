@@ -37,6 +37,8 @@ templates:
   multi-franchise:
     optional:
       - name_mapping
+      - item_radarr_tag
+      - radarr_tag
     name_mapping: <<name_mapping>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<image_encoded>>.jpg
 
