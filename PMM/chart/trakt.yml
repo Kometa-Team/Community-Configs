@@ -72,7 +72,7 @@ templates:
   trakt:
     default:
       limit_<<key>>: 100
-      summary: A collection of Trakt's Weekly <<collection_name>> List
+      summary_<<key>>: A collection of Trakt's Weekly <<collection_name>> List
     trakt_chart:
       chart: <<key>>
       limit: <<limit_<<key>>>>
