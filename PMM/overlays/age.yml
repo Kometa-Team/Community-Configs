@@ -10,6 +10,8 @@
 #    overlay_path:                                          #
 #      - git: PMM/overlays/age                              #
 #        template_variables:                                #
+#          # Set text you want before the rating            #
+#          pre_text: ""                                     #
 #          # Set episode or season to overlay               #
 #          overlay_level:                                   #
 #          # Set the horizontal offset for the overlay      #
@@ -45,15 +47,23 @@
 templates:
   Content-Rating:
     conditionals:
+      pre:
+        default: <<pre_text>>
+        conditions:
+          - overlay_name: NR
+            value: ""
       rating_style:
         default: "+"
         conditions:
           - overlay_name: NR
-            value: ""     
+            value: ""
+
+
     optional:
       - overlay_level
       - use_<<slug>>
     default:
+      pre_text: ""
       overlay: <<overlay_name>>
       horizontal_offset: 15
       horizontal_align: left
@@ -70,7 +80,7 @@ templates:
     allowed_library_types: <<use_<<slug>>>>
     ignore_blank_results: true
     overlay:
-      name: text(<<overlay_name>><<rating_style>>)
+      name: text(<<pre>><<overlay_name>><<rating_style>>)
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
@@ -91,8 +101,11 @@ overlays:
     template:
       - name: Content-Rating
     plex_search:
+      validate: false
       any:
-        content_rating.regex: '(?i)\b1\b|\b0\b|\bG\b|\bTV-Y\b|\bTV-G\b'
+        # content_rating.regex: '(?i)\b1\b|\b0\b|\bG\b|\bTV-Y\b|\bTV-G\b'
+        content_rating: 1, 0, G, TV-G, TV-Y
+
   2:
     template:
       - name: Content-Rating
@@ -121,14 +134,18 @@ overlays:
     template:
       - name: Content-Rating
     plex_search:
+      validate: false
       any:
-        content_rating.regex: '(?i)\b6\b|\bGP\b|\bPG\b|\bM\/PG\b|\bTV-PG\b'
+        # content_rating.regex: '(?i)\b6\b|\bGP\b|\bPG\b|\bM\/PG\b|\bTV-PG\b'
+        content_rating: 6, GP, PG, M/PG, TV-PG
   7:
     template:
       - name: Content-Rating
     plex_search:
+      validate: false
       any:
-        content_rating.regex: '(?i)\b7\b|\bTV-Y7\b|\bTV-Y7-FV\b'
+        # content_rating.regex: '(?i)\b7\b|\bTV-Y7\b|\bTV-Y7-FV\b'
+        content_rating: 7, TV-Y7, TV-Y7-FV
   8:
     template:
       - name: Content-Rating
@@ -163,14 +180,18 @@ overlays:
     template:
       - name: Content-Rating
     plex_search:
+      validate: false
       any:
-        content_rating.regex: '(?i)\b13\b|\bPG-13\b'
+        # content_rating.regex: '(?i)\b13\b|\bPG-13\b'
+        content_rating: 13, PG-13
   14:
     template:
       - name: Content-Rating
     plex_search:
+      validate: false
       any:
-        content_rating.regex: '(?i)\b14\b|\bTV-14\b'
+        # content_rating.regex: '(?i)\b14\b|\bTV-14\b'
+        content_rating: 14, TV-14
   15:
     template:
       - name: Content-Rating
@@ -181,8 +202,10 @@ overlays:
     template:
       - name: Content-Rating
     plex_search:
+      validate: false
       any:
-        content_rating.regex: '(?i)\b16\b|\bPassed\b|\bApproved\b|\bOpen\b'
+        # content_rating.regex: '(?i)\b16\b|\bPassed\b|\bApproved\b|\bOpen\b'
+        content_rating: 16, Passed, Approved, Open
   17:
     template:
       - name: Content-Rating
@@ -193,12 +216,16 @@ overlays:
     template:
       - name: Content-Rating
     plex_search:
+      validate: false
       any:
-        content_rating.regex: '(?i)\b18\b|\bNC-17\b|\bM\b|\bTV-MA\b|\bR\b|\bX\b'
+        # content_rating.regex: '(?i)\b18\b|\bNC-17\b|\bM\b|\bTV-MA\b|\bR\b|\bX\b'
+        content_rating: 18, NC-17, M, TV-MA, R, X
   NR:
     template:
       - name: Content-Rating
         slug: nr
     plex_search:
+      validate: false
       any:
-        content_rating.regex: '(?i)\bNone\b|\bNR\b|\bNot Rated\b|\bUnrated\b'
+        # content_rating.regex: '(?i)\bNone\b|\bNR\b|\bNot Rated\b|\bUnrated\b'
+        content_rating: None, NR, Not Rated, Unrated
