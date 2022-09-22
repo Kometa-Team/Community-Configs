@@ -38,6 +38,9 @@ templates:
       - name_mapping
       - sort_title
       - build_collection
+      - sonarr_folder
+      - sonarr_tag
+      - item_sonarr_tag
     minimum_items: <<minimum_items>>
     tmdb_show: <<value>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<key_name_encoded>>.jpg
