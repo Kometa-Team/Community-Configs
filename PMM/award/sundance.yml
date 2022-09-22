@@ -48,7 +48,7 @@ collections:
     template:
       - name: shared
         sort: Sundance !1
-        library_type: movie
+        allowed_libraries: movie
         image: award/sundance/grand_jury_winner
       - name: arr
       - name: custom

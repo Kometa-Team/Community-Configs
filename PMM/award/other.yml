@@ -39,7 +39,7 @@ collections:
       key: cesar
     template:
       - name: shared
-        library_type: movie
+        allowed_libraries: movie
         image: award/cesar/winner
       - name: arr
       - name: custom
@@ -50,7 +50,7 @@ collections:
       key: berlinale
     template:
       - name: shared
-        library_type: movie
+        allowed_libraries: movie
         image: award/berlinale/winner
       - name: arr
       - name: custom
@@ -61,7 +61,7 @@ collections:
       key: venice
     template:
       - name: shared
-        library_type: movie
+        allowed_libraries: movie
         image: award/venice/winner
       - name: arr
       - name: custom

@@ -35,6 +35,9 @@ templates:
       minimum_items: 2
     optional:
       - sonarr_add_missing
+      - sonarr_folder
+      - sonarr_tag
+      - item_sonarr_tag
       - name_mapping
       - sort_title
       - build_collection

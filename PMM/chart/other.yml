@@ -97,7 +97,7 @@ collections:
     stevenlu_popular: true
     template:
       - name: shared
-        library_type: movie
+        allowed_libraries: movie
       - name: arr
       - name: custom
 
@@ -108,6 +108,6 @@ collections:
     summary: TorrentFreak.com's Weekly Top Ten Pirated Movies
     template:
       - name: shared
-        library_type: movie
+        allowed_libraries: movie
       - name: arr
       - name: custom

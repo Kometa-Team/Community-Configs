@@ -103,7 +103,7 @@ collections:
     template:
       - name: airing
       - name: shared
-        library_type: show
+        allowed_libraries: show
       - name: arr
       - name: custom
 
@@ -113,7 +113,7 @@ collections:
     template:
       - name: air
       - name: shared
-        library_type: show
+        allowed_libraries: show
       - name: arr
       - name: custom
 
