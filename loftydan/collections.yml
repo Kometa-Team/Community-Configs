@@ -1,0 +1,59 @@
+collections:
+
+  # Books - 
+  Based on Books:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: "!001_Books"
+    tmdb_keyword: 818 #https://www.themoviedb.org/keyword/818-based-on-novel-or-book/movie
+    summary: Movies based on books or novels
+    #url_poster: 
+    #url_background: 
+    #radarr_add: true
+    #radarr_search: true
+    #radarr_monitor: true
+
+  # True events 
+  Based on True Events:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: "!001_True"
+    imdb_list: 
+      - https://www.imdb.com/list/ls046648040/?sort=num_votes
+      - https://www.imdb.com/list/ls074038725/?sort=num_votes
+      - https://www.imdb.com/list/ls084944137/?sort=num_votes
+      - https://www.imdb.com/list/ls099275673/?sort=num_votes
+    summary: A compilation of a lists of movies based on true events
+    #url_poster: 
+    #url_background: 
+    #radarr_add: true
+    #radarr_search: true
+    #radarr_monitor: true
+
+  # video games 
+  Based on Video Games:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: "!001_Video"
+    imdb_list:
+      url: https://www.imdb.com/list/ls063096359/?sort=release_date,desc&st_dt=&mode=detail
+    summary: Movies based on video games, sorted  by release date
+    #url_poster: 
+    #url_background: 
+    #radarr_add: true
+    #radarr_search: true
+    #radarr_monitor: true
+
+  # comics
+  Based on Comics:
+    smart_label: originally_available.desc
+    sync_mode: sync
+    sort_title: "!001_Comic"
+    imdb_list:
+      url: https://www.imdb.com/list/ls004135985/?sort=alpha,asc&st_dt=&mode=detail
+    summary: Movies based on comic books
+    #url_poster: 
+    #url_background: 
+    #radarr_add: true
+    #radarr_search: true
+    #radarr_monitor: true

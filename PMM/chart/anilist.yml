@@ -25,10 +25,14 @@
 #          # Available options. Replace "key" with the      #
 #          # desired collection's key from the chart above. #
 #                                                           #
+#          # Customize summary of collection                #
+#          summary_key: A collection of ...                 #
 #          # Turn the collection on/off                     #
 #          use_key: true                                    #
 #          # Determines collection order in it's section    #
 #          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
 #          # Set visible_library for the collection         #
 #          visible_library_key:                             #
 #          # Set visible_home for the collection            #
@@ -41,6 +45,10 @@
 #          radarr_add_missing_key:                          #
 #          # Adds missing from the collection to sonarr     #
 #          sonarr_add_missing_key:                          #
+#          # Radarr Folder to add to                        #
+#          radarr_folder_key:                               #
+#          # Sonarr Folder to add to                        #
+#          sonarr_folder_key:                               #
 #          # Radarr Tag for added missing                   #
 #          radarr_tag_key:                                  #
 #          # Sonarr Tag for added missing                   #
@@ -61,51 +69,68 @@ templates:
   popular:
     default:
       limit_popular: 100
+      summary_popular: A collection of the most popular Anime according to AniList.
     anilist_popular: <<limit_popular>>
-    summary: A collection of the most popular Anime according to AniList.
+    summary: <<summary_<<key>>>>
 
   top:
     default:
       limit_top: 100
+      summary_top: A collection of the top rated Anime according to AniList.
     anilist_top_rated: <<limit_top>>
-    summary: A collection of the top rated Anime according to AniList.
+    summary: <<summary_<<key>>>>
 
   trending:
     default:
       limit_trending: 100
+      summary_trending: A collection of trending Anime according to AniList.
     anilist_trending: <<limit_trending>>
-    summary: A collection of trending Anime according to AniList.
+    summary: <<summary_<<key>>>>
 
-collections:
-
-  AniList Popular:
-    template:
-      - name: popular
-      - name: customsync
-      - name: chart_shared
-        key: popular
-
-  AniList Top Rated:
-    template:
-      - name: top
-      - name: customsync
-      - name: chart_shared
-        key: top
-
-  AniList Trending:
-    template:
-      - name: trending
-      - name: customsync
-      - name: chart_shared
-        key: trending
-
-  AniList Season:
+  season:
+    default:
+      limit_trending: 100
+      summary_season: A collection of Anime from the Current Season according to AniList.
     anilist_search:
       season: current
       year:
       sort_by: popular
-    summary: A collection of Anime from the Current Season according to AniList.
+    summary: <<summary_<<key>>>>
+
+collections:
+
+  AniList Popular:
+    variables:
+      key: popular
     template:
-      - name: customsync
-      - name: chart_shared
-        key: season
+      - name: popular
+      - name: shared
+      - name: arr
+      - name: custom
+
+  AniList Top Rated:
+    variables:
+      key: top
+    template:
+      - name: top
+      - name: shared
+      - name: arr
+      - name: custom
+
+  AniList Trending:
+    variables:
+      key: trending
+    template:
+      - name: trending
+      - name: shared
+      - name: arr
+      - name: custom
+
+  AniList Season:
+    variables:
+      key: season
+    template:
+      - name: season
+      - name: shared
+      - name: arr
+      - name: custom

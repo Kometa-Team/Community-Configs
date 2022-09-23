@@ -23,6 +23,10 @@
 #          collection_section: 13                           #
 #          # Sets the number of items per collection        #
 #          limit: 10                                        #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag:                                 #
 #############################################################
 
 external_templates:

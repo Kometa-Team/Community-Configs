@@ -16,10 +16,16 @@
 #          # Separator style (red, blue, green, gray,       #
 #              purple, stb, orig)                           #
 #          sep_style: orig                                  #
-#          # Add Missing Movies to Radarr                   #
-#          radarr_add_missing: true                         #
 #          # Sets the collection order of the collection    #
 #          collection_order: alpha                          #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing:                              #
+#          # Radarr Folder to add to                        #
+#          radarr_folder:                                   #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag:                                      #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
 #############################################################
 
 external_templates:
@@ -31,9 +37,7 @@ templates:
   multi-franchise:
     optional:
       - name_mapping
-    cache_builders: 1
-    sync_mode: sync
-    collection_order: custom
+    name_mapping: <<name_mapping>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/<<image_encoded>>.jpg
 
 collections:
@@ -42,77 +46,125 @@ collections:
       - name: separator
         separator: universe
   Star Wars Universe:
+    variables:
+      key: star
     template:
-      - name: shared
       - name: multi-franchise
         image: Star Wars
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/zorge88/lists/star-wars
   DC Animated Universe:
+    variables:
+      key: dca
     template:
-      - name: shared
       - name: multi-franchise
         image: DC Universe
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/donxy/lists/dc-animated-movie-universe
   DC Extended Universe:
+    variables:
+      key: dcu
     template:
-      - name: shared
       - name: multi-franchise
         image: DC Universe
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/donxy/lists/dc-extended-universe
     summary: The DC Extended Universe (DCEU) is the fictional shared universe where most stories in American comic book titles published by DC Comics take place. DC superheroes such as Superman, Batman, Wonder Woman, Martian Manhunter, The Flash, Green Lantern and Aquaman are from this universe, as well as teams such as the Justice League and the Teen Titans.
   Marvel Cinematic Universe:
+    variables:
+      key: mcu
     template:
-      - name: shared
       - name: multi-franchise
         image: Marvel Cinematic Universe
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe
   Wizarding World:
+    variables:
+      key: wizard
     template:
-      - name: shared
       - name: multi-franchise
         image: Wizarding World
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/strangerer/lists/harry-potter
   "Alien / Predator":
+    variables:
+      key: avp
     template:
-      - name: shared
       - name: multi-franchise
         image: Alien Predator
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/donxy/lists/alien-predator-timeline
     name_mapping: Alien Predator
   X-Men Universe:
+    variables:
+      key: xmen
     template:
-      - name: shared
       - name: multi-franchise
         image: X-Men
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/donxy/lists/x-men-universe
   Middle Earth:
+    variables:
+      key: middle
     template:
-      - name: shared
       - name: multi-franchise
         image: Middle Earth
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/dybro/lists/lord-of-the-rings
   Fast & Furious:
+    variables:
+      key: fast
     template:
-      - name: shared
       - name: multi-franchise
         image: Fast & Furious
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/vargajoe/lists/fast-and-furious-chronology
   Star Trek:
+    variables:
+      key: trek
     template:
-      - name: shared
       - name: multi-franchise
         image: Star Trek
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/arachn0id/lists/star-trek-movies
   Rocky / Creed:
+    variables:
+      key: rocky
     template:
-      - name: shared
       - name: multi-franchise
         image: Rocky Creed
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/strangerer/lists/rocky
     name_mapping: Rocky Creed
   The Mummy Universe:
+    variables:
+      key: mummy
     template:
-      - name: shared
       - name: multi-franchise
         image: The Mummy
+      - name: shared
+      - name: arr
+      - name: custom
     trakt_list: https://trakt.tv/users/rzepkowski/lists/the-mummy-movies

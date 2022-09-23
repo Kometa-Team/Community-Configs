@@ -29,10 +29,14 @@
 #          # Available options. Replace "key" with the      #
 #          # desired collection's key from the chart above. #
 #                                                           #
+#          # Customize summary of collection                #
+#          summary_key: A collection of ...                 #
 #          # Turn the collection on/off                     #
 #          use_key: true                                    #
 #          # Determines collection order in its section     #
 #          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
 #          # Set visible_library for the collection         #
 #          visible_library_key:                             #
 #          # Set visible_home for the collection            #
@@ -44,7 +48,11 @@
 #          # Adds missing from the collection to radarr     #
 #          radarr_add_missing_key:                          #
 #          # Adds missing from the collection to sonarr     #
-#          radarr_add_missing_key:                          #
+#          sonarr_add_missing_key:                          #
+#          # Radarr Folder to add to                        #
+#          radarr_folder_key:                               #
+#          # Sonarr Folder to add to                        #
+#          sonarr_folder_key:                               #
 #          # Radarr Tag for added missing                   #
 #          radarr_tag_key:                                  #
 #          # Sonarr Tag for added missing                   #
@@ -64,10 +72,11 @@ templates:
   trakt:
     default:
       limit_<<key>>: 100
+      summary_<<key>>: A collection of Trakt's Weekly <<collection_name>> List
     trakt_chart:
       chart: <<key>>
       limit: <<limit_<<key>>>>
-    summary: A collection of Trakt's Weekly <<library_type>> List
+    summary: <<summary_<<key>>>>
 
 dynamic_collections:
   Trakt:
@@ -81,5 +90,6 @@ dynamic_collections:
     title_format: Trakt <<key_name>>
     template:
       - trakt
-      - customsync
-      - chart_shared
+      - shared
+      - arr
+      - custom

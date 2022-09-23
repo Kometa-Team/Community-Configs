@@ -8,33 +8,66 @@
 #    metadata_path:                                         #
 #      - git: PMM/movie/seasonal                            #
 #        template_variables:                                #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
+#          collection_section: "00"                         #
+#          # Sets how all collections are sorted            #
+#          sort_by: title.asc                               #
 #          # Turn the separator collection on/off           #
 #          use_separator: false                             #
 #          # Separator style (red, blue, green, gray,       #
 #              purple, stb, orig)                           #
 #          sep_style: orig                                  #
-#          # Turn the Independence Day collection on/off    #
-#          schedule_independence: range(06/23-07/11)        #
-#          # Turn the Easter collection on/off              #
-#          schedule_easter: range(03/22-04/25)              #
-#          # Turn the Valentine's Day collection on/off     #
-#          schedule_valentine: range(02/01-02/29)           #
-#          # Turn the St. Patrick's Day collection on/off   #
-#          schedule_patrick: range(03/01-03/18)             #
-#          # Turn the Thanksgiving collection on/off        #
-#          schedule_thanksgiving: range(11/01-11/30)        #
-#          # Turn the Halloween collection on/off           #
-#          schedule_halloween: range(10/01-10/31)           #
-#          # Turn the Christmas collection on/off           #
-#          schedule_christmas: range(12/01-12/31)           #
-#          # Turn the New Year's Day collection on/off      #
-#          schedule_years: range(12/26-01/04)               #
+#                                                           #
+#          # For each collection use the "key" to set       #
+#          # the options.                                   #
+#          # Available collections                          #
+#          #   KEY              COLLECTION                  #
+#          #   independence     Independence Day            #
+#          #   easter           Easter                      #
+#          #   valentine        Valentine's Day             #
+#          #   patrick          St. Patrick's Day           #
+#          #   thanksgiving     Thanksgiving                #
+#          #   halloween        Halloween                   #
+#          #   christmas        Christmas                   #
+#          #   years            New Year's Day              #
+#                                                           #
+#          # Available options. Replace "key" with the      #
+#          # desired collection's key from the chart above. #
+#                                                           #
+#          # Turn the collection on/off                     #
+#          use_key: true                                    #
+#          # Set the schedule of a collection.              #
+#          schedule_key:                                    #
+#                                                           #
+#          # Default Schedules                              #
+#          #   KEY              COLLECTION                  #
+#          #   independence     range(06/23-07/11)          #
+#          #   easter           range(03/15-04/30)          #
+#          #   valentine        range(02/01-02/29)          #
+#          #   patrick          range(03/01-03/18)          #
+#          #   thanksgiving     range(11/01-11/30)          #
+#          #   halloween        range(10/01-10/31)          #
+#          #   christmas        range(12/01-12/31)          #
+#          #   years            range(12/26-01/04)          #
+#                                                           #
 #          # Sets how the collection is sorted              #
-#          sort_by: title.asc                               #
-#          # Sets the collection mode of the collection     #
-#          collection_mode:                                 #
-#          # Sets the value at the start of the sort title  #
-#          collection_section: "00"                         #
+#          sort_by_key: title.asc                           #
+#          # Set visible_library for the collection         #
+#          visible_library_key:                             #
+#          # Set visible_home for the collection            #
+#          visible_home_key:                                #
+#          # Set visible_shared for the collection          #
+#          visible_shared_key:                              #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing_key:                          #
+#          # Radarr Folder to add to                        #
+#          radarr_folder_key:                               #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag_key:                                  #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag_key:                             #
 #############################################################
 
 external_templates:
@@ -43,19 +76,14 @@ external_templates:
 templates:
   Holiday:
     default:
+      key: <<collection_name>>
       sort_by: title.asc
-      visible_home_<<season>>: true
-      visible_shared_<<season>>: true
+      sort_by_<<key>>: <<sort_by>>
     optional:
-      - schedule_<<season>>
-      - visible_library_<<season>>
-    schedule: <<schedule_<<season>>>>
-    visible_library: <<visible_library_<<season>>>>
-    visible_home: <<visible_home_<<season>>>>
-    visible_shared: <<visible_shared_<<season>>>>
-    smart_label: <<sort_by>>
+      - schedule_<<key>>
+    schedule: <<schedule_<<key>>>>
+    smart_label: <<sort_by_<<key>>>>
     summary: A collection of <<collection_name>> and other movies that may relate to the season.
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/<<season>>.jpg
     delete_not_scheduled: true
 
 collections:
@@ -65,61 +93,90 @@ collections:
         separator: seasonal
 
   Independence Day:
+    variables:
+      key: independence
     template:
       - name: Holiday
-        season: independence
         schedule_independence: range(06/23-07/11)
       - name: shared
+        visible_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: seasonal/<<key>>
+      - name: arr
     imdb_list: 
       - https://www.imdb.com/list/ls068664510/
       - https://www.imdb.com/list/ls080925875/
 
   Easter:
+    variables:
+      key: easter
     template:
       - name: Holiday
-        season: easter
-        schedule_easter: range(03/22-04/25)
+        schedule_easter: range(03/15-04/30)
       - name: shared
+        visible_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: seasonal/<<key>>
+      - name: arr
     imdb_list: 
       - https://www.imdb.com/list/ls062665509/
       - https://www.imdb.com/list/ls051733651/
 
   Valentine's Day:
+    variables:
+      key: valentine
     template:
       - name: Holiday
-        season: valentine
         schedule_valentine: range(02/01-02/29)
       - name: shared
+        visible_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: seasonal/<<key>>
+      - name: arr
     imdb_list:
       - https://www.imdb.com/list/ls000094398/
       - https://www.imdb.com/list/ls057783436/
       - https://www.imdb.com/list/ls064427905/
 
   St. Patrick's Day:
+    variables:
+      key: patrick
     template:
       - name: Holiday
-        season: patrick
         schedule_patrick: range(03/01-03/18)
       - name: shared
+        visible_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: seasonal/<<key>>
+      - name: arr
     imdb_list: https://www.imdb.com/list/ls063934595/
 
   Thanksgiving:
-    collection_name: Thanksgiving
+    variables:
+      key: thanksgiving
     template:
       - name: Holiday
-        season: thanksgiving
         schedule_thanksgiving: range(11/01-11/30)
       - name: shared
+        visible_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: seasonal/<<key>>
+      - name: arr
     imdb_list: 
       - https://www.imdb.com/list/ls000835734/
       - https://www.imdb.com/list/ls091597850/
 
   Halloween:
+    variables:
+      key: halloween
     template:
       - name: Holiday
-        season: halloween
         schedule_halloween: range(10/01-10/31)
       - name: shared
+        visible_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: seasonal/<<key>>
+      - name: arr
     imdb_list:
       - https://www.imdb.com/list/ls023118929/
       - https://www.imdb.com/list/ls000099714/
@@ -132,17 +189,27 @@ collections:
       - 23437    # A Nightmare on Elm Street (2010)
 
   Christmas:
+    variables:
+      key: christmas
     template:
       - name: Holiday
-        season: christmas
         schedule_christmas: range(12/01-12/31)
       - name: shared
+        visible_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: seasonal/<<key>>
+      - name: arr
     imdb_list: https://www.imdb.com/list/ls000096828/
 
   New Year's Day:
+    variables:
+      key: years
     template:
       - name: Holiday
-        season: years
         schedule_years: range(12/26-01/04)
       - name: shared
+        visible_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: seasonal/<<key>>
+      - name: arr
     imdb_list: https://www.imdb.com/list/ls066838460/

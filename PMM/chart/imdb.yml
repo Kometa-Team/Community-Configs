@@ -24,10 +24,14 @@
 #          # Available options. Replace "key" with the      #
 #          # desired collection's key from the chart above. #
 #                                                           #
+#          # Customize summary of collection                #
+#          summary_key: A collection of ...                 #
 #          # Turn the collection on/off                     #
 #          use_key: true                                    #
 #          # Determines collection order in its section     #
 #          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
 #          # Set visible_library for the collection         #
 #          visible_library_key:                             #
 #          # Set visible_home for the collection            #
@@ -38,6 +42,10 @@
 #          radarr_add_missing_key:                          #
 #          # Adds missing from the collection to sonarr     #
 #          sonarr_add_missing_key:                          #
+#          # Radarr Folder to add to                        #
+#          radarr_folder_key:                               #
+#          # Sonarr Folder to add to                        #
+#          sonarr_folder_key:                               #
 #          # Radarr Tag for added missing                   #
 #          radarr_tag_key:                                  #
 #          # Sonarr Tag for added missing                   #
@@ -56,31 +64,39 @@ external_templates:
 templates:
 
   imdb:
+    default:
+      summary_<<key>>: "List of <<collection_name>> <<library_type>>s"  
     imdb_chart: <<chart>>_<<library_type>>s
-    collection_order: custom
-    sync_mode: sync
+    summary: <<summary_<<key>>>>
 
 collections:
 
   IMDb Popular:
+    variables:
+      key: popular
     template:
       - name: imdb
         chart: popular
-      - name: chart_shared
-        key: popular
+      - name: shared
+      - name: arr
+      - name: custom
 
   IMDb Top 250:
+    variables:
+      key: top
     template:
       - name: imdb
         chart: top
-      - name: chart_shared
-        key: top
+      - name: shared
+      - name: arr
+      - name: custom
 
   IMDb Lowest Rated:
+    variables:
+      key: lowest
     imdb_chart: lowest_rated
-    collection_order: custom
-    sync_mode: sync
     template:
-      - name: chart_shared
-        key: lowest
-        check_library: movie
+      - name: shared
+        allowed_libraries: movie
+      - name: arr
+      - name: custom

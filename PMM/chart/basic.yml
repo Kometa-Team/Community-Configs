@@ -28,6 +28,8 @@
 #          # Available options. Replace "key" with the      #
 #          # desired collection's key from the chart above. #
 #                                                           #
+#          # Customize summary of collection                #
+#          summary_key: A collection of ...                 #
 #          # Turn the collection on/off                     #
 #          use_key: true                                    #
 #          # Determines collection order in it's section    #
@@ -53,7 +55,8 @@ templates:
   released:
     default:
       in_the_last_released: 90
-    summary: A collection of newly-released <<library_type>>
+      summary_released: A collection of newly-released <<library_type>>s
+    summary: <<summary_<<key>>>>
     smart_filter:
       all:
         release: <<in_the_last_released>>
@@ -61,7 +64,8 @@ templates:
   episodes:
     default:
       in_the_last_episodes: 7
-    summary: A collection of newly-released episodes
+      summary_episodes: A collection of newly-released <<library_type>>s
+    summary: <<summary_<<key>>>>
     smart_filter:
       type: episodes
       all:
@@ -75,14 +79,16 @@ collections:
         separator: chart
 
   Newly Released:
+    variables:
+      key: released
     template:
       - name: released
-      - name: chart_shared
-        key: released
+      - name: shared
 
   New Episodes:
+    variables:
+      key: episodes
     template:
       - name: episodes
-      - name: chart_shared
-        key: episodes
-        check_library: show
+      - name: shared
+        allowed_libraries: show

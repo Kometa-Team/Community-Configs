@@ -4,7 +4,7 @@ libraries:                                        # Library mappings must have a
   Movies:
     report_path: config/missing/Movies_missing.yml
     template_variables:
-      sep_style: purple
+      sep_style: gray
       collection_mode: hide
     metadata_path:
     - git: PMM/award/bafta
@@ -53,9 +53,6 @@ libraries:                                        # Library mappings must have a
     - git: PMM/chart/basic          # Keep this as the last chart item so that collection_mode: hide works properly on library tab for CHART COLLECTION
     - git: PMM/actor
       template_variables:
-        exclude:
-          - Brett Favre
-          - Tom Brady
         style: bw
         data:
           depth: 10
@@ -68,6 +65,9 @@ libraries:                                        # Library mappings must have a
           limit: 150
     - git: PMM/movie/producer
       template_variables:
+        exclude:
+        - Jeremy Kleiner
+        - Thomas Hayslip
         style: bw
         data:
           depth: 10
@@ -101,7 +101,7 @@ libraries:                                        # Library mappings must have a
         schedule_easter: daily
         schedule_valentine: daily
         schedule_patrick: daily
-        schedule_thanksgiving: daily
+        schedule_thanksgiving: range(10/01-10/31)
         schedule_halloween: daily
         schedule_christmas: daily
         schedule_years: daily
@@ -110,6 +110,7 @@ libraries:                                        # Library mappings must have a
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
+    - git: PMM/overlays/age
     - git: PMM/overlays/audio_codec
       # template_variables:
         # style: standard
@@ -121,12 +122,15 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/imdb_top_250
       template_variables:
         weight: 30
-    - git: PMM/overlays/mc_must_see
-      template_variables:
-        weight: 10
     - git: PMM/overlays/rt_cert_fresh
       template_variables:
         weight: 20
+    - git: PMM/overlays/mc_must_see
+      template_variables:
+        weight: 10
+    - git: PMM/overlays/commonsense_selection
+      template_variables:
+        weight: 5
     - git: PMM/overlays/ratings
       template_variables:
         rating1: user
@@ -163,27 +167,29 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/resolution
     - git: PMM/overlays/special_release
     - git: PMM/overlays/streaming
+    - git: PMM/overlays/versions
     - git: PMM/overlays/video_format
+    - git: PMM/overlays/mediastinger
     settings:
       asset_directory:
       - config/assets
 
     operations:
-      split_duplicates: true
+      split_duplicates: false
       assets_for_all: false
       delete_unmanaged_collections: true
+      mass_user_rating_update: mdb_tomatoes
       mass_critic_rating_update: imdb
       mass_audience_rating_update: tmdb
-      mass_user_rating_update: mdb_tomatoesaudience
       mass_genre_update: tmdb
-      mass_content_rating_update: omdb
+      mass_content_rating_update: mdb_commonsense
       mass_originally_available_update: tmdb
       mass_imdb_parental_labels: without_none
 
   TV Shows:
     report_path: config/missing/TV_missing.yml
     template_variables:
-      sep_style: stb
+      sep_style: gray
       collection_mode: hide
     metadata_path:
     - git: PMM/award/choice
@@ -211,6 +217,8 @@ libraries:                                        # Library mappings must have a
     - git: PMM/chart/basic          # Keep this as the last chart item so that collection_mode: hide works properly on library tab for CHART COLLECTION
     - git: PMM/actor
       template_variables:
+        exclude:
+        - Macy Nyman
         style: bw
         data:
           depth: 10
@@ -234,6 +242,13 @@ libraries:                                        # Library mappings must have a
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
+    - git: PMM/overlays/age
+    - git: PMM/overlays/age
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/age
+      template_variables:
+        overlay_level: season
     - git: PMM/overlays/audio_codec
     - git: PMM/overlays/audio_codec
       template_variables:
@@ -266,6 +281,17 @@ libraries:                                        # Library mappings must have a
       template_variables:
         weight: 30
         overlay_level: episode
+    - git: PMM/overlays/rt_cert_fresh
+      template_variables:
+        weight: 20
+    - git: PMM/overlays/rt_cert_fresh
+      template_variables:
+        weight: 20
+        overlay_level: season
+    - git: PMM/overlays/rt_cert_fresh
+      template_variables:
+        weight: 20
+        overlay_level: episode
     - git: PMM/overlays/mc_must_see
       template_variables:
         weight: 10
@@ -277,16 +303,16 @@ libraries:                                        # Library mappings must have a
       template_variables:
         weight: 10
         overlay_level: episode
-    - git: PMM/overlays/rt_cert_fresh
+    - git: PMM/overlays/commonsense_selection
       template_variables:
-        weight: 20
-    - git: PMM/overlays/rt_cert_fresh
+        weight: 5
+    - git: PMM/overlays/commonsense_selection
       template_variables:
-        weight: 20
+        weight: 5
         overlay_level: season
-    - git: PMM/overlays/rt_cert_fresh
+    - git: PMM/overlays/commonsense_selection
       template_variables:
-        weight: 20
+        weight: 5
         overlay_level: episode
     - git: PMM/overlays/ratings
       template_variables:
@@ -325,69 +351,72 @@ libraries:                                        # Library mappings must have a
 
         horizontal_position: right
         overlay_level: episode
-    # - git: PMM/overlays/ratings
+    - git: PMM/overlays/resolution
+    - git: PMM/overlays/resolution
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/resolution
+      template_variables:
+        overlay_level: season
+    - file: config/metadata/overlays/episode_info
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/runtimes
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/special_release
+    - git: PMM/overlays/special_release
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/special_release
+      template_variables:
+        overlay_level: season
+    - git: PMM/overlays/streaming
+    - git: PMM/overlays/streaming
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/streaming
+      template_variables:
+        overlay_level: season
+    - git: PMM/overlays/versions
+    - git: PMM/overlays/versions
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/versions
+      template_variables:
+        overlay_level: season
+    - git: PMM/overlays/versions
+      template_variables:
+        overlay_level: show
+    - git: PMM/overlays/video_format
+    - git: PMM/overlays/video_format
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/video_format
+      template_variables:
+        overlay_level: season
+    - git: PMM/overlays/mediastinger
+    # - git: PMM/overlays/mediastinger
       # template_variables:
-        # # rating1: user
-        # # rating1_image: rt_tomato
-        # # rating1_font: config/metadata/overlays/fonts/Adlib.ttf
-        # # rating1_font_size: 63
-
-        # rating2: critic
-        # rating2_image: imdb
-        # rating2_font: config/metadata/overlays/fonts/Impact.ttf
-        # rating2_font_size: 70
-
-        # rating3: audience
-        # rating3_image: tmdb
-        # rating3_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
-        # rating3_font_size: 70
-
-        # horizontal_position: right
-        # side: right
+        # overlay_level: episode
+    # - git: PMM/overlays/mediastinger
+      # template_variables:
         # overlay_level: season
-    - git: PMM/overlays/resolution
-    - git: PMM/overlays/resolution
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/resolution
-      template_variables:
-        overlay_level: season
-    - git: PMM/overlays/special_release
-    - git: PMM/overlays/special_release
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/special_release
-      template_variables:
-        overlay_level: season
-    - git: PMM/overlays/streaming
-    - git: PMM/overlays/streaming
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/streaming
-      template_variables:
-        overlay_level: season
-    - git: PMM/overlays/video_format
-    - git: PMM/overlays/video_format
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/video_format
-      template_variables:
-        overlay_level: season
     settings:
       asset_directory:
       - config/assets
 
     operations:
-      split_duplicates: true
+      split_duplicates: false
       assets_for_all: false
       delete_unmanaged_collections: true
       mass_critic_rating_update: imdb
       mass_audience_rating_update: tmdb
-      mass_user_rating_update: mdb_tomatoesaudience
+      mass_user_rating_update: mdb_tomatoes
       mass_episode_critic_rating_update: imdb
       mass_episode_audience_rating_update: tmdb
       mass_genre_update: tmdb
-      mass_content_rating_update: omdb
+      mass_content_rating_update: mdb_commonsense
       mass_originally_available_update: tmdb
       mass_imdb_parental_labels: without_none
 playlist_files:

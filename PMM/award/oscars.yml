@@ -17,6 +17,14 @@
 #          collection_mode:                                 #
 #          # Sets the value at the start of the sort title  #
 #          collection_section: 16                           #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing:                              #
+#          # Radarr Folder to add to                        #
+#          radarr_folder:                                   #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag:                                      #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
 #############################################################
 
 external_templates:
@@ -36,22 +44,28 @@ templates:
 collections:
 
   Oscars Best Picture Winners:
+    variables:
+      key: best_picture
     template:
-      - name: award
-        image: oscars/best_picture_winner
       - name: shared
         sort: Oscars !1
-    allowed_library_types: movie
+        allowed_libraries: movie
+        image: award/oscars/best_picture_winner
+      - name: arr
+      - name: custom
     imdb_list: https://www.imdb.com/search/title/?groups=best_picture_winner
     summary: The Academy Award for Best Picture is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929.
 
   Oscars Best Director Winners:
+    variables:
+      key: best_director
     template:
-      - name: award
-        image: oscars/best_director_winner
       - name: shared
         sort: Oscars !2
-    allowed_library_types: movie
+        allowed_libraries: movie
+        image: award/oscars/best_director_winner
+      - name: arr
+      - name: custom
     imdb_list: https://www.imdb.com/search/title/?groups=best_director_winner
     summary: The Academy Award for Best Director is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929.
 
@@ -66,5 +80,6 @@ dynamic_collections:
     template:
       - use_year_collections
       - Oscars
-      - award
       - shared
+      - arr
+      - custom

@@ -26,10 +26,14 @@
 #          # Available options. Replace "key" with the      #
 #          # desired collection's key from the chart above. #
 #                                                           #
+#          # Customize summary of collection                #
+#          summary_key: A collection of ...                 #
 #          # Turn the collection on/off                     #
 #          use_key: true                                    #
 #          # Determines collection order in it's section    #
 #          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
 #          # Set visible_library for the collection         #
 #          visible_library_key:                             #
 #          # Set visible_home for the collection            #
@@ -42,6 +46,10 @@
 #          radarr_add_missing_key:                          #
 #          # Adds missing from the collection to sonarr     #
 #          sonarr_add_missing_key:                          #
+#          # Radarr Folder to add to                        #
+#          radarr_folder_key:                               #
+#          # Sonarr Folder to add to                        #
+#          sonarr_folder_key:                               #
 #          # Radarr Tag for added missing                   #
 #          radarr_tag_key:                                  #
 #          # Sonarr Tag for added missing                   #
@@ -62,63 +70,83 @@ templates:
   popular:
     default:
       limit_popular: 100
+      summary_popular: A collection of the most popular Anime according to MyAnimeList.
     mal_popular: <<limit_popular>>
-    summary: A collection of the most popular Anime according to MyAnimeList.
+    summary: <<summary_<<key>>>>
 
   favorited:
     default:
       limit_favorited: 100
+      summary_favorited: A collection of the Most Favorited Anime according to MyAnimeList.
     mal_favorite: <<limit_favorited>>
-    summary: A collection of the Most Favorited Anime according to MyAnimeList.
+    summary: <<summary_<<key>>>>
 
   top:
     default:
       limit_top: 100
+      summary_top: A collection of the Top Rated Anime according to MyAnimeList.
     mal_all: <<limit_top>>
-    summary: A collection of the Top Rated Anime according to MyAnimeList.
+    summary: <<summary_<<key>>>>
 
   airing:
     default:
       limit_airing: 100
+      summary_airing: A collection of the Top Rated Anime Currently Airing according to MyAnimeList.
     mal_airing: <<limit_airing>>
-    summary: A collection of the Top Rated Anime Currently Airing according to MyAnimeList.
+    summary: <<summary_<<key>>>>
+
+  season:
+    default:
+      limit_airing: 100
+      summary_season: A collection of Anime from the Current Season according to MyAnimeList.
+    mal_season:
+      season: current
+      sort_by: score
+    summary: <<summary_<<key>>>>
 
 collections:
 
   MyAnimeList Popular:
+    variables:
+      key: popular
     template:
       - name: popular
-      - name: customsync
-      - name: chart_shared
-        key: popular
+      - name: shared
+      - name: arr
+      - name: custom
 
   MyAnimeList Favorited:
+    variables:
+      key: favorited
     template:
       - name: favorited
-      - name: customsync
-      - name: chart_shared
-        key: favorited
+      - name: shared
+      - name: arr
+      - name: custom
 
   MyAnimeList Top Rated:
+    variables:
+      key: top
     template:
       - name: top
-      - name: customsync
-      - name: chart_shared
-        key: top
+      - name: shared
+      - name: arr
+      - name: custom
 
   MyAnimeList Top Airing:
+    variables:
+      key: airing
     template:
       - name: airing
-      - name: customsync
-      - name: chart_shared
-        key: airing
+      - name: shared
+      - name: arr
+      - name: custom
 
   MyAnimeList Season:
-    mal_season:
-      season: current
-      sort_by: score
-    summary: A collection of Anime from the Current Season according to MyAnimeList.
+    variables:
+      key: season
     template:
-      - name: customsync
-      - name: chart_shared
-        key: season
+      - name: season
+      - name: shared
+      - name: arr
+      - name: custom

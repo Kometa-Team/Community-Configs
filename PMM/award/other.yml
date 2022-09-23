@@ -18,6 +18,14 @@
 #          collection_mode:                                 #
 #          # Sets the value at the start of the sort title  #
 #          collection_section: 16                           #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing:                              #
+#          # Radarr Folder to add to                        #
+#          radarr_folder:                                   #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag:                                      #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
 #############################################################
 
 external_templates:
@@ -27,25 +35,34 @@ external_templates:
 
 collections:
   Cesar:
+    variables:
+      key: cesar
     template:
-      - name: award
-        image: cesar/winner
       - name: shared
-    allowed_library_types: movie
+        allowed_libraries: movie
+        image: award/cesar/winner
+      - name: arr
+      - name: custom
     trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/cesar-award-best-french-film
 
   Berlinale:
+    variables:
+      key: berlinale
     template:
-      - name: award
-        image: berlinale/winner
       - name: shared
-    allowed_library_types: movie
+        allowed_libraries: movie
+        image: award/berlinale/winner
+      - name: arr
+      - name: custom
     trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
 
   Venice:
+    variables:
+      key: venice
     template:
-      - name: award
-        image: venice/winner
       - name: shared
-    allowed_library_types: movie
+        allowed_libraries: movie
+        image: award/venice/winner
+      - name: arr
+      - name: custom
     trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion

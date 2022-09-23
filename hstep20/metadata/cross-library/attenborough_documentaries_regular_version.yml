@@ -1,0 +1,402 @@
+# This version of the config uses the 'Regular' version of the Planet show Posters as metadata.
+# The set can be found here: https://theposterdb.com/poster/238214
+
+templates:
+  Show:
+    optional:
+    - s0_pid
+    - s1_pid
+    - s2_pid
+    - s3_pid
+    - s4_pid
+    
+    url_poster: https://theposterdb.com/api/assets/<<s_pid>>
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/<<s0_pid>>
+      1:
+        url_poster: https://theposterdb.com/api/assets/<<s1_pid>>
+      2:
+        url_poster: https://theposterdb.com/api/assets/<<s2_pid>>
+      3:
+        url_poster: https://theposterdb.com/api/assets/<<s3_pid>>
+      4:
+        url_poster: https://theposterdb.com/api/assets/<<s4_pid>>
+
+collections:
+  #Only the 'Planet' documentaries
+  Attenborough's Planet Collection:
+    trakt_list:
+      - https://trakt.tv/users/agent531c/lists/the-planet-collection?sort=released%2Casc
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/238196
+    collection_order: alpha
+    sort_title: ++++++++_attenboroughs_planet
+
+  # Only the 'Life' documentaries
+  Attenborough's Life Collection:
+    trakt_list:
+      - https://trakt.tv/users/lorumipsomlydia/lists/attenborough-life-on-earth?sort=released%2Cdesc
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/241456
+    collection_order: alpha
+    sort_title: ++++++++_attenboroughs_life
+
+  # All Movie/Show documentaries, including the Planet docs
+  David Attenborough Collection:
+    plex_all: true
+    sort_title: ++++++++_attenborough_collection
+    url_poster: https://theposterdb.com/api/assets/241457
+    collection_order: alpha
+    filter:
+      actor: David Attenborough
+
+metadata:
+#====================================================================================
+#
+#                                PLANET SHOWS
+#
+#====================================================================================
+  79257: #Planet Earth:
+    template: {Name: Show, s_pid: 238212, s0_pid: 238213, s1_pid: 238214}
+  318408: #Planet Earth II:
+    template: {Name: Show, s_pid: , s0_pid: , s1_pid: 238218}
+  413197: #Planet Earth III:
+    template: {Name: Show, s_pid: , s0_pid: , s1_pid: }
+
+  251418: #Frozen Planet:
+    template: {Name: Show, s_pid: 238206, s0_pid: 238207, s1_pid: 238208}
+  417395: #Frozen Planet II:
+    template: {Name: Show, s_pid: 238203, s0_pid: 238204, s1_pid: 238205}
+
+  359250: #The Green Planet:
+    template: {Name: Show, s_pid: 238227, s1_pid: 238228}
+
+  74372: #The Blue Planet:
+    template: {Name: Show, s_pid: 238224, s0_pid: 238225, s1_pid: 238226}
+  330942: #Blue Planet II:
+    template: {Name: Show, s_pid: , s0_pid: , s1_pid: }
+
+  359251: #Seven Worlds, One Planet:
+    template: {Name: Show, s_pid: 238222, s1_pid: 238223}
+
+  418505: #Prehistoric Planet(2022):
+    template: {Name: Show, s_pid: 238219, s0_pid: 238220, s1_pid: 238221}
+
+  355229: # Our Planet:
+    template: {Name: Show, s_pid: 238209, s0_pid: 238210, s1_pid: 238211}
+
+  359365: # A Perfect Planet:
+    template: {Name: Show, s_pid: 238200, s0_pid: 238201, s1_pid: 238202}
+
+
+
+#====================================================================================
+#
+#                                NON-PLANET SHOWS
+#
+#====================================================================================
+  264241: # Adventure
+    template: {Name: Show, s_pid: 263992}
+
+  265145: # Africa (2013)
+    template: {Name: Show, s_pid: 238115, s0_pid: 238116, s1_pid: 238117}
+
+  151521: # Are We Changing Planet Earth? (aka The Truth About Climate Change)
+    template: {Name: Show, s_pid: 238051, s0_pid: 238052, s1_pid: 238053}
+
+  79610: # Attenborough in Paradise and Other Personal Voyages
+    template: {Name: Show, s_pid: 237994, s1_pid: 237995}
+
+  397337: # Attenborough's Life in Color
+    template: {Name: Show, s_pid: 238160, s0_pid: 238161, s1_pid: 238162}
+
+  311317: # Attenboroughs Passion Projects
+    template: {Name: Show, s_pid: 238075}
+
+  264173: # Attenborough 60 Years in the Wild
+    template: {Name: Show, s_pid: 238070, s0_pid: , s1_pid: 238071}
+
+  290034: # David Attenborough Conquest of the Skies
+    template: {Name: Show, s_pid: 238102, s0_pid: 238103, s1_pid: 238104}
+
+  349155: # David Attenboroughs Ant Mountain
+    template: {Name: Show, s_pid: 238007}
+
+  410034: # David Attenboroughs Global Adventure
+    template: {Name: Show, s_pid: 238074}
+
+  266388: # David Attenboroughs Natural Curiosities
+    template: {Name: Show, s_pid: 238081, s1_pid: 238082, s2_pid: 238083, s3_pid: 238084, s4_pid: 238085}
+
+  273424: # David Attenboroughs Rise of Animals Triumph of the Vertebrates
+    template: {Name: Show, s_pid: 238105}
+
+  333247: # Deep Ocean
+    template: {Name: Show, s_pid: 238040, s0_pid: , s1_pid: }
+
+  352054: # Dynasties (2018)
+    template: {Name: Show, s_pid: 238151, s0_pid: 238152, s1_pid: 238153}
+
+  84843: # The First Eden
+    template: {Name: Show, s_pid: 238135}
+
+  200931: # First Life With David Attenborough
+    template: {Name: Show, s_pid: 238089, s1_pid: 238090}
+
+  265373: # Galapagos with David Attenborough
+    template: {Name: Show, s_pid: 238123, s0_pid: 238124, s1_pid: 238125}
+
+  304953: # Great Barrier Reef with David Attenborough
+    template: {Name: Show, s_pid: 238127, s1_pid: 238126}
+
+  302286: # The Hunt
+    template: {Name: Show, s_pid: 238145, s1_pid: 238145}
+
+  259418: # Kingdom of Plants
+    template: {Name: Show, s_pid: 238109, s0_pid: 238108, s1_pid: 238107}
+
+  118421: # Life
+    template: {Name: Show, s_pid: 238163, s0_pid: 238164, s1_pid: 238165}
+
+  81394: # Life in Cold Blood
+    template: {Name: Show, s_pid: 238167, s0_pid: 238168, s1_pid: 238169}
+
+  74373: # Life in the Freezer
+    template: {Name: Show, s_pid: 238172, s0_pid: 238171, s1_pid: 238170}
+
+  79185: # Life in the Undergrowth
+    template: {Name: Show, s_pid: 238173, s0_pid: 238174, s1_pid: 238175}
+
+  78989: # The Life of Birds
+    template: {Name: Show, s_pid: 238181, s0_pid: 238180, s1_pid: 238179}
+
+  78994: # The Life of Mammals
+    template: {Name: Show, s_pid: 238182, s0_pid: 238183, s1_pid: 238184}
+
+  74371: # Life on Earth
+    template: {Name: Show, s_pid: 238176, s0_pid: 238177, s1_pid: 238178}
+
+  287019: # Life Story
+    template: {Name: Show, s_pid: 238157}
+
+  78864: # The Living Planet
+    template: {Name: Show, s_pid: 238185, s0_pid: 238186, s1_pid: 238187}
+
+  79616: # Lost Worlds, Vanished Lives
+    template: {Name: Show, s_pid: 238092}
+
+  230371: # Madagascar
+    template: {Name: Show, s_pid: 238129, s0_pid: 238130, s1_pid: 238143}
+
+  410848: # The Mating Game
+    template: {Name: Show, s_pid: 238144}
+
+  270732: # Micro Monsters with David Attenborough
+    template: {Name: Show, s_pid: 238111, s0_pid: 238112, s1_pid: 238113}
+
+  251581: # The Miracle of Bali
+    template: {Name: Show, s_pid: 238079}
+
+  85083: # Natures Great Events
+    template: {Name: Show, s_pid: 238141, s0_pid: 238142, s1_pid: 238131}
+
+  264243: # The People of Paradise
+    template: {Name: Show, s_pid: 238078}
+
+  276537: # Plants Behaving Badly
+    template: {Name: Show, s_pid: 238110}
+
+  78993: # The Private Life of Plants
+    template: {Name: Show, s_pid: 238188, s0_pid: 238189, s1_pid: 238190}
+
+  258633: # Secrets of Wild India
+    template: {Name: Show, s_pid: 238133}
+
+  78943: # State of the Planet
+    template: {Name: Show, s_pid: 238059, s0_pid: 238060, s1_pid: 238061}
+
+  79947: # Trials of Life
+    template: {Name: Show, s_pid: 238191, s0_pid: 238192, s1_pid: 238193}
+
+  81652: # Tiger: Spy in the Jungle
+    template: {Name: Show, s_pid: 238030}
+
+  87911: # The Tribal Eye
+    template: {Name: Show, s_pid: 238080}
+
+  316346: # Wild City
+    template: {Name: Show, s_pid: 238134}
+  
+  9511: # Zoo Quest
+    template: {Name: Show, s_pid: 238077}
+    
+#====================================================================================
+#
+#                                    MOVIES
+#
+#====================================================================================
+
+
+  113303: # The Amber Time Machine
+    url_poster: https://theposterdb.com/api/assets/238000
+
+
+  528965: # Animal House
+    url_poster: https://theposterdb.com/api/assets/238005
+
+  77027: # Attenborough and the Empire of Ants
+    url_poster: https://theposterdb.com/api/assets/238006
+
+  379393: # Attenborough and the Giant Dinosaur
+    url_poster: https://theposterdb.com/api/assets/238097
+
+  206671: # Attenbborough: 60 Years in the Wild
+    url_poster: https://theposterdb.com/api/assets/238071
+
+  123669: # Attenborough and the Giant Egg
+    url_poster: https://theposterdb.com/api/assets/238098
+  
+  492729: # Attenborough and the Giant Elephant
+    url_poster: https://theposterdb.com/api/assets/238099
+
+  921728: # Attenborough and the Mammoth Graveyard
+    url_poster: https://theposterdb.com/api/assets/238100
+
+  497160: # Attenborough and the Sea Dragon
+    url_poster: https://theposterdb.com/api/assets/238101
+
+  978800: # Attenborough at 90
+    url_poster: https://theposterdb.com/api/assets/238072
+
+  395663: # Attenborough at 90: Behind the Lens
+    url_poster: https://theposterdb.com/api/assets/238073
+
+  862386: # Attenborough's Ark
+    url_poster: https://theposterdb.com/api/assets/238086
+
+  471921: # Attenborough's Big Birds
+    url_poster: https://theposterdb.com/api/assets/238009
+
+  193606: # Attenborough's Journey
+    url_poster: https://theposterdb.com/api/assets/238091
+
+  397619: # Attenborough's Life that Glows
+    url_poster: https://theposterdb.com/api/assets/238137
+
+  335016: # Attenborough's Paradise Birds
+    url_poster: https://theposterdb.com/api/assets/238630
+  
+  516110: # Attenborough's Wonder of Eggs
+    url_poster: https://theposterdb.com/api/assets/238017
+
+  923004: # Attenborough's Wonder of Song
+    url_poster: https://theposterdb.com/api/assets/238018
+
+  113300: # A Blank on the Map
+    url_poster: https://theposterdb.com/api/assets/237996
+
+  922326: # Bowerbirds: The Art of Seduction
+    url_poster: https://theposterdb.com/api/assets/237998
+
+  828146: # Breaking Boundaries: The Science of our Planet
+    url_poster: https://theposterdb.com/api/assets/238064
+
+  20784: # Charles Darwin and the Tree of Life
+    url_poster: https://theposterdb.com/api/assets/238087
+
+  67978: # Clever Monkeys
+    url_poster: https://theposterdb.com/api/assets/238023
+
+  664280: # David Attenborough A Life on Our Planet
+    url_poster: https://theposterdb.com/api/assets/238068
+
+  246818: # David Attenborough's Natural History Museum Alive
+    url_poster: https://theposterdb.com/api/assets/238094
+
+  427183: # Desert Seas
+    url_poster: https://theposterdb.com/api/assets/238120
+
+  959785: # Dinosaurs - The Final Day
+    url_poster: https://theposterdb.com/api/assets/238096
+
+  675898: # Dragons and Damsels
+    url_poster: https://theposterdb.com/api/assets/238114s
+
+  742637: # Extinction: The Facts
+    url_poster: https://theposterdb.com/api/assets/238057
+
+  301965: # Fabulous Frogs
+    url_poster: https://theposterdb.com/api/assets/238011
+
+  46060: # Flying Monsters 3D
+    url_poster: https://theposterdb.com/api/assets/238095
+
+  123681: # Gorilla Revisited with David Attenborough
+    url_poster: https://theposterdb.com/api/assets/263741
+
+  175373: # Great Natural Wonders of the World
+    url_poster: https://theposterdb.com/api/assets/238128
+
+  540466: # The Greatest Wildlife Show on Earth
+    url_poster: https://theposterdb.com/api/assets/238140
+
+  433832: # Humming Bird: Jeweled Messangers
+    url_poster: https://theposterdb.com/api/assets/238019
+
+  446520: # Legends of the Deep: Deep Sea Sharks
+    url_poster: https://theposterdb.com/api/assets/238033
+
+  446518: # Legends of the Deep: Giant Squid
+    url_poster: https://theposterdb.com/api/assets/238034
+
+  576006: # Life on Air: David Attenborough
+    url_poster: https://theposterdb.com/api/assets/237999
+
+  123686: # The Link: Uncovering our Earliest Ancestors
+    url_poster: https://theposterdb.com/api/assets/238093
+
+  398412: # The Lost Gods of Easter Island
+    url_poster: https://theposterdb.com/api/assets/238001
+
+  913385: # Mountain Lions: Big Cats in High Places
+    url_poster: https://theposterdb.com/api/assets/238029
+
+  148686: # The Penguin King
+    url_poster: https://theposterdb.com/api/assets/238021
+
+  823800: # Planet Earth: A Celebration
+    url_poster: https://theposterdb.com/api/assets/238215
+
+  819633: # Puerto Rico: Island of Enchantment
+    url_poster: https://theposterdb.com/api/assets/238132
+
+  519864: # The Queen's Green Planet
+    url_poster: https://theposterdb.com/api/assets/263997
+
+  922327: # The Song of the Earth
+    url_poster: https://theposterdb.com/api/assets/238004
+
+  914587: # Superfish Billfish
+    url_poster: https://theposterdb.com/api/assets/238039
+
+  70260: # Superfish Bluefin Tuna
+    url_poster: https://theposterdb.com/api/assets/238036
+
+  31762: # Survival Island
+    url_poster: https://theposterdb.com/api/assets/238640
+
+  578377: # Tasmania
+    url_poster: https://theposterdb.com/api/assets/238119
+
+  652876: # Whale Wisdom
+    url_poster: https://theposterdb.com/api/assets/238032
+
+  613842: # Wild Karnataka
+    url_poster: https://theposterdb.com/api/assets/238136
+
+  811703: # The Year Earth Changed
+    url_poster: https://theposterdb.com/api/assets/238062
+
+  399437: # Zoo Quest in Color
+      url_poster: https://theposterdb.com/api/assets/238076

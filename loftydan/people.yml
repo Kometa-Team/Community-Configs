@@ -1,0 +1,222 @@
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: 17
+
+templates:   
+    people:
+        actor: tmdb
+        tmdb_person: <<person>>
+        sort_title: "!17_!<<collection_name>>"
+        collection_order: release
+
+collections:
+  Actors Collections:
+    template:
+      - name: separator
+        separator: actor
+
+###########################
+#    People Collections   #
+###########################
+  Adam Sandler:
+    writer: tmdb
+    template: {name: people, person: 19292}
+  Al Pacino:
+    template: {name: people, person: 1158}
+  Angelina Jolie:
+    template: {name: people, person: 11701}
+  Brad Pitt:
+    template: {name: people, person: 287}
+  Bruce Lee:
+    template: {name: people, person: 19429}
+  Bruce Willis:
+    template: {name: people, person: 62}
+  Cameron Diaz:
+    template: {name: people, person: 6941}
+  Channing Tatum:
+    template: {name: people, person: 38673}
+  Christian Bale:
+    template: {name: people, person: 3894}
+  Chris Evans:
+    template: {name: people, person: 16828}
+  Chris Hemsworth:
+    template: {name: people, person: 74568}
+  Chris Pratt:
+    template: {name: people, person: 73457}
+  Chris Rock:
+    template: {name: people, person: 2632}
+  Christopher Nolan:
+    director: tmdb
+    template: {name: people, person: 525}
+  Christopher Walken:
+    template: {name: people, person: 4690}
+  Daniel Craig:
+    template: {name: people, person: 8784}
+  Dave Chappelle:
+    template: {name: people, person: 4169}
+  Denzel Washington:
+    template: {name: people, person: 5292}
+  Dwayne Johnson:
+    template: {name: people, person: 18918}
+  Eddie Murphy:
+    template: {name: people, person: 776}
+  Emma Stone:
+    template: {name: people, person: 54693}
+  Emma Watson:
+    template: {name: people, person: 10990}
+  Ewan McGregor:
+    template: {name: people, person: 3061}
+  George Clooney:
+    template: {name: people, person: 1461}
+  Gerard Butler:
+    template: {name: people, person: 17276}
+  Harrison Ford:
+    template: {name: people, person: 3}
+  Hayao Miyazaki:
+    template: {name: people, person: 608}
+  Hugh Jackman:
+    template: {name: people, person: 6968}
+  Ice Cube:
+    template: {name: people, person: 9778}
+  J.J. Abrams:
+    director: tmdb
+    template: {name: people, person: 15344}
+  Jack Black:
+    template: {name: people, person: 70851}
+  Jackie Chan:
+    template: {name: people, person: 18897}
+  James Cameron:
+    director: tmdb
+    template: {name: people, person: 2710}
+  James Franco:
+    template: {name: people, person: 17051}
+  Jamie Foxx:
+    template: {name: people, person: 134}
+  Jason Bateman:
+    template: {name: people, person: 23532}
+  Jason Statham:
+    template: {name: people, person: 976}
+  Jennifer Aniston:
+    template: {name: people, person: 4491}
+  Jennifer Lawrence:
+    template: {name: people, person: 72129}
+  Jesse Eisenberg:
+    template: {name: people, person: 44735}
+  Jessica Alba:
+    template: {name: people, person: 56731}
+  Jet Li:
+    template: {name: people, person: 1336}
+  Jim Carrey:
+    template: {name: people, person: 206}
+  John Candy:
+    template: {name: people, person: 7180}
+  John Travolta:
+    template: {name: people, person: 8891}
+  Julia Roberts:
+    template: {name: people, person: 1204}
+  Kevin Hart:
+    template: {name: people, person: 55638}
+  Liam Neeson:
+    template: {name: people, person: 3896}
+  Lucy Liu:
+    template: {name: people, person: 140}
+  M. Night Shyamalan:
+    director: tmdb
+    template: {name: people, person: 11614}
+  Mark Wahlberg:
+    template: {name: people, person: 13240}
+  Matt Damon:
+    template: {name: people, person: 1892}
+  Matthew McConaughey:
+    template: {name: people, person: 10297}
+  Melissa McCarthy:
+    template: {name: people, person: 55536}
+  Meryl Streep:
+    template: {name: people, person: 5064}
+  Michael Bay:
+    director: tmdb
+    template: {name: people, person: 865}
+  Michael Caine:
+    template: {name: people, person: 3895}
+  Mike Myers:
+    template: {name: people, person: 12073}
+  Mila Kunis:
+    template: {name: people, person: 18973}
+  Milla Jovovich:
+    template: {name: people, person: 63}
+  Morgan Freeman:
+    template: {name: people, person: 192}
+  Natalie Portman:
+    template: {name: people, person: 524}
+  Nicolas Cage:
+    template: {name: people, person: 2963}
+  Nicole Kidman:
+    template: {name: people, person: 2227}
+  Orlando Bloom:
+    template: {name: people, person: 114}
+  Owen Wilson:
+    template: {name: people, person: 887}
+  Patrick Stewart:
+    template: {name: people, person: 2387}
+  Quentin Tarantino:
+    writer: tmdb
+    director: tmdb
+    template: {name: people, person: 138}
+  Reese Witherspoon:
+    template: {name: people, person: 368}
+  Ridley Scott:
+    director: tmdb
+    template: {name: people, person: 578}
+  Robin Williams:
+    template: {name: people, person: 2157}
+  Rosario Dawson:
+    template: {name: people, person: 5916}
+  Ryan Reynolds:
+    template: {name: people, person: 10859}
+  Samuel L. Jackson:
+    template: {name: people, person: 2231}
+  Sandra Bullock:
+    template: {name: people, person: 18277}
+  Sacha Baron Cohen:
+    template: {name: people, person: 6730}
+  Scarlett Johansson:
+    template: {name: people, person: 1245}
+  Sean Connery:
+    template: {name: people, person: 738}
+  Seth Rogen:
+    writer: tmdb
+    director: tmdb
+    template: {name: people, person: 19274}
+  Shia LaBeouf:
+    template: {name: people, person: 10959}
+  Steve Buscemi:
+    template: {name: people, person: 884}
+  Steve Carell:
+    template: {name: people, person: 4495}
+  Steve Martin:
+    template: {name: people, person: 67773}
+  Steven Seagal:
+    template: {name: people, person: 23880}
+  Steven Spielberg:
+    director: tmdb
+    template: {name: people, person: 488}
+  Sylvester Stallone:
+    template: {name: people, person: 16483}
+  Tim Burton:
+    writer: tmdb
+    director: tmdb
+    template: {name: people, person: 510}
+  Tom Cruise:
+    template: {name: people, person: 500}
+  Tom Hanks:
+    template: {name: people, person: 31}
+  Will Ferrell:
+    template: {name: people, person: 23659}
+  Will Smith:
+    template: {name: people, person: 2888}
+  Woody Harrelson:
+    template: {name: people, person: 57755}
+  Zack Snyder:
+    director: tmdb
+    template: {name: people, person: 15217}
