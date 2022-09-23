@@ -1,14 +1,14 @@
 #############################################################
-#                       Age Overlay                         #
+#                    Commonsense Overlay                    #
 #         Created by Yozora, Bullmoose20, & Sohjiro         #
-#            Credit to Magic815 for base images             #
+#             Credit to Magic815 for base images            #
 #############################################################
 #                                                           #
 #  Call this from your config.yml (Movie or Show):          #
 #  If nothing is specified these are the defaults           #
 #                                                           #
 #    overlay_path:                                          #
-#      - git: PMM/overlays/age                              #
+#      - git: PMM/overlays/commonsense                      #
 #        template_variables:                                #
 #          # Set text you want before the rating            #
 #          pre_text: ""                                     #
@@ -57,8 +57,6 @@ templates:
         conditions:
           - overlay_name: NR
             value: ""
-
-
     optional:
       - overlay_level
       - use_<<slug>>
@@ -95,137 +93,86 @@ templates:
       git: PMM/overlays/images/raw/commonsense
       addon_position: left
       addon_offset: 15
+    plex_search:
+      validate: false
+      any:
+        content_rating: <<rating>>
 
 overlays:
   1:
     template:
       - name: Content-Rating
-    plex_search:
-      validate: false
-      any:
-        # content_rating.regex: '(?i)\b1\b|\b0\b|\bG\b|\bTV-Y\b|\bTV-G\b'
-        content_rating: 1, 0, G, TV-G, TV-Y
-
+        rating: "1, 0, 01, 00, G, TV-G, TV-Y"
   2:
     template:
       - name: Content-Rating
-    plex_search:
-      any:
-        content_rating: 2
+        rating: "2, 02"
   3:
     template:
       - name: Content-Rating
-    plex_search:
-      any:
-        content_rating: 3
+        rating: "3, 03"
   4:
     template:
       - name: Content-Rating
-    plex_search:
-      any:
-        content_rating: 4
+        rating: "4, 04"
   5:
     template:
       - name: Content-Rating
-    plex_search:
-      any:
-        content_rating: 5
+        rating: "5, 05"
   6:
     template:
       - name: Content-Rating
-    plex_search:
-      validate: false
-      any:
-        # content_rating.regex: '(?i)\b6\b|\bGP\b|\bPG\b|\bM\/PG\b|\bTV-PG\b'
-        content_rating: 6, GP, PG, M/PG, TV-PG
+        rating: "6, 06, GP, PG, M/PG, TV-PG"
   7:
     template:
       - name: Content-Rating
-    plex_search:
-      validate: false
-      any:
-        # content_rating.regex: '(?i)\b7\b|\bTV-Y7\b|\bTV-Y7-FV\b'
-        content_rating: 7, TV-Y7, TV-Y7-FV
+        rating: "7, 07, TV-Y7, TV-Y7-FV"
   8:
     template:
       - name: Content-Rating
-    plex_search:
-      any:
-        content_rating: 8
+        rating: "8, 08"
   9:
     template:
       - name: Content-Rating
-    plex_search:
-      any:
-        content_rating: 9
+        rating: "9, 09"
   10:
     template:
       - name: Content-Rating
-    plex_search:
-      any:
-        content_rating: 10
+        rating: "10"
   11:
     template:
       - name: Content-Rating
-    plex_search:
-      any:
-        content_rating: 11
+        rating: "11"
   12:
     template:
       - name: Content-Rating
-    plex_search:
-      any:
-        content_rating: 12
+        rating: "12"
   13:
     template:
       - name: Content-Rating
-    plex_search:
-      validate: false
-      any:
-        # content_rating.regex: '(?i)\b13\b|\bPG-13\b'
-        content_rating: 13, PG-13
+        rating: "13, PG-13"
   14:
     template:
       - name: Content-Rating
-    plex_search:
-      validate: false
-      any:
-        # content_rating.regex: '(?i)\b14\b|\bTV-14\b'
-        content_rating: 14, TV-14
+        rating: "14, TV-14"
   15:
     template:
       - name: Content-Rating
-    plex_search:
-      any:
-        content_rating: 15
+        rating: "15"
   16:
     template:
       - name: Content-Rating
-    plex_search:
-      validate: false
-      any:
-        # content_rating.regex: '(?i)\b16\b|\bPassed\b|\bApproved\b|\bOpen\b'
-        content_rating: 16, Passed, Approved, Open
+        rating: "16, Passed, Approved, Open"
   17:
     template:
       - name: Content-Rating
-    plex_search:
-      any:
-        content_rating: 17
+        rating: "17"
   18:
     template:
       - name: Content-Rating
-    plex_search:
-      validate: false
-      any:
-        # content_rating.regex: '(?i)\b18\b|\bNC-17\b|\bM\b|\bTV-MA\b|\bR\b|\bX\b'
-        content_rating: 18, NC-17, M, TV-MA, R, X
+        rating: "18, NC-17, M, TV-MA, R, X"
   NR:
     template:
       - name: Content-Rating
         slug: nr
-    plex_search:
-      validate: false
-      any:
-        # content_rating.regex: '(?i)\bNone\b|\bNR\b|\bNot Rated\b|\bUnrated\b'
-        content_rating: None, NR, Not Rated, Unrated
+        rating: "None, NR, Not Rated, Unrated"
