@@ -23,24 +23,36 @@
 #          # Set the vertical align for the overlay         #
 #          vertical_align: top                              #
 #                                                           #
-#          # Use the Criterion overlay                      #
-#          use_criterion: true                              #
-#          # Use the IMAX-E overlay                         #
-#          use_enhanced: true                               #
-#          # Use the IMAX overlay                           #
-#          use_imax: true                                   #
 #          # Use the Director's Cut overlay                 #
 #          use_directorscut: true                           #
-#          # Use the Uncut overlay                          #
-#          use_uncut: true                                  #
 #          # Use the Extended overlay                       #
 #          use_extended: true                               #
-#          # Use the Remastered overlay                     #
-#          use_remastered: true                             #
+#          # Use the Uncut overlay                          #
+#          use_uncut: true                                  #
+#          # Use the Unrated overlay                        #
+#          use_unrated: true                                #
 #          # Use the Special overlay                        #
 #          use_special: true                                #
 #          # Use the Final Cut overlay                      #
 #          use_finalcut: true                               #
+#          # Use the Anniversary overlay                    #
+#          use_anniversary: true                            #
+#          # Use the Collectors overlay                     #
+#          use_collector: true                              #
+#          # Use the International overlay                  #
+#          use_international: true                          #
+#          # Use the Theatrical overlay                     #
+#          use_theatrical: true                             #
+#          # Use the Ultimate overlay                       #
+#          use_ultimate: true                               #
+#          # Use the IMAX-E overlay                         #
+#          use_enhanced: true                               #
+#          # Use the IMAX overlay                           #
+#          use_imax: true                                   #
+#          # Use the Remastered overlay                     #
+#          use_remastered: true                             #
+#          # Use the Criterion overlay                      #
+#          use_criterion: true                              #
 #############################################################
 
 templates:
@@ -73,7 +85,7 @@ overlays:
   Directors-Cut:
     template:
       - name: Edition
-        weight: 100
+        weight: 150
         slug: directorscut
         overlay: Directors-Cut
     suppress_overlays:
@@ -87,7 +99,7 @@ overlays:
   Directors-Cut-Dovetail:
     template:
       - name: Edition
-        weight: 100
+        weight: 150
         slug: directorscut
         extra: ''
         vertical_offset: 99
@@ -102,7 +114,7 @@ overlays:
   Extended-Edition:
     template:
       - name: Edition
-        weight: 90
+        weight: 140
         slug: extended
         overlay: Extended-Edition
     suppress_overlays:
@@ -116,7 +128,7 @@ overlays:
   Extended-Edition-Dovetail:
     template:
       - name: Edition
-        weight: 90
+        weight: 140
         slug: extended
         extra: ''
         vertical_offset: 99
@@ -131,7 +143,7 @@ overlays:
   Uncut-Edition:
     template:
       - name: Edition
-        weight: 80
+        weight: 130
         slug: uncut
         overlay: Uncut-Edition
     suppress_overlays:
@@ -145,7 +157,7 @@ overlays:
   Uncut-Edition-Dovetail:
     template:
       - name: Edition
-        weight: 80
+        weight: 130
         slug: uncut
         extra: ''
         vertical_offset: 99
@@ -160,7 +172,7 @@ overlays:
   Unrated-Edition:
     template:
       - name: Edition
-        weight: 70
+        weight: 120
         slug: unrated
         overlay: Unrated-Edition
     suppress_overlays:
@@ -174,7 +186,7 @@ overlays:
   Unrated-Edition-Dovetail:
     template:
       - name: Edition
-        weight: 70
+        weight: 120
         slug: unrated
         extra: ''
         vertical_offset: 99
@@ -189,7 +201,7 @@ overlays:
   Special-Edition:
     template:
       - name: Edition
-        weight: 60
+        weight: 110
         slug: special
         overlay: Special-Edition
     suppress_overlays:
@@ -203,7 +215,7 @@ overlays:
   Special-Edition-Dovetail:
     template:
       - name: Edition
-        weight: 60
+        weight: 110
         slug: special
         extra: ''
         vertical_offset: 99
@@ -218,7 +230,7 @@ overlays:
   Final-Cut:
     template:
       - name: Edition
-        weight: 50
+        weight: 100
         slug: finalcut
         overlay: Final-Cut
     suppress_overlays:
@@ -232,7 +244,7 @@ overlays:
   Final-Cut-Dovetail:
     template:
       - name: Edition
-        weight: 50
+        weight: 100
         slug: finalcut
         extra: ''
         vertical_offset: 99
@@ -244,6 +256,150 @@ overlays:
         - 'edition-(?i)\bFinal\b'               # New TRaSH naming
         - '(?<=[0-9]{4}[)}>\]]\s)\bFinal\b'     # Original TRaSH naming
 
+  Anniversary-Cut:
+    template:
+      - name: Edition
+        weight: 90
+        slug: anniversary
+        overlay: Anniversary-Cut
+    suppress_overlays:
+      - Anniversary-Cut-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bAnniversary\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bAnniversary\b'     # Original TRaSH naming
+
+  Anniversary-Cut-Dovetail:
+    template:
+      - name: Edition
+        weight: 90
+        slug: anniversary
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Anniversary-Cut
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bAnniversary\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bAnniversary\b'     # Original TRaSH naming
+
+  Collectors-Edition:
+    template:
+      - name: Edition
+        weight: 80
+        slug: collector
+        overlay: Collectors-Edition
+    suppress_overlays:
+      - Collectors-Cut-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\b(Collector|Collectors)\b'           # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\b(Collector|Collectors)\b' # Original TRaSH naming
+
+  Collectors-Edition-Dovetail:
+    template:
+      - name: Edition
+        weight: 80
+        slug: collector
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Collectors-Edition
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\b(Collector|Collectors)\b'           # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\b(Collector|Collectors)\b' # Original TRaSH naming
+
+  International-Cut:
+    template:
+      - name: Edition
+        weight: 70
+        slug: international
+        overlay: International-Cut
+    suppress_overlays:
+      - International-Cut-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bInternational\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bInternational\b'     # Original TRaSH naming
+
+  International-Cut-Dovetail:
+    template:
+      - name: Edition
+        weight: 70
+        slug: international
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: International-Cut
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bInternational\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bInternational\b'     # Original TRaSH naming
+
+  Theatrical-Cut:
+    template:
+      - name: Edition
+        weight: 60
+        slug: theatrical
+        overlay: Theatrical-Cut
+    suppress_overlays:
+      - Theatrical-Cut-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bTheatrical\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bTheatrical\b'     # Original TRaSH naming
+
+  Theatrical-Cut-Dovetail:
+    template:
+      - name: Edition
+        weight: 60
+        slug: theatrical
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Theatrical-Cut
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bTheatrical\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bTheatrical\b'     # Original TRaSH naming
+
+  Ultimate-Cut:
+    template:
+      - name: Edition
+        weight: 50
+        slug: Ultimate
+        overlay: Ultimate-Cut
+    suppress_overlays:
+      - Ultimate-Cut-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bUltimate\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bUltimate\b'     # Original TRaSH naming
+
+  Ultimate-Cut-Dovetail:
+    template:
+      - name: Edition
+        weight: 50
+        slug: Ultimate
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Ultimate-Cut
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bUltimate\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bUltimate\b'     # Original TRaSH naming
   IMAX-E:
     template:
       - name: Edition
