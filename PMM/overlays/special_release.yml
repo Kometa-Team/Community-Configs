@@ -475,6 +475,7 @@ overlays:
         overlay: Remastered
     plex_all: true
     filters:
+      filepath.regex: 
         - 'edition-(?i)\b(Remaster|Remastered|4k Remaster|4k Remastered)\b'               # New TRaSH naming
         - '(?<=[0-9]{4}[)}>\]]\s)(?i)\b(Remaster|Remastered|4k Remaster|4k Remastered)\b' # Original TRaSH naming
 
