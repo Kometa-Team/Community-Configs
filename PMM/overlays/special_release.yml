@@ -292,7 +292,7 @@ overlays:
         slug: collector
         overlay: Collectors-Edition
     suppress_overlays:
-      - Collectors-Cut-Dovetail
+      - Collectors-Edition-Dovetail
     plex_all: true
     filters:
       filepath.regex: 
