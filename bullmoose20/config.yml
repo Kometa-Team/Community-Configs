@@ -110,11 +110,11 @@ libraries:                                        # Library mappings must have a
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
-    - git: PMM/overlays/age
     - git: PMM/overlays/audio_codec
       # template_variables:
         # style: standard
     - git: PMM/overlays/audio_language
+    - git: PMM/overlays/commonsense
     # - git: PMM/overlays/direct_play
     - git: PMM/overlays/oscars
       template_variables:
@@ -131,6 +131,7 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/commonsense_selection
       template_variables:
         weight: 5
+    - git: PMM/overlays/mediastinger
     - git: PMM/overlays/ratings
       template_variables:
         rating1: user
@@ -169,7 +170,6 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/streaming
     - git: PMM/overlays/versions
     - git: PMM/overlays/video_format
-    - git: PMM/overlays/mediastinger
     settings:
       asset_directory:
       - config/assets
@@ -242,13 +242,6 @@ libraries:                                        # Library mappings must have a
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
-    - git: PMM/overlays/age
-    - git: PMM/overlays/age
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/age
-      template_variables:
-        overlay_level: season
     - git: PMM/overlays/audio_codec
     - git: PMM/overlays/audio_codec
       template_variables:
@@ -263,7 +256,14 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/audio_language
       template_variables:
         overlay_level: season
-    # - git: PMM/overlays/direct_play
+    - git: PMM/overlays/commonsense
+    - git: PMM/overlays/commonsense
+      template_variables:
+        overlay_level: episode
+    - git: PMM/overlays/commonsense
+      template_variables:
+        overlay_level: season
+   # - git: PMM/overlays/direct_play
     # - git: PMM/overlays/direct_play
       # template_variables:
         # overlay_level: episode
@@ -314,6 +314,13 @@ libraries:                                        # Library mappings must have a
       template_variables:
         weight: 5
         overlay_level: episode
+    - git: PMM/overlays/mediastinger
+    # - git: PMM/overlays/mediastinger
+      # template_variables:
+        # overlay_level: episode
+    # - git: PMM/overlays/mediastinger
+      # template_variables:
+        # overlay_level: season
     - git: PMM/overlays/ratings
       template_variables:
         rating1: user
@@ -358,7 +365,7 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/resolution
       template_variables:
         overlay_level: season
-    - file: config/metadata/overlays/episode_info
+    - git: PMM/overlays/episode_info
       template_variables:
         overlay_level: episode
     - git: PMM/overlays/runtimes
@@ -395,13 +402,6 @@ libraries:                                        # Library mappings must have a
     - git: PMM/overlays/video_format
       template_variables:
         overlay_level: season
-    - git: PMM/overlays/mediastinger
-    # - git: PMM/overlays/mediastinger
-      # template_variables:
-        # overlay_level: episode
-    # - git: PMM/overlays/mediastinger
-      # template_variables:
-        # overlay_level: season
     settings:
       asset_directory:
       - config/assets
@@ -545,3 +545,4 @@ mal:
     expires_in: 2678400
     refresh_token: (redacted)
   localhost_url:
+  cache_expiration: 60
