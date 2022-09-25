@@ -256,21 +256,21 @@ overlays:
         - 'edition-(?i)\bFinal\b'               # New TRaSH naming
         - '(?<=[0-9]{4}[)}>\]]\s)\bFinal\b'     # Original TRaSH naming
 
-  Anniversary-Cut:
+  Anniversary-Edition:
     template:
       - name: Edition
         weight: 90
         slug: anniversary
-        overlay: Anniversary-Cut
+        overlay: Anniversary-Edition
     suppress_overlays:
-      - Anniversary-Cut-Dovetail
+      - Anniversary-Edition-Dovetail
     plex_all: true
     filters:
       filepath.regex: 
         - 'edition-(?i)\bAnniversary\b'               # New TRaSH naming
         - '(?<=[0-9]{4}[)}>\]]\s)\bAnniversary\b'     # Original TRaSH naming
 
-  Anniversary-Cut-Dovetail:
+  Anniversary-Edition-Dovetail:
     template:
       - name: Edition
         weight: 90
@@ -278,7 +278,7 @@ overlays:
         extra: ''
         vertical_offset: 99
         group: Dovetail
-        overlay: Anniversary-Cut
+        overlay: Anniversary-Edition
     plex_all: true
     filters:
       filepath.regex: 
