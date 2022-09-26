@@ -187,6 +187,9 @@ collections:
       - 8091     # Alien Collection
     tmdb_movie:
       - 23437    # A Nightmare on Elm Street (2010)
+      - 639721   # Addams Family 2 (2021) 
+    trakt_list:
+      - https://trakt.tv/users/codedone/lists/movies-for-halloween?sort=rank,asc
 
   Christmas:
     variables:
