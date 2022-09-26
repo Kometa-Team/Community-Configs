@@ -22,7 +22,8 @@
 #          # Set rating image for rating1, rating2, and/or  #
 #                rating3                                    #
 #          # Rating Images: anidb, imdb, letterboxd, tmdb,  #
-#                metacritic, rt_popcorn, rt_tomato, trakt   #
+#                metacritic, rt_popcorn, rt_tomato, trakt,  #
+#                mal                                        #
 #                                                           #
 #          rating1_image: imdb                              #
 #          rating2_image: rt_popcorn                        #
@@ -125,7 +126,7 @@ templates:
         default: true
         conditions:
           - image_level: Top
-            rating<<rating_num>>_image: [anidb, letterboxd, rt_popcorn, mdblist, tmdb, trakt]
+            rating<<rating_num>>_image: [anidb, letterboxd, rt_popcorn, mdblist, tmdb, trakt, mal]
             value: false
           - image_level: Top
             overlay_level: episode
@@ -167,6 +168,8 @@ templates:
             value: TMDb
           - rating<<rating_num>>_image: trakt
             value: Trakt
+          - rating<<rating_num>>_image: mal
+            value: MAL
       rating<<rating_num>>_horizontal_align:
         default: left
         conditions:
