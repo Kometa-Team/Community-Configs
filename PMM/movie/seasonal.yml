@@ -213,3 +213,45 @@ collections:
         image: seasonal/<<key>>
       - name: arr
     imdb_list: https://www.imdb.com/list/ls066838460/
+    
+  Father's Day:
+    variables:
+      key: father
+    template:
+      - name: Holiday
+        schedule_father: range(06/15-06/20) ##this can be changed
+      - name: shared
+        visible_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: ## would need to either find / create one
+      - name: arr
+     imdb_list: https://www.imdb.com/list/ls020471057/
+     
+   Mother's Day:
+    variables:
+      key: mother
+    template:
+      - name: Holiday
+        schedule_father: range(05/05-05-10) ##this can be changed
+      - name: shared
+        visible_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: ## would need to either find / create one
+      - name: arr
+     imdb_list: https://www.imdb.com/list/ls072551197/
+   
+   Remembering September 11th:
+    variables:
+      key: sept11
+    template: 
+      - name: Holiday
+        schedule_sept11: range(09/06-09/21)
+      - name: shared
+        visible_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: ## would still need to find / create
+      - name: arr
+    imdb_list: https://www.imdb.com/list/ls056745046/
+        
+        
+       
