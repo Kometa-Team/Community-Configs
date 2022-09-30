@@ -213,3 +213,16 @@ collections:
         image: seasonal/<<key>>
       - name: arr
     imdb_list: https://www.imdb.com/list/ls066838460/
+    
+  Labor Day:    #movies about Work, LOL
+    variables:
+      key: labor
+    template:
+      - name: Labor Day
+        schedule_labor: range(09/01-09/10)
+      - name: shared
+        visitble_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: ### would need created
+      - name: arr
+    imdb_list: https://www.imdb.com/list/ls002014923/
