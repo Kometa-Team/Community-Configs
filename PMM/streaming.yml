@@ -80,6 +80,7 @@ templates:
   streaming:
     default:
       sort_by: release.desc
+      sort_by_<<key>>: <<sort_by>>
     ignore_blank_results: true
     cache_builders: 1
     smart_label: <<sort_by_<<key>>>>
