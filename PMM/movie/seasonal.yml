@@ -181,10 +181,16 @@ collections:
       - https://www.imdb.com/list/ls023118929/
       - https://www.imdb.com/list/ls000099714/
     tmdb_collection:
-      - 91361    # Halloween Collection
-      - 8581     # A Nightmare on Elm Street Collection
-      - 1733     # The Mummy Collection
-      - 8091     # Alien Collection
+      - 185103    #Hotel Transylvania
+      - 11716     #Addams Family
+      - 750822    #Addams Family Animated
+      - 313086    #Conjuring
+      - 91361     # Halloween Collection
+      - 8581      # A Nightmare on Elm Street Collection
+      - 1733      # The Mummy Collection
+      - 8091      # Alien Collection
+      - 2980      # Ghostbusters
+      - 751156    # Hocus Pocus
     tmdb_movie:
       - 23437    # A Nightmare on Elm Street (2010)
 
@@ -213,3 +219,16 @@ collections:
         image: seasonal/<<key>>
       - name: arr
     imdb_list: https://www.imdb.com/list/ls066838460/
+    
+  Labor Day:    #movies about Work, LOL
+    variables:
+      key: labor
+    template:
+      - name: Labor Day
+        schedule_labor: range(09/01-09/10)
+      - name: shared
+        visitble_home_<<key>>: true
+        visible_shared_<<key>>: true
+        image: ### would need created
+      - name: arr
+    imdb_list: https://www.imdb.com/list/ls002014923/
