@@ -1,7 +1,7 @@
 # This file is a template remove the .template to use the file
 
 libraries:                                        # Library mappings must have a colon (:) placed after them
-  Movies:
+  TestMovies:
     report_path: config/missing/Movies_missing.yml
     template_variables:
       sep_style: gray
@@ -110,28 +110,29 @@ libraries:                                        # Library mappings must have a
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
-    - git: PMM/overlays/audio_codec
+    # - file: config/metadata/overlays/editions
+    # - git: PMM/overlays/audio_codec
+      # # template_variables:
+        # # style: standard
+    # - git: PMM/overlays/audio_language
+    # - git: PMM/overlays/commonsense
+    # # - git: PMM/overlays/direct_play
+    # - git: PMM/overlays/oscars
       # template_variables:
-        # style: standard
-    - git: PMM/overlays/audio_language
-    - git: PMM/overlays/commonsense
-    # - git: PMM/overlays/direct_play
-    - git: PMM/overlays/oscars
-      template_variables:
-        weight: 40
-    - git: PMM/overlays/imdb_top_250
-      template_variables:
-        weight: 30
-    - git: PMM/overlays/rt_cert_fresh
-      template_variables:
-        weight: 20
-    - git: PMM/overlays/mc_must_see
-      template_variables:
-        weight: 10
-    - git: PMM/overlays/commonsense_selection
-      template_variables:
-        weight: 5
-    - git: PMM/overlays/mediastinger
+        # weight: 40
+    # - git: PMM/overlays/imdb_top_250
+      # template_variables:
+        # weight: 30
+    # - git: PMM/overlays/rt_cert_fresh
+      # template_variables:
+        # weight: 20
+    # - git: PMM/overlays/mc_must_see
+      # template_variables:
+        # weight: 10
+    # - git: PMM/overlays/commonsense_selection
+      # template_variables:
+        # weight: 5
+    # - git: PMM/overlays/mediastinger
     - git: PMM/overlays/ratings
       template_variables:
         rating1: user
@@ -165,11 +166,17 @@ libraries:                                        # Library mappings must have a
         # font: config/metadata/overlays/fonts/Claspo-ND-Medium.ttf
         # rating_source: Rotten
         # font: config/metadata/overlays/fonts/Adlib.ttf
-    - git: PMM/overlays/resolution
-    - git: PMM/overlays/special_release
-    - git: PMM/overlays/streaming
-    - git: PMM/overlays/versions
-    - git: PMM/overlays/video_format
+    # - git: PMM/overlays/resolution
+    # - git: PMM/overlays/special_release
+    - file: config/metadata/overlays/top10
+      template_variables:
+        time_window: this_year
+        horizontal_position: left
+    # - pmm: resolution
+    # - pmm: special_release
+    # - git: PMM/overlays/streaming
+    # - git: PMM/overlays/versions
+    # - git: PMM/overlays/video_format
     settings:
       asset_directory:
       - config/assets
@@ -186,7 +193,7 @@ libraries:                                        # Library mappings must have a
       mass_originally_available_update: tmdb
       mass_imdb_parental_labels: without_none
 
-  TV Shows:
+  TestTV Shows:
     report_path: config/missing/TV_missing.yml
     template_variables:
       sep_style: gray
@@ -242,166 +249,197 @@ libraries:                                        # Library mappings must have a
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
-    - git: PMM/overlays/audio_codec
-    - git: PMM/overlays/audio_codec
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/audio_codec
-      template_variables:
-        overlay_level: season
-    - git: PMM/overlays/audio_language
-    - git: PMM/overlays/audio_language
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/audio_language
-      template_variables:
-        overlay_level: season
-    - git: PMM/overlays/commonsense
-    - git: PMM/overlays/commonsense
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/commonsense
-      template_variables:
-        overlay_level: season
-   # - git: PMM/overlays/direct_play
-    # - git: PMM/overlays/direct_play
+    # - git: PMM/overlays/audio_codec
+    # - git: PMM/overlays/audio_codec
       # template_variables:
         # overlay_level: episode
-    # - git: PMM/overlays/direct_play
+    # - git: PMM/overlays/audio_codec
       # template_variables:
         # overlay_level: season
-    - git: PMM/overlays/imdb_top_250
-      template_variables:
-        weight: 30
-    - git: PMM/overlays/imdb_top_250
-      template_variables:
-        weight: 30
-        overlay_level: season
-    - git: PMM/overlays/imdb_top_250
-      template_variables:
-        weight: 30
-        overlay_level: episode
-    - git: PMM/overlays/rt_cert_fresh
-      template_variables:
-        weight: 20
-    - git: PMM/overlays/rt_cert_fresh
-      template_variables:
-        weight: 20
-        overlay_level: season
-    - git: PMM/overlays/rt_cert_fresh
-      template_variables:
-        weight: 20
-        overlay_level: episode
-    - git: PMM/overlays/mc_must_see
-      template_variables:
-        weight: 10
-    - git: PMM/overlays/mc_must_see
-      template_variables:
-        weight: 10
-        overlay_level: season
-    - git: PMM/overlays/mc_must_see
-      template_variables:
-        weight: 10
-        overlay_level: episode
-    - git: PMM/overlays/commonsense_selection
-      template_variables:
-        weight: 5
-    - git: PMM/overlays/commonsense_selection
-      template_variables:
-        weight: 5
-        overlay_level: season
-    - git: PMM/overlays/commonsense_selection
-      template_variables:
-        weight: 5
-        overlay_level: episode
-    - git: PMM/overlays/mediastinger
-    # - git: PMM/overlays/mediastinger
+    # - git: PMM/overlays/audio_language
+    # - git: PMM/overlays/audio_language
       # template_variables:
         # overlay_level: episode
-    # - git: PMM/overlays/mediastinger
+    # - git: PMM/overlays/audio_language
       # template_variables:
         # overlay_level: season
-    - git: PMM/overlays/ratings
-      template_variables:
-        rating1: user
-        rating1_image: rt_tomato
-        rating1_font: config/metadata/overlays/fonts/Adlib.ttf
-        rating1_font_size: 63
-
-        rating2: critic
-        rating2_image: imdb
-        rating2_font: config/metadata/overlays/fonts/Impact.ttf
-        rating2_font_size: 70
-
-        rating3: audience
-        rating3_image: tmdb
-        rating3_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
-        rating3_font_size: 70
-
-        horizontal_position: right
-    - git: PMM/overlays/ratings
-      template_variables:
+    # - git: PMM/overlays/commonsense
+    # - git: PMM/overlays/commonsense
+      # template_variables:
+        # overlay_level: episode
+    # - git: PMM/overlays/commonsense
+      # template_variables:
+        # overlay_level: season
+   # # - git: PMM/overlays/direct_play
+    # # - git: PMM/overlays/direct_play
+      # # template_variables:
+        # # overlay_level: episode
+    # # - git: PMM/overlays/direct_play
+      # # template_variables:
+        # # overlay_level: season
+    # - git: PMM/overlays/imdb_top_250
+      # template_variables:
+        # weight: 30
+    # - git: PMM/overlays/imdb_top_250
+      # template_variables:
+        # weight: 30
+        # overlay_level: season
+    # - git: PMM/overlays/imdb_top_250
+      # template_variables:
+        # weight: 30
+        # overlay_level: episode
+    # - git: PMM/overlays/rt_cert_fresh
+      # template_variables:
+        # weight: 20
+    # - git: PMM/overlays/rt_cert_fresh
+      # template_variables:
+        # weight: 20
+        # overlay_level: season
+    # - git: PMM/overlays/rt_cert_fresh
+      # template_variables:
+        # weight: 20
+        # overlay_level: episode
+    # - git: PMM/overlays/mc_must_see
+      # template_variables:
+        # weight: 10
+    # - git: PMM/overlays/mc_must_see
+      # template_variables:
+        # weight: 10
+        # overlay_level: season
+    # - git: PMM/overlays/mc_must_see
+      # template_variables:
+        # weight: 10
+        # overlay_level: episode
+    # - git: PMM/overlays/commonsense_selection
+      # template_variables:
+        # weight: 5
+    # - git: PMM/overlays/commonsense_selection
+      # template_variables:
+        # weight: 5
+        # overlay_level: season
+    # - git: PMM/overlays/commonsense_selection
+      # template_variables:
+        # weight: 5
+        # overlay_level: episode
+    # - git: PMM/overlays/mediastinger
+    # # - git: PMM/overlays/mediastinger
+      # # template_variables:
+        # # overlay_level: episode
+    # # - git: PMM/overlays/mediastinger
+      # # template_variables:
+        # # overlay_level: season
+    # - git: PMM/overlays/ratings
+      # template_variables:
         # rating1: user
         # rating1_image: rt_tomato
         # rating1_font: config/metadata/overlays/fonts/Adlib.ttf
         # rating1_font_size: 63
 
-        rating1: critic
-        rating1_image: imdb
-        rating1_font: config/metadata/overlays/fonts/Impact.ttf
-        rating1_font_size: 70
+        # rating2: critic
+        # rating2_image: imdb
+        # rating2_font: config/metadata/overlays/fonts/Impact.ttf
+        # rating2_font_size: 70
 
-        rating2: audience
-        rating2_image: tmdb
-        rating2_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
-        rating2_font_size: 70
+        # rating3: audience
+        # rating3_image: tmdb
+        # rating3_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
+        # rating3_font_size: 70
 
-        horizontal_position: right
-        overlay_level: episode
-    - git: PMM/overlays/resolution
-    - git: PMM/overlays/resolution
+        # horizontal_position: right
+    # - git: PMM/overlays/ratings
+      # template_variables:
+        # # rating1: user
+        # # rating1_image: rt_tomato
+        # # rating1_font: config/metadata/overlays/fonts/Adlib.ttf
+        # # rating1_font_size: 63
+
+        # rating1: critic
+        # rating1_image: imdb
+        # rating1_font: config/metadata/overlays/fonts/Impact.ttf
+        # rating1_font_size: 70
+
+        # rating2: audience
+        # rating2_image: tmdb
+        # rating2_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
+        # rating2_font_size: 70
+
+        # horizontal_position: right
+        # overlay_level: episode
+    # - git: PMM/overlays/resolution
+    # - git: PMM/overlays/resolution
+      # template_variables:
+        # overlay_level: episode
+    # - git: PMM/overlays/resolution
+      # template_variables:
+        # overlay_level: season
+    # - git: PMM/overlays/episode_info
+      # template_variables:
+        # overlay_level: episode
+    # - pmm: resolution
+    # - pmm: resolution
+      # template_variables:
+        # overlay_level: episode
+    # - pmm: resolution
+      # template_variables:
+        # overlay_level: season
+    # - git: PMM/overlays/episode_info
+      # template_variables:
+        # overlay_level: episode
+    # - git: PMM/overlays/runtimes
+      # template_variables:
+        # overlay_level: episode
+    # - pmm: special_release
+    # - pmm: special_release
+      # template_variables:
+        # overlay_level: episode
+    # - pmm: special_release
+      # template_variables:
+        # overlay_level: season
+    # - git: PMM/overlays/special_release
+    # - git: PMM/overlays/special_release
+      # template_variables:
+        # overlay_level: episode
+    # - git: PMM/overlays/special_release
+      # template_variables:
+        # overlay_level: season
+    - file: config/metadata/overlays/top10
       template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/resolution
+        horizontal_position: left
+        time_window: this_year
+    - file: config/metadata/overlays/top10
       template_variables:
+        horizontal_position: left
+        time_window: this_year
+        overlay_level: episode
+    - file: config/metadata/overlays/top10
+      template_variables:
+        horizontal_position: left
+        time_window: this_year
         overlay_level: season
-    - git: PMM/overlays/episode_info
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/runtimes
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/special_release
-    - git: PMM/overlays/special_release
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/special_release
-      template_variables:
-        overlay_level: season
-    - git: PMM/overlays/streaming
-    - git: PMM/overlays/streaming
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/streaming
-      template_variables:
-        overlay_level: season
-    - git: PMM/overlays/versions
-    - git: PMM/overlays/versions
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/versions
-      template_variables:
-        overlay_level: season
-    - git: PMM/overlays/versions
-      template_variables:
-        overlay_level: show
-    - git: PMM/overlays/video_format
-    - git: PMM/overlays/video_format
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/video_format
-      template_variables:
-        overlay_level: season
+    # - git: PMM/overlays/streaming
+    # - git: PMM/overlays/streaming
+      # template_variables:
+        # overlay_level: episode
+    # - git: PMM/overlays/streaming
+      # template_variables:
+        # overlay_level: season
+    # - git: PMM/overlays/versions
+    # - git: PMM/overlays/versions
+      # template_variables:
+        # overlay_level: episode
+    # - git: PMM/overlays/versions
+      # template_variables:
+        # overlay_level: season
+    # - git: PMM/overlays/versions
+      # template_variables:
+        # overlay_level: show
+    # - git: PMM/overlays/video_format
+    # - git: PMM/overlays/video_format
+      # template_variables:
+        # overlay_level: episode
+    # - git: PMM/overlays/video_format
+      # template_variables:
+        # overlay_level: season
     settings:
       asset_directory:
       - config/assets
