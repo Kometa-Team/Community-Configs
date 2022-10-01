@@ -3,6 +3,8 @@ Added Common Sense Selection [Movie](https://www.commonsensemedia.org/reviews/ca
 Added several [visual styles for Separators](https://github.com/meisnate12/Plex-Meta-Manager-Images/tree/master/separators) to match PLEX's Categories theming. Called using `sep_style` template variable
 
 # OVERLAY CHANGES
+Enhanced resolution.yml and special_release.yml to add International Cut, Ultimate Cut, Anniversary Cut, Theatrical Cut, Collectors Edition for both dovetail overlays with resolutions and box overlays
+Enhanced resolution.yml and special_release.yml to support both dovetail overlays with resolutions and box overlays when resolutions are not being used. Regexes were enhanced to support the new TRaSH naming guides with the `{edition-` naming scheme
 Added [Common Sense Age Rating](https://www.commonsensemedia.org/) overlays, called with `- git: PMM/overlays/commonsense` and to be used in combination with operation `mass_content_rating_update: mdb_commonsense`
 - See [this image](https://media.discordapp.net/attachments/1018513616653262908/1020094756329623624/unknown.png)
 Added Common Sense Selection overlays, called with `- git: PMM/overlays/commonsense_selection`
