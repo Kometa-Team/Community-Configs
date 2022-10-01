@@ -62,7 +62,7 @@ collections:
     template:
       - name: shared
         allowed_libraries: movie
-        image: award/razzie/winner
+        image: award/razzies/winner
       - name: arr
       - name: custom
     trakt_list_details: https://trakt.tv/users/hdlists/lists/razzie-awards-worst-picture-winners
