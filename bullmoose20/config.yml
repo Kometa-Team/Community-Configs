@@ -353,10 +353,13 @@ libraries:                                        # Library mappings must have a
       template_variables:
         overlay_level: season
     - pmm: versions
+      template_variables:
         overlay_level: episode
     - pmm: versions
+      template_variables:
         overlay_level: season
     - pmm: versions
+      template_variables:
         overlay_level: show
     - pmm: video_format
     - pmm: video_format
