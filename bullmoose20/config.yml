@@ -1,101 +1,103 @@
 # This file is a template remove the .template to use the file
 
 libraries:                                        # Library mappings must have a colon (:) placed after them
-  TestMovies:
+  Movies:
     report_path: config/missing/Movies_missing.yml
     template_variables:
       sep_style: gray
       collection_mode: hide
+      language: fr
     metadata_path:
-    - git: PMM/award/bafta
+    - pmm: bafta
       template_variables:
         data:
           starting: 2014
           ending: current_year
-    - git: PMM/award/cannes
+    - pmm: cannes
       template_variables:
         data:
           starting: 2016
           ending: current_year
-    - git: PMM/award/choice
+    - pmm: choice
       template_variables:
         data:
           starting: 2014
           ending: current_year
-    - git: PMM/award/golden
+    - pmm: golden
       template_variables:
         data:
           starting: 1943
           ending: current_year
-    - git: PMM/award/oscars
+    - pmm: oscars
       template_variables:
         data:
           starting: 1927
           ending: current_year
-    - git: PMM/award/other
-    - git: PMM/award/spirit
+    - pmm: other_award
+    - pmm: spirit
       template_variables:
         data:
           starting: 2014
           ending: current_year
-    - git: PMM/award/sundance
+    - pmm: sundance
       template_variables:
         data:
           starting: 2010
           ending: current_year
-    - git: PMM/chart/anilist
-    - git: PMM/chart/imdb
-    - git: PMM/chart/myanimelist
-    - git: PMM/chart/other
-    - git: PMM/chart/tautulli
-    - git: PMM/chart/tmdb
-    - git: PMM/chart/trakt
-    - git: PMM/chart/basic          # Keep this as the last chart item so that collection_mode: hide works properly on library tab for CHART COLLECTION
-    - git: PMM/actor
+    - pmm: anilist
+    - pmm: imdb
+    - pmm: myanimelist
+    - pmm: other_chart
+    - pmm: tautulli
+    - pmm: tmdb
+    - pmm: trakt
+    - pmm: flixpatrol
+    - pmm: basic          # Keep this as the last chart item so that collection_mode: hide works properly on library tab for CHART COLLECTION
+    - pmm: actor
       template_variables:
         style: bw
         data:
-          depth: 10
-          limit: 150
-    - git: PMM/movie/director
+          depth: 1
+          limit: 15
+    - pmm: director
       template_variables:
         style: bw
         data:
-          depth: 10
-          limit: 150
-    - git: PMM/movie/producer
+          depth: 1
+          limit: 15
+    - pmm: producer
       template_variables:
         exclude:
         - Jeremy Kleiner
         - Thomas Hayslip
         style: bw
         data:
-          depth: 10
-          limit: 150
-    - git: PMM/movie/writer
+          depth: 1
+          limit: 15
+    - pmm: writer
       template_variables:
         style: bw
         data:
-          depth: 10
-          limit: 150
-    - git: PMM/audio_language
-    - git: PMM/movie/content_rating_us           # Choose content_rating_uk or content_rating_us
-    - git: PMM/genre
-    - git: PMM/resolution_standards              # Choose resolution_standards or resolution
-    - git: PMM/studio
-    - git: PMM/subtitle_language
-    - git: PMM/year
+          depth: 1
+          limit: 15
+    - pmm: audio_language
+    - pmm: content_rating_cs                 # Choose content_rating_uk, content_rating_us, or content_rating_cs
+    - pmm: genre
+    - pmm: resolution_standards              # Choose resolution_standards or resolution
+    - pmm: studio
+    - pmm: subtitle_language
+    - pmm: year
       template_variables:
         data:
           starting: 1880
           ending: current_year
-    - git: PMM/movie/country
-    - git: PMM/movie/decade
-    # - git: PMM/movie/franchise
+    - pmm: country
+    - pmm: decade
+    # - pmm: franchise
       # template_variables:
         # minimum_items: 2
         # delete_below_minimum: true    
-    - git: PMM/movie/seasonal
+    - pmm: seasonal
       template_variables:
         schedule_independence: daily
         schedule_easter: daily
@@ -105,35 +107,28 @@ libraries:                                        # Library mappings must have a
         schedule_halloween: daily
         schedule_christmas: daily
         schedule_years: daily
-    - git: PMM/streaming
-    - git: PMM/movie/universe
+        schedule_mother: daily
+        schedule_memorial: daily
+        schedule_father: daily
+        schedule_labor: daily
+    - pmm: streaming
+    - pmm: universe
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
-    # - file: config/metadata/overlays/editions
-    - git: PMM/overlays/audio_codec
+    - pmm: audio_codec
       # template_variables:
         # style: standard
-    - git: PMM/overlays/audio_language
-    - git: PMM/overlays/commonsense
-    # - git: PMM/overlays/direct_play
-    - git: PMM/overlays/oscars
+    - pmm: audio_language
+    - pmm: commonsense
+    # - pmm: direct_play
+    - pmm: edition
+    - pmm: flixpatrol
       template_variables:
-        weight: 40
-    - git: PMM/overlays/imdb_top_250
-      template_variables:
-        weight: 30
-    - git: PMM/overlays/rt_cert_fresh
-      template_variables:
-        weight: 20
-    - git: PMM/overlays/mc_must_see
-      template_variables:
-        weight: 10
-    - git: PMM/overlays/commonsense_selection
-      template_variables:
-        weight: 5
-    - git: PMM/overlays/mediastinger
-    - git: PMM/overlays/ratings
+        flixpatrol_position: left
+        time_window: this_year
+    - pmm: mediastinger
+    - pmm: ratings
       template_variables:
         rating1: user
         rating1_image: rt_tomato
@@ -166,15 +161,12 @@ libraries:                                        # Library mappings must have a
         # font: config/metadata/overlays/fonts/Claspo-ND-Medium.ttf
         # rating_source: Rotten
         # font: config/metadata/overlays/fonts/Adlib.ttf
-    - git: PMM/overlays/resolution
-    - git: PMM/overlays/special_release
-    # - file: config/metadata/overlays/top10
-      # template_variables:
-        # time_window: this_year
-        # horizontal_align: left
-    - git: PMM/overlays/streaming
-    - git: PMM/overlays/versions
-    - git: PMM/overlays/video_format
+    - pmm: resolution
+    - pmm: ribbon
+    - pmm: special_release
+    - pmm: streaming
+    - pmm: versions
+    - pmm: video_format
     settings:
       asset_directory:
       - config/assets
@@ -191,142 +183,108 @@ libraries:                                        # Library mappings must have a
       mass_originally_available_update: tmdb
       mass_imdb_parental_labels: without_none
 
-  TestTV Shows:
+  TV Shows:
     report_path: config/missing/TV_missing.yml
     template_variables:
       sep_style: gray
       collection_mode: hide
+      language: fr
     metadata_path:
-    - git: PMM/award/choice
+    - pmm: choice
       template_variables:
         data:
           starting: 2014
           ending: current_year
-    - git: PMM/award/golden
+    - pmm: golden
       template_variables:
         data:
           starting: 1943
           ending: current_year
-    - git: PMM/award/emmy
+    - pmm: emmy
       template_variables:
         data:
           starting: 1947
           ending: current_year
-    - git: PMM/chart/anilist
-    - git: PMM/chart/imdb
-    - git: PMM/chart/myanimelist
-    - git: PMM/chart/other
-    - git: PMM/chart/tautulli
-    - git: PMM/chart/tmdb
-    - git: PMM/chart/trakt
-    - git: PMM/chart/basic          # Keep this as the last chart item so that collection_mode: hide works properly on library tab for CHART COLLECTION
-    - git: PMM/actor
+    - pmm: anilist
+    - pmm: imdb
+    - pmm: myanimelist
+    - pmm: other_chart
+    - pmm: tautulli
+    - pmm: tmdb
+    - pmm: trakt
+    - pmm: flixpatrol
+    - pmm: basic          # Keep this as the last chart item so that collection_mode: hide works properly on library tab for CHART COLLECTION
+    - pmm: actor
       template_variables:
         exclude:
         - Macy Nyman
         style: bw
         data:
-          depth: 10
-          limit: 150
-    - git: PMM/audio_language
-    - git: PMM/show/content_rating_us            # Choose content_rating_uk or content_rating_us
-    - git: PMM/genre
-    - git: PMM/resolution_standards              # Choose resolution_standards or resolution
-    - git: PMM/studio
-    - git: PMM/subtitle_language
-    - git: PMM/year
+          depth: 1
+          limit: 15
+    - pmm: audio_language
+    - pmm: content_rating_cs                 # Choose content_rating_uk, content_rating_us, or content_rating_cs
+    - pmm: genre
+    - pmm: resolution_standards              # Choose resolution_standards or resolution
+    - pmm: studio
+    - pmm: subtitle_language
+    - pmm: year
       template_variables:
         data:
           starting: 1880
           ending: current_year
-    - git: PMM/show/country
-    - git: PMM/show/decade
-    - git: PMM/show/franchise
-    - git: PMM/show/network
-    - git: PMM/streaming
+    - pmm: country
+    - pmm: decade
+    - pmm: franchise
+    - pmm: network
+    - pmm: streaming
     overlay_path:
     - remove_overlays: false
     - reapply_overlay: true
-    - git: PMM/overlays/audio_codec
-    - git: PMM/overlays/audio_codec
+    - pmm: audio_codec
+    - pmm: audio_codec
       template_variables:
         overlay_level: episode
-    - git: PMM/overlays/audio_codec
+    - pmm: audio_codec
       template_variables:
         overlay_level: season
-    - git: PMM/overlays/audio_language
-    - git: PMM/overlays/audio_language
+    - pmm: audio_language
+    - pmm: audio_language
       template_variables:
         overlay_level: episode
-    - git: PMM/overlays/audio_language
+    - pmm: audio_language
       template_variables:
         overlay_level: season
-    - git: PMM/overlays/commonsense
-    - git: PMM/overlays/commonsense
+    - pmm: commonsense
+    - pmm: commonsense
       template_variables:
         overlay_level: episode
-    - git: PMM/overlays/commonsense
+    - pmm: commonsense
       template_variables:
         overlay_level: season
-   # - git: PMM/overlays/direct_play
-    # - git: PMM/overlays/direct_play
+   # - pmm: direct_play
+    # - pmm: direct_play
       # template_variables:
         # overlay_level: episode
-    # - git: PMM/overlays/direct_play
+    # - pmm: direct_play
       # template_variables:
         # overlay_level: season
-    - git: PMM/overlays/imdb_top_250
+    - pmm: edition
+    - pmm: edition
       template_variables:
-        weight: 30
-    - git: PMM/overlays/imdb_top_250
-      template_variables:
-        weight: 30
         overlay_level: season
-    - git: PMM/overlays/imdb_top_250
+    - pmm: edition
       template_variables:
-        weight: 30
         overlay_level: episode
-    - git: PMM/overlays/rt_cert_fresh
+    - pmm: episode_info
       template_variables:
-        weight: 20
-    - git: PMM/overlays/rt_cert_fresh
-      template_variables:
-        weight: 20
-        overlay_level: season
-    - git: PMM/overlays/rt_cert_fresh
-      template_variables:
-        weight: 20
         overlay_level: episode
-    - git: PMM/overlays/mc_must_see
+    - pmm: flixpatrol
       template_variables:
-        weight: 10
-    - git: PMM/overlays/mc_must_see
-      template_variables:
-        weight: 10
-        overlay_level: season
-    - git: PMM/overlays/mc_must_see
-      template_variables:
-        weight: 10
-        overlay_level: episode
-    - git: PMM/overlays/commonsense_selection
-      template_variables:
-        weight: 5
-    - git: PMM/overlays/commonsense_selection
-      template_variables:
-        weight: 5
-        overlay_level: season
-    - git: PMM/overlays/commonsense_selection
-      template_variables:
-        weight: 5
-        overlay_level: episode
-    - git: PMM/overlays/mediastinger
-    # - git: PMM/overlays/mediastinger
-      # template_variables:
-        # overlay_level: episode
-    # - git: PMM/overlays/mediastinger
-      # template_variables:
-        # overlay_level: season
-    - git: PMM/overlays/ratings
+        flixpatrol_position: left
+        time_window: this_year
+    - pmm: mediastinger
+    - pmm: ratings
       template_variables:
         rating1: user
         rating1_image: rt_tomato
@@ -344,7 +302,7 @@ libraries:                                        # Library mappings must have a
         rating3_font_size: 70
 
         horizontal_position: right
-    - git: PMM/overlays/ratings
+    - pmm: ratings
       template_variables:
         # rating1: user
         # rating1_image: rt_tomato
@@ -363,65 +321,48 @@ libraries:                                        # Library mappings must have a
 
         horizontal_position: right
         overlay_level: episode
-    - git: PMM/overlays/resolution
-    - git: PMM/overlays/resolution
+    - pmm: resolution
+    - pmm: resolution
       template_variables:
         overlay_level: episode
-    - git: PMM/overlays/resolution
+    - pmm: resolution
       template_variables:
         overlay_level: season
-    - git: PMM/overlays/episode_info
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/episode_info
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/runtimes
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/special_release
-    - git: PMM/overlays/special_release
-      template_variables:
-        overlay_level: episode
-    - git: PMM/overlays/special_release
+    - pmm: ribbon
+    - pmm: ribbon
       template_variables:
         overlay_level: season
-    # - file: config/metadata/overlays/top10
-      # template_variables:
-        # horizontal_align: left
-        # time_window: this_year
-    # - file: config/metadata/overlays/top10
-      # template_variables:
-        # horizontal_align: left
-        # time_window: this_year
-        # overlay_level: episode
-    # - file: config/metadata/overlays/top10
-      # template_variables:
-        # horizontal_align: left
-        # time_window: this_year
-        # overlay_level: season
-    - git: PMM/overlays/streaming
-    - git: PMM/overlays/streaming
+    - pmm: runtimes
       template_variables:
         overlay_level: episode
-    - git: PMM/overlays/streaming
-      template_variables:
-        overlay_level: season
-    - git: PMM/overlays/versions
-    - git: PMM/overlays/versions
+    - pmm: special_release
+    - pmm: special_release
       template_variables:
         overlay_level: episode
-    - git: PMM/overlays/versions
+    - pmm: special_release
       template_variables:
         overlay_level: season
-    - git: PMM/overlays/versions
+    - pmm: status
       template_variables:
+        last: 110
+    - pmm: streaming
+    - pmm: streaming
+      template_variables:
+        overlay_level: episode
+    - pmm: streaming
+      template_variables:
+        overlay_level: season
+    - pmm: versions
+        overlay_level: episode
+    - pmm: versions
+        overlay_level: season
+    - pmm: versions
         overlay_level: show
-    - git: PMM/overlays/video_format
-    - git: PMM/overlays/video_format
+    - pmm: video_format
+    - pmm: video_format
       template_variables:
         overlay_level: episode
-    - git: PMM/overlays/video_format
+    - pmm: video_format
       template_variables:
         overlay_level: season
     settings:
@@ -442,7 +383,7 @@ libraries:                                        # Library mappings must have a
       mass_originally_available_update: tmdb
       mass_imdb_parental_labels: without_none
 playlist_files:
-- git: PMM/playlist
+- pmm: playlist
   template_variables:
     libraries: Movies, TV Shows
 settings:                                       # Can be individually specified per library as well
