@@ -6,7 +6,7 @@ libraries:                                        # Library mappings must have a
     template_variables:
       sep_style: gray
       collection_mode: hide
-      language: fr
+      language: default                     # could be default, de, fr or another 2 digit lang code that we have tranlsated
     metadata_path:
     - pmm: bafta
       template_variables:
@@ -188,7 +188,7 @@ libraries:                                        # Library mappings must have a
     template_variables:
       sep_style: gray
       collection_mode: hide
-      language: fr
+      language: default                     # could be default, de, fr or another 2 digit lang code that we have tranlsated
     metadata_path:
     - pmm: choice
       template_variables:
