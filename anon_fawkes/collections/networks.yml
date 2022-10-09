@@ -1,0 +1,82 @@
+collections:
+  Apple TV+:
+    mdblist_list:
+      url: https://mdblist.com/lists/plexmetamanager/appletv-<<library_type>>s/
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +Apple TV
+    summary: <<library_type>>s From the Streaming Service Apple TV
+    url_poster: https://theposterdb.com/api/assets/206165
+
+
+  Netflix:
+    mdblist_list:
+      url: https://mdblist.com/lists/plexmetamanager/netflix-<<library_type>>s/
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +Netflixw
+    summary: <<library_type>>s From the Streaming Service Netflix
+    url_poster: https://theposterdb.com/api/assets/205048
+
+  Amazon Prime Video:
+    mdblist_list:
+      url: https://mdblist.com/lists/plexmetamanager/amazon-<<library_type>>s/
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +Amazon Prime Video
+    summary: <<library_type>>s From the Streaming Service Amazon Prime
+    url_poster: https://theposterdb.com/api/assets/222004
+
+  Hulu:
+    mdblist_list:
+      url: https://mdblist.com/lists/plexmetamanager/hulu-<<library_type>>s/
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +Hulu
+    summary: <<library_type>>s From the Streaming Service Hulu
+    url_poster: https://theposterdb.com/api/assets/220348
+
+  Paramount:
+    mdblist_list:
+      url: https://mdblist.com/lists/plexmetamanager/paramount-<<library_type>>s/
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +Paramount+
+    summary: <<library_type>>s From the Streaming Service Paramount
+    url_poster: https://theposterdb.com/api/assets/168828
+
+  Peacock:
+    mdblist_list:
+      url: https://mdblist.com/lists/plexmetamanager/peacock-<<library_type>>s/
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +Peacock
+    summary: <<library_type>>s From the Streaming Service Peacock
+    url_poster: https://theposterdb.com/api/assets/205411
+
+  Discovery+:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?companies=co0834810
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +Discovery+
+    summary: <<library_type>>s From the Streaming Service Discovery
+    url_poster: https://theposterdb.com/api/assets/220371
+
+  Disney+:
+    mdblist_list:
+      url: https://mdblist.com/lists/plexmetamanager/disney-<<library_type>>s/
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +Disney+
+    summary: <<library_type>>s From the Streaming Service Disney
+    url_poster: https://theposterdb.com/api/assets/204376
+
+  HBO Max:
+    mdblist_list:
+      url: https://mdblist.com/lists/plexmetamanager/hbomax-<<library_type>>s/
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +HBO Max
+    summary: <<library_type>>s From the Streaming Service HBO Max
+    url_poster: https://theposterdb.com/api/assets/168825
