@@ -343,8 +343,8 @@ libraries:                                        # Library mappings must have a
       template_variables:
         overlay_level: season
     - pmm: status
-      template_variables:
-        last: 110
+      # template_variables:
+        # last: 110
     - pmm: streaming
     - pmm: streaming
       template_variables:
