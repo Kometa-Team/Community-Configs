@@ -1,0 +1,272 @@
+#############################################################
+#                  Audio Flag     Overlay                   #
+#                   Created by home1800                     #
+#            based on PMM/overlays/audio_languages          #
+#############################################################
+#  requires {MediaInfo AudioLanguages} in radarr naming     #
+#  or manually add the languages in whatever standard       #
+#  radarr uses in '[]' braces                               #
+#                                                           #
+#  tested with Movies only                                  #
+#                                                           #
+#  Call this from your config.yml:                          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    overlay_path:                                          #
+#      - git: home1800/overlays/audio_flags                 #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
+#          horizontal_offset: 0                             #
+#          # Set the horizontal align for the overlay       #
+#          horizontal_align: center                         #
+#          # Set the vertical offset for the overlay        #
+#          vertical_offset: 30                              #
+#          # Set the vertical align for the overlay         #
+#          vertical_align: bottom                           #
+############################################################# 
+
+templates:
+  AudioLanguage:
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 0
+      horizontal_align: center
+      vertical_offset: 30
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    ignore_blank_results: true
+    overlay:
+      name: <<overlay_name>>
+      git: home1800/overlays/images/flag-overlays/<<overlay>>
+      group: audio_language
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+overlays:
+
+# single language flags
+  de:
+    template:
+      - name: AudioLanguage
+        weight: 5
+    plex_all: true
+    filter:
+      filepath.regex: .*\[DE\]\.*
+
+  es:
+    template:
+      - name: AudioLanguage
+        weight: 5
+    plex_all: true
+    filter:
+      filepath.regex: .*\[ES\]\.*
+
+  kr:
+    template:
+      - name: AudioLanguage
+        weight: 5
+    plex_all: true
+    filter:
+      filepath.regex: .*\[KO\]\.*
+
+  no:
+    template:
+      - name: AudioLanguage
+        weight: 5
+    plex_all: true
+    filter:
+      filepath.regex: .*\[NB\]\.*
+
+  fr:
+    template:
+      - name: AudioLanguage
+        weight: 5
+    plex_all: true
+    filter:
+      filepath.regex: .*\[FR\]\.*
+
+  jp:
+    template:
+      - name: AudioLanguage
+        weight: 5
+    plex_all: true
+    filter:
+      filepath.regex: .*\[JA\]\.*
+
+  it:
+    template:
+      - name: AudioLanguage
+        weight: 5
+    plex_all: true
+    filter:
+      filepath.regex: .*\[IT\]\.*
+
+
+################################
+
+# dual language (german + any)
+  de+fr:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(FR|DE)[A-Z+]*(FR|DE)[A-Z+]*\]\.*
+
+  de+jp:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(JA|DE)[A-Z+]*(JA|DE)[A-Z+]*\]\.*
+
+  de+kr:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(KO|DE)[A-Z+]*(KO|DE)[A-Z+]*\]\.*
+
+  de+no:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(NB|DE)[A-Z+]*(NB|DE)[A-Z+]*\]\.*
+
+  de+es:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(ES|DE)[A-Z+]*(ES|DE)[A-Z+]*\]\.*
+
+  de+it:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(IT|DE)[A-Z+]*(IT|DE)[A-Z+]*\]\.*
+
+      
+################################
+
+# dual language (english + any)
+  us+de:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|DE)[A-Z+]*(EN|DE)[A-Z+]*\]\.*
+
+  us+fr:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|FR)[A-Z+]*(EN|FR)[A-Z+]*\]\.*
+
+  us+jp:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|JA)[A-Z+]*(EN|JA)[A-Z+]*\]\.*
+
+  us+kr:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|KO)[A-Z+]*(EN|KO)[A-Z+]*\]\.*
+
+  us+no:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|NB)[A-Z+]*(EN|NB)[A-Z+]*\]\.*
+
+  us+es:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|ES)[A-Z+]*(EN|ES)[A-Z+]*\]\.*
+
+  us+it:
+    template:
+      - name: AudioLanguage
+        weight: 10
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|IT)[A-Z+]*(EN|IT)[A-Z+]*\]\.*
+
+################################
+
+# triple language (english + german + any)
+  us+de+jp:
+    template:
+      - name: AudioLanguage
+        weight: 20
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|JA|DE)[A-Z+]*(EN|JA|DE)[A-Z+]*(EN|JA|DE)[A-Z+]*\]\.*
+
+  us+de+fr:
+    template:
+      - name: AudioLanguage
+        weight: 20
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|FR|DE)[A-Z+]*(EN|FR|DE)[A-Z+]*(EN|FR|DE)[A-Z+]*\]\.*
+
+  us+de+no:
+    template:
+      - name: AudioLanguage
+        weight: 20
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|NB|DE)[A-Z+]*(EN|NB|DE)[A-Z+]*(EN|NB|DE)[A-Z+]*\]\.*
+
+  us+de+kr:
+    template:
+      - name: AudioLanguage
+        weight: 20
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|KO|DE)[A-Z+]*(EN|KO|DE)[A-Z+]*(EN|KO|DE)[A-Z+]*\]\.*
+
+  us+de+es:
+    template:
+      - name: AudioLanguage
+        weight: 20
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|ES|DE)[A-Z+]*(EN|ES|DE)[A-Z+]*(EN|ES|DE)[A-Z+]*\]\.*
+
+  us+de+it:
+    template:
+      - name: AudioLanguage
+        weight: 20
+    plex_all: true
+    filter:
+      filepath.regex: .*\[[A-Z+]*(EN|IT|DE)[A-Z+]*(EN|IT|DE)[A-Z+]*(EN|IT|DE)[A-Z+]*\]\.*

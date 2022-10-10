@@ -1,0 +1,59 @@
+#############################################################
+#             Commonsense Selection Overlay                 #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Call this from your config.yml (Movie or Show):          #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/commonsense_selection            #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the weight for the overlay                 #
+#          weight: 5                                        #
+#############################################################
+
+templates:
+  CSSFamMovies:
+    optional:
+      - overlay_level
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/cssfamiliesmovies
+    default:
+      overlay: <<overlay_name>>
+      weight: 5
+    overlay:
+      name: <<overlay_name>>
+      git: PMM/overlays/images/<<overlay>>
+      group: ribbon
+      weight: <<weight>>
+      horizontal_offset: 0
+      horizontal_align: right
+      vertical_offset: 0
+      vertical_align: bottom
+
+  CSSFamShows:
+    optional:
+      - overlay_level
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/cssfamiliesshows
+    default:
+      overlay: <<overlay_name>>
+      weight: 5
+    overlay:
+      name: <<overlay_name>>
+      git: PMM/overlays/images/<<overlay>>
+      group: ribbon
+      weight: <<weight>>
+      horizontal_offset: 0
+      horizontal_align: right
+      vertical_offset: 0
+      vertical_align: bottom
+
+overlays:
+
+  CSS-Families-Movies-Ribbon:
+    template:
+      - name: CSSFamMovies
+
+  CSS-Families-Shows-Ribbon:
+    template:
+      - name: CSSFamShows

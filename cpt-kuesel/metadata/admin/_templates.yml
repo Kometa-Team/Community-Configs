@@ -1,47 +1,32 @@
 templates:
-  ol_builder:
+  flag_overlay:
     optional:
       - overlay_level
-    collection_level: <<overlay_level>>
-    overlay:
-      name: <<ol_type>>_<<ol_overlay>>_<<ol_queue>>_<<ol_weight>>
-      file: overlays/<<ol_folder>>/<<ol_file>>.png
-      queue: <<ol_queue>>
-      weight: <<ol_weight>>
-  it_items:
-    optional:
-      - it_language
-      - it_uhd
-      - it_hdr
-      - it_queue
-    default:
-      it_default: "bottom, up_corners, down_corners, left_side, right_side, sides" # list of comma separated labels used to change overlay positions, call as null when using one of those labels with it_queue
+    builder_level: <<overlay_level>>
+    ignore_blank_results: true
     plex_search:
       all:
-        audio_language: <<it_language>>
-        resolution: <<it_uhd>>
-        hdr: <<it_hdr>>
-        label: <<it_queue>>
-        label.not: <<it_default>>
+        audio_language: <<language>>
+    overlay:
+      name: <<overlay>>
+      file: overlays/_flags/<<overlay>>.png
+      queue: flags
+      weight: <<weight>>
   lbxd_list:
+    ignore_blank_results: true
     optional:
       - lbxd_order
       - lbxd_smart
     default:
-      lbxd_user: jkbsmm
+      lbxd_user: cpt_kuesel
       lbxd_sort: <<collection_name>>
-    letterboxd_list: https://letterboxd.com/<<lbxd_user>>/list/<<lbxd_list>>/
-    collection_order: <<lbxd_order>>
-    smart_label: <<lbxd_smart>>
-    sort_title: <<lbxd_sort>>
-  lbxd_wlist:
-    optional:
-      - lbxd_order
-      - lbxd_smart
-    default:
-      lbxd_user: jkbsmm
-      lbxd_sort: <<collection_name>>
-    letterboxd_list: https://letterboxd.com/<<lbxd_user>>/watchlist/
+    conditionals:
+      lbxd_url:
+        default: https://letterboxd.com/<<lbxd_user>>/list/<<lbxd_list>>/
+        conditions:
+          - lbxd_list: watchlist
+            value: https://letterboxd.com/<<lbxd_user>>/<<lbxd_list>>/
+    letterboxd_list: <<lbxd_url>>
     collection_order: <<lbxd_order>>
     smart_label: <<lbxd_smart>>
     sort_title: <<lbxd_sort>>

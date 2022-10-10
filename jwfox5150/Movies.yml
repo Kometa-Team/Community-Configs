@@ -1,0 +1,275 @@
+templates:
+  Holiday:
+    smart_label: title.asc
+    summary: |-
+      A timed collection of <<collection_name>> and other movies that may relate to the holiday.
+      
+      NOTE: this collection will only be around until <<end_date>>.
+    sort_title: ----<<collection_name>>
+    schedule: range(<<start_date>>-<<end_date>>)
+    delete_not_scheduled: true
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+    radarr_add: true
+
+  Collection:
+    optional:
+      - collection
+      - movie
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    sync_mode: sync
+    collection_order: release
+
+collections:
+# list-driven
+  Mindfuck Movies:
+    trakt_list:
+     - https://trakt.tv/users/hdlists/lists/mindfuck-movies
+     - https://trakt.tv/users/benfranklin/lists/best-mindfucks
+    smart_label: critic_rating.desc
+    sync_mode: sync
+    sort_title: --Mindfuck Movies
+    summary: Movies to leave your mind, well, fucked. Sorted by critical acclaim.
+    url_poster: https://i.imgur.com/Tl6QMgA.png
+    url_background: https://i.imgur.com/DM1Im1X.jpeg
+
+  Nostalgia Collection:
+    trakt_list: https://trakt.tv/users/hdlists/lists/nostalgiac-movies-from-the-80s-90s
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: --Nostalgia Collection
+    summary: All The Nostalgiac Movies From The 80s & 90s in One Collection, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/vE8dsdd.jpg
+    url_background: https://i.imgur.com/frz0kly.jpg
+
+  Family Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/family-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: --Family Movies
+    summary: A collection consisting of the most top rated family movies from the 80's onward, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/OK9pl6Y.jpg
+
+  Comedy Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/comedy-movies-top-rated-from-1960-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: --Comedy Movies
+    summary: A collection consisting of the top rated comedy movies from the 60's onward, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/jGLNoxv.jpeg
+
+  Documentaries:
+    trakt_list: https://trakt.tv/users/hdlists/lists/documentary-movies-top-rated-from-1980-to-today
+    tmdb_company:
+      - 18894
+      - 6790
+      - 3507
+    sync_mode: sync
+    sort_by: title.desc
+    sort_title: --Documentaries
+    summary: A collection consisting of documentaries.
+    url_poster: https://i.imgur.com/Ti5JdFv.jpg
+    radarr_add: true
+    radarr_quality: Bluray 1080p with all
+
+  Discovery Channel:
+    tmdb_company: 6790
+    sync_mode: sync
+    sort_by: title.desc
+    sort_title: -Discovery Channel
+    summary: A collection of movies/documentaries produced by The Discovery Channel.
+    url_poster: https://github.com/Drapersniper/Posters/raw/main/networks/Discovery/poster.jpg
+
+  History Channel:
+    tmdb_company: 3507
+    sync_mode: sync
+    sort_by: title.desc
+    sort_title: -History Channel
+    summary: A collection of movies/documentaries produced by The History Channel.
+    url_poster: https://github.com/Drapersniper/Posters/raw/main/networks/History/poster.jpg
+
+  Smithsonian Channel:
+    tmdb_company: 18894
+    sync_mode: sync
+    sort_by: title.desc
+    sort_title: -Smithsonian Channel
+    summary: A collection of movies/documentaries produced by The Smithsonian Channel.
+    url_poster: https://github.com/Drapersniper/Posters/raw/main/networks/Smithsonian%20Channel/poster.jpg
+
+  Action Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/action-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: --Action Movies
+    summary: A collection consisting of the top rated action movies from the 80's onward, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/ZYij2Mg.jpg
+
+  Drama Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/drama-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: --Drama Movies
+    summary: A collection consisting of the top rated drama movies from the 80's onward, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/iyyf1RD.jpg
+
+  Horror Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/horror-movies-top-rated-from-1960-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: --Horror Movies
+    summary: A collection consisting of the top rated horror movies from the 60's onward, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/fukLE8G.jpg
+
+  Crime Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/crime-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: --Crime Movies
+    summary: A collection consisting of the top rated crime movies from the 80's onward, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/jI9ppNA.jpg
+
+  Sci-Fi/Fantasy Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/fantasy-sci-fi-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: --Sci-Fi Movies
+    summary: A collection consisting of the top rated science fiction/fantasy movies from the 80's onward, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/PE0Hijo.jpg
+
+  Mystery Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/mystery-movies-top-rated-from-1980-to-today
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: --Mystery Movies
+    summary: A collection consisting of the top rated mystery movies from the 80's onward, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/ZCQOuCP.jpg
+
+  Outer Space Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/outer-space-space-exploration-movies
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: --Mystery Movies
+    summary: A collection consisting of the top rated outer space/space exploration movies, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/WebP9pU.jpg
+
+  Romantic Comedies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/romantic-comedies-rotten-tomatoes-top-rated
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: --Romantic Comedies
+    summary: A collection consisting of the top rated romantic comedies, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/AJ1nD4d.jpg
+
+  Trending:  
+    trakt_trending: 100
+    tmdb_trending_daily: 100
+    tmdb_trending_weekly: 100
+    sort_title: ---Trending
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    summary: Movies trending across the internet
+    url_background: https://i.imgur.com/SOVfrIq.png
+    url_poster: https://i.imgur.com/4vpMZoA.png
+    radarr_add: true
+
+  Top Rated:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250
+    tmdb_top_rated: 250
+    sort_title: ---Top Rated
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    summary: Top Rated Movies, according to IMDB.
+    url_background: https://i.imgur.com/b26VZ9y.jpg
+    url_poster: https://i.imgur.com/x7BhedD.png
+    radarr_add: true
+
+  Popular on Plex:
+    sort_title: ---Popular on Plex
+    tautulli_popular:
+      list_days: 60
+      list_size: 20
+      list_minimum: 2
+    tautulli_watched:
+      list_days: 60
+      list_size: 20
+      list_minimum: 2
+    sync_mode: sync
+    url_poster: https://i.imgur.com/AOpvkHd.jpeg
+    summary: Most watched and most popular on Plex over the last two months
+    collection_order: alpha
+
+  Oscar Winning Movies:
+    sort_title: --Oscar Winning Movies
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    summary: Movies that have won an Oscar
+    smart_label: year.desc
+    url_poster: https://i.imgur.com/83IdY6H.png
+
+  Stand-Up Comedy:
+    sort_title: --Standup Comedy
+    trakt_list:
+     - https://trakt.tv/users/giladg/lists/stand-up-comedy
+     - https://trakt.tv/users/maxwelldeux/lists/stand-up-comedy
+     - https://trakt.tv/users/lish408/lists/stand-up-comedy-specials
+     - https://trakt.tv/users/designrat/lists/netflix-stand-up-specials
+    summary: Stand-up comedy specials, sorted by critical acclaim
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    url_poster: https://i.imgur.com/EKxn51i.jpg
+
+
+######################################################
+#                Holiday Collections                 #
+######################################################
+  Valentine's Day Movies:
+    template:
+      name: Holiday
+      start_date: 02/01
+      end_date: 02/28
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+  St. Patrick's Day Movies:
+    template:
+      name: Holiday
+      start_date: 03/01
+      end_date: 03/18
+    imdb_list: https://www.imdb.com/list/ls063934595/
+  Thanksgiving Movies:
+    template:
+      name: Holiday
+      start_date: 11/01
+      end_date: 11/30
+    imdb_list: 
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls091597850/
+  Halloween Movies:
+    template: 
+      name: Holiday
+      start_date: 10/01
+      end_date: 10/31
+    imdb_list:
+      - https://www.imdb.com/list/ls023118929/
+      - https://www.imdb.com/list/ls000099714/
+    tmdb_collection:
+      - 91361    # Halloween Collection
+      - 8581     # A Nightmare on Elm Street Collection
+      - 1733     # The Mummy Collection
+      - 8091     # Alien Collection
+    tmdb_movie:
+      - 23437    # A Nightmare on Elm Street (2010)
+  Christmas Movies:
+    template:
+      name: Holiday
+      start_date: 12/01
+      end_date: 12/31
+    imdb_list: https://www.imdb.com/list/ls000096828/
+  New Year's Day Movies:
+    template:
+      name: Holiday
+      start_date: 12/26
+      end_date: 01/04
+    imdb_list: https://www.imdb.com/list/ls066838460/

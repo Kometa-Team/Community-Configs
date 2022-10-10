@@ -9,12 +9,11 @@ templates:
     sync_mode: sync
     url_poster: <<poster>>
     url_background: <<background>>
-    smart_label: title.asc
 
 collections:
 
  DC Universe:
-        template: { name: set, network: "2243", poster: https://theposterdb.com/api/assets/239356, background: https://i.imgur.com/x9ijxTc.jpg, }
+        template: { name: set, list: "8215646", poster: https://theposterdb.com/api/assets/239356, background: https://i.imgur.com/x9ijxTc.jpg, }
         summary: Series DC
 
  Marvel Television:
@@ -28,3 +27,7 @@ collections:
  Star Wars:
         template: { name: set, list: "8205730", poster: https://theposterdb.com/api/assets/164120, background: https://i.imgur.com/OvxROTE.jpg, }
         summary:  Star Wars
+
+ Star Trek:
+        template: { name: set, list: "8215091", poster: https://theposterdb.com/api/assets/222279, background: https://i.imgur.com/Yp0NCZa.jpg, }
+        summary:  Star Trek

@@ -10,12 +10,19 @@
 #        template_variables:                                #
 #          # Turn the separator collection on/off           #
 #          use_separator: true                              #
+#          # Separator style (red, blue, green, gray,       #
+#              purple, stb, orig)                           #
+#          sep_style: orig                                  #
 #          # Sets how the collection is sorted              #
 #          sort_by: release.desc                            #
 #          # Sets the collection mode of the collection     #
 #          collection_mode:                                 #
 #          # Sets the value at the start of the sort title  #
 #          collection_section: 15                           #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag:                                 #
 #############################################################
 
 external_templates:

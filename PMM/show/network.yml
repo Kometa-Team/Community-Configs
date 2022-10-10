@@ -10,6 +10,9 @@
 #        template_variables:                                #
 #          # Turn the separator collection on/off           #
 #          use_separator: true                              #
+#          # Separator style (red, blue, green, gray,       #
+#              purple, stb, orig)                           #
+#          sep_style: orig                                  #
 #          # Turn the other collection on/off               #
 #          use_other: true                                  #
 #          # Sets how the collection is sorted              #
@@ -18,6 +21,8 @@
 #          collection_mode:                                 #
 #          # Sets the value at the start of the sort title  #
 #          collection_section: "04"                         #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag:                                 #
 #############################################################
 
 external_templates:
@@ -82,7 +87,9 @@ dynamic_collections:
       - NBC
       - Nickelodeon
       - PBS
+      - Showtime
       - Sky
+      - Starz
       - The CW
       - TLC
       - TNT

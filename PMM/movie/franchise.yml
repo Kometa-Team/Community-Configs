@@ -8,8 +8,6 @@
 #    metadata_path:                                         #
 #      - git: PMM/movie/franchise                           #
 #        template_variables:                                #
-#          # Add Missing Movies to Radarr                   #
-#          radarr_add_missing: true                         #
 #          # Sets the collection order of the collection    #
 #          collection_order: alpha                          #
 #          # Sets the sort title                            #
@@ -18,6 +16,14 @@
 #          minimum_items: 2                                 #
 #          # Sets whether to actually build the collection  #
 #          build_collection: true                           #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing:                              #
+#          # Radarr Folder to add to                        #
+#          radarr_folder:                                   #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag:                                      #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
 #############################################################
 
 templates:
@@ -32,6 +38,9 @@ templates:
       - name_mapping
       - sort_title
       - build_collection
+      - radarr_folder
+      - radarr_tag
+      - item_radarr_tag
     cache_builders: 1
     minimum_items: <<minimum_items>>
     tmdb_collection_details: <<value>>
@@ -42,6 +51,9 @@ templates:
     sync_mode: sync
     collection_order: <<collection_order>>
     radarr_add_missing: <<radarr_add_missing>>
+    radarr_folder: <<radarr_folder>>
+    radarr_tag: <<radarr_tag>>
+    item_radarr_tag: <<item_radarr_tag>>
 
 dynamic_collections:
   TMDb Collections:

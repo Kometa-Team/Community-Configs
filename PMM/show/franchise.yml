@@ -18,6 +18,14 @@
 #          minimum_items: 2                                 #
 #          # Sets weather to actually build the collection  #
 #          build_collection: true                           #
+#          # Adds missing from the collection to sonarr     #
+#          sonarr_add_missing:                              #
+#          # Sonarr Folder to add to                        #
+#          sonarr_folder:                                   #
+#          # Sonarr Tag for added missing                   #
+#          sonarr_tag:                                      #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag:                                 #
 #############################################################
 
 templates:
@@ -27,6 +35,9 @@ templates:
       minimum_items: 2
     optional:
       - sonarr_add_missing
+      - sonarr_folder
+      - sonarr_tag
+      - item_sonarr_tag
       - name_mapping
       - sort_title
       - build_collection
@@ -38,7 +49,10 @@ templates:
     sync_mode: sync
     collection_order: <<collection_order>>
     sonarr_add_missing: <<sonarr_add_missing>>
-    build_collection: <<build_collection>>
+    sonarr_folder: <<sonarr_folder>>
+    sonarr_tag: <<sonarr_tag>>
+    item_sonarr_tag: <<item_sonarr_tag>>
+
 dynamic_collections:
   Show Franchise Collections:
     type: custom

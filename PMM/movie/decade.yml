@@ -10,6 +10,9 @@
 #        template_variables:                                #
 #          # Turn the separator collection on/off           #
 #          use_separator: true                              #
+#          # Separator style (red, blue, green, gray,       #
+#              purple, stb, orig)                           #
+#          sep_style: orig                                  #
 #          # Sets how the collection is sorted              #
 #          sort_by: critic_rating.desc                      #
 #          # Sets the collection mode of the collection     #
@@ -18,6 +21,8 @@
 #          collection_section: 12                           #
 #          # Sets the number of items per collection        #
 #          limit: 100                                       #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
 #############################################################
 
 external_templates:

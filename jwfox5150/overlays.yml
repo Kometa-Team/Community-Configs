@@ -1,0 +1,21 @@
+overlays:
+  4K:
+    plex_search:
+      all:
+        resolution: 4K
+    overlay:
+      name: 4K
+      horizontal_offset: 0
+      horizontal_align: left
+      vertical_offset: 0
+      vertical_align: top
+  HDR:
+    plex_search:
+      all:
+        hdr: true
+    overlay:
+      name: HDR
+      horizontal_offset: 0
+      horizontal_align: left
+      vertical_offset: 0
+      vertical_align: top

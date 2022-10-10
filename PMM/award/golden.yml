@@ -18,6 +18,22 @@
 #          collection_mode:                                 #
 #          # Sets the value at the start of the sort title  #
 #          collection_section: 16                           #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing:                              #
+#          # Adds missing from the collection to sonarr     #
+#          sonarr_add_missing:                              #
+#          # Radarr Folder to add to                        #
+#          radarr_folder:                                   #
+#          # Sonarr Folder to add to                        #
+#          sonarr_folder:                                   #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag:                                      #
+#          # Sonarr Tag for added missing                   #
+#          sonarr_tag:                                      #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag:                                 #
 #############################################################
 
 external_templates:
@@ -35,11 +51,14 @@ templates:
 
 collections:
   Golden Globe Best Motion Pictures:
+    variables:
+      key: best
     template:
-      - name: award
-        image: golden/best_picture_winner
       - name: shared
         sort: Golden Globes !1
+        image: award/golden/best_picture_winner
+      - name: arr
+      - name: custom
     trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/golden-globe-award-best-motion-picture
 
 dynamic_collections:
@@ -53,5 +72,6 @@ dynamic_collections:
     template:
       - use_year_collections
       - Golden
-      - award
       - shared
+      - arr
+      - custom

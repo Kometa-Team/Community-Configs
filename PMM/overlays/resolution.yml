@@ -56,30 +56,22 @@ templates:
     allowed_library_types:
       - <<use_<<opt1>>>>
       - <<use_<<opt2>>>>
-    overlay:
-      name: <<overlay_name>>
-      git: PMM/overlays/images/<<overlay>>
-      group: res
-      weight: <<weight>>
-      horizontal_offset: <<horizontal_offset>>
-      horizontal_align: <<horizontal_align>>
-      vertical_offset: <<vertical_offset>>
-      vertical_align: <<vertical_align>>
-  NoResolution:
-    optional:
-      - overlay_level
-      - use_<<opt1>>
-      - use_<<opt2>>
-    default:
-      overlay: <<overlay_name>>
-      horizontal_offset: 15
-      horizontal_align: left
-      vertical_offset: 15
-      vertical_align: top
-    collection_level: <<overlay_level>>
-    allowed_library_types:
-      - <<use_<<opt1>>>>
-      - <<use_<<opt2>>>>
+    suppress_overlays:
+      - Directors-Cut
+      - Extended-Edition
+      - Uncut-Edition
+      - Unrated-Edition
+      - Special-Edition
+      - Final-Cut
+      - Anniversary-Edition
+      - Collectors-Edition
+      - International-Cut
+      - Theatrical-Cut
+      - Ultimate-Cut
+      - IMAX-E
+      - IMAX
+      - Remastered
+      - Criterion
     overlay:
       name: <<overlay_name>>
       git: PMM/overlays/images/<<overlay>>

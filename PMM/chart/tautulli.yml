@@ -26,10 +26,14 @@
 #          # Available options. Replace "key" with the      #
 #          # desired collection's key from the chart above. #
 #                                                           #
+#          # Customize summary of collection                #
+#          summary_key: A collection of ...                 #
 #          # Turn the collection on/off                     #
 #          use_key: true                                    #
 #          # Determines collection order in its section     #
 #          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
 #          # Set visible_library for the collection         #
 #          visible_library_key:                             #
 #          # Set visible_home for the collection            #
@@ -55,7 +59,8 @@ templates:
     default:
       list_days_popular: 30
       list_size_popular: 20
-    summary: A collection of <<library_type>>s Popular on Plex
+      summary_popular: A collection of <<library_type>>s Popular on Plex
+    summary: <<summary_<<key>>>>
     tautulli_popular:
       list_days: <<list_days_popular>>
       list_size: <<list_size_popular>>
@@ -64,7 +69,8 @@ templates:
     default:
       list_days_watched: 30
       list_size_watched: 20
-    summary: A collection of Top <<library_type>>s Watched on Plex
+      summary_watched: A collection of Top <<library_type>>s Watched on Plex
+    summary: <<summary_<<key>>>>
     tautulli_watched:
       list_days: <<list_days_watched>>
       list_size: <<list_size_watched>>
@@ -72,14 +78,19 @@ templates:
 
 collections:
   Plex Popular:
+    variables:
+      key: popular
     template:
       - name: tautulli_popular
-      - name: customsync
-      - name: chart_shared
-        key: popular
+      - name: shared
+      - name: arr
+      - name: custom
+
   Plex Watched:
+    variables:
+      key: watched
     template:
       - name: tautulli_watched
-      - name: customsync
-      - name: chart_shared
-        key: watched
+      - name: shared
+      - name: arr
+      - name: custom
