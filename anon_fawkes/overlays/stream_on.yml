@@ -39,19 +39,19 @@ queues:
   stream:
     - horizontal_offset: 15         # This is the first position
       horizontal_align: center
-      vertical_offset: 15
+      vertical_offset: 10
       vertical_align: bottom
     - horizontal_offset: 130       # This is the second position
       horizontal_align: center
-      vertical_offset: 15
+      vertical_offset: 10
       vertical_align: bottom
     - horizontal_offset: 245         # This is the third position
       horizontal_align: center
-      vertical_offset: 15
+      vertical_offset: 10
       vertical_align: bottom
     - horizontal_offset: 360         # This is the third position
       horizontal_align: center
-      vertical_offset: 15
+      vertical_offset: 10
       vertical_align: bottom
 
 templates:
@@ -65,7 +65,7 @@ templates:
       vertical_offset: 15
       vertical_align: bottom
       weight_<<key>>: <<weight>>
-      style: Square
+      style: Round
     ignore_blank_results: true
     overlay:
       name: <<overlay_name>>
