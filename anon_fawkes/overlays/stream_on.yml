@@ -128,7 +128,7 @@ overlays:
     template: {name: Streaming, weight: 400, slug: discovery}
     plex_search:
       all:
-        collection: Discovery+
+        collection: DiscoveryPlus
   Disney:
     template: {name: Streaming, weight: 300, slug: disney}
     plex_search:
