@@ -26,7 +26,7 @@ collections:
     template: {name: network, type: appletv, poster: 206165}
   Netflix:
     template: {name: network, type: netflix, poster: 205048}
-  Amazon Prime Video:
+  Prime:
     template: {name: network, type: amazon, poster: 222004}
   Hulu:
     template: {name: network, type: hulu, poster: 220348}
@@ -36,7 +36,7 @@ collections:
     template: {name: network, type: peacock, poster: 205411}
   Disney:
     template: {name: network, type: disney, poster: 204376}
-  HBO Max:
-    template: {name: network, type: hbo, poster: 168825}
+  HBO:
+    template: {name: network, type: hbomax, poster: 168825}
   DiscoveryPlus:
     template: {name: discovery, poster: 220371}
