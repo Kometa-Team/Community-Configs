@@ -296,15 +296,14 @@ templates:
             value: <<h2_offset>>
           - rating_alignment: horizontal
             horizontal_position: right
-            value: <<h3_offset>>
+            value: <<h2_offset>>
           - rating_alignment: horizontal
             horizontal_position: left
             rating1: none
             value: <<standard_offset>>
           - rating_alignment: horizontal
             horizontal_position: left
-            value: <<h2_offset>>
-      rating2_vertical_offset:
+            value: <<h2_offset>>      rating2_vertical_offset:
         default: <<standard_offset>>
         conditions:
           - rating_alignment: horizontal
