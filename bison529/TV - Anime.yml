@@ -1,0 +1,267 @@
+##########################################################################
+##             Anime Library Collection for Plex-Meta-Manager           ##
+##########################################################################
+
+collections:
+###########################
+#    Genre Collections    #
+###########################
+  Top Airing Anime:
+    mal_airing: 10
+    collection_order: custom
+    sort_title: ++++++++_Top_Airing
+    sync_mode: sync
+  Most Popular Anime:
+    mal_popular: 20
+    collection_order: custom
+    sort_title: ++++++++_Most_Popular
+    sync_mode: sync
+  Most Favorited Anime:
+    mal_favorite: 20
+    collection_order: custom
+    sort_title: ++++++++_Most_Favorited
+    sync_mode: sync
+  Cars Anime:
+    name: Cars
+    mal_genre:
+      genre_id: 3
+    collection_order: custom
+    url_poster: https://i.imgur.com/V78wL7P.png
+    sync_mode: sync
+  Demons Anime:
+    name: Demons
+    mal_genre:
+      genre_id: 6
+    collection_order: custom
+    url_poster: https://i.imgur.com/2D2nYlK.png
+    sync_mode: sync
+  Ecchi Anime:
+    name: Ecchi
+    mal_genre:
+      genre_id: 9
+    collection_order: custom
+    url_poster: https://i.imgur.com/jwRfUQ0.png
+    sync_mode: sync
+  Game Anime:
+    name: Game
+    mal_genre:
+      genre_id: 11
+    collection_order: custom
+    url_poster: https://i.imgur.com/drFCpAu.png
+    sync_mode: sync
+  Harem Anime:
+    name: Harem
+    mal_genre:
+      genre_id: 35
+    collection_order: custom
+    url_poster: https://i.imgur.com/SO5UxO2.png
+    sync_mode: sync
+  Mecha Anime:
+    name: Mecha
+    mal_genre:
+      genre_id: 18
+    collection_order: custom
+    url_poster: https://i.imgur.com/muzqj0p.png
+    sync_mode: sync
+  Military Anime:
+    name: Military
+    mal_genre:
+      genre_id: 38
+    collection_order: custom
+    url_poster: https://i.imgur.com/AvXQrGw.png
+    sync_mode: sync
+  Psychological Anime:
+    name: Psychological
+    mal_genre:
+      genre_id: 40
+    collection_order: custom
+    url_poster: https://i.imgur.com/SVRqQeX.png
+    sync_mode: sync
+  Samurai Anime:
+    name: Samurai
+    mal_genre:
+      genre_id: 21
+    collection_order: custom
+    url_poster: https://i.imgur.com/bsPEhw4.png
+    sync_mode: sync
+  School Anime:
+    name: School
+    mal_genre:
+      genre_id: 23
+    collection_order: custom
+    url_poster: https://i.imgur.com/9eh6yBF.png
+    sync_mode: sync
+  Shoujo Anime:
+    name: Shoujo
+    mal_genre:
+      genre_id: 25
+    collection_order: custom
+    url_poster: https://i.imgur.com/iXVRExL.png
+    sync_mode: sync
+  Shounen Anime:
+    name: Shounen
+    mal_genre:
+      genre_id: 27
+    collection_order: custom
+    url_poster: https://i.imgur.com/pPSBpsW.png
+    sync_mode: sync
+  Slice of Life Anime:
+    name: Slice of Life
+    mal_genre:
+      genre_id: 36
+    collection_order: custom
+    url_poster: https://i.imgur.com/8cINna3.png
+    sync_mode: sync
+  Space Anime:
+    name: Space
+    mal_genre:
+      genre_id: 29
+    collection_order: custom
+    url_poster: https://i.imgur.com/gjiafpT.png
+    sync_mode: sync
+  Supernatural Anime:
+    name: Supernatural
+    mal_genre:
+      genre_id: 37
+    collection_order: custom
+    url_poster: https://i.imgur.com/3ZFMGou.png
+    sync_mode: sync
+  Super Power Anime:
+    name: Super Power
+    mal_genre:
+      genre_id: 31
+    collection_order: custom
+    url_poster: https://i.imgur.com/ck93CUi.png
+    sync_mode: sync
+  Vampire Anime:
+    name: Vampire
+    mal_genre:
+      genre_id: 32
+    collection_order: custom
+    url_poster: https://i.imgur.com/OGYjkd7.png
+    sync_mode: sync
+  Action Anime:
+    name: Action
+    mal_genre:
+      genre_id: 1
+    collection_order: custom
+    url_poster: https://i.imgur.com/WwuviSn.png
+    sync_mode: sync
+  Adventure Anime:
+    name: Adventure
+    mal_genre:
+      genre_id: 2
+    collection_order: custom
+    url_poster: https://i.imgur.com/nqKi3u5.png
+    sync_mode: sync
+  Comedy Anime:
+    name: Comedy
+    mal_genre:
+      genre_id: 4
+    collection_order: custom
+    url_poster: https://i.imgur.com/mJ6a9UE.png
+    sync_mode: sync
+  Drama Anime:
+    name: Drama
+    mal_genre:
+      genre_id: 8
+    collection_order: custom
+    url_poster: https://i.imgur.com/W4ZvvZB.png
+    sync_mode: sync
+  Fantasy Anime:
+    name: Fantasy
+    mal_genre:
+      genre_id: 10
+    collection_order: custom
+    url_poster: https://i.imgur.com/qCvth7D.png
+    sync_mode: sync
+  Historical Anime:
+    name: Historical
+    mal_genre:
+      genre_id: 13
+    collection_order: custom
+    url_poster: https://i.imgur.com/hvYQyY8.png
+    sync_mode: sync
+  Horror Anime:
+    name: Horror
+    mal_genre:
+      genre_id: 14
+    collection_order: custom
+    url_poster: https://i.imgur.com/tVLrVDY.png
+    sync_mode: sync
+  Martial Arts Anime:
+    name: Martial Arts
+    mal_genre:
+      genre_id: 17
+    collection_order: custom
+    url_poster: https://i.imgur.com/rUmj6O0.png
+    sync_mode: sync
+  Music Anime:
+    name: Music
+    mal_genre:
+      genre_id: 19
+    collection_order: custom
+    url_poster: https://i.imgur.com/fU7qyGt.png
+    sync_mode: sync
+  Mystery Anime:
+    name: Mystery
+    mal_genre:
+      genre_id: 7
+    collection_order: custom
+    url_poster: https://i.imgur.com/coTt7oP.png
+    sync_mode: sync
+  Romance Anime:
+    name: Romance
+    mal_genre:
+      genre_id: 22
+    collection_order: custom
+    url_poster: https://i.imgur.com/jQyQukT.png
+    sync_mode: sync
+  Sci-Fi Anime:
+    name: Sci-Fi
+    mal_genre:
+      genre_id: 24
+    collection_order: custom
+    url_poster: https://i.imgur.com/Gubz092.png
+    sync_mode: sync
+  Sports Anime:
+    name: Sports
+    mal_genre:
+      genre_id: 30
+    collection_order: custom
+    url_poster: https://i.imgur.com/5tLtB2d.png
+    sync_mode: sync
+  Gourmet Anime:
+    name: Gourmet
+    mal_genre:
+      genre_id: 47
+    collection_order: custom
+    url_poster: 
+    sync_mode: sync
+  Erotica Anime:
+    name: Erotica 
+    mal_genre:
+      genre_id: 49
+    collection_order: custom
+    url_poster: 
+    sync_mode: sync
+  Parody Anime:
+    name: Parody
+    mal_genre:
+      genre_id: 20
+    collection_order: custom
+    url_poster: 
+    sync_mode: sync
+  Police Anime:
+    name: Police
+    mal_genre:
+      genre_id: 39
+    collection_order: custom
+    url_poster: 
+    sync_mode: sync
+  Suspense Anime:
+    name: Thriller
+    mal_genre:
+      genre_id: 41
+    collection_order: custom
+    url_poster: https://i.imgur.com/F81WbIv.png

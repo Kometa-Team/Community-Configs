@@ -1,0 +1,126 @@
+######################################################
+#             SiskoUrso Studio Collections           #
+######################################################
+
+templates:
+  Studio:
+    optional:
+      - company
+    tmdb_company: <<company>>
+    sort_title: +5_<<collection_name>>
+    sync_mode: sync
+    smart_label: release.desc
+    url_poster: <<poster>>
+
+collections:
+  20th Century Studios:
+    template: {name: Studio, company: "127928, 141821, 25, 1556, 3635, 7485", poster: https://theposterdb.com/api/assets/197590}
+    summary: For over 80 years, beginning with its founding in 1935 and ending in 2019 (when it was bought out by Walt Disney Studios), 20th Century Fox was one of the then "Big Six" major American film studios. Formerly known as Twentieth Century-Fox Film Corporation, it was formed in 1935 from the merger of the Fox Film Corporation and 20th Century Pictures (while being owned by TCF Holdings) as one of the original Big Five among eight majors of Hollywood's Golden Age. In 1985, the studio was renamed as Twentieth Century Fox Film Corporation (without a hyphen), after being acquired by News Corporation, which was shut down and succeeded by 21st Century Fox in 2013, after spinning off its publishing assets. The acquisition of 21st Century Fox by Disney took place on March 20, 2019, including 20th Century Fox. The studio's current name was adopted on January 17, 2020.
+  A24:
+    template: {name: Studio, company: 41077, poster: https://theposterdb.com/api/assets/179136}
+    summary: A24 is an American independent entertainment company founded on August 20, 2012, by Daniel Katz, David Fenkel, and John Hodges and based in New York City. It specializes in film distribution, and film and television production.
+  Aardman:
+    template: {name: Studio, company: 297, poster: https://theposterdb.com/api/assets/26074}
+    summary: Aardman Animations, Ltd. is a British animation studio based in Bristol, England. Aardman is known for films made using stop-motion clay animation techniques, particularly those featuring Plasticine characters Wallace and Gromit.
+  Amblin Entertainment:
+    template: {name: Studio, company: 56, poster: https://theposterdb.com/api/assets/197452}
+    summary: Amblin Entertainment, Inc., formerly named Amblin Productions and Steven Spielberg Productions, is an American film production company founded by director and producer Steven Spielberg, and film producers Kathleen Kennedy and Frank Marshall in 1981. Its headquarters are located in Bungalow 477 of the Universal Studios backlot in Universal City, California. It distributes all of the films from Amblin Partners under the Amblin Entertainment banner.
+  Blue Sky:
+    template: {name: Studio, company: 9383, poster: https://theposterdb.com/api/assets/70086}
+    summary: Blue Sky Studios, Inc. is an American computer animation film studio based in Greenwich, Connecticut. It is a subsidiary of 20th Century Animation, a division of Disney Studios Content.
+  Blumhouse Productions:
+    template: {name: Studio, company: 3172, poster: https://theposterdb.com/api/assets/70087}
+    summary: Blumhouse Productions is an American film and television production company founded in 2000 by Jason Blum. It is known mainly for producing horror films.
+  BRON:
+    template: {name: Studio, company: 13240, poster: https://theposterdb.com/api/assets/238458}
+    summary: Bron Studios (stylized as BRON) is a Canadian motion picture company based in British Columbia owned by Bron Media Corporation. Bron's notable productions include Joker, Bombshell, Queen & Slim, Greyhound, Judas and the Black Messiah, The Mule, Henchmen, Roman J. Israel, Esq., Rudderless, Welcome to Me, The Addams Family, The Willoughbys, and Ghostbusters Afterlife.
+  Castle Rock Entertainment:
+    template: {name: Studio, company: 97, poster: https://theposterdb.com/api/assets/197423}
+    summary: Castle Rock Entertainment is an American film and television production company founded in 1987 by Martin Shafer, director Rob Reiner, Andrew Scheinman, Glenn Padnick and Alan Horn. It is a label of the Warner Bros. Pictures Group division of Warner Bros. Entertainment, itself a division of Warner Bros. Discovery.
+  Columbia Pictures:
+    template: {name: Studio, company: 5, poster: https://theposterdb.com/api/assets/197588}
+    summary: Columbia Pictures Industries, Inc. is an American film production studio that is a member of the Sony Pictures Motion Picture Group, a division of Sony Entertainment's Sony Pictures Entertainment, which is one of the Big Five studios and a subsidiary of the multinational conglomerate Sony. n its early years, Columbia was a minor player in Hollywood, but began to grow in the late 1920s, spurred by a successful association with director Frank Capra. With Capra and others such as the most successful two reel comedy series The Three Stooges, Columbia became one of the primary homes of the screwball comedy. In the 1930s, Columbia's major contract stars were Jean Arthur and Cary Grant. In the 1940s, Rita Hayworth became the studio's premier star and propelled their fortunes into the late 1950s. Rosalind Russell, Glenn Ford and William Holden also became major stars at the studio.
+  DC Extended Universe:
+    template: {name: Studio, company: 9993, poster: https://theposterdb.com/api/assets/128644}
+    summary: The DC Extended Universe (DCEU) is an American media franchise and shared universe centered on a series of superhero films and television series produced by DC Films and distributed by Warner Bros. Pictures. It is based on characters that appear in American comic books published by DC Comics. The DCEU also includes comic books, short films, novels, and video games. Much like the original DC Universe in comic books, the DCEU was established by crossing over common plot elements, settings, cast, and characters.
+  Dimension Films:
+    template: {name: Studio, company: 7405, poster: https://theposterdb.com/api/assets/197300}
+    summary: Dimension Films is an American film production company owned by Lantern Entertainment. It was formerly used as Bob and Harvey Weinstein's label within Miramax, which was acquired by The Walt Disney Company on June 30, 1993, to produce and release independent films and genre titles, specifically horror and science fiction films.
+  DreamWorks:
+    template: {name: Studio, company: 521, poster: https://theposterdb.com/api/assets/186286}
+    summary: DreamWorks Animation LLC (also simply known as DreamWorks) is an American animation studio and a subsidiary of Universal Pictures, itself a subsidiary of Comcast's NBCUniversal. It is based in Glendale, California, and produces animated feature films, television programs, and online virtual games.
+  Focus Features:
+    template: {name: Studio, company: 10146, poster: https://theposterdb.com/api/assets/197595}
+    summary: Focus Features LLC is an American film production and distribution company, owned by Comcast as part of Universal Pictures, a division of its wholly owned subsidiary NBCUniversal. Focus Features distributes independent and foreign films in the United States and internationally. In November 2018, The Hollywood Reporter named Focus Features Distributor of the Year for its success behind the year's breakout documentary film Won't You Be My Neighbor? and Spike Lee's BlacKkKlansman. The studio's most successful film to date is Downton Abbey, which garnered $194.3 million at the worldwide box office.
+  GAINAX:
+    template: {name: Studio, company: 3041, poster: https://theposterdb.com/api/assets/198852}
+    summary: GAINAX Co., Ltd. is a Japanese anime studio famous for productions such as Neon Genesis Evangelion, Royal Space Force, Gunbuster, Nadia The Secret of Blue Water, Kare Kano, FLCL, Magical Shopping Arcade Abenobashi, and Gurren Lagann, which have garnered critical acclaim[1][2] and commercial success.
+  Illumination Entertainment:
+    template: {name: Studio, company: 6704, poster: https://theposterdb.com/api/assets/103276}
+    summary: Illumination is an American film and animation studio founded by Chris Meledandri in 2007 and owned by Universal Pictures, a division of NBCUniversal, which is itself a division of Comcast. Meledandri produces the films, while Universal finances and distributes all the films. The studio is responsible for the Despicable Me and The Secret Life of Pets franchises and the film adaptations of Dr. Seuss’ books The Lorax and How the Grinch Stole Christmas. The Minions, characters from the Despicable Me series, are the studio's mascots.
+  Lionsgate:
+    template: {name: Studio, company: 1632, poster: https://theposterdb.com/api/assets/196029}
+    summary: Lions Gate Entertainment Corporation, also known as Lionsgate, is a Canadian-American entertainment company. It was formed by Frank Giustra on July 10, 1997, domiciled in Vancouver, British Columbia, Canada and is currently headquartered in Santa Monica, California, United States. In addition to its flagship Lionsgate Films division, the company contains other divisions such as Lionsgate Television and Lionsgate Interactive. It owns a variety of subsidiaries such as Summit Entertainment, Debmar-Mercury, and Starz Inc.
+  Lucasfilm:
+    template: {name: Studio, company: 1, poster: https://theposterdb.com/api/assets/206133}
+    summary: Lucasfilm Ltd. LLC is an American film and television production company that is a subsidiary of Walt Disney Studios, which is a business segment of The Walt Disney Company. The studio is best known for creating and producing the Star Wars and Indiana Jones franchises, as well as its leadership in developing special effects, sound, and computer animation for films. Lucasfilm was founded by filmmaker George Lucas in 1971 in San Rafael, California; most of the company's operations were moved to San Francisco in 2005.[3] Disney acquired Lucasfilm in October 2012 for $2.2 billion in cash and $1.855 billion in stock.
+  Madhouse:
+    template: {name: Studio, company: 3464, poster: https://theposterdb.com/api/assets/198858}
+    summary: Madhouse Inc. is a Japanese animation studio founded in 1972 by ex–Mushi Pro animators, including Masao Maruyama, Osamu Dezaki, Rintaro and Yoshiaki Kawajiri.
+  Magnolia Pictures:
+    template: {name: Studio, company: 1030, poster: https://theposterdb.com/api/assets/196026}
+    summary: Magnolia was formed in 2001 by Bill Banowsky and Eamonn Bowles, and specializes in both foreign and independent films. Magnolia distributes some of its films, especially foreign and genre titles, under the Magnet Releasing arm. In April 2011, Cuban had placed Magnolia up for sale, but stated that he would not sell the company unless the offer was "very, very compelling." One of the recent releases Magnolia distributed is Shoplifters, a Japanese drama that won the 2018 Palme d'Or at the Cannes Film Festival and was nominated for Best Foreign Language Film at the 91st Academy Awards.
+  Marvel Studios:
+    template: {name: Studio, company: "420,7505", poster: https://theposterdb.com/api/assets/4742}
+    summary: Marvel Studios, LLC is an American film and television studio that is a subsidiary of Walt Disney Studios, a division of The Walt Disney Company. Marvel Studios is known for the production of the Marvel Cinematic Universe films, based on characters that appear in Marvel Comics publications.
+  MGM:
+    template: {name: Studio, company: 21, poster: https://theposterdb.com/api/assets/196034}
+    summary: MGM was formed by Marcus Loew by combining Metro Pictures, Goldwyn Pictures, and Louis B. Mayer Pictures into a single company. It hired a number of well known actors as contract players—its slogan was "more stars than there are in heaven"—and soon became one of Hollywood's major film studios, producing popular musical films and winning many Academy Awards. The company also owned film studios, movie lots, movie theaters and technical production facilities. Its most prosperous era, from 1926 to 1959, was bracketed by two productions of Ben Hur. After that, it divested itself of the Loews movie theater chain, and, in the 1960s, diversified into television production.
+  Monkeypaw Productions:
+    template: {name: Studio, company: 88934, poster: https://theposterdb.com/api/assets/238462}
+    summary: Monkeypaw Productions is an American production company founded by director and producer Jordan Peele in 2012. The company is known for producing the horror films Get Out and Us. The company is named after the 1902 horror short story "The Monkey's Paw".
+  NEON:
+    template: {name: Studio, company: 90733, poster: https://theposterdb.com/api/assets/140344}
+    summary: Neon is an American film production and distribution company founded in 2017 by CEO Tom Quinn and Tim League, who also was the co-founder of the Alamo Drafthouse Cinema chain.
+  New Line Cinema:
+    template: {name: Studio, company: 12, poster: https://theposterdb.com/api/assets/197099}
+    summary: New Line Cinema is an American film production studio and label of the Warner Bros. Pictures Group, the film division of Warner Bros.. It was founded in 1967 by Robert Shaye as an independent film distribution company; later becoming a film studio. It was acquired by Turner Broadcasting System in 1994; Turner later merged with Time Warner (WarnerMedia from 2018 to 2022, and Warner Bros. Discovery since 2022) in 1996, and New Line was merged with Warner Bros. Pictures in 2008.
+  Paramount:
+    template: {name: Studio, company: "4, 9223, 24955, 6548", poster: https://theposterdb.com/api/assets/197109}
+    summary: Paramount Pictures Corporation is an American film and television production and distribution company and the main namesake subsidiary of Paramount Global (formerly ViacomCBS). It is the fifth oldest film studio in the world, the second oldest film studio in the United States (behind Universal Pictures), and the sole member of the "Big Five" film studios still located in the city limits of Los Angeles. In 1916, film producer Adolph Zukor put 24 actors and actresses under contract and honored each with a star on the logo. In 1967, the number of stars was reduced to 22 and their hidden meaning was dropped. In 2014, Paramount Pictures became the first major Hollywood studio to distribute all of its films in digital form only. The company's headquarters and studios are located at 5555 Melrose Avenue, Hollywood, California.
+  Pixar:
+    template: {name: Studio, company: 3, poster: https://theposterdb.com/api/assets/34750}
+    summary: Pixar Animation Studios, commonly known as Pixar, is an American computer animation studio based in Emeryville, California, a subsidiary of Disney Studios Content owned by The Walt Disney Company. Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation on February 3, 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4 billion by converting each share of Pixar stock to 2.3 shares of Disney stock, a transaction that resulted in Jobs becoming Disney's largest single shareholder at the time. Pixar is best known for its feature films technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot.
+  Scott Free Productions:
+    template: {name: Studio, company: 1645, poster: https://theposterdb.com/api/assets/197002}
+    summary: Scott Free Productions is a British-American independent film and television production company founded in 1970 by filmmakers and brothers Ridley Scott and Tony Scott. They formed the feature film development company Percy Main Productions in 1980, naming the company after the English village Percy Main, where their father grew up. The company was renamed to Scott Free Productions in 1995. Scott Free has produced films ranging from the 2000 Hollywood blockbuster Gladiator (2000) to "smaller pictures" like Cracks (2009). Between the productions of White Squall (1996) and G.I. Jane (1997), Ridley Scott reorganised the company.
+  Sony Pictures:
+    template: {name: Studio, company: "34, 3045, 11073, 5388", poster: https://theposterdb.com/api/assets/197001}
+    summary: Sony Pictures Entertainment Inc. (commonly known as Sony Pictures or SPE, and formerly known as Columbia Pictures Entertainment, Inc.) is an American diversified multinational mass media and entertainment studio conglomerate that produces, acquires, and distributes filmed entertainment (theatrical motion pictures, television programs, and recorded videos) through multiple platforms.
+  Sony Pictures Animation:
+    template: {name: Studio, company: 2251, poster: https://theposterdb.com/api/assets/103279}
+    summary: Sony Pictures Animation Inc. is an American animation studio owned by Sony Entertainment's Sony Pictures Entertainment through their Motion Picture Group division and founded on May 9, 2002. The studio's films are distributed worldwide by Sony Pictures Releasing under their Columbia Pictures label, while all direct-to-video releases are released by Sony Pictures Home Entertainment.
+  Studio Ghibli:
+    template: {name: Studio, company: 10342, poster: https://theposterdb.com/api/assets/32223}
+    summary: Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. The studio is best known for its animated feature films, and has also produced several short films, television commercials, and one television film. The studio’s mascot and most recognizable symbol is the character, Totoro, a giant cat-like spirit from the 1988 classic, My Neighbor Totoro.
+  Touchstone Pictures:
+    template: {name: Studio, company: 9195, poster: https://theposterdb.com/api/assets/197598}
+    summary: Touchstone Pictures was an American film distribution label of Walt Disney Studios Motion Pictures, created and owned by The Walt Disney Company. Feature films released under the Touchstone label were produced and financed by The Walt Disney Studios, and featured more mature themes targeted towards adult audiences than typical Disney releases. As such, Touchstone was merely a brand of the studio and did not exist as a distinct business operation.
+  Universal Pictures:
+    template: {name: Studio, company: 33, poster: https://theposterdb.com/api/assets/196997}
+    summary: Founded in 1912 by Carl Laemmle, Mark Dintenfass, Charles O. Baumann, Adam Kessel, Pat Powers, William Swanson, David Horsley, Robert H. Cochrane, and Jules Brulatour, Universal is the oldest surviving film studio in the United States; the world's fifth oldest after Gaumont, Pathé, Titanus, and Nordisk Film; and the oldest member of Hollywood's "Big Five" studios in terms of the overall film market. Its studios are located in Universal City, California, and its corporate offices are located in New York City. In 1962, the studio was acquired by MCA, which was re-launched as NBCUniversal in 2004
+  View Askew:
+    template: {name: Studio, company: 16934, poster: https://theposterdb.com/api/assets/45956}
+    summary: View Askew Productions is an American film and television production company founded by Kevin Smith and Scott Mosier in 1994.
+  Warner Animation Group:
+    template: {name: Studio, company: 25120, poster: https://theposterdb.com/api/assets/103280}
+    summary: The Warner Animation Group (WAG) is an American animation studio that is the feature animation division of Warner Bros. Entertainment. Established on January 7, 2013, the studio is the successor to the dissolved 2D traditional hand-drawn animation studio Warner Bros. Feature Animation, which shut down in 2003 and the dissolved family film division Warner Bros. Family Entertainment, which shut down in 2009. The entity is also a sister animation studio of the regular animation studio Warner Bros. Animation
+  Warner Bros. Pictures:
+    template: {name: Studio, company: 174, poster: https://theposterdb.com/api/assets/197442}
+    summary: Warner Bros. Pictures is an American film production company of the Warner Bros. Pictures Group division of Warner Bros. (both ultimately owned by Warner Bros. Discovery). The studio is the flagship producer of live-action feature films within the Warner Bros. Pictures Group unit, and is based at the Warner Bros. Studios complex in Burbank, California. Animated films produced the Warner Animation Group are also released under the studio banner.
+  Walt Disney Animation Studios:
+    template: {name: Studio, company: 6125, poster: https://theposterdb.com/api/assets/81861}
+    summary: Walt Disney Animation Studios (WDAS), sometimes shortened to Disney Animation, is an American animation studio that creates animated features and short films for The Walt Disney Company. Founded on October 16, 1923 by brothers Walt Disney and Roy O. Disney, it is one of the oldest-running animation studios in the world. It is currently organized as a division of Walt Disney Studios and is headquartered at the Roy E. Disney Animation Building at the Walt Disney Studios lot in Burbank, California.
+  Walt Disney Pictures:
+    template: {name: Studio, company: 1, poster: https://theposterdb.com/api/assets/103271}
+    summary: Walt Disney Pictures is an American film production studio of The Walt Disney Studios, which is owned by The Walt Disney Company. The studio is the flagship producer of live-action feature films within the Walt Disney Studios unit, and is based at the Walt Disney Studios in Burbank, California. Animated films produced by Walt Disney Animation Studios and Pixar Animation Studios are also released under this brand. Walt Disney Studios Motion Pictures distributes and markets the films produced by Walt Disney Pictures.

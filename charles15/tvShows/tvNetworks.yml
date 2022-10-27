@@ -1,0 +1,74 @@
+templates:
+  network:
+    optional:
+      - network
+    tmdb_network: <<network>>
+    sort_title: +05_<<collection_name>>
+    sync_mode: sync
+    url_poster: <<poster>>
+collections:
+  A&E:
+    template: { name: network, network: "129, 2639, 3688"}
+  ABC:
+    template: { name: network, network: "2, 75, 2791"}
+  Adult Swim:
+    template: { name: network, network: 80}
+  Apple+:
+    template: { name: network, network: 2552}
+  Amazon:
+    template: { name: network, network: 1024}
+  AMC:
+    template: { name: network, network: "174, 4661"}
+  BBC:
+    template: { name: network, network: 4}
+  Cartoon Network:
+    template: { name: network, network: "56, 217, 1232, 1483, 2193, 3917, 4771"}
+  CBS:
+    template: { name: network, network: "16, 2528, 1709, 2621"}
+  Cinemax:
+    template: { name: network, network: 359}
+  Comedy Central:
+    template: { name: network, network: 47}
+  Discovery:
+    template: { name: network, network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741"}
+  Disney+:
+    template: { name: network, network: "2739, 2919"}
+  Fox:
+    template: { name: network, network: 19}
+  Freeform:
+    template: { name: network, network: 1267}
+  FX:
+    template: { name: network, network: 88}
+  FXX:
+    template: { name: network, network: 1035}
+  HBO:
+    template: { name: network, network: "49, 2593, 3186, 3308"}
+  HGTV:
+    template: { name: network, network: 210}
+  Hulu:
+    template: { name: network, network: 453}
+  National Geographic:
+    template: { name: network, network: "43, 799, 1756, 1825, 3355, 4293, 4476"}
+  NBC:
+    template: { name: network, network: 6}
+  Netflix:
+    template: { name: network, network: 213}
+  PBS:
+    template: { name: network, network: 14}
+  Peacock:
+    template: { name: network, network: 3353}
+  Showtime:
+    template: { name: network, network: 67}
+  Shudder:
+    template: { name: network, network: 2949}
+  Starz:
+    template: { name: network, network: "318, 758, 4906"}
+  Syfy:
+    template: { name: network, network: "77, 3701"}
+  TBS:
+    template: { name: network, network: "68, 160, 4888"}
+  TNT:
+    template: { name: network, network: 41}
+  YouTube:
+    template: { name: network, network: "247, 1436, 4869"}
+    

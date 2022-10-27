@@ -1,0 +1,126 @@
+##########################################
+##           Anime Collections          ##
+##########################################
+#                                        #
+#                Credits                 #
+#            Evil Tacctician             #
+#              JJJonesJr33               #
+#                                        #
+##########################################
+templates:
+  MAL Genre:
+    mal_genre:
+      genre_id: <<genre_id>>
+    collection_order: alpha
+    collection_mode: hide
+    sync_mode: sync
+  MAL User:
+    sort_title: ~<<collection_name>>
+    mal_userlist:
+      username: <<username>>
+      status: plan_to_watch
+      sort_by: title
+      limit: 500
+    collection_order: alpha
+    collection_mode: hide
+    sync_mode: sync    
+
+collections:
+  Collection1: # Replace Username1 with a valid MAL Username
+    template: { name: MAL User, username: Username1 }
+  Collection2: # Replace Username2 with a valid MAL Username
+    template: { name: MAL User, username: Username2 }
+  Donghua:
+    collection_order: alpha
+    sync_mode: sync
+    plex_search:
+      all:
+        audio_language: zh
+        title.not: aggretsuko
+  Mobile Suit Gundam:
+    collection_order: alpha
+    sync_mode: sync
+    plex_search:
+      all:
+        title: Gundam    
+  Cars:
+    template: { name: MAL Genre, genre_id: 3 }
+  Demons:
+    template: { name: MAL Genre, genre_id: 6 }
+  Ecchi:
+    template: { name: MAL Genre, genre_id: 9 }
+  Game:
+    template: { name: MAL Genre, genre_id: 11 }
+  Harem:
+    template: { name: MAL Genre, genre_id: 35 }
+  Mecha:
+    template: { name: MAL Genre, genre_id: 18 }
+  Military:
+    template: { name: MAL Genre, genre_id: 38 }
+  Psychological:
+    template: { name: MAL Genre, genre_id: 40 }
+  Samurai:
+    template: { name: MAL Genre, genre_id: 21 }
+  School:
+    template: { name: MAL Genre, genre_id: 23 }
+  Shoujo:
+    template: { name: MAL Genre, genre_id: 25 }
+  Shounen:
+    template: { name: MAL Genre, genre_id: 27 }
+  Slice of Life:
+    template: { name: MAL Genre, genre_id: 36 }
+  Space:
+    template: { name: MAL Genre, genre_id: 29 }
+  Supernatural:
+    template: { name: MAL Genre, genre_id: 37 }
+  Super Power:
+    template: { name: MAL Genre, genre_id: 31 }
+  Vampire:
+    template: { name: MAL Genre, genre_id: 32 }
+  Action:
+    template: { name: MAL Genre, genre_id: 1 }
+  Adventure:
+    template: { name: MAL Genre, genre_id: 2 }
+  Comedy:
+    template: { name: MAL Genre, genre_id: 4 }
+  Drama:
+    template: { name: MAL Genre, genre_id: 8 }
+  Fantasy:
+    template: { name: MAL Genre, genre_id: 10 }
+  Historical:
+    template: { name: MAL Genre, genre_id: 13 }
+  Horror:
+    template: { name: MAL Genre, genre_id: 14 }
+  Martial Arts:
+    template: { name: MAL Genre, genre_id: 17 }
+  Music:
+    template: { name: MAL Genre, genre_id: 19 }
+  Mystery:
+    template: { name: MAL Genre, genre_id: 7 }
+  Romance:
+    template: { name: MAL Genre, genre_id: 22 }
+  Sci-Fi:
+    template: { name: MAL Genre, genre_id: 24 }
+  Sports:
+    template: { name: MAL Genre, genre_id: 30 }
+  Boys Love:
+    template: { name: MAL Genre, genre_id: 28 }
+  Girls Love:
+    template: { name: MAL Genre, genre_id: 26 }
+  Gourmet:
+    template: { name: MAL Genre, genre_id: 47 }
+  Erotica:
+    template: { name: MAL Genre, genre_id: 49 }
+  Hentai:
+    template: { name: MAL Genre, genre_id: 12 }
+  Parody:
+    template: { name: MAL Genre, genre_id: 20 }
+  Police:
+    template: { name: MAL Genre, genre_id: 39 }
+  Thriller:
+    template: { name: MAL Genre, genre_id: 41 }
+  Unmatched:
+    plex_collectionless:
+       exclude: Test
+    sort_title: ~_Unmatched
+    collection_order: alpha

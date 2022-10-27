@@ -1,0 +1,27 @@
+templates:
+  Top 50 of Decade:
+    sort_title: +1_Best of <<startYear>>s
+    sync_mode: sync
+    summary: Best Movies of the <<startYear>>s
+    collection_order: custom
+    radarr_add: true
+    schedule: monthly(1)
+collections:
+  Top 50 of 1970s:
+    template: { name: Top 50 of Decade, startYear: 1970, endYear: 1979 }
+    trakt_list: https://trakt.tv/users/benmooney/lists/top-50-of-the-70s?sort=rank,asc
+  Top 50 of 1980s:
+    template: { name: Top 50 of Decade, startYear: 1980, endYear: 1989 }
+    trakt_list: https://trakt.tv/users/benmooney/lists/top-50-of-the-80s?sort=rank,asc
+  Top 50 of 1990s:
+    template: { name: Top 50 of Decade, startYear: 1990, endYear: 1999 }
+    trakt_list: https://trakt.tv/users/benmooney/lists/top-50-of-the-90s?sort=rank,asc
+  Top 50 of 2000s:
+    template: { name: Top 50 of Decade, startYear: 2000, endYear: 2009 }
+    trakt_list: https://trakt.tv/users/benmooney/lists/top-50-of-the-00s?sort=rank,asc
+  Top 50 of 2010s:
+    template: { name: Top 50 of Decade, startYear: 2010, endYear: 2019 }
+    trakt_list: https://trakt.tv/users/benmooney/lists/top-50-of-the-10s?sort=rank,asc
+  Top 50 of 2020s:
+    template: { name: Top 50 of Decade, startYear: 2020, endYear: 2029 }
+    trakt_list: https://trakt.tv/users/benmooney/lists/top-50-of-the-20s?sort=rank,asc

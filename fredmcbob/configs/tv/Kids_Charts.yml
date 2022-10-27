@@ -1,0 +1,28 @@
+######################################################
+#                Chart Collections                   #
+######################################################
+
+collections:
+  Trending Kid's Shows:
+    sort_title: +01_1Trending
+    sync_mode: sync
+    collection_order: custom
+    trakt_trending: 150
+    summary: A collection of shows trending across the internet
+    url_poster: https://i.imgur.com/dKGkfdL.jpg
+    url_background: https://wallpapercave.com/wp/wp5054947.jpg
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  Recommended Kid's Shows:
+    sort_title: +01_2Popular
+    sync_mode: sync
+    smart_label: random
+    trakt_watched_weekly: 150
+    summary: A collection of the most watched shows over the past week.
+    url_poster: https://i.imgur.com/06YA2Sk.jpg
+    url_background: https://wallpapercave.com/wp/wp5054947.jpg
+    visible_library: true
+    visible_home: false
+    visible_shared: false

@@ -1,0 +1,138 @@
+##############################################
+#                TV Collections              #
+##############################################
+
+##########################################
+#           User/Config Credits          #
+#     Give Credit Where Credit is Due    #
+#              JJJonesJr33               #
+#     Hiren-Z, OhMyBahGosh, SiskoUrso    #
+##########################################
+
+###########################
+#        Templates        #
+###########################
+templates:
+  network:
+    optional:
+      - network
+    tmdb_network: <<network>>
+    url_poster: <<poster>>
+    url_background: <<background>>
+    sort_title: +2_<<collection_name>>
+    sync_mode: sync
+
+collections:
+######################################################
+#                Network Collections                 #
+######################################################
+  A&E:
+    template: { name: network, network: "129, 2639, 3688", poster: https://theposterdb.com/api/assets/160188, background: https://i.imgur.com/exBkraI.jpg}
+  ABC:
+    template: { name: network, network: "2, 75, 2791", poster: https://theposterdb.com/api/assets/193495, background: https://i.imgur.com/bhbcC9l.png}
+  Adult Swim:
+    template: { name: network, network: 80, poster: https://theposterdb.com/api/assets/98825, background: https://i.imgur.com/QFwPxNK.jpg}
+  Apple+:
+    template: { name: network, network: 2552, poster: https://theposterdb.com/api/assets/168823, background: https://i.imgur.com/spPPO7k.jpg}
+  Amazon:
+    template: { name: network, network: 1024, poster: https://theposterdb.com/api/assets/90886, background: https://i.imgur.com/GA9wHw8.jpg}
+  AMC:
+    template: { name: network, network: "174, 4661", poster: https://theposterdb.com/api/assets/104445, background: https://i.imgur.com/hSFxnXw.jpg}
+  BBC:
+    template: { name: network, network: 4, poster: https://theposterdb.com/api/assets/113123, background: https://i.imgur.com/Rv4OCaU.jpg}
+  Bravo:
+    template: { name: network, network: 74, poster: https://theposterdb.com/api/assets/204367, background: https://i.imgur.com/SrLhX1B.png}
+  Cartoon Network:
+    template: { name: network, network: "56, 217, 1232, 1483, 2193, 3917, 4771", poster: https://theposterdb.com/api/assets/172187, background: https://i.imgur.com/utFR0O6.jpg}
+  CBS:
+    template: { name: network, network: "16, 2528, 1709, 2621", poster: https://theposterdb.com/api/assets/48744, background: https://i.imgur.com/16Ufnj2.jpg}
+  Channel 4:
+    template: { name: network, network: 26, poster: https://theposterdb.com/api/assets/222016, background: https://i.imgur.com/EBvrQhm.jpg}
+  Channel 5:
+    template: { name: network, network: 99, poster: https://theposterdb.com/api/assets/204372, background: https://i.imgur.com/mcaWnrB.jpg}
+  Cinemax:
+    template: { name: network, network: 359, poster: https://theposterdb.com/api/assets/193488, background: https://i.imgur.com/VEyPNrx.png}
+  Comedy Central:
+    template: { name: network, network: 47, poster: https://theposterdb.com/api/assets/193571, background: https://i.imgur.com/ugVlt2o.png}
+  Crunchyroll:
+    template: { name: network, network: 1112, poster: https://theposterdb.com/api/assets/170981, background: https://i.imgur.com/CS5M6yc.jpg}
+  Discovery:
+    template: { name: network, network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741", poster: https://theposterdb.com/api/assets/195948, background: https://i.imgur.com/94RHZsX.jpg}
+  Disney+:
+    template: { name: network, network: "2739, 2919", poster: https://theposterdb.com/api/assets/120939, background: https://i.imgur.com/IoufW72.jpg}
+  Epix:
+    template: { name: network, network: 922, poster: https://theposterdb.com/api/assets/204945, background: https://i.imgur.com/6RWru0Q.jpg}
+  Food Network:
+    template: { name: network, network: 143, poster: https://theposterdb.com/api/assets/214678, background: https://i.imgur.com/caeRoaM.jpg}
+  Fox:
+    template: { name: network, network: 19, poster: https://theposterdb.com/api/assets/48747, background: https://i.imgur.com/6CxLjO9.jpg}
+  Freeform:
+    template: { name: network, network: 1267, poster: https://theposterdb.com/api/assets/207424, background: https://i.imgur.com/eL8XgGL.jpg}
+  Fuji TV:
+    template: { name: network, network: 1, poster: https://theposterdb.com/api/assets/207425, background: https://i.imgur.com/JYrkXqk.png}
+  FX:
+    template: { name: network, network: 88, poster: https://theposterdb.com/api/assets/193493, background: https://i.imgur.com/RsJcg3q.png}
+  FXX:
+    template: { name: network, network: 1035, poster: https://theposterdb.com/api/assets/113175, background: https://i.imgur.com/4IyP5xN.jpg}
+  HBO:
+    template: { name: network, network: "49, 2593, 3186, 3308", poster: https://theposterdb.com/api/assets/168825, background: https://i.imgur.com/x3g0uYY.jpg}
+  HGTV:
+    template: { name: network, network: 210, poster: https://theposterdb.com/api/assets/98967, background: https://i.imgur.com/U4NyOFh.png}
+  History Channel:
+    template: { name: network, network: 65, poster: https://theposterdb.com/api/assets/113187, background: https://i.imgur.com/ct0mwfu.jpg}
+  Hulu:
+    template: { name: network, network: 453, poster: https://theposterdb.com/api/assets/168826, background: https://i.imgur.com/W3SHvCT.png}
+  IFC:
+    template: { name: network, network: 124, poster: https://theposterdb.com/api/assets/113189, background: https://i.imgur.com/JPyTsaS.jpg}
+  ITV:
+    template: { name: network, network: "9, 149, 1159, 3187, 261, 590", poster: https://theposterdb.com/api/assets/204451, background: https://i.imgur.com/M64iwbZ.jpg}
+  MTV:
+    template: { name: network, network: 33, poster: https://theposterdb.com/api/assets/196018, background: https://i.imgur.com/WafLqHo.jpg}
+  National Geographic:
+    template: { name: network, network: "43, 799, 1756, 1825, 3355, 4293, 4476", poster: https://theposterdb.com/api/assets/121026, background: https://i.imgur.com/MdvaOtK.jpg}
+  NBC:
+    template: { name: network, network: 6, poster: https://theposterdb.com/api/assets/113217, background: https://i.imgur.com/IDhrPiO.png}
+  Netflix:
+    template: { name: network, network: 213, poster: https://theposterdb.com/api/assets/168827, background: https://i.imgur.com/hyR0I5Z.jpg}
+  Nickelodeon:
+    template: { name: network, network: 13, poster: https://theposterdb.com/api/assets/204456, background: https://i.imgur.com/4YLgvfE.jpg}
+  Lifetime:
+    template: { name: network, network: 34, poster: https://theposterdb.com/api/assets/204452, background: https://i.imgur.com/4Ooaj0z.jpg}
+  PBS:
+    template: { name: network, network: 14, poster: https://theposterdb.com/api/assets/205858, background: https://i.imgur.com/wQnUHKl.png}
+  Peacock:
+    template: { name: network, network: 3353, poster: https://theposterdb.com/api/assets/205411, background: https://i.imgur.com/WFx1S1O.jpg}
+  Showcase:
+    template: { name: network, network: 105, poster: https://theposterdb.com/api/assets/207430, background: https://i.imgur.com/h9c4UOC.png}
+  Showtime:
+    template: { name: network, network: 67, poster: https://theposterdb.com/api/assets/138092, background: https://i.imgur.com/TUhPWcs.jpg}
+  Shudder:
+    template: { name: network, network: 2949, poster: https://theposterdb.com/api/assets/80638, background: https://i.imgur.com/jfKw4Yf.jpg}
+  Sky:
+    template: { name: network, network: "214, 3653, 1063, 1755, 4439, 5213, 2691, 4148", poster: https://theposterdb.com/api/assets/204467, background: https://i.imgur.com/jde1YA4.jpg}
+  Spike:
+    template: { name: network, network: 55, poster: https://theposterdb.com/api/assets/203808, background: https://i.imgur.com/i86BAqj.png}
+  Starz:
+    template: { name: network, network: "318, 758, 4906", poster: https://theposterdb.com/api/assets/81775, background: https://i.imgur.com/p52moai.jpg}
+  Syfy:
+    template: { name: network, network: "77, 3701", poster: https://theposterdb.com/api/assets/193549, background: https://i.imgur.com/388g2Vw.jpg}
+  TBS:
+    template: { name: network, network: "68, 160, 4888", poster: https://theposterdb.com/api/assets/193552, background: https://i.imgur.com/hY4NSXH.jpg}
+  The CW:
+    template: { name: network, network: 71, poster: https://theposterdb.com/api/assets/204375, background: https://i.imgur.com/0qwBhNf.jpg}
+  The WB:
+    template: { name: network, network: 21, poster: https://theposterdb.com/api/assets/204472, background: https://i.imgur.com/ztaqVZ2.jpg}
+  TLC:
+    template: { name: network, network: 84, poster: https://theposterdb.com/api/assets/204470, background: https://i.imgur.com/vH4EGWP.jpg}
+  TNT:
+    template: { name: network, network: 41, poster: https://theposterdb.com/api/assets/207429, background: https://i.imgur.com/w03P8rK.jpg}
+  Travel Channel:
+    template: { name: network, network: 209, poster: https://theposterdb.com/api/assets/113280, background: https://i.imgur.com/TcpBssZ.jpg}
+  TruTV:
+    template: { name: network, network: 364, poster: https://theposterdb.com/api/assets/204471, background: https://i.imgur.com/0RENKPj.jpg}
+  USA:
+    template: { name: network, network: 30, poster: https://theposterdb.com/api/assets/204564, background: https://i.imgur.com/yXlndvx.jpg}
+  VH1:
+    template: { name: network, network: 158, poster: https://theposterdb.com/api/assets/220565, background: https://i.imgur.com/ZcALjQs.png}
+  YouTube:
+    template: { name: network, network: "247, 1436, 4869", poster: https://theposterdb.com/api/assets/193485, background: https://i.imgur.com/o7Jyzby.jpg}

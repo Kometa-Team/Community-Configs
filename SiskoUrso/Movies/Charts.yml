@@ -1,0 +1,152 @@
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    url_poster: <<poster>>
+    smart_label: random
+  Best of:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
+    sort_title: +1_Best of <<year>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of <<year>>
+    url_poster: <<poster>>
+    smart_label: audience_rating.desc
+
+collections:
+
+######################################################
+#                Chart Collections                   #
+######################################################
+
+  Plex Popular:
+    template: { name: Chart, num: 1, poster: https://theposterdb.com/api/assets/136359 }
+    tautulli_popular:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    tautulli_watched:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    summary: Movies Popular on Plex
+  Trending:
+    template: { name: Chart, num: 2, poster: https://theposterdb.com/api/assets/169001 }
+    trakt_trending: 10
+    tmdb_trending_daily: 10
+    tmdb_trending_weekly: 10
+    summary: Movies Trending across the internet
+  Popular:
+    template: { name: Chart, num: 3, poster: https://theposterdb.com/api/assets/205416 }
+    tmdb_popular: 40
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
+      limit: 40
+    summary: Popular Movies across the internet
+  Top Rated Global:
+    template: { name: Chart, num: 4 }
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250/
+    url_poster: https://theposterdb.com/api/assets/213605
+    summary: Top Rated Movies across the internet
+  Oscars:
+    template: { name: Chart, num: 6, poster: https://theposterdb.com/api/assets/192593 }
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    summary: Oscar Winning Movies
+  Best of 2014:
+    template: { name: Best of, year: 2014, poster: https://theposterdb.com/api/assets/205154 }
+  Best of 2015:
+    template: { name: Best of, year: 2015, poster: https://theposterdb.com/api/assets/205155 }
+  Best of 2016:
+    template: { name: Best of, year: 2016, poster: https://theposterdb.com/api/assets/205156 }
+  Best of 2017:
+    template: { name: Best of, year: 2017, poster: https://theposterdb.com/api/assets/205157 }
+  Best of 2018:
+    template: { name: Best of, year: 2018, poster: https://theposterdb.com/api/assets/205158 }
+  Best of 2019:
+    template: { name: Best of, year: 2019, poster: https://theposterdb.com/api/assets/205159 }
+  Best of 2020:
+    template: { name: Best of, year: 2020, poster: https://theposterdb.com/api/assets/205160 }
+  Best of 2021:
+    template: { name: Best of, year: 2021, poster: https://theposterdb.com/api/assets/205161 }
+  Best of 2022:
+    template: { name: Best of, year: 2022, poster: https://theposterdb.com/api/assets/205162 }
+
+  Top Ten Pirated Weekly:
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-ten-pirated-movies-of-the-week-torrent-freak-com
+    smart_label: year.desc
+    sync_mode: sync
+    sort_title: +++++++++++++++++++++_1APirated Weekly
+    summary: Most Pirated Movies of The Week
+    url_background: https://i.imgur.com/SOVfrIq.png
+    url_poster: https://i.imgur.com/dYdjSOu.png
+
+  80s Movies:
+    trakt_list:
+     - https://trakt.tv/users/hdlists/lists/rottentomatoes-com-s-best-of-the-80s
+     - https://trakt.tv/users/zyrus/lists/80s-classics
+    smart_label: critic_rating.desc
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_80s Movies
+    summary: The Best Movies From The 80s
+    url_poster: https://i.imgur.com/k9c4ieG.png
+    url_background: https://i.imgur.com/ITnaga1.jpg
+
+  90s Movies:
+    trakt_list: https://trakt.tv/users/hdlists/lists/rottentomatoes-com-s-best-of-the-90s
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_90s Movies
+    summary: The Best Movies From The 90s
+    url_poster: https://i.imgur.com/Nq8fxp8.png
+    url_background: https://i.imgur.com/g2yfzfx.jpg
+
+  Sundance Film Festival 2021:
+    trakt_list: https://trakt.tv/users/hdlists/lists/sundance-2021-movie-guide
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_Sundance 2021 Collection
+    summary: Sundance Film Festival 2021 Movie Guide
+    url_poster: https://i.imgur.com/6CqlOaq.png
+    url_background: https://i.imgur.com/goapGVl.jpg
+
+  Highest Rated Movies of 2021:
+    trakt_list: https://trakt.tv/users/hdlists/lists/2021-best-rated-movies-so-far
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_12021 Top Rated popular
+    summary: The Top Rated Movies of 2021 on RottenTomatoes.com
+    url_poster: https://i.imgur.com/w7Ucfa5.png
+    url_background: https://i.imgur.com/trITIgI.jpg
+
+  Most Popular Movies of 2020:
+    trakt_list: https://trakt.tv/users/hdlists/lists/most-popular-movies-of-2020
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_20z20 Most popular
+    summary: The Most Popular Movies of 2020
+    url_poster: https://i.imgur.com/LLURmaF.png
+    url_background: https://i.imgur.com/gO3Rlft.jpg
+
+  Reddit Top 250 From 2017:
+    trakt_list: https://trakt.tv/users/tehrobot/lists/reddit
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_Reddit Top 250
+    summary: Reddit's list of top 250 movies from the list made in 2017.
+    url_poster: https://i.redd.it/lcm7fe9bnib61.png
+
+  Top Movies of 2021:
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-movies-for-2021
+    sync_mode: sync
+    smart_label: critic_rating.desc
+    sort_title: ++++++++++++++++++_2021 Top Movies
+    summary: Top Movies of 2021
+    url_poster: https://i.imgur.com/qnfjiew.png
+    url_background: https://i.imgur.com/aiRCYHH.jpg
+
+  Movies People are Watching:
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-films-everyone-s-watching
+    sort_title: +++++++++++++++++++++_Everyones Watching
+    sync_mode: sync
+    smart_label: year.desc
+    summary: Movies That Everyone is Watching
+    url_poster: https://i.imgur.com/GQca9tU.png

@@ -1,0 +1,508 @@
+#############################################################
+#                  Special Release Overlay                  #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Designed for TRaSH Guides filename naming scheme         #
+#  https://trash-guides.info/                               #
+#                                                           #
+#  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/special_release                  #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
+#          horizontal_offset: 15                            #
+#          # Set the horizontal align for the overlay       #
+#          horizontal_align: left                           #
+#          # Set the vertical offset for the overlay        #
+#          vertical_offset: 99                              #
+#          # Set the vertical align for the overlay         #
+#          vertical_align: top                              #
+#                                                           #
+#          # Use the Director's Cut overlay                 #
+#          use_directorscut: true                           #
+#          # Use the Extended overlay                       #
+#          use_extended: true                               #
+#          # Use the Uncut overlay                          #
+#          use_uncut: true                                  #
+#          # Use the Unrated overlay                        #
+#          use_unrated: true                                #
+#          # Use the Special overlay                        #
+#          use_special: true                                #
+#          # Use the Final Cut overlay                      #
+#          use_finalcut: true                               #
+#          # Use the Anniversary overlay                    #
+#          use_anniversary: true                            #
+#          # Use the Collectors overlay                     #
+#          use_collector: true                              #
+#          # Use the International overlay                  #
+#          use_international: true                          #
+#          # Use the Theatrical overlay                     #
+#          use_theatrical: true                             #
+#          # Use the Ultimate overlay                       #
+#          use_ultimate: true                               #
+#          # Use the IMAX-E overlay                         #
+#          use_enhanced: true                               #
+#          # Use the IMAX overlay                           #
+#          use_imax: true                                   #
+#          # Use the Remastered overlay                     #
+#          use_remastered: true                             #
+#          # Use the Criterion overlay                      #
+#          use_criterion: true                              #
+#############################################################
+
+templates:
+  Edition:
+    optional:
+      - overlay_level
+      - use_<<slug>>
+    default:
+      overlay: <<overlay_name>>
+      extra: '-Box'
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 15
+      vertical_align: top
+      group: SpecialReleaseGroup
+    collection_level: <<overlay_level>>
+    allowed_library_types: <<use_<<slug>>>>
+    ignore_blank_results: true
+    overlay:
+      name: <<overlay>><<extra>>
+      git: PMM/overlays/images/<<overlay>><<extra>>
+      group: <<group>>
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+overlays:
+  Directors-Cut:
+    template:
+      - name: Edition
+        weight: 150
+        slug: directorscut
+        overlay: Directors-Cut
+    suppress_overlays:
+      - Directors-Cut-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\b(Director|Directors)\b'           # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\b(Director|Directors)\b' # Original TRaSH naming
+
+  Directors-Cut-Dovetail:
+    template:
+      - name: Edition
+        weight: 150
+        slug: directorscut
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Directors-Cut
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\b(Director|Directors)\b'           # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\b(Director|Directors)\b' # Original TRaSH naming
+
+  Extended-Edition:
+    template:
+      - name: Edition
+        weight: 140
+        slug: extended
+        overlay: Extended-Edition
+    suppress_overlays:
+      - Extended-Edition-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bExtended\b'              # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bExtended\b'    # Original TRaSH naming
+
+  Extended-Edition-Dovetail:
+    template:
+      - name: Edition
+        weight: 140
+        slug: extended
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Extended-Edition
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bExtended\b'              # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bExtended\b'    # Original TRaSH naming
+
+  Uncut-Edition:
+    template:
+      - name: Edition
+        weight: 130
+        slug: uncut
+        overlay: Uncut-Edition
+    suppress_overlays:
+      - Uncut-Edition-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bUncut\b'                 # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bUncut\b'       # Original TRaSH naming
+
+  Uncut-Edition-Dovetail:
+    template:
+      - name: Edition
+        weight: 130
+        slug: uncut
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Uncut-Edition
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bUncut\b'                 # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bUncut\b'       # Original TRaSH naming
+
+  Unrated-Edition:
+    template:
+      - name: Edition
+        weight: 120
+        slug: unrated
+        overlay: Unrated-Edition
+    suppress_overlays:
+      - Unrated-Edition-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bUnrated\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bUnrated\b'     # Original TRaSH naming
+
+  Unrated-Edition-Dovetail:
+    template:
+      - name: Edition
+        weight: 120
+        slug: unrated
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Unrated-Edition
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bUnrated\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bUnrated\b'     # Original TRaSH naming
+
+  Special-Edition:
+    template:
+      - name: Edition
+        weight: 110
+        slug: special
+        overlay: Special-Edition
+    suppress_overlays:
+      - Special-Edition-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bSpecial\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bSpecial\b'     # Original TRaSH naming
+
+  Special-Edition-Dovetail:
+    template:
+      - name: Edition
+        weight: 110
+        slug: special
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Special-Edition
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bSpecial\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bSpecial\b'     # Original TRaSH naming
+
+  Final-Cut:
+    template:
+      - name: Edition
+        weight: 100
+        slug: finalcut
+        overlay: Final-Cut
+    suppress_overlays:
+      - Final-Cut-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bFinal\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bFinal\b'     # Original TRaSH naming
+
+  Final-Cut-Dovetail:
+    template:
+      - name: Edition
+        weight: 100
+        slug: finalcut
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Final-Cut
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bFinal\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bFinal\b'     # Original TRaSH naming
+
+  Anniversary-Edition:
+    template:
+      - name: Edition
+        weight: 90
+        slug: anniversary
+        overlay: Anniversary-Edition
+    suppress_overlays:
+      - Anniversary-Edition-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bAnniversary\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bAnniversary\b'     # Original TRaSH naming
+
+  Anniversary-Edition-Dovetail:
+    template:
+      - name: Edition
+        weight: 90
+        slug: anniversary
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Anniversary-Edition
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bAnniversary\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bAnniversary\b'     # Original TRaSH naming
+
+  Collectors-Edition:
+    template:
+      - name: Edition
+        weight: 80
+        slug: collector
+        overlay: Collectors-Edition
+    suppress_overlays:
+      - Collectors-Edition-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\b(Collector|Collectors)\b'           # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\b(Collector|Collectors)\b' # Original TRaSH naming
+
+  Collectors-Edition-Dovetail:
+    template:
+      - name: Edition
+        weight: 80
+        slug: collector
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Collectors-Edition
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\b(Collector|Collectors)\b'           # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\b(Collector|Collectors)\b' # Original TRaSH naming
+
+  International-Cut:
+    template:
+      - name: Edition
+        weight: 70
+        slug: international
+        overlay: International-Cut
+    suppress_overlays:
+      - International-Cut-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bInternational\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bInternational\b'     # Original TRaSH naming
+
+  International-Cut-Dovetail:
+    template:
+      - name: Edition
+        weight: 70
+        slug: international
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: International-Cut
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bInternational\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bInternational\b'     # Original TRaSH naming
+
+  Theatrical-Cut:
+    template:
+      - name: Edition
+        weight: 60
+        slug: theatrical
+        overlay: Theatrical-Cut
+    suppress_overlays:
+      - Theatrical-Cut-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bTheatrical\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bTheatrical\b'     # Original TRaSH naming
+
+  Theatrical-Cut-Dovetail:
+    template:
+      - name: Edition
+        weight: 60
+        slug: theatrical
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Theatrical-Cut
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bTheatrical\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bTheatrical\b'     # Original TRaSH naming
+
+  Ultimate-Cut:
+    template:
+      - name: Edition
+        weight: 50
+        slug: Ultimate
+        overlay: Ultimate-Cut
+    suppress_overlays:
+      - Ultimate-Cut-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bUltimate\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bUltimate\b'     # Original TRaSH naming
+
+  Ultimate-Cut-Dovetail:
+    template:
+      - name: Edition
+        weight: 50
+        slug: Ultimate
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Ultimate-Cut
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\bUltimate\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)\bUltimate\b'     # Original TRaSH naming
+  IMAX-E:
+    template:
+      - name: Edition
+        weight: 40
+        slug: enhanced
+        overlay: IMAX-E
+    suppress_overlays:
+      - IMAX-E-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bIMAX Enhanced\b|^(?=.*(DSNP|Disney\+|CORE(?=[ ._-]web[ ._-]?(dl|rip)\b)|\bBC(?=[ ._-]web[ ._-]?(dl|rip)\b)|IMAX[- .]Enhanced)\b)(?=.*\b(IMAX|IMAX[- .]Enhanced)\b).*'
+
+  IMAX-E-Dovetail:
+    template:
+      - name: Edition
+        weight: 40
+        slug: enhanced
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: IMAX-E
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bIMAX Enhanced\b|^(?=.*(DSNP|Disney\+|CORE(?=[ ._-]web[ ._-]?(dl|rip)\b)|\bBC(?=[ ._-]web[ ._-]?(dl|rip)\b)|IMAX[- .]Enhanced)\b)(?=.*\b(IMAX|IMAX[- .]Enhanced)\b).*'
+
+  IMAX:
+    template:
+      - name: Edition
+        weight: 30
+        slug: imax
+        overlay: IMAX
+    suppress_overlays:
+      - IMAX-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bIMAX\b'
+
+  IMAX-Dovetail:
+    template:
+      - name: Edition
+        weight: 30
+        slug: imax
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: IMAX
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)\bIMAX\b'
+
+  Remastered:
+    template:
+      - name: Edition
+        weight: 20
+        slug: remastered
+        overlay: Remastered
+    suppress_overlays:
+      - Remastered-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\b(Remaster|Remastered|4k Remaster|4k Remastered)\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)(?i)\b(Remaster|Remastered|4k Remaster|4k Remastered)\b' # Original TRaSH naming
+
+  Remastered-Dovetail:
+    template:
+      - name: Edition
+        weight: 20
+        slug: remastered
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Remastered
+    plex_all: true
+    filters:
+      filepath.regex: 
+        - 'edition-(?i)\b(Remaster|Remastered|4k Remaster|4k Remastered)\b'               # New TRaSH naming
+        - '(?<=[0-9]{4}[)}>\]]\s)(?i)\b(Remaster|Remastered|4k Remaster|4k Remastered)\b' # Original TRaSH naming
+
+  Criterion:
+    template:
+      - name: Edition
+        weight: 10
+        slug: criterion
+    suppress_overlays:
+      - Criterion-Dovetail
+    plex_all: true
+    filters:
+      filepath.regex:
+        - '(?i)Criterion'
+        - '(?i)\[CC\]'
+
+  Criterion-Dovetail:
+    template:
+      - name: Edition
+        weight: 10
+        slug: criterion
+        extra: ''
+        vertical_offset: 99
+        group: Dovetail
+        overlay: Criterion
+    plex_all: true
+    filters:
+      filepath.regex:
+        - '(?i)Criterion'
+        - '(?i)\[CC\]'

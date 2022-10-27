@@ -1,0 +1,98 @@
+overlays:
+  HDR:
+    overlay:
+      name: HDR
+      group: formats
+      weight: 1
+    plex_search:
+      all:
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      resolution.not: 4K
+  4K:
+    overlay:
+      name: 4K
+      group: formats
+      weight: 2
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+  4K-HDR:
+    overlay:
+      name: 4K-HDR
+      group: formats
+      weight: 3
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+  Dolby Vision:
+    overlay:
+      name: Dolby Vision
+      group: formats
+      weight: 4
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+  IMDB_R:
+    overlay:
+      name: IMDB_R
+    plex_search:
+      all:
+        audience_rating.lt: 7.0
+  IMDB_Y:
+    overlay:
+      name: IMDB_Y
+    plex_search:
+      all:
+        audience_rating.gte: 7.0
+        audience_rating.lt: 8.0
+  IMDB_G:
+    overlay:
+      name: IMDB_G
+    plex_search:
+      all:
+        audience_rating.gte: 8.0
+  RT_R:
+    overlay:
+      name: RT_R
+    plex_search:
+      all:
+        critic_rating.lt: 6.0
+  RT_Y:
+    overlay:
+      name: RT_Y
+    plex_search:
+      all:
+        critic_rating.gte: 6.0
+        critic_rating.lt: 8.0
+  RT_G:
+    overlay:
+      name: RT_G
+    plex_search:
+      all:
+        critic_rating.gte: 8.0
+  audience_rating:
+    overlay:
+      name: text(audience_rating#)
+      horizontal_offset: 112
+      vertical_offset: 1445
+      font: DejaVuSans.ttf
+      font_size: 55
+    plex_all: true
+  critic_rating:
+    overlay:
+      name: text(critic_rating#)
+      horizontal_offset: 804
+      vertical_offset: 1445
+      font: DejaVuSans.ttf
+      font_size: 55
+    plex_all: true

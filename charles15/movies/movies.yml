@@ -1,0 +1,144 @@
+######################################################
+#                       Movies                       #
+######################################################
+templates:
+  Chart:
+    sort_title: +02_<<collection_name>>
+    sync_mode: sync
+  Series:
+    sort_title: +03_<<collection_name>>
+    sync_mode: sync
+  IMDb Series:
+    sort_title: +03_<<collection_name>>
+    imdb_list: https://www.imdb.com/list/<<IMDbList>>/
+    sync_mode: sync
+collections:
+######################################################
+#                    Movie Charts                    #
+######################################################
+  Zoidberg Popular:
+    sort_title: +01_<<num>><<collection_name>>
+    sync_mode: sync
+    tautulli_popular:
+      list_days: 365
+      list_size: 15
+      list_buffer: 25
+    summary: Most popular movies on Plex in the last year.
+    name_mapping: Zoidberg Popular Movies
+  Best of All Time:
+    template: {name: Chart}
+    sync_mode: sync
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250/
+    tmdb_top_rated: 250
+    summary: IMDb & TVDB Top Rated Movies of All Time
+  Best of the 1970s:
+    template: {name: Chart}
+    tmdb_discover:
+      primary_release_date.gte: 01/01/1970
+      primary_release_date.lte: 12/31/1979
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    summary: TMDB Most Popular Movies of the 1980s
+  Best of the 1980s:
+    template: {name: Chart}
+    tmdb_discover:
+      primary_release_date.gte: 01/01/1980
+      primary_release_date.lte: 12/31/1989
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    summary: TMDB Most Popular Movies of the 1980s
+  Best of the 1990s:
+    template: {name: Chart}
+    tmdb_discover:
+      primary_release_date.gte: 01/01/1990
+      primary_release_date.lte: 12/31/1999
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    summary: TMDB Most Popular Movies of the 1990s
+  Best of the 2000s:
+    template: {name: Chart}
+    tmdb_discover:
+      primary_release_date.gte: 01/01/2000
+      primary_release_date.lte: 12/31/2009
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    summary: TMDB Most Popular Movies of the 2000s
+  Best of the 2010s:
+    template: {name: Chart}
+    tmdb_discover:
+      primary_release_date.gte: 01/01/2010
+      primary_release_date.lte: 12/31/2019
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    summary: TMDB Most Popular Movies of the 2010s
+  Best of the 2020s:
+    template: {name: Chart}
+    tmdb_discover:
+      primary_release_date.gte: 01/01/2020
+      primary_release_date.lte: 12/31/2029
+      with_original_language: en
+      sort_by: popularity.desc
+      limit: 100
+    summary: TMDB Most Popular Movies of the 2020s   
+  Academy Award Winners:
+    template: {name: Chart}
+    tmdb_list: https://www.themoviedb.org/list/28
+    sort_by: release_date.desc
+    collection_order: custom
+    summary: All Academy Award Winners on Plex.   
+######################################################
+#                   Movie Series                     #
+######################################################
+  X-Men Universe:
+    template: {name: Series}
+    trakt_list: https://trakt.tv/users/donxy/lists/x-men-universe?sort=rank,asc
+    summary: X-Men Universe in Chronological Order
+    url_poster: https://theposterdb.com/api/assets/21
+  The Pixar Theory:
+    template: {name: Series}
+    trakt_list: https://trakt.tv/users/donxy/lists/the-pixar-theory?sort=rank,asc
+    summary: Chronological order of the Pixar theory (all Pixar films are in a shared universe that is connected by Boo)
+    url_poster: https://theposterdb.com/api/assets/4767
+  Alien & Predator Universe:
+    template: {name: Series}
+    trakt_list: https://trakt.tv/users/donxy/lists/alien-predator-timeline?sort=rank,asc
+    url_poster: https://theposterdb.com/api/assets/146111
+    summary: All Alien & Predator movies in the shared universe
+    name_mapping: AlienPredator Universe
+  Rocky Universe:
+    template: {name: IMDb Series, IMDbList: ls538336139 }
+    url_poster: https://theposterdb.com/api/assets/5907
+    sort_by: release_date.desc
+    collection_order: release
+    summary: All movies from the Rocky & Creed Universe.
+  Fast & Furious Collection:
+    template: {name: IMDb Series, IMDbList: ls068290878 }
+    url_poster: https://theposterdb.com/api/assets/47254
+    sort_by: release_date.desc
+    collection_order: custom
+    summary: All movies in the Fast & Furious Universe.
+  Indiana Jones Franchise:
+    template: {name: IMDb Series, IMDbList: ls538364160 }
+    url_poster: https://theposterdb.com/api/assets/11385
+    sort_by: release_date.desc
+    collection_order: custom
+    summary: All movies in the Indiana Jones Universe.
+  Mission Impossible Collection:
+    template: {name: IMDb Series, IMDbList: ls066600640 }
+    url_poster: https://theposterdb.com/api/assets/6475
+    sort_by: release_date.desc
+    collection_order: custom
+    name: "Mission: Impossible Franchise"
+    name_mapping: Mission Impossible
+    summary: "All movies in the Mission: Impossible Universe."
+  James Bond Franchise:
+    template: {name: IMDb Series, IMDbList: ls006405458 }
+    url_poster: https://theposterdb.com/api/assets/75315
+    sort_by: release_date.desc
+    collection_order: custom
+    summary: "All movies from the James Bond franchise"

@@ -1,0 +1,110 @@
+##############################################################
+##               Suggestions Collections                    ##
+##                Created by JJJonesJr33                    ##
+##                      Version 2.0                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##               Yozora, Bullmoose20, & Sohjiro             ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:
+  Suggestion:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: ++++++++++_<<collection_name>>
+    collection_mode: hide
+    collection_order: release.desc
+    # visible_home: range(01/01-12/31)
+    # visible_shared: range(01/01-12/31)
+    sync_mode: sync
+  Tautulli:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: ++++++++++_<<collection_name>>
+    collection_mode: hide
+    collection_order: alpha
+    sync_mode: sync
+      
+#############################
+##       Collections       ##
+#############################
+
+collections:
+
+#################
+##    Trakt    ##
+#################
+
+  Trending:
+    template: {name: Suggestion, poster: 213570}  
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/trakt-trending
+    summary: "Movies Trending across the internet"
+    
+  Popular:
+    template: {name: Suggestion, poster: 213575}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/trakt-top-weekly
+    summary: "A collection of the most watched movies over the past week."
+    
+  Recommended:
+    template: {name: Suggestion, poster: 213604}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/top-20-movies-of-the-week
+    visible_home: range(01/01-12/31)
+    visible_shared: range(01/01-12/31)
+    summary: "Recommended Top Movies of the Week"
+    
+  Newly Released:
+    template: {name: Suggestion, poster: 213599}
+    url_poster: https://theposterdb.com/api/assets/213599
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/newly-released
+    visible_home: range(01/01-12/31)
+    visible_shared: range(01/01-12/31)
+    summary: "A collection of newly-released movies in cinema and on streaming services."
+    
+##################
+##     IMDb     ##
+##################
+
+  Top Rated:
+    template: {name: Suggestion, poster: 213605}
+    imdb_list: 
+      - https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc&title_type=movie
+    summary: Top Rated Movies  
+    
+######################
+##     Tautulli     ##
+######################
+
+  People Watching:
+    template: {name: Tautulli, poster: 213600}
+    tautulli_watched:
+      list_days: 30
+      list_size: 10
+      list_buffer: 20
+    summary: Most Watched Movies from all the users on Plex
+    
+    # New Episodes
+    # url_poster: https://theposterdb.com/api/assets/213598
+    
+    # Recently Added
+    # url_poster: https://theposterdb.com/api/assets/213601
+    
+    # Recently Aired
+    # url_poster: https://theposterdb.com/api/assets/213602
+    
+    # Recently Released
+    # url_poster: https://theposterdb.com/api/assets/213603
+    
+    # Top Rated
+    # url_poster: https://theposterdb.com/api/assets/213605

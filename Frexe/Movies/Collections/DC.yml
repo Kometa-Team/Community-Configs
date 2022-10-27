@@ -1,0 +1,43 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+      - imdb
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    imdb_list: <<imdb>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Aquaman":
+    template: {name: Set, collection: 573693, poster: https://theposterdb.com/api/assets/162375 }
+
+  "Batman":
+    template: {name: Set, collection: 120794, poster: https://theposterdb.com/api/assets/162377 }
+
+  "Red":
+    template: {name: Set, collection: 163902, poster: https://theposterdb.com/api/assets/162399 }
+
+  "Suicide Squad":
+    template: {name: Set, collection: 531242, poster: https://theposterdb.com/api/assets/174225 }
+
+  "Superman":
+    template: {name: Set, collection: 8537, poster: https://theposterdb.com/api/assets/162402 }
+
+  "Swamp Thing":
+    template: {name: Set, collection: 87228, poster: https://theposterdb.com/api/assets/162403 }
+
+  "Watchmen":
+    template: {name: Set, list: 8196349, poster: https://theposterdb.com/api/assets/162408 }
+
+  "Wonder Woman":
+    template: {name: Set, collection: 468552, poster: https://theposterdb.com/api/assets/162410 }
+
+  "DC":
+    template: {name: Set, imdb: https://www.imdb.com/list/ls538267100, poster: https://theposterdb.com/api/assets/162412 }

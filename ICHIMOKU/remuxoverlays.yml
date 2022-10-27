@@ -1,0 +1,259 @@
+overlays:
+
+############################
+#          ICHIMOKU        #
+############################ 
+ 
+   1080p:
+    overlay: 1080p
+    plex_search:
+      all:
+        collection: 1080p
+   1080p-HDR:
+    overlay: 1080p-HDR
+    plex_search:
+      all:
+        collection: 1080p-HDR  
+   1080p-IMAX:
+    overlay: 1080p-IMAX
+    plex_search:
+      all:
+        collection: 1080p-IMAX
+   1080p-HDR-IMAX:
+    overlay: 1080p-HDR-IMAX
+    plex_search:
+      all:
+        collection: 1080p-HDR-IMAX                 
+   1080p-DolbyDigital:
+    overlay: 1080p-DolbyDigital
+    plex_search:
+      all:
+        collection: 1080p-DolbyDigital
+   1080p-DolbyDigitalPlus:
+    overlay: 1080p-DolbyDigitalPlus
+    plex_search:
+      all:
+        collection: 1080p-DolbyDigitalPlus
+   1080p-DolbyDigitalPlusAtmos:
+    overlay: 1080p-DolbyDigitalPlusAtmos
+    plex_search:
+      all:
+        collection: 1080p-DolbyDigitalPlusAtmos
+   1080p-DolbyTrueHD:
+    overlay: 1080p-DolbyTrueHD
+    plex_search:
+      all:
+        collection: 1080p-DolbyTrueHD
+   1080p-DolbyTrueHDAtmos:
+    overlay: 1080p-DolbyTrueHDAtmos
+    plex_search:
+      all:
+        collection: 1080p-DolbyTrueHDAtmos
+   1080p-dtsX:
+    overlay: 1080p-dtsX
+    plex_search:
+      all:
+        collection: 1080p-dtsX
+   1080p-dtsHD:
+    overlay: 1080p-dtsHD
+    plex_search:
+      all:
+        collection: 1080p-dtsHD
+   1080p-HDR-DolbyDigital:
+    overlay: 1080p-HDR-DolbyDigital
+    plex_search:
+      all:
+        collection: 1080p-HDR-DolbyDigital
+   1080p-HDR-DolbyDigitalPlus:
+    overlay: 1080p-HDR-DolbyDigitalPlus
+    plex_search:
+      all:
+        collection: 1080p-HDR-DolbyDigitalPlus
+   1080p-HDR-DolbyDigitalPlusAtmos:
+    overlay: 1080p-HDR-DolbyDigitalPlusAtmos
+    plex_search:
+      all:
+        collection: 1080p-HDR-DolbyDigitalPlusAtmos
+   1080p-HDR-DolbyTrueHD:
+    overlay: 1080p-HDR-DolbyTrueHD
+    plex_search:
+      all:
+        collection: 1080p-HDR-DolbyTrueHD
+   1080p-HDR-DolbyTrueHDAtmos:
+    overlay: 1080p-HDR-DolbyTrueHDAtmos
+    plex_search:
+      all:
+        collection: 1080p-HDR-DolbyTrueHDAtmos
+   1080p-HDR-dtsX:
+    overlay: 1080p-HDR-dtsX
+    plex_search:
+      all:
+        collection: 1080p-HDR-dtsX
+   1080p-HDR-dtsHD:
+    overlay: 1080p-HDR-dtsHD
+    plex_search:
+      all:
+        collection: 1080p-HDR-dtsHD
+   DV:
+    overlay: DV
+    plex_search:
+      all:
+        collection: DV
+   DV-DolbyDigital:
+    overlay: DV-DolbyDigital
+    plex_search:
+      all:
+        collection: DV-DolbyDigital
+   DV-DolbyDigitalPlus:
+    overlay: DV-DolbyDigitalPlus
+    plex_search:
+      all:
+        collection: DV-DolbyDigitalPlus
+   DV-DolbyDigitalPlusAtmos:
+    overlay: DV-DolbyDigitalPlusAtmos
+    plex_search:
+      all:
+        collection: DV-DolbyDigitalPlusAtmos
+   DV-DolbyTrueHD:
+    overlay: DV-DolbyTrueHD
+    plex_search:
+      all:
+        collection: DV-DolbyTrueHD
+   DV-DolbyTrueHDAtmos:
+    overlay: DV-DolbyTrueHDAtmos
+    plex_search:
+      all:
+        collection:  DV-DolbyTrueHDAtmos 
+   DV-dtsX:
+    overlay: DV-dtsX
+    plex_search:
+      all:
+        collection: DV-dtsX
+   DV-dtsHD:
+    overlay: DV-dtsHD
+    plex_search:
+      all:
+        collection: DV-dtsHD                    
+   4K:
+    overlay: 4K
+    plex_search:
+      all:
+        collection: 4K
+   4K-HDR:
+    overlay: 4K-HDR
+    plex_search:
+      all:
+        collection: 4K-HDR
+   4K-IMAX:
+    overlay: 4K-IMAX
+    plex_search:
+      all:
+        collection: 4K-IMAX
+   4K-HDR-IMAX:
+    overlay: 4K-HDR-IMAX
+    plex_search:
+      all:
+        collection: 4K-HDR-IMAX
+   4K-DolbyDigital:
+    overlay: 4K-DolbyDigital
+    plex_search:
+      all:
+        collection: 4K-DolbyDigital
+   4K-DolbyDigitalPlus:
+    overlay: 4K-DolbyDigitalPlus
+    plex_search:
+      all:
+        collection: 4K-DolbyDigitalPlus        
+   4K-DolbyDigitalPlusAtmos:
+    overlay: 4K-DolbyDigitalPlusAtmos
+    plex_search:
+      all:
+        collection: 4K-DolbyDigitalPlusAtmos
+   4K-DolbyTrueHD:
+    overlay: 4K-DolbyTrueHD
+    plex_search:
+      all:
+        collection: 4K-DolbyTrueHD
+   4K-DolbyTrueHDAtmos:
+    overlay: 4K-DolbyTrueHDAtmos
+    plex_search:
+      all:
+        collection: 4K-DolbyTrueHDAtmos
+   4K-dtsX:
+    overlay: 4K-dtsX
+    plex_search:
+      all:
+        collection: 4K-dtsX
+   4K-dtsHD:
+    overlay: 4K-dtsHD
+    plex_search:
+      all:
+        collection: 4K-dtsHD
+   4K-HDR-DolbyDigital:
+    overlay: 4K-HDR-DolbyDigital
+    plex_search:
+      all:
+        collection: 4K-HDR-DolbyDigital
+   4K-HDR-DolbyDigitalPlus:
+    overlay: 4K-HDR-DolbyDigitalPlus
+    plex_search:
+      all:
+        collection: 4K-HDR-DolbyDigitalPlus
+   4K-HDR-DolbyDigitalPlusAtmos:
+    overlay: 4K-HDR-DolbyDigitalPlusAtmos
+    plex_search:
+      all:
+        collection: 4K-HDR-DolbyDigitalPlusAtmos
+   4K-HDR-DolbyTrueHD:
+    overlay: 4K-HDR-DolbyTrueHD
+    plex_search:
+      all:
+        collection: 4K-HDR-DolbyTrueHD
+   4K-HDR-DolbyTrueHDAtmos:
+    overlay: 4K-HDR-DolbyTrueHDAtmos
+    plex_search:
+      all:
+        collection: 4K-HDR-DolbyTrueHDAtmos
+   4K-HDR-dtsX:
+    overlay: 4K-HDR-dtsX
+    plex_search:
+      all:
+        collection: 4K-HDR-dtsX
+   4K-HDR-dtsHD:
+    overlay: 4K-HDR-dtsHD
+    plex_search:
+      all:
+        collection: 4K-HDR-dtsHD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

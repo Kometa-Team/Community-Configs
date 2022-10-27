@@ -1,0 +1,48 @@
+#####################################################
+#           Streaming Collections                   #
+#####################################################
+
+collections:
+  Prime Video Movies:
+    sort_title: +03_Prime
+    sync_mode: sync
+    smart_label: release.desc
+    trakt_list: https://trakt.tv/users/ryalism/lists/amazon-movies?sort=released,asc
+    url_poster: https://i.imgur.com/0ZScRde.jpg
+    url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
+    # visible_library: true
+    # visible_home: true
+    # visible_shared: true
+    
+  Disney+ Movies:
+    sort_title: +03_Disney+
+    sync_mode: sync
+    smart_label: release.desc
+    trakt_list: https://trakt.tv/users/ryalism/lists/disney-movies?sort=released,asc
+    url_poster: https://i.imgur.com/ScFEmxo.jpg
+    url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
+    # visible_library: true
+    # visible_home: true
+    # visible_shared: true
+
+  Hulu Movies:
+    sort_title: +03_Hulu
+    sync_mode: sync
+    smart_label: release.desc
+    trakt_list: https://trakt.tv/users/ryalism/lists/hulu-movies?sort=released,asc
+    url_poster: https://i.imgur.com/fWmIKAj.jpg
+    url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
+    # visible_library: true
+    # visible_home: true
+    # visible_shared: true
+
+  Netflix Movies:
+    sort_title: +03_Netflix
+    sync_mode: sync
+    smart_label: release.desc
+    trakt_list: https://trakt.tv/users/ryalism/lists/netflix-movies?sort=released,asc
+    url_poster: https://i.imgur.com/nFMCSz6.jpg
+    url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
+    # visible_library: true
+    # visible_home: true
+    # visible_shared: true

@@ -1,0 +1,44 @@
+######################################################
+#                Chart Collections                   #
+######################################################
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    item_refresh: true
+collections:
+  Plex Popular:
+    template: { name: Chart, num: 1 }
+    tautulli_popular:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    summary: Shows Popular on Plex
+  Top TV of the Last Week:
+    template: { name: Chart, num: 2 }
+    trakt_watched: 20
+    summary: Most watched shows of the last week.
+    filters:
+      last_episode_aired: 100
+    visible_home: true
+    visible_shared: true
+  Popular TV:
+    template: { name: Chart, num: 3 }
+    tmdb_popular: 40
+    summary: Popular Shows across the internet
+  Top Rated TV:
+    template: { name: Chart, num: 4 }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc
+      limit: 100
+    summary: Top Rated TV  across the internet
+    schedule: monthly(1)
+  Popular Documentary Shows:
+    template: { name: Chart, num: 5 }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&genres=documentary&languages=en
+      limit: 30
+    summary: Top Documentaries across the internet
+    visible_home: true
+    visible_shared: true

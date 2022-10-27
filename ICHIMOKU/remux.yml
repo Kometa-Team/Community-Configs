@@ -1,0 +1,693 @@
+collections:
+############################
+#          ICHIMOKU        #
+############################
+  
+   1080p:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+    url_poster: https://i.imgur.com/Pke23F6.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*01"
+    schedule: daily
+   1080p-HDR:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+    url_poster: https://i.imgur.com/IX4U2lJ.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*02"
+    schedule: daily
+   1080p-IMAX:
+    plex_search:
+      all:
+        resolution: 1080p
+    filters:
+      filepath: Imax
+    url_poster: https://i.imgur.com/TLxpzlo.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*03"
+    schedule: daily
+   1080p-HDR-IMAX:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: Imax
+    url_poster: https://i.imgur.com/7dpCe5J.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*04"
+    schedule: daily        
+   1080p-DolbyDigital:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: AC3
+      filepath.not: EAC3
+    url_poster: https://i.imgur.com/eKOJjQw.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*05"
+    schedule: daily
+   1080p-DolbyDigitalPlus:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: EAC3
+      filepath.not: Atmos
+    url_poster: https://i.imgur.com/zTs7AcW.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*05"
+    schedule: daily
+   1080p-DolbyDigitalPlusAtmos:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: Atmos
+      filepath.not: TrueHD
+    url_poster: https://i.imgur.com/1nXDAkA.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*06"
+    schedule: daily
+   1080p-DolbyTrueHD:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: TrueHD
+      filepath.not: Atmos
+    url_poster: https://i.imgur.com/CLFbVsp.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*07"
+    schedule: daily
+   1080p-DolbyTrueHDAtmos:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: Atmos
+      filepath.not: EAC3
+    url_poster: https://i.imgur.com/5VF23jM.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*08"
+    schedule: daily
+   1080p-dtsX:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: DTS-X
+    url_poster: https://i.imgur.com/pf82I2n.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*09"
+    schedule: daily
+   1080p-dtsHD:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: DTS-HD MA
+    url_poster: https://i.imgur.com/15RNFIr.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*10"
+    schedule: daily
+   1080p-HDR-DolbyDigital:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: AC3
+      filepath.not: EAC3
+    url_poster: https://i.imgur.com/TwPXryl.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*11"
+    schedule: daily
+   1080p-HDR-DolbyDigitalPlus:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: EAC3
+      filepath.not: Atmos
+    url_poster: https://i.imgur.com/6SYEOI8.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*12"
+    schedule: daily
+   1080p-HDR-DolbyDigitalPlusAtmos:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: Atmos
+      filepath.not: TrueHD
+    url_poster: https://i.imgur.com/fFFh66G.png
+    url_background: https://i.imgur.com/fFFh66G.png
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*13"
+    schedule: daily
+   1080p-HDR-DolbyTrueHD:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: TrueHD
+      filepath.not: Atmos
+    url_poster: https://i.imgur.com/IYRedDq.png
+    url_background: https://i.imgur.com/IYRedDq.png
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*14"
+    schedule: daily
+   1080p-HDR-DolbyTrueHDAtmos:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: Atmos
+      filepath.not: EAC3
+    url_poster: https://i.imgur.com/J1cVcB7.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*15"
+    schedule: daily
+   1080p-HDR-dtsX:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: DTS-X
+    url_poster: https://i.imgur.com/jOcZCBW.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*16"
+    schedule: daily
+   1080p-HDR-dtsHD:
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: DTS-HD MA
+    url_poster: https://i.imgur.com/mxojjsu.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*17"
+    schedule: daily
+   DV:
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+    url_poster: https://i.imgur.com/v7DuHjD.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*18"
+    schedule: daily
+   DV-DolbyDigital:
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: AC3
+      filepath.not: EAC3
+    url_poster: https://i.imgur.com/hsdbHcP.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*19"
+    schedule: daily
+   DV-DolbyDigitalPlus:
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: EAC3
+      filepath.not: Atmos
+    url_poster: https://i.imgur.com/oCRXyGr.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*20"
+    schedule: daily
+   DV-DolbyDigitalPlusAtmos:
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: Atmos
+      filepath.not: TrueHD
+    url_poster: https://i.imgur.com/1zB2EV0.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*21"
+    schedule: daily
+   DV-DolbyTrueHD:
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: TrueHD
+      filepath.not: Atmos
+    url_poster: https://i.imgur.com/vtYnGj9.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*22"
+    schedule: daily
+   DV-DolbyTrueHDAtmos:
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: Atmos
+      filepath.not: EAC3
+    url_poster: https://i.imgur.com/Piymks3.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*23"
+    schedule: daily
+   DV-dtsX:
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: DTS-X
+    url_poster: https://i.imgur.com/OuZFlXT.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*24"
+    schedule: daily
+   DV-dtsHD:
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: DTS-HD MA
+    url_poster: https://i.imgur.com/JFVn6VZ.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*25"
+    schedule: daily
+   4K:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+    url_poster: https://i.imgur.com/7E1p2vU.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*26"
+    schedule: daily
+   4K-HDR:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+    url_poster: https://i.imgur.com/jxs0cjj.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*27"
+    schedule: daily
+   4K-IMAX:
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: false
+      filepath: Imax
+    url_poster: https://i.imgur.com/gdujNfS.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*28"
+    schedule: daily
+   4K-HDR-IMAX:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: Imax
+    url_poster: https://i.imgur.com/DT04wAq.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*29"
+    schedule: daily
+   4K-DolbyDigital:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: AC3
+      filepath.not: EAC3
+    url_poster: https://i.imgur.com/YVmUgsD.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*30"
+    schedule: daily
+   4K-DolbyDigitalPlus:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: EAC3
+      filepath.not: Atmos
+    url_poster: https://i.imgur.com/ISKTrJO.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*31"
+    schedule: daily
+   4K-DolbyDigitalPlusAtmos:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: Atmos
+      filepath.not: TrueHD
+    url_poster: https://i.imgur.com/6Q6IehA.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*32"
+    schedule: daily
+   4K-DolbyTrueHD:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: TrueHD
+      filepath.not: Atmos
+    url_poster: https://i.imgur.com/3InNTfe.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*33"
+    schedule: daily    
+   4K-DolbyTrueHDAtmos:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: Atmos
+      filepath.not: EAC3
+    url_poster: https://i.imgur.com/27vh2U3.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*34"
+    schedule: daily
+   4K-dtsX:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: DTS-X
+    url_poster: https://i.imgur.com/4UufQYJ.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*35"
+    schedule: daily
+   4K-dtsHD:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: DTS-HD MA
+    url_poster: https://i.imgur.com/FAzYJGc.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*36"
+    schedule: daily
+   4K-HDR-DolbyDigital:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: AC3
+      filepath.not: EAC3
+    url_poster: https://i.imgur.com/VxWu2b1.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*37"
+    schedule: daily
+   4K-HDR-DolbyDigitalPlus:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: EAC3
+      filepath.not: Atmos
+    url_poster: https://i.imgur.com/OZMg46c.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*38"
+    schedule: daily
+   4K-HDR-DolbyDigitalPlusAtmos:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: Atmos
+      filepath.not: TrueHD
+    url_poster: https://i.imgur.com/sapz1d6.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*39"
+    schedule: daily
+   4K-HDR-DolbyTrueHD:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: TrueHD
+      filepath.not: Atmos
+    url_poster: https://i.imgur.com/LKfN46Q.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*40"
+    schedule: daily
+   4K-HDR-DolbyTrueHDAtmos:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: Atmos
+      filepath.not: EAC3
+    url_poster: https://i.imgur.com/HTp8Qjp.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*41"
+    schedule: daily
+   4K-HDR-dtsX:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: DTS-X
+    url_poster: https://i.imgur.com/C1UVKna.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*42"
+    schedule: daily
+   4K-HDR-dtsHD:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: DTS-HD MA
+    url_poster: https://i.imgur.com/N6bjDRR.png
+    url_background: https://i.imgur.com/THA8wCM.jpg
+    sync_mode: sync
+    collection_mode: default
+    collection_order: release
+    sort_title: "*43"
+    schedule: daily
+   

@@ -1,0 +1,40 @@
+######################################################
+#                Chart Collections                   #
+######################################################
+
+collections:
+  Trending Kids Movies:
+    sort_title: +01_1Trending
+    sync_mode: sync
+    collection_order: custom
+    trakt_trending: 150
+    summary: A collection of movies trending across the internet
+    url_poster: https://i.imgur.com/LFJnVzC.jpg
+    url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
+    visible_library: true
+    visible_home: true
+    visible_shared: false
+
+  Popular Kids Movies:
+    sort_title: +01_2Popular
+    sync_mode: sync
+    smart_label: random
+    trakt_watched_weekly: 150
+    summary: A collection of the most watched movies over the past week.
+    url_poster: https://i.imgur.com/WhHiFPX.jpg
+    url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  Newly Released Kids Movies:
+    sort_title: +01_3NewReleases
+    sync_mode: sync
+    smart_label: added.desc
+    trakt_list: https://trakt.tv/users/giladg/lists/latest-releases
+    summary: A collection of newly-released movies in cinema and on streaming services
+    url_poster: https://i.imgur.com/D62EdJd.jpg
+    url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
+    visible_library: true
+    visible_home: false
+    visible_shared: false

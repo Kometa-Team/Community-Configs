@@ -1,0 +1,56 @@
+#######################################################
+#                  SiskoUrso                          #
+#                TV Collection                        #
+#######################################################
+templates:
+  Collection:
+    optional:
+      - list
+      - show
+    tvdb_list_details: <<list>>
+    tvdb_show: <<show>>
+    url_poster: <<poster>>
+    url_background: <<background>>
+    sync_mode: sync
+    collection_order: release
+
+#######################################################
+#######################################################
+
+collections:
+
+  Battlestar Galactica:
+    template: {name: Collection, show: "73545, 85040, 204781", poster: https://theposterdb.com/api/assets/122190, background: https://i.imgur.com/gBPKeK3.jpg}
+    summary: Collection of Battlestar Galactica Series.
+  C.S.I:
+    template: {name: Collection, show: "72546, 78310, 73696, 281551, 400248", poster: https://theposterdb.com/api/assets/102143, background: https://i.imgur.com/cMZZTI1.jpg}
+    summary: Collection of CSI Tv Shows
+  Law & Order:
+    template: {name: Collection, show: "72368, 75692, 71489, 328518, 74191, 168161, 383397", poster: https://theposterdb.com/api/assets/57562, background: https://i.imgur.com/6ovPJNP.jpg}
+    summary: Collection of Law & Order Series.
+  Marvel Television:
+    template: {name: Collection, show: "263365, 281485, 320558, 281662, 284190, 304219, 317953, 326490, 331980, 332027, 341455, 364038, 362392, 362496, 362472, 367147, 368613, 368612, 393204, 393203, 368611, 367146, 393205, 393201, 412429, 412428, 412431, 361834, 361835, 367227, 92782, 92783", poster: https://theposterdb.com/api/assets/19667, background: https://i.imgur.com/MFpNkHm.jpg}
+    summary: Collection of shows in the Marvel TV Universe.
+  Narcos:
+    template: {name: Collection, show: "282670, 353232", poster: https://theposterdb.com/api/assets/196849, background: https://i.imgur.com/RUqzj0C.jpg}
+    summary: Anthology of Netflix shows about the Columbia and Mexican drug cartells rise to power in the 1980's.
+  NCIS:
+    template: {name: Collection, show: "73710, 72108, 95441, 278125, 401630", poster: https://theposterdb.com/api/assets/182837, background: https://i.imgur.com/4Ytl8YS.jpg}
+    summary: Collection of shows starting from JAG which then spins into NCIS.
+  Star Trek:
+    template: {name: Collection, show: "77526, 73566, 71470, 72073, 74550, 73893, 328711, 364093, 367138, 385811, 382389, 264220", poster: https://theposterdb.com/api/assets/53471, background: https://i.imgur.com/FDAzvwt.jpg}
+    summary: Collection of Star Trek Tv Shows
+  Stargate:
+    template: {name: Collection, show: "72449, 70851, 83237, 70852, 339552", poster: https://theposterdb.com/api/assets/210311, background: https://i.imgur.com/GenuHMs.jpg}
+    summary: Collection of Stargate Tv Shows.
+  Star Wars (Animated):
+    template: {name: Collection, show: "83268, 283468, 385376, 393190, 72244, 351575, 330710, 250498, 356114, 393214, 70399, 73697, 334444, 368742, 380516, 358145", poster: https://theposterdb.com/api/assets/16243, background: https://i.imgur.com/IQUxJne.jpg}
+  Star Wars (Live Action):
+    template: {name: Collection, show: "393199, 393187, 380352, 393218, 361753, 393589, 393189, 393188, 83867", poster: https://theposterdb.com/api/assets/39679, background: https://i.imgur.com/GdLMZko.jpg}
+    summary: Collection of Star Wars TV Series.
+  The Walking Dead:
+    template: {name: Collection, show: "153021, 290853, 372787, 411314, 252861", poster: https://theposterdb.com/api/assets/128886, background: https://i.imgur.com/xRsOWt5.jpg}
+    summary: Collection of Walking Dead TV Shows.
+  The X-Files:
+    template: {name: Collection, show: "77398, 76245", poster: https://theposterdb.com/api/assets/160390, background: https://i.imgur.com/7JCO6cc.jpg}
+    summary: Collection of shows from the X-Files

@@ -1,0 +1,25 @@
+#Uses https://theposterdb.com/poster/143533
+
+collections:
+  Indiana Jones Collection:
+    tmdb_collection: https://www.themoviedb.org/collection/84
+    tmdb_summary: https://www.themoviedb.org/collection/84
+    #or trakt_list 
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/143533
+    sort_title: ++++++++_indiana_jones
+    collection_order: release
+
+metadata:
+  85: #Indiana Jones and the Raiders of the Lost Ark:
+    url_poster: https://theposterdb.com/api/assets/143534
+    sort_title: Indiana Jones 1
+  87: #Indiana Jones and the Temple of Doom:
+    url_poster: https://theposterdb.com/api/assets/143535
+    sort_title: Indiana Jones 2
+  89: #Indiana Jones and the Last Crusade:
+    url_poster: https://theposterdb.com/api/assets/143536
+    sort_title: Indiana Jones 3
+  217: #Indiana Jones and the Kingdom of the Crystal Skull:
+    url_poster: https://theposterdb.com/api/assets/143537
+    sort_title: Indiana Jones 4

@@ -1,0 +1,38 @@
+#############################################################
+#          Rotten Tomatoes Certified Fresh Overlay          #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Call this from your config.yml (Movie or Show):          #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/rt_cert_fresh                    #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the weight for the overlay                 #
+#          weight: 20                                       #
+#############################################################
+
+templates:
+  RTCertFresh:
+    optional:
+      - overlay_level
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfresh<<library_type>>s
+    default:
+      overlay: <<overlay_name>>
+      weight: 20
+    overlay:
+      name: <<overlay_name>>
+      git: PMM/overlays/images/<<overlay>>
+      group: ribbon
+      weight: <<weight>>
+      horizontal_offset: 0
+      horizontal_align: right
+      vertical_offset: 0
+      vertical_align: bottom
+
+overlays:
+
+  RT-Cert-Fresh-Ribbon:
+    template:
+      - name: RTCertFresh

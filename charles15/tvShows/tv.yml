@@ -1,0 +1,27 @@
+######################################################
+#                     TV Shows                       #
+######################################################
+templates:
+  Chart:
+    sort_title: +02_<<collection_name>>
+    sync_mode: sync
+######################################################
+#                    TV Charts                       #
+######################################################
+collections:
+  Zoidberg Popular:
+    sort_title: +01_<<collection_name>>
+    sync_mode: sync
+    tautulli_watched:
+      list_days: 365
+      list_size: 15
+      list_buffer: 25
+    summary: Most popular TV Shows on Plex in the last year.
+    name_mapping: Zoidberg Popular Shows
+  Business Den:
+    sort_title: +02_<<collection_name>>
+    sync_mode: sync
+    tmdb_list: 8196451
+    url_poster: https://mymodernmet.com/wp/wp-content/uploads/2019/05/Euanart-Jaws-Shark-Photo-5.jpg
+    summary: Collection of all Entrepreneur Pitch Shows (i.e. Dragon's Den, Shark Tank)
+    

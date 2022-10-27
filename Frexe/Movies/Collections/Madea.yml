@@ -1,0 +1,20 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Madea - Collezione":
+    template: {name: Set, collection: 534673, poster: https://theposterdb.com/api/assets/166249 }
+
+  "Boo! A Madea Halloween":
+    template: {name: Set, list: 8195963, poster: https://theposterdb.com/api/assets/161313 }

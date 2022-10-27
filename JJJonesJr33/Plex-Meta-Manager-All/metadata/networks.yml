@@ -1,0 +1,139 @@
+##############################################################
+##                 Networks Collections                     ##
+##                Created by JJJonesJr33                    ##
+##                      Version 1.5                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##               Yozora, Bullmoose20, & Sohjiro             ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:
+  network:
+    optional:
+      - network
+    tmdb_network: <<network>>
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: <<collection_name>>
+    collection_mode: hide
+    sync_mode: sync
+
+#############################
+##       Collections       ##
+#############################
+
+# FYI: To allow for Network collections to be created you must have TMDB API in the core config setup first.
+
+collections:
+  A&E:
+    template: { name: network, network: 129, poster: 212620}
+  ABC:
+    template: { name: network, network: "2, 75, 2791", poster: 204735}
+  Adult Swim:
+    template: { name: network, network: 80, poster: 204736}
+  AMC:
+    template: { name: network, network: "174, 4661", poster: 204737}
+  Apple TV+:
+    template: { name: network, network: "2552, 1932", poster: 204738}
+  BBC:
+    template: { name: network, network: "100, 1155, 375, 493, 3546, 4, 332, 3, 126, 317", poster: 204739}
+  BET:
+    template: { name: network, network: 24, poster: 212646}
+  Bravo:
+    template: { name: network, network: 74, poster: 204740}
+  Cartoon Network:
+    template: { name: network, network: 56, poster: 204731}
+  CBS:
+    template: { name: network, network: "16, 1709, 2621", poster: 204730}
+  Cinemax:
+    template: { name: network, network: 359, poster: 204732}
+  Comedy Central:
+    template: { name: network, network: 47, poster: 204743}
+  Dave:
+    template: { name: network, network: 388, poster: 204728}
+  Disney+:
+    template: { name: network, network: 2739, poster: 204745}
+  Disney Channel:
+    template: { name: network, network: 142, poster: 212622}
+  Disney XD:
+    template: { name: network, network: 44, poster: 212645}
+  Disney Junior:
+    template: { name: network, network: 2991, poster: 212623}
+  Discovery:
+    template: { name: network, network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741", poster: 212621}
+  E!:
+    template: { name: network, network: 76, poster: 212644}
+  ESPN:
+    template: { name: network, network: "29, 70, 4132", poster: 212624}
+  FOX:
+    template: { name: network, network: "19, 2686, 875, 45, 87, 131, 2317, 243, 2320", poster: 204746}
+  Freeform:
+    template: { name: network, network: 1267, poster: 212625}
+  FX:
+    template: { name: network, network: 88, poster: 212627}
+  Hallmark:
+    template: { name: network, network: 384, poster: 204747}
+  HBO:
+    template: { name: network, network: "49, 5484, 5485, 3186, 2593", poster: 204710}
+  Hulu:
+    template: { name: network, network: 453, poster: 204711}
+  HGTV:
+    template: { name: network, network: 210, poster: 212628}
+  National Geographic:
+    template: { name: network, network: "43, 799, 1756, 1825, 3355, 4293, 4476", poster: 212630}
+  ITV:
+    template: { name: network, network: "9, 149, 1159, 261, 590", poster: 204712}
+  Lifetime:
+    template: { name: network, network: "34, 1072", poster: 204713}
+  MTV:
+    template: { name: network, network: 33, poster: 204714}
+  NBC:
+    template: { name: network, network: "6, 413", poster: 204715}
+  Netflix:
+    template: { name: network, network: 213, poster: 204716}
+  Nickelodeon:
+    template: { name: network, network: 13, poster: 204717}
+  Paramount+:
+    template: { name: network, network: "4330, 2076" , poster: 204718}
+  PBS:
+    template: { name: network, network: "14, 122, 2354" , poster: 204719}
+  Peacock:
+    template: { name: network, network: 3353, poster: 212631}
+  Prime:
+    template: { name: network, network: 1024, poster: 204721}
+  Showtime:
+    template: { name: network, network: 67, poster: 204720}
+  Sky:
+    template: { name: network, network: 214, poster: 204722}
+  Starz:
+    template: { name: network, network: "318, 758", poster: 204723}
+  Syfy:
+    template: { name: network, network: 77, poster: 204724}
+  Shudder:
+    template: { name: network, network: 2949, poster: 212643}
+  TBS:
+    template: { name: network, network: 68, poster: 204729}
+  The CW:
+    template: { name: network, network: 71, poster: 204744}
+  Warner Bros.:
+    template: { name: network, network: 21, poster: 212632}
+  TLC:
+    template: { name: network, network: 84, poster: 204725}
+  TruTV:
+    template: { name: network, network: 364, poster: 204726}
+  USA:
+    template: { name: network, network: 30, poster: 204733}
+  TNT:
+    template: { name: network, network: 41, poster: 212634}
+  YouTube:
+    template: { name: network, network: "247, 1436", poster: 212633}
+

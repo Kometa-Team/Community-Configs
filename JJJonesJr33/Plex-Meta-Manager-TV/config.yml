@@ -1,0 +1,98 @@
+## This file is a template remove the .template to use the file
+
+libraries: # Library mappings must have a colon (:) placed after them
+  TV Shows:
+    library_name: TV Shows
+    metadata_path:
+    - /config/metadata/suggestions.yml
+    - /config/metadata/networks.yml
+    - /config/metadata/kids.yml
+    settings:
+      missing_path: config/missing
+      asset_directory:
+      - config/assets/
+      - config/assets/kids
+      - config/assets/networks
+      - config/assets/suggestions
+    operations:
+      assets_for_all: false
+      split_duplicates: false
+      delete_unmanaged_collections: true
+settings: # Can be individually specified per library as well
+  cache: true
+  cache_expiration: 60
+  asset_folders: true
+  asset_depth: 3
+  create_asset_folders: true
+  create_asset_directories: true
+  dimensional_asset_rename: true
+  sync_mode: sync
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: true
+  only_filter_missing: false
+  show_unmanaged: true
+  show_filtered: true
+  show_options: true
+  show_missing: false
+  show_missing_assets: false
+  show_missing_season_assets: false
+  save_missing: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  minimum_items: 1
+  default_collection_order:
+  download_url_assets: true
+  verify_ssl: true
+  item_refresh_delay: 0
+  asset_directory: config/assets
+  missing_path: config/missing
+  playlist_sync_to_users: all
+  show_missing_episode_assets: true
+  show_asset_not_needed: true
+  custom_repo:
+  prioritize_assets: false
+  playlist_report: true
+  check_nightly: false
+webhooks:
+  error: notifiarr
+  run_start: notifiarr
+  run_end: notifiarr
+  changes: notifiarr
+  version:
+plex: # REQUIRED - see https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Attributes
+  url: http://192.168.1.2:32400/
+  token: 
+  timeout: 60
+  clean_bundles: true
+  empty_trash: true
+  optimize: false
+tmdb:  # REQUIRED for the script to run - to get a key you must follow https://developers.themoviedb.org/3/getting-started/introduction
+  apikey: 
+  language: en
+  cache_expiration: 60
+  region:
+tautulli: # Can be individually specified per library as well
+  url: http://192.168.1.2:8181/
+  apikey: 
+omdb:
+  apikey: 
+  cache_expiration: 60
+notifiarr:
+  apikey: 
+anidb: # Not required for AniDB builders unless you want mature content
+  username: 
+  password: 
+  language: en
+trakt:
+  client_id: 
+  client_secret: 
+  authorization:
+    access_token: 
+    token_type: 
+    expires_in: 
+    refresh_token: 
+    scope: public
+    created_at: 

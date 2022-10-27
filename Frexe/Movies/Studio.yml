@@ -1,0 +1,33 @@
+templates:
+  Studio:
+    optional:
+      - company
+      - list
+    tmdb_company: <<company>>
+    tmdb_list: <<list>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Blue Sky Studios":
+    template: {name: Studio, company: 9383, poster: https://theposterdb.com/api/assets/183134 }
+
+  "Happy Madison Productions":
+    template: {name: Studio, company: 878, poster: https://theposterdb.com/api/assets/218229 }
+
+  "National Lampoon Productions":
+    template: {name: Studio, list: https://www.themoviedb.org/list/8212873, poster: https://theposterdb.com/api/assets/195058 }
+
+  "Pixar Animation Studios":
+    template: {name: Studio, company: 3, poster: https://theposterdb.com/api/assets/189763 }
+
+  "Sony Pictures Animation":
+    template: {name: Studio, company: 2251, poster: https://theposterdb.com/api/assets/178903 }
+
+  "Studio Ghibli":
+    template: {name: Studio, company: 10342, poster: https://theposterdb.com/api/assets/193453 }
+
+  "Walt Disney Animation Studios":
+    template: {name: Studio, company: 6125, poster: https://theposterdb.com/api/assets/191971 }
