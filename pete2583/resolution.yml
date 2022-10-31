@@ -268,7 +268,7 @@ overlays:
         resolution: 1080p
         hdr: false
     filters:
-      filepath: DTS-HD MA
+      filepath: DTS-HD
     
   1080p-HDR-DolbyDigital:
     template:
@@ -350,7 +350,7 @@ overlays:
         resolution: 1080p
         hdr: true
     filters:
-      filepath: DTS-HD MA
+      filepath: DTS-HD
     
   DV:
     template:
@@ -449,7 +449,7 @@ overlays:
         resolution: 4K
     filters:
       has_dolby_vision: true
-      filepath: DTS-HD MA
+      filepath: DTS-HD
     
   4K:
     template:
