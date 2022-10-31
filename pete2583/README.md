@@ -19,5 +19,7 @@ The default set of Plex Meta Manager Sponsored Configs is located in the [PMM Fo
 
 Please consider [donating](https://github.com/sponsors/meisnate12) towards the project.
 
-This is my version of ICHIMOKU's overlay config. Using the images from bradmarrti but not creating collections for each overlay, instead just applying them directly to the library. 
+The resolution config is my version of ICHIMOKU's overlay config. Using the images from bradmarrti but not creating collections for each overlay, instead just applying them directly to the library. 
+
+The banner config is a slightly tweaked version of the PMM default ribbon. Where by the PMM default only adds an overlay to movies that have won "Best Picture" mine will overlay all movies that have an oscar awarded in any category. 
 
