@@ -11,6 +11,9 @@
 ##########################################################################
 ##########################################################################
 
+
+
+
 #   +01_ = Charts
 #   +02_ = Holidays
 #   +03_ = Studios or Network
@@ -32,6 +35,7 @@ templates:
     sync_mode: sync
     url_background: https://bit.ly/PlexMovieBackground
     smart_label: originally_available.desc
+    item_refresh: true
 
 collections:
 
@@ -39,6 +43,7 @@ collections:
     sort_title: +00_1watchingnow
     summary: Watching now
     sync_mode: sync
+    #collection_order: custom
     trakt_watchlist:
       - me
     trakt_list:
@@ -46,37 +51,50 @@ collections:
       - https://trakt.tv/users/mraniki/lists/tonightseries
 
   Trending:
-    sync_mode: sync
-    collection_order: custom
-    #trakt_recommended_daily: 20
+   # sync_mode: sync
+  #  collection_order: custom
+  #  trakt_recommended_daily: 60
   #  trakt_recommended_weekly: 1
-    tmdb_trending_daily: 30
+   # tmdb_trending_daily: 20
   #  tmdb_trending_weekly: 1
-    sort_title: '+01_1Trending'
+    sort_title: "+01_1Trending"
     summary: Movies & Shows Trending across the internet
     url_poster: https://i.imgur.com/kEi4zWu.png
     visible_home: true
+    trakt_chart:
+      chart: trending
+      limit: 60
+    collection_order: custom
+    sync_mode: sync
 
   Popular:
     sync_mode: sync
     collection_order: custom
   # tmdb_popular: 20
-    trakt_popular: 40
+    trakt_chart:
+      chart: popular
+      limit: 100
   # trakt_recommended_yearly: 10
-    sort_title: '+01_2Popular'
+    sort_title: "+01_2Popular"
     url_poster: https://i.imgur.com/EbhXNCG.png 
     summary: Popular Movies & Shows across the internet
 
+  # Dernier Film Francais:
+  #   sort_title: +01_3FilmFrancais
+  #   summary: Dernier Film Francais
+  #   sync_mode: sync
+  #   smart_filter:
+  #     type: movies
+  #     all:        
+  #       country: France
+  #     sort_by: release.desc 
+  #     limit: 150
+
   Dernier Film Francais:
+    template: { name: Trakt}
     sort_title: +01_3FilmFrancais
-    summary: Dernier Film Francais
-    sync_mode: sync
-    smart_filter:
-      type: movies
-      all:        
-        country: France
-      sort_by: release.desc 
-      limit: 150
+    trakt_list_details: 
+        - https://trakt.tv/users/mraniki/lists/charts-trending-french-movies
 
   Film in French:
     sort_title: +01_5FilmenFrancais
