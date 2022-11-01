@@ -33,7 +33,7 @@ templates:
     url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
     collection_order: release
     
-  Genre:
+  TraktGenre:
     sort_title: +06_<<collection_name>>
     sync_mode: sync
     url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
@@ -42,36 +42,36 @@ templates:
 collections:
  
   Action:
-    template: { name: GenreMulti}
+    template: { name: TraktGenre}
     trakt_list: 
-      - https://trakt.tv/users/fresnobiker/lists/action-movies-2000-to-2021
-      - https://trakt.tv/users/g0g0/lists/heroic-killer-bad-ass
-      - https://trakt.tv/users/movistapp/lists/action
-      - https://trakt.tv/users/grimreaper1972/lists/action-tv
-      - https://trakt.tv/users/buzdekay/lists/action
+      - https://trakt.tv/users/mraniki/lists/theme-action
+      # - https://trakt.tv/users/fresnobiker/lists/action-movies-2000-to-2021
+      # - https://trakt.tv/users/g0g0/lists/heroic-killer-bad-ass
+      # - https://trakt.tv/users/movistapp/lists/action
+      # - https://trakt.tv/users/grimreaper1972/lists/action-tv
+      # - https://trakt.tv/users/buzdekay/lists/action
     url_background: https://images.unsplash.com/photo-1588281345136-9893252095bd
     url_poster: https://theposterdb.com/api/assets/203054
 
   Adventure:
-    template: { name: GenreMulti}
+    template: { name: TraktGenre}
     url_poster: https://theposterdb.com/api/assets/203108
-    trakt_list: 
-      - https://trakt.tv/users/movistapp/lists/adventure
-      - https://trakt.tv/users/krissykk/lists/adventure-drama-comedy-discovery-novels-1of2
+    trakt_list:
+      - https://trakt.tv/users/mraniki/lists/theme-adventure 
+      # - https://trakt.tv/users/movistapp/lists/adventure
+      # - https://trakt.tv/users/krissykk/lists/adventure-drama-comedy-discovery-novels-1of2
  
   Animation:
-    template: { name: Genre}
+    template: { name: TraktGenre}
     url_poster: https://theposterdb.com/api/assets/203119
     trakt_list: 
-      - https://trakt.tv/users/movistapp/lists/animation
-
+      - https://trakt.tv/users/porkie16/lists/animation-movies-kids-only-rating-65
 
   Anime:
-    template: { name: GenreMulti}
+    template: { name: TraktGenre}
     url_poster: https://theposterdb.com/api/assets/203124
     trakt_list: 
-      - https://trakt.tv/users/giladg/lists/site-sound-50-essential-anime-films
-      - https://trakt.tv/users/sweevie/lists/top-100-anime-movies
+      - https://trakt.tv/users/theultimatec0der/lists/best-of-anime
 
 
   Bollywood:
@@ -181,14 +181,24 @@ collections:
       - https://trakt.tv/users/ld667/lists/best-fantasy-movies-of-all-time
 
   Food:
-    template: { name: GenreMulti}
-    trakt_list: 
-      - https://trakt.tv/users/mraniki/lists/theme-food-kitchen
-      - https://trakt.tv/users/idelo/lists/food-movies
-      - https://trakt.tv/users/mrecko/lists/food
-      - https://trakt.tv/users/justin/lists/open-your-eyes
-      - https://trakt.tv/users/idelo/lists/food-movies
-      - https://trakt.tv/users/avaly13/lists/foodie-faves
+    # template: { name: GenreMulti}
+    # sync_mode: append
+    # trakt_list: 
+    #   - https://trakt.tv/users/mraniki/lists/theme-food-kitchen
+    #   - https://trakt.tv/users/idelo/lists/food-movies
+    #   - https://trakt.tv/users/mrecko/lists/food
+    #   - https://trakt.tv/users/justin/lists/open-your-eyes
+    #   - https://trakt.tv/users/idelo/lists/food-movies
+    #   - https://trakt.tv/users/avaly13/lists/foodie-faves
+    sync_mode: append
+    sort_title: +06_Food
+    smart_filter:
+      all:        
+        genre: food
+      sort_by: release.desc 
+    # tmdb_keyword: 10637
+    # sync_mode: append
+    # sort_by: first_air_date.desc
 
 
   Gangster:
@@ -303,6 +313,17 @@ collections:
       - https://trakt.tv/users/evilbyte/lists/hard-science-fiction
       - https://trakt.tv/users/zapin/lists/best-sci-fi-series
 
+  Show:
+    template: { name: GenreMulti}
+    trakt_list: 
+      - https://trakt.tv/users/mraniki/lists/show
+      - https://trakt.tv/users/toasterfaerie/lists/national-theatre-live
+      - https://trakt.tv/users/mraniki/lists/spectacles-francais
+      - https://trakt.tv/users/mraniki/lists/theatre-francais
+      - https://trakt.tv/users/mraniki/lists/au-theatre-ce-soir
+      - https://trakt.tv/users/loriejcall/lists/national-theatre-at-home-2020-04-2020-07
+      - https://trakt.tv/users/toasterfaerie/lists/national-theatre-live
+
   Sketch Shows:
     template: { name: GenreMulti}
     trakt_list: 
@@ -319,25 +340,21 @@ collections:
   Stand Up Comedy:
     template: { name: GenreMulti}
     trakt_list: 
-      - https://trakt.tv/users/lish408/lists/stand-up-comedy-specials
-      - https://trakt.tv/users/mertens21/lists/stand-up
+      - https://trakt.tv/users/lish408/lists/stand-up-comedy-specials #regularly updated
+      - https://trakt.tv/users/giladg/lists/stand-up-comedy
+      - https://trakt.tv/users/mraniki/lists/theme-standup #manual update
+      #- https://trakt.tv/users/mertens21/lists/stand-up
       - https://trakt.tv/users/firestickplusmankodi/lists/urban-standup
       - https://trakt.tv/users/jakdarippa/lists/stand-up-comedy
-      - https://trakt.tv/users/chuckleslecloun/lists/stand-up-added-individually
-      - https://trakt.tv/users/mraniki/lists/standup
+      #- https://trakt.tv/users/chuckleslecloun/lists/stand-up-added-individually
       - https://trakt.tv/users/designrat/lists/netflix-stand-up-specials
-      - https://trakt.tv/users/giladg/lists/stand-up-comedy
 
-  Show:
+  Survivalist:
     template: { name: GenreMulti}
     trakt_list: 
-      - https://trakt.tv/users/mraniki/lists/show
-      - https://trakt.tv/users/toasterfaerie/lists/national-theatre-live
-      - https://trakt.tv/users/mraniki/lists/spectacles-francais
-      - https://trakt.tv/users/mraniki/lists/theatre-francais
-      - https://trakt.tv/users/mraniki/lists/au-theatre-ce-soir
-      - https://trakt.tv/users/loriejcall/lists/national-theatre-at-home-2020-04-2020-07
-      - https://trakt.tv/users/toasterfaerie/lists/national-theatre-live
+      - https://trakt.tv/users/selection16/lists/survivalist-shows
+      - https://trakt.tv/users/whitecoat21/lists/survival-sustainability-homesteading-off-grid-living
+
  
   Sword & Sorcery:
     template: { name: GenreMulti}
@@ -387,8 +404,6 @@ collections:
       - https://trakt.tv/users/ld667/lists/the-most-epic-zombie-films-since-2000
       - https://trakt.tv/users/almj24/lists/zombies
       - https://trakt.tv/users/mraniki/lists/zombie
-
-
 
 
 

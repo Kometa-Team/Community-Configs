@@ -27,53 +27,76 @@
 #####################################################
 
 templates:
-  SFF Template:
-    sort_title: '+05_collection<<year>>'
-    smart_label: audience_rating.desc
-    summary: 'Sundance Film Festival of <<year>>'
-    sync_mode: append
-    trakt_list: https://trakt.tv/users/vermelholimao/lists/sundance-film-festival-<<year>>
-    item_label: Sundance Film Festival
-  SFF Genre Template:
-    sort_title: '*Sundance Film Festival <<genre>>'
-    smart_label: audience_rating.desc
-    smart_filter:
-      all:
-        label: Sundance Film Festival
-        genre: <<genre>>
-    summary: 'Sundance Film Festival: <<genre>>'
-    sync_mode: append
-    
+  Trakt:
+    sort_title: +05_collection_Z_<<collection_name>>
+    sync_mode: sync
+    url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
+    collection_order: custom
+
 collections:
 
-
   Korean Cinema:
-    trakt_list: 
-      - https://trakt.tv/users/sp1ti/lists/lovehkfilm-s-top-100-hong-kong-films-of-the-ninetie
+    template: { name: Trakt}
+    trakt_list_details: 
       - https://trakt.tv/users/c858/lists/korean-movies
-    sync_mode: sync
-    sort_title: "+05_collection_Z_Korean Cinema"
-    summary: "Korean movies"
-    smart_label: audience_rating.desc
 
   Japan Cinema:
-    schedule: weekly(sunday)
-    sort_title: +05_collection_Z_Japan Cinema
-    summary: A collection of Japanese Films.
-    sync_mode: sync
-    smart_filter:
-      all:        
-        audio_language: ja
-      sort_by: release.desc 
+    template: { name: Trakt}
+    trakt_list_details:
+      - https://trakt.tv/users/mraniki/lists/charts-japanese-box-office
 
   HKG Cinema:
-    schedule: weekly(sunday)
-    sort_title: +05_collection_Z_hk
+    template: { name: Trakt}
+    trakt_list_details: 
+      - https://trakt.tv/users/sp1ti/lists/lovehkfilm-s-top-100-hong-kong-films-of-the-ninetie
     summary: A collection of Hong Kong Films.
-    sync_mode: sync
-    smart_filter:
-      all:        
-        country: Hong Kong
-      sort_by: release.desc 
 
+  Kollywood Cinema:
+    template: { name: Trakt}
+    collection_order: release
+    trakt_list_details:
+      - https://trakt.tv/users/mraniki/lists/charts-kollywood-top-box-office
+      - https://trakt.tv/users/mraniki/lists/awards-india-national-film-award-for-best-feature-film-in-tamil-1954-to-2019
+
+  Russian Cinema:
+    template: { name: TraktAward} 
+    collection_order: release
+    trakt_list_details:
+      - https://trakt.tv/users/mraniki/lists/awards-russia-russian-guild-of-film-critics-best-film-1998-2021
+      - https://trakt.tv/users/mraniki/lists/awards-russia-golden-eagle-awards-2003-to-2022
+
+  Nordic Cinema:
+    template: { name: TraktAward} 
+    trakt_list_details:
+     - https://trakt.tv/users/mraniki/lists/awards-nordic-council-film-prize-all-nominated-films-2002-2022
+
+
+
+#old queries
+  # Korean Cinema:
+  #   trakt_list: 
+  #     - https://trakt.tv/users/sp1ti/lists/lovehkfilm-s-top-100-hong-kong-films-of-the-ninetie
+  #     - https://trakt.tv/users/c858/lists/korean-movies
+  #   sync_mode: sync
+  #   sort_title: "+05_collection_Z_Korean Cinema"
+  #   summary: "Korean movies"
+  #   smart_label: audience_rating.desc
+
+  # Japan Cinema:
+  #   sort_title: +05_collection_Z_Japan Cinema
+  #   summary: A collection of Japanese Films.
+  #   sync_mode: sync
+  #   smart_filter:
+  #     all:        
+  #       audio_language: ja
+  #     sort_by: release.desc 
+
+  # HKG Cinema:
+  #   sort_title: +05_collection_Z_hk
+  #   summary: A collection of Hong Kong Films.
+  #   sync_mode: sync
+  #   smart_filter:
+  #     all:        
+  #       country: Hong Kong
+  #     sort_by: release.desc 
 
