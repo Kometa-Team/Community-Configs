@@ -1,0 +1,48 @@
+##############################################################################
+#                               Ribbon Overlay                               #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#      https://metamanager.wiki/en/latest/defaults/overlays/ribbon.html      #
+##############################################################################
+
+external_templates:
+  pmm: templates
+  template_variables:
+    group: ribbon
+    pmm: ribbon/<<key>>
+    horizontal_offset: 0
+    horizontal_align: right
+    vertical_offset: 0
+    vertical_align: bottom
+
+templates:
+  ribbon:
+    optional:
+      - mdb_key
+      - imdb_key
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/<<mdb_key>><<library_type>>s
+    imdb_chart: <<imdb_key>>_<<library_type>>s
+
+overlays:
+
+  Oscars Best Picture:
+    variables: {key: oscars, weight: 50}
+    template: {name: standard, allowed_libraries: movie}
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+
+  IMDb Top 250:
+    variables: {key: imdb, weight: 40, imdb_key: top}
+    template: [name: standard, name: ribbon]
+
+  Rotten Tomatoes Certified Fresh:
+    variables: {key: rotten, weight: 30, mdb_key: certifiedfresh}
+    template: [name: standard, name: ribbon]
+
+  Metacritic Must See:
+    variables: {key: metacritic, weight: 20, mdb_key: metacriticmustsee}
+    template: [name: standard, name: ribbon]
+
+  Commonsense Selection:
+    variables: {key: common, weight: 10, mdb_key: cssfamilies}
+    template: [name: standard, name: ribbon]
+
