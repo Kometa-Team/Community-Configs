@@ -1,28 +1,6 @@
 # This version of the config uses the 'Regular' version of the Planet show Posters as metadata.
 # The set can be found here: https://theposterdb.com/poster/238214
 
-templates:
-  Show:
-    optional:
-    - s0_pid
-    - s1_pid
-    - s2_pid
-    - s3_pid
-    - s4_pid
-    
-    url_poster: https://theposterdb.com/api/assets/<<s_pid>>
-    seasons:
-      0:
-        url_poster: https://theposterdb.com/api/assets/<<s0_pid>>
-      1:
-        url_poster: https://theposterdb.com/api/assets/<<s1_pid>>
-      2:
-        url_poster: https://theposterdb.com/api/assets/<<s2_pid>>
-      3:
-        url_poster: https://theposterdb.com/api/assets/<<s3_pid>>
-      4:
-        url_poster: https://theposterdb.com/api/assets/<<s4_pid>>
-
 collections:
   #Only the 'Planet' documentaries
   Attenborough's Planet Collection:
@@ -52,195 +30,371 @@ collections:
       actor: David Attenborough
 
 metadata:
-#====================================================================================
-#
-#                                PLANET SHOWS
-#
-#====================================================================================
+  #====================================================================================
+  #
+  #                                PLANET SHOWS
+  #
+  #====================================================================================
   79257: #Planet Earth:
-    template: {Name: Show, s_pid: 238212, s0_pid: 238213, s1_pid: 238214}
+    url_poster: https://theposterdb.com/api/assets/238212
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238213
+      1:
+        url_poster: https://theposterdb.com/api/assets/238214
   318408: #Planet Earth II:
-    template: {Name: Show, s_pid: , s0_pid: , s1_pid: 238218}
+    url_poster: https://theposterdb.com/api/assets/238216
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238217
+      1:
+        url_poster: https://theposterdb.com/api/assets/238218
   413197: #Planet Earth III:
-    template: {Name: Show, s_pid: , s0_pid: , s1_pid: }
+    url_poster:
 
   251418: #Frozen Planet:
-    template: {Name: Show, s_pid: 238206, s0_pid: 238207, s1_pid: 238208}
+    url_poster: https://theposterdb.com/api/assets/238206
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238207
+      1:
+        url_poster: https://theposterdb.com/api/assets/238208
   417395: #Frozen Planet II:
-    template: {Name: Show, s_pid: 238203, s0_pid: 238204, s1_pid: 238205}
+    url_poster: https://theposterdb.com/api/assets/264554
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/264555
+      1:
+        url_poster: https://theposterdb.com/api/assets/264556
 
   359250: #The Green Planet:
-    template: {Name: Show, s_pid: 238227, s1_pid: 238228}
+    url_poster: https://theposterdb.com/api/assets/238227
+    seasons:
+      1:
+        url_poster: https://theposterdb.com/api/assets/238228
 
   74372: #The Blue Planet:
-    template: {Name: Show, s_pid: 238224, s0_pid: 238225, s1_pid: 238226}
+    url_poster: https://theposterdb.com/api/assets/238224
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238225
+      1:
+        url_poster: https://theposterdb.com/api/assets/238226
   330942: #Blue Planet II:
-    template: {Name: Show, s_pid: , s0_pid: , s1_pid: }
+    url_poster: https://theposterdb.com/api/assets/238203
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238204
+      1:
+        url_poster: https://theposterdb.com/api/assets/238205
 
   359251: #Seven Worlds, One Planet:
-    template: {Name: Show, s_pid: 238222, s1_pid: 238223}
+    url_poster: https://theposterdb.com/api/assets/238222
+    seasons:
+      1:
+        url_poster: https://theposterdb.com/api/assets/238223
 
   418505: #Prehistoric Planet(2022):
-    template: {Name: Show, s_pid: 238219, s0_pid: 238220, s1_pid: 238221}
+    url_poster: https://theposterdb.com/api/assets/238219
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238220
+      1:
+        url_poster: https://theposterdb.com/api/assets/238221
 
   355229: # Our Planet:
-    template: {Name: Show, s_pid: 238209, s0_pid: 238210, s1_pid: 238211}
+    url_poster: https://theposterdb.com/api/assets/238209
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238210
+      1:
+        url_poster: https://theposterdb.com/api/assets/238211
 
   359365: # A Perfect Planet:
-    template: {Name: Show, s_pid: 238200, s0_pid: 238201, s1_pid: 238202}
+    url_poster: https://theposterdb.com/api/assets/238200
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238201
+      1:
+        url_poster: https://theposterdb.com/api/assets/238202
 
-
-
-#====================================================================================
-#
-#                                NON-PLANET SHOWS
-#
-#====================================================================================
+  #====================================================================================
+  #
+  #                                NON-PLANET SHOWS
+  #
+  #====================================================================================
   264241: # Adventure
-    template: {Name: Show, s_pid: 263992}
+    url_poster: https://theposterdb.com/api/assets/263992
 
   265145: # Africa (2013)
-    template: {Name: Show, s_pid: 238115, s0_pid: 238116, s1_pid: 238117}
+    url_poster: https://theposterdb.com/api/assets/238115
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238116
+      1:
+        url_poster: https://theposterdb.com/api/assets/238117
 
   151521: # Are We Changing Planet Earth? (aka The Truth About Climate Change)
-    template: {Name: Show, s_pid: 238051, s0_pid: 238052, s1_pid: 238053}
+    url_poster: https://theposterdb.com/api/assets/238051
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238052
+      1:
+        url_poster: https://theposterdb.com/api/assets/238053
 
   79610: # Attenborough in Paradise and Other Personal Voyages
-    template: {Name: Show, s_pid: 237994, s1_pid: 237995}
+    url_poster: https://theposterdb.com/api/assets/237994
+    seasons:
+      1:
+        url_poster: https://theposterdb.com/api/assets/237995
 
   397337: # Attenborough's Life in Color
-    template: {Name: Show, s_pid: 238160, s0_pid: 238161, s1_pid: 238162}
+    url_poster: https://theposterdb.com/api/assets/238160
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238161
+      1:
+        url_poster: https://theposterdb.com/api/assets/238162
 
   311317: # Attenboroughs Passion Projects
-    template: {Name: Show, s_pid: 238075}
+    url_poster: https://theposterdb.com/api/assets/238075
 
   264173: # Attenborough 60 Years in the Wild
-    template: {Name: Show, s_pid: 238070, s0_pid: , s1_pid: 238071}
+    url_poster: https://theposterdb.com/api/assets/238070, s0_pid
+    seasons:
+      1:
+        url_poster: https://theposterdb.com/api/assets/238071
 
   290034: # David Attenborough Conquest of the Skies
-    template: {Name: Show, s_pid: 238102, s0_pid: 238103, s1_pid: 238104}
+    url_poster: https://theposterdb.com/api/assets/238102
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238103
+      1:
+        url_poster: https://theposterdb.com/api/assets/238104
 
   349155: # David Attenboroughs Ant Mountain
-    template: {Name: Show, s_pid: 238007}
+    url_poster: https://theposterdb.com/api/assets/238007
 
   410034: # David Attenboroughs Global Adventure
-    template: {Name: Show, s_pid: 238074}
+    url_poster: https://theposterdb.com/api/assets/238074
 
   266388: # David Attenboroughs Natural Curiosities
-    template: {Name: Show, s_pid: 238081, s1_pid: 238082, s2_pid: 238083, s3_pid: 238084, s4_pid: 238085}
+    url_poster: https://theposterdb.com/api/assets/238081,
+    seasons:
+      1:
+        url_poster: https://theposterdb.com/api/assets/238082,
+      2:
+        url_poster: https://theposterdb.com/api/assets/238083,
+      3:
+        url_poster: https://theposterdb.com/api/assets/238084,
+      4:
+        url_poster: https://theposterdb.com/api/assets/238085,
 
   273424: # David Attenboroughs Rise of Animals Triumph of the Vertebrates
-    template: {Name: Show, s_pid: 238105}
+    url_poster: https://theposterdb.com/api/assets/238105
 
   333247: # Deep Ocean
-    template: {Name: Show, s_pid: 238040, s0_pid: , s1_pid: }
+    url_poster: https://theposterdb.com/api/assets/238040, s0_pid, s1_pid
 
   352054: # Dynasties (2018)
-    template: {Name: Show, s_pid: 238151, s0_pid: 238152, s1_pid: 238153}
+    url_poster: https://theposterdb.com/api/assets/238151
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238152
+      1:
+        url_poster: https://theposterdb.com/api/assets/238153
 
   84843: # The First Eden
-    template: {Name: Show, s_pid: 238135}
+    url_poster: https://theposterdb.com/api/assets/238135
 
   200931: # First Life With David Attenborough
-    template: {Name: Show, s_pid: 238089, s1_pid: 238090}
+    url_poster: https://theposterdb.com/api/assets/238089
+    seasons:
+      1:
+        url_poster: https://theposterdb.com/api/assets/238090
 
   265373: # Galapagos with David Attenborough
-    template: {Name: Show, s_pid: 238123, s0_pid: 238124, s1_pid: 238125}
+    url_poster: https://theposterdb.com/api/assets/238123
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238124
+      1:
+        url_poster: https://theposterdb.com/api/assets/238125
 
   304953: # Great Barrier Reef with David Attenborough
-    template: {Name: Show, s_pid: 238127, s1_pid: 238126}
+    url_poster: https://theposterdb.com/api/assets/238127
+    seasons:
+      1:
+        url_poster: https://theposterdb.com/api/assets/238126
 
   302286: # The Hunt
-    template: {Name: Show, s_pid: 238145, s1_pid: 238145}
+    url_poster: https://theposterdb.com/api/assets/238145
+    seasons:
+      1:
+        url_poster: https://theposterdb.com/api/assets/238145
 
   259418: # Kingdom of Plants
-    template: {Name: Show, s_pid: 238109, s0_pid: 238108, s1_pid: 238107}
+    url_poster: https://theposterdb.com/api/assets/238109
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238108
+      1:
+        url_poster: https://theposterdb.com/api/assets/238107
 
   118421: # Life
-    template: {Name: Show, s_pid: 238163, s0_pid: 238164, s1_pid: 238165}
+    url_poster: https://theposterdb.com/api/assets/238163
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238164
+      1:
+        url_poster: https://theposterdb.com/api/assets/238165
 
   81394: # Life in Cold Blood
-    template: {Name: Show, s_pid: 238167, s0_pid: 238168, s1_pid: 238169}
+    url_poster: https://theposterdb.com/api/assets/238167
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238168
+      1:
+        url_poster: https://theposterdb.com/api/assets/238169
 
   74373: # Life in the Freezer
-    template: {Name: Show, s_pid: 238172, s0_pid: 238171, s1_pid: 238170}
+    url_poster: https://theposterdb.com/api/assets/238172
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238171
+      1:
+        url_poster: https://theposterdb.com/api/assets/238170
 
   79185: # Life in the Undergrowth
-    template: {Name: Show, s_pid: 238173, s0_pid: 238174, s1_pid: 238175}
+    url_poster: https://theposterdb.com/api/assets/238173
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238174
+      1:
+        url_poster: https://theposterdb.com/api/assets/238175
 
   78989: # The Life of Birds
-    template: {Name: Show, s_pid: 238181, s0_pid: 238180, s1_pid: 238179}
+    url_poster: https://theposterdb.com/api/assets/238181
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238180
+      1:
+        url_poster: https://theposterdb.com/api/assets/238179
 
   78994: # The Life of Mammals
-    template: {Name: Show, s_pid: 238182, s0_pid: 238183, s1_pid: 238184}
+    url_poster: https://theposterdb.com/api/assets/238182
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238183
+      1:
+        url_poster: https://theposterdb.com/api/assets/238184
 
   74371: # Life on Earth
-    template: {Name: Show, s_pid: 238176, s0_pid: 238177, s1_pid: 238178}
+    url_poster: https://theposterdb.com/api/assets/238176
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238177
+      1:
+        url_poster: https://theposterdb.com/api/assets/238178
 
   287019: # Life Story
-    template: {Name: Show, s_pid: 238157}
+    url_poster: https://theposterdb.com/api/assets/238157
 
   78864: # The Living Planet
-    template: {Name: Show, s_pid: 238185, s0_pid: 238186, s1_pid: 238187}
+    url_poster: https://theposterdb.com/api/assets/238185
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238186
+      1:
+        url_poster: https://theposterdb.com/api/assets/238187
 
   79616: # Lost Worlds, Vanished Lives
-    template: {Name: Show, s_pid: 238092}
+    url_poster: https://theposterdb.com/api/assets/238092
 
   230371: # Madagascar
-    template: {Name: Show, s_pid: 238129, s0_pid: 238130, s1_pid: 238143}
+    url_poster: https://theposterdb.com/api/assets/238129
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238130
+      1:
+        url_poster: https://theposterdb.com/api/assets/238143
 
   410848: # The Mating Game
-    template: {Name: Show, s_pid: 238144}
+    url_poster: https://theposterdb.com/api/assets/238144
 
   270732: # Micro Monsters with David Attenborough
-    template: {Name: Show, s_pid: 238111, s0_pid: 238112, s1_pid: 238113}
+    url_poster: https://theposterdb.com/api/assets/238111
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238112
+      1:
+        url_poster: https://theposterdb.com/api/assets/238113
 
   251581: # The Miracle of Bali
-    template: {Name: Show, s_pid: 238079}
+    url_poster: https://theposterdb.com/api/assets/238079
 
   85083: # Natures Great Events
-    template: {Name: Show, s_pid: 238141, s0_pid: 238142, s1_pid: 238131}
+    url_poster: https://theposterdb.com/api/assets/238141
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238142
+      1:
+        url_poster: https://theposterdb.com/api/assets/238131
 
   264243: # The People of Paradise
-    template: {Name: Show, s_pid: 238078}
+    url_poster: https://theposterdb.com/api/assets/238078
 
   276537: # Plants Behaving Badly
-    template: {Name: Show, s_pid: 238110}
+    url_poster: https://theposterdb.com/api/assets/238110
 
   78993: # The Private Life of Plants
-    template: {Name: Show, s_pid: 238188, s0_pid: 238189, s1_pid: 238190}
+    url_poster: https://theposterdb.com/api/assets/238188
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238189
+      1:
+        url_poster: https://theposterdb.com/api/assets/238190
 
   258633: # Secrets of Wild India
-    template: {Name: Show, s_pid: 238133}
+    url_poster: https://theposterdb.com/api/assets/238133
 
   78943: # State of the Planet
-    template: {Name: Show, s_pid: 238059, s0_pid: 238060, s1_pid: 238061}
+    url_poster: https://theposterdb.com/api/assets/238059
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238060
+      1:
+        url_poster: https://theposterdb.com/api/assets/238061
 
   79947: # Trials of Life
-    template: {Name: Show, s_pid: 238191, s0_pid: 238192, s1_pid: 238193}
+    url_poster: https://theposterdb.com/api/assets/238191
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/238192
+      1:
+        url_poster: https://theposterdb.com/api/assets/238193
 
   81652: # Tiger: Spy in the Jungle
-    template: {Name: Show, s_pid: 238030}
+    url_poster: https://theposterdb.com/api/assets/238030
 
   87911: # The Tribal Eye
-    template: {Name: Show, s_pid: 238080}
+    url_poster: https://theposterdb.com/api/assets/238080
 
   316346: # Wild City
-    template: {Name: Show, s_pid: 238134}
-  
-  9511: # Zoo Quest
-    template: {Name: Show, s_pid: 238077}
-    
-#====================================================================================
-#
-#                                    MOVIES
-#
-#====================================================================================
+    url_poster: https://theposterdb.com/api/assets/238134
 
+  9511: # Zoo Quest
+    url_poster: https://theposterdb.com/api/assets/238077
+
+  #====================================================================================
+  #
+  #                                    MOVIES
+  #
+  #====================================================================================
 
   113303: # The Amber Time Machine
     url_poster: https://theposterdb.com/api/assets/238000
-
 
   528965: # Animal House
     url_poster: https://theposterdb.com/api/assets/238005
@@ -256,7 +410,7 @@ metadata:
 
   123669: # Attenborough and the Giant Egg
     url_poster: https://theposterdb.com/api/assets/238098
-  
+
   492729: # Attenborough and the Giant Elephant
     url_poster: https://theposterdb.com/api/assets/238099
 
@@ -286,7 +440,7 @@ metadata:
 
   335016: # Attenborough's Paradise Birds
     url_poster: https://theposterdb.com/api/assets/238630
-  
+
   516110: # Attenborough's Wonder of Eggs
     url_poster: https://theposterdb.com/api/assets/238017
 
@@ -366,6 +520,7 @@ metadata:
     url_poster: https://theposterdb.com/api/assets/238021
 
   823800: # Planet Earth: A Celebration
+    # Regular Version
     url_poster: https://theposterdb.com/api/assets/238215
 
   819633: # Puerto Rico: Island of Enchantment
@@ -399,4 +554,4 @@ metadata:
     url_poster: https://theposterdb.com/api/assets/238062
 
   399437: # Zoo Quest in Color
-      url_poster: https://theposterdb.com/api/assets/238076
+    url_poster: https://theposterdb.com/api/assets/238076
