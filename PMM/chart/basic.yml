@@ -10,36 +10,40 @@
 #        template_variables:                                #
 #          # Turn the separator collection on/off           #
 #          use_separator: true                              #
+#          # Separator style (red, blue, green, gray,       #
+#              purple, stb, orig)                           #
+#          sep_style: orig                                  #
 #          # Sets the collection mode of the collection     #
 #          collection_mode:                                 #
 #          # Sets the value at the start of the sort title  #
 #          collection_section: "01"                         #
 #                                                           #
-#          # Turn the Newly Released collection on/off      #
-#          use_released: true                               #
-#          # Determines how many days back to look          #
-#          in_the_last_released: 90                         #
-#          # Determines collection order in it's section    #
-#          order_released:                                  #
-#          # Set visible_library for Newly Released         #
-#          visible_library_released:                        #
-#          # Set visible_home for Newly Released            #
-#          visible_home_released:                           #
-#          # Set visible_shared for Newly Released          #
-#          visible_shared_released:                         #
+#          # For each collection use the "key" to set       #
+#          # the options.                                   #
+#          # Available collections                          #
+#          #   KEY              COLLECTION                  #
+#          #   released         Newly Released              #
+#          #   episodes         New Episodes                #
 #                                                           #
-#          # Turn the Episodes This Week collection on/off  #
-#          use_episodes: true                               #
-#          # Determines how many days back to look          #
-#          in_the_last_episodes: 7                          #
+#          # Available options. Replace "key" with the      #
+#          # desired collection's key from the chart above. #
+#                                                           #
+#          # Customize summary of collection                #
+#          summary_key: A collection of ...                 #
+#          # Turn the collection on/off                     #
+#          use_key: true                                    #
 #          # Determines collection order in it's section    #
-#          order_episodes:                                  #
-#          # Set visible_library for Episodes This Week     #
-#          visible_library_episodes:                        #
-#          # Set visible_home for Episodes This Week        #
-#          visible_home_episodes:                           #
-#          # Set visible_shared for Episodes This Week      #
-#          visible_shared_episodes:                         #
+#          order_key:                                       #
+#          # Set visible_library for the collection         #
+#          visible_library_key:                             #
+#          # Set visible_home for the collection            #
+#          visible_home_key:                                #
+#          # Set visible_shared for the collection          #
+#          visible_shared_key:                              #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag_key:                             #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag_key:                             #
 #############################################################
 
 external_templates:
@@ -51,7 +55,8 @@ templates:
   released:
     default:
       in_the_last_released: 90
-    summary: A collection of newly-released <<library_type>>
+      summary_released: A collection of newly-released <<library_type>>s
+    summary: <<summary_<<key>>>>
     smart_filter:
       all:
         release: <<in_the_last_released>>
@@ -59,7 +64,8 @@ templates:
   episodes:
     default:
       in_the_last_episodes: 7
-    summary: A collection of newly-released episodes
+      summary_episodes: A collection of newly-released <<library_type>>s
+    summary: <<summary_<<key>>>>
     smart_filter:
       type: episodes
       all:
@@ -73,14 +79,16 @@ collections:
         separator: chart
 
   Newly Released:
+    variables:
+      key: released
     template:
       - name: released
-      - name: chart_shared
-        key: released
+      - name: shared
 
   New Episodes:
+    variables:
+      key: episodes
     template:
       - name: episodes
-      - name: chart_shared
-        key: episodes
-        check_library: show
+      - name: shared
+        allowed_libraries: show

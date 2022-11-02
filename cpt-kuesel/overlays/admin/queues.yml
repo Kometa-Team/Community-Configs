@@ -1,0 +1,31 @@
+queues:
+  flags:
+    - horizontal_align: left
+      vertical_align: top
+      horizontal_offset: 15
+      vertical_offset: 15
+    - horizontal_align: left
+      vertical_align: top
+      horizontal_offset: 15
+      vertical_offset: 75
+    - horizontal_align: left
+      vertical_align: top
+      horizontal_offset: 15
+      vertical_offset: 135
+    - horizontal_align: left
+      vertical_align: top
+      horizontal_offset: 15
+      vertical_offset: 195
+    - horizontal_align: left
+      vertical_align: top
+      horizontal_offset: 15
+      vertical_offset: 255
+
+overlays:
+  queue_pseudo_overlay:
+    plex_search:
+      all:
+        year.lt: 1800
+    overlay:
+      name: none
+      file: overlays/none.png

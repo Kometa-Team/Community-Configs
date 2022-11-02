@@ -10,6 +10,9 @@
 #        template_variables:                                #
 #          # Turn the separator collection on/off           #
 #          use_separator: true                              #
+#          # Separator style (red, blue, green, gray,       #
+#              purple, stb, orig)                           #
+#          sep_style: orig                                  #
 #          # Turn the other collection on/off               #
 #          use_other: true                                  #
 #          # Sets how the collection is sorted              #
@@ -20,6 +23,10 @@
 #          collection_section: 13                           #
 #          # Sets the number of items per collection        #
 #          limit: 10                                        #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag:                                 #
 #############################################################
 
 external_templates:
@@ -36,7 +43,7 @@ templates:
     smart_filter:
       sort_by: <<sort_by>>
       any:
-        year: <<value>>
+        year: <<key>>
       limit: <<limit>>
 
 collections:
@@ -47,8 +54,12 @@ collections:
 
 dynamic_collections:
   Year:
-    type: year
+    type: number
     title_format: Best of <<key_name>>
+    sync: true
+    data:
+      starting: current_year-10
+      ending: current_year
     template:
       - year_dynamic
       - shared

@@ -1,0 +1,73 @@
+collections:
+#####################################
+#       Streaming Collections       #
+#####################################
+  Netflix Movies:
+    mdblist_list: https://mdblist.com/lists/ryalism/netflix-movies
+    url_poster: https://theposterdb.com/api/assets/163448
+    sort_title: +01_10_<<collection_name>>
+    collection_order: custom
+    collection_mode: hide
+    sync_mode: sync
+    schedule:
+     - hourly(02)
+
+  Disney+ Movies:
+    mdblist_list: https://mdblist.com/lists/ryalism/disney-movies
+    url_poster: https://theposterdb.com/api/assets/163294
+    sort_title: +01_10_<<collection_name>>
+    collection_order: custom
+    collection_mode: hide
+    sync_mode: sync
+    schedule:
+     - hourly(02)
+    
+  AppleTV+ Movies:
+    mdblist_list: https://mdblist.com/lists/buzzie/appletv-plus
+    url_poster: https://theposterdb.com/api/assets/163303
+    sort_title: +01_10_<<collection_name>>
+    collection_order: custom
+    collection_mode: hide
+    sync_mode: sync
+    schedule:
+     - hourly(02)
+    
+  HBO MAX Movies:
+    mdblist_list: https://mdblist.com/lists/ryalism/hbo-max-movies
+    url_poster: https://theposterdb.com/api/assets/163885
+    sort_title: +01_10_<<collection_name>>
+    collection_order: custom
+    collection_mode: hide
+    sync_mode: sync
+    schedule:
+     - hourly(02)
+    
+  Paramount+ Movies:
+    mdblist_list: https://mdblist.com/lists/buzzie/paramount-plus
+    url_poster: https://theposterdb.com/api/assets/163819
+    sort_title: +01_10_<<collection_name>>
+    collection_order: custom
+    collection_mode: hide
+    sync_mode: sync
+    schedule:
+     - hourly(02)
+
+  Peacock Movies:
+    mdblist_list: https://mdblist.com/lists/buzzie/peacock
+    url_poster: https://theposterdb.com/api/assets/163874
+    sort_title: +01_10_<<collection_name>>
+    collection_order: custom
+    collection_mode: hide
+    sync_mode: sync
+    schedule:
+     - hourly(02)
+
+  Amazon Movies:
+    mdblist_list: https://mdblist.com/lists/ryalism/amazon-movies
+    url_poster: https://theposterdb.com/api/assets/163301
+    sort_title: +01_10_<<collection_name>>
+    collection_order: custom
+    collection_mode: hide
+    sync_mode: sync
+    schedule:
+     - hourly(02)

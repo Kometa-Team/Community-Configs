@@ -1,0 +1,42 @@
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "21"
+
+templates:
+  network:
+    mdblist_list:
+      url: https://mdblist.com/lists/plexmetamanager/<<type>>-<<library_type>>s/
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +<<collection_name>>
+    summary: <<library_type>>s From the Streaming Service <<collection_name>>
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+  discovery:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?companies=co0834810
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +<<collection_name>>
+    summary: <<library_type>>s From the Streaming Service <<collection_name>>
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+
+collections:
+  AppleTVPlus:
+    template: {name: network, type: appletv, poster: 206165}
+  Netflix:
+    template: {name: network, type: netflix, poster: 205048}
+  Prime:
+    template: {name: network, type: amazon, poster: 222004}
+  Hulu:
+    template: {name: network, type: hulu, poster: 220348}
+  Paramount:
+    template: {name: network, type: paramount, poster: 168828}
+  Peacock:
+    template: {name: network, type: peacock, poster: 205411}
+  Disney:
+    template: {name: network, type: disney, poster: 204376}
+  HBO:
+    template: {name: network, type: hbomax, poster: 168825}
+  DiscoveryPlus:
+    template: {name: discovery, poster: 220371}

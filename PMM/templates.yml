@@ -2,6 +2,7 @@ templates:
 
   separator:
     default:
+      sep_style: orig
       collection_section: "00"
     optional:
       - use_separator
@@ -10,10 +11,11 @@ templates:
     collection_mode: <<collection_mode>>
     sort_title: "!<<collection_section>>_!<<collection_name>>"
     blank_collection: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<separator>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<sep_style>>/<<separator>>.jpg
 
   separator off:
     default:
+      sep_style: orig
       collection_section: "00"
       use_separator: false
     optional:
@@ -22,55 +24,70 @@ templates:
     collection_mode: <<collection_mode>>
     sort_title: "!<<collection_section>>_!<<collection_name>>"
     blank_collection: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<separator>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/separators/<<sep_style>>/<<separator>>.jpg
 
   shared:
     default:
       collection_section: "00"
       sort: <<collection_name>>
-      pre: "_"
-      order: ""
-    optional:
-      - collection_mode
-      - radarr_add_missing
-      - sonarr_add_missing
-    radarr_add_missing: <<radarr_add_missing>>
-    sonarr_add_missing: <<sonarr_add_missing>>
-    collection_mode: <<collection_mode>>
-    sort_title: "!<<collection_section>><<pre>><<order>><<sort>>"
-
-  chart_shared:
-    default:
-      collection_section: "00"
       key: <<collection_name>>
-      sort: <<collection_name>>
       pre: "_"
       order_<<key>>: ""
+      image: chart/<<collection_name_encoded>>
+      item_radarr_tag_<<key>>: <<item_radarr_tag>>
+      item_sonarr_tag_<<key>>: <<item_sonarr_tag>>
     optional:
       - use_<<key>>
+      - allowed_libraries
+      - collection_mode
       - visible_library_<<key>>
       - visible_home_<<key>>
       - visible_shared_<<key>>
-      - collection_mode
-      - radarr_add_missing
-      - sonarr_add_missing
-      - radarr_tag
-      - sonarr_tag
-      - library_types
-      - check_library
+      - item_radarr_tag
+      - item_sonarr_tag
     allowed_library_types:
       - <<use_<<key>>>>
-      - <<check_library>>
+      - <<allowed_libraries>>
+    ignore_blank_results: true
+    collection_mode: <<collection_mode>>
     visible_library: <<visible_library_<<key>>>>
     visible_home: <<visible_home_<<key>>>>
     visible_shared: <<visible_shared_<<key>>>>
-    radarr_add_missing: <<radarr_add_missing>>
-    sonarr_add_missing: <<sonarr_add_missing>>
-    radarr_tag: <<radarr_tag>>
-    sonarr_tag: <<sonarr_tag>>
-    collection_mode: <<collection_mode>>
+    item_radarr_tag: <<item_radarr_tag_<<key>>>>
+    item_sonarr_tag: <<item_sonarr_tag_<<key>>>>
     sort_title: "!<<collection_section>><<pre>><<order_<<key>>>><<sort>>"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/chart/<<collection_name_encoded>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/<<image>>.jpg
+
+  arr:
+    default:
+      key: <<collection_name>>
+      radarr_add_missing_<<key>>: <<radarr_add_missing>>
+      sonarr_add_missing_<<key>>: <<sonarr_add_missing>>
+      radarr_folder_<<key>>: <<radarr_folder>>
+      sonarr_folder_<<key>>: <<sonarr_folder>>
+      radarr_tag_<<key>>: <<radarr_tag>>
+      sonarr_tag_<<key>>: <<sonarr_tag>>
+    optional:
+      - radarr_add_missing
+      - sonarr_add_missing
+      - radarr_folder
+      - sonarr_folder
+      - radarr_tag
+      - sonarr_tag
+    radarr_add_missing: <<radarr_add_missing_<<key>>>>
+    sonarr_add_missing: <<sonarr_add_missing_<<key>>>>
+    radarr_folder: <<radarr_folder_<<key>>>>
+    sonarr_folder: <<sonarr_folder_<<key>>>>
+    radarr_tag: <<radarr_tag_<<key>>>>
+    sonarr_tag: <<sonarr_tag_<<key>>>>
+
+  custom:
+    default:
+      collection_order: custom
+      collection_order_<<key>>: <<collection_order>>
+    collection_order: <<collection_order_<<key>>>>
+    sync_mode: sync
+    cache_builders: 1
 
   other_collection:
     default:
@@ -82,49 +99,7 @@ templates:
     allowed_library_types: <<use_other>>
     sort_title: "!<<collection_section>><<pre>><<sort>>"
 
-  award:
-    default:
-      collection_order: custom
-    optional:
-      - image
-    cache_builders: 1
-    sync_mode: sync
-    collection_order: <<collection_order>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/<<image>>.jpg
-
-  playlist:
-    default:
-      libraries: Movies, TV Shows
-    cache_builders: 1
-    sync_to_users: all
-    sync_mode: sync
-    libraries: <<libraries>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<playlist_name_encoded>>.jpg
-
-  streaming:
-    default:
-      sort_by: release.desc
-      key: <<collection_name>>
-    optional:
-      - use_<<key>>
-      - visible_library_<<key>>
-      - visible_home_<<key>>
-      - visible_shared_<<key>>
-    allowed_library_types: <<use_<<key>>>>
-    visible_library: <<visible_library_<<key>>>>
-    visible_home: <<visible_home_<<key>>>>
-    visible_shared: <<visible_shared_<<key>>>>
-    cache_builders: 1
-    smart_label: <<sort_by>>
-    sync_mode: sync
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/<<key>>-<<library_type>>s
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/streaming/<<key_name_encoded>>.jpg
-
   use_year_collections:
     optional:
       - use_year_collections
     allowed_library_types: <<use_year_collections>>
-
-  customsync:
-    collection_order: custom
-    sync_mode: sync
