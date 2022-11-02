@@ -38,7 +38,7 @@ templates:
       - Criterion
     overlay:
       name: <<overlay_name>>
-      file: config/overlays/<<overlay>>.png
+      git: pete2583/overlays/<<overlay>>
       group: res
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
