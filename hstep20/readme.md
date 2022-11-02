@@ -25,7 +25,7 @@ I've also included a config file which I use as a base for all of these. If you 
 
 ## Cross Library
 - David Attenborough Documentaries
-
+- Psych (2006) Show + Movies
 --------
 #### Future Collections
 Some future collections I plan to do include:

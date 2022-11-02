@@ -1,0 +1,44 @@
+#Uses https://theposterdb.com/set/115572 for Movies
+# Uses https://theposterdb.com/set/56140 for tv seasons
+
+collections:
+  Psych - The Movies: # Update this Name
+    tmdb_collection: https://www.themoviedb.org/collection/718934
+    #or trakt_list, tmdb_list
+    tmdb_summary: https://www.themoviedb.org/collection/718934
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/190663
+    sort_title: ++++++++_
+    collection_order: release
+
+metadata:
+  # Movies
+  457840: # Psych: The Movie
+    url_poster: https://theposterdb.com/api/assets/190664
+  582218: # Psych 2: Lassie Come Home
+    url_poster: https://theposterdb.com/api/assets/190665
+  829400: # Psych 3: This is Gus
+    url_poster: https://theposterdb.com/api/assets/190666
+
+  # Show
+  79335: # Psych
+    url_poster: https://artworks.thetvdb.com/banners/posters/79335-8.jpg
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/88618
+      1:
+        url_poster: https://theposterdb.com/api/assets/88619
+      2:
+        url_poster: https://theposterdb.com/api/assets/88620
+      3:
+        url_poster: https://theposterdb.com/api/assets/88621
+      4:
+        url_poster: https://theposterdb.com/api/assets/88622
+      5:
+        url_poster: https://theposterdb.com/api/assets/88623
+      6:
+        url_poster: https://theposterdb.com/api/assets/88624
+      7:
+        url_poster: https://theposterdb.com/api/assets/88625
+      8:
+        url_poster: https://theposterdb.com/api/assets/88626
