@@ -1,0 +1,55 @@
+######################################################
+#                                                    #
+#   / | / /__  / /_/ __ \/ /__  _  __/ ____/ (_)  __ #
+#  /  |/ / _ \/ __/ /_/ / / _ \| |/_/ /_  / / / |/_/ #
+# / /|  /  __/ /_/ ____/ /  __/>  </ __/ / / />  <   #
+#/_/ |_/\___/\__/_/   /_/\___/_/|_/_/   /_/_/_/|_|   #
+#         Plex Meta Manager Movie.yml Config         #
+#                                                    #
+######################################################
+#                    TEMPLATES                       #
+######################################################
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    smart_label: added.desc
+  Best of:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
+    sort_title: +1_Best of <<year>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Highest rated Movies of <<year>>
+    smart_label: audience_rating.desc
+collections:
+  Based on True Events:
+    smart_label: originally_available.desc
+    trakt_list: https://trakt.tv/users/manu101/lists/based-inspired-on-actual-events
+    summary: Movies based on true events.
+    sort_title: '+2 Based on true events'
+  Chick Flicks:
+    trakt_list: 
+      - https://trakt.tv/users/29zombies/lists/romantic-comedies
+      - https://trakt.tv/users/yirmaster/lists/chick-flicks
+    summary: Get in touch with your feminine side.
+    sort_title: '+2 Chick Flicks'
+    collection_order: alpha
+    collection_mode: default
+  Heist Movies:
+    imdb_list:
+      - https://www.imdb.com/list/ls068224634/
+      - https://www.imdb.com/list/ls009794682/
+    summary: Movies detailing the preparation for, execution of and aftermath of a (well-)planned and often daring heist.
+    sort_title: '+2 Heist'
+    collection_order: alpha
+    collection_mode: default
+  Member Berries:
+    smart_label: release.desc
+    trakt_list: https://trakt.tv/users/netplexflix/lists/member-berries
+    summary: Member Berry movies are movies that contain a lot of call backs or easter eggs to previous movies in the franchise or related franchises. Often franchise reboots.
+    sort_title: '+2 Member Berries'
+    sync_mode: sync
+  Time Travel:
+    smart_label: title.asc
+    trakt_list: https://trakt.tv/users/vagnerr/lists/time-travel
+    summary: Film/show contains time-travel. In any form. Be it time-loop, full on relocation in time, consciousness transfer...
+    sort_title: '+2 Time Travel'

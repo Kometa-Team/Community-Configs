@@ -1,0 +1,52 @@
+######################################################
+#                       Movies                       #
+######################################################
+templates:
+  Series:
+    sort_title: +03_<<collection_name>>
+    sync_mode: sync
+    collection_mode: hide
+    schedule:
+     - weekly(sunday)
+     - hourly(02)
+    
+collections:
+######################################################
+#                   Movie Series                     #
+######################################################
+
+  Marvel Cinematic Universe Phase 1:
+    template: {name: Series}
+    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-1/
+    url_poster: https://theposterdb.com/api/assets/206256
+    collection_order: release
+    sync_mode: sync
+    collection_mode: hide
+    summary: All movies from the Marvel Cinematic Universe Phase 1.
+
+  Marvel Cinematic Universe Phase 2:
+    template: {name: Series}
+    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-2/
+    url_poster: https://theposterdb.com/api/assets/206257
+    collection_order: release
+    sync_mode: sync
+    collection_mode: hide
+    summary: All movies from the Marvel Cinematic Universe Phase 2.    
+
+  Marvel Cinematic Universe Phase 3:
+    template: {name: Series}
+    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-3/
+    url_poster: https://theposterdb.com/api/assets/206258
+    collection_order: release
+    sync_mode: sync
+    collection_mode: hide
+    summary: All movies from the Marvel Cinematic Universe Phase 3.
+    
+  Marvel Cinematic Universe Phase 4:
+    template: {name: Series}
+    letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-4/
+    url_poster: https://theposterdb.com/api/assets/206259
+    collection_order: release
+    sync_mode: sync
+    collection_mode: hide
+    summary: All movies from the Marvel Cinematic Universe Phase 4.    

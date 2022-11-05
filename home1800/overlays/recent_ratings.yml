@@ -1,0 +1,512 @@
+#############################################################
+#                      Ratings Overlay                      #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#                                                           #
+# same ratings config as in the PMM repo, difference being  #
+# that it'll only apply to media added within the last      #
+# set of days, specified by <<time_frame>> (default: 30)    #
+#                                                           #
+#                                                           #
+# for the other variables and setup check out the PMM repo: #
+#                                                           #
+# https://github.com/meisnate12/Plex-Meta-Manager-Configs/blob/master/PMM/overlays/ratings.yml
+#                                                           #
+#                                                           #
+#############################################################
+
+templates:
+  Rating:
+    optional:
+      - overlay_level
+    default:
+      time_frame: 30
+      font: fonts/Inter-Bold.ttf
+      font_size: 63
+      rating<<rating_num>>_font: <<font>>
+      rating<<rating_num>>_font_size: <<font_size>>
+      weight: 100
+      side: left
+      horizontal_position: left
+      vertical_position: center
+      rating_alignment: vertical
+      rating<<rating_num>>: none
+      center_offset: 0
+      standard_offset: 30
+      v2_offset: 235
+      v3_offset: 440
+      cv2_offset: 105
+      cv3_offset: 205
+      h2_offset: 345
+      h3_offset: 660
+      ch2_offset: 160
+      ch3_offset: 335
+    conditionals:
+      mdblist_top:
+        conditions:
+          - image_level: Top
+            rating<<rating_num>>_image: rt_tomato
+            value: https://mdblist.com/lists/plexmetamanager/certifiedfresh<<library_type>>s
+          - image_level: Top
+            rating<<rating_num>>_image: metacritic
+            value: https://mdblist.com/lists/plexmetamanager/metacriticmustsee<<library_type>>s
+      imdb_top:
+        conditions:
+          - image_level: Top
+            rating<<rating_num>>_image: imdb
+            value: top_<<library_type>>s
+      run_this:
+        default: true
+        conditions:
+          - image_level: Top
+            rating<<rating_num>>_image: [anidb, letterboxd, rt_popcorn, mdblist, tmdb, trakt]
+            value: false
+          - image_level: Top
+            overlay_level: episode
+            value: false
+          - rating<<rating_num>>: none
+            value: false
+      rating<<rating_num>>_style:
+        default: ""
+        conditions:
+          - rating<<rating_num>>_image: [rt_popcorn, rt_tomato, tmdb]
+            value: "%"
+          - rating<<rating_num>>_image: metacritic
+            value: "0"
+      image_extra:
+        default: ""
+        conditions:
+          - rating<<rating_num>>_image: [imdb, rt_tomato, metacritic]
+            image_level: Top
+            value: Top
+          - rating<<rating_num>>_image: [rt_popcorn, rt_tomato]
+            value: <<image_level>>
+      rating<<rating_num>>_image_url:
+        conditions:
+          - rating<<rating_num>>_image: anidb
+            value: Anidb
+          - rating<<rating_num>>_image: imdb
+            value: IMDb
+          - rating<<rating_num>>_image: letterboxd
+            value: Letterboxd
+          - rating<<rating_num>>_image: mdblist
+            value: MDBList
+          - rating<<rating_num>>_image: metacritic
+            value: Metacritic
+          - rating<<rating_num>>_image: rt_popcorn
+            value: RT-Aud-
+          - rating<<rating_num>>_image: rt_tomato
+            value: RT-Crit-
+          - rating<<rating_num>>_image: tmdb
+            value: TMDb
+          - rating<<rating_num>>_image: trakt
+            value: Trakt
+      rating<<rating_num>>_horizontal_align:
+        default: left
+        conditions:
+          - horizontal_position: right
+            value: right
+          - horizontal_position: center
+            value: center
+      rating<<rating_num>>_vertical_align:
+        default: center
+        conditions:
+          - vertical_position: top
+            value: top
+          - vertical_position: bottom
+            value: bottom
+      rating1_horizontal_offset:
+        default: <<standard_offset>>
+        conditions:
+          - rating_alignment: vertical
+            horizontal_position: center
+            value: <<center_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            rating2: none
+            rating3: none
+            value: <<center_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            rating2: none
+            value: -<<ch2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            rating3: none
+            value: -<<ch2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            value: -<<ch3_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: right
+            rating2: none
+            rating3: none
+            value: <<standard_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: right
+            rating2: none
+            value: <<h2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: right
+            rating3: none
+            value: <<h2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: right
+            value: <<h3_offset>>
+      rating1_vertical_offset:
+        default: <<standard_offset>>
+        conditions:
+          - rating_alignment: horizontal
+            vertical_position: center
+            value: <<center_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            rating2: none
+            rating3: none
+            value: <<center_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            rating2: none
+            value: -<<cv2_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            rating3: none
+            value: -<<cv2_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            value: -<<cv3_offset>>
+          - rating_alignment: vertical
+            vertical_position: bottom
+            rating2: none
+            rating3: none
+            value: <<standard_offset>>
+          - rating_alignment: vertical
+            vertical_position: bottom
+            rating2: none
+            value: <<v2_offset>>
+          - rating_alignment: vertical
+            vertical_position: bottom
+            rating3: none
+            value: <<v2_offset>>
+          - rating_alignment: vertical
+            vertical_position: bottom
+            value: <<v3_offset>>
+      rating2_horizontal_offset:
+        default: <<standard_offset>>
+        conditions:
+          - rating_alignment: vertical
+            horizontal_position: center
+            value: <<center_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            rating1: none
+            rating3: none
+            value: <<center_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            rating1: none
+            value: -<<ch2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            rating3: none
+            value: -<<ch2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            value: -<<ch3_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: right
+            rating1: none
+            rating3: none
+            value: <<standard_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: right
+            rating1: none
+            value: <<h2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: right
+            rating3: none
+            value: <<h2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: right
+            value: <<h3_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: left
+            rating1: none
+            value: <<standard_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: left
+            value: <<h2_offset>>
+      rating2_vertical_offset:
+        default: <<standard_offset>>
+        conditions:
+          - rating_alignment: horizontal
+            vertical_position: center
+            value: <<center_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            rating1: none
+            rating3: none
+            value: <<center_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            rating1: none
+            value: -<<cv2_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            rating3: none
+            value: <<cv2_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            value: <<center_offset>>
+          - rating_alignment: vertical
+            vertical_position: bottom
+            rating1: none
+            rating3: none
+            value: <<standard_offset>>
+          - rating_alignment: vertical
+            vertical_position: bottom
+            rating1: none
+            value: <<v2_offset>>
+          - rating_alignment: vertical
+            vertical_position: bottom
+            rating3: none
+            value: <<standard_offset>>
+          - rating_alignment: vertical
+            vertical_position: bottom
+            value: <<v2_offset>>
+          - rating_alignment: vertical
+            vertical_position: top
+            rating1: none
+            value: <<standard_offset>>
+          - rating_alignment: vertical
+            vertical_position: top
+            value: <<v2_offset>>
+      rating3_horizontal_offset:
+        default: <<standard_offset>>
+        conditions:
+          - rating_alignment: vertical
+            horizontal_position: center
+            value: <<center_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            rating1: none
+            rating2: none
+            value: <<center_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            rating1: none
+            value: <<ch2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            rating2: none
+            value: <<ch2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: center
+            value: <<ch3_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: left
+            rating1: none
+            rating2: none
+            value: <<standard_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: left
+            rating1: none
+            value: <<h2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: left
+            rating2: none
+            value: <<h2_offset>>
+          - rating_alignment: horizontal
+            horizontal_position: left
+            value: <<h3_offset>>
+      rating3_vertical_offset:
+        default: <<standard_offset>>
+        conditions:
+          - rating_alignment: horizontal
+            vertical_position: center
+            value: <<center_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            rating1: none
+            rating2: none
+            value: <<center_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            rating1: none
+            value: <<cv2_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            rating2: none
+            value: <<cv2_offset>>
+          - rating_alignment: vertical
+            vertical_position: center
+            value: <<cv3_offset>>
+          - rating_alignment: vertical
+            vertical_position: top
+            rating1: none
+            rating2: none
+            value: <<standard_offset>>
+          - rating_alignment: vertical
+            vertical_position: top
+            rating1: none
+            value: <<v2_offset>>
+          - rating_alignment: vertical
+            vertical_position: top
+            rating2: none
+            value: <<v2_offset>>
+          - rating_alignment: vertical
+            vertical_position: top
+            value: <<v3_offset>>
+      back_width:
+        default: 160
+        conditions:
+          - rating_alignment: horizontal
+            value: 270
+      back_height:
+        default: 160
+        conditions:
+          - rating_alignment: horizontal
+            value: 80
+      addon_position:
+        default: top
+        conditions:
+          - rating_alignment: horizontal
+            value: left
+      gte:
+        default: 0.0
+        conditions:
+          - image_level: Fresh
+            value: 6.0
+      lte:
+        default: 6.0
+        conditions:
+          - image_level: Fresh
+            value: 10.0
+      gsuffix:
+        conditions:
+          - rating<<rating_num>>: [critic, audience, user]
+            image_level: [Fresh, Rotten]
+            value: gte
+      lsuffix:
+        conditions:
+          - rating<<rating_num>>: [critic, audience, user]
+            image_level: Fresh
+            value: lte
+          - rating<<rating_num>>: [critic, audience, user]
+            image_level: Rotten
+            value: lt
+    plex_search:
+      all:
+        <<rating<<rating_num>>>>_rating.<<gsuffix>>: <<gte>>
+        <<rating<<rating_num>>>>_rating.<<lsuffix>>: <<lte>>
+    mdblist_list: <<mdblist_top>>
+    imdb_chart: <<imdb_top>>
+    collection_level: <<overlay_level>>
+    allowed_library_types: <<run_this>>
+    ignore_blank_results: true
+    overlay:
+      name: text(<<rating<<rating_num>>>>_rating<<rating<<rating_num>>_style>>)
+      horizontal_offset: <<rating<<rating_num>>_horizontal_offset>>
+      horizontal_align: <<rating<<rating_num>>_horizontal_align>>
+      vertical_offset: <<rating<<rating_num>>_vertical_offset>>
+      vertical_align: <<rating<<rating_num>>_vertical_align>>
+      group: rating<<rating_num>>_group
+      weight: <<weight>>
+      font: <<rating<<rating_num>>_font>>
+      font_size: <<rating<<rating_num>>_font_size>>
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: <<back_width>>
+      back_height: <<back_height>>
+      back_align: center
+      back_padding: 15
+      git: PMM/overlays/images/raw/<<rating<<rating_num>>_image_url>><<image_extra>>
+      addon_position: <<addon_position>>
+      addon_offset: 15
+
+overlays:
+  Rating1Rotten:
+    template:
+      name: Rating
+      rating_num: "1"
+      image_level: Rotten
+    plex_all: true
+    filter: 
+      added: <<time_frame>>
+
+  Rating1Fresh:
+    template:
+      name: Rating
+      rating_num: "1"
+      image_level: Fresh
+    plex_all: true
+    filter: 
+      added: <<time_frame>>
+
+  Rating1Top:
+    template:
+      name: Rating
+      weight: 110
+      rating_num: "1"
+      image_level: Top
+    plex_all: true
+    filter: 
+      added: <<time_frame>>
+
+  Rating2Rotten:
+    template:
+      name: Rating
+      rating_num: "2"
+      image_level: Rotten
+    plex_all: true
+    filter: 
+      added: <<time_frame>>
+
+  Rating2Fresh:
+    template:
+      name: Rating
+      rating_num: "2"
+      image_level: Fresh
+    plex_all: true
+    filter: 
+      added: <<time_frame>>
+
+  Rating2Top:
+    template:
+      name: Rating
+      weight: 110
+      rating_num: "2"
+      image_level: Top
+    plex_all: true
+    filter: 
+      added: <<time_frame>>
+
+  Rating3Rotten:
+    template:
+      name: Rating
+      rating_num: "3"
+      image_level: Rotten
+    plex_all: true
+    filter: 
+      added: <<time_frame>>
+
+  Rating3Fresh:
+    template:
+      name: Rating
+      rating_num: "3"
+      image_level: Fresh
+    plex_all: true
+    filter: 
+      added: <<time_frame>>
+
+  Rating3Top:
+    template:
+      name: Rating
+      weight: 110
+      rating_num: "3"
+      image_level: Top
+    plex_all: true
+    filter: 
+      added: <<time_frame>>

@@ -1,0 +1,173 @@
+external_templates:
+  - file: metadata/admin/_templates.yml
+  - file: metadata/admin/_switches.yml
+
+overlays:
+  german:
+    template:
+      - name: use_german
+      - name: flag_overlay
+        language: de
+        overlay: german
+        weight: 89
+  english:
+    template:
+      - name: use_english
+      - name: flag_overlay
+        language: en
+        overlay: english
+        weight: 88
+  french:
+    template:
+      - name: use_french
+      - name: flag_overlay
+        language: fr
+        overlay: french
+        weight: 87
+  japanese:
+    template:
+      - name: use_japanese
+      - name: flag_overlay
+        language: ja
+        overlay: japanese
+        weight: 86
+  korean:
+    template:
+      - name: use_korean
+      - name: flag_overlay
+        language: ko
+        overlay: korean
+        weight: 85
+  chinese:
+    template:
+      - name: use_chinese
+      - name: flag_overlay
+        language: zh
+        overlay: chinese
+        weight: 84
+  danish:
+    template:
+      - name: use_danish
+      - name: flag_overlay
+        language: da
+        overlay: danish
+        weight: 83
+  russian:
+    template:
+      - name: use_russian
+      - name: flag_overlay
+        language: ru
+        overlay: russian
+        weight: 82
+  spanish:
+    template:
+      - name: use_spanish
+      - name: flag_overlay
+        language: es
+        overlay: spanish
+        weight: 81
+  italian:
+    template:
+      - name: use_italian
+      - name: flag_overlay
+        language: it
+        overlay: italian
+        weight: 80
+  portuguese:
+    template:
+      - name: use_portuguese
+      - name: flag_overlay
+        language: pt
+        overlay: portuguese
+        weight: 79
+  hindi:
+    template:
+      - name: use_hindi
+      - name: flag_overlay
+        language: hi
+        overlay: hindi
+        weight: 78
+  telugu:
+    template:
+      - name: use_telugu
+      - name: flag_overlay
+        language: te
+        overlay: telugu
+        weight: 77
+  farsi:
+    template:
+      - name: use_farsi
+      - name: flag_overlay
+        language: fa
+        overlay: farsi
+        weight: 76
+  thai:
+    template:
+      - name: use_thai
+      - name: flag_overlay
+        language: th
+        overlay: thai
+        weight: 75
+  dutch:
+    template:
+      - name: use_dutch
+      - name: flag_overlay
+        language: nl
+        overlay: dutch
+        weight: 74
+  norwegian:
+    template:
+      - name: use_norwegian
+      - name: flag_overlay
+        language: no
+        overlay: norwegian
+        weight: 73
+  icelandic:
+    template:
+      - name: use_icelandic
+      - name: flag_overlay
+        language: is
+        overlay: icelandic
+        weight: 72
+  swedish:
+    template:
+      - name: use_swedish
+      - name: flag_overlay
+        language: sv
+        overlay: swedish
+        weight: 71
+  turkish:
+    template:
+      - name: use_turkish
+      - name: flag_overlay
+        language: tr
+        overlay: turkish
+        weight: 70
+  polish:
+    template:
+      - name: use_polish
+      - name: flag_overlay
+        language: pl
+        overlay: polish
+        weight: 69
+  czech:
+    template:
+      - name: use_czech
+      - name: flag_overlay
+        language: cs
+        overlay: czech
+        weight: 68
+  ukrainian:
+    template:
+      - name: use_ukrainian
+      - name: flag_overlay
+        language: uk
+        overlay: ukrainian
+        weight: 67
+  hungarian:
+    template:
+      - name: use_hungarian
+      - name: flag_overlay
+        language: hu
+        overlay: hungarian
+        weight: 66

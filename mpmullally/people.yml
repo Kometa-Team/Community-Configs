@@ -1,0 +1,81 @@
+######################################################
+#               People Collections                   #
+######################################################
+templates:
+  Person:
+    smart_filter:
+      any:
+        actor: tmdb
+        director: tmdb
+        writer: tmdb
+        producer: tmdb
+      sort_by: random
+      validate: false
+    tmdb_person: <<person>>
+    sort_title: +4_<<collection_name>>
+collections:
+  Adam Sandler:
+    template: {name: Person, person: 19292}
+  Arnold Schwarzenegger:
+    template: {name: Person, person: 1100}
+  Bruce Willis:
+    template: {name: Person, person: 62}
+  Charlie Chaplin:
+    template: {name: Person, person: 13848}
+  Christopher Nolan:
+    template: {name: Person, person: 525}
+  Coen Brothers:
+    template: {name: Person, person: "1223, 1224"}
+    summary: "Joel Coen and Ethan Coen, collectively referred to as the Coen Brothers, are American film directors, producers, screenwriters, and editors. Their films span many genres and styles, which they frequently subvert or parody. Their most acclaimed works include: Raising Arizona (1987), Miller's Crossing (1990), Fargo (1996), The Big Lebowski (1998), O Brother, Where Art Thou? (2000), No Country for Old Men (2007), Burn After Reading (2008), A Serious Man (2009), True Grit (2010), Inside Llewyn Davis (2013), and The Ballad of Buster Scruggs (2018)."
+  Denzel Washington:
+    template: {name: Person, person: 5292}
+  Dustin Hoffman:
+    template: {name: Person, person: 4483}
+  Ewan McGregor:
+    template: {name: Person, person: 3061}
+  George Clooney:
+    template: {name: Person, person: 1461}
+  Harrison Ford:
+    template: {name: Person, person: 3}
+  J.J. Abrams:
+    template: {name: Person, person: 15344}
+  James Cameron:
+    template: {name: Person, person: 2710}
+  Jim Carrey:
+    template: {name: Person, person: 206}
+  Kevin Costner:
+    template: {name: Person, person: 1269}
+  Leonardo DiCaprio:
+    template: {name: Person, person: 6193}
+  Liam Neeson:
+    template: {name: Person, person: 3896}
+  Matt Damon:
+    template: {name: Person, person: 1892}
+  Mel Brooks:
+    template: {name: Person, person: 14639}
+  Mel Gibson:
+    template: {name: Person, person: 2461}
+  Michael Bay:
+    template: {name: Person, person: 865}
+  Morgan Freeman:
+    template: {name: Person, person: 192}
+  Nicolas Cage:
+    template: {name: Person, person: 2963}
+  Patrick Stewart:
+    template: {name: Person, person: 2387}
+  Ridley Scott:
+    template: {name: Person, person: 578}
+  Robin Williams:
+    template: {name: Person, person: 2157}
+  Samuel L. Jackson:
+    template: {name: Person, person: 2231}
+  Sean Connery:
+    template: {name: Person, person: 738}
+  Steven Spielberg:
+    template: {name: Person, person: 488}
+  Tom Cruise:
+    template: {name: Person, person: 500}
+  Tom Hanks:
+    template: {name: Person, person: 31}
+  Will Smith:
+    template: {name: Person, person: 2888}

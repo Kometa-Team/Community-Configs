@@ -13,38 +13,48 @@
 #          # Sets the value at the start of the sort title  #
 #          collection_section: "01"                         #
 #                                                           #
-#          # Turn the StevenLu's Popular collection on/off  #
-#          use_stevenlu: true                               #
-#          # Determines collection order in it's section    #
-#          order_stevenlu:                                  #
-#          # Set visible_library for StevenLu's Popular     #
-#          visible_library_stevenlu:                        #
-#          # Set visible_home for StevenLu's Popular        #
-#          visible_home_stevenlu:                           #
-#          # Set visible_shared for StevenLu's Popular      #
-#          visible_shared_stevenlu:                         #
+#          # For each collection use the "key" to set       #
+#          # the options.                                   #
+#          # Available collections                          #
+#          #   KEY              COLLECTION                  #
+#          #   anidb            AniDB Popular               #
+#          #   commonsense      Common Sense Selected       #
+#          #   stevenlu         StevenLu's Popular Movies   #
+#          #   pirated          Top 10 Pirated Movies       #
 #                                                           #
-#          # Turn the AniDB Popular collection on/off       #
-#          use_anidb: true                                  #
-#          # Determines collection order in it's section    #
-#          order_anidb:                                     #
-#          # Set visible_library for AniDB Popular          #
-#          visible_library_anidb:                           #
-#          # Set visible_home for AniDB Popular             #
-#          visible_home_anidb:                              #
-#          # Set visible_shared for AniDB Popular           #
-#          visible_shared_anidb:                            #
+#          # Available options. Replace "key" with the      #
+#          # desired collection's key from the chart above. #
 #                                                           #
-#          # Turn the Pirated Movies collection on/off      #
-#          use_pirated: true                                #
-#          # Determines collection order in it's section    #
-#          order_pirated:                                   #
-#          # Set visible_library for Pirated Movies         #
-#          visible_library_pirated:                         #
-#          # Set visible_home for Pirated Movies            #
-#          visible_home_pirated:                            #
-#          # Set visible_shared for Pirated Movies          #
-#          visible_shared_pirated:                          #
+#          # Customize summary of collection                #
+#          summary_key: A collection of ...                 #
+#          # Turn the collection on/off                     #
+#          use_key: true                                    #
+#          # Determines collection order in its section     #
+#          order_key:                                       #
+#          # Determines collection order of the collection  #
+#          collection_order_key: custom                     #
+#          # Set visible_library for the collection         #
+#          visible_library_key:                             #
+#          # Set visible_home for the collection            #
+#          visible_home_key:                                #
+#          # Set visible_shared for the collection          #
+#          visible_shared_key:                              #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing_key:                          #
+#          # Adds missing from the collection to sonarr     #
+#          sonarr_add_missing_key:                          #
+#          # Radarr Folder to add to                        #
+#          radarr_folder_key:                               #
+#          # Sonarr Folder to add to                        #
+#          sonarr_folder_key:                               #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag_key:                                  #
+#          # Sonarr Tag for added missing                   #
+#          sonarr_tag_key:                                  #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag_key:                             #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag_key:                             #
 #############################################################
 
 external_templates:
@@ -52,29 +62,67 @@ external_templates:
   template_variables:
     collection_section: "01"
 
+templates:
+  anidb:
+    default:
+      limit_anidb: 30
+      summary_anidb: A collection of Popular Anime on AniDB
+    summary: <<summary_<<key>>>>
+    anidb_popular: <<limit_anidb>>
+
+  commonsense:
+    default:
+      summary_commonsense: A collection of Common Sense <<library_type>>s. Common Sense recognizes outstanding entertainment with an official seal for quality and impact. Common Sense Selections include age-appropriate media with the potential to spark family conversations, entertain families of all kinds, and have a positive, lasting effect on society.
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/cssfamilies<<library_type>>s
+    summary: <<summary_<<key>>>>
+
+  stevenlu:
+    default:
+      summary_stevenlu: A collection of StevenLu's Most Popular Movies
+    summary: <<summary_<<key>>>>
+
+  pirated:
+    default:
+      summary_pirated: TorrentFreak.com's Weekly Top Ten Pirated Movies
+    summary: <<summary_<<key>>>>
+
 collections:
+  AniDB Popular:
+    variables:
+      key: anidb
+    template:
+      - name: anidb
+      - name: shared
+      - name: arr
+      - name: custom
+
+  Common Sense Selection:
+    variables:
+      key: commonsense
+    template:
+      - name: commonsense
+      - name: shared
+      - name: arr
+      - name: custom
+
   StevenLu's Popular Movies:
-    summary: A collection of StevenLu's Most Popular Movies
+    variables:
+      key: stevenlu
     stevenlu_popular: true
     template:
-      - name: customsync
-      - name: chart_shared
-        key: stevenlu
-        check_library: movie
-
-  AniDB Popular:
-    summary: A collection of Popular Anime on AniDB
-    anidb_popular: 30
-    template:
-      - name: customsync
-      - name: chart_shared
-        key: anidb
+      - name: stevenlu
+      - name: shared
+        allowed_libraries: movie
+      - name: arr
+      - name: custom
 
   Top 10 Pirated Movies of the Week:
+    variables:
+      key: pirated
     mdblist_list: https://mdblist.com/lists/hdlists/top-ten-pirated-movies-of-the-week-torrent-freak-com/
-    summary: TorrentFreak.com's Weekly Top Ten Pirated Movies
     template:
-      - name: customsync
-      - name: chart_shared
-        key: pirated
-
+      - name: pirated
+      - name: shared
+        allowed_libraries: movie
+      - name: arr
+      - name: custom

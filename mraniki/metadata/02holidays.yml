@@ -29,23 +29,27 @@ templates:
   Holidays:
     sort_title: +02_<<collection_name>>
     sync_mode: sync
+    url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
+    ##collection_order: custom
+    item_refresh: true
+
 
 collections:
     Halloween:
       template: { name: Holidays}
+      sync_mode: sync
+      smart_label: random
       trakt_list:
-        - https://trakt.tv/users/29zombies/lists/halloween
+        - https://trakt.tv/users/29zombies/lists/halloween?sort=released,desc
         - https://trakt.tv/users/galacticboy/lists/not-so-spooky-halloween
        # - https://trakt.tv/users/kairbear08/lists/halloween
        # - https://trakt.tv/users/mybicycle/lists/halloween
        # - https://trakt.tv/users/jayinftl/lists/halloween
        # - https://trakt.tv/users/roswellgeek/lists/halloween
       summary: "Boo!"
-      sort_title: +20_<<collection_name>>
-      visible_library: false
-      visible_home: false
-      visible_shared: false
- #    schedule: yearly (08/28)      
+      sort_title: +00_<<collection_name>>
+      visible_home: true
+      #schedule: yearly (08/28)      
 
     Thanksgiving:
       template: { name: Holidays}
@@ -55,44 +59,41 @@ collections:
         - https://trakt.tv/users/retrogran/lists/thanksgiving-season-movies
         - https://trakt.tv/users/padawan_seneca/lists/vibe-autumn-tv-series-movies
       sort_title: +20_<<collection_name>>
-      visible_home: false
-      visible_shared: false
+      collection_order: release
       visible_library: false
-      #   schedule: yearly (09/10)
+      #schedule: yearly (09/10)
 
 
     Christmas:
       template: { name: Holidays}
-      trakt_list:
+      trakt_list_details:
         - https://trakt.tv/users/movistapp/lists/christmas-movies
         - https://trakt.tv/users/questdvd/lists/absolute-hayes-christmas-classics
         - https://trakt.tv/users/littlestella3/lists/christmas
+      collection_order: release
       sort_title: +20_<<collection_name>>
       summary: "Ho ho ho"
-      visible_home: false
-      visible_shared: false
       visible_library: false
-  #    schedule: yearly (10/01)
-
+      #schedule: yearly (10/01)
 
     Chinese New Year:
       template: { name: Holidays}
-      trakt_list: 
+      trakt_list_details: 
        - https://trakt.tv/users/mraniki/lists/cny
-      visible_library: true
-      visible_home: true
-      visible_shared: true
-      smart_label: audience_rating.desc
-      summary: Gong Xi Fa Cai !
+      sort_title: +20_<<collection_name>>
+      visible_library: false
+      visible_home: false
+      visible_shared: false
      #schedule: yearly (04/01) 
 
-    Valentine's Day:
+    Valentines Day:
       template: { name: Holidays}
       trakt_list: 
        - https://trakt.tv/users/movie-pal/lists/valentine-s-day
        - https://trakt.tv/users/barsaky/lists/den-svateho-valentina-valentine-s-day
        - https://trakt.tv/users/abbelea/lists/movies-best-of-love
       summary: Love me tender, love me sweet
+      collection_order: release
       visible_library: false
       visible_home: false
       visible_shared: false
@@ -108,30 +109,29 @@ collections:
       visible_home: false
       visible_shared: false
       summary: a cultural and religious celebration held on 17 March, the traditional death date of Saint Patrick the foremost patron saint of Ireland. 
+      collection_order: release
       sort_title: +20_<<collection_name>>
       #   schedule: yearly (03/01)
  
     Eid:
       template: { name: Holidays}
-      trakt_list: 
+      trakt_list_details: 
        - https://trakt.tv/users/mraniki/lists/eid
       visible_library: false
-      visible_home: false
-      visible_shared: false
       summary: The religious holiday is celebrated by Muslims worldwide because it marks the end of the month-long dawn-to-sunset fasting of Ramadan.
       sort_title: +20_<<collection_name>>
      #   schedule: yearly (03/15) 
     
     Diwali:
       template: { name: Holidays}
-      trakt_list: 
-       - https://trakt.tv/users/mraniki/lists/diwali 
-      visible_library: false
-      visible_home: false
-      visible_shared: false
-      summary: One of the most popular festivals of Hinduism, Diwali symbolizes the spiritual "victory of light over darkness, good over evil, and knowledge over ignorance".
-      sort_title: +20_<<collection_name>>
-         # schedule: yearly (10/01) 
+      trakt_list_details: 
+       - https://trakt.tv/users/mraniki/lists/diwali
+       - https://trakt.tv/users/maxwelldeux/lists/outlook-india-s-best-bollywood-films
+      visible_library: true
+      visible_home: true
+      visible_shared: true
+      sort_title: +00_<<collection_name>>
+      #schedule: yearly (10/01) 
 
 
      

@@ -1,0 +1,115 @@
+##############################################################
+##                  Holiday Collections                     ##
+##                Created by JJJonesJr33                    ##
+##                      Version 2.0                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##               Yozora, Bullmoose20, & Sohjiro             ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:
+    Holiday:
+        sort_title: +++++++_<<collection_name>>
+        url_poster: <<poster>>
+        collection_order: release.desc
+        collection_mode: hide
+        delete_not_scheduled: false
+        run_again: true
+        visible_home: true
+        visible_shared: true
+        sync_mode: sync
+
+#############################
+##       Collections       ##
+#############################
+
+# FYI: To set the collections on a schedule to where they don't show all year long uncomment "schedule" and and change "delete_not_scheduled:" to "true"
+
+collections:
+  Christmas: #IMDB lists have been removed as they have all been merged into christmas-static-list
+    template: {name: Holiday, holiday: "Christmas", poster: https://theposterdb.com/api/assets/212635}
+    visible_home: range(12/01-12/31)
+    visible_shared: range(12/01-12/31)
+   #schedule: range(12/01-12/31)
+    sort_title: +++++++_Christmas
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/christmas
+      - https://trakt.tv/users/jjjonesjr33/lists/christmas-static-list
+    summary: This collection revolves around the plot involving Christmas.
+  Halloween:
+    template: {name: Holiday, holiday: "Halloween", poster: https://theposterdb.com/api/assets/212637}
+    visible_home: range(10/01-10/31)
+    visible_shared: range(10/01-10/31)
+    #schedule: range(10/01-10/31)
+    sort_title: +++++++_Halloween
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/halloween
+    summary: This collection revolves around the plot involving Halloween.
+  New Year's Eve Movies:
+    template: {name: Holiday, holiday: "New Year's Eve", poster: https://i.imgur.com/YCYXhAX.png}
+    visible_home: range(12/26-01/05)
+    visible_shared: range(12/26-01/05)
+    #schedule: range(12/26-01/05)
+    sort_title: +++++++_New Year
+    imdb_list: 
+      - https://www.imdb.com/list/ls066838460/
+    summary: This collection revolves around the plot involving New Year's Eve.
+  Independence Day:
+    template: {name: Holiday, holiday: "Independence Day", poster: https://theposterdb.com/api/assets/240645}
+    visible_home: range(07/01-07/05)
+    visible_shared: range(07/01-07/05)
+    #schedule: range(07/01-07/05)
+    sort_title: +++++++_Independence Day
+    imdb_list: 
+      - https://www.imdb.com/list/ls552600367/
+    summary: This collection revolves around the plot involving New Year's Eve.
+  Valentine's Day Movies:
+    template: {name: Holiday, holiday: "Valentine's Day", poster: https://theposterdb.com/api/assets/212641}
+    visible_home: range(02/01-02/14)
+    visible_shared: range(02/01-02/14)
+    #schedule: range(02/01-02/14)
+    sort_title: +++++++_Valentine
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+    summary: This collection revolves around the plot involving Valentine's Day.
+  St. Patrick's Day Movies:
+    template: {name: Holiday, holiday: "St. Patrick's Day", poster: https://theposterdb.com/api/assets/240644}
+    visible_home: range(03/01-03/17)
+    visible_shared: range(03/01-03/17)
+    #schedule: range(03/01-03/17)
+    sort_title: +++++++_St Patrick
+    imdb_list:
+      - https://www.imdb.com/list/ls063934595/
+    summary: This collection revolves around the plot involving St. Patrick's Day.
+  Thanksgiving Movies:
+    template: {name: Holiday, holiday: Thanksgiving, poster: https://theposterdb.com/api/assets/212638}
+    visible_home: range(11/01-11/31)
+    visible_shared: range(11/01-11/31)
+    #schedule: range(11/01-11/31)
+    sort_title: +++++++_Thanksgiving
+    imdb_list: 
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls091597850/
+    summary: This collection revolves around the plot involving Thanksgiving.
+  Easter Movies:
+    template: {name: Holiday, holiday: Easter, poster: https://theposterdb.com/api/assets/212636}
+    visible_home: range(3/22-4/25)
+    visible_shared: range(3/22-4/25)
+    #schedule: range(3/22-4/25)
+    sort_title: +++++++_Easter
+    imdb_list: 
+      - https://www.imdb.com/list/ls062665509/
+      - https://www.imdb.com/list/ls051733651/
+    summary: This collection revolves around the plot involving Easter.

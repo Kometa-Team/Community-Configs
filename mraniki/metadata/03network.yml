@@ -32,10 +32,13 @@ templates:
     tmdb_network: <<network>>
     sort_title: +3_<<collection_name>>
     sync_mode: sync
+    smart_label: release.desc
+
   networkFR:
     tmdb_network: <<network>>
     sort_title: +3__FR<<collection_name>> 
     sync_mode: sync    
+    smart_label: release.desc
 
 collections:
   HBO:
@@ -79,6 +82,12 @@ collections:
    
   iTV:
     template: { name: network, network: "9, 3448, 24546, 5238" }
+
+  Channel4:
+   template: { name: network, network: "26" }
+
+  Channel5:
+   template: { name: network, network: "99" }
    
   Canal+:
     template: { name: networkFR, network: 285}
@@ -93,7 +102,3 @@ collections:
     template: { name: networkFR, network: 712}
 
 
-   
-   
-   
-   

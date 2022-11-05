@@ -1,0 +1,33 @@
+templates:
+  set:
+    optional:
+      - network
+      - list
+    tmdb_network: <<network>>
+    tmdb_list: <<list>>
+    sort_title: <<collection_name>>
+    sync_mode: sync
+    url_poster: <<poster>>
+    url_background: <<background>>
+
+collections:
+
+ DC Universe:
+        template: { name: set, list: "8215646", poster: https://theposterdb.com/api/assets/239356, background: https://i.imgur.com/x9ijxTc.jpg, }
+        summary: Series DC
+
+ Marvel Television:
+        template: { name: set, list: "8205726", poster: https://theposterdb.com/api/assets/239453, background: https://i.imgur.com/ckx6reE.jpg, }
+        summary:  Marvel Television
+
+ Stargate:
+        template: { name: set, list: "8205729", poster: https://theposterdb.com/api/assets/228932, background: https://i.imgur.com/VrJ3Um8.jpg, }
+        summary:  Stargate
+
+ Star Wars:
+        template: { name: set, list: "8205730", poster: https://theposterdb.com/api/assets/164120, background: https://i.imgur.com/OvxROTE.jpg, }
+        summary:  Star Wars
+
+ Star Trek:
+        template: { name: set, list: "8215091", poster: https://theposterdb.com/api/assets/222279, background: https://i.imgur.com/Yp0NCZa.jpg, }
+        summary:  Star Trek
