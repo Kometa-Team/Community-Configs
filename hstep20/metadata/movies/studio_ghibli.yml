@@ -1,0 +1,52 @@
+#Uses https://theposterdb.com/set/32965 and https://theposterdb.com/poster/32223
+collections:
+  Studio Ghibli Movies:
+    tmdb_company: 10342
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/32223
+    sort_title: +++++_Studio_Ghibli
+    collection_order: release
+
+metadata:
+  4935: # Howls Moving Castle
+    url_poster: https://theposterdb.com/api/assets/51623
+  12429: # Ponyo
+    url_poster: https://theposterdb.com/api/assets/51625
+  129: # Spirited Away
+    url_poster: https://theposterdb.com/api/assets/51621
+  37797: # Whisper of the Heart
+    url_poster: https://theposterdb.com/api/assets/51639
+  8392: # My Neighbor Totoro
+    url_poster: https://theposterdb.com/api/assets/51612
+  16859: # Kiki's Delivery Service
+    url_poster: https://theposterdb.com/api/assets/51614
+  128: # Princess Mononoke
+    url_poster: https://theposterdb.com/api/assets/51620
+  242828: # When Marnie Was There
+    url_poster: https://theposterdb.com/api/assets/51630
+  10515: # Castle in the Sky
+    url_poster: https://theposterdb.com/api/assets/51611
+  149870: # The Wind Rises
+    url_poster: https://theposterdb.com/api/assets/51628
+  51739: # The Secret World of Arrietty
+    url_poster: https://theposterdb.com/api/assets/51626
+  11621: # Porco Rosso
+    url_poster: https://theposterdb.com/api/assets/51616
+  15370: # The Cat Returns
+    url_poster: https://theposterdb.com/api/assets/51622
+  83389: # From Up on Poppy Hill
+    url_poster: https://theposterdb.com/api/assets/51627
+  15283: # Pom Poko
+    url_poster: https://theposterdb.com/api/assets/51618
+  37933: # Tales from Earthsea
+    url_poster: https://theposterdb.com/api/assets/51624
+  149871: # The Tale of The Princess Kaguya
+    url_poster: https://theposterdb.com/api/assets/51629
+  21057: # Ocean Waves
+    url_poster: https://theposterdb.com/api/assets/51617
+  15080: # Only Yesterday
+    url_poster: https://theposterdb.com/api/assets/51615
+  16198: # My Neighbors the Yamadas
+    url_poster: https://theposterdb.com/api/assets/23916
+  12477: # Grave of the fireflies
+    url_poster: https://theposterdb.com/api/assets/51613

@@ -1,0 +1,19 @@
+#Uses posterdblink
+
+collections:
+  How to Train Your Dragon Trilogy:
+    tmdb_collection: https://www.themoviedb.org/collection/89137
+    #or trakt_list, tmdb_list
+    tmdb_summary: https://www.themoviedb.org/collection/89137
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/28
+    sort_title: ++++++++_how_to_train_your_dragon
+    collection_order: release
+
+metadata:
+  10191: # How to Train Your Dragon
+    url_poster: https://theposterdb.com/api/assets/29
+  82702: # How to Train Your Dragon 2
+    url_poster: https://theposterdb.com/api/assets/30
+  166428: # How to Train Your Dragon: The Hidden World
+    url_poster: https://theposterdb.com/api/assets/31
