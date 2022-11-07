@@ -23,3 +23,5 @@ The resolution config is my version of ICHIMOKU's overlay config. Using the imag
 
 The banner config is a slightly tweaked version of the PMM default ribbon. Where by the PMM default only adds an overlay to movies that have won "Best Picture" mine will overlay all movies that have an oscar awarded in any category. 
 
+The Anime collections is an edit of Eviltacctions config. He's created some great posters, I've just uploaded them to plex movie cover database and linked them into the config file. All credit goes to Evil for the images and the base template. I just tweaked it to work more automatically. 
+
