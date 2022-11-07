@@ -1,6 +1,6 @@
 # bullmoose20 PMM files
 ## Basics
-I run PMM nightly (not lsio image) and Plex(hotio image) within Unraid:
+I run PMM nightly (not lsio image) and Plex(hotio image) on Unraid 6.11.2. At the top of my config.yml file I will usually specify the version that this config.yml file works with.
 
 <br>
 
