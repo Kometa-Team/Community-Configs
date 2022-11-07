@@ -1,0 +1,19 @@
+#Uses posterdblink
+
+collections:
+  Johnny English Trilogy: # Update this Name
+    tmdb_collection: https://www.themoviedb.org/collection/86117-johnny-english-collection
+    #or trakt_list, tmdb_list
+    tmdb_summary: https://www.themoviedb.org/collection/86117-johnny-english-collection
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/73267
+    sort_title: ++++++++_johnny_english
+    collection_order: release
+
+metadata:
+  9486: # Johnny English
+    url_poster: https://theposterdb.com/api/assets/73268
+  58233: # Johnny English Reborn
+    url_poster: https://theposterdb.com/api/assets/73269
+  463272: # Johnny English Strikes Again
+    url_poster: https://theposterdb.com/api/assets/73270

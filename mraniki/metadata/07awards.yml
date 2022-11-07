@@ -27,64 +27,77 @@
 #####################################################
 #####################################################
 templates:
- Award:
-  sort_title: +07_<<collection_name>>
-  sync_mode: sync
-  smart_label: audience_rating.desc
-  #schedule: weekly (monday)
+  IMDBAward:
+    sort_title: +07_<<collection_name>>
+    sync_mode: sync
+    smart_label: audience_rating.desc
+    url_background: https://images.unsplash.com/photo-1536000999382-52cecfca7fb1
+    #schedule: weekly (monday)
+
+  TraktAward:
+    sort_title: +07_<<collection_name>>
+    sync_mode: sync
+    url_background: https://images.unsplash.com/photo-1536000999382-52cecfca7fb1
+    collection_order: release
+    #schedule: weekly (monday)
 
 collections:
+ Oscar 2022 nominations:
+  template: { name: TraktAward} 
+  trakt_list_details: 
+   - https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2022
+  summary: 2022 Oscar nominations
+  visible_home: false
+  radarr_add: true
+  radarr_search: true
+  radarr_monitor: true
+        
  Oscars Winners:
-  template: { name: Award} 
+  template: { name: IMDBAward} 
   imdb_list: "https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner"
   summary: "Oscar Winning Movies"
   #schedule: yearly (03/28)
   
  Oscar best picture winner:
-  template: { name: Award}
-  imdb_list: https://www.imdb.com/search/title/?count=250&groups=oscar_best_picture_winners&sort=year,desc
-  summary: "The Academy Award for Best Picture is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929."
+  template: { name: TraktAward} 
+  trakt_list_details: 
+   - https://trakt.tv/users/thefork/lists/academy-awards-best-picture-winners
   #schedule: yearly (03/28)
  
- Oscar 2022 nominations:
-  template: { name: Award} 
-  trakt_list: 
-   - https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2022
-  summary: 2022 Oscar nominations
-  visible_home: true
-        
  Cannes - Palme d'or:
-  template: { name: Award}  
-  trakt_list: https://trakt.tv/users/sp1ti/lists/cannes-palme-d-or-winners
-  summary: "The Palme d'Or is the highest prize awarded at the Cannes Film Festival. It was introduced in 1955 by the organising committee."
+  template: { name: TraktAward}  
+  trakt_list_details: https://trakt.tv/users/sp1ti/lists/cannes-palme-d-or-winners
   #schedule: yearly (06/01)
 
  Cesar:
-  template: { name: Award} 
-  trakt_list: https://trakt.tv/users/fauxliege/lists/cesar-meilleur-film
-  summary: "The César Award is the national film award of France. It is delivered in the Nuit des César ceremony and was first awarded in 1976."
+  template: { name: TraktAward} 
+  trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/cesar-award-best-french-film
   #schedule: yearly (03/14)
 
  Berlinale:
-  template: { name: Award} 
-  trakt_list: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
-  summary: "The Berlin International Film Festival, usually called the Berlinale, is a film festival held annually in Berlin, Germany."
+  template: { name: TraktAward} 
+  trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
   #schedule: yearly (02/21)
 
  BAFTA Best Film:
-  template: { name: Award} 
-  trakt_list: https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
-  summary: "The EE British Academy Film Awards or BAFTA Film Awards are presented in an annual award show hosted by the British Academy of Film and Television Arts (BAFTA) to honour the best British and international contributions to film."
-  #schedule: yearly (02/21)
+  template: { name: TraktAward} 
+  trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
+ #schedule: yearly (02/21)
 
  Venice:
-  template: { name: Award} 
-  trakt_list: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
-  summary: "The Venice Film Festival or Venice International Film Festival (Italian: Mostra Internazionale d'Arte Cinematografica della Biennale di Venezia is the world's oldest film festival"
+  template: { name: TraktAward} 
+  trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
   #schedule: yearly (02/21)
 
+ Magritte:
+  template: { name: TraktAward} 
+  trakt_list_details: https://trakt.tv/users/mraniki/lists/awards-magritte-du-cinema-best-films
+  #schedule: yearly (02/20)
 
-
+ Goya:
+  template: { name: TraktAward} 
+  trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/goya-award-best-spanish-film
+  #schedule: yearly (02/20)
 
 
 
