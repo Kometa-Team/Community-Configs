@@ -1,6 +1,6 @@
 ### Must be on NIGHTLY 1.17.3-develop188 or greater
 libraries:
-  TestMovies:                                           # Must match a library name in your Plex
+  Movies:                                           # Must match a library name in your Plex
     report_path: config/missing/Movies_missing.yml
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
@@ -190,7 +190,7 @@ libraries:
       mass_originally_available_update: tmdb        # Update all original available date from tmdb
       mass_imdb_parental_labels: without_none
 
-  TestTV Shows:                                         # Must match a library name in your Plex
+  TV Shows:                                         # Must match a library name in your Plex
     report_path: config/missing/TV_missing.yml
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
