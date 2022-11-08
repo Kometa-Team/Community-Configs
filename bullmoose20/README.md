@@ -11,7 +11,7 @@ Nothing is local other than the fonts which are included in this repo (fonts.zip
 
 Unzip the fonts into `config/metadata/overlays/fonts/` to use this config without modifications.
 
-You can put the fonts elsewhere, but if you choose to do that, you will need to adjust the ratings section (rating1_font:, rating2_font:, rating2_font:) of the overlays within the config.yml file to point to the location you chose.
+You can put the fonts elsewhere, but if you choose to do that, you will need to adjust the ratings section (rating1_font:, rating2_font:, rating3_font:) of the overlays within the config.yml file to point to the location you chose.
 
 <br>
 
