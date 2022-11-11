@@ -29,10 +29,6 @@ All Movies have matching poster sets and a collection poster. TV Show metadata m
 - Shrek Collection
 - Studio Ghibli Collection
 ## Shows
-- Arcane
-  - Show Poster
-  - Season Posters
-  - Title Cards
 - Doctor Who (2005)
   - Season Posters
 - Documentary Now
@@ -64,7 +60,43 @@ All Movies have matching poster sets and a collection poster. TV Show metadata m
   - Movies
     - Collection Poster
     - Movie Posters
+
 --------
+
+
+# Playlists
+
+**IMPORTANT NOTE ABOUT PLAYLISTS** - Playlist files require the 'libraries' field to be filled out, in order for PMM to appy the playlist to the libraries listed. This means that Playlist files WILL NOT WORK using the 'git:' attribute in the config file. You have to manually Copy/Paste the Playlist file into your own setup, and change each of the 'Libraries' to match your personal naming scheme for your Plex libraries.
+
+*Note* - All of the playlists use a 'smart filter' to only pull in Unwatched Episodes. That means, after PMM runs, your playlist will be updated to remove the episodes you've already watched. This is meant for a seamless viewing experience of showing 'the next episode' at the top of the playlist after PMM runs. If you want to disable it, remove the "smart filter" block of config in each playlist file.
+
+## TV Show Playlists
+
+### TV
+- X-Files (Freak of the Week)
+  - Just the 'Monster of the Week' episodes of X-Files, all in order
+
+- X-Files (Mythology)
+  - Just the Serialized 'Mythology' episodes of X-Files, all in order
+
+- Ducktales (2017) Intended Viewing Order
+  - Disney aired them out of order of the Crew's intended viewing order, so this uses the alternate order on the TVDB page to build a playlist in the order meant to be watched
+### Anime
+- Bleach - No Filler
+  - All of the core episodes of the show Bleach without any of the filler
+
+- Monogatari Watch Order
+  - Monogatari in it's intended watch order. The series should be organized to TVDB Standards to use this - no HAMA/other metadata providers
+
+## Music Playlists
+- <3 by Genre
+  - Uses a template to build out playlists of <3 music by Genre. Uses Common genres I personally listen to, but is easily expandable for your own personal library
+  - **Note** - Soundtracks are excluded by default, and a few playlists don't fit the template (soundtrack album type, instrumental [where you might want soundtracks], and All <3 music). This could probably be improved via optional variables, but I haven't put time into figuring that out.
+
+- Chillhop by Season
+  - The 'Chillhop Essentials' release a seasonal album for each season, each year. This groups them together by Season for a quick shuffle of background noise dependant on the weather. 
+
+
 #### Future Collections
 Some future collections I plan to do include:
 - Marvel Cinematic Universe
@@ -74,4 +106,4 @@ Some future collections I plan to do include:
 - Love Death Robots
 - 
 
-There are a lot of good collections for these already, but my aim is to include matching posters for them as well in the provided files, which most don't do.
+There are a lot of good collections for these already, but my aim is to include matching posters for them in metadata alongside the collection itself, which most don't do.
