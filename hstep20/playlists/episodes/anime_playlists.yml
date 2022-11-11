@@ -1,0 +1,18 @@
+playlists:
+  Monogatari Watch Order:
+    libraries: "All Anime"
+    sync_mode: sync
+    trakt_list: https://trakt.tv/users/agent531c/lists/monogatari-watchlist?sort=rank%2Casc
+    summary: Monogatari in watch order
+    smart_filter:
+      any:
+        episode_unplayed: true
+
+  Bleach - No Filler:
+    libraries: "All Anime"
+    sync_mode: sync
+    trakt_list: https://trakt.tv/users/grawler/lists/bleach-in-order-no-filler?sort=rank%2Casc
+    summary: A Watch order for Bleach with all of the complete filler parts cut out
+    smart_filter:
+      any:
+        episode_unplayed: true
