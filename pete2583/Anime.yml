@@ -1,0 +1,127 @@
+##########################################
+##           Anime Collections          ##
+##########################################
+#                                        #
+#                Credits                 #
+#            Evil Tacctician             #
+#              JJJonesJr33               #
+#                                        #
+#   This is an edit of Evil Taccticians  #
+#    config. I've just added the images  #
+#    to automatically load into Plex     #
+##########################################
+templates:
+  MAL Genre:
+    mal_genre:
+      genre_id: <<genre_id>>
+    collection_order: alpha
+    collection_mode: hide
+    url_poster: <<poster>>
+    sync_mode: sync
+  MAL User:
+    sort_title: ~<<collection_name>>
+    mal_userlist:
+      username: <<username>>
+      status: plan_to_watch
+      sort_by: title
+      limit: 500
+    collection_order: alpha
+    collection_mode: hide
+    sync_mode: sync    
+
+collections:
+  Collection1: # Replace Username1 with a valid MAL Username
+    template: { name: MAL User, username: Username1 }
+  Collection2: # Replace Username2 with a valid MAL Username
+    template: { name: MAL User, username: Username2 }
+  Donghua:
+    collection_order: alpha
+    sync_mode: sync
+    plex_search:
+      all:
+        audio_language: zh
+        title.not: aggretsuko
+    url_poster: https://plexcollectionposters.com/images/2022/11/07/Donghuaaeea5a4bb0e03336.png
+  Mobile Suit Gundam:
+    collection_order: alpha
+    sync_mode: sync
+    url_poster: https://plexcollectionposters.com/images/2022/11/07/Mobile-Suit-Gundamcb89279edb27f8b9.png
+    plex_search:
+      all:
+        title: Gundam    
+  Action:
+    template: { name: MAL Genre, genre_id: 1, poster: https://plexcollectionposters.com/images/2022/11/07/Action86c5a89702c5725d.png }
+  Adventure:
+    template: { name: MAL Genre, genre_id: 2, poster: https://plexcollectionposters.com/images/2022/11/07/Adventureb8050bcb12b534b7.png }
+  Boys Love:
+    template: { name: MAL Genre, genre_id: 28, poster: https://plexcollectionposters.com/images/2022/11/07/Boys-Love571af12aff5f8180.png }
+  Cars:
+    template: { name: MAL Genre, genre_id: 3, poster: https://plexcollectionposters.com/images/2022/11/07/Carsc48158c576f13c79.png }
+  Comedy:
+    template: { name: MAL Genre, genre_id: 4, poster: https://plexcollectionposters.com/images/2022/11/07/Comedyf1825c2c19ecf783.png }
+  Demons:
+    template: { name: MAL Genre, genre_id: 6, poster: https://plexcollectionposters.com/images/2022/11/07/Demonsfa7faffa20352d69.png }
+  Drama:
+    template: { name: MAL Genre, genre_id: 8, poster: https://plexcollectionposters.com/images/2022/11/07/Dramab95c7f8b24e70985.png }
+  Ecchi:
+    template: { name: MAL Genre, genre_id: 9, poster: https://plexcollectionposters.com/images/2022/11/07/Ecchi54584a5716a0ab86.png }
+  Erotica:
+    template: { name: MAL Genre, genre_id: 49, poster: https://plexcollectionposters.com/images/2022/11/07/Erotica142ac39007c7e89c.png }
+  Fantasy:
+    template: { name: MAL Genre, genre_id: 10, poster: https://plexcollectionposters.com/images/2022/11/07/Fantasya6aa9a3e38ebfa7b.png }
+  Harem:
+    template: { name: MAL Genre, genre_id: 35, poster: https://plexcollectionposters.com/images/2022/11/07/Harema2bace4793a2874d.png }
+  Hentai:
+    template: { name: MAL Genre, genre_id: 12, poster: https://plexcollectionposters.com/images/2022/11/07/Hentai4cb9c33ed0eb90af.png }
+  Historical:
+    template: { name: MAL Genre, genre_id: 13, poster: https://plexcollectionposters.com/images/2022/11/07/Historical8236b3d42324ade7.png }
+  Horror:
+    template: { name: MAL Genre, genre_id: 14, poster: https://plexcollectionposters.com/images/2022/11/07/Horror2a2f922b560d950c.png }
+  Game:
+    template: { name: MAL Genre, genre_id: 11, poster: https://plexcollectionposters.com/images/2022/11/07/Game26a5f97fd67fac58.png }
+  Girls Love:
+    template: { name: MAL Genre, genre_id: 26, poster: https://plexcollectionposters.com/images/2022/11/07/Girls-Lovef96ed3f286f14d81.png }
+  Gourmet:
+    template: { name: MAL Genre, genre_id: 47, poster: https://plexcollectionposters.com/images/2022/11/07/Gourmet84f9ce267895137a.png }
+  Martial Arts:
+    template: { name: MAL Genre, genre_id: 17, poster: https://plexcollectionposters.com/images/2022/11/07/Martial-Artsbe1983730eb7cd7d.png }
+  Mecha:
+    template: { name: MAL Genre, genre_id: 18, poster: https://plexcollectionposters.com/images/2022/11/07/Mecha1e515149a6e648b0.png }
+  Military:
+    template: { name: MAL Genre, genre_id: 38, poster: https://plexcollectionposters.com/images/2022/11/07/Militaryb9b72b04328075a3.png }
+  Music:
+    template: { name: MAL Genre, genre_id: 19, poster: https://plexcollectionposters.com/images/2022/11/07/Musice9441973998aea41.png }
+  Mystery:
+    template: { name: MAL Genre, genre_id: 7, poster: https://plexcollectionposters.com/images/2022/11/07/Mystery82c9c956510124ee.png }
+  Parody:
+    template: { name: MAL Genre, genre_id: 20, poster: https://plexcollectionposters.com/images/2022/11/07/Parody2ded1d85bc1eff33.png }
+  Police:
+    template: { name: MAL Genre, genre_id: 39, poster: https://plexcollectionposters.com/images/2022/11/07/Policed8caefb96533c810.png }
+  Psychological:
+    template: { name: MAL Genre, genre_id: 40, poster: https://plexcollectionposters.com/images/2022/11/07/Psychological7b41f6e2bae41cba.png }
+  Romance:
+    template: { name: MAL Genre, genre_id: 22, poster: https://plexcollectionposters.com/images/2022/11/07/Romance696bdbcecee09409.png }
+  Samurai:
+    template: { name: MAL Genre, genre_id: 21, poster: https://plexcollectionposters.com/images/2022/11/07/Samurai49b3b32f00004e5b.png }
+  School:
+    template: { name: MAL Genre, genre_id: 23, poster: https://plexcollectionposters.com/images/2022/11/07/School51d060f9a4b703e8.png }
+  Sci-Fi:
+    template: { name: MAL Genre, genre_id: 24, poster: https://plexcollectionposters.com/images/2022/11/07/Sci-Fi0cdc99bde5fede40.png }
+  Shoujo:
+    template: { name: MAL Genre, genre_id: 25, poster: https://plexcollectionposters.com/images/2022/11/07/Shoujo5416a1813c23c1cf.png }
+  Shounen:
+    template: { name: MAL Genre, genre_id: 27, poster: https://plexcollectionposters.com/images/2022/11/07/Shounenf7ed615b6f04be5e.png }
+  Slice of Life:
+    template: { name: MAL Genre, genre_id: 36, poster: https://plexcollectionposters.com/images/2022/11/07/Slice-of-Lifeb15bfb466d310a03.png }
+  Space:
+    template: { name: MAL Genre, genre_id: 29, poster: https://plexcollectionposters.com/images/2022/11/07/Spaceae33942ab2bf6e10.png }
+  Sports:
+    template: { name: MAL Genre, genre_id: 30, poster: https://plexcollectionposters.com/images/2022/11/07/Sports8b052c9048accaaf.png }
+  Supernatural:
+    template: { name: MAL Genre, genre_id: 37, poster: https://plexcollectionposters.com/images/2022/11/07/Supernaturala4dad22d88abac71.png }
+  Super Power:
+    template: { name: MAL Genre, genre_id: 31, poster: https://plexcollectionposters.com/images/2022/11/07/Super-Power055061c19d6c1d9c.png }
+  Thriller:
+    template: { name: MAL Genre, genre_id: 41, poster: https://plexcollectionposters.com/images/2022/11/07/Thriller0b54e07c359e83b2.png }
+  Vampire:
+    template: { name: MAL Genre, genre_id: 32, poster: https://plexcollectionposters.com/images/2022/11/07/Vampire05a26cd9bccbb0cf.png }
