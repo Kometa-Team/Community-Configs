@@ -19,7 +19,6 @@ templates:
       all:
         track_user_rating.gte: 5
         album_type.not: Soundtrack
-        artist_genre.not: Instrumental
         any:
           artist_country: <<country>>
 
