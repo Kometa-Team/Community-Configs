@@ -1,15 +1,31 @@
+templates:
+  Watch Order:
+    trakt_list: <<list>>
+    libraries: "YOUR TV LIBRARY  NAME HERE"
+    sync_mode: sync
+    summary: <<summary>>
+    smart_filter:
+      any:
+        episode_unplayed: true
+
 playlists:
   X Files (Freak of the Week):
-    trakt_list: https://trakt.tv/lists/23903123
-    libraries: "All TV Shows"
-    sync_mode: sync
+    {
+      name: Watch Order,
+      list: https://trakt.tv/lists/23903123,
+      summary: "The 'Monster of the Week' episodes of X Files",
+    }
 
   X Files (Mythology):
-    trakt_list: https://trakt.tv/lists/23903191
-    libraries: "All TV Shows"
-    sync_mode: sync
+    {
+      name: Watch Order,
+      list: https://trakt.tv/lists/23903191,
+      summary: "The Seriazlied episodes of X-Files in order",
+    }
 
-  Ducktales Intended Viewing Order:
-    trakt_list: https://trakt.tv/users/itsmistermoon/lists/ducktales-2017-official-order?sort=rank%2Casc
-    libraries: "All TV Shows"
-    sync_mode: sync
+  Ducktales (2017) Intended Viewing Order:
+    {
+      name: Watch Order,
+      list: https://trakt.tv/users/itsmistermoon/lists/ducktales-2017-official-order?sort=rank%2Casc,
+      summary: "The Crew's intended viewing order after Disney aired them out of order. This uses the alternate order on the TVDB page to build a playlist in the order meant to be watched",
+    }
