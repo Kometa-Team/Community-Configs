@@ -1,0 +1,146 @@
+#############################################################
+#               Streaming On Network Overlay                #
+#              Created by anon_fawkes & NaDs                #
+#             Credit to Magic815 for base images            #
+#############################################################
+#                                                           #
+#  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#  The style variable can be either "Square" or "Round"     #
+#                                                           #
+#    overlay_path:                                          #
+#      - git: anon_fawkes/overlays/stream_on.yml            #
+#        template_variables:                                #
+#          style: Square                                    #
+#                                                           #
+#          # Use the Netflix overlay                        #
+#          use_netflix: true                                #
+#          # Use the Disney+ overlay                        #
+#          use_disney: true                                 #
+#          # Use the HBO overlay                            #
+#          use_hbo: true                                    #
+#          # Use the Hulu overlay                           #
+#          use_hulu: true                                   #
+#          # Use the Prime overlay                          #
+#          use_prime: true                                  #
+#          # Use the Paramount+ overlay                     #
+#          use_paramount: true                              #
+#          # Use the Discovery+ overlay                     #
+#          use_discovery: true                              #
+#          # Use the Apple TV + overlay                     #
+#          use_apple: true                                  #
+#          # Use the Peacock overlay                        #
+#          use_peacock: true                                #
+#                                                           #
+#############################################################
+
+queues:
+  stream:
+    - horizontal_offset: 15         # This is the first position
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+    - horizontal_offset: 130       # This is the second position
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+    - horizontal_offset: 245         # This is the third position
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+    - horizontal_offset: 360         # This is the third position
+      horizontal_align: center
+      vertical_offset: 10
+      vertical_align: bottom
+
+templates:
+  Streaming:
+    optional:
+      - use_<<slug>>
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: right
+      vertical_offset: 15
+      vertical_align: bottom
+      weight_<<key>>: <<weight>>
+      style: Round
+    ignore_blank_results: true
+    overlay:
+      name: <<overlay_name>>
+      queue: stream
+      style: <<style>>
+      weight: <<weight_<<key>>>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      git: anon_fawkes/overlays/images/<<overlay_name>>-<<style>>
+
+overlays:
+  STREAMBLANK:
+    template:
+      - name: Streaming
+    overlay:
+      name: STREAMBLANK
+      git: anon_fawkes/overlays/images/STREAMBLANK
+    plex_search:
+      validate: false
+      any:
+        collection:
+          - AppleTVPlus
+          - Prime
+          - Hulu
+          - Paramount
+          - Peacock
+          - DiscoveryPlus
+          - Disney
+          - HBO
+          - Netflix
+
+  Netflix:
+    template: {name: Streaming, weight: 900, slug: netflix}
+    plex_search:
+      all:
+        collection: Netflix
+  Prime:
+    template: {name: Streaming, weight: 800, slug: prime}
+    plex_search:
+      all:
+        collection: Prime
+  Hulu:
+    template: {name: Streaming, weight: 700, slug: hulu}
+    plex_search:
+      all:
+        collection: Hulu
+  Paramount:
+    template: {name: Streaming, weight: 600, slug: paramount}
+    plex_search:
+      all:
+        collection: Paramount
+  Peacock:
+    template: {name: Streaming, weight: 500, slug: peacock}
+    plex_search:
+      all:
+        collection: Peacock
+  DiscoveryPlus:
+    template: {name: Streaming, weight: 400, slug: discovery}
+    plex_search:
+      all:
+        collection: DiscoveryPlus
+  Disney:
+    template: {name: Streaming, weight: 300, slug: disney}
+    plex_search:
+      all:
+        collection: Disney
+  HBO:
+    template: {name: Streaming, weight: 200, slug: hbo}
+    plex_search:
+      all:
+        collection: HBO
+  AppleTVPlus:
+    template: {name: Streaming, weight: 100, slug: apple}
+    plex_search:
+      all:
+        collection: AppleTVPlus

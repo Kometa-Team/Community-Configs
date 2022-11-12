@@ -1,0 +1,23 @@
+templates:
+  Watch Order:
+    trakt_list: <<list>>
+    libraries: "YOUR TV LIBRARY  NAME HERE"
+    summary: <<summary>>
+    sync_mode: sync
+
+playlists:
+  Monogatari Watch Order:
+    template:
+      {
+        name: Watch Order,
+        list: https://trakt.tv/users/agent531c/lists/monogatari-watchlist?sort=rank%2Casc,
+        summary: "Monogatari in the Intended Watch Order",
+      }
+
+  Bleach - No Filler:
+    template:
+      {
+        name: Watch Order,
+        list: https://trakt.tv/users/grawler/lists/bleach-in-order-no-filler?sort=rank%2Casc,
+        summary: "Bleach with all the filler cut out",
+      }

@@ -1,0 +1,23 @@
+#Uses https://theposterdb.com/set/6478
+
+collections:
+  Pirates of the Caribbean Collection:
+    tmdb_collection: https://www.themoviedb.org/collection/295
+    #or trakt_list, tmdb_list 
+    tmdb_summary: https://www.themoviedb.org/collection/295
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/12792
+    sort_title: ++++++++_pirates_of_the_caribbean_collection
+    collection_order: release
+
+metadata: 
+  22: # The Curse of the Black Pearl
+    url_poster: https://theposterdb.com/api/assets/12793
+  58: # Dead Mans Chest
+    url_poster: https://theposterdb.com/api/assets/12794
+  285: # At Worlds End
+    url_poster: https://theposterdb.com/api/assets/12795
+  1865: # On Stranger Tides
+    url_poster: https://theposterdb.com/api/assets/12796
+  166426: # Dead Men Tell No Tales
+    url_poster: https://theposterdb.com/api/assets/12797
