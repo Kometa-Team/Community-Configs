@@ -1,0 +1,19 @@
+templates:
+  
+    optional:
+      - imdb
+    Holiday:
+        url_poster: <<poster>>
+        sort_title: +_<<collection_name>>
+        sync_mode: sync
+        schedule: <<schedule>>
+        visible_home: true
+        visible_shared: true
+        delete_not_scheduled: true
+        imdb_list: <<imdb>>
+
+collections:
+
+  "Halloween":
+    template: { name: Holiday, schedule: range(10/01-10/31), poster: https://theposterdb.com/api/assets/272338, imdb: "https://www.imdb.com/search/title/?genres=horror&keywords=halloween&sort=moviemeter, https://www.imdb.com/list/ls023118929, https://www.imdb.com/list/ls000099714" }
+    summary: Spooky
