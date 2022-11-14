@@ -1,7 +1,7 @@
 ### Must be on NIGHTLY 1.17.3-develop188 or greater
 libraries:
   Movies:                                           # Must match a library name in your Plex
-    report_path: config/missing/Movies_missing.yml
+    report_path: config/missing/Movies_report.yml
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
@@ -33,7 +33,7 @@ libraries:
       template_variables:                           # based on when the award show started
         data:
           starting: 1927
-          ending: current_year
+          ending: current_year-1
     - pmm: other_award                              # Other award collections
     - pmm: spirit                                   # Independent Spirit Awards
       template_variables:                           # based on when the award show started
@@ -189,9 +189,10 @@ libraries:
       mass_content_rating_update: mdb_commonsense   # Changes Content Rating to "1", "2" etc. to specify appropriate age
       mass_originally_available_update: tmdb        # Update all original available date from tmdb
       mass_imdb_parental_labels: without_none
+      # mass_poster_update: tmdb                      # Resets posters to tmdb, plex, locked, unlock which is useful to remove all overlays when running with -r -op
 
   TV Shows:                                         # Must match a library name in your Plex
-    report_path: config/missing/TV_missing.yml
+    report_path: config/missing/TV_report.yml
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
@@ -404,6 +405,7 @@ libraries:
       mass_episode_critic_rating_update: imdb       # Update critic ratings with imdb for episodes
       mass_episode_audience_rating_update: tmdb     # Update audience ratings with tmdb for episodes
       mass_imdb_parental_labels: without_none
+      # mass_poster_update: tmdb                      # Resets posters to tmdb, plex, locked, unlock which is useful to remove all overlays when running with -r -op
 playlist_files:
 - pmm: playlist
   template_variables:
@@ -447,6 +449,7 @@ settings:                                       # Can be individually specified 
   verify_ssl: true
   custom_git:
   custom_repo:
+  show_unconfigured: true
 webhooks:                                       # Can be individually specified per library as well
   error: notifiarr
   run_start: notifiarr
@@ -527,7 +530,7 @@ mal:
   authorization:
     access_token: (redacted)
     token_type: Bearer
-    expires_in: 2678400
+    expires_in: 2592000
     refresh_token: (redacted)
   localhost_url:
   cache_expiration: 60
