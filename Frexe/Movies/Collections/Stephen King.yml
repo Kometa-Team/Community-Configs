@@ -1,0 +1,37 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+      - list
+      - imdb
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    tmdb_list: <<list>>
+    imdb_list: <<imdb>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "It":
+    template: {name: Set, collection: 477962, poster: https://theposterdb.com/api/assets/161120 }
+
+  "Carrie":
+    template: {name: Set, collection: 257053, poster: https://theposterdb.com/api/assets/160796 }
+
+  "Creepshow":
+    template: {name: Set, collection: 107725, poster: https://theposterdb.com/api/assets/160848 }
+
+  "Mangler":
+    template: {name: Set, collection: 374418, poster: https://theposterdb.com/api/assets/172372 }
+
+  "Pet Sematary":
+    template: {name: Set, collection: 10789, poster: https://theposterdb.com/api/assets/161311 }
+
+  "Shining":
+    template: {name: Set, collection: 530064, poster: https://theposterdb.com/api/assets/161873 }
+
+  "Sometimes They Come Back":
+    template: {name: Set, collection: 168545, poster: https://theposterdb.com/api/assets/161868 }
