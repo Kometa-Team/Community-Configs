@@ -512,10 +512,13 @@ metadata:
 
   # Bad Boys
   Bad Boys:
+    year: 1995
     url_poster: https://theposterdb.com/api/assets/43042
   Bad Boys II:
+    year: 2003
     url_poster: https://theposterdb.com/api/assets/43043
   Bad Boys for Life:
+    year: 2020
     url_poster: https://theposterdb.com/api/assets/43044
 
   # Bad Santa
@@ -1298,9 +1301,11 @@ metadata:
 
   # Creed
   Creed:
-    url_poster: https://theposterdb.com/api/assets/78969
+    year: 2015
+    url_poster: https://theposterdb.com/api/assets/9281
   Creed II:
-    url_poster: https://theposterdb.com/api/assets/78970
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/9174
 
   # Creep
   Creep:
@@ -1480,6 +1485,9 @@ metadata:
   The Batman:
     year: 2022
     url_poster: https://theposterdb.com/api/assets/99682
+  Black Adam:
+    year: 2022
+    url_poster: https://theposterdb.com/api/assets/286150  
 
   # Dead or Alive
   Dead or Alive:
@@ -1663,6 +1671,7 @@ metadata:
   Magnum Force:
     url_poster: https://theposterdb.com/api/assets/854
   The Enforcer:
+    year: 1976
     url_poster: https://theposterdb.com/api/assets/855
   Sudden Impact:
     url_poster: https://theposterdb.com/api/assets/856
@@ -1942,6 +1951,14 @@ metadata:
     url_poster: https://theposterdb.com/api/assets/46821
   Kronk's New Groove:
     url_poster: https://theposterdb.com/api/assets/46822
+
+  # Enola Holmes
+  Enola Holmes:
+    year: 2020
+    url_poster: https://theposterdb.com/api/assets/282824
+  Enola Holmes 2:
+    year: 2022
+    url_poster: https://theposterdb.com/api/assets/282825
 
   # The Equalizer
   The Equalizer:
@@ -2741,31 +2758,40 @@ metadata:
     year: 2020
     url_poster: https://theposterdb.com/api/assets/100701
 
-  # Halloween
+  # Halloween - https://theposterdb.com/set/115186
   Halloween:
     year: 1978
     url_poster: https://theposterdb.com/api/assets/190033
   Halloween II:
+    year: 1981
     url_poster: https://theposterdb.com/api/assets/190034
   "Halloween III: Season of the Witch":
+    year: 1982
     url_poster: https://theposterdb.com/api/assets/190035
   "Halloween 4: The Return of Michael Myers":
+    year: 1988
     url_poster: https://theposterdb.com/api/assets/190036
   "Halloween 5: The Revenge of Michael Myers":
+    year: 1989
     url_poster: https://theposterdb.com/api/assets/190037
   "Halloween: The Curse of Michael Myers":
+    year: 1995
     url_poster: https://theposterdb.com/api/assets/190038
   "Halloween H20: 20 Years Later":
+    year: 1998
     url_poster: https://theposterdb.com/api/assets/190039
   "Halloween: Resurrection":
+    year: 2002
     url_poster: https://theposterdb.com/api/assets/190040
   Halloween (Alternate Reality):
     title: Halloween
     year: 2018
     url_poster: https://theposterdb.com/api/assets/190041
   Halloween Kills:
+    year: 2021
     url_poster: https://theposterdb.com/api/assets/190042
   Halloween Ends:
+    year: 2022
     url_poster: https://theposterdb.com/api/assets/190043
 
   # The Hangover
@@ -4348,7 +4374,10 @@ metadata:
     url_poster: https://theposterdb.com/api/assets/248629
   Werewolf by Night:
     year: 2022
-    url_poster: https://theposterdb.com/api/assets/273727  
+    url_poster: https://theposterdb.com/api/assets/273727
+  "Black Panther: Wakanda Forever":
+    year: 2022
+    url_poster: https://theposterdb.com/api/assets/286152
 
   # Marvel/Sony
   Spider-Man:
@@ -4877,10 +4906,10 @@ metadata:
   # Paddington
   Paddington:
     year: 2014
-    url_poster: https://theposterdb.com/api/assets/1234
+    url_poster: https://www.themoviedb.org/t/p/original/wpchRGhRhvhtU083PfX2yixXtiw.jpg
   Paddington 2:
     year: 2017
-    url_poster: https://theposterdb.com/api/assets/1235
+    url_poster: https://www.themoviedb.org/t/p/original/ciIOSslAY1V75BVyD7mfgeO6Nns.jpg
 
   # Paranormal Activity - https://theposterdb.com/set/59980
   Paranormal Activity:
@@ -5316,6 +5345,14 @@ metadata:
   "Quarantine 2: Terminal":
     year: 2011
     url_poster: https://theposterdb.com/api/assets/65660
+
+  # A Quiet Place
+  A Quiet Place:
+    year: 2018
+    url_poster: https://theposterdb.com/api/assets/38788
+  A Quiet Place Part II:
+    year: 2021
+    url_poster: https://theposterdb.com/api/assets/38789
 
   # The Raid
   The Raid:
@@ -6273,15 +6310,23 @@ metadata:
 
   # Superman
   Superman:
-    url_poster: https://theposterdb.com/api/assets/76662
+    year: 1978
+    url_poster: https://i.imgur.com/hTQJhxH.jpeg
   Superman II:
-    url_poster: https://theposterdb.com/api/assets/76663
+    year: 1980
+    url_poster: https://i.imgur.com/CNtQdI5.jpeg
+  "Superman II: The Richard Donner Cut":
+    year: 2006
+    url_poster: https://i.imgur.com/h2fsWml.jpeg
   Superman III:
-    url_poster: https://theposterdb.com/api/assets/76664
+    year: 1983
+    url_poster: https://i.imgur.com/oCCbI0L.jpeg
   "Superman IV: The Quest for Peace":
-    url_poster: https://theposterdb.com/api/assets/76665
+    year: 1987
+    url_poster: https://i.imgur.com/eUBdOR2.jpeg
   Superman Returns:
-    url_poster: https://theposterdb.com/api/assets/76666
+    year: 2006
+    url_poster: https://i.imgur.com/ktzGNSn.jpeg
 
   # Surf's Up
   Surf's Up:
@@ -6791,10 +6836,10 @@ metadata:
   # Wall Street
   Wall Street:
     year: 1987
-    url_poster: https://theposterdb.com/api/assets/82092
+    url_poster: https://theposterdb.com/api/assets/85079
   "Wall Street: Money Never Sleeps":
     year: 2010
-    url_poster: https://theposterdb.com/api/assets/82093
+    url_poster: https://theposterdb.com/api/assets/85080
 
   # Wallace & Gromit
   A Grand Day Out:
@@ -6818,6 +6863,14 @@ metadata:
   Wallace & Gromit's World of Invention:
     year: 2010
     url_poster: https://theposterdb.com/api/assets/167820
+
+  # WarGames
+  WarGames:
+    year: 1983
+    url_poster: https://theposterdb.com/api/assets/222568
+  "WarGames: The Dead Code":
+    year: 2008
+    url_poster: https://theposterdb.com/api/assets/222569
 
   # Warlock
   Warlock:
@@ -6984,10 +7037,10 @@ metadata:
   # X
   X:
     year: 2022
-    url_poster: https://theposterdb.com/api/assets/228260
-  #Pearl:
-  #  year:
-  #  url_poster:
+    url_poster: https://theposterdb.com/api/assets/277544
+  Pearl:
+    year: 2022
+    url_poster: https://theposterdb.com/api/assets/277543
 
   # X-Files
   The X Files:
