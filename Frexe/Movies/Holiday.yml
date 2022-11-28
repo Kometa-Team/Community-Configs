@@ -1,0 +1,25 @@
+templates:
+
+    optional:
+      - imdb
+      - tmdb
+    Holiday:
+        url_poster: <<poster>>
+        sort_title: +_<<collection_name>>
+        sync_mode: sync
+        schedule: <<schedule>>
+        visible_home: true
+        visible_shared: true
+        delete_not_scheduled: true
+        imdb_list: <<imdb>>
+        tmdb_list: <<tmdb>>
+
+collections:
+
+  "Christmas":
+    template: { name: Holiday, schedule: range(12/01-12/31), poster: https://theposterdb.com/api/assets/198147, imdb: "https://www.imdb.com/list/ls000096828/", tmdb: "https://www.themoviedb.org/list/8227951" }
+    summary:
+
+  "Halloween":
+    template: { name: Holiday, schedule: range(10/01-10/31), poster: https://theposterdb.com/api/assets/272338, imdb: "https://www.imdb.com/search/title/?genres=horror&keywords=halloween&sort=moviemeter, https://www.imdb.com/list/ls023118929, https://www.imdb.com/list/ls000099714" }
+    summary: Spooky

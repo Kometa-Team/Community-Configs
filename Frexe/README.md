@@ -7,6 +7,7 @@ libraries:
     - file: metadata/Movies/Studio.yml
     - file: metadata/Movies/Genre.yml
     - file: metadata/Movies/Lists.yml
+    - file: metadata/Movies/Holiday.yml
     - folder: metadata/Movies/Collections
     - folder: metadata/Movies/Metadata/Collections
     - folder: metadata/Movies/Metadata/Movies

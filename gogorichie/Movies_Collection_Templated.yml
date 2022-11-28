@@ -30,8 +30,17 @@ templates:
 
 # Collections
 collections:
+  African-American Films:
+    template: {name: imdb, summary: "Some of greatest films telling the Black story, staring a Black actor, or Directed by a Black Director"}
+    imdb_list:
+      - https://www.imdb.com/list/ls054431555/
+      - https://www.imdb.com/list/ls031451603/
+      - https://www.imdb.com/list/ls045147779/
+      - https://www.imdb.com/list/ls041984032/
   American Pie:
     template: {name: tmdb, collections: "2806, 298820", tmdb_summary: 2806, poster: https://theposterdb.com/api/assets/68418}
+  James Bond Collection:
+    template: {name: tmdb, collections: 645, tmdb_summary: 645, poster: https://theposterdb.com/api/assets/24922}
   The Bourne Collection:
     template: {name: tmdb, collections: 31562, tmdb_summary: 31562, poster: https://theposterdb.com/api/assets/5420}
   John Wick Collection:
@@ -77,10 +86,3 @@ collections:
       - https://www.imdb.com/list/ls059646235/
   Star Wars Collection:
     template: {name: tmdb, collections: 10, tmdb_summary: 10, poster: https://theposterdb.com/api/assets/4448}
-  African-American Films:
-    template: {name: imdb, summary: "Some of greatest films telling the Black story, staring a Black actor, or Directed by a Black Director"}
-    imdb_list:
-      - https://www.imdb.com/list/ls054431555/
-      - https://www.imdb.com/list/ls031451603/
-      - https://www.imdb.com/list/ls045147779/
-      - https://www.imdb.com/list/ls041984032/
