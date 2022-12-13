@@ -5,7 +5,7 @@ libraries:
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
-      language: fr                                  # could be default, de, fr, pt-br or another lang code that we have tranlsated
+      language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have tranlsated
       placeholder_imdb_id: tt8579674                # 1917 (2019) placeholder id for the separators
     metadata_path:
     - pmm: separator_award                          # An "index card"
@@ -54,17 +54,17 @@ libraries:
     - pmm: tmdb                                     # TMDb Charts (Popular, Trending, etc.)
     - pmm: trakt                                    # Trakt Charts (Popular, Trending, etc.)
     - pmm: flixpatrol                               # Flixpatrol Charts (Popular, Trending, etc.)
-    - pmm: basic                                    # Some basic chart collections
-    - pmm: collectionless                           # Collectionless movies/shows
+    - pmm: basic                                    # Some basic chart collections based on recently released media in your library
+    - pmm: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
     - pmm: actor                                    # Actors
       template_variables:                           # bw, rainier, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
-        style: bw
+        style: signature
         data:
           depth: 1
           limit: 15
     - pmm: director                                 # Directors
       template_variables:                           # bw, rainier, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
-        style: bw
+        style: signature
         data:
           depth: 1
           limit: 15
@@ -73,13 +73,13 @@ libraries:
         exclude:                                    # ever have some random person... you can exclude them if you want
         - Jeremy Kleiner
         - Thomas Hayslip
-        style: bw
+        style: signature
         data:
           depth: 1
           limit: 15
     - pmm: writer                                   # Writers
       template_variables:                           # bw, rainier, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
-        style: bw
+        style: signature
         data:
           depth: 1
           limit: 15
@@ -121,7 +121,7 @@ libraries:
     - pmm: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
     overlay_path:
     - remove_overlays: false                        # Set to true if you want to remove overlays
-    - reapply_overlay: false                        # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
+    - reapply_overlays: false                       # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
     # - reset_overlays: tmdb                          # if you want to reset the poster to default poster from tmdb
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2
@@ -196,7 +196,7 @@ libraries:
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
-      language: fr                                  # could be default, de, fr, pt-br or another lang code that we have tranlsated
+      language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have tranlsated
       placeholder_imdb_id: tt1190634                # The Boys (2019) placeholder id for the separators
     metadata_path:
     - pmm: separator_award                          # An "index card"
@@ -224,13 +224,13 @@ libraries:
     - pmm: tmdb                                     # TMDb Charts (Popular, Trending, etc.)
     - pmm: trakt                                    # Trakt Charts (Popular, Trending, etc.)
     - pmm: flixpatrol                               # Flixpatrol Charts (Popular, Trending, etc.)
-    - pmm: basic                                    # Some basic chart collections
-    - pmm: collectionless                           # Collectionless movies/shows
+    - pmm: basic                                    # Some basic chart collections based on recently released media in your library
+    - pmm: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
     - pmm: actor                                    # Actors
       template_variables:                           # bw, rainier, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
         exclude:                                    # ever have some random person... you can exclude them if you want
         - Macy Nyman
-        style: bw
+        style: signature
         data:
           depth: 1
           limit: 15
@@ -255,7 +255,7 @@ libraries:
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     overlay_path:
     - remove_overlays: false                        # Set to true if you want to remove overlays
-    - reapply_overlay: false                        # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
+    - reapply_overlays: false                       # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
     # - reset_overlays: tmdb                          # if you want to reset the poster to default poster from tmdb
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
     - pmm: audio_codec
@@ -271,13 +271,13 @@ libraries:
     - pmm: commonsense
       template_variables:
         overlay_level: season
-   # - pmm: direct_play
     # - pmm: direct_play
-      # template_variables:
-        # overlay_level: episode
     # - pmm: direct_play
-      # template_variables:
-        # overlay_level: season
+    #   template_variables:
+    #     overlay_level: episode
+    # - pmm: direct_play
+    #   template_variables:
+    #     overlay_level: season
     - pmm: episode_info                             # SE##E## information in bottom right and works with overlay_level episode
       template_variables:
         overlay_level: episode
@@ -410,7 +410,7 @@ playlist_files:
 - pmm: playlist
   template_variables:
     libraries: Movies, TV Shows
-settings:                                       # Can be individually specified per library as well
+settings:                                           # Can be individually specified per library as well
   cache: true
   cache_expiration: 60
   asset_directory: config/assets
@@ -450,26 +450,26 @@ settings:                                       # Can be individually specified 
   custom_git:
   custom_repo:
   show_unconfigured: true
-webhooks:                                       # Can be individually specified per library as well
+webhooks:                                           # Can be individually specified per library as well
   error: notifiarr
   run_start: notifiarr
   run_end: notifiarr
   changes:
   - notifiarr
   version:
-plex:                                           # Can be individually specified per library as well; REQUIRED for the script to run
+plex:                                               # Can be individually specified per library as well; REQUIRED for the script to run
   url: (redacted)
   token: (redacted)
   timeout: 60
   clean_bundles: true
   empty_trash: true
   optimize: true
-tmdb:                                           # REQUIRED for the script to run
+tmdb:                                               # REQUIRED for the script to run
   apikey: (redacted)
   language: en
   cache_expiration: 60
   region:
-tautulli:                                       # Can be individually specified per library as well
+tautulli:                                           # Can be individually specified per library as well
   url: (redacted)
   apikey: (redacted)
 omdb:
