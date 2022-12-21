@@ -8,6 +8,7 @@ libraries:
       language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have tranlsated
       placeholder_imdb_id: tt8579674                # 1917 (2019) placeholder id for the separators
     metadata_path:
+    - git: bullmoose20/movies_refresh               # tells plex to refresh media items added within the last 7 days
     - pmm: separator_award                          # An "index card"
     - pmm: bafta                                    # BAFTA Awards
       template_variables:                           # based on when the award show started
@@ -199,6 +200,7 @@ libraries:
       language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have tranlsated
       placeholder_imdb_id: tt1190634                # The Boys (2019) placeholder id for the separators
     metadata_path:
+    - git: bullmoose20/tv_refresh                   # tells plex to refresh media items added within the last 7 days
     - pmm: separator_award                          # An "index card"
     - pmm: choice                                   # Critic's Choice Awards
       template_variables:                           # based on when the award show started
@@ -416,40 +418,37 @@ settings:                                           # Can be individually specif
   asset_directory: config/assets
   missing_path: config/missing
   asset_folders: true
-  asset_depth: 3
+  asset_depth: 0
   create_asset_folders: false
+  prioritize_assets: false
   dimensional_asset_rename: false
-  download_url_assets: true
+  download_url_assets: false
   show_missing_season_assets: false
   show_missing_episode_assets: false
-  show_asset_not_needed: true
+  show_asset_not_needed: false
   sync_mode: sync
-  minimum_items: 1
   default_collection_order:
+  minimum_items: 1
   delete_below_minimum: true
   delete_not_scheduled: false
-  run_again_delay: 2
+  run_again_delay: 1
   missing_only_released: true
-  only_filter_missing: false
   show_unmanaged: true
   show_filtered: true
   show_options: true
   show_missing: false
+  only_filter_missing: false
   show_missing_assets: false
-  save_missing: false
+  save_report: false
   tvdb_language: eng
   ignore_ids:
   ignore_imdb_ids:
-  check_nightly: true
-  playlist_report: true
-  prioritize_assets: false
-  save_report: false
   item_refresh_delay: 0
   playlist_sync_to_users: all
-  verify_ssl: true
-  custom_git:
+  playlist_report: true
   custom_repo:
-  show_unconfigured: true
+  verify_ssl: true
+  check_nightly: true
 webhooks:                                           # Can be individually specified per library as well
   error: notifiarr
   run_start: notifiarr
