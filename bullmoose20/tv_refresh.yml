@@ -1,0 +1,21 @@
+collections:
+  Refresh Metadata:
+    plex_search:
+      all:
+        added: 7
+    item_refresh: true
+    build_collection: false
+  Refresh Episode Metadata:
+    builder_level: season
+    plex_search:
+      all:
+        episode_added: 7
+    item_refresh: true
+    build_collection: false
+  Refresh Episode Metadata:
+    builder_level: episode
+    plex_search:
+      all:
+        episode_added: 7
+    item_refresh: true
+    build_collection: false
