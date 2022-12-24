@@ -1,8 +1,8 @@
 libraries:
   Movies:
     radarr:
-      url: http://10.0.0.5:7878
-      token: cb67d6d7d6e84a0886c45296a2d43844
+      url: 
+      token: 
       add_missing: false
       add_existing: false
       root_folder_path: P:\Movies
@@ -447,8 +447,8 @@ libraries:
 
   TV Shows:
     sonarr:
-      url: http://10.0.0.5:8989
-      token: c170c721dd8b41cb9a5c077048649a35
+      url: 
+      token: 
       add_missing: false
       add_existing: false
       root_folder_path: P:\TV Shows
@@ -771,23 +771,23 @@ webhooks:                                       # Can be individually specified 
   changes:
 
 plex:                                           # Can be individually specified per library as well; REQUIRED for the script to run
-  url: http://10.0.0.10:32400
-  token: GX2h7n5wo1napQpxswv-
+  url: 
+  token: 
   timeout: 60
   clean_bundles: false
   empty_trash: false
   optimize: false
 
 tmdb:                                           # REQUIRED for the script to run
-  apikey: a72c0e446f604cbb161fbbf0aad0c9d6
+  apikey: 
   language: en
   cache_expiration: 60
   region:
 
 trakt:
-  client_id: a3710284fe24172de21778a41f5dfda8924f497bae7fe4f74054ca43a9a67369
-  client_secret: 4667b9303825f5cb44ba20edbdef1307cdfcbb2e61484141fa4af297775b8772
-  pin: 1C662310
+  client_id: 
+  client_secret: 
+  pin: 
   authorization:
     # everything below is autofilled by the script
     access_token:
@@ -798,12 +798,12 @@ trakt:
     created_at:
 
 tautulli:                                       # Can be individually specified per library as well
-  url: http://10.0.0.6:8181
-  apikey: 7a300c8b1b404ec1867710e26efe10f5
+  url: 
+  apikey: 
 
 # radarr:                                         # Can be individually specified per library as well
-#   url: http://10.0.0.5:7878
-#   token: cb67d6d7d6e84a0886c45296a2d43844
+#   url: 
+#   token: 
 #   add_missing: false
 #   add_existing: false
 #   root_folder_path: P:\Movies
@@ -817,8 +817,8 @@ tautulli:                                       # Can be individually specified 
 #   upgrade_existing: false
 
 # sonarr:                                         # Can be individually specified per library as well
-#   url: http://10.0.0.5:8989
-#   token: c170c721dd8b41cb9a5c077048649a35
+#   url: 
+#   token: 
 #   add_missing: false
 #   add_existing: false
 #   root_folder_path: P:\TV Shows
