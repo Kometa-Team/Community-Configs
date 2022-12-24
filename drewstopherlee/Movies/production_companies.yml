@@ -1,0 +1,70 @@
+templates:
+  Company:
+    imdb_list: 
+      url: <<list>>
+    sort_title: "!06_<<collection_name>>"
+    sync_mode: sync
+    summary: All <<collection_name>> Films Available on Plex
+    collection_mode: hide
+    visible_home: false
+    smart_label: originally_available.asc
+collections:
+
+#############################################################
+#                                                           #
+#                    Production Companies                   #
+#                                                           #
+#############################################################
+
+# Template for company search (with co#######)
+# https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_special,documentary,video,tv_short&genres=!animation&countries=us&languages=en&sort=release_date,asc&count=250&companies=
+
+  Aardman Animations:
+    template:
+      name: Company
+      list: https://www.imdb.com/list/ls566233964/
+
+  Disney Channel Original Movies:
+    template:
+      name: Company
+      list: https://www.imdb.com/list/ls566453346/
+
+  DreamWorks Animation:
+    template:
+      name: Company
+      list: https://www.imdb.com/list/ls566431928/
+
+  Happy Madison Productions:
+    template:
+      name: Company
+      list: https://www.imdb.com/search/title/?title_type=feature,tv_special&countries=us&languages=en&sort=release_date,asc&companies=co0059609
+
+  Pixar Animation Studios:
+    template:
+      name: Company
+      list: https://www.imdb.com/list/ls566265980/
+
+  Rankin-Bass Christmas Classics:
+    template:
+      name: Company
+      list: https://www.imdb.com/list/ls566226151/
+
+  SNL Studios:
+    template:
+      name: Company
+      list: https://www.imdb.com/list/ls566961171/
+
+  Studio Ghibli:
+    template:
+      name: Company
+      list: https://www.imdb.com/list/ls566277942/
+
+  Walt Disney Animation Studios:
+    template:
+      name: Company
+      list: https://www.imdb.com/list/ls566238962/
+
+  Warner Bros. Animation:
+    template:
+      name: Company
+      list: https://www.imdb.com/list/ls566967458/
