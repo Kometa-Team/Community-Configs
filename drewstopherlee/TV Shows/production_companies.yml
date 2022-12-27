@@ -1,0 +1,16 @@
+collections:
+
+#############################################################
+# Template for company search (with co#######)
+# https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_special,documentary,video,tv_short&genres=!animation&countries=us&languages=en&sort=release_date,asc&count=250&companies=
+#############################################################
+
+  Aardman Animations:
+    smart_label: originally_available.asc
+    collection_mode: hide
+    visible_home: false
+    sync_mode: sync
+    sort_title: "!06_Aardman Animations"
+    imdb_list: https://www.imdb.com/list/ls566233964/
+    summary: All Aardman Animations Movies Available on Plex
+    radarr_add_missing: false
