@@ -2,20 +2,6 @@ collections:
   Refresh Metadata:
     plex_search:
       all:
-        release: 7
-    item_refresh: true
-    build_collection: false
-  Refresh Season Metadata:
-    builder_level: season
-    plex_search:
-      all:
-        episode_air_date: 7
-    item_refresh: true
-    build_collection: false
-  Refresh Episode Metadata:
-    builder_level: episode
-    plex_search:
-      all:
         episode_air_date: 7
     item_refresh: true
     build_collection: false
