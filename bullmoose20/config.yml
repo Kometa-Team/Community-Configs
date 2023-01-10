@@ -34,7 +34,7 @@ libraries:
       template_variables:                           # based on when the award show started
         data:
           starting: 1927
-          ending: current_year-1
+          ending: current_year
     - pmm: other_award                              # Other award collections
     - pmm: spirit                                   # Independent Spirit Awards
       template_variables:                           # based on when the award show started
@@ -177,7 +177,8 @@ libraries:
     - pmm: video_format                             # Remux, DVD, Blu-Ray, etc. in bottom left
     settings:
       asset_directory:
-      - config/assets
+      - config/assets/movies/
+      prioritize_assets: true
 
     operations:
       split_duplicates: false
@@ -392,7 +393,8 @@ libraries:
         overlay_level: season
     settings:
       asset_directory:
-      - config/assets
+      - config/assets/tv/
+      prioritize_assets: true
 
     operations:
       split_duplicates: false
@@ -433,6 +435,7 @@ settings:                                           # Can be individually specif
   delete_not_scheduled: false
   run_again_delay: 1
   missing_only_released: true
+  show_unconfigured: true
   show_unmanaged: true
   show_filtered: true
   show_options: true
@@ -510,6 +513,9 @@ sonarr:                                         # Can be individually specified 
   add_existing: false
   add_missing: false
   upgrade_existing: false
+anidb:
+  password: z^(redacted)*(redacted)
+  username: bullmoose20
 ############################################
 trakt:
   client_id: (redacted)
@@ -529,7 +535,7 @@ mal:
   authorization:
     access_token: (redacted)
     token_type: Bearer
-    expires_in: 2592000
+    expires_in: 2678400
     refresh_token: (redacted)
   localhost_url:
   cache_expiration: 60
