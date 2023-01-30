@@ -37,18 +37,12 @@ templates:
     url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
     collection_order: custom
 
-  TraktMulti:
-    sort_title: +04_<<collection_name>>
-    sync_mode: sync
-    url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
-    collection_order: release    
-
 collections:
   TV Show Francais:
-    template: { name: TraktMulti}
+    template: { name: Trakt}
+    collection_order: release
     trakt_list_details: 
-      - https://trakt.tv/users/mraniki/lists/french-series
-      - https://trakt.tv/users/mraniki/lists/tele
+      - https://trakt.tv/users/mraniki/lists/charts-top-french-tv
 
   IMDB Top Rated:
     template: { name: Trakt} 
@@ -59,6 +53,13 @@ collections:
     template: { name: Trakt} 
     trakt_list_details:
       - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
+
+  Cahiers du cinéma - Annual Top 10:
+    template: { name: Trakt} 
+    url_background: https://i.imgur.com/KMIxRdR.jpg
+    url_poster: https://i.imgur.com/Ca3Hsmh.jpg
+    trakt_list_details:
+      - https://trakt.tv/users/mraniki/lists/collection-cahiers-du-cinema-annual-top-10-lists?sort=released,asc
 
   1001 Movies You Must See Before You Die:
     template: { name: Trakt} 
@@ -72,10 +73,9 @@ collections:
       - https://trakt.tv/users/dgw/lists/star-trek-canon
 
   Star Wars:
-    template: { name: TraktMulti} 
+    template: { name: Trakt} 
     url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
     trakt_list_details: 
-      - https://trakt.tv/users/ruben_vw_/lists/star-wars-canon-timeline
       - https://trakt.tv/users/darkman1498/lists/star-wars
 
   Battlestar Galactica:

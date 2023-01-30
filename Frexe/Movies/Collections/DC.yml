@@ -21,6 +21,9 @@ collections:
   "Batman":
     template: {name: Set, collection: 120794, poster: https://theposterdb.com/api/assets/162377 }
 
+  "The Dark Knight":
+    template: {name: Set, collection: 263, poster: https://theposterdb.com/api/assets/263847 }
+
   "Red":
     template: {name: Set, collection: 163902, poster: https://theposterdb.com/api/assets/162399 }
 
@@ -38,6 +41,6 @@ collections:
 
   "Wonder Woman":
     template: {name: Set, collection: 468552, poster: https://theposterdb.com/api/assets/162410 }
-    
-  "Worlds of DC":
+
+  "DC":
     template: {name: Set, imdb: https://www.imdb.com/list/ls538267100, poster: https://theposterdb.com/api/assets/162412 }

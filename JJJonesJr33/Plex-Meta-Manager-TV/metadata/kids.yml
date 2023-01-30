@@ -1,0 +1,78 @@
+##############################################################
+##              Saturday Morning Collections                ##
+##                Created by JJJonesJr33                    ##
+##                      Version 2.0                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##               Yozora, Bullmoose20, & Sohjiro             ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:
+  programming:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: +++++++_<<collection_name>>
+    collection_mode: hide
+    sync_mode: sync
+
+#############################
+##       Collections       ##
+#############################
+
+# FYI: To allow for Network collections to be created you must have TMDB API in the core config setup first.
+
+collections:
+  ABC Kids:
+    template: {name: programming, poster: 215338}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/abc-kids
+    summary: "ABC Kids (originally titled Disney's One Saturday Morning until 2002) was a Saturday morning children's programming block that aired on ABC from September 13, 1997 to August 27, 2011. It featured a mixture of animated and live-action series from Walt Disney Television Animation and Disney Channel, aimed at children between the ages of 6 and 12. This was the only time Disney Channel content aired on over-the-air TV."
+  Cartoon Cartoons:
+    template: {name: programming, poster: 215329}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/cartoon-cartoons
+    summary: "Cartoon Cartoons is a collective name used by Cartoon Network for their original animated television series originally aired between 1995 and 2003 and produced in majority by Hanna-Barbera and/or Cartoon Network Studios. Beginning with its inception into cable broadcasting on October 1, 1992, Cartoon Network had focused its programming on reruns of older animated series which it had acquired through its parent company's film library."
+  Disney Afternoon:
+    template: {name: programming, poster: 215331}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/disney-afternoon
+    summary: "The Disney Afternoon's block had four half-hour segments, each of which contained an animated series. As each season ended, the lineup would shift - the remaining three would move up a time slot and a new show would be added to the end. The Disney Afternoon itself featured unique animated segments consisting of its opening and wrappers around the cartoon shows."
+  Disney's One Saturday Morning:
+    template: {name: programming, poster: 215333}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/disney-s-one-saturday-morning
+    summary: "Commercial Free Weekend Mornings (formerly called Toonin' Saturdays from 2011 to 2012, Disney Channel Saturday Mornings from 2012 to 2014, Get Animated from 2017 to 2018, and Animation Cram Session from 2018 to 2019) is a weekend program block on the Disney Channel in the United States, consisting of Saturday morning cartoons."
+  Disney's One Too:
+    template: {name: programming, poster: 215336}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/disney-s-one-too
+    summary: "Disney's One Too (later known as Disney's Animation Weekdays) was a two-hour Sunday-to-Friday children's programming block that aired on UPN from September 6, 1999 to August 31, 2003. A spin-off of the Disney's One Saturday Morning block on ABC (which is owned by The Walt Disney Company), it featured animated series from Disney Television Animation aimed at children between the ages of 6 and 11."
+  Fox Kids:
+    template: {name: programming, poster: 215341}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/fox-kids
+    summary:
+  SNICK:
+    template: {name: programming, poster: 215348}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/snick
+    summary: "SNICK (short for Saturday Night Nickelodeon) was a two-hour programming block on the American cable television network Nickelodeon, geared toward older (preteen to teen) audiences, that ran from August 15, 1992 until January 29, 2005. It was aired on Saturdays starting at 8 p.m and ending at 10 p.m. ET. In 2005, SNICK was revamped as the Saturday night edition of TEENick. Nickelodeon continues to run a Saturday night programming block today, though since the TEENick name was removed from the lineup in February 2009, the block no longer goes by any name."
+  UPN Kids:
+    template: {name: programming, poster: 215345}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/upn-kids
+    summary: "UPN Kids launched on September 10, 1995 with a one-hour block of cartoons consisting of Space Strikers and Teknoman. It was a joint partnership between UPN and Saban Entertainment.[1] Unlike NBC, ABC, CBS, Fox and The WB (the latter of which debuted its own children's program block, Kids' WB, the day before UPN Kids made its debut), UPN ran its weekend morning children's programs on Sundays instead of Saturdays."
+  Kids' WB:
+    template: {name: programming, poster: 215343}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/kids-wb
+    summary:

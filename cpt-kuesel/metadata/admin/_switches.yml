@@ -1,0 +1,97 @@
+templates:
+  use_german:
+    default:
+      use_german: false
+    allowed_library_types: <<use_german>>
+  use_english:
+    default:
+      use_english: false
+    allowed_library_types: <<use_english>>
+  use_french:
+    default:
+      use_french: false
+    allowed_library_types: <<use_french>>
+  use_japanese:
+    default:
+      use_japanese: false
+    allowed_library_types: <<use_japanese>>
+  use_korean:
+    default:
+      use_korean: false
+    allowed_library_types: <<use_korean>>
+  use_chinese:
+    default:
+      use_chinese: false
+    allowed_library_types: <<use_chinese>>
+  use_danish:
+    default:
+      use_danish: false
+    allowed_library_types: <<use_danish>>
+  use_russian:
+    default:
+      use_russian: false
+    allowed_library_types: <<use_russian>>
+  use_spanish:
+    default:
+      use_spanish: false
+    allowed_library_types: <<use_spanish>>
+  use_italian:
+    default:
+      use_italian: false
+    allowed_library_types: <<use_italian>>
+  use_portuguese:
+    default:
+      use_portuguese: false
+    allowed_library_types: <<use_portuguese>>
+  use_hindi:
+    default:
+      use_hindi: false
+    allowed_library_types: <<use_hindi>>
+  use_telugu:
+    default:
+      use_telugu: false
+    allowed_library_types: <<use_telugu>>
+  use_farsi:
+    default:
+      use_farsi: false
+    allowed_library_types: <<use_farsi>>
+  use_thai:
+    default:
+      use_thai: false
+    allowed_library_types: <<use_thai>>
+  use_dutch:
+    default:
+      use_dutch: false
+    allowed_library_types: <<use_dutch>>
+  use_norwegian:
+    default:
+      use_norwegian: false
+    allowed_library_types: <<use_norwegian>>
+  use_icelandic:
+    default:
+      use_icelandic: false
+    allowed_library_types: <<use_icelandic>>
+  use_swedish:
+    default:
+      use_swedish: false
+    allowed_library_types: <<use_swedish>>
+  use_turkish:
+    default:
+      use_turkish: false
+    allowed_library_types: <<use_turkish>>
+  use_polish:
+    default:
+      use_polish: false
+    allowed_library_types: <<use_polish>>
+  use_czech:
+    default:
+      use_czech: false
+    allowed_library_types: <<use_czech>>
+  use_ukrainian:
+    default:
+      use_ukrainian: false
+    allowed_library_types: <<use_ukrainian>>
+  use_hungarian:
+    default:
+      use_hungarian: false
+    allowed_library_types: <<use_hungarian>>

@@ -1,0 +1,91 @@
+#############################################################
+#                   Overlays                                #
+#         Created by loftydan & iJRMH.                      #
+#############################################################
+#                                                           #
+#  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    overlay_path:                                          #
+#      - git: loftydan/overlays                             #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
+#          horizontal_offset: 15                            #
+#          # Set the horizontal align for the overlay       #
+#          horizontal_align: left                           #
+#          # Set the vertical offset for the overlay        #
+#          vertical_offset: 135                             #
+#          # Set the vertical align for the overlay         #
+#          vertical_align: top                              #
+#          # Sets the style of overlay: colour or bw.       #
+#          style: colour                                    #
+#                                                           #
+#          # Use <<slug>> collection.                       #
+#          use_<<slug>>: true                               #
+#############################################################
+
+templates:
+  myCollection:
+    optional:
+      - overlay_level
+      - use_<<slug>>
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 135
+      vertical_align: top
+      style: colour
+    collection_level: <<overlay_level>>
+    allowed_library_types: <<use_<<slug>>>>
+    ignore_blank_results: true
+    overlay:
+      name: <<overlay_name>>
+      file: loftydan/overlays/<<style>>/<<overlay>>.png
+      group: myCollections
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+############################ good stuff below ##################################
+overlays:
+
+  BOOKS:
+    template:
+      - name: myCollection
+        weight: 100
+        slug: books
+    plex_search:
+      any:
+        label.regex: '(?i)\b(Based on Books)\b'
+
+  COMIC BOOKS:
+    template:
+      - name: myCollection
+        weight: 101
+        slug: comics
+    plex_search:
+      any:
+        label.regex: '(?i)\b(Based on Comics)\b'
+
+  TRUE EVENTS:
+    template:
+      - name: myCollection
+        weight: 105
+        slug: events
+    plex_search:
+      any:
+        label.regex: '(?i)\b(Based on True Events)\b'
+
+  VIDEO GAMES:
+    template:
+      - name: myCollection
+        weight: 103
+        slug: games
+    plex_search:
+      any:
+        label.regex: '(?i)\b(Based on Video Games)\b'

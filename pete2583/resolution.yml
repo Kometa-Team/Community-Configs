@@ -1,0 +1,688 @@
+#########################################################################################
+#                                          Resolution Overlay                           #
+#                                         Created by Pete2583                           #
+#                              Credit to bradmarrti for the base images                 #
+#                 Credit also goes to meinstate/pmm for some of the base templating     #
+#                          Credit also to ICHIMOKU who gave me the inspiration          #             
+#########################################################################################
+#                                                                                       #
+#  Call this from your config.yml (Movie):                                              #
+#                                                                                       #
+#    overlay_path:                                                                      #
+#      - git: pete2583/resolution                                                       #
+#                                                                                       #
+#########################################################################################
+
+templates:
+  Resolution:
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 0
+      horizontal_align: left
+      vertical_offset: 0
+      vertical_align: top
+    ignore_blank_results: true
+    suppress_overlays:
+      - Directors-Cut
+      - Extended-Edition
+      - Uncut-Edition
+      - Unrated-Edition
+      - Special-Edition
+      - Final-Cut
+      - Anniversary-Edition
+      - Collectors-Edition
+      - International-Cut
+      - Theatrical-Cut
+      - Ultimate-Cut
+      - Remastered
+      - Criterion
+    overlay:
+      name: <<overlay_name>>
+      git: pete2583/overlays/<<overlay>>
+      group: res
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+overlays:
+
+  480P:
+    template:
+      - name: Resolution
+        weight: 41
+    plex_search:
+      all:
+        resolution.regex: '(?!)480p|SD'
+        hdr: false
+     
+  480P-HDR:
+    template:
+      - name: Resolution
+        weight: 42
+    plex_search:
+      all:
+        resolution: 480p
+        hdr: true
+        
+  480P-DV:
+    template:
+      - name: Resolution
+        weight: 43
+    plex_search:
+      all:
+        resolution: 480p
+    filters:
+      has_dolby_vision: true
+
+  576P:
+    template:
+      - name: Resolution
+        weight: 51
+    plex_search:
+      all:
+        resolution: 576p
+        hdr: false
+     
+  576P-HDR:
+    template:
+      - name: Resolution
+        weight: 52
+    plex_search:
+      all:
+        resolution: 576p
+        hdr: true
+        
+  576P-DV:
+    template:
+      - name: Resolution
+        weight: 53
+    plex_search:
+      all:
+        resolution: 576p
+    filters:
+      has_dolby_vision: true
+
+  720P:
+    template:
+      - name: Resolution
+        weight: 71
+    plex_search:
+      all:
+        resolution: 720p
+        hdr: false
+     
+  720P-HDR:
+    template:
+      - name: Resolution
+        weight: 72
+    plex_search:
+      all:
+        resolution: 720p
+        hdr: true
+        
+  720P-DV:
+    template:
+      - name: Resolution
+        weight: 73
+    plex_search:
+      all:
+        resolution: 720p
+    filters:
+      has_dolby_vision: true
+
+  1080p:
+    template:
+      - name: Resolution
+        weight: 101
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+
+  1080p-HDR:
+    template:
+      - name: Resolution
+        weight: 102
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+    
+  1080p-IMAX:
+    template:
+      - name: Resolution
+        weight: 103
+    plex_search:
+      all:
+        resolution: 1080p
+    filters:
+      filepath: Imax
+    
+  1080p-HDR-IMAX:
+    template:
+      - name: Resolution
+        weight: 104
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: Imax
+    
+  1080p-DolbyDigital:
+    template:
+      - name: Resolution
+        weight: 105
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: AC3
+      filepath.not: EAC3
+    
+  1080p-DolbyDigitalPlus:
+    template:
+      - name: Resolution
+        weight: 106
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: EAC3
+      filepath.not: Atmos
+    
+  1080p-DolbyDigitalPlusAtmos:
+    template:
+      - name: Resolution
+        weight: 107
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: Atmos
+      filepath.not: TrueHD
+    
+  1080p-DolbyTrueHD:
+    template:
+      - name: Resolution
+        weight: 108
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: TrueHD
+      filepath.not: Atmos
+    
+  1080p-DolbyTrueHDAtmos:
+    template:
+      - name: Resolution
+        weight: 109
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: Atmos
+      filepath.not: EAC3
+    
+  1080p-dtsX:
+    template:
+      - name: Resolution
+        weight: 110
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: DTS-X
+    
+  1080p-dtsHD:
+    template:
+      - name: Resolution
+        weight: 111
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath: DTS-HD
+    
+  1080p-HDR-DolbyDigital:
+    template:
+      - name: Resolution
+        weight: 112
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: AC3
+      filepath.not: EAC3
+    
+  1080p-HDR-DolbyDigitalPlus:
+    template:
+      - name: Resolution
+        weight: 113
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: EAC3
+      filepath.not: Atmos
+    
+  1080p-HDR-DolbyDigitalPlusAtmos:
+    template:
+      - name: Resolution
+        weight: 114
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: Atmos
+      filepath.not: TrueHD
+    
+  1080p-HDR-DolbyTrueHD:
+    template:
+      - name: Resolution
+        weight: 115
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: TrueHD
+      filepath.not: Atmos
+    
+  1080p-HDR-DolbyTrueHDAtmos:
+    template:
+      - name: Resolution
+        weight: 116
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: Atmos
+      filepath.not: EAC3
+    
+  1080p-HDR-dtsX:
+    template:
+      - name: Resolution
+        weight: 117
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: DTS-X
+    
+  1080p-HDR-dtsHD:
+    template:
+      - name: Resolution
+        weight: 118
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: true
+    filters:
+      filepath: DTS-HD
+    
+  DV:
+    template:
+      - name: Resolution
+        weight: 501
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+    
+  DV-DolbyDigital:
+    template:
+      - name: Resolution
+        weight: 502
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: AC3
+      filepath.not: EAC3
+    
+  DV-DolbyDigitalPlus:
+    template:
+      - name: Resolution
+        weight: 503
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: EAC3
+      filepath.not: Atmos
+    
+  DV-DolbyDigitalPlusAtmos:
+    template:
+      - name: Resolution
+        weight: 504
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: Atmos
+      filepath.not: TrueHD
+    
+  DV-DolbyTrueHD:
+    template:
+      - name: Resolution
+        weight: 505
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: TrueHD
+      filepath.not: Atmos
+    
+  DV-DolbyTrueHDAtmos:
+    template:
+      - name: Resolution
+        weight: 506
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: Atmos
+      filepath.not: EAC3
+    
+  DV-dtsX:
+    template:
+      - name: Resolution
+        weight: 507
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: DTS-X
+    
+  DV-dtsHD:
+    template:
+      - name: Resolution
+        weight: 508
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath: DTS-HD
+    
+  4K:
+    template:
+      - name: Resolution
+        weight: 401
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+    
+  4K-HDR:
+    template:
+      - name: Resolution
+        weight: 402
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+    
+  4K-IMAX:
+    template:
+      - name: Resolution
+        weight: 403
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: false
+      filepath: Imax
+    
+  4K-HDR-IMAX:
+    template:
+      - name: Resolution
+        weight: 404
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: Imax
+    
+  4K-DolbyDigital:
+    template:
+      - name: Resolution
+        weight: 405
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: AC3
+      filepath.not: EAC3
+    
+  4K-DolbyDigitalPlus:
+    template:
+      - name: Resolution
+        weight: 406
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: EAC3
+      filepath.not: Atmos
+    
+  4K-DolbyDigitalPlusAtmos:
+    template:
+      - name: Resolution
+        weight: 407
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: Atmos
+      filepath.not: TrueHD
+    
+  4K-DolbyTrueHD:
+    template:
+      - name: Resolution
+        weight: 408
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: TrueHD
+      filepath.not: Atmos
+    
+  4K-DolbyTrueHDAtmos:
+    template:
+      - name: Resolution
+        weight: 409
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: Atmos
+      filepath.not: EAC3
+    
+  4K-dtsX:
+    template:
+      - name: Resolution
+        weight: 410
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: DTS-X
+    
+  4K-dtsHD:
+    template:
+      - name: Resolution
+        weight: 411
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath: DTS-HD MA
+    
+  4K-HDR-DolbyDigital:
+    template:
+      - name: Resolution
+        weight: 412
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: AC3
+      filepath.not: EAC3
+    
+  4K-HDR-DolbyDigitalPlus:
+    template:
+      - name: Resolution
+        weight: 413
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: EAC3
+      filepath.not: Atmos
+    
+  4K-HDR-DolbyDigitalPlusAtmos:
+    template:
+      - name: Resolution
+        weight: 414
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: Atmos
+      filepath.not: TrueHD
+    
+  4K-HDR-DolbyTrueHD:
+    template:
+      - name: Resolution
+        weight: 415
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: TrueHD
+      filepath.not: Atmos
+    
+  4K-HDR-DolbyTrueHDAtmos:
+    template:
+      - name: Resolution
+        weight: 416
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: Atmos
+      filepath.not: EAC3
+    
+  4K-HDR-dtsX:
+    template:
+      - name: Resolution
+        weight: 417
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: DTS-X
+    
+  4K-HDR-dtsHD:
+    template:
+      - name: Resolution
+        weight: 418
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      has_dolby_vision: false
+      filepath: DTS-HD MA

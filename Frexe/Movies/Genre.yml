@@ -1,0 +1,69 @@
+templates:
+    Genre:
+        plex_search:
+          genre: <<genre>>
+        url_poster: <<poster>>
+        sort_title: +_<<collection_name>>
+        sync_mode: sync
+        smart_label: originally_available.desc
+
+collections:
+  Action:
+    template: {name: Genre, genre: Action, poster: https://theposterdb.com/api/assets/52675 }
+    summary: Action
+
+  Adventure:
+    template: {name: Genre, genre: Adventure, poster: https://theposterdb.com/api/assets/52672 }
+    summary: Adventure
+
+  Anime:
+    template: {name: Genre, genre: Anime, poster: https://theposterdb.com/api/assets/123923 }
+    summary: Anime
+
+  Comedy:
+    template: {name: Genre, genre: Comedy, poster: https://theposterdb.com/api/assets/52677 }
+    summary: Comedy
+
+  Drama:
+    template: {name: Genre, genre: Drama, poster: https://theposterdb.com/api/assets/52676 }
+    summary: Drama
+
+  Cooking:
+    template: {name: Genre, genre: food,  poster: https://theposterdb.com/api/assets/168695 }
+    summary: Cooking / Food
+
+  Crime:
+    template: {name: Genre, genre: crime,  poster: https://theposterdb.com/api/assets/167978 }
+    summary: Crime
+
+  Horror:
+    template: {name: Genre, genre: Horror, poster: https://theposterdb.com/api/assets/52659 }
+    summary: Horror
+
+  Martial Arts:
+    template: {name: Genre, genre: Martial Arts, poster: https://theposterdb.com/api/assets/165296 }
+    summary: Martial Arts
+
+  Mystery:
+    template: {name: Genre, genre: Mystery, poster: https://theposterdb.com/api/assets/254759 }
+    summary: Mystery
+
+  Science Fiction:
+    template: {name: Genre, genre: Science Fiction, poster: https://theposterdb.com/api/assets/52661 }
+    summary: Science Fiction
+
+  Sport:
+    template: {name: Genre, genre: Sport, poster: https://theposterdb.com/api/assets/167979 }
+    summary: Sport
+
+  Thriller:
+    template: {name: Genre, genre: Thriller, poster: https://theposterdb.com/api/assets/52658 }
+    summary: Thriller
+
+  War:
+    template: {name: Genre, genre: War, poster: https://theposterdb.com/api/assets/52688 }
+    summary: War
+
+  Western:
+    template: {name: Genre, genre: Western, poster: https://theposterdb.com/api/assets/52687 }
+    summary: Western

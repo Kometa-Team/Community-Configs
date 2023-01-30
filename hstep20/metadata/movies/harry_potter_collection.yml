@@ -1,0 +1,29 @@
+#Uses https://theposterdb.com/set/54696 cover; Uses https://theposterdb.com/set/54696 movies
+
+collections:
+  Harry Potter Collection:
+    tmdb_collection: https://www.themoviedb.org/collection/1241
+    tmdb_summary: https://www.themoviedb.org/collection/1241
+    #or trakt_list 
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/737
+    sort_title: ++++++++_harry_potter
+    collection_order: release
+
+metadata:
+  671: #Harry Potter and the Sorcerer's Stone:
+    url_poster: https://theposterdb.com/api/assets/85945
+  672: #Harry Potter and the Chamber of Secrets:
+    url_poster: https://theposterdb.com/api/assets/85946
+  673: #Harry Potter and the Prisoner of Azkaban:
+    url_poster: https://theposterdb.com/api/assets/85947
+  674: #Harry Potter and the Goblet of Fire:
+    url_poster: https://theposterdb.com/api/assets/85948
+  675: #Harry Potter and the Order of the Phoenix:
+    url_poster: https://theposterdb.com/api/assets/85949
+  767: #Harry Potter and the Half-Blood Prince:
+    url_poster: https://theposterdb.com/api/assets/85950
+  12444: #"Harry Potter and the Deathly Hallows: Part 1":
+    url_poster: https://theposterdb.com/api/assets/85951
+  12445: #"Harry Potter and the Deathly Hallows: Part 2":
+    url_poster: https://theposterdb.com/api/assets/85952

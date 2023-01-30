@@ -1,0 +1,74 @@
+external_templates:
+  - file: metadata/admin/_templates
+templates:
+  label_collector:
+    default:
+      label_collector: true
+    allowed_library_types: <<label_collector>>
+  german_metadata:
+    ignore_blank_results: true
+    default:
+      german_metadata: true
+    allowed_library_types: <<german_metadata>>
+  non_german_metadata:
+    ignore_blank_results: true
+    default:
+      non_german_metadata: true
+    allowed_library_types: <<non_german_metadata>>
+  local_only:
+    ignore_blank_results: true
+    default:
+      local_only: false
+    allowed_library_types: <<local_only>>
+collections:
+  label_collector:
+    template: {name: label_collector}
+    blank_collection: true
+    collection_mode: hide
+    label:
+      - Admin
+      - German_metadata
+      - Non_german_metadata
+  remove_non_german_metadata:
+    template: {name: non_german_metadata}
+    build_collection: false
+    plex_search:
+      all:
+        audio_language: de
+        label: Non_german_metadata
+    item_label.remove: Non_german_metadata
+  remove_german_metadata:
+    template: {name: german_metadata}
+    build_collection: false
+    plex_search:
+      all:
+        audio_language.not: de
+        label: German_metadata
+    item_label.remove: German_metadata
+  german_metadata:
+    template: {name: german_metadata}
+    build_collection: false
+    plex_search:
+      all:
+        audio_language: de
+        label.not: German_metadata
+    item_metadata_language: de-DE
+    item_label: German_metadata
+  non_german_metadata:
+    template: {name: non_german_metadata}
+    build_collection: false
+    plex_search:
+      all:
+        audio_language.not: de
+        label.not: Non_german_metadata
+    item_metadata_language: en-US
+    item_label: Non_german_metadata
+  local_only:
+    template:
+      - name: local_only
+    plex_search:
+      any:
+        - resolution: 4k
+        - hdr: true
+    build_collection: false
+    item_label: Local_only

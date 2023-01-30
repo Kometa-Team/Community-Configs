@@ -1,0 +1,249 @@
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+  genre:
+    plex_search:
+      genre: <<genre>>
+    sort_title: +5_<<num>><<collection_name>>
+    collection_order: alpha
+
+collections:
+  Trending:
+    template: { name: Chart, num: 1 }
+    smart_label: originally_available.desc
+    sync_mode: sync
+    trakt_trending: 40
+    summary: Shows Trending across the internet
+    item_assets: false
+    url_poster: https://imgur.com/4bglXqV
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  Popular TV:
+    template: { name: Chart, num: 2 }
+    smart_label: originally_available.desc
+    sync_mode: sync
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
+      limit: 100
+    summary: Popular Shows across the internet
+    item_assets: false
+    url_poster: https://imgur.com/gwjHIfT
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  Top Rated TV:
+    template: { name: Chart, num: 3 }
+    smart_label: user_rating.desc
+    sort_title: ++3Top Rated TV
+    sync_mode: sync
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc
+      limit: 100
+      tmdb_top_rated: 100
+    summary: Top Rated Shows across the internet
+    item_assets: false
+    url_poster: https://imgur.com/WHoluUe
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  Action & adventure:
+    template: { name: genre, num: 10, genre: "Action/adventure" }
+    item_assets: false
+    url_poster: https://imgur.com/n4Javiq
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Action:
+    template: { name: genre, num: 11, genre: action }
+    item_assets: false
+    url_poster: https://imgur.com/IqE0WmX
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Adventure:
+    template: { name: genre, num: 12, genre: adventure }
+    item_assets: false
+    url_poster: https://imgur.com/nTwiGv7
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Animation:
+    template: { name: genre, num: 13, genre: animation }
+    item_assets: false
+    url_poster: https://imgur.com/B05Wqqy
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Anime:
+    template: { name: genre, num: 14, genre: anime }
+    item_assets: false
+    url_poster: https://imgur.com/RmpSoVK
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Apocalypse:
+    template: { name: genre, num: 15, genre: apocalypse }
+    item_assets: false
+    url_poster: https://imgur.com/8jWArIx
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Biography:
+    template: { name: genre, num: 16, genre: biography }
+    item_assets: false
+    url_poster: https://imgur.com/4nCY5UO
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Comedy:
+    template: { name: genre, num: 17, genre: comedy }
+    item_assets: false
+    url_poster: https://imgur.com/i9xZJN1
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Cooking:
+    template: { name: genre, num: 18, genre: "food" }
+    item_assets: false
+    url_poster: https://imgur.com/4iebPuw
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Crime:
+    template: { name: genre, num: 19, genre: crime }
+    item_assets: false
+    url_poster: https://imgur.com/Afvd2GN
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Documentary:
+    template: { name: genre, num: 20, genre: documentary }
+    item_assets: false
+    url_poster: https://imgur.com/OQZmKSI
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Drama:
+    template: { name: genre, num: 21, genre: drama }
+    item_assets: false
+    url_poster: https://imgur.com/GOCKQSI
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Family:
+    template: { name: genre, num: 22, genre: family }
+    item_assets: false
+    url_poster: https://imgur.com/wTZfM5b
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Fantasy:
+    template: { name: genre, num: 23, genre: fantasy }
+    item_assets: false
+    url_poster: https://imgur.com/weOBciu
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  History:
+    template: { name: genre, num: 24, genre: history }
+    item_assets: false
+    url_poster: https://imgur.com/BeuWW47
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Horror:
+    template: { name: genre, num: 25, genre: horror }
+    item_assets: false
+    url_poster: https://imgur.com/wsucfhM
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Music:
+    template: { name: genre, num: 26, genre: music }
+    item_assets: false
+    url_poster: https://imgur.com/qD66XXc
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Musical:
+    template: { name: genre, num: 27, genre: musical }
+    item_assets: false
+    url_poster: https://imgur.com/bTSfEs8
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Mystery:
+    template: { name: genre, num: 28, genre: mystery }
+    item_assets: false
+    url_poster: https://imgur.com/mcGgRnh
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Romance:
+    template: { name: genre, num: 29, genre: Romance }
+    item_assets: false
+    url_poster: https://imgur.com/kH5Tlns
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Romantic Comedy:
+    template: { name: genre, num: 30, genre: "Romance,comedy" }
+    item_assets: false
+    url_poster: https://imgur.com/7yJet40
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Romantic Drama:
+    template: { name: genre, num: 31, genre: "Romance,drama" }
+    item_assets: false
+    url_poster: https://imgur.com/K4pOr1b
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Sci-Fi & Fantasy:
+    template: { name: genre, num: 32, genre: "Sci-Fi & Fantasy" }
+    item_assets: false
+    url_poster: https://imgur.com/qH50q3N
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Science Fiction:
+    template: { name: genre, num: 33, genre: "Science Fiction" }
+    item_assets: false
+    url_poster: https://imgur.com/tYDpuRv
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Sports:
+    template: { name: genre, num: 34, genre: sport }
+    item_assets: false
+    url_poster: https://imgur.com/oiaoV62
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Thriller:
+    template: { name: genre, num: 35, genre: thriller }
+    item_assets: false
+    url_poster: https://imgur.com/8qJoVtX
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  War:
+    template: { name: genre, num: 36, genre: War }
+    item_assets: false
+    url_poster: https://imgur.com/oAEh5cC
+#    visible_home: true
+    visible_shared: true
+    visible_library: true
+  Western:
+    template: { name: genre, num: 37, genre: western }
+    item_assets: false
+    url_poster: https://imgur.com/qKUvoO9
+#    visible_home: true
+    visible_shared: true
+    visible_library: true

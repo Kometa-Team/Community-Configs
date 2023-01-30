@@ -1,0 +1,253 @@
+##############################################################
+##                  Anime Collections                       ##
+##                Created by JJJonesJr33                    ##
+##                      Version 2.0                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##               Yozora, Bullmoose20, & Sohjiro             ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:
+  Anime:
+    mal_search:
+      genre: <<mal_id>>
+      limit: 0
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    collection_order: alpha
+    collection_mode: hide
+    sync_mode: sync
+  User:
+    sort_title: ~<<collection_name>>
+    url_poster: <<poster>>
+    mal_userlist:
+      username: <<username>>
+      status: plan_to_watch
+      sort_by: title
+      limit: 0
+    collection_order: alpha
+    collection_mode: hide
+    sync_mode: sync 
+
+#############################
+##       Collections       ##
+#############################
+
+collections:
+
+  Top Airing Anime:
+    mal_airing: 10
+    collection_order: custom
+    sort_title: ++++++++_Top_Airing
+    sync_mode: sync
+    
+  Most Popular Anime:
+    mal_popular: 20
+    collection_order: custom
+    sort_title: ++++++++_Most_Popular
+    sync_mode: sync
+    
+  Most Favorited Anime:
+    mal_favorite: 20
+    collection_order: custom
+    sort_title: ++++++++_Most_Favorited
+    sync_mode: sync
+    
+  Seasonal Winter:
+    mal_season:
+      season: winter
+    collection_order: custom
+    sort_title: +++++++_Winter
+    sync_mode: sync
+    
+  Seasonal Spring:
+    mal_season:
+      season: spring
+    collection_order: custom
+    sort_title: +++++++_Spring
+    sync_mode: sync
+    
+  Seasonal Summer:
+    mal_season:
+      season: summer
+    collection_order: custom
+    sort_title: +++++++_Summer
+    sync_mode: sync
+    
+  Seasonal Fall:
+    mal_season:
+      season: fall
+    collection_order: custom
+    sort_title: +++++++_Fall
+    sync_mode: sync
+    
+#############################
+##       MyAnimeList       ##
+#############################
+ 
+  Action:
+    template: { name: Anime, mal_id: 1, poster: 213642}
+  Adventure:
+    template: { name: Anime, mal_id: 2, poster: 213632} 
+  Avant Garde:
+    template: { name: Anime, mal_id: 5, poster: 240144} 
+  Award Winning:
+    template: { name: Anime, mal_id: 46, poster: } 
+  Boys Love:
+    template: { name: Anime, mal_id: 28, poster: 240145} 
+  Comedy:
+    template: { name: Anime, mal_id: 4, poster: 213629} 
+  Drama:
+    template: { name: Anime, mal_id: 8, poster: 213630} 
+  Fantasy:
+    template: { name: Anime, mal_id: 10, poster: 213631} 
+  Girls Love:
+    template: { name: Anime, mal_id: 26, poster: 240152} 
+  Gourmet:
+    template: { name: Anime, mal_id: 47, poster: 240874} 
+  Horror:
+    template: { name: Anime, mal_id: 14, poster: 240855} 
+  Mystery:
+    template: { name: Anime, mal_id: 7, poster: 240863} 
+  Romance:
+    template: { name: Anime, mal_id: 22, poster: 213637} 
+  Sci-Fi:
+    template: { name: Anime, mal_id: 24, poster: 213635} 
+  Slice of Life:
+    template: { name: Anime, mal_id: 36, poster: 213663} 
+  Sports:
+    template: { name: Anime, mal_id: 30, poster: 213634} 
+  Supernatural:
+    template: { name: Anime, mal_id: 37, poster: 213670} 
+  Suspense:
+    template: { name: Anime, mal_id: 41, poster: 240217} 
+  Ecchi:
+    template: { name: Anime, mal_id: 9, poster: 240150} 
+  Erotica:
+    template: { name: Anime, mal_id: 49, poster: } 
+  Hentai:
+    template: { name: Anime, mal_id: 12, poster: } 
+  Adult Cast:
+    template: { name: Anime, mal_id: 50, poster: 240849} 
+  Anthropomorphic:
+    template: { name: Anime, mal_id: 51, poster: 240850} 
+  CGDCT:
+    template: { name: Anime, mal_id: 52, poster: 240146} 
+  Childcare:
+    template: { name: Anime, mal_id: 53, poster: 240871} 
+  Combat Sports:
+    template: { name: Anime, mal_id: 54, poster: 240851} 
+  Crossdressing:
+    template: { name: Anime, mal_id: 81, poster: 240852} 
+  Delinquents:
+    template: { name: Anime, mal_id: 55, poster: 240148} 
+  Detective:
+    template: { name: Anime, mal_id: 39, poster: 240149} 
+  Educational:
+    template: { name: Anime, mal_id: 56, poster: 240854} 
+  Gag Humor:
+    template: { name: Anime, mal_id: 57, poster: 240151} 
+  Gore:
+    template: { name: Anime, mal_id: 58, poster: 240153} 
+  Harem:
+    template: { name: Anime, mal_id: 35, poster: 240848} 
+  High Stakes Game:
+    template: { name: Anime, mal_id: 59, poster: 240155} 
+  Historical:
+    template: { name: Anime, mal_id: 13, poster: 213640} 
+  Idols Female:
+    template: { name: Anime, mal_id: 60, poster: 240856} 
+  Idols Male:
+    template: { name: Anime, mal_id: 61, poster: 240857} 
+  Isekai:
+    template: { name: Anime, mal_id: 62, poster: 240156} 
+  Iyashikei:
+    template: { name: Anime, mal_id: 63, poster: 240157} 
+  Love Polygon:
+    template: { name: Anime, mal_id: 64, poster: 240860} 
+  Magical Sex Shift:
+    template: { name: Anime, mal_id: 65, poster: 240861} 
+  Mahou Shoujo:
+    template: { name: Anime, mal_id: 66, poster: 240158} 
+  Martial Arts:
+    template: { name: Anime, mal_id: 17, poster: 213628} 
+  Mecha:
+    template: { name: Anime, mal_id: 18, poster: 213668} 
+  Medical:
+    template: { name: Anime, mal_id: 67, poster: 240159} 
+  Military:
+    template: { name: Anime, mal_id: 38, poster: 240160} 
+  Music:
+    template: { name: Anime, mal_id: 19, poster: 213639} 
+  Mythology:
+    template: { name: Anime, mal_id: 6, poster: 240161} 
+  Organized Crime:
+    template: { name: Anime, mal_id: 68, poster: 240865} 
+  Otaku Culture:
+    template: { name: Anime, mal_id: 69, poster: 240868} 
+  Parody:
+    template: { name: Anime, mal_id: 20, poster: 240193} 
+  Performing Arts:
+    template: { name: Anime, mal_id: 70, poster: 240870} 
+  Pets:
+    template: { name: Anime, mal_id: 71, poster: 240869} 
+  Psychological:
+    template: { name: Anime, mal_id: 40, poster: 240212} 
+  Racing:
+    template: { name: Anime, mal_id: 3, poster: 240213} 
+  Reincarnation:
+    template: { name: Anime, mal_id: 72, poster: 240867} 
+  Reverse Harem:
+    template: { name: Anime, mal_id: 73, poster: } 
+  Romantic Subtext:
+    template: { name: Anime, mal_id: 74, poster: } 
+  Samurai:
+    template: { name: Anime, mal_id: 21, poster: 213669} 
+  School:
+    template: { name: Anime, mal_id: 23, poster: } 
+  Showbiz:
+    template: { name: Anime, mal_id: 75, poster: } 
+  Space:
+    template: { name: Anime, mal_id: 29, poster: 213661} 
+  Strategy Game:
+    template: { name: Anime, mal_id: 11, poster: } 
+  Super Power:
+    template: { name: Anime, mal_id: 31, poster: 213659} 
+  Survival:
+    template: { name: Anime, mal_id: 76, poster: } 
+  Team Sports:
+    template: { name: Anime, mal_id: 77, poster: } 
+  Time Travel:
+    template: { name: Anime, mal_id: 78, poster: } 
+  Vampire:
+    template: { name: Anime, mal_id: 32, poster: 213671} 
+  Video Game:
+    template: { name: Anime, mal_id: 79, poster: 213657} 
+  Visual Arts:
+    template: { name: Anime, mal_id: 80, poster: } 
+  Workplace:
+    template: { name: Anime, mal_id: 48, poster: } 
+  Josei:
+    template: { name: Anime, mal_id: 43, poster: 240858} 
+  Kids:
+    template: { name: Anime, mal_id: 15, poster: 240859} 
+  Seinen:
+    template: { name: Anime, mal_id: 42, poster: 240866} 
+  Shoujo:
+    template: { name: Anime, mal_id: 25, poster: 240214} 
+  Shounen:
+    template: { name: Anime, mal_id: 27, poster: 240215} 
+
+  # Collection1: # Replace Username1 with a valid MAL Username
+    # template: { name: User, username: Username1, poster:  }
+  # Collection2: # Replace Username2 with a valid MAL Username
+    # template: { name: User, username: Username2, poster:  }

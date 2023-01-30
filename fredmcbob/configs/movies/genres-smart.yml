@@ -1,0 +1,90 @@
+templates:
+  Genre:
+    default:
+      exclude: Children, Anime
+    sort_title: +02_<<collection_name>>
+    url_background: https://wallpaper.dog/large/20509069.jpg
+    smart_filter:
+      sort_by: release.desc
+      validate: false
+      all:
+        genre.not: <<exclude>>
+        audio_language: en
+        genre: <<genre>>
+
+collections:
+  Action:
+    template: { name: Genre, genre: action}
+    url_poster: https://theposterdb.com/api/assets/204253
+  Adventure:
+    template: { name: Genre, genre: adventure }
+    url_poster: https://theposterdb.com/api/assets/204254
+  Animation:
+    template: { name: Genre, genre: animation, exclude: null }
+    url_poster: https://theposterdb.com/api/assets/204255
+  Comedy:
+    template: { name: Genre, genre: comedy }
+    url_poster: https://theposterdb.com/api/assets/204256
+  Competition:
+    template: { name: Genre, genre: "game show" }
+    url_poster: https://theposterdb.com/api/assets/213616
+  Cooking:
+    template: { name: Genre, genre: "cooking, food" }
+    url_poster: https://theposterdb.com/api/assets/213351
+  Crime:
+    template: { name: Genre, genre: crime }
+    url_poster: https://theposterdb.com/api/assets/204257
+  Documentary:
+    template: { name: Genre, genre: "Biography, Documentary" }
+    url_poster: https://theposterdb.com/api/assets/213141
+  Drama:
+    template: { name: Genre, genre: drama }
+    url_poster: https://theposterdb.com/api/assets/204259
+  Family:
+    template: { name: Genre, genre: family, exclude: null }
+    url_poster: https://theposterdb.com/api/assets/204260
+  Fantasy:
+    template: { name: Genre, genre: fantasy, exclude: null }
+    url_poster: https://theposterdb.com/api/assets/204261
+  History:
+    template: { name: Genre, genre: history }
+    url_poster: https://theposterdb.com/api/assets/204263
+  Horror:
+    template: { name: Genre, genre: horror }
+    url_poster: https://theposterdb.com/api/assets/204264
+  Music:
+    template: { name: Genre, genre: music, exclude: null}
+    url_poster: https://theposterdb.com/api/assets/204265
+  Musical:
+    template: { name: Genre, genre: musical, exclude: null}
+    url_poster: https://theposterdb.com/api/assets/204266
+  Mystery:
+    template: { name: Genre, genre: mystery }
+    url_poster: https://theposterdb.com/api/assets/204267
+  Reality:
+    template: { name: Genre, genre: reality }
+    url_poster: https://theposterdb.com/api/assets/213345
+  Romance:
+    template: { name: Genre, genre: romance }
+    url_poster: https://theposterdb.com/api/assets/204270
+  Romantic Comedy:
+    template: { name: Genre, genre: "romance,comedy" }
+    url_poster: https://theposterdb.com/api/assets/204269
+  Romantic Drama:
+    template: { name: Genre, genre: "romance,drama" }
+    url_poster: https://theposterdb.com/api/assets/213142
+  Sci-Fi:
+    template: { name: Genre, genre: sci-fi }
+    url_poster: https://theposterdb.com/api/assets/204271
+  Sports:
+    template: { name: Genre, genre: sport }
+    url_poster: https://theposterdb.com/api/assets/204272
+  Thriller:
+    template: { name: Genre, genre: thriller }
+    url_poster: https://theposterdb.com/api/assets/204274
+  War:
+    template: { name: Genre, genre: war }
+    url_poster: https://theposterdb.com/api/assets/204275
+  Western:
+    template: { name: Genre, genre: western }
+    url_poster: https://theposterdb.com/api/assets/204276

@@ -1,0 +1,44 @@
+##############################################################
+##               Movie Awards Collections                   ##
+##                Created by JJJonesJr33                    ##
+##                      Version 2.0                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##                Yozora, Bullmoose20, Sohjiro              ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+
+templates:
+    Awards:
+      sort_title: +++++++++_<<collection_name>>
+      url_poster: https://theposterdb.com/api/assets/<<poster>>
+    # visible_home: range(11/01-02/28)
+    # visible_shared: range(11/01-02/28)
+    # schedule: range(11/01-02/28)
+      collection_mode: hide
+      collection_order: release.desc
+      sync_mode: sync
+        
+#############################
+##       Collections       ##
+#############################
+
+collections:
+
+  Award Winning Movies:
+    template: {name: Awards, poster: 213569}
+    imdb_list: 
+      - url: "https://www.imdb.com/search/title/?title_type=feature,short,documentary&groups=emmy_winner&sort=year,desc"
+      - url: "https://www.imdb.com/search/title/?title_type=feature,short,documentary&groups=golden_globe_winner&sort=year,desc"
+      - url: "https://www.imdb.com/search/title/?title_type=feature,short,documentary&groups=oscar_winner&sort=year,desc"
+    summary: "A collection of winning movies from the Emmys, Oscars and Golden Globe award ceremonies over the years"

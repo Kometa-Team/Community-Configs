@@ -1,7 +1,7 @@
 templates:
   Genre:
     plex_search:
-    genre: <<genre>>
+      genre: <<genre>>
     url_poster: <<poster>>
     sort_title: +3_<<collection_name>>
     collection_order: alpha
@@ -23,6 +23,12 @@ templates:
     sync_mode: sync
     smart_label: alpha
     url_poster: <<poster>>
+  Trakt:
+    sort_title: +3_<<collection_name>>
+    trakt_list_details: <<list>>
+    url_poster: <<poster>>
+    sync_mode: sync
+    collection_order: custom
 
 collections:
 
@@ -103,7 +109,7 @@ collections:
      - https://trakt.tv/users/benfranklin/lists/best-mindfucks
     smart_label: critic_rating.desc
     sync_mode: sync
-    sort_title: ++++++++++++++++++_Mindfuck Movies
+    sort_title: +3_Mindfuck Movies
     summary: There’s nothing greater than a film that makes you think. A film that lingers on your mind long after the credits have rolled and is the subject of many conversation and discussion. Trying to piece together the puzzle of what you saw and coming to a conclusion that makes sense or still doesn’t add up.
     url_poster: https://i.imgur.com/Tl6QMgA.png
     url_background: https://i.imgur.com/DM1Im1X.jpeg
@@ -125,7 +131,7 @@ collections:
     trakt_list: https://trakt.tv/users/hdlists/lists/nostalgiac-movies-from-the-80s-90s
     sync_mode: sync
     smart_label: critic_rating.desc
-    sort_title: ++++++++++++++++++_Nostalgia Collection
+    sort_title: +3_Nostalgia Collection
     summary: All The Nostalgiac Movies From The 80s & 90s in One Collection
     url_poster: https://i.imgur.com/vE8dsdd.jpg
     url_background: https://i.imgur.com/frz0kly.jpg
@@ -133,7 +139,7 @@ collections:
     trakt_list: https://trakt.tv/users/hdlists/lists/outer-space-space-exploration-movies
     sync_mode: sync
     smart_label: critic_rating.desc
-    sort_title: ++++++++++++++++++_Outer Space Movie Collection
+    sort_title: +3_Outer Space Movie Collection
     summary: Movies That Take Place in Outer Space
     url_poster: https://i.imgur.com/tOujJnS.jpg
     url_background: https://i.imgur.com/CUIrEWQ.jpg
@@ -141,14 +147,14 @@ collections:
     trakt_list: https://trakt.tv/users/codedone/lists/paranormal
     sync_mode: sync
     smart_label: critic_rating.desc
-    sort_title: ++++++++++++++++++_Paranormal Movie Collection
+    sort_title: +3_Paranormal Movie Collection
     summary: Paranormal grene of movies from varrious trakt members.
-    url_poster: https://imgur.com/IzwpRht
+    url_poster: https://i.imgur.com/IzwpRht.jpg
   Parody Movie Collection:
     trakt_list: https://trakt.tv/users/hdlists/lists/top-50-parody-movies-of-all-time
     sync_mode: sync
     smart_label: critic_rating.desc
-    sort_title: ++++++++++++++++++_Parody Movie Collection
+    sort_title: +3_Parody Movie Collection
     summary: Top 50 Parody Movies of All Time
     url_poster: https://i.imgur.com/yFtJ5eV.png
     url_background: https://i.imgur.com/eELv4eB.jpg
@@ -178,13 +184,12 @@ collections:
       limit: 200
     summary: A Sport Film revolves around a sport setting, event, or an athlete. Often, these films will center on a single sporting event that carries significant importance. Sports films traditionally have a simple plot that builds up to the significant sporting event. This genre is known for incorporating film techniques to build anticipation and intensity. Sport films have a large range of sub-genres, from comedies to dramas, and are more likely than other genres to be based true-life events.
   Stand Up Comedy:
-    template: {name: Other Genre, poster: https://theposterdb.com/api/assets/49137}
-    imdb_list:
-      - https://www.imdb.com/list/ls070221411/
-      - https://www.imdb.com/list/ls086584751/
-      - https://www.imdb.com/list/ls086022668/
-      - https://www.imdb.com/list/ls049792208/
+    template: {name: Trakt, list: https://trakt.tv/users/giladg/lists/stand-up-comedy, poster: https://theposterdb.com/api/assets/74610}
     summary: Stand-up comedy is a comedic style in which a comedian performs in front of a live audience, speaking directly to them through a microphone. Comedians give the illusion that they are dialoguing, but in actuality, they are monologuing a grouping of humorous stories, jokes and one-liners, typically called a shtick, routine, act, or set. Some stand-up comedians use props, music or magic tricks to enhance their acts. Stand-up comedians perform quasi-autobiographical and fictionalized extensions of their offstage selves.
+  Submarine:
+    template: {name: Other Genre, poster: https://theposterdb.com/api/assets/89095}
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=submarine-movie&ref_=fn_al_kw_1
+    summary: Collection of movies based around or about Submarines.
   Sword & Sorcery:
     template: {name: Other Genre, poster: https://theposterdb.com/api/assets/74604}
     imdb_list: https://www.imdb.com/list/ls022909805
@@ -192,6 +197,10 @@ collections:
   Thriller:
     template: {name: Genre, genre: Thriller, poster: https://theposterdb.com/api/assets/52019}
     summary: Thriller Film is a genre that revolves around anticipation and suspense. The aim for Thrillers is to keep the audience alert and on the edge of their seats. The protagonist in these films is set against a problem – an escape, a mission, or a mystery. No matter what sub-genre a Thriller film falls into, it will emphasize the danger that the protagonist faces. The tension with the main problem is built on throughout the film and leads to a highly stressful climax.
+  Time Travel:
+    template: {name: Other Genre, poster: https://theposterdb.com/api/assets/81440}
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=time-travel%2Ctime-machine&ref_=kw_ref_key&sort=moviemeter,asc&mode=detail&page=1&title_type=movie
+    summary: Time Travel is a collection of movies that contains time-travel. In any form. Be it time-loop, full on relocation in time, consciousness transfer... Warning You may find yourself screaming Paradox!,  That's just a risk you have to take.
   War:
     template: {name: Genre, genre: War, poster: https://theposterdb.com/api/assets/51477}
     summary: War Film is a genre that looks at the reality of war on a grand scale. They often focus on landmark battles as well as political issues within war. This genre usually focuses on a main character and his team of support, giving the audience an inside look into the gritty reality of war.

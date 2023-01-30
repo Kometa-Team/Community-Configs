@@ -1,0 +1,236 @@
+#############################################################
+#                    Resolution Overlay                     #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#            Credit to Magic815 for base images             #
+#############################################################
+#  Designed for TRaSH Guides filename naming scheme         #
+#  https://trash-guides.info/                               #
+#                                                           #
+#  Call this from your config.yml (Movie or Show):          #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    overlay_path:                                          #
+#      - git: PMM/overlays/resolution                       #
+#        template_variables:                                #
+#          # Set episode or season to overlay               #
+#          overlay_level:                                   #
+#          # Set the horizontal offset for the overlay      #
+#          horizontal_offset: 15                            #
+#          # Set the horizontal align for the overlay       #
+#          horizontal_align: left                           #
+#          # Set the vertical offset for the overlay        #
+#          vertical_offset: 15                              #
+#          # Set the vertical align for the overlay         #
+#          vertical_align: top                              #
+#                                                           #
+#          # Use the 4K overlay                             #
+#          use_4k: true                                     #
+#          # Use the 1080P overlay                          #
+#          use_1080p: true                                  #
+#          # Use the 720P overlay                           #
+#          use_720p: true                                   #
+#          # Use the 480P overlay                           #
+#          use_480p: true                                   #
+#          # Use the DV overlay                             #
+#          use_dv: true                                     #
+#          # Use the HDR overlay                            #
+#          use_hdr: true                                    #
+#############################################################
+
+templates:
+  Resolution:
+    optional:
+      - overlay_level
+      - use_<<opt1>>
+      - use_<<opt2>>
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 15
+      vertical_align: top
+    collection_level: <<overlay_level>>
+    allowed_library_types:
+      - <<use_<<opt1>>>>
+      - <<use_<<opt2>>>>
+    overlay:
+      name: <<overlay_name>>
+      #git: PMM/overlays/images/<<overlay>>
+      group: res
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+  NoResolution:
+    optional:
+      - overlay_level
+      - use_<<opt1>>
+      - use_<<opt2>>
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 15
+      vertical_align: top
+    collection_level: <<overlay_level>>
+    allowed_library_types:
+      - <<use_<<opt1>>>>
+      - <<use_<<opt2>>>>
+    overlay:
+      name: <<overlay_name>>
+      git: PMM/overlays/images/<<overlay>>
+      group: res
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+overlays:
+
+  4K-DV:
+    template:
+      - name: Resolution
+        weight: 120
+        opt1: 4k
+        opt2: dv
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+    filters:
+      has_dolby_vision: true
+
+  4K-HDR:
+    template:
+      - name: Resolution
+        weight: 110
+        opt1: 4k
+        opt2: hdr
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+        hdr: true
+
+  4K:
+    template:
+      - name: Resolution
+        weight: 100
+        opt1: 4k
+    plex_search:
+      any:
+        resolution.regex: '(?i)2160|4k'
+
+  # 1080P-DV:
+    # template:
+      # - name: Resolution
+        # weight: 90
+        # opt1: 1080p
+        # opt2: dv
+    # plex_search:
+      # all:
+        # resolution.regex: '(?i)1080|2k'
+    # filters:
+      # has_dolby_vision: true
+
+  # 1080P-HDR:
+    # template:
+      # - name: Resolution
+        # weight: 80
+        # opt1: 1080p
+        # opt2: hdr
+    # plex_search:
+      # all:
+        # resolution.regex: '(?i)1080|2k'
+        # hdr: true
+
+  1080P:
+    template:
+      - name: Resolution
+        weight: 70
+        opt1: 1080p
+    plex_search:
+      any:
+        resolution.regex: '(?i)1080|2k'
+
+  # 720P-DV:
+    # template:
+      # - name: Resolution
+        # weight: 60
+        # opt1: 720p
+        # opt2: dv
+    # plex_search:
+      # all:
+        # resolution.regex: '(?i)720|hd'
+    # filters:
+      # has_dolby_vision: true
+
+  # 720P-HDR:
+    # template:
+      # - name: Resolution
+        # weight: 50
+        # opt1: 720p
+        # opt2: hdr
+    # plex_search:
+      # all:
+        # resolution.regex: '(?i)720|hd'
+        # hdr: true
+
+  720P:
+    template:
+      - name: Resolution
+        weight: 40
+        opt1: 720p
+    plex_search:
+      any:
+        resolution.regex: '(?i)720|hd'
+
+  # 480P-DV:
+    # template:
+      # - name: Resolution
+        # weight: 30
+        # opt1: 480p
+        # opt2: dv
+    # plex_search:
+      # all:
+        # resolution.regex: '(?i)480|sd'
+    # filters:
+      # has_dolby_vision: true
+
+  # 480P-HDR:
+    # template:
+      # - name: Resolution
+        # weight: 20
+        # opt1: 480p
+        # opt2: hdr
+    # plex_search:
+      # all:
+        # resolution.regex: '(?i)480|sd'
+        # hdr: true
+
+  # 480P:
+    # template:
+      # - name: Resolution
+        # weight: 10
+        # opt1: 480p
+    # plex_search:
+      # any:
+        # resolution.regex: '(?i)480|sd'
+
+  # DV:
+    # template:
+      # - name: Resolution
+        # weight: 5
+        # opt1: dv
+    # plex_all: true
+    # filters:
+      # has_dolby_vision: true
+
+  # HDR:
+    # template:
+      # - name: Resolution
+        # weight: 1
+        # opt1: hdr
+    # plex_search:
+      # all:
+        # hdr: true

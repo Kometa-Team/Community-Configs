@@ -1,0 +1,67 @@
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    smart_label: random
+  TraktList:
+    sort_title: +2_<<num>><<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    item_refresh: true
+
+collections:
+
+######################################################
+#                Chart Collections                   #
+######################################################
+
+  Plex Popular:
+    template: { name: Chart, num: 1 }
+    tautulli_popular:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    tautulli_watched:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    summary: Shows Popular on Plex
+    url_poster: https://theposterdb.com/api/assets/136359
+  Trending:
+    template: { name: Chart, num: 2 }
+    trakt_trending: 10
+    tmdb_trending_daily: 10
+    tmdb_trending_weekly: 10
+    summary: Shows Trending across the internet
+    url_poster: https://theposterdb.com/api/assets/201419
+  Popular:
+    template: { name: Chart, num: 3 }
+    tmdb_popular: 40
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
+      limit: 40
+    summary: Popular Shows across the internet
+    url_poster: https://theposterdb.com/api/assets/205416
+  Top Rated:
+    template: { name: Chart, num: 4 }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc
+      limit: 100
+    tmdb_top_rated: 100
+    summary: Top Rated Movies across the internet
+    url_poster: https://theposterdb.com/api/assets/213605
+  Emmy Winners:
+    template: { name: Chart, num: 5 }
+    imdb_list: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&groups=emmy_winner
+    summary: Emmy Winning Shows
+    url_poster: https://theposterdb.com/api/assets/214681
+  TV Picks of the Last Year:
+    template: { name: TraktList, num: 1 }
+    trakt_list: https://trakt.tv/users/benmooney/lists/tv-picks-from-the-last-year?sort=random,asc
+    summary: Top TV Shows which aired in the last 365 days.
+    schedule: weekly(sunday)
+  Trending Reality TV:
+    template: { name: TraktList, num: 2 }
+    trakt_list: https://trakt.tv/users/benmooney/lists/trending-reality-tv?sort=rank,asc
+    summary: Currently trending reality TV shows.
+    url_poster: https://theposterdb.com/api/assets/222218

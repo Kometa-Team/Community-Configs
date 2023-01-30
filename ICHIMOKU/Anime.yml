@@ -1,0 +1,150 @@
+templates:
+  MAL Genre:
+    mal_genre:
+      genre_id: <<genre_id>>
+    collection_order: alpha
+    collection_mode: hide
+    sync_mode: sync
+  MAL User:
+    sort_title: ~<<collection_name>>
+    mal_userlist:
+      username: <<username>>
+      status: plan_to_watch
+      sort_by: title
+      limit: 500
+    collection_order: alpha
+    collection_mode: hide
+    sync_mode: sync    
+
+collections:
+  Collection1: # Replace Username1 with a valid MAL Username
+    template: { name: MAL User, username: Username1 }
+  Collection2: # Replace Username2 with a valid MAL Username
+    template: { name: MAL User, username: Username2 }
+  Donghua:
+    collection_order: alpha
+    sync_mode: sync
+    plex_search:
+      all:
+        audio_language: 
+        title.not: aggretsuko
+  Mobile Suit Gundam:
+    collection_order: alpha
+    sync_mode: sync
+    plex_search:
+      all:
+        title: Gundam       
+  Cars:
+    template: { name: MAL Genre, genre_id: 3 }
+    url_poster: https://i.imgur.com/or2NV7b.png
+  Demons:
+    template: { name: MAL Genre, genre_id: 6 }
+    url_poster: https://i.imgur.com/4gYtatT.png
+  Ecchi:
+    template: { name: MAL Genre, genre_id: 9 }
+    url_poster: https://i.imgur.com/NYwquus.png
+  Game:
+    template: { name: MAL Genre, genre_id: 11 }
+    url_poster: https://i.imgur.com/np9gKUY.png
+  Harem:
+    template: { name: MAL Genre, genre_id: 35 }
+    url_poster: https://i.imgur.com/H0CBC69.png
+  Mecha:
+    template: { name: MAL Genre, genre_id: 18 }
+    url_poster: https://i.imgur.com/37Ruypq.png
+  Military:
+    template: { name: MAL Genre, genre_id: 38 }
+    url_poster: https://i.imgur.com/ASpnuaX.png
+  Psychological:
+    template: { name: MAL Genre, genre_id: 40 }
+    url_poster: https://i.imgur.com/dG0j2MV.png
+  Samurai:
+    template: { name: MAL Genre, genre_id: 21 }
+    url_poster: https://i.imgur.com/cuzANx6.png
+  School:
+    template: { name: MAL Genre, genre_id: 23 }
+    url_poster: https://i.imgur.com/j6xkuIN.png
+  Shoujo:
+    template: { name: MAL Genre, genre_id: 25 }
+    url_poster: https://i.imgur.com/wEJ1xnV.png
+  Shounen:
+    template: { name: MAL Genre, genre_id: 27 }
+    url_poster: https://i.imgur.com/aj5n2hG.png
+  Slice of Life:
+    template: { name: MAL Genre, genre_id: 36 }
+    url_poster: https://i.imgur.com/KNOnr7P.png
+  Space:
+    template: { name: MAL Genre, genre_id: 29 }
+    url_poster: https://i.imgur.com/gk8bS1L.png
+  Supernatural:
+    template: { name: MAL Genre, genre_id: 37 }
+    url_poster: https://i.imgur.com/rJsCCYA.png
+  Super Power:
+    template: { name: MAL Genre, genre_id: 31 }
+    url_poster: https://i.imgur.com/LsfdfyX.png
+  Vampire:
+    template: { name: MAL Genre, genre_id: 32 }
+    url_poster: https://i.imgur.com/fwjaD3t.png
+  Action:
+    template: { name: MAL Genre, genre_id: 1 }
+    url_poster: https://i.imgur.com/iEmSJk8.png
+  Adventure:
+    template: { name: MAL Genre, genre_id: 2 }
+    url_poster: https://i.imgur.com/89WvZ7O.png
+  Comedy:
+    template: { name: MAL Genre, genre_id: 4 }
+    url_poster: https://i.imgur.com/WOy2DTP.png
+  Drama:
+    template: { name: MAL Genre, genre_id: 8 }
+    url_poster: https://i.imgur.com/emj4Xy8.png
+  Fantasy:
+    template: { name: MAL Genre, genre_id: 10 }
+    url_poster: https://i.imgur.com/LulStNU.png
+  Historical:
+    template: { name: MAL Genre, genre_id: 13 }
+    url_poster: https://i.imgur.com/haxcm1d.png
+  Horror:
+    template: { name: MAL Genre, genre_id: 14 }
+    url_poster: https://i.imgur.com/85hjj05.png
+  Martial Arts:
+    template: { name: MAL Genre, genre_id: 17 }
+    url_poster: https://i.imgur.com/4X17vYh.png
+  Music:
+    template: { name: MAL Genre, genre_id: 19 }
+    url_poster: https://i.imgur.com/0agGtOY.png
+  Mystery:
+    template: { name: MAL Genre, genre_id: 7 }
+    url_poster: https://i.imgur.com/KuSsjOJ.png
+  Romance:
+    template: { name: MAL Genre, genre_id: 22 }
+    url_poster: https://i.imgur.com/NJT7FxY.png
+  Sci-Fi:
+    template: { name: MAL Genre, genre_id: 24 }
+    url_poster: https://i.imgur.com/so2OLol.png
+  Sports:
+    template: { name: MAL Genre, genre_id: 30 }
+    url_poster: https://i.imgur.com/Dni1VRn.png
+  Boys Love:
+    template: { name: MAL Genre, genre_id: 28 }
+    url_poster: https://i.imgur.com/al5cSkE.png
+  Girls Love:
+    template: { name: MAL Genre, genre_id: 26 }
+    url_poster: https://i.imgur.com/dFdOSy8.png
+  Gourmet:
+    template: { name: MAL Genre, genre_id: 47 }
+    url_poster: https://i.imgur.com/QzHNqF3.png
+  Erotica:
+    template: { name: MAL Genre, genre_id: 49 }
+    url_poster: https://i.imgur.com/jTPBUdT.png
+  Hentai:
+    template: { name: MAL Genre, genre_id: 12 }
+    url_poster: https://i.imgur.com/L2JW5qv.png
+  Parody:
+    template: { name: MAL Genre, genre_id: 20 }
+    url_poster: https://i.imgur.com/WAP4hFI.png
+  Police:
+    template: { name: MAL Genre, genre_id: 39 }
+    url_poster: https://i.imgur.com/o2tT9IF.png
+  Thriller:
+    template: { name: MAL Genre, genre_id: 41 }
+    url_poster: https://i.imgur.com/ljuCv95.png

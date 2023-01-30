@@ -1,0 +1,115 @@
+#############################################################
+#                Dynamic Studio Collections                 #
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  Call this from your config.yml (Movie or Show)           #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    metadata_path:                                         #
+#      - git: PMM/studio                                    #
+#        template_variables:                                #
+#          # Turn the separator collection on/off           #
+#          use_separator: true                              #
+#          # Sets how the collection is sorted              #
+#          sort_by: release.desc                            #
+#          # Sets the collection mode of the collection     #
+#          collection_mode:                                 #
+#          # Sets the value at the start of the sort title  #
+#          collection_section: "07"                         #
+#############################################################
+
+external_templates:
+  git: PMM/templates
+  template_variables:
+    collection_section: "07"
+
+templates:
+  studio_dynamic:
+    default:
+      sort_by: release.desc
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/<<key_encoded>>.jpg
+    smart_filter:
+      sort_by: <<sort_by>>
+      any:
+        studio.is: <<value>>
+
+collections:
+  Studio Collections:
+    template:
+      - name: separator
+        separator: studio
+
+dynamic_collections:
+  Studio:
+    type: studio
+    title_format: <<key_name>>
+    template:
+      - studio_dynamic
+      - shared
+    include:
+      - 20th Century Studios
+      - Amazon Studios
+      - Blue Sky Studios
+      - Columbia Pictures
+      - DreamWorks Studios
+      - Illumination Entertainment
+      - Lionsgate
+      - Lucasfilm Ltd
+      - Marvel Studios
+      - Metro-Goldwyn-Mayer
+      - New Line Cinema
+      - Paramount Pictures
+      - Pixar
+      - Sony Pictures
+      - Studio Ghibli
+      - Universal Pictures
+      - Walt Disney Pictures
+      - Warner Bros. Pictures
+    addons:
+      20th Century Studios:
+        - 20th Century
+        - 20th Century Animation
+      Amazon Studios:
+        - Amazon
+      Blue Sky Studios:
+        - Blue Sky Films
+      Columbia Pictures:
+        - Columbia TriStar
+        - TriStar
+      DreamWorks Studios:
+        - DreamWorks
+        - DreamWorks Animation
+      Illumination Entertainment:
+        - Illumination Films
+      Lucasfilm Ltd:
+        - Lucasfilm
+      Marvel Studios:
+        - Marvel Animation
+        - Marvel Enterprises
+        - Marvel Entertainment
+        - Marvel
+      Metro-Goldwyn-Mayer:
+        - MGM
+      New Line Cinema:
+        - New Line
+      Paramount Pictures:
+        - Paramount
+        - Paramount Animation
+      Pixar:
+        - Pixar Animation Studios
+      Sony Pictures:
+        - Sony
+        - Sony Pictures Animation
+      Universal Pictures:
+        - Universal
+        - Universal Animation Studios
+      Walt Disney Pictures:
+        - Disney
+        - Disney Chanel
+        - DisneyToon Studios
+        - Walt Disney Feature Animation
+        - Walt disney Productions
+        - Walt Disney Animation Studios
+      Warner Bros. Pictures:
+        - Warner
+        - Warner Animation Group

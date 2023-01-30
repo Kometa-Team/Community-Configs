@@ -1,0 +1,45 @@
+templates:
+  flag_overlay:
+    optional:
+      - overlay_level
+    builder_level: <<overlay_level>>
+    ignore_blank_results: true
+    plex_search:
+      all:
+        audio_language: <<language>>
+    overlay:
+      name: <<overlay>>
+      file: overlays/_flags/<<overlay>>.png
+      queue: flags
+      weight: <<weight>>
+  lbxd_list:
+    ignore_blank_results: true
+    optional:
+      - lbxd_order
+      - lbxd_smart
+    default:
+      lbxd_user: cpt_kuesel
+      lbxd_sort: <<collection_name>>
+    conditionals:
+      lbxd_url:
+        default: https://letterboxd.com/<<lbxd_user>>/list/<<lbxd_list>>/
+        conditions:
+          - lbxd_list: watchlist
+            value: https://letterboxd.com/<<lbxd_user>>/<<lbxd_list>>/
+    letterboxd_list: <<lbxd_url>>
+    collection_order: <<lbxd_order>>
+    smart_label: <<lbxd_smart>>
+    sort_title: <<lbxd_sort>>
+  tmdb_movie:
+    optional:
+      - tmdb_collection
+      - tmdb_movie
+      - tmdb_order
+      - tmdb_smart
+    default:
+      tmdb_sort: <<collection_name>>
+    tmdb_collection_details: <<tmdb_collection>>
+    tmdb_movie: <<tmdb_movie>>
+    collection_order: <<tmdb_order>>
+    smart_label: <<tmdb_smart>>
+    sort_title: <<tmdb_sort>>

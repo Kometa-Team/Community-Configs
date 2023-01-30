@@ -1,0 +1,630 @@
+######################################################
+#                Movie Collections                   #
+######################################################
+templates:
+  collection:
+    optional:
+      - collection
+      - movie
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    sort_title: +09_<<collection_name>>
+    sync_mode: sync
+    #collection_order: release
+#    schedule: weekly(friday)
+
+collections:
+  Alien:
+    template: {name: collection, collection: "8091, 135416, 115762"}
+    url_poster: https://theposterdb.com/api/assets/168446
+    url_background: https://www.themoviedb.org/t/p/original/kB0Y3uGe9ohJa59Lk8UO9cUOxGM.jpg
+
+  American Pie:
+    template: {name: collection, collection: "2806, 298820"}
+    url_poster: https://theposterdb.com/api/assets/166224
+    url_background: https://www.themoviedb.org/t/p/original/eHl3g0eZ6sxMsXnjzfSkRcOBO1R.jpg
+
+  Amityville:
+    template: {name: collection, collection: "397842"}
+    url_poster: https://theposterdb.com/api/assets/160775
+    url_background: https://www.themoviedb.org/t/p/original/kPfuozrsE7pmFFolkR0xFicZDJT.jpg
+
+  Austin Powers:
+    template: {name: collection, collection: "1006"}
+    url_poster: https://theposterdb.com/api/assets/163540
+    url_background: https://www.themoviedb.org/t/p/original/3QJMI8nqQcwU5JBPy26m8TUXtTN.jpg
+
+  Avengers:
+    template: {name: collection, collection: "86311"}
+    url_poster: https://theposterdb.com/api/assets/162376/
+    url_background: https://www.themoviedb.org/t/p/original/94ubpd0Ro0vDf31wkSojP20VZJ7.jpg
+
+  Back to the Future:
+    template: {name: collection, collection: "264"}
+    url_poster: https://theposterdb.com/api/assets/163128
+    url_background: https://www.themoviedb.org/t/p/original/AqQotqj7XOI6GjB28nhMMa8YzOT.jpg
+
+  Bad Boys:
+    template: {name: collection, collection: "14890"}
+    url_poster: https://theposterdb.com/api/assets/163544
+    url_background: https://www.themoviedb.org/t/p/original/k9hhSHg5GS4UgWQC6MHBOZrarji.jpg
+
+  Batman:
+    template: {name: collection, collection: "948485, 120794, 263"}
+    url_poster: https://theposterdb.com/api/assets/162377
+    url_background: https://images3.alphacoders.com/723/72397.jpg
+
+  Before:
+    template: {name: collection, collection: "123800"}
+    url_poster: https://theposterdb.com/api/assets/167010
+    url_background: https://www.themoviedb.org/t/p/original/to3l6Gwzd7FGWa9Spc708IP1K7l.jpg
+
+  Bill and Ted's Most Excellent:
+    template: {name: collection, collection: "91746"}
+    url_poster: https://theposterdb.com/api/assets/163640
+    url_background: https://www.themoviedb.org/t/p/original/cPjeCcWV9YzQcLtaxZOr6hnKwoP.jpg
+
+  Blade:
+    template: {name: collection, collection: "735"}
+    url_poster: https://theposterdb.com/api/assets/171125/
+    url_background: https://www.themoviedb.org/t/p/original/gSWCo8z7bNNSKA7HGeu2oSfYGsd.jpg
+
+  Bourne:
+    template: {name: collection, collection: "31562"}
+    url_poster: https://theposterdb.com/api/assets/164761
+    url_background: https://www.themoviedb.org/t/p/w500_and_h282_face/dDDyEGgLvTSSRcp36eJcPDUErap.jpg
+
+  Captain America:
+    template: {name: collection, collection: "131295"}
+    url_poster: https://theposterdb.com/api/assets/162381
+    url_background: https://www.themoviedb.org/t/p/original/7kVucUYqz8fZkOmFtA8opDwJFXM.jpg
+
+  Cars:
+    template: {name: collection, collection: "87118"}
+    url_poster: https://theposterdb.com/api/assets/163004
+    url_background: https://www.themoviedb.org/t/p/original/lPmIpu42F6zRDCRlSjHcP3P7AlK.jpg
+
+  Cheech & Chong:
+    template: {name: collection, collection: "33071"}
+    url_poster: https://theposterdb.com/api/assets/163003
+    url_background: https://www.themoviedb.org/t/p/original/tJqD18aCja9kNpZ1W2r5gZK2qdq.jpg
+
+  Child's Play:
+    template: {name: collection, collection: "10455"}
+    url_poster: https://theposterdb.com/api/assets/176031
+    url_background: https://www.themoviedb.org/t/p/w500_and_h282_face/3T1GYAKhJK4d5LbbLtEOEQlmSwd.jpg
+
+  Children of the Corn:
+    template: {name: collection, collection: "115225"}
+    url_poster: https://theposterdb.com/api/assets/160798
+    url_background: https://www.themoviedb.org/t/p/original/g4aK8Up5zSegesJdMYbxDcndn20.jpg
+
+  Chronicles of Narnia:
+    template: {name: collection, collection: "420"}
+    url_poster: https://theposterdb.com/api/assets/162017
+    url_background: https://www.themoviedb.org/t/p/original/ojjzZUQlqKTsN1T7s5OAVZSjYMH.jpg
+
+  Cloverfield:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/guixamaral/lists/cloverfield
+    url_poster: https://theposterdb.com/api/assets/215650
+    url_background: https://i.redd.it/d3w5o9idpbl71.jpg
+
+  Cornetto:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/strangerer/lists/cornetto-trilogy
+    url_poster: https://theposterdb.com/api/assets/166234
+    url_background: https://www.themoviedb.org/t/p/original/v0m1sHjx9b0EE9zz9OczKaPNile.jpg
+
+  Crocodile Dundee:
+    template: {name: collection, collection: "9332"}
+    url_poster: https://theposterdb.com/api/assets/165412
+    url_background: https://www.themoviedb.org/t/p/original/t2Y4KYSgi77NCebkbInkD0cMrbl.jpg
+
+  Curious George:
+    template: {name: collection, collection: "55428"}
+    url_poster: https://theposterdb.com/api/assets/29684
+    url_background: https://www.themoviedb.org/t/p/original/qC533xWXnpR8SG3zrll8aKmeQXV.jpg
+
+  Dark Knight:
+    template: {name: collection, collection: "263"}
+    url_poster: https://theposterdb.com/api/assets/52697
+    url_background: https://www.themoviedb.org/t/p/original/xfKot7lqaiW4XpL5TtDlVBA9ei9.jpg
+
+  DC Comics Universe:
+    template: {name: collection}
+    tmdb_list_details: 3
+    url_poster: https://theposterdb.com/api/assets/52780
+    url_background: https://wallpaper.dog/large/17164614.jpg
+
+  Despicable Me:
+    template: {name: collection, collection: "86066"}
+    url_poster: https://theposterdb.com/api/assets/163000
+    url_background: https://www.themoviedb.org/t/p/original/1xRyksv55FaBLM5R7t1ZPp9GPnC.jpg
+
+  Die Hard:
+    template: {name: collection, collection: "1570"}
+    url_poster: https://theposterdb.com/api/assets/164773
+    url_background: https://www.themoviedb.org/t/p/original/5kHVblr87FUScuab1PVSsK692IL.jpg
+
+  Divergent:
+    template: {name: collection, collection: "283579"}
+    url_poster: https://theposterdb.com/api/assets/163697
+    url_background: https://www.themoviedb.org/t/p/original/n5PHgWukGHmm2ptAF0hdS0dkm3s.jpg
+
+  El Mariachi:
+    template: {name: collection, collection: "9649"}
+    url_poster: https://theposterdb.com/api/assets/164778
+    url_background: https://www.themoviedb.org/t/p/original/6p1OzuIKWnTDfDea7IpB9xra5J.jpg
+
+  Eastrail 177:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/gersomuzziel/lists/eastrail-177
+    url_poster: https://theposterdb.com/api/assets/162389
+    url_background: https://halloweenlove.com/images/posts/eastrail-177-trilogy.jpg
+
+  Evil Dead:
+    template: {name: collection, collection: "1960"}
+    url_poster: https://theposterdb.com/api/assets/160866
+    url_background: https://www.themoviedb.org/t/p/original/52ucWq0dQLUTb6PPH9q4jm9MY7f.jpg
+
+  Ernest:
+    template: {name: collection, collection: "330555"}
+    url_poster: https://theposterdb.com/api/assets/163384
+    url_background: https://www.themoviedb.org/t/p/original/vTlcbHNWrAf77AZFDZ9yCjHm8ag.jpg
+
+  Exorcist:
+    template: {name: collection, collection: "12263"}
+    url_poster: https://theposterdb.com/api/assets/160872
+    url_background: https://www.themoviedb.org/t/p/original/tuORKw8hnP7Gd03BdBV6TmySR2G.jpg
+
+  Fast and the Furious:
+    template: {name: collection, collection: "688042, 9485"}
+    url_poster: https://theposterdb.com/api/assets/164783
+    url_background: https://images5.alphacoders.com/811/thumb-1920-811727.jpg
+
+  Fifty Shades:
+    template: {name: collection, collection: "344830"}
+    url_poster: https://theposterdb.com/api/assets/167008
+    url_background: https://www.themoviedb.org/t/p/w500_and_h282_face/fUHFCnqGHozSiEF8yT7dhE1OKnY.jpg
+
+  Final Destination:
+    template: {name: collection, collection: "8864"}
+    url_poster: https://theposterdb.com/api/assets/160873
+    url_background: https://www.themoviedb.org/t/p/original/y3aWOInifbGKXM34KjtcMITrZRZ.jpg
+
+  Frankenstein:
+    template: {name: collection, collection: "218406, 123720"}
+    url_poster: https://theposterdb.com/api/assets/161003
+    url_background: https://www.themoviedb.org/t/p/original/oR3GHwhvOcjn124b7wOZl9SHh8G.jpg
+
+  Friday:
+    template: {name: collection, collection: "43563"}
+    url_poster: https://theposterdb.com/api/assets/166239
+    url_background: https://www.themoviedb.org/t/p/original/pXszT8ZWGj3fohU9FY0niA0IDEw.jpg
+
+  Friday the 13th:
+    template: {name: collection, collection: "9735"}
+    url_poster: https://theposterdb.com/api/assets/161007
+    url_background: https://www.themoviedb.org/t/p/original/93ykE6xe1GqQ3vb9Z7mHEO488dy.jpg
+
+  Ghostbusters:
+    template: {name: collection, collection: "2980"}
+    url_poster: https://theposterdb.com/api/assets/174560
+    url_background: https://www.themoviedb.org/t/p/original/2Bb1thtviUIbbBX8a6BOGPECORM.jpg
+
+  Godfather:
+    template: {name: collection, collection: "230"}
+    url_poster: https://theposterdb.com/api/assets/76903
+    url_background: https://www.themoviedb.org/t/p/original/3WZTxpgscsmoUk81TuECXdFOD0R.jpg
+
+  Godzilla:
+    template: {name: collection, collection: "535313, 535790, 374509, 374511, 374512, 813157", }
+    url_poster: https://theposterdb.com/api/assets/160929
+    url_background: https://www.themoviedb.org/t/p/original/u0HG8Yzepp4f0lPzsqk6El2njCe.jpg
+
+  Halloween:
+    template: {name: collection, collection: "91361, 126209"} 
+    url_poster: https://theposterdb.com/api/assets/161050
+    url_background: https://www.themoviedb.org/t/p/original/oSgcxTchdiLaXVP0CEtds0gKMul.jpg
+
+  Hangover:
+    template: {name: collection, collection: "86119"} 
+    url_poster: https://theposterdb.com/api/assets/165414
+    url_background: https://www.themoviedb.org/t/p/original/9tpB49XNPEvxEkdsIkJWP0sZWtf.jpg
+
+  Has Fallen:
+    template: {name: collection, collection: "386534"} 
+    url_poster: https://theposterdb.com/api/assets/164782
+    url_background: https://www.themoviedb.org/t/p/original/w5GjGycHi5EOfPx2JSMshCN7OJn.jpg
+
+  Highlander:
+    template: {name: collection, collection: "8050"} 
+    url_poster: https://theposterdb.com/api/assets/162044
+    url_background: https://www.themoviedb.org/t/p/original/4f9kGJeKQTWjK0aAVootsdinDju.jpg
+
+  Hobbit:
+    template: {name: collection, collection: "121938"} 
+    url_poster: https://theposterdb.com/api/assets/187486
+    url_background: https://www.themoviedb.org/t/p/original/7wO7MSnP5UcwR2cTHdJFF1vP4Ie.jpg
+
+  Home Alone:
+    template: {name: collection, collection: "9888"} 
+    url_poster: https://theposterdb.com/api/assets/168202
+    url_background: https://www.themoviedb.org/t/p/original/tpmfRWL1ecFxFOOeqvp6hDf41ac.jpg
+
+  How to Train Your Dragon:
+    template: {name: collection, collection: "89137"} 
+    url_poster: https://theposterdb.com/api/assets/162990
+    url_background: https://www.themoviedb.org/t/p/original/wAHEsXSQ1jOcGDq5xkmVcpGqr4C.jpg
+
+  Hunger Games:
+    template: {name: collection, collection: "131635"} 
+    url_poster: https://theposterdb.com/api/assets/163851
+    url_background: https://www.themoviedb.org/t/p/original/zWiiLNg8yXv0he3tCH6XignPaYV.jpg
+
+  Ice Age:
+    template: {name: collection, collection: "8354"} 
+    url_poster: https://theposterdb.com/api/assets/162988
+    url_background: https://www.themoviedb.org/t/p/original/2Mb92Ssoe1eUecvrCe2pEvgAlmv.jpg
+
+  Indiana Jones:
+    template: {name: collection, collection: "84"} 
+    url_poster: https://theposterdb.com/api/assets/163391
+    url_background: https://www.themoviedb.org/t/p/original/6kh59mZizZsttZPR0HAdXk6Ve2n.jpg
+
+  Insidious:
+    template: {name: collection, collection: "228446"} 
+    url_poster: https://theposterdb.com/api/assets/161059
+    url_background: https://www.themoviedb.org/t/p/original/5FrPZHgbbmTIq0oxpwSGqu5HyXC.jpg
+
+  Invisible Man:
+    template: {name: collection, collection: "259401"} 
+    url_poster: https://theposterdb.com/api/assets/161122
+    url_background: https://www.themoviedb.org/t/p/original/k5xCUEzPzNkiMmd7gkIGCo4VB8W.jpg
+
+  Ip Man:
+    template: {name: collection, collection: "70068"} 
+    url_poster: https://theposterdb.com/api/assets/160954
+    url_background: https://www.themoviedb.org/t/p/original/1oCPXe4e0VHZTJX4nLkvxzayXK9.jpg
+
+  Iron Man:
+    template: {name: collection, collection: "131292"} 
+    url_poster: https://theposterdb.com/api/assets/162395
+    url_background: https://www.themoviedb.org/t/p/original/zAIAG3aBVfWNL530TYUf5OpJrPw.jpg
+
+  Jackass:
+    template: {name: collection, collection: "17178"} 
+    url_poster: https://theposterdb.com/api/assets/163419
+    url_background: https://www.themoviedb.org/t/p/original/8al8kWGbUbdvngSR72YLtKqtdf.jpg
+
+  James Bond:
+    template: {name: collection, collection: "645"}
+    url_poster: https://theposterdb.com/api/assets/164797
+    url_background: https://www.pixel4k.com/wp-content/uploads/2018/09/james-bond-007_1536401470.jpg
+
+  John Wick:
+    template: {name: collection, collection: "404609"}
+    url_poster: https://theposterdb.com/api/assets/164798
+    url_background: https://www.themoviedb.org/t/p/original/5y8jLQSlkxPxhSXuSnZrYaRmROn.jpg
+
+  Jurassic Park:
+    template: {name: collection, collection: "328"}
+    url_poster: https://theposterdb.com/api/assets/162511
+    url_background: https://www.teahub.io/photos/full/54-546246_2500x1200-jurassic-world-wallpapers-jurassic-park-wallpaper-4k.jpg
+
+  Karate Kid:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/king-sol/lists/karate-kid
+    url_poster: https://theposterdb.com/api/assets/92958
+    url_background: https://www.themoviedb.org/t/p/original/1ok5JGCsDt4Sh3CkFeXh2F2KB7F.jpg
+
+  Kevin Smith:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/strangerer/lists/kevin-smith-movies
+    url_poster: https://theposterdb.com/api/assets/82586
+    url_background: https://yesofcorsa.com/wp-content/uploads/2017/03/Kevin-Smith-Wallpaper-HQ-1024x683.jpg
+
+  Kingsman:
+    template: {name: collection, collection: "391860"}
+    url_poster: https://theposterdb.com/api/assets/164805
+    url_background: https://www.themoviedb.org/t/p/original/4RvHJHSuQUKRzUx8h6a8VAxvbIE.jpg
+
+  Land Before Time:
+    template: {name: collection, collection: "325470"}
+    url_poster: https://theposterdb.com/api/assets/162981
+    url_background: https://www.themoviedb.org/t/p/original/alkvR9vTtuZEmd5ygsayOfxYOMa.jpg
+
+  Lego Movie:
+    template: {name: collection, collection: "19163"}
+    url_poster: https://theposterdb.com/api/assets/163075
+    url_background: https://www.themoviedb.org/t/p/original/vAyMNou7M2SOXjPIzLhltTvAqD1.jpg
+
+  Leprechaun:
+    template: {name: collection, collection: "19285"}
+    url_poster: https://theposterdb.com/api/assets/161112
+    url_background: https://www.themoviedb.org/t/p/original/pRjYboGyfjO5PkY7Rdg21s4FhoI.jpg
+
+  Lethal Weapon:
+    template: {name: collection, collection: "945"}
+    url_poster: https://theposterdb.com/api/assets/164803
+    url_background: https://www.themoviedb.org/t/p/original/7PH31kIhz6BnzoP9cxG7JbkB6fT.jpg
+
+  Lion King:
+    template: {name: collection, collection: "94032, 762512"}
+    url_poster: https://theposterdb.com/api/assets/162978
+    url_background: https://www.themoviedb.org/t/p/original/A9IEaj9cPAwEgFnTmteB70oxgJY.jpg
+
+  Living Dead:
+    template: {name: collection, collection: "261590"}
+    url_poster: https://theposterdb.com/api/assets/97136
+    url_background: https://www.themoviedb.org/t/p/original/8OufxZdzdi6LhEoeRwnwIsf1uSb.jpg
+
+  Lord of the Rings:
+    template: {name: collection, collection: "119"}
+    url_poster: https://theposterdb.com/api/assets/52722
+    url_background: https://www.themoviedb.org/t/p/original/jg4qGbVuwXzbuvoDUeW1ooCseAC.jpg
+
+  Madagascar:
+    template: {name: collection, collection: "14740"}
+    url_poster: https://theposterdb.com/api/assets/162976
+    url_background: https://www.themoviedb.org/t/p/original/lzTIAbvMeGWB7PUrmBZXulGA28M.jpg
+
+  Mad Max:
+    template: {name: collection, collection: "8945"}
+    url_poster: https://theposterdb.com/api/assets/184549
+    url_background: https://www.themoviedb.org/t/p/original/gwYe803SFwKlCF5y71OicWHUnVD.jpg
+
+  Marvel Cinematic Universe:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/jawann2002/lists/marvel-cinematic-universe-movies?sort=released,desc
+    url_poster: https://theposterdb.com/api/assets/162417
+    url_background: https://images.hdqwalls.com/download/marvel-cinematic-universe-jm-3840x2400.jpg
+
+  Matrix:
+    template: {name: collection, collection: "2344"}
+    url_poster: https://theposterdb.com/api/assets/163913
+    url_background: https://www.themoviedb.org/t/p/original/bRm2DEgUiYciDw3myHuYFInD7la.jpg
+
+  Maze Runner:
+    template: {name: collection, collection: "295130"}
+    url_poster: https://theposterdb.com/api/assets/160968
+    url_background: https://www.themoviedb.org/t/p/original/wpAECQsUCLPbBGn7IMiHkHqZ8l2.jpg
+
+  Men in Black:
+    template: {name: collection, collection: "86055"}
+    url_poster: https://theposterdb.com/api/assets/163929
+    url_background: https://www.themoviedb.org/t/p/original/7GFwqcU7fUBWgRIfJIvcsPfjkAq.jpg
+
+  Middle Earth:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/lutgnature/lists/lord-of-the-rings-hobbit
+    url_poster: https://theposterdb.com/api/assets/76892
+    url_background: https://wallpaperaccess.com/full/838293.jpg
+
+  Mighty Ducks:
+    template: {name: collection, collection: "10709"}
+    url_poster: https://theposterdb.com/api/assets/192594
+    url_background: https://www.themoviedb.org/t/p/original/qBFCtw5EKBj3ILFbRgXtCfCjmb8.jpg
+
+  Mission Impossible:
+    template: {name: collection, collection: "87359"}
+    url_poster: https://theposterdb.com/api/assets/164810
+    url_background: https://www.themoviedb.org/t/p/original/jYl0UuJFcmhymv9ZNO14lPLDY1Z.jpg
+
+  Monsters Inc:
+    template: {name: collection, collection: "137696"}
+    url_poster: https://theposterdb.com/api/assets/162975
+    url_background: https://www.themoviedb.org/t/p/original/x4Mq7gDRhbqDjw4SkemLvd1yzF3.jpg
+
+  Monty Python:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/astrolansen/lists/monty-python
+    url_poster: https://theposterdb.com/api/assets/166255
+    url_background: http://wallpapercave.com/wp/QNkGgjl.jpg
+
+  Mummy:
+    template: {name: collection, collection: "1733"}
+    url_poster: https://theposterdb.com/api/assets/161305
+    url_background: https://www.themoviedb.org/t/p/original/1BeKi6IytbfQlQocJSvP2k6sO1a.jpg
+
+  Mummy (Universal):
+    template: {name: collection, collection: "221544"}
+    url_poster: https://theposterdb.com/api/assets/161304
+    url_background: https://www.themoviedb.org/t/p/original/xyoxiUGMlJSVfUhYZPsmwhebT5D.jpg
+
+  Muppets:
+    template: {name: collection, collection: "256377"}
+    url_poster: https://theposterdb.com/api/assets/160974
+    url_background: https://www.themoviedb.org/t/p/original/1AWd3MM90G47mxtD112gRDxSXY9.jpg
+
+  Night At The Museum:
+    template: {name: collection, collection: "85943"}
+    url_poster: https://theposterdb.com/api/assets/162153
+    url_background: https://www.themoviedb.org/t/p/original/3mvDUFgd6t52P2G2JKYuINwMxcd.jpg
+
+  Nightmare on Elm Street:
+    template: {name: collection, collection: "8581"}
+    url_poster: https://theposterdb.com/api/assets/161307
+    url_background: https://www.themoviedb.org/t/p/original/fg0HtE2tm61vJPrusIaSfQK03vd.jpg
+
+  Ocean's:
+    template: {name: collection, collection: "304"}
+    url_poster: https://theposterdb.com/api/assets/164814
+    url_background: https://www.themoviedb.org/t/p/original/7WUSrq8DqSkVgv1vmhBvav5bPoB.jpg
+
+  Open Season:
+    template: {name: collection, collection: "66761"}
+    url_poster: https://theposterdb.com/api/assets/178905
+    url_background: https://www.themoviedb.org/t/p/original/cnaLzqjxlqGMIp7AGCizfVXUhSn.jpg
+
+  Peanuts:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/novela/lists/peanuts
+    url_poster: https://theposterdb.com/api/assets/188207
+    url_background: https://wallpapertag.com/wallpaper/full/5/6/9/508442-peanuts-characters-wallpaper-1920x1080-download-free.jpg
+
+  Pirates of the Caribbean:
+    template: {name: collection, collection: "295"}
+    url_poster: https://theposterdb.com/api/assets/163404
+    url_background: https://www.themoviedb.org/t/p/original/8Jg0Z5kOoPQRHBNiQs1s9hMT1qt.jpg
+
+  Planet of the Apes:
+    template: {name: collection, collection: "173710, 1709"}
+    url_poster: https://theposterdb.com/api/assets/184312
+    url_background: https://www.themoviedb.org/t/p/original/pQL1yJGrOqqPehmnT2LQW8R2knG.jpg
+
+  Police Academy:
+    template: {name: collection, collection: "9338"}
+    url_poster: https://theposterdb.com/api/assets/164819
+    url_background: https://www.themoviedb.org/t/p/original/4fjmNFs31JPfa4rYtE3gNDspGlk.jpg
+
+  Police Story:
+    template: {name: collection, collection: "269098"}
+    url_poster: https://theposterdb.com/api/assets/160978
+    url_background: https://www.themoviedb.org/t/p/original/aFk6IdYtcpYGVVURybM4f8U7TeS.jpg
+
+  Predator:
+    template: {name: collection, collection: "399,115762"}
+    url_poster: https://theposterdb.com/api/assets/163975
+    url_background: https://www.themoviedb.org/t/p/original/fXVzk9OxQwROCuiWvd0Cv76qmZi.jpg
+
+  Purge:
+    template: {name: collection, collection: "256322"}
+    url_poster: https://theposterdb.com/api/assets/161881
+    url_background: https://www.themoviedb.org/t/p/original/zLx0VxpzJt3E0cb4GodV10Wp0Lt.jpg
+
+  Rambo:
+    template: {name: collection, collection: "5039"}
+    url_poster: https://theposterdb.com/api/assets/164821
+    url_background: https://www.themoviedb.org/t/p/original/7x3GUZALySIuhqkUZjYSFFbYaxl.jpg
+
+  Resident Evil:
+    template: {name: collection, collection: "17255"}
+    url_poster: https://theposterdb.com/api/assets/161290
+    url_background: https://www.themoviedb.org/t/p/original/5VgZ6Vggk0NnA62GK1UFlnAtyu2.jpg
+
+  Riddick:
+    template: {name: collection, collection: "2794"}
+    url_poster: https://theposterdb.com/api/assets/163647
+    url_background: https://www.themoviedb.org/t/p/original/oJHR6WSbljwj7WeC91XYFb8dIkF.jpg
+
+  Ring:
+    template: {name: collection, collection: "36178"}
+    url_poster: https://theposterdb.com/api/assets/161878
+    url_background: https://www.themoviedb.org/t/p/original/mdrNIAa3Ryd0g5HsdPsnaDuzmyN.jpg
+
+  Rocky:
+    template: {name: collection, collection: "1575, 553717"}
+    url_poster: https://theposterdb.com/api/assets/163422
+    url_background: https://www.themoviedb.org/t/p/original/w4h6gjdWPvmu5R9H6zeGDPo1ZuV.jpg
+
+  Rush Hour:
+    template: {name: collection, collection: "90863"}
+    url_poster: https://theposterdb.com/api/assets/164824
+    url_background: https://www.themoviedb.org/t/p/original/uoDt3eCCKpcxSQVWjPTgN8T0gjm.jpg
+
+  Saw:
+    template: {name: collection, collection: "656"}
+    url_poster: https://theposterdb.com/api/assets/161876
+    url_background: https://www.themoviedb.org/t/p/original/jQRuN5bbV4vaSfJzFKDn1J9Fc50.jpg
+
+  Scream:
+    template: {name: collection, collection: "2602"}
+    url_poster: https://theposterdb.com/api/assets/161544
+    url_background: https://www.themoviedb.org/t/p/original/zdjhqja1OIdy833WJC9ZNePW4DN.jpg
+
+  Sharknado:
+    template: {name: collection, collection: "286023"}
+    url_poster: https://theposterdb.com/api/assets/162221
+    url_background: https://www.themoviedb.org/t/p/original/avXhefNpY1FFATWKnumB5UKiDxb.jpg
+
+  Shrek:
+    template: {name: collection, collection: "2150"}
+    url_poster: https://theposterdb.com/api/assets/160988
+    url_background: https://www.themoviedb.org/t/p/original/mM0i9QqSggwJaz9cry94lJZNQ43.jpg
+
+  Spider-man Universe:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/james_97/lists/spider-verse
+    url_poster: https://theposterdb.com/api/assets/162401
+    url_background: https://i.ibb.co/P59wtVs/download.jpg
+
+  Star Wars:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/draackje/lists/star-wars
+    url_poster: https://theposterdb.com/api/assets/52755
+    url_background: https://wallpaperaccess.com/full/1101749.jpg
+
+  Star Trek:
+    template: {name: collection, collection: "115575"}
+    url_poster: https://theposterdb.com/api/assets/222279
+    url_background: https://www.themoviedb.org/t/p/original/gWl5pN2FplE709aVtA4lakwsE6t.jpg
+
+  Terminator:
+    template: {name: collection, collection: "528"}
+    url_poster: https://theposterdb.com/api/assets/164119
+    url_background: https://www.themoviedb.org/t/p/original/wLgSHv3rSOGC3CXCfZJHFqo3BsQ.jpg
+
+  Texas Chainsaw Massacre:
+    template: {name: collection, collection: "111751"}
+    url_poster: https://theposterdb.com/api/assets/161860
+    url_background: https://www.themoviedb.org/t/p/original/1zIwt7gUyxKhOKYXN5XNGdGxwHg.jpg
+
+  Toy Story:
+    template: {name: collection, collection: "10194"}
+    url_poster: https://theposterdb.com/api/assets/162955
+    url_background: https://www.themoviedb.org/t/p/original/rlvLMH5ceid9ESsuYppA8IZb0Rk.jpg
+
+  Thor:
+    template: {name: collection, collection: "131296"}
+    url_poster: https://theposterdb.com/api/assets/162406
+    url_background: https://www.themoviedb.org/t/p/original/v0m1sHjx9b0EE9zz9OczKaPNile.jpg
+
+  Transformers:
+    template: {name: collection, collection: "8650"}
+    url_poster: https://theposterdb.com/api/assets/160997
+    url_background: https://www.themoviedb.org/t/p/original/jluEY93jgAUdTdR9HSntRNiRyiX.jpg
+
+  Tremors:
+    template: {name: collection, collection: "91799"}
+    url_poster: https://theposterdb.com/api/assets/161855
+    url_background: https://www.themoviedb.org/t/p/original/r5kZKh1WNJNwr1P6VMMYU1FhcYu.jpg
+
+  Twilight:
+    template: {name: collection, collection: "33514"}
+    url_poster: https://theposterdb.com/api/assets/161853
+    url_background: https://www.themoviedb.org/t/p/original/rv5b06YAvmekw0D6Ul2ps9JbH4C.jpg
+
+  Underworld:
+    template: {name: collection, collection: "2326"}
+    url_poster: https://theposterdb.com/api/assets/161852
+    url_background: https://www.themoviedb.org/t/p/original/2gSaXagD9ZCuBHOsXF4tvtW7Djd.jpg
+
+  Wizarding World of Harry Potter:
+    template: {name: collection}
+    tmdb_list_details: 63607
+    url_poster: https://theposterdb.com/api/assets/77116
+    url_background: https://wallpaperaccess.com/full/562430.jpg
+    sort_title: +09_Harry Potter
+
+  Wolverine:
+    template: {name: collection, collection: "453993"}
+    url_poster: https://theposterdb.com/api/assets/171121
+    url_background: https://www.themoviedb.org/t/p/original/hbNMx7sxxqvkX8rLOsTryiSrCPY.jpg
+
+  Worricker:
+    template: {name: collection, collection: "260601"}
+    url_poster: https://theposterdb.com/api/assets/164849
+    url_background: https://www.themoviedb.org/t/p/original/wTIiZa9Rib9UsrjRGs0swtIcRiY.jpg
+
+  X-Men:
+    template: {name: collection}
+    trakt_list: https://trakt.tv/users/bertjj/lists/x-men
+    url_poster: https://theposterdb.com/api/assets/52741
+    url_background: https://s2.best-wallpaper.net/wallpaper/3840x2160/1607/X-Men-Days-of-Future-Past-Ultra-HD_3840x2160.jpg
+
+  xXx:
+    template: {name: collection, collection: "52785"}
+    url_poster: https://theposterdb.com/api/assets/164850
+    url_background: https://www.themoviedb.org/t/p/original/jSfCi0onZRDxbeg2dPJgB5iAoxX.jpg

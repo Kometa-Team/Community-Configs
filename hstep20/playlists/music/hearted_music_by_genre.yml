@@ -1,0 +1,91 @@
+templates:
+  Hearted Genre Playlist:
+    libraries: "Music"
+    sync_mode: sync
+    summary: All the best <<genre>> songs
+    plex_search:
+      type: track
+      all:
+        track_user_rating.gte: 5 # This is a scale of 1-10, which means 5 is eqivalent to 2.5 stars or higher
+        artist_genre: <<genre>>
+        album_type.not: Soundtrack
+
+  Hearted Country Playlist:
+    libraries: "Music"
+    sync_mode: sync
+    summary: All the best songs from <<country>>
+    plex_search:
+      type: track
+      all:
+        track_user_rating.gte: 5
+        album_type.not: Soundtrack
+        any:
+          artist_country: <<country>>
+
+playlists:
+  <3 All Songs:
+    libraries: "Music"
+    sync_mode: sync
+    summary: All the best songs
+    plex_search:
+      type: track
+      all:
+        track_user_rating.gte: 5
+
+  <3 Instrumental Songs:
+    libraries: "Music"
+    sync_mode: sync
+    summary: All the best Instrumental songs
+    plex_search:
+      type: track
+      all:
+        track_user_rating.gte: 5 # This is a scale of 1-10, which means 5 is eqivalent to 2.5 stars or higher
+        artist_genre: Instrumental
+
+  <3 Soundtrack Songs:
+    libraries: "Music"
+    sync_mode: sync
+    summary: All the best songs from Soundtracks
+    plex_search:
+      type: track
+      all:
+        track_user_rating.gte: 5 # This is a scale of 1-10, which means 5 is eqivalent to 2.5 stars or higher
+        album_type: Soundtrack
+
+  # Standard Genres Builders
+
+  <3 Alternative Rock Songs:
+    template: { name: Hearted Genre Playlist, genre: Alternative Rock }
+
+  <3 Folk Songs:
+    template: { name: Hearted Genre Playlist, genre: Folk }
+
+  <3 Indie Rock Songs:
+    template: { name: Hearted Genre Playlist, genre: Indie Rock }
+
+  <3 Metal Songs:
+    template: { name: Hearted Genre Playlist, genre: Metal }
+
+  <3 New Wave Songs:
+    template: { name: Hearted Genre Playlist, genre: New Wave }
+
+  <3 Punk Songs:
+    template: { name: Hearted Genre Playlist, genre: Punk }
+
+  <3 Rock Songs:
+    template: { name: Hearted Genre Playlist, genre: Rock }
+
+  <3 Synthwave Songs:
+    template: { name: Hearted Genre Playlist, genre: Synthwave }
+
+  # Artists by Country Builders
+
+  <3 Japan Songs:
+    template: { name: Hearted Country Playlist, country: japan }
+
+  <3 Northern European Songs:
+    template:
+      {
+        name: Hearted Country Playlist,
+        country: [norway, sweden, finland, iceland],
+      }

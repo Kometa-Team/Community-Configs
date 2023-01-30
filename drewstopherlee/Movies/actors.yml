@@ -1,0 +1,78 @@
+templates:
+  Actor:
+    smart_filter:
+      all:
+        actor: tmdb
+      sort_by: year.asc
+    tmdb_person: <<person>>
+    sort_title: "!09_<<collection_name>>"
+    sync_mode: sync
+    summary: <<collection_name>>'s Films Available on Plex
+    collection_mode: hide
+collections:
+
+#############################################################
+#                                                           #
+#                          Actors                           #
+#                                                           #
+#############################################################
+
+  Alan Rickman:
+    template:
+      name: Actor
+      person: 4566
+
+  Brittany Murphy:
+    template:
+      name: Actor
+      person: 328
+
+  Chris Farley:
+    template:
+      name: Actor
+      person: 58198
+
+  Christopher Lee:
+    template:
+      name: Actor
+      person: 113
+
+  Heath Ledger:
+    template:
+      name: Actor
+      person: 1810
+
+  John Candy:
+    template:
+      name: Actor
+      person: 7180
+
+  John Hurt:
+    template:
+      name: Actor
+      person: 5049
+
+  Philip Seymour Hoffman:
+    template:
+      name: Actor
+      person: 1233
+
+  Ray Liotta:
+    template:
+      name: Actor
+      person: 11477
+
+  Richard Griffiths:
+    template:
+      name: Actor
+      person: 10983
+
+  Robin Williams:
+    template:
+      name: Actor
+      person: 2157
+
+  Sean Connery:
+    template:
+      name: Actor
+      person: 738

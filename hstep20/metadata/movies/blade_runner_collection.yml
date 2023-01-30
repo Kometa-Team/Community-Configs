@@ -1,0 +1,17 @@
+#Uses https://theposterdb.com/poster/50376
+
+collections:
+  Blade Runner Collection:
+    tmdb_collection: https://www.themoviedb.org/collection/422837
+    tmdb_summary: https://www.themoviedb.org/collection/422837
+    #or trakt_list 
+    sync_mode: sync  
+    url_poster: https://theposterdb.com/api/assets/50376
+    sort_title: ++++++++_blade_runner
+    collection_order: release
+
+metadata:
+  78: #Blade Runner:
+    url_poster: https://theposterdb.com/api/assets/50377
+  335984: #Blade Runner 2049:
+    url_poster: https://theposterdb.com/api/assets/50378

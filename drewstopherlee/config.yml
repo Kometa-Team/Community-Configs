@@ -1,0 +1,835 @@
+libraries:
+  Movies:
+    radarr:
+      url: 
+      token: 
+      add_missing: false
+      add_existing: false
+      root_folder_path: P:\Movies
+      monitor: true
+      availability: released
+      quality_profile: 1080p
+      tag: pmm
+      search: false
+      radarr_path:
+      plex_path:
+      upgrade_existing: false
+    report_path: /config/Movies_report.yml
+    metadata_path:
+    # - file: config/Movies.yml
+    # - folder: config/Movies/
+
+    - git: PMM/chart/basic
+      asset_directory: config/assets/basic
+      template_variables:
+        # Turn the separator collection on/off
+        use_separator: false
+        # Separator style (red, blue, green, gray, purple, stb, orig)
+        sep_style: orig
+        # Sets the collection mode of the collection
+        collection_mode:
+        # Sets the value at the start of the sort title
+        collection_section: '00'
+        ###################################################
+        ## Available collections                          #
+        ##   KEY              COLLECTION                  #
+        ##   released         Newly Released              #
+        ##   episodes         New Episodes                #
+        ###################################################
+        # Customize summary of collection
+        # summary_key: A collection of ... 
+        # Turn the collection on/off
+        # use_key:
+        use_episodes: false
+        # Determines collection order in it's section
+        # order_key:
+        # Set visible_library for the collection
+        # visible_library_key:
+        visible_library_released: false
+        # Set visible_home for the collection
+        # visible_home_key:
+        visible_home_released: true
+        # Set visible_shared for the collection
+        # visible_shared_key:
+        visible_shared_released: true
+
+    - file: config/Movies/seasonal.yml
+      asset_directory: config/assets/seasonal
+      template_variables:
+        # Sets the collection mode of the collection
+        collection_mode: hide
+        # Sets the value at the start of the sort title
+        collection_section: '01'
+        # Sets how all collections are sorted
+        sort_by: title.asc
+        # Turn the separator collection on/off
+        use_separator: false
+        # Separator style (red, blue, green, gray, purple, stb, orig)
+        sep_style: orig
+        ##################################################
+        # Available collections                          #
+        #   KEY              COLLECTION                  #
+        #   years            New Year's Day              #
+        #   valentine        Valentine's Day             #
+        #   patrick          St. Patrick's Day           #
+        #   easter           Easter                      #
+        #   mother           Mother's Day                #
+        #   memorial         Memorial Day                #
+        #   father           Father's Day                #
+        #   independence     Independence Day            #
+        #   labor            Labor Day                   #
+        #   halloween        Halloween                   #
+        #   thanksgiving     Thanksgiving                #
+        #   christmas        Christmas                   #
+        ##################################################
+        # Turn the collection on/off
+        # use_key: true
+        use_years: true
+        use_valentine: true
+        use_patrick: true
+        use_easter: true
+        use_mother: true
+        use_memorial: true
+        use_father: true
+        use_independence: true
+        use_labor: true
+        use_halloween: true
+        use_thanksgiving: true
+        use_christmas: true
+        ##################################################
+        # Default Schedules                              #
+        #   KEY              SCHEDULE                    #
+        #   years            range(12/26-01/04)          #
+        #   valentine        range(02/01-02/29)          #
+        #   patrick          range(03/01-03/18)          #
+        #   easter           range(03/20-04/30)          #
+        #   mother           range(05/05-05/10)          #
+        #   memorial         range(05/18-06/07)          #
+        #   father           range(06/15-06/20)          #
+        #   independence     range(06/23-07/11)          #
+        #   labor            range(09/01-09/10)          #
+        #   halloween        range(10/01-10/31)          #
+        #   thanksgiving     range(11/01-11/30)          #
+        #   christmas        range(12/01-12/31)          #
+        ##################################################
+        # Set the schedule of a collection.
+        # schedule_key:
+        schedule_years: range(12/26-01/07)
+        schedule_valentine: range(02/01-02/21)
+        # schedule_patrick: range(03/01-03/18)
+        # schedule_easter: range(03/20-04/30)
+        schedule_mother: range(05/10-05/18)
+        schedule_memorial: range(05/25-06/03)
+        schedule_father: range(06/14-06/22)
+        # schedule_independence: range(06/23-07/11)
+        # schedule_labor: range(09/01-09/10)
+        # schedule_halloween: range(10/01-10/31)
+        schedule_thanksgiving: range(11/01-11/24)
+        schedule_christmas: range(11/24-12/31)
+        # Sets how the collection is sorted
+        # sort_by_key: title.asc
+        # Set visible_library for the collection
+        # visible_library_key:
+        visible_library_years: false
+        visible_library_valentine: false
+        visible_library_patrick: false
+        visible_library_easter: false
+        visible_library_mother: false
+        visible_library_memorial: false
+        visible_library_father: false
+        visible_library_independence: false
+        visible_library_labor: false
+        visible_library_halloween: false
+        visible_library_thanksgiving: false
+        visible_library_christmas: false
+        # Set visible_home for the collection
+        # visible_home_key:
+        visible_home_years: true
+        visible_home_valentine: true
+        visible_home_patrick: true
+        visible_home_easter: true
+        visible_home_mother: true
+        visible_home_memorial: true
+        visible_home_father: true
+        visible_home_independence: true
+        visible_home_labor: true
+        visible_home_halloween: true
+        visible_home_thanksgiving: true
+        visible_home_christmas: true
+        # Set visible_shared for the collection
+        # visible_shared_key:
+        visible_shared_years: true
+        visible_shared_valentine: true
+        visible_shared_patrick: true
+        visible_shared_easter: true
+        visible_shared_mother: true
+        visible_shared_memorial: true
+        visible_shared_father: true
+        visible_shared_independence: true
+        visible_shared_labor: true
+        visible_shared_halloween: true
+        visible_shared_thanksgiving: true
+        visible_shared_christmas: true
+
+    - git: PMM/resolution
+      template_variables:
+        asset_directory: config/assets/resolution
+        style: default
+        include:
+        - 4k
+          # - 1080
+        use_other: false
+        # Sets the value at the start of the sort title
+        collection_section: '02'
+        # Turn the separator collection on/off
+        use_separator: false
+        # Separator style (red, blue, green, gray, purple, stb, orig)
+        sep_style: orig
+        # Sets how the collection is sorted
+        sort_by: release.desc
+        # Sets the collection mode of the collection
+        collection_mode: hide
+
+    - git: PMM/chart/imdb
+      asset_directory: config/assets/imdb
+      template_variables:
+        # Sets the collection mode of the collection
+        collection_mode: hide
+        # Sets the value at the start of the sort title
+        collection_section: '03'
+        ##################################################
+        # Available collections                          #
+        #   KEY              COLLECTION                  #
+        #   popular          IMDb Popular                #
+        #   top              IMDb Top 250                #
+        #   lowest           IMDb Lowest Rated           #
+        ##################################################
+        # Customize summary of collection
+        # summary_key: A collection of ...
+        # Turn the collection on/off
+        # use_key: true
+        use_popular: true
+        use_top: true
+        use_lowest: true
+        # Determines collection order in its section
+        # order_key:
+        # Determines collection order of the collection
+        # collection_order_key: custom
+        # Set visible_library for the collection
+        # visible_library_key: 
+        visible_library_popular: false
+        visible_library_top: false
+        visible_library_lowest: false
+        # Set visible_home for the collection
+        # visible_home_key:
+        visible_home_popular: true
+        visible_home_top: true
+        # Set visible_shared for the collection
+        # visible_shared_key:
+        visible_shared_popular: true
+        visible_shared_top: true
+
+    - git: PMM/streaming
+      asset_directory: config/assets/streaming
+      template_variables:
+        # Turn the separator collection on/off
+        use_separator: false
+        # Separator style (red, blue, green, gray, purple, stb, orig)
+        sep_style: orig
+        # Sets how the collection is sorted
+        sort_by: release.desc
+        # Sets the collection mode of the collection
+        collection_mode:
+        # Sets the value at the start of the sort title
+        collection_section: '04'
+        ##################################################
+        # Available collections                          #
+        #   KEY              COLLECTION                  #
+        #   all4             All 4                       #
+        #   appletv          Apple TV+                   #
+        #   bet              BET+                        #
+        #   britbox          BritBox                     #
+        #   disney           Disney+                     #
+        #   hayu             hayu                        #
+        #   hbomax           HBO Max                     #
+        #   hulu             Hulu                        #
+        #   netflix          Netflix                     #
+        #   now              NOW                         #
+        #   paramount        Paramount+                  #
+        #   peacock          Peacock                     #
+        #   amazon           Prime Video                 #
+        #   showtime         Showtime                    #
+        ##################################################
+        # Turn the collection on/off
+        # use_key: true
+        use_all4: false
+        use_appletv: true
+        use_bet: false
+        use_britbox: false
+        use_disney: true
+        use_hayu: false
+        use_hbomax: true
+        use_hulu: true
+        use_netflix: true
+        use_now: false
+        use_paramount: true
+        use_peacock: true
+        use_amazon: true
+        use_showtime: false
+        # Determines collection order in its section
+        # order_key:
+        # Determines collection order of the collection
+        # collection_order_key: custom
+        # Set visible_library for the collection
+        # visible_library_key:
+        visible_library_appletv: false
+        visible_library_disney: false
+        visible_library_hbomax: false
+        visible_library_hulu: false
+        visible_library_netflix: false
+        visible_library_paramount: false
+        visible_library_peacock: false
+        visible_library_amazon: false
+        # Set visible_home for the collection
+        # visible_home_key:
+        visible_home_appletv: false
+        visible_home_disney: false
+        visible_home_hbomax: false
+        visible_home_hulu: false
+        visible_home_netflix: false
+        visible_home_paramount: false
+        visible_home_peacock: false
+        visible_home_amazon: false
+        # Set visible_shared for the collection
+        # visible_shared_key:
+        visible_shared_appletv: false
+        visible_shared_disney: false
+        visible_shared_hbomax: false
+        visible_shared_hulu: false
+        visible_shared_netflix: false
+        visible_shared_paramount: false
+        visible_shared_peacock: false
+        visible_shared_amazon: false
+
+    - file: config/Movies/streaming_originals.yml
+      asset_directory: config/assets/streaming_originals
+
+    - file: config/Movies/production_companies.yml
+      asset_directory: config/assets/production_companies
+
+    - git: PMM/award/oscars
+      asset_directory: config/assets/awards
+      template_variables:
+        # Turn the individual year collections on/off
+        use_year_collections: false
+        # Sets the sort of the IMDb Search
+        imdb_sort: year,desc
+        collection_order: year.desc
+        # Sets the collection mode of the collection
+        collection_mode:
+        # Sets the value at the start of the sort title
+        collection_section: '07_0'
+
+    - git: PMM/award/golden
+      asset_directory: config/assets/awards
+      template_variables:
+        # Turn the individual year collections on/off
+        use_year_collections: false
+        # Sets the sort of the IMDb Search
+        imdb_sort: year,desc
+        collection_order: year.desc
+        # Sets the collection mode of the collection
+        collection_mode: hide
+        # Sets the value at the start of the sort title
+        collection_section: '07_1'
+
+    - file: config/Movies/directors.yml
+      asset_directory: config/assets/directors
+
+    - file: config/Movies/actors.yml
+      asset_directory: config/assets/actors
+
+    overlay_path:
+    - reapply_overlays: false
+    - remove_overlays: false
+    # - file: config/Overlays.yml
+
+    # - git: PMM/overlays/imdb_top_250
+    #   template_variables:
+    #     # Set episode or season to overlay
+    #     overlay_level:
+    #     # Set the weight for the overlay
+    #     weight: 30
+
+    - git: PMM/overlays/resolution
+      asset_directory: config/assets/overlays
+      filters:
+        edition.isnot: Despecialized Edition
+      template_variables:
+        # Set episode or season to overlay
+        overlay_level:
+        # Set the horizontal offset for the overlay
+        horizontal_offset: 15
+        # Set the horizontal align for the overlay
+        horizontal_align: left
+        # Set the vertical offset for the overlay
+        vertical_offset: 15
+        # Set the vertical align for the overlay
+        vertical_align: top
+        # Use the 4K overlay
+        use_4k: true
+        # Use the 1080P overlay
+        use_1080p: false
+        # Use the 720P overlay
+        use_720p: false
+        # Use the 576P overlay
+        use_576p: false
+        # Use the 480P overlay
+        use_480p: false
+        # Use the DV overlay
+        use_dv: true
+        # Use the HDR overlay
+        use_hdr: true
+
+    - git: PMM/overlays/audio_codec
+      asset_directory: config/assets/overlays
+      template_variables:
+        # Set episode or season to overlay
+        # overlay_level:
+        # Set the horizontal offset for the overlay
+        horizontal_offset: 0
+        # Set the horizontal align for the overlay
+        horizontal_align: center
+        # Set the vertical offset for the overlay
+        vertical_offset: 15
+        # Set the vertical align for the overlay
+        vertical_align: top
+        # Set the back color for the overlay
+        back_color: '#00000099'
+        # Set the back radius for the overlay
+        back_radius: 30
+        # Set the back width for the overlay
+        back_width: 300
+        # Sets the style of overlay: standard or compact
+        style: compact
+        # Use the Opus overlay
+        use_opus: false
+        # Use the MP3 overlay
+        use_mp3: false
+        # Use the Dolby-Digital overlay
+        use_digital: false
+        # Use the AAC overlay
+        use_aac: false
+        # Use the DTS overlay
+        use_dts: false
+        # Use the DTS-ES overlay
+        use_es: false
+        # Use the Dolby-Digital-Plus overlay
+        use_plus: false
+        # Use the DTS-HD-HRA overlay
+        use_hra: false
+        # Use the PCM overlay
+        use_pcm: false
+        # Use the FLAC overlay
+        use_flac: false
+        # Use the DTS-HD-MA overlay
+        use_hd: false
+        # Use the Dolby-TrueHD overlay
+        use_truehd: false
+        # Use the DD+/E-AC3 Atmos overlay
+        use_plus-atmos: true
+        # Use the Dolby-Atmos (undefined) overlay
+        use_atmos: true
+        # Use the DTS-X overlay
+        use_x: true
+        # Use the Dolby TrueHD Atmos overlay
+        use_truehd-atmos: true
+
+  TV Shows:
+    sonarr:
+      url: 
+      token: 
+      add_missing: false
+      add_existing: false
+      root_folder_path: P:\TV Shows
+      monitor: all
+      quality_profile: 1080p
+      language_profile: English
+      series_type: standard
+      season_folder: true
+      tag: pmm
+      search: false
+      cutoff_search: false
+      sonarr_path:
+      plex_path:
+      upgrade_existing: false
+    report_path: /config/TVShows_report.yml
+    metadata_path:
+    # - file: config/TVShows.yml
+    # - folder: config/TV Shows/
+
+    - git: PMM/chart/basic
+      asset_directory: config/assets/basic
+      template_variables:
+        # Turn the separator collection on/off
+        use_separator: false
+        # Separator style (red, blue, green, gray, purple, stb, orig)
+        sep_style: orig
+        # Sets the collection mode of the collection
+        collection_mode:
+        # Sets the value at the start of the sort title
+        collection_section: '00'
+        ###################################################
+        ## Available collections                          #
+        ##   KEY              COLLECTION                  #
+        ##   released         Newly Released              #
+        ##   episodes         New Episodes                #
+        ###################################################
+        # Customize summary of collection
+        # summary_key: A collection of ... 
+        # Turn the collection on/off
+        # use_key:
+        use_released: false
+        use_episodes: true
+        # Determines collection order in it's section
+        # order_key:
+        # Set visible_library for the collection
+        # visible_library_key:
+        visible_library_released: false
+        visible_library_episodes: false
+        # Set visible_home for the collection
+        # visible_home_key:
+        visible_home_released: false
+        visible_home_episodes: true
+        # Set visible_shared for the collection
+        # visible_shared_key:
+        visible_shared_released: false
+        visible_shared_episodes: true
+
+    - git: PMM/chart/imdb
+      asset_directory: config/assets/awards
+      template_variables:
+        # Sets the collection mode of the collection
+        collection_mode: hide
+        # Sets the value at the start of the sort title
+        collection_section: '01'
+        ##################################################
+        # Available collections                          #
+        #   KEY              COLLECTION                  #
+        #   popular          IMDb Popular                #
+        #   top              IMDb Top 250                #
+        #   lowest           IMDb Lowest Rated           #
+        ##################################################
+        # Customize summary of collection
+        # summary_key: A collection of ...
+        # Turn the collection on/off
+        # use_key: true
+        use_popular: false
+        use_top: true
+        use_lowest: false
+        # Determines collection order in its section
+        # order_key:
+        # Determines collection order of the collection
+        # collection_order_key: custom
+        # Set visible_library for the collection
+        # visible_library_key: 
+        # visible_library_popular: false
+        visible_library_top: false
+        # visible_library_lowest: false
+        # Set visible_home for the collection
+        # visible_home_key:
+        # visible_home_popular: false
+        visible_home_top: false
+        # visible_home_lowest: false
+        # Set visible_shared for the collection
+        # visible_shared_key:
+        visible_shared_top: false
+
+    - git: PMM/streaming
+      asset_directory: config/assets/streaming
+      template_variables:
+        # Turn the separator collection on/off
+        use_separator: false
+        # Separator style (red, blue, green, gray, purple, stb, orig)
+        sep_style: orig
+        # Sets how the collection is sorted
+        sort_by: release.desc
+        # Sets the collection mode of the collection
+        collection_mode: hide
+        # Sets the value at the start of the sort title
+        collection_section: '02'
+        ##################################################
+        # Available collections                          #
+        #   KEY              COLLECTION                  #
+        #   all4             All 4                       #
+        #   appletv          Apple TV+                   #
+        #   bet              BET+                        #
+        #   britbox          BritBox                     #
+        #   disney           Disney+                     #
+        #   hayu             hayu                        #
+        #   hbomax           HBO Max                     #
+        #   hulu             Hulu                        #
+        #   netflix          Netflix                     #
+        #   now              NOW                         #
+        #   paramount        Paramount+                  #
+        #   peacock          Peacock                     #
+        #   amazon           Prime Video                 #
+        #   showtime         Showtime                    #
+        ##################################################
+        # Turn the collection on/off
+        # use_key: true
+        use_all4: false
+        use_appletv: true
+        use_bet: false
+        use_britbox: false
+        use_disney: true
+        use_hayu: false
+        use_hbomax: true
+        use_hulu: true
+        use_netflix: true
+        use_now: false
+        use_paramount: true
+        use_peacock: true
+        use_amazon: true
+        use_showtime: false
+        # Determines collection order in its section
+        # order_key:
+        # Determines collection order of the collection
+        # collection_order_key: custom
+        # Set visible_library for the collection
+        # visible_library_key:
+        visible_library_appletv: false
+        visible_library_disney: false
+        visible_library_hbomax: false
+        visible_library_hulu: false
+        visible_library_netflix: false
+        visible_library_paramount: false
+        visible_library_peacock: false
+        visible_library_amazon: false
+        # Set visible_home for the collection
+        # visible_home_key:
+        visible_home_appletv: false
+        visible_home_disney: false
+        visible_home_hbomax: false
+        visible_home_hulu: false
+        visible_home_netflix: false
+        visible_home_paramount: false
+        visible_home_peacock: false
+        visible_home_amazon: false
+        # Set visible_shared for the collection
+        # visible_shared_key:
+        visible_shared_appletv: false
+        visible_shared_disney: false
+        visible_shared_hbomax: false
+        visible_shared_hulu: false
+        visible_shared_netflix: false
+        visible_shared_paramount: false
+        visible_shared_peacock: false
+        visible_shared_amazon: false
+
+    - file: config/TV Shows/production_companies.yml
+      asset_directory: config/assets/production_companies
+
+    overlay_path:
+    - reapply_overlays: false
+    - remove_overlays: false
+    # - file: config/Overlays.yml
+
+    - git: PMM/overlays/resolution
+      asset_directory: config/assets/overlays
+      template_variables:
+        # Set episode or season to overlay
+        overlay_level:
+        # Set the horizontal offset for the overlay
+        horizontal_offset: 15
+        # Set the horizontal align for the overlay
+        horizontal_align: left
+        # Set the vertical offset for the overlay
+        vertical_offset: 15
+        # Set the vertical align for the overlay
+        vertical_align: top
+        # Use the 4K overlay
+        use_4k: true
+        # Use the 1080P overlay
+        use_1080p: false
+        # Use the 720P overlay
+        use_720p: false
+        # Use the 576P overlay
+        use_576p: false
+        # Use the 480P overlay
+        use_480p: false
+        # Use the DV overlay
+        use_dv: true
+        # Use the HDR overlay
+        use_hdr: true
+
+    - git: PMM/overlays/audio_codec
+      asset_directory: config/assets/overlays
+      template_variables:
+        # Set episode or season to overlay
+        # overlay_level:
+        # Set the horizontal offset for the overlay
+        horizontal_offset: 0
+        # Set the horizontal align for the overlay
+        horizontal_align: center
+        # Set the vertical offset for the overlay
+        vertical_offset: 15
+        # Set the vertical align for the overlay
+        vertical_align: top
+        # Set the back color for the overlay
+        back_color: '#00000099'
+        # Set the back radius for the overlay
+        back_radius: 30
+        # Set the back width for the overlay
+        back_width: 300
+        # Sets the style of overlay: standard or compact
+        style: compact
+        # Use the Opus overlay
+        use_opus: false
+        # Use the MP3 overlay
+        use_mp3: false
+        # Use the Dolby-Digital overlay
+        use_digital: false
+        # Use the AAC overlay
+        use_aac: false
+        # Use the DTS overlay
+        use_dts: false
+        # Use the DTS-ES overlay
+        use_es: false
+        # Use the Dolby-Digital-Plus overlay
+        use_plus: false
+        # Use the DTS-HD-HRA overlay
+        use_hra: false
+        # Use the PCM overlay
+        use_pcm: false
+        # Use the FLAC overlay
+        use_flac: false
+        # Use the DTS-HD-MA overlay
+        use_hd: false
+        # Use the Dolby-TrueHD overlay
+        use_truehd: false
+        # Use the DD+/E-AC3 Atmos overlay
+        use_plus-atmos: true
+        # Use the Dolby-Atmos (undefined) overlay
+        use_atmos: true
+        # Use the DTS-X overlay
+        use_x: true
+        # Use the Dolby TrueHD Atmos overlay
+        use_truehd-atmos: true
+
+playlist_files:
+# - file: config/playlists.yml
+# - folder: config/playlists
+# - git: PMM/playlist
+  - file: config/playlists/musicals.yml
+    asset_directory: config/assets/musicals
+
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 1
+  create_asset_folders: true
+  prioritize_assets: true
+  dimensional_asset_rename: false
+  download_url_assets: true
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: false
+  sync_mode: append
+  minimum_items: 0
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: true
+  only_filter_missing: false
+  show_unmanaged: false
+  show_filtered: false
+  show_options: false
+  show_missing: false
+  show_missing_assets: true
+  save_report: true
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_user: all
+  playlist_report: false
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+  show_unconfigured: true
+
+  playlist_exclude_users:
+webhooks:                                       # Can be individually specified per library as well
+  error:
+  version:
+  run_start:
+  run_end:
+  changes:
+
+plex:                                           # Can be individually specified per library as well; REQUIRED for the script to run
+  url: 
+  token: 
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+
+tmdb:                                           # REQUIRED for the script to run
+  apikey: 
+  language: en
+  cache_expiration: 60
+  region:
+
+trakt:
+  client_id: 
+  client_secret: 
+  pin: 
+  authorization:
+    # everything below is autofilled by the script
+    access_token:
+    token_type:
+    expires_in:
+    refresh_token:
+    scope: public
+    created_at:
+
+tautulli:                                       # Can be individually specified per library as well
+  url: 
+  apikey: 
+
+# radarr:                                         # Can be individually specified per library as well
+#   url: 
+#   token: 
+#   add_missing: false
+#   add_existing: false
+#   root_folder_path: P:\Movies
+#   monitor: true
+#   availability: released
+#   quality_profile: 1080p
+#   tag: pmm
+#   search: false
+#   radarr_path:
+#   plex_path:
+#   upgrade_existing: false
+
+# sonarr:                                         # Can be individually specified per library as well
+#   url: 
+#   token: 
+#   add_missing: false
+#   add_existing: false
+#   root_folder_path: P:\TV Shows
+#   monitor: all
+#   quality_profile: 1080p
+#   language_profile: English
+#   series_type: standard
+#   season_folder: true
+#   tag: pmm
+#   search: false
+#   cutoff_search: false
+#   sonarr_path:
+#   plex_path:
+#   upgrade_existing: false

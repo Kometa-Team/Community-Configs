@@ -2,7 +2,9 @@ templates:
   Studio:
     optional:
       - company
+      - list
     tmdb_company: <<company>>
+    tmdb_list: <<list>>
     sync_mode: sync
     collection_order: release
     url_poster: <<poster>>
@@ -14,6 +16,9 @@ collections:
 
   "Happy Madison Productions":
     template: {name: Studio, company: 878, poster: https://theposterdb.com/api/assets/218229 }
+
+  "National Lampoon Productions":
+    template: {name: Studio, list: https://www.themoviedb.org/list/8212873, poster: https://theposterdb.com/api/assets/195058 }
 
   "Pixar Animation Studios":
     template: {name: Studio, company: 3, poster: https://theposterdb.com/api/assets/189763 }

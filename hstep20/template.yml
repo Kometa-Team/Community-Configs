@@ -1,0 +1,19 @@
+#Uses posterdblink
+
+collections:
+  Plex Collection Name:
+    tmdb_collection:
+    #or trakt_list, tmdb_list 
+    tmdb_summary: 
+    sync_mode: sync  
+    url_poster:
+    sort_title: ++++++++_
+    collection_order: release
+
+metadata:
+  "":
+    - url_poster: 
+  "":
+    - url_poster: 
+  "":
+    - url_poster: 

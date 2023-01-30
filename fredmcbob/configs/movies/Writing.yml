@@ -1,0 +1,19 @@
+######################################################
+#               People Collections                   #
+######################################################
+
+templates:
+  Person:
+    smart_filter:
+      sort_by: release.desc
+      validate: false
+      any:
+        writer: <<person>>
+    sort_title: +35_<<collection_name>>
+    collection_mode: hide
+
+collections:
+  Stephen King (Writing):
+    template: { name: Person, person: "Stephen King" }
+    url_poster: https://theposterdb.com/api/assets/164836
+    url_background: https://wallpapercave.com/wp/wp1888898.jpg

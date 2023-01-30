@@ -1,0 +1,73 @@
+##############################################################
+##                Dynamic Decade Collections                ##
+##                Created by JJJonesJr33                    ##
+##                      Version 2.0                         ##
+##############################################################
+##############################################################
+##                                                          ##
+##            User/Config Credits - Special Thanks          ##
+##                                                          ##
+##               Yozora, Bullmoose20, & Sohjiro             ##
+##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
+##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
+##                                                          ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:        
+  Decade:
+    smart_filter:
+      any:
+        decade: <<decade>>
+      sort_by: release.desc
+      url_poster: https://theposterdb.com/api/assets/<<poster>>
+      sort_title: +++++_<<collection_name>>
+      collection_mode: hide
+
+#############################
+##       Collections       ##
+#############################
+
+collections:
+  2030's Films:
+    template: {name: Decade, decade: 2030, poster: 213590}
+    summary: A collection of films during the 2030s
+  2020's Films:
+    template: {name: Decade, decade: 2020, poster: 213589}
+    summary: A collection of films during the 2020s
+  2010's Films:
+    template: {name: Decade, decade: 2010, poster: 213588}
+    summary: A collection of films during the 2010s
+  2000's Films:
+    template: {name: Decade, decade: 2000, poster: 213587}
+    summary: A collection of films during the 2000s
+  1990's Films:
+    template: {name: Decade, decade: 1990, poster: 213586}
+    summary: A collection of films during the 1990s
+  1980's Films:
+    template: {name: Decade, decade: 1980, poster: 213585}
+    summary: A collection of films during the 1980s
+  1970's Films:
+    template: {name: Decade, decade: 1970, poster: 213584}
+    summary: A collection of films during the 1970s
+  1960's Films:
+    template: {name: Decade, decade: 1960, poster: 213583}
+    summary: A collection of films during the 1960s
+  1950's Films:
+    template: {name: Decade, decade: 1950, poster: 213582}
+    summary: A collection of films during the 1950s
+  1940's Films:
+    template: {name: Decade, decade: 1940, poster: 213581}
+    summary: A collection of films during the 1940s
+  1930's Films:
+    template: {name: Decade, decade: 1930, poster: 213580}
+    summary: A collection of films during the 1930s
+  1920's Films:
+    template: {name: Decade, decade: 1920, poster: 213579}
+    summary: A collection of films during the 1920s
+  1910's Films:
+    template: {name: Decade, decade: 1910, poster: 213578}
+    summary: A collection of films during the 1910s
