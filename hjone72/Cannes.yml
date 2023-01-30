@@ -10,6 +10,8 @@ templates:
     trakt_list: https://trakt.tv/users/pjcob/lists/<<year>>-cannes
     item_label: Cannes
 collections:
+  Cannes 2022:
+    template: { name: Cannes Template, year: 2022 }
   Cannes 2021:
     template: { name: Cannes Template, year: 2021 }
   Cannes 2020:

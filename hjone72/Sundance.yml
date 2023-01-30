@@ -25,6 +25,8 @@ collections:
     template: { name:  SFF Genre Template, genre: Romance }
   Sundance Film Festival Comedies:
     template: { name:  SFF Genre Template, genre: Comedies }
+  Sundance Film Festival 2023:
+    template: { name: SFF Template, year: 2023 }
   Sundance Film Festival 2022:
     template: { name: SFF Template, year: 2022 }
   Sundance Film Festival 2021:
