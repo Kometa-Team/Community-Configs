@@ -78,14 +78,6 @@ templates:
       - back_line_color
       - back_line_width
     conditionals:
-      mdblist_top:
-        conditions:
-          - image_level: Top
-            rating<<rating_num>>_image: rt_tomato
-            value: https://mdblist.com/lists/plexmetamanager/certifiedfresh<<library_type>>s
-          - image_level: Top
-            rating<<rating_num>>_image: metacritic
-            value: https://mdblist.com/lists/plexmetamanager/metacriticmustsee<<library_type>>s
       imdb_top:
         conditions:
           - image_level: Top
@@ -125,8 +117,6 @@ templates:
             value: IMDb
           - rating<<rating_num>>_image: letterboxd
             value: Letterboxd
-          - rating<<rating_num>>_image: mdb
-            value: MDBList
           - rating<<rating_num>>_image: metacritic
             value: Metacritic
           - rating<<rating_num>>_image: rt_popcorn
@@ -435,7 +425,6 @@ templates:
       all:
         <<rating<<rating_num>>>>_rating.<<gsuffix>>: <<gte>>
         <<rating<<rating_num>>>>_rating.<<lsuffix>>: <<lte>>
-    mdblist_list: <<mdblist>>
     imdb_chart: <<imdb>>
     overlay_level: <<overlay_level>>
     allowed_library_types: <<run_this>>
