@@ -1,19 +1,9 @@
-#############################################################
-#                      Ratings Overlay                      #
-#         Created by Yozora, Bullmoose20, & Sohjiro         #
-#            Credit to Magic815 for base images             #
-#############################################################
-#                                                           #
-# same ratings config as in the PMM repo, difference being  #
-# that it won't change the icon if it's IMdb's top 250      #
-# I did this because I already have the 250 corner banner   #
-# so having it twice would be redundant and doesn't look nice
-#                                                           #
-# for setup check out the PMM repo:                         #
-# https://metamanager.wiki/en/latest/defaults/overlays/ratings.html
-#                                                           #
-#                                                           #
-#############################################################
+##############################################################################
+#                              Ratings Overlays                              #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#     https://metamanager.wiki/en/latest/defaults/overlays/ratings.html      #
+##############################################################################
 
 templates:
   Rating:
@@ -22,7 +12,7 @@ templates:
       rating<<rating_num>>_url: <<url>>
       rating<<rating_num>>_git: <<git>>
       rating<<rating_num>>_repo: <<repo>>
-      pmm: rating/<<rating<<rating_num>>_image_url>>
+      pmm: rating/<<rating<<rating_num>>_image_url>><<image_extra>>
       rating<<rating_num>>_pmm: <<pmm>>
       weight: 100
       font: fonts/Inter-Bold.ttf
@@ -78,6 +68,14 @@ templates:
       - back_line_color
       - back_line_width
     conditionals:
+      mdblist_top:
+        conditions:
+          - image_level: Top
+            rating<<rating_num>>_image: rt_tomato
+            value: https://mdblist.com/lists/plexmetamanager/certifiedfresh<<library_type>>s
+          - image_level: Top
+            rating<<rating_num>>_image: metacritic
+            value: https://mdblist.com/lists/plexmetamanager/metacriticmustsee<<library_type>>s
       imdb_top:
         conditions:
           - image_level: Top
@@ -117,6 +115,8 @@ templates:
             value: IMDb
           - rating<<rating_num>>_image: letterboxd
             value: Letterboxd
+          - rating<<rating_num>>_image: mdb
+            value: MDBList
           - rating<<rating_num>>_image: metacritic
             value: Metacritic
           - rating<<rating_num>>_image: rt_popcorn
@@ -425,7 +425,8 @@ templates:
       all:
         <<rating<<rating_num>>>>_rating.<<gsuffix>>: <<gte>>
         <<rating<<rating_num>>>>_rating.<<lsuffix>>: <<lte>>
-    imdb_chart: <<imdb>>
+    mdblist_list: <<mdblist_top>>
+    imdb_chart: <<imdb_top>>
     overlay_level: <<overlay_level>>
     allowed_library_types: <<run_this>>
     ignore_blank_results: true
