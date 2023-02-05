@@ -22,7 +22,7 @@ templates:
       rating<<rating_num>>_url: <<url>>
       rating<<rating_num>>_git: <<git>>
       rating<<rating_num>>_repo: <<repo>>
-      pmm: rating/<<rating<<rating_num>>_image_url>><<image_extra>>
+      pmm: rating/<<rating<<rating_num>>_image_url>>
       rating<<rating_num>>_pmm: <<pmm>>
       weight: 100
       font: fonts/Inter-Bold.ttf
