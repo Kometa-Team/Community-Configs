@@ -1,0 +1,21 @@
+templates:
+  Set:
+    optional:
+      - collection
+      - movie
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    sync_mode: sync
+    collection_order: release
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
+collections:
+
+  "Dorm Daze":
+    template: {name: Set, collection: 201778, poster: https://theposterdb.com/api/assets/166237 }
+
+  "National Lampoon's Van Wilder":
+    template: {name: Set, collection: 43220, poster: https://theposterdb.com/api/assets/166271 }
+
+  "National Lampoon's Vacation":
+    template: {name: Set, collection: 108693, poster: https://theposterdb.com/api/assets/165424 }

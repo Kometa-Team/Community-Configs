@@ -1,29 +1,31 @@
 ## This file is a template remove the .template to use the file
 
+#################################
+##          Version 2          ##
+#################################
+
 libraries: # Library mappings must have a colon (:) placed after them
   Movies:
     library_name: Movies
     metadata_path:
-    - /config/metadata/Holidays.yml
-    - /config/metadata/IMDB.yml
-    - /config/metadata/Suggestions.yml
-    - /config/metadata/Awards.yml
-    # - /config/metadata/Collections.yml
-    - /config/metadata/Decades.yml
-    - /config/metadata/Genres.yml
-    # - /config/metadata/People.yml
-    # - /config/metadata/Studios.yml
+    - /config/metadata/awards.yml
+    - /config/metadata/collections.yml
+    - /config/metadata/decades.yml
+    - /config/metadata/genres.yml
+    - /config/metadata/holidays.yml
+    - /config/metadata/studios.yml
+    - /config/metadata/suggestions.yml
     settings:
       missing_path: config/missing
       asset_directory:
       - config/assets/
       - config/assets/movies
       - config/assets/awards
+      - config/assets/collections
       - config/assets/decades
       - config/assets/genres
       - config/assets/holidays
-    # - config/assets/people
-    # - config/assets/studios
+      - config/assets/studios
       - config/assets/suggestions
     operations:
       assets_for_all: false
@@ -91,12 +93,11 @@ tautulli: # Can be individually specified per library as well
 omdb:
   apikey: 
   cache_expiration: 60
+mdblist:
+  apikey: 
+  cache_expiration: 60
 notifiarr:
   apikey: 
-anidb: # Not required for AniDB builders unless you want mature content
-  username: 
-  password: 
-  language: en
 radarr: # Can be individually specified per library as well
   url: http://192.168.1.2:7878/
   token: 

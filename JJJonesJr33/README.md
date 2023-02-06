@@ -2,9 +2,13 @@
 ______________________________________________________________________________________________________________________
 **NOTICE 5/31/2022** - Overlays have been temporarily removed until I am able to update for the latest PMM release.
 ______________________________________________________________________________________________________________________
-**TPDB** You can find all my poasters here https://theposterdb.com/user/jjjonesjr33
+**TPDB**: You can find all my poasters at [**The Poster Database**](https://theposterdb.com/user/jjjonesjr33)
 
-Have questions, or need support? Get ahold of me on one of my **socials** at https://jjjonesjr33.com/
+Have questions, or need support for one of my configs? Get ahold of me via direct message on discord - `JJJonesJr33#0001` 
+ 
+Also if you want to check out all the other things I do follow me on my [**Socials**](https://jjjonesjr33.com/)
+______________________________________________________________________________________________________________________
+**PLEX META MANAGER**: For all other PMM related questions or issues, join the [**PMM Discord Server**](https://discord.gg/uvXgYS73Qf)
 ______________________________________________________________________________________________________________________
 **Single Instance** (Simple Setup)
 
@@ -18,7 +22,7 @@ The way I have my PMM setup is via mutiple docker containers in Unraid. I have o
 
 **Unraid Setup**
 <br>
-![Unraid](https://user-images.githubusercontent.com/29973406/171271756-d1ef3a43-c6ff-40c8-991c-52ab4ae3ba49.png)
+![Unraid (Updated)](https://user-images.githubusercontent.com/29973406/172029302-90e7249b-803e-4724-894a-da4784fd5ab5.png)
 <br>
 **Anime Collections Preview**: <br>
 ![Anime (Updated)](https://user-images.githubusercontent.com/29973406/171267124-09064e96-ce22-4c89-affd-dc1b1a61e6f1.png)
@@ -35,10 +39,10 @@ The way I have my PMM setup is via mutiple docker containers in Unraid. I have o
 
 Special thanks to the PMM users and their configs that I drew inspiration from
 <br>
-**Glasti1**, **Hiren-Z**, **OhMyBahGosh**, **tuxpeople**, **cpt-kuesel**, **meisnate12**, **TheUnchainedZebra**, **Evil Tacctician**
+**Bullmoose20**, **Cpt-Kuesel**, **Evil Tacctician**, **Glasti1**, **Hiren-Z**, **Meisnate12**, **OhMyBahGosh**, **Sohjiro**, **TheUnchainedZebra**, **Tuxpeople**, & **Yozora**
 
-The users who created, supported, and helped with creating poasters
+The users who created, supported, and helped with creating posters
 <br>
- **mikenobbs** & **Yozora**
+**Evil Tacctician**, **Mikenobbs**, & **Yozora**
 
 And all the users of Reddit who have contributed to the cause! :D

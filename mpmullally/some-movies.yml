@@ -1,0 +1,88 @@
+######################################################
+#                 Collections                        #
+######################################################
+templates:
+  Decade:
+    sort_title: 01_Decade_<<collection_name>>
+    collection_order: alpha
+    sync_mode: sync
+  Popular:
+    sort_title: 02_Popular_<<collection_name>>
+    collection_order: custom
+    sync_mode: sync
+  DC Marvel:
+    sort_title: 03_DC_Marvel_<<collection_name>>
+    collection_order: release
+  Studio:
+    sort_title: 04_Studio_<<collection_name>>
+    collection_order: alpha
+  Disney:
+    sort_title: 05_Disney <<collection_name>>
+    collection_order: alpha
+  Genre:
+    sort_title: 06_Genre_<<collection_name>>
+    collection_order: custom
+    sync_mode: sync
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    tmdb_director: <<director>>
+    tmdb_writer: <<writer>>
+    sync_mode: sync
+    collection_order: release
+    sort_title: 07_Person_<<collection_name>>    
+
+collections:
+  Certified Fresh:
+    trakt_list: https://trakt.tv/users/linaspurinis/lists/certified-fresh
+    collection_mode: show_items
+    template:
+      name: Popular
+  Trakt Trending:
+    trakt_chart:
+      chart: trending
+      limit: 30
+    template:
+      name: Popular
+  Good Bad Movies:
+    trakt_list:
+      - https://trakt.tv/users/philrivers/lists/the-50-best-good-bad-movies?sort=rank,asc
+      - https://trakt.tv/users/acelove/lists/good-bad-movies?sort=title,asc
+      - https://trakt.tv/users/gristlemctough/lists/bad-movies?sort=title,asc
+      - https://trakt.tv/users/maxwelldeux/lists/badmovies-org-best-b-movies?sort=rank,asc
+    collection_mode: show_items
+    template:
+      name: Popular
+    collection_order: alpha
+  Cult Classics:
+    trakt_list:
+      - https://trakt.tv/users/mr-mc86/lists/cult-classics?sort=rank,asc
+      - https://trakt.tv/users/mekwall/lists/cult-films?sort=rank,asc
+    collection_mode: show_items
+    template:
+      name: Popular
+    collection_order: alpha
+  Marvel Cinematic Universe:
+    trakt_list: https://trakt.tv/users/tetharion/lists/marvel-cinematic-universe?sort=rank,asc
+    summary: The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films, independently produced by Marvel Studios and based on characters that appear in American comic books published by Marvel Comics. The franchise includes comic books, short films, television series, and digital series. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters. The first MCU film is Iron Man (2008), which began the films of Phase One culminating in the crossover film The Avengers (2012). Phase Two began with Iron Man 3 (2013) and concluded with Ant-Man (2015). Phase Three began with Captain America - Civil War (2016) and concluded with Spider-Man - Far From Home (2019). The first three phases in the franchise are collectively known as "The Infinity Saga". The films of Phase Four will begin with Black Widow (2021) and are set to conclude with Guardians of the Galaxy Vol. 3 (2023).
+    collection_mode: show_items
+    sync_mode: append
+    template:
+      name: DC Marvel
+  DC Extended Universe:
+    trakt_list: https://trakt.tv/users/donxy/lists/dc-extended-universe
+    sync_mode: append
+    template:
+      name: DC Marvel
+  Car Films:
+    letterboxd_list: https://letterboxd.com/alexquinney/list/cars/
+    trakt_list: https://trakt.tv/users/rockcrusher/lists/cars?sort=title,asc
+    template:
+      name: Genre
+    collection_order: alpha
+  Aaron Sorkin:
+    template: 
+      name: Actor
+      person: 13520
+      writer: 13520
+      director: 13520

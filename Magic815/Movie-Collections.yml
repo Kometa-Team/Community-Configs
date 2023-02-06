@@ -1,0 +1,154 @@
+######################################################
+#             Standard Movie Collections             #
+######################################################
+collections:
+  Bourne:
+    trakt_list: https://trakt.tv/users/jjmalpz/lists/bourne
+#    collection_order: custom
+    sort_title: +50_Bourne
+    url_poster: https://theposterdb.com/api/assets/5420
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "The Bourne franchise consists of action-thriller installments based on the character Jason Bourne, created by author Robert Ludlum. The overall plot centers around Jason Bourne, a CIA assassin suffering from dissociative amnesia." 
+    cache_builders: 1
+  DC Extended Universe:
+    trakt_list: https://trakt.tv/users/tetharion/lists/worlds-of-dc
+#    collection_order: custom
+    sort_title: +50_DC Extended Universe
+    url_poster: https://theposterdb.com/api/assets/13713
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "The DC Extended Universe (DCEU) is a media franchise and shared universe centered on superheros from DC Comics."
+    cache_builders: 1
+  Fast and Furious:
+    trakt_list: https://trakt.tv/users/ireallylovevids/lists/fast-and-furious
+#    collection_order: custom
+    sort_title: +50_Fast and Furious
+    url_poster: https://theposterdb.com/api/assets/1070
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "Fast & Furious (also known as The Fast and the Furious and The Fast Saga) is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and family."
+    cache_builders: 1
+  Hunger Games:
+    trakt_list: https://trakt.tv/users/justkarmo/lists/hunger-games
+#    collection_order: custom
+    sort_title: +50_Hunger Games
+    url_poster: https://theposterdb.com/api/assets/6977
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "The Hunger Games film series is composed of science fiction dystopian adventure films, based on The Hunger Games trilogy of novels by the American author Suzanne Collins. The movies are distributed by Lionsgate and produced by Nina Jacobson and Jon Kilik."
+    cache_builders: 1
+  Indiana Jones:
+    trakt_list: https://trakt.tv/users/jonghea/lists/indiana-jones
+#    collection_order: custom
+    sort_title: +50_Indiana Jones
+    url_poster: https://theposterdb.com/api/assets/53303
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "Indiana Jones is an American media franchise based on the adventures of Dr. Henry Walton 'Indiana' Jones, Jr., a fictional professor of archaeology. The series was created by George Lucas and stars Harrison Ford as Indiana Jones."
+    cache_builders: 1
+  James Bond:
+    trakt_list: https://trakt.tv/users/any/lists/james-bond
+#    collection_order: custom
+    sort_title: +50_James Bond
+    url_poster: https://theposterdb.com/api/assets/2037
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "James Bond is a fictional character created by novelist Ian Fleming in 1953. A British secret agent working for MI6 under the codename 007."
+    cache_builders: 1
+  John Wick:
+    trakt_list: https://trakt.tv/users/strangerer/lists/john-wick
+#    collection_order: custom
+    sort_title: +50_John Wick
+    url_poster: https://theposterdb.com/api/assets/17550
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "John Wick is an American neo-noir action-thriller media franchise created by screenwriter Derek Kolstad and starring Keanu Reeves as John Wick, a former hitman who is forced back into the criminal underworld he had abandoned."
+    cache_builders: 1
+  Marvel Cinematic Universe:
+    tmdb_keyword: 180547
+#    collection_order: custom
+    sort_title: +50_Marvel Cinematic Universe
+    url_poster: https://theposterdb.com/api/assets/879
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films produced by Marvel Studios. The films are based on characters that appear in American comic books published by Marvel Comics. The franchise also includes television series, short films, digital series, and literature. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters."
+    cache_builders: 1
+  Matrix:
+    trakt_list: https://trakt.tv/users/bruinschris/lists/matrix
+#    collection_order: custom
+    sort_title: +50_Matrix
+    url_poster: https://theposterdb.com/api/assets/12041
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "The Matrix is an American media franchise that features a cyberpunk story of the technological fall of humanity, in which the creation of artificial intelligence led the way to a race of self-aware machines that imprisoned mankind in a virtual reality system—the Matrix—to be farmed as a power source. Occasionally, some of the prisoners manage to break free from the system and, considered a threat, become pursued by the artificial intelligence both inside and outside of it."
+    cache_builders: 1
+  Middle Earth:
+    tmdb_collection_details:
+      - 119
+      - 121938
+    sort_title: +50_Middle Earth
+    url_poster: "https://theposterdb.com/api/assets/107346"
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    cache_builders: 1
+  Mission Impossible:
+    trakt_list: https://trakt.tv/users/strangerer/lists/mission-impossible
+#    collection_order: custom
+    sort_title: +50_Mission Impossible
+    url_poster: https://theposterdb.com/api/assets/12118
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "Mission: Impossible is a series of American action spy films based on and a follow-on from the television series of the same name created by Bruce Geller. The series is mainly produced by and stars Tom Cruise, whose character is Ethan Hunt, an agent of the Impossible Missions Force (IMF). The films have been directed, written, and scored from various filmmakers and crew, while incorporating musical themes from the original series by Lalo Schifrin."
+    cache_builders: 1
+  Pirates of the Caribbean:
+    trakt_list: https://trakt.tv/users/bertjj/lists/pirates-of-the-caribbean
+#    collection_order: custom
+    sort_title: +50_Pirates of the Caribbean
+    url_poster: https://theposterdb.com/api/assets/9840
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "Pirates of the Caribbean is a series of fantasy swashbuckler films produced by Jerry Bruckheimer and based on Walt Disney's theme park attraction of the same name."
+    cache_builders: 1
+  Star Wars:
+    trakt_list: https://trakt.tv/users/draackje/lists/star-wars
+#    collection_order: custom
+    sort_title: +50_Star Wars
+    url_poster: https://theposterdb.com/api/assets/9569
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "The Star Wars franchise involves multiple live-action and animated films. The film series started with a trilogy set in medias res which was later expanded to a trilogy of trilogies, known as the 'Skywalker Saga'."
+    cache_builders: 1
+  Wizarding World:
+    trakt_list: https://trakt.tv/users/bubbles-prior/lists/wizarding-world
+#    collection_order: custom
+    sort_title: +50_Wizarding World
+    url_poster: https://theposterdb.com/api/assets/20343
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "The Wizarding World is a fantasy media franchise and shared fictional universe centred on a series of films, based on the Harry Potter novel series by J. K. Rowling."
+    cache_builders: 1
+  X-Men:
+    trakt_list: https://trakt.tv/users/bertjj/lists/x-men
+#    collection_order: custom
+    sort_title: +50_X-Men
+    url_poster: https://theposterdb.com/api/assets/20
+    collection_mode: hide
+    sync_mode: sync
+    smart_label: release.asc
+    summary: "X-Men is an American superhero film series based on the fictional superhero team of the same name, who originally appeared in a series of comic books created by Stan Lee and Jack Kirby and published by Marvel Comics."
+    cache_builders: 1

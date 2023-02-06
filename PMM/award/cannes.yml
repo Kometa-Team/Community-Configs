@@ -20,6 +20,14 @@
 #          collection_mode:                                 #
 #          # Sets the value at the start of the sort title  #
 #          collection_section: 16                           #
+#          # Adds missing from the collection to radarr     #
+#          radarr_add_missing:                              #
+#          # Radarr Folder to add to                        #
+#          radarr_folder:                                   #
+#          # Radarr Tag for added missing                   #
+#          radarr_tag:                                      #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag:                                 #
 #############################################################
 
 external_templates:
@@ -36,12 +44,15 @@ templates:
 
 collections:
   Cannes - Palme d'or:
+    variables:
+      key: palme
     template:
-      - name: award
-        image: cannes/winner
       - name: shared
         sort: Cannes !
-    allowed_library_types: movie
+        allowed_libraries: movie
+        image: award/cannes/winner
+      - name: arr
+      - name: custom
     trakt_list_details: https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-palme-d-or
 
 dynamic_collections:
@@ -55,5 +66,6 @@ dynamic_collections:
     template:
       - use_year_collections
       - Cannes
-      - award
       - shared
+      - arr
+      - custom

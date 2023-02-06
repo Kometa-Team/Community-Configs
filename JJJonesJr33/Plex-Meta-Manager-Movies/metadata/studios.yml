@@ -1,0 +1,150 @@
+##############################
+##    Studio Collections    ##
+##############################
+
+##########################################################
+##                 User/Config Credits                  ##
+##          Giving Credit Where Credit is Due           ##
+##                    JJJonesJr33                       ##
+## Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel ##
+##    meisnate12, TheUnchainedZebra, Evil Tacctician    ##
+##########################################################
+
+############################
+##    Studio Templates    ##
+############################
+
+templates:
+    Studio:
+    optional:
+      - company
+    tmdb_company: <<company>>
+    sort_title: ++++++_<<collection_name>>
+    collection_order: alpha
+    collection_mode: hide
+    sync_mode: sync
+
+####################################
+##       Collections Lists        ##
+####################################
+
+# FYI: To allow for Studio collections to be created you must have TMDB API in the core config setup first.
+
+# collections:
+
+  # NBCUniversal:
+    # template: { name: Studio, company:
+  # ViacomCBS:
+    # template: { name: Studio, company:
+  # WarnerMedia:
+    # template: { name: Studio, company:
+  # The Walt Disney Company:
+    # template: { name: Studio, company:
+  # Sony:
+    # template: { name: Studio, company:
+  # Lionsgate:
+    # template: { name: Studio, company:
+  # MGM Holdings:
+    # template: { name: Studio, company:
+
+
+  # Lucasfilm:
+    # template: { name: Studio, company: 1}
+  # Walt Disney Pictures:
+    # template: { name: Studio, company: 2}
+  # Pixar:
+    # template: { name: Studio, company: 3}
+  # Paramount:
+    # template: { name: Studio, company: 4}
+  # Columbia Pictures:
+    # template: { name: Studio, company: 5}
+  # RKO Radio Pictures:
+    # template: { name: Studio, company: 6}
+  # DreamWorks Pictures:
+    # template: { name: Studio, company: "7, 521" }
+  # Fine Line Features:
+    # template: { name: Studio, company: 8}
+  # WingNut Films:
+    # template: { name: Studio, company: 11}
+  # New Line Cinema:
+    # template: { name: Studio, company: 12}
+  # Miramax:
+    # template: { name: Studio, company: 14}
+  # Warner Bros. Entertainment:
+    # template: { name: Studio, company: 17}
+  # Metro-Goldwyn-Mayer:
+    # template: { name: Studio, company: 21}
+  # Imagine Entertainment:
+    # template: { name: Studio, company: 23}
+  # 20th Century Fox:
+    # template: { name: Studio, company: 25}
+  # Universal Pictures:
+    # template: { name: Studio, company: 33}
+  # Sony Pictures:
+    # template: { name: Studio, company: 34}
+  # Lions Gate Films:
+    # template: { name: Studio, company: 35}
+  # Orion Pictures:
+    # template: { name: Studio, company: 41}
+  # Fox Searchlight Pictures:
+    # template: { name: Studio, company: 43}
+  # Amblin Entertainment:
+    # template: { name: Studio, company: 56}
+  # Sony Pictures Classics:
+    # template: { name: Studio, company: 58}
+  # A Band Apart:
+    # template: { name: Studio, company: 59}
+  # United Artists:
+    # template: { name: Studio, company: 60}
+  # Village Roadshow Pictures:
+    # template: { name: Studio, company: 79}
+  # Plan B Entertainment:
+    # template: { name: Studio, company: 81}
+  # Castle Rock Entertainment:
+    # template: { name: Studio, company: 97}
+  # Marvel Studios:
+    # template: { name: Studio, company: 420}
+  # Aardman:
+    # template: { name: Studio, company: 297}
+  # Blue Sky:
+    # template: { name: Studio, company: 9383}
+  # Illumination Entertainment:
+    # template: { name: Studio, company: 6704}
+  # Studio Ghibli:
+    # template: { name: Studio, company: 10342}
+  # Sony Pictures Animation:
+    # template: { name: Studio, company: 2251}
+  # Warner Animation Group:
+    # template: { name: Studio, company: 25120}
+  # Walt Disney Animation Studios:
+    # template: { name: Studio, company: 6125}
+  # Walt Disney Productions:
+    # template: { name: Studio, company: 3166}
+  # Warner Bros. Pictures:
+    # template: { name: Studio, company: 174}
+  # Walt Disney Studios:
+    # template: { name: Studio, company: 109755}
+  # 20th Century Studios:
+    # template: { name: Studio, company: 127928}
+  # TriStar Pictures:
+    # template: { name: Studio, company: 559}
+  # Paramount Pictures:
+    # template: { name: Studio, company: 107355}
+  # RatPac-Dune Entertainment:
+    # template: { name: Studio, company: 444}
+  # Legendary Entertainment:
+    # template: { name: Studio, company: 923}
+  # Relativity Media:
+    # template: { name: Studio, company: 7295}
+  # LionsGate:
+    # template: { name: Studio, company: "1632, 85885"}
+  # MGM Home Entertainment:
+    # template: { name: Studio, company: 6434}
+  # MGM Television:
+    # template: { name: Studio, company: 2230}
+  # BBC Films:
+    # template: { name: Studio, company: 288}
+  # NBCUniversal:
+    # template: { name: Studio, company: 26559}
+  # Universal Television:
+    # template: { name: Studio, company: 26727}

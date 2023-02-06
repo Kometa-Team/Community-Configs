@@ -1,0 +1,335 @@
+###########################################################################################################
+###########################################################################################################
+###    ██████╗ ██╗  ██╗███╗   ███╗██╗   ██╗██████╗  █████╗ ██╗  ██╗ ██████╗  ██████╗ ███████╗██╗  ██╗   ###
+###   ██╔═══██╗██║  ██║████╗ ████║╚██╗ ██╔╝██╔══██╗██╔══██╗██║  ██║██╔════╝ ██╔═══██╗██╔════╝██║  ██║   ###
+###   ██║   ██║███████║██╔████╔██║ ╚████╔╝ ██████╔╝███████║███████║██║  ███╗██║   ██║███████╗███████║   ###
+###   ██║   ██║██╔══██║██║╚██╔╝██║  ╚██╔╝  ██╔══██╗██╔══██║██╔══██║██║   ██║██║   ██║╚════██║██╔══██║   ###
+###   ╚██████╔╝██║  ██║██║ ╚═╝ ██║   ██║   ██████╔╝██║  ██║██║  ██║╚██████╔╝╚██████╔╝███████║██║  ██║   ###
+###    ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝   ###
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+##################       ..TV Show Library COLLECTION OVERLAYS YML Confg For..          ###################
+##################          ..OVERLAYS FOR NETWORKS & STREAMING SERVICES..              ###################
+##################         https://github.com/meisnate12/Plex-Meta-Manager              ###################
+###########################################################################################################
+##################                         github.com/ohmybahgosh                       ###################
+###########################################################################################################
+##################                   -=My Trakt.tv Collection Lists=-                   ###################
+##################              _-=https://trakt.tv/users/hdlists/lists=-_              ###################
+###########################################################################################################
+######      TO USE OVERLAYS, MAKE SURE YOU'RE USING MY TV.YML CONFIG AS THIS USES REGEX TO MATCH     ######
+##################   BY NO MEANS AM I A GRAPHIC DESIGNER, SO FEEL FREE TO SWAP OVERLAYS  ##################
+###########################################################################################################
+###########################################################################################################
+
+
+overlays:
+
+############################
+#       IMDB TOP 250       #
+############################
+  IMDb Top 250 Shows:
+    overlay:
+     name: IMDB TOP 250
+    imdb_chart: top_shows
+
+#####################################
+#    STREAMING SERVICES/NETWORKS    #
+#####################################
+
+
+  A&E:
+    overlay:
+      name: AE
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(A&E Network|aande|A&E)\b'
+
+  FOX:
+    overlay:
+      name: FOX
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(fox tv|fox|fox network)\b'
+
+  FX:
+    overlay:
+      name: FX
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(FX|FX Network)\b'
+
+  CNN:
+    overlay:
+      name: CNN
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(cnn)\b'
+
+  DISCOVERY PLUS:
+    overlay:
+      name: DISCOVERY PLUS
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(discovery+|discovery plus)\b'
+
+  NETFLIX:
+    overlay:
+      name: NETFLIX
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(netflix|nf)\b'
+
+  PEACOCK TV:
+    overlay:
+      name: PEACOCK TV
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(peacock|peacock tv)\b'
+
+  HULU:
+    overlay:
+      name: HULU
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(HULU)\b'
+
+  PRIME VIDEO:
+    overlay:
+      name: PRIME VIDEO
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(prime|amazon|prime video|amazon studios)\b'
+
+  APPLE TV PLUS:
+    overlay:
+      name: APPLE TV PLUS
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(apple|apple tv|apple tv plus|apple tv+)\b'
+
+  HBO MAX:
+    overlay:
+      name: HBO MAX
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(HBO Max|hbo|hbomax)\b'
+
+  DISNEY PLUS:
+    overlay:
+      name: DISNEY PLUS
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(Disney+|disney plus)\b'
+
+  PARAMOUNT PLUS:
+    overlay:
+      name: PARAMOUNT PLUS
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(paramount|paramount plus|paramount+)\b'
+
+  VICE:
+    overlay:
+      name: VICE
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(vice|viceland|vice tv)\b'
+
+  ID:
+    overlay:
+      name: ID
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(ID|investigate discovery|investigation discovery)\b'
+
+  HGTV:
+    overlay:
+      name: HGTV
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(HGTV)\b'
+
+  National Geographic:
+    overlay:
+      name: NATIONAL GEOGRAPHIC
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(nat geo|natgeo|natgeotv|national geographic)\b'
+
+  STARZ:
+    overlay:
+      name: STARZ
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(starz)\b'
+
+  SYFY:
+    overlay:
+      name: SYFY
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(scifi channel|syfy)\b'
+  TBS:
+    overlay:
+      name: TBS
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(tbs|turner broadcasting)\b'
+
+  SHOWTIME:
+    overlay:
+      name: SHOWTIME
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(showtime|sho)\b'
+
+  Discovery Channel:
+    overlay:
+      name: DISCOVERY CHANNEL
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(Discovery Channel)\b'
+
+  NBC:
+    overlay:
+      name: NBC
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(NBC)\b'
+
+  ABC:
+    overlay:
+      name: ABC
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(abc|abc network)\b'
+  CBS:
+    overlay:
+      name: CBS
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(cbs|cbs network)\b'
+
+  ESPN:
+    overlay:
+      name: ESPN
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(espn)\b'
+
+  Bravo:
+    overlay:
+      name: BRAVO
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(bravo)\b'
+
+  TRU TV:
+    overlay:
+      name: TRU TV
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(TRU|TRUTV|TRU TV)\b'
+
+  AMC:
+    overlay:
+      name: AMC
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(AMC|American Movie Classics)\b'
+
+  MTV:
+    overlay:
+      name: MTV
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(MTV|Music Television)\b'
+
+  TLC:
+    overlay:
+      name: TLC
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(TLC|The Learning Channel)\b'
+
+  USA:
+    overlay:
+      name: USA
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(USA|USA Network)\b'
+
+  Animal Planet:
+    overlay:
+      name: ANIMAL PLANET
+      group: STREANING_SERVICE_OR_NETWORK
+      weight: 200
+    plex_search:
+      any:
+        label.regex: '(?i)\b(animal planet)\b'

@@ -1,0 +1,12 @@
+collections:
+# IMDB Top 250
+  IMDB Top 250:
+    imdb_chart: top_movies
+    url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/Top_250.JPG
+    sort_title: +01_06_IMDB top 250
+    summary: Top movies of all time
+    collection_order: custom
+    collection_mode: hide
+    schedule:
+     - weekly(sunday)
+     - hourly(02)

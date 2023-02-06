@@ -1,0 +1,40 @@
+collections:
+#####################################
+#           Trakt Collections       #
+#####################################
+  Most Watched This Week:
+    trakt_watched_weekly: 100
+    sort_title: "+01_05_Watched This Week"
+    sync_mode: sync
+    radarr_add: false
+    url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/Trakt_Weekly.jpg
+    collection_order: custom
+    collection_mode: hide
+    schedule:
+     - weekly(sunday)
+     - hourly(02)
+    
+  Most Watched This Year:
+    trakt_watched_yearly: 250
+    sort_title: "+01_05_Watched This Year"
+    sync_mode: sync
+    radarr_add: false
+    url_poster: https://i.imgur.com/smHhrpE.jpg
+    collection_order: custom
+    collection_mode: hide
+    schedule:
+     - weekly(sunday)
+     - hourly(02)
+    
+  Newly Released (Box Office):
+    sync_mode: sync
+    sort_title: +01_05_<<collection_name>>
+    trakt_boxoffice: true
+    summary: A collection of top movies at the Box Office from Trakt.
+    url_poster: https://i.imgur.com/iLTMGzj.jpg
+    smart_label: release.desc
+    collection_mode: hide
+    radarr_add_missing: false
+    schedule:
+     - weekly(sunday)
+     - hourly(02)

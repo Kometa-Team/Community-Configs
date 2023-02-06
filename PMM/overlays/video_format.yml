@@ -19,9 +19,23 @@
 #          # Set the horizontal align for the overlay       #
 #          horizontal_align: left                           #
 #          # Set the vertical offset for the overlay        #
-#          vertical_offset: 15                              #
+#          vertical_offset: 30                              #
 #          # Set the vertical align for the overlay         #
 #          vertical_align: bottom                           #
+#          # Set the font for the overlay                   #
+#          font: fonts/Inter-Medium.ttf                     #
+#          # Set the font size for the overlay              #
+#          font_size: 55                                    #
+#          # Set the font color for the overlay             #
+#          font_color: "#FFFFFF"                            #
+#          # Set the back color for the overlay             #
+#          back_color: "#00000099"                          #
+#          # Set the back radius for the overlay            #
+#          back_radius: 30                                  #
+#          # Set the back width for the overlay             #
+#          back_width: 305                                  #
+#          # Set the back height for the overlay            #
+#          back_height: 105                                 #
 #                                                           #
 #          # Use the Remux overlay                          #
 #          use_remux: true                                  #
@@ -33,6 +47,8 @@
 #          use_hdtv: true                                   #
 #          # Use the DVD overlay                            #
 #          use_dvd: true                                    #
+#          # Use the SDTV overlay                           #
+#          use_sdtv: true                                   #
 #############################################################
 
 templates:
@@ -44,10 +60,18 @@ templates:
       overlay: <<overlay_name>>
       horizontal_offset: 15
       horizontal_align: left
-      vertical_offset: 15
+      vertical_offset: 30
       vertical_align: bottom
+      font: fonts/Inter-Medium.ttf
+      font_size: 55
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 305
+      back_height: 105
     collection_level: <<overlay_level>>
     allowed_library_types: <<use_<<slug>>>>
+    ignore_blank_results: true
     overlay:
       name: text(<<overlay_name>>)
       group: quality
@@ -56,17 +80,17 @@ templates:
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-      font: fonts/Inter-ExtraBold.ttf
-      font_size: 55
-      font_color: "#FFFFFF"
-      back_color: "#00000099"
-      back_radius: 30
-      back_width: 265
-      back_height: 85
+      font: <<font>>
+      font_size: <<font_size>>
+      font_color: <<font_color>>
+      back_color: <<back_color>>
+      back_radius: <<back_radius>>
+      back_width: <<back_width>>
+      back_height: <<back_height>>
 
 overlays:
 
-  Remux:
+  REMUX:
     template:
       - name: VideoFormat
         weight: 50
@@ -75,7 +99,7 @@ overlays:
     filters:
       filepath.regex: '(?i)\[Remux'
 
-  Blu-Ray:
+  BLU-RAY:
     template:
       - name: VideoFormat
         weight: 40
@@ -110,3 +134,12 @@ overlays:
     plex_all: true
     filters:
       filepath.regex: '(?i)\[DVD'
+
+  SDTV:
+    template:
+      - name: VideoFormat
+        weight: 5
+        slug: sdtv
+    plex_all: true
+    filters:
+      filepath.regex: '(?i)SD[ ._-]?TV'

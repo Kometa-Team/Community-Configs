@@ -1,0 +1,42 @@
+###############################################################
+#     Collection(s): Recents, Trending, Popular, Top 250      #
+###############################################################
+
+collections:
+
+# Recents
+  Recently Added:
+    url_poster: https://i.imgur.com/tpF2BDc.png
+    sort_title: +01_01_Recently Added
+    smart_filter:
+      sort_by: added.desc
+      all:
+        added: 7
+    collection_mode: hide
+  Recently Released:
+    url_poster: https://i.imgur.com/qJjOYEn.png
+    sort_title: +01_02_Recently Released
+    smart_filter:
+      sort_by: release.desc
+      all:
+        release: 60
+    collection_mode: hide
+    
+# Trending
+  Trending:
+    sort_title: +01_03_Trending
+    url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/Trending_Weekly.JPG
+    sync_mode: sync
+    tmdb_trending_weekly: 50
+    summary: Movies Trending across the internet
+    collection_mode: hide
+    
+# Poplular
+  Popular:
+    sort_title: +01_04_Popular
+    url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/Popular_Now.JPG
+    sync_mode: sync
+    smart_label: random
+    tmdb_popular: 50
+    summary: Popular Movies across the internet
+    collection_mode: hide

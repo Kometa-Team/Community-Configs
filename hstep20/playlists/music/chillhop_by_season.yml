@@ -1,0 +1,22 @@
+templates:
+  Seasonal Chillhop:
+    libraries: "Music"
+    sync_mode: sync
+    summary: All the songs from the Chillhop Essentials <<season>> albums
+    plex_search:
+      type: track
+      all:
+        album_title: [Chillhop, <<season>>]
+
+playlists:
+  Chillhop - Spring LoFi:
+    template: { name: Seasonal Chillhop, season: Spring }
+
+  Chillhop - Fall LoFi:
+    template: { name: Seasonal Chillhop, season: Fall }
+
+  Chillhop - Summer LoFi:
+    template: { name: Seasonal Chillhop, season: Summer }
+
+  Chillhop - Winter LoFi:
+    template: { name: Seasonal Chillhop, season: Winter }

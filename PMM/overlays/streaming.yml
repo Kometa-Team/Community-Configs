@@ -14,9 +14,17 @@
 #          # Set the horizontal align for the overlay       #
 #          horizontal_align: left                           #
 #          # Set the vertical offset for the overlay        #
-#          vertical_offset: 135                             #
+#          vertical_offset: 150                             #
 #          # Set the vertical align for the overlay         #
-#          vertical_align: top                              #
+#          vertical_align: bottom                           #
+#          # Set the back color for the overlay             #
+#          back_color: "#00000099"                          #
+#          # Set the back radius for the overlay            #
+#          back_radius: 30                                  #
+#          # Set the back width for the overlay             #
+#          back_width: 305                                  #
+#          # Set the back height for the overlay            #
+#          back_height: 105                                 #
 #                                                           #
 #          # Use the Amazon overlay                         #
 #          use_amazon: true                                 #
@@ -34,6 +42,8 @@
 #          use_paramount: true                              #
 #          # Use the Peacock overlay                        #
 #          use_peacock: true                                #
+#          # Use the YouTube overlay                        #
+#          use_youtube: true                                #
 #############################################################
 
 templates:
@@ -45,51 +55,30 @@ templates:
       overlay: <<overlay_name>>
       horizontal_offset: 15
       horizontal_align: left
-      vertical_offset: 135
-      vertical_align: top
+      vertical_offset: 150
+      vertical_align: bottom
+      back_color: "#00000099"
+      back_radius: 30
+      back_width: 305
+      back_height: 105
     allowed_library_types: <<use_<<slug>>>>
+    ignore_blank_results: true
     overlay:
       name: <<overlay_name>>
-      git: PMM/overlays/images/<<overlay>>
+      git: PMM/overlays/images/raw/<<overlay>>
       group: streaming
       weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
+      back_color: <<back_color>>
+      back_radius: <<back_radius>>
+      back_width: <<back_width>>
+      back_height: <<back_height>>
     mdblist_list: https://mdblist.com/lists/plexmetamanager/<<slug>>-<<library_type>>s
 
 overlays:
-
-  Amazon:
-    template:
-      - name: Streaming
-        weight: 200
-        slug: amazon
-
-  AppleTV:
-    template:
-      - name: Streaming
-        weight: 200
-        slug: appletv
-
-  Disney:
-    template:
-      - name: Streaming
-        weight: 200
-        slug: disney
-
-  HBO-Max:
-    template:
-      - name: Streaming
-        weight: 200
-        slug: hbomax
-
-  Hulu:
-    template:
-      - name: Streaming
-        weight: 200
-        slug: hulu
 
   Netflix:
     template:
@@ -97,14 +86,50 @@ overlays:
         weight: 200
         slug: netflix
 
+  Amazon:
+    template:
+      - name: Streaming
+        weight: 190
+        slug: amazon
+
+  Disney:
+    template:
+      - name: Streaming
+        weight: 180
+        slug: disney
+
+  HBO-Max:
+    template:
+      - name: Streaming
+        weight: 170
+        slug: hbomax
+
+  YouTube:
+    template:
+      - name: Streaming
+        weight: 160
+        slug: youtube
+
+  Hulu:
+    template:
+      - name: Streaming
+        weight: 150
+        slug: hulu
+
   Paramount:
     template:
       - name: Streaming
-        weight: 200
+        weight: 140
         slug: paramount
+
+  AppleTV:
+    template:
+      - name: Streaming
+        weight: 130
+        slug: appletv
 
   Peacock:
     template:
       - name: Streaming
-        weight: 200
+        weight: 120
         slug: peacock

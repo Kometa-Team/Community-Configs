@@ -1,0 +1,423 @@
+###########################################################################################################
+###########################################################################################################
+###    ██████╗ ██╗  ██╗███╗   ███╗██╗   ██╗██████╗  █████╗ ██╗  ██╗ ██████╗  ██████╗ ███████╗██╗  ██╗   ###
+###   ██╔═══██╗██║  ██║████╗ ████║╚██╗ ██╔╝██╔══██╗██╔══██╗██║  ██║██╔════╝ ██╔═══██╗██╔════╝██║  ██║   ###
+###   ██║   ██║███████║██╔████╔██║ ╚████╔╝ ██████╔╝███████║███████║██║  ███╗██║   ██║███████╗███████║   ###
+###   ██║   ██║██╔══██║██║╚██╔╝██║  ╚██╔╝  ██╔══██╗██╔══██║██╔══██║██║   ██║██║   ██║╚════██║██╔══██║   ###
+###   ╚██████╔╝██║  ██║██║ ╚═╝ ██║   ██║   ██████╔╝██║  ██║██║  ██║╚██████╔╝╚██████╔╝███████║██║  ██║   ###
+###    ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝   ###
+###########################################################################################################
+###########################################################################################################
+###########################################################################################################
+##################          ..TV Show Library Collections YML Confg For..               ###################
+##################         https://github.com/meisnate12/Plex-Meta-Manager              ###################
+###########################################################################################################
+##################                         github.com/ohmybahgosh                       ###################
+###########################################################################################################
+##################                   -=My Trakt.tv Collection Lists=-                   ###################
+##################              _-=https://trakt.tv/users/hdlists/lists=-_              ###################
+###########################################################################################################
+################## Every Collection Comes With a Poster I Made & A Background I Grabbed ###################
+##################   BY NO MEANS AM I A GRAPHIC DESIGNER, SO FEEL FREE TO SWAP POSTERS  ###################
+###########################################################################################################
+###########################################################################################################
+
+
+
+
+###########################################################################################################
+###########################################################################################################
+##############  ███╗   ██╗███████╗████████╗██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗███████╗   ##################
+##############  ████╗  ██║██╔════╝╚══██╔══╝██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝██╔════╝   ##################
+##############  ██╔██╗ ██║█████╗     ██║   ██║ █╗ ██║██║   ██║██████╔╝█████╔╝ ███████╗   ##################
+##############  ██║╚██╗██║██╔══╝     ██║   ██║███╗██║██║   ██║██╔══██╗██╔═██╗ ╚════██║   ##################
+##############  ██║ ╚████║███████╗   ██║   ╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗███████║   ##################
+##############  ╚═╝  ╚═══╝╚══════╝   ╚═╝    ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ##################
+###########################################################################################################
+###########################################################################################################
+###########################    FIRST RUN WILL TAKE A WHILE, HANG IN THERE     #############################
+###########################################################################################################
+###########################################################################################################
+
+
+
+templates:
+    network:
+      optional:
+        - network
+      tmdb_network: <<network>>
+      sort_title: +2_<<collection_name>>
+      sync_mode: sync
+      smart_label: episode_added.desc
+
+
+collections:
+
+    A&E:
+      template: { name: network, network: 129 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    ABC:
+      template: { name: network, network: 2 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    AMC:
+      template: { name: network, network: 174 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Animal Planet:
+      template: { name: network, network: 91 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Bravo:
+      template: { name: network, network: 74 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    CBS:
+      template: { name: network, network: 16 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Cinemax:
+      template: { name: network, network: 359 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    CNN:
+      template: { name: network, network: 59 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Discovery Channel:
+      template: { name: network, network: 64 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    ESPN:
+      template: { name: network, network: 29 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    FOX:
+      template: { name: network, network: 19 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    FX:
+      template: { name: network, network: 88 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    HGTV:
+      template: { name: network, network: 210 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    ID:
+      template: { name: network, network: 244 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    MTV:
+      template: { name: network, network: 33 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    National Geographic:
+      template: { name: network, network: 43 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    NBC:
+      template: { name: network, network: 6 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    TLC:
+      template: { name: network, network: 84 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    TRU TV:
+      template: { name: network, network: 364 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Showtime:
+      template: { name: network, network: 67 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Syfy:
+      template: { name: network, network: 77 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Starz:
+      template: { name: network, network: 318 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+ 
+    TBS:
+      template: { name: network, network: 68 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    YouTube:
+      template: { name: network, network: "247, 1436" }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    USA:
+      template: { name: network, network: 30 }
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    VICE Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_AVICE
+      trakt_list: https://trakt.tv/users/hdlists/lists/vice-original-shows
+      summary: VICE Original Series
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+
+###################################################################################
+###################################################################################
+###########                                                             ###########
+###########              TRENDING/POPULAR STYLE COLLECTIONS             ###########
+###########                                                             ###########
+###################################################################################
+###################################################################################
+
+
+    Trending:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      trakt_trending: 15
+      summary: Shows Trending across the internet
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none 
+
+    Popular:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      imdb_list:
+        url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
+        limit: 15
+      summary: Popular Shows across the internet
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+###################################################################################
+###################################################################################
+###  ███████╗████████╗██████╗ ███████╗ █████╗ ███╗   ███╗██╗███╗   ██╗ ██████╗  ###
+###  ██╔════╝╚══██╔══╝██╔══██╗██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔════╝  ###
+###  ███████╗   ██║   ██████╔╝█████╗  ███████║██╔████╔██║██║██╔██╗ ██║██║  ███╗ ###
+###  ╚════██║   ██║   ██╔══██╗██╔══╝  ██╔══██║██║╚██╔╝██║██║██║╚██╗██║██║   ██║ ###
+###  ███████║   ██║   ██║  ██║███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║╚██████╔╝ ###
+###  ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ###
+###                                                                             ###
+###  ███╗   ██╗███████╗████████╗██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗███████╗     ###
+###  ████╗  ██║██╔════╝╚══██╔══╝██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝██╔════╝     ###
+###  ██╔██╗ ██║█████╗     ██║   ██║ █╗ ██║██║   ██║██████╔╝█████╔╝ ███████╗     ###
+###  ██║╚██╗██║██╔══╝     ██║   ██║███╗██║██║   ██║██╔══██╗██╔═██╗ ╚════██║     ###
+###  ██║ ╚████║███████╗   ██║   ╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗███████║     ###
+###  ╚═╝  ╚═══╝╚══════╝   ╚═╝    ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝     ###
+###################################################################################
+###################################################################################
+
+   
+    Latest Streaming Networks Shows:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_streamingnetworls
+      trakt_list: https://trakt.tv/users/hdlists/lists/latest-streaming-service-tv-shows
+      summary: Merged Latest Streaming Networks Original Series
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Latest Discovery+ Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_1DISCOVERTPLUS
+      trakt_list: https://trakt.tv/users/hdlists/lists/latest-discovery-tv-shows
+      summary: Latest Discovery+ TV Shows Original Series
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none  
+    
+    Latest Disney+ Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_DISNEYPLUS
+      trakt_list: https://trakt.tv/users/hdlists/lists/disney-tv-shows-series-2021-2025
+      summary: Latest Disney+ Original Series
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Latest Netflix Original Series:
+      smart_label: release.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_2Netflix
+      imdb_list:
+        - https://www.imdb.com/search/title/?title_type=tv_series,tv_special,tv_miniseries&countries=us&languages=en&genres=!animation&sort=release_date,desc&count=250&companies=co0144901&release_date=2021-01-01,2100-01-01
+        - https://www.imdb.com/search/title/?title_type=tv_series,tv_special,tv_miniseries&countries=us&languages=en&genres=!animation&sort=release_date,desc&count=250&release_date=2021-01-01,2100-01-01&companies=co0650527
+      summary: Latest Netflix Original Series
+      url_poster: https://i.imgur.com/7kiE1MU.png
+      url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+
+
+###################################################################################
+###################################################################################
+###########                                                             ###########
+###########               FULL STREAMING NETWORK CATALOGS               ###########
+###########         **BE CAREFUL AUTO-ADDING THESE TO SONARR**          ###########
+###########                                                             ###########
+###################################################################################
+###################################################################################
+
+
+    Apple Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_1APPLE
+      tmdb_network: 2552
+      summary: All Apple TV Original Series/Shows
+      url_poster: https://i.imgur.com/O9iWork.png
+      url_background: https://wallpaper-house.com/data/out/8/wallpaper2you_228774.png
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Amazon Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_1AMAZON
+      tmdb_company: 20580
+      tmdb_network: 1024
+      summary: All Amazon Prime TV Original Series/Shows
+      url_poster: https://i.imgur.com/nU3gqqB.png
+      url_background: https://i.imgur.com/2jfs7oS.png
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Discovery+ Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_1DISCOVERTPLUS2
+      trakt_list: https://trakt.tv/users/hdlists/lists/discovery-original-tv-shows 
+      summary: Discovery+ Original Series
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Disney+ Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_DISNEYPLUS
+      trakt_list: https://trakt.tv/users/hdlists/lists/disney-original-series
+      summary: Disney+ Original Series
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    HBO Max Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_1HBOMAX
+      tmdb_network: 2593, 3186, 3308, 49
+      summary: All HBO Max Original Series/Shows
+      url_poster: https://i.redd.it/zxdvw3tk3f151.jpg
+      url_background: https://wallpapercave.com/wp/wp6402755.png
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    HULU Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_1HULU
+      trakt_list: https://trakt.tv/users/hdlists/lists/latest-hulu-tv-shows
+      summary: All HULU Original Series/Shows From
+      url_poster: https://plexcollectionposters.com/images/2019/05/26/Hulu6ddad752a5ce9bac.jpg
+      url_background: https://cdn.vox-cdn.com/thumbor/oR4hqrmTxbX_O4gdJ6np8h-PxFk=/0x439:750x861/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/56311701/Image_uploaded_from_iOS__8_.1503433270.jpg
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Netflix Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_1Netflix
+      tmdb_network: 213
+      summary: All Netflix Original Series/Shows
+      url_poster: https://i.imgur.com/7kiE1MU.png
+      url_background: https://img5.goodfon.com/original/1920x1080/1/61/fon-netflix-logo-raduga-tsvet-fon-background-skachat-oboi-sk.jpg
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Paramount+ Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_PARAMOUNTPLUS
+      trakt_list: https://trakt.tv/users/hdlists/lists/paramount-tv-series
+      summary: Paramount+ Original Series
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+
+    Peacock Original Series:
+      smart_label: episode_added.desc
+      sync_mode: sync
+      sort_title: +++++++++++++++++++++_2Peacock
+      imdb_list: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&countries=us&languages=en&genres=!animation,!sport,!news&sort=release_date,desc&count=250&companies=co0764707&release_date=2021-01-01,2100-01-01
+      summary: All Peacock Original Series/Shows
+      url_poster: https://i.imgur.com/joEjsPl.png
+      url_background: https://i.imgur.com/kHlt4BR.jpg
+      sonarr_add: false
+      sonarr_search: false
+      sonarr_monitor: none
+

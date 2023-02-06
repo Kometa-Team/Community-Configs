@@ -1,0 +1,31 @@
+templates:
+  Watch Order:
+    trakt_list: <<list>>
+    libraries: "YOUR TV LIBRARY  NAME HERE"
+    sync_mode: sync
+    summary: <<summary>>
+
+playlists:
+  X Files (Freak of the Week):
+    template:
+      {
+        name: Watch Order,
+        list: https://trakt.tv/lists/23903123,
+        summary: "The 'Monster of the Week' episodes of X Files",
+      }
+
+  X Files (Mythology):
+    template:
+      {
+        name: Watch Order,
+        list: https://trakt.tv/lists/23903191,
+        summary: "The Seriazlied episodes of X-Files in order",
+      }
+
+  Ducktales (2017) Intended Viewing Order:
+    template:
+      {
+        name: Watch Order,
+        list: https://trakt.tv/users/itsmistermoon/lists/ducktales-2017-official-order?sort=rank%2Casc,
+        summary: "The Crew's intended viewing order after Disney aired them out of order. This uses the alternate order on the TVDB page to build a playlist in the order meant to be watched",
+      }
