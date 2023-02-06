@@ -13,41 +13,6 @@ templates:
 #                       Charts                       #
 ######################################################
 collections:
-#  Plex Popular:
-#    template: { name: Chart, num: 1 }
-#    tautulli_popular:
-#      list_days: 30
-#      list_size: 20
-#      list_buffer: 20
-#    tautulli_watched:
-#      list_days: 30
-#      list_size: 20
-#      list_buffer: 20
-#    summary: Popular Shows on Plex
-#  Trending:
-#    template: { name: Chart, num: 2 }
-#    trakt_trending: 10
-#    tmdb_trending_daily: 10
-#    tmdb_trending_weekly: 10
-#    summary: Trending Shows across the internet
-#  Popular:
-#    template: { name: Chart, num: 3 }
-#    tmdb_popular: 40
-#    imdb_list:
-#      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
-#      limit: 40
-#    summary: Popular Shows across the internet
-#  Top Rated:
-#    template: { name: Chart, num: 4 }
-#    imdb_list:
-#      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc
-#      limit: 100
-#    tmdb_top_rated: 100
-#    summary: Top Rated Shows across the internet
-#  Emmy Winners:
-#    template: { name: Chart, num: 5 }
-#    imdb_list: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&groups=emmy_winner
-#    summary: Emmy Winning Shows
 
 ######################################################
 #                     TV Series                      #
@@ -61,46 +26,90 @@ collections:
 #                Network Collections                 #
 ######################################################
   A&E:
-    template: { name: network, network: "129, 2639, 3688" }
+    template:
+      name: network
+      network: "129, 2639, 3688"
   ABC:
-    template: { name: network, network: "2, 75, 2791" }
+    template:
+      name: network
+      network: "2, 75, 2791"
   Adult Swim:
-    template: { name: network, network: 80 }
+    template:
+      name: network
+      network: 80
   Apple+:
-    template: { name: network, network: 2552 }
+    template:
+      name: network
+      network: 2552
   AMC:
-    template: { name: network, network: "174, 4661" }
+    template:
+      name: network
+      network: "174, 4661"
   Cartoon Network:
-    template: { name: network, network: "56, 217, 1232, 1483, 2193, 3917, 4771" }
+    template:
+      name: network
+      network: "56, 217, 1232, 1483, 2193, 3917, 4771"
   Cinemax:
-    template: { name: network, network: 359 }
+    template:
+      name: network
+      network: 359
   Discovery:
-    template: { name: network, network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741" }
+    template:
+      name: network
+      network: "10, 22, 64, 106, 244, 626, 670, 1079, 1287, 1534, 2087, 2480, 2692, 3045, 3591, 3900, 3953, 4440, 4462, 4741"
   Disney+:
-    template: { name: network, network: "2739, 2919" }
+    template:
+      name: network
+      network: "2739, 2919"
   FX:
-    template: { name: network, network: 88 }
+    template:
+      name: network
+      network: 88
   FXX:
-    template: { name: network, network: 1035 }
+    template:
+      name: network
+      network: 1035
   HBO:
-    template: { name: network, network: "49, 2593, 3186, 3308" }
+    template:
+      name: network
+      network: "49, 2593, 3186, 3308"
   HGTV:
-    template: { name: network, network: 210 }
+    template:
+      name: network
+      network: 210
   Hulu:
-    template: { name: network, network: 453 }
+    template:
+      name: network
+      network: 453
   National Geographic:
-    template: { name: network, network: "43, 799, 1756, 1825, 3355, 4293, 4476" }
+    template:
+      name: network
+      network: "43, 799, 1756, 1825, 3355, 4293, 4476"
   Netflix:
-    template: { name: network, network: 213 }
+    template:
+      name: network
+      network: 213
   Prime Video:
-    template: { name: network, network: 1024 }
+    template:
+      name: network
+      network: 1024
   Showtime:
-    template: { name: network, network: 67 }
+    template:
+      name: network
+      network: 67
   Starz:
-    template: { name: network, network: "318, 758, 4906" }
+    template:
+      name: network
+      network: "318, 758, 4906"
   Syfy:
-    template: { name: network, network: "77, 3701" }
+    template:
+      name: network
+      network: "77, 3701"
   TBS:
-    template: { name: network, network: "68, 160, 4888" }
+    template:
+      name: network
+      network: "68, 160, 4888"
   YouTube:
-    template: { name: network, network: "247, 1436, 4869" }
+    template:
+      name: network
+      network: "247, 1436, 4869"

@@ -1,66 +1,98 @@
 libraries:                                      # Library mappings must have a colon (:) placed after them
-  Movies:
-    metadata_path:
-      - file: config/Movies.yml
-    overlay_path:
-      - remove_overlays: false
-      - git: PMM/overlays/imdb_top_250
-    settings:
-      asset_directory: 
-        - config/assets/movies
-        - config/assets/movie_collections
-  TV Shows:
-    metadata_path:
-      - file: config/TV Shows.yml
-    settings:
-      asset_directory:
-        - config/assets/tv_shows
-        - config/assets/tv_show_collections
-    operations:
-      assets_for_all: true
-  Anime:
-    metadata_path:
-      - file: config/Anime.yml
-    settings:
-      asset_directory: config/assets/anime
-      assets_for_all: true
-    sonarr:
-      root_folder_path: /mnt/unionfs/media/anime
-      series_type: anime
-  Kid's TV:
-    metadata_path:
-      - file: config/KidsTV.yml
-    settings:
-      asset_directory:
-        - config/assets/tv_shows
-        - config/assets/tv_show_collections
-    operations:
-      assets_for_all: true
-    sonarr:
-      root_folder_path: /mnt/unionfs/media/kidstv
   4K Movies:
-    metadata_path:
-      - file: config/Movies.yml
-    overlay_path:
-      - remove_overlays: false
-      - git: PMM/overlays/imdb_top_250
-      - file: config/Overlays.yml
-        template_variables:
-        # Which overlay(s) should be used?
-          4K_banner: true
     settings:
-      asset_directory: 
-        - config/assets/movies
-        - config/assets/movie_collections
+      asset_directory:
+      - config/assets/movies
+      - config/assets/movie_collections
     operations:
-      assets_for_all: true
+      mass_critic_rating_update: mdb_tomatoesaudience
+      split_duplicates: true
+      delete_collections:
+        unmanaged: true
+        unconfigured: true
+        less: 3
+    template_variables: # Disable the separator for collections
+      use_separator: false
+    metadata_path:
+    - file: config/Movies.yml
+      schedule: weekly(sunday)
+    - pmm: tautulli   # Plex popular/most watched
+      schedule: weekly(monday)
+    - pmm: flixpatrol   # Top across networks, according to flixpatrol
+      schedule: weekly(tuesday)
+      template_variables:
+        radarr_add_missing: true
+    - pmm: other_chart   #StevenLu's Popular and Top 10 Pirated
+      schedule: weekly(wednesday)
+      template_variables:
+        radarr_add_missing: true
+        use_anidb: false
+        use_commonsense: false
+    - pmm: imdb   #IMDb Top 250
+      schedule: monthly(1)
+      template_variables:
+        use_popular: false
+        use_lowest: false
+    - pmm: trakt   # Top 20 Popular, trending, and watched movies/shows
+      template_variables:
+        use_collected: false
+        use_recommended: false
+        limit: 20
+    - pmm: oscars   # Oscar winners for the last 5 years
+      schedule: monthly(15)
+      template_variables:
+        radarr_add_missing: true
+        data:
+          starting: current_year-5
+          ending: current_year-1
+    - pmm: emmy   # Emmy winners for the last 5 years
+      schedule: monthly(30)
+      template_variables:
+        radarr_add_missing: true
+        data:
+          starting: current_year-5
+          ending: current_year-1
+    - pmm: seasonal   # Create holiday collections that follow schedules
+      schedule: weekly(thursday)
+      template_variables:
+        limit: 100
+        use_easter: false
+        use_mother: false
+        use_memorial: false
+        use_father: false
+        use_labor: false
+    - pmm: decade   # "Best of" by decade
+      schedule: weekly(friday)
+      template_variables:
+        limit: 20
+        exclude:
+        - 1920
+        - 1930
+        - 1940
+        - 1950
+        - 1960
+    overlay_path:
+    - pmm: resolution   # Add a "4K Ultra HD" banner to poster
+      template_variables:
+        file: overlays\4K.png
+        use_edition: false
+        use_1080p: false
+        use_720p: false
+        use_576p: false
+        use_480p: false
+        use_dv: false
+        use_hdr: false
+    - pmm: ribbon   # Oscars/IMDB top 250
+      template_variables:
+        use_rotten: false
+        use_metacritic: false
+        use_common: false
     radarr:
       url: http://radarr4k:7878
       token: <redacted>
-      version: v3
-      root_folder_path: /mnt/media/4kmovies
+      root_folder_path: /mnt/unionfs/media/4kmovies
       monitor: true
-      availability: released
+      availability: announced
       quality_profile: Ultra-HD
       tag:
       search: false
@@ -69,25 +101,136 @@ libraries:                                      # Library mappings must have a c
       upgrade_existing: true
       radarr_path:
       plex_path:
-  4K TV Shows:
-    metadata_path:
-      - file: config/TV Shows.yml
-    overlay_path:
-      - remove_overlays: false
-      - file: config/Overlays.yml
-        template_variables:
-          # Which overlay(s) should be used?
-          4K: true
+  Movies:
     settings:
       asset_directory:
-        - config/assets/tv_shows
-        - config/assets/tv_show_collections
+      - config/assets/movies
+      - config/assets/movie_collections
     operations:
-      assets_for_all: true
+      mass_critic_rating_update: mdb_tomatoesaudience
+      delete_collections:
+        unmanaged: true
+        unconfigured: true
+        less: 3
+    template_variables: # Disable the separator for collections
+      use_separator: false
+    metadata_path:
+    - file: config/Movies.yml
+    - pmm: tautulli   # Plex popular/most watched
+    - pmm: flixpatrol   # Top across networks, according to flixpatrol
+      template_variables:
+        radarr_add_missing: true
+    - pmm: other_chart   #StevenLu's Popular and Top 10 Pirated
+      template_variables:
+        radarr_add_missing: true
+        use_anidb: false
+        use_commonsense: false
+    - pmm: imdb   #IMDb Top 250
+      template_variables:
+        use_popular: false
+        use_lowest: false
+    - pmm: trakt   # Top 20 Popular, trending, and watched movies/shows
+      template_variables:
+        use_collected: false
+        use_recommended: false
+        limit: 20
+    - pmm: oscars   # Oscar winners for the last 5 years
+      template_variables:
+        radarr_add_missing: true
+        data:
+          starting: current_year-5
+          ending: current_year-1
+    - pmm: emmy   # Emmy winners for the last 5 years
+      schedule: monthly(30)
+      template_variables:
+        radarr_add_missing: true
+        data:
+          starting: current_year-5
+          ending: current_year-1
+    - pmm: seasonal   # Create holiday collections that follow schedules
+      template_variables:
+        limit: 100
+        use_easter: false
+        use_mother: false
+        use_memorial: false
+        use_father: false
+        use_labor: false
+    - pmm: decade   # "Best of" by decade
+      template_variables:
+        limit: 20
+        exclude:
+        - 1920
+        - 1930
+        - 1940
+        - 1950
+        - 1960
+    overlay_path:
+    - pmm: ribbon   # Oscars/IMDB top 250
+      template_variables:
+        use_rotten: false
+        use_metacritic: false
+        use_common: false
+  4K TV Shows:
+    settings:
+      asset_directory:
+      - config/assets/tv_shows
+      - config/assets/tv_show_collections
+    operations:
+      #assets_for_all: true
+      mass_critic_rating_update: tmdb
+      delete_collections:
+        unmanaged: true
+        unconfigured: true
+        less: 3
+    template_variables: # Disable the separator for collections
+      use_separator: false
+    metadata_path:
+    - file: config/TV Shows.yml
+    - pmm: tautulli   # Plex popular/most watched
+    - pmm: flixpatrol   # Top across networks, according to flixpatrol
+      template_variables:
+        sonarr_add_missing: true
+    - pmm: imdb   #IMDb Top 250
+      template_variables:
+        sonarr_add_missing: true
+        use_popular: false
+        use_lowest: false
+    - pmm: trakt   # Top 20 Popular, trending, and watched movies/shows
+      template_variables:
+        use_collected: false
+        use_recommended: false
+        limit: 20
+    - pmm: emmy   # Emmy winners for the last 5 years
+      template_variables:
+        radarr_add_missing: true
+    - pmm: show/decade   # "Best of" by decade
+      template_variables:
+        limit: 20
+        exclude:
+        - 1920
+        - 1930
+        - 1940
+        - 1950
+        - 1960
+    overlay_path:
+    - pmm: resolution   # Add a small "4K UHD" image in the top left corner
+      template_variables:
+        use_edition: false
+        use_1080p: false
+        use_720p: false
+        use_576p: false
+        use_480p: false
+        use_dv: false
+        use_hdr: false
+    - pmm: ribbon   # Oscars/IMDB top 250
+      template_variables:
+        use_rotten: false
+        use_metacritic: false
+        use_common: false
     sonarr:
       url: http://sonarr4k:8989
       token: <redacted>
-      root_folder_path: /mnt/media/4ktvshows
+      root_folder_path: /mnt/unionfs/media/4ktvshows
       monitor: all
       quality_profile: Ultra-HD
       language_profile: English
@@ -101,12 +244,98 @@ libraries:                                      # Library mappings must have a c
       upgrade_existing: true
       sonarr_path:
       plex_path:
+  TV Shows:
+    settings:
+      asset_directory:
+      - config/assets/tv_shows
+      - config/assets/tv_show_collections
+    operations:
+      #assets_for_all: true
+      mass_critic_rating_update: tmdb
+      delete_collections:
+        unmanaged: true
+        unconfigured: true
+        less: 3
+    template_variables: # Disable the separator for collections
+      use_separator: false
+    metadata_path:
+    - file: config/TV Shows.yml
+    - pmm: tautulli   # Plex popular/most watched
+    - pmm: flixpatrol   # Top across networks, according to flixpatrol
+      template_variables:
+        sonarr_add_missing: true
+    - pmm: imdb   #IMDb Top 250
+      template_variables:
+        sonarr_add_missing: true
+        use_popular: false
+        use_lowest: false
+    - pmm: trakt   # Top 20 Popular, trending, and watched movies/shows
+      template_variables:
+        use_collected: false
+        use_recommended: false
+        limit: 20
+    - pmm: emmy   # Emmy winners for the last 5 years
+      template_variables:
+        radarr_add_missing: true
+  Anime:
+    settings:
+      #assets_for_all: true
+      asset_directory: config/assets/anime
+    template_variables: # Disable the separator for collections
+      use_separator: false
+    metadata_path:
+    - file: config/Anime.yml
+    - pmm: tautulli   # Plex popular/most watched
+    - pmm: flixpatrol   # Top across networks, according to flixpatrol
+    - pmm: imdb   #IMDb Top 250
+      template_variables:
+        use_popular: false
+        use_lowest: false
+    - pmm: trakt   # Top 20 Popular, trending, and watched movies/shows
+      template_variables:
+        use_collected: false
+        use_recommended: false
+        limit: 20
+    - pmm: emmy   # Emmy winners for the last 5 years
+      template_variables:
+        use_year_collections: false
+        data:
+          starting: current_year-5
+          ending: current_year-1
+    sonarr:
+      root_folder_path: /mnt/unionfs/media/anime
+      series_type: anime
+  Kid's TV:
+    settings:
+      asset_directory:
+      - config/assets/tv_shows
+      - config/assets/tv_show_collections
+    operations:
+      #assets_for_all: true
+      mass_critic_rating_update: tmdb
+    template_variables: # Disable the separator for collections
+      use_separator: false
+    metadata_path:
+    - file: config/KidsTV.yml
+    - pmm: tautulli   # Plex popular/most watched
+    - pmm: flixpatrol   # Top across networks, according to flixpatrol
+    - pmm: imdb   #IMDb Top 250
+      template_variables:
+        use_popular: false
+        use_lowest: false
+    - pmm: trakt   # Top 20 Popular, trending, and watched movies/shows
+      template_variables:
+        use_collected: false
+        use_recommended: false
+        limit: 20
+    sonarr:
+      root_folder_path: /mnt/unionfs/media/kidstv
 settings:                                       # Can be individually specified per library as well
   # General Settings
   cache: true
   cache_expiration: 60
   run_again_delay: 2
-  save_report: true
+  save_report: false
   tvdb_language: eng
   item_refresh_delay: 0
   verify_ssl: true
@@ -116,13 +345,13 @@ settings:                                       # Can be individually specified 
   asset_directory: config/assets
   asset_folders: true
   asset_depth: 1
-  create_asset_folders: true
+  create_asset_folders: false
   prioritize_assets: false
-  dimensional_asset_rename: true
+  dimensional_asset_rename: false
   download_url_assets: false
-  show_missing_assets: true
-  show_missing_season_assets: false
-  show_missing_episode_assets: false
+  show_missing_assets: false
+  show_missing_season_assets: true
+  show_missing_episode_assets: true
   show_asset_not_needed: false
   # Collection Settings
   sync_mode: sync
@@ -141,12 +370,15 @@ settings:                                       # Can be individually specified 
   # Playlist Settings
   playlist_sync_to_user: all
   playlist_report: false
+  show_unconfigured: true
+  playlist_exclude_users:
 webhooks:                                       # Can be individually specified per library as well
   error: https://discord.com/api/webhooks/<redacted>/<redacted>
   version:
   run_start:
   run_end: https://discord.com/api/webhooks/<redacted>/<redacted>
   changes:
+  delete:
 plex:                                           # Can be individually specified per library as well
   url: http://plex:32400
   token: <redacted>
@@ -162,48 +394,68 @@ tmdb:
 tautulli:                                       # Can be individually specified per library as well
   url: http://tautulli:8181
   apikey: <redacted>
-radarr:                                         # Can be individually specified per library as well
-  url: http://radarr:7878
-  token: <redacted>
-  root_folder_path: /mnt/media/movies
-  quality_profile: Any
-  monitor: true
-  availability: announced
-  search: false
-  add_existing: false
-  add_missing: false
-  upgrade_existing: false
-  tag:
-  radarr_path:
-  plex_path:
-sonarr:                                         # Can be individually specified per library as well
-  url: http://sonarr:8989
-  token: <redacted>
-  root_folder_path: /mnt/media/tvshows
-  quality_profile: Any
-  monitor: all
-  language_profile: English
-  series_type: standard
-  season_folder: true
-  search: false
-  cutoff_search: false
-  add_missing: false
-  add_existing: false
-  upgrade_existing: false
-  tag:
-  sonarr_path:
-  plex_path:
 omdb:
   apikey: <redacted>
   cache_expiration: 60
+mdblist:
+  apikey: <redacted>
+  cache_expiration: 60
+notifiarr:
+  apikey:
+anidb:                                          # Not required for AniDB builders unless you want mature content
+  username:
+  password:
+  language: en
+  client:
+radarr:                                         # Can be individually specified per library as well
+  url: http://radarr:7878
+  token: <redacted>
+  add_existing: false
+  add_missing: false
+  root_folder_path: /mnt/unionfs/media/movies
+  monitor: true
+  availability: announced
+  quality_profile: Any
+  tag:
+  search: false
+  radarr_path:
+  plex_path:
+  upgrade_existing: false
+sonarr:                                         # Can be individually specified per library as well
+  url: http://sonarr:8989
+  token: <redacted>
+  add_missing: false
+  add_existing: false
+  root_folder_path: /mnt/unionfs/media/tvshows
+  monitor: all
+  quality_profile: Any
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  tag:
+  search: false
+  cutoff_search: false
+  sonarr_path:
+  plex_path:
+  upgrade_existing: false
 trakt:
   client_id: <redacted>
   client_secret: <redacted>
+  pin:
   authorization:
+    access_token: <redacted>
+    token_type: 
+    expires_in: 
+    refresh_token: <redacted>
+    scope: 
+    created_at: 
+mal:
+  client_id:
+  client_secret:
+  authorization:
+  # everything below is autofilled by the script
     access_token:
-    token_type:
+<redacted>
     expires_in:
     refresh_token:
-    scope:
-    created_at: 
-  pin:
+<redacted>
