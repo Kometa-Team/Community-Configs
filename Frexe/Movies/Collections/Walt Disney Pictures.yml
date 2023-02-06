@@ -13,5 +13,8 @@ templates:
     sort_title: <<collection_name>>
 collections:
 
+  "Hocus Pocus":
+    template: {name: Set, collection: 751156, poster: https://theposterdb.com/api/assets/270264 }
+
   "Santa Clause":
     template: {name: Set, collection: 53159, poster: https://theposterdb.com/api/assets/168200 }

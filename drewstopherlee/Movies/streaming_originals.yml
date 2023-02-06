@@ -1,0 +1,65 @@
+templates:
+  Originals:
+    imdb_list: 
+      url: <<list>>
+    sort_title: "!05_<<collection_name>>"
+    sync_mode: sync
+    summary: All <<collection_name>> Available on Plex
+    collection_mode: hide
+    visible_home: true
+    smart_label: originally_available.desc
+collections:
+
+#############################################################
+#                                                           #
+#                    Streaming Originals                    #
+#                                                           #
+#############################################################
+
+# Template for company search (with co#######)
+# https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_special,documentary,video,tv_short&genres=!animation&countries=us&languages=en&sort=release_date,asc&count=250&companies=
+
+  Apple TV+ Originals:
+    template: 
+      name: Originals
+      list: https://www.imdb.com/list/ls500844597/
+
+  Disney+ Originals:
+    template: 
+      name: Originals
+      list: https://www.imdb.com/list/ls098575307/
+
+  HBO Max Originals:
+    template: 
+      name: Originals
+      list: https://www.imdb.com/list/ls500844000/
+
+  Hulu Originals:
+    template: 
+      name: Originals
+      list: https://www.imdb.com/list/ls088307360/
+
+  Netflix Originals:
+    template: 
+      name: Originals
+      list: https://www.imdb.com/list/ls093350982/
+
+  Paramount+ Originals:
+    template: 
+      name: Originals
+      list: https://www.imdb.com/list/ls539683997/
+
+  Peacock Originals:
+    template: 
+      name: Originals
+      list: https://www.imdb.com/list/ls539683997/
+
+  Prime Video Originals:
+    template: 
+      name: Originals
+      list: https://www.imdb.com/list/ls098565773/
+
+  # Showtime Originals:
+  #   template: 
+  #     name: Originals
+  #     list: https://www.imdb.com/list/ls000000000/

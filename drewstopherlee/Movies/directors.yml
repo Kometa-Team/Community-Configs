@@ -1,0 +1,214 @@
+templates:
+  Director:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: year.asc
+    tmdb_person: <<person>>
+    sort_title: "!08_<<collection_name>>"
+    sync_mode: sync
+    summary: <<collection_name>>'s Films Available on Plex
+    collection_mode: hide
+  Tarantino:
+    smart_filter:
+      all:
+        director: tmdb
+        writer: tmdb
+        title.isnot: Four Rooms
+      sort_by: year.asc
+    tmdb_person: <<person>>
+    sort_title: "!08_<<collection_name>>"
+    sync_mode: sync
+    summary: <<collection_name>>'s Films Available on Plex
+    collection_mode: hide
+  Brothers:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: year.asc
+    tmdb_person: {<<person1>>, <<person2>>}
+    sort_title: "!08_<<collection_name>>"
+    sync_mode: sync
+    summary: <<collection_name>>' Films Available on Plex
+    collection_mode: hide
+  Writer-or-Director:
+    smart_filter:
+      any:
+        director: tmdb
+        writer: tmdb
+      sort_by: year.asc
+    tmdb_person: <<person>>
+    sort_title: "!08_<<collection_name>>"
+    sync_mode: sync
+    summary: <<collection_name>>'s Films Available on Plex
+    collection_mode: hide
+  Writer-and-Director:
+    smart_filter:
+      all:
+        director: tmdb
+        writer: tmdb
+      sort_by: year.asc
+    tmdb_person: <<person>>
+    sort_title: "!08_<<collection_name>>"
+    sync_mode: sync
+    summary: <<collection_name>>'s Films Available on Plex
+    collection_mode: hide
+collections:
+
+#############################################################
+#                                                           #
+#                         Directors                         #
+#                                                           #
+#############################################################
+
+  # Alfred Hitchcock:
+  #   template:
+  #     name: Director
+  #     person: 2636
+
+  Chris Columbus:
+    template:
+      name: Writer-or-Director
+      person: 10965
+  
+  Christopher Nolan:
+    template:
+      name: Director
+      person: 525
+  
+  Clint Eastwood:
+    template:
+      name: Director
+      person: 190
+  
+  Coen Brothers:
+    template:
+      name: Brothers
+      person1: 1223
+      person2: 1224
+  
+  # Darren Aronofsky:
+  #   template:
+  #     name: Director
+  #     person: 6431
+  
+  # Francis Ford Coppola:
+  #   template:
+  #     name: Director
+  #     person: 1776
+  
+  Guillermo del Toro:
+    template:
+      name: Director
+      person: 10828
+  
+  James Cameron:
+    template:
+      name: Director
+      person: 2710
+  
+  John Carpenter:
+    template:
+      name: Director
+      person: 11770
+  
+  John Hughes:
+    template:
+      name: Writer-or-Director
+      person: 11505
+  
+  # Jordan Peele:
+  #   template:
+  #     name: Director
+  #     person: 291263
+  
+  # Kevin Smith:
+  #   template:
+  #     name: Director
+  #     person: 19303
+  
+  Lars von Trier:
+    template:
+      name: Director
+      person: 42
+  
+  M. Night Shyamalan:
+    template:
+      name: Director
+      person: 11614
+  
+  Martin Scorsese:
+    template:
+      name: Director
+      person: 1032
+  
+  Mel Brooks:
+    template:
+      name: Director
+      person: 14639
+  
+  # Peter Jackson:
+  #   template:
+  #     name: Director
+  #     person: 108
+  
+  Quentin Tarantino:
+    template:
+      name: Tarantino
+      person: 138
+  
+  # Richard Linklater:
+  #   template:
+  #     name: Director
+  #     person: 564
+  
+  Ridley Scott:
+    template:
+      name: Director
+      person: 578
+  
+  # Rob Zombie:
+  #   template:
+  #     name: Director
+  #     person: 16848
+  
+  # Russo Brothers:
+  #   template:
+  #     name: Brothers
+  #     person1: 19271
+  #     person2: 19272
+  
+  # Sam Raimi:
+  #   template:
+  #     name: Director
+  #     person: 7623
+  
+  # Sergio Leone:
+  #   template:
+  #     name: Director
+  #     person: 4385
+  
+  Stanley Kubrick:
+    template:
+      name: Director
+      person: 240
+  
+  Steven Spielberg:
+    template:
+      name: Director
+      person: 488
+  
+  # Taika Waititi:
+  #   template:
+  #     name: Director
+  #     person: 55934
+  
+  Tim Burton:
+    template:
+      name: Director
+      person: 510
+  
+  Zack Snyder:
+    template:
+      name: Director
+      person: 15217

@@ -1,0 +1,30 @@
+##############################################################################
+#                               Ribbon Overlay                               #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#      https://metamanager.wiki/en/latest/defaults/overlays/ribbon.html      #
+##############################################################################
+
+external_templates:
+  pmm: templates
+  template_variables:
+    group: ribbon
+    pmm: ribbon/<<key>>
+    horizontal_offset: 0
+    horizontal_align: right
+    vertical_offset: 0
+    vertical_align: bottom
+
+templates:
+  ribbon:
+    optional:
+      - mdb_key
+      - imdb_key
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/<<mdb_key>><<library_type>>s
+    imdb_chart: <<imdb_key>>_<<library_type>>s
+
+overlays:
+
+  IMDb Top 250:
+    variables: {key: imdb, weight: 40, imdb_key: top}
+    template: [name: standard, name: ribbon]
