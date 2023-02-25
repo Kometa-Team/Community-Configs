@@ -19,7 +19,7 @@ templates:
 collections:
   "Top Rated of 2023":
     summary: "Top rated shows in 2023"
-    file_poster: config/assets/year/top-rated-year-2023.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2023.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -33,7 +33,7 @@ collections:
 
   "Top Rated of 2022":
     summary: "Top rated shows in 2022"
-    file_poster: config/assets/year/top-rated-year-2022.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2022.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -47,7 +47,7 @@ collections:
 
   "Top Rated of 2021":
     summary: "Top rated shows in 2021"
-    file_poster: config/assets/year/top-rated-year-2021.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2021.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -61,7 +61,7 @@ collections:
 
   "Top Rated of 2020":
     summary: "Top rated shows in 2020"
-    file_poster: config/assets/year/top-rated-year-2020.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2020.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -75,7 +75,7 @@ collections:
 
   "Top Rated of 2019":
     summary: "Top rated shows in 2019"
-    file_poster: config/assets/year/top-rated-year-2019.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2019.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -89,7 +89,7 @@ collections:
 
   "Top Rated of 2018":
     summary: "Top rated shows in 2018"
-    file_poster: config/assets/year/top-rated-year-2018.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2018.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -103,7 +103,7 @@ collections:
 
   "Top Rated of 2017":
     summary: "Top rated shows in 2017"
-    file_poster: config/assets/year/top-rated-year-2017.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2017.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -117,7 +117,7 @@ collections:
 
   "Top Rated of 2016":
     summary: "Top rated shows in 2016"
-    file_poster: config/assets/year/top-rated-year-2016.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2016.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -131,7 +131,7 @@ collections:
 
   "Top Rated of 2015":
     summary: "Top rated shows in 2015"
-    file_poster: config/assets/year/top-rated-year-2015.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2015.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -145,7 +145,7 @@ collections:
 
   "Top Rated of 2014":
     summary: "Top rated shows in 2014"
-    file_poster: config/assets/year/top-rated-year-2014.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2014.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -159,7 +159,7 @@ collections:
 
   "Top Rated of 2013":
     summary: "Top rated shows in 2013"
-    file_poster: config/assets/year/top-rated-year-2013.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2013.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -173,7 +173,7 @@ collections:
 
   "Top Rated of 2012":
     summary: "Top rated shows in 2012"
-    file_poster: config/assets/year/top-rated-year-2012.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2012.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -187,7 +187,7 @@ collections:
 
   "Top Rated of 2011":
     summary: "Top rated shows in 2011"
-    file_poster: config/assets/year/top-rated-year-2011.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2011.png
     schedule: weekly(tuesday)
     template: {
                     name: year,
@@ -201,7 +201,7 @@ collections:
 
   "Top Rated of 2010":
     summary: "Top rated shows in 2010"
-    file_poster: config/assets/year/top-rated-year-2010.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/year/top-rated-year-2010.png
     schedule: weekly(tuesday)
     template: {
                     name: year,

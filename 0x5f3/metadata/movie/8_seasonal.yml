@@ -14,7 +14,7 @@ templates:
 
 collections:
   "Valentine's Day Movies":
-    file_poster: config/assets/seasonal/seasonal-valentines-day.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/seasonal/seasonal-valentines-day.png
     schedule: range(02/10-02/14)
     template: {
                     name: seasonal,
@@ -27,7 +27,7 @@ collections:
       - https://www.imdb.com/list/ls064427905
 
   "St. Patrick's Day Movies":
-    file_poster: config/assets/seasonal/seasonal-stpatricks.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/seasonal/seasonal-stpatricks.png
     schedule: range(03/16-03/18)
     template: {
                     name: seasonal,
@@ -38,7 +38,7 @@ collections:
       - https://www.imdb.com/list/ls063934595
 
   "Easter Movies":
-    file_poster: config/assets/seasonal/seasonal-easter.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/seasonal/seasonal-easter.png
     schedule: range(03/22-04/25)
     template: {
                     name: seasonal,
@@ -50,7 +50,7 @@ collections:
       - https://www.imdb.com/list/ls051733651/
 
   "Halloween Movies":
-    file_poster: config/assets/seasonal/seasonal-halloween.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/seasonal/seasonal-halloween.png
     schedule: range(10/29-10/31)
     template: {
                     name: seasonal,
@@ -64,7 +64,7 @@ collections:
       - https://www.imdb.com/search/title/?genres=horror&keywords=haunted-house&sort=moviemeter,asc
 
   "Thanksgiving Movies":
-    file_poster: config/assets/seasonal/seasonal-thanksgiving.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/seasonal/seasonal-thanksgiving.png
     schedule: range(11/22-11/25)
     template: {
                     name: seasonal,
@@ -76,7 +76,7 @@ collections:
       - https://www.imdb.com/list/ls091597850/
 
   "Christmas Movies":
-    file_poster: config/assets/seasonal/seasonal-christmas.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/seasonal/seasonal-christmas.png
     schedule: range(12/01-12/31)
     template: {
                     name: seasonal,
@@ -91,7 +91,7 @@ collections:
       - https://www.imdb.com/list/ls027567380
 
   "New Year's Eve Movies":
-    file_poster: config/assets/seasonal/seasonal-new-year.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/seasonal/seasonal-new-year.png
     schedule: range(12/26-01/02)
     template: {
                     name: seasonal,

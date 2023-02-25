@@ -19,7 +19,7 @@ templates:
 collections:
   "Popular in Action":
     summary: "Popular movies in Action"
-    file_poster: config/assets/genre/popular-genre-action.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-action.png
     schedule: daily
     template: {
                     name: popular,
@@ -30,7 +30,7 @@ collections:
 
   "Popular in Adventure":
     summary: "Popular movies in Adventure"
-    file_poster: config/assets/genre/popular-genre-adventure.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-adventure.png
     schedule: daily
     template: {
                     name: popular,
@@ -41,7 +41,7 @@ collections:
 
   "Popular in Animation":
     summary: "Popular movies in Animation"
-    file_poster: config/assets/genre/popular-genre-animation.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-animation.png
     schedule: daily
     template: {
                     name: popular,
@@ -52,7 +52,7 @@ collections:
 
   "Popular in Biography":
     summary: "Popular movies in Biography"
-    file_poster: config/assets/genre/popular-genre-biography.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-biography.png
     schedule: daily
     template: {
                     name: popular,
@@ -63,7 +63,7 @@ collections:
 
   "Popular in Comedy":
     summary: "Popular movies in Comedy"
-    file_poster: config/assets/genre/popular-genre-comedy.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-comedy.png
     schedule: daily
     template: {
                     name: popular,
@@ -74,7 +74,7 @@ collections:
 
   "Popular in Crime":
     summary: "Popular movies in Crime"
-    file_poster: config/assets/genre/popular-genre-crime.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-crime.png
     schedule: daily
     template: {
                     name: popular,
@@ -85,7 +85,7 @@ collections:
 
   "Popular in Drama":
     summary: "Popular movies in Drama"
-    file_poster: config/assets/genre/popular-genre-drama.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-drama.png
     schedule: daily
     template: {
                     name: popular,
@@ -96,7 +96,7 @@ collections:
 
   "Popular in Family":
     summary: "Popular movies in Family"
-    file_poster: config/assets/genre/popular-genre-family.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-family.png
     schedule: daily
     template: {
                     name: popular,
@@ -107,7 +107,7 @@ collections:
 
   "Popular in Fantasy":
     summary: "Popular movies in Fantasy"
-    file_poster: config/assets/genre/popular-genre-fantasy.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-fantasy.png
     schedule: daily
     template: {
                     name: popular,
@@ -118,7 +118,7 @@ collections:
 
   "Popular in History":
     summary: "Popular movies in History"
-    file_poster: config/assets/genre/popular-genre-history.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-history.png
     schedule: daily
     template: {
                     name: popular,
@@ -129,7 +129,7 @@ collections:
 
   "Popular in Horror":
     summary: "Popular movies in Horror"
-    file_poster: config/assets/genre/popular-genre-horror.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-horror.png
     schedule: daily
     template: {
                     name: popular,
@@ -140,7 +140,7 @@ collections:
 
   "Popular in Music":
     summary: "Popular movies in Music"
-    file_poster: config/assets/genre/popular-genre-music.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-music.png
     schedule: daily
     template: {
                     name: popular,
@@ -151,7 +151,7 @@ collections:
 
   "Popular in Musicals":
     summary: "Popular movies in Musicals"
-    file_poster: config/assets/genre/popular-genre-musicals.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-musicals.png
     schedule: daily
     template: {
                     name: popular,
@@ -162,7 +162,7 @@ collections:
 
   "Popular in Mystery":
     summary: "Popular movies in Mystery"
-    file_poster: config/assets/genre/popular-genre-mystery.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-mystery.png
     schedule: daily
     template: {
                     name: popular,
@@ -173,7 +173,7 @@ collections:
 
   "Popular in Romance":
     summary: "Popular movies in Romance"
-    file_poster: config/assets/genre/popular-genre-romance.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-romance.png
     schedule: daily
     template: {
                     name: popular,
@@ -184,7 +184,7 @@ collections:
 
   "Popular in Sci-Fi":
     summary: "Popular movies in Sci-Fi"
-    file_poster: config/assets/genre/popular-genre-sci-fi.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-sci-fi.png
     schedule: daily
     template: {
                     name: popular,
@@ -195,7 +195,7 @@ collections:
 
   "Popular in Thriller":
     summary: "Popular movies in Thriller"
-    file_poster: config/assets/genre/popular-genre-thriller.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-thriller.png
     schedule: daily
     template: {
                     name: popular,
@@ -206,7 +206,7 @@ collections:
 
   "Popular in War":
     summary: "Popular movies in War"
-    file_poster: config/assets/genre/popular-genre-war.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-war.png
     schedule: daily
     template: {
                     name: popular,
@@ -217,7 +217,7 @@ collections:
 
   "Popular in Western":
     summary: "Popular movies in Western"
-    file_poster: config/assets/genre/popular-genre-western.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/popular-genre-western.png
     schedule: daily
     template: {
                     name: popular,

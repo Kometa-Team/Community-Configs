@@ -53,7 +53,7 @@ templates:
 collections:
   "Random TV shows":
     summary: Random selection of TV shows
-    file_poster: config/assets/trending/random.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/suggested/random.png
     schedule: daily
     template: {
                     name: plex,
@@ -67,7 +67,7 @@ collections:
 
   "Trending TV shows":
     summary: TV shows trending across the internet
-    file_poster: config/assets/trending/trending.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/suggested/trending.png
     schedule: daily
     template: {
                     name: trakt,
@@ -80,7 +80,7 @@ collections:
 
   "Popular TV shows":
     summary: Popular TV shows across the internet
-    file_poster: config/assets/trending/popular.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/suggested/popular.png
     schedule: daily
     template: {
                     name: imdb_popular,
@@ -92,7 +92,7 @@ collections:
 
   "Top Rated TV shows":
     summary: Top rated TV shows across the internet
-    file_poster: config/assets/trending/top-rated.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/suggested/top-rated.png
     schedule: daily
     template: {
                     name: imdb_top,
@@ -106,7 +106,7 @@ collections:
 
   "Most Watched Daily":
     summary: Daily most watched TV shows across the internet
-    file_poster: config/assets/trending/most-watched-daily.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/suggested/most-watched-daily.png
     schedule: daily
     template: {
                     name: trakt,
@@ -119,7 +119,7 @@ collections:
 
   "Most Watched Weekly":
     summary: Weekly most watched TV shows across the internet
-    file_poster: config/assets/trending/most-watched-weekly.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/suggested/most-watched-weekly.png
     schedule: daily
     template: {
                     name: trakt,
@@ -132,7 +132,7 @@ collections:
 
   "Most Watched Monthly":
     summary: Monthly most watched TV shows across the internet
-    file_poster: config/assets/trending/most-watched-monthly.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/suggested/most-watched-monthly.png
     schedule: weekly(sunday)
     template: {
                     name: trakt,
@@ -145,7 +145,7 @@ collections:
 
   "Most Watched Yearly":
     summary: Yearly most watched TV shows across the internet
-    file_poster: config/assets/trending/most-watched-yearly.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/suggested/most-watched-yearly.png
     schedule: weekly(sunday)
     template: {
                     name: trakt,

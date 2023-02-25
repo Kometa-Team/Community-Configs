@@ -72,7 +72,7 @@ templates:
 collections:
   "Emmy Award Winners":
     summary: "A collection of Emmy Award Winners"
-    file_poster: config/assets/awards/awards-emmy-winners.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/awards/awards-emmy-winners.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -85,7 +85,7 @@ collections:
 
   "Emmy Award Nominees":
     summary: "A collection of Emmy Award Nominees"
-    file_poster: config/assets/awards/awards-emmy-nominees.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/awards/awards-emmy-nominees.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -98,7 +98,7 @@ collections:
 
   "Golden Globes Winners":
     summary: "A collection of Golden Globes Winners"
-    file_poster: config/assets/awards/awards-goldenglobes-winners.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/awards/awards-goldenglobes-winners.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -111,7 +111,7 @@ collections:
 
   "Golden Globes Nominees":
     summary: "A collection of Golden Globes Nominees"
-    file_poster: config/assets/awards/awards-goldenglobes-nominees.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/awards/awards-goldenglobes-nominees.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -124,7 +124,7 @@ collections:
 
   "BAFTA Winners":
     summary: "A collection of BAFTA Winners"
-    file_poster: config/assets/awards/awards-bafta-winners.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/awards/awards-bafta-winners.png
     schedule: weekly(monday)
     template: {
                     name: custom_1,
@@ -135,7 +135,7 @@ collections:
 
   "Critics Choice Award Winners":
     summary: "A collection of Critics Choice Award Winners"
-    file_poster: config/assets/awards/awards-critics-winners.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/awards/awards-critics-winners.png
     schedule: weekly(monday)
     template: {
                     name: custom_2,

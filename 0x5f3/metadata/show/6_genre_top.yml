@@ -19,7 +19,7 @@ templates:
 collections:
   "Top Rated in Action":
     summary: "Top rated movies in Action"
-    file_poster: config/assets/genre/top-rated-genre-action.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-action.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -32,7 +32,7 @@ collections:
 
   "Top Rated in Adventure":
     summary: "Top rated movies in Adventure"
-    file_poster: config/assets/genre/top-rated-genre-adventure.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-adventure.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -45,7 +45,7 @@ collections:
 
   "Top Rated in Animation":
     summary: "Top rated movies in Animation"
-    file_poster: config/assets/genre/top-rated-genre-animation.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-animation.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -58,7 +58,7 @@ collections:
 
   "Top Rated in Biography":
     summary: "Top rated movies in Biography"
-    file_poster: config/assets/genre/top-rated-genre-biography.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-biography.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -71,7 +71,7 @@ collections:
 
   "Top Rated in Comedy":
     summary: "Top rated movies in Comedy"
-    file_poster: config/assets/genre/top-rated-genre-comedy.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-comedy.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -84,7 +84,7 @@ collections:
 
   "Top Rated in Crime":
     summary: "Top rated movies in Crime"
-    file_poster: config/assets/genre/top-rated-genre-crime.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-crime.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -97,7 +97,7 @@ collections:
 
   "Top Rated in Drama":
     summary: "Top rated movies in Drama"
-    file_poster: config/assets/genre/top-rated-genre-drama.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-drama.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -110,7 +110,7 @@ collections:
 
   "Top Rated in Family":
     summary: "Top rated movies in Family"
-    file_poster: config/assets/genre/top-rated-genre-family.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-family.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -123,7 +123,7 @@ collections:
 
   "Top Rated in Fantasy":
     summary: "Top rated movies in Fantasy"
-    file_poster: config/assets/genre/top-rated-genre-fantasy.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-fantasy.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -136,7 +136,7 @@ collections:
 
   "Top Rated in History":
     summary: "Top rated movies in History"
-    file_poster: config/assets/genre/top-rated-genre-history.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-history.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -149,7 +149,7 @@ collections:
 
   "Top Rated in Horror":
     summary: "Top rated movies in Horror"
-    file_poster: config/assets/genre/top-rated-genre-horror.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-horror.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -162,7 +162,7 @@ collections:
 
   "Top Rated in Music":
     summary: "Top rated movies in Music"
-    file_poster: config/assets/genre/top-rated-genre-music.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-music.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -175,7 +175,7 @@ collections:
 
   "Top Rated in Musicals":
     summary: "Top rated movies in Musicals"
-    file_poster: config/assets/genre/top-rated-genre-musicals.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-musicals.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -188,7 +188,7 @@ collections:
 
   "Top Rated in Mystery":
     summary: "Top rated movies in Mystery"
-    file_poster: config/assets/genre/top-rated-genre-mystery.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-mystery.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -201,7 +201,7 @@ collections:
 
   "Top Rated in Romance":
     summary: "Top rated movies in Romance"
-    file_poster: config/assets/genre/top-rated-genre-romance.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-romance.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -214,7 +214,7 @@ collections:
 
   "Top Rated in Sci-Fi":
     summary: "Top rated movies in Sci-Fi"
-    file_poster: config/assets/genre/top-rated-genre-sci-fi.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-sci-fi.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -227,7 +227,7 @@ collections:
 
   "Top Rated in Thriller":
     summary: "Top rated movies in Thriller"
-    file_poster: config/assets/genre/top-rated-genre-thriller.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-thriller.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -240,7 +240,7 @@ collections:
 
   "Top Rated in War":
     summary: "Top rated movies in War"
-    file_poster: config/assets/genre/top-rated-genre-war.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-war.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
@@ -253,7 +253,7 @@ collections:
 
   "Top Rated in Western":
     summary: "Top rated movies in Western"
-    file_poster: config/assets/genre/top-rated-genre-western.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/main/assets/genre/top-rated-genre-western.png
     schedule: weekly(thursday)
     template: {
                     name: genre,
