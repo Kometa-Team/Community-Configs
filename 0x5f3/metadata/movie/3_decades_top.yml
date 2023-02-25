@@ -1,0 +1,144 @@
+## 3_decades_top.yml
+
+templates:
+  decade:
+    sort_title: "+3_<<num>>_<<collection_name>>"
+    limit: 130
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 6
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=<<title_type>>&release_date=<<release_date>>&user_rating=<<user_rating>>&num_votes=<<votes>>,&languages=<<languages>>&user_rating,desc&count=250
+      limit: 250
+
+collections:
+  "Top Rated of the 1940s":
+    summary: "Top rated movies of the 1940s"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-decade-1940s.png
+    schedule: weekly(wednesday)
+    template: {
+                    name: decade,
+                    num: "Z",
+                    release_date: "1940-01-01,1949-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "1000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of the 1950s":
+    summary: "Top rated movies of the 1950s"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-decade-1950s.png
+    schedule: weekly(wednesday)
+    template: {
+                    name: decade,
+                    num: "Y",
+                    release_date: "1950-01-01,1959-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "1000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of the 1960s":
+    summary: "Top rated movies of the 1960s"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-decade-1960s.png
+    schedule: weekly(wednesday)
+    template: {
+                    name: decade,
+                    num: "X",
+                    release_date: "1960-01-01,1969-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "1000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of the 1970s":
+    summary: "Top rated movies of the 1970s"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-decade-1970s.png
+    schedule: weekly(wednesday)
+    template: {
+                    name: decade,
+                    num: "W",
+                    release_date: "1970-01-01,1979-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of the 1980s":
+    summary: "Top rated movies of the 1980s"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-decade-1980s.png
+    schedule: weekly(wednesday)
+    template: {
+                    name: decade,
+                    num: "V",
+                    release_date: "1980-01-01,1989-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of the 1990s":
+    summary: "Top rated movies of the 1990s"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-decade-1990s.png
+    schedule: weekly(wednesday)
+    template: {
+                    name: decade,
+                    num: "U",
+                    release_date: "1990-01-01,1999-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of the 2000s":
+    summary: "Top rated movies of the 2000s"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-decade-2000s.png
+    schedule: weekly(wednesday)
+    template: {
+                    name: decade,
+                    num: "T",
+                    release_date: "2000-01-01,2009-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of the 2010s":
+    summary: "Top rated movies of the 2010s"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-decade-2010s.png
+    schedule: weekly(wednesday)
+    template: {
+                    name: decade,
+                    num: "S",
+                    release_date: "2010-01-01,2019-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of the 2020s":
+    summary: "Top rated movies of the 2020s"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-decade-2020s.png
+    schedule: weekly(wednesday)
+    template: {
+                    name: decade,
+                    num: "R",
+                    release_date: "2020-01-01,2029-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
