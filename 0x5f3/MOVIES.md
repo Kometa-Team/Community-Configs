@@ -1,0 +1,199 @@
+- 1_suggested.yml
+  - Random Movies
+  - Trending Movies
+  - Popular Movies
+  - Top Rated Movies
+  - Most Watched Daily
+  - Most Watched Weekly
+  - Most Watched Monthly
+  - Most Watched Yearly
+
+- 2_awards.yml
+  - Oscar Winners
+  - Oscar Nominees
+  - Golden Globes Winners
+  - Golden Globes Nominees
+  - BAFTA Winners
+  - Berlinale Winners
+  - Cannes Film Festival Winners
+  - European Film Award Winners
+  - Sundance Winners
+  - Venice Film Festival Winners
+
+- 3_year_top.yml
+  - Top Rated of 2022
+  - Top Rated of 2022
+  - Top Rated of 2021
+  - Top Rated of 2020
+  - Top Rated of 2019
+  - Top Rated of 2018
+  - Top Rated of 2017
+  - Top Rated of 2016
+  - Top Rated of 2015
+  - Top Rated of 2014
+  - Top Rated of 2013
+  - Top Rated of 2012
+  - Top Rated of 2011
+  - Top Rated of 2010
+
+- 4_decades_top.yml
+  - Top Rated of the 2020s
+  - Top Rated of the 2010s
+  - Top Rated of the 2000s
+  - Top Rated of the 1990s
+  - Top Rated of the 1980s
+  - Top Rated of the 1970s
+  - Top Rated of the 1960s
+  - Top Rated of the 1950s
+  - Top Rated of the 1940s
+
+- 5_genre_popular.yml
+  - Popular in Action
+  - Popular in Adventure
+  - Popular in Animation
+  - Popular in Biography
+  - Popular in Comedy
+  - Popular in Drama
+  - Popular in Family
+  - Popular in Fantasy
+  - Popular in History
+  - Popular in Horror
+  - Popular in Music
+  - Popular in Musicals
+  - Popular in Mystery
+  - Popular in Romance
+  - Popular in Sci-Fi
+  - Popular in Thriller
+  - Popular in War
+  - Popular in Western
+
+- 6_genre_top.yml
+  - Top Rated in Action
+  - Top Rated in Adventure
+  - Top Rated in Animation
+  - Top Rated in Biography
+  - Top Rated in Comedy
+  - Top Rated in Drama
+  - Top Rated in Family
+  - Top Rated in Fantasy
+  - Top Rated in History
+  - Top Rated in Horror
+  - Top Rated in Music
+  - Top Rated in Musicals
+  - Top Rated in Mystery
+  - Top Rated in Romance
+  - Top Rated in Sci-Fi
+  - Top Rated in Thriller
+  - Top Rated in War
+  - Top Rated in Western
+
+- 7_subgenre_top.yml
+  - Top Rated in Absurdism
+  - Top Rated in Aliens
+  - Top Rated in Alternate History
+  - Top Rated in Anti-Hero
+  - Top Rated in Apocalypse
+  - Top Rated in Artifical Intelligence
+  - Top Rated in Assasins
+  - Top Rated in Betrayal
+  - Top Rated in Black Comedy
+  - Top Rated in Boxing
+  - Top Rated in Bugs
+  - Top Rated in Cannibals
+  - Top Rated in Caper
+  - Top Rated in Chick-Flick
+  - Top Rated in Comics
+  - Top Rated in Coming Of Age
+  - Top Rated in Con-Artists
+  - Top Rated in Cop
+  - Top Rated in Costume Drama
+  - Top Rated in Courtroom
+  - Top Rated in Cyberpunk
+  - Top Rated in Dark Fantasy
+  - Top Rated in Detective
+  - Top Rated in Distaster
+  - Top Rated in Dragons
+  - Top Rated in Dystopian
+  - Top Rated in Espionage
+  - Top Rated in Experimental
+  - Top Rated in Fairytale
+  - Top Rated in Found Footage
+  - Top Rated in Fugitives
+  - Top Rated in Gangster
+  - Top Rated in Ghosts
+  - Top Rated in Gothic
+  - Top Rated in Heartbreak
+  - Top Rated in Heists
+  - Top Rated in Historical Event
+  - Top Rated in Hostage
+  - Top Rated in Hustle
+  - Top Rated in Martial-Arts
+  - Top Rated in Medical
+  - Top Rated in Medieval
+  - Top Rated in Melodrama
+  - Top Rated in Military
+  - Top Rated in Mindfuck
+  - Top Rated in Mockmentary
+  - Top Rated in Monsters
+  - Top Rated in Mythology
+  - Top Rated in Naval
+  - Top Rated in Ninjas
+  - Top Rated in Novel
+  - Top Rated in Occult
+  - Top Rated in Outerspace
+  - Top Rated in Outlaw
+  - Top Rated in Pandemic
+  - Top Rated in Paranormal
+  - Top Rated in Period Drama
+  - Top Rated in Philosophical
+  - Top Rated in Political
+  - Top Rated in Post-Apocalyptic
+  - Top Rated in Prison
+  - Top Rated in Psychedlic
+  - Top Rated in Pyschological
+  - Top Rated in Religion
+  - Top Rated in Remake
+  - Top Rated in Revenge
+  - Top Rated in Robots
+  - Top Rated in Romantic Comedy
+  - Top Rated in Romantic Drama
+  - Top Rated in Satire
+  - Top Rated in Serial-Killers
+  - Top Rated in Slasher
+  - Top Rated in Space Opera
+  - Top Rated in Spaghetti-Western
+  - Top Rated in Splatter
+  - Top Rated in Steampunk
+  - Top Rated in Stoner
+  - Top Rated in Stop-Motion
+  - Top Rated in Superhero
+  - Top Rated in Supernatural
+  - Top Rated in Surrealism
+  - Top Rated in Survival
+  - Top Rated in Swashbuckler
+  - Top Rated in Sword & Sandal
+  - Top Rated in Sword & Sorcery
+  - Top Rated in Time Travel
+  - Top Rated in Treasure Hunt
+  - Top Rated in True Story
+  - Top Rated in Urban Fantasy
+  - Top Rated in Utopian
+  - Top Rated in Vampires
+  - Top Rated in Video Game
+  - Top Rated in Werewolves
+  - Top Rated in Whodunit
+  - Top Rated in Wizardry & Witchcraft
+  - Top Rated in World War
+  - Top Rated in Zombies
+
+- 8_seasonal.yml
+  - Valentine's Day Movies (02/13-02/15)
+  - St. Patrick's Day Movies (03/16-03-18)
+  - Easter Moviews (03/22-04/25)
+  - Halloween Movies (10/29-10/31)
+  - Thanksgiving Movies (11/22-11/25)
+  - Christmas Movies (12/01-12/31)
+  - New Year's Eve Movies (12/26-01-02)
+
+- 9_collections.yml
+  - TMDb Collections

@@ -1,0 +1,101 @@
+## 8_seasonal.yml
+
+templates:
+  seasonal:
+    sort_title: +2_<<collection_name>>
+    summary: "A timed collection of <<holiday>> movies and other movies that may relate to the holiday."
+    limit: 200
+    sync_mode: sync
+    collection_order: critic_rating.desc
+    visible_home: true
+    visible_shared: true
+    delete_not_scheduled: true
+    cache_builders: 4
+
+collections:
+  "Valentine's Day Movies":
+    file_poster: config/assets/seasonal/seasonal-valentines-day.png
+    schedule: range(02/10-02/14)
+    template: {
+                    name: seasonal,
+                    num: 5,
+                    holiday: "Valentine's Day",
+                    }
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398
+      - https://www.imdb.com/list/ls057783436
+      - https://www.imdb.com/list/ls064427905
+
+  "St. Patrick's Day Movies":
+    file_poster: config/assets/seasonal/seasonal-stpatricks.png
+    schedule: range(03/16-03/18)
+    template: {
+                    name: seasonal,
+                    num: 5,
+                    holiday: "St. Patrick's Day",
+                    }
+    imdb_list:
+      - https://www.imdb.com/list/ls063934595
+
+  "Easter Movies":
+    file_poster: config/assets/seasonal/seasonal-easter.png
+    schedule: range(03/22-04/25)
+    template: {
+                    name: seasonal,
+                    num: 5,
+                    holiday: "Easter",
+                    }
+    imdb_list:
+      - https://www.imdb.com/list/ls062665509/
+      - https://www.imdb.com/list/ls051733651/
+
+  "Halloween Movies":
+    file_poster: config/assets/seasonal/seasonal-halloween.png
+    schedule: range(10/29-10/31)
+    template: {
+                    name: seasonal,
+                    num: 5,
+                    holiday: "Halloween",
+                    }
+    imdb_list:
+      - https://www.imdb.com/list/ls023118929
+      - https://www.imdb.com/list/ls000099714
+      - https://www.imdb.com/list/ls000058693
+      - https://www.imdb.com/search/title/?genres=horror&keywords=haunted-house&sort=moviemeter,asc
+
+  "Thanksgiving Movies":
+    file_poster: config/assets/seasonal/seasonal-thanksgiving.png
+    schedule: range(11/22-11/25)
+    template: {
+                    name: seasonal,
+                    num: 5,
+                    holiday: "Thanksgiving",
+                    }
+    imdb_list:
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls091597850/
+
+  "Christmas Movies":
+    file_poster: config/assets/seasonal/seasonal-christmas.png
+    schedule: range(12/01-12/31)
+    template: {
+                    name: seasonal,
+                    num: 5,
+                    holiday: "Christmas",
+                    }
+    letterboxd_list: https://letterboxd.com/0xf5e3/list/theme-christmas/
+    imdb_list:
+      - https://www.imdb.com/list/ls000096828
+      - https://www.imdb.com/list/ls097394442
+      - https://www.imdb.com/list/ls068976997
+      - https://www.imdb.com/list/ls027567380
+
+  "New Year's Eve Movies":
+    file_poster: config/assets/seasonal/seasonal-new-year.png
+    schedule: range(12/26-01/02)
+    template: {
+                    name: seasonal,
+                    num: 5,
+                    holiday: "New Year's Eve",
+                    }
+    imdb_list: https://www.imdb.com/list/ls066838460

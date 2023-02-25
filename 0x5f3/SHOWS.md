@@ -1,0 +1,84 @@
+- 1_suggested.yml
+  - Random TV shows
+  - Trending TV shows
+  - Popular TV shows
+  - Top Rated TV shows
+  - Most Watched Daily
+  - Most Watched Weekly
+  - Most Watched Monthly
+  - Most Watched Yearly
+
+- 2_awards.yml
+  - Emmy Award Winners
+  - Emmy Award Nominees
+  - Golden Globes Winners
+  - Golden Globes Nominees
+  - BAFTA Winners
+  - Critics Choice Award Winners
+
+- 3_year_top.yml
+  - Top Rated of 2023
+  - Top Rated of 2022
+  - Top Rated of 2021
+  - Top Rated of 2020
+  - Top Rated of 2019
+  - Top Rated of 2018
+  - Top Rated of 2017
+  - Top Rated of 2016
+  - Top Rated of 2015
+  - Top Rated of 2014
+  - Top Rated of 2013
+  - Top Rated of 2012
+  - Top Rated of 2011
+  - Top Rated of 2010
+  
+- 4_decades_top.yml
+  - Top Rated of the 2020s
+  - Top Rated of the 2010s
+  - Top Rated of the 2000s
+  - Top Rated of the 1990s
+  - Top Rated of the 1980s
+  - Top Rated of the 1970s
+  - Top Rated of the 1960s
+  - Top Rated of the 1950s
+  - Top Rated of the 1940s
+
+- 5_genre_popular.yml
+  - Popular in Action
+  - Popular in Adventure
+  - Popular in Animation
+  - Popular in Biography
+  - Popular in Comedy
+  - Popular in Drama
+  - Popular in Family
+  - Popular in Fantasy
+  - Popular in History
+  - Popular in Horror
+  - Popular in Music
+  - Popular in Musicals
+  - Popular in Mystery
+  - Popular in Romance
+  - Popular in Sci-Fi
+  - Popular in Thriller
+  - Popular in War
+  - Popular in Western
+
+- 6_genre_top.yml
+  - Top Rated in Action
+  - Top Rated in Adventure
+  - Top Rated in Animation
+  - Top Rated in Biography
+  - Top Rated in Comedy
+  - Top Rated in Drama
+  - Top Rated in Family
+  - Top Rated in Fantasy
+  - Top Rated in History
+  - Top Rated in Horror
+  - Top Rated in Music
+  - Top Rated in Musicals
+  - Top Rated in Mystery
+  - Top Rated in Romance
+  - Top Rated in Sci-Fi
+  - Top Rated in Thriller
+  - Top Rated in War
+  - Top Rated in Western
