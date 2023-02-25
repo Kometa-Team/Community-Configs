@@ -1,0 +1,158 @@
+## 1_suggested.yml
+
+templates:
+  plex:
+    sort_title: "+1_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 4
+
+  trakt:
+    sort_title: "+1_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 4
+
+  imdb_popular:
+    sort_title: "+1_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 4
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=<<title_type>>&languages=<<languages>>&sort=moviemeter,asc
+      limit: 200
+
+  imdb_top:
+    sort_title: "+1_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 4
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=<<title_type>>&user_rating=<<user_rating>>&num_votes=<<votes>>,&languages=<<languages>>&sort=user_rating,desc&count=250
+      limit: 300
+
+collections:
+  "Random Movies":
+    summary: Random selection of movies
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/suggested/random.png
+    schedule: daily
+    template: {
+                    name: plex,
+                    num: 0
+                    }
+    smart_filter:
+      all:
+        rating.gte: 4
+      sort_by: random
+      limit: 250
+
+  "Trending Movies":
+    summary: Movies trending across the internet
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/suggested/trending.png
+    #radarr_add_missing: true
+    schedule: daily
+    template: {
+                    name: trakt,
+                    num: 1
+                    }
+    trakt_chart:
+      chart: trending
+      time_period: daily
+      limit: 50
+
+  "Popular Movies":
+    summary: Popular movies across the internet
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/suggested/popular.png
+    schedule: daily
+    template: {
+                    name: imdb_popular,
+                    num: 2,
+                    title_type: "feature",
+                    languages: "en",
+                    }
+    limit: 100
+
+  "Top Rated Movies":
+    summary: Top rated movies across the internet
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/suggested/top-rated.png
+    schedule: daily
+    template: {
+                    name: imdb_top,
+                    num: 3,
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+    limit: 200
+
+  "Most Watched Daily":
+    summary: Movies trending across the internet
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/suggested/most-watched-daily.png
+    schedule: daily
+    template: {
+                    name: trakt,
+                    num: 6
+                    }
+    trakt_chart:
+      chart: watched
+      time_period: daily
+      limit: 50
+
+  "Most Watched Weekly":
+    summary: Movies trending across the internet
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/suggested/most-watched-weekly.png
+    schedule: daily
+    template: {
+                    name: trakt,
+                    num: 7
+                    }
+    trakt_chart:
+      chart: watched
+      time_period: weekly
+      limit: 50
+
+  "Most Watched Monthly":
+    summary: Movies trending across the internet
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/suggested/most-watched-monthly.png
+    schedule: weekly(sunday)
+    template: {
+                    name: trakt,
+                    num: 8
+                    }
+    trakt_chart:
+      chart: watched
+      time_period: monthly
+      limit: 75
+
+  "Most Watched Yearly":
+    summary: Movies trending across the internet
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/suggested/most-watched-yearly.png
+    schedule: weekly(sunday)
+    template: {
+                    name: trakt,
+                    num: 9
+                    }
+    trakt_chart:
+      chart: watched
+      time_period: yearly
+      limit: 100
