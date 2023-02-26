@@ -914,6 +914,21 @@ collections:
                     letterboxd_list: "theme-post-apocalyptic"
                     }
 
+  "Top Rated in Prehistoric":
+    summary: "Top rated movies in Prehistoric"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/subgenre/top-rated-subgenre-prehistoric.png
+    template: {
+                    name: sub_genre,
+                    keywords: "prehistoric-times",
+                    genres: "",
+                    title_type: "feature,tv_movie",
+                    user_rating: "2.0,10.0",
+                    votes: "1000,",
+                    languages: "en",
+                    letterboxd_list: "theme-prehistoric",
+                    letterboxd_extra_1: "https://letterboxd.com/mikkelhh/list/before-civilization-prehistoric-films/"
+                    }
+
   "Top Rated in Prison":
     summary: "Top rated movies in Prison"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/subgenre/top-rated-subgenre-prison.png
@@ -1047,6 +1062,21 @@ collections:
     filters:
      genre: Drama
      year.gte: 1960
+
+  "Top Rated in Samurai":
+    summary: "Top rated movies in Samurai"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/subgenre/top-rated-subgenre-samurai.png
+    template: {
+                    name: sub_genre,
+                    keywords: "samurai,sword-fight",
+                    genres: "",
+                    title_type: "feature,tv_movie",
+                    user_rating: "2.0,10.0",
+                    votes: "100,",
+                    languages: "en",
+                    letterboxd_list: "theme-samurai",
+                    letterboxd_extra_1: "https://letterboxd.com/jhcrotinger/list/samurai/"
+                    }
 
   "Top Rated in Satire":
     summary: "Top rated movies in Satire"
