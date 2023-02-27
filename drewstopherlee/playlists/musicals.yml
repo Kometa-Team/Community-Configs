@@ -1,0 +1,13 @@
+#############################################################
+#                                                           #
+#                         Musicals                          #
+#                                                           #
+#############################################################
+
+playlists:
+  Musicals:
+    libraries: Movies
+    sync_mode: sync
+    sync_to_users: all
+    imdb_list: 
+      - https://www.imdb.com/search/title/?title_type=feature&num_votes=1500,&genres=musical

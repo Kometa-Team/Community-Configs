@@ -1,0 +1,167 @@
+## 4_awards.yml
+
+templates:
+  imdb:
+    sort_title: "+4_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release.desc
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 6
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=<<title_type>>&groups=<<groups>>&languages=<<languages>>&sort=release_date,desc
+      limit: 350
+
+  letterboxd:
+    optional:
+      - letterboxd_extra_1
+      - letterboxd_extra_2
+      - letterboxd_extra_3
+      - letterboxd_extra_4
+      - letterboxd_extra_5
+    sort_title: "+4_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_order: release.desc
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 6
+    letterboxd_list:
+      url: https://letterboxd.com/<<user>>/list/<<list>>/by/<<sort>>
+      limit: 350
+
+collections:
+  "Oscar Winners":
+    summary: "A collection of Oscar Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-oscars-winners.png
+    schedule: weekly(monday)
+    template: {
+                    name: imdb,
+                    num: 0,
+                    groups: "oscar_winner",
+                    title_type: "feature",
+                    languages: "en"
+                    }
+    limit: 120
+
+  "Oscar Nominees":
+    summary: "A collection of Oscar Nominees"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-oscars-nominees.png
+    schedule: weekly(monday)
+    template: {
+                    name: imdb,
+                    num: 1,
+                    groups: "oscar_nominee",
+                    title_type: "feature",
+                    languages: "en"
+                    }
+    limit: 250
+
+  "Golden Globes Winners":
+    summary: "A collection of Golden Globes Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-goldenglobes-winners.png
+    schedule: weekly(monday)
+    template: {
+                    name: imdb,
+                    num: 2,
+                    groups: "golden_globe_winner",
+                    title_type: "feature",
+                    languages: "en"
+                    }
+    limit: 120
+
+  "Golden Globes Nominees":
+    summary: "A collection of Golden Globes Nominees"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-goldenglobes-nominees.png
+    schedule: weekly(monday)
+    template: {
+                    name: imdb,
+                    num: 3,
+                    groups: "golden_globe_nominee",
+                    title_type: "feature",
+                    languages: "en"
+                    }
+    limit: 250
+
+  "BAFTA Winners":
+    summary: "A collection of BAFTA Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-bafta-winners.png
+    schedule: weekly(monday)
+    template: {
+                    name: letterboxd,
+                    num: 4,
+                    user: "kevinct92",
+                    list: "all-bafta-award-winners-best-british-film",
+                    sort: "release"
+                    }
+    limit: 250
+
+  "Berlinale Winners":
+    summary: "A collection of Berlinale Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-berlinale-winners.png
+    schedule: weekly(monday)
+    template: {
+                    name: letterboxd,
+                    num: 5,
+                    user: "koyoti",
+                    list: "berlinale-golden-bear-winners",
+                    sort: "release"
+                    }
+    limit: 250
+
+  "Cannes Film Festival Winners":
+    summary: "A collection of Cannes Film Festival Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-cannes-winners.png
+    schedule: weekly(monday)
+    template: {
+                    name: letterboxd,
+                    num: 6,
+                    user: "moviewithus",
+                    list: "cannes-winners",
+                    sort: "release"
+                    }
+    limit: 250
+
+  "European Film Award Winners":
+    summary: "A collection of European Film Award Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-european-winners.png
+    schedule: weekly(monday)
+    template: {
+                    name: letterboxd,
+                    num: 7,
+                    user: "ra_pha",
+                    list: "european-film-awards",
+                    sort: "release"
+                    }
+    limit: 250
+
+  "Sundance Winners":
+    summary: "A collection of Sundance Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-sundance-winners.png
+    schedule: weekly(monday)
+    template: {
+                    name: letterboxd,
+                    num: 8,
+                    user: "glicose",
+                    list: "winners-of-sundance",
+                    sort: "release"
+                    }
+    limit: 250
+
+  "Venice Film Festival Winners":
+    summary: "A collection of Venice Film Festival Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-venice-winners.png
+    schedule: weekly(monday)
+    template: {
+                    name: letterboxd,
+                    num: 9,
+                    user: "glicose",
+                    list: "winners-of-sundance",
+                    sort: "release"
+                    }
+    limit: 250

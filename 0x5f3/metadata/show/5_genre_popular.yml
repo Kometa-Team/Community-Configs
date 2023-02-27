@@ -1,0 +1,227 @@
+## 5_genre_popular.yml
+
+templates:
+  popular:
+    sort_title: "+5: <<collection_name>>"
+    limit: 50
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 6
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=<<title_type>>&genres=<<genres>>&languages=<<languages>>&sort=moviemeter,asc
+      limit: 250
+
+collections:
+  "Popular in Action":
+    summary: "Popular shows in Action"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-action.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "action",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Adventure":
+    summary: "Popular shows in Adventure"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-adventure.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "adventure",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Animation":
+    summary: "Popular shows in Animation"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-animation.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "animation",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Biography":
+    summary: "Popular shows in Biography"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-biography.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "biography",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Comedy":
+    summary: "Popular shows in Comedy"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-comedy.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "comedy",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Crime":
+    summary: "Popular shows in Crime"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-crime.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "crime",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Drama":
+    summary: "Popular shows in Drama"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-drama.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "drama",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Family":
+    summary: "Popular shows in Family"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-family.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "family",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Fantasy":
+    summary: "Popular shows in Fantasy"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-fantasy.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "fantasy",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in History":
+    summary: "Popular shows in History"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-history.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "history",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Horror":
+    summary: "Popular shows in Horror"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-horror.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "horror",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Music":
+    summary: "Popular shows in Music"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-music.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "music",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Musicals":
+    summary: "Popular shows in Musicals"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-musicals.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "musicals",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Mystery":
+    summary: "Popular shows in Mystery"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-mystery.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "mystery",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Romance":
+    summary: "Popular shows in Romance"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-romance.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "romance",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Sci-Fi":
+    summary: "Popular shows in Sci-Fi"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-sci-fi.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "sci-fi",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Thriller":
+    summary: "Popular shows in Thriller"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-thriller.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "thriller",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in War":
+    summary: "Popular shows in War"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-war.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "war",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }
+
+  "Popular in Western":
+    summary: "Popular shows in Western"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/popular-genre-western.png
+    schedule: daily
+    template: {
+                    name: popular,
+                    genres: "western",
+                    title_type: "tv_series,tv_special,tv_miniseries",
+                    languages: "en",
+                    }

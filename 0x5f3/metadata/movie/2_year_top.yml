@@ -1,0 +1,214 @@
+## 2_year_top.yml
+
+templates:
+  year:
+    sort_title: "+2_<<num>>_<<collection_name>>"
+    limit: 150
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 6
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=<<title_type>>&release_date=<<release_date>>&user_rating=<<user_rating>>&num_votes=<<votes>>,&languages=<<languages>>&user_rating,desc&count=250
+      limit: 250
+
+collections:
+  "Top Rated of 2023":
+    summary: "Top rated movies in 2023"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2023.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "M",
+                    release_date: "2023-01-01,2023-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2022":
+    summary: "Top rated movies in 2022"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2022.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "N",
+                    release_date: "2022-01-01,2022-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2021":
+    summary: "Top rated movies in 2021"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2021.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: O,
+                    release_date: "2021-01-01,2021-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2020":
+    summary: "Top rated movies in 2020"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2020.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "P",
+                    release_date: "2020-01-01,2020-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2019":
+    summary: "Top rated movies in 2019"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2019.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "Q",
+                    release_date: "2019-01-01,2019-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2018":
+    summary: "Top rated movies in 2018"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2018.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "R",
+                    release_date: "2018-01-01,2018-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2017":
+    summary: "Top rated movies in 2017"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2017.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "S",
+                    release_date: "2017-01-01,2017-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2016":
+    summary: "Top rated movies in 2016"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2016.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "T",
+                    release_date: "2016-01-01,2016-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2015":
+    summary: "Top rated movies in 2015"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2015.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "U",
+                    release_date: "2015-01-01,2015-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2014":
+    summary: "Top rated movies in 2014"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2014.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "V",
+                    release_date: "2014-01-01,2014-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2013":
+    summary: "Top rated movies in 2013"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2013.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "W",
+                    release_date: "2013-01-01,2013-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2012":
+    summary: "Top rated movies in 2012"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2012.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "X",
+                    release_date: "2012-01-01,2012-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2011":
+    summary: "Top rated movies in 2011"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2011.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "Y",
+                    release_date: "2011-01-01,2011-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
+
+  "Top Rated of 2010":
+    summary: "Top rated movies in 2010"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/year/top-rated-year-2010.png
+    schedule: weekly(tuesday)
+    template: {
+                    name: year,
+                    num: "Z",
+                    release_date: "2010-01-01,2010-12-31",
+                    title_type: "feature,tv_movie",
+                    user_rating: "5.0,10.0",
+                    votes: "10000,",
+                    languages: "en"
+                    }
