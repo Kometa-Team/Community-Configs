@@ -1,0 +1,169 @@
+templates:
+  Person:
+    smart_filter:
+      any:
+        actor: tmdb
+        director: tmdb
+        writer: tmdb
+      sort_by: release.desc
+      validate: false
+    tmdb_person: <<person>>
+    sort_title: +05<<collection_name>>
+    url_poster: <<poster>>
+    schedule: weekly(saturday)
+
+collections:
+  Adam Sandler:
+    template: { name: Person, person: 19292, poster: "https://theposterdb.com/api/assets/48847" }
+  Al Pacino:
+    template: { name: Person, person: 1158, poster: "https://theposterdb.com/api/assets/48841" }
+  Arnold Schwarzenegger:
+    template: { name: Person, person: 1100, poster: "https://theposterdb.com/api/assets/48848" }
+  Ben Stiller:
+    template: { name: Person, person: 7399, poster: "https://theposterdb.com/api/assets/85485" }
+  Bill Murray:
+    template: { name: Person, person: 1532, poster: "https://theposterdb.com/api/assets/175693" }
+  Bill Paxton:
+    template: { name: Person, person: 2053, poster: "https://theposterdb.com/api/assets/253834" }
+  Billy Crystal:
+    template: { name: Person, person: 7904, poster: "https://theposterdb.com/api/assets/253843" }
+  Brad Pitt:
+    template: { name: Person, person: 287, poster: "https://theposterdb.com/api/assets/48833" }
+  Bradley Cooper:
+    template: { name: Person, person: 51329, poster: "https://theposterdb.com/api/assets/88299" }
+  Brendan Fraser:
+    template: { name: Person, person: 18269, poster: "https://theposterdb.com/api/assets/254569" }
+  Bruce Willis:
+    template: { name: Person, person: 62, poster: "https://theposterdb.com/api/assets/83897" }
+  Cameron Diaz:
+    template: { name: Person, person: 6941, poster: "https://theposterdb.com/api/assets/85544" }
+  Cate Blanchett:
+    template: { name: Person, person: 112, poster: "https://theposterdb.com/api/assets/89007" }
+  Charlize Theron:
+    template: { name: Person, person: 6885, poster: "https://theposterdb.com/api/assets/85506" }
+  Chevy Chase:
+    template: { name: Person, person: 54812, poster: "https://theposterdb.com/api/assets/242242" }
+  Christian Bale:
+    template: { name: Person, person: 3894, poster: "https://theposterdb.com/api/assets/48856" }
+  Christopher Nolan:
+    template: { name: Person, person: 525, poster: "https://theposterdb.com/api/assets/48642" }
+  Christopher Walken:
+    template: { name: Person, person: 4690, poster: "https://theposterdb.com/api/assets/89008" }
+  Coen Brothers:
+    template: { name: Person, person: "1224, 1223", poster: "https://theposterdb.com/api/assets/83895" }
+  Daniel Day-Lewis:
+    template: { name: Person, person: 11856, poster: "https://theposterdb.com/api/assets/48648" }
+  Darren Aronofsky:
+    template: { name: Person, person: 6431, poster: "https://theposterdb.com/api/assets/87921" }
+  Dave Bautista:
+    template: { name: Person, person: 543530, poster: "https://theposterdb.com/api/assets/323687" }
+  Denzel Washington:
+    template: { name: Person, person: 5292, poster: "https://theposterdb.com/api/assets/87928" }
+  Dwayne Johnson:
+    template: { name: Person, person: 18918, poster: "https://theposterdb.com/api/assets/50026" }
+  Eddie Murphy:
+    template: { name: Person, person: 776, poster: "https://theposterdb.com/api/assets/89015" }
+  Elvis Presley:
+    template: { name: Person, person: 16130, poster: "https://theposterdb.com/api/assets/245547" }
+  Emma Stone:
+    template: { name: Person, person: 54693, poster: "https://theposterdb.com/api/assets/85488" }
+  Gary Oldman:
+    template: { name: Person, person: 64, poster: "https://theposterdb.com/api/assets/48647" }
+  Harrison Ford:
+    template: { name: Person, person: 3, poster: "https://theposterdb.com/api/assets/83898" }
+  Jack Black:
+    template: { name: Person, person: 70851, poster: "https://theposterdb.com/api/assets/48844" }
+  Jack Nicholson:
+    template: { name: Person, person: 141, poster: "https://theposterdb.com/api/assets/181905" }
+  Jake Gyllenhaal:
+    template: { name: Person, person: 131, poster: "https://theposterdb.com/api/assets/50033" }
+  Jason Statham:
+    template: { name: Person, person: 976, poster: "https://theposterdb.com/api/assets/50028" }
+  Jennifer Aniston:
+    template: { name: Person, person: 4491, poster: "https://theposterdb.com/api/assets/91819" }
+  Jim Carrey:
+    template: { name: Person, person: 206, poster: "https://theposterdb.com/api/assets/85453" }
+  John Candy:
+    template: { name: Person, person: 7180, poster: "https://theposterdb.com/api/assets/89025" }
+  John Goodman:
+    template: { name: Person, person: 1230, poster: "https://theposterdb.com/api/assets/254750" }
+  John Hughes:
+    template: { name: Person, person: 11505, poster: "https://theposterdb.com/api/assets/83928" }
+  John Wayne:
+    template: { name: Person, person: 4165, poster: "https://theposterdb.com/api/assets/174646" }
+  Johnny Depp:
+    template: { name: Person, person: 85, poster: "https://theposterdb.com/api/assets/92273" }
+  Julia Roberts:
+    template: { name: Person, person: 1204, poster: "https://theposterdb.com/api/assets/85546" }
+  Kate Hudson:
+    template: { name: Person, person: 11661, poster: "https://theposterdb.com/api/assets/292658" }
+  Keanu Reeves:
+    template: { name: Person, person: 6384, poster: "https://theposterdb.com/api/assets/48857" }
+  Kevin Costner:
+    template: { name: Person, person: 1269, poster: "https://theposterdb.com/api/assets/83983" }
+  Leonardo DiCaprio:
+    template: { name: Person, person: 6193, poster: "https://theposterdb.com/api/assets/48645" }
+  Liam Neeson:
+    template: { name: Person, person: 3896, poster: "https://theposterdb.com/api/assets/48850" }
+  Matt Damon:
+    template: { name: Person, person: 1892, poster: "https://theposterdb.com/api/assets/48855" }
+  Matthew McConaughey:
+    template: { name: Person, person: 10297, poster: "https://theposterdb.com/api/assets/204915" }
+  Mel Gibson:
+    template: { name: Person, person: 2461, poster: "https://theposterdb.com/api/assets/83900" }
+  Meryl Streep:
+    template: { name: Person, person: 5064, poster: "https://theposterdb.com/api/assets/48650" }
+  Michael Caine:
+    template: { name: Person, person: 3895, poster: "https://theposterdb.com/api/assets/204914" }
+  Morgan Freeman:
+    template: { name: Person, person: 192, poster: "https://theposterdb.com/api/assets/86939" }
+  Natalie Portman:
+    template: { name: Person, person: 524, poster: "https://theposterdb.com/api/assets/48649" }
+  Owen Wilson:
+    template: { name: Person, person: 887, poster: "https://theposterdb.com/api/assets/244464" }
+  Quentin Tarantino:
+    template: { name: Person, person: 138, poster: "https://theposterdb.com/api/assets/50030" }
+  Rachel Weisz:
+    template: { name: Person, person: 3293, poster: "https://theposterdb.com/api/assets/289168" }
+  Ridley Scott:
+    template: { name: Person, person: 578, poster: "https://theposterdb.com/api/assets/83965" }
+  Robert De Niro:
+    template: { name: Person, person: 380, poster: "https://theposterdb.com/api/assets/48836" }
+  Robert Downey Jr:
+    template: { name: Person, person: 3223, poster: "https://theposterdb.com/api/assets/50035" }
+  Robin Williams:
+    template: { name: Person, person: 2157, poster: "https://theposterdb.com/api/assets/50169" }
+  Ryan Gosling:
+    template: { name: Person, person: 30614, poster: "https://theposterdb.com/api/assets/88304" }
+  Ryan Reynolds:
+    template: { name: Person, person: 10859, poster: "https://theposterdb.com/api/assets/50032" }
+  Samuel L. Jackson:
+    template: { name: Person, person: 2231, poster: "https://theposterdb.com/api/assets/50043" }
+  Sandra Bullock:
+    template: { name: Person, person: 18277, poster: "https://theposterdb.com/api/assets/48849" }
+  Scarlett Johansson:
+    template: { name: Person, person: 1245, poster: "https://theposterdb.com/api/assets/50039" }
+  Sean Connery:
+    template: { name: Person, person: 738, poster: "https://theposterdb.com/api/assets/85482" }
+  Sigourney Weaver:
+    template: { name: Person, person: 10205, poster: "https://theposterdb.com/api/assets/92288" }
+  Steve Carell:
+    template: { name: Person, person: 4495, poster: "https://theposterdb.com/api/assets/48851" }
+  Steve Martin:
+    template: { name: Person, person: 67773, poster: "https://theposterdb.com/api/assets/89021" }
+  Stephen King:
+    template: { name: Person, person: 3027, poster: "https://theposterdb.com/api/assets/48864" }
+  Steven Spielberg:
+    template: { name: Person, person: 488, poster: "https://theposterdb.com/api/assets/48640" }
+  Steven Seagal:
+    template: { name: Person, person: 23880, poster: "https://theposterdb.com/api/assets/92286" }
+  Timothy Olyphant:
+    template: { name: Person, person: 18082, poster: "https://theposterdb.com/api/assets/258207" }
+  Tom Cruise:
+    template: { name: Person, person: 500, poster: "https://theposterdb.com/api/assets/48846" }
+  Tom Hanks:
+    template: { name: Person, person: 31, poster: "https://theposterdb.com/api/assets/48644" }
+  Wes Anderson:
+    template: { name: Person, person: 5655, poster: "https://theposterdb.com/api/assets/48692" }
+  Will Ferrell:
+    template: { name: Person, person: 23659, poster: "https://theposterdb.com/api/assets/48845" }
