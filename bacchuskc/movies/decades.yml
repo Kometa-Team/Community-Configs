@@ -1,0 +1,66 @@
+collections:
+  Best of 1970s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature&release_date=1970-01-01,1979-12-31&countries=!in,!bd&num_votes=10000,&sort=user_rating,desc
+      limit: 300
+    url_poster: https://i.imgur.com/GZcR8rJ.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07Best1970
+    sync_mode: append
+    collection_order: custom
+    schedule: weekly(thursday)
+
+  Best of 1980s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature&release_date=1980-01-01,1989-12-31&countries=!in,!bd&num_votes=10000,&sort=user_rating,desc
+      limit: 300
+    url_poster: https://i.imgur.com/FK6ru1R.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07Best1980
+    sync_mode: append
+    collection_order: custom
+    schedule: weekly(thursday)
+
+  Best of 1990s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature&release_date=1990-01-01,1999-12-31&countries=!in,!bd&num_votes=10000,&sort=user_rating,desc
+      limit: 300
+    url_poster: https://i.imgur.com/pZJdBSW.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07Best1990
+    sync_mode: append
+    collection_order: custom
+    schedule: weekly(thursday)
+
+  Best of 2000s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature&release_date=2000-01-01,2009-12-31&countries=!in,!bd&num_votes=10000,&sort=user_rating,desc
+      limit: 300
+    url_poster: https://i.imgur.com/VquakZx.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07Best2000
+    sync_mode: append
+    collection_order: custom
+    schedule: weekly(thursday)
+
+  Best of 2010s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature&release_date=2010-01-01,2019-12-31&countries=!in,!bd&num_votes=10000,&sort=user_rating,desc
+      limit: 300
+    url_poster: https://i.imgur.com/NEPK2kG.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07Best2010
+    sync_mode: append
+    collection_order: custom
+    schedule: weekly(thursday)
+
+  Best of 2020s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature&release_date=2020-01-01,2029-12-31&countries=!in,!bd&num_votes=10000,&sort=user_rating,desc
+      limit: 300
+    url_poster: https://i.imgur.com/YWTD1gJ.jpg
+    url_background: https://wallpapercave.com/wp/wp4016022.jpg
+    sort_title: +07Best2020
+    sync_mode: append
+    collection_order: custom
+    schedule: weekly(thursday)
