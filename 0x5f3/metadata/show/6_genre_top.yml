@@ -18,7 +18,7 @@ templates:
 
 collections:
   "Top Rated in Action":
-    summary: "Top rated movies in Action"
+    summary: "Top rated TV shows in Action"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-action.png
     schedule: weekly(thursday)
     template: {
@@ -31,7 +31,7 @@ collections:
                     }
 
   "Top Rated in Adventure":
-    summary: "Top rated movies in Adventure"
+    summary: "Top rated TV shows in Adventure"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-adventure.png
     schedule: weekly(thursday)
     template: {
@@ -44,7 +44,7 @@ collections:
                     }
 
   "Top Rated in Animation":
-    summary: "Top rated movies in Animation"
+    summary: "Top rated TV shows in Animation"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-animation.png
     schedule: weekly(thursday)
     template: {
@@ -57,7 +57,7 @@ collections:
                     }
 
   "Top Rated in Biography":
-    summary: "Top rated movies in Biography"
+    summary: "Top rated TV shows in Biography"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-biography.png
     schedule: weekly(thursday)
     template: {
@@ -70,7 +70,7 @@ collections:
                     }
 
   "Top Rated in Comedy":
-    summary: "Top rated movies in Comedy"
+    summary: "Top rated TV shows in Comedy"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-comedy.png
     schedule: weekly(thursday)
     template: {
@@ -83,7 +83,7 @@ collections:
                     }
 
   "Top Rated in Crime":
-    summary: "Top rated movies in Crime"
+    summary: "Top rated TV shows in Crime"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-crime.png
     schedule: weekly(thursday)
     template: {
@@ -96,7 +96,7 @@ collections:
                     }
 
   "Top Rated in Drama":
-    summary: "Top rated movies in Drama"
+    summary: "Top rated TV shows in Drama"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-drama.png
     schedule: weekly(thursday)
     template: {
@@ -109,7 +109,7 @@ collections:
                     }
 
   "Top Rated in Family":
-    summary: "Top rated movies in Family"
+    summary: "Top rated TV shows in Family"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-family.png
     schedule: weekly(thursday)
     template: {
@@ -122,7 +122,7 @@ collections:
                     }
 
   "Top Rated in Fantasy":
-    summary: "Top rated movies in Fantasy"
+    summary: "Top rated TV shows in Fantasy"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-fantasy.png
     schedule: weekly(thursday)
     template: {
@@ -135,7 +135,7 @@ collections:
                     }
 
   "Top Rated in History":
-    summary: "Top rated movies in History"
+    summary: "Top rated TV shows in History"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-history.png
     schedule: weekly(thursday)
     template: {
@@ -148,7 +148,7 @@ collections:
                     }
 
   "Top Rated in Horror":
-    summary: "Top rated movies in Horror"
+    summary: "Top rated TV shows in Horror"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-horror.png
     schedule: weekly(thursday)
     template: {
@@ -161,7 +161,7 @@ collections:
                     }
 
   "Top Rated in Music":
-    summary: "Top rated movies in Music"
+    summary: "Top rated TV shows in Music"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-music.png
     schedule: weekly(thursday)
     template: {
@@ -174,7 +174,7 @@ collections:
                     }
 
   "Top Rated in Musicals":
-    summary: "Top rated movies in Musicals"
+    summary: "Top rated TV shows in Musicals"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-musicals.png
     schedule: weekly(thursday)
     template: {
@@ -187,7 +187,7 @@ collections:
                     }
 
   "Top Rated in Mystery":
-    summary: "Top rated movies in Mystery"
+    summary: "Top rated TV shows in Mystery"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-mystery.png
     schedule: weekly(thursday)
     template: {
@@ -200,7 +200,7 @@ collections:
                     }
 
   "Top Rated in Romance":
-    summary: "Top rated movies in Romance"
+    summary: "Top rated TV shows in Romance"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-romance.png
     schedule: weekly(thursday)
     template: {
@@ -213,7 +213,7 @@ collections:
                     }
 
   "Top Rated in Sci-Fi":
-    summary: "Top rated movies in Sci-Fi"
+    summary: "Top rated TV shows in Sci-Fi"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-sci-fi.png
     schedule: weekly(thursday)
     template: {
@@ -226,7 +226,7 @@ collections:
                     }
 
   "Top Rated in Thriller":
-    summary: "Top rated movies in Thriller"
+    summary: "Top rated TV shows in Thriller"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-thriller.png
     schedule: weekly(thursday)
     template: {
@@ -239,7 +239,7 @@ collections:
                     }
 
   "Top Rated in War":
-    summary: "Top rated movies in War"
+    summary: "Top rated TV shows in War"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-war.png
     schedule: weekly(thursday)
     template: {
@@ -252,7 +252,7 @@ collections:
                     }
 
   "Top Rated in Western":
-    summary: "Top rated movies in Western"
+    summary: "Top rated TV shows in Western"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/genre/top-rated-genre-western.png
     schedule: weekly(thursday)
     template: {

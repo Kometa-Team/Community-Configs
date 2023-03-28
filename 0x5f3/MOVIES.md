@@ -8,6 +8,21 @@
   - Most Watched Monthly
   - Most Watched Yearly
 
+- 1_seasonal.yml
+  - Valentine's Day Movies (02/13-02/15)
+  - St. Patrick's Day Movies (03/16-03-18)
+  - Easter Moviews (03/22-04/25)
+  - Halloween Movies (10/29-10/31)
+  - Thanksgiving Movies (11/22-11/25)
+  - Christmas Movies (12/01-12/31)
+  - New Year's Eve Movies (12/26-01-02)
+
+- 1_parental.yml
+  - Parental: All
+  - Parental: Recently Added
+  - Parental: Random
+  - Parental: Top-Rated
+
 - 2_awards.yml
   - Oscar Winners
   - Oscar Nominees
@@ -114,6 +129,7 @@
   - Top Rated in Distaster
   - Top Rated in Dragons
   - Top Rated in Dystopian
+  - Top Rated in Epics
   - Top Rated in Espionage
   - Top Rated in Experimental
   - Top Rated in Fairytale
@@ -185,15 +201,6 @@
   - Top Rated in Wizardry & Witchcraft
   - Top Rated in World War
   - Top Rated in Zombies
-
-- 8_seasonal.yml
-  - Valentine's Day Movies (02/13-02/15)
-  - St. Patrick's Day Movies (03/16-03-18)
-  - Easter Moviews (03/22-04/25)
-  - Halloween Movies (10/29-10/31)
-  - Thanksgiving Movies (11/22-11/25)
-  - Christmas Movies (12/01-12/31)
-  - New Year's Eve Movies (12/26-01-02)
 
 - 9_collections.yml
   - TMDb Collections
