@@ -13,6 +13,9 @@ templates:
     sort_title: <<collection_name>>
 collections:
 
+  "Enchanted":
+    template: {name: Set, collection: 531799, poster: https://theposterdb.com/api/assets/288102 }
+
   "Hocus Pocus":
     template: {name: Set, collection: 751156, poster: https://theposterdb.com/api/assets/270264 }
 

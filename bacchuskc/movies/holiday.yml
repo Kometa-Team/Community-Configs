@@ -1,0 +1,102 @@
+templates:
+  Holiday:
+    optional:
+      - poster
+    smart_label: release.asc
+    summary: |-
+      A timed collection of <<collection_name>> and other movies that may relate to the holiday.
+
+      NOTE: this collection will only be around until <<end_date>>.
+    sort_title: +02<<collection_name>>
+    schedule: range(<<start_date>>-<<end_date>>)
+    delete_not_scheduled: true
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+    url_poster: <<poster>>
+
+collections:
+  Valentine's Day Movies:
+    template:
+      name: Holiday
+      start_date: 02/01
+      end_date: 02/21
+      poster: https://theposterdb.com/api/assets/212641
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+  Easter Movies:
+    template:
+      name: Holiday
+      start_date: 04/01
+      end_date: 04/15
+      poster: https://theposterdb.com/api/assets/60971
+    imdb_list:
+      - https://www.imdb.com/list/ls051733651/
+      - https://www.imdb.com/list/ls062665509/
+      - https://www.imdb.com/list/ls058114657/
+      - https://www.imdb.com/list/ls051716840/
+  Thanksgiving Movies:
+    template:
+      name: Holiday
+      start_date: 11/02
+      end_date: 11/30
+      poster: https://theposterdb.com/api/assets/166173
+    imdb_list:
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls091597850/
+  Halloween Movies:
+    template:
+      name: Holiday
+      start_date: 10/01
+      end_date: 11/04
+      poster: https://theposterdb.com/api/assets/123335
+    imdb_list:
+      - https://www.imdb.com/list/ls000099714/
+    tmdb_collection:
+      - 91361    # Halloween Collection
+      - 8581     # A Nightmare on Elm Street Collection
+      - 1733     # The Mummy Collection
+      - 8091     # Alien Collection
+    tmdb_list:
+      - 1599     # Mixed list
+      - 92111    # Halloween Collection
+      - 36520    # Friday the 13th
+    tmdb_movie:
+      - 23437    # A Nightmare on Elm Street (2010)
+  Christmas Movies:
+    template:
+      name: Holiday
+      start_date: 11/24
+      end_date: 12/31
+      poster: https://theposterdb.com/api/assets/110732
+    imdb_list:
+      - https://www.imdb.com/list/ls000096828/
+      - https://www.imdb.com/list/ls025976544/
+    tmdb_list:
+      - 7411
+  New Year's Day Movies:
+    template:
+      name: Holiday
+      start_date: 12/26
+      end_date: 01/04
+      poster: https://d1csarkz8obe9u.cloudfront.net/posterpreviews/happy-new-year-poster-design-template-8323cccee37256190c68f4d938c31c82_screen.jpg?ts=1640281416
+    imdb_list: https://www.imdb.com/list/ls066838460/
+  Fourth of July Movies:
+    template:
+      name: Holiday
+      start_date: 06/22
+      end_date: 07/10
+      poster: https://i.imgur.com/KiwR2s1.jpg
+    imdb_list:
+      - https://www.imdb.com/list/ls000858190/
+      - https://www.imdb.com/list/ls080425823/
+  Memorial Day Movies:
+    template:
+      name: Holiday
+      start_date: 05/22
+      end_date: 06/02
+      poster: https://i.imgur.com/T5Vontt.png
+    imdb_list:
+      - https://www.imdb.com/list/ls565595526/

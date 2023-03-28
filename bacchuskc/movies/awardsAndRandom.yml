@@ -1,0 +1,90 @@
+collections:
+  Mindfuck Movies:
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/mindfuck-movies
+      - https://trakt.tv/users/benfranklin/lists/best-mindfucks
+    smart_label: audience_rating.desc
+    sync_mode: append
+    sort_title: +03Mindfuck Movies
+    summary: Movies to leave your mind, well, fucked. Sorted by critical acclaim.
+    url_poster: https://i.imgur.com/Tl6QMgA.png
+    url_background: https://i.imgur.com/DM1Im1X.jpeg
+    schedule: weekly(monday)
+
+  Nostalgia Collection:
+    trakt_list: https://trakt.tv/users/hdlists/lists/nostalgiac-movies-from-the-80s-90s
+    sync_mode: append
+    smart_label: audience_rating.desc
+    sort_title: +03Nostalgia Collection
+    summary: All The Nostalgiac Movies From The 80s & 90s in One Collection, sorted by critical acclaim.
+    url_poster: https://i.imgur.com/vE8dsdd.jpg
+    url_background: https://i.imgur.com/frz0kly.jpg
+    schedule: weekly(tuesday)
+
+  Trending:
+    trakt_trending: 100
+    tmdb_trending_daily: 100
+    sort_title: +01_1Trending
+    sync_mode: sync
+    smart_label: random
+    summary: A collection of movies trending across the internet
+    url_poster: https://i.imgur.com/LFJnVzC.jpg
+    url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
+
+  Newly Released Movies:
+    sort_title: +01_2NewReleases
+    sync_mode: sync
+    smart_label: added.desc
+    trakt_list: https://trakt.tv/users/giladg/lists/latest-releases?display=movie
+    summary: A collection of newly-released movies in cinema and on streaming services
+    url_poster: https://i.imgur.com/D62EdJd.jpg
+    url_background: https://wallpaperbat.com/img/23094-cinema-hd-wallpaper-top-free-cinema-hd-background.jpg
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  Top Rated:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc
+    tmdb_top_rated: 250
+    sort_title: +02Top Rated
+    sync_mode: sync
+    smart_label: custom
+    summary: Top Rated Movies, according to IMDB.
+    url_background: https://i.imgur.com/b26VZ9y.jpg
+    url_poster: https://theposterdb.com/api/assets/215438
+    schedule: weekly(wednesday)
+
+  Top Ten Pirated Weekly:
+    trakt_list: https://trakt.tv/users/hdlists/lists/top-ten-pirated-movies-of-the-week-torrent-freak-com
+    smart_label: year.desc
+    sync_mode: sync
+    sort_title: +03Pirated Weekly
+    summary: Most Pirated Movies of The Week
+    url_background: https://i.imgur.com/SOVfrIq.png
+    url_poster: https://i.imgur.com/dYdjSOu.png
+
+  Academy Award Winners:
+    sort_title: +04Academy Award Winners
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    summary: Movies that have won an Oscar
+    smart_label: year.desc
+    url_poster: https://theposterdb.com/api/assets/162208
+
+  Academy Award for Best Picture:
+    sort_title: +03Academy Award for Best Picture
+    imdb_list: https://www.imdb.com/search/title/?count=100&groups=oscar_best_picture_winners&sort=year%2Cdesc
+    summary: Movies that won the Oscar for Best Picture
+    smart_label: year.desc
+    url_poster: https://theposterdb.com/api/assets/170920
+
+  Oscar 2023 Nominations:
+    template: { name: Award}
+    imdb_list: https://www.imdb.com/list/ls562909991/
+    #    trakt_list:
+    #     - https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2023
+    summary: 2023 Oscar Nominations
+    visible_home: true
+    visible_shared: true
+    url_poster: https://i.imgur.com/VwPPZaT.png
+    schedule: range(01/15-4/30)
+    delete_not_scheduled: true
