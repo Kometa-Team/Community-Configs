@@ -54,6 +54,7 @@ collections:
   "Random TV shows":
     summary: Random selection of TV shows
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/suggested/random.png
+    visible_library: true
     schedule: daily
     template: {
                     name: plex,
@@ -81,6 +82,7 @@ collections:
   "Popular TV shows":
     summary: Popular TV shows across the internet
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/suggested/popular.png
+    visible_library: true
     schedule: daily
     template: {
                     name: imdb_popular,

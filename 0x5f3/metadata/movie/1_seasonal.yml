@@ -7,8 +7,9 @@ templates:
     limit: 200
     sync_mode: sync
     collection_order: critic_rating.desc
-    visible_home: true
-    visible_shared: true
+    visible_library: true
+    visible_home: false
+    visible_shared: false
     delete_not_scheduled: true
     cache_builders: 4
 
@@ -48,6 +49,10 @@ collections:
     imdb_list:
       - https://www.imdb.com/list/ls062665509/
       - https://www.imdb.com/list/ls051733651/
+      - https://www.imdb.com/list/ls561620428/
+      - https://www.imdb.com/list/ls564620820/
+      - https://www.imdb.com/list/ls094021074/
+      - https://www.imdb.com/list/ls088378250/
 
   "Halloween Movies":
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/seasonal/seasonal-halloween.png

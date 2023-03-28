@@ -8,6 +8,12 @@
   - Most Watched Monthly
   - Most Watched Yearly
 
+- 1_parental.yml
+  - Parental: All
+  - Parental: Recently Added
+  - Parental: Random
+  - Parental: Top-Rated
+
 - 2_awards.yml
   - Emmy Award Winners
   - Emmy Award Nominees
@@ -31,7 +37,7 @@
   - Top Rated of 2012
   - Top Rated of 2011
   - Top Rated of 2010
-  
+
 - 4_decades_top.yml
   - Top Rated of the 2020s
   - Top Rated of the 2010s

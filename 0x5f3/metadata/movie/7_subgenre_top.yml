@@ -419,7 +419,7 @@ collections:
                     user_rating: "5.0,10.0",
                     votes: "10000,",
                     languages: "en",
-                    letterboxd_list: "theme-epic"
+                    letterboxd_list: "theme-epics"
                     }
 
   "Top Rated in Espionage":
@@ -1062,7 +1062,7 @@ collections:
     filters:
      genre: Drama
      year.gte: 1960
-
+     
   "Top Rated in Samurai":
     summary: "Top rated movies in Samurai"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/subgenre/top-rated-subgenre-samurai.png

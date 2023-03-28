@@ -6,21 +6,23 @@ libraries:
     operations:
       delete_unmanaged_collections: true
     metadata_path:
-    - file: config/metadata/movie/1_suggested.yml
-    - file: config/metadata/movie/2_year_top.yml
+#    - repo: movie/0_radarr.yml
+    - repo: movie/1_suggested.yml
+    - repo: movie/1_seasonal.yml
+    - repo: movie/1_parental.yml
+    - repo: movie/2_year_top.yml
       schedule: weekly(monday)
-    - file: config/metadata/movie/3_decades_top.yml
+    - repo: movie/3_decades_top.yml
       schedule: weekly(tuesday)
-    - file: config/metadata/movie/4_awards.yml
+    - repo: movie/4_awards.yml
       schedule: weekly(wednesday)
-    - file: config/metadata/movie/5_genre_popular.yml
-    - file: config/metadata/movie/6_genre_top.yml
+    - repo: movie/5_genre_popular.yml
+    - repo: movie/6_genre_top.yml
       schedule: weekly(thursday)
-    - file: config/metadata/movie/7_subgenre_top.yml
+    - repo: movie/7_subgenre_top.yml
       schedule: weekly(friday)
-    - file: config/metadata/movie/8_seasonal.yml
-    - file: config/metadata/movie/9_collections.yml
-      schedule: weekly(saturday)
+    - repo: movie/9_collections.yml
+      schedule: weekly(sunday)
 settings:
   asset_depth: 0
   asset_directory:
@@ -30,7 +32,7 @@ settings:
   cache_expiration: 60
   check_nightly: false
   create_asset_folders: false
-  custom_repo:
+  custom_repo: https://github.com/0x5f3/pmm-config/assets/metadata/
   default_collection_order:
   delete_below_minimum: true
   delete_not_scheduled: false
