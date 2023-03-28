@@ -33,7 +33,7 @@ After a sucessfull run, you should have something like this:
 <br/>
 <br/>
 
-![movies](/assets/_/_movies.png)
+![shows](https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/_/_shows.png)
 <br/>
   
-![shows](/assets/_/_shows.png)
+![shows](https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/_/_shows.png)
