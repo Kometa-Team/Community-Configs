@@ -21,7 +21,7 @@ For more details on what each section contains: [movies](MOVIES.md) | [shows](SH
 
 clone into PMM's root directory:
 ```
-git clone https://github.com/0x5f3/pmm-config config
+git clone --branch assets https://github.com/0x5f3/pmm-config config
 ```
 initial run to populate collections:
 ```

@@ -19,9 +19,10 @@
 
 - 1_parental.yml
   - Parental: All
-  - Parental: Recently Added
   - Parental: Random
-  - Parental: Top-Rated
+  - Parental: Recently Released
+  - Parental: Recently Added
+  - Parental: Top Rated
 
 - 2_awards.yml
   - Oscar Winners
