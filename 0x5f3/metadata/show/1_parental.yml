@@ -34,7 +34,7 @@ templates:
     sort_title: "+1_<<num>>_<<collection_name>>"
     sync_mode: sync
     collection_mode: hide
-    collection_order: title.asc
+    collection_order: custom
     label.sync: Parental
 #    item_label.sync: Parental # Enable on initial run
     visible_home: false
@@ -44,7 +44,7 @@ templates:
     cache_builders: 6
     mdblist_list:
       url: https://mdblist.com/lists/<<mdblist_user>>/<<mdblist_list>>/
-      sort_by: title.desc
+      sort_by: title.asc
 
 collections:
   "Parental: All":
