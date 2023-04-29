@@ -578,8 +578,10 @@ sonarr:                                         # Can be individually specified 
 anidb:
   password: (redacted)
   username: (redacted)
+  client: (redacted)
+  version: (redacted)
   language: en
-  client:
+  cache_expiration: 60
 ############################################
 trakt:
   client_id: (redacted)
