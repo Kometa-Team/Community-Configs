@@ -49,10 +49,11 @@ queues:
       horizontal_align: center
       vertical_offset: 10
       vertical_align: bottom
-    - horizontal_offset: 360         # This is the third position
+    - horizontal_offset: 360         # This is the fourth position
       horizontal_align: center
       vertical_offset: 10
       vertical_align: bottom
+
 
 templates:
   Streaming:
@@ -61,7 +62,7 @@ templates:
     default:
       overlay: <<overlay_name>>
       horizontal_offset: 15
-      horizontal_align: right
+      horizontal_align: center
       vertical_offset: 15
       vertical_align: bottom
       weight_<<key>>: <<weight>>
