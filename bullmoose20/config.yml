@@ -1,4 +1,4 @@
-### Must be on NIGHTLY 1.19.0 or greater
+### Must be on DEVELOP 1.19.0 or greater
 libraries:
   Movies:                                           # Must match a library name in your Plex
     report_path: config/missing/Movies_report.yml
@@ -109,8 +109,8 @@ libraries:
     - pmm: content_rating_uk                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
     - pmm: genre                                    # Action, Comedy, Drama, etc.
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
-      template_variables:
-        style: standards
+      # template_variables:
+        # style: standards
     - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
     - pmm: studio_anime                             # Anime Studios etc.
     - pmm: subtitle_language                        # English, French, Arabic, German, etc. subtitles
@@ -197,6 +197,12 @@ libraries:
     - pmm: ribbon                                   # Used for ribbon in bottom right
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
+      # template_variables:
+        # back_color: "#f5289180" 
+        # vertical_offset: 0
+        # horizontal_offset: 0
+        # back_width: 2000
+        # back_height: 3000
     - pmm: video_format                             # Remux, DVD, Blu-Ray, etc. in bottom left
     settings:
       asset_directory:
@@ -286,8 +292,8 @@ libraries:
     - pmm: content_rating_uk                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
     - pmm: genre                                    # Action, Comedy, Drama, etc.
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
-      template_variables:
-        style: standards
+      # template_variables:
+        # style: standards
     - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
     - pmm: studio_anime                             # Anime Studios etc.
     - pmm: subtitle_language                        # English, French, Arabic, German, etc. subtitles
@@ -435,12 +441,21 @@ libraries:
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
       template_variables:
+        # back_width: 1000
+        # back_height: 1500
+        # back_color: "#f52891cc" 
         overlay_level: episode
     - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
       template_variables:
+        # back_width: 1000
+        # back_height: 1500
+        # back_color: "#f52891cc" 
         overlay_level: season
     - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
       template_variables:
+        # back_width: 1000
+        # back_height: 1500
+        # back_color: "#f52891cc" 
         overlay_level: show
     - pmm: video_format                             # Remux, DVD, Blu-Ray, etc. in bottom left and works with overlay_level show, episode, and season
     - pmm: video_format
