@@ -196,6 +196,7 @@ libraries:
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc.
     - pmm: ribbon                                   # Used for ribbon in bottom right
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
+    - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
     - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
       # template_variables:
         # back_color: "#f5289180" 
@@ -323,12 +324,12 @@ libraries:
         overlay_level: season
     # - pmm: content_rating_uk                        # UK BBFC content ratings
     # - pmm: content_rating_uk
-       # template_variables:
+      # template_variables:
         # overlay_level: episode
     # - pmm: content_rating_uk
-       # template_variables:
+      # template_variables:
         # overlay_level: season
-    - pmm: content_rating_us_show
+    - pmm: content_rating_us_show                   # US MPAA content ratings
     - pmm: content_rating_us_show
       template_variables:
         overlay_level: episode
@@ -344,11 +345,26 @@ libraries:
         # overlay_level: season
     # - pmm: direct_play
     # - pmm: direct_play
-    #   template_variables:
-    #     overlay_level: episode
+      # template_variables:
+        # overlay_level: episode
     # - pmm: direct_play
-    #   template_variables:
-    #     overlay_level: season
+      # template_variables:
+        # overlay_level: season
+    - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
+    - pmm: studio
+      template_variables:
+        overlay_level: episode
+    - pmm: studio
+      template_variables:
+        overlay_level: season
+    - pmm: streaming
+    - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
+    - pmm: network
+      template_variables:
+        overlay_level: episode
+    - pmm: network
+      template_variables:
+        overlay_level: season
     - pmm: episode_info                             # SE##E## information in bottom right and works with overlay_level episode
       template_variables:
         overlay_level: episode
@@ -382,7 +398,7 @@ libraries:
         use_subtitles: true
         overlay_level: season
     - pmm: mediastinger                             # Mediastinger overlay when the media item contains a stinger at the end of the movie/show or during the credits and works with overlay_level show
-    - pmm: network
+    - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
     - pmm: network
       template_variables:
         overlay_level: episode
