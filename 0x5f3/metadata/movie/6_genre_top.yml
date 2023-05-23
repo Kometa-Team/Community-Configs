@@ -179,7 +179,7 @@ collections:
     schedule: weekly(thursday)
     template: {
                     name: genre,
-                    genres: "musicals",
+                    genres: "musical",
                     title_type: "feature,tv_movie",
                     user_rating: "5.0,10.0",
                     votes: "10000,",
