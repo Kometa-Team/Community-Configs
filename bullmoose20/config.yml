@@ -1,13 +1,15 @@
-### Must be on NIGHTLY 1.17.3-develop188 or greater
+### Must be on DEVELOP 1.19.0 or greater
 libraries:
   Movies:                                           # Must match a library name in your Plex
     report_path: config/missing/Movies_report.yml
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
-      language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have tranlsated
+      language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
       placeholder_imdb_id: tt8579674                # 1917 (2019) placeholder id for the separators
     metadata_path:
+    - pmm: based                                    # collections based on a book, comic, story, video game
+    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)    
     - git: bullmoose20/movies_refresh               # tells plex to refresh media items added within the last 7 days
     - pmm: separator_award                          # An "index card"
     - pmm: bafta                                    # BAFTA Awards
@@ -28,12 +30,12 @@ libraries:
     - pmm: golden                                   # Golden Globes Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 1943
+          starting: 1944
           ending: current_year
     - pmm: oscars                                   # The Oscars
       template_variables:                           # based on when the award show started
         data:
-          starting: 1927
+          starting: 1928
           ending: current_year
     - pmm: other_award                              # Other award collections
     - pmm: spirit                                   # Independent Spirit Awards
@@ -57,20 +59,35 @@ libraries:
     - pmm: flixpatrol                               # Flixpatrol Charts (Popular, Trending, etc.)
     - pmm: basic                                    # Some basic chart collections based on recently released media in your library
     - pmm: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
+    # - file: /config/metadata/both/birthday          # Actor birthdays
+    - pmm: actor
+      template_variables:
+        collection_section: "001"
+        use_separator: false
+        style: diiivoycolor
+        name_format: "🎂 Anniversaire de <<key_name>>"
+        translation_key: birthday
+        sort_by: audience_rating.desc
+        title_format: <<key_name>>'s Birthday
+        data:
+          depth: 20
+          limit: 100
+        tmdb_birthday:
+          this_month: true
     - pmm: actor                                    # Actors
-      template_variables:                           # bw, rainier, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
+      template_variables:                           # bw, rainier, diiivoy, diiivoycolor, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
         style: signature
         data:
           depth: 1
           limit: 15
     - pmm: director                                 # Directors
-      template_variables:                           # bw, rainier, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
+      template_variables:                           # bw, rainier, diiivoy, diiivoycolor, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
         style: signature
         data:
           depth: 1
           limit: 15
     - pmm: producer                                 # Producers
-      template_variables:                           # bw, rainier, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
+      template_variables:                           # bw, rainier, diiivoy, diiivoycolor, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
         exclude:                                    # ever have some random person... you can exclude them if you want
         - Jeremy Kleiner
         - Thomas Hayslip
@@ -79,17 +96,21 @@ libraries:
           depth: 1
           limit: 15
     - pmm: writer                                   # Writers
-      template_variables:                           # bw, rainier, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
+      template_variables:                           # bw, rainier, diiivoy, diiivoycolor, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
+        exclude:                                    # ever have some random person... you can exclude them if you want
+        - Donald Kaufman
         style: signature
         data:
           depth: 1
           limit: 15
     - pmm: audio_language                           # English, French, Arabic, German, etc. audio language 
     - pmm: content_rating_cs                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
+    - pmm: content_rating_us                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
+    - pmm: content_rating_uk                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
     - pmm: genre                                    # Action, Comedy, Drama, etc.
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
-      template_variables:
-        style: standards
+      # template_variables:
+        # style: standards
     - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
     - pmm: studio_anime                             # Anime Studios etc.
     - pmm: subtitle_language                        # English, French, Arabic, German, etc. subtitles
@@ -100,7 +121,7 @@ libraries:
           ending: current_year
     - pmm: country                                  # Country associated to the media item
     - pmm: decade                                   # Decade the media item was released
-    # - pmm: franchise
+    # - pmm: franchise                                # https://metamanager.wiki/en/latest/defaults/movie/franchise.html#franchise-collections
       # template_variables:
         # minimum_items: 2
         # delete_below_minimum: true    
@@ -126,8 +147,10 @@ libraries:
     # - reset_overlays: tmdb                          # if you want to reset the poster to default poster from tmdb
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2
-    - pmm: commonsense                              # Age 2+, Age 14+, etc.
-    # - pmm: direct_play
+    # - pmm: content_rating_uk                        # UK BBFC content ratings
+    - pmm: content_rating_us_movie                  # US MPAA content ratings
+    # - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
+    # - pmm: direct_play                              # Show direct play only overlay
     - pmm: flixpatrol                               # Top 10 flixpatrol for 'this_year', positioned on the left
       template_variables:
         position: left
@@ -173,16 +196,23 @@ libraries:
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc.
     - pmm: ribbon                                   # Used for ribbon in bottom right
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
+    - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
     - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
+      # template_variables:
+        # back_color: "#f5289180" 
+        # vertical_offset: 0
+        # horizontal_offset: 0
+        # back_width: 2000
+        # back_height: 3000
     - pmm: video_format                             # Remux, DVD, Blu-Ray, etc. in bottom left
     settings:
       asset_directory:
-      - config/assets/movies/
-      prioritize_assets: true
+      - config/assets/Movies/
+      prioritize_assets: true                       # The asset_directory contains folders per media item with respective posters
 
     operations:
-      split_duplicates: false
-      assets_for_all: false
+      split_duplicates: false                       # Splits all duplicate movies/shows found in this library
+      assets_for_all: false                         # Search in assets for images for every item in your library
       delete_unmanaged_collections: true            # Any manually added collection outside of PMM will be deleted
       mass_user_rating_update: mdb_tomatoes         # Update user ratings with mdb_tomatoes
       mass_critic_rating_update: imdb               # Update critic ratings with imdb
@@ -190,7 +220,7 @@ libraries:
       mass_genre_update: tmdb                       # Update all genres from tmdb
       mass_content_rating_update: mdb_commonsense   # Changes Content Rating to "1", "2" etc. to specify appropriate age
       mass_originally_available_update: tmdb        # Update all original available date from tmdb
-      mass_imdb_parental_labels: without_none
+      mass_imdb_parental_labels: none               # Apply all Parental Labels with a value of None, Mild, Moderate, or Severe to match IMDb parental guide
       # mass_poster_update: tmdb                      # Resets posters to tmdb, plex, locked, unlock which is useful to remove all overlays when running with -r -op
 
   TV Shows:                                         # Must match a library name in your Plex
@@ -198,10 +228,13 @@ libraries:
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
-      language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have tranlsated
+      language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
       placeholder_imdb_id: tt1190634                # The Boys (2019) placeholder id for the separators
     metadata_path:
-    - git: bullmoose20/tv_refresh                   # tells plex to refresh media items added within the last 7 days
+    - pmm: based                                    # collections based on a book, comic, story, video game
+    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Test g only)    
+    - git: bullmoose20/custom                       # Custom metadata file for shows like Money Heist
+    - git: bullmoose20/tv_refresh                   # Tells plex to refresh media items added within the last 7 days
     - pmm: separator_award                          # An "index card"
     - pmm: choice                                   # Critic's Choice Awards
       template_variables:                           # based on when the award show started
@@ -211,12 +244,12 @@ libraries:
     - pmm: golden                                   # Golden Globes Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 1943
+          starting: 1944
           ending: current_year
     - pmm: emmy                                     # Emmy Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 1947
+          starting: 1948
           ending: current_year
     - pmm: separator_chart                          # An "index card"
     - pmm: anilist                                  # AniDB Charts (Popular, Trending, etc.)
@@ -229,8 +262,25 @@ libraries:
     - pmm: flixpatrol                               # Flixpatrol Charts (Popular, Trending, etc.)
     - pmm: basic                                    # Some basic chart collections based on recently released media in your library
     - pmm: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
+    # - file: /config/metadata/both/birthday          # Actor birthdays
+    - pmm: actor
+      template_variables:
+        collection_section: "001"
+        use_separator: false
+        style: diiivoycolor
+        name_format: "🎂 Anniversaire de <<key_name>>"
+        translation_key: birthday
+        sort_by: audience_rating.desc
+        title_format: <<key_name>>'s Birthday
+        exclude:                                    # ever have some random person... you can exclude them if you want
+        - Macy Nyman
+        data:
+          depth: 20
+          limit: 100
+        tmdb_birthday:
+          this_month: true
     - pmm: actor                                    # Actors
-      template_variables:                           # bw, rainier, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
+      template_variables:                           # bw, rainier, diiivoy, diiivoycolor, or orig style is used. depth and limit is set low but sometimes I boost to 10, 150
         exclude:                                    # ever have some random person... you can exclude them if you want
         - Macy Nyman
         style: signature
@@ -239,10 +289,12 @@ libraries:
           limit: 15
     - pmm: audio_language                           # English, French, Arabic, German, etc. audio language 
     - pmm: content_rating_cs                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
+    - pmm: content_rating_us                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
+    - pmm: content_rating_uk                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
     - pmm: genre                                    # Action, Comedy, Drama, etc.
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
-      template_variables:
-        style: standards
+      # template_variables:
+        # style: standards
     - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
     - pmm: studio_anime                             # Anime Studios etc.
     - pmm: subtitle_language                        # English, French, Arabic, German, etc. subtitles
@@ -253,7 +305,10 @@ libraries:
           ending: current_year
     - pmm: country                                  # Country associated to the media item
     - pmm: decade                                   # Decade the media item was released
-    # - pmm: franchise
+    # - pmm: franchise                                # https://metamanager.wiki/en/latest/defaults/movie/franchise.html#franchise-collections
+      # template_variables:
+        # minimum_items: 2
+        # delete_below_minimum: true    
     - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     overlay_path:
@@ -267,20 +322,49 @@ libraries:
     - pmm: audio_codec
       template_variables:
         overlay_level: season
-    - pmm: commonsense                              # Age 2+, Age 14+, etc. and works with overlay_level show, episode, and season
-    - pmm: commonsense
+    # - pmm: content_rating_uk                        # UK BBFC content ratings
+    # - pmm: content_rating_uk
+      # template_variables:
+        # overlay_level: episode
+    # - pmm: content_rating_uk
+      # template_variables:
+        # overlay_level: season
+    - pmm: content_rating_us_show                   # US MPAA content ratings
+    - pmm: content_rating_us_show
       template_variables:
         overlay_level: episode
-    - pmm: commonsense
+    - pmm: content_rating_us_show
       template_variables:
         overlay_level: season
+    # - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
+    # - pmm: commonsense
+      # template_variables:
+        # overlay_level: episode
+    # - pmm: commonsense
+      # template_variables:
+        # overlay_level: season
     # - pmm: direct_play
     # - pmm: direct_play
-    #   template_variables:
-    #     overlay_level: episode
+      # template_variables:
+        # overlay_level: episode
     # - pmm: direct_play
-    #   template_variables:
-    #     overlay_level: season
+      # template_variables:
+        # overlay_level: season
+    - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
+    - pmm: studio
+      template_variables:
+        overlay_level: episode
+    - pmm: studio
+      template_variables:
+        overlay_level: season
+    - pmm: streaming
+    - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
+    - pmm: network
+      template_variables:
+        overlay_level: episode
+    - pmm: network
+      template_variables:
+        overlay_level: season
     - pmm: episode_info                             # SE##E## information in bottom right and works with overlay_level episode
       template_variables:
         overlay_level: episode
@@ -314,6 +398,13 @@ libraries:
         use_subtitles: true
         overlay_level: season
     - pmm: mediastinger                             # Mediastinger overlay when the media item contains a stinger at the end of the movie/show or during the credits and works with overlay_level show
+    - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
+    - pmm: network
+      template_variables:
+        overlay_level: episode
+    - pmm: network
+      template_variables:
+        overlay_level: season
     - pmm: ratings                                  # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format. overlay_level: show has 3 ratings max
       template_variables:
         rating1: user
@@ -358,31 +449,29 @@ libraries:
     - pmm: resolution
       template_variables:
         overlay_level: season
-    - pmm: ribbon                                   # Used for ribbon in bottom right and works with overlay_level show and season
-    - pmm: ribbon
-      template_variables:
-        overlay_level: season
+    - pmm: ribbon                                   # Used for ribbon in bottom right
     - pmm: runtimes                                 # Runtime information in bottom right and works with overlay_level episode
       template_variables:
         overlay_level: episode
     - pmm: status                                   # Airing, Returning, Ended, Canceled and works with overlay_level show
-      # template_variables:
-        # last: 110
-    - pmm: streaming                                # Streaming on Disney+, Netflix, etc. and works with overlay_level show, episode, and season
-    - pmm: streaming
-      template_variables:
-        overlay_level: episode
-    - pmm: streaming
-      template_variables:
-        overlay_level: season
+    - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
       template_variables:
+        # back_width: 1000
+        # back_height: 1500
+        # back_color: "#f52891cc" 
         overlay_level: episode
     - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
       template_variables:
+        # back_width: 1000
+        # back_height: 1500
+        # back_color: "#f52891cc" 
         overlay_level: season
     - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
       template_variables:
+        # back_width: 1000
+        # back_height: 1500
+        # back_color: "#f52891cc" 
         overlay_level: show
     - pmm: video_format                             # Remux, DVD, Blu-Ray, etc. in bottom left and works with overlay_level show, episode, and season
     - pmm: video_format
@@ -393,12 +482,12 @@ libraries:
         overlay_level: season
     settings:
       asset_directory:
-      - config/assets/tv/
-      prioritize_assets: true
+      - config/assets/TV Shows/
+      prioritize_assets: true                       # The asset_directory contains folders per media item with respective posters
 
     operations:
-      split_duplicates: false
-      assets_for_all: false
+      split_duplicates: false                       # Splits all duplicate movies/shows found in this library
+      assets_for_all: false                         # Search in assets for images for every item in your library
       delete_unmanaged_collections: true            # Any manually added collection outside of PMM will be deleted
       mass_user_rating_update: mdb_tomatoes         # Update user ratings with mdb_tomatoes
       mass_critic_rating_update: imdb               # Update critic ratings with imdb
@@ -408,7 +497,7 @@ libraries:
       mass_originally_available_update: tmdb        # Update all original available date from tmdb
       mass_episode_critic_rating_update: imdb       # Update critic ratings with imdb for episodes
       mass_episode_audience_rating_update: tmdb     # Update audience ratings with tmdb for episodes
-      mass_imdb_parental_labels: without_none
+      mass_imdb_parental_labels: none               # Apply all Parental Labels with a value of None, Mild, Moderate, or Severe to match IMDb parental guide
       # mass_poster_update: tmdb                      # Resets posters to tmdb, plex, locked, unlock which is useful to remove all overlays when running with -r -op
 playlist_files:
 - pmm: playlist
@@ -452,13 +541,15 @@ settings:                                           # Can be individually specif
   custom_repo:
   verify_ssl: true
   check_nightly: true
-webhooks:                                           # Can be individually specified per library as well
-  error: notifiarr
-  run_start: notifiarr
-  run_end: notifiarr
+  playlist_exclude_users:
+webhooks: (redacted)
+  error: (redacted)
+  run_start: (redacted)
+  run_end: (redacted)
   changes:
   - notifiarr
   version:
+  delete:
 plex:                                               # Can be individually specified per library as well; REQUIRED for the script to run
   url: (redacted)
   token: (redacted)
@@ -496,6 +587,7 @@ radarr:                                         # Can be individually specified 
   add_existing: false
   add_missing: false
   upgrade_existing: false
+  ignore_cache: false
 sonarr:                                         # Can be individually specified per library as well
   url: (redacted)
   token: (redacted)
@@ -513,9 +605,14 @@ sonarr:                                         # Can be individually specified 
   add_existing: false
   add_missing: false
   upgrade_existing: false
+  ignore_cache: false
 anidb:
-  password: z^(redacted)*(redacted)
-  username: bullmoose20
+  password: (redacted)
+  username: (redacted)
+  client: (redacted)
+  version: (redacted)
+  language: en
+  cache_expiration: 60
 ############################################
 trakt:
   client_id: (redacted)
@@ -523,19 +620,19 @@ trakt:
   authorization:
     access_token: (redacted)
     token_type: Bearer
-    expires_in: 7889238
+    expires_in: 7889237
     refresh_token: (redacted)
     scope: public
-    created_at: 1666127087
+    created_at: 1682103376
   pin:
-############################################      
+############################################
 mal:
   client_id: (redacted)
   client_secret: (redacted)
   authorization:
     access_token: (redacted)
     token_type: Bearer
-    expires_in: 2678400
+    expires_in: 2592000
     refresh_token: (redacted)
   localhost_url:
   cache_expiration: 60
