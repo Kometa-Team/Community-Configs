@@ -1,0 +1,256 @@
+templates:
+  tmdb:
+    optional:
+      - collections
+      - lists
+      - movies
+      - tmdb_summary
+      - summary
+      - shared_label
+    tmdb_collection: <<collections>>
+    tmdb_list: <<lists>>
+    tmdb_movie: <<movies>>
+    tmdb_summary: <<tmdb_summary>>
+    summary: <<summary>>
+    url_poster: <<poster>>
+    sort_title: +04<<collection_name>>
+    collection_order: release
+    schedule: weekly(saturday)
+    label: <<shared_label>>
+
+  imdb:
+    url_poster: <<poster>>
+    summary: <<summary>>
+    sync_mode: sync
+    collection_order: release
+    schedule: weekly(monday)
+    sort_title: +04<<collection_name>>
+
+collections:
+  Airplane:
+    template: { name: tmdb, collections: 91663, tmdb_summary: 91663, poster: "https://theposterdb.com/api/assets/166223" }
+  Alien:
+    template: { name: tmdb, collections: "8091, 135416", summary: "A science fiction horror film franchise, the early films focusing on Lieutenant Ellen Ripley (Sigourney Weaver) and her battle with an extraterrestrial life-form, commonly referred to as 'the Alien'. Produced by 20th Century Fox, the series started with the 1979 film Alien, then Aliens in 1986, Alien³ in 1992, and Alien: Resurrection in 1997. In 2012, the science-fiction/horror film Prometheus brought Ridley Scott back to the film franchise he launched in 1979 with Alien. Prometheus Collection movies offer a sort of back door into the original Alien film, answer questions about where the series’ terrifying monster came from. The collection is planned to consist of 4 films in total.", poster: "https://theposterdb.com/api/assets/52713" }
+  American Pie:
+    template: { name: tmdb, collections: "2806, 298820", tmdb_summary: 2806, poster: "https://theposterdb.com/api/assets/166224" }
+  Austin Powers:
+    template: { name: tmdb, collections: 1006, tmdb_summary: 1006, poster: "https://theposterdb.com/api/assets/52690" }
+  Avatar:
+    template: { name: tmdb, collections: 87096, tmdb_summary: 87096, poster: "https://theposterdb.com/api/assets/234621" }
+  Back to the Future:
+    template: { name: tmdb, collections: 264, tmdb_summary: 264, poster: "https://theposterdb.com/api/assets/52694" }
+  Bad Boys:
+    template: { name: tmdb, collections: 14890, tmdb_summary: 14890, poster: "https://theposterdb.com/api/assets/52696" }
+  Batman:
+    template: { name: imdb, summary: "Batman is a superhero who appears in American comic books published by DC Comics.", poster: "https://theposterdb.com/api/assets/52698" }
+    imdb_list:
+      - https://www.imdb.com/list/ls560197158/
+  Beverly Hills Cop:
+    template: { name: tmdb, collections: 85861, tmdb_summary: 85861, poster: "https://theposterdb.com/api/assets/163980" }
+  Bill & Ted's:
+    template: { name: tmdb, collections: 91746, tmdb_summary: 91746, poster: "https://theposterdb.com/api/assets/163640" }
+  Blade:
+    template: { name: tmdb, collections: 735, tmdb_summary: 735, poster: "https://theposterdb.com/api/assets/171125" }
+  Cheech & Chong:
+    template: { name: tmdb, collections: 33071, tmdb_summary: 33071, poster: "https://theposterdb.com/api/assets/166232" }
+  Critters:
+    template: { name: tmdb, collections: 10893, tmdb_summary: 10893, poster: "https://theposterdb.com/api/assets/160849" }
+  DC Universe:
+    template: { name: imdb, summary: "The DC Extended Universe (DCEU) is an American media franchise and shared universe centered on a series of superhero films based on characters that appeared in American comic books by DC Comics.", poster: "https://theposterdb.com/api/assets/52780" }
+    imdb_list:
+      - https://www.imdb.com/list/ls077827588/
+  Deadpool:
+    template: { name: tmdb, collections: 448150, tmdb_summary: 448150, poster: "https://theposterdb.com/api/assets/171133" }
+  Despicable Me:
+    template: { name: tmdb, collections: "86066, 544669", tmdb_summary: 86066, poster: "https://theposterdb.com/api/assets/163000" }
+  Die Hard:
+    template: { name: tmdb, collections: 1570, tmdb_summary: 1570, poster: "https://theposterdb.com/api/assets/52714" }
+  Disney Animation:
+    template: { name: tmdb, lists: "7103808, 7103807, 5905", summary: "A collection of Disney Animation movies.", poster: "https://theposterdb.com/api/assets/52724" }
+  Disney Live Action:
+    template: { name: imdb, summary: "A collection of Disney Live Action movies.", poster: "https://theposterdb.com/api/assets/52784" }
+    imdb_list:
+      - https://www.imdb.com/list/ls062279726/
+  Evil Dead:
+    template: { name: tmdb, collections: 1960, tmdb_summary: 1960, poster: "https://theposterdb.com/api/assets/160866" }
+  Fast and the Furious:
+    template: { name: tmdb, collections: 9485, movies: 384018, tmdb_summary: 9485, poster: "https://theposterdb.com/api/assets/52669" }
+  Fantastic Beasts:
+    template: { name: tmdb, collections: 435259, tmdb_summary: 435259, poster: "https://theposterdb.com/api/assets/173773" }
+  Friday the 13th:
+    template: { name: tmdb, lists: 36520, tmdb_summary: 9735, poster: "https://theposterdb.com/api/assets/161007" }
+  Gangster:
+    template: { name: imdb, summary: "Mob movies have existed for nearly as long as cinema has been around, and while they are typically grounded crime dramas, they have been known to drift over into other genres such as action and comedy.", poster: "https://theposterdb.com/api/assets/164982" }
+    imdb_list:
+      - https://www.imdb.com/list/ls003107099/
+  Ghostbusters:
+    template: { name: tmdb, collections: 2980, movies: 43074, tmdb_summary: 2980, poster: "https://theposterdb.com/api/assets/174560" }
+  Harry Potter:
+    template: { name: tmdb, collections: 1241, tmdb_summary: 1241, poster: "https://theposterdb.com/api/assets/52718" }
+  The Hobbit:
+    template: { name: tmdb, collections: 121938, tmdb_summary: 121938, poster: "https://theposterdb.com/api/assets/52771" }
+  Halloween:
+    template: { name: tmdb, lists: 92111, tmdb_summary: 91361, poster: "https://theposterdb.com/api/assets/161050" }
+  Hercule Poirot:
+    template: { name: tmdb, collections: 735384, tmdb_summary: 735384, poster: "https://theposterdb.com/api/assets/226035" }
+  Hot Tub Time Machine:
+    template: { name: tmdb, collections: 313576, tmdb_summary: 313576, poster: "https://theposterdb.com/api/assets/160951" }
+  Hunger Games:
+    template: { name: tmdb, collections: 131635, tmdb_summary: 131635, poster: "https://theposterdb.com/api/assets/163851" }
+  Indiana Jones:
+    template: { name: tmdb, collections: 84, tmdb_summary: 84, poster: "https://theposterdb.com/api/assets/52725" }
+  Ice Age:
+    template: { name: tmdb, collections: 8354, tmdb_summary: 8354, poster: "https://theposterdb.com/api/assets/162988" }
+  Jack Ryan:
+    template: { name: imdb, summary: 'John Patrick "Jack" Ryan, Sr. is a fictional character created by Tom Clancy who appears in many of his novels and their respective film adaptations.', poster: "https://theposterdb.com/api/assets/162057" }
+    imdb_list:
+      - https://www.imdb.com/list/ls047771270/
+  Jackass:
+    template: { name: tmdb, collections: 17178, tmdb_summary: 17178, poster: "https://theposterdb.com/api/assets/163419" }
+  James Bond:
+    template: { name: tmdb, collections: 645, tmdb_summary: 645, poster: "https://theposterdb.com/api/assets/52770" }
+  Jason Bourne:
+    template: { name: tmdb, collections: 31562, tmdb_summary: 31562, poster: "https://theposterdb.com/api/assets/124006" }
+  Jaws:
+    template: { name: tmdb, collections: 2366, tmdb_summary: 2366, poster: "https://theposterdb.com/api/assets/161117" }
+  John Wick:
+    template: { name: tmdb, collections: 404609, tmdb_summary: 404609, poster: "https://theposterdb.com/api/assets/52712" }
+  Jumanji:
+    template: { name: tmdb, collections: 495527, tmdb_summary: 495527, poster: "https://theposterdb.com/api/assets/163392" }
+  Jump Street:
+    template: { name: tmdb, collections: 212562, tmdb_summary: 212562, poster: "https://theposterdb.com/api/assets/164800" }
+  Jurassic Park:
+    template: { name: tmdb, collections: 328, tmdb_summary: 328, poster: "https://theposterdb.com/api/assets/52768" }
+  Karate Kid:
+    template: { name: tmdb, collections: 8580, tmdb_summary: 8580, poster: "https://theposterdb.com/api/assets/163394" }
+  Knives Out:
+    template: { name: tmdb, collections: 722971, tmdb_summary: 722971, poster: "https://theposterdb.com/api/assets/291317" }
+  Kung Fu Panda:
+    template: { name: tmdb, collections: 77816, tmdb_summary: 77816, poster: "https://theposterdb.com/api/assets/162983" }
+  Lethal Weapon:
+    template: { name: tmdb, collections: 945, summary: "Lethal Weapon is a buddy cop movie series starring Mel Gibson and Danny Glover. A total of four films have been made since the first one in 1987, and all have been a success at the box-office.", poster: "https://theposterdb.com/api/assets/76888" }
+  Lord of the Rings:
+    template: { name: tmdb, collections: 119, tmdb_summary: 119, poster: "https://theposterdb.com/api/assets/52722" }
+  Mad Max:
+    template: { name: imdb, summary: "Mad Max is an Australian dystopian action media franchise. Mad Max references are deeply embedded in popular culture; references to its dystopian, apocalyptic, and post-apocalyptic themes and bizarre landscape and desolate wasteland imagery.", poster: "https://theposterdb.com/api/assets/124010" }
+    imdb_list:
+      - https://www.imdb.com/list/ls076588202/
+  Madagascar:
+    template: { name: tmdb, collections: 14740, movies: 270946, tmdb_summary: 14740, poster: "https://theposterdb.com/api/assets/162976" }
+  Marvel Cinematic Universe:
+    template: { name: imdb, summary: "The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films produced by Marvel Studios. The films are based on characters that appear in American comic books published by Marvel Comics. The franchise also includes television series, short films, digital series, and literature. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters.", poster: "https://theposterdb.com/api/assets/162417" }
+    imdb_list:
+      - https://www.imdb.com/list/ls031310794/
+  Matrix:
+    template: { name: imdb, summary: "The Matrix collection depicts a complex science fiction story incorporating many philosophical elements. Written and directed by the Wachowskis and produced by Joel Silver.", poster: "https://theposterdb.com/api/assets/52761" }
+    imdb_list:
+      - https://www.imdb.com/list/ls090620507/
+  Meet The Parents:
+    template: { name: tmdb, collections: 51509, tmdb_summary: 51509, poster: "https://theposterdb.com/api/assets/166252" }
+  Men In Black:
+    template: { name: tmdb, collections: 86055, tmdb_summary: 86055, poster: "https://theposterdb.com/api/assets/52759" }
+  "Mission: Impossible":
+    template: { name: tmdb, collections: "87359", tmdb_summary: 87359, poster: "https://theposterdb.com/api/assets/52727" }
+  Naked Gun:
+    template: { name: imdb, summary: "The escapades of incompetent cop Frank Drebbin.", poster: "https://theposterdb.com/api/assets/164812" }
+    imdb_list:
+      - https://www.imdb.com/list/ls053513981/
+  National Lampoon's Vacation:
+    template: { name: tmdb, collections: 108693, movies: 11155, summary: "This collection of movies features everyone's favorite family, the Griswold's! It includes National Lampoon's Vacation (1983), National Lampoon's European Vacation (1985), National Lampoon's Christmas Vacation (1989), Vegas Vacation (1997) and Christmas Vacation 2: Cousin Eddie's Island Adventure (2003).", poster: "https://theposterdb.com/api/assets/165424" }
+  Night at the Museum:
+    template: { name: tmdb, collections: 85943, poster: "https://theposterdb.com/api/assets/162153" }
+  A Nightmare on Elm Street:
+    template: { name: tmdb, collections: 8581, movies: "6466, 23437", tmdb_summary: 8581, poster: "https://theposterdb.com/api/assets/161307" }
+  Ocean's Collection:
+    template: { name: tmdb, collections: 304, movies: "402900, 977656", tmdb_summary: 304, poster: "https://theposterdb.com/api/assets/52757" }
+  Peanuts:
+    template: { name: imdb, summary: "Collection of Movies and TV Specials with the beloved Peanuts characters.", poster: "https://theposterdb.com/api/assets/188207" }
+    imdb_list:
+      - https://www.imdb.com/list/ls054850259/
+  Pet Sematary:
+    template: { name: tmdb, collections: "10789, 830781", tmdb_summary: 10789, poster: "https://theposterdb.com/api/assets/161311" }
+  Pirates of the Caribbean:
+    template: { name: tmdb, collections: 295, tmdb_summary: 295, poster: "https://theposterdb.com/api/assets/52758" }
+  Pixar:
+    template: { name: imdb, summary: "Pixar Animation Studios, commonly known as just Pixar, is an American computer animation studio known for its critically and commercially successful computer animated feature films. It is based in Emeryville, California, and is a subsidiary of Walt Disney Studios, which is owned by The Walt Disney Company.", poster: "https://theposterdb.com/api/assets/52731" }
+    imdb_list:
+      - https://www.imdb.com/list/ls087911008/
+  Planet of the Apes:
+    template: { name: tmdb, collections: "173710, 1709", tmdb_summary: 173710, poster: "https://theposterdb.com/api/assets/184312" }
+  Police Academy:
+    template: { name: tmdb, collections: 9338, tmdb_summary: 9338, poster: "https://theposterdb.com/api/assets/164819" }
+  Predator:
+    template: { name: tmdb, collections: "399, 115762", tmdb_summary: 399, poster: "https://theposterdb.com/api/assets/76898" }
+  Rambo:
+    template: { name: tmdb, collections: 5039, tmdb_summary: 5039, poster: "https://theposterdb.com/api/assets/128820" }
+  Resident Evil:
+    template: { name: tmdb, collections: 17255, tmdb_summary: 17255, poster: "https://theposterdb.com/api/assets/161290" }
+  Robert Langdon:
+    template: { name: tmdb, collections: 115776, tmdb_summary: 115776, poster: "https://theposterdb.com/api/assets/164823" }
+  RoboCop:
+    template: { name: tmdb, collections: 5547, tmdb_summary: 5547, poster: "https://theposterdb.com/api/assets/164016" }
+  Rocky:
+    template: { name: tmdb, collections: 1575, tmdb_summary: 1575, poster: "https://theposterdb.com/api/assets/52777" }
+  Rush Hour:
+    template: { name: tmdb, collections: 90863, tmdb_summary: 90863, poster: "https://theposterdb.com/api/assets/52779" }
+  Scary Movie:
+    template: { name: tmdb, collections: 4246, tmdb_summary: 4246, poster: "https://theposterdb.com/api/assets/161875" }
+  Scream:
+    template: { name: tmdb, collections: 2602, tmdb_summary: 2602, poster: "https://theposterdb.com/api/assets/161544" }
+  Shrek:
+    template: { name: tmdb, collections: 2150, tmdb_summary: 2150, poster: "https://theposterdb.com/api/assets/52729" }
+  Sonic the Hedgehog:
+    template: { name: tmdb, collections: 720879, tmdb_summary: 720879, poster: "https://theposterdb.com/api/assets/234937" }
+  Spider-Man:
+    template: { name: tmdb, collections: "531241, 556, 125574, 573436", poster: "https://theposterdb.com/api/assets/52790" }
+  Star Trek:
+    template: { name: imdb, summary: "Star Trek chronicles the exploits of the crew of the starship USS Enterprise, whose five-year mission is to explore space and 'to seek out new life and new civilizations, to boldly go where no man has gone before.'", poster: "https://theposterdb.com/api/assets/52753" }
+    imdb_list:
+      - https://www.imdb.com/list/ls003269814/
+  Star Wars:
+    template: { name: imdb, summary: "An epic space-opera theatrical film series, which depicts the adventures of various characters 'a long time ago in a galaxy far, far away...'", poster: "https://theposterdb.com/api/assets/52755" }
+    imdb_list:
+      - https://www.imdb.com/list/ls029559286/
+  Superman:
+    template: { name: imdb, summary: "The series is centered on Clark Kent, a Kryptonian from the planet Krypton whose birth name is Kal-El. Superman resides in the city of Metropolis, where he works as a journalist for the Daily Planet, a newspaper.", poster: "https://theposterdb.com/api/assets/162402" }
+    imdb_list:
+      - https://www.imdb.com/list/ls058549895/
+      - https://www.imdb.com/list/ls022342935/
+  Teenage Mutant Ninja Turtles:
+    template: { name: tmdb, collections: "1582, 401562", movies: 1273, tmdb_summary: 1582, poster: "https://theposterdb.com/api/assets/162404" }
+  Terminator:
+    template: { name: tmdb, collections: 528, tmdb_summary: 528, poster: "https://theposterdb.com/api/assets/52752" }
+  Transporter:
+    template: { name: tmdb, collections: 9518, tmdb_summary: 9518, poster: "https://theposterdb.com/api/assets/164843" }
+  Transformers:
+    template: { name: tmdb, collections: 8650, tmdb_summary: 8650, poster: "https://theposterdb.com/api/assets/52742" }
+  Twilight:
+    template: { name: tmdb, collections: 33514, shared_label: "Grandma", tmdb_summary: 33514, poster: "https://theposterdb.com/api/assets/161853" }
+  Underworld:
+    template: { name: tmdb, collections: 2326, tmdb_summary: 2326, poster: "https://theposterdb.com/api/assets/161852" }
+  Video Game:
+    template: { name: tmdb, lists: 8204943, summary: "Movies based on video games. Good or (mostly) bad, you know you'll still watch them", poster: "https://theposterdb.com/api/assets/160905" }
+  Vietnam War:
+    template: { name: imdb, summary: "The Vietnam War (1 November 1955 - 30 April 1975) was a conflict in Vietnam, Laos, and Cambodia. It was the second of the Indochina Wars and was officially fought between North Vietnam and South Vietnam. The north was supported by the Soviet Union, China, and other communist states, while the south was supported by the United States and other anti-communist allies.", poster: "https://theposterdb.com/api/assets/162119" }
+    imdb_list:
+      - https://www.imdb.com/list/ls566837363/
+  Wayne's World:
+    template: { name: tmdb, collections: 8979, tmdb_summary: 8979, poster: "https://theposterdb.com/api/assets/166273" }
+  World War I:
+    template: { name: imdb, summary: "World War I (28 July 1914 – 11 November 1918) was one of the deadliest global conflicts in history. Belligerents included much of Europe, the Russian Empire, the United States, and the Ottoman Empire, with fighting occurring throughout Europe, the Middle East, Africa, the Pacific, and parts of Asia. An estimated 9 million soldiers were killed in combat, plus another 23 million wounded, while 5 million civilians died as a result of military action, hunger, and disease.", poster: "https://theposterdb.com/api/assets/162121" }
+    imdb_list:
+      - https://www.imdb.com/list/ls566837788/
+  World War II:
+    template: { name: imdb, summary: "World War II (1 September 1939 - 2 September 1945) involved the vast majority of the world's countries—including all of the great powers—forming two opposing military alliances: the Allies and the Axis powers. World War II was a total war that directly involved more than 100 million personnel from more than 30 countries.", poster: "https://theposterdb.com/api/assets/162122" }
+    imdb_list:
+      - https://www.imdb.com/list/ls566837024/
+  X-Men:
+    template: { name: imdb, summary: "A superhero film series about a team of mutant superheroes based on the Marvel Comics superheroes of the same name.", poster: "https://theposterdb.com/api/assets/52741" }
+    imdb_list:
+      - https://www.imdb.com/list/ls024445822/
+  Young Guns:
+    template: { name: tmdb, collections: 9329, tmdb_summary: 9329, poster: "https://theposterdb.com/api/assets/165783" }
+  Zombieland:
+    template: { name: tmdb, collections: 537982, tmdb_summary: 537982, poster: "https://theposterdb.com/api/assets/161841" }
+  Zoolander:
+    template: { name: tmdb, collections: 352789, tmdb_summary: 352789, poster: "https://theposterdb.com/api/assets/166274" }

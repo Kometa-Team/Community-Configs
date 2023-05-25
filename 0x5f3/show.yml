@@ -6,15 +6,17 @@ libraries:
     operations:
       delete_unmanaged_collections: true
     metadata_path:
-    - file: config/metadata/show/1_suggested.yml
-    - file: config/metadata/show/2_year_top.yml
+#    - repo: show/0_sonarr.yml
+    - repo: show/1_suggested.yml
+    - repo: show/1_parental.yml
+    - repo: show/2_year_top.yml
       schedule: weekly(monday)
-    - file: config/metadata/show/3_decades_top.yml
+    - repo: show/3_decades_top.yml
       schedule: weekly(wednesday)
-    - file: config/metadata/show/4_awards.yml
+    - repo: show/4_awards.yml
       schedule: weekly(thursday)
-    - file: config/metadata/show/5_genre_popular.yml
-    - file: config/metadata/show/6_genre_top.yml
+    - repo: show/5_genre_popular.yml
+    - repo: show/6_genre_top.yml
       schedule: weekly(saturday)
 settings:
   asset_depth: 0
@@ -25,7 +27,7 @@ settings:
   cache_expiration: 60
   check_nightly: false
   create_asset_folders: false
-  custom_repo:
+  custom_repo: https://github.com/0x5f3/pmm-config/assets/metadata/
   default_collection_order:
   delete_below_minimum: true
   delete_not_scheduled: false

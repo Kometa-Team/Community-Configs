@@ -1,0 +1,111 @@
+## 1_parental.yml
+
+templates:
+  plex:
+    sort_title: "+1_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_mode: hide
+    label.sync: Parental
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 4
+
+  plex_added:
+    sort_title: "+1_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_mode: hide
+    label.sync: Parental
+    item_label.sync: Parental
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 4
+
+  mdblist:
+    optional:
+      - mdblist_extra_1
+      - mdblist_extra_2
+      - mdblist_extra_3
+      - mdblist_extra_4
+      - mdblist_extra_5
+    sort_title: "+1_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_mode: hide
+    collection_order: custom
+    label.sync: Parental
+#    item_label.sync: Parental # Enable on initial run
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 6
+    mdblist_list:
+      url: https://mdblist.com/lists/<<mdblist_user>>/<<mdblist_list>>/
+      sort_by: title.asc
+
+collections:
+  "Parental: All":
+    summary: "Movies suitable for children"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-all.png
+    template: {
+                    name: mdblist,
+                    num: "V",
+                    mdblist_user: "a2u2y13",
+                    mdblist_list: "list-suitable-for-children"
+                    }
+
+  "Parental: Random":
+    summary: "Random movies suitable for children"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-random.png
+    schedule: daily
+    template: {
+                    name: plex,
+                    num: "W"
+                    }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      sort_by: random
+      limit: 500
+
+  "Parental: Recently Released":
+    summary: "Recently released movies suitable for children"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-released.png
+    template: {
+                    name: plex,
+                    num: "X"
+                    }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      sort_by: release.desc
+      limit: 250
+
+  "Parental: Recently Added":
+    summary: "Recently added movies suitable for children"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-added.png
+    template: {
+                    name: plex_added,
+                    num: "Y"
+                    }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      sort_by: added.desc
+      limit: 100
+
+  "Parental: Top Rated":
+    summary: "Top rated movies suitable for children"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-top-rated.png
+    template: {
+                    name: plex,
+                    num: "Z"
+                    }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      sort_by: critic_rating.desc
+      limit: 250

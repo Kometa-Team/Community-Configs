@@ -1,0 +1,102 @@
+templates:
+  Genre:
+    default:
+      exclude: Children, Anime
+    sort_title: +08<<collection_name>>
+    url_background: https://wallpaper.dog/large/20509069.jpg
+    smart_filter:
+      sort_by: release.desc
+      validate: false
+      all:
+        genre.not: <<exclude>>
+        genre: <<genre>>
+
+  Genre_imdb:
+    url_poster: <<poster>>
+    summary: <<summary>>
+    sync_mode: append
+    smart_label: release.desc
+    sort_title: +08<<collection_name>>
+
+  Genre_imdb_title:
+    url_poster: <<poster>>
+    summary: <<summary>>
+    sync_mode: append
+    smart_label: title.asc
+    sort_title: +08<<collection_name>>
+    schedule: weekly(sunday)
+
+collections:
+  Adventure:
+    template: { name: Genre, genre: adventure }
+    url_poster: https://i.imgur.com/fZMIfdy.jpg
+  Animation:
+    template: { name: Genre, genre: animation, exclude: null }
+    url_poster: https://i.imgur.com/W9355wl.jpg
+  Comedy:
+    template: { name: Genre, genre: comedy }
+    url_poster: https://i.imgur.com/dIMKbt9.jpg
+  Crime:
+    template: { name: Genre, genre: crime }
+    url_poster: https://i.imgur.com/1FYD7Cz.jpg
+  Disaster:
+    template: { name: Genre_imdb, summary: "Shit's goin' wrong, grab some popcorn.", poster: "https://theposterdb.com/api/assets/204258" }
+    imdb_list:
+      - https://www.imdb.com/list/ls538074103/
+  Documentary:
+    template: { name: Genre, genre: "Biography, Documentary" }
+    url_poster: https://i.imgur.com/KRH25hE.jpg
+  Drama:
+    template: { name: Genre, genre: drama }
+    url_poster: https://i.imgur.com/RwOUFLI.jpg
+  Family:
+    template: { name: Genre, genre: family, exclude: null }
+    url_poster: https://i.imgur.com/k4VAgNR.jpg
+  Fantasy:
+    template: { name: Genre, genre: fantasy, exclude: null }
+    url_poster: https://i.imgur.com/IdeoNnr.jpg
+  History:
+    template: { name: Genre, genre: history }
+    url_poster: https://i.imgur.com/1n070o0.jpg
+  Horror:
+    template: { name: Genre, genre: horror }
+    url_poster: https://i.imgur.com/M6msOoq.jpg
+  Music:
+    template: { name: Genre, genre: music, exclude: null}
+    url_poster: https://i.imgur.com/eCJZSue.jpg
+  Mystery:
+    template: { name: Genre, genre: mystery }
+    url_poster: https://i.imgur.com/t1ArisJ.jpg
+  Romance:
+    template: { name: Genre, genre: romance }
+    url_poster: https://i.imgur.com/0Jm9Jck.jpg
+  Romantic Comedy:
+    template: { name: Genre, genre: "romance,comedy" }
+    url_poster: https://i.imgur.com/7XVf34s.jpg
+  Romantic Drama:
+    template: { name: Genre, genre: "romance,drama" }
+    url_poster: https://i.imgur.com/ccutmOd.jpg
+  Sci-Fi:
+    template: { name: Genre_imdb, summary: "Beam me up, Jedi", poster: "https://i.imgur.com/EPi451Z.jpg" }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie&release_date=1950-01-01,&genres=sci-fi&countries=!in,!bd&num_votes=10000,&sort=user_rating,desc
+      limit: 2000
+  Sports:
+    template: { name: Genre, genre: sport }
+    url_poster: https://i.imgur.com/uGtTbYV.jpg
+  Stand-Up:
+    template: { name: Genre_imdb_title, summary: "Turn off your cell phones and don't heckle", poster: "https://theposterdb.com/api/assets/204273" }
+    imdb_list:
+      - https://www.imdb.com/list/ls509459132/
+      - https://www.imdb.com/list/ls565655310/
+      - https://www.imdb.com/list/ls509459132/
+      - https://www.imdb.com/list/ls041728102/
+  Thriller:
+    template: { name: Genre, genre: thriller }
+    url_poster: https://i.imgur.com/i4K4wXI.jpg
+  War:
+    template: { name: Genre, genre: war }
+    url_poster: https://i.imgur.com/tPgvWij.jpg
+  Western:
+    template: { name: Genre, genre: western }
+    url_poster: https://i.imgur.com/NbiRkV6.jpg
