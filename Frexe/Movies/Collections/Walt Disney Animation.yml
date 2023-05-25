@@ -13,7 +13,7 @@ templates:
     sort_title: <<collection_name>>
 collections:
 
-  "101 Dalmatians (Animated)":
+  "101 Dalmatians":
     template: {name: Set, collection: 100693, poster: https://theposterdb.com/api/assets/163119 }
 
   "Aladdin":
@@ -34,14 +34,29 @@ collections:
   "Cinderella":
     template: {name: Set, collection: 55419, poster: https://theposterdb.com/api/assets/163002 }
 
-  "Disney's Hercules":
-    template: {name: Set, collection: 978459, poster: https://theposterdb.com/api/assets/191927 }
+  "The Emperor's New Groove":
+    template: {name: Set, collection: 178117, poster: https://theposterdb.com/api/assets/162998 }
 
   "Fantasia":
     template: {name: Set, collection: 55427, poster: https://theposterdb.com/api/assets/162996 }
 
+  "The Fox and the Hound":
+    template: {name: Set, collection: 100970, poster: https://theposterdb.com/api/assets/163001 }
+
+  "Frozen":
+    template: {name: Set, collection: 637846, poster: https://theposterdb.com/api/assets/162993 }
+
   "A Goofy Movie":
     template: {name: Set, collection: 410261, poster: https://theposterdb.com/api/assets/192178 }
+
+  "Hercules":
+    template: {name: Set, collection: 978459, poster: https://theposterdb.com/api/assets/191927 }
+
+  "The Hunchback of Notre Dame":
+    template: {name: Set, collection: 97456, poster: https://theposterdb.com/api/assets/162989 }
+
+  "The Jungle Book":
+    template: {name: Set, collection: 97459, poster: https://theposterdb.com/api/assets/162985 }
 
   "Lady and the Tramp":
     template: {name: Set, collection: 97460, poster: https://theposterdb.com/api/assets/162982 }
@@ -49,8 +64,17 @@ collections:
   "Lilo & Stitch":
     template: {name: Set, collection: 97461, poster: https://theposterdb.com/api/assets/163076 }
 
+  "The Lion King":
+    template: {name: Set, collection: 94032, poster: https://theposterdb.com/api/assets/162978 }
+
+  "The Little Mermaid":
+    template: {name: Set, collection: 33085, poster: https://theposterdb.com/api/assets/162977 }
+
   "Mulan":
     template: {name: Set, collection: 87236, poster: https://theposterdb.com/api/assets/162973 }
+
+  "Peter Pan":
+    template: {name: Set, collection: 55422, poster: https://theposterdb.com/api/assets/162155 }
 
   "Planes":
     template: {name: Set, collection: 270252, poster: https://theposterdb.com/api/assets/199867 }
@@ -58,23 +82,20 @@ collections:
   "Pocahontas":
     template: {name: Set, collection: 136214, poster: https://theposterdb.com/api/assets/191948 }
 
-  "Tarzan (Animation)":
+  "Rescuers":
+    template: {name: Set, collection: 57971, poster: https://theposterdb.com/api/assets/162968 }
+
+  "Tangled":
+    template: {name: Set, list: 8251046, poster: https://theposterdb.com/api/assets/162959 }
+
+  "Tarzan":
     template: {name: Set, collection: 106768, poster: https://theposterdb.com/api/assets/162958 }
 
-  "The Emperor's New Groove":
-    template: {name: Set, collection: 178117, poster: https://theposterdb.com/api/assets/162998 }
+  "Tinker Bell":
+    template: {name: Set, collection: 315595, poster: https://theposterdb.com/api/assets/162956 }
 
-  "The Fox and the Hound":
-    template: {name: Set, collection: 100970, poster: https://theposterdb.com/api/assets/163001 }
+  "Winnie the Pooh":
+    template: {name: Set, collection: null, poster: https://theposterdb.com/api/assets/167951 }
 
-  "The Hunchback of Notre Dame":
-    template: {name: Set, collection: 97456, poster: https://theposterdb.com/api/assets/162989 }
-
-  "The Jungle Book (Animated)":
-    template: {name: Set, collection: 97459, poster: https://theposterdb.com/api/assets/162985 }
-
-  "The Lion King":
-    template: {name: Set, collection: 94032, poster: https://theposterdb.com/api/assets/162978 }
-
-  "The Little Mermaid":
-    template: {name: Set, collection: 33085, poster: https://theposterdb.com/api/assets/162977 }
+  "Wreck-It Ralph":
+    template: {name: Set, collection: 404825, poster: https://theposterdb.com/api/assets/162950 }
