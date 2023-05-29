@@ -1,0 +1,55 @@
+##############################################################################
+#                            Commonsense Overlay                             #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#   https://metamanager.wiki/en/latest/defaults/overlays/commonsense.html    #
+##############################################################################
+
+external_templates:
+  pmm: templates
+  template_variables:
+    default:
+      key: <<overlay_name>>
+    horizontal_offset: 15
+    horizontal_align: left
+    vertical_offset: 30
+    vertical_align: bottom
+    file: config/bbfc/<<overlay_name>>.png
+
+templates:
+  commonsense:
+    ignore_blank_results: true
+    plex_search:
+      validate: false
+      any:
+        content_rating: <<rating>>
+
+overlays:
+  GB_BBFC_U:
+    template:
+      - name: standard
+      - {name: commonsense, rating: "U, gb/U, gb/0+, G, TV-Y, TV-G, E, gb/E"}
+  GB_BBFC_PG:
+    template:
+      - name: standard
+      - {name: commonsense, rating: "PG, gb/PG, gb/9+, TV-PG, TV-Y7, TV-Y7-FV, gb/6+"}
+  GB_BBFC_12:
+    template:
+      - name: standard
+      - {name: commonsense, rating: "12, gb/12"}
+  GB_BBFC_12A:
+    template:
+      - name: standard
+      - {name: commonsense, rating: "12A, gb/12A, 12+, PG-13, TV-13"}
+  GB_BBFC_15:
+    template:
+      - name: standard
+      - {name: commonsense, rating: "15, gb/15, gb/14+, TV-14, gb/Caution"}
+  GB_BBFC_18:
+    template:
+      - name: standard
+      - {name: commonsense, rating: "18, gb/18, MA-17, TVMA, TV-MA, R"}
+  GB_BBFC_R18:
+    template:
+      - name: standard
+      - {name: commonsense, rating: "R18, gb/R18, gb/X, X, NC-17"}
