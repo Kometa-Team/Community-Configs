@@ -1,0 +1,113 @@
+## This file is a template remove the .template to use the file
+
+libraries:              # Library mappings must have a colon (:) placed after them
+  Movies:
+    overlay_path:
+    - remove_overlays: false
+    - pmm: resolution
+      template_variables:
+        use_edition: false
+        use_dv: false
+        use_1080p: false
+        use_720p: false
+        use_576p: false
+        use_480p: false
+    - file: /config/bbfc.yml
+    metadata_path:
+    - pmm: seasonal
+      schedule: hourly(7)
+      visible_home: true
+      visible_shared: true
+    - file: config/movies.yml
+      schedule: hourly(7)
+    radarr:
+      url: https://radarr.dh0.uk
+      token: e4a1a22aff3d478c8d4c6d2a10f93916
+      root_folder_path: /Library/Movies
+      availability: announced
+      quality_profile: Prefer 1080p
+      monitor: true
+      tag: pmm
+      add_missing: false
+      add_existing: false
+      upgrade_existing: false
+      search: false
+  TV Shows:
+    overlay_path:
+    - schedule: hourly(7)
+    - reset_overlays: tmdb
+    - remove_overlays: false
+    - reapply_overlay: false
+    - pmm: streaming
+      template_variables:
+        region: uk
+        vertical_align: top
+        horizontal_offset: 15
+        horizontal_align: left
+        vertical_offset: 15
+    metadata_path:
+    - file: config/tv.yml
+      schedule: hourly(7)
+settings:                  # Can be individually specified per library as well
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  assets_for_all: false
+  sync_mode: append
+  show_unmanaged: true
+  show_filtered: false
+  show_missing: true
+  save_missing: true
+  run_again_delay: 2
+  missing_only_released: false
+  create_asset_folders: false
+  collection_minimum: 1
+  delete_below_minimum: false
+  tvdb_language: default
+  show_missing_assets: true
+  asset_depth: 0
+  dimensional_asset_rename: false
+  show_missing_season_assets: false
+  delete_not_scheduled: false
+  only_filter_missing: false
+  show_options: false
+  ignore_ids:
+  ignore_imdb_ids:
+  playlist_sync_to_user: all
+  prioritize_assets: false
+  download_url_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  default_collection_order:
+  item_refresh_delay: 0
+  playlist_report: true
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+
+  show_unconfigured: true
+  playlist_exclude_users:
+plex:                       # Can be individually specified per library as well
+  url: http://127.0.0.1:32400
+  token: mpARXhszZRLvaLFBpSdu
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+tmdb:
+  apikey: ce36b7e6766a2249de4703ec2a329f60
+  language: en
+  cache_expiration: 60
+  region: gb
+trakt:
+  client_id: aed6724c803d87530070bc5af7299e2aa52ce7812032b339c5aeba4be89123a1
+  client_secret: 253beca80efc4812d88cd77d7b078439d874af39f1d310404571da276ca7a622
+  pin:
+  authorization:
+    access_token: bb9f488c315a272bdb8a93cac4d322b8a04ed2e2f6bb3a8f52be945fb1f59cc8
+    token_type: Bearer
+    expires_in: 7889237
+    refresh_token: 9511b2f682b37d0a7e99e6254992374f061e3cb1afd1f9659b8f04161f029025
+    scope: public
+    created_at: 1684130400
