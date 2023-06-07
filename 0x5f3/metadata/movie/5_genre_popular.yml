@@ -155,7 +155,7 @@ collections:
     schedule: daily
     template: {
                     name: popular,
-                    genres: "musicals",
+                    genres: "musical",
                     title_type: "feature,tv_movie",
                     languages: "en",
                     }
