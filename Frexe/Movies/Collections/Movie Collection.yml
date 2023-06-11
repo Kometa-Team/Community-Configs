@@ -70,6 +70,10 @@ collections:
   "Austin Powers":
     template: {name: Set, collection: 1006, poster: https://theposterdb.com/api/assets/163540 }
 
+################################################ Avatar ###############################################
+  "Avatar":
+    template: {name: Set, collection: 87096, poster: https://theposterdb.com/api/assets/291315 }
+
 ######################################## Back to the Future ###########################################
   "Back to the Future":
     template: {name: Set, collection: 264, poster: https://theposterdb.com/api/assets/163128 }
@@ -379,7 +383,7 @@ collections:
 
 ############################################# One Piece ################################################
   "One Piece":
-    template: {name: Set, collection: 23456, poster: https://theposterdb.com/api/assets/285890 }
+    template: {name: Set, collection: "23456, 1052713", poster: https://theposterdb.com/api/assets/285890 }
 
 ##################################### OSS 117 The Reboot Saga ##########################################
   "OSS 117 The Reboot Saga":
@@ -542,6 +546,10 @@ collections:
 ################################################ Waiting ################################################
   "Waiting":
     template: {name: Set, collection: 93731, poster: https://theposterdb.com/api/assets/287965 }
+
+############################################### Zombieland ##############################################
+  "Zombieland":
+    template: {name: Set, collection: 537982, poster: https://theposterdb.com/api/assets/161841 }
 
 ################################################ Zoolander ##############################################
   "Zoolander":

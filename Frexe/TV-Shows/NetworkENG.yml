@@ -1,0 +1,46 @@
+templates:
+  set:
+    optional:
+      - network
+    tmdb_network: <<network>>
+    sort_title: 000<<collection_name>>
+    sync_mode: sync
+    url_poster: <<poster>>
+
+collections:
+
+ Apple TV+:
+        template: { name: set, network: "2552", poster: https://theposterdb.com/api/assets/322100, }
+        summary: "Apple TV+ is an American subscription streaming service owned and operated by Apple Inc. Launched on November 1, 2019, it offers a selection of original production film and television series called Apple Originals."
+
+ HBO:
+        template: { name: set, network: "49", poster: https://theposterdb.com/api/assets/323584, }
+        summary:
+
+ Channel 4:
+        template: { name: set, network: "26", poster: https://theposterdb.com/api/assets/328981, }
+        summary: "Channel 4 is a British free-to-air public broadcast television channel owned and operated by the state-owned Channel Four Television Corporation. It is publicly owned but, unlike the BBC, it receives no public funding and is instead funded entirely by its own commercial activities, including publicity."
+
+ Discovery+:
+        template: { name: set, network: "4883, 4353", poster: https://theposterdb.com/api/assets/345090, }
+        summary: "Discovery+ is an American streaming service owned by Warner Bros. Discovery . The service focuses on factual programming drawn from the libraries of Discovery's main channel brands, as well as original series (including spin-offs of programs from Discovery's television networks), and other acquired content."
+
+ FOX:
+        template: { name: set, network: "19", poster: https://theposterdb.com/api/assets/327338, }
+        summary: "Twenty-First Century Fox, Inc., doing business as 21st Century Fox (21CF), was an American multinational mass media and entertainment conglomerate that was based in Midtown Manhattan, New York City. It was one of the two companies formed on June 28, 2013, following a spin-off of the publishing assets of the old News Corporation as News Corp."
+
+ Hulu:
+        template: { name: set, network: "453", poster: https://theposterdb.com/api/assets/326888, }
+        summary: "Hulu LLC is an American subscription streaming service majority-owned by The Walt Disney Company, with Comcast's NBCUniversal holding a minority stake (until 2024) (1:2). It was launched on October 29, 2007 and it offers a library of films and television series from studios including 20th Century Studios, Searchlight Pictures, Disney Television Studios, ABC, Freeform, and FX Networks among others, as well as Hulu original programming."
+
+ Paramount+:
+        template: { name: set, network: "4330, 5506, 6100, 2076", poster: https://theposterdb.com/api/assets/327988, }
+        summary: "Paramount+ is an American subscription video on-demand service owned by Paramount Global. The service's content is drawn primarily from the libraries of CBS Media Ventures (including CBS Studios), Paramount Media Networks (formerly Viacom Media Networks and ViacomCBS Domestic Media Networks), and Paramount Pictures, while also including original series and films, live streaming sports coverage, and in the U.S., live streaming of local CBS broadcast stations."
+
+ Prime Video:
+        template: { name: set, network: "1024", poster: https://theposterdb.com/api/assets/323914, }
+        summary: "Amazon Prime Video, or simply Prime Video, is an American subscription video on-demand over-the-top streaming and rental service of Amazon offered as a standalone service or as part of Amazon's Prime subscription. The service primarily distributes films and television series produced by Amazon Studios and MGM Holdings or licensed to Amazon, as Amazon Originals, with the service also hosting content from other providers, content add-ons, live sporting events, and video rental and purchasing services."
+
+ TLC:
+        template: { name: set, network: "84", poster: https://theposterdb.com/api/assets/357377, }
+        summary: "TLC is an American cable television channel owned by Warner Bros. Discovery. First established in 1980 as The Learning Channel, it initially focused on educational and instructional programming."
