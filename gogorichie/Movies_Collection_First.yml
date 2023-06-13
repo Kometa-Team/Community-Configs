@@ -39,7 +39,8 @@ collections:
           - 2020
           - 2021
           - 2022
-    collection_order: release
+          - 2023
+    collection_order: release.desc
     collection_mode: default
   IMDB Top 250:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=25
