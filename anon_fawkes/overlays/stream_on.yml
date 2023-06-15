@@ -68,6 +68,8 @@ templates:
       weight_<<key>>: <<weight>>
       style: Round
     ignore_blank_results: true
+    mdblist_list:
+      url: https://mdblist.com/lists/plexmetamanager/<<type>>-<<library_type>>s/
     overlay:
       name: <<overlay_name>>
       queue: stream
@@ -81,67 +83,82 @@ templates:
 
 overlays:
   STREAMBLANK:
-    template:
-      - name: Streaming
+    template: {name: Streaming, type: netflix}
     overlay:
       name: STREAMBLANK
       git: anon_fawkes/overlays/images/STREAMBLANK
-    plex_search:
-      validate: false
-      any:
-        collection:
-          - AppleTVPlus
-          - Prime
-          - Hulu
-          - Paramount
-          - Peacock
-          - DiscoveryPlus
-          - Disney
-          - HBO
-          - Netflix
+
+  STREAMBLANK1:
+    template:  {name: Streaming, type: amazon}
+    overlay:
+      name: STREAMBLANK
+      git: anon_fawkes/overlays/images/STREAMBLANK
+
+  STREAMBLANK2:
+    template: {name: Streaming, type: hulu}
+    overlay:
+      name: STREAMBLANK
+      git: anon_fawkes/overlays/images/STREAMBLANK
+
+  STREAMBLANK3:
+    template: {name: Streaming, type: paramount}
+    overlay:
+      name: STREAMBLANK
+      git: anon_fawkes/overlays/images/STREAMBLANK
+
+  STREAMBLANK4:
+    template: {name: Streaming, type: peacock}
+    overlay:
+      name: STREAMBLANK
+      git: anon_fawkes/overlays/images/STREAMBLANK
+
+  STREAMBLANK5:
+    template: {name: Streaming, type: discovery}
+    overlay:
+      name: STREAMBLANK
+      git: anon_fawkes/overlays/images/STREAMBLANK
+
+  STREAMBLANK6:
+    template: {name: Streaming, type: disney}
+    overlay:
+      name: STREAMBLANK
+      git: anon_fawkes/overlays/images/STREAMBLANK
+
+  STREAMBLANK7:
+    template: {name: Streaming, type: max}
+    overlay:
+      name: STREAMBLANK
+      git: anon_fawkes/overlays/images/STREAMBLANK
+
+  STREAMBLANK8:
+    template: {name: Streaming, type: appletv}
+    overlay:
+      name: STREAMBLANK
+      git: anon_fawkes/overlays/images/STREAMBLANK
 
   Netflix:
-    template: {name: Streaming, weight: 900, slug: netflix}
-    plex_search:
-      all:
-        collection: Netflix
+    template: {name: Streaming, weight: 900, slug: netflix, type: netflix}
+
   Prime:
-    template: {name: Streaming, weight: 800, slug: prime}
-    plex_search:
-      all:
-        collection: Prime
+    template: {name: Streaming, weight: 800, slug: prime, type: amazon}
+
   Hulu:
-    template: {name: Streaming, weight: 700, slug: hulu}
-    plex_search:
-      all:
-        collection: Hulu
+    template: {name: Streaming, weight: 700, slug: hulu, type: hulu}
+
   Paramount:
-    template: {name: Streaming, weight: 600, slug: paramount}
-    plex_search:
-      all:
-        collection: Paramount
+    template: {name: Streaming, weight: 600, slug: paramount, type: paramount}
+
   Peacock:
-    template: {name: Streaming, weight: 500, slug: peacock}
-    plex_search:
-      all:
-        collection: Peacock
+    template: {name: Streaming, weight: 500, slug: peacock, type: peacock}
+
   DiscoveryPlus:
-    template: {name: Streaming, weight: 400, slug: discovery}
-    plex_search:
-      all:
-        collection: DiscoveryPlus
+    template: {name: Streaming, weight: 400, slug: discovery, type: discovery}
+
   Disney:
-    template: {name: Streaming, weight: 300, slug: disney}
-    plex_search:
-      all:
-        collection: Disney
-  HBO:
-    template: {name: Streaming, weight: 200, slug: hbo}
-    plex_search:
-      all:
-        collection: HBO
+    template: {name: Streaming, weight: 300, slug: disney, type: disney}
+
+  Max:
+    template: {name: Streaming, weight: 200, slug: max, type: max}
+
   AppleTVPlus:
-    template: {name: Streaming, weight: 100, slug: apple}
-    plex_search:
-      all:
-        collection: AppleTVPlus
+    template: {name: Streaming, weight: 100, slug: apple, type: appletv}
