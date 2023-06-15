@@ -12,14 +12,6 @@ templates:
     sort_title: +<<collection_name>>
     summary: <<library_type>>s From the Streaming Service <<collection_name>>
     url_poster: https://theposterdb.com/api/assets/<<poster>>
-  discovery:
-    imdb_list:
-      url: https://www.imdb.com/search/title/?companies=co0834810
-    sync_mode: sync
-    collection_order: custom
-    sort_title: +<<collection_name>>
-    summary: <<library_type>>s From the Streaming Service <<collection_name>>
-    url_poster: https://theposterdb.com/api/assets/<<poster>>
 
 collections:
   AppleTVPlus:
@@ -36,7 +28,7 @@ collections:
     template: {name: network, type: peacock, poster: 205411}
   Disney:
     template: {name: network, type: disney, poster: 204376}
-  HBO:
-    template: {name: network, type: hbomax, poster: 168825}
+  Max:
+    template: {name: network, type: max, poster: 168825}
   DiscoveryPlus:
-    template: {name: discovery, poster: 220371}
+    template: {name: network, type: discovery, poster: 220371}
