@@ -15,6 +15,13 @@
   - Parental: Recently Added
   - Parental: Top Rated
 
+- 1_documentary.yml
+  - Documentaries: All
+  - Documentaries: Random
+  - Documentaries: Recently Released
+  - Documentaries: Recently Added
+  - Documentaries: Top Rated
+
 - 2_awards.yml
   - Emmy Award Winners
   - Emmy Award Nominees

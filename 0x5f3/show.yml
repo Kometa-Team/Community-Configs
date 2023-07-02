@@ -4,11 +4,10 @@ libraries:
   TV Shows:
     library_type: show
     operations:
-      delete_unmanaged_collections: true
+      delete_unmanaged_collections: false
     metadata_path:
 #    - repo: show/0_sonarr.yml
     - repo: show/1_suggested.yml
-    - repo: show/1_parental.yml
     - repo: show/2_year_top.yml
       schedule: weekly(monday)
     - repo: show/3_decades_top.yml
@@ -18,6 +17,8 @@ libraries:
     - repo: show/5_genre_popular.yml
     - repo: show/6_genre_top.yml
       schedule: weekly(saturday)
+#    - repo: show/1_parental.yml
+#    - repo: show/1_documentary.yml
 settings:
   asset_depth: 0
   asset_directory:
@@ -60,7 +61,7 @@ settings:
   show_unmanaged: false
   sync_mode: sync
   tvdb_language: default
-  verify_ssl: true
+  verify_ssl: false
 plex:
   url:
   token:

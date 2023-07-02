@@ -4,12 +4,11 @@ libraries:
   Movies:
     library_type: movie
     operations:
-      delete_unmanaged_collections: true
+      delete_unmanaged_collections: false
     metadata_path:
 #    - repo: movie/0_radarr.yml
     - repo: movie/1_suggested.yml
     - repo: movie/1_seasonal.yml
-    - repo: movie/1_parental.yml
     - repo: movie/2_year_top.yml
       schedule: weekly(monday)
     - repo: movie/3_decades_top.yml
@@ -19,10 +18,13 @@ libraries:
     - repo: movie/5_genre_popular.yml
     - repo: movie/6_genre_top.yml
       schedule: weekly(thursday)
-    - repo: movie/7_subgenre_top.yml
-      schedule: weekly(friday)
-    - repo: movie/9_collections.yml
-      schedule: weekly(sunday)
+#    - repo: movie/7_subgenre_top.yml
+#      schedule: weekly(friday)
+#    - repo: movie/9_collections.yml
+#      schedule: weekly(sunday)
+#    - repo: movie/1_parental.yml
+#    - repo: movie/1_documentary.yml
+#    - repo: movie/1_standup.yml
 settings:
   asset_depth: 0
   asset_directory:
@@ -65,7 +67,7 @@ settings:
   show_unmanaged: false
   sync_mode: sync
   tvdb_language: default
-  verify_ssl: true
+  verify_ssl: false
 plex:
   url:
   token:
