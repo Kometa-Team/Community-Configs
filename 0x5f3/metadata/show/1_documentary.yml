@@ -1,11 +1,10 @@
-## 1_parental.yml
+## 1_documentary.yml
 
 templates:
   plex:
     sort_title: "+1_<<num>>_<<collection_name>>"
     sync_mode: sync
     collection_mode: hide
-    label.sync: Parental
     visible_home: false
     visible_shared: false
     visible_library: false
@@ -16,8 +15,6 @@ templates:
     sort_title: "+1_<<num>>_<<collection_name>>"
     sync_mode: sync
     collection_mode: hide
-    label.sync: Parental
-    item_label.sync: Parental
     visible_home: false
     visible_shared: false
     visible_library: false
@@ -34,8 +31,6 @@ templates:
     sort_title: "+1_<<num>>_<<collection_name>>"
     sync_mode: sync
     collection_mode: hide
-    label.sync: Parental
-#    item_label.sync: Parental ## Enable on initial run
     visible_home: false
     visible_shared: false
     visible_library: false
@@ -47,65 +42,64 @@ templates:
       sort_by: title.asc
 
 collections:
-  "Parental: All":
-    summary: "TV shows suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-all.png
+  "Documentaries: All":
+    summary: "Documentaries"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/documentary/documentary-all.png
     template: {
                     name: mdblist,
-                    num: "A",
+                    num: "F",
                     mdblist_user: "archivist",
-                    mdblist_list: "collection-parental"
+                    mdblist_list: "collection-documentary"
                     }
 
-  "Parental: Random":
-    summary: "Random TV shows suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-random.png
+  "Documentaries: Random":
+    summary: "Random documentaries"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/documentary/documentary-random.png
     template: {
                     name: plex,
-                    num: "B"
+                    num: "G"
                     }
     smart_filter:
       all:
-        collection: "Parental: All"
+        collection: "Documentaries: All"
       sort_by: random
       limit: 250
 
-  "Parental: Recently Released":
-    summary: "Recently released TV shows suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-released.png
+  "Documentaries: Recently Released":
+    summary: "Recently released documentaries"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/documentary/documentary-released.png
     template: {
                     name: plex,
-                    num: "C"
+                    num: "H"
                     }
     smart_filter:
       all:
-        collection: "Parental: All"
+        collection: "Documentaries: All"
       sort_by: release.desc
       limit: 250
 
-  "Parental: Recently Added":
-    summary: "Recently added TV shows suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-added.png
+  "Documentaries: Recently Added":
+    summary: "Recently added documentaries"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/documentary/documentary-added.png
     template: {
                     name: plex_added,
-                    num: "D"
+                    num: "I"
                     }
     smart_filter:
       all:
-        collection: "Parental: All"
+        collection: "Documentaries: All"
       sort_by: added.desc
       limit: 100
 
-
-  "Parental: Top Rated":
-    summary: "Top rated TV shows suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-top-rated.png
+  "Documentaries: Top Rated":
+    summary: "Top rated documentaries"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/documentary/documentary-top-rated.png
     template: {
                     name: plex,
-                    num: "E"
+                    num: "J"
                     }
     smart_filter:
       all:
-        collection: "Parental: All"
+        collection: "Documentaries: All"
       sort_by: critic_rating.desc
       limit: 250
