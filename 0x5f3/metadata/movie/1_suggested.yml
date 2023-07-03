@@ -112,7 +112,7 @@ collections:
     schedule: daily
     template: {
                     name: trakt,
-                    num: 6
+                    num: 4
                     }
     trakt_chart:
       chart: watched
@@ -125,7 +125,7 @@ collections:
     schedule: daily
     template: {
                     name: trakt,
-                    num: 7
+                    num: 5
                     }
     trakt_chart:
       chart: watched
@@ -138,7 +138,7 @@ collections:
     schedule: weekly(sunday)
     template: {
                     name: trakt,
-                    num: 8
+                    num: 6
                     }
     trakt_chart:
       chart: watched
@@ -151,7 +151,7 @@ collections:
     schedule: weekly(sunday)
     template: {
                     name: trakt,
-                    num: 9
+                    num: 7
                     }
     trakt_chart:
       chart: watched

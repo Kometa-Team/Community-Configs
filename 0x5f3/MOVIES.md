@@ -23,6 +23,20 @@
   - Parental: Recently Released
   - Parental: Recently Added
   - Parental: Top Rated
+  
+- 1_documentary.yml
+  - Documentaries: All
+  - Documentaries: Random
+  - Documentaries: Recently Released
+  - Documentaries: Recently Added
+  - Documentaries: Top Rated
+  
+- 1_standup.yml
+  - Stand-up: All
+  - Stand-up: Random
+  - Stand-up: Recently Released
+  - Stand-up: Recently Added
+  - Stand-up: Top Rated
 
 - 2_awards.yml
   - Oscar Winners

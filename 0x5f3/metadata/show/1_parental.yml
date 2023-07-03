@@ -34,13 +34,13 @@ templates:
     sort_title: "+1_<<num>>_<<collection_name>>"
     sync_mode: sync
     collection_mode: hide
-    collection_order: custom
     label.sync: Parental
-#    item_label.sync: Parental # Enable on initial run
+#    item_label.sync: Parental ## Enable on initial run
     visible_home: false
     visible_shared: false
     visible_library: false
     delete_not_scheduled: false
+    collection_order: alpha
     cache_builders: 6
     mdblist_list:
       url: https://mdblist.com/lists/<<mdblist_user>>/<<mdblist_list>>/
@@ -52,31 +52,30 @@ collections:
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-all.png
     template: {
                     name: mdblist,
-                    num: "V",
-                    mdblist_user: "a2u2y13",
-                    mdblist_list: "list-suitable-for-children"
+                    num: "A",
+                    mdblist_user: "archivist",
+                    mdblist_list: "collection-parental"
                     }
 
   "Parental: Random":
     summary: "Random TV shows suitable for children"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-random.png
-    schedule: daily
     template: {
                     name: plex,
-                    num: "W"
+                    num: "B"
                     }
     smart_filter:
       all:
         collection: "Parental: All"
       sort_by: random
-      limit: 500
+      limit: 250
 
   "Parental: Recently Released":
     summary: "Recently released TV shows suitable for children"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-released.png
     template: {
                     name: plex,
-                    num: "X"
+                    num: "C"
                     }
     smart_filter:
       all:
@@ -89,7 +88,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-added.png
     template: {
                     name: plex_added,
-                    num: "Y"
+                    num: "D"
                     }
     smart_filter:
       all:
@@ -97,12 +96,13 @@ collections:
       sort_by: added.desc
       limit: 100
 
+
   "Parental: Top Rated":
     summary: "Top rated TV shows suitable for children"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-top-rated.png
     template: {
                     name: plex,
-                    num: "Z"
+                    num: "E"
                     }
     smart_filter:
       all:

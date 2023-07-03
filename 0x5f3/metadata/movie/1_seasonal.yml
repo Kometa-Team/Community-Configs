@@ -19,7 +19,7 @@ collections:
     schedule: range(02/10-02/14)
     template: {
                     name: seasonal,
-                    num: 5,
+                    num: 8,
                     holiday: "Valentine's Day",
                     }
     imdb_list:
@@ -32,7 +32,7 @@ collections:
     schedule: range(03/16-03/18)
     template: {
                     name: seasonal,
-                    num: 5,
+                    num: 8,
                     holiday: "St. Patrick's Day",
                     }
     imdb_list:
@@ -43,7 +43,7 @@ collections:
     schedule: range(03/22-04/25)
     template: {
                     name: seasonal,
-                    num: 5,
+                    num: 8,
                     holiday: "Easter",
                     }
     imdb_list:
@@ -59,7 +59,7 @@ collections:
     schedule: range(10/29-10/31)
     template: {
                     name: seasonal,
-                    num: 5,
+                    num: 8,
                     holiday: "Halloween",
                     }
     imdb_list:
@@ -73,7 +73,7 @@ collections:
     schedule: range(11/22-11/25)
     template: {
                     name: seasonal,
-                    num: 5,
+                    num: 8,
                     holiday: "Thanksgiving",
                     }
     imdb_list:
@@ -85,7 +85,7 @@ collections:
     schedule: range(12/01-12/31)
     template: {
                     name: seasonal,
-                    num: 5,
+                    num: 8,
                     holiday: "Christmas",
                     }
     letterboxd_list: https://letterboxd.com/0xf5e3/list/theme-christmas/
@@ -100,7 +100,7 @@ collections:
     schedule: range(12/26-01/02)
     template: {
                     name: seasonal,
-                    num: 5,
+                    num: 8,
                     holiday: "New Year's Eve",
                     }
     imdb_list: https://www.imdb.com/list/ls066838460

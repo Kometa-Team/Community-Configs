@@ -1,0 +1,14 @@
+templates:
+  set:
+    optional:
+      - network
+    tmdb_network: <<network>>
+    sort_title: 000<<collection_name>>
+    sync_mode: sync
+    url_poster: <<poster>>
+
+collections:
+
+ Discovery+:
+        template: { name: set, network: "4784", poster: https://theposterdb.com/api/assets/345090, }
+        summary: "Discovery+ er en amerikansk strømmetjeneste som eies av Warner Bros. Discovery. Tjenesten fokuserer på faktaprogrammering hentet fra bibliotekene til Discoverys viktigste kanalmerker, samt originale serier og annet anskaffet innhold. Den ble først lansert i India 23. mars 2020."

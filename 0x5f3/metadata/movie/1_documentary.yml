@@ -1,0 +1,105 @@
+## 1_documentary.yml
+
+templates:
+  plex:
+    sort_title: "+1_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 4
+
+  plex_added:
+    sort_title: "+1_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    cache_builders: 4
+
+  mdblist:
+    optional:
+      - mdblist_extra_1
+      - mdblist_extra_2
+      - mdblist_extra_3
+      - mdblist_extra_4
+      - mdblist_extra_5
+    sort_title: "+1_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    collection_mode: hide
+    visible_home: false
+    visible_shared: false
+    visible_library: false
+    delete_not_scheduled: false
+    collection_order: alpha
+    cache_builders: 6
+    mdblist_list:
+      url: https://mdblist.com/lists/<<mdblist_user>>/<<mdblist_list>>/
+      sort_by: title.asc
+
+collections:
+  "Documentaries: All":
+    summary: "Documentaries"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/documentary/documentary-all.png
+    template: {
+                    name: mdblist,
+                    num: "F",
+                    mdblist_user: "archivist",
+                    mdblist_list: "collection-documentary"
+                    }
+
+  "Documentaries: Random":
+    summary: "Random documentaries"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/documentary/documentary-random.png
+    template: {
+                    name: plex,
+                    num: "G"
+                    }
+    smart_filter:
+      all:
+        collection: "Documentaries: All"
+      sort_by: random
+      limit: 250
+
+  "Documentaries: Recently Released":
+    summary: "Recently released documentaries"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/documentary/documentary-released.png
+    template: {
+                    name: plex,
+                    num: "H"
+                    }
+    smart_filter:
+      all:
+        collection: "Documentaries: All"
+      sort_by: release.desc
+      limit: 250
+
+  "Documentaries: Recently Added":
+    summary: "Recently added documentaries"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/documentary/documentary-added.png
+    template: {
+                    name: plex_added,
+                    num: "I"
+                    }
+    smart_filter:
+      all:
+        collection: "Documentaries: All"
+      sort_by: added.desc
+      limit: 100
+
+  "Documentaries: Top Rated":
+    summary: "Top rated documentaries"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/documentary/documentary-top-rated.png
+    template: {
+                    name: plex,
+                    num: "J"
+                    }
+    smart_filter:
+      all:
+        collection: "Documentaries: All"
+      sort_by: critic_rating.desc
+      limit: 250

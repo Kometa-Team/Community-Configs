@@ -1,7 +1,7 @@
 ## 0_radarr.yml
 
 collections:
-  "Anticipated":
+  "":
     build_collection: false
     schedule: daily
     radarr_add_missing: true
