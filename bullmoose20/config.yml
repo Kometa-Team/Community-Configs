@@ -10,6 +10,7 @@ libraries:
     metadata_path:
     - pmm: based                                    # collections based on a book, comic, story, video game
     # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)    
+    # - file: config/metadata/both/aspect.yml         # Creates collections based on aspect ratio of media item 
     - git: bullmoose20/movies_refresh               # tells plex to refresh media items added within the last 7 days
     - pmm: separator_award                          # An "index card"
     - pmm: bafta                                    # BAFTA Awards
@@ -107,6 +108,7 @@ libraries:
     - pmm: content_rating_cs                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
     - pmm: content_rating_us                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
     - pmm: content_rating_uk                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
+    - pmm: content_rating_mal                       # Choose content_rating_mal for anime ratings
     - pmm: genre                                    # Action, Comedy, Drama, etc.
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
       # template_variables:
@@ -145,6 +147,7 @@ libraries:
     - remove_overlays: false                        # Set to true if you want to remove overlays
     - reapply_overlays: false                       # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
     # - reset_overlays: tmdb                          # if you want to reset the poster to default poster from tmdb
+    # - file: config/metadata/overlays/aspect.yml         # Creates overlays based on aspect ratio of media item 
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2
     # - pmm: content_rating_uk                        # UK BBFC content ratings
@@ -233,7 +236,8 @@ libraries:
     metadata_path:
     - pmm: based                                    # collections based on a book, comic, story, video game
     # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Test g only)    
-    - git: bullmoose20/custom                       # Custom metadata file for shows like Money Heist
+    # - file: config/metadata/both/aspect.yml         # Creates collections based on aspect ratio of media item 
+    - git: bullmoose20/money_heist                  # Custom metadata file for Money Heist
     - git: bullmoose20/tv_refresh                   # Tells plex to refresh media items added within the last 7 days
     - pmm: separator_award                          # An "index card"
     - pmm: choice                                   # Critic's Choice Awards
@@ -291,6 +295,7 @@ libraries:
     - pmm: content_rating_cs                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
     - pmm: content_rating_us                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
     - pmm: content_rating_uk                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
+    - pmm: content_rating_mal                       # Choose content_rating_mal for anime ratings
     - pmm: genre                                    # Action, Comedy, Drama, etc.
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
       # template_variables:
@@ -315,6 +320,13 @@ libraries:
     - remove_overlays: false                        # Set to true if you want to remove overlays
     - reapply_overlays: false                       # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
     # - reset_overlays: tmdb                          # if you want to reset the poster to default poster from tmdb
+    # - file: config/metadata/overlays/aspect.yml       # Creates aspect ratio overlay    
+    # - file: config/metadata/overlays/aspect.yml
+      # template_variables:
+        # overlay_level: episode
+    # - file: config/metadata/overlays/aspect.yml 
+      # template_variables:
+        # overlay_level: season
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
     - pmm: audio_codec
       template_variables:
@@ -636,3 +648,4 @@ mal:
     refresh_token: (redacted)
   localhost_url:
   cache_expiration: 60
+
