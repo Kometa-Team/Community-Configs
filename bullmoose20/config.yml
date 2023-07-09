@@ -323,60 +323,53 @@ libraries:
     # - file: config/metadata/overlays/aspect.yml       # Creates aspect ratio overlay    
     # - file: config/metadata/overlays/aspect.yml
       # template_variables:
-        # overlay_level: episode
+        # overlay_level: season
     # - file: config/metadata/overlays/aspect.yml 
       # template_variables:
-        # overlay_level: season
+        # overlay_level: episode
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
     - pmm: audio_codec
       template_variables:
-        overlay_level: episode
+        overlay_level: season
     - pmm: audio_codec
       template_variables:
-        overlay_level: season
+        overlay_level: episode
     # - pmm: content_rating_uk                        # UK BBFC content ratings
     # - pmm: content_rating_uk
       # template_variables:
-        # overlay_level: episode
+        # overlay_level: season
     # - pmm: content_rating_uk
       # template_variables:
-        # overlay_level: season
+        # overlay_level: episode
     - pmm: content_rating_us_show                   # US MPAA content ratings
     - pmm: content_rating_us_show
       template_variables:
-        overlay_level: episode
+        overlay_level: season
     - pmm: content_rating_us_show
       template_variables:
-        overlay_level: season
+        overlay_level: episode
     # - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
     # - pmm: commonsense
       # template_variables:
-        # overlay_level: episode
+        # overlay_level: season
     # - pmm: commonsense
       # template_variables:
-        # overlay_level: season
+        # overlay_level: episode
     # - pmm: direct_play
+    # - pmm: direct_play
+      # template_variables:
+        # overlay_level: season
     # - pmm: direct_play
       # template_variables:
         # overlay_level: episode
-    # - pmm: direct_play
-      # template_variables:
-        # overlay_level: season
     - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
     - pmm: studio
       template_variables:
-        overlay_level: episode
+        overlay_level: season
     - pmm: studio
       template_variables:
-        overlay_level: season
-    - pmm: streaming
-    - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
-    - pmm: network
-      template_variables:
         overlay_level: episode
-    - pmm: network
-      template_variables:
-        overlay_level: season
+    - pmm: streaming
     - pmm: episode_info                             # SE##E## information in bottom right and works with overlay_level episode
       template_variables:
         overlay_level: episode
@@ -387,14 +380,21 @@ libraries:
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2 and works with overlay_level show, episode, and season
     - pmm: language_count
       template_variables:
-        overlay_level: episode
+        overlay_level: season
     - pmm: language_count
       template_variables:
-        overlay_level: season
+        overlay_level: episode
     - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
     - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       template_variables:
         use_subtitles: true
+    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
+      template_variables:
+        overlay_level: season
+    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
+      template_variables:
+        use_subtitles: true
+        overlay_level: season
     - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       template_variables:
         overlay_level: episode
@@ -402,21 +402,14 @@ libraries:
       template_variables:
         use_subtitles: true
         overlay_level: episode
-    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
-      template_variables:
-        overlay_level: season
-    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
-      template_variables:
-        use_subtitles: true
-        overlay_level: season
     - pmm: mediastinger                             # Mediastinger overlay when the media item contains a stinger at the end of the movie/show or during the credits and works with overlay_level show
     - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
     - pmm: network
       template_variables:
-        overlay_level: episode
+        overlay_level: season
     - pmm: network
       template_variables:
-        overlay_level: season
+        overlay_level: episode
     - pmm: ratings                                  # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format. overlay_level: show has 3 ratings max
       template_variables:
         rating1: user
@@ -457,10 +450,10 @@ libraries:
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. and works with overlay_level show, episode, and season
     - pmm: resolution
       template_variables:
-        overlay_level: episode
+        overlay_level: season
     - pmm: resolution
       template_variables:
-        overlay_level: season
+        overlay_level: episode
     - pmm: ribbon                                   # Used for ribbon in bottom right
     - pmm: runtimes                                 # Runtime information in bottom right and works with overlay_level episode
       template_variables:
@@ -472,7 +465,7 @@ libraries:
         # back_width: 1000
         # back_height: 1500
         # back_color: "#f52891cc" 
-        overlay_level: episode
+        overlay_level: show
     - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
       template_variables:
         # back_width: 1000
@@ -484,14 +477,14 @@ libraries:
         # back_width: 1000
         # back_height: 1500
         # back_color: "#f52891cc" 
-        overlay_level: show
+        overlay_level: episode
     - pmm: video_format                             # Remux, DVD, Blu-Ray, etc. in bottom left and works with overlay_level show, episode, and season
     - pmm: video_format
       template_variables:
-        overlay_level: episode
+        overlay_level: season
     - pmm: video_format
       template_variables:
-        overlay_level: season
+        overlay_level: episode
     settings:
       asset_directory:
       - config/assets/TV Shows/
