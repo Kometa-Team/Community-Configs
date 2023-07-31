@@ -15,11 +15,11 @@ templates:
 
 collections:
   "Valentine's Day Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/seasonal/seasonal-valentines-day.png
+    url_poster: https://images2.imgbox.com/69/8c/5ZIhpzhO_o.png
     schedule: range(02/10-02/14)
     template: {
                     name: seasonal,
-                    num: 8,
+                    num: 9,
                     holiday: "Valentine's Day",
                     }
     imdb_list:
@@ -28,22 +28,22 @@ collections:
       - https://www.imdb.com/list/ls064427905
 
   "St. Patrick's Day Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/seasonal/seasonal-stpatricks.png
+    url_poster: https://images2.imgbox.com/97/89/K94MCNS5_o.png
     schedule: range(03/16-03/18)
     template: {
                     name: seasonal,
-                    num: 8,
+                    num: 9,
                     holiday: "St. Patrick's Day",
                     }
     imdb_list:
       - https://www.imdb.com/list/ls063934595
 
   "Easter Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/seasonal/seasonal-easter.png
+    url_poster: https://images2.imgbox.com/c3/a8/HmGl2lGj_o.png
     schedule: range(03/22-04/25)
     template: {
                     name: seasonal,
-                    num: 8,
+                    num: 9,
                     holiday: "Easter",
                     }
     imdb_list:
@@ -55,11 +55,11 @@ collections:
       - https://www.imdb.com/list/ls088378250/
 
   "Halloween Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/seasonal/seasonal-halloween.png
+    url_poster: https://images2.imgbox.com/2a/dd/e33o0EE5_o.png
     schedule: range(10/29-10/31)
     template: {
                     name: seasonal,
-                    num: 8,
+                    num: 9,
                     holiday: "Halloween",
                     }
     imdb_list:
@@ -69,11 +69,11 @@ collections:
       - https://www.imdb.com/search/title/?genres=horror&keywords=haunted-house&sort=moviemeter,asc
 
   "Thanksgiving Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/seasonal/seasonal-thanksgiving.png
+    url_poster: https://images2.imgbox.com/36/b5/CDUDv8pH_o.png
     schedule: range(11/22-11/25)
     template: {
                     name: seasonal,
-                    num: 8,
+                    num: 9,
                     holiday: "Thanksgiving",
                     }
     imdb_list:
@@ -81,11 +81,11 @@ collections:
       - https://www.imdb.com/list/ls091597850/
 
   "Christmas Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/seasonal/seasonal-christmas.png
+    url_poster: https://images2.imgbox.com/8d/9a/tiNxDZfS_o.png
     schedule: range(12/01-12/31)
     template: {
                     name: seasonal,
-                    num: 8,
+                    num: 9,
                     holiday: "Christmas",
                     }
     letterboxd_list: https://letterboxd.com/0xf5e3/list/theme-christmas/
@@ -96,11 +96,11 @@ collections:
       - https://www.imdb.com/list/ls027567380
 
   "New Year's Eve Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/seasonal/seasonal-new-year.png
+    url_poster: https://images2.imgbox.com/a0/43/GKr1OGG7_o.png
     schedule: range(12/26-01/02)
     template: {
                     name: seasonal,
-                    num: 8,
+                    num: 9,
                     holiday: "New Year's Eve",
                     }
     imdb_list: https://www.imdb.com/list/ls066838460

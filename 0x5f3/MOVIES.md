@@ -1,5 +1,7 @@
 - 1_suggested.yml
   - Random Movies
+  - Recently Released Movies (English)
+  - Recently Added Movies (English)
   - Trending Movies
   - Popular Movies
   - Top Rated Movies

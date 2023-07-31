@@ -72,7 +72,7 @@ templates:
 collections:
   "Emmy Award Winners":
     summary: "A collection of Emmy Award Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-emmy-winners.png
+    url_poster: https://images2.imgbox.com/9b/e4/k0PK91qr_o.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -85,7 +85,7 @@ collections:
 
   "Emmy Award Nominees":
     summary: "A collection of Emmy Award Nominees"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-emmy-nominees.png
+    url_poster: https://images2.imgbox.com/c1/c7/71WmWEkL_o.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -98,7 +98,7 @@ collections:
 
   "Golden Globes Winners":
     summary: "A collection of Golden Globes Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-goldenglobes-winners.png
+    url_poster: https://images2.imgbox.com/90/92/iw9mYXgG_o.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -111,7 +111,7 @@ collections:
 
   "Golden Globes Nominees":
     summary: "A collection of Golden Globes Nominees"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-goldenglobes-nominees.png
+    url_poster: https://images2.imgbox.com/0a/a2/HH5uBXFt_o.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -124,7 +124,7 @@ collections:
 
   "BAFTA Winners":
     summary: "A collection of BAFTA Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-bafta-winners.png
+    url_poster: https://images2.imgbox.com/00/61/roVpyMsf_o.png
     schedule: weekly(monday)
     template: {
                     name: custom_1,
@@ -135,7 +135,7 @@ collections:
 
   "Critics Choice Award Winners":
     summary: "A collection of Critics Choice Award Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-critics-winners.png
+    url_poster: https://images2.imgbox.com/0e/d1/g0Wm0Xqn_o.png
     schedule: weekly(monday)
     template: {
                     name: custom_2,

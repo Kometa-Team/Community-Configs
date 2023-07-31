@@ -6,25 +6,24 @@ libraries:
     operations:
       delete_unmanaged_collections: false
     metadata_path:
-#    - repo: movie/0_radarr.yml
-    - repo: movie/1_suggested.yml
-    - repo: movie/1_seasonal.yml
-    - repo: movie/2_year_top.yml
+#   - file: config/metadata/movie/0_radarr.yml
+    - file: config/metadata/movie/1_suggested.yml
+    - file: config/metadata/movie/1_seasonal.yml
+    - file: config/metadata/movie/2_year_top.yml
       schedule: weekly(monday)
-    - repo: movie/3_decades_top.yml
+    - file: config/metadata/movie/3_decades_top.yml
       schedule: weekly(tuesday)
-    - repo: movie/4_awards.yml
+    - file: config/metadata/movie/4_awards.yml
       schedule: weekly(wednesday)
-    - repo: movie/5_genre_popular.yml
-    - repo: movie/6_genre_top.yml
+    - file: config/metadata/movie/5_genre_popular.yml
+    - file: config/metadata/movie/6_genre_top.yml
       schedule: weekly(thursday)
-#    - repo: movie/7_subgenre_top.yml
-#      schedule: weekly(friday)
-#    - repo: movie/9_collections.yml
+#    - file: config/metadata/movie/7_subgenre_top.yml
+#    - file: config/metadata/movie/9_collections.yml
 #      schedule: weekly(sunday)
-#    - repo: movie/1_parental.yml
-#    - repo: movie/1_documentary.yml
-#    - repo: movie/1_standup.yml
+#    - file: config/metadata/movie/1_parental.yml
+#    - file: config/metadata/movie/1_documentary.yml
+#    - file: config/metadata/movie/1_standup.yml
 settings:
   asset_depth: 0
   asset_directory:
@@ -34,15 +33,16 @@ settings:
   cache_expiration: 60
   check_nightly: false
   create_asset_folders: false
-  custom_repo: https://github.com/0x5f3/pmm-config/assets/metadata/
+  custom_repo:
   default_collection_order:
   delete_below_minimum: true
   delete_not_scheduled: false
   dimensional_asset_rename: false
-  download_url_assets: false
+  download_url_assets: true
   ignore_ids:
   ignore_imdb_ids:
-  item_refresh_delay: 0
+  item_refresh: false
+  item_refresh_delay: 2
   minimum_items: 5
   missing_only_released: false
   notifiarr_collection_addition: false
@@ -54,7 +54,7 @@ settings:
   playlist_sync_to_users: all
   prioritize_assets: false
   released_missing_only: false
-  run_again_delay: 2
+  run_again_delay: 5
   save_missing: false
   show_asset_not_needed: true
   show_filtered: false
@@ -71,7 +71,7 @@ settings:
 plex:
   url:
   token:
-  timeout: 360
+  timeout: 180
   clean_bundles: false
   empty_trash: false
   optimize: false
