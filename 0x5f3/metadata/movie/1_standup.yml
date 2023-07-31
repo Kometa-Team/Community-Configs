@@ -44,7 +44,7 @@ templates:
 collections:
   "Stand-up: All":
     summary: "Stand-up"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/standup/standup-all.png
+    url_poster: https://images2.imgbox.com/31/e1/ZElv6PHz_o.png
     template: {
                     name: mdblist,
                     num: "K",
@@ -54,7 +54,7 @@ collections:
 
   "Stand-up: Random":
     summary: "Random Stand-up"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/standup/standup-random.png
+    url_poster: https://images2.imgbox.com/ad/4f/nuF1bOeA_o.png
     template: {
                     name: plex,
                     num: "L"
@@ -67,7 +67,7 @@ collections:
 
   "Stand-up: Recently Released":
     summary: "Recently released Stand-up"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/standup/standup-released.png
+    url_poster: https://images2.imgbox.com/a2/c5/BzdrMrGy_o.png
     template: {
                     name: plex,
                     num: "M"
@@ -80,7 +80,7 @@ collections:
 
   "Stand-up: Recently Added":
     summary: "Recently added Stand-up"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/standup/standup-added.png
+    url_poster: https://images2.imgbox.com/d7/e6/cEZnXBwk_o.png
     template: {
                     name: plex_added,
                     num: "N"
@@ -93,7 +93,7 @@ collections:
 
   "Stand-up: Top Rated":
     summary: "Top rated Stand-up"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/standup/standup-top-rated.png
+    url_poster: https://images2.imgbox.com/04/14/LwegJAI5_o.png
     template: {
                     name: plex,
                     num: "O"

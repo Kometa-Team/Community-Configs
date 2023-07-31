@@ -38,7 +38,7 @@ templates:
 collections:
   "Oscar Winners":
     summary: "A collection of Oscar Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-oscars-winners.png
+    url_poster: https://images2.imgbox.com/ad/c9/nfhQr1bK_o.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -51,7 +51,7 @@ collections:
 
   "Oscar Nominees":
     summary: "A collection of Oscar Nominees"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-oscars-nominees.png
+    url_poster: https://images2.imgbox.com/98/37/PigipQFj_o.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -64,7 +64,7 @@ collections:
 
   "Golden Globes Winners":
     summary: "A collection of Golden Globes Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-goldenglobes-winners.png
+    url_poster: https://images2.imgbox.com/90/92/iw9mYXgG_o.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -77,7 +77,7 @@ collections:
 
   "Golden Globes Nominees":
     summary: "A collection of Golden Globes Nominees"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-goldenglobes-nominees.png
+    url_poster: https://images2.imgbox.com/0a/a2/HH5uBXFt_o.png
     schedule: weekly(monday)
     template: {
                     name: imdb,
@@ -90,7 +90,7 @@ collections:
 
   "BAFTA Winners":
     summary: "A collection of BAFTA Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-bafta-winners.png
+    url_poster: https://images2.imgbox.com/00/61/roVpyMsf_o.png
     schedule: weekly(monday)
     template: {
                     name: letterboxd,
@@ -103,7 +103,7 @@ collections:
 
   "Berlinale Winners":
     summary: "A collection of Berlinale Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-berlinale-winners.png
+    url_poster: https://images2.imgbox.com/91/9a/HV6PSMf9_o.png
     schedule: weekly(monday)
     template: {
                     name: letterboxd,
@@ -116,7 +116,7 @@ collections:
 
   "Cannes Film Festival Winners":
     summary: "A collection of Cannes Film Festival Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-cannes-winners.png
+    url_poster: https://images2.imgbox.com/f6/58/U3iST84u_o.png
     schedule: weekly(monday)
     template: {
                     name: letterboxd,
@@ -129,7 +129,7 @@ collections:
 
   "European Film Award Winners":
     summary: "A collection of European Film Award Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-european-winners.png
+    url_poster: https://images2.imgbox.com/c5/4d/I4jeTKM5_o.png
     schedule: weekly(monday)
     template: {
                     name: letterboxd,
@@ -142,7 +142,7 @@ collections:
 
   "Sundance Winners":
     summary: "A collection of Sundance Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-sundance-winners.png
+    url_poster: https://images2.imgbox.com/00/95/C6ghjx7k_o.png
     schedule: weekly(monday)
     template: {
                     name: letterboxd,
@@ -155,7 +155,7 @@ collections:
 
   "Venice Film Festival Winners":
     summary: "A collection of Venice Film Festival Winners"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/awards/awards-venice-winners.png
+    url_poster: https://images2.imgbox.com/0d/38/P2chh8O7_o.png
     schedule: weekly(monday)
     template: {
                     name: letterboxd,

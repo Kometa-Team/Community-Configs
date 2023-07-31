@@ -96,3 +96,49 @@
   - Top Rated in Thriller
   - Top Rated in War
   - Top Rated in Western
+  
+- 7_network.yml
+  - A&E
+  - ABC
+  - Adult Swim
+  - Amazon
+  - AMC
+  - Animal Planet
+  - Apple+
+  - BBC
+  - Bravo
+  - Cartoon Network
+  - CBS
+  - Channel 4
+  - Cinemax
+  - Comedy Central
+  - Dave
+  - Discovery
+  - Disney
+  - FOX
+  - Freeform
+  - FX
+  - Hallmark
+  - HBO
+  - History
+  - HGTV
+  - Hulu
+  - ITV
+  - MTV
+  - National Geographic
+  - NBC
+  - Netflix
+  - Nickelodeon
+  - Paramount
+  - PBS
+  - Peacock
+  - Showtime
+  - Shudder
+  - SKY
+  - Smithsonian
+  - Starz
+  - Syfy
+  - TBS
+  - TLC
+  - TNT
+  - YouTube

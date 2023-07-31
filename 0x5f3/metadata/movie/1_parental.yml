@@ -49,7 +49,7 @@ templates:
 collections:
   "Parental: All":
     summary: "Movies suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-all.png
+    url_poster: https://images2.imgbox.com/bd/de/Mpq7uDbd_o.png
     template: {
                     name: mdblist,
                     num: "A",
@@ -59,7 +59,7 @@ collections:
 
   "Parental: Random":
     summary: "Random movies suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-random.png
+    url_poster: https://images2.imgbox.com/03/6e/lD92FK1w_o.png
     template: {
                     name: plex,
                     num: "B"
@@ -72,7 +72,7 @@ collections:
 
   "Parental: Recently Released":
     summary: "Recently released movies suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-released.png
+    url_poster: https://images2.imgbox.com/c8/27/eWMDHhcy_o.png
     template: {
                     name: plex,
                     num: "C"
@@ -85,7 +85,7 @@ collections:
 
   "Parental: Recently Added":
     summary: "Recently added movies suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-added.png
+    url_poster: https://images2.imgbox.com/66/12/rE9Ddb2f_o.png
     template: {
                     name: plex_added,
                     num: "D"
@@ -98,7 +98,7 @@ collections:
 
   "Parental: Top Rated":
     summary: "Top rated movies suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/parental/parental-top-rated.png
+    url_poster: https://images2.imgbox.com/c5/16/M8G4EDKy_o.png
     template: {
                     name: plex,
                     num: "E"
