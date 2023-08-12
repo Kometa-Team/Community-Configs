@@ -10,22 +10,20 @@ libraries:
     metadata_path:
     - git: Geography/Movies/continents.yml
       template_variables:
-        style:color  # default. Can change to white
+        style: color  # defaults to white
     - git: Geography/Movies/regions.yml
       template_variables:
-        style:color  # default. Can change to white
+        style: color  # defaults to white
 
   TV Shows:
-    metadata_path:
     - git: Geography/TV/continents.yml
       template_variables:
-        style:color  # default. Can change to white
+        style: color  # defaults to white
     - git: Geography/TV/regions.yml
       template_variables:
-        style:color  # default. Can change to white
+        style: color  # defaults to white
 
-  overlays:
-    metadata_path:
+  overlay_path:
     - git: Geography/overlays.yml
 ```
 
