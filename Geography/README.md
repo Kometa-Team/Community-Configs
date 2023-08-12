@@ -1,4 +1,4 @@
-# Alternate Geography Collections and Audio Language Overlay
+# Alternative Geography Collections doubleplus bonus Audio Language Overlay
 
 Adding these two YMLs will create collections for a seven continent configuration (as opposed to the six UN regions used by the default continent.yml) and a version of the countries.yml which groups countries with low output that are culturally similar - such as 'Balkans', 'Nordic', 'Middle East' and 'Pacific Island'.
 
