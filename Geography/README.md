@@ -14,6 +14,7 @@ libraries:
     - git: Geography/Movies/regions.yml
       template_variables:
         style:color  # default. Can change to white
+
   TV Shows:
     metadata_path:
     - git: Geography/TV/continents.yml
@@ -22,7 +23,8 @@ libraries:
     - git: Geography/TV/regions.yml
       template_variables:
         style:color  # default. Can change to white
-overlays:
+
+  overlays:
     metadata_path:
     - git: Geography/overlays.yml
 ```
