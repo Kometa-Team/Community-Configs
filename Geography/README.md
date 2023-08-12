@@ -36,6 +36,6 @@ libraries:
 ![TV Shows](https://i.imgur.com/IhRoyCk.png)
 <br>
 
-*Overlay Preview**: <br><br>
+**Overlay Preview**: <br><br>
 ![Overlay](https://i.imgur.com/HvmI1Lb.jpg)
 <br>
