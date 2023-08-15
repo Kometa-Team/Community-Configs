@@ -8,11 +8,11 @@ The overlay yml adds a country flag defined by the audio language of the entry t
 libraries:
   Movies:
     metadata_path:
-      - git: Geography/Movies/continents.yml
+      - git: Adam-Pope/Movies/continents.yml
         template_variables:
           style: color  # defaults to white
           collection_section: "080" # puts continents before regions
-      - git: Geography/Movies/regions.yml
+      - git: Adam-Pope/Movies/regions.yml
         template_variables:
           style: color  # defaults to white
       - pmm: country
@@ -22,11 +22,11 @@ libraries:
 
   TV Shows:
     metadata_path:
-      - git: Geography/TV/continents.yml
+      - git: Adam-Pope/TV/continents.yml
         template_variables:
           style: color  # defaults to white
           collection_section: "080" # puts continents before regions
-      - git: Geography/TV/regions.yml
+      - git: Adam-Pope/TV/regions.yml
         template_variables:
           style: color  # defaults to white
       - pmm: country
