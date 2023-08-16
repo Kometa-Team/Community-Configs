@@ -1,0 +1,128 @@
+#########################################################################################
+#                                          Resolution Overlay                           #
+#                                         Created by Pete2583                           #
+#                              Credit to bradmarrti for the base images                 #
+#                 Credit also goes to meinstate/pmm for some of the base templating     #
+#                          Credit also to ICHIMOKU who gave me the inspiration          #             
+#########################################################################################
+#                                                                                       #
+#  Call this from your config.yml (Movie):                                              #
+#                                                                                       #
+#    overlay_path:                                                                      #
+#      - git: pete2583/resolution--superlite                                            #
+#                                                                                       #
+#########################################################################################
+
+templates:
+  Resolution:
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 0
+      horizontal_align: left
+      vertical_offset: 0
+      vertical_align: top
+    ignore_blank_results: true
+    suppress_overlays:
+      - Directors-Cut
+      - Extended-Edition
+      - Uncut-Edition
+      - Unrated-Edition
+      - Special-Edition
+      - Final-Cut
+      - Anniversary-Edition
+      - Collectors-Edition
+      - International-Cut
+      - Theatrical-Cut
+      - Ultimate-Cut
+      - Remastered
+      - Criterion
+    overlay:
+      name: <<overlay_name>>
+      git: pete2583/overlays/<<overlay>>
+      group: res
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+overlays:
+
+  480P:
+    template:
+      - name: Resolution
+        weight: 41
+    plex_search:
+      all:
+        resolution.regex: '(?!)480p|SD'
+        hdr: false
+     
+  576P:
+    template:
+      - name: Resolution
+        weight: 51
+    plex_search:
+      all:
+        resolution: 576p
+        hdr: false
+     
+  720P:
+    template:
+      - name: Resolution
+        weight: 71
+    plex_search:
+      all:
+        resolution: 720p
+        hdr: false
+     
+  1080p:
+    template:
+      - name: Resolution
+        weight: 101
+    plex_search:
+      all:
+        resolution: 1080p
+        hdr: false
+    filters:
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+
+  DV:
+    template:
+      - name: Resolution
+        weight: 501
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      has_dolby_vision: true
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
+
+  4K:
+    template:
+      - name: Resolution
+        weight: 401
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      has_dolby_vision: false
+      filepath.not:
+      - AC3
+      - EAC3
+      - TrueHD
+      - Atmos
+      - DTS-X
+      - DTS-HD
