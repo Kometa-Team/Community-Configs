@@ -1,0 +1,56 @@
+##############################################################################
+#                      Ireland Content Rating Overlay                        #
+#                          Created by techdiver                              #
+#         Referencing orginal work by Yozora, Bullmoose20, & Sohjiro         #
+##############################################################################
+
+external_templates:
+  pmm: templates
+  template_variables:
+    default:
+      key: <<overlay_name>>
+    horizontal_offset: 15
+    horizontal_align: left
+    vertical_offset: 20
+    vertical_align: bottom
+    back_radius: 0
+    file: config/overlays/ie<<overlay_name>>.png
+
+templates:
+  cr_ie:
+    ignore_blank_results: true
+    plex_search:
+      validate: false
+      any:
+        content_rating: <<rating>>
+
+overlays:
+  g:
+    template:
+      - name: standard
+      - {name: cr_ie, rating: "G, U, ie/U, ie/G, Not Rated"}
+
+  pg:
+    template:
+      - name: standard
+      - {name: cr_ie, rating: "ie/PG, PG"}
+
+  12a:
+    template:
+      - name: standard
+      - {name: cr_ie, rating: "12A, ie/12A, 12, ie/12, PG-13, 12PG, ie/12PG"}
+
+  15a:
+    template:
+      - name: standard
+      - {name: cr_ie, rating: "ie/15A, ie/15, 15A, 15"}
+
+  16:
+    template:
+      - name: standard
+      - {name: cr_ie, rating: "ie/16, 16"}
+  
+  18:
+    template:
+      - name: standard
+      - {name: cr_ie, rating: "ie/18, R, 18"}
