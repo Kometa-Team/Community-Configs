@@ -572,7 +572,7 @@ plex:                                               # Can be individually specif
   clean_bundles: true
   empty_trash: true
   optimize: true
-  db_cache:                                         # 20000 MB is approximately 20GB which is what I use. Adjust for your system
+  db_cache: ''                                      # 20000 MB is approximately 20GB which is what I use. Adjust for your system
 tmdb:                                               # REQUIRED for the script to run
   apikey: (redacted)
   language: en
