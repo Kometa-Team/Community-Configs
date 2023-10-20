@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/bullmoose20/pmm-yaml-schema/main/config_schema.json
 ### Highly recommend using Visual Studio Code with indent-rainbow plugin. VSC will also leverage the above link to enhance pmm yml edits.
-### Must be on Version 1.19.1-nightly5 or greater
+### Must be on Version 1.19.1-nightly18 or greater
 libraries:
   Movies:                                           # Must match a library name in your Plex
     report_path: config/missing/Movies_report.yml
@@ -59,6 +59,7 @@ libraries:
     - pmm: tautulli                                 # Tautulli Charts (Popular, Trending, etc.)
     - pmm: tmdb                                     # TMDb Charts (Popular, Trending, etc.)
     - pmm: trakt                                    # Trakt Charts (Popular, Trending, etc.)
+    - pmm: flixpatrol                               # Flixpatrol Charts (Popular, Trending, etc.)    - pmm: basic                                    # Some basic chart collections based on recently released media in your library
     - pmm: basic                                    # Some basic chart collections based on recently released media in your library
     - pmm: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
     # - file: /config/metadata/both/birthday          # Actor birthdays
@@ -162,6 +163,9 @@ libraries:
     - pmm: content_rating_us_movie                  # US MPAA content ratings
     # - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
     # - pmm: direct_play                              # Show direct play only overlay
+    - pmm: flixpatrol                               # Top 10 flixpatrol for 'this_year', positioned on the left
+      template_variables:
+        position: left
     - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
     - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       template_variables:
@@ -271,6 +275,7 @@ libraries:
     - pmm: tmdb                                     # TMDb Charts (Popular, Trending, etc.)
     - pmm: trakt                                    # Trakt Charts (Popular, Trending, etc.)
     - pmm: basic                                    # Some basic chart collections based on recently released media in your library
+    - pmm: flixpatrol                               # Flixpatrol Charts (Popular, Trending, etc.)    - pmm: basic                                    # Some basic chart collections based on recently released media in your library
     - pmm: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
     # - file: /config/metadata/both/birthday          # Actor birthdays
     - pmm: actor
@@ -387,6 +392,9 @@ libraries:
     - pmm: episode_info                             # SE##E## information in bottom right and works with builder_level episode
       template_variables:
         builder_level: episode
+    - pmm: flixpatrol                               # Top 10 flixpatrol for 'this_year', positioned on the left and works with overlay_level show
+      template_variables:
+        position: left
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2 and works with builder_level show, episode, and season
     - pmm: language_count
       template_variables:
@@ -572,7 +580,7 @@ plex:                                               # Can be individually specif
   clean_bundles: true
   empty_trash: true
   optimize: true
-  db_cache: ''                                      # 20000 MB is approximately 20GB which is what I use. Adjust for your system
+  db_cache: 20480                                   # 20480 MB is 20GB which is what I use. Adjust for your system as 2048 MB (2 GB) is probably a good starting point compared to the default Plex value of 40 MB
 tmdb:                                               # REQUIRED for the script to run
   apikey: (redacted)
   language: en
