@@ -1,0 +1,381 @@
+libraries:
+  Movies:
+    template_variables:
+      use_separator: false
+    metadata_path:
+    - folder: config/movies
+    - pmm: based
+    - git: bullmoose20/movies_refresh
+    - pmm: oscars
+      template_variables:
+        use_year_collections: false
+    - pmm: actor
+      template_variables:
+        collection_section: '001'
+        use_separator: false
+        style: diiivoycolor
+        name_format: 🎂 <<key_name>>'s Birthday
+        translation_key: birthday
+        sort_by: audience_rating.desc
+        title_format: <<key_name>>'s Birthday
+        data:
+          depth: 20
+          limit: 100
+        tmdb_birthday:
+          this_month: true
+    - pmm: content_rating_cs
+    - pmm: other_chart
+      template_variables:
+        use_anidb: false
+        use_stevenlu:  false
+        use_pirated: false
+        visible_library_commonsense: true
+        visible_home_commonsense: true
+        visible_shared_commonsense: true
+    - pmm: continent
+      template_variables:
+        include:
+        - Oceania
+    - pmm: franchise
+      template_variables:
+        minimum_items: 2
+        delete_below_minimum: true
+    - pmm: seasonal
+      template_variables:
+        use_separator: true
+        sep_style: stb
+        use_memorial: false
+        use_independence: false
+        use_labor: false
+        use_thanksgiving: false
+        use_latinx: false
+        schedule_father: range(09/01-09/14)
+        sort_by: random
+          # Add a custom holiday
+        append_data:
+          pride: Pride Month
+        schedule_pride: range(06/01-06/30)
+        imdb_list_pride: https://www.imdb.com/list/ls063526611/
+        emoji_pride: '🏳️‍🌈️‍ '
+    - pmm: universe
+    - file: config/metadata/movie/1_othercollections.yml
+      schedule: weekly(tuesday)
+    overlay_path:
+    - schedule: weekly(saturday)
+    - remove_overlays: false                          # Set to true if you want to remove overlays
+    - reapply_overlays: false                         # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
+    - pmm: commonsense                                # Commonsense content ratings Age 2+, Age 14+, etc.
+    - pmm: mediastinger                               # Mediastinger overlay when the media item contains a stinger at the end of the movie/show or during the credits
+    - pmm: ratings                                    # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format
+      template_variables:
+        rating1: user
+        rating1_image: rt_tomato
+        rating1_font: config/metadata/overlays/fonts/Adlib.ttf
+        rating1_font_size: 63
+
+        rating2: critic
+        rating2_image: imdb
+        rating2_font: config/metadata/overlays/fonts/Impact.ttf
+        rating2_font_size: 70
+
+        rating3: audience
+        rating3_image: tmdb
+        rating3_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
+        rating3_font_size: 70
+
+        horizontal_position: right
+
+    - pmm: resolution                                 # 4K HDR, 1080P FHD, etc.
+    - pmm: ribbon                                     # Used for ribbon in bottom right
+    - pmm: versions                                   # Will show duplicates for that media item and works with overlay_level show, episode, and season
+
+    settings:
+      asset_directory:
+      - config/assets/Movies/
+      prioritize_assets: false
+    operations:
+      split_duplicates: false
+      assets_for_all: true
+      delete_collections:
+        configured: false
+        managed: true
+      mass_user_rating_update: mdb_tomatoes
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: tmdb
+      mass_genre_update: omdb
+      mass_content_rating_update: mdb_commonsense
+      mass_originally_available_update: tmdb
+      mass_imdb_parental_labels: none
+      metadata_backup:
+        path: config/metadata/backups/Movie_Backup.yml
+        sync_tags: true
+        add_blank_entries: false
+      genre_mapper:
+        "Sci-Fi": Science Fiction
+        "Action & Adventure": Action
+
+  TV Shows:
+    report_path: config/missing/TV_report.yml
+    template_variables:
+      use_separator: false
+    library_name: TV Shows
+    metadata_path:
+    - pmm: based
+    - git: bullmoose20/tv_refresh
+    - pmm: actor
+      template_variables:
+        collection_section: '001'
+        use_separator: false
+        style: diiivoycolor
+        name_format: 🎂 <<key_name>>'s Birthday
+        translation_key: birthday
+        sort_by: audience_rating.desc
+        title_format: <<key_name>>'s Birthday
+        data:
+          depth: 20
+          limit: 100
+        tmdb_birthday:
+          this_month: true
+    - pmm: content_rating_cs
+    - pmm: other_chart
+      template_variables:
+        use_anidb: false
+        use_stevenlu:  false
+        use_pirated: false
+        visible_library_commonsense: true
+        visible_home_commonsense: true
+        visible_shared_commonsense: true
+    - pmm: universe
+    - pmm: continent
+      template_variables:
+        include:
+        - Oceania
+    - pmm: franchise
+      template_variables:
+        minimum_items: 2
+        delete_below_minimum: true
+    - folder: config/tvshows
+    overlay_path:
+    - schedule: weekly(friday)
+    - remove_overlays: false                        # Set to true if you want to remove overlays
+    - reapply_overlays: false                       # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
+    - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
+    - pmm: commonsense
+      template_variables:
+        overlay_level: season
+    - pmm: commonsense
+      template_variables:
+        overlay_level: episode
+    - pmm: ratings                                  # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format. overlay_level: show has 3 ratings max
+      template_variables:
+        rating1: user
+        rating1_image: rt_tomato
+        rating1_font: config/metadata/overlays/fonts/Adlib.ttf
+        rating1_font_size: 63
+
+        rating2: critic
+        rating2_image: imdb
+        rating2_font: config/metadata/overlays/fonts/Impact.ttf
+        rating2_font_size: 70
+
+        rating3: audience
+        rating3_image: tmdb
+        rating3_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
+        rating3_font_size: 70
+        
+        horizontal_position: right
+    - pmm: ratings                                  # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format. overlay_level: episode has 2 ratings max
+      template_variables:
+        rating1: critic
+        rating1_image: imdb
+        rating1_font: config/metadata/overlays/fonts/Impact.ttf
+        rating1_font_size: 70
+
+        rating2: audience
+        rating2_image: tmdb
+        rating2_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
+        rating2_font_size: 70
+
+        horizontal_position: right
+        overlay_level: episode
+    - pmm: ribbon                                   # Used for ribbon in bottom right
+    - pmm: runtimes                                 # Runtime information in bottom right and works with overlay_level episode
+      template_variables:
+        overlay_level: episode
+    - pmm: status                                   # Airing, Returning, Ended, Canceled and works with overlay_level show
+    - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
+      template_variables:
+        overlay_level: show
+    - pmm: versions                                 # Will show duplicates for that media item and works with overlay_level show, episode, and season
+      template_variables:
+        overlay_level: season
+    - pmm: ribbon
+
+    settings:
+      asset_directory:
+      - config/assets/TV Shows/
+      prioritize_assets: false
+    operations:
+      split_duplicates: false
+      assets_for_all: true
+      delete_collections:
+        configured: false
+        managed: true
+      mass_user_rating_update: mdb_tomatoes
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: tmdb
+      mass_genre_update: omdb
+      mass_content_rating_update: mdb_commonsense
+      mass_originally_available_update: tmdb
+      mass_episode_critic_rating_update: imdb
+      mass_episode_audience_rating_update: tmdb
+      mass_imdb_parental_labels: none
+      metadata_backup:
+        path: config/metadata/backups/TVShows_Backup.yml
+        sync_tags: true
+        add_blank_entries: false
+
+  Music:
+    schedule: weekly (sunday)
+    library_name: Music
+    metadata_path:
+      - folder: config/music
+    operations:
+      delete_collections:
+        less: 50
+      metadata_backup:
+        path: config/metadata/backups/Music_Backup.yml
+        sync_tags: true
+        add_blank_entries: false
+
+playlist_files:
+- pmm: playlist
+  template_variables:
+    libraries: Movies, TV Shows
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  missing_path: config/missing
+  asset_folders: true
+  asset_depth: 1
+  create_asset_folders: false
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: false
+  sync_mode: sync
+  default_collection_order:
+  minimum_items: 1
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 1
+  missing_only_released: true
+  show_unconfigured: true
+  show_unmanaged: true
+  show_filtered: true
+  show_options: true
+  show_missing: false
+  only_filter_missing: false
+  show_missing_assets: false
+  save_report: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_users: all
+  playlist_report: true
+  custom_repo:
+  verify_ssl: true
+  check_nightly: true
+  playlist_exclude_users:
+webhooks:
+  error: notifiarr
+  version: notifiarr
+  run_start: notifiarr
+  run_end: notifiarr
+  changes: notifiarr
+  delete:
+plex:
+  url: http://localhost:32400
+  token: [REDACTED]
+  timeout: 600
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+  db_cache:
+tmdb:
+  apikey: [REDACTED]
+  language: en
+  cache_expiration: 600
+  region:
+tautulli:
+  url: http://localhost:1818
+  apikey: [REDACTED]
+omdb:
+  apikey: [REDACTED]
+  cache_expiration: 600
+mdblist:
+  apikey: [REDACTED]
+  cache_expiration: 600
+notifiarr:
+  apikey: [REDACTED]
+anidb:
+  username:
+  password:
+  language: en
+  client:
+radarr:
+  url: http://localhost:7878
+  token: [REDACTED]
+  add_missing: false
+  add_existing: false
+  root_folder_path: Z:\data\media\movies
+  monitor: true
+  availability: announced
+  quality_profile: HD-1080p
+  tag:
+  search: false
+  radarr_path:
+  plex_path:
+  upgrade_existing: false
+  ignore_cache: false
+sonarr:
+  url: http://localhost:8989
+  token: [REDACTED]
+  add_missing: false
+  add_existing: false
+  root_folder_path: Z:\data\media\tv
+  monitor: all
+  quality_profile: HD-1080p
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  tag:
+  search: false
+  cutoff_search: false
+  sonarr_path:
+  plex_path:
+  upgrade_existing: false
+  ignore_cache: false
+trakt:
+  client_id: [REDACTED]
+  client_secret: [REDACTED]
+  pin:
+  authorization:
+    access_token: [REDACTED]
+    token_type: [REDACTED]
+    expires_in: [REDACTED]
+    refresh_token: [REDACTED]
+    scope: [REDACTED]
+    created_at: [REDACTED]
+mal:
+  client_id:
+  client_secret:
+  authorization:
+    access_token:
+    token_type:
+    expires_in:
+    refresh_token:

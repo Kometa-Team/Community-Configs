@@ -1,0 +1,46 @@
+templates:
+  smart_filter:
+    all:
+      genre: <<collection>>
+    sort_by: release.desc
+  url_poster: https://theposterdb.com/api/assets/<<poster>>
+  sort_title: ++++++++_<<collection_name>>
+  collection_mode: hide
+
+collections:
+  Barbie:
+    trakt_list: https://trakt.tv/users/tiff31/lists/barbie
+    sort_title: 'Barbie'
+    collection_order: release.desc
+
+  Disney Live-Action Remakes:
+    imdb_list: https://www.imdb.com/list/ls083312980/
+    sort_title: '!070_Walt Disney Live-Action Remakes'
+    collection_order: alpha
+
+  Disney Animation Studios:
+    imdb_list: https://www.imdb.com/list/ls076436131/
+    sort_title: '!070_Walt Disney Animation Studios'
+    collection_order: alpha
+
+  The Three Flavours Cornetto:
+    imdb_list: https://www.imdb.com/list/ls009887457/
+    summary: The anthology series of British comedic genre films directed by Edgar Wright, written by Wright and Simon Pegg, and produced by Nira Park.
+    sort_title: 'Three Flavours Cornetto'
+    collection_order: release
+
+  What Should I Watch?:
+    plex_watchlist: critic_rating.desc
+    plex_search:
+      any:
+        genre:
+          - Indie
+          - Thriller
+          - Drama
+          - Comedy
+          - Science Fiction
+      unplayed: true
+      sort_by: audience_rating.desc
+      limit: 3
+    visible_home: range(01/01-12/31)
+    visible_shared: range(01/01-12/31)
