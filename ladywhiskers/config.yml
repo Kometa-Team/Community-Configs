@@ -335,7 +335,7 @@ radarr:
   root_folder_path: Z:\data\media\movies
   monitor: true
   availability: announced
-  quality_profile: HD-1080p
+  quality_profile: Bluray + Web
   tag:
   search: false
   radarr_path:
@@ -349,7 +349,7 @@ sonarr:
   add_existing: false
   root_folder_path: Z:\data\media\tv
   monitor: all
-  quality_profile: HD-1080p
+  quality_profile: WEB-1080p
   language_profile: English
   series_type: standard
   season_folder: true
