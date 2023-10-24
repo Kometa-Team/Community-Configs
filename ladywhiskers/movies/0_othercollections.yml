@@ -8,11 +8,6 @@ templates:
   collection_mode: hide
 
 collections:
-  Barbie:
-    trakt_list: https://trakt.tv/users/tiff31/lists/barbie
-    sort_title: 'Barbie'
-    collection_order: release.desc
-
   Disney Live-Action Remakes:
     imdb_list: https://www.imdb.com/list/ls083312980/
     sort_title: '!070_Walt Disney Live-Action Remakes'
