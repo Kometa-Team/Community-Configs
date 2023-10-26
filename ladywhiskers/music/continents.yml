@@ -9,7 +9,7 @@
 external_templates:
   file: config/music/musictemplates.yml
   template_variables:
-    collection_section: "082"
+    collection_section: "001"
 templates:
   smart_filters:
     default:

@@ -1,3 +1,8 @@
+external_templates:
+  file: config/music/musictemplates.yml
+  template_variables:
+    collection_section: "082"
+
 templates:
   mood collection:
     smart_filter:
@@ -49,16 +54,24 @@ dynamic_collections:
   Album Moods:
     type: album_mood
     title_format: Top 10 <<key_name>> Albums
-    template: album mood collection
+    template:
+      - album mood collection
+      - shared
   Track Moods:
     type: track_mood
     title_format: Top 100 <<key_name>> Tracks
-    template: track mood collection
+    template:
+      - track mood collection
+      - shared
   Artist Styles:
     type: style
     title_format: Top 5 <<key_name>> Artists
-    template: style collection
+    template:
+      - style collection
+      - shared
   Album Styles:
     type: style
     title_format: Top 20 <<key_name>> Albums
-    template: album style collection
+    template:
+      - album style collection
+      - shared
