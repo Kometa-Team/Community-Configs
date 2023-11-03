@@ -13,7 +13,8 @@ templates:
     sort_title: "!015_<<collection_name>>"
 collections:
    All-Time Top Shows:
-     template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/All-Time%20Top%20Shows.jpg}     sort_title: "!015_100"
+     template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/All-Time%20Top%20Shows.jpg}
+     sort_title: "!015_100"
      smart_filter:
          sort_by: audience_rating.desc
          all:
