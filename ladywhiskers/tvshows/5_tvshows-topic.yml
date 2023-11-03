@@ -1,7 +1,7 @@
-#######################################
-#          TV Collections             #
-#######################################
-
+#######################################################
+#                    Genre                            #
+#                TV Collections                       #
+#######################################################
 templates:
   Collection:
     optional:
@@ -10,58 +10,177 @@ templates:
     tvdb_show: <<show>>
     url_poster: <<poster>>
     sync_mode: sync
-    collection_order: audience_rating.desc
     sort_title: "!015_<<collection_name>>"
-
 collections:
-  Anthology:
-    template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Anthology.jpg}
-    imdb_list: https://www.imdb.com/list/ls567937024/
-    schedule: monthly(15)
-  Apocalypse:
-    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Apocalypse.jpg}
-    imdb_list: https://www.imdb.com/list/ls527128700/
-    schedule: monthly(15)
-  Football:
-    template: {name: Collection, show: "343609, 74094", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Football.jpg}
-    imdb_list: https://www.imdb.com/list/ls527481559/
-    sync_mode: append
-    schedule: monthly(15)       
-  Historical Fiction:
-    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Historical%20Fiction.jpg}
-    imdb_list: https://www.imdb.com/list/ls527147593/
-    schedule: monthly(15)
-  Medical:
-    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Medical.jpg}
-    imdb_list: 
-        - https://www.imdb.com/list/ls064005250/
-        - https://www.imdb.com/list/ls567394825/
-    schedule: monthly(15)   
-  Mystery Box:
-    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Mystery%20Box.jpg}
-    imdb_list:
-        - https://www.imdb.com/list/ls520446971/
-   Seductive:
-     template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Seductive.jpg}
-     imdb_list: https://www.imdb.com/list/ls567399815/
-     schedule: monthly(15)   
-  Slice of Life:
-    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Slice%20of%20Life.jpg}
-    imdb_list: https://www.imdb.com/list/ls527147618/
-    schedule: monthly(15)
-  Spy:
-    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Spy.jpg}
-    imdb_list: https://www.imdb.com/list/ls527147789/
-    schedule: monthly(15)
-  Stephen King:
-    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Stephen%20King.jpg}
-    imdb_list: https://www.imdb.com/list/ls567399416/
-    schedule: monthly(15)       
-  Supernatural:
-    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Supernatural.jpg}
-    imdb_list: https://www.imdb.com/list/ls527140144/
-    schedule: monthly(15)
-  Time Travel:
-    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Time%20Travel.jpg}
-    imdb_list: https://www.imdb.com/list/ls527147299/
-    schedule: monthly(15)
+   All-Time Top Shows:
+     template: {name: Collection, poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/All-Time%20Top%20Shows.jpg}
+     sort_title: "!015_100"
+     smart_filter:
+         sort_by: audience_rating.desc
+         all:
+           genre.not: documentary
+  Action:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Action.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: action
+          genre.not: documentary
+  Adult Cartoons:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Adult%20Cartoons.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: animation
+          genre.not: documentary, family 
+  Adventure:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Adventure.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: adventure
+          genre.not: documentary
+  Biography:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Biography.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: biography  
+  Children's Cartoons:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Children's%20Cartoons.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: animation, family
+          genre.not: documentary  
+  Comedy:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Comedy.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: comedy
+          genre.not: documentary   
+  Crime:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Crime.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: crime
+          genre.not: documentary 
+  Documentary:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Documentary.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: documentary
+  Drama:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Drama.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: drama
+          genre.not: documentary 
+  Family:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Family.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: family
+          genre.not: animation, documentary 
+  Fantasy:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Fantasy.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: fantasy
+          genre.not: animation, documentary 
+  Funny Sci-Fi:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Funny%20Sci-Fi.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: comedy, science fiction
+          genre.not: documentary     
+  History:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/History.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: history
+          genre.not: documentary   
+  Horror:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Horror.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: horror
+          genre.not: documentary      
+  Musical:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Musical.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: musical
+          genre.not: documentary  
+  Mystery:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Mystery.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: mystery
+          genre.not: documentary   
+  News:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/News.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: news
+          genre.not: documentary   
+  Reality:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Reality.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: reality
+          genre.not: documentary 
+  Romance:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Romance.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: romance
+          genre.not: documentary   
+  Science Fiction:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Science%20Fiction.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        any:
+          genre: science fiction  
+  Sport:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Sport.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: sport
+          genre.not: documentary 
+  Thriller:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Thriller.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: thriller
+          genre.not: documentary          
+  War & Politics:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/War%20%26%20Politics.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: war
+          genre.not: documentary    
+  Western:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Western.jpg}
+    smart_filter:
+        sort_by: audience_rating.desc
+        all:
+          genre: western
+          genre.not: documentary             
