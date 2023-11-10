@@ -2,7 +2,7 @@
 
 templates:
   seasonal:
-    sort_title: +1_<<collection_name>>
+    sort_title: +1__<<num>>_<<collection_name>>
     summary: "A timed collection of <<holiday>> movies and other movies that may relate to the holiday."
     limit: 200
     sync_mode: sync
