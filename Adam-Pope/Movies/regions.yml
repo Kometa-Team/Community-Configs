@@ -1,0 +1,387 @@
+##############################################################################
+#                         Region Collections                                 #
+#          Created by Adam Pope, bartolomesorianol, & Bullmoose20            #
+#         Artwork Credit to Duhniel, Bullmoose20, and Wiki Commons           #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#       https://metamanager.wiki/en/latest/defaults/movie/region.html        #
+##############################################################################
+
+external_templates:
+  pmm: templates
+  template_variables:
+    collection_section: "081"
+
+collections:
+  Region Collections:
+    template:
+      - name: separator
+        separator: region
+        key_name: Region
+        translation_key: separator
+
+dynamic_collections:
+  Region:
+    type: country
+    title_format: <<key_name>>
+    other_name: Other Regions
+    template:
+      - smart_filter
+      - shared
+    other_template:
+      - other_collection
+      - smart_filter
+      - shared
+    template_variables:
+      search_term:
+        default: country
+      image:
+        default: country/<<style>>/<<original_key_name_encoded>>
+      style:
+        default: white
+      translation_key:
+        default: country
+        other: country_other
+      dynamic:
+        default: true
+
+    include:
+      - Andean
+      - Balkan
+      - Benelux
+      - Canadian
+      - Caribbean
+      - Caucasian
+      - Central African
+      - Central American
+      - Central Asian
+      - Central European
+      - Chinese and Mongolian
+      - Eastern African
+      - Eastern European
+      - German
+      - Greek
+      - Hong Kong and Macao
+      - Iberian
+      - Irish
+      - Japanese
+      - Mexican
+      - Middle Eastern
+      - Nordic
+      - Northern African
+      - Pacific Island
+      - South Asian
+      - Southern African
+      - Southern Cone
+      - South-East Asia
+      - Western African
+      - Antarctica Region
+      - Australian
+      - Brazilian
+      - French
+      - Italian
+      - Korean
+      - UK
+      - USA
+      - Taiwanese
+      - Russian
+      
+    addons:
+
+# Grouping of countries into sub-regions. Some license has been taken here to ensure all countries are included, and the groupings won't fit well with everyone's collections.
+# Western, Southern, and Central Europe, Oceania, and North America could be useful groupings for those libraries with more of an Asian focus, for instance
+# Comments added where a decision point might seen as controversial
+
+      Andean:
+        - Bolivarian Republic of Venezuela
+        - Bolivia
+        - Colombia
+        - Ecuador
+        - Peru
+        - Plurinational State of Bolivia
+        - Venezuela
+      Balkan:
+        - Albania
+        - Bosnia and Herzegovina
+        - Bulgaria
+        - Croatia
+        - Kosovo
+        - Macedonia
+        - Montenegro
+        - Republic of North Macedonia
+        - Romania
+        - Serbia
+        - Slovenia
+      Benelux:
+        - Belgium
+        - Luxembourg
+        - Netherlands
+      Canadian:
+        - Canada
+      Caribbean:
+        - Anguilla
+        - Antigua
+        - Aruba
+        - Bahamas
+        - Barbados
+        - Bermuda
+        - Bonaire
+        - Cayman Islands
+        - Cuba
+        - Curaçao
+        - Dominica
+        - Dominican Republic
+        - Grenada
+        - Guadeloupe
+        - Haiti
+        - Jamaica
+        - Martinique
+        - Montserrat
+        - Puerto Rico
+        - Saint Barthélemy
+        - Saint Lucia
+        - Trinidad and Tobago
+        - Turks and Caicos
+      Caucasian:
+        - Armenia
+        - Azerbaijan
+        - Georgia
+      Central African:
+        - Angola
+        - Cameroon
+        - Central African Republic
+        - Chad
+        - Congo
+        - Democratic Republic of the Congo
+        - Equatorial Guinea
+        - Gabon
+        - Republic of the Congo
+        - Sao Tome and Principe
+      Central American:
+        - Belize
+        - Costa Rica
+        - El Salvador
+        - Guatemala
+        - Honduras
+        - Nicaragua
+        - Panama
+      Central Asian:
+        - Afghanistan
+        - Kazakhstan
+        - Kyrgyzstan
+        - Tajikistan
+        - Turkmenistan
+        - Uzbekistan
+      Central European:
+        - Austria
+        - Liechtenstein
+        - Switzerland
+      Chinese and Mongolian:
+        - China
+        - Mongolia
+      Eastern African:
+        - Burundi
+        - Comoros
+        - Djibouti
+        - Eritrea
+        - Ethiopia
+        - Kenya
+        - Madagascar
+        - Malawi
+        - Mauritius
+        - Mayotte
+        - Mozambique
+        - Réunion
+        - Rwanda
+        - Seychelles
+        - Somalia
+        - South Sudan
+        - Tanzania
+        - Uganda
+        - Zambia
+        - Zimbabwe
+      Eastern European:
+        - Belarus
+        - Czech Republic
+        - Estonia
+        - Hungary
+        - Latvia
+        - Lithuania
+        - Moldova
+        - Poland
+        - Slovakia
+        - Ukraine
+      German:
+        - Germany
+      Greek:
+        Greece
+      Hong Kong and Macao:
+        - Hong Kong
+        - Macao
+      Iberian:
+        - Andorra              # Also in French
+        - Gibraltar            # Also in United Kingdom
+        - Portugal
+        - Spain
+      Irish:
+        - Ireland
+      Japanese:
+        - Japan
+      Mexican:
+        - Mexico
+      Middle Eastern:
+        - Bahrain
+        - Cyprus
+        - Egypt                 # Also in Northern African
+        - Iran
+        - Iraq
+        - Islamic Republic of Iran
+        - Israel
+        - Jordan
+        - Kuwait
+        - Lebanon
+        - Oman
+        - Palestine
+        - State of Palestine
+        - Qatar
+        - Saudi Arabia
+        - Syria
+        - Turkey
+        - United Arab Emirates
+        - Yemen
+      Nordic:
+        - Åland Islands
+        - Denmark
+        - Faroe Islands
+        - Finland
+        - Greenland
+        - Iceland
+        - Norway
+        - Svalbard and Jan Mayen
+        - Sweden
+      Northern African:
+        - Algeria
+        - Egypt                 # Also in Middle Eastern
+        - Libya
+        - Morocco
+        - Sudan
+        - Tunisia
+      Pacific Island:
+        - Cook Islands
+        - Fiji
+        - French Polynesia
+        - Guam
+        - Kiribati
+        - Marshall Islands
+        - Micronesia
+        - Nauru
+        - New Caledonia
+        - New Zealand
+        - Niue
+        - Norfolk Island
+        - Palau
+        - Pitcairn
+        - Samoa
+        - Solomon Islands
+        - Tokelau
+        - Tonga
+        - Tuvalu
+        - Vanuatu
+      South Asian:
+        - Bhutan
+        - Bangladesh
+        - India
+        - Maldives
+        - Nepal
+        - Pakistan
+        - Sri Lanka
+      Southern African:
+        - Botswana
+        - Eswatini
+        - Lesotho
+        - Namibia
+        - South Africa
+      Southern Cone:
+        - Argentina
+        - Chile
+        - Paraguay                     # Not always included as part of Southern Cone
+        - Uruguay
+        - Falkland Islands             # Also in United Kingdom
+      South-East Asia:
+        - Brunei
+        - Cambodia
+        - Indonesia
+        - Lao
+        - Malaysia
+        - Myanmar
+        - Philippines
+        - Singapore
+        - Thailand
+        - Vietnam
+        - Viet Nam
+      USA:
+        - United States of America
+      Western African:
+        - Benin
+        - Burkina Faso
+        - Cabo Verde
+        - Côte d'Ivoire
+        - Gambia
+        - Ghana
+        - Guinea
+        - Guinea-Bissau
+        - Liberia
+        - Mali
+        - Mauritania
+        - Niger
+        - Nigeria
+        - Senegal
+        - Sierra Leone
+        - Togo
+
+# Grouping of micro-states into existing countries. Some are obviously right, others added as they've nowhere else fitting to go.
+
+      Antarctica Region:
+        - Antarctica
+        - Bouvet Island             # Also in Nordic
+      Australian:
+        - Australia
+        - Christmas Island
+        - Cocos (Keeling) Islands
+        - New Guinea                # Also in Pacific Islands
+        - Timor-Leste               # Also in Pacific Islands
+      Brazilian:
+        - Brazil
+        - French Guiana
+        - Guyana
+        - Suriname
+      French:
+        - France
+        - Monaco
+        - Andorra            # Also in Iberian
+      Italian:
+        - Italy
+        - Holy See
+        - Malta              # Also in United Kingdom and Northern Africa
+        - San Marino
+      Korean:
+        - Korea
+        - Democratic People's Republic of Korea
+        - North Korea
+        - Republic of Korea         # Added as default addon for Korea overridden
+        - South Korea               # Added as default addon for Korea overridden
+
+      UK:
+        - United Kingdom
+        - Falkland Islands          # Also in Southern Cone
+        - Guernsey
+        - Gibraltar          # Also in Iberian
+        - Isle of Man
+        - Jersey
+        - Malta              # Also in Italy and Northern African
+
+      Taiwanese:
+        - Taiwan
+        - Taiwan, Province of China
+      Russian:
+        - Russia
+        - Russian Federation
