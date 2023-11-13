@@ -42,7 +42,7 @@ libraries:
           delete_below_minimum: true
       - pmm: seasonal
         template_variables:
-          use_separator: true
+          use_separator: false
           sep_style: stb
           use_memorial: false
           use_independence: false
@@ -221,6 +221,9 @@ libraries:
         path: config/metadata/backups/TVShows_Backup.yml
         sync_tags: true
         add_blank_entries: false
+      genre_mapper:
+        Sci-Fi: Science Fiction
+        Action & Adventure: Action
   Music:
     schedule: weekly (sunday)
     library_name: Music
