@@ -1,0 +1,39 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  # Random list of 10 movies released in the last 10 years
+  # Regenerates every time the user visits the page
+  "🥳 Something New":
+    template: { name: New,
+                level: "++" }
+    summary: "Let's try something new"
+    smart_filter:
+      type: movies
+      all:
+        # Movie released in the last 10 years
+        release: 3650
+        unplayed: true
+      limit: 10
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  # Random list of 30 movies released in the last 5 months and added in the last 2 months
+  # Regenerates every time the user visits the page
+  "🎲 Spin The Wheel!":
+    template: { name: New,
+                level: "+" }
+    summary: "New releases for you to take a chance on!"
+    smart_filter:
+      type: movies
+      all:
+        # Movie released in the last 5 months
+        release: 150
+        # Movie added in the last 2 months
+        added: 60
+      limit: 30
+    visible_library: true
+    visible_home: true
+    visible_shared: true

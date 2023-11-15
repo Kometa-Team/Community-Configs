@@ -1,0 +1,152 @@
+libraries:                                      # Library mappings must have a colon (:) placed after them
+  Movies:
+    library_name: Movies
+    metadata_path:
+      - repo: collections/actors/movies
+      - repo: collections/awards/movies
+      - repo: collections/best/movies
+      - repo: collections/countries/movies
+      - repo: collections/decades/movies
+      - repo: collections/genres/movies
+      - repo: collections/holidays/movies
+      - repo: collections/lists/movies
+      - repo: collections/memoriam/movies
+      - repo: collections/networks/movies
+      - repo: collections/new/movies
+      - repo: collections/random/movies
+      - repo: collections/recommendations/movies
+      - repo: collections/trending/movies
+      - repo: collections/years/movies
+      - repo: collections/separators/movies
+#  4K Movies:
+#    library_name: Movies (4K)
+#    metadata_path:
+#      - repo: collections/actors/movies
+#      - repo: collections/awards/movies
+#      - repo: collections/best/movies
+#      - repo: collections/countries/movies
+#      - repo: collections/decades/movies
+#      - repo: collections/genres/movies
+#      - repo: collections/holidays/movies
+#      - repo: collections/lists/movies
+#      - repo: collections/memoriam/movies
+#      - repo: collections/networks/movies
+#      - repo: collections/new/movies
+#      - repo: collections/random/movies
+#      - repo: collections/recommendations/movies
+#      - repo: collections/trending/movies
+#      - repo: collections/years/movies
+  TV Shows:
+    library_name: TV Shows
+    metadata_path:
+      - repo: collections/actors/shows
+      - repo: collections/awards/shows
+      - repo: collections/best/shows
+      - repo: collections/countries/shows
+      - repo: collections/decades/shows
+      - repo: collections/genres/shows
+      - repo: collections/holidays/shows
+      - repo: collections/lists/shows
+      - repo: collections/memoriam/shows
+      - repo: collections/networks/shows
+      - repo: collections/new/shows
+      - repo: collections/random/shows
+      - repo: collections/recommendations/shows
+      - repo: collections/trending/shows
+      - repo: collections/years/shows
+      - repo: collections/separators/shows
+#  4K TV Shows:
+#    library_name: TV Shows (4K)
+#    metadata_path:
+#      - repo: collections/actors/shows
+#      - repo: collections/awards/shows
+#      - repo: collections/best/shows
+#      - repo: collections/countries/shows
+#      - repo: collections/decades/shows
+#      - repo: collections/genres/shows
+#      - repo: collections/holidays/shows
+#      - repo: collections/lists/shows
+#      - repo: collections/memoriam/shows
+#      - repo: collections/networks/shows
+#      - repo: collections/new/shows
+#      - repo: collections/random/shows
+#      - repo: collections/recommendations/shows
+#      - repo: collections/trending/shows
+#      - repo: collections/years/shows
+playlist_files:
+- repo: playlists/general/movies_playlists_general
+- repo: playlists/general/shows_playlists_general
+settings:                                       # Can be individually specified per library as well
+  custom_repo: https://raw.githubusercontent.com/nwithan8/configs/main/plex/pmm/
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: sync
+  minimum_items: 1
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_filtered: false
+  show_options: false
+  show_missing: true
+  show_missing_assets: true
+  save_missing: true
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  verify_ssl: true
+  playlist_sync_to_users: all
+  prioritize_assets: false
+  playlist_report: true
+  check_nightly: false
+  show_unconfigured: true
+  playlist_exclude_users:
+webhooks:
+  changes:
+  error:
+  run_start:
+  run_end:
+  version:
+  delete:
+plex:
+  url: <REDACTED>
+  token: <REDACTED>
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+tmdb:                                           # REQUIRED for the script to run
+  apikey: <REDACTED>
+  language: en
+  cache_expiration: 60
+  region:
+tautulli:                                       # Can be individually specified per library as well
+  url: <REDACTED>
+  apikey: <REDACTED>
+omdb:
+  apikey: <REDACTED>
+  cache_expiration: 60
+trakt:
+  client_id: <REDACTED>
+  client_secret: <REDACTED>
+  authorization:
+    access_token: <REDACTED>
+    token_type: Bearer
+    expires_in: 7889238
+    refresh_token: <REDACTED>
+    scope: public
+    created_at: <REDACTED>
+  pin:

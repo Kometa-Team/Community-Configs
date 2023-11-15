@@ -1,0 +1,125 @@
+templates:
+  # Dynamic Collections Templates
+  # -----------------------------
+  Per_Decade:
+    smart_filter:
+      sort_by: audience_rating.desc
+      all:
+        year.gte: <<key_name>>
+        year.lte: <<ending>>
+    sort_title: 08_+<<level>>_<<key>>
+    visible_library: false
+    visible_shared: false
+    visible_home: false
+    schedule: monthly(17)
+    collection_order: random
+    url_poster: https://raw.githubusercontent.com/zluckytraveler/Plex-Meta-Manager-Configs/master/zluckytraveler/Posters/Decades/<<key>>.png
+
+  Per_Genre:
+    smart_filter:
+      limit: 10000
+      sort_by: critic_rating.desc
+      all:
+        genre: <<value>>
+    default:
+      level: ""
+    sort_title: 07_+<<level>>_<<key_name>>
+    visible_library: false
+    visible_shared: false
+    visible_home: false
+    schedule: weekly(saturday)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/<<key_name>>.jpg
+
+  Per_Actor:
+    smart_filter:
+      any:
+        actor: <<value>>
+    default:
+      level: ""
+    sort_title: 09_+<<level>>_<<key>>
+    collection_order: release.asc
+    visible_library: false
+    visible_shared: false
+    visible_home: false
+    schedule:
+      - weekly(thursday)
+      - weekly(monday)
+
+  Per_Director:
+    smart_filter:
+      any:
+        director: <<value>>
+    default:
+      level: ""
+    sort_title: 09_+<<level>>_<<key>>
+    collection_order: release.asc
+    visible_library: false
+    visible_shared: false
+    visible_home: false
+    schedule:
+      - weekly(friday)
+      - weekly(tuesday)
+
+  Per_Country:
+    smart_filter:
+      limit: 10000
+      sort_by: critic_rating.desc
+      any:
+        country: <<value>>
+    default:
+      level: ""
+    sort_title: 11_+<<level>>_<<key_name>>
+    collection_order: random
+    visible_library: false
+    visible_shared: false
+    visible_home: false
+    schedule: weekly(saturday)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name>>.jpg
+
+  Per_Holiday:
+    default:
+      level: ""
+      sync_mode: sync
+      sync_mode_<<key>>: <<sync_mode>>
+      sort_by: title.asc
+      sort_by_<<key>>: <<sort_by>>
+      schedule_<<key>>: <<schedule>>
+      limit_<<key>>: <<limit>>
+      tmdb_collection_<<key>>: <<tmdb_collection>>
+      tmdb_movie_<<key>>: <<tmdb_movie>>
+      imdb_list_<<key>>: <<imdb_list>>
+      trakt_list_<<key>>: <<trakt_list>>
+      mdblist_list_<<key>>: <<mdblist_list>>
+      summary_<<key>>: <<seasonal_summary>>
+      name_<<key>>: <<key>>
+      emoji_<<key>>: <<emoji>>
+    optional:
+      - poster_url
+      - schedule
+      - tmdb_collection
+      - tmdb_movie
+      - limit
+      - imdb_list
+      - trakt_list
+      - mdblist_list
+    smart_label:
+      sort_by: <<sort_by_<<key>>>>
+      limit: <<limit_<<key>>>>
+      all:
+        label: <<smart_label>>
+    schedule: <<schedule_<<key>>>>
+    sync_mode: <<sync_mode_<<key>>>>
+    collection_order: random
+    tmdb_collection: <<tmdb_collection_<<key>>>>
+    tmdb_movie: <<tmdb_movie_<<key>>>>
+    imdb_list: <<imdb_list_<<key>>>>
+    trakt_list: <<trakt_list_<<key>>>>
+    mdblist_list: <<mdblist_list_<<key>>>>
+    cache_builders: 1
+    summary: <<summary_<<key>>>>
+    name: <<emoji_<<key>>>><<name_<<key>>>>
+    sort_title: 03_+<<level>>_<<collection_name>>
+    visible_shared: true
+    visible_home: true
+    url_poster: <<poster_url>>
+

@@ -1,0 +1,34 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+templates:
+  Movies_Best_of_Year:
+    default:
+      level: ""
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<key>>
+    sort_title: 08_+<<level>>_Best of <<key>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of <<key>>
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+    visible_library: true
+    visible_shared: false
+    visible_home: false
+    schedule: monthly(1)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/year/best/<<key>>.jpg
+
+dynamic_collections:
+  ## Use DC as suffix to avoid name conflicts with static collections
+  ## These get generated in the order they are listed here, so put the more intensive ones at the bottom
+
+  Best of Year DC Movies: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 2014
+      ending: current_year
+    title_format: 🍅 Best of <<key_name>>
+    template:
+      - Movies_Best_of_Year

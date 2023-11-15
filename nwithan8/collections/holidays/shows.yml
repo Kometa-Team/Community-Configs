@@ -1,0 +1,16 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  "🗳️ Election Day":
+    schedule: range(10/25-11/12)
+    visible_home: range(10/25-11/11)
+    visible_shared: range(10/25-11/11)
+    visible_library: range(10/25-11/11)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "I like the noise of democracy."
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/political-tv-series
