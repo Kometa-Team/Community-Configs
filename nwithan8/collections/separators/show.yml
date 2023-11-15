@@ -7,7 +7,7 @@ collections:
     template: { name: Award,
                 level: "++++++++++" }
     summary: "Awards"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/awards.jpg
@@ -16,7 +16,7 @@ collections:
     template: { name: Holiday,
                 level: "++++++++++" }
     summary: "Holidays"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/holidays.jpg
@@ -25,7 +25,7 @@ collections:
     template: { name: Collection,
                 level: "++++++++++" }
     summary: "Collections"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/collections.jpg
@@ -34,7 +34,7 @@ collections:
     template: { name: Franchise,
                 level: "++++++++++" }
     summary: "Franchises"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/franchises.jpg
@@ -43,7 +43,7 @@ collections:
     template: { name: Genre,
                 level: "++++++++++" }
     summary: "Genres"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/genres.jpg
@@ -52,7 +52,7 @@ collections:
     template: { name: Decade,
                 level: "++++++++++" }
     summary: "Decades"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/decades.jpg
@@ -61,7 +61,7 @@ collections:
     template: { name: Network,
                 level: "++++++++++" }
     summary: "Networks"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/networks.jpg
@@ -70,7 +70,7 @@ collections:
     template: { name: Country,
                 level: "++++++++++" }
     summary: "Countries"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/countries.jpg
