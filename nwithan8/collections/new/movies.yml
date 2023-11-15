@@ -1,0 +1,20 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  ### New Content
+  "➕ Added This Week":
+    template: { name: New,
+                level: "++" }
+    summary: "Movies now playing on Plex"
+    smart_filter:
+      type: movies
+      sort_by: release.desc
+      all:
+        # Movie added in the last 7 days
+        added: 7
+        content_rating.not: NC-17, NR, X, MA-17, Not Rated
+    visible_library: true
+    visible_home: true
+    visible_shared: true

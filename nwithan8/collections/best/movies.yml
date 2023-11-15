@@ -1,0 +1,18 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  # Top movies via IMDB, updated twice a week
+  "🙌 Best Of All Time":
+    template: { name: Award,
+                level: "++" }
+    summary: "Dive into the best films ever made"
+    imdb_chart: top_movies
+    schedule:
+      - weekly(wednesday)
+      - weekly(sunday)
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true

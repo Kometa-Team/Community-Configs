@@ -1,0 +1,28 @@
+# General playlists for any show library
+
+external_templates:
+  - repo: templates/playlists
+
+playlists:
+  ### Topical
+  "Treehouse of Horror":
+    summary: "All The Simpsons' Treehouse of Horror episodes"
+    libraries: TV Shows
+    plex_search:
+      type: episode
+      all:
+        title.is: "The Simpsons"
+        episode_title: "Treehouse"
+      sort_by: release.asc
+    sync_mode: sync
+
+  "Top 100 Simpsons Episodes":
+    summary: "The top 100 Simpsons episodes"
+    libraries: TV Shows
+    plex_search:
+      type: episode
+      all:
+        title.is: "The Simpsons"
+      sort_by: audience_rating.desc
+      limit: 100
+    sync_mode: sync
