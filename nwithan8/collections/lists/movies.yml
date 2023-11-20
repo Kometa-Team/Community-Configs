@@ -1,0 +1,244 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  # Movies with a perfect RT score, updated monthly
+  "💯 The 100 Club":
+    template: { name: Collection,
+                sort_title: "Best Movies Ever",
+                level: "+++" }
+    summary: "RottenTomatoes' movies with a perfect score"
+    mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
+    collection_order: random
+    schedule: monthly(1)
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  # Worst movies of all time, updated monthly
+  "💩 Just the Worst":
+    template: { name: Collection,
+                sort_title: "Worst Movies Ever",
+                level: "++" }
+    summary: "The worst movies of all time."
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/worst-movies-of-all-time
+      - https://trakt.tv/users/nwithan8/lists/5-or-less-on-rotton-tomatoes?sort=rank,asc
+    collection_order: random
+    schedule: monthly(1)
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "🤨 How Did This Get Made?":
+    template: { name: Collection,
+                sort_title: "How Did This Get Made?",
+                level: "++" }
+    summary: "The films of the podcast 'How Did This Get Made?'"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/how-did-this-get-made-podcast
+    collection_order: custom
+    schedule: weekly(monday)
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "👍 Best Movie Ever":
+    template: { name: Collection,
+                sort_title: "Weekly Planet - Best Movie Ever",
+                level: "++" }
+    trakt_list_details:
+      - https://trakt.tv/users/nwithan8/lists/best-movie-ever?sort=added,asc
+    collection_order: random
+    schedule: daily
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "👎 Worst Movie Ever":
+    template: { name: Collection,
+                sort_title: "Weekly Planet - Worst Movie Ever",
+                level: "++" }
+    trakt_list_details:
+      - https://trakt.tv/users/nwithan8/lists/worst-movie-ever?sort=added,asc
+    collection_order: random
+    schedule: daily
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "🎩 1001 Movies You Must See Before You Die":
+    template: { name: Collection,
+                sort_title: "1001 Movies You Must See Before You Die",
+                level: "++" }
+    # summary provided by Trakt
+    trakt_list_details:
+      - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
+    collection_order: random
+    schedule: monthly(1)
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "🪣 100 Movies Bucket List":
+    template: { name: Collection,
+                sort_title: "100 Movies Bucket List",
+                level: "++" }
+    # summary provided by Trakt
+    trakt_list_details:
+      - https://trakt.tv/users/dildogarden/lists/100-movies-bucket-list
+    collection_order: rank.desc
+    schedule: monthly(1)
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "📽️ The Criterion Collection":
+    template: { name: Collection,
+                sort_title: "The Criterion Collection",
+                level: "++" }
+    # summary provided by Trakt
+    trakt_list_details:
+      - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
+    collection_order: critic_rating.desc
+    schedule: weekly(sunday)
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "🤵‍♂️ Bond. James Bond.":
+    template: { name: Franchise,
+                sort_title: "James Bond",
+                level: "+" }
+    summary: "007 forever"
+    mdblist_list: https://mdblist.com/lists/hdlists/james-bond-movies
+    collection_order: release
+    schedule: weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🦸 I Love You 3000":
+    template: { name: Franchise,
+                sort_title: "Marvel Cinematic Universe",
+                level: "+" }
+    summary: "The Marvel Cinematic Universe"
+    trakt_list:
+      - https://trakt.tv/users/cybercelia/lists/mcu
+    collection_order: release
+    schedule: weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🦸 Tell Me, Do You Bleed?":
+    template: { name: Franchise,
+                sort_title: "DC Cinematic Universe",
+                level: "+" }
+    summary: "The DC Cinematic Universe"
+    trakt_list:
+      - https://trakt.tv/users/maxrax/lists/dc-cinematics
+    collection_order: release
+    schedule: weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🐭 Disney Channel Original Movies":
+    template: { name: Franchise,
+                sort_title: "Disney Channel Original Movies",
+                level: "+" }
+    summary: "You're watching Disney Channel"
+    imdb_list:
+      - https://www.imdb.com/list/ls093405279
+    collection_order: release
+    schedule: weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🪐 To Boldly Go":
+    summary: "The Star Trek collection"
+    template: { name: Franchise,
+                sort_title: "Star Trek",
+                level: "+" }
+    trakt_list:
+      - https://trakt.tv/users/dgw/lists/star-trek-canon
+    url_background: https://i.redd.it/vz20prnp8v551.jpg
+    collection_order: release
+    schedule: weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🚀 In A Galaxy Far, Far Away":
+    summary: "The Star Wars collection"
+    template: { name: Franchise,
+                sort_title: "Star Wars",
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/sonicwarrior/lists/star-wars-canon-timeline
+    url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
+    collection_order: custom
+    schedule: weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "👽 Bears. Beets. Battlestar Galactica":
+    summary: "The Battlestar Galactica collection"
+    template: { name: Franchise,
+                sort_title: "Battlestar Galactica",
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/mraniki/lists/battlestar-galactica-universe
+    url_background: https://wallpapercave.com/wp/vPJGO64.jpg
+    collection_order: custom
+    schedule: weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🪶 To Be Or Not To Be":
+    summary: "The Shakespeare collection"
+    template: { name: Franchise,
+                sort_title: "Shakespeare",
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/michaeldibben/lists/shakespeare-plays
+    url_background: https://images.unsplash.com/photo-1598391990342-311775e3d374
+    collection_order: random
+    schedule: weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🐦‍⬛ Quoth the Raven":
+    summary: "The Edgar Allan Poe collection"
+    template: { name: Franchise,
+                sort_title: "Edgar Allan Poe",
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/majeed_pk/lists/the-best-edgar-allan-poe-adaptations
+    url_background: https://wallpapercave.com/wp/wp2328085.jpg
+    collection_order: random
+    schedule: weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "📖 Get Busy Living, or Get Busy Dying":
+    summary: "The Stephen King collection"
+    template: { name: Franchise,
+                sort_title: "Stephen King",
+                level: "+",
+                poster: "https://i.redd.it/sz63m6aex2g31.png" }
+    smart_filter:
+      all:
+        writer: "Stephen King"
+      sort_by: release.asc
+    schedule: weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false

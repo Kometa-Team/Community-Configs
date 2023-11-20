@@ -1,0 +1,37 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  ### New Content
+  "➕ Added This Week":
+    template: { name: New,
+                level: "++++" }
+    summary: "Episodes added this week on Plex"
+    sort_title:
+    smart_filter:
+      type: episode
+      sort_by: release.desc
+      all:
+        # Episode added in the last 7 days
+        episode_added: 7
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  "📺 Now On Plex":
+    template: { name: New,
+                level: "+++" }
+    summary: "Shows now playing on Plex"
+    sort_title:
+    smart_filter:
+      type: show
+      sort_by: release.desc
+      all:
+        # Shows added in the last 30 days
+        added: 30
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true

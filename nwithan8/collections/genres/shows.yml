@@ -1,0 +1,29 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+
+  ### Genres
+  "🔍 A Real-Life Whodunnit":
+    template: { name: Genre }
+    summary: "True crime documentaries"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
+    collection_order: random
+    visible_home: false
+    visible_shared: true
+
+dynamic_collections:
+  ## Use DC as suffix to avoid name conflicts with static collections
+  ## These get generated in the order they are listed here, so put the more intensive ones at the bottom
+
+  Per-Genre DC Shows: # mapping name does not matter just needs to be unique
+    type: genre
+    exclude:
+      - Action/Adventure
+    title_format: <<key_name>>
+    template:
+      - Per_Genre
+    key_name_override:
+      Film-Noir: Film Noir

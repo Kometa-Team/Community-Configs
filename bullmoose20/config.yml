@@ -1,6 +1,6 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/bullmoose20/pmm-yaml-schema/main/config_schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/chazlarson/pmm-yaml-schema/main/config_schema.json
 ### Highly recommend using Visual Studio Code with indent-rainbow plugin. VSC will also leverage the above link to enhance pmm yml edits.
-### Must be on Version 1.19.1-nightly18 or greater
+### Must be on Version 1.19.1-nightly21 or greater
 libraries:
   Movies:                                           # Must match a library name in your Plex
     report_path: config/missing/Movies_report.yml
@@ -347,6 +347,8 @@ libraries:
       template_variables:
         builder_level: episode
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
+      template_variables:
+        vertical_offset: 95
     - pmm: audio_codec
       template_variables:
         builder_level: season
@@ -421,6 +423,8 @@ libraries:
         use_subtitles: true
         builder_level: episode
     - pmm: mediastinger                             # Mediastinger overlay when the media item contains a stinger at the end of the movie/show or during the credits and works with builder_level show
+      template_variables:
+        vertical_offset: 95
     - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
     - pmm: network
       template_variables:
@@ -466,6 +470,8 @@ libraries:
         horizontal_position: right
         builder_level: episode
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. and works with builder_level show, episode, and season
+      template_variables:
+        vertical_offset: 95
     - pmm: resolution
       template_variables:
         builder_level: season
@@ -479,6 +485,19 @@ libraries:
       template_variables:
         builder_level: episode
     - pmm: status                                   # Airing, Returning, Ended, Canceled and works with builder_level show
+      template_variables:
+        horizontal_align: center
+        vertical_align: top
+        vertical_offset: 0
+        horizontal_offset: 0
+        back_height: 85
+        back_width: 1100
+        font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
+        font_size: 60
+        back_color_airing: "#016920"
+        back_color_returning: "#81007F"
+        back_color_canceled: "#B52222"
+        back_color_ended: "#000847"
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
       # template_variables:
@@ -644,10 +663,10 @@ trakt:
   authorization:
     access_token: (redacted)
     token_type: Bearer
-    expires_in: 7889237
+    expires_in: 7889238
     refresh_token: (redacted)
     scope: public
-    created_at: 1690295506
+    created_at: 1698435366
   pin:
 ############################################
 mal:
