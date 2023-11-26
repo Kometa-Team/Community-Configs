@@ -1,0 +1,17 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  ### Studios
+  # Studio - produced the movie (A24, Universal, Warner Bros, etc)
+  A24:
+    template: { name: Studio,
+                studio: "A24",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/A24.jpg }
+    summary: "A24 Films"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+
