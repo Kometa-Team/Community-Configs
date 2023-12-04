@@ -1,0 +1,76 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  "Awards":
+    template: { name: Award,
+                level: "++++++++++" }
+    summary: "Awards"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/awards.jpg
+
+  "Holidays":
+    template: { name: Holiday,
+                level: "++++++++++" }
+    summary: "Holidays"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/holidays.jpg
+
+  "Collections":
+    template: { name: Collection,
+                level: "++++++++++" }
+    summary: "Collections"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/collections.jpg
+
+  "Franchises":
+    template: { name: Franchise,
+                level: "++++++++++" }
+    summary: "Franchises"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/franchises.jpg
+
+  "Genres":
+    template: { name: Genre,
+                level: "++++++++++" }
+    summary: "Genres"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/genres.jpg
+
+  "Decades":
+    template: { name: Decade,
+                level: "++++++++++" }
+    summary: "Decades"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/decades.jpg
+
+  "Studios":
+    template: { name: Studio,
+                level: "++++++++++" }
+    summary: "Studios"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/studios.jpg
+
+  "Countries":
+    template: { name: Country,
+                level: "++++++++++" }
+    summary: "Countries"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/countries.jpg

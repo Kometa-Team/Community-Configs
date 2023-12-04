@@ -2,7 +2,7 @@
 
 templates:
   seasonal:
-    sort_title: +1_<<collection_name>>
+    sort_title: +1_<<num>>_<<collection_name>>
     summary: "A timed collection of <<holiday>> movies and other movies that may relate to the holiday."
     limit: 200
     sync_mode: sync
@@ -88,7 +88,7 @@ collections:
                     num: 9,
                     holiday: "Christmas",
                     }
-    letterboxd_list: https://letterboxd.com/0xf5e3/list/theme-christmas/
+    letterboxd_list: https://letterboxd.com/ediblehedgehog/list/theme-christmas/
     imdb_list:
       - https://www.imdb.com/list/ls000096828
       - https://www.imdb.com/list/ls097394442

@@ -1,0 +1,15 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  "⭐️ Editor's Choice":
+    template: { name: Chart,
+                level: "++" }
+    summary: "Our top picks"
+    trakt_list:
+      - https://trakt.tv/users/nwithan8/lists/recommendations-plex-sync?sort=popularity,asc
+    collection_order: release.desc
+    visible_library: true
+    visible_home: true
+    visible_shared: true

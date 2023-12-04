@@ -162,7 +162,7 @@ collections:
     smart_filter:
       sort_by: audience_rating.desc
       any:
-        genre: science fiction        
+        genre: science fiction         
   Short:
     template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Short.jpg}
     smart_filter:

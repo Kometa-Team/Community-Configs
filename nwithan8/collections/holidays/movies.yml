@@ -1,0 +1,268 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  "🎊 New Year's Day":
+    schedule: range(12/26-01/05)
+    visible_home: range(12/26-01/04)
+    visible_shared: range(12/26-01/04)
+    visible_library: range(12/26-01/04)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Ring in the New Year with these movies!"
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls066838460/
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/years.jpg
+
+  "💘 Valentine's Day":
+    schedule: range(02/01-02/21)
+    visible_home: range(02/01-02/20)
+    visible_shared: range(02/01-02/20)
+    visible_library: range(02/01-02/20)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Love me tender, love me sweet, never let me go."
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/valentine.jpg
+
+  "☘ St. Patrick's Day":
+    schedule: range(03/01-03/19)
+    visible_home: range(03/01-03/18)
+    visible_shared: range(03/01-03/18)
+    visible_library: range(03/01-03/18)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Kiss Me, I'm Irish."
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls063934595/
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/patrick.jpg
+
+  "🥦 4/20":
+    schedule: range(04/15-04/23)
+    visible_home: range(04/15-04/22)
+    visible_shared: range(04/15-04/22)
+    visible_library: range(04/15-04/22)
+    template: { name: Holiday,
+                level: "+" }
+    summary: "Blaze it!"
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls075204988/
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/420.jpg
+
+  "🐰 Easter":
+    schedule: range(03/20-05/01)
+    visible_home: range(03/20-04/30)
+    visible_shared: range(03/20-04/30)
+    visible_library: range(03/20-04/30)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Hoppy Easter!"
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls062665509/
+      - https://www.imdb.com/list/ls051733651/
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/easter.jpg
+
+  "🤱 Mother's Day":
+    schedule: range(05/05-05/11)
+    visible_home: range(05/05-05/10)
+    visible_shared: range(05/05-05/10)
+    visible_library: range(05/05-05/10)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Thanks Mom!"
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls072551197/
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/mother.jpg
+
+  "🪖 Memorial Day":
+    schedule: range(5/18-6/8)
+    visible_home: range(5/18-6/7)
+    visible_shared: range(5/18-6/7)
+    visible_library: range(5/18-6/7)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Remembering those who gave their lives for our freedom."
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls002014923/
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/memorial.jpg
+
+  "👨 Father's Day":
+    schedule: range(06/15-06/21)
+    visible_home: range(06/15-06/20)
+    visible_shared: range(06/15-06/20)
+    visible_library: range(06/15-06/20)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Thanks Dad!"
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls020471057/
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/father.jpg
+
+  "🎆 Independence Day":
+    schedule: range(06/23-07/11)
+    visible_home: range(06/23-07/10)
+    visible_shared: range(06/23-07/10)
+    visible_library: range(06/23-07/10)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Celebrate the 4th of July with these movies!"
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls068664510/
+      - https://www.imdb.com/list/ls080925875/
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/independence.jpg
+
+  "⚒ Labor Day":
+    schedule: range(09/01-09/11)
+    visible_home: range(09/01-09/10)
+    visible_shared: range(09/01-09/10)
+    visible_library: range(09/01-09/10)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Labor Day is a day off, but these movies are hard work."
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls002014923/
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/labor.jpg
+
+  "🎃 Halloween":
+    schedule: range(10/01-11/01)
+    visible_home: range(10/01-10/31)
+    visible_shared: range(10/01-10/31)
+    visible_library: range(10/01-10/31)
+    template: { name: Holiday,
+                level: "+++" }
+    summary: "Boo!"
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls023118929/
+      - https://www.imdb.com/list/ls000099714/
+    trakt_list:
+      - https://trakt.tv/users/29zombies/lists/halloween
+      - https://trakt.tv/users/galacticboy/lists/not-so-spooky-halloween
+      # - https://trakt.tv/users/kairbear08/lists/halloween
+      # - https://trakt.tv/users/mybicycle/lists/halloween
+      # - https://trakt.tv/users/jayinftl/lists/halloween
+      # - https://trakt.tv/users/roswellgeek/lists/halloween
+    tmdb_collection:
+      - 185103    # Hotel Transylvania
+      - 11716     # Addams Family
+      - 750822    # Addams Family Animated
+      - 313086    # Conjuring
+      - 91361     # Halloween Collection
+      - 8581      # A Nightmare on Elm Street Collection
+      - 1733      # The Mummy Collection
+      - 8091      # Alien Collection
+      - 2980      # Ghostbusters
+      - 751156    # Hocus Pocus
+    tmdb_movie:
+      - 23437    # A Nightmare on Elm Street (2010)
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/halloween.jpg
+
+  "👻 Horror":
+    schedule: range(10/01-11/01)
+    visible_home: range(10/01-10/31)
+    visible_shared: range(10/01-10/31)
+    visible_library: range(10/01-10/31)
+    template: { name: Holiday,
+                level: "+" }
+    summary: "Don't be scared, it's just a movie."
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/31-days-of-horror-2023  # TODO: Change annually
+
+  "🍬 Trick or Treat":
+    schedule: range(10/01-11/01)
+    visible_home: range(10/01-10/31)
+    visible_shared: range(10/01-10/31)
+    visible_library: range(10/01-10/31)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Trick or Treat!"
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/halloween-movies-for-kids
+
+  "🔪 Slasher":
+    schedule: range(10/01-11/01)
+    visible_home: range(10/01-10/31)
+    visible_shared: range(10/01-10/31)
+    visible_library: range(10/01-10/31)
+    template: { name: Holiday,
+                level: "+" }
+    summary: "He's right behind you!"
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/80s-slasher-movies
+
+  "🗳️ Election Day":
+    schedule: range(10/25-11/12)
+    visible_home: range(10/25-11/11)
+    visible_shared: range(10/25-11/11)
+    visible_library: range(10/25-11/11)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "I like the noise of democracy."
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/best-political-movies
+
+  "🦃 Thanksgiving":
+    schedule: range(11/01-12/01)
+    visible_home: range(11/01-11/30)
+    visible_shared: range(11/01-11/30)
+    visible_library: range(11/01-11/30)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Gobble gobble!"
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls091597850/
+    trakt_list:
+      - https://trakt.tv/users/galacticboy/lists/thanksgiving-movies
+      - https://trakt.tv/users/shahid1296/lists/thanksgiving
+      - https://trakt.tv/users/retrogran/lists/thanksgiving-season-movies
+      - https://trakt.tv/users/padawan_seneca/lists/vibe-autumn-tv-series-movies
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/thanksgiving.jpg
+
+  "🎅 Christmas":
+    schedule: range(12/01-01/01)
+    visible_home: range(12/01-12/31)
+    visible_shared: range(12/01-12/31)
+    visible_library: range(12/01-12/31)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Cozy up with some Christmas classics."
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls000096828/
+    trakt_list:
+      - https://trakt.tv/users/movistapp/lists/christmas-movies
+      - https://trakt.tv/users/questdvd/lists/absolute-hayes-christmas-classics
+      - https://trakt.tv/users/littlestella3/lists/christmas
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/christmas.jpg
+
+  "🎁 Hallmark Christmas":
+    schedule: range(12/01-01/01)
+    visible_home: range(12/01-12/31)
+    visible_shared: range(12/01-12/31)
+    visible_library: range(12/01-12/31)
+    template: { name: Holiday,
+                level: "+" }
+    summary: "Christmas movies with extra-sap!"
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/mzdiobolik/lists/hallmark-christmas-movies

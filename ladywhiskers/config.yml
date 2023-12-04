@@ -4,11 +4,7 @@ libraries:
       use_separator: false
     metadata_path:
       - folder: config/movies
-      - pmm: based
       - git: bullmoose20/movies_refresh
-      - pmm: oscars
-        template_variables:
-          use_year_collections: false
       - pmm: actor
         template_variables:
           collection_section: '001'
@@ -36,29 +32,19 @@ libraries:
         template_variables:
           include:
             - Oceania
+      - pmm: studio
+        template_variables:
+          include:
+            - A24
+            - DreamWorks Studios
+            - DreamWorks Pictures
+            - Pixar
+            - 
       - pmm: franchise
         template_variables:
           minimum_items: 2
           delete_below_minimum: true
-      - pmm: seasonal
-        template_variables:
-          use_separator: true
-          sep_style: stb
-          use_memorial: false
-          use_independence: false
-          use_labor: false
-          use_thanksgiving: false
-          use_latinx: false
-          schedule_father: range(09/01-09/14)
-          sort_by: random
-          append_data:
-            pride: Pride Month
-          schedule_pride: range(06/01-06/30)
-          imdb_list_pride: 'https://www.imdb.com/list/ls063526611/'
-          emoji_pride: "\U0001F3F3️‍\U0001F308️‍ "
       - pmm: universe
-      - file: config/metadata/movie/1_othercollections.yml
-        schedule: weekly(tuesday)
     overlay_path:
       - schedule: weekly(saturday)
       - remove_overlays: false
@@ -96,7 +82,7 @@ libraries:
       mass_user_rating_update: mdb_tomatoes
       mass_critic_rating_update: imdb
       mass_audience_rating_update: tmdb
-      mass_genreZ_update: omdb
+      mass_genre_update: omdb
       mass_content_rating_update: mdb_commonsense
       mass_originally_available_update: tmdb
       mass_imdb_parental_labels: none
@@ -114,7 +100,7 @@ libraries:
     library_name: TV Shows
     metadata_path:
       - pmm: based
-      - git: bullmoose20/tv_refresh
+ #     - git: bullmoose20/tv_refresh
       - pmm: actor
         template_variables:
           collection_section: '001'
@@ -221,6 +207,9 @@ libraries:
         path: config/metadata/backups/TVShows_Backup.yml
         sync_tags: true
         add_blank_entries: false
+      genre_mapper:
+        Sci-Fi: Science Fiction
+        Action & Adventure: Action
   Music:
     schedule: weekly (sunday)
     library_name: Music
@@ -228,14 +217,15 @@ libraries:
       - folder: config/music
     operations:
       delete_collections:
-        less: 50
+        less: 20
       metadata_backup:
         path: config/metadata/backups/Music_Backup.yml
         sync_tags: true
         add_blank_entries: false
     overlay_path:
       - schedule: weekly(saturday)
-      - reapply_overlays: true
+      - remove_overlays: false
+      - reapply_overlays: false
       - pmm: audio_codec
         template_variables:
           overlay_level: album
@@ -243,6 +233,7 @@ playlist_files:
   - pmm: playlist
     template_variables:
       libraries: 'Movies, TV Shows'
+  - folder: config/playlists
 settings:
   cache: true
   cache_expiration: 60
@@ -252,36 +243,36 @@ settings:
   asset_depth: 1
   create_asset_folders: false
   prioritize_assets: false
-  dimensional_asset_rename: false
+  dimensional_asset_rename: true
   download_url_assets: false
   show_missing_season_assets: false
   show_missing_episode_assets: false
   show_asset_not_needed: false
   sync_mode: sync
-  default_collection_order: null
   minimum_items: 1
+  default_collection_order:
   delete_below_minimum: true
   delete_not_scheduled: false
-  run_again_delay: 1
+  run_again_delay: 2
   missing_only_released: true
-  show_unconfigured: true
-  show_unmanaged: true
-  show_filtered: true
-  show_options: true
-  show_missing: false
   only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_options: false
+  show_missing: false
   show_missing_assets: false
   save_report: false
   tvdb_language: eng
-  ignore_ids: null
-  ignore_imdb_ids: null
+  ignore_ids:
+  ignore_imdb_ids:
   item_refresh_delay: 0
-  playlist_sync_to_users: all
-  playlist_report: true
-  custom_repo: null
+  playlist_sync_to_user: all
+  playlist_exclude_users:
+  playlist_report: false
   verify_ssl: true
+  custom_repo:
   check_nightly: true
-  playlist_exclude_users: null
 webhooks:
   error: notifiarr
   version: notifiarr

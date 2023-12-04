@@ -1,0 +1,581 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+templates:
+  # Normal Templates
+  # ----------------
+
+  # Dynamic Collections Templates
+  # -----------------------------
+  # Per-year award winners
+  Yearly_Oscars_Winners:
+    # This will always be a year behind (2020 movies win at the 2021 Oscars) - The collection is the 2020 movies that won at the 2021 Oscars
+    default:
+      imdb_sort: moviemeter,asc
+    allowed_library_types: movie
+    summary: <<key>> Academy Awards (Oscars) Winners
+    sort_title: 05_Oscars_Winners_<<key>>
+    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=oscar_winner&sort=<<imdb_sort>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner/<<key>>.jpg
+
+  Yearly_Berlinale_Awards:
+    default:
+      list_owner: pjcob
+      url: <<list_owner>>/lists/<<key>>-berlinale
+    allowed_library_types: movie
+    summary: <<key>> Berlinale International Film Festival
+    sort_title: 05_Berlinale_Winners_<<key>>
+    trakt_list: https://trakt.tv/users/<<url>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/<<key>>.jpg
+
+  Yearly_Cannes_Awards:
+    default:
+      list_owner: pjcob
+      url: <<list_owner>>/lists/<<key>>-cannes
+    allowed_library_types: movie
+    summary: <<key>> Cannes Film Festival
+    sort_title: 05_Cannes_Winners_<<key>>
+    trakt_list: https://trakt.tv/users/<<url>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key>>.jpg
+
+  Yearly_Sundance_Awards:
+    default:
+      list_owner: pjcob
+      url: <<list_owner>>/lists/<<key>>-sundance
+    allowed_library_types: movie
+    summary: <<key>> Sundance Film Festival
+    sort_title: 05_Sundance_Winners_<<key>>
+    trakt_list: https://trakt.tv/users/<<url>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<key>>.jpg
+
+  Yearly_Golden_Globes_Winners:
+    default:
+      imdb_sort: moviemeter,asc
+    summary: <<key>> Golden Globe Winners
+    sort_title: 05_Golden_Globes_Winners_<<key>>
+    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/winner/<<key>>.jpg
+
+  Yearly_Spirit_Awards:
+    default:
+      list_owner: pjcob
+      url: <<list_owner>>/lists/<<key>>-independent-spirits
+    allowed_library_types: movie
+    summary: <<key>> Independent Spirit Awards
+    sort_title: 05_Spirit_Winners_<<key>>
+    trakt_list: https://trakt.tv/users/<<url>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<key>>.jpg
+
+  Yearly_Critics_Choice_Awards:
+    default:
+      list_owner: pjcob
+      prefix: critic-s
+      url: <<list_owner>>/lists/<<key>>-<<prefix>>-choice
+    summary: <<key>> Critics Choice Awards
+    sort_title: 05_Critics_Winners_<<key>>
+    trakt_list: https://trakt.tv/users/<<url>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<key>>.jpg
+
+  Yearly_BAFTA_Awards:
+    default:
+      list_owner: pjcob
+      url: <<list_owner>>/lists/<<key>>-bafta
+    allowed_library_types: movie
+    summary: <<key>> BAFTA awards
+    sort_title: 05_BAFTA_Winners_<<key>>
+    trakt_list: https://trakt.tv/users/<<url>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<key>>.jpg
+
+collections:
+  ### This year's Academy Awards
+  # ---------------------------------
+
+  # This current year's Best Picture Oscar nominees
+  # Only visible on home screen during Oscar season
+  "🎬 This Year's Best Picture Nominees":
+    # TODO: NEED TO BUILD MANUALLY
+    template: { name: Award,
+                level: "++++++" }
+    summary: "Who will take home the trophy?"
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.asc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  ### This year's Per-Best Actor Collections
+  # ---------------------------------
+
+  # This current year's Best Actor Oscar nominees
+  # Only visible on home screen during Oscar season
+
+  "🎭 2023 Best Actor Nominee - Austin Butler":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 86654 }
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  "🎭 2023 Best Actor Nominee - Colin Farrell":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 72466 }
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  "🎭 2023 Best Actor Nominee - Brendan Fraser":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 18269 }
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  "🎭 2023 Best Actor Nominee - Paul Mescal":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 2326151 }
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  "🎭 2023 Best Actor Nominee - Bill Nighy":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 2440 }
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+
+  ### This year's Per-Best Actress Collections
+  # ---------------------------------
+
+  # This current year's Best Actress Oscar nominees
+  # Only visible on home screen during Oscar season
+
+  "🎭 2023 Best Actress Nominee - Cate Blanchett":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 112 }
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  "🎭 2023 Best Actress Nominee - Ana de Armas":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 224513 }
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  "🎭 2023 Best Actress Nominee - Andrea Riseborough":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 127558 }
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  "🎭 2023 Best Actress Nominee - Michelle Williams":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 1812 }
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  "🎭 2023 Best Actress Nominee - Michelle Yeoh":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 1620 }
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+
+
+  # This current year's Oscar nominees (all)
+  # Only visible on home screen during Oscar season
+  "🎖️This Year's Oscar Nominees":
+    summary: "Who will take home the trophy?"
+    template: { name: Award,
+                level: "++++" }
+    trakt_list:
+      # TODO: NEED TO REPLACE MANUALLY
+      - https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2023
+    collection_order: random
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run again after visibility timeframe for visibility to switch back
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  ### Historical Awards
+  # ---------------------------------
+
+  # All past Oscar-winning movies (not just Best Picture)
+  # Only visible on home screen during Oscar season
+  "🏆 Past Oscar Winners":
+    summary: "Oscar-winning Movies"
+    template: { name: Award,
+                level: "++" }
+    imdb_list:
+      - https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run again after visibility timeframe for visibility to switch back
+    collection_order: random
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner.jpg
+
+  # All past Oscar Best Director-winning movies
+  # Only visible on home screen during Oscar season
+  "🏆 Past Best Director Winners":
+    summary: "The Academy Award for Best Director is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929."
+    template: { name: Award,
+                level: "++" }
+    imdb_list:
+      - https://www.imdb.com/search/title/?groups=best_director_winners&sort=year%2Cdesc
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: random
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/best_director_winner.jpg
+
+  # All past Oscar Best Picture-winning movies
+  # Only visible on home screen during Oscar season
+  "🏆 Past Best Picture Winners":
+    summary: "The Academy Award for Best Picture is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929."
+    template: { name: Award,
+                level: "++" }
+    imdb_list:
+      - https://www.imdb.com/search/title/?groups=best_picture_winners&sort=year%2Cdesc
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/best_picture_winner.jpg
+
+  # All past Razzie-winning Worst Picture movies
+  # Only visible on home screen during Razzie season
+  "🤮 Past Worst Picture Winners":
+    template: { name: Award,
+                level: "++" }
+    summary: "Previous Razzie Worst Picture winners"
+    mdblist_list: https://mdblist.com/lists/hdlists/razzie-awards-worst-picture-winners
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: random
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzies/winner.jpg
+
+  # All past BAFTA Best Film-winning movies
+  # Only visible on home screen during BAFTA season
+  "🇬🇧 Past BAFTA Best Film Winners":
+    summary: "The EE British Academy Film Awards or BAFTA Film Awards are presented in an annual award show hosted by the British Academy of Film and Television Arts (BAFTA) to honour the best British and international contributions to film."
+    template: { name: Award,
+                level: "++" }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
+    schedule:
+      - yearly(02/21)
+      - all[weekly(friday),range(02/21-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/21-03/31)
+    visible_shared: range(02/21-03/31)
+    visible_library: range(02/21-03/31)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/winner.jpg
+
+  # All past Berlinale-winning movies
+  # Only visible on home screen during Berlinale season
+  "🇩🇪 Past Berlinale Winners":
+    summary: "The Berlin International Film Festival, usually called the Berlinale, is a film festival held annually in Berlin, Germany."
+    template: { name: Award,
+                level: "++" }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
+    schedule:
+      - yearly(02/21)
+      - all[weekly(friday),range(02/21-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/21-03/31)
+    visible_shared: range(02/21-03/31)
+    visible_library: range(02/21-03/31)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/winner.jpg
+
+  # All past Cannes Palme d'or-winning movies
+  # Only visible on home screen during Cannes Palme d'or season
+  "🕊️ Past Cannes Palme d'or Winners":
+    summary: "The Palme d'Or is the highest prize awarded at the Cannes Film Festival. It was introduced in 1955 by the organising committee."
+    template: { name: Award,
+                level: "++" }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-palme-d-or
+    schedule:
+      - yearly(06/01)
+      - all[weekly(friday),range(06/01-06/30)]
+      - yearly(07/01)
+      # You have to schedule it to run again after visibility timeframe for visibility to switch back
+    collection_order: release.desc
+    visible_home: range(06/01-06/30)
+    visible_shared: range(06/01-06/30)
+    visible_library: range(06/01-06/30)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/winner.jpg
+
+  # All past Cesar Award-winning movies
+  # Only visible on home screen during Cesar Award season
+  "🇫🇷 Past Cesar Award Winners":
+    summary: "The César Award is the national film award of France. It is delivered in the Nuit des César ceremony and was first awarded in 1976."
+    template: { name: Award,
+                level: "++" }
+    trakt_list: https://trakt.tv/users/fauxliege/lists/cesar-meilleur-film
+    schedule:
+      - yearly(03/14)
+      - all[weekly(friday),range(03/14-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(03/14-03/31)
+    visible_shared: range(03/14-03/31)
+    visible_library: range(03/14-03/31)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cesar/winner.jpg
+
+  # All past Sundance-winning movies
+  # Only visible on home screen during Sundance season
+  "🇺🇸 Past Sundance Winners":
+    summary: "Sundance is the largest independent film festival in the United States. Held in January, the festival is the premier showcase for new work from American and international independent filmmakers."
+    template: { name: Award,
+                level: "++" }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/sundance-film-festival-grand-jury-prize
+    schedule:
+      - yearly(01/01)
+      - all[weekly(friday),range(01/01-01/31)]
+      - yearly(02/01)
+      # You have to schedule it to run again after visibility timeframe for visibility to switch back
+    collection_order: release.desc
+    visible_home: range(01/01-01/31)
+    visible_shared: range(01/01-01/31)
+    visible_library: range(01/01-01/31)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/winner.jpg
+
+  # All past Venice Film Festival-winning movies
+  # Only visible on home screen during Venice Film Festival season
+  "🇮🇹 Past Venice Film Festival Winners":
+    summary: "The Venice Film Festival or Venice International Film Festival (Italian: Mostra Internazionale d'Arte Cinematografica della Biennale di Venezia is the world's oldest film festival"
+    template: { name: Award,
+                level: "++" }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
+    schedule:
+      - yearly(02/21)
+      - all[weekly(friday),range(02/21-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: range(02/21-03/31)
+    visible_shared: range(02/21-03/31)
+    visible_library: range(02/21-03/31)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/venice/winner.jpg
+
+  # Too big, times out
+  # "🎞️ American Film Institute":
+  #  summary: "The American Film Institute (AFI) is an American film organization that educates filmmakers and honors the heritage of the motion picture arts in the United States."
+  #  template: { name: Award,
+  #              level: "+" }
+  #  trakt_list: https://trakt.tv/users/majeed_pk/lists/afi-100-years-all-films-complete
+  #  schedule:
+  #    - weekly(friday)
+  #  collection_order: release.desc
+  #  visible_home: false
+  #  visible_shared: false
+  #  visible_library: true
+
+dynamic_collections:
+  ## Use DC as suffix to avoid name conflicts with static collections
+  Yearly Oscars Winners DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 2010
+      ending: current_year
+    title_format: Oscars Winners <<key_name>>
+    template:
+      - Yearly_Oscars_Winners
+
+  Yearly Berlinale DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 2017
+      ending: current_year
+    title_format: Berlinale International Film Festival <<key_name>>
+    template:
+      - Yearly_Berlinale_Awards
+    template_variables:
+      url:
+        2017: vermelholimao/lists/berlinale-2017-67-berlin-international-film-festival
+        2018: vermelholimao/lists/berlinale-2018-68-berlin-international-film-festival
+        2019: vermelholimao/lists/berlinale-2019-69th-berlin-international-film-festival
+        2020: vermelholimao/lists/berlinale-2020-70th-berlin-international-film-festival
+
+  Yearly Cannes DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 2016
+      ending: current_year
+    title_format: Cannes Film Festival <<key_name>>
+    template:
+      - Yearly_Cannes_Awards
+    template_variables:
+      list_owner:
+        2023: hernandezel
+
+  Yearly Sundance DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 2010
+      ending: current_year
+    title_format: Sundance Film Festival <<key_name>>
+    template:
+      - Yearly_Sundance_Awards
+
+  Yearly Golden Globes DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 2014
+      ending: current_year
+    title_format: Golden Globes Winners <<key_name>>
+    template:
+      - Yearly_Golden_Globes_Winners
+
+  Yearly Spirit Awards DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 2014
+      ending: current_year
+    title_format: Independent Spirit Awards <<key_name>>
+    template:
+      - Yearly_Spirit_Awards
+
+  Yearly Critics Choice Awards DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 2014
+      ending: current_year
+    title_format: Critics Choice Awards <<key_name>>
+    template:
+      - Yearly_Critics_Choice_Awards
+    template_variables:
+      prefix:
+        2019: critics
+        2018: critics
+        2017: critics
+        2016: critics
+        2015: critics
+        2014: critics
+
+  Yearly BAFTA Awards DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 2014
+      ending: current_year
+    title_format: BAFTA <<key_name>>
+    template:
+      - Yearly_BAFTA_Awards
