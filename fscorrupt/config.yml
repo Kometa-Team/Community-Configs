@@ -1,0 +1,364 @@
+## This file is a template remove the .template to use the file
+
+libraries:
+  4K Movies:
+    schedule: hourly(11),hourly(19)
+    #schedule: hourly(9),hourly(19)
+    metadata_path:
+    - file: config/Movies.yml
+    #- file: config/collections.yml
+    overlay_path:
+    - pmm: commonsense
+      template_variables:
+        vertical_offset: 37
+        horizontal_offset: 255
+        back_width: 230
+    - pmm: languages
+      template_variables:
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000099'
+    - file: config/runtimes.yml
+      template_variables:
+        vertical_offset: 37
+        horizontal_align: center
+        horizontal_offset: 140
+    - remove_overlays: false
+    - file: config/overlays_movies.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: true
+        4K: false
+    operations:
+      mass_content_rating_update: mdb_commonsense
+  Movies:
+    schedule: hourly(11),hourly(19)
+    #schedule: hourly(9),hourly(19)
+    metadata_path:
+    - file: config/Movies.yml
+    #- file: config/collections.yml
+    overlay_path:
+    - pmm: commonsense
+      template_variables:
+        vertical_offset: 37
+        horizontal_offset: 255
+        back_width: 230
+    - pmm: languages
+      template_variables:
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000099'
+    - file: config/runtimes.yml
+      template_variables:
+        vertical_offset: 37
+        horizontal_align: center
+        horizontal_offset: 140
+    - remove_overlays: false
+    - file: config/overlays_movies.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: false
+        4K: false
+    operations:
+      mass_content_rating_update: mdb_commonsense
+  Kids Movies:
+    schedule: hourly(11),hourly(19)
+    metadata_path:
+    - file: config/Movies.yml
+    #- file: config/Genre.yml
+    overlay_path:
+    - pmm: commonsense
+      template_variables:
+        vertical_offset: 37
+        horizontal_offset: 255
+        back_width: 230
+    - pmm: languages
+      template_variables:
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000099'
+    - file: config/runtimes.yml
+      template_variables:
+        vertical_offset: 37
+        horizontal_align: center
+        horizontal_offset: 140
+    - remove_overlays: false
+    - file: config/overlays_movies.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: false
+        4K: false
+    operations:
+      mass_content_rating_update: mdb_commonsense
+  Anime:
+    schedule: hourly(11),hourly(19)
+    metadata_path:
+    - file: config/Movies.yml
+    #- file: config/Genre.yml
+    overlay_path:
+    - pmm: commonsense
+      template_variables:
+        vertical_offset: 37
+        horizontal_offset: 255
+        back_width: 230
+    - pmm: languages
+      template_variables:
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000099'
+    - file: config/runtimes.yml
+      template_variables:
+        vertical_offset: 37
+        horizontal_align: center
+        horizontal_offset: 140
+    - remove_overlays: false
+    - file: config/overlays_movies.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: false
+        4K: false
+    operations:
+      mass_content_rating_update: mdb_commonsense
+  TV Shows:
+    schedule: hourly(11)
+    metadata_path:
+    - file: config/TVShows.yml
+    #- file: config/Genre.yml
+    overlay_path:
+    #- reapply_overlays: true
+    - pmm: languages
+      template_variables:
+        overlay_level: episode
+        overlay_limit: 5
+        horizontal_position: right
+        vertical_position: bottom
+    - pmm: status
+      template_variables:
+        horizontal_align: center
+        vertical_align: top
+        vertical_offset: 0
+        horizontal_offset: 0
+        back_height: 85
+        back_width: 1100
+        font: config/fonts/Avenir_95_Black.ttf
+        font_size: 60
+        back_color_airing: '#016920'
+        back_color_returning: '#81007F'
+        back_color_canceled: '#ed1f1f'
+        back_color_ended: '#000847'
+    - file: config/runtimes.yml
+      template_variables:
+        overlay_level: episode
+        horizontal_align: left
+    - remove_overlays: false
+    - file: config/overlays_tv.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K: false
+        4K_banner: false
+  Kids Shows:
+    schedule: hourly(11)
+    metadata_path:
+    - file: config/KidsShows.yml
+    overlay_path:
+    #- reapply_overlays: true
+    - pmm: languages
+      template_variables:
+        overlay_level: episode
+        overlay_limit: 5
+        horizontal_position: right
+        vertical_position: bottom
+    - pmm: status
+      template_variables:
+        horizontal_align: center
+        vertical_align: top
+        vertical_offset: 0
+        horizontal_offset: 0
+        back_height: 85
+        back_width: 1100
+        font: config/fonts/Avenir_95_Black.ttf
+        font_size: 60
+        back_color_airing: '#016920'
+        back_color_returning: '#81007F'
+        back_color_canceled: '#ed1f1f'
+        back_color_ended: '#000847'
+    - file: config/runtimes.yml
+      template_variables:
+        overlay_level: episode
+        horizontal_align: left
+    - remove_overlays: false
+    - file: config/overlays_tv.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: false
+        4K: false
+  Anime Shows:
+    schedule: hourly(11)
+    metadata_path:
+    - file: config/AnimeShows.yml
+    overlay_path:
+    #- reapply_overlays: true
+    - pmm: languages
+      template_variables:
+        overlay_level: episode
+        overlay_limit: 5
+        horizontal_position: right
+        vertical_position: bottom
+    - pmm: status
+      template_variables:
+        horizontal_align: center
+        vertical_align: top
+        vertical_offset: 0
+        horizontal_offset: 0
+        back_height: 85
+        back_width: 1100
+        font: config/fonts/Avenir_95_Black.ttf
+        font_size: 60
+        back_color_airing: '#016920'
+        back_color_returning: '#81007F'
+        back_color_canceled: '#ed1f1f'
+        back_color_ended: '#000847'
+    - file: config/runtimes.yml
+      template_variables:
+        overlay_level: episode
+        horizontal_align: left
+    - remove_overlays: false
+    - file: config/overlays_tv.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: false
+        4K: false
+playlist_files:
+- file: config/playlist.yml
+  template_variables:
+    use_walking: true
+    radarr_add_missing_walking: false
+    sonarr_add_missing_walking: false
+settings:                                       # Can be individually specified per library as well
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: false
+  assets_for_all: false
+  sync_mode: sync
+  show_unmanaged: false
+  create_asset_folders: false
+  delete_below_minimum: false
+  tvdb_language: default
+  show_missing_assets: false
+  minimum_items: 1
+  asset_depth: 0
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  default_collection_order:
+  delete_not_scheduled: false
+  only_filter_missing: false
+  show_options: false
+  ignore_ids:
+  ignore_imdb_ids:
+  verify_ssl: true
+  playlist_sync_to_users: all
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  item_refresh_delay: 0
+  custom_repo:
+  prioritize_assets: false
+  playlist_report: false
+  check_nightly: false
+  show_unconfigured: true
+  playlist_exclude_users: 
+  run_again_delay: 0
+  missing_only_released: false
+  show_filtered: false
+  show_missing: true
+  save_report: false
+plex:                                           # Can be individually specified per library as well
+  url: http://plex:32400
+  token: 
+  timeout: 360
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+  db_cache:
+webhooks:
+  error:
+  version:
+  run_start:
+  run_end:
+  delete:
+tmdb:
+  apikey: 
+  language: en
+  cache_expiration: 60
+  region:
+tautulli:                                       # Can be individually specified per library as well
+  url: http://tautulli:8181
+  apikey: 
+omdb:
+  apikey: 
+  cache_expiration: 60
+radarr:                                         # Can be individually specified per library as well
+  url: http://radarr:7878
+  token: 
+  version: v4
+  root_folder_path: /mnt/unionfs/Movies
+  monitor: false
+  availability: announced
+  quality_profile: 1080p
+  tag: pmm
+  search: false
+  add_existing: false
+  radarr_path:
+  plex_path:
+  add_missing: false
+  upgrade_existing: false
+  ignore_cache: false
+sonarr:                                         # Can be individually specified per library as well
+  url: http://sonarr:8989
+  token: 
+  version: v4
+  root_folder_path: /mnt/unionfs/Shows
+  monitor: false
+  quality_profile: 1080p - DE Only
+  language_profile: German
+  series_type: standard
+  season_folder: true
+  tag: pmm
+  search: false
+  cutoff_search: false
+  add_existing: false
+  sonarr_path:
+  plex_path:
+  add_missing: false
+  upgrade_existing: false
+  ignore_cache: false
+trakt:
+  client_id: 
+  client_secret: 
+  authorization:
+    access_token: 
+    token_type: Bearer
+    expires_in: 7889237
+    refresh_token: 
+    scope: public
+    created_at: 1696698036
+  pin:
+mdblist:
+  apikey: 
+  cache_expiration: 60
