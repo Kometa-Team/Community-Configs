@@ -1,0 +1,263 @@
+############################
+#        TEMPLATES         #
+############################
+
+templates:
+  franchise:
+    optional:
+      - collection
+      - movies
+      - list
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    tmdb_collection_details: <<collection>>
+    tmdb_list: <<list>>
+    tmdb_movie: <<movies>>     
+    sort_title: <<collection_name>>
+    collection_mode: hide
+    collection_order: release
+    schedule: 
+     - monthly(1)
+     - monthly(15)
+    
+
+
+############################
+#       COLLECTIONS        #
+############################
+
+collections:
+
+### HINZUGEFUEGT
+
+  🗓️ New Releases:
+    smart_filter:
+      sort_by: added.desc
+      all:
+        added: 92
+        release: 365
+      limit: 50
+    url_poster: https://theposterdb.com/api/assets/407033
+    summary: Neuerscheinungen der letzten 3 Monate.
+    collection_mode: hide
+    sort_title: "+2_1_new"
+    visible_library: true
+    visible_home: true
+
+  🎞️ Old Movies Just Added:
+    smart_filter:
+      sort_by: added.desc
+      all:
+        added: 92
+        release.not: 365
+      limit: 50
+    url_poster: https://theposterdb.com/api/assets/407034
+    summary: Ältere Filme, die in den letzten 3 Monaten hinzugefügt wurden.
+    collection_mode: hide
+    sort_title: "+2_2_added"
+    visible_library: true
+    visible_home: true
+
+### EMPFELUNGEN
+
+  📈 Popular This Week:
+    trakt_watched_weekly: 25
+    trakt_trending: 25
+    tmdb_trending_weekly: 25
+    url_poster: https://theposterdb.com/api/assets/396719
+    collection_mode: hide
+    collection_order: random
+    sort_title: "+1_2_popular"
+    visible_home: true
+    visible_library: true
+    schedule: weekly(monday)
+  
+  🍿 What Movie Should I Watch?:
+    smart_filter:
+      sort_by: random
+      all:
+        unplayed: true
+        release: 3650
+      limit: 5
+    url_poster: https://i.imgur.com/OMrEyGg.jpeg
+    collection_mode: hide
+    sort_title: "+1_1_next"
+    visible_library: true
+    visible_home: true
+    schedule: weekly(monday)
+
+### TOP
+
+  📽️ IMDb Top 250:
+    imdb_list: https://www.imdb.com/search/title/?groups=top_250&sort=user_rating,desc
+    url_poster: https://theposterdb.com/api/assets/396723
+    collection_mode: hide
+    collection_order: custom
+    sort_title: "+3_1_imdb_top"
+    visible_library: true
+    schedule: weekly(monday)
+
+  🏆 Oscar Winners:
+    imdb_list: https://www.imdb.com/list/ls062667125/
+    url_poster: https://theposterdb.com/api/assets/396725
+    collection_mode: hide
+    collection_order: custom
+    sort_title: "+3_2_oscars"
+    visible_library: true
+    schedule: weekly(monday)
+
+### FEIERTAGE
+
+  🎅 Christmas:
+    imdb_list:
+      - https://www.imdb.com/list/ls000096828
+      - https://www.imdb.com/list/ls097394442
+      - https://www.imdb.com/list/ls068976997
+      - https://www.imdb.com/list/ls027567380
+    trakt_list:
+      - https://trakt.tv/users/littlestella3/lists/christmas
+      - https://trakt.tv/users/triadcool/lists/christmas
+      - https://trakt.tv/users/pterisaur/lists/christmas
+      - https://trakt.tv/users/outspoken/lists/christmas
+      - https://trakt.tv/users/mausk/lists/christmas
+      - https://trakt.tv/users/crossoverdeseries/lists/hallmark-christmas-2023
+    url_poster: https://theposterdb.com/api/assets/111695
+    collection_mode: hide
+    collection_order: random
+    sort_title: "+8_1_christmas"
+    visible_home: range(11/30-12/31)
+    visible_library: range(11/30-12/31)
+    schedule: yearly(11/30)
+    
+### JAHRZENTE
+
+  📺 Best Of 2020s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie&release_date=2020-01-01,2029-12-31&user_rating=5.0,10.0&num_votes=10000,&languages=en&user_rating,desc&count=200
+      limit: 200
+    url_poster: https://theposterdb.com/api/assets/350800
+    collection_mode: hide
+    collection_order: custom
+    sort_title: "+4_1_best2020"
+    visible_library: true
+    limit: 50
+    schedule: weekly(monday)
+  
+  📺 Best Of 2010s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie&release_date=2010-01-01,2019-12-31&user_rating=5.0,10.0&num_votes=10000,&languages=en&user_rating,desc&count=200
+      limit: 200
+    url_poster: https://theposterdb.com/api/assets/350799
+    collection_mode: hide
+    collection_order: custom
+    sort_title: "+4_2_best2010"
+    visible_library: true
+    limit: 50
+    schedule: weekly(monday)
+
+### FRANCHISES
+  
+  Batman Franchise:
+    template: {name: franchise, collection: 948485, poster: 295096}
+
+  Blade Runner Franchise:
+    template: {name: franchise, collection: 422837, poster: 6081}
+  
+  Dark Knight Franchise:
+    template: {name: franchise, collection: 263, poster: 82482}
+
+  DC Extended Universe:
+    template: {name: franchise, poster: 40928 }
+    imdb_list: https://www.imdb.com/list/ls046609392/
+    summary: The DC Extended Universe (DCEU) is an American media franchise and shared universe centered on a series of superhero films produced by DC Studios.
+  
+  Dune Franchise:
+    template: {name: franchise, collection: 726871, poster: 197348}
+  
+  Expendables Franchise:
+    template: {name: franchise, collection: 126125, poster: 75441}
+
+  Fast & Furious Franchise:
+    template: {name: franchise, collection: 9485, poster: 1070}
+
+  Pirates of the Caribbean Franchise:
+    template: {name: franchise, collection: 295, poster: 15036}
+  
+  Godzilla Franchise:
+    template: {name: franchise, collection: 535313, poster: 16674}
+  
+  Harry Potter Franchise:
+    template: {name: franchise, collection: 1241, poster: 27577}
+  
+  Despicable Me Franchise:
+    template: {name: franchise, collection: 86066, poster: 22035}
+
+  Indiana Jones Franchise:
+    template: {name: franchise, collection: 84, poster: 53303}
+
+  James Bond Franchise:
+    template: {name: franchise, collection: 645, poster: 176906}
+  
+  Jurassic Park Franchise:
+    template: {name: franchise, collection: 328, poster: 158968}
+  
+  John Wick Franchise:
+    template: {name: franchise, collection: 404609, poster: 17550}
+
+  Kingsman Franchise:
+    template: {name: franchise, collection: 391860, poster: 31912}
+  
+  Knives Out Franchise:
+    template: {name: franchise, collection: 722971, poster: 292236}
+
+  Kung Fu Panda Franchise:
+    template: {name: franchise, collection: 77816, poster: 16488}
+  
+  Lego Franchise:
+    template: {name: franchise, collection: 325470, movie: 324849, poster: 75599}
+
+  Matrix Franchise:
+    template: {name: franchise, collection: 2344, poster: 128}
+
+  Meg Franchise:
+    template: {name: franchise, collection: 742536, poster: 384067}
+
+  Minions Franchise:
+    template: {name: franchise, collection: 544669, poster: 27388}
+
+  Mission Impossible Franchise:
+    template: {name: franchise, collections: 87359, poster: 65202}
+  
+  Middle Earth:
+    template: {name: franchise, collections: "119, 121938", poster: 12363}
+    summary: A collection of films based on J.R.R. Tolkiens books.
+
+  Fantastic Beasts Franchise:
+    template: {name: franchise, collection: 435259, poster: 169}
+  
+  Shrek Franchise:
+    template: {name: franchise, collection: 2150, movies: "417859, 315162", poster: 27739}
+
+  Sonic Franchise:
+    template: {name: franchise, collection: 720879, poster: 232581}
+
+  "Spider-Man: Spider-Verse Franchise":
+    template: {name: franchise, collection: 573436, poster: 369435}
+
+  Star Trek Franchise:
+    template: {name: franchise, collection: 115575, poster: 66}
+
+  Die Hard Franchise:
+    template: {name: franchise, collection: 1570, poster: 35440}
+  
+  Transformers Franchise:
+    template: {name: franchise, collection: 8650, movies: "667538, 424783", poster: 84244}
+ 
+  The Hunger Games Franchise:
+    template: {name: franchise, collection: 131635, poster: 31004}
+  
+  Wizarding World:
+    template: {name: franchise, movies: 899082, poster: 1634}
+    imdb_list:
+      - https://www.imdb.com/list/ls060991914/
+      - https://www.imdb.com/list/ls563595240/
+    summary: The Wizarding World is a fantasy media franchise and shared fictional universe centred on the Harry Potter novel series by J. K. Rowling.
