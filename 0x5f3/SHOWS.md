@@ -2,7 +2,7 @@
   - Random TV shows
   - Recently Added TV shows (English)
   - Recently Released TV shows (English)
-  - Suggested Movies
+  - Suggested TV shows
   - Trending TV shows
   - Popular TV shows
   - Top Rated TV shows
