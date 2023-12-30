@@ -1,265 +1,252 @@
 ## 6_genre_top.yml
 
 templates:
-  genre:
-    sort_title: "+6 Rated: <<collection_name>>"
-    limit: 150
-    sync_mode: sync
-    collection_order: custom
-    collection_mode: hide
-    visible_home: false
-    visible_shared: false
-    visible_library: false
-    delete_not_scheduled: false
+  top:
     cache_builders: 6
-    imdb_list:
-      url: https://www.imdb.com/search/title/?title_type=<<title_type>>&user_rating=<<user_rating>>&num_votes=<<votes>>&genres=<<genres>>&languages=<<languages>>&sort=user_rating,desc
-      limit: 250
+    collection_mode: hide
+    collection_order: custom
+    delete_not_scheduled: false
+    limit: 500
+    sort_title: "+6 Rated: <<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    imdb_search:
+      genre: <<genre>>
+      language: <<language>>
+      limit: 1000
+      rating.gte: <<rating.gte>>
+      sort_by: rating.desc
+      type: <<type>>
+      votes.gte: <<votes.gte>>
 
 collections:
   "Top Rated in Action":
     summary: "Top rated movies in Action"
-    url_poster: https://images2.imgbox.com/51/80/y43S30ze_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_action.png
     template: {
-                    name: genre,
-                    genres: "action",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "action",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Adventure":
     summary: "Top rated movies in Adventure"
-    url_poster: https://images2.imgbox.com/c9/32/B0Eezjrf_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_adventure.png
     template: {
-                    name: genre,
-                    genres: "adventure",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "adventure",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Animation":
     summary: "Top rated movies in Animation"
-    url_poster: https://images2.imgbox.com/5d/ce/AGI0Qfqm_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_animation.png
     template: {
-                    name: genre,
-                    genres: "animation",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "animation",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Biography":
     summary: "Top rated movies in Biography"
-    url_poster: https://images2.imgbox.com/78/3c/xtirTM6g_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_biography.png
     template: {
-                    name: genre,
-                    genres: "biography",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "biography",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Comedy":
     summary: "Top rated movies in Comedy"
-    url_poster: https://images2.imgbox.com/69/10/NKcsxR5P_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_comedy.png
     template: {
-                    name: genre,
-                    genres: "comedy",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "comedy",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Crime":
     summary: "Top rated movies in Crime"
-    url_poster: https://images2.imgbox.com/01/f8/X4xQQ1sE_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_crime.png
     template: {
-                    name: genre,
-                    genres: "crime",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "crime",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Drama":
     summary: "Top rated movies in Drama"
-    url_poster: https://images2.imgbox.com/62/d5/iMGeC44D_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_drama.png
     template: {
-                    name: genre,
-                    genres: "drama",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    genre: "drama",
+                    type: "movie,tv_movie",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Family":
     summary: "Top rated movies in Family"
-    url_poster: https://images2.imgbox.com/ca/6e/2IfG1bxC_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_family.png
     template: {
-                    name: genre,
-                    genres: "family",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "family",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Fantasy":
     summary: "Top rated movies in Fantasy"
-    url_poster: https://images2.imgbox.com/0e/a1/RTwNLvZj_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_fantasy.png
     template: {
-                    name: genre,
-                    genres: "fantasy",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "fantasy",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in History":
     summary: "Top rated movies in History"
-    url_poster: https://images2.imgbox.com/07/28/Gnd1RXdg_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_history.png
     template: {
-                    name: genre,
-                    genres: "history",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "history",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Horror":
     summary: "Top rated movies in Horror"
-    url_poster: https://images2.imgbox.com/69/85/PPdtuMl4_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_horror.png
     template: {
-                    name: genre,
-                    genres: "horror",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "horror",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Music":
     summary: "Top rated movies in Music"
-    url_poster: https://images2.imgbox.com/2a/5b/0qMaPxU2_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_music.png
     template: {
-                    name: genre,
-                    genres: "music",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "music",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Musicals":
     summary: "Top rated movies in Musicals"
-    url_poster: https://images2.imgbox.com/af/6f/8PsNB0Po_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_musicals.png
     template: {
-                    name: genre,
-                    genres: "musical",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "musical",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Mystery":
     summary: "Top rated movies in Mystery"
-    url_poster: https://images2.imgbox.com/90/e8/hpebZBPB_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_mystery.png
+
     template: {
-                    name: genre,
-                    genres: "mystery",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "mystery",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Romance":
     summary: "Top rated movies in Romance"
-    url_poster: https://images2.imgbox.com/0a/7c/zeNHGAVj_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_romance.png
     template: {
-                    name: genre,
-                    genres: "romance",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "romance",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Sci-Fi":
     summary: "Top rated movies in Sci-Fi"
-    url_poster: https://images2.imgbox.com/91/64/ePUjlSZ6_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_sci-fi.png
     template: {
-                    name: genre,
-                    genres: "sci-fi",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "sci-fi",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Thriller":
     summary: "Top rated movies in Thriller"
-    url_poster: https://images2.imgbox.com/7f/f0/imM9mUS1_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_thriller.png
     template: {
-                    name: genre,
-                    genres: "thriller",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "thriller",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in War":
     summary: "Top rated movies in War"
-    url_poster: https://images2.imgbox.com/52/68/Yc62v6he_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_war.png
     template: {
-                    name: genre,
-                    genres: "war",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "war",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
 
   "Top Rated in Western":
     summary: "Top rated movies in Western"
-    url_poster: https://images2.imgbox.com/0e/03/v2py3lSd_o.png
-    schedule: weekly(thursday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_western.png
     template: {
-                    name: genre,
-                    genres: "western",
-                    title_type: "feature,tv_movie",
-                    user_rating: "5.0,10.0",
-                    votes: "10000,",
-                    languages: "en",
-                    }
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "western",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }

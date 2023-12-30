@@ -1,7 +1,8 @@
 - 1_suggested.yml
   - Random Movies
-  - Recently Released Movies (English)
   - Recently Added Movies (English)
+  - Recently Released Movies (English)
+  - Sugegsted Movies
   - Trending Movies
   - Popular Movies
   - Top Rated Movies
@@ -18,7 +19,7 @@
   - Thanksgiving Movies (11/22-11/25)
   - Christmas Movies (12/01-12/31)
   - New Year's Eve Movies (12/26-01-02)
-
+  
 - 1_parental.yml
   - Parental: All
   - Parental: Random
@@ -32,7 +33,7 @@
   - Documentaries: Recently Released
   - Documentaries: Recently Added
   - Documentaries: Top Rated
-  
+ 
 - 1_standup.yml
   - Stand-up: All
   - Stand-up: Random
@@ -40,19 +41,8 @@
   - Stand-up: Recently Added
   - Stand-up: Top Rated
 
-- 2_awards.yml
-  - Oscar Winners
-  - Oscar Nominees
-  - Golden Globes Winners
-  - Golden Globes Nominees
-  - BAFTA Winners
-  - Berlinale Winners
-  - Cannes Film Festival Winners
-  - European Film Award Winners
-  - Sundance Winners
-  - Venice Film Festival Winners
-
-- 3_year_top.yml
+- 2_year_top.yml
+  - Top Rated of 2024
   - Top Rated of 2023
   - Top Rated of 2022
   - Top Rated of 2021
@@ -68,7 +58,7 @@
   - Top Rated of 2011
   - Top Rated of 2010
 
-- 4_decades_top.yml
+- 3_decades_top.yml
   - Top Rated of the 2020s
   - Top Rated of the 2010s
   - Top Rated of the 2000s
@@ -77,7 +67,22 @@
   - Top Rated of the 1970s
   - Top Rated of the 1960s
   - Top Rated of the 1950s
-  - Top Rated of the 1940s
+  - Top Rated of the 1940s  
+
+- 4_awards.yml
+  - Oscar Winners
+  - Oscar Nominees
+  - Golden Globes Winners
+  - Golden Globes Nominees
+  - BAFTA Winners
+  - Berlinale Winners
+  - Cannes Film Festival Winners
+  - European Film Award Winners
+  - Sundance Winners
+  - Venice Film Festival Winners
+  - Critic's Choice Winners
+  - Spirit Awards Winners
+  - Razzie Winners
 
 - 5_genre_popular.yml
   - Popular in Action
@@ -218,6 +223,27 @@
   - Top Rated in Wizardry & Witchcraft
   - Top Rated in World War
   - Top Rated in Zombies
+  
+- 8_studio.yml
+  - Columbia
+  - Criterion
+  - DC Entertainment
+  - DreamWorks
+  - Lionsgate
+  - Lucasfilm
+  - Marvel Studios
+  - MGM
+  - Paramount Pictures
+  - Pixar
+  - Samuel Goldwyn Company
+  - SONY
+  - Studio Ghibli
+  - Touchstone
+  - Twentieth Century Fox
+  - United Artists
+  - Universal
+  - Walt Disney
+  - Warner Bros
 
 - 9_collections.yml
   - TMDb Collections
