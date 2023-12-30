@@ -5,21 +5,30 @@ libraries:
     library_type: show
     operations:
       delete_unmanaged_collections: false
-    metadata_path:
+    collection_files:
 #    - file: config/metadata/show/0_sonarr.yml
     - file: config/metadata/show/1_suggested.yml
     - file: config/metadata/show/2_year_top.yml
       schedule: weekly(monday)
     - file: config/metadata/show/3_decades_top.yml
       schedule: weekly(wednesday)
-    - file: config/metadata/show/4_awards.yml
-      schedule: weekly(thursday)
+#    - file: config/metadata/show/4_awards.yml
+#      schedule: weekly(thursday)
     - file: config/metadata/show/5_genre_popular.yml
     - file: config/metadata/show/6_genre_top.yml
       schedule: weekly(saturday)
 #    - file: config/metadata/show/7_network.yml
+#    - file: config/metadata/show/1_parental_sync.yml
 #    - file: config/metadata/show/1_parental.yml
 #    - file: config/metadata/show/1_documentary.yml
+#  KIDS:
+#    library_type: show
+#    operations:
+#      delete_unmanaged_collections: false
+#    collection_files:
+#    - file: config/metadata/show/0_sonarr.yml
+#    - file: config/metadata/show/1_parental_sync.yml
+#    - file: config/metadata/show/1_parental.yml
 settings:
   asset_depth: 0
   asset_directory:
@@ -31,7 +40,7 @@ settings:
   create_asset_folders: false
   custom_repo:
   default_collection_order:
-  delete_below_minimum: true
+  delete_below_minimum: false
   delete_not_scheduled: false
   dimensional_asset_rename: false
   download_url_assets: true
@@ -39,7 +48,7 @@ settings:
   ignore_imdb_ids:
   item_refresh: false  
   item_refresh_delay: 3
-  minimum_items: 5
+  minimum_items: 1
   missing_only_released: false
   notifiarr_collection_addition: false
   notifiarr_collection_creation: false

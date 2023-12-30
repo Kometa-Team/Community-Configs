@@ -1,5 +1,8 @@
 - 1_suggested.yml
   - Random TV shows
+  - Recently Added TV shows (English)
+  - Recently Released TV shows (English)
+  - Suggested Movies
   - Trending TV shows
   - Popular TV shows
   - Top Rated TV shows
@@ -31,6 +34,7 @@
   - Critics Choice Award Winners
 
 - 3_year_top.yml
+  - Top Rated of 2024
   - Top Rated of 2023
   - Top Rated of 2022
   - Top Rated of 2021
