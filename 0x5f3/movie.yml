@@ -5,7 +5,7 @@ libraries:
     library_type: movie
     operations:
       delete_unmanaged_collections: false
-    metadata_path:
+    collection_files:
 #   - file: config/metadata/movie/0_radarr.yml
     - file: config/metadata/movie/1_suggested.yml
     - file: config/metadata/movie/1_seasonal.yml
@@ -13,14 +13,17 @@ libraries:
       schedule: weekly(monday)
     - file: config/metadata/movie/3_decades_top.yml
       schedule: weekly(tuesday)
-    - file: config/metadata/movie/4_awards.yml
-      schedule: weekly(wednesday)
+#    - file: config/metadata/movie/4_awards.yml
+#      schedule: weekly(wednesday)
     - file: config/metadata/movie/5_genre_popular.yml
     - file: config/metadata/movie/6_genre_top.yml
       schedule: weekly(thursday)
 #    - file: config/metadata/movie/7_subgenre_top.yml
+#    - file: config/metadata/movie/8_studio.yml
+#      schedule: weekly(wednesday)
 #    - file: config/metadata/movie/9_collections.yml
 #      schedule: weekly(sunday)
+#    - file: config/metadata/movie/1_parental_sync.yml
 #    - file: config/metadata/movie/1_parental.yml
 #    - file: config/metadata/movie/1_documentary.yml
 #    - file: config/metadata/movie/1_standup.yml
@@ -35,14 +38,14 @@ settings:
   create_asset_folders: false
   custom_repo:
   default_collection_order:
-  delete_below_minimum: true
+  delete_below_minimum: false
   delete_not_scheduled: false
   dimensional_asset_rename: false
   download_url_assets: true
   ignore_ids:
   ignore_imdb_ids:
   item_refresh: false
-  item_refresh_delay: 2
+  item_refresh_delay: 3
   minimum_items: 5
   missing_only_released: false
   notifiarr_collection_addition: false

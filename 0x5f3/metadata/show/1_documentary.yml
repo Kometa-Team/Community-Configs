@@ -2,23 +2,23 @@
 
 templates:
   plex:
+    cache_builders: 4
+    collection_mode: hide
+    delete_not_scheduled: false
     sort_title: "+1_<<num>>_<<collection_name>>"
     sync_mode: sync
-    collection_mode: hide
     visible_home: false
-    visible_shared: false
     visible_library: false
-    delete_not_scheduled: false
-    cache_builders: 4
+    visible_shared: false
 
 collections:
   "Documentaries: All":
     summary: "Documentaries"
-    url_poster: https://images2.imgbox.com/f8/66/trpNwkAn_o.png
+    url_poster: config/assets/1_documentary/documentary_all.png
     template: {
                     name: plex,
                     num: "F"
-                    }
+                }
     smart_filter:
       all:
         genre: documentary
@@ -26,11 +26,11 @@ collections:
 
   "Documentaries: Random":
     summary: "Random documentaries"
-    url_poster: https://images2.imgbox.com/70/9e/9b9sB1wa_o.png
+    url_poster: config/assets/1_documentary/documentary_random.png
     template: {
                     name: plex,
                     num: "G"
-                    }
+                }
     smart_filter:
       all:
         genre: documentary
@@ -39,11 +39,11 @@ collections:
 
   "Documentaries: Recently Released":
     summary: "Recently released documentaries"
-    url_poster: https://images2.imgbox.com/da/49/PnqkIfIU_o.png
+    url_poster: config/assets/1_documentary/documentary_recently-released.png
     template: {
                     name: plex,
                     num: "H"
-                    }
+                }
     smart_filter:
       all:
         genre: documentary
@@ -52,12 +52,12 @@ collections:
 
   "Documentaries: Recently Added":
     summary: "Recently added documentaries"
-    url_poster: https://images2.imgbox.com/09/43/rltvX5gv_o.png
-    visible_library: true 
+    url_poster: config/assets/1_documentary/documentary_recently-added.png
+    visible_library: true
     template: {
                     name: plex,
                     num: "I"
-                    }
+                }
     smart_filter:
       all:
         genre: documentary
@@ -66,11 +66,11 @@ collections:
 
   "Documentaries: Top Rated":
     summary: "Top rated documentaries"
-    url_poster: https://images2.imgbox.com/f6/a6/sEjWWyWR_o.png
+    url_poster: config/assets/1_documentary/documentary_top-rated.png
     template: {
                     name: plex,
                     num: "J"
-                    }
+                }
     smart_filter:
       all:
         genre: documentary

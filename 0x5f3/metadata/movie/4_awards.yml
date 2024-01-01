@@ -1,167 +1,178 @@
 ## 4_awards.yml
 
 templates:
-  imdb:
+  award_nominee:
+    cache_builders: 6
+    collection_mode: hide
+    collection_order: release.desc
+    delete_not_scheduled: false
     sort_title: "+4_<<num>>_<<collection_name>>"
     sync_mode: sync
-    collection_order: release.desc
-    collection_mode: hide
     visible_home: false
-    visible_shared: false
     visible_library: false
-    delete_not_scheduled: false
-    cache_builders: 6
-    imdb_list:
-      url: https://www.imdb.com/search/title/?title_type=<<title_type>>&groups=<<groups>>&languages=<<languages>>&sort=release_date,desc
-      limit: 350
+    visible_shared: false
+    imdb_search:
+      event: <<event>>
+      language: <<language>>
+      limit: 1000
+      type: <<type>>
 
-  letterboxd:
-    optional:
-      - letterboxd_extra_1
-      - letterboxd_extra_2
-      - letterboxd_extra_3
-      - letterboxd_extra_4
-      - letterboxd_extra_5
+  award_winner:
+    cache_builders: 6
+    collection_mode: hide
+    collection_order: release.desc
+    delete_not_scheduled: false
     sort_title: "+4_<<num>>_<<collection_name>>"
     sync_mode: sync
-    collection_order: release.desc
-    collection_mode: hide
     visible_home: false
-    visible_shared: false
     visible_library: false
-    delete_not_scheduled: false
-    cache_builders: 6
-    letterboxd_list:
-      url: https://letterboxd.com/<<user>>/list/<<list>>/by/<<sort>>
-      limit: 350
+    visible_shared: false
+    imdb_search:
+      event.winning: <<event.winning>>
+      language: <<language>>
+      limit: 1000
+      type: <<type>>
 
 collections:
-  "Oscar Winners":
-    summary: "A collection of Oscar Winners"
-    url_poster: https://images2.imgbox.com/ad/c9/nfhQr1bK_o.png
-    schedule: weekly(monday)
-    template: {
-                    name: imdb,
-                    num: 0,
-                    groups: "oscar_winner",
-                    title_type: "feature",
-                    languages: "en"
-                    }
-    limit: 120
-
   "Oscar Nominees":
     summary: "A collection of Oscar Nominees"
-    url_poster: https://images2.imgbox.com/98/37/PigipQFj_o.png
-    schedule: weekly(monday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_nominees_oscars.png
     template: {
-                    name: imdb,
-                    num: 1,
-                    groups: "oscar_nominee",
-                    title_type: "feature",
-                    languages: "en"
-                    }
-    limit: 250
+                    name: award_nominee,
+                    num: "A",
+                    type: "movie,tv_movie",
+                    event: "oscar_picture,oscar_director",
+                    language: "en"
+                }
 
-  "Golden Globes Winners":
-    summary: "A collection of Golden Globes Winners"
-    url_poster: https://images2.imgbox.com/90/92/iw9mYXgG_o.png
-    schedule: weekly(monday)
+  "Oscar Winners":
+    summary: "A collection of Oscar Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_oscars.png
     template: {
-                    name: imdb,
-                    num: 2,
-                    groups: "golden_globe_winner",
-                    title_type: "feature",
-                    languages: "en"
-                    }
-    limit: 120
+                    name: award_winner,
+                    num: "B",
+                    type: "movie,tv_movie",
+                    event.winning: "oscar_picture,oscar_director",
+                    language: "en"
+                }
 
   "Golden Globes Nominees":
     summary: "A collection of Golden Globes Nominees"
-    url_poster: https://images2.imgbox.com/0a/a2/HH5uBXFt_o.png
-    schedule: weekly(monday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_nominees_golden-globespng.png
     template: {
-                    name: imdb,
-                    num: 3,
-                    groups: "golden_globe_nominee",
-                    title_type: "feature",
-                    languages: "en"
-                    }
-    limit: 250
+                    name: award_nominee,
+                    num: "C",
+                    type: "movie,tv_movie",
+                    event: "golden",
+                    language: "en"
+                }
+
+  "Golden Globes Winners":
+    summary: "A collection of Golden Globes Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_golden_globes.png
+    template: {
+                    name: award_winner,
+                    num: "D",
+                    type: "movie,tv_movie",
+                    event.winning: "golden",
+                    language: "en"
+                }
 
   "BAFTA Winners":
     summary: "A collection of BAFTA Winners"
-    url_poster: https://images2.imgbox.com/00/61/roVpyMsf_o.png
-    schedule: weekly(monday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_bafta.png
     template: {
-                    name: letterboxd,
-                    num: 4,
-                    user: "kevinct92",
-                    list: "all-bafta-award-winners-best-british-film",
-                    sort: "release"
-                    }
-    limit: 250
+                    name: award_winner,
+                    num: "E",
+                    type: "movie,tv_movie",
+                    event.winning: "bafta",
+                    language: "en"
+                }
 
   "Berlinale Winners":
     summary: "A collection of Berlinale Winners"
-    url_poster: https://images2.imgbox.com/91/9a/HV6PSMf9_o.png
-    schedule: weekly(monday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_berlinale.png
     template: {
-                    name: letterboxd,
-                    num: 5,
-                    user: "koyoti",
-                    list: "berlinale-golden-bear-winners",
-                    sort: "release"
-                    }
-    limit: 250
+                    name: award_winner,
+                    num: "F",
+                    type: "movie,tv_movie",
+                    event.winning: "ev0000091",
+                    language: "en"
+                }
 
   "Cannes Film Festival Winners":
     summary: "A collection of Cannes Film Festival Winners"
-    url_poster: https://images2.imgbox.com/f6/58/U3iST84u_o.png
-    schedule: weekly(monday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_cannes.png
     template: {
-                    name: letterboxd,
-                    num: 6,
-                    user: "moviewithus",
-                    list: "cannes-winners",
-                    sort: "release"
-                    }
-    limit: 250
+                    name: award_winner,
+                    num: "G",
+                    type: "movie,tv_movie",
+                    event.winning: "cannes",
+                    language: "en"
+                }
 
   "European Film Award Winners":
     summary: "A collection of European Film Award Winners"
-    url_poster: https://images2.imgbox.com/c5/4d/I4jeTKM5_o.png
-    schedule: weekly(monday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_european-film.png
     template: {
-                    name: letterboxd,
-                    num: 7,
-                    user: "ra_pha",
-                    list: "european-film-awards",
-                    sort: "release"
-                    }
-    limit: 250
+                    name: award_winner,
+                    num: "H",
+                    type: "movie,tv_movie",
+                    event.winning: "ev0000230",
+                    language: "en"
+                }
 
   "Sundance Winners":
     summary: "A collection of Sundance Winners"
-    url_poster: https://images2.imgbox.com/00/95/C6ghjx7k_o.png
-    schedule: weekly(monday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_sundance.png
     template: {
-                    name: letterboxd,
-                    num: 8,
-                    user: "glicose",
-                    list: "winners-of-sundance",
-                    sort: "release"
-                    }
-    limit: 250
+                    name: award_winner,
+                    num: "I",
+                    type: "movie,tv_movie",
+                    event.winning: "sundance",
+                    language: "en"
+                }
 
   "Venice Film Festival Winners":
     summary: "A collection of Venice Film Festival Winners"
-    url_poster: https://images2.imgbox.com/0d/38/P2chh8O7_o.png
-    schedule: weekly(monday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_venice-film.png
     template: {
-                    name: letterboxd,
-                    num: 9,
-                    user: "glicose",
-                    list: "winners-of-sundance",
-                    sort: "release"
-                    }
-    limit: 250
+                    name: award_winner,
+                    num: "J",
+                    type: "movie,tv_movie",
+                    event.winning: "ev0000681",
+                    language: "en"
+                }
+
+  "Critic's Choice Winners":
+    summary: "A collection of Critic's Choice Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_critics-choice.png
+    template: {
+                    name: award_winner,
+                    num: "K",
+                    type: "movie,tv_movie",
+                    event.winning: "choice",
+                    language: "en"
+                }
+
+  "Spirit Awards Winners":
+    summary: "A collection of Spirit Awards Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_spirit-awards.png
+    template: {
+                    name: award_winner,
+                    num: "L",
+                    type: "movie,tv_movie",
+                    event.winning: "spirit",
+                    language: "en"
+                }
+
+  "Razzie Winners":
+    summary: "A collection of Razzie Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_razzie.png
+    template: {
+                    name: award_winner,
+                    num: "M",
+                    type: "movie,tv_movie",
+                    event.winning: "razzie",
+                    language: "en"
+                }

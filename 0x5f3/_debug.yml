@@ -1,0 +1,104 @@
+## _debug.yml
+
+libraries:
+  Movies:
+    library_type: movie
+    collection_files:
+    - file: config/metadata/movie/0_debug.yml
+  TV Shows:
+    library_type: show
+    collection_files:
+    - file: config/metadata/show/0_debug.yml
+settings:
+  assets_for_all: false
+  asset_depth: 0
+  asset_directory:
+  asset_folders: false
+  cache: true
+  cache_expiration: 60
+  check_nightly: false
+  create_asset_folders: false
+  custom_repo:
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  minimum_items: 0
+  missing_only_released: false
+  notifiarr_collection_addition: false
+  notifiarr_collection_creation: false
+  notifiarr_collection_removing: false
+  only_filter_missing: false
+  playlist_exclude_users:
+  playlist_report: true
+  playlist_sync_to_users: all
+  prioritize_assets: false
+  released_missing_only: false
+  run_again_delay: 2
+  save_missing: false
+  show_asset_not_needed: true
+  show_filtered: false
+  show_missing: false
+  show_missing_assets: true
+  show_missing_episode_assets: false
+  show_missing_season_assets: false
+  show_options: false
+  show_unconfigured: true
+  show_unmanaged: false
+  sync_mode: sync
+  tvdb_language: default
+  verify_ssl: false
+plex:
+  url:
+  token:
+  timeout: 30
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+radarr:
+  url:
+  token:
+  add_missing: false
+  add_existing: false
+  root_folder_path:
+  monitor: true
+  availability: announced
+  quality_profile:
+  tag:
+  search: false
+  radarr_path:
+  plex_path:
+  upgrade_existing: false
+sonarr:
+  url:
+  token:
+  add_missing: false
+  add_existing: false
+  root_folder_path:
+  monitor: all
+  quality_profile:
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  tag:
+  search: false
+  cutoff_search: false
+  sonarr_path:
+  plex_path:
+  upgrade_existing: false
+tmdb:
+  apikey:
+  language: en
+  cache_expiration: 60
+  region:
+mdblist:
+  apikey:
+  cache_expiration: 60
+trakt:
+  client_id:
+  client_secret:
+  pin:
