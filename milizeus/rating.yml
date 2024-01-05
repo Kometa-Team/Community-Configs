@@ -68,10 +68,895 @@ overlays:
         audience_rating.gte: 9.5
         audience_rating.lte: 9.6
 
+  Rating_94:
+    overlay:
+      name: r94
+      group: rating_tmdb
+      weight: 194
+    plex_search:
+      all:
+        audience_rating.gte: 9.4
+        audience_rating.lte: 9.5
 
+  Rating_93:
+    overlay:
+      name: r93
+      group: rating_tmdb
+      weight: 193
+    plex_search:
+      all:
+        audience_rating.gte: 9.3
+        audience_rating.lte: 9.4
 
+  Rating_92:
+    overlay:
+      name: r92
+      group: rating_tmdb
+      weight: 192
+    plex_search:
+      all:
+        audience_rating.gte: 9.2
+        audience_rating.lte: 9.3
 
+  Rating_91:
+    overlay:
+      name: r91
+      group: rating_tmdb
+      weight: 191
+    plex_search:
+      all:
+        audience_rating.gte: 9.1
+        audience_rating.lte: 9.2
 
+  Rating_90:
+    overlay:
+      name: r90
+      group: rating_tmdb
+      weight: 190
+    plex_search:
+      all:
+        audience_rating.gte: 9.0
+        audience_rating.lte: 9.1
+
+  Rating_89:
+    overlay:
+      name: r89
+      group: rating_tmdb
+      weight: 189
+    plex_search:
+      all:
+        audience_rating.gte: 8.9
+        audience_rating.lte: 9.0
+
+  Rating_88:
+    overlay:
+      name: r88
+      group: rating_tmdb
+      weight: 188
+    plex_search:
+      all:
+        audience_rating.gte: 8.8
+        audience_rating.lte: 8.9
+
+  Rating_87:
+    overlay:
+      name: r87
+      group: rating_tmdb
+      weight: 187
+    plex_search:
+      all:
+        audience_rating.gte: 8.7
+        audience_rating.lte: 8.8
+
+  Rating_86:
+    overlay:
+      name: r86
+      group: rating_tmdb
+      weight: 186
+    plex_search:
+      all:
+        audience_rating.gte: 8.6
+        audience_rating.lte: 8.7
+
+  Rating_85:
+    overlay:
+      name: r85
+      group: rating_tmdb
+      weight: 185
+    plex_search:
+      all:
+        audience_rating.gte: 8.5
+        audience_rating.lte: 8.6
+
+  Rating_84:
+    overlay:
+      name: r84
+      group: rating_tmdb
+      weight: 184
+    plex_search:
+      all:
+        audience_rating.gte: 8.4
+        audience_rating.lte: 8.5
+
+  Rating_83:
+    overlay:
+      name: r83
+      group: rating_tmdb
+      weight: 183
+    plex_search:
+      all:
+        audience_rating.gte: 8.3
+        audience_rating.lte: 8.4
+
+  Rating_82:
+    overlay:
+      name: r82
+      group: rating_tmdb
+      weight: 182
+    plex_search:
+      all:
+        audience_rating.gte: 8.2
+        audience_rating.lte: 8.3
+
+  Rating_81:
+    overlay:
+      name: r81
+      group: rating_tmdb
+      weight: 181
+    plex_search:
+      all:
+        audience_rating.gte: 8.1
+        audience_rating.lte: 8.2
+
+  Rating_80:
+    overlay:
+      name: r80
+      group: rating_tmdb
+      weight: 180
+    plex_search:
+      all:
+        audience_rating.gte: 8.0
+        audience_rating.lte: 8.1
+
+  Rating_79:
+    overlay:
+      name: r79
+      group: rating_tmdb
+      weight: 179
+    plex_search:
+      all:
+        audience_rating.gte: 7.9
+        audience_rating.lte: 8.0
+
+  Rating_78:
+    overlay:
+      name: r78
+      group: rating_tmdb
+      weight: 178
+    plex_search:
+      all:
+        audience_rating.gte: 7.8
+        audience_rating.lte: 7.9
+
+  Rating_77:
+    overlay:
+      name: r77
+      group: rating_tmdb
+      weight: 177
+    plex_search:
+      all:
+        audience_rating.gte: 7.7
+        audience_rating.lte: 7.8
+
+  Rating_76:
+    overlay:
+      name: r76
+      group: rating_tmdb
+      weight: 176
+    plex_search:
+      all:
+        audience_rating.gte: 7.6
+        audience_rating.lte: 7.7
+
+  Rating_75:
+    overlay:
+      name: r75
+      group: rating_tmdb
+      weight: 175
+    plex_search:
+      all:
+        audience_rating.gte: 7.5
+        audience_rating.lte: 7.6
+
+  Rating_74:
+    overlay:
+      name: r74
+      group: rating_tmdb
+      weight: 174
+    plex_search:
+      all:
+        audience_rating.gte: 7.4
+        audience_rating.lte: 7.5
+
+  Rating_73:
+    overlay:
+      name: r73
+      group: rating_tmdb
+      weight: 173
+    plex_search:
+      all:
+        audience_rating.gte: 7.3
+        audience_rating.lte: 7.4
+
+  Rating_72:
+    overlay:
+      name: r72
+      group: rating_tmdb
+      weight: 172
+    plex_search:
+      all:
+        audience_rating.gte: 7.2
+        audience_rating.lte: 7.3
+
+  Rating_71:
+    overlay:
+      name: r71
+      group: rating_tmdb
+      weight: 171
+    plex_search:
+      all:
+        audience_rating.gte: 7.1
+        audience_rating.lte: 7.2
+
+  Rating_70:
+    overlay:
+      name: r70
+      group: rating_tmdb
+      weight: 170
+    plex_search:
+      all:
+        audience_rating.gte: 7.0
+        audience_rating.lte: 7.1
+
+  Rating_69:
+    overlay:
+      name: r69
+      group: rating_tmdb
+      weight: 169
+    plex_search:
+      all:
+        audience_rating.gte: 6.9
+        audience_rating.lte: 7.0
+
+  Rating_68:
+    overlay:
+      name: r68
+      group: rating_tmdb
+      weight: 168
+    plex_search:
+      all:
+        audience_rating.gte: 6.8
+        audience_rating.lte: 6.9
+
+  Rating_67:
+    overlay:
+      name: r67
+      group: rating_tmdb
+      weight: 167
+    plex_search:
+      all:
+        audience_rating.gte: 6.7
+        audience_rating.lte: 6.8
+
+  Rating_66:
+    overlay:
+      name: r66
+      group: rating_tmdb
+      weight: 166
+    plex_search:
+      all:
+        audience_rating.gte: 6.6
+        audience_rating.lte: 6.7
+
+  Rating_65:
+    overlay:
+      name: r65
+      group: rating_tmdb
+      weight: 165
+    plex_search:
+      all:
+        audience_rating.gte: 6.5
+        audience_rating.lte: 6.6
+
+  Rating_64:
+    overlay:
+      name: r64
+      group: rating_tmdb
+      weight: 164
+    plex_search:
+      all:
+        audience_rating.gte: 6.4
+        audience_rating.lte: 6.5
+
+  Rating_63:
+    overlay:
+      name: r63
+      group: rating_tmdb
+      weight: 163
+    plex_search:
+      all:
+        audience_rating.gte: 6.3
+        audience_rating.lte: 6.4
+
+  Rating_62:
+    overlay:
+      name: r62
+      group: rating_tmdb
+      weight: 162
+    plex_search:
+      all:
+        audience_rating.gte: 6.2
+        audience_rating.lte: 6.3
+
+  Rating_61:
+    overlay:
+      name: r61
+      group: rating_tmdb
+      weight: 161
+    plex_search:
+      all:
+        audience_rating.gte: 6.1
+        audience_rating.lte: 6.2
+
+  Rating_60:
+    overlay:
+      name: r60
+      group: rating_tmdb
+      weight: 160
+    plex_search:
+      all:
+        audience_rating.gte: 6.0
+        audience_rating.lte: 6.1
+
+  Rating_59:
+    overlay:
+      name: r59
+      group: rating_tmdb
+      weight: 159
+    plex_search:
+      all:
+        audience_rating.gte: 5.9
+        audience_rating.lte: 6.0
+
+  Rating_58:
+    overlay:
+      name: r58
+      group: rating_tmdb
+      weight: 158
+    plex_search:
+      all:
+        audience_rating.gte: 5.8
+        audience_rating.lte: 5.9
+
+  Rating_57:
+    overlay:
+      name: r57
+      group: rating_tmdb
+      weight: 157
+    plex_search:
+      all:
+        audience_rating.gte: 5.7
+        audience_rating.lte: 5.8
+
+  Rating_56:
+    overlay:
+      name: r56
+      group: rating_tmdb
+      weight: 156
+    plex_search:
+      all:
+        audience_rating.gte: 5.6
+        audience_rating.lte: 5.7
+
+  Rating_55:
+    overlay:
+      name: r55
+      group: rating_tmdb
+      weight: 155
+    plex_search:
+      all:
+        audience_rating.gte: 5.5
+        audience_rating.lte: 5.6
+
+  Rating_54:
+    overlay:
+      name: r54
+      group: rating_tmdb
+      weight: 154
+    plex_search:
+      all:
+        audience_rating.gte: 5.4
+        audience_rating.lte: 5.5
+
+  Rating_53:
+    overlay:
+      name: r53
+      group: rating_tmdb
+      weight: 153
+    plex_search:
+      all:
+        audience_rating.gte: 5.3
+        audience_rating.lte: 5.4
+
+  Rating_52:
+    overlay:
+      name: r52
+      group: rating_tmdb
+      weight: 152
+    plex_search:
+      all:
+        audience_rating.gte: 5.2
+        audience_rating.lte: 5.3
+
+  Rating_51:
+    overlay:
+      name: r51
+      group: rating_tmdb
+      weight: 151
+    plex_search:
+      all:
+        audience_rating.gte: 5.1
+        audience_rating.lte: 5.2
+
+  Rating_50:
+    overlay:
+      name: r50
+      group: rating_tmdb
+      weight: 150
+    plex_search:
+      all:
+        audience_rating.gte: 5.0
+        audience_rating.lte: 5.1
+
+  Rating_49:
+    overlay:
+      name: r49
+      group: rating_tmdb
+      weight: 149
+    plex_search:
+      all:
+        audience_rating.gte: 4.9
+        audience_rating.lte: 5.0
+
+  Rating_48:
+    overlay:
+      name: r48
+      group: rating_tmdb
+      weight: 148
+    plex_search:
+      all:
+        audience_rating.gte: 4.8
+        audience_rating.lte: 4.9
+
+  Rating_47:
+    overlay:
+      name: r47
+      group: rating_tmdb
+      weight: 147
+    plex_search:
+      all:
+        audience_rating.gte: 4.7
+        audience_rating.lte: 4.8
+
+  Rating_46:
+    overlay:
+      name: r46
+      group: rating_tmdb
+      weight: 146
+    plex_search:
+      all:
+        audience_rating.gte: 4.6
+        audience_rating.lte: 4.7
+
+  Rating_45:
+    overlay:
+      name: r45
+      group: rating_tmdb
+      weight: 145
+    plex_search:
+      all:
+        audience_rating.gte: 4.5
+        audience_rating.lte: 4.6
+
+  Rating_44:
+    overlay:
+      name: r44
+      group: rating_tmdb
+      weight: 144
+    plex_search:
+      all:
+        audience_rating.gte: 4.4
+        audience_rating.lte: 4.5
+
+  Rating_43:
+    overlay:
+      name: r43
+      group: rating_tmdb
+      weight: 143
+    plex_search:
+      all:
+        audience_rating.gte: 4.3
+        audience_rating.lte: 4.4
+
+  Rating_42:
+    overlay:
+      name: r42
+      group: rating_tmdb
+      weight: 142
+    plex_search:
+      all:
+        audience_rating.gte: 4.2
+        audience_rating.lte: 4.3
+
+  Rating_41:
+    overlay:
+      name: r41
+      group: rating_tmdb
+      weight: 141
+    plex_search:
+      all:
+        audience_rating.gte: 4.1
+        audience_rating.lte: 4.2
+
+  Rating_40:
+    overlay:
+      name: r40
+      group: rating_tmdb
+      weight: 140
+    plex_search:
+      all:
+        audience_rating.gte: 4.0
+        audience_rating.lte: 4.1
+
+  Rating_39:
+    overlay:
+      name: r39
+      group: rating_tmdb
+      weight: 139
+    plex_search:
+      all:
+        audience_rating.gte: 3.9
+        audience_rating.lte: 4.0
+
+  Rating_38:
+    overlay:
+      name: r38
+      group: rating_tmdb
+      weight: 138
+    plex_search:
+      all:
+        audience_rating.gte: 3.8
+        audience_rating.lte: 3.9
+
+  Rating_37:
+    overlay:
+      name: r37
+      group: rating_tmdb
+      weight: 137
+    plex_search:
+      all:
+        audience_rating.gte: 3.7
+        audience_rating.lte: 3.8
+
+  Rating_36:
+    overlay:
+      name: r36
+      group: rating_tmdb
+      weight: 136
+    plex_search:
+      all:
+        audience_rating.gte: 3.6
+        audience_rating.lte: 3.7
+
+  Rating_35:
+    overlay:
+      name: r35
+      group: rating_tmdb
+      weight: 135
+    plex_search:
+      all:
+        audience_rating.gte: 3.5
+        audience_rating.lte: 3.6
+
+  Rating_34:
+    overlay:
+      name: r34
+      group: rating_tmdb
+      weight: 134
+    plex_search:
+      all:
+        audience_rating.gte: 3.4
+        audience_rating.lte: 3.5
+
+  Rating_33:
+    overlay:
+      name: r33
+      group: rating_tmdb
+      weight: 133
+    plex_search:
+      all:
+        audience_rating.gte: 3.3
+        audience_rating.lte: 3.4
+
+  Rating_32:
+    overlay:
+      name: r32
+      group: rating_tmdb
+      weight: 132
+    plex_search:
+      all:
+        audience_rating.gte: 3.2
+        audience_rating.lte: 3.3
+
+  Rating_31:
+    overlay:
+      name: r31
+      group: rating_tmdb
+      weight: 131
+    plex_search:
+      all:
+        audience_rating.gte: 3.1
+        audience_rating.lte: 3.2
+
+  Rating_30:
+    overlay:
+      name: r30
+      group: rating_tmdb
+      weight: 130
+    plex_search:
+      all:
+        audience_rating.gte: 3.0
+        audience_rating.lte: 3.1
+
+  Rating_29:
+    overlay:
+      name: r29
+      group: rating_tmdb
+      weight: 129
+    plex_search:
+      all:
+        audience_rating.gte: 2.9
+        audience_rating.lte: 3.0
+
+  Rating_28:
+    overlay:
+      name: r28
+      group: rating_tmdb
+      weight: 128
+    plex_search:
+      all:
+        audience_rating.gte: 2.8
+        audience_rating.lte: 2.9
+
+  Rating_27:
+    overlay:
+      name: r27
+      group: rating_tmdb
+      weight: 127
+    plex_search:
+      all:
+        audience_rating.gte: 2.7
+        audience_rating.lte: 2.8
+
+  Rating_26:
+    overlay:
+      name: r26
+      group: rating_tmdb
+      weight: 126
+    plex_search:
+      all:
+        audience_rating.gte: 2.6
+        audience_rating.lte: 2.7
+
+  Rating_25:
+    overlay:
+      name: r25
+      group: rating_tmdb
+      weight: 125
+    plex_search:
+      all:
+        audience_rating.gte: 2.5
+        audience_rating.lte: 2.6
+
+  Rating_24:
+    overlay:
+      name: r24
+      group: rating_tmdb
+      weight: 124
+    plex_search:
+      all:
+        audience_rating.gte: 2.4
+        audience_rating.lte: 2.5
+
+  Rating_23:
+    overlay:
+      name: r23
+      group: rating_tmdb
+      weight: 123
+    plex_search:
+      all:
+        audience_rating.gte: 2.3
+        audience_rating.lte: 2.4
+
+  Rating_22:
+    overlay:
+      name: r22
+      group: rating_tmdb
+      weight: 122
+    plex_search:
+      all:
+        audience_rating.gte: 2.2
+        audience_rating.lte: 2.3
+
+  Rating_21:
+    overlay:
+      name: r21
+      group: rating_tmdb
+      weight: 121
+    plex_search:
+      all:
+        audience_rating.gte: 2.1
+        audience_rating.lte: 2.2
+
+  Rating_20:
+    overlay:
+      name: r20
+      group: rating_tmdb
+      weight: 120
+    plex_search:
+      all:
+        audience_rating.gte: 2.0
+        audience_rating.lte: 2.1
+
+  Rating_19:
+    overlay:
+      name: r19
+      group: rating_tmdb
+      weight: 119
+    plex_search:
+      all:
+        audience_rating.gte: 1.9
+        audience_rating.lte: 2.0
+
+  Rating_18:
+    overlay:
+      name: r18
+      group: rating_tmdb
+      weight: 118
+    plex_search:
+      all:
+        audience_rating.gte: 1.8
+        audience_rating.lte: 1.9
+
+  Rating_17:
+    overlay:
+      name: r17
+      group: rating_tmdb
+      weight: 117
+    plex_search:
+      all:
+        audience_rating.gte: 1.7
+        audience_rating.lte: 1.8
+
+  Rating_16:
+    overlay:
+      name: r16
+      group: rating_tmdb
+      weight: 116
+    plex_search:
+      all:
+        audience_rating.gte: 1.6
+        audience_rating.lte: 1.7
+
+  Rating_15:
+    overlay:
+      name: r15
+      group: rating_tmdb
+      weight: 115
+    plex_search:
+      all:
+        audience_rating.gte: 1.5
+        audience_rating.lte: 1.6
+
+  Rating_14:
+    overlay:
+      name: r14
+      group: rating_tmdb
+      weight: 114
+    plex_search:
+      all:
+        audience_rating.gte: 1.4
+        audience_rating.lte: 1.5
+
+  Rating_13:
+    overlay:
+      name: r13
+      group: rating_tmdb
+      weight: 113
+    plex_search:
+      all:
+        audience_rating.gte: 1.3
+        audience_rating.lte: 1.4
+
+  Rating_12:
+    overlay:
+      name: r12
+      group: rating_tmdb
+      weight: 112
+    plex_search:
+      all:
+        audience_rating.gte: 1.2
+        audience_rating.lte: 1.3
+
+  Rating_11:
+    overlay:
+      name: r11
+      group: rating_tmdb
+      weight: 111
+    plex_search:
+      all:
+        audience_rating.gte: 1.1
+        audience_rating.lte: 1.2
+
+  Rating_10:
+    overlay:
+      name: r10
+      group: rating_tmdb
+      weight: 100
+    plex_search:
+      all:
+        audience_rating.gte: 1.0
+        audience_rating.lte: 1.1
+
+  Rating_9:
+    overlay:
+      name: r9
+      group: rating_tmdb
+      weight: 109
+    plex_search:
+      all:
+        audience_rating.gte: 0.9
+        audience_rating.lte: 1.0
+
+  Rating_8:
+    overlay:
+      name: r8
+      group: rating_tmdb
+      weight: 108
+    plex_search:
+      all:
+        audience_rating.gte: 0.8
+        audience_rating.lte: 0.9
+
+  Rating_7:
+    overlay:
+      name: r7
+      group: rating_tmdb
+      weight: 107
+    plex_search:
+      all:
+        audience_rating.gte: 0.7
+        audience_rating.lte: 0.8
+
+  Rating_6:
+    overlay:
+      name: r6
+      group: rating_tmdb
+      weight: 106
+    plex_search:
+      all:
+        audience_rating.gte: 0.6
+        audience_rating.lte: 0.7
 
   Rating_5:
     overlay:
@@ -124,13 +1009,6 @@ overlays:
         audience_rating.lte: 0.2
 
 ### RATINGS ###
-
-
-
-
-
-
-
 
 
 ### IMDB PARENTAL RATING ###
