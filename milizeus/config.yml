@@ -1,4 +1,4 @@
-    overlay_path: &OverlayPath
+    overlay_path: &TVOverlayPath
     - pmm: status
       template_variables:
         horizontal_align: left # center
