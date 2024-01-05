@@ -1,0 +1,278 @@
+overlays:
+
+  Rating_0:
+    overlay:
+      name: r0
+      group: rating_tmdb
+      weight: 100
+    plex_search:
+      all:
+        audience_rating.lt: 0.1
+
+  Rating_100:
+    overlay:
+      name: r100
+      group: rating_tmdb
+      weight: 200
+    plex_search:
+      all:
+        audience_rating.gte: 10
+
+  Rating_99:
+    overlay:
+      name: r99
+      group: rating_tmdb
+      weight: 199
+    plex_search:
+      all:
+        audience_rating.gte: 9.9
+        audience_rating.lte: 10
+
+  Rating_98:
+    overlay:
+      name: r98
+      group: rating_tmdb
+      weight: 198
+    plex_search:
+      all:
+        audience_rating.gte: 9.8
+        audience_rating.lte: 9.9
+
+  Rating_97:
+    overlay:
+      name: r97
+      group: rating_tmdb
+      weight: 197
+    plex_search:
+      all:
+        audience_rating.gte: 9.7
+        audience_rating.lte: 9.8
+
+  Rating_96:
+    overlay:
+      name: r96
+      group: rating_tmdb
+      weight: 196
+    plex_search:
+      all:
+        audience_rating.gte: 9.6
+        audience_rating.lte: 9.7
+
+  Rating_95:
+    overlay:
+      name: r95
+      group: rating_tmdb
+      weight: 195
+    plex_search:
+      all:
+        audience_rating.gte: 9.5
+        audience_rating.lte: 9.6
+
+
+
+
+
+
+  Rating_5:
+    overlay:
+      name: r5
+      group: rating_tmdb
+      weight: 105
+    plex_search:
+      all:
+        audience_rating.gte: 0.5
+        audience_rating.lte: 0.6
+
+  Rating_4:
+    overlay:
+      name: r4
+      group: rating_tmdb
+      weight: 104
+    plex_search:
+      all:
+        audience_rating.gte: 0.4
+        audience_rating.lte: 0.5
+
+  Rating_3:
+    overlay:
+      name: r3
+      group: rating_tmdb
+      weight: 103
+    plex_search:
+      all:
+        audience_rating.gte: 0.3
+        audience_rating.lte: 0.4
+
+  Rating_2:
+    overlay:
+      name: r2
+      group: rating_tmdb
+      weight: 102
+    plex_search:
+      all:
+        audience_rating.gte: 0.2
+        audience_rating.lte: 0.3
+
+  Rating_1:
+    overlay:
+      name: r1
+      group: rating_tmdb
+      weight: 101
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 0.2
+
+### RATINGS ###
+
+
+
+
+
+
+
+
+
+### IMDB PARENTAL RATING ###
+
+  nudity-none:
+    overlay:
+      name: nudity_none
+    plex_search:
+      all:
+        label: "Nudity:None"
+
+  nudity-mild:
+    overlay:
+      name: nudity_mild
+    plex_search:
+      all:
+        label: "Nudity:Mild"
+
+  nudity-moderate:
+    overlay:
+      name: nudity_moderate
+    plex_search:
+      all:
+        label: "Nudity:Moderate"
+
+  nudity-severe:
+    overlay:
+      name: nudity_severe
+    plex_search:
+      all:
+        label: "Nudity:Severe"
+
+  profanity-none:
+    overlay:
+      name: profanity_none
+    plex_search:
+      all:
+        label: "Profanity:None"
+
+  profanity-mild:
+    overlay:
+      name: profanity_mild
+    plex_search:
+      all:
+        label: "Profanity:Mild"
+
+  profanity-moderate:
+    overlay:
+      name: profanity_moderate
+    plex_search:
+      all:
+        label: "Profanity:Moderate"
+
+  profanity-severe:
+    overlay:
+      name: profanity_severe
+    plex_search:
+      all:
+        label: "Profanity:Severe"
+
+  alcohol-none:
+    overlay:
+      name: alcohol_none
+    plex_search:
+      all:
+        label: "Alcohol:None"
+  alcohol-mild:
+    overlay:
+      name: alcohol_mild
+    plex_search:
+      all:
+        label: "Alcohol:Mild"
+
+  alcohol-moderate:
+    overlay:
+      name: alcohol_moderate
+    plex_search:
+      all:
+        label: "Alcohol:Moderate"
+
+  alcohol-severe:
+    overlay:
+      name: alcohol_severe
+    plex_search:
+      all:
+        label: "Alcohol:Severe"
+
+  violence-none:
+    overlay:
+      name: violence_none
+    plex_search:
+      all:
+        label: "Violence:None"
+
+  violence-mild:
+    overlay:
+      name: violence_mild
+    plex_search:
+      all:
+        label: "Violence:Mild"
+
+  violence-moderate:
+    overlay:
+      name: violence_moderate
+    plex_search:
+      all:
+        label: "Violence:Moderate"
+
+  violence-severe:
+    overlay:
+      name: violence_severe
+    plex_search:
+      all:
+        label: "Violence:Severe"
+
+  fright-none:
+    overlay:
+      name: fright_none
+    plex_search:
+      all:
+        label: "Frightening:None"
+
+  fright-mild:
+    overlay:
+      name: fright_mild
+    plex_search:
+      all:
+        label: "Frightening:Mild"
+
+  fright-moderate:
+    overlay:
+      name: fright_moderate
+    plex_search:
+      all:
+        label: "Frightening:Moderate"
+
+  fright-severe:
+    overlay:
+      name: fright_severe
+    plex_search:
+      all:
+        label: "Frightening:Severe"
+
+### IMDB PARENTAL RATING ###
+
