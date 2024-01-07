@@ -12,10 +12,10 @@
         #use_4k_dv: false
         #use_4k_hdr: false
         #use_4k: false
-        #use_1080p_dvhdr: false
+        use_1080p_dvhdr: false
         use_1080p_plus: false
         use_1080p_dv: false
-        #use_1080p_hdr: false
+        use_1080p_hdr: false
         use_1080p: false
         use_720p_dvhdr: false
         use_720p_plus: false
@@ -32,11 +32,11 @@
         use_480p_dv: false
         use_480p_hdr: false
         use_480p: false
-        use_dvhdr: false
-        use_plus: false
-        use_dv: false
-        use_hdr: false
-        
+        #use_dvhdr: false
+        #use_plus: false
+        #use_dv: false
+        #use_hdr: false
+
     - pmm: languages
       template_variables:
         horizontal_position: right
