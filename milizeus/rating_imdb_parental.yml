@@ -12,7 +12,7 @@ templates:
     overlay:
       name: <<overlay_name>>
       #weight: <<weight>>
-      group: rating_imdb_parental 
+      #group: rating_imdb_parental 
       horizontal_align: <<horizontal_align>>
       horizontal_offset: <<horizontal_offset>>
       vertical_align: <<vertical_align>>
