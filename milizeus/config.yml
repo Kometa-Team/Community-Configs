@@ -1,5 +1,42 @@
     overlay_path: &TVOverlayPath
 
+    - pmm: resolution
+      template_variables:
+        horizontal_align: left
+        vertical_align: top
+        font_color: '#ffffffff'
+        back_color: '#00000000'
+        #use_edition: false
+        #use_4k_dvhdr: false
+        #use_4k_plus: false
+        #use_4k_dv: false
+        #use_4k_hdr: false
+        #use_4k: false
+        #use_1080p_dvhdr: false
+        use_1080p_plus: false
+        use_1080p_dv: false
+        #use_1080p_hdr: false
+        use_1080p: false
+        use_720p_dvhdr: false
+        use_720p_plus: false
+        use_720p_dv: false
+        use_720p_hdr: false
+        use_720p: false
+        use_576p_dvhdr: false
+        use_576p_plus: false
+        use_576p_dv: false
+        use_576p_hdr: false
+        use_576p: false
+        use_480p_dvhdr: false
+        use_480p_plus: false
+        use_480p_dv: false
+        use_480p_hdr: false
+        use_480p: false
+        use_dvhdr: false
+        use_plus: false
+        use_dv: false
+        use_hdr: false
+        
     - pmm: languages
       template_variables:
         horizontal_position: right
