@@ -1,56 +1,89 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/chazlarson/pmm-yaml-schema/main/config_schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager/nightly/json-schema/config-schema.json```
 ### Highly recommend using Visual Studio Code with indent-rainbow plugin. VSC will also leverage the above link to enhance pmm yml edits.
-### Must be on Version 1.19.1-nightly21 or greater
+### Must be on Version 1.20 or greater
 libraries:
   Movies:                                           # Must match a library name in your Plex
     report_path: config/missing/Movies_report.yml
+    remove_overlays: false                          # Set to true if you want to remove overlays
+    reapply_overlays: false                         # Before setting this to true, you should know what you are doing and open a #pmm-help beforehand
+    # reset_overlays: tmdb                            # if you want to reset the poster to default poster from tmdb
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
       language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
       placeholder_imdb_id: tt8579674                # 1917 (2019) placeholder id for the separators
-    metadata_path:
+    metadata_files:                                 # These files contain metadata: attributes
+    - git: bullmoose20/godzilla                     # Custom metadata file for Godzilla stuff
+    collection_files:                               # These files contain collections: and/or dynamic_collections attributes
     - pmm: based                                    # collections based on a book, comic, story, video game
     # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)    
     - pmm: aspect                                   # Creates collections based on aspect ratio of media item 
     - git: bullmoose20/movies_refresh               # tells plex to refresh media items added within the last 7 days
     - pmm: separator_award                          # An "index card"
+    - pmm: nfr                                      # National Film Registry Awards
+      template_variables:                           # based on when the award show started
+        data:
+          starting: first
+    - pmm: pca                                      # People's Choice Awards
+      template_variables:                           # based on when the award show started
+        data:
+          starting: first
+    - pmm: sag                                      # Screen Actors Guild Awards
+      template_variables:                           # based on when the award show started
+        data:
+          starting: first
+    - pmm: tiff                                     # Toronto International Film Festival Awards
+      template_variables:                           # based on when the award show started
+        data:
+          starting: first
+    - pmm: berlinale                                # Berlinale Awards
+      template_variables:                           # based on when the award show started
+        data:
+          starting: first
+    - pmm: razzie                                   # Razzie Awards
+      template_variables:                           # based on when the award show started
+        data:
+          starting: first
+    - pmm: venice                                   # Venice Awards
+      template_variables:                           # based on when the award show started
+        data:
+          starting: first
+    - pmm: cesar                                    # Cesar Awards
+      template_variables:                           # based on when the award show started
+        data:
+          starting: first
     - pmm: bafta                                    # BAFTA Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 2014
-          ending: current_year
+          starting: first
     - pmm: cannes                                   # Cannes Film Festival Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 2016
-          ending: current_year
+          starting: first
     - pmm: choice                                   # Critic's Choice Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 2014
-          ending: current_year
+          starting: first
+    - pmm: emmy                                     # Emmy Awards
+      template_variables:                           # based on when the award show started
+        data:
+          starting: first
     - pmm: golden                                   # Golden Globes Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 1944
-          ending: current_year
+          starting: first
     - pmm: oscars                                   # The Oscars
       template_variables:                           # based on when the award show started
         data:
-          starting: 1928
-          ending: current_year
-    - pmm: other_award                              # Other award collections
+          starting: first
     - pmm: spirit                                   # Independent Spirit Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 2014
-          ending: current_year
+          starting: first
     - pmm: sundance                                 # Sundance Film Festival Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 2010
-          ending: current_year
+          starting: first
     - pmm: separator_chart                          # An "index card"
     - pmm: anilist                                  # AniDB Charts (Popular, Trending, etc.)
     - pmm: imdb                                     # IMDb Charts (Popular, Trending, etc.)
@@ -59,8 +92,8 @@ libraries:
     - pmm: tautulli                                 # Tautulli Charts (Popular, Trending, etc.)
     - pmm: tmdb                                     # TMDb Charts (Popular, Trending, etc.)
     - pmm: trakt                                    # Trakt Charts (Popular, Trending, etc.)
-    - pmm: flixpatrol                               # Flixpatrol Charts (Popular, Trending, etc.)    - pmm: basic                                    # Some basic chart collections based on recently released media in your library
     - pmm: basic                                    # Some basic chart collections based on recently released media in your library
+    - pmm: flixpatrol                               # Flixpatrol Charts (Popular, Trending, etc.)    - pmm: basic                                    # Some basic chart collections based on recently released media in your library
     - pmm: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
     # - file: /config/metadata/both/birthday          # Actor birthdays
     - pmm: actor
@@ -107,9 +140,10 @@ libraries:
           depth: 1
           limit: 15
     - pmm: audio_language                           # English, French, Arabic, German, etc. audio language 
-    - pmm: content_rating_cs                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
-    - pmm: content_rating_us                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
-    - pmm: content_rating_uk                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
+    - pmm: content_rating_cs                        # Choose content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_de                        # Choose content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_us                        # Choose content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_uk                        # Choose content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
     - pmm: content_rating_mal                       # Choose content_rating_mal for anime ratings
     - pmm: genre                                    # Action, Comedy, Drama, etc.
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
@@ -150,15 +184,16 @@ libraries:
         schedule_memorial: daily
         schedule_father: daily
         schedule_labor: daily
+        schedule_veteran: daily
+        schedule_women: daily
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
-    overlay_path:
-    - remove_overlays: false                        # Set to true if you want to remove overlays
-    - reapply_overlays: false                       # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
-    # - reset_overlays: tmdb                          # if you want to reset the poster to default poster from tmdb
+    overlay_files:                                  # These files contain overlays: attributes
+    # - file: config/metadata/overlays/country                    # Christmas, Halloween, etc.
     - pmm: aspect                                   # Creates overlays based on aspect ratio of media item 
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2
+    # - pmm: content_rating_de                        # DE FSK content ratings
     # - pmm: content_rating_uk                        # UK BBFC content ratings
     - pmm: content_rating_us_movie                  # US MPAA content ratings
     # - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
@@ -167,10 +202,18 @@ libraries:
       template_variables:
         position: left
     - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
+      # template_variables:
+        # back_color: "#FFFFFF00"
+        # font_color: "#FFFFFF00"
     - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       template_variables:
+        back_color: "#FFFFFF00"
+        font_color: "#FFFFFF00"
         use_subtitles: true
     - pmm: mediastinger                             # Mediastinger overlay when the media item contains a stinger at the end of the movie/show or during the credits
+      # template_variables:
+        # vertical_offset: 145
+        # horizontal_offset: 15
     - pmm: ratings                                  # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format
       template_variables:
         rating1: user
@@ -224,10 +267,11 @@ libraries:
 
     operations:
       split_duplicates: false                       # Splits all duplicate movies/shows found in this library
-      assets_for_all: false                         # Search in assets for images for every item in your library
+      assets_for_all: true                          # Search in assets for images for every item in your library
       delete_collections:
         configured: false                           # False - Collection must be an Unconfigured Collection to be deleted (collection is not in the config file of the specific PMM run).
         managed: false                              # False - Collection must be an Unmanaged Collection to be deleted (the collection does not have the PMM label)
+        less: 99999                                 # Effectively all collections regardless of teh number of items in the collection
       mass_user_rating_update: mdb_tomatoes         # Update user ratings with mdb_tomatoes
       mass_critic_rating_update: imdb               # Update critic ratings with imdb
       mass_audience_rating_update: tmdb             # Update audience ratings with tmdb
@@ -239,33 +283,38 @@ libraries:
 
   TV Shows:                                         # Must match a library name in your Plex
     report_path: config/missing/TV_report.yml
+    remove_overlays: false                          # Set to true if you want to remove overlays
+    reapply_overlays: false                         # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
+    # reset_overlays: tmdb                            # if you want to reset the poster to default poster from tmdb
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
       language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
       placeholder_imdb_id: tt1190634                # The Boys (2019) placeholder id for the separators
-    metadata_path:
-    - pmm: based                                    # collections based on a book, comic, story, video game
-    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Test g only)    
-    - pmm: aspect                                   # Creates collections based on aspect ratio of media item 
+    metadata_files:                                 # These files contain metadata: attributes
     - git: bullmoose20/money_heist                  # Custom metadata file for Money Heist
+    collection_files:                               # These files contain collections: and/or dynamic_collections attributes
+    - pmm: based                                    # collections based on a book, comic, story, video game
+    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)    
+    - pmm: aspect                                   # Creates collections based on aspect ratio of media item 
     - git: bullmoose20/tv_refresh                   # Tells plex to refresh media items added within the last 7 days
     - pmm: separator_award                          # An "index card"
+    - pmm: pca                                      # People's Choice Awards
+      template_variables:                           # based on when the award show started
+        data:
+          starting: first
     - pmm: choice                                   # Critic's Choice Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 2014
-          ending: current_year
+          starting: first
     - pmm: golden                                   # Golden Globes Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 1944
-          ending: current_year
+          starting: first
     - pmm: emmy                                     # Emmy Awards
       template_variables:                           # based on when the award show started
         data:
-          starting: 1948
-          ending: current_year
+          starting: first
     - pmm: separator_chart                          # An "index card"
     - pmm: anilist                                  # AniDB Charts (Popular, Trending, etc.)
     - pmm: imdb                                     # IMDb Charts (Popular, Trending, etc.)
@@ -303,9 +352,10 @@ libraries:
           depth: 1
           limit: 15
     - pmm: audio_language                           # English, French, Arabic, German, etc. audio language 
-    - pmm: content_rating_cs                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
-    - pmm: content_rating_us                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
-    - pmm: content_rating_uk                        # Choose content_rating_uk, content_rating_us, or content_rating_cs
+    - pmm: content_rating_cs                        # Choose content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_de                        # Choose content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_us                        # Choose content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_uk                        # Choose content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
     - pmm: content_rating_mal                       # Choose content_rating_mal for anime ratings
     - pmm: genre                                    # Action, Comedy, Drama, etc.
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
@@ -335,10 +385,7 @@ libraries:
     - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
-    overlay_path:
-    - remove_overlays: false                        # Set to true if you want to remove overlays
-    - reapply_overlays: false                       # If you are doing a lot of testing and changes like me, keep this to true to always reapply overlays
-    # - reset_overlays: tmdb                          # if you want to reset the poster to default poster from tmdb
+    overlay_files:
     - pmm: aspect                                   # Creates aspect ratio overlay    
     - pmm: aspect
       template_variables:
@@ -355,18 +402,25 @@ libraries:
     - pmm: audio_codec
       template_variables:
         builder_level: episode
-    # - pmm: content_rating_uk                        # UK BBFC content ratings
-    # - pmm: content_rating_uk
+    # - pmm: content_rating_de                        # DE FSK content ratings
+    # - pmm: content_rating_de                        # DE FSK content ratings
       # template_variables:
         # builder_level: season
-    # - pmm: content_rating_uk
+    # - pmm: content_rating_de                        # DE FSK content ratings
+      # template_variables:
+        # builder_level: episode
+    # - pmm: content_rating_uk                        # UK BBFC content ratings
+    # - pmm: content_rating_uk                        # UK BBFC content ratings
+      # template_variables:
+        # builder_level: season
+    # - pmm: content_rating_uk                        # UK BBFC content ratings
       # template_variables:
         # builder_level: episode
     - pmm: content_rating_us_show                   # US MPAA content ratings
-    - pmm: content_rating_us_show
+    - pmm: content_rating_us_show                   # US MPAA content ratings
       template_variables:
         builder_level: season
-    - pmm: content_rating_us_show
+    - pmm: content_rating_us_show                   # US MPAA content ratings
       template_variables:
         builder_level: episode
     # - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
@@ -394,7 +448,7 @@ libraries:
     - pmm: episode_info                             # SE##E## information in bottom right and works with builder_level episode
       template_variables:
         builder_level: episode
-    - pmm: flixpatrol                               # Top 10 flixpatrol for 'this_year', positioned on the left and works with overlay_level show
+    - pmm: flixpatrol                               # Top 10 flixpatrol for 'this_year', positioned on the left and works with builder_level show
       template_variables:
         position: left
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2 and works with builder_level show, episode, and season
@@ -529,10 +583,11 @@ libraries:
 
     operations:
       split_duplicates: false                       # Splits all duplicate movies/shows found in this library
-      assets_for_all: false                         # Search in assets for images for every item in your library
+      assets_for_all: true                          # Search in assets for images for every item in your library
       delete_collections:
         configured: false                           # False - Collection must be an Unconfigured Collection to be deleted (collection is not in the config file of the specific PMM run).
         managed: false                              # False - Collection must be an Unmanaged Collection to be deleted (the collection does not have the PMM label)
+        less: 99999                                 # Effectively all collections regardless of teh number of items in the collection
       mass_user_rating_update: mdb_tomatoes         # Update user ratings with mdb_tomatoes
       mass_critic_rating_update: imdb               # Update critic ratings with imdb
       mass_audience_rating_update: tmdb             # Update audience ratings with tmdb
@@ -552,9 +607,9 @@ settings:                                           # Can be individually specif
   cache_expiration: 60
   asset_directory: config/assets
   asset_folders: true
-  asset_depth: 0
+  asset_depth: 1
   create_asset_folders: false
-  prioritize_assets: false
+  prioritize_assets: true
   dimensional_asset_rename: false
   download_url_assets: false
   show_missing_season_assets: false
@@ -585,6 +640,11 @@ settings:                                           # Can be individually specif
   verify_ssl: true
   check_nightly: true
   playlist_exclude_users:
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
 webhooks:                                           # Can be individually specified per library as well
   error: (redacted)
   run_start: (redacted)
@@ -599,11 +659,11 @@ plex:                                               # Can be individually specif
   clean_bundles: true
   empty_trash: true
   optimize: true
-  db_cache: 20480                                   # 20480 MB is 20GB which is what I use. Adjust for your system as 2048 MB (2 GB) is probably a good starting point compared to the default Plex value of 40 MB
+  db_cache: 2048                                    # 2048 MB is 2GB which is what I use. Adjust for your system as 2048 MB (2 GB) is probably a good starting point compared to the default Plex value of 40 MB
 tmdb:                                               # REQUIRED for the script to run
   apikey: (redacted)
   language: en
-  region: ''
+  region: CA                                        # Upper case ISO 3166-1 Code 
   cache_expiration: 60
 tautulli:                                           # Can be individually specified per library as well
   url: (redacted)
