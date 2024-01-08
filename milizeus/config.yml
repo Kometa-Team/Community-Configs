@@ -1,0 +1,112 @@
+    overlay_path: &TVOverlayPath
+
+    - pmm: resolution
+      template_variables:
+        horizontal_align: left
+        vertical_align: top
+        font_color: '#ffffffff'
+        back_color: '#00000000'
+        #use_edition: false
+        #use_4k_dvhdr: false
+        #use_4k_plus: false
+        #use_4k_dv: false
+        #use_4k_hdr: false
+        #use_4k: false
+        use_1080p_dvhdr: false
+        use_1080p_plus: false
+        use_1080p_dv: false
+        use_1080p_hdr: false
+        use_1080p: false
+        use_720p_dvhdr: false
+        use_720p_plus: false
+        use_720p_dv: false
+        use_720p_hdr: false
+        use_720p: false
+        use_576p_dvhdr: false
+        use_576p_plus: false
+        use_576p_dv: false
+        use_576p_hdr: false
+        use_576p: false
+        use_480p_dvhdr: false
+        use_480p_plus: false
+        use_480p_dv: false
+        use_480p_hdr: false
+        use_480p: false
+        #use_dvhdr: false
+        #use_plus: false
+        #use_dv: false
+        #use_hdr: false
+
+    - pmm: languages
+      template_variables:
+        horizontal_position: right
+        vertical_position: bottom
+        flag_alignment: right
+        style: half
+        font_color: '#ffffff88'
+        back_color: '#00000044'
+        back_radius: 6
+        overlay_limit: 10
+        languages: [de, en, fr, es, ru, it, ja, pt, ko, zh, da, it, hi, te, fa, th,
+          nl, no, is, sv, tr, pl, cs, uk, hu, ar, bg, bn, bs, ca, cy, el, et, eu,
+          fi, fl, gl, he, hr, id, ka, kk, kn, lt, lv, mk, ml, mr, ms, nb, nn, pa,
+          ro, sk, sl, sq, sr, sw, ta, ur, vi]
+
+    - pmm: status
+      template_variables:
+        horizontal_align: left # center
+        horizontal_offset: 20 # = audience
+        vertical_align: bottom
+        vertical_offset: 127 # onTOP = audience + 107 OR atBOTTOM = audience - 59
+        back_height: 66
+        back_radius: 6
+        back_width: 376
+        font: config/fonts/Poppins-Bold.ttf
+        font_size: 60
+        use_airing: false
+        use_returning: true
+        use_canceled: true
+        use_ended: true
+        font_color_airing: '#00000088'
+        font_color_returning: '#ffffff88'
+        font_color_canceled: '#ffffff88'
+        font_color_ended: '#ffffff88'
+        back_color_airing: '#44D90A88'
+        back_color_returning: '#F5C70088'
+        back_color_canceled: '#E9060688'
+        back_color_ended: '#00000055'
+
+    - file: config/miliconfig/001/overlay/both/rating_imdb_parental.yml
+      template_variables:
+        horizontal_align: left
+        horizontal_offset: 20 # = audience
+        vertical_align: bottom
+        vertical_offset: 20 # = audience
+
+    - pmm: commonsense
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+        horizontal_offset: 11 # audience - 9
+        vertical_offset: 13 # audience - 7
+        font_color: '#ffffffff'
+        back_color: '#000000'
+        font: config/fonts/Poppins-Bold.ttf
+        font_size: 61
+        back_radius: 61
+        back_width: 123
+        back_height: 123
+        post_text: ''
+        addon_position: bottom
+        file: ''
+
+    - file: config/miliconfig/001/overlay/both/rating_audience.yml
+      template_variables:
+        horizontal_align: left
+        horizontal_offset: 20
+        vertical_align: bottom
+        vertical_offset: 20 # onTOP = 20 OR atBOTTOM = 79
+
+
+
+ 
