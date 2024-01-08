@@ -5,9 +5,9 @@ I run PMM nightly (not lsio image) and Plex(hotio image) on Unraid 6.12.4. At th
 <br>
 
 ## Instructions
-Take what you need from my config.yml. I run everything stock from the github default PMM and tweak from within my config.yml to "make it my own". If you perform a straight copy, search for `(redacted)` as you will need to replace that with your own information. Search for `db_cache` which is for Plex and now available to set via PMM. I use 20480 MB (20GB) as my system has 168 GB of RAM. You will want to improve it from the default 40 MB that Plex sets. Maybe a good starting point if you have enough RAM is 2048 MB which is 2GB.
+Take what you need from my config.yml. I run everything stock from the github default PMM and tweak from within my config.yml to "make it my own". If you perform a straight copy, search for `(redacted)` as you will need to replace that with your own information. Search for `db_cache` which is for Plex and now available to set via PMM. I use 2048 MB (2GB) as my system has 168 GB of RAM. You will want to improve it from the default 40 MB that Plex sets. Maybe a good starting point if you have enough RAM is 1024 MB which is 1GB.
 
-If you want to set the language file to something other than fr (french) do not forget to make that change to `language: fr` lines in the config.yml file before running. As for the `placeholder_imdb_id:` ensure that you read and understand those lines as you may need to choose your own movie or TV Show as your library may not have the two references that I have.
+If you want to set the language file to something other than fr (french) do not forget to make that change to `language: fr` lines in the config.yml file before running. As for the `placeholder_imdb_id:` ensure that you read and understand those lines as you may need to choose your own **Movie** or **TV Show** as your library may not have the two references that I have.
 
 Nothing is local other than the fonts which are included in this repo (fonts.zip). These fonts are the best match I could find per ratings site and the ratings overlays. 
 
