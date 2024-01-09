@@ -17,10 +17,41 @@ templates:
       horizontal_offset: <<horizontal_offset>>
       vertical_align: <<vertical_align>>
       vertical_offset: <<vertical_offset>>
+      #back_color: '#00000055'
+      #back_radius: 6
 
 overlays:
 
   ### IMDB PARENTAL RATING ###
+
+  non_back:
+    template:
+      - name: tmp_rating_imdb
+    #plex_all: true
+    plex_search:
+      any:
+        label:
+          - "Nudity:None"
+          - "Nudity:Mild"
+          - "Nudity:Moderate"
+          - "Nudity:Severe"
+          - "Profanity:None"
+          - "Profanity:Mild"
+          - "Profanity:Moderate"
+          - "Profanity:Severe"
+          - "Alcohol:None"
+          - "Alcohol:Mild"
+          - "Alcohol:Moderate"
+          - "Alcohol:Severe"
+          - "Violence:None"
+          - "Violence:Mild"
+          - "Violence:Moderate"
+          - "Violence:Severe"
+          - "Frightening:None"
+          - "Frightening:Mild"
+          - "Frightening:Moderate"
+          - "Frightening:Severe"
+
 
   non_nudity_none:
     template:
@@ -163,3 +194,5 @@ overlays:
         label: "Frightening:Severe"
 
   ### IMDB PARENTAL RATING ###
+
+
