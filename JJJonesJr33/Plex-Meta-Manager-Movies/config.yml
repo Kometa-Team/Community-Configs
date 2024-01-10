@@ -7,7 +7,7 @@
 libraries: # Library mappings must have a colon (:) placed after them
   Movies:
     library_name: Movies
-    metadata_path:
+    collection_files:
     - /config/metadata/awards.yml
     - /config/metadata/collections.yml
     - /config/metadata/decades.yml
