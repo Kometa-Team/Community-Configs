@@ -3,7 +3,7 @@
 libraries: # Library mappings must have a colon (:) placed after them
   TV Shows:
     library_name: TV Shows
-    metadata_path:
+    collection_files:
     - /config/metadata/suggestions.yml
     - /config/metadata/networks.yml
     - /config/metadata/kids.yml
