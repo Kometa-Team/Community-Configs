@@ -1,6 +1,6 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager/nightly/json-schema/config-schema.json```
-### Highly recommend using Visual Studio Code with indent-rainbow plugin. VSC will also leverage the above link to enhance pmm yml edits.
-### Must be on Version 1.20 or greater
+# yaml-language-server: $schema=https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager/nightly/json-schema/config-schema.json
+### Highly recommend using Visual Studio Code with indent-rainbow by oderwat extension and YAML by Red Hat extension. VSC will also leverage the above link to enhance pmm yml edits.
+### Must be on Version 1.20.0-nightly6 or greater
 libraries:
   Movies:                                           # Must match a library name in your Plex
     report_path: config/missing/Movies_report.yml
@@ -189,7 +189,6 @@ libraries:
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
     overlay_files:                                  # These files contain overlays: attributes
-    # - file: config/metadata/overlays/country                    # Christmas, Halloween, etc.
     - pmm: aspect                                   # Creates overlays based on aspect ratio of media item 
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2
