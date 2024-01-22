@@ -1,0 +1,347 @@
+libraries:
+  TV Shows:
+    #schedule_overlays: weekly(saturday)
+    remove_overlays: false                          # Set to true if you want to remove overlays
+    reapply_overlays: false                         # Before setting this to true, you should know what you are doing and open a #pmm-help beforehand
+    collection_files:
+    - pmm: trakt
+      template_variables:
+        visible_home: true
+        visible_shared: true
+        use_separator: false
+        use_collected: false
+        use_recommended: false
+        use_watched: false
+        use_popular: false
+        limit: 30
+      sonarr:
+        add_missing: true
+        search: false
+        tag: pmm-trakt
+    - pmm: genre
+      schedule: monthly(14)
+      template_variables:
+        use_separator: false
+        exclude:
+        - Politics
+        - Mini-Series
+        - Reality
+        - Soap
+        - Food
+        - Short
+        - News
+        - Children
+        - Game Show
+        - Home and Garden
+        - Talk Show
+        append_addons:
+          Drama:
+          - Drame
+          Music:
+          - Musical
+          Comedy:
+          - Comédie
+
+    - pmm: streaming
+      schedule: monthly(14)
+      template_variables:
+        originals_only: true
+        use_separator: false
+        minimum_items: 10
+    - pmm: country
+      schedule: monthly(14)
+      template_variables:
+        use_other: false
+        use_separator: false
+        style: color
+    - pmm: golden
+      schedule: monthly(20)
+      template_variables:
+        use_year_collections: false
+        data:
+          starting: latest-30
+          ending: latest
+    - pmm: bafta
+      schedule: monthly(20)
+      template_variables:
+        use_year_collections: false
+        data:
+          starting: latest-30
+          ending: latest
+    - pmm: franchise
+      schedule: monthly(20)
+      template_variables:
+        use_separator: false
+        collection_order: release
+        append_addons: 
+          1402: [62286, 94305, 211684, 194583, 1402, 42021, 226340, 136248] # Walking Dead
+    - pmm: universe
+      schedule: monthly(20)
+      template_variables:
+        use_separator: false
+        collection_order: release
+    overlay_files:
+    - pmm: status
+      template_variables:
+        horizontal_align: right
+        vertical_align: bottom
+    - pmm: ratings
+      template_variables:
+        rating1: critic
+        rating1_image: imdb
+        horizontal_position: left
+        rating_alignment: horizontal
+        vertical_position: bottom
+    operations:
+    - schedule: daily
+      split_duplicates: false
+      assets_for_all: false
+    - schedule: weekly(sunday)
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: mdb_tomatoesaudience
+      mass_user_rating_update: tmdb
+      mass_content_rating_update: mdb_commonsense   # Changes Content Rating to "1", "2" etc. to specify appropriate age
+      mass_originally_available_update: tmdb        # Update all original available date from tmdb
+      mass_episode_critic_rating_update: imdb       # Update critic ratings with imdb for episodes
+      mass_episode_audience_rating_update: tmdb     # Update audience ratings with tmdb for episodes
+
+  Movies:
+    #schedule_overlays: weekly(friday)
+    remove_overlays: false                          
+    reapply_overlays: false                         
+    collection_files:
+    - pmm: trakt
+      template_variables:
+        visible_home: true
+        visible_shared: true
+        use_separator: false
+        use_collected: false
+        use_recommended: false
+        use_watched: false
+        use_popular: false
+        limit: 30
+      radarr:
+        add_existing: true
+        add_missing: true
+        search: false
+        tag: pmm-trakt
+    - pmm: genre
+      schedule: monthly(15)
+      template_variables:
+        use_separator: false
+        exclude:
+        - Politics
+        - Mini-Series
+        - Reality
+        - Soap
+        - Food
+        - Short
+        - TV Movie
+        - Talk Show
+        - News
+        - Travel
+        append_addons:
+          Drama:
+          - Drame
+          Music:
+          - Musical
+          Comedy:
+          - Comédie
+    - pmm: studio
+      schedule: monthly(15)
+      template_variables:
+        use_separator: false
+        minimum_items: 11
+    - pmm: country
+      schedule: monthly(15)
+      template_variables:
+        use_other: false
+        use_separator: false
+        style: color
+    - pmm: cannes
+      schedule: monthly(20)
+      template_variables:
+        use_year_collections: false
+        data:
+          starting: latest-50
+          ending: latest
+    - pmm: golden
+      schedule: monthly(20)
+      template_variables:
+        use_year_collections: false
+        data:
+          starting: latest-30
+          ending: latest
+    - pmm: bafta
+      schedule: monthly(20)
+      template_variables:
+        use_year_collections: false
+        data:
+          starting: latest-20
+          ending: latest
+    - pmm: cesar
+      use_year_collections: false                               
+      template_variables:                           
+        data:
+          starting: first
+    - pmm: franchise
+      schedule: monthly(17)
+      template_variables:
+        use_separator: false
+        collection_order: release
+    - pmm: universe
+      schedule: monthly(20)
+      template_variables:
+        use_separator: false
+        collection_order: release
+    - pmm: audio_language
+      schedule: monthly(16)
+      template_variables:
+        use_other: false
+        use_separator: false
+        sort_prefix: !021
+        include:
+        - fr
+    overlay_files:
+    - pmm: ratings
+      template_variables:
+        rating1: critic
+        rating1_image: imdb
+        rating2: audience
+        rating2_image: rt_popcorn
+        rating3: user
+        rating3_image: tmdb
+        horizontal_position: center
+        rating_alignment: horizontal
+        vertical_position: bottom
+    operations:
+    - schedule: daily
+      split_duplicates: false
+      assets_for_all: false
+    - schedule: weekly(friday)
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: mdb_tomatoesaudience
+      mass_user_rating_update: tmdb
+      mass_genre_update: tmdb
+      mass_content_rating_update: mdb_commonsense
+      mass_originally_available_update: tmdb 
+
+collections:
+  Refresh Recent Metadata:
+    plex_search:
+      all:
+        added: 2
+    item_refresh: true
+    build_collection: false
+  Refresh All Metadata:
+    schedule: weekly(monday)
+    plex_all: true
+    item_refresh: true
+    build_collection: false
+
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_folders: false
+  assets_for_all: false
+  asset_directory:
+  asset_depth: 4
+  show_missing_season_assets: false
+  create_asset_folders: false
+  show_missing_assets: false
+  sync_mode: sync
+  show_unmanaged: false
+  show_filtered: false
+  show_missing: false
+  save_missing: false
+  run_again_delay: 0
+  missing_only_released: true
+  minimum_items: 3
+  delete_below_minimum: false
+  tvdb_language: default
+  only_filter_missing: false
+  delete_not_scheduled: false
+  ignore_ids:
+  ignore_imdb_ids:
+  show_options: true
+  dimensional_asset_rename: false
+  default_collection_order: release
+  download_url_assets: false
+  item_refresh_delay: 1
+  verify_ssl: true
+  playlist_sync_to_users:
+  custom_repo:
+  show_missing_episode_assets: false
+  show_asset_not_needed: false
+  prioritize_assets: false
+  playlist_report: false
+  check_nightly: true
+  show_unconfigured: false
+  playlist_exclude_users:
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+plex:
+  url: https://plex.domain.com
+  token: (redacted)
+  timeout: 360
+  clean_bundles: true
+  empty_trash: true
+  optimize: true
+  db_cache: 8192
+mdblist:
+  apikey: (redacted)
+  cache_expiration: 60
+tmdb:
+  apikey: (redacted)
+  language: en
+  cache_expiration: 60
+  region:
+radarr:
+  url: http://radarr:7878
+  token: (redacted)
+  add_existing: true
+  add_missing: true
+  monitor: true
+  search: false
+  availability: released
+  quality_profile: Any
+  tag: pmm
+  root_folder_path: /mnt/unionfs/Media/Movies
+  radarr_path: /mnt/unionfs/Media/Movies
+  plex_path: /mnt/unionfs/Media/Movies
+  upgrade_existing: false
+  ignore_cache: false
+  monitor_existing: false
+sonarr:
+  url: http://sonarr:8989
+  token: (redacted)
+  add_existing: true
+  add_missing: false
+  monitor: all
+  search: false
+  quality_profile: Any
+  language_profile: English
+  tag: pmm
+  season_folder: true
+  cutoff_search: false
+  series_type: standard
+  root_folder_path: /mnt/unionfs/Media/TV
+  sonarr_path: /mnt/unionfs/Media/TV
+  plex_path: /mnt/unionfs/Media/TV
+  upgrade_existing: false
+  ignore_cache: false
+  monitor_existing: false
+trakt:
+  client_id: (redacted)
+  client_secret: (redacted)
+  authorization:
+    access_token: (redacted)
+    token_type: (redacted)
+    expires_in: (redacted)
+    refresh_token: (redacted)
+    scope: (redacted)
+    created_at: (redacted)
+  pin:
