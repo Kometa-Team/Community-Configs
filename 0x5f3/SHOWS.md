@@ -18,15 +18,15 @@
 - 1_parental.yml
   - Parental: All
   - Parental: Random
-  - Parental: Recently Released
   - Parental: Recently Added
+  - Parental: Recently Released
   - Parental: Top Rated
 
 - 1_documentary.yml
   - Documentaries: All
   - Documentaries: Random
-  - Documentaries: Recently Released
   - Documentaries: Recently Added
+  - Documentaries: Recently Released
   - Documentaries: Top Rated
 
 - 2_awards.yml
