@@ -6,6 +6,10 @@
   - Trending TV shows
   - Popular TV shows
   - Top Rated TV shows
+  - Unwatched: Random TV shows
+  - Unwatched: Suggested TV shows
+  - Unwatched: Popular TV shows
+  - Unwatched: Top Rated TV shows
   - Most Watched Daily
   - Most Watched Weekly
   - Most Watched Monthly
@@ -77,6 +81,7 @@
   - Popular in Mystery
   - Popular in Romance
   - Popular in Sci-Fi
+  - Popular in Sport
   - Popular in Thriller
   - Popular in War
   - Popular in Western
@@ -97,10 +102,11 @@
   - Top Rated in Mystery
   - Top Rated in Romance
   - Top Rated in Sci-Fi
+  - Top Rated in Sport
   - Top Rated in Thriller
   - Top Rated in War
   - Top Rated in Western
-  
+
 - 7_network.yml
   - A&E
   - ABC

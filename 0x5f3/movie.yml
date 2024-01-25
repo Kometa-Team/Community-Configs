@@ -28,10 +28,10 @@ libraries:
 #    - file: config/metadata/movie/1_documentary.yml
 #    - file: config/metadata/movie/1_standup.yml
 settings:
+  assets_for_all: false
   asset_depth: 0
   asset_directory:
   asset_folders: false
-  assets_for_all: false
   cache: true
   cache_expiration: 60
   check_nightly: false
@@ -48,9 +48,6 @@ settings:
   item_refresh_delay: 3
   minimum_items: 5
   missing_only_released: false
-  notifiarr_collection_addition: false
-  notifiarr_collection_creation: false
-  notifiarr_collection_removing: false
   only_filter_missing: false
   playlist_exclude_users:
   playlist_report: true
@@ -58,6 +55,11 @@ settings:
   prioritize_assets: false
   released_missing_only: false
   run_again_delay: 5
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
   save_missing: false
   show_asset_not_needed: true
   show_filtered: false

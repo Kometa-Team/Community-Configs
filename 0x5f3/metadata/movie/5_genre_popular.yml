@@ -2,7 +2,6 @@
 
 templates:
   popular:
-    cache_builders: 6
     collection_mode: hide
     collection_order: custom
     delete_not_scheduled: false
@@ -196,6 +195,18 @@ collections:
                     popularity.gte: 5,
                     language: "en"
                 }
+
+  "Popular in Sport":
+    summary: "Popular movies in Sport"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/5_genre_popular/genre_popular_sport.png
+    template: {
+                    name: popular,
+                    type: "movie,tv_movie",
+                    genre: "sport",
+                    popularity.gte: 5,
+                    language: "en"
+                }
+
   "Popular in Thriller":
     summary: "Popular movies in Thriller"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/5_genre_popular/genre_popular_thriller.png

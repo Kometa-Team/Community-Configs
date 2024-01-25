@@ -2,10 +2,14 @@
   - Random Movies
   - Recently Added Movies (English)
   - Recently Released Movies (English)
-  - Sugegsted Movies
+  - Suggested Movies
   - Trending Movies
   - Popular Movies
   - Top Rated Movies
+  - Unwatched: Random Movies
+  - Unwatched: Suggested Movies
+  - Unwatched: Popular Movies
+  - Unwatched: Top Rated Movies
   - Most Watched Daily
   - Most Watched Weekly
   - Most Watched Monthly
@@ -19,21 +23,21 @@
   - Thanksgiving Movies (11/22-11/25)
   - Christmas Movies (12/01-12/31)
   - New Year's Eve Movies (12/26-01-02)
-  
+
 - 1_parental.yml
   - Parental: All
   - Parental: Random
   - Parental: Recently Released
   - Parental: Recently Added
   - Parental: Top Rated
-  
+
 - 1_documentary.yml
   - Documentaries: All
   - Documentaries: Random
   - Documentaries: Recently Released
   - Documentaries: Recently Added
   - Documentaries: Top Rated
- 
+
 - 1_standup.yml
   - Stand-up: All
   - Stand-up: Random
@@ -67,7 +71,7 @@
   - Top Rated of the 1970s
   - Top Rated of the 1960s
   - Top Rated of the 1950s
-  - Top Rated of the 1940s  
+  - Top Rated of the 1940s
 
 - 4_awards.yml
   - Oscar Winners
@@ -100,6 +104,7 @@
   - Popular in Mystery
   - Popular in Romance
   - Popular in Sci-Fi
+  - Popular in Sport
   - Popular in Thriller
   - Popular in War
   - Popular in Western
@@ -120,6 +125,7 @@
   - Top Rated in Mystery
   - Top Rated in Romance
   - Top Rated in Sci-Fi
+  - Top Rated in Sport
   - Top Rated in Thriller
   - Top Rated in War
   - Top Rated in Western
@@ -223,7 +229,7 @@
   - Top Rated in Wizardry & Witchcraft
   - Top Rated in World War
   - Top Rated in Zombies
-  
+
 - 8_studio.yml
   - Columbia
   - Criterion

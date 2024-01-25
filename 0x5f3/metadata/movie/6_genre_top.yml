@@ -2,7 +2,6 @@
 
 templates:
   top:
-    cache_builders: 6
     collection_mode: hide
     collection_order: custom
     delete_not_scheduled: false
@@ -210,6 +209,18 @@ collections:
                     name: top,
                     type: "movie,tv_movie",
                     genre: "sci-fi",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
+
+  "Top Rated in Sport":
+    summary: "Top rated movies in Sport"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_sport.png
+    template: {
+                    name: top,
+                    type: "movie,tv_movie",
+                    genre: "sport",
                     rating.gte: 5,
                     votes.gte: 10000,
                     language: "en"

@@ -2,7 +2,6 @@
 
 templates:
   genre_top:
-    cache_builders: 6
     collection_mode: hide
     collection_order: custom
     delete_not_scheduled: false
@@ -24,7 +23,7 @@ templates:
 collections:
   "Top Rated in Action":
     summary: "Top rated TV shows in Action"
-    url_poster: config/assets/6_genre_top/genre_top-rated_action.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_action.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -36,7 +35,7 @@ collections:
 
   "Top Rated in Adventure":
     summary: "Top rated TV shows in Adventure"
-    url_poster: config/assets/6_genre_top/genre_top-rated_adventure.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_adventure.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -48,7 +47,7 @@ collections:
 
   "Top Rated in Animation":
     summary: "Top rated TV shows in Animation"
-    url_poster: config/assets/6_genre_top/genre_top-rated_animation.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_animation.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -60,7 +59,7 @@ collections:
 
   "Top Rated in Biography":
     summary: "Top rated TV shows in Biography"
-    url_poster: config/assets/6_genre_top/genre_top-rated_biography.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_biography.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -72,7 +71,7 @@ collections:
 
   "Top Rated in Comedy":
     summary: "Top rated TV shows in Comedy"
-    url_poster: config/assets/6_genre_top/genre_top-rated_comedy.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_comedy.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -84,7 +83,7 @@ collections:
 
   "Top Rated in Crime":
     summary: "Top rated TV shows in Crime"
-    url_poster: config/assets/6_genre_top/genre_top-rated_crime.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_crime.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -96,7 +95,7 @@ collections:
 
   "Top Rated in Drama":
     summary: "Top rated TV shows in Drama"
-    url_poster: config/assets/6_genre_top/genre_top-rated_drama.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_drama.png
     template: {
                     name: genre_top,
                     genre: "drama",
@@ -108,7 +107,7 @@ collections:
 
   "Top Rated in Family":
     summary: "Top rated TV shows in Family"
-    url_poster: config/assets/6_genre_top/genre_top-rated_family.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_family.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -120,7 +119,7 @@ collections:
 
   "Top Rated in Fantasy":
     summary: "Top rated TV shows in Fantasy"
-    url_poster: config/assets/6_genre_top/genre_top-rated_fantasy.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_fantasy.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -132,7 +131,7 @@ collections:
 
   "Top Rated in History":
     summary: "Top rated TV shows in History"
-    url_poster: config/assets/6_genre_top/genre_top-rated_history.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_history.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -144,7 +143,7 @@ collections:
 
   "Top Rated in Horror":
     summary: "Top rated TV shows in Horror"
-    url_poster: config/assets/6_genre_top/genre_top-rated_horror.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_horror.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -156,7 +155,7 @@ collections:
 
   "Top Rated in Music":
     summary: "Top rated TV shows in Music"
-    url_poster: config/assets/6_genre_top/genre_top-rated_music.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_music.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -168,7 +167,7 @@ collections:
 
   "Top Rated in Musicals":
     summary: "Top rated TV shows in Musicals"
-    url_poster: config/assets/6_genre_top/genre_top-rated_musicals.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_musicals.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -180,7 +179,7 @@ collections:
 
   "Top Rated in Mystery":
     summary: "Top rated TV shows in Mystery"
-    url_poster: config/assets/6_genre_top/genre_top-rated_mystery.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_mystery.png
 
     template: {
                     name: genre_top,
@@ -193,7 +192,7 @@ collections:
 
   "Top Rated in Romance":
     summary: "Top rated TV shows in Romance"
-    url_poster: config/assets/6_genre_top/genre_top-rated_romance.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_romance.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -205,7 +204,7 @@ collections:
 
   "Top Rated in Sci-Fi":
     summary: "Top rated TV shows in Sci-Fi"
-    url_poster: config/assets/6_genre_top/genre_top-rated_sci-fi.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_sci-fi.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -215,9 +214,21 @@ collections:
                     language: "en"
                 }
 
+  "Top Rated in Sport":
+    summary: "Top rated TV shows in Sport"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_sport.png
+    template: {
+                    name: genre_top,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    genre: "sport",
+                    rating.gte: 5,
+                    votes.gte: 10000,
+                    language: "en"
+                }
+
   "Top Rated in Thriller":
     summary: "Top rated TV shows in Thriller"
-    url_poster: config/assets/6_genre_top/genre_top-rated_thriller.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_thriller.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -229,7 +240,7 @@ collections:
 
   "Top Rated in War":
     summary: "Top rated TV shows in War"
-    url_poster: config/assets/6_genre_top/genre_top-rated_war.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_war.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
@@ -241,7 +252,7 @@ collections:
 
   "Top Rated in Western":
     summary: "Top rated TV shows in Western"
-    url_poster: config/assets/6_genre_top/genre_top-rated_western.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/6_genre_top/genre_top-rated_western.png
     template: {
                     name: genre_top,
                     type: "tv_series,tv_mini_series,tv_special",
