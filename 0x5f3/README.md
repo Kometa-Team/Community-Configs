@@ -15,9 +15,9 @@
 - TMDB collections *
 - Network ^
 
-( ! = enabled by default)
-( * = movies only )
-( ^ = shows only )
+(! = enabled by default)
+(* = movies only)
+(^ = shows only)
 ```
 ###### For more details on what each section contains: [movies](MOVIES.md) | [shows](SHOWS.md)
 #### Requirements:
