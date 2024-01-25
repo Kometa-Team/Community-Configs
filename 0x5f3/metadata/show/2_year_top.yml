@@ -2,7 +2,6 @@
 
 templates:
   year_top:
-    cache_builders: 6
     collection_mode: hide
     collection_order: custom
     delete_not_scheduled: false
@@ -24,10 +23,10 @@ templates:
 collections:
   "Top Rated of 2024":
     summary: "Top rated TV shows in 2024"
-    url_poster: config/assets/2_year_top/year_top-rated_2024.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2024.png
     template: {
                     name: year_top,
-                    num: "M",
+                    num: "L",
                     type: "tv_series,tv_mini_series,tv_special",
                     release.after: 2024-01-01,
                     release.before: 2024-12-31,
@@ -37,7 +36,7 @@ collections:
 
   "Top Rated of 2023":
     summary: "Top rated TV shows in 2023"
-    url_poster: config/assets/2_year_top/year_top-rated_2023.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2023.png
     template: {
                     name: year_top,
                     num: "M",
@@ -50,7 +49,7 @@ collections:
 
   "Top Rated of 2022":
     summary: "Top rated TV shows in 2022"
-    url_poster: config/assets/2_year_top/year_top-rated_2022.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2022.png
     template: {
                     name: year_top,
                     num: "N",
@@ -63,7 +62,7 @@ collections:
 
   "Top Rated of 2021":
     summary: "Top rated TV shows in 2021"
-    url_poster: config/assets/2_year_top/year_top-rated_2021.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2021.png
     template: {
                     name: year_top,
                     num: "O",
@@ -76,7 +75,7 @@ collections:
 
   "Top Rated of 2020":
     summary: "Top rated TV shows in 2020"
-    url_poster: config/assets/2_year_top/year_top-rated_2020.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2020.png
     template: {
                     name: year_top,
                     num: "P",
@@ -89,7 +88,7 @@ collections:
 
   "Top Rated of 2019":
     summary: "Top rated TV shows in 2019"
-    url_poster: config/assets/2_year_top/year_top-rated_2019.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2019.png
     template: {
                     name: year_top,
                     num: "Q",
@@ -102,7 +101,7 @@ collections:
 
   "Top Rated of 2018":
     summary: "Top rated TV shows in 2018"
-    url_poster: config/assets/2_year_top/year_top-rated_2018.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2018.png
     template: {
                     name: year_top,
                     num: "R",
@@ -115,7 +114,7 @@ collections:
 
   "Top Rated of 2017":
     summary: "Top rated TV shows in 2017"
-    url_poster: config/assets/2_year_top/year_top-rated_2017.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2017.png
     template: {
                     name: year_top,
                     num: "S",
@@ -128,7 +127,7 @@ collections:
 
   "Top Rated of 2016":
     summary: "Top rated TV shows in 2016"
-    url_poster: config/assets/2_year_top/year_top-rated_2016.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2016.png
     template: {
                     name: year_top,
                     num: "T",
@@ -141,7 +140,7 @@ collections:
 
   "Top Rated of 2015":
     summary: "Top rated TV shows in 2015"
-    url_poster: config/assets/2_year_top/year_top-rated_2015.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2015.png
     template: {
                     name: year_top,
                     num: "U",
@@ -154,7 +153,7 @@ collections:
 
   "Top Rated of 2014":
     summary: "Top rated TV shows in 2014"
-    url_poster: config/assets/2_year_top/year_top-rated_2014.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2014.png
     template: {
                     name: year_top,
                     num: "V",
@@ -167,7 +166,7 @@ collections:
 
   "Top Rated of 2013":
     summary: "Top rated TV shows in 2013"
-    url_poster: config/assets/2_year_top/year_top-rated_2013.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2013.png
     template: {
                     name: year_top,
                     num: "W",
@@ -180,7 +179,7 @@ collections:
 
   "Top Rated of 2012":
     summary: "Top rated TV shows in 2012"
-    url_poster: config/assets/2_year_top/year_top-rated_2012.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2012.png
     template: {
                     name: year_top,
                     num: "X",
@@ -193,7 +192,7 @@ collections:
 
   "Top Rated of 2011":
     summary: "Top rated TV shows in 2011"
-    url_poster: config/assets/2_year_top/year_top-rated_2011.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2011.png
     template: {
                     name: year_top,
                     num: "Y",
@@ -206,7 +205,7 @@ collections:
 
   "Top Rated of 2010":
     summary: "Top rated TV shows in 2010"
-    url_poster: config/assets/2_year_top/year_top-rated_2010.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2010.png
     template: {
                     name: year_top,
                     num: "Z",

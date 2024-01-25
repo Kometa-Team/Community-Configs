@@ -2,7 +2,6 @@
 
 templates:
   plex:
-    cache_builders: 4
     collection_mode: hide
     delete_not_scheduled: false
     sort_title: "+1_<<num>>_<<collection_name>>"
@@ -12,7 +11,6 @@ templates:
     visible_shared: false
 
   trakt:
-    cache_builders: 4
     collection_mode: hide
     delete_not_scheduled: false
     sort_title: "+1_<<num>>_<<collection_name>>"
@@ -64,7 +62,6 @@ templates:
       - trakt_list_extra_20
 
   mdblist:
-    cache_builders: 6
     collection_mode: hide
     collection_order: custom
     delete_not_scheduled: false
@@ -94,11 +91,11 @@ collections:
                     num: 0
                 }
     smart_filter:
-      all:
-        critic_rating.gte: 4
+      any:
+        audio_language: English, english
       sort_by: random
       limit: 250
-      
+
   "Recently Added Movies":
     summary: "Recently added movies"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_recently-added.png
@@ -107,7 +104,7 @@ collections:
     visible_library: true
     template: {
                     name: plex,
-                    num: 1
+                    num: 0
                 }
     smart_filter:
       any:
@@ -116,40 +113,66 @@ collections:
       limit: 200
 
   "Recently Released Movies":
-    summary: "Recently added movies"
+    summary: "Recently released movies"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_recently-released.png
     visible_library: true
     template: {
                     name: plex,
-                    num: 1
+                    num: 0
                 }
     smart_filter:
       any:
         audio_language: English, english
       sort_by: release.desc
       limit: 200
-      
+
   "Suggested Movies":
     collection_order: random
     summary: "Based on watched and favourited movies"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_suggested.png
     template: {
                     name: trakt,
-                    num: 2
+                    num: 0
 #                    trakt_list_extra_01: "https://trakt.tv/users/########/lists/movie-recommendations-couchmoney-tv",
 #                    trakt_list_extra_02: "https://trakt.tv/users/########/lists/movies-based-on-recently-watched-couchmoney-tv"
                 }
     trakt_userlist:
       - userlist: recommendations
         user: me
-        
+    trakt_chart:
+      - chart: recommended
+        time_period: daily
+        languages: en
+        countries: us, gb, ie, ca, au, nz
+        limit: 25
+      - chart: recommended
+        time_perid: weekly
+        languages: en
+        countries: us, gb, ie, ca, au, nz
+        limit: 50
+      - chart: recommended
+        time_period: monthly
+        languages: en
+        countries: us, gb, ie, ca, au, nz
+        limit: 100
+      - chart: recommended
+        time_period: yearly
+        languages: en
+        countries: us, gb, ie, ca, au, nz
+        limit: 150
+      - chart: recommended
+        time_period: all
+        languages: en
+        countries: us, gb, ie, ca, au, nz
+        limit: 200
+
   "Trending Movies":
     summary: "Movies trending across the internet"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_trending.png
     schedule: daily
     template: {
                     name: mdblist,
-                    num: 2,
+                    num: 0,
                     mdblist_user: "archivist",
                     mdblist_list: "movie-trending",
                     mdblist_sort: "rank.desc"
@@ -163,7 +186,7 @@ collections:
     schedule: daily
     template: {
                     name: mdblist,
-                    num: 3,
+                    num: 1,
                     mdblist_user: "archivist",
                     mdblist_list: "movie-popular",
                     mdblist_sort: "imdbpopular.desc"
@@ -176,12 +199,70 @@ collections:
     schedule: daily
     template: {
                     name: mdblist,
-                    num: 3,
+                    num: 1,
                     mdblist_user: "archivist",
                     mdblist_list: "movie-top-rated",
                     mdblist_sort: "imdbrating.desc"
                 }
     limit: 500
+
+  "Unwatched: Random Movies":
+    summary: "Random selection of movies"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_unwatched_random.png
+    template: {
+                    name: plex,
+                    num: 2
+                }
+    smart_filter:
+      all:
+        unplayed: true
+        any:
+          audio_language: English, english
+      collection_filtering: user
+      sort_by: random
+      limit: 250
+
+  "Unwatched: Suggested Movies":
+    summary: "Based on watched and favourited movies"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_unwatched_suggested.png
+    template: {
+                    name: plex,
+                    num: 2
+                }
+    smart_filter:
+      all:
+        collection: "Suggested Movies"
+        unplayed: true
+      collection_filtering: user
+      sort_by: random
+
+  "Unwatched: Popular Movies":
+    summary: "Popular movies across the internet"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_unwatched_popular.png
+    template: {
+                    name: plex,
+                    num: 3
+                }
+    smart_filter:
+      all:
+        collection: "Popular Movies"
+        unplayed: true
+      collection_filtering: user
+      sort_by: random
+
+  "Unwatched: Top Rated Movies":
+    summary: "Top rated movies across the internet"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_unwatched_top-rated.png
+    template: {
+                    name: plex,
+                    num: 3
+                }
+    smart_filter:
+      all:
+        collection: "Top Rated Movies"
+        unplayed: true
+      collection_filtering: user
+      sort_by: random
 
   "Most Watched Daily":
     summary: "Movies trending across the internet"
@@ -206,7 +287,7 @@ collections:
     schedule: daily
     template: {
                     name: trakt,
-                    num: 5
+                    num: 4
                 }
     trakt_chart:
       chart: watched
@@ -222,7 +303,7 @@ collections:
     schedule: weekly(sunday)
     template: {
                     name: trakt,
-                    num: 6
+                    num: 5
                 }
     trakt_chart:
       chart: watched
@@ -238,7 +319,7 @@ collections:
     schedule: weekly(sunday)
     template: {
                     name: trakt,
-                    num: 7
+                    num: 5
                 }
     trakt_chart:
       chart: watched

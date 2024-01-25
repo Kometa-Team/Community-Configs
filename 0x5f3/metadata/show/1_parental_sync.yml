@@ -2,7 +2,6 @@
 
 templates:
   mdblist:
-    cache_builders: 6
     collection_mode: hide
     collection_order: alpha
     delete_not_scheduled: false
@@ -26,7 +25,7 @@ templates:
 collections:
   "Parental: All":
     summary: "TV shows suitable for children"
-    url_poster: config/assets/1_parental/parental-all.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_parental/parental_all.png
     template: {
                     name: mdblist,
                     num: "A",

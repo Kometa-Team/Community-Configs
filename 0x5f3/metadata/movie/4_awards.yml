@@ -2,7 +2,6 @@
 
 templates:
   award_nominee:
-    cache_builders: 6
     collection_mode: hide
     collection_order: release.desc
     delete_not_scheduled: false
@@ -18,7 +17,6 @@ templates:
       type: <<type>>
 
   award_winner:
-    cache_builders: 6
     collection_mode: hide
     collection_order: release.desc
     delete_not_scheduled: false
@@ -58,7 +56,7 @@ collections:
 
   "Golden Globes Nominees":
     summary: "A collection of Golden Globes Nominees"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_nominees_golden-globespng.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_nominees_golden-globes.png
     template: {
                     name: award_nominee,
                     num: "C",

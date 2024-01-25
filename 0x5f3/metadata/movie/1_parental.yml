@@ -2,7 +2,6 @@
 
 templates:
   plex:
-    cache_builders: 4
     collection_mode: hide
     delete_not_scheduled: false
     label.sync: Parental
@@ -26,9 +25,9 @@ collections:
       sort_by: random
       limit: 250
 
-  "Parental: Recently Released":
-    summary: "Recently released movies suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_parental/parental_recently-released.png
+  "Parental: Recently Added":
+    summary: "Recently added movies suitable for children"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_parental/parental_recently-added.png
     template: {
                     name: plex,
                     num: "C"
@@ -36,12 +35,12 @@ collections:
     smart_filter:
       all:
         collection: "Parental: All"
-      sort_by: release.desc
-      limit: 250
+      sort_by: added.desc
+      limit: 100
 
-  "Parental: Recently Added":
-    summary: "Recently added movies suitable for children"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_parental/parental_recently-added.png
+  "Parental: Recently Released":
+    summary: "Recently released movies suitable for children"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_parental/parental_recently-released.png
     template: {
                     name: plex,
                     num: "D"
@@ -49,8 +48,8 @@ collections:
     smart_filter:
       all:
         collection: "Parental: All"
-      sort_by: added.desc
-      limit: 100
+      sort_by: release.desc
+      limit: 250
 
   "Parental: Top Rated":
     summary: "Top rated movies suitable for children"

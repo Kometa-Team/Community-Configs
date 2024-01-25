@@ -2,7 +2,6 @@
 
 templates:
   plex:
-    cache_builders: 4
     collection_mode: hide
     delete_not_scheduled: false
     sort_title: "+1_<<num>>_<<collection_name>>"
@@ -12,7 +11,6 @@ templates:
     visible_shared: false
 
   trakt:
-    cache_builders: 4
     collection_mode: hide
     delete_not_scheduled: false
     sort_title: "+1_<<num>>_<<collection_name>>"
@@ -64,7 +62,6 @@ templates:
       - trakt_list_extra_20
 
   mdblist:
-    cache_builders: 6
     collection_mode: hide
     collection_order: custom
     delete_not_scheduled: false
@@ -86,7 +83,7 @@ templates:
 collections:
   "Random TV shows":
     summary: "Random selection of TV shows"
-    url_poster: config/assets/1_suggested/suggested_random.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_random.png
     visible_library: true
     schedule: daily
     template: {
@@ -94,20 +91,18 @@ collections:
                     num: 0
                 }
     smart_filter:
-      all:
-        year.gte: 1940
+      any:
+        audio_language: English, english
       sort_by: random
       limit: 250
-      
+
   "Recently Added TV shows":
     summary: "Recently added TV shows"
-    url_poster: config/assets/1_suggested/suggested_recently-added.png
-    visible_home: true
-    visible_shared: true
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_recently-added.png
     visible_library: true
     template: {
                     name: plex,
-                    num: 1
+                    num: 0
                 }
     smart_filter:
       any:
@@ -116,40 +111,66 @@ collections:
       limit: 200
 
   "Recently Released TV shows":
-    summary: "Recently added TV shows"
-    url_poster: config/assets/1_suggested/suggested_recently-released.png
+    summary: "Recently released TV shows"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_recently-released.png
     visible_library: true
     template: {
                     name: plex,
-                    num: 1
+                    num: 0
                 }
     smart_filter:
       any:
         audio_language: English, english
       sort_by: release.desc
       limit: 200
-      
+
   "Suggested TV shows":
     collection_order: random
     summary: "Based on watched and favourited TV shows"
-    url_poster: config/assets/1_suggested/suggested_suggested.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_suggested.png
     template: {
                     name: trakt,
-                    num: 2
+                    num: 0
 #                    trakt_list_extra_01: "https://trakt.tv/users/########/lists/tv-recommendations-couchmoney-tv",
 #                    trakt_list_extra_02: "https://trakt.tv/users/########/lists/tv-based-on-recently-watched-couchmoney-tv"
                 }
     trakt_userlist:
       - userlist: recommendations
         user: me
+    trakt_chart:
+      - chart: recommended
+        time_period: daily
+        languages: en
+        countries: us, gb, ie, ca, au, nz
+        limit: 25
+      - chart: recommended
+        time_perid: weekly
+        languages: en
+        countries: us, gb, ie, ca, au, nz
+        limit: 50
+      - chart: recommended
+        time_period: monthly
+        languages: en
+        countries: us, gb, ie, ca, au, nz
+        limit: 100
+      - chart: recommended
+        time_period: yearly
+        languages: en
+        countries: us, gb, ie, ca, au, nz
+        limit: 150
+      - chart: recommended
+        time_period: all
+        languages: en
+        countries: us, gb, ie, ca, au, nz
+        limit: 200
 
   "Trending TV shows":
     summary: "TV shows trending across the internet"
-    url_poster: config/assets/1_suggested/suggested_trending.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_trending.png
     schedule: daily
     template: {
                     name: mdblist,
-                    num: 2,
+                    num: 0,
                     mdblist_user: "archivist",
                     mdblist_list: "tv-trending",
                     mdblist_sort: "rank.desc"
@@ -158,12 +179,12 @@ collections:
 
   "Popular TV shows":
     summary: "Popular TV shows across the internet"
-    url_poster: config/assets/1_suggested/suggested_popular.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_popular.png
     visible_library: true
     schedule: daily
     template: {
                     name: mdblist,
-                    num: 3,
+                    num: 1,
                     mdblist_user: "archivist",
                     mdblist_list: "tv-popular",
                     mdblist_sort: "imdbpopular.desc"
@@ -172,25 +193,83 @@ collections:
 
   "Top Rated TV shows":
     summary: "Top rated TV shows across the internet"
-    url_poster: config/assets/1_suggested/suggested_top-rated.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_top-rated.png
     schedule: daily
     template: {
                     name: mdblist,
-                    num: 3,
+                    num: 1,
                     mdblist_user: "archivist",
                     mdblist_list: "tv-top-rated",
                     mdblist_sort: "imdbrating.desc"
                 }
     limit: 500
 
+  "Unwatched: Random TV shows":
+    summary: "Random selection of TV shows"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_unwatched_random.png
+    template: {
+                    name: plex,
+                    num: 1
+                }
+    smart_filter:
+      all:
+        plays.lt: 1
+        any:
+          audio_language: English, english
+      collection_filtering: user
+      sort_by: random
+      limit: 250
+
+  "Unwatched: Suggested TV shows":
+    summary: "Based on watched and favourited TV shows"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_unwatched_suggested.png
+    template: {
+                    name: plex,
+                    num: 1
+                }
+    smart_filter:
+      all:
+        collection: "Suggested TV shows"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: random
+
+  "Unwatched: Popular TV shows":
+    summary: "Popular TV shows across the internet"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_unwatched_popular.png
+    template: {
+                    name: plex,
+                    num: 2
+                }
+    smart_filter:
+      all:
+        collection: "Popular TV shows"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: random
+
+  "Unwatched: Top Rated TV shows":
+    summary: "Top rated TV shows across the internet"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_unwatched_top-rated.png
+    template: {
+                    name: plex,
+                    num: 2
+                }
+    smart_filter:
+      all:
+        collection: "Top Rated TV shows"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: random
+
   "Most Watched Daily":
     summary: "TV shows trending across the internet"
-    url_poster: config/assets/1_suggested/suggested_most-watched-daily.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_most-watched-daily.png
     collection_order: custom
     schedule: daily
     template: {
                     name: trakt,
-                    num: 4
+                    num: 3
                 }
     trakt_chart:
       chart: watched
@@ -201,12 +280,12 @@ collections:
 
   "Most Watched Weekly":
     summary: "TV shows trending across the internet"
-    url_poster: config/assets/1_suggested/suggested_most-watched-weekly.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_most-watched-weekly.png
     collection_order: custom
     schedule: daily
     template: {
                     name: trakt,
-                    num: 5
+                    num: 3
                 }
     trakt_chart:
       chart: watched
@@ -217,12 +296,12 @@ collections:
 
   "Most Watched Monthly":
     summary: "TV shows trending across the internet"
-    url_poster: config/assets/1_suggested/suggested_most-watched-monthly.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_most-watched-monthly.png
     collection_order: custom
     schedule: weekly(sunday)
     template: {
                     name: trakt,
-                    num: 6
+                    num: 4
                 }
     trakt_chart:
       chart: watched
@@ -233,12 +312,12 @@ collections:
 
   "Most Watched Yearly":
     summary: "TV shows trending across the internet"
-    url_poster: config/assets/1_suggested/suggested_most-watched-yearly.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_suggested/suggested_most-watched-yearly.png
     collection_order: custom
     schedule: weekly(sunday)
     template: {
                     name: trakt,
-                    num: 7
+                    num: 4
                 }
     trakt_chart:
       chart: watched

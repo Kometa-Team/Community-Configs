@@ -2,7 +2,6 @@
 
 templates:
   plex:
-    cache_builders: 4
     collection_mode: hide
     delete_not_scheduled: false
     sort_title: "+1_<<num>>_<<collection_name>>"
@@ -12,7 +11,6 @@ templates:
     visible_shared: false
 
   mdblist:
-    cache_builders: 6
     collection_mode: hide
     collection_order: alpha
     delete_not_scheduled: false
@@ -55,8 +53,8 @@ collections:
       sort_by: random
       limit: 250
 
-  "Stand-up: Recently Released":
-    summary: "Recently released Stand-up"
+  "Stand-up: Recently Added":
+    summary: "Recently added Stand-up"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_standup/stand-up_recently-added.png
     template: {
                     name: plex,
@@ -65,11 +63,11 @@ collections:
     smart_filter:
       all:
         collection: "Stand-up: All"
-      sort_by: release.desc
-      limit: 250
+      sort_by: added.desc
+      limit: 100
 
-  "Stand-up: Recently Added":
-    summary: "Recently added Stand-up"
+  "Stand-up: Recently Released":
+    summary: "Recently released Stand-up"
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/1_standup/stand-up_recently-released.png
     template: {
                     name: plex,
@@ -78,8 +76,8 @@ collections:
     smart_filter:
       all:
         collection: "Stand-up: All"
-      sort_by: added.desc
-      limit: 100
+      sort_by: release.desc
+      limit: 250
 
   "Stand-up: Top Rated":
     summary: "Top rated Stand-up"
