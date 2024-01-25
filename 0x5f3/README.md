@@ -51,7 +51,7 @@ A successful run will result in something similar to this:
 <br/>
 <br/>
 
-![movies](/assets/_/_movies.png)
+![movies](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_movies.png)
 <br/>
 
-![shows](/assets/_/_shows.png)
+![shows](https://github.com/0x5f3/pmm.config/blob/main/assets/_/_shows.png)
