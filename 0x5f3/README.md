@@ -26,7 +26,7 @@
 ```
 #### Install:
 ```
-git clone https://github.com/0x5f3/pmm.config config
+git clone -b remote https://github.com/0x5f3/pmm.config config
 ```
 #### Usage:
 
