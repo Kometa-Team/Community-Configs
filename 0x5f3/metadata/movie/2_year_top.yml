@@ -2,7 +2,6 @@
 
 templates:
   year_top:
-    cache_builders: 6
     collection_mode: hide
     collection_order: custom
     delete_not_scheduled: false
@@ -27,7 +26,7 @@ collections:
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/2_year_top/year_top-rated_2024.png
     template: {
                     name: year_top,
-                    num: "M",
+                    num: "L",
                     type: "movie,tv_movie",
                     language: "en",
                     release.after: 2024-01-01,

@@ -1,6 +1,6 @@
-This config will populate the following:
-
-- !Suggested (random, recently added|released, suggested, trending, popular, top-rated, most watched)
+#### This config will populate the following:
+```
+- !Suggested (random, recently added|released, suggested, trending, popular, top-rated, unwatched, most watched)
 - !Seasonal *
 - Parental
 - Documentaries
@@ -15,43 +15,31 @@ This config will populate the following:
 - TMDB collections *
 - Network ^
 
-( ! = enabled by default)
-( * = movies only )
-( ^ = shows only )
-
-For more details on what each section contains: [movies](MOVIES.md) | [shows](SHOWS.md)
-<br/>
-
-**Requirements:**
-
+(! = enabled by default)
+(* = movies only)
+(^ = shows only)
+```
+###### For more details on what each section contains: [movies](MOVIES.md) | [shows](SHOWS.md)
+#### Requirements:
+```
  - APP/API keys for: mdblist, tmdb, trakt
-
-**Install:**
-
-clone into PMM's root directory:
 ```
-git clone https://github.com/0x5f3/pmm.config config
+#### Install:
 ```
+git clone -b remote https://github.com/0x5f3/pmm.config config
+```
+#### Usage:
 
-**Usage:**
-
-The initial process for populating collections:
+###### The initial process for populating collections:
 ```
-python plex_meta_manager.py --config config/movie.yml --collections-only --run --ignore-schedules
-python plex_meta_manager.py --config config/show.yml --collections-only --run --ignore-schedules
+docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager --config config/movie.yml --collection-only --run --ignore-schedules
+docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager --config config/show.yml --collection-only --run --ignore-schedules
 ```
-Following a successful initial run:
-
+###### Following a successful initial run:
 ```
-python plex_meta_manager.py --config config/movie.yml --collections-only --run
-python plex_meta_manager.py --config config/show.yml --collections-only --run
+docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager --config config/movie.yml --collection-only --run
+docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager --config config/show.yml --collection-only --run
 ```
-<br/>
-A successful run will result in something similar to this:
-<br/>
-<br/>
-
+###### A successful run will result in something similar to this:
 ![movies](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_movies.png)
-<br/>
-  
-![shows](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_shows.png)
+![shows](https://github.com/0x5f3/pmm.config/blob/main/assets/_/_shows.png)

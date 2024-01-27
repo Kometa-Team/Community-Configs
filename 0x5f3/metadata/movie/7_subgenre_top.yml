@@ -2,9 +2,7 @@
 
 templates:
   sub_genre:
-    cache_builders: 6
     collection_mode: hide
-#    collection_order: critic_rating.desc
     delete_not_scheduled: false
     limit: 250
     sort_title: "+7_<<collection_name>>"
