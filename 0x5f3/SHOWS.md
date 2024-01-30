@@ -1,22 +1,25 @@
+```
 - 1_suggested.yml
-  - Random TV shows
+  - Random TV shows (English)
   - Recently Added TV shows (English)
   - Recently Released TV shows (English)
-  - Suggested TV shows
-  - Trending TV shows
-  - Popular TV shows
-  - Top Rated TV shows
+  - Recommended TV shows (Trakt user's personal favourites and/or trakt/letterboxd lists)
+  - Suggested TV shows (Trakt most favourited daily/weekly/monthly/yearly/all charts and/or trakt/letterboxd lists)
+  - Trending TV shows (https://mdblist.com/lists/archivist/tv-trending)
+  - Popular TV shows (https://mdblist.com/lists/archivist/tv-popular)
+  - Top Rated TV shows (https://mdblist.com/lists/archivist/tv-top-rated)
   - Unwatched: Random TV shows
+  - Unwatched: Recommended TV shows
   - Unwatched: Suggested TV shows
   - Unwatched: Popular TV shows
   - Unwatched: Top Rated TV shows
-  - Most Watched Daily
-  - Most Watched Weekly
-  - Most Watched Monthly
-  - Most Watched Yearly
+  - Most Watched Daily (https://trakt.tv/shows/watched/daily)
+  - Most Watched Weekly (https://trakt.tv/shows/watched/weekly)
+  - Most Watched Monthly (https://trakt.tv/shows/watched/monthly)
+  - Most Watched Yearly (https://trakt.tv/shows/watched/yearly)
 
 - 1_parental.yml
-  - Parental: All
+  - Parental: All (https://mdblist.com/lists/archivist/list-parental)
   - Parental: Random
   - Parental: Recently Added
   - Parental: Recently Released
@@ -152,3 +155,4 @@
   - TLC
   - TNT
   - YouTube
+```
