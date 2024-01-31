@@ -3,7 +3,7 @@
 templates:
   seasonal:
     collection_mode: hide
-    collection_order: critic_rating.desc
+    collection_order: alpha
     delete_not_scheduled: true
     limit: 1000
     sort_title: +1_<<num>>_<<collection_name>>
