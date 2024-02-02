@@ -150,23 +150,15 @@ libraries:
         vertical_align: top
         vertical_offset: 0
         horizontal_offset: 0
-        back_height: 85
+        back_height: 80
         back_width: 1100
         font: config/fonts/Avenir_95_Black.ttf
         font_size: 60
-        back_color_airing: '#016920'
-        back_color_returning: '#81007F'
-        back_color_canceled: '#ed1f1f'
-        back_color_ended: '#000847'
-    - pmm: network
-      template_variables:
-        horizontal_align: right
-        vertical_offset: 0
-        horizontal_offset: 500
-        vertical_align: bottom
-        back_width: 621
-        url: https://raw.githubusercontent.com/zarox-things/configs-and-stuff/main/plex-meta-manager/overlays/images/network/shadow/<<key>>.png 
-        back_color: 00      
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#FFFFFF'
     - file: config/runtimes.yml
       template_variables:
         overlay_level: episode
@@ -196,23 +188,15 @@ libraries:
         vertical_align: top
         vertical_offset: 0
         horizontal_offset: 0
-        back_height: 85
+        back_height: 80
         back_width: 1100
         font: config/fonts/Avenir_95_Black.ttf
         font_size: 60
-        back_color_airing: '#016920'
-        back_color_returning: '#81007F'
-        back_color_canceled: '#ed1f1f'
-        back_color_ended: '#000847'
-    - pmm: network
-      template_variables:
-        horizontal_align: right
-        vertical_offset: 0
-        horizontal_offset: 500
-        vertical_align: bottom
-        back_width: 621
-        url: https://raw.githubusercontent.com/zarox-things/configs-and-stuff/main/plex-meta-manager/overlays/images/network/shadow/<<key>>.png 
-        back_color: 00       
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#FFFFFF'       
     - file: config/runtimes.yml
       template_variables:
         overlay_level: episode
@@ -242,23 +226,15 @@ libraries:
         vertical_align: top
         vertical_offset: 0
         horizontal_offset: 0
-        back_height: 85
+        back_height: 80
         back_width: 1100
         font: config/fonts/Avenir_95_Black.ttf
         font_size: 60
-        back_color_airing: '#016920'
-        back_color_returning: '#81007F'
-        back_color_canceled: '#ed1f1f'
-        back_color_ended: '#000847'
-    - pmm: network
-      template_variables:
-        horizontal_align: right
-        vertical_offset: 0
-        horizontal_offset: 500
-        vertical_align: bottom
-        back_width: 621
-        url: https://raw.githubusercontent.com/zarox-things/configs-and-stuff/main/plex-meta-manager/overlays/images/network/shadow/<<key>>.png 
-        back_color: 00      
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#FFFFFF'      
     - file: config/runtimes.yml
       template_variables:
         overlay_level: episode
