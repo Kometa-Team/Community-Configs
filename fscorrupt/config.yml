@@ -2,12 +2,12 @@
 
 libraries:
   4K Movies:
-    schedule: hourly(11),hourly(19)
+    schedule: hourly(11)
     #schedule: hourly(9),hourly(19)
-    metadata_path:
+    collection_files:
     - file: config/Movies.yml
     #- file: config/collections.yml
-    overlay_path:
+    overlay_files:
     - pmm: commonsense
       template_variables:
         vertical_offset: 37
@@ -35,12 +35,12 @@ libraries:
     operations:
       mass_content_rating_update: mdb_commonsense
   Movies:
-    schedule: hourly(11),hourly(19)
+    schedule: hourly(11)
     #schedule: hourly(9),hourly(19)
-    metadata_path:
+    collection_files:
     - file: config/Movies.yml
     #- file: config/collections.yml
-    overlay_path:
+    overlay_files:
     - pmm: commonsense
       template_variables:
         vertical_offset: 37
@@ -68,11 +68,11 @@ libraries:
     operations:
       mass_content_rating_update: mdb_commonsense
   Kids Movies:
-    schedule: hourly(11),hourly(19)
-    metadata_path:
+    schedule: hourly(11)
+    collection_files:
     - file: config/Movies.yml
     #- file: config/Genre.yml
-    overlay_path:
+    overlay_files:
     - pmm: commonsense
       template_variables:
         vertical_offset: 37
@@ -100,11 +100,11 @@ libraries:
     operations:
       mass_content_rating_update: mdb_commonsense
   Anime:
-    schedule: hourly(11),hourly(19)
-    metadata_path:
+    schedule: hourly(11)
+    collection_files:
     - file: config/Movies.yml
     #- file: config/Genre.yml
-    overlay_path:
+    overlay_files:
     - pmm: commonsense
       template_variables:
         vertical_offset: 37
@@ -133,10 +133,10 @@ libraries:
       mass_content_rating_update: mdb_commonsense
   TV Shows:
     schedule: hourly(11)
-    metadata_path:
+    collection_files:
     - file: config/TVShows.yml
     #- file: config/Genre.yml
-    overlay_path:
+    overlay_files:
     #- reapply_overlays: true
     - pmm: languages
       template_variables:
@@ -150,14 +150,15 @@ libraries:
         vertical_align: top
         vertical_offset: 0
         horizontal_offset: 0
-        back_height: 85
+        back_height: 80
         back_width: 1100
         font: config/fonts/Avenir_95_Black.ttf
         font_size: 60
-        back_color_airing: '#016920'
-        back_color_returning: '#81007F'
-        back_color_canceled: '#ed1f1f'
-        back_color_ended: '#000847'
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#FFFFFF'
     - file: config/runtimes.yml
       template_variables:
         overlay_level: episode
@@ -171,9 +172,9 @@ libraries:
         4K_banner: false
   Kids Shows:
     schedule: hourly(11)
-    metadata_path:
+    collection_files:
     - file: config/KidsShows.yml
-    overlay_path:
+    overlay_files:
     #- reapply_overlays: true
     - pmm: languages
       template_variables:
@@ -187,14 +188,15 @@ libraries:
         vertical_align: top
         vertical_offset: 0
         horizontal_offset: 0
-        back_height: 85
+        back_height: 80
         back_width: 1100
         font: config/fonts/Avenir_95_Black.ttf
         font_size: 60
-        back_color_airing: '#016920'
-        back_color_returning: '#81007F'
-        back_color_canceled: '#ed1f1f'
-        back_color_ended: '#000847'
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#FFFFFF'       
     - file: config/runtimes.yml
       template_variables:
         overlay_level: episode
@@ -208,9 +210,9 @@ libraries:
         4K: false
   Anime Shows:
     schedule: hourly(11)
-    metadata_path:
+    collection_files:
     - file: config/AnimeShows.yml
-    overlay_path:
+    overlay_files:
     #- reapply_overlays: true
     - pmm: languages
       template_variables:
@@ -224,14 +226,15 @@ libraries:
         vertical_align: top
         vertical_offset: 0
         horizontal_offset: 0
-        back_height: 85
+        back_height: 80
         back_width: 1100
         font: config/fonts/Avenir_95_Black.ttf
         font_size: 60
-        back_color_airing: '#016920'
-        back_color_returning: '#81007F'
-        back_color_canceled: '#ed1f1f'
-        back_color_ended: '#000847'
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#FFFFFF'      
     - file: config/runtimes.yml
       template_variables:
         overlay_level: episode
@@ -252,9 +255,9 @@ playlist_files:
 settings:                                       # Can be individually specified per library as well
   cache: true
   cache_expiration: 60
-  asset_directory: config/assets
+  asset_directory: /assets
   asset_folders: false
-  assets_for_all: false
+  assets_for_all: true
   sync_mode: sync
   show_unmanaged: false
   create_asset_folders: false
