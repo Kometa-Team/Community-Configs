@@ -44,7 +44,7 @@ overlays:
   GB_BBFC_15:
     template:
       - name: standard
-      - {name: commonsense, rating: "15, gb/15, gb/14+, TV-14, gb/Caution"}
+      - {name: commonsense, rating: "15, gb/15, 16, gb/16, gb/14+, TV-14, gb/Caution"}
   GB_BBFC_18:
     template:
       - name: standard
