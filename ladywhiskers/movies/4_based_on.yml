@@ -9,6 +9,7 @@ collections:
     mdblist_list: 
       url: https://mdblist.com/lists/plexmetamanager/based_on_books_movies 
       sort_by: audience_rating.desc
+    sort_title: "!014_Book"
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/based/Book.jpg
     schedule: yearly(01/30)
     radarr_add_missing: false
