@@ -1,0 +1,112 @@
+libraries:
+
+############################
+#         MOVIES           #
+############################
+
+  Movies:
+    template_variables:
+      use_separator: false
+    collection_files:
+    - file: config/movies.yml
+    overlay_files:
+    - remove_overlays: false
+    - pmm: streaming
+      template_variables:
+        originals_only: true
+        region: de
+        horizontal_align: left
+        vertical_align: bottom
+    - pmm: languages
+      template_variables:
+        languages:
+        - es
+        horizontal_align: right
+        horizontal_offset: 15
+        vertical_align: bottom
+        vertical_offset: 30
+    operations:
+      mass_originally_available_update: tmdb
+      mass_genre_update: tmdb
+      mass_content_rating_update: mdb_commonsense
+      mass_user_rating_update: mdb_tomatoes
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: tmdb
+
+############################
+#         TV SHOWS         #
+############################
+
+  TV Shows:
+    template_variables:
+      use_separator: false
+    collection_files:
+    - file: config/tv.yml
+    metadata_files:
+    - file: config/money_heist.yml
+    overlay_files:
+    - remove_overlays: false
+    - pmm: streaming
+      template_variables:
+        originals_only: true
+        horizontal_align: left
+        vertical_align: bottom
+    operations:
+      mass_originally_available_update: tvdb
+      mass_genre_update: tvdb
+      mass_content_rating_update: mdb_commonsense
+      mass_user_rating_update: mdb_tomatoes
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: tmdb
+
+playlist_files:
+- file: config/playlists.yml
+  schedule: weekly(sunday)
+
+############################
+#         SETTINGS         #
+############################
+
+settings:
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: false
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_options: false
+  show_missing: true
+  show_missing_assets: false
+  save_report: false
+  tvdb_language: en
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_users: all
+  playlist_exclude_users:
+  playlist_report: false
+  verify_ssl: true
+  custom_repo:
+  check_nightly: true

@@ -1,146 +1,99 @@
 ## 4_awards.yml
 
 templates:
-  imdb:
+  award_nominee:
+    collection_mode: hide
+    collection_order: release.desc
+    delete_not_scheduled: false
     sort_title: "+4_<<num>>_<<collection_name>>"
     sync_mode: sync
-    collection_order: release.desc
-    collection_mode: hide
     visible_home: false
-    visible_shared: false
     visible_library: false
-    delete_not_scheduled: false
-    cache_builders: 6
-    imdb_list:
-      url: https://www.imdb.com/search/title/?title_type=<<title_type>>&groups=<<groups>>&languages=<<languages>>&sort=release_date,desc
-      limit: 350
+    visible_shared: false
+    imdb_search:
+      event: <<event>>
+      language: <<language>>
+      limit: 1000
+      type: <<type>>
 
-  letterboxd:
-    optional:
-      - letterboxd_extra_1
-      - letterboxd_extra_2
-      - letterboxd_extra_3
-      - letterboxd_extra_4
-      - letterboxd_extra_5
-    sort_title: "+2_<<num>>_<<collection_name>>"
-    sync_mode: sync
-    collection_order: release.desc
+  award_winner:
     collection_mode: hide
-    visible_home: false
-    visible_shared: false
-    visible_library: false
+    collection_order: release.desc
     delete_not_scheduled: false
-    cache_builders: 6
-    letterboxd_list::
-      url: https://letterboxd.com/<<user>>/list/<<list>>/by/<<sort>>
-      limit: 350
-
-  custom_1:
-    optional:
-      - trakt_list
     sort_title: "+4_<<num>>_<<collection_name>>"
     sync_mode: sync
-    collection_order: release.desc
-    collection_mode: hide
     visible_home: false
-    visible_shared: false
     visible_library: false
-    delete_not_scheduled: false
-    cache_builders: 6
-    imdb_list:
-      url: https://www.imdb.com/list/<<imdb_list>>/?sort=release_date,desc
-      limit: 350
-
-  custom_2:
-    optional:
-      - trakt_list
-    sort_title: "+4_<<num>>_<<collection_name>>"
-    sync_mode: sync
-    collection_order: release.desc
-    collection_mode: hide
-    visible_home: false
     visible_shared: false
-    visible_library: false
-    delete_not_scheduled: false
-    cache_builders: 6
-    imdb_list:
-      url: https://www.imdb.com/list/<<imdb_list>>/?sort=release_date,desc
-      limit: 350
-    trakt_list:
-      - <<trakt_list>>
+    imdb_search:
+      event.winning: <<event.winning>>
+      language: <<language>>
+      limit: 1000
+      type: <<type>>
 
 collections:
-  "Emmy Award Winners":
-    summary: "A collection of Emmy Award Winners"
-    url_poster: https://images2.imgbox.com/9b/e4/k0PK91qr_o.png
-    schedule: weekly(monday)
-    template: {
-                    name: imdb,
-                    num: 0,
-                    groups: "emmy_winner",
-                    title_type: "tv_series,tv_special,tv_miniseries",
-                    languages: "en"
-                    }
-    limit: 120
-
   "Emmy Award Nominees":
     summary: "A collection of Emmy Award Nominees"
-    url_poster: https://images2.imgbox.com/c1/c7/71WmWEkL_o.png
-    schedule: weekly(monday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_nominees_emmy.png
     template: {
-                    name: imdb,
-                    num: 1,
-                    groups: "emmy_nominee",
-                    title_type: "tv_series,tv_special,tv_miniseries",
-                    languages: "en"
-                    }
-    limit: 120
+                    name: award_nominee,
+                    num: "A",
+                    type: "tv_series,tv_mini_series,tv_special",
+                    event: "emmy",
+                    language: "en"
+                }
 
-  "Golden Globes Winners":
-    summary: "A collection of Golden Globes Winners"
-    url_poster: https://images2.imgbox.com/90/92/iw9mYXgG_o.png
-    schedule: weekly(monday)
+  "Emmy Award Winners":
+    summary: "A collection of Emmy Award Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_emmy.png
     template: {
-                    name: imdb,
-                    num: 2,
-                    groups: "golden_globe_winners",
-                    title_type: "tv_series,tv_special,tv_miniseries",
-                    languages: "en"
-                    }
-    limit: 120
+                    name: award_winner,
+                    num: "B",
+                    type: "tv_series,tv_mini_series,tv_special",
+                    event.winning: "emmy",
+                    language: "en"
+                }
 
   "Golden Globes Nominees":
     summary: "A collection of Golden Globes Nominees"
-    url_poster: https://images2.imgbox.com/0a/a2/HH5uBXFt_o.png
-    schedule: weekly(monday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_nominees_golden-globes.png
     template: {
-                    name: imdb,
-                    num: 3,
-                    groups: "golden_globe_nominee",
-                    title_type: "tv_series,tv_special,tv_miniseries",
-                    languages: "en"
-                    }
-    limit: 120
+                    name: award_nominee,
+                    num: "C",
+                    type: "tv_series,tv_mini_series,tv_special",
+                    event: "golden",
+                    language: "en"
+                }
+
+  "Golden Globes Winners":
+    summary: "A collection of Golden Globes Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_golden_globes.png
+    template: {
+                    name: award_winner,
+                    num: "D",
+                    type: "tv_series,tv_mini_series,tv_special",
+                    event.winning: "golden",
+                    language: "en"
+                }
 
   "BAFTA Winners":
     summary: "A collection of BAFTA Winners"
-    url_poster: https://images2.imgbox.com/00/61/roVpyMsf_o.png
-    schedule: weekly(monday)
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_bafta.png
     template: {
-                    name: custom_1,
-                    num: 4,
-                    imdb_list: "ls538625886"
-                    }
-    limit: 120
+                    name: award_winner,
+                    num: "E",
+                    type: "tv_series,tv_mini_series,tv_special",
+                    event.winning: "bafta",
+                    language: "en"
+                }
 
-  "Critics Choice Award Winners":
-    summary: "A collection of Critics Choice Award Winners"
-    url_poster: https://images2.imgbox.com/0e/d1/g0Wm0Xqn_o.png
-    schedule: weekly(monday)
+  "Critic's Choice Winners":
+    summary: "A collection of Critic's Choice Winners"
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/4_awards/awards_winners_critics-choice.png
     template: {
-                    name: custom_2,
-                    num: 5,
-                    imdb_list: "ls538625146",
-                    trakt_list: "https://trakt.tv/users/fdamico/lists/critics-choice-series?sort=released,asc"
-                    }
-    limit: 120
+                    name: award_winner,
+                    num: "K",
+                    type: "tv_series,tv_mini_series,tv_special",
+                    event.winning: "choice",
+                    language: "en"
+                }

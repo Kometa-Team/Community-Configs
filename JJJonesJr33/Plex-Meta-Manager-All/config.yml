@@ -2,7 +2,7 @@
 
 libraries: # Library mappings must have a colon (:) placed after them
   Anime:
-    metadata_path:
+    collection_files:
     - /config/metadata/anime.yml
     settings:
       missing_path: config/missing
@@ -14,7 +14,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       delete_unmanaged_collections: false
   Movies:
     library_name: Movies
-    metadata_path:
+    collection_files:
     - /config/metadata/genres.yml
     - /config/metadata/holidays.yml
     # - /config/metadata/studios.yml
@@ -40,7 +40,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       delete_unmanaged_collections: true
   TV Shows:
     library_name: TV Shows
-    metadata_path:
+    collection_files:
     - /config/metadata/kids.yml
     - /config/metadata/networks.yml
     - /config/metadata/tv_suggestions.yml

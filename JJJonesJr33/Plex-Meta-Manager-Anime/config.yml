@@ -2,7 +2,7 @@
 
 libraries: # Library mappings must have a colon (:) placed after them
   Anime:
-    metadata_path:
+    collection_files::
     - /config/metadata/anime.yml
     settings:
       missing_path: config/missing

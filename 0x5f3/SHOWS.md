@@ -1,25 +1,35 @@
+```
 - 1_suggested.yml
-  - Random TV shows
-  - Trending TV shows
-  - Popular TV shows
-  - Top Rated TV shows
-  - Most Watched Daily
-  - Most Watched Weekly
-  - Most Watched Monthly
-  - Most Watched Yearly
+  - Random TV shows (English)
+  - Recently Added TV shows (English)
+  - Recently Released TV shows (English)
+  - Recommended TV shows (Trakt user's personal favourites and/or trakt/letterboxd lists)
+  - Suggested TV shows (Trakt most favourited daily/weekly/monthly/yearly/all charts and/or trakt/letterboxd lists)
+  - Trending TV shows (https://mdblist.com/lists/archivist/tv-trending)
+  - Popular TV shows (https://mdblist.com/lists/archivist/tv-popular)
+  - Top Rated TV shows (https://mdblist.com/lists/archivist/tv-top-rated)
+  - Unwatched: Random TV shows
+  - Unwatched: Recommended TV shows
+  - Unwatched: Suggested TV shows
+  - Unwatched: Popular TV shows
+  - Unwatched: Top Rated TV shows
+  - Most Watched Daily (https://trakt.tv/shows/watched/daily)
+  - Most Watched Weekly (https://trakt.tv/shows/watched/weekly)
+  - Most Watched Monthly (https://trakt.tv/shows/watched/monthly)
+  - Most Watched Yearly (https://trakt.tv/shows/watched/yearly)
 
 - 1_parental.yml
-  - Parental: All
+  - Parental: All (https://mdblist.com/lists/archivist/list-parental)
   - Parental: Random
-  - Parental: Recently Released
   - Parental: Recently Added
+  - Parental: Recently Released
   - Parental: Top Rated
 
 - 1_documentary.yml
   - Documentaries: All
   - Documentaries: Random
-  - Documentaries: Recently Released
   - Documentaries: Recently Added
+  - Documentaries: Recently Released
   - Documentaries: Top Rated
 
 - 2_awards.yml
@@ -31,6 +41,7 @@
   - Critics Choice Award Winners
 
 - 3_year_top.yml
+  - Top Rated of 2024
   - Top Rated of 2023
   - Top Rated of 2022
   - Top Rated of 2021
@@ -73,6 +84,7 @@
   - Popular in Mystery
   - Popular in Romance
   - Popular in Sci-Fi
+  - Popular in Sport
   - Popular in Thriller
   - Popular in War
   - Popular in Western
@@ -93,10 +105,11 @@
   - Top Rated in Mystery
   - Top Rated in Romance
   - Top Rated in Sci-Fi
+  - Top Rated in Sport
   - Top Rated in Thriller
   - Top Rated in War
   - Top Rated in Western
-  
+
 - 7_network.yml
   - A&E
   - ABC
@@ -142,3 +155,4 @@
   - TLC
   - TNT
   - YouTube
+```
