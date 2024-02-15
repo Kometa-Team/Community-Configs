@@ -114,7 +114,7 @@ dynamic_collections:
         mother: range(05/05-05/10)
         father: range(09/15-09/20)
         halloween: range(10/01-10/31)
-        christmas: range(12/01-12/31)
+        christmas: range(11/01-12/31)
         disabilities: range(12/02-12/04)
         black_history: range(02/01-03/01)
         lgbtq: range(05/31-06/30)
@@ -135,7 +135,9 @@ dynamic_collections:
         halloween:
           - https://www.imdb.com/list/ls023118929/
           - https://www.imdb.com/list/ls000099714/
-        christmas: https://www.imdb.com/list/ls000096828/
+        christmas: 
+          - https://www.imdb.com/list/ls567453036/
+          - https://www.imdb.com/list/ls000096828/
         women:
           - https://www.imdb.com/search/keyword/?keywords=women-in-film&ref_=fn_kw_kw_9
           - https://www.imdb.com/search/keyword/?keywords=women%27s-rights&ref_=fn_kw_kw_2
@@ -164,6 +166,8 @@ dynamic_collections:
         latinx:
           - https://mdblist.com/lists/plexmetamanager/latinx-heritage-month
       trakt_list:
+        christmas:
+          - https://trakt.tv/users/fuschaitea/lists/christmas-movies?display=movie&sort=title,asc
         black_history:
           - https://trakt.tv/users/hoochzilla/lists/black-cinema?display=movie&sort=title,asc
           - https://trakt.tv/users/bluephi8/lists/black-history?display=movie&sort=title,asc
