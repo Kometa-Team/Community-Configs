@@ -1,0 +1,85 @@
+#######################################################
+#                  SiskoUrso                          #
+#                TV Collection        + Mods          #
+#######################################################
+templates:
+  Collection:
+    optional:
+      - list
+      - show
+      - poster
+    tvdb_list_details: <<list>>
+    tvdb_show: <<show>>
+    url_poster: <<poster>>
+    sync_mode: sync
+    collection_order: release
+    sort_title: "!02_<<collection_name>>"
+collections:
+  Archie Comics:
+    template: {name: Collection, show: "73619, 77056, 74883, 78116, 78137, 90241, 311954, 338947, 360898", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Archie%20Comics.jpg}
+    sonarr_add_missing: false
+    summary: Collection of Archie Comic Shows.
+  Arrowverse:
+    template: {name: Collection, show: "257655, 279121, 295759, 295760, 332525, 361315", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Arrowverse.jpg}
+    summary: Collection of Arrowverse Shows.  
+  Attenborough:
+    template: {name: Collection}
+    plex_all: true
+    filter:
+      actor: David Attenborough
+    sonarr_add_missing: false
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Franchises/Attenborough.jpg
+    summary: Collection of David Attenborough TV Shows.
+  Battlestar Galactica:
+    template: {name: Collection, show: "71173, 73545, 85040, 204781"}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Franchises/Battlestar Galactica.jpg
+    summary: Collection of Battlestar Galactica Shows.
+  C.S.I:
+    template: {name: Collection, show: "72546, 78310, 73696, 281551, 400248", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/CSI.jpg}
+    summary: Collection of CSI TV Shows.
+  Doctor Who:
+    template: {name: Collection, show: "76107, 78804, 112671, 79511, 79708, 309893, 72710", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Doctor%20Who.jpg}
+    sonarr_add_missing: false
+    summary: Collection of Dr. Who Tv Shows.
+  DC Universe:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/DC%20Universe.jpg}
+    imdb_list: https://www.imdb.com/list/ls073475924/
+    summary: Collection of shows in the DC TV Universe.
+  Law & Order:
+    template: {name: Collection, show: "72368, 75692, 71489, 328518, 74191, 168161, 383397", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Law%20%26%20Order.jpg}
+    summary: Collection of Law & Order Shows.
+  Marvel Television:
+    template: {name: Collection, show: "263365, 281485, 320558, 281662, 284190, 304219, 317953, 326490, 331980, 332027, 341455, 364038, 362392, 362496, 362472, 367147, 368613, 368612, 393204, 393203, 368611, 367146, 393205, 393201, 412429, 412428, 412431, 361834, 361835, 367227, 92782", poster: https://raw.githubusercontent.com/WhoDat104/Franchises/main/Marvel.jpg}
+    summary: Collection of shows in the Marvel TV Universe.
+  Narcos:
+    template: {name: Collection, show: "282670, 353232"}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Franchises/Narcos.jpg
+    summary: Anthology of Netflix shows about the Columbia and Mexican drug cartells rise to power in the 1980's.
+  NCIS:
+    template: {name: Collection, show: "73710, 72108, 95441, 278125, 401630", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/NCIS.jpg}
+    summary: Collection of shows starting from JAG which then spins into NCIS.
+  Pretty Little Liars:
+    template: {name: Collection, show: "146711, 268126, 358590, 389085", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Pretty%20Little%20Liars.jpg}
+    summary: Collection of Pretty Little Liars Shows.
+  Star Trek:
+    template: {name: Collection, show: "77526, 73566, 71470, 72073, 74550, 73893, 328711, 364093, 367138, 385811, 382389, 264220", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Star%20Trek.jpg}
+    summary: Collection of Star Trek TV Shows.
+  Stargate:
+    template: {name: Collection, show: "72449, 70851, 83237, 70852, 339552", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Stargate.jpg}
+    summary: Collection of Stargate TV Shows.
+  Star Wars:
+    template: {name: Collection, show: "393199, 393187, 380352, 393218, 361753, 393589, 393189, 393188", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Star%20Wars.jpg}
+    summary: Collection of Star Wars TV Shows.
+  The Twilight Zone:
+    template: {name: Collection, show: "73587, 72176, 78611, 358915", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/The%20Twilight%20Zone.jpg}
+    summary: Collection of The Twilight Zone Shows.
+  The Walking Dead:
+    template: {name: Collection, show: "153021, 290853, 372787, 411314, 252861", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/The%20Walking%20Dead.jpg}
+    summary: Collection of Walking Dead TV Shows.
+  The X-Files:
+    template: {name: Collection, show: "77398, 76245"}
+    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Franchises/The X Files.jpg
+    summary: Collection of shows from the X-Files.
+  Yellowstone: 
+    template: {name: Collection, show: "341164, 396390, 416491, 416503, 403011", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Yellowstone.jpg}
+    summary: Collection of Yellowstone Shows.

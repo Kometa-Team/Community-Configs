@@ -1,0 +1,52 @@
+##############################################################################
+#       British Academy of Film and Television Arts Awards Collections       #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#             Credit to pjcob & maxwelldeux for the Trakt Lists              #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#        https://metamanager.wiki/en/latest/defaults/award/bafta.html        #
+##############################################################################
+
+external_templates:
+  pmm: templates
+  template_variables:
+    collection_section: 130
+
+collections:
+  BAFTA Best Films:
+    variables:
+      key: best
+    template:
+      - name: shared
+        sort: BAFTA !
+        allowed_libraries: movie
+        image: award/bafta/winner
+        translation_key: bafta_best
+      - name: arr
+      - name: custom
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
+
+dynamic_collections:
+  BAFTA Awards:
+    type: number
+    sync: true
+    data:
+      starting: current_year-4
+      ending: current_year
+    title_format: BAFTA <<key_name>>
+    template:
+      - use_year_collections
+      - trakt
+      - shared
+      - arr
+      - custom
+    template_variables:
+      trakt_list:
+        default: https://trakt.tv/users/pjcob/lists/<<key>>-bafta
+      allowed_libraries:
+        default: movie
+      image:
+        default: award/bafta/<<key>>
+      translation_key:
+        default: bafta_year
+      dynamic:
+        default: true
