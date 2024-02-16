@@ -1,0 +1,36 @@
+##############################################################################
+#                              Year Collections                              #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#         https://metamanager.wiki/en/latest/defaults/both/year.html         #
+##############################################################################
+
+external_templates:
+  pmm: templates
+  template_variables:
+    collection_section: "105"
+
+dynamic_collections:
+  Year:
+    type: number
+    sync: true
+    data:
+      starting: current_year-5
+      ending: current_year
+    title_format: Best of <<key_name>>
+    template:
+      - smart_filter
+      - shared
+    template_variables:
+      search_term:
+        default: year
+      sort_by:
+        default: critic_rating.desc
+      limit:
+        default: 50
+      image:
+        default: year/best/<<key>>
+      translation_key:
+        default: year
+      dynamic:
+        default: true
