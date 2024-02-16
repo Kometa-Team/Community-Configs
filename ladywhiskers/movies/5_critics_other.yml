@@ -19,7 +19,7 @@ templates:
     collection_order: custom
     sort_title: "!130_Rotten Tomatoes Best of <<key>>"
     schedule: yearly(01/30)
-    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%20<<key>>.png
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%20<<key>>.jpg
 
 collections:
   "100 Years... 100 Movies":
@@ -45,7 +45,7 @@ collections:
     collection_order: custom
     sort_title: "!130_Rotten !1"
     schedule: monthly(10)
-    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20All-Time.png
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20All-Time.jpg
   Rotten Tomatoes Best Horror:
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time
     sync_mode: sync
@@ -53,7 +53,7 @@ collections:
     collection_order: custom
     sort_title: "!130_Rotten !2"
     schedule: monthly(10)
-    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Horror.png
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Horror.jpg
   Rotten Tomatoes Best Rom Com:
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
     sync_mode: sync
@@ -61,7 +61,7 @@ collections:
     collection_order: custom
     sort_title: "!130_Rotten !3"
     schedule: monthly(10)
-    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Rom%20Com.png
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Rom%20Com.jpg
     
 dynamic_collections:
   Rotten Tomatoes Best of:
