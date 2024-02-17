@@ -1,4 +1,4 @@
-## config.yml
+## _movie.yml
 
 libraries:
   Movies:
@@ -6,17 +6,6 @@ libraries:
     operations:
       - schedule: daily
         delete_unmanaged_collections: false
-#      - schedule: weekly(thursday)
-#        mass_audience_rating_update: mdb_average
-#        mass_critic_rating_update: mdb_metacritic
-#        mass_user_rating_update: imdb
-#        mass_content_rating_update: mdb
-#        mass_genre_update: imdb
-#      - schedule: weekly(thursday)
-#        mass_poster_update:
-#          source: tmdb
-#          seasons: false
-#          episodes: false
     collection_files:
 #    - file: config/collections/movie/_maintenance.yml
 #    - file: config/collections/movie/_radarr.yml
@@ -42,59 +31,6 @@ libraries:
 #    - file: config/collections/movie/050_parental.yml
 #    - file: config/collections/movie/060_documentary.yml
 #    - file: config/collections/movie/070_standup.yml
-  TV:
-    library_type: show
-    operations:
-      - schedule: daily
-        delete_unmanaged_collections: false
-#      - schedule: weekly(friday)
-#        mass_audience_rating_update: mdb_average
-#        mass_critic_rating_update: mdb_metacritic
-#        mass_user_rating_update: imdb
-#        mass_content_rating_update: mdb
-#        mass_genre_update: imdb
-#      - schedule: weekly(sunday)
-#        mass_poster_update:
-#          source: tmdb
-#          seasons: true
-#          episodes: false
-    collection_files:
-#    - file: config/collections/show/_maintenance.yml
-#    - file: config/collections/show/_sonarr.yml
-    - file: config/collections/show/010_suggested.yml
-#    - file: config/collections/show/020_unwatched.yml
-    - file: config/collections/show/030_watched.yml
-    - file: config/collections/show/060_year_top.yml
-    - schedule: weekly(monday)
-    - file: config/collections/show/070_decades_top.yml
-    - schedule: weekly(wednesday)
-#    - file: config/collections/show/080_awards.yml
-#    - schedule: weekly(thursday)
-    - file: config/collections/show/090_genre_popular.yml
-    - file: config/collections/show/100_genre_top.yml
-    - schedule: weekly(saturday)
-#    - file: config/collections/show/110_network.yml
-#    - file: config/collections/show/040_parental_sync.yml
-#    - file: config/collections/show/040_parental.yml
-#    - file: config/collections/show/050_documentary.yml
-#  KIDS:
-#    library_type: show
-#    operations:
-#      - schedule: daily
-#        delete_unmanaged_collections: false
-#      - schedule: weekly(friday)
-#        mass_audience_rating_update: mdb_average
-#        mass_critic_rating_update: mdb_metacritic
-#        mass_user_rating_update: imdb
-#        mass_content_rating_update: mdb
-#        mass_genre_update: imdb
-#      - schedule: weekly(saturday)
-#        mass_poster_update:
-#    collection_files:
-#    - file: config/collections/show/_maintenance.yml
-#    - file: config/collections/show/_sonarr.yml
-#    - file: config/collections/show/040_parental_sync.yml
-#    - file: config/collections/show/040_parental.yml
 settings:
   assets_for_all: false
   asset_depth: 0
@@ -114,7 +50,7 @@ settings:
   ignore_imdb_ids:
   item_refresh: false
   item_refresh_delay: 0
-  minimum_items: 1
+  minimum_items: 5
   missing_only_released: false
   only_filter_missing: false
   playlist_exclude_users:
@@ -160,23 +96,6 @@ radarr:
   tag:
   search: false
   radarr_path:
-  plex_path:
-  upgrade_existing: false
-sonarr:
-  url:
-  token:
-  add_missing: false
-  add_existing: false
-  root_folder_path:
-  monitor: all
-  quality_profile:
-  language_profile: English
-  series_type: standard
-  season_folder: true
-  tag:
-  search: false
-  cutoff_search: false
-  sonarr_path:
   plex_path:
   upgrade_existing: false
 tmdb:

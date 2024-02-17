@@ -1,5 +1,5 @@
 ```
-- 1_suggested.yml
+- _suggested.yml
   - Random TV shows (English)
   - Recently Added TV shows (English)
   - Recently Released TV shows (English)
@@ -8,31 +8,35 @@
   - Trending TV shows (https://mdblist.com/lists/archivist/tv-trending)
   - Popular TV shows (https://mdblist.com/lists/archivist/tv-popular)
   - Top Rated TV shows (https://mdblist.com/lists/archivist/tv-top-rated)
+
+- _unwatched.yml
   - Unwatched: Random TV shows
   - Unwatched: Recommended TV shows
   - Unwatched: Suggested TV shows
   - Unwatched: Popular TV shows
   - Unwatched: Top Rated TV shows
+
+- _watched.yml
   - Most Watched Daily (https://trakt.tv/shows/watched/daily)
   - Most Watched Weekly (https://trakt.tv/shows/watched/weekly)
   - Most Watched Monthly (https://trakt.tv/shows/watched/monthly)
   - Most Watched Yearly (https://trakt.tv/shows/watched/yearly)
 
-- 1_parental.yml
+- _parental.yml
   - Parental: All (https://mdblist.com/lists/archivist/list-parental)
   - Parental: Random
   - Parental: Recently Added
   - Parental: Recently Released
   - Parental: Top Rated
 
-- 1_documentary.yml
+- _documentary.yml
   - Documentaries: All
   - Documentaries: Random
   - Documentaries: Recently Added
   - Documentaries: Recently Released
   - Documentaries: Top Rated
 
-- 2_awards.yml
+- _awards.yml
   - Emmy Award Winners
   - Emmy Award Nominees
   - Golden Globes Winners
@@ -40,7 +44,7 @@
   - BAFTA Winners
   - Critics Choice Award Winners
 
-- 3_year_top.yml
+- _year_top.yml
   - Top Rated of 2024
   - Top Rated of 2023
   - Top Rated of 2022
@@ -57,7 +61,7 @@
   - Top Rated of 2011
   - Top Rated of 2010
 
-- 4_decades_top.yml
+- _decades_top.yml
   - Top Rated of the 2020s
   - Top Rated of the 2010s
   - Top Rated of the 2000s
@@ -68,12 +72,13 @@
   - Top Rated of the 1950s
   - Top Rated of the 1940s
 
-- 5_genre_popular.yml
+- _genre_popular.yml
   - Popular in Action
   - Popular in Adventure
   - Popular in Animation
   - Popular in Biography
   - Popular in Comedy
+  - Popular in Documentary
   - Popular in Drama
   - Popular in Family
   - Popular in Fantasy
@@ -89,12 +94,13 @@
   - Popular in War
   - Popular in Western
 
-- 6_genre_top.yml
+- _genre_top.yml
   - Top Rated in Action
   - Top Rated in Adventure
   - Top Rated in Animation
   - Top Rated in Biography
   - Top Rated in Comedy
+  - Top Rated in Documentary
   - Top Rated in Drama
   - Top Rated in Family
   - Top Rated in Fantasy
@@ -110,7 +116,7 @@
   - Top Rated in War
   - Top Rated in Western
 
-- 7_network.yml
+- _network.yml
   - A&E
   - ABC
   - Adult Swim
