@@ -28,11 +28,13 @@ collections:
     filter:
       actor: David Attenborough
     sonarr_add_missing: false
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Franchises/Attenborough.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Attenborough.jpg
     summary: Collection of David Attenborough TV Shows.
+  Avatar
+    template: {name: Collection, show: "74852, 251085" }
   Battlestar Galactica:
     template: {name: Collection, show: "71173, 73545, 85040, 204781"}
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Franchises/Battlestar Galactica.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Battlestar Galactica.jpg
     summary: Collection of Battlestar Galactica Shows.
   C.S.I:
     template: {name: Collection, show: "72546, 78310, 73696, 281551, 400248", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/CSI.jpg}
@@ -53,7 +55,7 @@ collections:
     summary: Collection of shows in the Marvel TV Universe.
   Narcos:
     template: {name: Collection, show: "282670, 353232"}
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Franchises/Narcos.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Narcos.jpg
     summary: Anthology of Netflix shows about the Columbia and Mexican drug cartells rise to power in the 1980's.
   NCIS:
     template: {name: Collection, show: "73710, 72108, 95441, 278125, 401630", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/NCIS.jpg}
@@ -78,7 +80,7 @@ collections:
     summary: Collection of Walking Dead TV Shows.
   The X-Files:
     template: {name: Collection, show: "77398, 76245"}
-    file_poster: /Volumes/128 TB ThunderBay/Documents/Plex Resources/Plex Posters/Franchises/The X Files.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/The X Files.jpg
     summary: Collection of shows from the X-Files.
   Yellowstone: 
     template: {name: Collection, show: "341164, 396390, 416491, 416503, 403011", poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Yellowstone.jpg}
