@@ -80,39 +80,7 @@ collections:
     template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Foreign.jpg}
     smart_filter:
       any:
-        audio_language:
-         - ar  # Arabic
-         - bs  # Bosnian
-         - zh  # Chinese
-         - cs  # Czech
-         - da  # Danish
-         - nl  # Dutch
-         - fo  # Faroese
-         - fil # Filipino
-         - fi  # Finnish
-         - fr  # French
-         - de  # German
-         - hu  # Hungarian
-         - id  # Indonesian
-         - it  # Italian
-         - ja  # Japanese
-         - kn  # Kannada
-         - ms  # Malay  
-         - ml  # Malayalam
-         - no  # Norwegian
-         - pl  # Polish
-         - ro  # Romanian
-         - ru  # Russian
-         - sr  # Serbian
-         - sv  # Swedish
-         - ta  # Tamil
-         - tr  # Turkish
-         - uk  # Ukranian     
-        all:
-          country.not:
-            - United States of America
-            - United Kingdom
-            - Canada       
+        audio_language.not: en
       sort_by: audience_rating.desc
   History:
     template: {name: Collection, poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/History.jpg}

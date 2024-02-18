@@ -4,6 +4,11 @@ libraries:
       use_separator: false
     collection_files:
       - folder: config/movies
+      - pmm: bafta
+      - pmm: cannes
+      - pmm: oscars
+      - pmm: razzie
+      - pmm: tautulli
       - pmm: actor
         template_variables:
           collection_section: '001'
@@ -18,7 +23,7 @@ libraries:
             limit: 100
           tmdb_birthday:
             this_month: true
-      - pmm: content_rating_cs
+      - pmm: content_rating_au
       - pmm: other_chart
         template_variables:
           use_anidb: false
@@ -38,13 +43,6 @@ libraries:
             - DreamWorks Studios
             - DreamWorks Pictures
             - Pixar
-      - pmm: franchise
-        template_variables:
-          minimum_items: 2
-          delete_below_minimum: true
-      - pmm: universe
-        template_variables:
-          remove_data: dca
     schedule_overlays: weekly(saturday)
     overlay_files:
       - pmm: commonsense
@@ -75,25 +73,27 @@ libraries:
         - config/assets/Movies/
       prioritize_assets: false
     operations:
-      split_duplicates: false
-      assets_for_all: true
-      delete_collections:
-        configured: false
-        managed: true
-      mass_user_rating_update: mdb_tomatoes
-      mass_critic_rating_update: imdb
-      mass_audience_rating_update: tmdb
-      mass_genre_update: omdb
-      mass_content_rating_update: mdb_commonsense
-      mass_originally_available_update: tmdb
-      mass_imdb_parental_labels: none
-      metadata_backup:
-        path: config/backups/Movies_Metadata_Backup.yml
-        sync_tags: true
-        add_blank_entries: false
-      genre_mapper:
-        Sci-Fi: Science Fiction
-        Action & Adventure: Action
+      - schedule: daily
+        delete_collections:
+          configured: false
+          managed: true
+        metadata_backup:
+          path: config/backups/Movies_Metadata_Backup.yml
+          sync_tags: true
+          add_blank_entries: false
+        genre_mapper:
+          Sci-Fi: Science Fiction
+          Action & Adventure: Action
+      - schedule: weekly(friday)
+        mass_user_rating_update: mdb_tomatoes
+        mass_critic_rating_update: imdb
+        mass_audience_rating_update: tmdb
+        mass_genre_update: omdb
+        mass_content_rating_update: mdb_commonsense
+        mass_originally_available_update: tmdb
+        mass_imdb_parental_labels: none
+        split_duplicates: false
+        assets_for_all: true
   TV Shows:
     report_path: config/missing/TV_report.yml
     template_variables:
@@ -115,7 +115,8 @@ libraries:
             limit: 100
           tmdb_birthday:
             this_month: true
-      - pmm: content_rating_cs
+      - pmm: content_rating_au
+      - pmm: tautulli
       - pmm: other_chart
         template_variables:
           use_anidb: false
@@ -124,15 +125,10 @@ libraries:
           visible_library_commonsense: true
           visible_home_commonsense: true
           visible_shared_commonsense: true
-      - pmm: universe
       - pmm: continent
         template_variables:
           include:
             - Oceania
-      - pmm: franchise
-        template_variables:
-          minimum_items: 2
-          delete_below_minimum: true
       - folder: config/tvshows
     schedule_overlays: weekly(friday)
     overlay_files:
@@ -187,27 +183,30 @@ libraries:
         - config/assets/TV Shows/
       prioritize_assets: false
     operations:
-      split_duplicates: false
-      assets_for_all: true
-      delete_collections:
-        configured: false
-        managed: true
-      mass_user_rating_update: mdb_tomatoes
-      mass_critic_rating_update: imdb
-      mass_audience_rating_update: tmdb
-      mass_genre_update: omdb
-      mass_content_rating_update: mdb_commonsense
-      mass_originally_available_update: tmdb
-      mass_episode_critic_rating_update: imdb
-      mass_episode_audience_rating_update: tmdb
-      mass_imdb_parental_labels: none
-      metadata_backup:
-        path: config/backups/TVShows_Metadata_Backup.yml
-        sync_tags: true
+      - schedule: daily
+        delete_collections:
+          configured: false
+          managed: true
+        metadata_backup:
+          path: config/backups/Movies_Metadata_Backup.yml
+          sync_tags: true
         add_blank_entries: false
-      genre_mapper:
-        Sci-Fi: Science Fiction
-        Action & Adventure: Action
+        genre_mapper:
+          Sci-Fi: Science Fiction
+          Action & Adventure: Action
+      - schedule: weekly(wednesday)
+        mass_user_rating_update: mdb_tomatoes
+        mass_critic_rating_update: imdb
+        mass_audience_rating_update: tmdb
+        mass_genre_update: omdb
+      - schedule: weekly (thursday)
+        mass_content_rating_update: mdb_commonsense
+        mass_originally_available_update: tmdb
+        mass_episode_critic_rating_update: imdb
+        mass_episode_audience_rating_update: tmdb
+        mass_imdb_parental_labels: none
+        split_duplicates: false
+        assets_for_all: true
   Music:
     schedule: weekly (sunday)
     remove_overlays: true
