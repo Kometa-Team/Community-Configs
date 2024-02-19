@@ -11,7 +11,7 @@ templates:
     url_poster: <<poster>>
     sync_mode: sync
     collection_order: audience_rating.desc
-    sort_title: "!015_<<collection_name>>"
+    sort_title: "!060_<<collection_name>>"
 
 collections:
   Anthology:
