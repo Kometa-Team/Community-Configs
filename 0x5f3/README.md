@@ -47,5 +47,5 @@ The parental configuration adds a 'Parental' label to their collections and all 
 #
 #
 ###### A successful run will result in something similar to this:
-![movies](/assets/_/_movies.png)
-![shows](/assets/_/_shows.png)
+![movies](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_movies.png)
+![shows](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_shows.png)
