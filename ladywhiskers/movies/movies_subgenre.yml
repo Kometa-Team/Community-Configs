@@ -5,7 +5,7 @@
 external_templates:
   pmm: templates
   template_variables:
-    collection_section: "015"
+    collection_section: "060"
 
 templates:
   sub_genre:
@@ -21,7 +21,7 @@ templates:
       - letterboxd_extra_3
       - letterboxd_extra_4
       - letterboxd_extra_5
-    sort_title: "!015_<<collection_name>>"
+    sort_title: "!060_<<collection_name>>"
     schedule: weekly(monday|wednesday|friday)
     limit: 10000 
     sync_mode: sync
