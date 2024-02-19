@@ -1,4 +1,4 @@
-## config.yml
+## _maintenance.yml
 
 libraries:
   Movies:
@@ -6,77 +6,37 @@ libraries:
     operations:
       - schedule: daily
         delete_unmanaged_collections: false
-#      - schedule: weekly(thursday)
+#      - schedule: weekly(wednesday)
 #        mass_audience_rating_update: mdb_average
 #        mass_critic_rating_update: mdb_metacritic
 #        mass_user_rating_update: imdb
 #        mass_content_rating_update: mdb
 #        mass_genre_update: imdb
-#      - schedule: weekly(thursday)
+#      - schedule: weekly(wednesday)
 #        mass_poster_update:
 #          source: tmdb
 #          seasons: false
 #          episodes: false
     collection_files:
-#    - file: config/collections/movie/_maintenance.yml
-#    - file: config/collections/movie/_radarr.yml
-    - file: config/collections/movie/010_suggested.yml
-#    - file: config/collections/movie/020_unwatched.yml
-    - file: config/collections/movie/030_watched.yml
-    - file: config/collections/movie/040_seasonal.yml
-    - file: config/collections/movie/080_year_top.yml
-    - schedule: weekly(monday)
-    - file: config/collections/movie/090_decades_top.yml
-    - schedule: weekly(tuesday)
-#    - file: config/collections/movie/100_awards.yml
-#    - schedule: weekly(wednesday)
-    - file: config/collections/movie/110_genre_popular.yml
-    - file: config/collections/movie/120_genre_top.yml
-    - schedule: weekly(thursday)
-#    - file: config/collections/movie/130_subgenre_top.yml
-#    - file: config/collections/movie/140_studio.yml
-#    - schedule: weekly(wednesday)
-#    - file: config/collections/movie/200_collections.yml
-#    - schedule: weekly(sunday)
-#    - file: config/collections/movie/050_parental_sync.yml
-#    - file: config/collections/movie/050_parental.yml
-#    - file: config/collections/movie/060_documentary.yml
-#    - file: config/collections/movie/070_standup.yml
+    - file: config/collections/movie/_maintenance.yml
   TV:
     library_type: show
     operations:
       - schedule: daily
         delete_unmanaged_collections: false
-#      - schedule: weekly(friday)
+#      - schedule: weekly(thursday)
 #        mass_audience_rating_update: mdb_average
 #        mass_critic_rating_update: mdb_metacritic
 #        mass_user_rating_update: imdb
 #        mass_content_rating_update: mdb
 #        mass_genre_update: imdb
-#      - schedule: weekly(sunday)
+#      - schedule: weekly(thursday)
 #        mass_poster_update:
 #          source: tmdb
 #          seasons: true
 #          episodes: false
     collection_files:
-#    - file: config/collections/show/_maintenance.yml
-#    - file: config/collections/show/_sonarr.yml
-    - file: config/collections/show/010_suggested.yml
-#    - file: config/collections/show/020_unwatched.yml
-    - file: config/collections/show/030_watched.yml
-    - file: config/collections/show/060_year_top.yml
-    - schedule: weekly(monday)
-    - file: config/collections/show/070_decades_top.yml
-    - schedule: weekly(wednesday)
-#    - file: config/collections/show/080_awards.yml
-#    - schedule: weekly(thursday)
-    - file: config/collections/show/090_genre_popular.yml
-    - file: config/collections/show/100_genre_top.yml
-    - schedule: weekly(saturday)
-#    - file: config/collections/show/110_network.yml
-#    - file: config/collections/show/040_parental_sync.yml
-#    - file: config/collections/show/040_parental.yml
-#    - file: config/collections/show/050_documentary.yml
+    - file: config/collections/show/_maintenance.yml
 #  KIDS:
 #    library_type: show
 #    operations:
@@ -88,13 +48,10 @@ libraries:
 #        mass_user_rating_update: imdb
 #        mass_content_rating_update: mdb
 #        mass_genre_update: imdb
-#      - schedule: weekly(saturday)
+#      - schedule: weekly(friday)
 #        mass_poster_update:
 #    collection_files:
 #    - file: config/collections/show/_maintenance.yml
-#    - file: config/collections/show/_sonarr.yml
-#    - file: config/collections/show/040_parental_sync.yml
-#    - file: config/collections/show/040_parental.yml
 settings:
   assets_for_all: false
   asset_depth: 0
@@ -138,7 +95,7 @@ settings:
   show_options: false
   show_unconfigured: true
   show_unmanaged: false
-  sync_mode: sync
+  sync_mode: append
   tvdb_language: default
   verify_ssl: false
 plex:

@@ -1,6 +1,8 @@
 #### This config will populate the following:
 ```
-- !Suggested (random, recently added|released, recommended, suggested, trending, popular, top-rated, unwatched, most watched)
+- !Suggested (random, recently added|released, recommended, suggested, trending, popular, top-rated)
+- Unwatched (random, recommended, suggested, popular, top-rated)
+- !Watched (most watched daily|weekly|monthly|yearly)
 - !Seasonal *
 - Parental
 - Documentaries
@@ -26,19 +28,24 @@
 ```
 #### Install:
 ```
-git clone -b remote https://github.com/0x5f3/pmm.config config
+git clone https://github.com/0x5f3/pmm.config config
 ```
 #### Usage:
 
 ###### The initial process for populating collections:
 ```
-docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager --config config/config.yml --collection-only --run --ignore-schedules
+docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager:nightly --config config/config.yml --run --ignore-schedules
 ```
-
 ###### Following a successful initial run:
 ```
-docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager --config config/config.yml --collection-only --run
+docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager:nightly --config config/config.yml --run
 ```
+###### Notes:
+``
+The parental configuration adds a 'Parental' label to their collections and all items included. The label is capable of being used with 'Allow Only Labels' in a user's restriction settings.
+``
+#
+#
 ###### A successful run will result in something similar to this:
 ![movies](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_movies.png)
 ![shows](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_shows.png)

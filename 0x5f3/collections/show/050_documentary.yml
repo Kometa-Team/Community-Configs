@@ -1,0 +1,77 @@
+## _documentary.yml
+
+templates:
+  plex:
+    collection_mode: hide
+    delete_not_scheduled: false
+    sort_title: "+050_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+
+collections:
+  "Documentaries: All":
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_documentary/documentary_all.png
+    summary: "Documentaries"
+    template: {
+                    name: plex,
+                    num: "0"
+                }
+    smart_filter:
+      all:
+        genre: documentary
+      sort_by: title.asc
+
+  "Documentaries: Random":
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_documentary/documentary_random.png
+    summary: "Random documentaries"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+        genre: documentary
+      limit: 250
+      sort_by: random
+
+  "Documentaries: Recently Added":
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_documentary/documentary_recently-added.png
+    summary: "Recently added documentaries"
+    visible_library: true
+    template: {
+                    name: plex,
+                    num: "2"
+                }
+    smart_filter:
+      all:
+        genre: documentary
+      limit: 100
+      sort_by: added.desc
+
+  "Documentaries: Recently Released":
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_documentary/documentary_recently-released.png
+    summary: "Recently released documentaries"
+    template: {
+                    name: plex,
+                    num: "3"
+                }
+    smart_filter:
+      all:
+        genre: documentary
+      sort_by: release.desc
+      limit: 250
+
+  "Documentaries: Top Rated":
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_documentary/documentary_top-rated.png
+    summary: "Top rated documentaries"
+    template: {
+                    name: plex,
+                    num: "4"
+                }
+    smart_filter:
+      all:
+        genre: documentary
+      sort_by: critic_rating.desc
+      limit: 250

@@ -5,7 +5,7 @@ libraries:
     library_type: movie
     collection_files:
     - file: config/metadata/movie/0_debug.yml
-  TV Shows:
+  TV:
     library_type: show
     collection_files:
     - file: config/metadata/show/0_debug.yml
