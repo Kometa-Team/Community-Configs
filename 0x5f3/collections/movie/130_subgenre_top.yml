@@ -3,6 +3,7 @@
 templates:
   sub_genre:
     collection_mode: hide
+    collection_order: critic_rating.desc
     delete_not_scheduled: false
     limit: 250
     sort_title: "+130_<<collection_name>>"
@@ -17,7 +18,7 @@ templates:
       keyword.any: <<keyword.any>>
       keyword: <<keyword>>
       language: <<language>>
-      limit: 1000
+      limit: 500
       rating.gte: <<rating.gte>>
       sort_by: rating.desc
       type: <<type>>
@@ -103,6 +104,20 @@ collections:
                     rating.gte: 5,
                     type: "movie,tv_movie",
                     votes.gte: 1000
+                }
+
+  "Top Rated in Animatronic":
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_subgenre_top/subgenre_top_animatronic.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Animatronic"
+    template: {
+                    keyword.any: "animatronic,puppetry",
+                    language: "en",
+                    letterboxd_list: "theme-animatronic",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
                 }
 
   "Top Rated in Anti-Hero":
@@ -195,8 +210,7 @@ collections:
     schedule: weekly(monday)
     summary: "Top rated movies in Boxing"
     template: {
-                    imdb_extra_1: "https://www.imdb.com/search/keyword/?title_type=movie,tv_movie&user_rating=2.0,10.0&num_votes=100,&keywords=boxing-champion&languages=en&sort=user_rating,desc",
-                    keyword: "boxing",
+                    keyword.any: "boxing,boxing-champion",
                     language: "en",
                     letterboxd_list: "theme-boxing",
                     name: sub_genre,
@@ -254,8 +268,8 @@ collections:
     template: {
                     keyword: "chick-flick",
                     language: "en",
-                    letterboxd_extra_1: "https://letterboxd.com/akookieforyou/list/chick-flicks/",
-                    letterboxd_extra_2: "https://letterboxd.com/marialuisacctc/list/women-have-superior-taste-that-is-why-these/",
+                    letterboxd_extra_1: "https://letterboxd.com/akookieforyou/list/chick-flicks/by/rating/",
+                    letterboxd_extra_2: "https://letterboxd.com/marialuisacctc/list/women-have-superior-taste-that-is-why-these/by/rating/",
                     letterboxd_list: "theme-chick-flick",
                     name: sub_genre,
                     rating.gte: 5,
@@ -515,6 +529,21 @@ collections:
                     votes.gte: 1000
                 }
 
+  "Top Rated in Exploitation":
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_subgenre_top/subgenre_top_exploitation.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Exploitation"
+    template: {
+                    keyword: "exploitation-film",
+                    language: "en",
+                    letterboxd_extra_1: "https://letterboxd.com/axeman/list/exploitation/by/rating/",
+                    letterboxd_list: "theme-exploitation",
+                    name: sub_genre,
+                    rating.gte: 3,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
   "Top Rated in Fairytales":
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_subgenre_top/subgenre_top_fairytales.png
     schedule: weekly(wednesday)
@@ -552,6 +581,20 @@ collections:
                     keyword: "fugitive,on-the-run",
                     language: "en",
                     letterboxd_list: "theme-fugitives",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Futuristic":
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_subgenre_top/subgenre_top_futuristic.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Futuristic"
+    template: {
+                    keyword: "future",
+                    language: "en",
+                    letterboxd_list: "theme-futuristic",
                     name: sub_genre,
                     rating.gte: 5,
                     type: "movie,tv_movie",
@@ -597,6 +640,21 @@ collections:
                     keyword: "gothic",
                     language: "en",
                     letterboxd_list: "theme-gothic",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Grindhouse":
+    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_subgenre_top/subgenre_top_grindhouse.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Grindhouse"
+    template: {
+                    keyword: "grindhouse",
+                    language: "en",
+                    letterboxd_extra_1: "https://letterboxd.com/narpjay/list/exploitation-films-b-movie-cheese-grindhouse/by/rating/",
+                    letterboxd_list: "theme-grindhouse",
                     name: sub_genre,
                     rating.gte: 2,
                     type: "movie,tv_movie",
@@ -999,7 +1057,7 @@ collections:
     template: {
                     keyword: "prehistoric-times",
                     language: "en",
-                    letterboxd_extra_1: "https://letterboxd.com/mikkelhh/list/before-civilization-prehistoric-films/",
+                    letterboxd_extra_1: "https://letterboxd.com/mikkelhh/list/before-civilization-prehistoric-films/by/rating/",
                     letterboxd_list: "theme-prehistoric",
                     name: sub_genre,
                     rating.gte: 2,
@@ -1070,7 +1128,7 @@ collections:
     template: {
                     keyword: "remake",
                     language: "en",
-                    letterboxd_extra_1: "https://letterboxd.com/l_shelby/list/remakes/",
+                    letterboxd_extra_1: "https://letterboxd.com/l_shelby/list/remakes/by/rating/",
                     letterboxd_list: "theme-remake",
                     name: sub_genre,
                     rating.gte: 5,
@@ -1147,7 +1205,7 @@ collections:
     template: {
                     keyword: "samurai,sword-fight",
                     language: "en",
-                    letterboxd_extra_1: "https://letterboxd.com/jhcrotinger/list/samurai/",
+                    letterboxd_extra_1: "https://letterboxd.com/jhcrotinger/list/samurai/by/rating/",
                     letterboxd_list: "theme-samurai",
                     name: sub_genre,
                     rating.gte: 2,
@@ -1280,7 +1338,7 @@ collections:
     template: {
                     keyword: "stop-motion",
                     language: "en",
-                    letterboxd_extra_1: "https://letterboxd.com/savage_/list/stop-motion/",
+                    letterboxd_extra_1: "https://letterboxd.com/savage_/list/stop-motion/by/rating/",
                     letterboxd_list: "theme-stop-motion",
                     name: sub_genre,
                     rating.gte: 5,

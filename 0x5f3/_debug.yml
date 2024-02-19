@@ -4,11 +4,11 @@ libraries:
   Movies:
     library_type: movie
     collection_files:
-    - file: config/metadata/movie/0_debug.yml
+    - file: config/collections/movie/_debug.yml
   TV:
     library_type: show
     collection_files:
-    - file: config/metadata/show/0_debug.yml
+    - file: config/collections/show/_debug.yml
 settings:
   assets_for_all: false
   asset_depth: 0
