@@ -143,6 +143,7 @@
   - Top Rated in Absurdism
   - Top Rated in Aliens
   - Top Rated in Alternate History
+  - Top Rated in Animatronic
   - Top Rated in Anti-Hero
   - Top Rated in Apocalypse
   - Top Rated in Artifical Intelligence
@@ -172,12 +173,15 @@
   - Top Rated in Epics
   - Top Rated in Espionage
   - Top Rated in Experimental
+  - Top Rated in Exploitation
   - Top Rated in Fairytale
   - Top Rated in Found Footage
   - Top Rated in Fugitives
+  - Top Rated in Futuristic
   - Top Rated in Gangster
   - Top Rated in Ghosts
   - Top Rated in Gothic
+  - Top Rated in Grindhouse
   - Top Rated in Heartbreak
   - Top Rated in Heists
   - Top Rated in Historical Event
