@@ -9,36 +9,30 @@ Movies
    - Based on 
    - Oscars
    - Actor Birthdays
-   - Common Sense Media Content Ratings
+   - Australian Content Ratings
    - Common Sense Media Recommended
    - Continent
      - Oceania
-   - Franchise
-   - Seasonal
-     - added Pride Month
-   - Universe
-
+     - Seasonal
+        - added Pride Month
 TV Shows
    - Based on
    - Actor Birthdays
-   - Common Sense Media Content Ratings
+   - Australian Content Ratings
    - Common Sense Media Recommended
    - Universe
    - Continent
      - Oceania
-   - Franchise
+
      
 **Custom Collections:**
 
 Movies
   Collections:
-   - Disney Live-Action Remakes
-   - DIsney Animation Studios
-   - THree Flavours Cornetto
-   - What Should I Watch?
-	- Expanded Genres        #WhoDat104
-   - Subgenres              #WhoDat104
-	- Topics                 #WhoDat104
+- Expanded Genres        #WhoDat104
+- Franchises             #WhoDat104
+- Subgenres              #WhoDat104
+- Topics                 #WhoDat104
 
 TV Shows
 	Collections:						
@@ -46,8 +40,9 @@ TV Shows
 	- Avatar Universe
 	- Expanded Genres        #WhoDat104
 	- Topics                 #WhoDat104
+        - Franchises             #WhoDat104
 
-Music
+Music WORK IN PROGRESS
   Collections:
    - Top 10 <<mood>> Albums
    - Top 100 <<mood>> Tracks
@@ -69,7 +64,7 @@ Credits not limited to but include:
         - WhoDat104
         - bullmoose20
 
-  ![Movie Collections (1)](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/eb6dbd9c-2746-444b-9f27-45ed6bc379f8)
+![Movie Collections (1)](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/eb6dbd9c-2746-444b-9f27-45ed6bc379f8)
 ![Movie Collections (2)](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/5f3ee81b-661a-4b42-8c9a-8a4bf2abb55c)
 ![Movie Library](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/492b0ff5-c054-4057-b906-a93cc8ad864b)
 ![Movie Playlist](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/22efdc4f-bb06-4aed-b8f4-4bd83fb67942)

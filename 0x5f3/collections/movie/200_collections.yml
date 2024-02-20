@@ -1,0 +1,12 @@
+## _collections.yml
+
+default_template:
+  delete_not_scheduled: false
+  minimum_items: 2
+  tmdb_collection_details: +200_<<tmdb_collection>>
+
+dynamic_collections:
+  TMDb Collections:
+    remove_prefix: The
+    remove_suffix: Collection
+    type: tmdb_collection

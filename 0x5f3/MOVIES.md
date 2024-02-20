@@ -1,5 +1,5 @@
 ```
-- 1_suggested.yml
+- _suggested.yml
   - Random Movies (English)
   - Recently Added Movies (English)
   - Recently Released Movies (English)
@@ -8,17 +8,21 @@
   - Trending Movies (https://mdblist.com/lists/archivist/movie-trending)
   - Popular Movies (https://mdblist.com/lists/archivist/movie-popular)
   - Top Rated Movies (https://mdblist.com/lists/archivist/movie-top-rated)
+
+- _unwatched.yml
   - Unwatched: Random Movies
   - Unwatched: Recommended Movies
   - Unwatched: Suggested Movies
   - Unwatched: Popular Movies
   - Unwatched: Top Rated Movies
+
+- _watched.yml
   - Most Watched Daily (https://trakt.tv/movies/watched/daily)
   - Most Watched Weekly (https://trakt.tv/movies/watched/weekly)
   - Most Watched Monthly (https://trakt.tv/movies/watched/monthly)
   - Most Watched Yearly (https://trakt.tv/movies/watched/yearly)
 
-- 1_seasonal.yml
+- _seasonal.yml
   - Valentine's Day Movies (02/13-02/15)
   - St. Patrick's Day Movies (03/16-03-18)
   - Easter Moviews (03/22-04/25)
@@ -27,28 +31,28 @@
   - Christmas Movies (12/01-12/31)
   - New Year's Eve Movies (12/26-01-02)
 
-- 1_parental.yml
+- _parental.yml
   - Parental: All (https://mdblist.com/lists/archivist/list-parental)
   - Parental: Random
   - Parental: Recently Added
   - Parental: Recently Released
   - Parental: Top Rated
 
-- 1_documentary.yml
+- _documentary.yml
   - Documentaries: All
   - Documentaries: Random
   - Documentaries: Recently Added
   - Documentaries: Recently Released
   - Documentaries: Top Rated
 
-- 1_standup.yml
+- _standup.yml
   - Stand-up: All (https://mdblist.com/lists/archivist/list-standup)
   - Stand-up: Random
   - Stand-up: Recently Added
   - Stand-up: Recently Released
   - Stand-up: Top Rated
 
-- 2_year_top.yml
+- _year_top.yml
   - Top Rated of 2024
   - Top Rated of 2023
   - Top Rated of 2022
@@ -65,7 +69,7 @@
   - Top Rated of 2011
   - Top Rated of 2010
 
-- 3_decades_top.yml
+- _decades_top.yml
   - Top Rated of the 2020s
   - Top Rated of the 2010s
   - Top Rated of the 2000s
@@ -76,7 +80,7 @@
   - Top Rated of the 1950s
   - Top Rated of the 1940s
 
-- 4_awards.yml
+- _awards.yml
   - Oscar Winners
   - Oscar Nominees
   - Golden Globes Winners
@@ -91,12 +95,13 @@
   - Spirit Awards Winners
   - Razzie Winners
 
-- 5_genre_popular.yml
+- _genre_popular.yml
   - Popular in Action
   - Popular in Adventure
   - Popular in Animation
   - Popular in Biography
   - Popular in Comedy
+  - Popular in Documentary
   - Popular in Drama
   - Popular in Family
   - Popular in Fantasy
@@ -112,12 +117,13 @@
   - Popular in War
   - Popular in Western
 
-- 6_genre_top.yml
+- _genre_top.yml
   - Top Rated in Action
   - Top Rated in Adventure
   - Top Rated in Animation
   - Top Rated in Biography
   - Top Rated in Comedy
+  - Top Rated in Documentary
   - Top Rated in Drama
   - Top Rated in Family
   - Top Rated in Fantasy
@@ -140,7 +146,7 @@
   - Top Rated in Anti-Hero
   - Top Rated in Apocalypse
   - Top Rated in Artifical Intelligence
-  - Top Rated in Assasins
+  - Top Rated in Assassins
   - Top Rated in Betrayal
   - Top Rated in Black Comedy
   - Top Rated in Boxing
@@ -150,14 +156,17 @@
   - Top Rated in Chick-Flick
   - Top Rated in Comics
   - Top Rated in Coming Of Age
+  - Top Rated in Conspiracy
   - Top Rated in Con-Artists
   - Top Rated in Cop
   - Top Rated in Costume Drama
   - Top Rated in Courtroom
   - Top Rated in Cyberpunk
   - Top Rated in Dark Fantasy
+  - Top Rated in Demonic
   - Top Rated in Detective
-  - Top Rated in Distaster
+  - Top Rated in Dinosaurs
+  - Top Rated in Disaster
   - Top Rated in Dragons
   - Top Rated in Dystopian
   - Top Rated in Epics
@@ -192,6 +201,7 @@
   - Top Rated in Pandemic
   - Top Rated in Paranormal
   - Top Rated in Period Drama
+  - Top Rated in Petrolhead
   - Top Rated in Philosophical
   - Top Rated in Political
   - Top Rated in Post-Apocalyptic
@@ -228,12 +238,12 @@
   - Top Rated in Vampires
   - Top Rated in Video Game
   - Top Rated in Werewolves
-  - Top Rated in Whodunit
+  - Top Rated in Whodunit?
   - Top Rated in Wizardry & Witchcraft
   - Top Rated in World War
   - Top Rated in Zombies
 
-- 8_studio.yml
+- _studio.yml
   - Columbia
   - Criterion
   - DC Entertainment
@@ -254,6 +264,6 @@
   - Walt Disney
   - Warner Bros
 
-- 9_collections.yml
+- _collections.yml
   - TMDb Collections
 ```

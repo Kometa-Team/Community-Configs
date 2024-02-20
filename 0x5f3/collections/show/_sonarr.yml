@@ -1,0 +1,9 @@
+## _sonarr.yml
+
+collections:
+  "":
+    build_collection: false
+    mdblist_list:
+    schedule: daily
+    sonarr_add_missing: true
+    sonarr_folder:
