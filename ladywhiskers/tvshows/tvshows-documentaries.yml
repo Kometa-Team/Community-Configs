@@ -9,9 +9,7 @@ templates:
       - poster
     url_poster: <<poster>>
     sync_mode: sync
-    radarr_add_missing: false
-    sonarr_add_missing: false
-    sort_title: "!017_<<collection_name>>"
+    sort_title: "!060_<<collection_name>>"
     collection_order: release.desc
 
 collections:

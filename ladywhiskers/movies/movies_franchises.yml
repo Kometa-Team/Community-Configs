@@ -12,7 +12,6 @@ templates:
     tmdb_movie: <<movie>>
     sync_mode: sync
     collection_order: release
-    sort_title: "!02_<<collection_name>>"
     schedule: monthly(20)
 collections:
   3 Ninjas:
@@ -27,12 +26,6 @@ collections:
   A Nightmare on Elm Street:
     template: {name: Collection, collection: 8581, movie: "6466, 23437"}
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/A%20Nightmare%20on%20Elm%20Street.jpg
-  "Alien / Predator":
-    trakt_list: https://trakt.tv/users/donxy/lists/alien-predator-timeline
-    name_mapping: Alien Predator
-    collection_order: release.asc
-    sort_title: "!02_Alien Predator"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Alien%20Predator.jpg
   All Dogs Go to Heaven:
     template: {name: Collection, collection: 140910}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/All Dogs Go to Heaven.jpg
@@ -90,17 +83,6 @@ collections:
     template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls068623110/
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Cornetto%20Trilogy.jpg
-  DC Animated Universe:
-    trakt_list: https://trakt.tv/users/donxy/lists/dc-animated-movie-universe
-    collection_order: release.asc
-    sort_title: "!02_DC Animated Universe"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/DC%20Universe.jpg
-  DC Extended Universe:
-    trakt_list: https://trakt.tv/users/donxy/lists/dc-extended-universe
-    summary: The DC Extended Universe (DECU) is the fictional shared universe where most stories in American comic book titles published by DC Comics take place. DC 
-    collection_order: release.asc
-    sort_title: "!02_DC Extended Universe"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/DC%20Universe.jpg
   DC SuperHero Girls:
     template: {name: Collection, collection: "477208, 557495"}
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/DC%20Super%20Hero%20Girls.jpg
@@ -122,11 +104,6 @@ collections:
   Evil Dead:
     template: {name: Collection, collection: 1960}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Evil Dead.jpg
-  Fast & Furious:
-    trakt_list: https://trakt.tv/users/vargajoe/lists/fast-and-furious-chronology
-    collection_order: release.asc
-    sort_title: "!02_Fast & Furious"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Fast%20%26%20Furious.jpg
   Fear Street:
     template: {name: Collection, collection: 790370}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Fear Street.jpg
@@ -264,22 +241,12 @@ collections:
     template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls068486735/
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Marx%20Brothers.jpg
-  Marvel Cinematic Universe:
-    trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe
-    collection_order: release.asc
-    sort_title: "!02_Marvel Cinematic Universe"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Marvel%20Cinematic%20Universe.jpg
   Meet the Parents:
     template: {name: Collection, collection: 51509}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Meet the Parents.jpg
   Men In Black:
     template: {name: Collection, collection: 86055}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Men In Black.jpg
-  Middle Earth:
-    trakt_list: https://trakt.tv/users/dybro/lists/lord-of-the-rings
-    collection_order: release.asc
-    sort_title: "!02_Middle Earth"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Middle%20Earth.jpg
   Missing in Action:
     template: {name: Collection, collection: 46512}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Missing in Action.jpg
@@ -351,12 +318,6 @@ collections:
   Return of the Living Dead:
     template: {name: Collection, collection: 101471}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Return of the Living Dead.jpg
-  Rocky / Creed:
-    trakt_list: https://trakt.tv/users/strangerer/lists/rocky
-    name_mapping: Rocky Creed
-    collection_order: release.asc
-    sort_title: "!02_Rocky Creed"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Rocky%20Creed.jpg
   Rugrats:
     template: {name: Collection, collection: 57129}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Rugrats.jpg
@@ -391,16 +352,6 @@ collections:
   Spider-Man:
     template: {name: Collection, collection: "531241, 556, 573436"}
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Spider-Man.jpg 
-  Star Trek:
-    trakt_list: https://trakt.tv/users/arachn0id/lists/star-trek-movies
-    collection_order: release.asc
-    sort_title: "!02_Star Trek"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Star%20Trek.jpg
-  Star Wars:
-    trakt_list: https://trakt.tv/users/zorge88/lists/star-wars
-    collection_order: release.asc
-    sort_title: "!02_Star Wars"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Star%20Wars.jpg
   Stargate:
     template: {name: Collection, collection: 44215, movie: 2164}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Stargate.jpg
@@ -489,11 +440,6 @@ collections:
   The Mighty Ducks:
     template: {name: Collection, collection: 10709}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/The Mighty Ducks.jpg
-  The Mummy:
-    trakt_list: https://trakt.tv/users/rzepkowski/lists/the-mummy-movies
-    collection_order: release.asc
-    sort_title: "!02_The Mummy"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/The%20Mummy.jpg
   The Naked Gun:
     template: {name: Collection, collection: 37139}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/The Naked Gun.jpg
@@ -552,20 +498,10 @@ collections:
   Universal Soldier:
     template: {name: Collection, collection: 10713}
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Universal Soldier.jpg
-  X-Men:
-    trakt_list: https://trakt.tv/users/donxy/lists/x-men-universe
-    collection_order: release.asc
-    sort_title: "!02_X-Men"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/X-Men.jpg
   Wallace & Gromit:
     template: {name: Collection, collection: 529}
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Wallace%20%26%20Gromit.jpg
   Watchmen:
     tmdb_list: https://www.themoviedb.org/list/8196349}
-    sort_title: "!02_Watchmen"
+    sort_title: "!040_Watchmen"
     url_poster: https://raw.githubusercontent.com/WhoDat104/main/Franchises/Watchmen.jpg
-  Wizarding World:
-    trakt_list: https://trakt.tv/users/strangerer/lists/harry-potter    
-    collection_order: release.asc
-    sort_title: "!02_Wizarding World"
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/franchise/Wizarding%20World.jpg
