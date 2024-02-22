@@ -4,11 +4,6 @@ libraries:
       use_separator: false
     collection_files:
       - folder: config/movies
-      - pmm: bafta
-      - pmm: cannes
-      - pmm: oscars
-      - pmm: razzie
-      - pmm: tautulli
       - pmm: actor
         template_variables:
           collection_section: '001'
@@ -19,11 +14,19 @@ libraries:
           sort_by: audience_rating.desc
           title_format: <<key_name>>'s Birthday
           data:
-            depth: 20
-            limit: 100
+            depth: 10
+            limit: 20
           tmdb_birthday:
             this_month: true
+      - pmm: bafta
+      - pmm: cannes
       - pmm: content_rating_au
+      - pmm: continent
+        template_variables:
+          include:
+            - Oceania
+      - pmm: genre
+      - pmm: oscars
       - pmm: other_chart
         template_variables:
           use_anidb: false
@@ -31,11 +34,17 @@ libraries:
           use_pirated: false
           visible_library_commonsense: true
           visible_home_commonsense: true
-          visible_shared_commonsense: true
-      - pmm: continent
+          visible_shared_commonsense: true      - pmm: razzie
+      - pmm: seasonal
         template_variables:
-          include:
-            - Oceania
+          use_patrick: false
+          use_memorial: false
+          schedule_father: range(09/01-09/07)
+          use_independence: false
+          use_labor: false
+          use_veteran: false
+          use_thanksgiving: false
+          use_aapi: false
       - pmm: studio
         template_variables:
           include:
@@ -43,6 +52,8 @@ libraries:
             - DreamWorks Studios
             - DreamWorks Pictures
             - Pixar
+      - pmm: tautulli
+      - pmm: universe
     schedule_overlays: weekly(saturday)
     overlay_files:
       - pmm: commonsense
@@ -100,7 +111,7 @@ libraries:
       use_separator: false
     library_name: TV Shows
     collection_files:
-      - pmm: based
+      - folder: config/tvshows
       - pmm: actor
         template_variables:
           collection_section: '001'
@@ -111,12 +122,17 @@ libraries:
           sort_by: audience_rating.desc
           title_format: <<key_name>>'s Birthday
           data:
-            depth: 20
-            limit: 100
+            depth: 10
+            limit: 20
           tmdb_birthday:
             this_month: true
+      - pmm: based
       - pmm: content_rating_au
-      - pmm: tautulli
+      - pmm: continent
+        template_variables:
+          include:
+            - Oceania
+      - pmm: genre
       - pmm: other_chart
         template_variables:
           use_anidb: false
@@ -125,11 +141,8 @@ libraries:
           visible_library_commonsense: true
           visible_home_commonsense: true
           visible_shared_commonsense: true
-      - pmm: continent
-        template_variables:
-          include:
-            - Oceania
-      - folder: config/tvshows
+      - pmm: tautulli
+      - pmm: universe
     schedule_overlays: weekly(friday)
     overlay_files:
       - pmm: commonsense

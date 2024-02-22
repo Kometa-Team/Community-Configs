@@ -90,6 +90,9 @@ libraries:
 #        mass_genre_update: imdb
 #      - schedule: weekly(saturday)
 #        mass_poster_update:
+#          source: tmdb
+#          seasons: true
+#          episodes: false
 #    collection_files:
 #    - file: config/collections/show/_maintenance.yml
 #    - file: config/collections/show/_sonarr.yml

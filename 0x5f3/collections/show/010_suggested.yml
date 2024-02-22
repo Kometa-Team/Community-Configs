@@ -110,8 +110,7 @@ collections:
     visible_library: true
     template: {
                     name: plex,
-                    num: "0",
-                    pos: "010"
+                    num: "0"
                 }
     smart_filter:
       any:

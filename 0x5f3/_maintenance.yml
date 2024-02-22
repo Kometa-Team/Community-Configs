@@ -50,6 +50,9 @@ libraries:
 #        mass_genre_update: imdb
 #      - schedule: weekly(friday)
 #        mass_poster_update:
+#          source: tmdb
+#          seasons: true
+#          episodes: false
 #    collection_files:
 #    - file: config/collections/show/_maintenance.yml
 settings:

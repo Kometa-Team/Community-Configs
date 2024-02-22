@@ -3,6 +3,7 @@
 templates:
   trakt:
     collection_mode: hide
+
     delete_not_scheduled: false
     sort_title: "+030_<<num>>_<<collection_name>>"
     sync_mode: sync
@@ -54,7 +55,6 @@ templates:
 
 collections:
   "Most Watched Daily":
-    collection_order: custom
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_watched/watched_daily.png
     schedule: daily
     summary: "Movies trending across the internet"
@@ -70,7 +70,6 @@ collections:
       time_period: daily
 
   "Most Watched Weekly":
-    collection_order: custom
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_watched/watched_weekly.png
     schedule: daily
     summary: "Movies trending across the internet"
@@ -86,7 +85,6 @@ collections:
       time_period: weekly
 
   "Most Watched Monthly":
-    collection_order: custom
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_watched/watched_monthly.png
     schedule: weekly(sunday)
     summary: "Movies trending across the internet"
@@ -102,7 +100,6 @@ collections:
       time_period: monthly
 
   "Most Watched Yearly":
-    collection_order: custom
     url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_watched/watched_yearly.png
     schedule: weekly(sunday)
     summary: "Movies trending across the internet"
