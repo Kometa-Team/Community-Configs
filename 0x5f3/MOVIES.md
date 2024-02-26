@@ -146,10 +146,10 @@
   - Top Rated in Animatronic
   - Top Rated in Anti-Hero
   - Top Rated in Apocalypse
-  - Top Rated in Artifical Intelligence
+  - Top Rated in Artificial Intelligence
   - Top Rated in Assassins
   - Top Rated in Betrayal
-  - Top Rated in Black Comedy
+  - Top Rated in Blaxploitation
   - Top Rated in Boxing
   - Top Rated in Bugs
   - Top Rated in Cannibals
@@ -163,6 +163,7 @@
   - Top Rated in Costume Drama
   - Top Rated in Courtroom
   - Top Rated in Cyberpunk
+  - Top Rated in Dark Comedy
   - Top Rated in Dark Fantasy
   - Top Rated in Demonic
   - Top Rated in Detective
@@ -187,6 +188,7 @@
   - Top Rated in Historical Event
   - Top Rated in Hostage
   - Top Rated in Hustle
+  - Top Rated in LGBTQ+
   - Top Rated in Martial-Arts
   - Top Rated in Medical
   - Top Rated in Medieval
@@ -199,11 +201,13 @@
   - Top Rated in Naval
   - Top Rated in Ninjas
   - Top Rated in Novel
+  - Top Rated in Nunsploitation
   - Top Rated in Occult
   - Top Rated in Outerspace
   - Top Rated in Outlaw
   - Top Rated in Pandemic
   - Top Rated in Paranormal
+  - Top Rated in Parody
   - Top Rated in Period Drama
   - Top Rated in Petrolhead
   - Top Rated in Philosophical
