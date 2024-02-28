@@ -14,19 +14,19 @@ libraries:
     - file: config/collections/movie/030_watched.yml
     - file: config/collections/movie/040_seasonal.yml
     - file: config/collections/movie/080_year_top.yml
-    - schedule: weekly(monday)
+      schedule: weekly(monday)
     - file: config/collections/movie/090_decades_top.yml
-    - schedule: weekly(tuesday)
+      schedule: weekly(tuesday)
 #    - file: config/collections/movie/100_awards.yml
-#    - schedule: weekly(wednesday)
+#      schedule: weekly(wednesday)
     - file: config/collections/movie/110_genre_popular.yml
     - file: config/collections/movie/120_genre_top.yml
-    - schedule: weekly(thursday)
+      schedule: weekly(thursday)
 #    - file: config/collections/movie/130_subgenre_top.yml
 #    - file: config/collections/movie/140_studio.yml
-#    - schedule: weekly(wednesday)
+#      schedule: weekly(wednesday)
 #    - file: config/collections/movie/200_collections.yml
-#    - schedule: weekly(sunday)
+#      schedule: weekly(sunday)
 #    - file: config/collections/movie/050_parental_sync.yml
 #    - file: config/collections/movie/050_parental.yml
 #    - file: config/collections/movie/060_documentary.yml
