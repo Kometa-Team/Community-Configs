@@ -2,9 +2,8 @@ libraries:
   Movies:
     template_variables:
       use_separator: false
-    metadata_path:
+    collection_files:
       - folder: config/movies
-      - git: bullmoose20/movies_refresh
       - pmm: actor
         template_variables:
           collection_section: '001'
@@ -15,11 +14,19 @@ libraries:
           sort_by: audience_rating.desc
           title_format: <<key_name>>'s Birthday
           data:
-            depth: 20
-            limit: 100
+            depth: 10
+            limit: 20
           tmdb_birthday:
             this_month: true
-      - pmm: content_rating_cs
+      - pmm: bafta
+      - pmm: cannes
+      - pmm: content_rating_au
+      - pmm: continent
+        template_variables:
+          include:
+            - Oceania
+      - pmm: genre
+      - pmm: oscars
       - pmm: other_chart
         template_variables:
           use_anidb: false
@@ -27,11 +34,17 @@ libraries:
           use_pirated: false
           visible_library_commonsense: true
           visible_home_commonsense: true
-          visible_shared_commonsense: true
-      - pmm: continent
+          visible_shared_commonsense: true      - pmm: razzie
+      - pmm: seasonal
         template_variables:
-          include:
-            - Oceania
+          use_patrick: false
+          use_memorial: false
+          schedule_father: range(09/01-09/07)
+          use_independence: false
+          use_labor: false
+          use_veteran: false
+          use_thanksgiving: false
+          use_aapi: false
       - pmm: studio
         template_variables:
           include:
@@ -39,16 +52,10 @@ libraries:
             - DreamWorks Studios
             - DreamWorks Pictures
             - Pixar
-            - 
-      - pmm: franchise
-        template_variables:
-          minimum_items: 2
-          delete_below_minimum: true
+      - pmm: tautulli
       - pmm: universe
-    overlay_path:
-      - schedule: weekly(saturday)
-      - remove_overlays: false
-      - reapply_overlays: true
+    schedule_overlays: weekly(saturday)
+    overlay_files:
       - pmm: commonsense
       - pmm: mediastinger
       - pmm: ratings
@@ -67,6 +74,9 @@ libraries:
           rating3_font_size: 70
           horizontal_position: right
       - pmm: resolution
+        template_variables:
+          use_resolution: false
+          use_edition: true
       - pmm: ribbon
       - pmm: versions
     settings:
@@ -74,33 +84,34 @@ libraries:
         - config/assets/Movies/
       prioritize_assets: false
     operations:
-      split_duplicates: false
-      assets_for_all: true
-      delete_collections:
-        configured: false
-        managed: true
-      mass_user_rating_update: mdb_tomatoes
-      mass_critic_rating_update: imdb
-      mass_audience_rating_update: tmdb
-      mass_genre_update: omdb
-      mass_content_rating_update: mdb_commonsense
-      mass_originally_available_update: tmdb
-      mass_imdb_parental_labels: none
-      metadata_backup:
-        path: config/metadata/backups/Movie_Backup.yml
-        sync_tags: true
-        add_blank_entries: false
-      genre_mapper:
-        Sci-Fi: Science Fiction
-        Action & Adventure: Action
+      - schedule: daily
+        delete_collections:
+          configured: false
+          managed: true
+        metadata_backup:
+          path: config/backups/Movies_Metadata_Backup.yml
+          sync_tags: true
+          add_blank_entries: false
+        genre_mapper:
+          Sci-Fi: Science Fiction
+          Action & Adventure: Action
+      - schedule: weekly(friday)
+        mass_user_rating_update: mdb_tomatoes
+        mass_critic_rating_update: imdb
+        mass_audience_rating_update: tmdb
+        mass_genre_update: omdb
+        mass_content_rating_update: mdb_commonsense
+        mass_originally_available_update: tmdb
+        mass_imdb_parental_labels: none
+        split_duplicates: false
+        assets_for_all: true
   TV Shows:
     report_path: config/missing/TV_report.yml
     template_variables:
       use_separator: false
     library_name: TV Shows
-    metadata_path:
-      - pmm: based
- #     - git: bullmoose20/tv_refresh
+    collection_files:
+      - folder: config/tvshows
       - pmm: actor
         template_variables:
           collection_section: '001'
@@ -111,11 +122,17 @@ libraries:
           sort_by: audience_rating.desc
           title_format: <<key_name>>'s Birthday
           data:
-            depth: 20
-            limit: 100
+            depth: 10
+            limit: 20
           tmdb_birthday:
             this_month: true
-      - pmm: content_rating_cs
+      - pmm: based
+      - pmm: content_rating_au
+      - pmm: continent
+        template_variables:
+          include:
+            - Oceania
+      - pmm: genre
       - pmm: other_chart
         template_variables:
           use_anidb: false
@@ -124,27 +141,17 @@ libraries:
           visible_library_commonsense: true
           visible_home_commonsense: true
           visible_shared_commonsense: true
+      - pmm: tautulli
       - pmm: universe
-      - pmm: continent
-        template_variables:
-          include:
-            - Oceania
-      - pmm: franchise
-        template_variables:
-          minimum_items: 2
-          delete_below_minimum: true
-      - folder: config/tvshows
-    overlay_path:
-      - schedule: weekly(friday)
-      - remove_overlays: false
-      - reapply_overlays: true
+    schedule_overlays: weekly(friday)
+    overlay_files:
       - pmm: commonsense
       - pmm: commonsense
         template_variables:
-          overlay_level: season
+          builder_level: season
       - pmm: commonsense
         template_variables:
-          overlay_level: episode
+          builder_level: episode
       - pmm: ratings
         template_variables:
           rating1: user
@@ -171,64 +178,54 @@ libraries:
           rating2_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
           rating2_font_size: 70
           horizontal_position: right
-          overlay_level: episode
+          builder_level: episode
       - pmm: ribbon
       - pmm: runtimes
         template_variables:
-          overlay_level: episode
+          builder_level: episode
       - pmm: status
       - pmm: versions
         template_variables:
-          overlay_level: show
+          builder_level: show
       - pmm: versions
         template_variables:
-          overlay_level: season
+          builder_level: season
       - pmm: ribbon
     settings:
       asset_directory:
         - config/assets/TV Shows/
       prioritize_assets: false
     operations:
-      split_duplicates: false
-      assets_for_all: true
-      delete_collections:
-        configured: false
-        managed: true
-      mass_user_rating_update: mdb_tomatoes
-      mass_critic_rating_update: imdb
-      mass_audience_rating_update: tmdb
-      mass_genre_update: omdb
-      mass_content_rating_update: mdb_commonsense
-      mass_originally_available_update: tmdb
-      mass_episode_critic_rating_update: imdb
-      mass_episode_audience_rating_update: tmdb
-      mass_imdb_parental_labels: none
-      metadata_backup:
-        path: config/metadata/backups/TVShows_Backup.yml
-        sync_tags: true
+      - schedule: daily
+        delete_collections:
+          configured: false
+          managed: true
+        metadata_backup:
+          path: config/backups/Movies_Metadata_Backup.yml
+          sync_tags: true
         add_blank_entries: false
-      genre_mapper:
-        Sci-Fi: Science Fiction
-        Action & Adventure: Action
+        genre_mapper:
+          Sci-Fi: Science Fiction
+          Action & Adventure: Action
+      - schedule: weekly(wednesday)
+        mass_user_rating_update: mdb_tomatoes
+        mass_critic_rating_update: imdb
+        mass_audience_rating_update: tmdb
+        mass_genre_update: omdb
+      - schedule: weekly (thursday)
+        mass_content_rating_update: mdb_commonsense
+        mass_originally_available_update: tmdb
+        mass_episode_critic_rating_update: imdb
+        mass_episode_audience_rating_update: tmdb
+        mass_imdb_parental_labels: none
+        split_duplicates: false
+        assets_for_all: true
   Music:
     schedule: weekly (sunday)
+    remove_overlays: true
     library_name: Music
-    metadata_path:
-      - folder: config/music
-    operations:
-      delete_collections:
-        less: 20
-      metadata_backup:
-        path: config/metadata/backups/Music_Backup.yml
-        sync_tags: true
-        add_blank_entries: false
-    overlay_path:
-      - schedule: weekly(saturday)
-      - remove_overlays: false
-      - reapply_overlays: false
-      - pmm: audio_codec
-        template_variables:
-          overlay_level: album
+    #collection_files:
+    #  - folder: config/music
 playlist_files:
   - pmm: playlist
     template_variables:
@@ -238,7 +235,7 @@ settings:
   cache: true
   cache_expiration: 60
   asset_directory: config/assets
-  missing_path: config/missing
+  report_path: config/missing
   asset_folders: true
   asset_depth: 1
   create_asset_folders: false
@@ -250,7 +247,7 @@ settings:
   show_asset_not_needed: false
   sync_mode: sync
   minimum_items: 1
-  default_collection_order:
+  default_collection_order: null
   delete_below_minimum: true
   delete_not_scheduled: false
   run_again_delay: 2
@@ -264,15 +261,20 @@ settings:
   show_missing_assets: false
   save_report: false
   tvdb_language: eng
-  ignore_ids:
-  ignore_imdb_ids:
+  ignore_ids: null
+  ignore_imdb_ids: null
   item_refresh_delay: 0
   playlist_sync_to_user: all
-  playlist_exclude_users:
+  playlist_exclude_users: null
   playlist_report: false
   verify_ssl: true
-  custom_repo:
+  custom_repo: null
   check_nightly: true
+  run_order:
+    - operations
+    - metadata
+    - collections
+    - overlays
 webhooks:
   error: notifiarr
   version: notifiarr
@@ -304,11 +306,6 @@ mdblist:
   cache_expiration: 600
 notifiarr:
   apikey: [REDACTED]
-anidb:
-  username:
-  password:
-  language: en
-  client:
 radarr:
   url: http://localhost:7878
   token: [REDACTED]
@@ -353,11 +350,3 @@ trakt:
     refresh_token: [REDACTED]
     scope: [REDACTED]
     created_at: [REDACTED]
-mal:
-  client_id:
-  client_secret:
-  authorization:
-    access_token:
-    token_type:
-    expires_in:
-    refresh_token:

@@ -1,14 +1,60 @@
-## _debug.yml
+## _maintenance.yml
 
 libraries:
   Movies:
     library_type: movie
+    operations:
+      - schedule: daily
+        delete_unmanaged_collections: false
+#      - schedule: weekly(wednesday)
+#        mass_audience_rating_update: mdb_average
+#        mass_critic_rating_update: mdb_metacritic
+#        mass_user_rating_update: imdb
+#        mass_content_rating_update: mdb
+#        mass_genre_update: imdb
+#      - schedule: weekly(wednesday)
+#        mass_poster_update:
+#          source: tmdb
+#          seasons: false
+#          episodes: false
     collection_files:
-    - file: config/collections/movie/_debug.yml
+    - file: config/collections/movie/_maintenance.yml
   TV:
     library_type: show
+    operations:
+      - schedule: daily
+        delete_unmanaged_collections: false
+#      - schedule: weekly(thursday)
+#        mass_audience_rating_update: mdb_average
+#        mass_critic_rating_update: mdb_metacritic
+#        mass_user_rating_update: imdb
+#        mass_content_rating_update: mdb
+#        mass_genre_update: imdb
+#      - schedule: weekly(thursday)
+#        mass_poster_update:
+#          source: tmdb
+#          seasons: true
+#          episodes: false
     collection_files:
-    - file: config/collections/show/_debug.yml
+    - file: config/collections/show/_maintenance.yml
+#  KIDS:
+#    library_type: show
+#    operations:
+#      - schedule: daily
+#        delete_unmanaged_collections: false
+#      - schedule: weekly(friday)
+#        mass_audience_rating_update: mdb_average
+#        mass_critic_rating_update: mdb_metacritic
+#        mass_user_rating_update: imdb
+#        mass_content_rating_update: mdb
+#        mass_genre_update: imdb
+#      - schedule: weekly(friday)
+#        mass_poster_update:
+#          source: tmdb
+#          seasons: true
+#          episodes: false
+#    collection_files:
+#    - file: config/collections/show/_maintenance.yml
 settings:
   assets_for_all: false
   asset_depth: 0
@@ -28,7 +74,7 @@ settings:
   ignore_imdb_ids:
   item_refresh: false
   item_refresh_delay: 0
-  minimum_items: 2
+  minimum_items: 1
   missing_only_released: false
   only_filter_missing: false
   playlist_exclude_users:
@@ -52,13 +98,13 @@ settings:
   show_options: false
   show_unconfigured: true
   show_unmanaged: false
-  sync_mode: sync
+  sync_mode: append
   tvdb_language: default
   verify_ssl: false
 plex:
   url:
   token:
-  timeout: 30
+  timeout: 180
   clean_bundles: false
   empty_trash: false
   optimize: false
@@ -96,11 +142,11 @@ sonarr:
 tmdb:
   apikey:
   language: en
-  cache_expiration: 1
+  cache_expiration: 60
   region:
 mdblist:
   apikey:
-  cache_expiration: 1
+  cache_expiration: 60
 trakt:
   client_id:
   client_secret:

@@ -1,6 +1,8 @@
-This config will populate the following:
-
-- !Suggested (random, recently added|released, suggested, trending, popular, top-rated, most watched)
+#### This config will populate the following:
+```
+- !Suggested (random, recently added|released, recommended, suggested, trending, popular, top-rated)
+- Unwatched (random, recommended, suggested, popular, top-rated)
+- !Watched (most watched daily|weekly|monthly|yearly)
 - !Seasonal *
 - Parental
 - Documentaries
@@ -15,43 +17,35 @@ This config will populate the following:
 - TMDB collections *
 - Network ^
 
-( ! = enabled by default)
-( * = movies only )
-( ^ = shows only )
-
-For more details on what each section contains: [movies](MOVIES.md) | [shows](SHOWS.md)
-<br/>
-
-**Requirements:**
-
- - APP/API keys for: mdblist, tmdb, trakt
-
-**Install:**
-
-clone into PMM's root directory:
+(! = enabled by default)
+(* = movies only)
+(^ = shows only)
+```
+###### For more details on what each section contains: [movies](MOVIES.md) | [shows](SHOWS.md)
+#### Requirements:
+```
+ - API keys for: mdblist, tmdb, trakt
+```
+#### Install:
 ```
 git clone https://github.com/0x5f3/pmm.config config
 ```
+#### Usage:
 
-**Usage:**
-
-The initial process for populating collections:
+###### The initial process for populating collections:
 ```
-python plex_meta_manager.py --config config/movie.yml --collections-only --run --ignore-schedules
-python plex_meta_manager.py --config config/show.yml --collections-only --run --ignore-schedules
+docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager:nightly --config config/config.yml --run --ignore-schedules
 ```
-Following a successful initial run:
-
+###### Following a successful initial run:
 ```
-python plex_meta_manager.py --config config/movie.yml --collections-only --run
-python plex_meta_manager.py --config config/show.yml --collections-only --run
+docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager:nightly --config config/config.yml --run
 ```
-<br/>
-A successful run will result in something similar to this:
-<br/>
-<br/>
-
+###### Notes:
+``
+The parental configuration adds a 'Parental' label to their collections and all items included. The label is capable of being used with 'Allow Only Labels' in a user's restriction settings.
+``
+#
+#
+###### A successful run will result in something similar to this:
 ![movies](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_movies.png)
-<br/>
-  
 ![shows](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_shows.png)
