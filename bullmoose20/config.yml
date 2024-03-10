@@ -169,10 +169,10 @@ libraries:
     - pmm: decade                                   # Decade the media item was released
     - git: bullmoose20/separator_franchise          # Separator for franchise
       template_variables:
-        collection_section: "035"                   # Set to "035" to be right before universe. Should be the same here and below
+        collection_section: '035'                   # Set to "035" to be right before universe. Should be the same here and below
     - pmm: franchise                                # https://metamanager.wiki/en/latest/defaults/movie/franchise
       template_variables:
-        collection_section: "035"                   # Set to "035" to be right before universe. Should be the same here and above
+        collection_section: '035'                   # Set to "035" to be right before universe. Should be the same here and above
     - pmm: seasonal                                 # Christmas, Halloween, etc.
       template_variables:                           # Canadian Thankgsgiving is a different date range. Otherwise, I want to ALWAYS see the seasonal
         schedule_years: daily
@@ -226,8 +226,8 @@ libraries:
         # font_color: "#FFFFFF00"
     - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       template_variables:
-        back_color: "#FFFFFF00"
-        font_color: "#FFFFFF00"
+        back_color: '#FFFFFF00'
+        font_color: '#FFFFFF00'
         use_subtitles: true
     - pmm: mediastinger                             # Mediastinger overlay when the media item contains a stinger at the end of the movie/show or during the credits
       # template_variables:
@@ -295,18 +295,18 @@ libraries:
       mass_critic_rating_update: imdb               # Update critic ratings with imdb
       mass_audience_rating_update: tmdb             # Update audience ratings with tmdb
       mass_genre_update:
-        - tmdb                                      # Update all genres from tmdb
-        - imdb                                      # Update all genres from imdb if not from tmdb
-        - tvdb                                      # Update all genres from tvdb if not from imdb
+      - tmdb                                        # Update all genres from tmdb
+      - imdb                                        # Update all genres from imdb if not from tmdb
+      - tvdb                                        # Update all genres from tvdb if not from imdb
       mass_content_rating_update:
-        - mdb_commonsense                           # Changes Content Rating to "1", "2" etc. to specify appropriate age
-        - omdb                                      # Changes Content Rating from omdb if not found on mdb_commonsense
+      - mdb_commonsense                             # Changes Content Rating to "1", "2" etc. to specify appropriate age
+      - omdb                                        # Changes Content Rating from omdb if not found on mdb_commonsense
       mass_studio_update:
-        - tmdb                                      # Update all studios from tmdb
-      mass_originally_available_update:             
-        - tmdb                                      # Update all original available date from tmdb
-        - tvdb                                      # Update all original available date from tvdb if not from tmdb
-        - omdb                                      # Update all original available date from omdb(imdb) if not from tvdb
+      - tmdb                                        # Update all studios from tmdb
+      mass_originally_available_update:
+      - tmdb                                        # Update all original available date from tmdb
+      - tvdb                                        # Update all original available date from tvdb if not from tmdb
+      - omdb                                        # Update all original available date from omdb(imdb) if not from tvdb
       mass_imdb_parental_labels: none               # Apply all Parental Labels with a value of None, Mild, Moderate, or Severe to match IMDb parental guide
       # mass_poster_update: tmdb                      # Resets posters to tmdb, plex, locked, unlock which is useful to remove all overlays when running with -r -op
 
@@ -410,10 +410,10 @@ libraries:
     - pmm: decade                                   # Decade the media item was released
     - git: bullmoose20/separator_franchise          # Separator for franchise
       template_variables:
-        collection_section: "035"                   # Set to "035" to be right before universe. Should be the same here and below
+        collection_section: '035'                   # Set to "035" to be right before universe. Should be the same here and below
     - pmm: franchise                                # https://metamanager.wiki/en/latest/defaults/movie/franchise
       template_variables:
-        collection_section: "035"                   # Set to "035" to be right before universe. Should be the same here and above
+        collection_section: '035'                   # Set to "035" to be right before universe. Should be the same here and above
     - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
@@ -593,10 +593,10 @@ libraries:
         back_width: 1100
         font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
         font_size: 60
-        back_color_airing: "#016920"
-        back_color_returning: "#81007F"
-        back_color_canceled: "#B52222"
-        back_color_ended: "#000847"
+        back_color_airing: '#016920'
+        back_color_returning: '#81007F'
+        back_color_canceled: '#B52222'
+        back_color_ended: '#000847'
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
       # template_variables:
@@ -637,18 +637,18 @@ libraries:
       mass_critic_rating_update: imdb               # Update critic ratings with imdb
       mass_audience_rating_update: tmdb             # Update audience ratings with tmdb
       mass_genre_update:
-        - tmdb                                      # Update all genres from tmdb
-        - imdb                                      # Update all genres from imdb if not from tmdb
-        - tvdb                                      # Update all genres from tvdb if not from imdb
+      - tmdb                                        # Update all genres from tmdb
+      - imdb                                        # Update all genres from imdb if not from tmdb
+      - tvdb                                        # Update all genres from tvdb if not from imdb
       mass_content_rating_update:
-        - mdb_commonsense                           # Changes Content Rating to "1", "2" etc. to specify appropriate age
-        - omdb                                      # Changes Content Rating from omdb if not found on mdb_commonsense
+      - mdb_commonsense                             # Changes Content Rating to "1", "2" etc. to specify appropriate age
+      - omdb                                        # Changes Content Rating from omdb if not found on mdb_commonsense
       mass_studio_update:
-        - tmdb                                      # Update all studios from tmdb
-      mass_originally_available_update:             
-        - tmdb                                      # Update all original available date from tmdb
-        - tvdb                                      # Update all original available date from tvdb if not from tmdb
-        - omdb                                      # Update all original available date from omdb(imdb) if not from tvdb
+      - tmdb                                        # Update all studios from tmdb
+      mass_originally_available_update:
+      - tmdb                                        # Update all original available date from tmdb
+      - tvdb                                        # Update all original available date from tvdb if not from tmdb
+      - omdb                                        # Update all original available date from omdb(imdb) if not from tvdb
       mass_episode_critic_rating_update: imdb       # Update critic ratings with imdb for episodes
       mass_episode_audience_rating_update: tmdb     # Update audience ratings with tmdb for episodes
       mass_imdb_parental_labels: none               # Apply all Parental Labels with a value of None, Mild, Moderate, or Severe to match IMDb parental guide
@@ -715,6 +715,7 @@ plex:                                               # Can be individually specif
   empty_trash: true
   optimize: true
   db_cache: 2048                                    # 2048 MB is 2GB which is what I use. Adjust for your system as 2048 MB (2 GB) is probably a good starting point compared to the default Plex value of 40 MB
+  verify_ssl:
 tmdb:                                               # REQUIRED for the script to run
   apikey: (redacted)
   language: en
