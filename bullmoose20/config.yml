@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager/nightly/json-schema/config-schema.json
 ### Highly recommend using Visual Studio Code with indent-rainbow by oderwat extension and YAML by Red Hat extension. VSC will also leverage the above link to enhance pmm yml edits.
-### Must be on Version 1.20.0-nightly30 or greater
+### Must be on Version 1.20.0-nightly34 or greater
 libraries:
   Movies:                                           # Must match a library name in your Plex
     report_path: config/missing/Movies_report.yml
@@ -93,7 +93,6 @@ libraries:
     - pmm: tmdb                                     # TMDb Charts (Popular, Trending, etc.)
     - pmm: trakt                                    # Trakt Charts (Popular, Trending, etc.)
     - pmm: basic                                    # Some basic chart collections based on recently released media in your library
-    - pmm: flixpatrol                               # Flixpatrol Charts (Popular, Trending, etc.)    - pmm: basic                                    # Some basic chart collections based on recently released media in your library
     - pmm: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
     # - file: /config/metadata/both/birthday          # Actor birthdays
     - pmm: actor
@@ -140,11 +139,12 @@ libraries:
           depth: 1
           limit: 15
     - pmm: audio_language                           # English, French, Arabic, German, etc. audio language 
-    - pmm: content_rating_au                        # Choose content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_cs                        # Choose content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_de                        # Choose content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_us                        # Choose content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_uk                        # Choose content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_nz                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_au                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_cs                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_de                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_us                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_uk                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
     - pmm: content_rating_mal                       # Choose content_rating_mal for anime ratings
     - pmm: genre                                    # Action, Comedy, Drama, etc.
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
@@ -175,19 +175,25 @@ libraries:
         collection_section: "035"                   # Set to "035" to be right before universe. Should be the same here and above
     - pmm: seasonal                                 # Christmas, Halloween, etc.
       template_variables:                           # Canadian Thankgsgiving is a different date range. Otherwise, I want to ALWAYS see the seasonal
-        schedule_independence: daily
-        schedule_easter: daily
+        schedule_years: daily
         schedule_valentine: daily
         schedule_patrick: daily
-        schedule_thanksgiving: range(10/01-10/31)
-        schedule_halloween: daily
-        schedule_christmas: daily
-        schedule_years: daily
+        schedule_easter: daily
         schedule_mother: daily
         schedule_memorial: daily
         schedule_father: daily
+        schedule_independence: daily
         schedule_labor: daily
+        schedule_halloween: daily
         schedule_veteran: daily
+        # schedule_thanksgiving: range(10/01-10/31)
+        schedule_thanksgiving: daily
+        schedule_christmas: daily
+        schedule_aapi: daily
+        schedule_disabilities: daily
+        schedule_black_history: daily
+        schedule_lgbtq: daily
+        schedule_latinx: daily
         schedule_women: daily
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
@@ -195,6 +201,8 @@ libraries:
     - pmm: aspect                                   # Creates overlays based on aspect ratio of media item 
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2
+    ################### CONTENT RATING SECTION ###################
+    # - pmm: content_rating_nz                        # NZ content ratings
     # - pmm: content_rating_au                        # AU content ratings
       # template_variables:
         # horizontal_align: left
@@ -210,10 +218,8 @@ libraries:
     # - pmm: content_rating_uk                        # UK BBFC content ratings
     - pmm: content_rating_us_movie                  # US MPAA content ratings
     # - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
+    ################### CONTENT RATING SECTION END ###############
     # - pmm: direct_play                              # Show direct play only overlay
-    - pmm: flixpatrol                               # Top 10 flixpatrol for 'this_year', positioned on the left
-      template_variables:
-        position: left
     - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       # template_variables:
         # back_color: "#FFFFFF00"
@@ -288,9 +294,19 @@ libraries:
       mass_user_rating_update: mdb_tomatoes         # Update user ratings with mdb_tomatoes
       mass_critic_rating_update: imdb               # Update critic ratings with imdb
       mass_audience_rating_update: tmdb             # Update audience ratings with tmdb
-      mass_genre_update: tmdb                       # Update all genres from tmdb
-      mass_content_rating_update: mdb_commonsense   # Changes Content Rating to "1", "2" etc. to specify appropriate age
-      mass_originally_available_update: tmdb        # Update all original available date from tmdb
+      mass_genre_update:
+        - tmdb                                      # Update all genres from tmdb
+        - imdb                                      # Update all genres from imdb if not from tmdb
+        - tvdb                                      # Update all genres from tvdb if not from imdb
+      mass_content_rating_update:
+        - mdb_commonsense                           # Changes Content Rating to "1", "2" etc. to specify appropriate age
+        - omdb                                      # Changes Content Rating from omdb if not found on mdb_commonsense
+      mass_studio_update:
+        - tmdb                                      # Update all studios from tmdb
+      mass_originally_available_update:             
+        - tmdb                                      # Update all original available date from tmdb
+        - tvdb                                      # Update all original available date from tvdb if not from tmdb
+        - omdb                                      # Update all original available date from omdb(imdb) if not from tvdb
       mass_imdb_parental_labels: none               # Apply all Parental Labels with a value of None, Mild, Moderate, or Severe to match IMDb parental guide
       # mass_poster_update: tmdb                      # Resets posters to tmdb, plex, locked, unlock which is useful to remove all overlays when running with -r -op
 
@@ -337,7 +353,6 @@ libraries:
     - pmm: tmdb                                     # TMDb Charts (Popular, Trending, etc.)
     - pmm: trakt                                    # Trakt Charts (Popular, Trending, etc.)
     - pmm: basic                                    # Some basic chart collections based on recently released media in your library
-    - pmm: flixpatrol                               # Flixpatrol Charts (Popular, Trending, etc.)    - pmm: basic                                    # Some basic chart collections based on recently released media in your library
     - pmm: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
     # - file: /config/metadata/both/birthday          # Actor birthdays
     - pmm: actor
@@ -365,11 +380,12 @@ libraries:
           depth: 1
           limit: 15
     - pmm: audio_language                           # English, French, Arabic, German, etc. audio language 
-    - pmm: content_rating_au                        # Choose content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_cs                        # Choose content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_de                        # Choose content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_us                        # Choose content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_uk                        # Choose content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_nz                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_au                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_cs                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_de                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_us                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - pmm: content_rating_uk                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
     - pmm: content_rating_mal                       # Choose content_rating_mal for anime ratings
     - pmm: genre                                    # Action, Comedy, Drama, etc.
     - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
@@ -418,6 +434,14 @@ libraries:
     - pmm: audio_codec
       template_variables:
         builder_level: episode
+    ################### CONTENT RATING SECTION ###################
+    # - pmm: content_rating_nz                        # NZ content ratings
+    # - pmm: content_rating_nz                        # NZ content ratings
+      # template_variables:
+        # builder_level: season
+    # - pmm: content_rating_nz                        # NZ content ratings
+      # template_variables:
+        # builder_level: episode
     # - pmm: content_rating_au                        # AU content ratings
     # - pmm: content_rating_au                        # AU content ratings
       # template_variables:
@@ -453,6 +477,7 @@ libraries:
     # - pmm: commonsense
       # template_variables:
         # builder_level: episode
+    ################### CONTENT RATING SECTION END ###############
     # - pmm: direct_play
     # - pmm: direct_play
       # template_variables:
@@ -471,9 +496,6 @@ libraries:
     - pmm: episode_info                             # SE##E## information in bottom right and works with builder_level episode
       template_variables:
         builder_level: episode
-    - pmm: flixpatrol                               # Top 10 flixpatrol for 'this_year', positioned on the left and works with builder_level show
-      template_variables:
-        position: left
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2 and works with builder_level show, episode, and season
     - pmm: language_count
       template_variables:
@@ -614,9 +636,19 @@ libraries:
       mass_user_rating_update: mdb_tomatoes         # Update user ratings with mdb_tomatoes
       mass_critic_rating_update: imdb               # Update critic ratings with imdb
       mass_audience_rating_update: tmdb             # Update audience ratings with tmdb
-      mass_genre_update: tmdb                       # Update all genres from tmdb
-      mass_content_rating_update: mdb_commonsense   # Changes Content Rating to "1", "2" etc. to specify appropriate age
-      mass_originally_available_update: tmdb        # Update all original available date from tmdb
+      mass_genre_update:
+        - tmdb                                      # Update all genres from tmdb
+        - imdb                                      # Update all genres from imdb if not from tmdb
+        - tvdb                                      # Update all genres from tvdb if not from imdb
+      mass_content_rating_update:
+        - mdb_commonsense                           # Changes Content Rating to "1", "2" etc. to specify appropriate age
+        - omdb                                      # Changes Content Rating from omdb if not found on mdb_commonsense
+      mass_studio_update:
+        - tmdb                                      # Update all studios from tmdb
+      mass_originally_available_update:             
+        - tmdb                                      # Update all original available date from tmdb
+        - tvdb                                      # Update all original available date from tvdb if not from tmdb
+        - omdb                                      # Update all original available date from omdb(imdb) if not from tvdb
       mass_episode_critic_rating_update: imdb       # Update critic ratings with imdb for episodes
       mass_episode_audience_rating_update: tmdb     # Update audience ratings with tmdb for episodes
       mass_imdb_parental_labels: none               # Apply all Parental Labels with a value of None, Mild, Moderate, or Severe to match IMDb parental guide
