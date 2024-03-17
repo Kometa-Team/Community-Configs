@@ -199,6 +199,10 @@ libraries:
     - pmm: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
     overlay_files:                                  # These files contain overlays: attributes
     - pmm: aspect                                   # Creates overlays based on aspect ratio of media item 
+      template_variables:
+        horizontal_align: left
+        vertical_align:  top
+        vertical_offset: 517
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2
     ################### CONTENT RATING SECTION ###################
@@ -217,6 +221,10 @@ libraries:
     # - pmm: content_rating_de                        # DE FSK content ratings
     # - pmm: content_rating_uk                        # UK BBFC content ratings
     - pmm: content_rating_us_movie                  # US MPAA content ratings
+      template_variables:
+        horizontal_align: left
+        vertical_align:  top
+        vertical_offset: 637
     # - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
     ################### CONTENT RATING SECTION END ###############
     # - pmm: direct_play                              # Show direct play only overlay
@@ -271,7 +279,15 @@ libraries:
       template_variables:
         style: red
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
+      template_variables:
+        horizontal_align: left
+        vertical_align: top
+        vertical_offset: 757
     - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
+      template_variables:
+        horizontal_align: left
+        vertical_align: top
+        vertical_offset: 877
     - pmm: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
       # template_variables:
         # back_color: "#f5289180" 
@@ -418,12 +434,22 @@ libraries:
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
     overlay_files:
-    - pmm: aspect                                   # Creates aspect ratio overlay    
+    - pmm: aspect                                   # Creates aspect ratio overlay
+      template_variables:
+        horizontal_align: left
+        vertical_align:  top
+        vertical_offset: 510
     - pmm: aspect
       template_variables:
+        horizontal_align: left
+        vertical_align:  top
+        vertical_offset: 510
         builder_level: season
     - pmm: aspect
       template_variables:
+        horizontal_align: left
+        vertical_align:  bottom
+        vertical_offset: 390
         builder_level: episode
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
       template_variables:
@@ -464,8 +490,15 @@ libraries:
       # template_variables:
         # builder_level: episode
     - pmm: content_rating_us_show                   # US MPAA content ratings
+      template_variables:
+        horizontal_align: left
+        vertical_align:  top
+        vertical_offset: 630
     - pmm: content_rating_us_show                   # US MPAA content ratings
       template_variables:
+        horizontal_align: left
+        vertical_align:  top
+        vertical_offset: 630
         builder_level: season
     - pmm: content_rating_us_show                   # US MPAA content ratings
       template_variables:
@@ -485,14 +518,25 @@ libraries:
     # - pmm: direct_play
       # template_variables:
         # builder_level: episode
+    - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
+      template_variables:
+        horizontal_align: left
+        vertical_align: top
+        vertical_offset: 750
     - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
+      template_variables:
+        horizontal_align: left
+        vertical_align: top
+        vertical_offset: 870
     - pmm: studio
       template_variables:
+        horizontal_align: left
+        vertical_align: top
+        vertical_offset: 870
         builder_level: season
     - pmm: studio
       template_variables:
         builder_level: episode
-    - pmm: streaming
     - pmm: episode_info                             # SE##E## information in bottom right and works with builder_level episode
       template_variables:
         builder_level: episode
@@ -525,8 +569,15 @@ libraries:
       template_variables:
         vertical_offset: 95
     - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
+      template_variables:
+        horizontal_align: left
+        vertical_align: top
+        vertical_offset: 990
     - pmm: network
       template_variables:
+        horizontal_align: left
+        vertical_align: top
+        vertical_offset: 990
         builder_level: season
     - pmm: network
       template_variables:
@@ -582,6 +633,8 @@ libraries:
         style: red
     - pmm: runtimes                                 # Runtime information in bottom right and works with builder_level episode
       template_variables:
+        back_width: 305
+        text: ''
         builder_level: episode
     - pmm: status                                   # Airing, Returning, Ended, Canceled and works with builder_level show
       template_variables:
@@ -597,7 +650,6 @@ libraries:
         back_color_returning: '#81007F'
         back_color_canceled: '#B52222'
         back_color_ended: '#000847'
-    - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
       # template_variables:
         # back_width: 1000
@@ -684,7 +736,7 @@ settings:                                           # Can be individually specif
   show_missing: false
   only_filter_missing: false
   show_missing_assets: false
-  save_report: false
+  save_report: true
   tvdb_language: eng
   ignore_ids:
   ignore_imdb_ids:
@@ -715,7 +767,7 @@ plex:                                               # Can be individually specif
   empty_trash: true
   optimize: true
   db_cache: 2048                                    # 2048 MB is 2GB which is what I use. Adjust for your system as 2048 MB (2 GB) is probably a good starting point compared to the default Plex value of 40 MB
-  verify_ssl:
+  verify_ssl: true
 tmdb:                                               # REQUIRED for the script to run
   apikey: (redacted)
   language: en
