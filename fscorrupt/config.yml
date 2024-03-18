@@ -426,7 +426,7 @@ tautulli:                                       # Can be individually specified 
   url: http://tautulli:8181
   apikey: 
 omdb:
-  apikey: 87b972b4
+  apikey: 
   cache_expiration: 60
 radarr:                                         # Can be individually specified per library as well
   url: http://radarr:7878
