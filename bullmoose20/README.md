@@ -21,6 +21,8 @@ I also prefer to have a copy of the local assets so that if I need to recover to
 
 Essentially, I prefer `tmdb` as a source and textless images all around with a fallback to English and then German(`["xx", "en", "de"]`). Then I apply a gradient of my choice (`bottom-up-fade.png` & `bottom-up-fade-background.png`), and font of my choice (`Comfortaa-Medium.ttf`) which happens to match the PMM defaults for Collections. The secrets to all of this are found in the `bullmoose20config.json` file found in the ppm subdirectory along with the font and the gradient files.
 
+Unraid Docker-Compose file is also shared and when prompted in Unraid to add a UI Label Icon, use this link: https://raw.githubusercontent.com/fscorrupt/Plex-Poster-Maker/main/images/webhook.png
+
 After PPM applies my settings Movie example
 
 ![](./ppm/images/movie_example_ppm.png)
