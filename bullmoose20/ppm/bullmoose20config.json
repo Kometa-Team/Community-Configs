@@ -5,7 +5,7 @@
     "FanartTvAPIKey": "fanart.tv token - free",
     "PlexToken": "plex token - free",
     "FavProvider": "tmdb",
-    "PreferedLanguageOrder": ["xx", "en", "de"]
+    "PreferredLanguageOrder": ["xx", "en", "de"]
   },
   "PlexPart":{
     "LibstoExclude": ["", "", "TestMovies", "TestTV Shows", "Other Videos", "Music", "Photos", "Test Videos", "Playlists" ],
@@ -27,6 +27,7 @@
     "backgroundoverlayfile": "bottom-up-fade-background.png",
     "titlecardoverlayfile": "bottom-up-fade-background.png",
     "LibraryFolders": "true",
+	"Posters": "true",
     "SeasonPosters": "true",
     "BackgroundPosters": "true",
     "TitleCards": "true"
