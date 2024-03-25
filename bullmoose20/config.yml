@@ -201,7 +201,7 @@ libraries:
     - pmm: aspect                                   # Creates overlays based on aspect ratio of media item 
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 517
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
     - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2
@@ -223,7 +223,7 @@ libraries:
     - pmm: content_rating_us_movie                  # US MPAA content ratings
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 637
     # - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
     ################### CONTENT RATING SECTION END ###############
@@ -437,18 +437,18 @@ libraries:
     - pmm: aspect                                   # Creates aspect ratio overlay
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 510
     - pmm: aspect
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 510
         builder_level: season
     - pmm: aspect
       template_variables:
         horizontal_align: left
-        vertical_align:  bottom
+        vertical_align: bottom
         vertical_offset: 390
         builder_level: episode
     - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
@@ -492,12 +492,12 @@ libraries:
     - pmm: content_rating_us_show                   # US MPAA content ratings
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 630
     - pmm: content_rating_us_show                   # US MPAA content ratings
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 630
         builder_level: season
     - pmm: content_rating_us_show                   # US MPAA content ratings
