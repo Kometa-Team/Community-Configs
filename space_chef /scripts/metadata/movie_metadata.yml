@@ -1,0 +1,1824 @@
+#   __       __  ________  ________   ______   _______    ______   ________   ______  
+#  /  \     /  |/        |/        | /      \ /       \  /      \ /        | /      \ 
+#  $$  \   /$$ |$$$$$$$$/ $$$$$$$$/ /$$$$$$  |$$$$$$$  |/$$$$$$  |$$$$$$$$/ /$$$$$$  |
+#  $$$  \ /$$$ |$$ |__       $$ |   $$ |__$$ |$$ |  $$ |$$ |__$$ |   $$ |   $$ |__$$ |
+#  $$$$  /$$$$ |$$    |      $$ |   $$    $$ |$$ |  $$ |$$    $$ |   $$ |   $$    $$ |
+#  $$ $$ $$/$$ |$$$$$/       $$ |   $$$$$$$$ |$$ |  $$ |$$$$$$$$ |   $$ |   $$$$$$$$ |
+#  $$ |$$$/ $$ |$$ |_____    $$ |   $$ |  $$ |$$ |__$$ |$$ |  $$ |   $$ |   $$ |  $$ |
+#  $$ | $/  $$ |$$       |   $$ |   $$ |  $$ |$$    $$/ $$ |  $$ |   $$ |   $$ |  $$ |
+#  $$/      $$/ $$$$$$$$/    $$/    $$/   $$/ $$$$$$$/  $$/   $$/    $$/    $$/   $$/ 
+
+
+
+metadata:
+
+##################
+# Dave Chappelle #
+##################
+
+  # "title":
+  #     template: { name: metadata, id: NUMBERS, sort: Title 1 }
+
+  "Dave Chappelle: Killin' Them Softly":
+    match:
+      mapping_id: 16275
+    sort_title: Dave Chappelle 1
+
+  "Dave Chappelle: For What It's Worth":
+    match:
+      mapping_id: 20147
+    sort_title: Dave Chappelle 2
+
+  "Dave Chappelle: Deep in the Heart of Texas":
+    match:
+      mapping_id: 444706
+    sort_title: Dave Chappelle 3
+
+  "Dave Chappelle: The Age of Spin":
+    match:
+      mapping_id: 444705
+    sort_title: Dave Chappelle 4
+
+  "Dave Chappelle: Equanimity":
+    match:
+      mapping_id: 488223
+    sort_title: Dave Chappelle 5
+
+  "Dave Chappelle: The Bird Revelation":
+    match:
+      mapping_id: 494368
+    sort_title: Dave Chappelle 6
+
+  "Dave Chappelle: Sticks & Stones":
+    match:
+      mapping_id: 624932
+    sort_title: Dave Chappelle 7
+
+  "Dave Chappelle: The Kennedy Center Mark Twain Prize for American Humor":
+    match:
+      mapping_id: 662059
+    sort_title: Dave Chappelle 8
+    title: "Dave Chappelle: The Kennedy Center"
+
+  "Dave Chappelle: 8:46":
+    match:
+      mapping_id: 714842
+    sort_title: Dave Chappelle 9
+
+  "Dave Chappelle: Unforgiven":
+    match:
+      mapping_id: 770665
+    sort_title: Dave Chappelle 10
+
+  "Dave Chappelle: Redemption Song":
+    match:
+      mapping_id: 796181
+    sort_title: Dave Chappelle 11
+
+  "Dave Chappelle: The Closer":
+    match:
+      mapping_id: 879540
+    sort_title: Dave Chappelle 12
+
+  "Dave Chappelle: What's in a Name?":
+    match:
+      mapping_id: 997010
+    sort_title: Dave Chappelle 13
+
+##################
+#    Godfather   #
+##################
+
+  The Godfather:
+    match:
+      mapping_id: 238
+    title: The Godfather 
+    sort_title: Godfather 1
+  
+  The Godfather Part II:
+    match:
+      mapping_id: 240
+    title: The Godfather Part II
+    sort_title: Godfather 2
+  
+  The Godfather Part III:
+    match:
+      mapping_id: 242
+    title: The Godfather Part III
+    sort_title: Godfather 3
+  
+  The Godfather Coda:
+    match:
+      mapping_id: tt16078094
+    title: The Godfather Coda
+    sort_title: Godfather 5
+    originally_available: 2020-12-04
+    edition: Coda
+
+##################
+#      LOTR      #
+##################
+
+  LOTR The Fellowship of the Ring:
+    match:
+      mapping_id: 120
+      edition_contains: Theatrical
+    title: "The Fellowship of the Ring [Theatrical]"
+    sort_title: LOTR 1
+
+  LOTR The Two Towers:
+    match:
+      mapping_id: 121
+      edition_contains: Theatrical
+    title: "The Two Towers [Theatrical]"
+    sort_title: LOTR 2
+
+  LOTR The Return of the King:
+    match:
+      mapping_id: 122
+      edition_contains: Theatrical
+    title: "The Return of the King [Theatrical]"
+    sort_title: LOTR 3
+
+  LOTR The Fellowship of the Ring Extended:
+    match:
+      mapping_id: 120
+      edition_contains: Extended
+    title: "The Fellowship of the Ring [Extended]"
+    sort_title: LOTR 4
+
+  LOTR The Two Towers Extended:
+    match:
+      mapping_id: 121
+      edition_contains: Extended
+    title: "The Two Towers [Extended]"
+    sort_title: LOTR 5
+
+  LOTR The Return of the King Extended:
+    match:
+      mapping_id: 122
+      edition_contains: Extended
+    title: "The Return of the King [Extended]"
+    sort_title: LOTR 6
+
+##################
+#   Divergent    #
+##################
+
+  Divergent:
+    match:
+      mapping_id: 157350
+    sort_title: "Divergent1"
+
+  Insurgent:
+    match:
+      mapping_id: 262500
+    sort_title: "Divergent2"
+
+  Allegiant:
+    match:
+      mapping_id: 262504
+    sort_title: "Divergent3"
+
+
+##################
+#    Anchorman   #
+##################
+
+  Anchorman1:
+    match:
+      mapping_id: 8699
+    sort_title: "Anchorman1"
+
+  Anchorman2:
+    match:
+      mapping_id: 109443
+    sort_title: "Anchorman2"
+
+  Anchorman3:
+    match:
+      mapping_id: 9965
+    sort_title: "Anchorman3"
+
+##################
+#     Batman     #
+##################
+
+  Batman1:
+    match:
+      mapping_id: 272
+    sort_title: "Dark Knight1"
+
+  Batman2:
+    match:
+      mapping_id: 155
+    sort_title: "Dark Knight2"
+
+  Batman3:
+    match:
+      mapping_id: 49026
+    sort_title: "Dark Knight3"
+
+##################
+#   James Bond   #
+##################
+
+  JamesBond1:
+    match:
+      mapping_id: 646
+    sort_title: "007_01"
+
+  JamesBond2:
+    match:
+      mapping_id: 657
+    sort_title: "007_02"
+
+  JamesBond3:
+    match:
+      mapping_id: 658
+    sort_title: "007_03"
+
+  JamesBond4:
+    match:
+      mapping_id: 660
+    sort_title: "007_04"
+
+  JamesBond5:
+    match:
+      mapping_id: 12208
+    sort_title: "007_05"
+
+  JamesBond6:
+    match:
+      mapping_id: 667
+    sort_title: "007_06"
+
+  JamesBond7:
+    match:
+      mapping_id: 668
+    sort_title: "007_07"
+
+  JamesBond8:
+    match:
+      mapping_id: 681
+    sort_title: "007_08"
+
+  JamesBond9:
+    match:
+      mapping_id: 253
+    sort_title: "007_09"
+
+  JamesBond10:
+    match:
+      mapping_id: 682
+    sort_title: "007_10"
+
+  JamesBond11:
+    match:
+      mapping_id: 691
+    sort_title: "007_11"
+
+  JamesBond12:
+    match:
+      mapping_id: 698
+    sort_title: "007_12"
+
+  JamesBond13:
+    match:
+      mapping_id: 699
+    sort_title: "007_13"
+
+  JamesBond14:
+    match:
+      mapping_id: 36670
+    sort_title: "007_14"
+
+  JamesBond15:
+    match:
+      mapping_id: 700
+    sort_title: "007_15"
+
+  JamesBond16:
+    match:
+      mapping_id: 707
+    sort_title: "007_16"
+
+  JamesBond17:
+    match:
+      mapping_id: 708
+    sort_title: "007_17"
+
+  JamesBond18:
+    match:
+      mapping_id: 709
+    sort_title: "007_18"
+
+  JamesBond19:
+    match:
+      mapping_id: 710
+    sort_title: "007_19"
+
+  JamesBond20:
+    match:
+      mapping_id: 714
+    sort_title: "007_20"  
+
+  JamesBond21:
+    match:
+      mapping_id: 36643
+    sort_title: "007_21"
+
+  JamesBond22:
+    match:
+      mapping_id: 36669
+    sort_title: "007_22"
+
+  JamesBond23:
+    match:
+      mapping_id: 36557
+    sort_title: "007_23"
+
+  JamesBond24:
+    match:
+      mapping_id: 10764
+    sort_title: "007_24"
+
+  JamesBond25:
+    match:
+      mapping_id: 37724
+    sort_title: "007_25"
+
+  JamesBond26:
+    match:
+      mapping_id: 206647
+    sort_title: "007_26"
+
+  JamesBond27:
+    match:
+      mapping_id: 370172
+    sort_title: "007_27"
+
+  2_Guns:
+    match:
+      mapping_id: 136400
+    sort_title: "007_28"
+
+  6_days:
+    match:
+      mapping_id: 76360
+    sort_title: "007_29"
+    title: "South Park: 6 Days to Air"
+
+##################
+#     Wonka      #
+##################
+
+  Wonka1:
+    match:
+      mapping_id: 252
+    sort_title: "Willy Wonka 1"
+
+  Wonka2:
+    match:
+      mapping_id: 118
+    sort_title: "Willy Wonka 2"
+
+##################
+#      Apes      #
+##################
+
+  Ape1:
+    match:
+      mapping_id: 869
+    sort_title: "Planet of the Apes 1"
+  
+  Ape2:
+    match:
+      mapping_id: 61791
+    sort_title: "Planet of the Apes 2"
+  
+  Ape3:
+    match:
+      mapping_id: 119450
+    sort_title: "Planet of the Apes 3"
+  
+  Ape4:
+    match:
+      mapping_id: 281338
+    sort_title: "Planet of the Apes 4"
+
+##################
+#    Die Hard    #
+##################
+
+  Die Hard1:
+    match:
+      mapping_id: 562
+    sort_title: "Die Hard 1"
+  
+  Die Hard2:
+    match:
+      mapping_id: 1573
+    sort_title: "Die Hard 2"
+  
+  Die Hard3:
+    match:
+      mapping_id: 1572
+    sort_title: "Die Hard 3"
+  
+  Die Hard4:
+    match:
+      mapping_id: 1571
+    sort_title: "Die Hard 4"
+  
+  Die Hard5:
+    match:
+      mapping_id: 47964
+    sort_title: "Die Hard 5"
+
+##################
+#Fast and Furious#
+##################
+
+  Fast1:
+    match:
+      mapping_id: 9799
+    sort_title: "Fast and the Furious 1"
+
+  Fast2:
+    match:
+      mapping_id: 77959
+    sort_title: "Fast and the Furious 2"
+
+  Fast3:
+    match:
+      mapping_id: 584
+    sort_title: "Fast and the Furious 3"
+
+  Fast4:
+    match:
+      mapping_id: 9615
+    sort_title: "Fast and the Furious 4"
+
+  Fast5:
+    match:
+      mapping_id: 13804
+    sort_title: "Fast and the Furious 5"
+
+  Fast6:
+    match:
+      mapping_id: 253835
+    title: "Fast & Furious: Los Bandoleros"
+    sort_title: "Fast and the Furious 6"
+
+  Fast7:
+    match:
+      mapping_id: 51497
+    sort_title: "Fast and the Furious 7"
+
+  Fast8:
+    match:
+      mapping_id: 82992
+    sort_title: "Fast and the Furious 8"
+
+  Fast9:
+    match:
+      mapping_id: 168259
+    sort_title: "Fast and the Furious 9"
+
+  Fast10:
+    match:
+      mapping_id: 337339
+    sort_title: "Fast and the Furious 10"
+
+  Fast11:
+    match:
+      mapping_id: 384018
+    sort_title: "Fast and the Furious 11"
+
+  Fast12:
+    match:
+      mapping_id: 385128
+    sort_title: "Fast and the Furious 12"
+
+  Fast13:
+    match:
+      mapping_id: 385687
+    sort_title: "Fast and the Furious 13"
+
+##################
+#  Fifty Shades  #
+##################
+
+  Fifty1:
+    match:
+      mapping_id: 216015
+    sort_title: "Fifty Shades 1"
+    
+  Fifty2:
+    match:
+      mapping_id: 341174
+    sort_title: "Fifty Shades 2"
+  
+  Fifty3:
+    match:
+      mapping_id: 337167
+    sort_title: "Fifty Shades 3"
+
+##################
+#      Nemo      #
+##################
+
+  Nemo1:
+    match:
+      mapping_id: 12
+    sort_title: "Finding Nemo 1"
+  
+  Nemo2:
+    match:
+      mapping_id: 127380
+    sort_title: "Finding Nemo 2"
+
+##################
+# Jurassic Park  #
+##################
+
+  Jurassic1:
+    match:
+      mapping_id: 329
+    sort_title: "Jurassic Park 1"
+
+  Jurassic2:
+    match:
+      mapping_id: 330
+    sort_title: "Jurassic Park 2"
+
+  Jurassic3:
+    match:
+      mapping_id: 331
+    sort_title: "Jurassic Park 3"
+
+  Jurassic4:
+    match:
+      mapping_id: 135397
+    sort_title: "Jurassic Park 4"
+
+  Jurassic5:
+    match:
+      mapping_id: 351286
+    sort_title: "Jurassic Park 5"
+
+  Jurassic6:
+    match:
+      mapping_id: 507086
+    sort_title: "Jurassic Park 6"
+
+##################
+#     Karate     #
+##################
+
+  Karate1:
+    match:
+      mapping_id: 1885
+    sort_title: "Karate Kid 1"
+
+  Karate2:
+    match:
+      mapping_id: 8856
+    sort_title: "Karate Kid 2"
+
+  Karate3:
+    match:
+      mapping_id: 10495
+    sort_title: "Karate Kid 3"
+
+  Karate4:
+    match:
+      mapping_id: 11231
+    sort_title: "Karate Kid 4"
+
+  Karate5:
+    match:
+      mapping_id: 38575
+    sort_title: "Karate Kid 5"
+
+##################
+#      Kong      #
+##################
+
+  Kong1:
+    match:
+      mapping_id: 254
+    sort_title: "King Kong 1"
+  
+  Kong2:
+    match:
+      mapping_id: 293167
+    sort_title: "King Kong 2"
+
+##################
+#    Godzilla    #
+##################s
+
+  Godzilla1:
+    match:
+      mapping_id: 929
+    sort_title: "Godzilla 1"
+
+  Godzilla2:
+    match:
+      mapping_id: 124905
+    sort_title: "Godzilla 2"
+
+  Godzilla3:
+    match:
+      mapping_id: 373571
+    sort_title: "Godzilla 3"
+
+  Godzilla4:
+    match:
+      mapping_id: 399566
+    sort_title: "Godzilla 4"
+
+##################
+#     Matrix    #
+##################
+
+  Matrix1:
+    match:
+      mapping_id: 603
+    sort_title: "Matrix 1"
+
+  Matrix2:
+    match:
+      mapping_id: 604
+    sort_title: "Matrix 2"
+
+  Matrix3:
+    match:
+      mapping_id: 605
+    sort_title: "Matrix 3"
+
+  Matrix4:
+    match:
+      mapping_id: 624860
+    sort_title: "Matrix 4"
+
+##################
+#    Monsters    #
+##################
+
+  Monsters1:
+    match:
+      mapping_id: 585
+    sort_title: "Monsters 1"
+  
+  Monsters2:
+    match:
+      mapping_id: 62211
+    sort_title: "Monsters 2"
+
+##################
+#     Pirates    #
+##################
+
+  Pirates1:
+    match:
+      mapping_id: 22
+    sort_title: "Pirates 1"
+
+  Pirates2:
+    match:
+      mapping_id: 58
+    sort_title: "Pirates 2"
+
+  Pirates3:
+    match:
+      mapping_id: 285
+    sort_title: "Pirates 3"
+
+  Pirates4:
+    match:
+      mapping_id: 1865
+    sort_title: "Pirates 4"
+
+  Pirates5:
+    match:
+      mapping_id: 166426
+    sort_title: "Pirates 5"
+
+##################
+#     Mad Max    #
+##################
+
+  MadMax1:
+    match:
+      mapping_id: 9659
+    sort_title: "Mad Max 1"
+
+  MadMax2:
+    match:
+      mapping_id: 8810
+    sort_title: "Mad Max 2"
+
+  MadMax3:
+    match:
+      mapping_id: 9355
+    sort_title: "Mad Max 3"
+
+  MadMax4:
+    match:
+      mapping_id: 76341
+    sort_title: "Mad Max 4"
+
+##################
+#      Shrek     #
+##################
+
+  Shrek1:
+    match:
+      mapping_id: 808
+    sort_title: "Shrek 1"
+
+  Shrek2:
+    match:
+      mapping_id: 809
+    sort_title: "Shrek 2"
+
+  Shrek3:
+    match:
+      mapping_id: 810
+    sort_title: "Shrek 3"
+
+  Shrek4:
+    match:
+      mapping_id: 10192
+    sort_title: "Shrek 4"
+
+##################
+#    Star Wars   #
+##################
+
+  Star Wars1:
+    match:
+      mapping_id: 1893
+    sort_title: "Star Wars_1"
+
+  Star Wars2:
+    match:
+      mapping_id: 1894
+    sort_title: "Star Wars_2"
+
+  Star Wars3:
+    match:
+      mapping_id: 12180
+    sort_title: "Star Wars_3"
+
+  Star Wars4:
+    match:
+      mapping_id: 1895
+    sort_title: "Star Wars_4"
+
+  Star Wars5:
+    match:
+      mapping_id: 348350
+    sort_title: "Star Wars_5"
+
+  Star Wars6:
+    match:
+      mapping_id: 330459
+    sort_title: "Star Wars_6"
+
+  Star Wars7:
+    match:
+      mapping_id: 11
+    sort_title: "Star Wars_7"
+
+  Star Wars8:
+    match:
+      mapping_id: 1891
+    sort_title: "Star Wars_8"
+
+  Star Wars9:
+    match:
+      mapping_id: 1892
+    sort_title: "Star Wars_9"
+
+  Star Wars10:
+    match:
+      mapping_id: 140607
+    sort_title: "Star Wars_10"
+
+  Star Wars11:
+    match:
+      mapping_id: 181808
+    sort_title: "Star Wars_11"
+
+  Star Wars12:
+    match:
+      mapping_id: 181812
+    sort_title: "Star Wars_12"
+
+##################
+#   Terminator   #
+##################
+
+  Terminator1:
+    match:
+      mapping_id: 218
+    sort_title: "Terminator 1"
+
+  Terminator2:
+    match:
+      mapping_id: 280
+    sort_title: "Terminator 2"
+
+  Terminator3:
+    match:
+      mapping_id: 296
+    sort_title: "Terminator 3"
+
+  Terminator4:
+    match:
+      mapping_id: 534
+    sort_title: "Terminator 4"
+
+  Terminator5:
+    match:
+      mapping_id: 87101
+    sort_title: "Terminator 5"
+
+  Terminator6:
+    match:
+      mapping_id: 290859
+    sort_title: "Terminator 6"
+
+##################
+#    Star Trek   #
+##################
+
+  Star Trek1:
+    match:
+      mapping_id: 13475
+    sort_title: "Star Trek 1"
+
+  Star Trek2:
+    match:
+      mapping_id: 54138
+    sort_title: "Star Trek 2"
+
+  Star Trek3:
+    match:
+      mapping_id: 188927
+    sort_title: "Star Trek 3"
+
+##################
+#      Thor      #
+##################
+
+  Thor1:
+    match:
+      mapping_id: 10195
+    sort_title: Thor 1
+
+  Thor2:
+    match:
+      mapping_id: 76338
+    sort_title: Thor 2
+
+  Thor3:
+    match:
+      mapping_id: 284053
+    sort_title: Thor 3
+
+  Thor4:
+    match:
+      mapping_id: 616037
+    sort_title: Thor 4
+
+##################
+#      Oceans    #
+##################
+
+  Oceans1:
+    match:
+      mapping_id: 161
+    sort_title: Oceans 1
+
+  Oceans2:
+    match:
+      mapping_id: 163
+    sort_title: Oceans 2
+  
+  Oceans3:
+    match:
+      mapping_id: 298
+    sort_title: Oceans 3
+  
+  Oceans4:
+    match:
+      mapping_id: 402900
+    sort_title: Oceans 4
+
+  American1:
+    match:
+      mapping_id: 2105
+    sort_title: American Pie 1
+
+  American2:
+    match:
+      mapping_id: 2770
+    sort_title: American Pie 2
+
+  American3:
+    match:
+      mapping_id: 8273
+    sort_title: American Pie 3
+
+  American4:
+      match:
+        mapping_id: 8274
+      title: "American Pie: Band Camp"
+      sort_title: American Pie 4
+
+  American5:
+    match:
+      mapping_id: 8275
+    sort_title: American Pie 5
+    title: "American Pie: The Naked Mile"
+
+  American6:
+    match:
+      mapping_id: 8277
+    sort_title: American Pie 6
+    title: "American Pie: Beta House"
+
+  American7:
+    match:
+      mapping_id: 26123
+    sort_title: American Pie 7
+    title: "American Pie: The Book of Love"
+
+  American8:
+    match:
+      mapping_id: 71552
+    sort_title: American Pie 8
+
+  American9:
+    match:
+      mapping_id: 660982
+    sort_title: American Pie 9
+    title: "American Pie: Girls' Rules"
+
+  Avengers1:
+    match:
+      mapping_id: 24428
+    sort_title: Avengers 1
+
+  Avengers2:
+    match:
+      mapping_id: 99861
+    sort_title: Avengers 2
+
+  Avengers3:
+    match:
+      mapping_id: 299536
+    sort_title: Avengers 3
+
+  Avengers4:
+    match:
+      mapping_id: 299534
+    sort_title: Avengers 4
+
+  Bad1:
+    match:
+      mapping_id: 9737
+    sort_title: Bad Boys 1
+
+  Bad2:
+    match:
+      mapping_id: 8961
+    sort_title: Bad Boys 2
+  
+  Bad3:
+    match:
+      mapping_id: 38700
+    sort_title: Bad Boys 3
+
+  Big1:
+    match:
+      mapping_id: 9600
+    sort_title: Big Momma 1
+
+  Big2:
+    match:
+      mapping_id: 11565
+    sort_title: Big Momma 2
+  
+  Big3:
+    match:
+      mapping_id: 38322
+    sort_title: Big Momma 3
+  
+  Bourne1:
+    match:
+      mapping_id: 2501
+    sort_title: Bourne 1
+
+  Bourne2:
+    match:
+      mapping_id: 2502
+    sort_title: Bourne 2
+
+  Bourne3:
+    match:
+      mapping_id: 2503
+    sort_title: Bourne 3
+
+  Bourne4:
+    match:
+      mapping_id: 49040
+    sort_title: Bourne 4
+
+  Bourne5:
+    match:
+      mapping_id: 324668
+    sort_title: Bourne 5
+
+  CapAmerica1:
+    match:
+      mapping_id: 1771
+    sort_title: Captain America 1
+
+  CapAmerica2:
+    match:
+      mapping_id: 100402
+    sort_title: Captain America 2
+
+  CapAmerica3:
+    match:
+      mapping_id: 271110
+    sort_title: Captain America 3
+
+  CapAmerica4:
+    match:
+      mapping_id: 299537
+    sort_title: Captain America 4
+  
+  Narnia1:
+    match:
+      mapping_id: 411
+    sort_title: Chronicles of Narnia 1
+
+  Narnia2:
+    match:
+      mapping_id: 2454
+    sort_title: Chronicles of Narnia 2
+
+  Narnia3:
+    match:
+      mapping_id: 10140
+    sort_title: Chronicles of Narnia 3
+
+
+  Dumb1:
+    match:
+      mapping_id: 8467
+    sort_title: Dumb 1
+
+  Dumb2:
+    match:
+      mapping_id: 10152
+    sort_title: Dumb 2
+
+  Dumb3:
+    match:
+      mapping_id: 100042
+    sort_title: Dumb 3
+
+
+  Rambo1:
+    match:
+      mapping_id: 1368
+    title: "Rambo: First Blood"
+    sort_title: Rambo 1
+
+  Rambo2:
+    match:
+      mapping_id: 1369
+    sort_title: Rambo 2
+
+  Rambo3:
+    match:
+      mapping_id: 1370
+    sort_title: Rambo 3
+
+  Rambo4:
+    match:
+      mapping_id: 7555
+    sort_title: Rambo 4
+
+  Rambo5:
+    match:
+      mapping_id: 522938
+    sort_title: Rambo 5
+    title: "Rambo: Last Blood"
+
+  Carlin1:
+    match:
+      mapping_id: 70086
+    sort_title: George Carlin 1
+
+  Carlin2:
+    match:
+      mapping_id: 34506
+    sort_title: George Carlin 2
+    title: "George Carlin: At Carnegie"
+
+  Carlin3:
+    match:
+      mapping_id: 57837
+    title: "George Carlin: On Location at Phoenix"
+    sort_title: George Carlin 3
+
+  Carlin4:
+    match:
+      mapping_id: 25161
+    sort_title: George Carlin 4
+
+  Carlin5:
+    match:
+      mapping_id: 34513
+    sort_title: George Carlin 5
+
+  Carlin6:
+    match:
+      mapping_id: 13015
+    sort_title: George Carlin 6
+
+  Carlin7:
+    match:
+      mapping_id: 13643
+    sort_title: George Carlin 7
+    title: "George Carlin: It's Bad for Ya!"
+
+  KnivesOut1:
+    match:
+      mapping_id: 546554
+    sort_title: Knives Out 1
+
+  KnivesOut2:
+    match:
+      mapping_id: 661374
+    sort_title: Knives Out 2
+    title: "Knives Out: Glass Onion"
+
+  Grumpy1:
+    match:
+      mapping_id: 11520
+    sort_title: Grumpy Old Men 1
+
+  Grumpy2:
+    match:
+      mapping_id: 15602
+    sort_title: Grumpy Old Men 2
+
+  HaroldKumar1:
+    match:
+      mapping_id: 11282
+    sort_title: Harold Kumar 1
+
+  HaroldKumar2:
+    match:
+      mapping_id: 13335
+    sort_title: Harold Kumar 2
+
+  HaroldKumar3:
+    match:
+      mapping_id: 55465
+    sort_title: Harold Kumar 3
+    title: "Harold & Kumar Christmas"
+  
+  Hobbit1:
+    match:
+      mapping_id: 49051
+    sort_title: Hobbit 1
+
+  Hobbit2:
+    match:
+      mapping_id: 57158
+    sort_title: Hobbit 2
+
+  Hobbit3:
+    match:
+      mapping_id: 122917
+    sort_title: Hobbit 3
+
+  Hobbit4:
+    match:
+      mapping_id: 1190862
+    sort_title: Hobbit 4
+    title: "The Hobbit: J.R.R. Tolkien's Edit"
+
+  Hobbit5:
+    match:
+      title: "The Hobbit: Durin's Folk and the Hill of Sorcery"
+    sort_title: Hobbit 5
+
+  IndianaJones1:
+    match:
+      mapping_id: 85
+    sort_title: Indiana Jones 1
+    title: "Indiana Jones: Raiders of the Lost Ark"
+
+  IndianaJones2:
+    match:
+      mapping_id: 87
+    sort_title: Indiana Jones 2
+
+  IndianaJones3:
+    match:
+      mapping_id: 89
+    sort_title: Indiana Jones 3
+
+  IndianaJones4:
+    match:
+      mapping_id: 217
+    sort_title: Indiana Jones 4
+
+  IndianaJones5:
+    match:
+      mapping_id: 335977
+    sort_title: Indiana Jones 5
+
+  DaVinciCode1:
+    match:
+      mapping_id: 591
+    sort_title: Da Vinci Code 1
+
+  DaVinciCode2:
+    match:
+      mapping_id: 13448
+    sort_title: Da Vinci Code 2
+    title: "The Da Vinci Code: Angels & Demons"
+
+  DaVinciCode3:
+    match:
+      mapping_id: 207932
+    sort_title: Da Vinci Code 3
+    title: "The Da Vinci Code: Inferno"
+
+  Jackass1:
+    match:
+      mapping_id: 9012
+    sort_title: Jackass 1
+
+  Jackass2:
+    match:
+      mapping_id: 12094
+    sort_title: Jackass 2
+
+  Jackass3:
+    match:
+      mapping_id: 14158
+    sort_title: Jackass 3
+
+  Jackass4:
+    match:
+      mapping_id: 16290
+    sort_title: Jackass 4
+
+  Jackass5:
+    match:
+      mapping_id: 65851
+    sort_title: Jackass 5
+
+  Jackass6:
+    match:
+      mapping_id: 208134
+    sort_title: Jackass 6
+
+  Jackass7:
+    match:
+      mapping_id: 273641
+    sort_title: Jackass 7
+
+  Jackass8:
+    match:
+      mapping_id: 656663
+    sort_title: Jackass 8
+
+  Jackass9:
+    match:
+      mapping_id: 828853
+    sort_title: Jackass 9
+
+  KattWilliams1:
+    match:
+      mapping_id: 34515
+    sort_title: Katt Williams 1
+
+  KattWilliams2:
+    match:
+      mapping_id: 21231
+    sort_title: Katt Williams 2
+
+  KattWilliams3:
+    match:
+      mapping_id: 13488
+    sort_title: Katt Williams 3
+
+  KattWilliams4:
+    match:
+      mapping_id: 497522
+    sort_title: Katt Williams 4
+
+  KattWilliams5:
+    match:
+      mapping_id: 972009
+    sort_title: Katt Williams 5
+  
+  KevinHart1:
+    match:
+      mapping_id: 27866
+    sort_title: Kevin Hart 1
+
+  KevinHart2:
+    match:
+      mapping_id: 339927
+    sort_title: Kevin Hart 2
+
+  KevinHart3:
+    match:
+      mapping_id: 592136
+    sort_title: Kevin Hart 3
+
+  KevinHart4:
+    match:
+      mapping_id: 580001
+    sort_title: Kevin Hart 4
+
+  KevinHart5:
+    match:
+      mapping_id: 762511
+    sort_title: Kevin Hart 5
+
+  KevinHart6:
+    match:
+      mapping_id: 1143747
+    sort_title: Kevin Hart 6
+
+  XMen1:
+    match:
+      mapping_id: 49538
+    sort_title: X-Men 1
+
+  XMen2:
+    match:
+      mapping_id: 127585
+    sort_title: X-Men 2
+
+  XMen3:
+    match:
+      mapping_id: 2080
+    sort_title: X-Men 3
+
+  XMen4:
+    match:
+      mapping_id: 246655
+    sort_title: X-Men 4
+
+  XMen5:
+    match:
+      mapping_id: 320288
+    sort_title: X-Men 5
+    title: "X-Men: Dark Phoenix"
+
+  XMen6:
+    match:
+      mapping_id: 36657
+    sort_title: X-Men 6
+
+  XMen7:
+    match:
+      mapping_id: 36658
+    sort_title: X-Men 7
+
+  XMen8:
+    match:
+      mapping_id: 36668
+    sort_title: X-Men 8
+
+  XMen9:
+    match:
+      mapping_id: 76170
+    sort_title: X-Men 9
+    title: "X-Men: The Wolverine"
+
+  XMen10:
+    match:
+      mapping_id: 263115
+    sort_title: X-Men 10
+    title: "X-Men: Logan"
+
+  MagicMike1:
+    match:
+        mapping_id: 9659
+    sort_title: Magic Mike 1
+
+  MagicMike2:
+    match:
+      mapping_id: 8810
+    sort_title: Magic Mike 2
+
+  MagicMike3:
+    match:
+      mapping_id: 9355
+    sort_title: Magic Mike 3
+
+  MIB1:
+    match:
+      mapping_id: 607
+    sort_title: MIB 1
+
+  MIB2:
+    match:
+      mapping_id: 608
+    sort_title: MIB 2
+
+  MIB3:
+    match:
+      mapping_id: 41154
+    sort_title: MIB 3
+  
+  MIB4:
+    match:
+      mapping_id: 479455
+    sort_title: MIB 4
+
+  MissionImpossible1:
+    match:
+      mapping_id: 954
+    sort_title: Mission Impossible 1
+
+  MissionImpossible2:
+    match:
+      mapping_id: 955
+    sort_title: Mission Impossible 2
+
+  MissionImpossible3:
+    match:
+      mapping_id: 956
+    sort_title: Mission Impossible 3
+
+  MissionImpossible4:
+    match:
+      mapping_id: 56292
+    sort_title: Mission Impossible 4
+
+  MissionImpossible5:
+    match:
+      mapping_id: 177677
+    sort_title: Mission Impossible 5
+
+  MissionImpossible6:
+    match:
+      mapping_id: 353081
+    sort_title: Mission Impossible 6
+
+  MissionImpossible7:
+    match:
+      mapping_id: 575264
+    sort_title: Mission Impossible 7
+
+  Mulan1:
+    match:
+      mapping_id: 10674
+    sort_title: Mulan 1
+
+  Mulan2:
+    match:
+      mapping_id: 12242
+    sort_title: Mulan 2
+
+  Mulan3:
+    match:
+      mapping_id: 337401
+    sort_title: Mulan 3
+
+  NationalLampoon1:
+    match:
+      mapping_id: 8469
+    sort_title: National Lampoon 1
+
+  NationalLampoon2:
+    match:
+      mapping_id: 11153
+    sort_title: National Lampoon 2
+
+  NationalLampoon3:
+    match:
+      mapping_id: 11418
+    sort_title: National Lampoon 3
+
+  NationalLampoon4:
+    match:
+      mapping_id: 5825
+    sort_title: National Lampoon 4
+
+  NationalLampoon5:
+    match:
+      mapping_id: 11452
+    sort_title: National Lampoon 5
+
+  Predator1:
+    match:
+      mapping_id: 106
+    sort_title: Predator 1
+
+  Predator2:
+    match:
+      mapping_id: 169
+    sort_title: Predator 2
+
+  Predator3:
+    match:
+      mapping_id: 34851
+    sort_title: Predator 3
+
+  Predator4:
+    match:
+      mapping_id: 346910
+    sort_title: Predator 4
+
+  Predator5:
+    match:
+      mapping_id: 766507
+    sort_title: Predator 5
+
+  Ring1:
+    match:
+      mapping_id: 565
+    sort_title: Ring 1
+
+  Ring2:
+    match:
+      mapping_id: 10320
+    sort_title: Ring 2
+
+  Ring3:
+    match:
+      mapping_id: 14564
+    sort_title: Ring 3
+
+  Rocky1:
+    match:
+      mapping_id: 1366
+    sort_title: Rocky 1
+
+  Rocky2:
+    match:
+      mapping_id: 1367
+    sort_title: Rocky 2
+
+  Rocky3:
+    match:
+       mapping_id: 1371
+    sort_title: Rocky 3
+
+  Rocky4:
+    match:
+      mapping_id: 1374
+    sort_title: Rocky 4
+
+  Rocky5:
+    match:
+      mapping_id: 1375
+    sort_title: Rocky 5
+
+  Rocky6:
+    match:
+      mapping_id: 1246
+    sort_title: Rocky 6
+    title: "Rocky VI"
+
+  Saw1:
+    match:
+      mapping_id: 176
+    sort_title: Saw 1
+
+  Saw2:
+    match:
+      mapping_id: 215
+    sort_title: Saw 2
+
+  Saw3:
+    match:
+      mapping_id: 214
+    sort_title: Saw 3
+
+  Saw4:
+    match:
+      mapping_id: 663
+    sort_title: Saw 4
+
+  Saw5:
+    match:
+      mapping_id: 11917
+    sort_title: Saw 5
+
+  Saw6:
+    match:
+      mapping_id: 22804
+    sort_title: Saw 6
+
+  Saw7:
+    match:
+      mapping_id: 41439
+    sort_title: Saw 7
+
+  Saw8:
+    match:
+      mapping_id: 298250
+    sort_title: Saw 8
+    title: "Saw: Jigsaw"
+
+  Saw9:
+    match:
+      mapping_id: 602734
+    sort_title: Saw 9
+    title: "Saw: Spiral"
+
+  Saw10:
+    match:
+      mapping_id: 951491
+    sort_title: Saw 10
+
+  Mask1:
+    match:
+      mapping_id: 854
+    sort_title: Mask 1
+
+  Mask2:
+    match:
+      mapping_id: 10214
+    sort_title: Mask 2
+
+  SpiderMan1:
+    match:
+      mapping_id: 557
+    sort_title: Spider Man 1
+
+  SpiderMan2:
+    match:
+      mapping_id: 558
+    sort_title: Spider Man 2
+
+  SpiderMan3:
+    match:
+      mapping_id: 559
+    sort_title: Spider Man 3
+
+  SpiderMan4:
+    match:
+      mapping_id: 315635
+    sort_title: Spider Man 4
+
+  SpiderMan5:
+    match:
+      mapping_id: 429617
+    sort_title: Spider Man 5
+
+  SpiderMan6:
+    match:
+      mapping_id: 634649
+    sort_title: Spider Man 6
+
+  TopGun1:
+    match:
+      mapping_id: 744
+    sort_title: Top Gun 1
+
+  TopGun2:
+    match:
+      mapping_id: 361743
+    sort_title: Top Gun 2
+
+  TopGun3:
+    match:
+      mapping_id: 984430
+    sort_title: Top Gun 3
+    title: "Top Gun: Training"
+
+  Transformers1:
+    match:
+      mapping_id: 1858
+    sort_title: Transformers 1
+
+  Transformers2:
+    match:
+      mapping_id: 8373
+    sort_title: Transformers 2
+
+  Transformers3:
+    match:
+      mapping_id: 38356
+    sort_title: Transformers 3
+
+  Transformers4:
+    match:
+      mapping_id: 91314
+    sort_title: Transformers 4
+
+  Transformers5:
+    match:
+        mapping_id: 335988
+    sort_title: Transformers 5
+
+  Transformers6:
+    match:
+      mapping_id: 667538
+    sort_title: Transformers 6
+
+  Alien1:
+    match:
+      mapping_id: 348
+    sort_title: Alien 1
+  
+  Alien2:
+    match:
+      mapping_id: 679
+    sort_title: Alien 2
+
+  Alien3:
+    match:
+      mapping_id: 8077
+    sort_title: Alien 3
+
+  Alien4:
+    match:
+      mapping_id: 8078
+    sort_title: Alien 4
+
+  Alien5:
+    match:
+      mapping_id: 395
+    sort_title: Alien 5
+
+  Alien6:
+    match:
+      mapping_id: 440
+    sort_title: Alien 6
+
+  IceAge1:
+    match:
+      mapping_id: 425
+    sort_title: Ice Age 1
+
+  IceAge2:
+    match:
+      mapping_id: 950
+    sort_title: Ice Age 2
+
+  IceAge3:
+    match:
+      mapping_id: 8355
+    sort_title: Ice Age 3
+
+  IceAge4:
+    match:
+      mapping_id: 57800
+    sort_title: Ice Age 4
+
+  IceAge5:
+    match:
+      mapping_id: 278154
+    sort_title: Ice Age 5
+
+  The Princess Bride Home Movie Cut:
+    match:
+      #mapping_id: 105479
+      title: The Princess Bride Home Movie Cut
+    title: The Princess Bride Home Movie Cut
+    sort_title: Princess Bride 2
+    originally_available: 2020-01-01
+    summary: "Serialized remake of 'The Princess Bride' told in short chapters featuring celebrities at home during quarantine"
+    genre: Adventure, Comedy, Romance
+
+
+
+
+
+
+
+  # The Godfather Part III (1990) Coda:
+  #     match:
+  #       mapping_id: 242
+  #       year: 1990
+  #       edition: Coda
+  #     title: "The Godfather Coda: The Death of Michael Corleone"
+  #     sort_title: The Godfather Part III3
+  #     file_poster: /config/assets/metadata/movies/The Godfather/The Godfather Part III (1990) [Coda].jpg
+
+
+
