@@ -1,0 +1,71 @@
+#   /$$$$$$$$ /$$      /$$ /$$$$$$$  /$$$$$$$ 
+#  |__  $$__/| $$$    /$$$| $$__  $$| $$__  $$
+#     | $$   | $$$$  /$$$$| $$  \ $$| $$  \ $$
+#     | $$   | $$ $$/$$ $$| $$  | $$| $$$$$$$ 
+#     | $$   | $$  $$$| $$| $$  | $$| $$__  $$
+#     | $$   | $$\  $ | $$| $$  | $$| $$  \ $$
+#     | $$   | $$ \/  | $$| $$$$$$$/| $$$$$$$/
+#     |__/   |__/     |__/|_______/ |_______/ 
+
+external_templates:
+  file: config/scripts/collections/templates.yml
+
+collections:
+  Ant-Man:
+    template: { name: tmdb, order: "301", tmdb_collection: "422834", sorting: year.asc, summary: "A superhero film series based on the Marvel Comics character Ant-Man, and part of the Marvel Cinematic Universe (MCU) series." }
+  Black Panther:
+    template: { name: tmdb, order: "301", tmdb_collection: "529892", sorting: year.asc, summary: "A superhero film series featuring the iconic Marvel character Black Panther, known for its cultural significance and powerful storytelling." }
+  Captain America:
+    template: { name: tmdb, order: "301", tmdb_collection: "131295", sorting: year.asc, summary: "A series of superhero films centered around Captain America, a patriotic hero who fights for justice and freedom." }
+  Deadpool:
+    template: { name: tmdb, order: "301", tmdb_collection: "448150", sorting: year.asc, summary: "A comedic and irreverent superhero film series starring Deadpool, known for its unique humor and R-rated action." }
+  Doctor Strange:
+    template: { name: tmdb, order: "301", tmdb_collection: "618529", sorting: year.asc, summary: "A mystical and visually stunning superhero film series featuring Doctor Strange, a master of the mystic arts." }
+  Guardians of the Galaxy:
+    template: { name: tmdb, order: "301", tmdb_collection: "284433", sorting: year.asc, summary: "A space-faring superhero film series featuring a group of unlikely heroes known as the Guardians of the Galaxy." }
+  Iron Man:
+    template: { name: tmdb, order: "301", tmdb_collection: "131292", sorting: year.asc, summary: "A blockbuster superhero film series starring Tony Stark as Iron Man, a genius inventor and armored hero." }
+  The Avengers:
+    template: { name: tmdb, order: "301", tmdb_collection: "86311", sorting: year.asc, summary: "A monumental superhero film series bringing together Earth's mightiest heroes as the Avengers to defend against powerful threats." }
+  Thor:
+    template: { name: tmdb, order: "301", tmdb_collection: "131296", sorting: year.asc, summary: "A mythological and action-packed superhero film series featuring Thor, the God of Thunder." }
+  Venom:
+    template: { name: tmdb, order: "301", tmdb_collection: "558216", sorting: year.asc, summary: "A dark and anti-heroic superhero film series centered around the character Venom, known for its edgy and unconventional storytelling." }
+  # Spider-Man:
+  #   template: { name: tmdb, order: "301", tmdb_collection: "556", tmdb_movie: "315635, 429617, 634649", sorting: year.asc, summary: "A superhero film series featuring Spider-Man, known for its iconic web-slinging hero and his adventures in the Marvel Universe." }
+#═════════════════════════════════════════════════════════════════════════════════════
+  Aquaman:
+    template: { name: tmdb, order: "401", tmdb_collection: "573693", sorting: year.asc, summary: "A superhero film series centered around Aquaman, the King of Atlantis, showcasing his journey from outcast to ruler and his battles to protect both the ocean and the surface world.." }
+  Man of Steel:
+    template: { name: tmdb, order: "401", tmdb_collection: "209131", sorting: year.asc, summary: "A superhero film series featuring Superman, the Man of Steel, known for its exploration of the iconic hero's origins and struggles." }
+  Shazam!:
+    template: { name: tmdb, order: "401", tmdb_collection: "724848", sorting: year.asc, summary: "A fun and lighthearted superhero film series starring Shazam, a young boy who transforms into a powerful adult superhero." }
+  Suicide Squad:
+    template: { name: tmdb, order: "401", tmdb_collection: "531242", sorting: year.asc, summary: "A series of films featuring the antihero team known as the Suicide Squad, tasked with dangerous and covert missions." }
+  The Dark Knight:
+    template: { name: tmdb, order: "401", tmdb_collection: "263", sorting: year.asc, summary: "A critically acclaimed superhero film series directed by Christopher Nolan, known for its dark and complex portrayal of Batman." }
+  Wonder Woman:
+    template: { name: tmdb, order: "401", tmdb_collection: "468552", sorting: year.asc, summary: "A superhero film series starring Wonder Woman, a powerful warrior and Amazonian princess, known for its empowering and heroic storytelling." }
+#═════════════════════════════════════════════════════════════════════════════════════
+  Cars:
+    template: { name: tmdb, order: "501", tmdb_collection: "87118", sorting: year.asc, summary: "An animated film series featuring anthropomorphic cars and their adventures, known for its fun and racing-themed storytelling." }
+  Finding Nemo:
+    template: { name: tmdb, order: "501", tmdb_collection: "137697", sorting: year.asc, summary: "A heartwarming animated film series following the journey of a clownfish named Marlin searching for his son Nemo in the vast ocean." }
+  Monsters, Inc.:
+    template: { name: tmdb, order: "501", tmdb_collection: "137696", sorting: year.asc, summary: "A humorous animated film series that explores the world of monsters who power their city by collecting children's screams." }
+  The Incredibles:
+    template: { name: tmdb, order: "501", tmdb_collection: "468222", sorting: year.asc, summary: "A superhero animated film series featuring the Parr family, known for their extraordinary powers and crime-fighting adventures." }
+  Toy Story:
+    template: { name: tmdb, order: "501", tmdb_collection: "10194", sorting: year.asc, summary: "A beloved animated film series that brings toys to life and explores the adventures of Woody, Buzz Lightyear, and their friends." }
+  Kung Fu Panda:
+    template: { name: tmdb, order: "551", tmdb_collection: "77816", sorting: year.asc, summary: "A martial arts-themed animated film series featuring a lovable panda named Po, known for its humor and action-packed scenes." }
+  Madagascar:
+    template: { name: tmdb, order: "551", tmdb_collection: "14740", sorting: year.asc, summary: "A comedy-adventure animated film series that follows the adventures of a group of zoo animals who escape to the wild." }
+  Puss in Boots:
+    template: { name: tmdb, order: "551", tmdb_collection: "94602", sorting: year.asc, summary: "An animated film series featuring the charming and swashbuckling cat Puss in Boots, known for its fairy tale adventures." }
+  Shrek:
+    template: { name: tmdb, order: "551", tmdb_collection: "2150", sorting: year.asc, summary: "The fairytale story of a large, strong, solitude-loving, intimidating ogre named Shrek, and his friends." }
+  How to Train Your Dragon:
+    template: { name: tmdb, order: "551", tmdb_collection: "89137", sorting: year.asc, summary: "The adventures of a young Viking named Hiccup Horrendous Haddock III. Although initially dismissed as a clumsy and underweight misfit, he soon becomes renowned as a courageous expert in dragons." }
+
+

@@ -1,0 +1,88 @@
+#   /$$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$  /$$$$$$ 
+#  | $$__  $$ /$$__  $$ /$$__  $$|_  $$_/ /$$__  $$
+#  | $$  \ $$| $$  \ $$| $$  \__/  | $$  | $$  \__/
+#  | $$$$$$$ | $$$$$$$$|  $$$$$$   | $$  | $$      
+#  | $$__  $$| $$__  $$ \____  $$  | $$  | $$      
+#  | $$  \ $$| $$  | $$ /$$  \ $$  | $$  | $$    $$
+#  | $$$$$$$/| $$  | $$|  $$$$$$/ /$$$$$$|  $$$$$$/
+#  |_______/ |__/  |__/ \______/ |______/ \______/ 
+
+external_templates:
+  file: config/scripts/collections/templates.yml
+
+#    __  __   ___ __   __ ___  ___  ___ 
+#   |  \/  | / _ \\ \ / /|_ _|| __|/ __|
+#   | |\/| || (_) |\ V /  | | | _| \__ \
+#   |_|  |_| \___/  \_/  |___||___||___/
+
+collections:
+  Newly Released:
+    variables:
+      key: released
+      collection_section: "101"
+      run_definition: movie
+    template:
+      - name: smart_filter
+        search_term: release
+        search_value: <<in_the_last_released>>
+        in_the_last_released: 182
+      - name: shared 
+        translation_key: basic_released
+        allowed_libraries: movie
+
+  Added This Week: 
+    smart_filter:
+      all:
+        added: 7
+      sort_by: added.desc
+    run_definition: movie
+    sort_title: "!101_Newly Released"
+
+  IMDb Top 250:
+    run_definition: movie
+    imdb_chart: top_movies
+    collection_order: custom
+    sort_title: "!103_IMDB"
+    sync_mode: sync
+    summary: IMDB's top 250 Movies
+
+  21st Century Shuffle:
+    run_definition: movie
+    collection_order: custom
+    sort_title: "!105_Shuffle"
+    plex_search:
+      any:
+        decade: 
+         - 2000
+         - 2010
+         - 2020
+      sort_by: random
+      limit: 200
+
+#    _____ __   __  ___  _  _   ___ __      __ ___ 
+#   |_   _|\ \ / / / __|| || | / _ \\ \    / // __|
+#     | |   \ V /  \__ \| __ || (_) |\ \/\/ / \__ \
+#     |_|    \_/   |___/|_||_| \___/  \_/\_/  |___/
+
+
+  IMDb Top 250 TV:
+    run_definition: show
+    imdb_chart: top_shows
+    collection_order: custom
+    sort_title: "!103_IMDB"
+    sync_mode: sync
+    summary: IMDB's top 250 TV Shows
+  
+  New Episodes:
+    variables:
+      key: episodes
+      collection_section: "000"
+    template:
+      - name: smart_filter
+        search_term: episode_air_date
+        search_value: <<in_the_last_episodes>>
+        in_the_last_episodes: 7
+        type: episodes
+      - name: shared
+        allowed_libraries: show
+        translation_key: basic_episodes

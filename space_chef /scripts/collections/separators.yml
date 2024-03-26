@@ -1,0 +1,81 @@
+#    ______   ________  _______    ______   _______    ______   ________   ______   _______    ______  
+#   /      \ /        |/       \  /      \ /       \  /      \ /        | /      \ /       \  /      \ 
+#  /$$$$$$  |$$$$$$$$/ $$$$$$$  |/$$$$$$  |$$$$$$$  |/$$$$$$  |$$$$$$$$/ /$$$$$$  |$$$$$$$  |/$$$$$$  |
+#  $$ \__$$/ $$ |__    $$ |__$$ |$$ |__$$ |$$ |__$$ |$$ |__$$ |   $$ |   $$ |  $$ |$$ |__$$ |$$ \__$$/ 
+#  $$      \ $$    |   $$    $$/ $$    $$ |$$    $$< $$    $$ |   $$ |   $$ |  $$ |$$    $$< $$      \ 
+#   $$$$$$  |$$$$$/    $$$$$$$/  $$$$$$$$ |$$$$$$$  |$$$$$$$$ |   $$ |   $$ |  $$ |$$$$$$$  | $$$$$$  |
+#  /  \__$$ |$$ |_____ $$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |   $$ |   $$ \__$$ |$$ |  $$ |/  \__$$ |
+#  $$    $$/ $$       |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |   $$ |   $$    $$/ $$ |  $$ |$$    $$/ 
+#   $$$$$$/  $$$$$$$$/ $$/       $$/   $$/ $$/   $$/ $$/   $$/    $$/     $$$$$$/  $$/   $$/  $$$$$$/  
+
+external_templates:
+  file: config/scripts/collections/templates.yml
+
+#    ___    ___    _____   _  _ 
+#   | _ )  / _ \  |_   _| | || |
+#   | _ \ | (_) |   | |   | __ |
+#   |___/  \___/    |_|   |_||_|
+
+collections:
+  Top Collections:
+    template: { name: separator, order: "100" }
+  
+  A to Z Collections:
+    template: { name: separator, order: "600" }
+  
+  Genre Collections:
+    template: { name: separator, order: "700" }
+
+#    __  __    ___   __   __  ___   ___   ___ 
+#   |  \/  |  / _ \  \ \ / / |_ _| | __| / __|
+#   | |\/| | | (_) |  \ V /   | |  | _|  \__ \
+#   |_|  |_|  \___/    \_/   |___| |___| |___/
+
+  Decade Collections:
+    run_definition: movie
+    template: { name: separator, order: "150" }
+
+  Studio Collections:
+    run_definition: movie
+    template: { name: separator, order: "200" }
+  
+  Marvel Collections:
+    run_definition: movie
+    template: { name: separator, order: "300" }
+        
+  DC Collections:
+    run_definition: movie
+    template: { name: separator, order: "400" }
+
+  Pixar Collections:
+    run_definition: movie
+    template: { name: separator, order: "500" }
+  
+  Dreamworks Collections:
+    run_definition: movie
+    template: { name: separator, order: "550" }
+  
+  Directors Collections:
+    run_definition: movie
+    template: { name: separator, order: "800" }
+    
+  Actors Collections:
+    run_definition: movie
+    template: { name: separator, order: "900" }
+
+  Oscars Collections:
+    run_definition: movie
+    template: { name: separator, order: "A100" }
+
+#    ___   _  _    ___   __      __  ___ 
+#   / __| | || |  / _ \  \ \    / / / __|
+#   \__ \ | __ | | (_) |  \ \/\/ /  \__ \
+#   |___/ |_||_|  \___/    \_/\_/   |___/
+
+  Shuffle Collections:
+    run_definition: show
+    template: { name: separator, order: "001" }
+  
+  Streaming Collections:
+    run_definition: show
+    template: { name: separator, order: "300" }
