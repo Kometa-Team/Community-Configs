@@ -1,0 +1,1242 @@
+#    /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$$                                
+#   /$$__  $$ /$$__  $$ /$$__  $$ /$$__  $$| $$__  $$                               
+#  | $$  \ $$| $$  \__/| $$  \__/| $$  \ $$| $$  \ $$                               
+#  | $$  | $$|  $$$$$$ | $$      | $$$$$$$$| $$$$$$$/                               
+#  | $$  | $$ \____  $$| $$      | $$__  $$| $$__  $$                               
+#  | $$  | $$ /$$  \ $$| $$    $$| $$  | $$| $$  \ $$                               
+#  |  $$$$$$/|  $$$$$$/|  $$$$$$/| $$  | $$| $$  | $$                               
+#   \______/  \______/  \______/ |__/  |__/|__/  |__/                                                                                                             
+#                                                                                   
+#   /$$   /$$  /$$$$$$  /$$      /$$ /$$$$$$ /$$   /$$ /$$$$$$$$ /$$$$$$$$  /$$$$$$ 
+#  | $$$ | $$ /$$__  $$| $$$    /$$$|_  $$_/| $$$ | $$| $$_____/| $$_____/ /$$__  $$
+#  | $$$$| $$| $$  \ $$| $$$$  /$$$$  | $$  | $$$$| $$| $$      | $$      | $$  \__/
+#  | $$ $$ $$| $$  | $$| $$ $$/$$ $$  | $$  | $$ $$ $$| $$$$$   | $$$$$   |  $$$$$$ 
+#  | $$  $$$$| $$  | $$| $$  $$$| $$  | $$  | $$  $$$$| $$__/   | $$__/    \____  $$
+#  | $$\  $$$| $$  | $$| $$\  $ | $$  | $$  | $$\  $$$| $$      | $$       /$$  \ $$
+#  | $$ \  $$|  $$$$$$/| $$ \/  | $$ /$$$$$$| $$ \  $$| $$$$$$$$| $$$$$$$$|  $$$$$$/
+#  |__/  \__/ \______/ |__/     |__/|______/|__/  \__/|________/|________/ \______/ 
+
+templates:
+  
+  imdb_oscar:
+    default:
+      my_sync_mode: sync
+      run: movie
+    sync_mode: <<my_sync_mode>> 
+    run_definition: <<run>>
+    imdb_id: <<id>>
+    summary: "<<collection_name>> Nominees and Winner for Best Picture"
+    sort_title: "!<<order>>_<<collection_name>>"
+
+collections:
+  "2024 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A903
+      id:
+    #winner:
+        - tt15398776
+    #nominees:
+        - tt23561236
+        - tt17009710
+        - tt1517268
+        - tt5537002
+        - tt5535276
+        - tt13238346
+        - tt14230458
+        - tt14849194
+        - tt7160372
+  "2023 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A904
+      id:
+    #winner:
+        - tt6710474
+    #nominees:
+        - tt1016150
+        - tt1630029
+        - tt3704428
+        - tt11813216
+        - tt14208870
+        - tt1745960
+        - tt7322224
+        - tt14444726
+        - tt13669038
+  "2022 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A905
+      id:
+    #winner:
+        - tt10366460
+    #nominees:
+        - tt12789558
+        - tt11286314
+        - tt14039582
+        - tt1160419
+        - tt9620288
+        - tt11271038
+        - tt7740496
+        - tt10293406
+        - tt3581652
+  "2021 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A906
+      id:
+    #winner:
+        - tt9770150
+    #nominees:
+        - tt9784798
+        - tt10618286
+        - tt10633456
+        - tt9620292
+        - tt5363618
+        - tt10272386
+        - tt1070874
+  "2020 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A907
+      id:
+    #winner:
+        - tt6751668
+    #nominees:
+        - tt8579674
+        - tt1950186
+        - tt2584384
+        - tt7286456
+        - tt3281548
+        - tt7653254
+        - tt7131622
+        - tt1302006
+  "2019 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A908
+      id:
+      #winner:
+        - tt6966692
+      #nominees:
+        - tt1517451
+        - tt7349662
+        - tt1825683
+        - tt1727824
+        - tt6155172
+        - tt5083738
+        - tt6266538
+  "2018 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A909
+      id:
+    #winner:
+        - tt5580390
+    #nominees:
+        - tt5726616
+        - tt4555426
+        - tt5013056
+        - tt5052448
+        - tt4925292
+        - tt5776858
+        - tt6294822
+        - tt5027774
+  "2017 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A910
+      id:
+    #winner:
+        - tt4975722
+    #nominees:
+        - tt2543164
+        - tt2671706
+        - tt2119532
+        - tt2582782
+        - tt4846340
+        - tt3783958
+        - tt3741834
+        - tt4034228
+  "2016 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A911
+      id:
+    #winner:
+        - tt1895587
+    #nominees:
+        - tt3682448
+        - tt2381111
+        - tt1392190
+        - tt3170832
+        - tt1596363
+        - tt3659388
+        - tt1663202 
+  "2015 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A912
+      id:
+    #winner:
+        - tt2562232
+    #nominees:
+        - tt2179136
+        - tt1065073
+        - tt1020072
+        - tt2278388
+        - tt2084970
+        - tt2980516
+        - tt2582802
+  "2014 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A913
+      id:
+    #winner:
+        - tt2024544
+    #nominees:
+        - tt1800241
+        - tt1535109
+        - tt0790636
+        - tt1454468
+        - tt1798709
+        - tt1821549
+        - tt2431286
+        - tt0993846
+  "2013 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A914
+      id:
+    #winner:
+        - tt1024648
+    #nominees:
+        - tt1602620
+        - tt2125435
+        - tt1853728
+        - tt1707386
+        - tt0454876
+        - tt0443272
+        - tt1045658
+        - tt1790885
+  "2012 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A915
+      id:
+    #winner:
+        - tt1655442
+    #nominees:
+        - tt0477302
+        - tt0970179
+        - tt1605783
+        - tt1210166
+        - tt1033575
+        - tt1454029
+        - tt0478304
+        - tt1568911
+  "2011 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A916
+      id:
+    #winner:
+        - tt1504320
+    #nominees:
+        - tt1542344
+        - tt0947798
+        - tt1375666
+        - tt0964517
+        - tt0842926
+        - tt1285016
+        - tt0435761
+        - tt1403865
+        - tt1399683
+  "2010 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A917
+      id:
+    #winner:
+        - tt0887912
+    #nominees:
+        - tt1019452
+        - tt1174732
+        - tt0499549
+        - tt1136608
+        - tt0361748
+        - tt0929632
+        - tt0878804
+        - tt1049413
+        - tt1193138
+  "2009 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A918
+      id:
+    #winner:
+        - tt1010048
+    #nominees:
+        - tt0870111
+        - tt1013753
+        - tt0421715
+        - tt0976051
+  "2008 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A919
+      id:
+    #winner:
+        - tt0477348
+    #nominees:
+        - tt0783233
+        - tt0467406
+        - tt0465538
+        - tt0469494
+  "2007 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A920
+      id:
+    #winner:
+        - tt0407887
+    #nominees:
+        - tt0449467
+        - tt0498380
+        - tt0449059
+        - tt0436697
+  "2006 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A921
+      id:
+    #winner:
+        - tt0375679
+    #nominees:
+        - tt0388795
+        - tt0379725
+        - tt0433383
+        - tt0408306
+  "2005 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A922
+      id:
+    #winner:
+        - tt0405159
+    #nominees:
+        - tt0308644
+        - tt0350258
+        - tt0375063
+        - tt0338751
+  "2004 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A923
+      id:
+    #winner:
+        - tt0167260
+    #nominees:
+        - tt0335266
+        - tt0311113
+        - tt0327056
+        - tt0329575
+  "2003 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A924
+      id:
+    #winner:
+        - tt0299658
+    #nominees:
+        - tt0217505
+        - tt0274558
+        - tt0167261
+        - tt0253474
+  "2002 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A925
+      id:
+    #winner:
+        - tt0268978
+    #nominees:
+        - tt0280707
+        - tt0247425
+        - tt0203009
+        - tt0120737
+  "2001 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A926
+      id:
+    #winner:
+        - tt0172495
+    #nominees:
+        - tt0241303
+        - tt0190332
+        - tt0195685
+        - tt0181865
+  "2000 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A927
+      id:
+    #winner:
+        - tt0169547
+    #nominees:
+        - tt0124315
+        - tt0120689
+        - tt0140352
+        - tt0167404
+  "1999 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A928
+      id:
+    #winner:
+        - tt0138097
+    #nominees:
+        - tt0127536
+        - tt0118799
+        - tt0120815
+        - tt0120863
+  "1998 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A929
+      id:
+    #winner:
+        - tt0120338
+    #nominees:
+        - tt0119822
+        - tt0119217
+        - tt0119488
+        - tt0119164
+  "1997 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A930
+      id:
+    #winner:
+        - tt0116209
+    #nominees:
+        - tt0116282
+        - tt0116695
+        - tt0117589
+        - tt0117631
+  "1996 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A931
+      id:
+    #winner:
+        - tt0112573
+    #nominees:
+        - tt0112384
+        - tt0112431
+        - tt0114388
+        - tt0110877
+  "1995 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A932
+      id:
+    #winner:
+        - tt0109830
+    #nominees:
+        - tt0109831
+        - tt0110912
+        - tt0110932
+        - tt0111161
+  "1994 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A933
+      id:
+    #winner:
+        - tt0108052
+    #nominees:
+        - tt0107207
+        - tt0106977
+        - tt0107822
+        - tt0107943
+  "1993 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A934
+      id:
+    #winner:
+        - tt0105695
+    #nominees:
+        - tt0104257
+        - tt0104454
+        - tt0105323
+        - tt0104036
+  "1992 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A935
+      id:
+    #winner:
+        - tt0102926
+    #nominees:
+        - tt0101414
+        - tt0101516
+        - tt0102138
+        - tt0102713
+  "1991 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A936
+      id:
+    #winner:
+        - tt0099348
+    #nominees:
+        - tt0099077
+        - tt0099653
+        - tt0099685
+        - tt0099674
+  "1990 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A937
+      id:
+    #winner:
+        - tt0097239
+    #nominees:
+        - tt0096969
+        - tt0097165
+        - tt0097351
+        - tt0097937
+  "1989 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A938
+      id:
+    #winner:
+        - tt0095953
+    #nominees:
+        - tt0094947
+        - tt0095647
+        - tt0094606
+        - tt0096463
+  "1988 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A939
+      id:
+    #winner:
+        - tt0093389
+    #nominees:
+        - tt0092699
+        - tt0093010
+        - tt0093209
+        - tt0093565
+  "1987 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A940
+      id:
+    #winner:
+        - tt0091763
+    #nominees:
+        - tt0091867
+        - tt0090830
+        - tt0091167
+        - tt0091530
+  "1986 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A941
+      id:
+    #winner:
+        - tt0089755
+    #nominees:
+        - tt0089424
+        - tt0089841
+        - tt0088939
+        - tt0090329
+  "1985 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A942
+      id:
+    #winner:
+        - tt0086879
+    #nominees:
+        - tt0087892
+        - tt0088146
+        - tt0087921
+        - tt0087553
+  "1984 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A943
+      id:
+    #winner:
+        - tt0086425
+    #nominees:
+        - tt0086423
+        - tt0085244
+        - tt0085461
+        - tt0086197
+  "1983 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A944
+      id:
+    #winner:
+        - tt0083987
+    #nominees:
+        - tt0083866
+        - tt0084335
+        - tt0084855
+        - tt0084805
+  "1982 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A945
+      id:
+    #winner:
+        - tt0082158
+    #nominees:
+        - tt0080388
+        - tt0082846
+        - tt0082971
+        - tt0082979
+  "1981 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A946
+      id:
+    #winner:
+        - tt0081283
+    #nominees:
+        - tt0080549
+        - tt0081398
+        - tt0080009
+        - tt0080678
+  "1980 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A947
+      id:
+    #winner:
+        - tt0079417
+    #nominees:
+        - tt0078754
+        - tt0078788
+        - tt0078902
+        - tt0079638
+  "1979 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A948
+      id:
+    #winner:
+        - tt0077416
+    #nominees:
+        - tt0078444
+        - tt0077362
+        - tt0077663
+        - tt0077928
+  "1978 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A949
+      id:
+    #winner:
+        - tt0075686
+    #nominees:
+        - tt0076245
+        - tt0076759
+        - tt0076095
+        - tt0076843
+  "1977 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A950
+      id:
+    #winner:
+        - tt0075148
+    #nominees:
+        - tt0074119
+        - tt0074235
+        - tt0074958
+        - tt0075314
+  "1976 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A951
+      id:
+    #winner:
+        - tt0073486
+    #nominees:
+        - tt0072684
+        - tt0072890
+        - tt0073195
+        - tt0073440    
+  "1975 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A952
+      id:
+    #winner:
+        - tt0071562
+    #nominees:
+        - tt0071315
+        - tt0071746
+        - tt0071360
+        - tt0072308
+  "1974 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A953
+      id:
+    #winner:
+        - tt0070735
+    #nominees:
+        - tt0070819
+        - tt0069704
+        - tt0069467
+        - tt0070047
+  "1973 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A954
+      id:
+    #winner:
+        - tt0068646
+    #nominees:
+        - tt0068327
+        - tt0068473
+        - tt0069303
+        - tt0067919
+  "1972 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A955
+      id:
+    #winner:
+        - tt0067116
+    #nominees:
+        - tt0066921
+        - tt0067093
+        - tt0067483
+        - tt0067328
+  "1971 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A956
+      id:
+    #winner:
+        - tt0066206
+    #nominees:
+        - tt0065377
+        - tt0065724
+        - tt0066011
+        - tt0066026
+  "1970 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A957
+      id:
+    #winner:
+        - tt0064665
+    #nominees:
+        - tt0064030
+        - tt0064115
+        - tt0064418
+        - tt0065234
+  "1969 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A958
+      id:
+    #winner:
+        - tt0063385
+    #nominees:
+        - tt0062994
+        - tt0063483
+        - tt0063518
+        - tt0063227
+  "1968 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A959
+      id:
+    #winner:
+        - tt0061811
+    #nominees:
+        - tt0061418
+        - tt0061584
+        - tt0061735
+        - tt0061722
+  "1967 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A960
+      id:
+    #winner:
+        - tt0060665
+    #nominees:
+        - tt0060086
+        - tt0060921
+        - tt0060934
+        - tt0061184
+  "1966 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A961
+      id:
+    #winner:
+        - tt0059742
+    #nominees:
+        - tt0059798
+        - tt0059084
+        - tt0059113
+        - tt0059712
+  "1965 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A962
+      id:
+    #winner:
+        - tt0058385
+    #nominees:
+        - tt0057877
+        - tt0057012
+        - tt0058331
+        - tt0057831
+  "1964 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A963
+      id:
+    #winner:
+        - tt0057590
+    #nominees:
+        - tt0056825
+        - tt0056937
+        - tt0056085
+        - tt0057251
+  "1963 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A964
+      id:
+    #winner:
+        - tt0056172
+    #nominees:
+        - tt0056264
+        - tt0056197
+        - tt0056262
+        - tt0056592
+  "1962 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A965
+      id:
+    #winner:
+        - tt0055614
+    #nominees:
+        - tt0054866
+        - tt0055031
+        - tt0054953
+        - tt0054997
+  "1961 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A966
+      id:
+    #winner:
+        - tt0053604
+    #nominees:
+        - tt0053793
+        - tt0054326
+        - tt0053580
+        - tt0054353
+  "1960 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A967
+      id:
+    #winner:
+        - tt0052618
+    #nominees:
+        - tt0052561
+        - tt0053226
+        - tt0052738
+        - tt0053131
+  "1959 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A968
+      id:
+    #winner:
+        - tt0051658
+    #nominees:
+        - tt0051383
+        - tt0051459
+        - tt0052182
+        - tt0051525
+  "1958 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A969
+      id:
+    #winner:
+        - tt0050212
+    #nominees:
+        - tt0050083
+        - tt0050839
+        - tt0050933
+        - tt0051201
+  "1957 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A970
+      id:
+    #winner:
+        - tt0048960
+    #nominees:
+        - tt0049233
+        - tt0049261
+        - tt0049408
+        - tt0049833
+  "1956 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A971
+      id:
+    #winner:
+        - tt0048356
+    #nominees:
+        - tt0048316
+        - tt0048380
+        - tt0048491
+        - tt0048563
+  "1955 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A972
+      id:
+    #winner:
+        - tt0047296
+    #nominees:
+        - tt0047472
+        - tt0046816
+        - tt0046874
+        - tt0047580
+  "1954 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A973
+      id:
+    #winner:
+        - tt0045793
+    #nominees:
+        - tt0045943
+        - tt0046250
+        - tt0046303
+        - tt0046247
+  "1953 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A974
+      id:
+    #winner:
+        - tt0044672
+    #nominees:
+        - tt0044706
+        - tt0044760
+        - tt0044926
+        - tt0045061
+  "1952 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A975
+      id:
+    #winner:
+        - tt0043278
+    #nominees:
+        - tt0043924
+        - tt0044081
+        - tt0043459
+        - tt0043949
+  "1951 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A976
+      id:
+    #winner:
+        - tt0042192
+    #nominees:
+        - tt0042276
+        - tt0042451
+        - tt0042646
+        - tt0043014
+  "1950 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A977
+      id:
+    #winner:
+        - tt0041113
+    #nominees:
+        - tt0041587
+        - tt0041163
+        - tt0041452
+        - tt0041996
+  "1949 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A978
+      id:
+    #winner:
+        - tt0040416
+    #nominees:
+        - tt0040495
+        - tt0040725
+        - tt0040806
+        - tt0040897
+  "1948 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A979
+      id:
+    #winner:
+        - tt0039416
+    #nominees:
+        - tt0039286
+        - tt0038574
+        - tt0039628
+        - tt0039190
+  "1947 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A980
+      id:
+    #winner:
+        - tt0036868
+    #nominees:
+        - tt0036910
+        - tt0038650
+        - tt0038873
+        - tt0039111
+  "1946 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A981
+      id:
+    #winner:
+        - tt0037884
+    #nominees:
+        - tt0037514
+        - tt0037913
+        - tt0038109
+        - tt0037536
+  "1945 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A982
+      id:
+    #winner:
+        - tt0036872
+    #nominees:
+        - tt0036775
+        - tt0036855
+        - tt0037280
+        - tt0037465
+  "1944 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A983
+      id:
+    #winner:
+        - tt0034583
+    #nominees:
+        - tt0035896
+        - tt0035979
+        - tt0034891
+        - tt0036126
+  "1943 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A984
+      id:
+    #winner:
+        - tt0035093
+    #nominees:
+        - tt0033627
+        - tt0034946
+        - tt0035238
+        - tt0035015
+  "1942 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A985
+      id:
+    #winner:
+        - tt0033729
+    #nominees:
+        - tt0033407
+        - tt0033467
+        - tt0033712
+        - tt0033722
+  "1941 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A986
+      id:
+    #winner:
+        - tt0032976
+    #nominees:
+        - tt0032194
+        - tt0032484
+        - tt0032671
+        - tt0032881
+  "1940 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A987
+      id:
+    #winner:
+        - tt0031381
+    #nominees:
+        - tt0031210
+        - tt0031385
+        - tt0031593
+        - tt0031679
+  "1939 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A989
+      id:
+    #winner:
+        - tt0030993
+    #nominees:
+        - tt0029852
+        - tt0029942
+        - tt0030149
+        - tt0030287
+  "1938 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A990
+      id:
+    #winner:
+        - tt0029146
+    #nominees:
+        - tt0029606
+        - tt0028691
+        - tt0028773
+        - tt0029047
+  "1937 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A991
+      id:
+    #winner:
+        - tt0027698
+    #nominees:
+        - tt0027075
+        - tt0027300
+        - tt0027532
+        - tt0027884
+  "1936 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A992
+      id:
+    #winner:
+        - tt0026752
+    #nominees:
+        - tt0026714
+        - tt0026056
+        - tt0026144
+        - tt0026174
+  "1935 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A993
+      id:
+    #winner:
+        - tt0025316
+    #nominees:
+        - tt0024991
+        - tt0025124
+        - tt0025238
+        - tt0025301
+  "1934 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A994
+      id:
+    #winner:
+        - tt0023876
+    #nominees:
+        - tt0024034
+        - tt0022879
+        - tt0023042
+        - tt0024240
+  "1932 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A995
+      id:
+    #winner:
+        - tt0022958
+    #nominees:
+        - tt0021622
+        - tt0021635
+        - tt0021873
+        - tt0023303
+  "1931 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A996
+      id:
+    #winner:
+        - tt0021746
+    #nominees:
+        - tt0021826
+        - tt0022397
+        - tt0021890
+        - tt0022495
+  "1930 #2 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A997
+      id:
+    #winner:
+        - tt0020629
+    #nominees:
+        - tt0019823
+        - tt0020686
+        - tt0020827
+        - tt0020112
+  "1930 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A998
+      id:
+    #winner:
+        - tt0019729
+    #nominees:
+        - tt0019630
+        - tt0020018
+        - tt0019993
+        - tt0019257
+  "1929 Oscars":
+    template: 
+      name: imdb_oscar
+      order: A999
+      id:
+    #winner:
+        - tt0018578
+    #nominees:
+        - tt0018379
+        - tt0019304
