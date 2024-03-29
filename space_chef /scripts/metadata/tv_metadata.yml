@@ -1,0 +1,183 @@
+#   ________  __     __        __       __              __                      __              __               
+#  /        |/  |   /  |      /  \     /  |            /  |                    /  |            /  |              
+#  $$$$$$$$/ $$ |   $$ |      $$  \   /$$ |  ______   _$$ |_     ______    ____$$ |  ______   _$$ |_     ______  
+#     $$ |   $$ |   $$ |      $$$  \ /$$$ | /      \ / $$   |   /      \  /    $$ | /      \ / $$   |   /      \ 
+#     $$ |   $$  \ /$$/       $$$$  /$$$$ |/$$$$$$  |$$$$$$/    $$$$$$  |/$$$$$$$ | $$$$$$  |$$$$$$/    $$$$$$  |
+#     $$ |    $$  /$$/        $$ $$ $$/$$ |$$    $$ |  $$ | __  /    $$ |$$ |  $$ | /    $$ |  $$ | __  /    $$ |
+#     $$ |     $$ $$/         $$ |$$$/ $$ |$$$$$$$$/   $$ |/  |/$$$$$$$ |$$ \__$$ |/$$$$$$$ |  $$ |/  |/$$$$$$$ |
+#     $$ |      $$$/          $$ | $/  $$ |$$       |  $$  $$/ $$    $$ |$$    $$ |$$    $$ |  $$  $$/ $$    $$ |
+#     $$/        $/           $$/      $$/  $$$$$$$/    $$$$/   $$$$$$$/  $$$$$$$/  $$$$$$$/    $$$$/   $$$$$$$/ 
+#                                                                                                                
+
+metadata:
+
+  Band1:
+    match:
+      mapping_id: 74205
+    sort_title: Band of Brothers 1
+  
+  Band2:
+    match:
+      mapping_id: 85539
+    sort_title: Band of Brothers 2
+
+  Band3:
+    match:
+      mapping_id: 370853
+    sort_title: Band of Brothers 3
+
+  Planet1:
+    match:
+      mapping_id: 79257
+    sort_title: Planet Earth 1
+
+  Planet2:
+    match:
+      mapping_id: 251418
+    sort_title: Planet Earth 2
+
+  Planet3:
+    match:
+      mapping_id: 318408
+    sort_title: Planet Earth 3
+
+  Planet4:
+    match:
+      mapping_id: 330942
+    sort_title: Planet Earth 4
+
+  Planet5:
+    match:
+      mapping_id: 359251
+    sort_title: Planet Earth 5
+
+  Planet6:
+    match:
+      mapping_id: 359365
+    sort_title: Planet Earth 6
+
+  Planet7:
+    match:
+      mapping_id: 359250
+    sort_title: Planet Earth 7
+
+  Planet8:
+    match:
+      mapping_id: 417395
+    sort_title: Planet Earth 8
+
+  Star1:
+    match:
+      mapping_id: 361753
+    sort_title: Star Wars 1
+    title: "Star Wars: The Mandalorian"
+
+  Star2:
+    match:
+      mapping_id: 393589
+    sort_title: Star Wars 2
+    title: "Star Wars: The Book of Boba Fett"
+
+  Star3:
+    match:
+      mapping_id: 393199
+    sort_title: Star Wars 3
+    title: "Star Wars: Obi-Wan Kenobi"
+
+  WW2_1:
+    match:
+      mapping_id: 372318
+    sort_title: WW2_1
+    title: "WWII in Colour: Greatest Events"
+
+  WW2_2:
+    match:
+      mapping_id: 413487
+    sort_title: WW2_2
+    title: "WWII in Color: Road to Victory"
+  
+  GOT1:
+    match:
+      mapping_id: 121361
+    sort_title: Game of Thrones 1
+  
+  GOT2:
+    match:
+      mapping_id: 371572
+    sort_title: Game of Thrones 2
+
+  Dead1:
+    match:
+      mapping_id: 153021
+    sort_title: Walking Dead 1
+
+  Dead2:
+    match:
+      mapping_id: 290853
+    sort_title: Walking Dead 2
+  
+  Dead3:
+    match:
+      mapping_id: 417549
+    sort_title: Walking Dead 3
+
+  Cosmos2014:
+    match:
+      mapping_id: 408128
+    sort_title: Cosmos
+    title: "Cosmos"
+
+  Dynasties2018:
+    match:
+      mapping_id: 352054
+    sort_title: Dynasties
+    title: "Dynasties"
+
+  HouseOfCardsUS:
+    match:
+      mapping_id: 262980
+    sort_title: House of Cards
+    title: "House of Cards"
+
+  # Mars2016:
+  #   match:
+  #     mapping_id: 316345
+  #   sort_title: Mars
+  #   title: "Mars"
+
+  MatingGame2021:
+    match:
+      mapping_id: 410848
+    sort_title: Mating Game
+    title: "The Mating Game"
+
+  Monster2022:
+    match:
+      mapping_id: 389492
+    sort_title: Monster
+    title: "Monster: The Jeffrey Dahmer Story"
+
+  OfficeUS:
+    match:
+      mapping_id: 73244
+    sort_title: Office
+    title: "The Office"
+
+  ShamelessUS:
+    match:
+      mapping_id: 161511
+    sort_title: Shameless
+    title: "Shameless"
+
+  Staircase2004:
+    match:
+      mapping_id: 92011
+    sort_title: Staircase
+    title: "The Staircase"
+
+  YourHonorUS:
+    match:
+      mapping_id: 359579
+    sort_title: Your Honor
+    title: "Your Honor"
+

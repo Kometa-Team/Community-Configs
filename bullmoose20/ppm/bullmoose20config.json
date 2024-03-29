@@ -1,0 +1,93 @@
+{
+  "ApiPart":{
+    "tvdbapi": "tvdb api key - free",
+    "tmdbtoken": "This is the super long token from tmdb - free",
+    "FanartTvAPIKey": "fanart.tv token - free",
+    "PlexToken": "plex token - free",
+    "FavProvider": "tmdb",
+    "PreferredLanguageOrder": ["xx", "en", "de"]
+  },
+  "PlexPart":{
+    "LibstoExclude": ["", "", "TestMovies", "TestTV Shows", "Other Videos", "Music", "Photos", "Test Videos", "Playlists" ],
+    "PlexUrl": "http://192.168.2.242:32400"
+  },
+  "Notification":{
+    "SendNotification":"true",
+    "AppriseUrl": "discord://{WebhookID}/{WebhookToken}/",
+    "Discord": "https://discord.com/api/webhooks/add-your-discord-webhook-here"
+  },
+  "PrerequisitePart":{
+    "AssetPath": "./assets",
+    "magickinstalllocation": "./magick",
+    "maxLogs": "5",
+    "font": "Comfortaa-Medium.ttf",
+    "backgroundfont": "Comfortaa-Medium.ttf",
+    "titlecardfont": "Comfortaa-Medium.ttf",
+    "overlayfile": "bottom-up-fade.png",
+    "backgroundoverlayfile": "bottom-up-fade-background.png",
+    "titlecardoverlayfile": "bottom-up-fade-background.png",
+    "LibraryFolders": "true",
+	"Posters": "true",
+    "SeasonPosters": "true",
+    "BackgroundPosters": "true",
+    "TitleCards": "true"
+  },
+  "OverlayPart":{
+    "ImageProcessing": "true",
+    "outputQuality": "100%"
+  },
+  "PosterOverlayPart":{
+    "fontAllCaps": "true",
+    "AddBorder": "false",
+    "AddText": "true",
+    "AddOverlay": "true",
+    "fontcolor": "white",
+    "bordercolor": "white",
+    "minPointSize": "95",
+    "maxPointSize": "250",
+    "borderwidth": "30",
+    "MaxWidth": "1200",
+    "MaxHeight": "485",
+    "text_offset": "+300"
+  },
+  "BackgroundOverlayPart":{
+    "fontAllCaps": "true",
+    "AddBorder": "false",
+    "AddText": "false",
+    "AddOverlay": "false",
+    "fontcolor": "white",
+    "bordercolor": "white",
+    "minPointSize": "95",
+    "maxPointSize": "250",
+    "borderwidth": "30",
+    "MaxWidth": "3000",
+    "MaxHeight": "500",
+    "text_offset": "+200"
+  },
+  "TitleCardOverlayPart":{
+    "AddOverlay": "true",
+    "AddBorder": "false",
+    "bordercolor": "white",
+    "borderwidth": "30"
+  },
+  "TitleCardTitleTextPart":{
+    "fontAllCaps": "true",
+    "AddEPTitleText": "true",
+    "fontcolor": "white",
+    "minPointSize": "95",
+    "maxPointSize": "250",
+    "MaxWidth": "2500",
+    "MaxHeight": "300",
+    "text_offset": "+290"
+  },
+  "TitleCardEPTextPart":{
+    "fontAllCaps": "true",
+    "AddEPText": "true",
+    "fontcolor": "white",
+    "minPointSize": "80",
+    "maxPointSize": "120",
+    "MaxWidth": "1600",
+    "MaxHeight": "150",
+    "text_offset": "+140"
+  }
+}
