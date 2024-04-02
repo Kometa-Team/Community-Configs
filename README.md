@@ -1,4 +1,4 @@
-#IMPORTANT DISCLAIMER
+# IMPORTANT DISCLAIMER
 
 This repo contains community-sourced configurations.
 
