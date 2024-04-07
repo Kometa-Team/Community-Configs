@@ -25,7 +25,9 @@ collections:
       keyword: dark comedy
   Dystopian:
     template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Dystopian.jpg}
-    imdb_list: https://www.imdb.com/search/title/?title_type=feature&keywords=dystopia
+    imdb_search: 
+      votes.gte: 100
+      keyword: dystopia
   Football:
     template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Football.jpg}
     imdb_list: https://www.imdb.com/list/ls567409329/
