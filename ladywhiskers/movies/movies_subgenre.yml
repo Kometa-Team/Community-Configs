@@ -10,32 +10,16 @@ external_templates:
 templates:
   sub_genre:
     optional:
-      - imdb_extra_1
-      - imdb_extra_2
-      - imdb_extra_3
-      - imdb_extra_4
-      - imdb_extra_5
       - letterboxd_list
       - letterboxd_extra_1
       - letterboxd_extra_2
       - letterboxd_extra_3
       - letterboxd_extra_4
       - letterboxd_extra_5
-    sort_title: "!060_<<collection_name>>"
-    schedule: weekly(monday|wednesday|friday)
+    schedule: monthly(28)
     limit: 10000 
-    sync_mode: sync
     collection_order: audience_rating.desc
     cache_builders: 0
-    imdb_search:
-      votes.gte: 100
-      keyword: <<keywords>>
-    imdb_list:
-      - <<imdb_extra_1>>
-      - <<imdb_extra_2>>
-      - <<imdb_extra_3>>
-      - <<imdb_extra_4>>
-      - <<imdb_extra_5>>
     letterboxd_list:
       - https://letterboxd.com/ediblehedgehog/list/<<letterboxd_list>>/
       - <<letterboxd_extra_1>>
@@ -43,10 +27,11 @@ templates:
       - <<letterboxd_extra_3>>
       - <<letterboxd_extra_4>>
       - <<letterboxd_extra_5>>
+    item_genre: <<collection_name>>
+    build_collection: false
 
 collections:  
   Absurdism:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Absurdism.jpg
     template: {
                     name: sub_genre,
                     keywords: "absurdism",
@@ -58,7 +43,6 @@ collections:
                     letterboxd_list: "theme-absurdism"
                     }
   Alien:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Alien.jpg
     template: {
                     name: sub_genre,
                     keywords: "alien",
@@ -70,7 +54,6 @@ collections:
                     letterboxd_list: "theme-aliens"
                     }
   Alternate History:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Alternate%20History.jpg
     template: {
                     name: sub_genre,
                     keywords: "alternate-history",
@@ -82,7 +65,6 @@ collections:
                     letterboxd_list: "theme-alternate-history"
                     }
   Anti-Hero:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Anti-Hero.jpg
     template: {
                     name: sub_genre,
                     keywords: "anti-hero",
@@ -94,7 +76,6 @@ collections:
                     letterboxd_list: "theme-anti-hero"
                     }
   Apocalypse:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Apocalypse.jpg
     template: {
                     name: sub_genre,
                     keywords: "apocalypse",
@@ -106,7 +87,7 @@ collections:
                     letterboxd_list: "theme-apocalypse"
                     }
   Artificial Intelligence:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Artificial%20Intelligence.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Artificial%20Intelligence.jpg
     template: {
                     name: sub_genre,
                     keywords: "artificial-intelligence",
@@ -118,7 +99,7 @@ collections:
                     letterboxd_list: "theme-artificial-intelligence"
                     }
   Assassin:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Assassin.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Assassin.jpg
     template: {
                     name: sub_genre,
                     keywords: "assassin",
@@ -130,7 +111,7 @@ collections:
                     letterboxd_list: "theme-assassins"
                     }
   Betrayal:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Betrayal.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Betrayal.jpg
     template: {
                     name: sub_genre,
                     keywords: "betrayal",
@@ -142,7 +123,7 @@ collections:
                     letterboxd_list: "theme-betrayal"
                     }
   Boxing:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Boxing.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Boxing.jpg
     template: {
                     name: sub_genre,
                     keywords: "boxing",
@@ -154,7 +135,7 @@ collections:
                     letterboxd_list: "theme-boxing",
                     }
   Bug:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Bug.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Bug.jpg
     template: {
                     name: sub_genre,
                     keywords: "insect",
@@ -166,7 +147,7 @@ collections:
                     letterboxd_list: "theme-bugs"
                     }
   Caper:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Caper.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Caper.jpg
     template: {
                     name: sub_genre,
                     keywords: "caper",
@@ -178,7 +159,7 @@ collections:
                     letterboxd_list: "theme-caper"
                     }
   Chick Flick:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Chick%20Flick.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Chick%20Flick.jpg
     template: {
                     name: sub_genre,
                     keywords: "chick-flick",
@@ -192,7 +173,7 @@ collections:
                     letterboxd_extra_2: "https://letterboxd.com/marialuisacctc/list/women-have-superior-taste-that-is-why-these/"
                     }
   Coming of Age:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Coming%20of%20Age.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Coming%20of%20Age.jpg
     template: {
                     name: sub_genre,
                     keywords: "coming-of-age",
@@ -204,7 +185,7 @@ collections:
                     letterboxd_list: "theme-coming-of-age"
                     }
   Con Artist:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Con%20Artist.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Con%20Artist.jpg
     template: {
                     name: sub_genre,
                     keywords: "con-artist",
@@ -216,7 +197,7 @@ collections:
                     letterboxd_list: "theme-con-artists"
                     }
   Costume Drama:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Costume%20Drama.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Costume%20Drama.jpg
     template: {
                     name: sub_genre,
                     keywords: "costume-drama",
@@ -228,7 +209,7 @@ collections:
                     letterboxd_list: "theme-costume-drama"
                     }
   Courtroom:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Courtroom.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Courtroom.jpg
     template: {
                     name: sub_genre,
                     keywords: "court",
@@ -240,7 +221,7 @@ collections:
                     letterboxd_list: "theme-courtroom"
                     }
   Cyberpunk:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Cyberpunk.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Cyberpunk.jpg
     template: {
                     name: sub_genre,
                     keywords: "cyberpunk",
@@ -252,7 +233,7 @@ collections:
                     letterboxd_list: "theme-cyberpunk"
                     }
   Dark Fantasy:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Dark%20Fantasy.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Dark%20Fantasy.jpg
     template: {
                     name: sub_genre,
                     keywords: "dark-fantasy",
@@ -264,7 +245,7 @@ collections:
                     letterboxd_list: "theme-dark-fantasy"
                     }
   Detective:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Detective.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Detective.jpg
     template: {
                     name: sub_genre,
                     keywords: "detective",
@@ -276,7 +257,7 @@ collections:
                     letterboxd_list: "theme-detective"
                     }
   Dragon:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Dragon.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Dragon.jpg
     template: {
                     name: sub_genre,
                     keywords: "dragon",
@@ -288,7 +269,7 @@ collections:
                     letterboxd_list: "theme-dragons"
                     }
   Epic:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Epic.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Epic.jpg
     template: {
                     name: sub_genre,
                     keywords: "epic",
@@ -300,7 +281,7 @@ collections:
                     letterboxd_list: "theme-epics"
                     }
   Espionage:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Espionage.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Espionage.jpg
     template: {
                     name: sub_genre,
                     keywords: "espionage",
@@ -312,7 +293,7 @@ collections:
                     letterboxd_list: "theme-espionage"
                     }
   Experimental:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Experimental.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Experimental.jpg
     template: {
                     name: sub_genre,
                     keywords: "experimental-film",
@@ -324,7 +305,7 @@ collections:
                     letterboxd_list: "theme-experimental"
                     }
   Fairytale:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Fairy%20Tale.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Fairy%20Tale.jpg
     template: {
                     name: sub_genre,
                     keywords: "fairy-tale",
@@ -336,7 +317,7 @@ collections:
                     letterboxd_list: "theme-fairytale"
                     }
   Found Footage Horror:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Found%20Footage%20Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Found%20Footage%20Horror.jpg
     template: {
                     name: sub_genre,
                     keywords: "found-footage",
@@ -345,10 +326,10 @@ collections:
                     user_rating: "5.0,10.0",
                     votes: "100,",
                     languages: "",
-                    letterboxd_list: "theme-found-footage"
+                    #letterboxd_list: "theme-found-footage"
                     }
   Fugitive:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Fugitive.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Fugitive.jpg
     template: {
                     name: sub_genre,
                     keywords: "fugitive,on-the-run",
@@ -360,7 +341,7 @@ collections:
                     letterboxd_list: "theme-fugitives"
                     }
   # Gambling:
-  #   url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Gambling.jpg
+  #   #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Gambling.jpg
   #   template: {
   #                   name: sub_genre,
   #                   keywords: "gambling",
@@ -372,7 +353,7 @@ collections:
   #                   letterboxd_list: "theme-hustle"
   #                   }
   Gangster:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Gangster.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Gangster.jpg
     template: {
                     name: sub_genre,
                     keywords: "gangster,mob",
@@ -384,7 +365,7 @@ collections:
                     letterboxd_list: "theme-gangster"
                     }
   Ghost:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Ghost.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Ghost.jpg
     template: {
                     name: sub_genre,
                     keywords: "ghost",
@@ -396,7 +377,7 @@ collections:
                     letterboxd_list: "theme-ghosts"
                     }
   Gothic:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Gothic.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Gothic.jpg
     template: {
                     name: sub_genre,
                     keywords: "gothic",
@@ -408,7 +389,7 @@ collections:
                     letterboxd_list: "theme-gothic"
                     }
   Heartbreak:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Heartbreak.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Heartbreak.jpg
     template: {
                     name: sub_genre,
                     keywords: "heartbreak",
@@ -420,7 +401,7 @@ collections:
                     letterboxd_list: "theme-heartbreak"
                     }
   Heist:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Heist.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Heist.jpg
     template: {
                     name: sub_genre,
                     keywords: "heist",
@@ -432,7 +413,7 @@ collections:
                     letterboxd_list: "theme-heists"
                     }
   Historical Event:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Historical%20Event.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Historical%20Event.jpg
     template: {
                     name: sub_genre,
                     keywords: "historical-event",
@@ -444,7 +425,7 @@ collections:
                     letterboxd_list: "theme-historical-event"
                     }
   Hostage:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Hostage.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Hostage.jpg
     template: {
                     name: sub_genre,
                     keywords: "hostage",
@@ -454,10 +435,10 @@ collections:
                     votes: "10000,",
                     languages: "",
                     letterboxd_list: "theme-hostage",
-                    imdb_extra_1: "https://www.imdb.com/search/keyword/?keywords=hostage,kidnapping&ref_=kw_4&sort=num_votes,desc&mode=detail&page=1"
+                    #imdb_extra_1: "https://www.imdb.com/search/keyword/?keywords=hostage,kidnapping&ref_=kw_4&sort=num_votes,desc&mode=detail&page=1"
                     }
   Medical:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Medical.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Medical.jpg
     template: {
                     name: sub_genre,
                     keywords: "medicine",
@@ -468,19 +449,19 @@ collections:
                     languages: "",
                     letterboxd_list: "theme-medical"
                     }
-  # Medieval:
-  #   template: {
-  #                   name: sub_genre,
-  #                   keywords: "medieval-times",
-  #                   genres: "",
-  #                   title_type: "feature",
-  #                   user_rating: "5.0,10.0",
-  #                   votes: "100,",
-  #                   languages: "",
-  #                   letterboxd_list: "theme-medieval"
-  #                   }
+  Medieval:
+     template: {
+                     name: sub_genre,
+                     keywords: "medieval-times",
+                     genres: "",
+                     title_type: "feature",
+                     user_rating: "5.0,10.0",
+                     votes: "100,",
+                     languages: "",
+                     letterboxd_list: "theme-medieval"
+                     }
   Melodrama:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Melodrama.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Melodrama.jpg
     template: {
                     name: sub_genre,
                     keywords: "melodrama",
@@ -492,7 +473,7 @@ collections:
                     letterboxd_list: "theme-melodrama"
                     }
   Military:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Military.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Military.jpg
     template: {
                     name: sub_genre,
                     keywords: "military",
@@ -504,7 +485,7 @@ collections:
                     letterboxd_list: "theme-military"
                     }
   Mockumentary:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Mockumentary.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Mockumentary.jpg
     template: {
                     name: sub_genre,
                     keywords: "mockumentary",
@@ -517,7 +498,7 @@ collections:
                     #imdb_extra_1: "https://www.imdb.com/list/ls027069047"
                     }
   Monster:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Monster.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Monster.jpg
     template: {
                     name: sub_genre,
                     keywords: "monster",
@@ -529,7 +510,7 @@ collections:
                     letterboxd_list: "theme-monsters"
                     }
   Mythology:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Mythology.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Mythology.jpg
     template: {
                     name: sub_genre,
                     keywords: "mythology",
@@ -541,7 +522,7 @@ collections:
                     letterboxd_list: "theme-mythology"
                     }
   Naval:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Naval.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Naval.jpg
     template: {
                     name: sub_genre,
                     keywords: "navy",
@@ -553,7 +534,7 @@ collections:
                     letterboxd_list: "theme-naval"
                     }
   Ninja:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Ninja.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Ninja.jpg
     template: {
                     name: sub_genre,
                     keywords: "ninja",
@@ -565,7 +546,7 @@ collections:
                     letterboxd_list: "theme-ninjas"
                     }
   Occult:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Occult.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Occult.jpg
     template: {
                     name: sub_genre,
                     keywords: "occult",
@@ -577,7 +558,7 @@ collections:
                     letterboxd_list: "theme-occult"
                     }
   Outlaw:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Outlaw.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Outlaw.jpg
     template: {
                     name: sub_genre,
                     keywords: "outlaw",
@@ -589,7 +570,7 @@ collections:
                     letterboxd_list: "theme-outlaw"
                     }
   Paranormal:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Paranormal.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Paranormal.jpg
     template: {
                     name: sub_genre,
                     keywords: "paranormal-phenomenon",
@@ -601,7 +582,7 @@ collections:
                     letterboxd_list: "theme-paranormal"
                     }
   Period Drama:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Period%20Drama.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Period%20Drama.jpg
     template: {
                     name: sub_genre,
                     keywords: "period-drama",
@@ -613,7 +594,7 @@ collections:
                     letterboxd_list: "theme-period-drama"
                     }
   Philosophy:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Philosophy.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Philosophy.jpg
     template: {
                     name: sub_genre,
                     keywords: "philosophy",
@@ -627,7 +608,7 @@ collections:
     trakt_list:
      - https://trakt.tv/users/rizreflects/lists/philosophical
   Police:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Police.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Police.jpg
     template: {
                     name: sub_genre,
                     keywords: "police",
@@ -639,7 +620,7 @@ collections:
                     letterboxd_list: "theme-cop"
                     }
   Politics:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Politics.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Politics.jpg
     template: {
                     name: sub_genre,
                     keywords: "politics",
@@ -651,7 +632,7 @@ collections:
                     letterboxd_list: "theme-political"
                     }
   Prehistoric:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Prehistoric.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Prehistoric.jpg
     template: {
                     name: sub_genre,
                     keywords: "prehistoric-times",
@@ -664,7 +645,7 @@ collections:
                     letterboxd_extra_1: "https://letterboxd.com/mikkelhh/list/before-civilization-prehistoric-films/"
                     }
   # Prison:
-  #   url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Prison.jpg
+  #   #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Prison.jpg
   #   template: {
   #                   name: sub_genre,
   #                   keywords: "prison",
@@ -676,7 +657,7 @@ collections:
   #                   letterboxd_list: "theme-prison"
   #                   }
   Psychedelic:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Psychedelic.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Psychedelic.jpg
     template: {
                     name: sub_genre,
                     keywords: "psychedelic",
@@ -690,7 +671,7 @@ collections:
                     letterboxd_extra_2: "https://letterboxd.com/deity/list/psychedelic/"
                     }
   Psychological:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Psychological.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Psychological.jpg
     template: {
                     name: sub_genre,
                     keywords: "psychological",
@@ -702,7 +683,7 @@ collections:
                     letterboxd_list: "theme-psychological"
                     }
   Religion:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Religion.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Religion.jpg
     template: {
                     name: sub_genre,
                     keywords: "religion",
@@ -714,7 +695,7 @@ collections:
                     letterboxd_list: "theme-religous"
                     }
   Remake:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Remake.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Remake.jpg
     template: {
                     name: sub_genre,
                     keywords: "remake",
@@ -727,7 +708,7 @@ collections:
                     letterboxd_extra_1: "https://letterboxd.com/l_shelby/list/remakes/"
                     }
   Revenge:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Revenge.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Revenge.jpg
     template: {
                     name: sub_genre,
                     keywords: "revenge",
@@ -739,7 +720,7 @@ collections:
                     letterboxd_list: "theme-revenge"
                     }
   Robot:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Robot.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Robot.jpg
     template: {
                     name: sub_genre,
                     keywords: "robot",
@@ -751,7 +732,7 @@ collections:
                     letterboxd_list: "theme-robots"
                     }
   Samurai:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Samurai.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Samurai.jpg
     template: {
                     name: sub_genre,
                     keywords: "samurai",
@@ -764,7 +745,7 @@ collections:
                     letterboxd_extra_1: "https://letterboxd.com/jhcrotinger/list/samurai/"
                     }
   Satire:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Satire.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Satire.jpg
     template: {
                     name: sub_genre,
                     keywords: "satire",
@@ -776,7 +757,7 @@ collections:
                     letterboxd_list: "theme-satire"
                     }
   Serial Killer:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Serial%20Killer.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Serial%20Killer.jpg
     template: {
                     name: sub_genre,
                     keywords: "serial-killer",
@@ -788,7 +769,7 @@ collections:
                     letterboxd_list: "theme-serial-killers"
                     }
   Slasher:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Slasher.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Slasher.jpg
     template: {
                     name: sub_genre,
                     keywords: "slasher",
@@ -804,7 +785,7 @@ collections:
                     imdb_extra_4: "https://www.imdb.com/list/ls062357250"
                     }
   Space Opera:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Space%20Opera.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Space%20Opera.jpg
     template: {
                     name: sub_genre,
                     keywords: "space-opera",
@@ -816,7 +797,7 @@ collections:
                     letterboxd_list: "theme-space-opera"
                     }
   Spaghetti Western:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Spaghetti%20Western.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Spaghetti%20Western.jpg
     template: {
                     name: sub_genre,
                     keywords: "spaghetti-western",
@@ -828,7 +809,7 @@ collections:
                     letterboxd_list: "theme-spaghetti-western"
                     }
   Splatter:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Splatter.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Splatter.jpg
     template: {
                     name: sub_genre,
                     keywords: "splatter",
@@ -840,7 +821,7 @@ collections:
                     letterboxd_list: "theme-splatter"
                     }
   Steampunk:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Steampunk.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Steampunk.jpg
     template: {
                     name: sub_genre,
                     keywords: "steampunk",
@@ -852,7 +833,7 @@ collections:
                     letterboxd_list: "theme-steampunk"
                     }
   Stop-Motion:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Stop-Motion.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Stop-Motion.jpg
     template: {
                     name: sub_genre,
                     keywords: "stop-motion",
@@ -865,7 +846,7 @@ collections:
                     letterboxd_extra_1: "https://letterboxd.com/savage_/list/stop-motion/"
                     }
   Superhero:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Superhero.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Superhero.jpg
     template: {
                     name: sub_genre,
                     keywords: "superhero",
@@ -877,7 +858,7 @@ collections:
                     letterboxd_list: "theme-superhero"
                     }
   Supernatural:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Supernatural.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Supernatural.jpg
     template: {
                     name: sub_genre,
                     keywords: "supernatural-power",
@@ -889,7 +870,7 @@ collections:
                     letterboxd_list: "theme-supernatural"
                     }
   Surrealism:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Surrealism.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Surrealism.jpg
     template: {
                     name: sub_genre,
                     keywords: "surrealism",
@@ -901,7 +882,7 @@ collections:
                     letterboxd_list: "theme-surrealism"
                     }
   Survival:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Survival.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Survival.jpg
     template: {
                     name: sub_genre,
                     keywords: "survival,survivor",
@@ -915,7 +896,7 @@ collections:
     trakt_list:
      - https://trakt.tv/users/rizreflects/lists/survival
   Swashbuckler:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Swashbuckler.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Swashbuckler.jpg
     template: {
                     name: sub_genre,
                     keywords: "pirate",
@@ -927,7 +908,7 @@ collections:
                     letterboxd_list: "theme-swashbuckler"
                     }
   Sword & Sandal:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Sword%20%26%20Sandal.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Sword%20%26%20Sandal.jpg
     template: {
                     name: sub_genre,
                     keywords: "sword-and-sandal",
@@ -940,7 +921,7 @@ collections:
                     imdb_extra_1: "https://www.imdb.com/list/ls043130664"
                     }                    
   Sword & Sorcery:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Sword%20%26%20Sorcery.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Sword%20%26%20Sorcery.jpg
     template: {
                     name: sub_genre,
                     keywords: "sword-and-sorcery",
@@ -953,7 +934,7 @@ collections:
                     imdb_extra_1: "https://www.imdb.com/list/ls022909805"
                     }
   Treasure Hunt:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Treasure%20Hunt.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Treasure%20Hunt.jpg
     template: {
                     name: sub_genre,
                     keywords: "treasure-hunt",
@@ -965,7 +946,7 @@ collections:
                     letterboxd_list: "theme-treasure-hunt",
                     }
   Urban Fantasy:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Urban%20Fantasy.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Urban%20Fantasy.jpg
     template: {
                     name: sub_genre,
                     keywords: "urban-fantasy",
@@ -977,7 +958,7 @@ collections:
                     letterboxd_list: "theme-urban-fantasy"
                     }
   Utopia:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Utopia.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Utopia.jpg
     template: {
                     name: sub_genre,
                     keywords: "utopia",
@@ -990,7 +971,7 @@ collections:
                     imdb_extra_1: "https://www.imdb.com/list/ls041227401"
                     }
   Vampire:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Vampire.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Vampire.jpg
     template: {
                     name: sub_genre,
                     keywords: "vampire",
@@ -1002,7 +983,7 @@ collections:
                     letterboxd_list: "theme-vampires"
                     }
   Werewolf:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Werewolf.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Werewolf.jpg
     template: {
                     name: sub_genre,
                     keywords: "werewolf",
@@ -1015,7 +996,7 @@ collections:
                     #imdb_extra_1: "https://www.imdb.com/search/keyword/?keywords=werewolf&ref_=kw_ref_gnr&sort=moviemeter,asc&mode=detail&page=1&title_type=movie&genres=Fantasy"
                     }
   Whodunit:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Whodunit.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Whodunit.jpg
     template: {
                     name: sub_genre,
                     keywords: "whodunit",
@@ -1027,7 +1008,7 @@ collections:
                     letterboxd_extra_1: "https://letterboxd.com/mikesemler/list/les-whodunits-ou-un-de-mes-plus-grands-plaisirs/"
                     }
   Wizardry and Witchcraft:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Wizardry%20%26%20Witchcraft.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Wizardry%20%26%20Witchcraft.jpg
     template: {
                     name: sub_genre,
                     keywords: "wizard,witchcraft",
@@ -1040,7 +1021,7 @@ collections:
                     #imdb_extra_1: "https://www.imdb.com/search/keyword/?keywords=witch&ref_=kw_ref_typ&sort=moviemeter,asc&mode=detail&page=1&title_type=movie"
                     }
   World War:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/World%20War.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/World%20War.jpg
     template: {
                     name: sub_genre,
                     keywords: "world-war-one",
@@ -1053,7 +1034,7 @@ collections:
                     #imdb_extra_1: "https://www.imdb.com/search/keyword/?keywords=world-war-two&ref_=kw_ref_typ&sort=moviemeter,asc&mode=detail&page=1&title_type=movie"
                     }
   Zombie Horror:
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Zombie%20Horror.jpg
+    #url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Zombie%20Horror.jpg
     template: {
                     name: sub_genre,
                     keywords: "zombie",
