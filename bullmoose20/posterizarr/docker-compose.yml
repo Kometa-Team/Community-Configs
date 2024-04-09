@@ -1,8 +1,7 @@
-version: "3"
 services:
-  ppm:
-    hostname: "ppm"
-    container_name: "ppm"
+  posterizarr:
+    hostname: "posterizarr"
+    container_name: "posterizarr"
     environment:
       - "PGID=100"
       - "PUID=99"
@@ -10,12 +9,12 @@ services:
       - "UMASK=002"
       - "TERM=xterm"
       - "RUN_TIME=10:30,19:30"
-    image: "ghcr.io/fscorrupt/docker-ppm:latest"
+    image: "ghcr.io/fscorrupt/docker-posterizarr:latest"
     restart: "unless-stopped"
     networks:
-      - "ppm"
+      - "posterizarr"
     volumes:
-      - "/mnt/user/appdata/ppm:/config:rw"
+      - "/mnt/user/appdata/posterizarr:/config:rw"
 networks:
-  ppm:
+  posterizarr:
     driver: bridge
