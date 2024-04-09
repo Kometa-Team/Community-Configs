@@ -1,0 +1,78 @@
+#    ______   __     __  ________  _______   __         ______   __      __   ______  
+#   /      \ /  |   /  |/        |/       \ /  |       /      \ /  \    /  | /      \ 
+#  /$$$$$$  |$$ |   $$ |$$$$$$$$/ $$$$$$$  |$$ |      /$$$$$$  |$$  \  /$$/ /$$$$$$  |
+#  $$ |  $$ |$$ |   $$ |$$ |__    $$ |__$$ |$$ |      $$ |__$$ | $$  \/$$/  $$ \__$$/ 
+#  $$ |  $$ |$$  \ /$$/ $$    |   $$    $$< $$ |      $$    $$ |  $$  $$/   $$      \ 
+#  $$ |  $$ | $$  /$$/  $$$$$/    $$$$$$$  |$$ |      $$$$$$$$ |   $$$$/     $$$$$$  |
+#  $$ \__$$ |  $$ $$/   $$ |_____ $$ |  $$ |$$ |_____ $$ |  $$ |    $$ |    /  \__$$ |
+#  $$    $$/    $$$/    $$       |$$ |  $$ |$$       |$$ |  $$ |    $$ |    $$    $$/ 
+#   $$$$$$/      $/     $$$$$$$$/ $$/   $$/ $$$$$$$$/ $$/   $$/     $$/      $$$$$$/  
+
+#    _ _    _  __    _   _   _  _   ___  
+#   | | |  | |/ /   | | | | | || | |   \ 
+#   |_  _| | ' <    | |_| | | __ | | |) |
+#     |_|  |_|\_\    \___/  |_||_| |___/ 
+#    __  __   ___ __   __ ___  ___  ___ 
+#   |  \/  | / _ \\ \ / /|_ _|| __|/ __|
+#   | |\/| || (_) |\ V /  | | | _| \__ \
+#   |_|  |_| \___/  \_/  |___||___||___/
+
+
+external_templates:
+  file: config/scripts/overlays/template_overlays.yml
+
+overlays:
+  IMDB_G:
+    plex_search:
+      all:
+        audience_rating.gte: 8.0
+    overlay:
+      name: IMDB_G 
+      file: config/overlays/ratings/IMDB_G.png   
+
+  IMDB_Y:
+    plex_search:
+      all:
+        audience_rating.gte: 6.0
+        audience_rating.lt: 8.0
+    overlay:
+      name: IMDB_Y
+      file: config/overlays/ratings/IMDB_Y.png   
+
+  IMDB_R:
+    plex_search:
+      all:
+        audience_rating.lt: 6.0
+    overlay:
+        name: IMDB_R
+        file: config/overlays/ratings/IMDB_R.png   
+
+  audience_rating:
+      overlay:
+        name: text(<<audience_rating>>)
+        font: config/overlays/fonts/MyriadPro/MyriadPro-Bold.ttf
+        horizontal_offset: 50
+        vertical_offset: 1410
+        font_size: 75
+        font_color: "#000000"
+      plex_all: true
+
+  4K_Movie:
+    run_definition: movie
+    overlay:
+      name: 4k_Movie
+      file: config/overlays/resolution/4k.png
+    plex_search:
+      all:
+        resolution: 4K
+    filters:
+      edition: Diamond
+
+  IMDb250:
+    run_definition: movie
+    overlay: 
+      name: IMDb250
+      file: config/overlays/charts/IMDb250.png    
+    plex_search:
+      all:
+        collection: IMDb Top 250

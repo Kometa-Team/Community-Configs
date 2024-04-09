@@ -1,0 +1,2144 @@
+
+
+#   __       __                        __                           ______   __                                      __       __              __                      __              __                     
+#  /  \     /  |                      /  |                         /      \ /  |                                    /  \     /  |            /  |                    /  |            /  |                    
+#  $$  \   /$$ |  ______    _______  _$$ |_     ______    ______  /$$$$$$  |$$ |  ______    _______   _______       $$  \   /$$ |  ______   _$$ |_     ______    ____$$ |  ______   _$$ |_     ______        
+#  $$$  \ /$$$ | /      \  /       |/ $$   |   /      \  /      \ $$ |  $$/ $$ | /      \  /       | /       |      $$$  \ /$$$ | /      \ / $$   |   /      \  /    $$ | /      \ / $$   |   /      \       
+#  $$$$  /$$$$ | $$$$$$  |/$$$$$$$/ $$$$$$/   /$$$$$$  |/$$$$$$  |$$ |      $$ | $$$$$$  |/$$$$$$$/ /$$$$$$$/       $$$$  /$$$$ |/$$$$$$  |$$$$$$/    $$$$$$  |/$$$$$$$ | $$$$$$  |$$$$$$/    $$$$$$  |      
+#  $$ $$ $$/$$ | /    $$ |$$      \   $$ | __ $$    $$ |$$ |  $$/ $$ |   __ $$ | /    $$ |$$      \ $$      \       $$ $$ $$/$$ |$$    $$ |  $$ | __  /    $$ |$$ |  $$ | /    $$ |  $$ | __  /    $$ |      
+#  $$ |$$$/ $$ |/$$$$$$$ | $$$$$$  |  $$ |/  |$$$$$$$$/ $$ |      $$ \__/  |$$ |/$$$$$$$ | $$$$$$  | $$$$$$  |      $$ |$$$/ $$ |$$$$$$$$/   $$ |/  |/$$$$$$$ |$$ \__$$ |/$$$$$$$ |  $$ |/  |/$$$$$$$ |      
+#  $$ | $/  $$ |$$    $$ |/     $$/   $$  $$/ $$       |$$ |      $$    $$/ $$ |$$    $$ |/     $$/ /     $$/       $$ | $/  $$ |$$       |  $$  $$/ $$    $$ |$$    $$ |$$    $$ |  $$  $$/ $$    $$ |      
+#  $$/      $$/  $$$$$$$/ $$$$$$$/     $$$$/   $$$$$$$/ $$/        $$$$$$/  $$/  $$$$$$$/ $$$$$$$/  $$$$$$$/        $$/      $$/  $$$$$$$/    $$$$/   $$$$$$$/  $$$$$$$/  $$$$$$$/    $$$$/   $$$$$$$/       
+
+
+metadata:
+
+######## Wellness #########
+
+  Donna_Farhi:                
+    match:
+      title: "Yoga Foundations"
+    title: "Yoga Foundations"
+    sort_title: "!001_!Wellness_001"
+    original_title: "Donna Farhi Teaches Yoga Foundations"
+    summary: "Renowned yoga instructor Donna Farhi teaches you the most essential physical and mental elements of creating a safe, sustainable practice"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Meet Your Instructor: Donna Farhi"
+            2:
+              title: "What Is Yoga"
+            3:
+              title: "Essential Breath"
+            4:
+              title: "Yoga Warm-up Practices"
+            5:
+              title: "Building Your Foundation"
+            6:
+              title: "Moving From the Inside Out"
+            7:
+              title: "Sun Salutations"
+            8:
+              title: "Finding Your Center"
+            9:
+              title: "Mobilizing Your Back"
+            10:
+              title: "Restoring Your Mind"
+
+  Jessie_Krebs:                
+    match:
+      title: "Wilderness Survival"
+    title: "Wilderness Survival"
+    sort_title: "!001_!Wellness_003"
+    original_title: "Jessie Krebs Teaches Wilderness Survival"
+    summary: "Wilderness survival expert and former Air Force SERE specialist Jessie Krebs teaches you the skills to explore nature safely and confidently"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Meet Your Instructor - Jessie Krebs"
+            2:
+              title: "Survival Mindset"
+            3:
+              title: "The Five Basic Needs"
+            4:
+              title: "Signaling: Help Them Find You"
+            5:
+              title: "Know Your Tools: Knives"
+            6:
+              title: "Know Your Tools: Rope"
+            7:
+              title: "Navigation: Scouting Techniques"
+            8:
+              title: "Navigation: Using a Map and Compass"
+            9:
+              title: "Water 101"
+            10:
+              title: "Rationing Food and Foraging"
+            11:
+              title: "Personal Protection: Clothing and Equipment"
+            12:
+              title: "Building a Shelter"
+            13:
+              title: "Fire 101: Gathering Fuel"
+            14:
+              title: "Fire 101: Lighting and Maintenance"
+            15:
+              title: "Building Your Survival Kit"
+            16:
+              title: "The Healing Power of the Wilderness"
+
+  Holder_Fitness:                
+    match:
+      title: Fitness and Wellness Fundamentals
+    title: Fitness and Wellness Fundamentals
+    sort_title: "!001_!Wellness_004"
+    original_title: Joe Holder Teaches Fitness and Wellness Fundamentals
+    summary: "Master trainer Joe Holder teaches you his holistic approach for better workouts, more effective nutrition, and a healthier mindset."
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "The Ocho System - Origins and Overview"
+            3:
+              title: "Biomotor Skills - The Foundation of Physical Health"
+            4:
+              title: "Mobility Workout"
+            5:
+              title: "Listen to Your Body - Data Is King"
+            6:
+              title: "Working Out Smarter AND Harder"
+            7:
+              title: "HIIT Workout"
+            8:
+              title: "The Ocho System Food 101 - Eat Real, Eat Right"
+            9:
+              title: "Take Advantage of Food Hacks"
+            10:
+              title: "Strength Workout"
+            11:
+              title: "The Importance of Proper Recovery"
+            12:
+              title: "Catalysts for Success"
+
+  Kabat_Mimdful:                
+    match:
+      title: Mindfulness and Meditation
+    title: Mindfulness and Meditation
+    sort_title: "!001_!Wellness_005"
+    original_title: Jon Kabat-Zinn Teaches Mindfulness and Meditation
+    summary: "Mindfulness expert Jon Kabat-Zinn teaches you how to incorporate meditation into your everyday life to improve your health and happiness."
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "A Guide to Mindfulness"
+            3:
+              title: "Attitudinal Foundations of Mindfulness"
+            4:
+              title: "A Guide to Meditation"
+            5:
+              title: "Guided Meditation - Dropping In"
+            6:
+              title: "Working With Thoughts While Meditating"
+            7:
+              title: "Meditation Postures"
+            8:
+              title: "Guided Meditation - Falling Awake"
+            9:
+              title: "Guided Meditation - Putting Out the Welcome Mat"
+            10:
+              title: "Guided Meditation - Choiceless Awareness"
+            11:
+              title: "Mindfulness and Stress"
+            12:
+              title: "Guided Meditation - The Mountain"
+            13:
+              title: "Mindfulness, Pain, and Suffering"
+            14:
+              title: "Guided Meditation - The Body Scan"
+            15:
+              title: "The Science of Mindfulness"
+            16:
+              title: "Mindful Hatha Yoga"
+            17:
+              title: "Reclaiming Our Wholeness"
+            18:
+              title: "Guided Meditation - Loving-Kindness"
+            19:
+              title: "Healing the World"
+            20:
+              title: "Maintaining a Mindfulness Practice"
+  
+  Walker_Sleep:                
+    match:
+      title: The Science of Better Sleep
+    title: The Science of Better Sleep
+    sort_title: "!001_!Wellness_006"
+    original_title: Matthew Walker Teaches The Science of Better Sleep
+    summary: "Neuroscience professor Matthew Walker teaches you the science of sleep and how to optimize it to better your overall health."
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "What Is Sleep"
+            3:
+              title: "How Sleep Works"
+            4:
+              title: "Night Owl or Morning Lark"
+            5:
+              title: "The Buzz on Alcohol and Caffeine"
+            6:
+              title: "Prevent Sleep Debt"
+            7:
+              title: "Fire Up the Brain"
+            8:
+              title: "Sleep Across Our Life Span"
+            9:
+              title: "Overnight Therapy"
+            10:
+              title: "The Absurd Act of Dreaming"
+            11:
+              title: "Sleep and the Human Body"
+            12:
+              title: "Diet and Sleep"
+            13:
+              title: "Sleep to Thrive"
+            14:
+              title: "How to Sleep Better"
+            15:
+              title: "Reclaim Your Sleep"
+  
+  Pollan_Eating:                
+    match:
+      title: Intentional Eating
+    title: Intentional Eating
+    sort_title: "!001_!Wellness_007"
+    original_title: Michael Pollan Teaches Intentional Eating
+    summary: "Acclaimed author Michael Pollan teaches you what he’s spent decades researching, how to eat more ethically, healthfully, and sustainably."
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "Rethink Your Relationship With Food"
+            3:
+              title: "Confront Barriers to Intentional Eating"
+            4:
+              title: "Discover Where Your Food Comes From"
+            5:
+              title: "Field Trip - City Slicker Farms"
+            6:
+              title: "Explore the Present and Future of Meat"
+            7:
+              title: "Follow Food Rules, Not Diets"
+            8:
+              title: "Eat Food"
+            9:
+              title: "Not Too Much"
+            10:
+              title: "Eat Mostly Plants"
+            11:
+              title: "Balance Caffeine and Sugar Consumption"
+            12:
+              title: "Stir Up a Passion for Cooking"
+            13:
+              title: "Celebrate the Communal Meal"
+  
+  Robin_Arzon:                
+    match:
+      title: "Mental Strength"
+    title: "Mental Strength"
+    sort_title: "!001_!Wellness_008"
+    original_title: "Robin Arzón Teaches Mental Strength"
+    summary: "Fitness expert and Peloton Head Instructor Robin Arzón teaches you how to apply the principles of endurance and strength to every aspect of life"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Meet Your Instructor: Robin Arzón"
+            2:
+              title: "Hustle and Grit"
+            3:
+              title: "Overcoming Mental Blocks"
+            4:
+              title: "Know Your Worth"
+            5:
+              title: "Food as Fuel"
+            6:
+              title: "The Joy Metric"
+            7:
+              title: "Reinvent Yourself"
+            8:
+              title: "Find Your Purpose"
+            9:
+              title: "Find a Superhero"
+            10:
+              title: "Why Not You"
+            11:
+              title: "Pay It Forward"
+  
+  Emily_Morse :                
+    match:
+      title: "Sex and Communication"
+    title: "Sex and Communication"
+    sort_title: "!001_!Wellness_009"
+    original_title: "Emily Morse Teaches Sex and Communication"
+    summary: "In her MasterClass, Emily Morse empowers you to talk openly about sex and discover greater sexual satisfaction"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "Asking for What You Want"
+            3:
+              title: "Take Control of Your Orgasm"
+            4:
+              title: "The Power of Mindful Masturbation"
+            5:
+              title: "Keeping Desire Alive"
+            6:
+              title: "Practicing Consent and Safer Sex"
+            7:
+              title: "Fun Ideas to Enhance Your Sex Life"
+
+  Jay_Shetty:                
+    match:
+      title: "Navigating Change"
+    title: "Navigating Change"
+    sort_title: "!001_!Wellness_010"
+    original_title: "Jay Shetty Teaches Navigating Change"
+    summary: "World renowned author and award winning podcast host Jay Shetty blends ancient wisdom with modern science to help you navigate life’s only constant change."
+    seasons:
+      1:
+        episodes:  
+          1:
+            title: "Navigating Change with Jay Shetty"
+
+  Gut Health:                
+    match:
+      title: "Gut Health - With Leading Experts"
+    title: "Gut Health - With Leading Experts"
+    sort_title: "!001_!Wellness_011"
+    original_title: "Gut Health With Leading Experts"
+    summary: "Your gut is the gateway to great health. The world’s leading gut health experts teach how to boost well-being, starting with what’s inside you."
+    seasons:
+      1:
+        episodes:  
+          1:
+            title: "The Microbes Among Us"
+          2:
+            title: "The Modern Gut Dilemma"
+          3:
+            title: "Rebuilding the Biome, Mind, & Body"
+
+  Ava DuVernay:                
+    match:
+      title: "Reframe Your Thinking"
+    title: "Reframe Your Thinking"
+    sort_title: "!001_!Wellness_012"
+    original_title: "Reframe Your Thinking"
+    summary: "Award-winning filmmaker Ava DuVernay shows you how to work backward from your vision to defy limits and reach your goals."
+    seasons:
+      1:
+        episodes:  
+          1:
+            title: "Reframe Your Thinking"
+
+######## Business #########
+
+  Bob_Iger:                
+    match:
+      title: "Business Strategy and Leadership"
+    title: "Business Strategy and Leadership"
+    sort_title: "!002_!Business_001"
+    original_title: "Bob Iger Teaches Business Strategy and Leadership"
+    summary: " Disney CEO Bob Iger teaches you the leadership skills and strategies he used to reimagine one of the world’s most beloved brands"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Introduction"
+            2:
+              title: "Using Your Time Effectively"
+            3:
+              title: "Focus, Strategy & Priorities"
+            4:
+              title: "Taking Giant Swings: Pixar Acquisition Case Study"
+            5:
+              title: "The Art of Negotiation"
+            6:
+              title: "Creating Brand Value"
+            7:
+              title: "Expanding Your Brand: Marvel Acquisition Case Study"
+            8:
+              title: "Anticipating What Consumers Want"
+            9:
+              title: "The Importance of Risk-Taking"
+            10:
+              title: "Navigating Complex Deals: 21st Century Fox Case Study"
+            11:
+              title: "Managing Industry Disruption: Disney Plus Case Study"
+            12:
+              title: "Tenets for Success"
+            13:
+              title: "Conclusion"
+  
+  Voss_Negotiation:                
+    match:
+      title: The Art of Negotiation
+    title: The Art of Negotiation
+    sort_title: "!002_!Business_002"
+    original_title: Chris Voss Teaches the Art of Negotiation
+    summary: "Former FBI lead hostage negotiator Chris Voss teaches you communication skills and strategies to help you get more of what you want every day."
+    seasons:
+      1:
+        episodes:
+              1:
+                title: "Tactical Empathy"
+              2:
+                title: "Mirroring"
+              3:
+                title: "Labeling"
+              4:
+                title: "Exercise - Mirroring and Labeling"
+              5:
+                title: "Mastering Delivery"
+              6:
+                title: "Case Study - Chase Manhattan Bank Robbery"
+              7:
+                title: "Body Language & Speech Patterns"
+              8:
+                title: "Creating the Illusion of Control"
+              9:
+                title: "Mock Negotiation - Teenager"
+              10:
+                title: "The Accusations Audit"
+              11:
+                title: "The Value of No"
+              12:
+                title: "Mock Negotiation - Rival"
+              13:
+                title: "Bending Reality"
+              14:
+                title: "Bargaining"
+              15:
+                title: "Mock Negotiation - Salary"
+              16:
+                title: "Black Swans"
+              17:
+                title: "Mock Negotiation - “60 Seconds or She Dies”"
+              18:
+                title: "The Power of Negotiation"
+  
+  Daniel_Pink:                
+    match:
+      title: "Sales and Persuasion"
+    title: "Sales and Persuasion"
+    sort_title: "!002_!Business_003"
+    original_title: "Daniel Pink Teaches Sales and Persuasion"
+    summary: "NYT-bestselling author Daniel Pink shares a science-based approach to the art of persuading, selling, and motivating yourself and others"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "Sales Trends"
+            3:
+              title: "Attunement: Finding Common Ground"
+            4:
+              title: "Serve Your Audience"
+            5:
+              title: "Exercise: Creating a Discussion Map"
+            6:
+              title: "Clarity: Making Your Message Count"
+            7:
+              title: "Getting Others to Act"
+            8:
+              title: "Create a Connection by Mimicking"
+            9:
+              title: "Persuasive Framing"
+            10:
+              title: "Pitching Like a Pro"
+            11:
+              title: "Exercise: Asking for a Raise"
+            12:
+              title: "Buoyancy: Develop a Resilient Mindset"
+            13:
+              title: "Introvert, Extrovert, or Ambivert"
+            14:
+              title: "Persuade Yourself: How to Self-Motivate"
+            15:
+              title: "Using Timing to Become a Better Persuader"
+            16:
+              title: "Beginnings, Middles, and Endings"
+  
+  George_Communication:                
+    match:
+      title: Purposeful Communication
+    title: Purposeful Communication
+    sort_title: "!002_!Business_004"
+    original_title: George Stephanopoulos Teaches Purposeful Communication
+    summary: "Award-winning interviewer George Stephanopoulos teaches you his techniques for producing authentic, meaningful conversations."
+    seasons:
+      1:
+        episodes:
+              1:        
+                title: "Meet Your Instructor"
+              2:
+                title: "Battling Your Nerves"
+              3:
+                title: "Do Your Preparation"
+              4:
+                title: "Be in the Moment"
+              5:
+                title: "Throw Out the Battleplan"
+              6:
+                title: "Ask the Right Questions"
+              7:
+                title: "How to Challenge and Confront"
+              8:
+                title: "Time Management"
+              9:
+                title: "Mastering Body Language"
+              10:
+                title: "Connect Through Empathy"
+              11:
+                title: "Telling a Human Story"
+              12:
+                title: "Embrace the Silence"
+              13:
+                title: "GMA - Getting Out of Your Comfort Zone"
+              14:
+                title: "The Four Cs of Communication"
+  
+  Howard_Schultz:                
+    match:
+      title: "Business Leadership"
+    title: "Business Leadership"
+    sort_title: "!002_!Business_005"
+    original_title: "Howard Schultz Teaches Business Leadership"
+    summary: "Former Starbucks CEO shares lessons from nearly 40 years of leading one of the world’s top brands"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Jump In"
+            2:
+              title: "Values and Profits Are Not Enemies"
+            3:
+              title: "Be Curious"
+            4:
+              title: "Don't Pioneer. Disrupt."
+            5:
+              title: "Focus and Get in the Mud"
+            6:
+              title: "Find the Right Investors"
+            7:
+              title: "Coffee Break"
+            8:
+              title: "Overinvest in Culture"
+            9:
+              title: "Hire a Values-Based Team"
+            10:
+              title: "Don't Manage. Lead."
+            11:
+              title: "Cannibalize Yourself"
+            12:
+              title: "Real Leadership: What Do You Do in Crisis"
+            13:
+              title: "Onward"
+  
+  Clear_Habits:                
+    match:
+      title: Small Habits that Make a Big Impact on Your Life
+    title: Small Habits that Make a Big Impact on Your Life
+    sort_title: "!002_!Business_006"
+    original_title: James Clear Teaches Small Habits that Make a Big Impact on Your Life
+    summary: "James Clear, No. 1 NYT bestselling author of Atomic Habits, teaches you to build habits that stick and make progress toward your goals every day."
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Getting 1 Percent Better Every Day"
+            2:
+              title: "Goals vs. Systems"
+            3:
+              title: "How Habits Shape Our Identity (and Vice Versa)"
+            4:
+              title: "The Habit Loop"
+            5:
+              title: "First Law of Behavior Change - Make It Obvious"
+            6:
+              title: "Second Law of Behavior Change - Make It Attractive"
+            7:
+              title: "Third Law of Behavior Change - Make It Easy"
+            8:
+              title: "Fourth Law of Behavior Change - Make It Satisfying"
+            9:
+              title: "Unpacking the Most Common Habits"
+            10:
+              title: "5 p.m. to 9 p.m. Habits That Affect Your '9 to 5'"
+  
+  Willink_Leadership:                
+    match:
+      title: Critical Leadership Training
+    title: Critical Leadership Training
+    sort_title: "!002_!Business_007"
+    original_title: Jocko Willink Teaches Critical Leadership Training
+    summary: "Step in, step up, and raise the bar. Join bestselling author and decorated Navy SEAL veteran Jocko Willink for critical leadership training."
+    seasons:
+      1:
+        episodes:
+              1:
+                title: "What Makes a Leader"
+              2:
+                title: "Leadership is About Human Interaction"
+              3:
+                title: "New Manager 101"
+              4:
+                title: "Building an Effective Team"
+              5:
+                title: "Extreme Ownership"
+              6:
+                title: "Leadership Law 1 - Cover and Move"
+              7:
+                title: "Leadership Law 2 - Keep it Simple"
+              8:
+                title: "Leadership Law 3 - Prioritize and Execute"
+              9:
+                title: "Leadership Law 4 - Decentralized Command"
+              10:
+                title: "Leadership is the Most Important Skill"
+
+  Jeff_Goodby_Rich_Silverstein:                
+    match:
+      title: "Advertising and Creativity"
+    title: "Advertising and Creativity"
+    sort_title: "!002_!Business_008"
+    original_title: "Jeff Goodby & Rich Silverstein Teach Advertising and Creativity"
+    summary: "Advertising icons Jeff Goodby and Rich Silverstein teach you how to break rules change minds and create the best work of your life."
+    seasons:
+      1:
+        episodes:  
+              1:
+                title: "Meet Your Instructors Jeff Goodby & Rich Silverstein"
+              2:
+                title: "Who We Are & How We Got Here"
+              3:
+                title: "Make Something Out of Nothing"
+              4:
+                title: "got milk"
+              5:
+                title: "How to Make Advertising That Lives in Culture Three Ways to Engage"
+              6:
+                title: "Working With Brands"
+              7:
+                title: "Goodby’s Rules for Creative Vandalism"
+              8:
+                title: "How to Tell a Story in 30 Seconds"
+              9:
+                title: "On Craft Writing Design and Giving Direction"
+              10:
+                title: "Is It Funny Enough?"
+              11:
+                title: "It’s Great but They’ll Never Buy It Selling a Crazy Idea"
+              12:
+                title: "Anatomy of a Campaign"
+              13:
+                title: "The Super Bowl"
+              14:
+                title: "Advertising Is Everything... and Everything Is Advertising"
+              15:
+                title: "Bringing Humanity to the Corporate World"
+              16:
+                title: "Giving Back"
+              17:
+                title: "New Business The Machine at Maximum Speed"
+              18:
+                title: "How to Start an Agency Specifically This One"
+
+  Mellody_Hobson:                
+    match:
+      title: "Strategic Decision-Making"
+    title: "Strategic Decision-Making"
+    sort_title: "!002_!Business_009"
+    original_title: "MellodyHobson Teaches Strategic Decision-Making"
+    summary: "Dive into the pivotal decisions that shaped Mellody’s career and learn how to apply strategic decision-making to your own future in leadership."
+    seasons:
+      1:
+        episodes:  
+              1:
+                title: "Overview"
+              2:
+                title: "Strategy & Problem Solving - Mellody’s Tool Kit"
+              3:
+                title: "Ariel Investments Case Study Part 1: Watch Your Feet"
+              4:
+                title: "Ariel Investments Case Study Part 2: Headcount strategy"
+              5:
+                title: "Ariel Investments Case Study Part 3: Operational improvements"
+              6:
+                title: "Ariel Investments Case Study Part 4: Hope is Not a Plan"
+              7:
+                title: "DreamWorks Animation Case Study Part 1: Market Pressure"
+              8:
+                title: "DreamWorks Animation Case Study Part 2: Offers and Deals"
+              9:
+                title: "DreamWorks Animation Case Study Part 3: A Smart Acquirer"
+              10:
+                title: "Conclusion: Final Thoughts And Common Questions"
+
+  Whitney_Wolfe:                
+    match:
+      title: "Rewriting the Rules of Business and Life"
+    title: "Rewriting the Rules of Business and Life"
+    sort_title: "!002_!Business_010"
+    original_title: "Whitney Wolfe Teaches Rewriting the Rules of Business and Life"
+    summary: "Whitney Wolfe Herd rewrote the rules when she founded Bumble Inc. Find your breakthrough idea—and build the life and work you actually want."
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Whitney Wolfe Herd Rewriting the Rules of Business and Life"
+  
+  Mark Cuban:                
+    match:
+      title: "Win Big in Business"
+    title: "Win Big in Business"
+    sort_title: "!002_!Business_011"
+    original_title: "Win Big in Business"
+    summary: "Learn the business success strategies that made billionaire Mark Cuban one of the most prolific entrepreneurs of all time. Get a chance to win a meeting with Mark by watching his class and submitting your pitch."
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Win Big in Business"
+
+  Martha Stewart:
+    match:
+      title: "Think Like a Boss, Live Like a Legend"
+    title: "Think Like a Boss, Live Like a Legend"
+    sort_title: "!002_!Business_012"
+    original_title: "Think Like a Boss, Live Like a Legend"
+    summary: "In Part 1, spend the day with the first woman self-made billionaire and learn her secrets for staying relevant and sustaining success. Dive deeper into her life lessons in Part 2."
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "PART 1: A Day in The Life of Martha"
+            2: 
+              title: "PART 2: How To Be a Boss"
+
+  Amy Poehler:
+    match:
+      title: "Prepare to Be Unprepared"
+    title: "Prepare to Be Unprepared"
+    sort_title: "!002_!Business_013"
+    original_title: "Prepare to Be Unprepared"
+    summary: "Comedy icon Amy Poehler teaches you how improv principles can help you push past fear, find your people, and go all in on the life you want."
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Prepare to Be Unprepared"
+
+######## Science #########
+
+  Science_Nye:                
+    match:
+      title: "Science and Problem-Solving"
+    title: "Science and Problem-Solving"
+    sort_title: "!003_!Science_001"
+    original_title: "Bill Nye Teaches Science and Problem-Solving"
+    summary: "Emmy Award–winning science educator Bill Nye teaches you his method for solving everyday problems, evaluating information, and thinking like a scientist"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "Science Changes Your Perspective"
+            3:
+              title: "Explore Everything All at Once"
+            4:
+              title: "Practice Critical Thinking and Critical Filtering"
+            5:
+              title: "Achieve Freedom From Fear"
+            6:
+              title: "Everyone You’ll Ever Meet Knows Something You Don’t"
+            7:
+              title: "Facing Climate Change: Our Greatest Challenge"
+            8:
+              title: "Using the Upside-Down Pyramid of Design to Make Things"
+            9:
+              title: "Celebrate the Joy of Constraints"
+            10:
+              title: "Let’s Seek Scientific Solutions to Climate Change"
+            11:
+              title: "Foster a Science-minded Society"
+            12:
+              title: "Think Cosmically, Act Globally"
+            13:
+              title: "Bonus - How to Tie Ancient Knots"
+  
+  Hadfield_Space:                
+    match:
+      title: Space Exploration
+    title: Space Exploration
+    sort_title: "!003_!Science_002"
+    original_title: Chris Hadfield Teaches Space Exploration
+    summary: "The former commander of the International Space Station teaches you the science of space exploration and what the future holds."
+    seasons:
+      1:
+        episodes:
+              1:
+                title: "Introduction"
+              2:
+                title: "Astronaut Training"
+              3:
+                title: "Rockets - How Rockets Work"
+              4:
+                title: "Rockets - What It Feels Like to Launch"
+              5:
+                title: "Rockets - Atmospheric Drag"
+              6:
+                title: "Rockets - Orbital Mechanics"
+              7:
+                title: "Rockets - Fuels and Propulsion"
+              8:
+                title: "Rockets - The Price of Exploration"
+              9:
+                title: "Spaceships - Capsule Design"
+              10:
+                title: "Spaceships - Shuttles and Beyond"
+              11:
+                title: "Spaceships - Navigation Systems and Human Variables"
+              12:
+                title: "Spaceships - Navigating to the International Space Station"
+              13:
+                title: "The ISS - Conception, Design, and Construction"
+              14:
+                title: "The ISS - Life Support Systems"
+              15:
+                title: "The ISS - Experiments"
+              16:
+                title: "Leadership - Commanding the ISS"
+              17:
+                title: "Training and Learning - One-Pagers"
+              18:
+                title: "Comms - Mission Control Evolution and Operations"
+              19:
+                title: "Spacewalking - Spacesuits"
+              20:
+                title: "Spacewalking - Spacewalks"
+              21:
+                title: "Spacewalking - Training"
+              22:
+                title: "Spacewalking - Space and Perspective"
+              23:
+                title: "Training and Learning - Simulations"
+              24:
+                title: "Mars - How to Get to Mars"
+              25:
+                title: "Mars - Living on Another Planet"
+              26:
+                title: "Mars - In-Situ Resource Utilization"
+              27:
+                title: "Mars - Exploring Mars, Geology, and Astrobiology"
+              28:
+                title: "Conclusion - The Future of Exploration"
+              29:
+                title: "Bonus - Chris's Journey"
+
+  Jane_Goodall:                
+    match:
+      title: "Conservation"
+    title: "Conservation"
+    sort_title: "!003_!Science_003"
+    original_title: "Dr. Jane Goodall Teaches Conservation"
+    summary: "Dr. Jane Goodall shares her insights into animal intelligence, conservation, and activism"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Introduction"
+            2:
+              title: "Dreams of Africa"
+            3:
+              title: "The Breakthrough"
+            4:
+              title: "Chimpanzee Behavior"
+            5:
+              title: "Chimpanzee Behavior (Cont'd)"
+            6:
+              title: "Chimpanzee Development & Learning"
+            7:
+              title: "Animal Intelligence"
+            8:
+              title: "Chimps & Humans"
+            9:
+              title: "Chimps & Humans (Cont'd)"
+            10:
+              title: "Humans & The Environment"
+            11:
+              title: "Humans & The Environment (Cont'd)"
+            12:
+              title: "Threats to Animals"
+            13:
+              title: "Animal Cruelty"
+            14:
+              title: "Climate Change"
+            15:
+              title: "Water"
+            16:
+              title: "Land"
+            17:
+              title: "Industrial Agriculture"
+            18:
+              title: "Organic Farming"
+            19:
+              title: "Food As Activism"
+            20:
+              title: "Advocacy Strategies"
+            21:
+              title: "Communication"
+            22:
+              title: "Communication (Cont'd)"
+            23:
+              title: "Opening a Dialogue"
+            24:
+              title: "The Next Generation"
+            25:
+              title: "Making Global Change"
+            26:
+              title: "Roots & Shoots"
+            27:
+              title: "Roots & Shoots (Cont'd)"
+            28:
+              title: "Reasons for Hope"
+            29:
+              title: "Reasons for Hope (Cont'd)"
+  
+  Douglas_FBI:                
+    match:
+      title: Think Like an FBI Profiler
+    title: Think Like an FBI Profiler
+    sort_title: "!003_!Science_004"
+    original_title: John Douglas Teaches How to Think Like an FBI Profiler
+    summary: "Legendary Special Agent John Douglas teaches how criminal profiling methods can help you predict people’s motives to benefit your everyday life."
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "Becoming a Mindhunter"
+            3:
+              title: "Learning From a Killer - The Kemper Tapes"
+            4:
+              title: "Avoiding Cults and Manipulators - Charles Manson"
+            5:
+              title: "Spotting a Liar - John Wayne Gacy"
+            6:
+              title: "Understanding Motives - Son of Sam"
+            7:
+              title: "Predicting Criminal Behavior - The Anchorage Killer"
+            8:
+              title: "Understanding the Perp and Victim - The Trailside Killer"
+            9:
+              title: "Identifying Vulnerabilities - Darrell Gene Devier"
+            10:
+              title: "Developing Intuition"
+            11:
+              title: "Determining M.O. vs. Signature - The BTK Strangler"
+            12:
+              title: "Making Calculated Decisions - The Atlanta Child Murders"
+            13:
+              title: "Lifesaving Lessons - Larry Gene Bell"
+            14:
+              title: "Doing Your Own Profile"
+
+  Neil_Thinking:                
+    match:
+      title: Scientific Thinking and Communication
+    title: Scientific Thinking and Communication
+    sort_title: "!003_!Science_005"
+    original_title: Neil deGrasse Tyson Teaches Scientific Thinking and Communication
+    summary: "Renowned astrophysicist Neil deGrasse Tyson teaches you how to find objective truths and shares his tools for communicating what you discover."
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "What You Know Is Not as Important as How You Think"
+            2:
+              title: "The Frontier of Science"
+            3:
+              title: "The Scientific Method"
+            4:
+              title: "Be a Skeptic - Ask Questions"
+            5:
+              title: "Cognitive Bias"
+            6:
+              title: "Beware of Cultural Bias"
+            7:
+              title: "Our Systems of Belief"
+            8:
+              title: "Scientific Measurement - Calculating the Incalculable"
+            9:
+              title: "Communication - It’s Not Enough to Be Right"
+            10:
+              title: "Preparing for Your Audience"
+            11:
+              title: "Communication Tactics"
+            12:
+              title: "Inspire Curiosity in Your Audience"
+            13:
+              title: "The Future of Our World"
+  
+  Noam_Chomsky :                
+    match:
+      title: "Independent Thinking and the Media's Invisible Powers"
+    title: "Independent Thinking and the Media's Invisible Powers"
+    sort_title: "!003_!Science_006"
+    original_title: "Noam Chomsky Teaches Independent Thinking and the Media's Invisible Powers"
+    summary: "Renowned scholar linguist and political activist Noam Chomsky explores the dark side of media. Learn to cut through propaganda defend against manipulation and control what you consume."
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Meet Your Instructor Noam Chomsky"
+            2:
+              title: "New Media Information and Misinformation"
+            3:
+              title: "Manufacturing Consent The Control We Can't See"
+            4:
+              title: "Turning Truth Into Activism"
+            5:
+              title: "Bonus Challenging the Status Quo Noam Linguistics"
+
+######## Art #########
+
+  Hans_Zimmer:                
+    match:
+      title: "Film Scoring"
+    title: "Film Scoring"
+    sort_title: "!004_!Art_001"
+    original_title: "Hans Zimmer Teaches Film Scoring"
+    summary: "From collaborating to scoring, Hans Zimmer teaches you how to tell a story with music in 31 exclusive video lessons"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Introduction"
+            2:
+              title: "Themes"
+            3:
+              title: "Story"
+            4:
+              title: "Directors: Part 1"
+            5:
+              title: "Directors: Part 2"
+            6:
+              title: "Directors: Part 3"
+            7:
+              title: "Sound Palettes"
+            8:
+              title: "Creating with Synths"
+            9:
+              title: "Scoring to Picture"
+            10:
+              title: "Scoring Under Dialogue"
+            11:
+              title: "Tempo"
+            12:
+              title: "Tempo: Sherlock Holmes Scene"
+            13:
+              title: "Music Diary: Sherlock Holmes"
+            14:
+              title: "Character"
+            15:
+              title: "Character Theme: Batman"
+            16:
+              title: "Character Theme: The Joker"
+            17:
+              title: "Character Theme: Jack Sparrow"
+            18:
+              title: "Case Study: Frost/Nixon"
+            19:
+              title: "Case Study: The Dark Knight"
+            20:
+              title: "Working With Musicians"
+            21:
+              title: "Working With Musicians: The Orchestra - Part 1"
+            22:
+              title: "Working With Musicians: The Orchestra - Part 2"
+            23:
+              title: "Feedback & Revisions"
+            24:
+              title: "Audience Feedback"
+            25:
+              title: "Writing Tips: Part 1"
+            26:
+              title: "Writing Tips: Part 2"
+            27:
+              title: "Hans' Journey"
+            28:
+              title: "Learning by Listening"
+            29:
+              title: "Life of a Composer: Part 1"
+            30:
+              title: "Life of a Composer: Part 2"
+            31:
+              title: "Closing"
+
+  Cameron_Filmmaking:                
+    match:
+      title: Filmmaking - James Cameron
+    title: Filmmaking - James Cameron
+    sort_title: "!004_!Art_002"
+    original_title: James Cameron Teaches Filmmaking
+    summary: "Academy Award–winning director James Cameron teaches you the tricks of the trade and shares his approach to epic moviemaking on any budget."
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "Meet Your Instructor - James Cameron"
+            2:
+              title: "Pursuing and Developing the Idea"
+            3:
+              title: "Toying With the Audience - Building and Releasing Tension"
+            4:
+              title: "THE TERMINATOR Club Scene Breakdown"
+            5:
+              title: "ALIENS Egg Chamber Breakdown"
+            6:
+              title: "ALIENS Newt Introduction Scene Breakdown"
+            7:
+              title: "The Art of Low-Budget Filmmaking"
+            8:
+              title: "THE TERMINATOR Arm and Eye Repair Breakdown"
+            9:
+              title: "From Sketch to Spectacle - Creating Set Pieces"
+            10:
+              title: "THE TERMINATOR Future World Breakdown - Creating a Set Piece on a Budget"
+            11:
+              title: "Crafting and Introducing Compelling Characters"
+            12:
+              title: "TITANIC Rose Introduction Breakdown"
+            13:
+              title: "Developing Dread Through Adversaries"
+            14:
+              title: "AVATAR Creating Technology"
+            15:
+              title: "Making Your Way and Leading With Passion"
+
+  Judd_Apatow:                
+    match:
+      title: "Comedy"
+    title: "Comedy"
+    sort_title: "!004_!Art_003"
+    original_title: "Judd Apatow Teaches Comedy"
+    summary: "Judd Apatow teaches you how to write, direct, produce, and perform comedy for film and television"
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "Introduction"
+            2:
+              title: "Judd's Journey"
+            3:
+              title: "Writing Stand-Up Comedy"
+            4:
+              title: "Performing Stand-Up Comedy"
+            5:
+              title: "Developing Life Into Story"
+            6:
+              title: "Case Studies: Developing Life Into Story"
+            7:
+              title: "Crafting Comedic Storylines"
+            8:
+              title: "Structuring Films, Part 1"
+            9:
+              title: "Structuring Films, Part 2"
+            10:
+              title: "Writing Process: First Draft"
+            11:
+              title: "Writing Habits"
+            12:
+              title: "Character, Part 1"
+            13:
+              title: "Character, Part 2"
+            14:
+              title: "Dialogue"
+            15:
+              title: "Tips for Writing Television"
+            16:
+              title: "Workshopping Scripts, Part 1"
+            17:
+              title: "Workshopping Scripts, Part 2"
+            18:
+              title: "Casting"
+            19:
+              title: "Working With Actors"
+            20:
+              title: "Advice for Actors"
+            21:
+              title: "Directing: Tone"
+            22:
+              title: "Directing: Shooting Comedy"
+            23:
+              title: "Directing: Production"
+            24:
+              title: "Case Studies: Improvisation"
+            25:
+              title: "The Evolution of a Scene: Knocked Up"
+            26:
+              title: "Editing and Testing Films, Part 1"
+            27:
+              title: "Editing and Testing Films, Part 2"
+            28:
+              title: "Music in Comedy"
+            29:
+              title: "Pitching"
+            30:
+              title: "Succeeding in Show Business"
+            31:
+              title: "A Life in Comedy"
+            32:
+              title: "Closing"
+  
+  Martin_Scorsese:                
+    match:
+      title: "Filmmaking - Martin Scorsese"
+    title: "Filmmaking - Martin Scorsese"
+    sort_title: "!004_!Art_004"
+    original_title: "Martin Scorsese Teaches Filmmaking"
+    summary: "In 30 lessons, learn the art of film from the director of Goodfellas, The Departed, and Taxi Driver"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Introduction"
+            2:
+              title: "Beginnings"
+            3:
+              title: "Martin's Education"
+            4:
+              title: "Discovering Your Process"
+            5:
+              title: "Channeling Your Influences"
+            6:
+              title: "Developing Your Style"
+            7:
+              title: "Directing & Technology"
+            8:
+              title: "Finding the Story"
+            9:
+              title: "Working With The Script"
+            10:
+              title: "Casting Actors"
+            11:
+              title: "Directing Actors"
+            12:
+              title: "Locations"
+            13:
+              title: "Production Design"
+            14:
+              title: "Costume Design"
+            15:
+              title: "Understanding Cinematography"
+            16:
+              title: "Shooting Low-Budget Films"
+            17:
+              title: "Working With Crew"
+            18:
+              title: "Editing: Part 1"
+            19:
+              title: "Editing: Part 2"
+            20:
+              title: "Color"
+            21:
+              title: "Choosing Black and White"
+            22:
+              title: "The Importance of Sound Design"
+            23:
+              title: "The Power of Music"
+            24:
+              title: "Promoting Your Film"
+            25:
+              title: "Scene Discussion: Barry Lyndon"
+            26:
+              title: "Scene Discussion: Out of the Past"
+            27:
+              title: "Scene Discussion: Jules and Jim"
+            28:
+              title: "Scene Discussion: Vertigo"
+            29:
+              title: "Scene Discussion: 8 1/2"
+            30:
+              title: "Finding Your Way"
+  
+  Kevin Hart:                
+    match:
+      title: "Using Humor to Make Your Mark"
+    title: "Using Humor to Make Your Mark"
+    sort_title: "!004_!Art_005"
+    original_title: "Using Humor to Make Your Mark"
+    summary: "Comedy icon Kevin Hart teaches you how to use humor as a tool for success. If you can find laughter everywhere, you can be confident anywhere."
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "How to Use Humor to Leave Your Mark"
+
+######## Food #########
+
+  Thomas_Keller:                
+    match:
+      title: "Cooking Techniques"
+    title: "Cooking Techniques"
+    sort_title: "!005_!Food_001"
+    original_title: "Thomas Keller Teaches Cooking Techniques"
+    summary: "Thomas Keller is the first and only American-born chef to hold multiple three-star ratings from the prestigious Michelin Guide, as well as the first American male chef to be designated a Chevalier of the French Legion of Honor, the highest decoration in France"
+    seasons:
+      1:
+        title: "Cooking Techniques I - Vegetables, Pasta, and Eggs"
+        summary: "Learn techniques for cooking vegetables and eggs and making pastas from scratch from the award-winning chef and proprietor of The French Laundry"
+        episodes:  
+            1:
+              title: "Introduction"
+            2:
+              title: "Kitchen Setup: Essential Tools"
+            3:
+              title: "Kitchen Setup: Essential Ingredients"
+            4:
+              title: "Kitchen Setup: Cookware"
+            5:
+              title: "Sourcing Ingredients"
+            6:
+              title: "Vegetables: An Introduction"
+            7:
+              title: "Big-Pot Blanching: Asparagus"
+            8:
+              title: "Glazing: Carrots"
+            9:
+              title: "Peeling: Tomatoes"
+            10:
+              title: "Braising: Artichokes"
+            11:
+              title: "Purée: Potatoes"
+            12:
+              title: "Pickling"
+            13:
+              title: "Purée: Parsnips"
+            14:
+              title: "Confit: Eggplant & Garlic"
+            15:
+              title: "Roasting: Zucchini"
+            16:
+              title: "Baking: Beets"
+            17:
+              title: "Eggs: An Introduction"
+            18:
+              title: "Mayonnaise"
+            19:
+              title: "Hollandaise"
+            20:
+              title: "Custard: Crème Anglaise"
+            21:
+              title: "Meringue"
+            22:
+              title: "Boiled Eggs"
+            23:
+              title: "Scrambled Eggs"
+            24:
+              title: "Poached Eggs"
+            25:
+              title: "Omelet"
+            26:
+              title: "Pasta: An Introduction"
+            27:
+              title: "Pasta Dough"
+            28:
+              title: "Agnolotti"
+            29:
+              title: "Agnolotti with Peas and Bacon"
+            30:
+              title: "Spaghetti alla Chitarra and Cavatelli"
+            31:
+              title: "Spaghetti Aglio e Olio"
+            32:
+              title: "Fettuccine and Linguine"
+            33:
+              title: "Gnocchi"
+            34:
+              title: "Gnocchi with Pomodoro"
+            35:
+              title: "Six Disciplines of Success"
+            36:
+              title: "Essential Philosophies"
+      2:
+        title: "Cooking Techniques II - Meats, Stocks, and Sauces"
+        summary: "Chef Thomas Keller returns with a second MasterClass to teach the essential techniques for cooking meats and making stocks and sauces"
+        episodes:
+            1:
+              title: "Introduction"
+            2:
+              title: "Getting Started: Meat Cuts and Quality"
+            3:
+              title: "Sauté: Chicken Paillard"
+            4:
+              title: "Sauté: Wiener Schnitzel"
+            5:
+              title: "Fried Chicken"
+            6:
+              title: "Fried Chicken"
+            7:
+              title: "Pan Roasting: Duck Breast"
+            8:
+              title: "Pan Roasting: Côte de Bœuf"
+            9:
+              title: "Oven Roasting: Chicken"
+            10:
+              title: "Oven Roasting: Blowtorch Prime Rib Roast"
+            11:
+              title: "Technique: Braising and Braising à la Matignon"
+            12:
+              title: "Braising: Pork Shoulder à la Matignon"
+            13:
+              title: "Braising: Red Wine Braised Short Ribs"
+            14:
+              title: "Grilling on a Hibachi: Steak, Lamb Chops, and Chicken"
+            15:
+              title: "Stocks, Broths, and Jus: An Overview"
+            16:
+              title: "Roasted Veal Stock"
+            17:
+              title: "Light Chicken Stock"
+            18:
+              title: "Sauces: An Overview"
+            19:
+              title: "Vinaigrette, Emulsified Vinaigrette, Sauce Vierge, and Pickled Chow Chow Vinaigrette"
+            20:
+              title: "Chicken Velouté and Sauces Suprême, Allemande, and Albufera"
+            21:
+              title: "Brown Chicken Quick Sauce and Sauce Chasseur"
+            22:
+              title: "Closing"
+      3:
+        title: "Cooking Techniques III - Seafood, Sous Vide, and Desserts"
+        summary: "Chef Thomas Keller’s third MasterClass is devoted to preparing seafood, sous vide cooking, and making classic desserts"
+        episodes:
+            1:
+              title: "Introduction"
+            2:
+              title: "Sauté: Salmon With Spinach"
+            3:
+              title: "Sauté: Dover Sole With Pommes Château"
+            4:
+              title: "Pan Roasting: Monkfish Tail With Beurre Rouge"
+            5:
+              title: "Baking: Salt-Baked Branzino With Fennel and Red Pepper Vinaigrette"
+            6:
+              title: "Butter-Poached Lobster With Macaroni and Cheese"
+            7:
+              title: "Oven Roasting: Shrimp Scampi"
+            8:
+              title: "Lobster Boil"
+            9:
+              title: "Sous Vide Cooking: Getting Started"
+            10:
+              title: "Sous Vide Cooking: Carrots, Asparagus, and Fennel"
+            11:
+              title: "Sous Vide Cooking: Turbot"
+            12:
+              title: "Simplified Sous Vide: Salmon"
+            13:
+              title: "Desserts: Pots de Crème"
+            14:
+              title: "Desserts: Lemon Tart With Pine Nut Crust"
+            15:
+              title: "Desserts: Apple Pie With Lard Crust"
+            16:
+              title: "Conclusion"
+            17:
+              title: "Bonus: Sous Vide Cooking: Varying Time and Temperature"
+
+######## Music #########
+  Armin_v:                
+    match:
+      title: "Dance Music"
+    title: "Dance Music"
+    sort_title: "!006_!Music_001"
+    original_title: "Armin van Buuren Teaches Dance Music"
+    summary: "Learn how to make dance music from the platinum-selling producer voted No. 1 DJ in the world five times by DJ Magazine"
+    seasons:
+      1:
+        episodes:
+
+            1:
+              title: "Introduction"
+            2:
+              title: "Finding Melodic Inspiration"
+            3:
+              title: "Building Your Home Studio"
+            4:
+              title: "Templates and Organization in Logic Pro"
+            5:
+              title: "In the Studio, Part 1: Melody"
+            6:
+              title: "Working With Pads and Leads"
+            7:
+              title: "In the Studio, Part 2: Pads and Leads"
+            8:
+              title: "In the Studio, Part 3: More Leads"
+            9:
+              title: "Creating A Groove, Part 1"
+            10:
+              title: "Creating A Groove, Part 2"
+            11:
+              title: "In the Studio, Part 4: Adding Groove and Bass"
+            12:
+              title: "In the Studio, Part 5: The Big Payoff"
+            13:
+              title: "Mixing and Mastering, Part 1"
+            14:
+              title: "Mixing and Mastering, Part 2"
+            15:
+              title: "In the Studio, Part 6: Cleaning up and Mixing"
+            16:
+              title: "Mix & Arrangement Case Study: 'Be in the Moment'"
+            17:
+              title: "Arranging"
+            18:
+              title: "In the Studio, Part 7: Percussion and Arranging"
+            19:
+              title: "In the Studio, Part 8: Building the Drop, Reviewing the Track"
+            20:
+              title: "Working With Lyrics and Vocals"
+            21:
+              title: "Vocal Session, Part 1: Tracking"
+            22:
+              title: "Vocal Session, Part 2: Comping"
+            23:
+              title: "Vocal Session, Part 3: Editing and Mixing"
+            24:
+              title: "Singles, Club Mixes, and Edits"
+            25:
+              title: "Approaching Your DJ Set"
+            26:
+              title: "Building a Set: Edits and Mashups"
+            27:
+              title: "Using the Decks: Basics"
+            28:
+              title: "Using the Decks: Armin's Techniques"
+            29:
+              title: "Performance Tips"
+            30:
+              title: "Hosting A Radio Show"
+            31:
+              title: "Armin's Early Influences"
+            32:
+              title: "Starting and Growing Your Career"
+            33:
+              title: "Closing"
+
+  deadmau5:                
+    match:
+      title: "Electronic Music Production"
+    title: "Electronic Music Production"
+    sort_title: "!006_!Music_002"
+    original_title: "deadmau5 Teaches Electronic Music Production"
+    summary: "Welcome to the deadmau5 studio. Meet Joel, the man behind the mau5head, and learn what he's got planned for your class in electronic music production"
+    seasons:
+      1:
+        episodes: 
+            1:
+              title: "Introduction"
+            2:
+              title: "The deadmau5 Process: Theory"
+            3:
+              title: "The deadmau5 Process: Practice"
+            4:
+              title: "Building Your Home Studio"
+            5:
+              title: "Developing Melodic Structures"
+            6:
+              title: "Turning Melodies Into Arrangements"
+            7:
+              title: "Introduction To Synthesized Sounds"
+            8:
+              title: "Experimenting With Modular Synths"
+            9:
+              title: "Digital Vs. Analog Synths"
+            10:
+              title: "Shaping Sounds With Effects And Processing"
+            11:
+              title: "Beats: Part 1"
+            12:
+              title: "Beats: Part 2"
+            13:
+              title: "Structuring Songs"
+            14:
+              title: "Remixes"
+            15:
+              title: "Mixing"
+            16:
+              title: "Mastering"
+            17:
+              title: "Mastering Case Study: Snowcone"
+            18:
+              title: "Starting Your Producing Career"
+            19:
+              title: "Understanding the Music Business"
+            20:
+              title: "On Stage: The Music"
+            21:
+              title: "On Stage: The Technical Side"
+            22:
+              title: "On Stage: The Show"
+            23:
+              title: "Closing"
+
+######## Community and Gov #########
+
+  Clinton_Leadership:                
+    match:
+      title: Inclusive Leadership
+    title: Inclusive Leadership
+    sort_title: "!007_!Comm_001"
+    original_title: President Bill Clinton Teaches Inclusive Leadership
+    summary: "Drawing from his career in politics, President Bill Clinton teaches you how to inspire diverse teams, manage criticism, and mediate conflict."
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "Developing a Framework for Leadership"
+            3:
+              title: "Decision-Making and Prioritization"
+            4:
+              title: "Agreeing to Disagree"
+            5:
+              title: "Mediating Conflict"
+            6:
+              title: "Negotiation"
+            7:
+              title: "Case Study - Negotiating in North Korea"
+            8:
+              title: "Public Speaking"
+            9:
+              title: "Facing Criticism"
+            10:
+              title: "Assembling Teams"
+            11:
+              title: "Leading Teams"
+            12:
+              title: "Emotional Intelligence"
+            13:
+              title: "How to Measure Success"
+            14:
+              title: "The Power of Optimism"
+
+  GW_Leadership:                
+    match:
+      title: Authentic Leadership
+    title: Authentic Leadership
+    sort_title: "!007_!Comm_002"
+    original_title: President George W. Bush Teaches Authentic Leadership
+    summary: "Learn to listen and inspire a culture of teamwork. The 43rd U.S. president teaches leadership skills from his career and opens up about painting."
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "The Art of Personal Diplomacy"
+            3:
+              title: "Look Over the Horizon"
+            4:
+              title: "Building a Strong Team"
+            5:
+              title: "Making Tough Decisions"
+            6:
+              title: "Accountability Leads to Results"
+            7:
+              title: "Crisis Management"
+            8:
+              title: "Own Your Communication Style"
+            9:
+              title: "A Pathway to Politics"
+            10:
+              title: "Entering Public Service"
+            11:
+              title: "Prioritize What's Important"
+            12:
+              title: "Happy are the Painters"
+  
+  Hillary_Resilience:                
+    match:
+      title: The Power Of Resilience
+    title: The Power Of Resilience
+    sort_title: "!007_!Comm_003"
+    original_title: Hillary Rodham Clinton Teaches The Power Of Resilience
+    summary: "Barrier-smashing leader Hillary Rodham Clinton teaches you how to overcome setbacks and build a life of principle and purpose."
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "Discovering Your Mission"
+            3:
+              title: "Hillary's Framework for Hard Work"
+            4:
+              title: "Organizing a Busy Life"
+            5:
+              title: "Preparing for Public Speaking"
+            6:
+              title: "Studying Persuasive Speakers"
+            7:
+              title: "Maximizing Your Strengths & Learning to Pivot"
+            8:
+              title: "The Fundamentals of Negotiation"
+            9:
+              title: "Navigating Compromise & Trade-Offs"
+            10:
+              title: "Taking Criticism Seriously, Not Personally"
+            11:
+              title: "Ambition, Sexism & the ‘Double Bind’"
+            12:
+              title: "Overcoming Setbacks"
+            13:
+              title: "Daring to Compete"
+            14:
+              title: "Bonus - Resilience in Action with Huma Abedin"
+            15:
+              title: "Exclusive - The 'Would-Be Victory Speech"
+            16:
+              title: "Choosing a Life of Resilience"
+
+######## Home #########
+
+  Ron_Finley:                
+    match:
+      title: "Gardening"
+    title: "Gardening"
+    sort_title: "!008_!Home_001"
+    original_title: "Ron Finley Teaches Gardening"
+    summary: "Community activist and self-taught gardener Ron Finley shows you how to garden in any space, nurture your plants, and grow your own food"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Meet Your Instructor"
+            2:
+              title: "Planting a Revolution"
+            3:
+              title: "Getting Dirty"
+            4:
+              title: "Creating Planters"
+            5:
+              title: "Grow Your Own Food - Greens & Legumes"
+            6:
+              title: "Grow Your Own Food - Sweet Potatoes"
+            7:
+              title: "Grow Your Own Food - Herbs"
+            8:
+              title: "Increasing Your Bounty"
+            9:
+              title: "How to Not Kill Your Plants"
+            10:
+              title: "Finding Your Creativity"
+
+######## Specials #########
+
+  Voss_Workplace:                
+    match:
+      title: Win Workplace Negotiations
+    title: Win Workplace Negotiations
+    sort_title: "!009_!Specials_001"
+    original_title: Win Workplace Negotiations With Chris Voss
+    summary: Chris Voss teaches you how to win workplace negotiations
+    seasons:
+      1:
+        title: "Introduction"
+        summary: "Chris Voss shares what you can expect to learn and should do to get the most value out of his session."
+        episodes:
+            1:
+              title: "Session Overview"
+            2:
+              title: "Meet Your Instructors - Chris Voss and the Black Swan Team"
+            3:
+              title: "Write Down Your Goals"
+      2:
+        title: "Become the Most Trusted Person at Work"
+        summary: "Chris demonstrates how mirroring, labeling, and dynamic silence techniques during work negotiations can help you become a universally trusted leader or team member."
+        episodes:
+            1:
+              title: "Introduction - Become the Most Trusted Person at Work"
+            2:
+              title: "Skill Introduction - Mirroring"
+            3:
+              title: "Skill Introduction - Labeling"
+            4:
+              title: "Follow Along - Building Rapport Scene Practice"
+            5:
+              title: "Play-by-Play - Building Rapport"
+            6:
+              title: "Skill Introduction - The Accusation Audit"
+            7:
+              title: "Interactive Practice - Using the Accusation Audit at Work"
+            8:
+              title: "Skill Introduction - Dynamic Silence"
+            9:
+              title: "Follow Along - Managing Up Scene Practice"
+            10:
+              title: "Interactive Practice - Mirroring Your Upset Manager"
+            11:
+              title: "Interactive Practice - Combining Mirroring, Labeling, and Dynamic Silence"
+            12:
+              title: "Skill Introduction - Accusation Audit Prep Sheet"
+
+      3:
+        title: "Strengthen Your Workplace Influence"
+        summary: "Learn how to understand your counterpart’s needs by asking the right questions at the right times. By the end of this section, you will know how to get a “no” response—a key step to negotiating an outcome that benefits everyone."
+        episodes:
+            1:
+              title: "Introduction - Strengthen Your Workplace Influence"
+            2:
+              title: "Skill Introduction - Calibrated Questions"
+            3:
+              title: "Skill Introduction - No-Oriented Questions"
+            4:
+              title: "Follow Along - Unhappy Employee Scene Practice"
+            5:
+              title: "Play-by-Play - Unhappy Employee"
+            6:
+              title: "Follow Along - Unproductive Team Member Scene Practice"
+            7:
+              title: "Play-by-Play - Unproductive Team Member"
+            8:
+              title: "Interactive Practice - Overwhelmed Employee"
+            9:
+              title: "Interactive Practice - Delayed Job Offer"
+            10:
+              title: "Interactive Practice - Encouraging a Different Approach"
+            11:
+              title: "Low-Stakes Practice"
+      4:
+        title: "Create Epiphanies to Land the Deal"
+        summary: "Discover how to put yourself on the path to better agreements by inspiring mutual moments of understanding. Practice summarizing and paraphrasing to break down barriers between your side and theirs."
+        episodes:
+            1:
+              title: "Introduction - Create Epiphanies to Land the Deal"
+            2:
+              title: "Skill Introduction - Paraphrasing and Summary"
+            3:
+              title: "Your Overwhelmed Team Member"
+            4:
+              title: "Follow Along - The Growing Candymaker Scene Practice"
+            5:
+              title: "Play-by-Play - The Growing Candymaker"
+            6:
+              title: "Interactive Practice - Your Frustrated Employee"
+            7:
+              title: "Low-Stakes Practice"
+      5:
+        title: "Getting to the Agreement"
+        summary: "Employ the concepts of fairness, deadlines, and loss aversion to actually bend your counterpart’s reality closer to yours—bringing you both closer to a favorable agreement."
+        episodes:
+            1:
+              title: "Introduction - Getting to the Agreement"
+            2:
+              title: "Skill Introduction - Fairness"
+            3:
+              title: "Skill Introduction - Deadlines"
+            4:
+              title: "Using Deadlines to Close an Indecisive Client"
+            5:
+              title: "Skill Introduction - Loss Aversion"
+            6:
+              title: "Follow Along - Lease Negotiation Scene Practice"
+            7:
+              title: "Play-by-Play - Lease Negotiation"
+      6:
+        title: "Negotiating Your Future"
+        summary: "Chris and his Black Swan team lead you through a workshop, taking all the skills you’ve learned so far into a relatable real-life situation, negotiating a job offer."
+        episodes:
+            1:
+              title: "Introduction - Negotiating Your Future"
+            2:
+              title: "Follow Along - Negotiating Pay Structure"
+            3:
+              title: "Play-by-Play - Negotiating Pay Structure"
+            4:
+              title: "Follow Along - Salary Negotiations"
+            5:
+              title: "Play-by-Play - Salary Negotiations"
+
+      7:
+        title: "Inclusive Negotiation"
+        summary: "Derek and Brandon of the Black Swan negotiation team share lessons they’ve learned on the way to becoming considerate leaders, and explain how tactical empathy can encourage inclusivity. Team member Sandy delivers insights on challenges women face in negotiation."
+        episodes:
+            1:
+              title: "Introduction - Inclusive Negotiation"
+            2:
+              title: "Tactical Empathy and Inclusivity"
+            3:
+              title: "Challenges and Solutions for Women"
+
+      8:
+        title: "Conclusion"
+        summary: "Congratulations! You’ve completed this session. Here’s your opportunity to reflect on everything you’ve learned about negotiation, tactical empathy, and communication—and make real plans about how to put them to use in the workplace"
+        episodes:
+            1:
+              title: "Session Wrap-Up and Review"
+            2:
+              title: "Special Message"
+
+  goat:                
+    match:
+      title: "The Greatest of All Time"
+    title: "The Greatest of All Time"
+    sort_title: "!009_!Specials_002"
+    original_title: " GOAT - The Greatest of All Time"
+    summary: "Learn from the greatest of all time as they dig into their craft in a never-ending search for perfection"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Coffee"
+              summary: "World Champion Barista Dale Harris takes you on an immersive journey to make the best coffee in the world"
+            2:
+              title: "Pizza"
+              summary: "World Title-Winning pizza chef Tony Gemignani shows you how to master restaurant-quality pizza at home"
+            3:
+              title: "Grilled Cheese"
+              summary: "James Beard Award–Winning chef Nancy Silverton demonstrates how to build the most impressive grilled cheese sandwich of your life"
+            4:
+              title: "Ice Cream"
+              summary: "James Beard Award–Winning ice cream maker Jeni Britton teaches you how to make the best scoop of vanilla you’ve ever tasted"
+            5:
+              title: "Sand Sculptures"
+              summary: "Globally renowned sand sculptors Melineige Beauregard and Chris Guinto reveal how they take the beach to new, unimaginable heights"
+            6:
+              title: "Knife Skills"
+              summary: "Chef and TikTok star Wallace Wong shows you how to wield a kitchen knife like the best chefs in the world"
+            7:
+              title: "Pickleball"
+              summary: "Once the No. 1–ranked pickleball player in the world, Anna Leigh Waters, teaches you how to think and play like a champion"
+            8:
+              title: "Innovation"
+              summary: "Famous inventor and entrepreneur Joy Mangano prepares you to pitch your next brilliant idea like a pro"
+
+  Markets:                
+    match:
+      title: Mastering the Markets
+    title: Mastering the Markets
+    sort_title: "!009_!Specials_003"
+    original_title: Mastering the Markets
+    summary: "Make smarter investments, Rise above the rest and navigate the market with insight from investors who’ve been trusted with more than $150 billion."
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "Make the Markets Work for You"
+            2:
+              title: "From 2008 to Today - Get the Real Breakdown"
+            3:
+              title: "Find Hidden Value in Lesser-Known Places"
+            4:
+              title: "Win the Long Game by Managing Risk"
+
+  Session_Communication:                
+    match:
+      title: Guide to Effective Communications
+    title: Guide to Effective Communications
+    sort_title: "!009_!Specials_004"
+    original_title: The Ultimate Guide to Effective Communications
+    summary: Get Short Secrets to Sharpen Your Skills and Make Your Message Clear
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "Get More Generosity - Chris Voss"
+            2:
+              title: "No is better than yes - Chris Voss"
+            3:
+              title: "The Four C's of Communication - George Stephanopoulos"
+            4:
+              title: "Good news or bad news - Daniel Pink"
+            5:
+              title: "Give pause - LeVar Burton"
+            6:
+              title: "Lean in literally - Robin Roberts"
+
+  Session_Teammate:                
+    match:
+      title: How to be a Good Teammate
+    title: How to be a Good Teammate
+    sort_title: "!009_!Specials_005"
+    original_title: How to be a Good Teammate
+    summary: Learn how to have effective collaboration
+    seasons:
+      1:
+        episodes:
+            1:
+              title: "Don't Be a Room Killer - Judd Apatow"
+            2:
+              title: "Bring Something To The Party - Marc Jacobs"
+            3:
+              title: "The ROI on Listening - Ron Howard"
+            4:
+              title: "Be Nice to Everyone - Samuel L Jackson"
+            5:
+              title: "Always Be Inclusive - Herbie Hancock"
+
+  Talking_Shop :                
+    match:
+      title: "Talking Shop"
+    title: "Talking Shop"
+    sort_title: "!009_!Specials_006"
+    original_title: "Talking Shop"
+    summary: "Meet your hero’s hero. Neil Gaiman on Tolkien. Gloria Steinem on Bella Abzug. Kevin Smith on Stan Lee. Dr. Cornel West on Muhammad Ali."
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Neil Gaiman on J.R.R. Tolkien"
+            2:
+              title: "Gloria Steinem on Bella Abzug"
+            3:
+              title: "Kevin Smith on Stan Lee"
+            4:
+              title: "Dr. Cornel West on Muhammad Ali"
+
+  Kim_Scott  :                
+    match:
+      title: "Tackle the Hard Conversations"
+    title: "Tackle the Hard Conversations"
+    sort_title: "!009_!Specials_007"
+    original_title: "Kim Scott Teaches Tackle the Hard Conversations"
+    seasons:
+      1:
+        episodes:  
+            1:
+              title: "Meet Your Instructor Kim Scott"
+            2:
+              title: "A special message from Kim Scott"
+
+      2:
+        episodes:  
+            1:
+              title: "What Is Radical Candor"
+            2:
+              title: "The 4 Quadrants in Action"
+            3:
+              title: "Why Where and How to Give Radical Candor"
+            4:
+              title: "A special message from Kim Scott"
+            5:
+              title: "Radical Candor Stories"
+            6:
+              title: "Radical Candor Advice Column"
+      3:
+        episodes:  
+            1:
+              title: "How to Ask For Feedback"
+            2:
+              title: "A special message from Kim Scott"
+            3:
+              title: "Listen to the Feedback"
+            4:
+              title: "Reward Candor"
+            5:
+              title: "Practice Asking for Feedback"
+            6:
+              title: "Radical Candor Advice Column"
+      4:
+        episodes:  
+            1:
+              title: "HIP and CORN for Feedback"
+            2:
+              title: "Common Mistakes When Giving Praise"
+            3:
+              title: "A special message from Kim Scott"
+            4:
+              title: "Radical Candor Advice Column"
+      5:
+        episodes:  
+            1:
+              title: "HIP and CORN for Criticism"
+            2:
+              title: "Criticism Correction and Debate at Work"
+            3:
+              title: "Practice Giving Criticism"
+            4:
+              title: "A special message from Kim Scott"
+            5:
+              title: "Radical Candor Advice Column"
+      6:
+        episodes:  
+            1:
+              title: "The Listener’s Ear"
+            2:
+              title: "Feedback Tips If They Seem Sad…"
+            3:
+              title: "Feedback Tips If They Seem Mad…"
+            4:
+              title: "Feedback Tips If They Are Not Listening…"
+            5:
+              title: "4 Quadrants 1 Conversation"
+            6:
+              title: "A special message from Kim Scott"
+            7:
+              title: "Radical Candor Advice Column"
+      7:
+        episodes:  
+            1:
+              title: "Create a Culture of Radical Candor"
+            2:
+              title: "Prevent Backstabbing at Work"
+            3:
+              title: "“Speak Truth to Power” Meeting"
+            4:
+              title: "Use Storytelling to Encourage Radical Candor"
+            5:
+              title: "A special message from Kim Scott"
+            6:
+              title: "Radical Candor Advice Column"
+      8:
+        episodes:  
+            1:
+              title: "Bias Prejudice and Bullying"
+            2:
+              title: "Persistence and Practice"
+            3:
+              title: "Radical Candor Advice Column"
+
+  # title: Title
+  # sort_title: Title 02
+  # original_title: Title
+  # seasons:
+  #   1:
+  #     title: Title
+      # summary: >-
+      #     Summary
+      # episodes:
+      #       1:
+      #         title: Title
+              # summary: >-
+                  # Summary

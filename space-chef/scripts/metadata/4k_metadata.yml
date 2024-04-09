@@ -1,0 +1,192 @@
+#   __    __  __    __        __       __  ________  ________   ______   _______    ______   ________   ______  
+#  /  |  /  |/  |  /  |      /  \     /  |/        |/        | /      \ /       \  /      \ /        | /      \ 
+#  $$ |  $$ |$$ | /$$/       $$  \   /$$ |$$$$$$$$/ $$$$$$$$/ /$$$$$$  |$$$$$$$  |/$$$$$$  |$$$$$$$$/ /$$$$$$  |
+#  $$ |__$$ |$$ |/$$/        $$$  \ /$$$ |$$ |__       $$ |   $$ |__$$ |$$ |  $$ |$$ |__$$ |   $$ |   $$ |__$$ |
+#  $$    $$ |$$  $$<         $$$$  /$$$$ |$$    |      $$ |   $$    $$ |$$ |  $$ |$$    $$ |   $$ |   $$    $$ |
+#  $$$$$$$$ |$$$$$  \        $$ $$ $$/$$ |$$$$$/       $$ |   $$$$$$$$ |$$ |  $$ |$$$$$$$$ |   $$ |   $$$$$$$$ |
+#        $$ |$$ |$$  \       $$ |$$$/ $$ |$$ |_____    $$ |   $$ |  $$ |$$ |__$$ |$$ |  $$ |   $$ |   $$ |  $$ |
+#        $$ |$$ | $$  |      $$ | $/  $$ |$$       |   $$ |   $$ |  $$ |$$    $$/ $$ |  $$ |   $$ |   $$ |  $$ |
+#        $$/ $$/   $$/       $$/      $$/ $$$$$$$$/    $$/    $$/   $$/ $$$$$$$/  $$/   $$/    $$/    $$/   $$/ 
+
+
+metadata:
+  Titanic 4K:
+    match:
+      edition: Diamond
+      mapping_id: 597
+    title: "Titanic 4K"
+    sort_title: "Titanic 4K"
+
+  Titanic Optimized:
+    match:
+      blank_edition: true
+      mapping_id: 597
+    title: "Titanic"
+    sort_title: "Titanic"
+
+  Oppenheimer 4K:
+      match:
+        edition: Diamond
+        mapping_id: 872585
+      title: "Oppenheimer 4K"
+      sort_title: "Oppenheimer 4K"
+
+  Oppenheimer Optimized:
+      match:
+        blank_edition: true
+        mapping_id: 872585
+      title: "Oppenheimer"
+      sort_title: "Oppenheimer"
+
+  War Dogs 4K:
+      match:
+        edition: Diamond
+        mapping_id: 308266
+      title: "War Dogs 4K"
+      sort_title: "War Dogs 4K"
+
+  War Dogs Optimized:
+      match:
+        blank_edition: true
+        mapping_id: 308266
+      title: "War Dogs"
+      sort_title: "War Dogs"
+
+  Passengers 4K:
+      match:
+        edition: Diamond
+        mapping_id: 274870
+      title: "Passengers 4K"
+      sort_title: "Passengers 4K"
+
+  Passengers Optimized:
+      match:
+        blank_edition: true
+        mapping_id: 274870
+      title: "Passengers"
+      sort_title: "Passengers"
+
+  The Woman King 4K:
+      match:
+        edition: Diamond
+        mapping_id: 724495
+      title: "The Woman King 4K"
+      sort_title: "The Woman King 4K"
+
+  The Woman King Optimized:
+      match:
+        blank_edition: true
+        mapping_id: 724495
+      title: "The Woman King"
+      sort_title: "The Woman King"
+
+  I Am Legend 4K:
+      match:
+        edition: Diamond
+        mapping_id: 6479
+      title: "I Am Legend 4K"
+      sort_title: "I Am Legend 4K"
+
+  I Am Legend Optimized:
+      match:
+        blank_edition: true
+        mapping_id: 6479
+      title: "I Am Legend"
+      sort_title: "I Am Legend"
+
+  West Side Story 4K:
+      match:
+        edition: Diamond
+        mapping_id: 511809
+      title: "West Side Story 4K"
+      sort_title: "West Side Story 4K"
+
+  West Side Story Optimized:
+      match:
+        blank_edition: true
+        mapping_id: 511809
+      title: "West Side Story"
+      sort_title: "West Side Story"
+
+  The Exorcist 4K:
+      match:
+        edition: Diamond
+        mapping_id: 9552
+      title: "The Exorcist 4K"
+      sort_title: "The Exorcist 4K"
+
+  The Exorcist Optimized:
+      match:
+        blank_edition: true
+        mapping_id: 9552
+      title: "The Exorcist"
+      sort_title: "The Exorcist"
+
+  Pineapple Express 4K:
+      match:
+        edition: Diamond
+        mapping_id: 10189
+      title: "Pineapple Express 4K"
+      sort_title: "Pineapple Express 4K"
+
+  Pineapple Express Optimized:
+      match:
+        blank_edition: true
+        mapping_id: 10189
+      title: "Pineapple Express"
+      sort_title: "Pineapple Express"
+
+  The Wolf of Wall Street 4K:
+      match:
+        edition: Diamond
+        mapping_id: 106646
+      title: "The Wolf of Wall Street 4K"
+      sort_title: "The Wolf of Wall Street 4K"
+
+  The Wolf of Wall Street Optimized:
+      match:
+        blank_edition: true
+        mapping_id: 106646
+      title: "The Wolf of Wall Street"
+      sort_title: "The Wolf of Wall Street"
+
+  "Lara Croft - Tomb Raider 4K":
+      match:
+        edition: Diamond
+        mapping_id: 1995
+      title: "Lara Croft - Tomb Raider 4K"
+      sort_title: "Lara Croft - Tomb Raider 4K"
+
+  "Lara Croft - Tomb Raider Optimized":
+      match:
+        blank_edition: true
+        mapping_id: 597
+      title: "Lara Croft - Tomb Raider"
+      sort_title: "Lara Croft - Tomb Raider"
+      
+  In the Heart of the Sea 4K:
+      match:
+        edition: Diamond
+        mapping_id: 205775
+      title: "In the Heart of the Sea 4K"
+      sort_title: "In the Heart of the Sea 4K"
+
+  In the Heart of the Sea Optimized:
+      match:
+        blank_edition: true
+        mapping_id: 205775
+      title: "In the Heart of the Sea"
+      sort_title: "In the Heart of the Sea"
+  "Lara Croft - Tomb Raider - The Cradle of Life 4K":
+      match:
+        edition: Diamond
+        mapping_id: 1996
+      title: "Lara Croft - Tomb Raider - The Cradle of Life 4K"
+      sort_title: "Lara Croft - Tomb Raider - The Cradle of Life 4K"
+
+  "Lara Croft - Tomb Raider - The Cradle of Life Optimized":
+      match:
+        blank_edition: true
+        mapping_id: 1996
+      title: "Lara Croft - Tomb Raider - The Cradle of Life"
+      sort_title: "Lara Croft - Tomb Raider - The Cradle of Life"

@@ -1,0 +1,176 @@
+#   /$$$$$$ /$$      /$$ /$$$$$$$  /$$$$$$$ 
+#  |_  $$_/| $$$    /$$$| $$__  $$| $$__  $$
+#    | $$  | $$$$  /$$$$| $$  \ $$| $$  \ $$
+#    | $$  | $$ $$/$$ $$| $$  | $$| $$$$$$$ 
+#    | $$  | $$  $$$| $$| $$  | $$| $$__  $$
+#    | $$  | $$\  $ | $$| $$  | $$| $$  \ $$
+#   /$$$$$$| $$ \/  | $$| $$$$$$$/| $$$$$$$/
+#  |______/|__/     |__/|_______/ |_______/ 
+
+external_templates:
+  file: config/scripts/collections/templates.yml
+
+#    __  __   ___ __   __ ___  ___  ___ 
+#   |  \/  | / _ \\ \ / /|_ _|| __|/ __|
+#   | |\/| || (_) |\ V /  | | | _| \__ \
+#   |_|  |_| \___/  \_/  |___||___||___/
+
+collections:
+
+  Oscars:
+    template: { name: imdb_awards, run: movie, media: movie, event: oscar_picture,  order: "104", sorting: release.desc, summary: "Oscar Winning Movies for Best Picture" }
+  
+  # Christmas Collection:
+  #   template: { name: imdb_list, run: movie, order: "105", list: "ls000096828", sorting: rating.desc, summary: "A festive compilation of movies celebrating the Christmas season, encompassing a mix of classic and modern holiday films." }
+
+  Walt Disney Live Action:
+    template: { name: imdb_list, run: movie, order: "201", list: "ls527128434", sorting: release.asc, summary: "A diverse collection of live-action films produced by Walt Disney Studios, ranging from adaptations of animated classics to original stories." }
+  
+  Walt Disney Animation:
+    template: { name: imdb_list, run: movie, order: "201", list: "ls527128128", sorting: release.asc, summary: "Classic and contemporary animated films from Walt Disney Animation Studios, renowned for their iconic characters and enchanting stories." }
+
+  Pixar:
+    template: { name: imdb_list, run: movie, order: "201", list: "ls527128931", sorting: release.asc, summary: "A collection of innovative and heartwarming animated films from Pixar Animation Studios, known for their unique storytelling and cutting-edge animation." }
+
+  Happy Madison Productions:
+    template: { name: imdb_list, run: movie, order: "201", list: "ls526451353 ", sorting: rating.desc, summary: "A series of comedy films produced by Happy Madison Productions, known for their lighthearted humor and frequent collaborations with Adam Sandler." }
+
+  DreamWorks Studios:
+    template: { name: imdb_list, run: movie, order: "201", list: "ls527128805", sorting: release.asc, summary: "An assortment of animated and live-action films produced by DreamWorks Studios, featuring a blend of adventure, fantasy, and humor." }
+  
+  Marvel Cinematic Universe:
+    template: { name: imdb_list, run: movie, order: "301.1", list: "ls521841188", sorting: rating.desc, summary: "All MCU Movies in chronological order" }
+  
+  Spider-Man:
+    template: { name: imdb_list, run: movie, order: "301", list: "ls527912919", sorting: release.asc, summary: "A film saga featuring three versions of Spider-Man, each delving into Peter Parker's life as a superhero and student, confronting various villains and personal challenges, while exploring themes of responsibility and identity." }
+    
+  X-Men:
+    template: { name: imdb_list, run: movie, order: "301", list: "ls523578112", sorting: release.asc, summary: "A series of superhero films centered around the X-Men, a group of mutants with superpowers, battling for acceptance in a world that fears them." }
+  
+  DC Extended Universe:
+    template: { name: imdb_list, run: movie, order: "401.1", list: "ls521849168", sorting: release.asc, summary: "All DC Movies in chronological order" }
+
+  Borat Moviefilms:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls521841588", sorting: release.asc, summary: "A collection of movies that follow the misadventures of a fictitious Kazakh journalist, named Borat Sagdiyev, who travels through the United States to make documentaries, which feature real-life interactions with unsuspecting Americans." }
+  
+  Avatar:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls523644853", sorting: release.asc, summary: "A groundbreaking sci-fi film by James Cameron, set on the alien world of Pandora and known for its stunning visuals and environmental themes." }
+
+  Anchorman:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls521899785", sorting: release.asc, summary: "Anchorman: The Legend of Ron Burgundy, or simply Anchorman, is a 2004 comedy film directed by Adam McKay, produced by Judd Apatow, starring Will Ferrell, and written by McKay and Ferrell. The film is a tongue-in-cheek take on the culture of the 1970s, particularly the news Action News format. It portrays a San Diego TV station where Ferrell's title character clashes with his new female counterpart. A companion film assembled from outtakes and abandoned subplots, titled Wake Up, Ron Burgundy: The Lost Movie, was released straight-to-DVD in late 2004. A sequel, Anchorman 2: The Legend Continues, was released on December 18, 2013." }
+
+  American Pie:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls526673104", sorting: release.asc, summary: "A collection of teen comedy films from the American Pie series, known for their raunchy humor and coming-of-age themes." }
+
+  Charlie Brown:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls526880548", sorting: release.asc, summary: "Animated films and specials featuring Charles Schulz's beloved character Charlie Brown and the Peanuts gang." }
+
+  Comedy Central Roasts:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls522023934", sorting: release.asc, summary: "A series of celebrity roast specials produced by Comedy Central, known for their no-holds-barred humor and celebrity guests." }
+
+  Dave Chappelle Stand Up Comedy:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls527970735", sorting: release.asc, summary: "A collection of stand-up comedy specials by Dave Chappelle, known for his sharp wit and social commentary." }
+  
+  Katt Williams Stand Up Comedy:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls528040695", sorting: release.asc, summary: "A series of stand-up specials featuring Katt Williams, characterized by his sharp wit and insightful commentary on social issues, race, and celebrity, delivered with his unique style and charisma." }
+  
+  Kevin Hart Stand Up Comedy:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls528040351", sorting: release.asc, summary: "A collection of performances by Kevin Hart, known for his energetic humor and relatable anecdotes that cover everyday life, relationships, and family, showcasing his rise in the comedy world." }
+
+  The Fast and the Furious:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls521899134", sorting: release.asc, summary: "An action film series centered on illegal street racing and heists." }
+
+  Harry Potter:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls521849613", sorting: release.asc, summary: "The Harry Potter films are a fantasy series based on the series of seven Harry Potter novels by British writer J. K. Rowling." }
+  
+  IMAX:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls528494311", sorting: release.asc, summary: "Experience cinema's most stunning visuals with this IMAX movie collection, curated for unparalleled picture clarity and immersive sound." }
+
+  Jackass:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls523146417", sorting: release.asc, summary: "A series of comedy films based on the MTV series 'Jackass', featuring dangerous stunts and outrageous pranks." }
+
+  The Karate Kid:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls521898799", sorting: release.asc, summary: "A series of martial arts drama films following the story of young karate students and their inspirational mentors." }
+
+  Monster Verse:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls521899714", sorting: release.asc, summary: "An American multimedia franchise and shared fictional universe that is part of the MonsterVerse which is centered on a series of monster films featuring Godzilla and King Kong." }
+  
+  Planet of the Apes:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls521841113", sorting: release.asc, summary: "A series of science fiction films about a world where humans and intelligent apes clash for control." }
+
+  Quentin Tarantino:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls523578671", sorting: release.asc, summary: "A collection of films directed by Quentin Tarantino, known for their stylized violence, sharp dialogue, and non-linear storytelling." }
+
+  Rocky Creed:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls523578627", sorting: release.asc, summary: "Boxing films from the 'Rocky' and 'Creed' series, chronicling the lives of Rocky Balboa and Adonis Creed inside and outside the ring." }
+  
+  RoboCop:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls528089240", sorting: release.asc, summary: "RoboCop is a 1987 American cyberpunk action film directed by Paul Verhoeven and written by Edward Neumeier and Michael Miner. The film stars Peter Weller, Nancy Allen, Dan O'Herlihy, Kurtwood Smith, Miguel Ferrer, and Ronny Cox. Set in a crime-ridden Detroit, Michigan, in the near future, RoboCop centers on police officer Alex Murphy who is brutally shot to death by a gang of criminals and subsequently revived by the megacorporation Omni Consumer Products (OCP) as a superhuman cyborg law enforcer known as RoboCop Collection includes 2 sequels."}
+
+  Space Films:
+    template: { name: imdb_list, run: movie, order: "701", list: "ls528143823", sorting: popularity.desc, summary: "A collection of space themed films" }
+
+  Star Wars Collection:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls521025803", sorting: release.asc, summary: "All Star Wars Movies in chronological order." }
+
+  Unbreakable:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls528022521", sorting: release.asc, summary: "The Unbreakable film series, also referred to as the Eastrail 177 Trilogy,[1][2][3][4] is an American superhero thriller and psychological horror film series,[5] involving the derailment of the fictitious Eastrail #177 train. The films were written, produced, and directed by M. Night Shyamalan. The trilogy consists of Unbreakable (2000), Split (2016), and Glass (2019)." }
+  
+  Willy Wonka:
+    template: { name: imdb_list, run: movie, order: "601", list: "ls528022666", sorting: release.asc, summary: "A film series based on Roald Dahl's novel, featuring the eccentric candy manufacturer Willy Wonka. It spans from a whimsical exploration of Wonka's magical chocolate factory and its mysterious owner to the origins of the young Wonka, highlighting themes of creativity, morality, and the wonders of imagination across generations." }
+
+  LOTR Trilogy [Theatrical]:
+    template: { name: imdb_id, run: movie, order: "601", id: "tt0120737, tt0167261, tt0167260", search: edition.is, type: Theatrical, sorting: release.asc, summary: "The theatrical versions of 'The Lord of the Rings' trilogy, an epic fantasy adventure based on J.R.R. Tolkien's novels." }
+
+  LOTR Trilogy [Extended]:
+    template: { name: imdb_id, run: movie, order: "601", id: "tt0120737, tt0167261, tt0167260", search: edition.is, type: Extended, sorting: release.asc, summary: "Extended editions of 'The Lord of the Rings' trilogy, featuring additional scenes and extended narratives." }
+  
+  Middle Earth:
+    template: { name: imdb_id, run: movie, order: "601", id: "tt0120737, tt0167261, tt0167260, tt0903624, tt2310332, tt1170358, tt13749944", title: "The Hobbit: Durin's Folk and the Hill of Sorcery", search: edition.isnot, type: Extended, sorting: release.asc, summary: "Films set in J.R.R. Tolkien's Middle Earth, including 'The Hobbit' and 'The Lord of the Rings' trilogies, known for their epic storytelling and rich fantasy world." }
+
+#    _____ __   __  ___  _  _   ___ __      __ ___ 
+#   |_   _|\ \ / / / __|| || | / _ \\ \    / // __|
+#     | |   \ V /  \__ \| __ || (_) |\ \/\/ / \__ \
+#     |_|    \_/   |___/|_||_| \___/  \_/\_/  |___/
+#                                                  
+  Emmy Awards:
+    template: { name: imdb_awards, run: show, media: tv_series, short, tv_episode, tv_mini_series, tv_special, tv_short , event: emmy,  order: "104", sorting: rating.desc, summary: "Emmy Winning TV Shows" }
+
+  Netflix Originals:
+    template: { name: imdb_list, run: show, order: "301", list: "ls093971121", sorting: rating.desc, summary: "A diverse range of exclusive series and films produced by Netflix, known for their groundbreaking and varied content across multiple genres." }
+
+  Apple TV+ Originals:
+    template: { name: imdb_list, run: show, order: "301", list: "ls081334122", sorting: rating.desc, summary: "A collection of original content from Apple TV+, featuring innovative storytelling, high production values, and unique narratives." }
+
+  Disney+ Originals:
+    template: { name: imdb_list, run: show, order: "301", list: "ls083148924", sorting: rating.desc, summary: "Exclusive films and series from Disney+, encompassing a variety of genres and including content from Disney, Pixar, Marvel, Star Wars, and National Geographic." }
+
+  # Amazon Prime Originals:
+  #   template: { name: imdb_list, run: show, order: "301", list: "ls062126270", sorting: rating.desc, summary: "Original series and films available exclusively on Amazon Prime Video, known for their compelling storytelling and high-quality production." }
+
+  Hulu Originals:
+    template: { name: imdb_list, run: show, order: "301", list: "ls507889473", sorting: rating.desc, summary: "A mix of original series and films produced by Hulu, ranging from critically acclaimed dramas to comedies and documentaries." }
+
+  HBO Originals:
+    template: { name: imdb_list, run: show, order: "301", list: "ls527898229", sorting: rating.desc, summary: "Premium content from HBO, featuring a wide range of critically acclaimed series, documentaries, and miniseries known for their high production standards." }
+
+  Band of Brothers Collection:
+    template: { name: imdb_list, run: show, order: "601", list: "ls527898318", sorting: rating.desc, summary: "A collection of war-related films and series, including the critically acclaimed 'Band of Brothers', depicting various aspects of military life and history." }
+
+  Courtroom Collection:
+    template: { name: imdb_list, run: show, order: "601", list: "ls526252421", sorting: rating.desc, summary: "An assortment of films and series centered around legal drama, showcasing thrilling courtroom battles, legal dilemmas, and the intricacies of law." }
+
+  Narcos Collection:
+    template: { name: imdb_list, run: show, order: "601", list: "ls527819694", sorting: rating.desc, summary: "A compilation of series and documentaries focused on the world of narcotics and drug trafficking, including the popular 'Narcos' series." }
+
+  Planet Collection:
+    template: { name: imdb_list, run: show, order: "601", list: "ls523553608", sorting: rating.desc, summary: "A series of documentaries and films that explore the wonders of our planet, its diverse ecosystems, and the challenges facing the natural world." }
+
+  Star Wars TV Collection:
+    template: { name: imdb_list, run: show, order: "601", list: "ls527819835", sorting: rating.desc, summary: "A collection of television series set in the Star Wars universe, including animated and live-action series expanding the lore of the galaxy far, far away." }
+
+  The Walking Dead Collection:
+    template: { name: imdb_list, run: show, order: "601", list: "ls527898649", sorting: rating.desc, summary: "All series and spin-offs from 'The Walking Dead' universe, depicting a post-apocalyptic world overrun by zombies and the struggles of the survivors." }
+
+  World of Ice and Fire Collection:
+    template: { name: imdb_list, run: show, order: "601", list: "ls527819705", sorting: rating.desc, summary: "Collection of series from the Song of Fire and Ice." }
