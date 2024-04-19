@@ -1,0 +1,131 @@
+#    ______   __    __  __    __  ________  ________  __        ________ 
+#   /      \ /  |  /  |/  |  /  |/        |/        |/  |      /        |
+#  /$$$$$$  |$$ |  $$ |$$ |  $$ |$$$$$$$$/ $$$$$$$$/ $$ |      $$$$$$$$/ 
+#  $$ \__$$/ $$ |__$$ |$$ |  $$ |$$ |__    $$ |__    $$ |      $$ |__    
+#  $$      \ $$    $$ |$$ |  $$ |$$    |   $$    |   $$ |      $$    |   
+#   $$$$$$  |$$$$$$$$ |$$ |  $$ |$$$$$/    $$$$$/    $$ |      $$$$$/    
+#  /  \__$$ |$$ |  $$ |$$ \__$$ |$$ |      $$ |      $$ |_____ $$ |_____ 
+#  $$    $$/ $$ |  $$ |$$    $$/ $$ |      $$ |      $$       |$$       |
+#   $$$$$$/  $$/   $$/  $$$$$$/  $$/       $$/       $$$$$$$$/ $$$$$$$$/ 
+
+collections:
+  The Office Shuffle:
+    sort_title: "!002_Office"
+    collection_order: custom
+    builder_level: episode
+    plex_search:
+      type: episode
+      sort_by: random
+      limit: 9999
+      all:
+        title: The Office
+        episode_unplayed: true
+  
+  Courtroom Shuffle:
+    sort_title: "!002_Court"
+    collection_order: custom
+    builder_level: episode
+    plex_search:
+      type: episode
+      sort_by: random
+      limit: 9999
+      any:
+        all:
+          title: 
+            - Judge Judy
+          episode_unplayed: true
+        any:
+          all:  
+              title: 
+                - Judy Justice
+              episode_unplayed: true
+          any:
+            all:
+                title: 
+                  - Tribunal Justice
+                episode_unplayed: true
+
+  Catfish Shuffle:
+    sort_title: "!002_Catfish"
+    collection_order: custom
+    builder_level: episode
+    plex_search:
+      type: episode
+      sort_by: random
+      limit: 9999
+      all:
+        title: "Catfish: The TV Show"
+        episode_unplayed: true
+
+  Jokers Shuffle:
+    sort_title: "!002_Jokers"
+    collection_order: custom
+    builder_level: episode
+    plex_search:
+      type: episode
+      sort_by: random
+      limit: 9999
+      all:
+        title: Impractical Jokers
+        title.not: Party
+        episode_unplayed: true
+
+  Punk'd Shuffle:
+    sort_title: "!002_Punk"
+    collection_order: custom
+    builder_level: episode
+    plex_search:
+      type: episode
+      sort_by: random
+      limit: 9999
+      all:
+        title: Punk'd
+        episode_unplayed: true
+
+  Rick and Morty Shuffle:
+    sort_title: "!002_Rick"
+    collection_order: custom
+    builder_level: episode
+    plex_search:
+      type: episode
+      sort_by: random
+      limit: 9999
+      all:
+        title: Rick and Morty
+        episode_unplayed: true
+  
+  The Simpsons Shuffle:
+    sort_title: "!002_Simpsons"
+    collection_order: random
+    builder_level: episode
+    plex_search:
+      type: episode
+      sort_by: audience_rating.desc
+      limit: 200
+      all:
+        title.ends: "Simpsons"
+    summary: A collection of the highest rated simpsons episodes sorted randomly.
+
+  Family Guy Shuffle:
+    sort_title: "!002_Family"
+    collection_order: random
+    builder_level: episode
+    plex_search:
+      type: episode
+      sort_by: audience_rating.desc
+      limit: 200
+      all:
+        title : Family Guy
+    summary: A collection of the highest rated Family Guy episodes sorted randomly.
+  
+  South Park Shuffle:
+    sort_title: "!002_SouthPark"
+    collection_order: random
+    builder_level: episode
+    plex_search:
+      type: episode
+      sort_by: audience_rating.desc
+      limit: 100
+      all:
+        title : South Park
+    summary: A collection of the highest rated South Park episodes sorted randomly.

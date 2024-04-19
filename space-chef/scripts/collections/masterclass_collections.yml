@@ -1,0 +1,125 @@
+#   __       __                        __                           ______   __                                     
+#  /  \     /  |                      /  |                         /      \ /  |                                    
+#  $$  \   /$$ |  ______    _______  _$$ |_     ______    ______  /$$$$$$  |$$ |  ______    _______   _______       
+#  $$$  \ /$$$ | /      \  /       |/ $$   |   /      \  /      \ $$ |  $$/ $$ | /      \  /       | /       |      
+#  $$$$  /$$$$ | $$$$$$  |/$$$$$$$/ $$$$$$/   /$$$$$$  |/$$$$$$  |$$ |      $$ | $$$$$$  |/$$$$$$$/ /$$$$$$$/       
+#  $$ $$ $$/$$ | /    $$ |$$      \   $$ | __ $$    $$ |$$ |  $$/ $$ |   __ $$ | /    $$ |$$      \ $$      \       
+#  $$ |$$$/ $$ |/$$$$$$$ | $$$$$$  |  $$ |/  |$$$$$$$$/ $$ |      $$ \__/  |$$ |/$$$$$$$ | $$$$$$  | $$$$$$  |      
+#  $$ | $/  $$ |$$    $$ |/     $$/   $$  $$/ $$       |$$ |      $$    $$/ $$ |$$    $$ |/     $$/ /     $$/       
+#  $$/      $$/  $$$$$$$/ $$$$$$$/     $$$$/   $$$$$$$/ $$/        $$$$$$/  $$/  $$$$$$$/ $$$$$$$/  $$$$$$$/        
+
+
+collections:
+  
+  Wellness:
+    plex_all: true
+    sort_title: "!001_Master"
+    collection_mode: hide
+    filters:
+      title:
+        - Yoga Foundations
+        - Sex and Communication
+        - Wilderness Survival
+        - Fitness and Wellness Fundamentals
+        - Mindfulness and Meditation
+        - The Science of Better Sleep
+        - Intentional Eating
+        - Mental Strength
+        - Navigating Change
+        - Reframe Your Thinking
+        - Gut Health - With Leading Experts 
+        
+  
+  Business:
+    plex_all: true
+    sort_title: "!002_Master"
+    collection_mode: hide
+    filters:
+      title:
+        - Business Strategy and Leadership
+        - The Art of Negotiation
+        - Sales and Persuasion
+        - Purposeful Communication
+        - Business Leadership
+        - Small Habits that Make a Big Impact on Your Life
+        - Critical Leadership Training
+        - Advertising and Creativity
+        - Strategic Decision-Making
+        - Rewriting the Rules of Business and Life
+        - Win Big in Business
+        - Think Like a Boss, Live Like a Legend
+        - Prepare to Be Unprepared
+
+  Science & Tech:
+    plex_all: true
+    sort_title: "!003_Master"
+    collection_mode: hide
+    filters:
+      title:
+        - Science and Problem-Solving
+        - Space Exploration
+        - Conservation
+        - Think Like an FBI Profiler
+        - Scientific Thinking and Communication
+        - Independent Thinking and the Media's Invisible Powers
+
+  Arts & Entertainment:
+    plex_all: true
+    sort_title: "!003_Master"
+    collection_mode: hide
+    filters:
+      title:
+        - Film Scoring
+        - Filmmaking - James Cameron
+        - Comedy
+        - Filmmaking - Martin Scorsese
+        - Using Humor to Make Your Mark
+
+  Food:
+    plex_all: true
+    sort_title: "!004_Master"
+    collection_mode: hide
+    filters:
+      title:
+        - Cooking Technique
+  
+  Music:
+    plex_all: true
+    sort_title: "!005_Master"
+    collection_mode: hide
+    filters:
+      title:
+        - Dance Music
+        - Electronic Music Production
+
+  Community & Government:
+    plex_all: true
+    sort_title: "!006_Master"
+    collection_mode: hide
+    filters:
+      title:
+        - Inclusive Leadership
+        - Authentic Leadership
+        - The Power Of Resilience
+
+  Home & Lifestyle:
+    plex_all: true
+    sort_title: "!007_Master"
+    collection_mode: hide
+    filters:
+      title:
+        - Gardening
+
+  Specials:
+    plex_all: true
+    sort_title: "!008_Master"
+    collection_mode: hide
+    filters:
+      title:
+        - Win Workplace Negotiations
+        - The Greatest of All Time
+        - Mastering the Markets
+        - Guide to Effective Communications
+        - How to be a Good Teammate
+        - Talking Shop
+        - Tackle the Hard Conversations

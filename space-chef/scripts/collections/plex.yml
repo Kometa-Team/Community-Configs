@@ -1,0 +1,91 @@
+#   /$$$$$$$  /$$       /$$$$$$$$ /$$   /$$
+#  | $$__  $$| $$      | $$_____/| $$  / $$
+#  | $$  \ $$| $$      | $$      |  $$/ $$/
+#  | $$$$$$$/| $$      | $$$$$    \  $$$$/ 
+#  | $$____/ | $$      | $$__/     >$$  $$ 
+#  | $$      | $$      | $$       /$$/\  $$
+#  | $$      | $$$$$$$$| $$$$$$$$| $$  \ $$
+#  |__/      |________/|________/|__/  |__/
+
+external_templates:
+  file: config/scripts/collections/templates.yml
+
+#     ___   ___   _  _   ___   ___ 
+#    / __| | __| | \| | | _ \ | __|
+#   | (_ | | _|  | .` | |   / | _| 
+#    \___| |___| |_|\_| |_|_\ |___|
+
+collections:
+  4K Optimized:
+    run_definition: movie
+    template: { name: resolutions, order: "102", quality: 4K, edition.not: Diamond, sorting: audience_rating.desc }
+  4K Optimized TV:
+    run_definition: show
+    template: { name: resolutions, order: "102", quality: 4K, sorting: audience_rating.desc }
+  # 4K Ultra HD:
+  #   run_definition: movie
+  #   template: { name: resolutions, order: "102", quality: 4K, edition: Diamond, sorting: audience_rating.desc }
+  Action:
+    template: { name: genres, genre: Action }
+  Adventure:
+    template: { name: genres, genre: Adventure }
+  Animation:
+    template: { name: genres, genre: Animation }
+  Comedy:
+    template: { name: genres, genre: Comedy }
+  Crime:
+    template: { name: genres, genre: Crime }
+  Documentary:
+    template: { name: genres, genre: Documentary }
+  Drama:
+    template: { name: genres, genre: Drama }
+  Family:
+    template: { name: genres, genre: Family }
+  History:
+    template: { name: genres, genre: History }
+  Music:
+    run_definition: movie
+    template: { name: genres, genre: Music }
+  Reality:
+    run_definition: show
+    template: { name: genres, genre: Reality }
+  Romance:
+    template: { name: genres, genre: Romance }
+  Romantic Comedy:
+    template: { name: genres, genre: Romance, Comedy }
+  Science Fiction:
+    template: { name: genres, genre: "Science Fiction" }
+  Thriller:
+    template: { name: genres, genre: Thriller }
+  War:
+    template: { name: genres, genre: War }
+  Stand Up Comedy:
+    run_definition: movie
+    template: { name: trakt, list: https://trakt.tv/users/giladg/lists/stand-up-comedy }
+
+#    ___    ___    ___     _     ___    ___   ___ 
+#   |   \  | __|  / __|   /_\   |   \  | __| / __|
+#   | |) | | _|  | (__   / _ \  | |) | | _|  \__ \
+#   |___/  |___|  \___| /_/ \_\ |___/  |___| |___/
+
+  1920 - 1970:
+    template: { name: decades, start: 1/1/1900, end: 1/1/1980 }
+  1980's:
+    template: { name: decades, start: 1/1/1980, end: 1/1/1990 }
+  1990's:
+    template: { name: decades, start: 1/1/1990, end: 1/1/2000 }
+  2000's:
+    template: { name: decades, start: 1/1/2000, end: 1/1/2010 }
+  2010's:
+    template: { name: decades, start: 1/1/2010, end: 1/1/2020 }
+  2020's:
+    template: { name: decades, start: 1/1/2020, end: 1/1/2030 }
+
+#    ___   ___     _     _  _    ___   _  _   ___   ___   ___ 
+#   | __| | _ \   /_\   | \| |  / __| | || | |_ _| / __| | __|
+#   | _|  |   /  / _ \  | .` | | (__  | __ |  | |  \__ \ | _| 
+#   |_|   |_|_\ /_/ \_\ |_|\_|  \___| |_||_| |___| |___/ |___|
+
+  The Godfather Collection:
+    template: { name: filter_title, title_name: The Godfather, order: "601" }
+    collection_order: release.asc
