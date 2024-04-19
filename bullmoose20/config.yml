@@ -10,14 +10,14 @@ libraries:
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
-      language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
+      language: en                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
       placeholder_imdb_id: tt8579674                # 1917 (2019) placeholder id for the separators
     metadata_files:                                 # These files contain metadata: attributes
     - git: bullmoose20/godzilla                     # Custom metadata file for Godzilla stuff
     collection_files:                               # These files contain collections: and/or dynamic_collections attributes
     - pmm: based                                    # collections based on a book, comic, story, video game
-    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)    
-    - pmm: aspect                                   # Creates collections based on aspect ratio of media item 
+    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)
+    - pmm: aspect                                   # Creates collections based on aspect ratio of media item
     - git: bullmoose20/movies_refresh               # tells plex to refresh media items added within the last 7 days
     - pmm: separator_award                          # An "index card"
     - pmm: nfr                                      # National Film Registry Awards
@@ -138,7 +138,7 @@ libraries:
         data:
           depth: 1
           limit: 15
-    - pmm: audio_language                           # English, French, Arabic, German, etc. audio language 
+    - pmm: audio_language                           # English, French, Arabic, German, etc. audio language
     - pmm: content_rating_nz                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
     - pmm: content_rating_au                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
     - pmm: content_rating_cs                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
@@ -147,7 +147,7 @@ libraries:
     - pmm: content_rating_uk                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
     - pmm: content_rating_mal                       # Choose content_rating_mal for anime ratings
     - pmm: genre                                    # Action, Comedy, Drama, etc.
-    - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
+    - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style
       # template_variables:
         # style: standards
     - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
@@ -198,7 +198,7 @@ libraries:
     - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
     - pmm: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
     overlay_files:                                  # These files contain overlays: attributes
-    - pmm: aspect                                   # Creates overlays based on aspect ratio of media item 
+    - pmm: aspect                                   # Creates overlays based on aspect ratio of media item
       template_variables:
         horizontal_align: left
         vertical_align: top
@@ -290,7 +290,7 @@ libraries:
         vertical_offset: 877
     - pmm: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
       # template_variables:
-        # back_color: "#f5289180" 
+        # back_color: "#f5289180"
         # vertical_offset: 0
         # horizontal_offset: 0
         # back_width: 2000
@@ -334,14 +334,14 @@ libraries:
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
-      language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
+      language: en                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
       placeholder_imdb_id: tt1190634                # The Boys (2019) placeholder id for the separators
     metadata_files:                                 # These files contain metadata: attributes
     - git: bullmoose20/money_heist                  # Custom metadata file for Money Heist
     collection_files:                               # These files contain collections: and/or dynamic_collections attributes
     - pmm: based                                    # collections based on a book, comic, story, video game
-    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)    
-    - pmm: aspect                                   # Creates collections based on aspect ratio of media item 
+    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)
+    - pmm: aspect                                   # Creates collections based on aspect ratio of media item
     - git: bullmoose20/tv_refresh                   # Tells plex to refresh media items added within the last 7 days
     - pmm: separator_award                          # An "index card"
     - pmm: pca                                      # People's Choice Awards
@@ -395,7 +395,7 @@ libraries:
         data:
           depth: 1
           limit: 15
-    - pmm: audio_language                           # English, French, Arabic, German, etc. audio language 
+    - pmm: audio_language                           # English, French, Arabic, German, etc. audio language
     - pmm: content_rating_nz                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
     - pmm: content_rating_au                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
     - pmm: content_rating_cs                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
@@ -404,7 +404,7 @@ libraries:
     - pmm: content_rating_uk                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
     - pmm: content_rating_mal                       # Choose content_rating_mal for anime ratings
     - pmm: genre                                    # Action, Comedy, Drama, etc.
-    - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
+    - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style
       # template_variables:
         # style: standards
     - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
@@ -546,6 +546,9 @@ libraries:
         builder_level: season
     - pmm: language_count
       template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+        vertical_offset: 630
         builder_level: episode
     - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
     - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
@@ -654,18 +657,21 @@ libraries:
       # template_variables:
         # back_width: 1000
         # back_height: 1500
-        # back_color: "#f52891cc" 
+        # back_color: "#f52891cc"
     - pmm: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
       template_variables:
         # back_width: 1000
         # back_height: 1500
-        # back_color: "#f52891cc" 
+        # back_color: "#f52891cc"
         builder_level: season
     - pmm: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
       template_variables:
         # back_width: 1000
         # back_height: 1500
-        # back_color: "#f52891cc" 
+        # back_color: "#f52891cc"
+        horizontal_align: left
+        vertical_align: top
+        horizontal_offset: 335
         builder_level: episode
     - pmm: video_format                             # Remux, DVD, Blu-Ray, etc. in bottom left and works with builder_level show, episode, and season
     - pmm: video_format
@@ -771,7 +777,7 @@ plex:                                               # Can be individually specif
 tmdb:                                               # REQUIRED for the script to run
   apikey: (redacted)
   language: en
-  region: CA                                        # Upper case ISO 3166-1 Code 
+  region: CA                                        # Upper case ISO 3166-1 Code
   cache_expiration: 60
 tautulli:                                           # Can be individually specified per library as well
   url: (redacted)
