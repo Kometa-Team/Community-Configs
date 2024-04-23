@@ -1,3 +1,6 @@
+#######################################
+#          TV Watchlist               #
+#######################################
 collections:
   Laura's Watchlist:
     plex_watchlist: critic_rating.desc
@@ -6,7 +9,7 @@ collections:
     sort_title: "!0001_<<collection_name>>"
     collection_mode: show
   Shows to Watch with Britty:
-    trakt_list: https://trakt.tv/users/fuschaitea/lists/movies-to-watch-with-britty
+    trakt_list: https://trakt.tv/users/fuschaitea/lists/shows-to-watch-with-britty
     sync_mode: sync
     collection_order: custom
     collection_mode: show

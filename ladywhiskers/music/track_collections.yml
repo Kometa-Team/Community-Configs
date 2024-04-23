@@ -1,5 +1,5 @@
 external_templates:
-  file: config/music/musictemplates.yml
+  file: config/templates/musictemplates.yml
   template_variables:
     collection_section: "004"
 
@@ -14,10 +14,10 @@ templates:
       all:
         track_mood: <<value>>
 
-dynamic_collections:
-  Track Moods:
-    type: track_mood
-    title_format: Top 100 <<key_name>> Tracks
-    template:
-      - track mood collection
-      - shared
+#dynamic_collections:
+#  Track Moods:
+#    type: track_mood
+#    title_format: Top 100 <<key_name>> Tracks
+#    template:
+#      - track mood collection
+#      - shared
