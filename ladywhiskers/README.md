@@ -1,4 +1,4 @@
-This is my Plex Meta Manager Config - heavily inspired by WhoDat104 and bullmoose20
+This is my Kometa Config - heavily inspired by WhoDat104 and bullmoose20
 
 Creates a whole bunch of collections, including Music collections, and tag subgenres for use with the default files.
 
