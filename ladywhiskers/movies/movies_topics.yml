@@ -14,54 +14,21 @@ templates:
 
 #######################################################################################################   
 collections: 
-  Conspiracy:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Conspiracy.jpg}
-    imdb_list: https://www.imdb.com/list/ls567287307/
-  Dark Comedy:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Dark%20Comedy.jpg}
-    imdb_list: https://www.imdb.com/list/ls561047438/
-    imdb_search: 
-      votes.gte: 100
-      keyword: dark comedy
-  Dystopian:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Dystopian.jpg}
-    imdb_search: 
-      votes.gte: 100
-      keyword: dystopia
   Football:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Football.jpg}
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Football.jpg}
     imdb_list: https://www.imdb.com/list/ls567409329/
   Inspirational:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Inspirational.jpg}
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Inspirational.jpg}
     imdb_list: https://www.imdb.com/list/ls567409348/
     trakt_list: https://trakt.tv/users/rizreflects/lists/inspiring
-  Mind-Bend:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Mind-Bend.jpg}
-    imdb_list: https://www.imdb.com/list/ls567402143/
-    trakt_list: https://trakt.tv/users/lish408/lists/mindfuck
-    mdblist_list: https://mdblist.com/lists/hdlists/mindfuck-movies
   Natural Disaster:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Natural%20Disaster.jpg}
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Natural%20Disaster.jpg}
     imdb_list: https://www.imdb.com/list/ls567402383/
-  Pandemic:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Pandemic.jpg}
-    imdb_list: https://www.imdb.com/list/ls567402655/
-    trakt_list: https://trakt.tv/users/mraniki/lists/theme-pandemic
-  Parody:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Parody.jpg}
-    imdb_list: https://www.imdb.com/list/ls567404864/
-    tvdb_movie: 138435
-  Prison:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Prison.jpg}
-    imdb_list: https://www.imdb.com/list/ls567409066/
-  Space:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Space.jpg}
-    imdb_list: https://www.imdb.com/list/ls567409789/
   Spy:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Spy.jpg}
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Spy.jpg}
     imdb_list: https://www.imdb.com/list/ls567409179
   Stand-up Comedy:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Stand-Up%20Comedy.jpg}
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Stand-Up%20Comedy.jpg}
     imdb_list: 
       - https://www.imdb.com/list/ls567409881/
     imdb_search:
@@ -69,8 +36,8 @@ collections:
       keyword: stand-up comedy
     collection_order: release.desc
   Unexpectedly Amazing:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Unexpectedly%20Amazing.jpg}
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Unexpectedly%20Amazing.jpg}
     imdb_list: https://www.imdb.com/list/ls567408147/
   Witch:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Witch.jpg}
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Witch.jpg}
     imdb_list: https://www.imdb.com/list/ls567408343/
