@@ -1,101 +1,101 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager/nightly/json-schema/config-schema.json
-### Highly recommend using Visual Studio Code with indent-rainbow by oderwat extension and YAML by Red Hat extension. VSC will also leverage the above link to enhance pmm yml edits.
-### Must be on Version 1.20.0-nightly34 or greater
+### Highly recommend using Visual Studio Code with indent-rainbow by oderwat extension and YAML by Red Hat extension. VSC will also leverage the above link to enhance Kometa yml edits.
+### Must be on Kometa Version 2.0.0-nightly1 or greater
 libraries:
   Movies:                                           # Must match a library name in your Plex
     report_path: config/missing/Movies_report.yml
     remove_overlays: false                          # Set to true if you want to remove overlays
-    reapply_overlays: false                         # Before setting this to true, you should know what you are doing and open a #pmm-help beforehand
+    reapply_overlays: false                         # Before setting this to true, you should know what you are doing and open a #kometa-help beforehand
     # reset_overlays: tmdb                            # if you want to reset the poster to default poster from tmdb
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
-      language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
+      language: en                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
       placeholder_imdb_id: tt8579674                # 1917 (2019) placeholder id for the separators
     metadata_files:                                 # These files contain metadata: attributes
     - git: bullmoose20/godzilla                     # Custom metadata file for Godzilla stuff
     collection_files:                               # These files contain collections: and/or dynamic_collections attributes
-    - pmm: based                                    # collections based on a book, comic, story, video game
-    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)    
-    - pmm: aspect                                   # Creates collections based on aspect ratio of media item 
+    - default: based                                    # collections based on a book, comic, story, video game
+    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)
+    - default: aspect                                   # Creates collections based on aspect ratio of media item
     - git: bullmoose20/movies_refresh               # tells plex to refresh media items added within the last 7 days
-    - pmm: separator_award                          # An "index card"
-    - pmm: nfr                                      # National Film Registry Awards
+    - default: separator_award                          # An "index card"
+    - default: nfr                                      # National Film Registry Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: pca                                      # People's Choice Awards
+    - default: pca                                      # People's Choice Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: sag                                      # Screen Actors Guild Awards
+    - default: sag                                      # Screen Actors Guild Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: tiff                                     # Toronto International Film Festival Awards
+    - default: tiff                                     # Toronto International Film Festival Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: berlinale                                # Berlinale Awards
+    - default: berlinale                                # Berlinale Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: razzie                                   # Razzie Awards
+    - default: razzie                                   # Razzie Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: venice                                   # Venice Awards
+    - default: venice                                   # Venice Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: cesar                                    # Cesar Awards
+    - default: cesar                                    # Cesar Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: bafta                                    # BAFTA Awards
+    - default: bafta                                    # BAFTA Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: cannes                                   # Cannes Film Festival Awards
+    - default: cannes                                   # Cannes Film Festival Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: choice                                   # Critic's Choice Awards
+    - default: choice                                   # Critic's Choice Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: emmy                                     # Emmy Awards
+    - default: emmy                                     # Emmy Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: golden                                   # Golden Globes Awards
+    - default: golden                                   # Golden Globes Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: oscars                                   # The Oscars
+    - default: oscars                                   # The Oscars
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: spirit                                   # Independent Spirit Awards
+    - default: spirit                                   # Independent Spirit Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: sundance                                 # Sundance Film Festival Awards
+    - default: sundance                                 # Sundance Film Festival Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: separator_chart                          # An "index card"
-    - pmm: anilist                                  # AniDB Charts (Popular, Trending, etc.)
-    - pmm: imdb                                     # IMDb Charts (Popular, Trending, etc.)
-    - pmm: myanimelist                              # MAL Charts (Popular, Trending, etc.)
-    - pmm: other_chart                              # Other Charts (Popular, Trending, etc.)
-    - pmm: tautulli                                 # Tautulli Charts (Popular, Trending, etc.)
-    - pmm: tmdb                                     # TMDb Charts (Popular, Trending, etc.)
-    - pmm: trakt                                    # Trakt Charts (Popular, Trending, etc.)
-    - pmm: basic                                    # Some basic chart collections based on recently released media in your library
-    - pmm: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
+    - default: separator_chart                          # An "index card"
+    - default: anilist                                  # AniDB Charts (Popular, Trending, etc.)
+    - default: imdb                                     # IMDb Charts (Popular, Trending, etc.)
+    - default: myanimelist                              # MAL Charts (Popular, Trending, etc.)
+    - default: other_chart                              # Other Charts (Popular, Trending, etc.)
+    - default: tautulli                                 # Tautulli Charts (Popular, Trending, etc.)
+    - default: tmdb                                     # TMDb Charts (Popular, Trending, etc.)
+    - default: trakt                                    # Trakt Charts (Popular, Trending, etc.)
+    - default: basic                                    # Some basic chart collections based on recently released media in your library
+    - default: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
     # - file: /config/metadata/both/birthday          # Actor birthdays
-    - pmm: actor
+    - default: actor
       template_variables:
         collection_section: '001'
         use_separator: false
@@ -109,19 +109,19 @@ libraries:
           limit: 100
         tmdb_birthday:
           this_month: true
-    - pmm: actor                                    # Actors
+    - default: actor                                    # Actors
       template_variables:                           # bw, rainier, diiivoy, diiivoycolor, or orig style is used. depth and limit is set low, but sometimes I boost to 10, 150
         style: signature
         data:
           depth: 1
           limit: 15
-    - pmm: director                                 # Directors
+    - default: director                                 # Directors
       template_variables:                           # bw, rainier, diiivoy, diiivoycolor, or orig style is used. depth and limit is set low, but sometimes I boost to 10, 150
         style: signature
         data:
           depth: 1
           limit: 15
-    - pmm: producer                                 # Producers
+    - default: producer                                 # Producers
       template_variables:                           # bw, rainier, diiivoy, diiivoycolor, or orig style is used. depth and limit is set low, but sometimes I boost to 10, 150
         exclude:                                    # ever have some random person... you can exclude them if you want
         - Jeremy Kleiner
@@ -130,7 +130,7 @@ libraries:
         data:
           depth: 1
           limit: 15
-    - pmm: writer                                   # Writers
+    - default: writer                                   # Writers
       template_variables:                           # bw, rainier, diiivoy, diiivoycolor, or orig style is used. depth and limit is set low, but sometimes I boost to 10, 150
         exclude:                                    # ever have some random person... you can exclude them if you want
         - Donald Kaufman
@@ -138,42 +138,42 @@ libraries:
         data:
           depth: 1
           limit: 15
-    - pmm: audio_language                           # English, French, Arabic, German, etc. audio language 
-    - pmm: content_rating_nz                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_au                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_cs                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_de                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_us                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_uk                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_mal                       # Choose content_rating_mal for anime ratings
-    - pmm: genre                                    # Action, Comedy, Drama, etc.
-    - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
+    - default: audio_language                           # English, French, Arabic, German, etc. audio language
+    - default: content_rating_nz                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_au                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_cs                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_de                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_us                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_uk                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_mal                       # Choose content_rating_mal for anime ratings
+    - default: genre                                    # Action, Comedy, Drama, etc.
+    - default: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style
       # template_variables:
         # style: standards
-    - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
-    - pmm: subtitle_language                        # English, French, Arabic, German, etc. subtitles
-    - pmm: year                                     # Year the media item was released starting from 1880 to current_year
+    - default: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
+    - default: subtitle_language                        # English, French, Arabic, German, etc. subtitles
+    - default: year                                     # Year the media item was released starting from 1880 to current_year
       template_variables:
         data:
           starting: 1880
           ending: current_year
-    - pmm: country                                  # Country associated to the media item
+    - default: country                                  # Country associated to the media item
       template_variables:
         style: color
-    - pmm: region                                   # Region associated to the media item
+    - default: region                                   # Region associated to the media item
       template_variables:
         style: color
-    - pmm: continent                                # Continent associated to the media item
+    - default: continent                                # Continent associated to the media item
       template_variables:
         style: color
-    - pmm: decade                                   # Decade the media item was released
+    - default: decade                                   # Decade the media item was released
     - git: bullmoose20/separator_franchise          # Separator for franchise
       template_variables:
         collection_section: '035'                   # Set to "035" to be right before universe. Should be the same here and below
-    - pmm: franchise                                # https://metamanager.wiki/en/latest/defaults/movie/franchise
+    - default: franchise                                # https://metamanager.wiki/en/latest/defaults/movie/franchise
       template_variables:
         collection_section: '035'                   # Set to "035" to be right before universe. Should be the same here and above
-    - pmm: seasonal                                 # Christmas, Halloween, etc.
+    - default: seasonal                                 # Christmas, Halloween, etc.
       template_variables:                           # Canadian Thankgsgiving is a different date range. Otherwise, I want to ALWAYS see the seasonal
         schedule_years: daily
         schedule_valentine: daily
@@ -195,19 +195,19 @@ libraries:
         schedule_lgbtq: daily
         schedule_latinx: daily
         schedule_women: daily
-    - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
-    - pmm: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
+    - default: streaming                                # Streaming on Disney+, Netflix, etc.
+    - default: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
     overlay_files:                                  # These files contain overlays: attributes
-    - pmm: aspect                                   # Creates overlays based on aspect ratio of media item 
+    - default: aspect                                   # Creates overlays based on aspect ratio of media item
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 517
-    - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
-    - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2
+    - default: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
+    - default: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2
     ################### CONTENT RATING SECTION ###################
-    # - pmm: content_rating_nz                        # NZ content ratings
-    # - pmm: content_rating_au                        # AU content ratings
+    # - default: content_rating_nz                        # NZ content ratings
+    # - default: content_rating_au                        # AU content ratings
       # template_variables:
         # horizontal_align: left
         # vertical_align: bottom
@@ -218,30 +218,30 @@ libraries:
         # back_height: 1
         # # url: (redacted)
         # # color: false
-    # - pmm: content_rating_de                        # DE FSK content ratings
-    # - pmm: content_rating_uk                        # UK BBFC content ratings
-    - pmm: content_rating_us_movie                  # US MPAA content ratings
+    # - default: content_rating_de                        # DE FSK content ratings
+    # - default: content_rating_uk                        # UK BBFC content ratings
+    - default: content_rating_us_movie                  # US MPAA content ratings
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 637
-    # - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
+    # - default: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
     ################### CONTENT RATING SECTION END ###############
-    # - pmm: direct_play                              # Show direct play only overlay
-    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
+    # - default: direct_play                              # Show direct play only overlay
+    - default: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       # template_variables:
         # back_color: "#FFFFFF00"
         # font_color: "#FFFFFF00"
-    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
+    - default: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       template_variables:
         back_color: '#FFFFFF00'
         font_color: '#FFFFFF00'
         use_subtitles: true
-    - pmm: mediastinger                             # Mediastinger overlay when the media item contains a stinger at the end of the movie/show or during the credits
+    - default: mediastinger                             # Mediastinger overlay when the media item contains a stinger at the end of the movie/show or during the credits
       # template_variables:
         # vertical_offset: 145
         # horizontal_offset: 15
-    - pmm: ratings                                  # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format
+    - default: ratings                                  # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format
       template_variables:
         rating1: user
         rating1_image: rt_tomato
@@ -274,28 +274,28 @@ libraries:
         # font: config/metadata/overlays/fonts/Claspo-ND-Medium.ttf
         # rating_source: Rotten
         # font: config/metadata/overlays/fonts/Adlib.ttf
-    - pmm: resolution                               # 4K HDR, 1080P FHD, etc.
-    - pmm: ribbon                                   # Used for ribbon in bottom right
+    - default: resolution                               # 4K HDR, 1080P FHD, etc.
+    - default: ribbon                                   # Used for ribbon in bottom right
       template_variables:
         style: red
-    - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
+    - default: streaming                                # Streaming on Disney+, Netflix, etc.
       template_variables:
         horizontal_align: left
         vertical_align: top
         vertical_offset: 757
-    - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
+    - default: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
       template_variables:
         horizontal_align: left
         vertical_align: top
         vertical_offset: 877
-    - pmm: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
+    - default: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
       # template_variables:
-        # back_color: "#f5289180" 
+        # back_color: "#f5289180"
         # vertical_offset: 0
         # horizontal_offset: 0
         # back_width: 2000
         # back_height: 3000
-    - pmm: video_format                             # Remux, DVD, Blu-Ray, etc. in bottom left
+    - default: video_format                             # Remux, DVD, Blu-Ray, etc. in bottom left
     settings:
       asset_directory: config/assets/Movies/
       prioritize_assets: true                       # The asset_directory contains folders per media item with respective posters
@@ -304,8 +304,8 @@ libraries:
       split_duplicates: false                       # Splits all duplicate movies/shows found in this library
       assets_for_all: true                          # Search in assets for images for every item in your library
       delete_collections:
-        configured: false                           # False - Collection must be an Unconfigured Collection to be deleted (collection is not in the config file of the specific PMM run).
-        managed: false                              # False - Collection must be an Unmanaged Collection to be deleted (the collection does not have the PMM label)
+        configured: false                           # False - Collection must be an Unconfigured Collection to be deleted (collection is not in the config file of the specific Kometa run).
+        managed: false                              # False - Collection must be an Unmanaged Collection to be deleted (the collection does not have the Kometa label)
         less: 99999                                 # Effectively all collections regardless of teh number of items in the collection
       mass_user_rating_update: mdb_tomatoes         # Update user ratings with mdb_tomatoes
       mass_critic_rating_update: imdb               # Update critic ratings with imdb
@@ -334,44 +334,44 @@ libraries:
     template_variables:
       sep_style: gray                               # use the gray separators globally for this library
       collection_mode: hide                         # hide the collections
-      language: fr                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
+      language: en                                  # could be default(which is en), da, de, fr, pt-br or another lang code that we have translated
       placeholder_imdb_id: tt1190634                # The Boys (2019) placeholder id for the separators
     metadata_files:                                 # These files contain metadata: attributes
     - git: bullmoose20/money_heist                  # Custom metadata file for Money Heist
     collection_files:                               # These files contain collections: and/or dynamic_collections attributes
-    - pmm: based                                    # collections based on a book, comic, story, video game
-    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)    
-    - pmm: aspect                                   # Creates collections based on aspect ratio of media item 
+    - default: based                                    # collections based on a book, comic, story, video game
+    # - file: config/metadata/overlay_label.yml       # Creates collection of all items with an Overlay label (Testing only)
+    - default: aspect                                   # Creates collections based on aspect ratio of media item
     - git: bullmoose20/tv_refresh                   # Tells plex to refresh media items added within the last 7 days
-    - pmm: separator_award                          # An "index card"
-    - pmm: pca                                      # People's Choice Awards
+    - default: separator_award                          # An "index card"
+    - default: pca                                      # People's Choice Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: choice                                   # Critic's Choice Awards
+    - default: choice                                   # Critic's Choice Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: golden                                   # Golden Globes Awards
+    - default: golden                                   # Golden Globes Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: emmy                                     # Emmy Awards
+    - default: emmy                                     # Emmy Awards
       template_variables:                           # based on when the award show started
         data:
           starting: first
-    - pmm: separator_chart                          # An "index card"
-    - pmm: anilist                                  # AniDB Charts (Popular, Trending, etc.)
-    - pmm: imdb                                     # IMDb Charts (Popular, Trending, etc.)
-    - pmm: myanimelist                              # MAL Charts (Popular, Trending, etc.)
-    - pmm: other_chart                              # Other Charts (Popular, Trending, etc.)
-    - pmm: tautulli                                 # Tautulli Charts (Popular, Trending, etc.)
-    - pmm: tmdb                                     # TMDb Charts (Popular, Trending, etc.)
-    - pmm: trakt                                    # Trakt Charts (Popular, Trending, etc.)
-    - pmm: basic                                    # Some basic chart collections based on recently released media in your library
-    - pmm: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
+    - default: separator_chart                          # An "index card"
+    - default: anilist                                  # AniDB Charts (Popular, Trending, etc.)
+    - default: imdb                                     # IMDb Charts (Popular, Trending, etc.)
+    - default: myanimelist                              # MAL Charts (Popular, Trending, etc.)
+    - default: other_chart                              # Other Charts (Popular, Trending, etc.)
+    - default: tautulli                                 # Tautulli Charts (Popular, Trending, etc.)
+    - default: tmdb                                     # TMDb Charts (Popular, Trending, etc.)
+    - default: trakt                                    # Trakt Charts (Popular, Trending, etc.)
+    - default: basic                                    # Some basic chart collections based on recently released media in your library
+    - default: collectionless                           # Collectionless collection to help Show/Hide Movies/Shows properly in your library
     # - file: /config/metadata/both/birthday          # Actor birthdays
-    - pmm: actor
+    - default: actor
       template_variables:
         collection_section: '001'
         use_separator: false
@@ -387,7 +387,7 @@ libraries:
           limit: 100
         tmdb_birthday:
           this_month: true
-    - pmm: actor                                    # Actors
+    - default: actor                                    # Actors
       template_variables:                           # bw, rainier, diiivoy, diiivoycolor, or orig style is used. depth and limit is set low, but sometimes I boost to 10, 150
         exclude:                                    # ever have some random person... you can exclude them if you want
         - Macy Nyman
@@ -395,194 +395,197 @@ libraries:
         data:
           depth: 1
           limit: 15
-    - pmm: audio_language                           # English, French, Arabic, German, etc. audio language 
-    - pmm: content_rating_nz                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_au                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_cs                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_de                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_us                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_uk                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
-    - pmm: content_rating_mal                       # Choose content_rating_mal for anime ratings
-    - pmm: genre                                    # Action, Comedy, Drama, etc.
-    - pmm: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style 
+    - default: audio_language                           # English, French, Arabic, German, etc. audio language
+    - default: content_rating_nz                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_au                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_cs                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_de                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_us                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_uk                        # Choose content_rating_nz, content_rating_au, content_rating_uk, content_rating_us, content_rating_de, content_rating_mal, content_rating_cs, or all
+    - default: content_rating_mal                       # Choose content_rating_mal for anime ratings
+    - default: genre                                    # Action, Comedy, Drama, etc.
+    - default: resolution                               # 4K HDR, 1080P FHD, etc. with the standards style
       # template_variables:
         # style: standards
-    - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
-    - pmm: subtitle_language                        # English, French, Arabic, German, etc. subtitles
-    - pmm: year                                     # Year the media item was released starting from 1880 to current_year
+    - default: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
+    - default: subtitle_language                        # English, French, Arabic, German, etc. subtitles
+    - default: year                                     # Year the media item was released starting from 1880 to current_year
       template_variables:
         data:
           starting: 1880
           ending: current_year
-    - pmm: country                                  # Country associated to the media item
+    - default: country                                  # Country associated to the media item
       template_variables:
         style: color
-    - pmm: region                                   # Region associated to the media item
+    - default: region                                   # Region associated to the media item
       template_variables:
         style: color
-    - pmm: continent                                # Continent associated to the media item
+    - default: continent                                # Continent associated to the media item
       template_variables:
         style: color
-    - pmm: decade                                   # Decade the media item was released
+    - default: decade                                   # Decade the media item was released
     - git: bullmoose20/separator_franchise          # Separator for franchise
       template_variables:
         collection_section: '035'                   # Set to "035" to be right before universe. Should be the same here and below
-    - pmm: franchise                                # https://metamanager.wiki/en/latest/defaults/movie/franchise
+    - default: franchise                                # https://metamanager.wiki/en/latest/defaults/movie/franchise
       template_variables:
         collection_section: '035'                   # Set to "035" to be right before universe. Should be the same here and above
-    - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
-    - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
-    - pmm: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
+    - default: network                                  # ABC, CBC, NBC, FOX, etc.
+    - default: streaming                                # Streaming on Disney+, Netflix, etc.
+    - default: universe                                 # Marvel Cinematic Universe, Wizarding World, etc.
     overlay_files:
-    - pmm: aspect                                   # Creates aspect ratio overlay
+    - default: aspect                                   # Creates aspect ratio overlay
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 510
-    - pmm: aspect
+    - default: aspect
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 510
         builder_level: season
-    - pmm: aspect
+    - default: aspect
       template_variables:
         horizontal_align: left
-        vertical_align:  bottom
+        vertical_align: bottom
         vertical_offset: 390
         builder_level: episode
-    - pmm: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
+    - default: audio_codec                              # FLAC, DTS-X, TrueHD, etc. style: standard/compact. compact is default
       template_variables:
         vertical_offset: 95
-    - pmm: audio_codec
+    - default: audio_codec
       template_variables:
         builder_level: season
-    - pmm: audio_codec
+    - default: audio_codec
       template_variables:
         builder_level: episode
     ################### CONTENT RATING SECTION ###################
-    # - pmm: content_rating_nz                        # NZ content ratings
-    # - pmm: content_rating_nz                        # NZ content ratings
+    # - default: content_rating_nz                        # NZ content ratings
+    # - default: content_rating_nz                        # NZ content ratings
       # template_variables:
         # builder_level: season
-    # - pmm: content_rating_nz                        # NZ content ratings
+    # - default: content_rating_nz                        # NZ content ratings
       # template_variables:
         # builder_level: episode
-    # - pmm: content_rating_au                        # AU content ratings
-    # - pmm: content_rating_au                        # AU content ratings
+    # - default: content_rating_au                        # AU content ratings
+    # - default: content_rating_au                        # AU content ratings
       # template_variables:
         # builder_level: season
-    # - pmm: content_rating_au                        # AU content ratings
+    # - default: content_rating_au                        # AU content ratings
       # template_variables:
         # builder_level: episode
-    # - pmm: content_rating_de                        # DE FSK content ratings
-    # - pmm: content_rating_de                        # DE FSK content ratings
+    # - default: content_rating_de                        # DE FSK content ratings
+    # - default: content_rating_de                        # DE FSK content ratings
       # template_variables:
         # builder_level: season
-    # - pmm: content_rating_de                        # DE FSK content ratings
+    # - default: content_rating_de                        # DE FSK content ratings
       # template_variables:
         # builder_level: episode
-    # - pmm: content_rating_uk                        # UK BBFC content ratings
-    # - pmm: content_rating_uk                        # UK BBFC content ratings
+    # - default: content_rating_uk                        # UK BBFC content ratings
+    # - default: content_rating_uk                        # UK BBFC content ratings
       # template_variables:
         # builder_level: season
-    # - pmm: content_rating_uk                        # UK BBFC content ratings
+    # - default: content_rating_uk                        # UK BBFC content ratings
       # template_variables:
         # builder_level: episode
-    - pmm: content_rating_us_show                   # US MPAA content ratings
+    - default: content_rating_us_show                   # US MPAA content ratings
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 630
-    - pmm: content_rating_us_show                   # US MPAA content ratings
+    - default: content_rating_us_show                   # US MPAA content ratings
       template_variables:
         horizontal_align: left
-        vertical_align:  top
+        vertical_align: top
         vertical_offset: 630
         builder_level: season
-    - pmm: content_rating_us_show                   # US MPAA content ratings
+    - default: content_rating_us_show                   # US MPAA content ratings
       template_variables:
         builder_level: episode
-    # - pmm: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
-    # - pmm: commonsense
+    # - default: commonsense                              # Commonsense content ratings Age 2+, Age 14+, etc.
+    # - default: commonsense
       # template_variables:
         # builder_level: season
-    # - pmm: commonsense
+    # - default: commonsense
       # template_variables:
         # builder_level: episode
     ################### CONTENT RATING SECTION END ###############
-    # - pmm: direct_play
-    # - pmm: direct_play
+    # - default: direct_play
+    # - default: direct_play
       # template_variables:
         # builder_level: season
-    # - pmm: direct_play
+    # - default: direct_play
       # template_variables:
         # builder_level: episode
-    - pmm: streaming                                # Streaming on Disney+, Netflix, etc.
+    - default: streaming                                # Streaming on Disney+, Netflix, etc.
       template_variables:
         horizontal_align: left
         vertical_align: top
         vertical_offset: 750
-    - pmm: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
+    - default: studio                                   # DreamWorks Studios, Lucasfilm Ltd, etc.
       template_variables:
         horizontal_align: left
         vertical_align: top
         vertical_offset: 870
-    - pmm: studio
+    - default: studio
       template_variables:
         horizontal_align: left
         vertical_align: top
         vertical_offset: 870
         builder_level: season
-    - pmm: studio
+    - default: studio
       template_variables:
         builder_level: episode
-    - pmm: episode_info                             # SE##E## information in bottom right and works with builder_level episode
+    - default: episode_info                             # SE##E## information in bottom right and works with builder_level episode
       template_variables:
         builder_level: episode
-    - pmm: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2 and works with builder_level show, episode, and season
-    - pmm: language_count
+    - default: language_count                           # blank means 1 audio language track, dual means 2, multi means > 2 and works with builder_level show, episode, and season
+    - default: language_count
       template_variables:
         builder_level: season
-    - pmm: language_count
+    - default: language_count
       template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+        vertical_offset: 630
         builder_level: episode
-    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
-    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
+    - default: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
+    - default: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       template_variables:
         use_subtitles: true
-    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
+    - default: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       template_variables:
         builder_level: season
-    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
+    - default: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       template_variables:
         use_subtitles: true
         builder_level: season
-    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
+    - default: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       template_variables:
         builder_level: episode
-    - pmm: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
+    - default: languages                                # Languages spoken and subtitles with associated flags and two-digit lang codes
       template_variables:
         use_subtitles: true
         builder_level: episode
-    - pmm: mediastinger                             # Mediastinger overlay when the media item contains a stinger at the end of the movie/show or during the credits and works with builder_level show
+    - default: mediastinger                             # Mediastinger overlay when the media item contains a stinger at the end of the movie/show or during the credits and works with builder_level show
       template_variables:
         vertical_offset: 95
-    - pmm: network                                  # ABC, CBC, NBC, FOX, etc.
+    - default: network                                  # ABC, CBC, NBC, FOX, etc.
       template_variables:
         horizontal_align: left
         vertical_align: top
         vertical_offset: 990
-    - pmm: network
+    - default: network
       template_variables:
         horizontal_align: left
         vertical_align: top
         vertical_offset: 990
         builder_level: season
-    - pmm: network
+    - default: network
       template_variables:
         builder_level: episode
-    - pmm: ratings                                  # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format. builder_level: show has 3 ratings max
+    - default: ratings                                  # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format. builder_level: show has 3 ratings max
       template_variables:
         rating1: user
         rating1_image: rt_tomato
@@ -600,7 +603,7 @@ libraries:
         rating3_font_size: 70
 
         horizontal_position: right
-    - pmm: ratings                                  # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format. builder_level: episode has 2 ratings max
+    - default: ratings                                  # Ratings with custom fonts matched to the style of the rating, font_size, and on the right in 'square' format. builder_level: episode has 2 ratings max
       template_variables:
         # rating1: user
         # rating1_image: rt_tomato
@@ -619,24 +622,24 @@ libraries:
 
         horizontal_position: right
         builder_level: episode
-    - pmm: resolution                               # 4K HDR, 1080P FHD, etc. and works with builder_level show, episode, and season
+    - default: resolution                               # 4K HDR, 1080P FHD, etc. and works with builder_level show, episode, and season
       template_variables:
         vertical_offset: 95
-    - pmm: resolution
+    - default: resolution
       template_variables:
         builder_level: season
-    - pmm: resolution
+    - default: resolution
       template_variables:
         builder_level: episode
-    - pmm: ribbon                                   # Used for ribbon in bottom right
+    - default: ribbon                                   # Used for ribbon in bottom right
       template_variables:
         style: red
-    - pmm: runtimes                                 # Runtime information in bottom right and works with builder_level episode
+    - default: runtimes                                 # Runtime information in bottom right and works with builder_level episode
       template_variables:
         back_width: 305
         text: ''
         builder_level: episode
-    - pmm: status                                   # Airing, Returning, Ended, Canceled and works with builder_level show
+    - default: status                                   # Airing, Returning, Ended, Canceled and works with builder_level show
       template_variables:
         horizontal_align: center
         vertical_align: top
@@ -650,28 +653,31 @@ libraries:
         back_color_returning: '#81007F'
         back_color_canceled: '#B52222'
         back_color_ended: '#000847'
-    - pmm: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
+    - default: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
       # template_variables:
         # back_width: 1000
         # back_height: 1500
-        # back_color: "#f52891cc" 
-    - pmm: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
+        # back_color: "#f52891cc"
+    - default: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
       template_variables:
         # back_width: 1000
         # back_height: 1500
-        # back_color: "#f52891cc" 
+        # back_color: "#f52891cc"
         builder_level: season
-    - pmm: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
+    - default: versions                                 # Will show duplicates for that media item and works with builder_level show, episode, and season
       template_variables:
         # back_width: 1000
         # back_height: 1500
-        # back_color: "#f52891cc" 
+        # back_color: "#f52891cc"
+        horizontal_align: left
+        vertical_align: top
+        horizontal_offset: 335
         builder_level: episode
-    - pmm: video_format                             # Remux, DVD, Blu-Ray, etc. in bottom left and works with builder_level show, episode, and season
-    - pmm: video_format
+    - default: video_format                             # Remux, DVD, Blu-Ray, etc. in bottom left and works with builder_level show, episode, and season
+    - default: video_format
       template_variables:
         builder_level: season
-    - pmm: video_format
+    - default: video_format
       template_variables:
         builder_level: episode
     settings:
@@ -682,8 +688,8 @@ libraries:
       split_duplicates: false                       # Splits all duplicate movies/shows found in this library
       assets_for_all: true                          # Search in assets for images for every item in your library
       delete_collections:
-        configured: false                           # False - Collection must be an Unconfigured Collection to be deleted (collection is not in the config file of the specific PMM run).
-        managed: false                              # False - Collection must be an Unmanaged Collection to be deleted (the collection does not have the PMM label)
+        configured: false                           # False - Collection must be an Unconfigured Collection to be deleted (collection is not in the config file of the specific Kometa run).
+        managed: false                              # False - Collection must be an Unmanaged Collection to be deleted (the collection does not have the Kometa label)
         less: 99999                                 # Effectively all collections regardless of teh number of items in the collection
       mass_user_rating_update: mdb_tomatoes         # Update user ratings with mdb_tomatoes
       mass_critic_rating_update: imdb               # Update critic ratings with imdb
@@ -706,7 +712,7 @@ libraries:
       mass_imdb_parental_labels: none               # Apply all Parental Labels with a value of None, Mild, Moderate, or Severe to match IMDb parental guide
       # mass_poster_update: tmdb                      # Resets posters to tmdb, plex, locked, unlock which is useful to remove all overlays when running with -r -op
 playlist_files:
-- pmm: playlist
+- default: playlist
   template_variables:
     libraries: Movies, TV Shows
 settings:                                           # Can be individually specified per library as well
@@ -771,7 +777,7 @@ plex:                                               # Can be individually specif
 tmdb:                                               # REQUIRED for the script to run
   apikey: (redacted)
   language: en
-  region: CA                                        # Upper case ISO 3166-1 Code 
+  region: CA                                        # Upper case ISO 3166-1 Code
   cache_expiration: 60
 tautulli:                                           # Can be individually specified per library as well
   url: (redacted)
@@ -791,7 +797,7 @@ radarr:                                         # Can be individually specified 
   monitor: true
   availability: announced
   quality_profile: Any
-  tag: pmm
+  tag: kometa
   search: false
   radarr_path:
   plex_path:
@@ -809,7 +815,7 @@ sonarr:                                         # Can be individually specified 
   language_profile: English
   series_type: standard
   season_folder: true
-  tag: pmm
+  tag: kometa
   search: false
   cutoff_search: false
   sonarr_path:
