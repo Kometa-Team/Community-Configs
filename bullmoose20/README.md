@@ -1,6 +1,6 @@
 # bullmoose20 Kometa files
 ## Basics
-I run Kometa nightly (not lsio image) and Plex(hotio image) on Unraid 6.12.6. At the top of my config.yml file I will usually specify the version that this config.yml file works with.
+I run Kometa nightly (not lsio image) and Plex(hotio image) on Unraid 6.12.10. At the top of my config.yml file I will usually specify the version that this config.yml file works with.
 
 
 
@@ -27,7 +27,7 @@ Unzip the fonts into `config/metadata/overlays/fonts/` to use this config withou
 
 Essentially, I prefer `tmdb` as a source and textless images all around `["xx"]`. Then I apply a gradient of my choice (`bottom-up-fade.png` & `bottom-up-fade-background.png`), and font of my choice (`Comfortaa-Medium.ttf`) which happens to match the Kometa defaults for Collections. The secrets to all of this are found in the `bullmoose20config.json` file found in the posterizarr subdirectory along with the font and the gradient files.
 
-Unraid Docker-Compose file is also shared and when prompted in Unraid to add a UI Label Icon, use this link: https://raw.githubusercontent.com/fscorrupt/Plex-Poster-Maker/main/images/webhook.png
+Unraid Docker-Compose file is also shared and when prompted in Unraid to add a UI Label Icon, use this link: https://raw.githubusercontent.com/fscorrupt/Posterizarr/main/images/webhook.png
 
 After Posterizarr applies my settings Movie example:
 
