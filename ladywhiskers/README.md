@@ -1,46 +1,8 @@
 This is my Plex Meta Manager Config - heavily inspired by WhoDat104 and bullmoose20
 
-Creates a whole bunch of collections, including Music collections.
+Creates a whole bunch of collections, including Music collections, and tag subgenres for use with the default files.
 
-This should create the below collections:
 
-**PMM Default Collections:**
-Movies
-   - Based on 
-   - Oscars
-   - Actor Birthdays
-   - Australian Content Ratings
-   - Common Sense Media Recommended
-   - Continent
-     - Oceania
-     - Seasonal
-        - added Pride Month
-TV Shows
-   - Based on
-   - Actor Birthdays
-   - Australian Content Ratings
-   - Common Sense Media Recommended
-   - Universe
-   - Continent
-     - Oceania
-
-     
-**Custom Collections:**
-
-Movies
-  Collections:
-- Expanded Genres        #WhoDat104
-- Franchises             #WhoDat104
-- Subgenres              #WhoDat104
-- Topics                 #WhoDat104
-
-TV Shows
-	Collections:						
-	- TV Documentaries       #WhoDat104
-	- Avatar Universe
-	- Expanded Genres        #WhoDat104
-	- Topics                 #WhoDat104
-        - Franchises             #WhoDat104
 
 Music WORK IN PROGRESS
   Collections:
