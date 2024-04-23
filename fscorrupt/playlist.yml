@@ -13,7 +13,7 @@
 #  If nothing is specified these are the defaults           #
 #                                                           #
 #    playlist_files:                                        #
-#      - git: PMM/playlist                                  #
+#      - git: kometa/playlist                                  #
 #        template_variables:                                #
 #          # Sets the names of the libraries to use         #
 #          libraries: Movies, TV Shows                      #
@@ -80,7 +80,7 @@ templates:
     sync_to_users: all
     sync_mode: sync
     libraries: <<libraries>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/playlist/<<playlist_name_encoded>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/playlist/<<playlist_name_encoded>>.jpg
 
 playlists:
   The Walking Dead Universe (Timeline Order):
