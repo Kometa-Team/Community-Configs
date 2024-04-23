@@ -1,3 +1,6 @@
+#######################################
+#          Movie Watchlist            #
+#######################################
 collections:
   Laura's Watchlist:
     plex_watchlist: critic_rating.desc
@@ -20,3 +23,16 @@ collections:
     sync_mode: sync
     collection_mode: hide
     sort_title: "!0002_<<collection_name>>"
+  🍿 What Movie Should I Watch?:
+      smart_filter:
+        sort_by: random
+        all:
+          unplayed: true
+          release: 3650
+        limit: 5
+      url_poster: https://i.imgur.com/OMrEyGg.jpeg
+      collection_mode: hide
+      sort_title: "+1_1_next"
+      visible_library: true
+      visible_home: true
+      schedule: weekly(wednesday)
