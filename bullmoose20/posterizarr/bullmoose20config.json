@@ -1,22 +1,37 @@
 {
-  "ApiPart":{
+  "ApiPart": {
     "tvdbapi": "tvdb api key - free",
     "tmdbtoken": "This is the super long token from tmdb - free",
     "FanartTvAPIKey": "fanart.tv token - free",
     "PlexToken": "plex token - free",
     "FavProvider": "tmdb",
-    "PreferredLanguageOrder": ["xx", "en", "de"]
+    "PreferredLanguageOrder": [
+      "xx"
+    ],
+    "PreferredSeasonLanguageOrder": [
+      "xx"
+    ]
   },
-  "PlexPart":{
-    "LibstoExclude": ["", "", "TestMovies", "TestTV Shows", "Other Videos", "Music", "Photos", "Test Videos", "Playlists" ],
+  "PlexPart": {
+    "LibstoExclude": [
+      "",
+      "",
+      "TestMovies",
+      "TestTV Shows",
+      "Other Videos",
+      "Music",
+      "Photos",
+      "Test Videos",
+      "Playlists"
+    ],
     "PlexUrl": "http://192.168.2.242:32400"
   },
-  "Notification":{
-    "SendNotification":"true",
+  "Notification": {
+    "SendNotification": "true",
     "AppriseUrl": "discord://{WebhookID}/{WebhookToken}/",
     "Discord": "https://discord.com/api/webhooks/add-your-discord-webhook-here"
   },
-  "PrerequisitePart":{
+  "PrerequisitePart": {
     "AssetPath": "./assets",
     "magickinstalllocation": "./magick",
     "maxLogs": "5",
@@ -27,16 +42,18 @@
     "backgroundoverlayfile": "bottom-up-fade-background.png",
     "titlecardoverlayfile": "bottom-up-fade-background.png",
     "LibraryFolders": "true",
-	"Posters": "true",
+    "Posters": "true",
     "SeasonPosters": "true",
     "BackgroundPosters": "true",
-    "TitleCards": "true"
+    "TitleCards": "true",
+    "show_skipped": "true",
+    "logLevel": "3"
   },
-  "OverlayPart":{
+  "OverlayPart": {
     "ImageProcessing": "true",
-    "outputQuality": "100%"
+    "outputQuality": "92%"
   },
-  "PosterOverlayPart":{
+  "PosterOverlayPart": {
     "fontAllCaps": "true",
     "AddBorder": "false",
     "AddText": "true",
@@ -50,7 +67,7 @@
     "MaxHeight": "485",
     "text_offset": "+300"
   },
-  "BackgroundOverlayPart":{
+  "BackgroundOverlayPart": {
     "fontAllCaps": "true",
     "AddBorder": "false",
     "AddText": "false",
@@ -64,13 +81,14 @@
     "MaxHeight": "500",
     "text_offset": "+200"
   },
-  "TitleCardOverlayPart":{
+  "TitleCardOverlayPart": {
+    "UseBackgroundAsTitleCard": "false",
     "AddOverlay": "true",
     "AddBorder": "false",
     "bordercolor": "white",
     "borderwidth": "30"
   },
-  "TitleCardTitleTextPart":{
+  "TitleCardTitleTextPart": {
     "fontAllCaps": "true",
     "AddEPTitleText": "true",
     "fontcolor": "white",
@@ -80,7 +98,7 @@
     "MaxHeight": "300",
     "text_offset": "+290"
   },
-  "TitleCardEPTextPart":{
+  "TitleCardEPTextPart": {
     "fontAllCaps": "true",
     "AddEPText": "true",
     "fontcolor": "white",
@@ -88,6 +106,22 @@
     "maxPointSize": "120",
     "MaxWidth": "1600",
     "MaxHeight": "150",
-    "text_offset": "+140"
+    "text_offset": "+140",
+    "SeasonTCText": "Season",
+    "EpisodeTCText": "Episode"
+  },
+  "SeasonPosterOverlayPart": {
+    "fontAllCaps": "true",
+    "AddBorder": "false",
+    "AddText": "true",
+    "AddOverlay": "true",
+    "fontcolor": "white",
+    "bordercolor": "white",
+    "minPointSize": "95",
+    "maxPointSize": "250",
+    "borderwidth": "30",
+    "MaxWidth": "1200",
+    "MaxHeight": "485",
+    "text_offset": "+300"
   }
 }
