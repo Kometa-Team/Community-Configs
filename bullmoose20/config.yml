@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/json-schema/config-schema.json
 ### Highly recommend using Visual Studio Code with indent-rainbow by oderwat extension and YAML by Red Hat extension. VSC will also leverage the above link to enhance Kometa yml edits.
-### Must be on Kometa Version 1.21.1-nightly1 or greater
+### Must be on Kometa Version 2.0.0-nightly4 or greater
 libraries:
   Movies:                                           # Must match a library name in your Plex
     report_path: config/missing/Movies_report.yml
