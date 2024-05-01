@@ -1,7 +1,21 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/json-schema/config-schema.json
+# .------------------------------------------------------------.
+# | ____        _ _                                ____   ___  |
+# || __ ) _   _| | |_ __ ___   ___   ___  ___  ___|___ \ / _ \ |
+# ||  _ \| | | | | | '_ ` _ \ / _ \ / _ \/ __|/ _ \ __) | | | ||
+# || |_) | |_| | | | | | | | | (_) | (_) \__ \  __// __/| |_| ||
+# ||____/ \__,_|_|_|_| |_| |_|\___/ \___/|___/\___|_____|\___/ |
+# '------------------------------------------------------------'
 ### Highly recommend using Visual Studio Code with indent-rainbow by oderwat extension and YAML by Red Hat extension. VSC will also leverage the above link to enhance Kometa yml edits.
 ### Must be on Kometa Version 2.0.0-nightly4 or greater
 libraries:
+# .-------------------------------.
+# | __  __            _           |
+# ||  \/  | _____   _(_) ___  ___ |
+# || |\/| |/ _ \ \ / / |/ _ \/ __||
+# || |  | | (_) \ V /| |  __/\__ \|
+# ||_|  |_|\___/ \_/ |_|\___||___/|
+# '-------------------------------'
   Movies:                                           # Must match a library name in your Plex
     report_path: config/missing/Movies_report.yml
     remove_overlays: false                          # Set to true if you want to remove overlays
@@ -197,6 +211,14 @@ libraries:
         schedule_women: daily
     - default: streaming                            # Streaming on Disney+, Netflix, etc.
     - default: universe                             # Marvel Cinematic Universe, Wizarding World, etc.
+# .--------------------------------------------------------.
+# | _     _ _        ___                 _                 |
+# || |   (_) |__    / _ \__   _____ _ __| | __ _ _   _ ___ |
+# || |   | | '_ \  | | | \ \ / / _ \ '__| |/ _` | | | / __||
+# || |___| | |_) | | |_| |\ V /  __/ |  | | (_| | |_| \__ \|
+# ||_____|_|_.__/   \___/  \_/ \___|_|  |_|\__,_|\__, |___/|
+# |                                              |___/     |
+# '--------------------------------------------------------'
     overlay_files:                                  # These files contain overlays: attributes
     - default: aspect                               # Creates overlays based on aspect ratio of media item
       template_variables:
@@ -296,10 +318,25 @@ libraries:
         # back_width: 2000
         # back_height: 3000
     - default: video_format                         # Remux, DVD, Blu-Ray, etc. in bottom left
+# .------------------------------------------------------.
+# | _     _ _       ____       _   _   _                 |
+# || |   (_) |__   / ___|  ___| |_| |_(_)_ __   __ _ ___ |
+# || |   | | '_ \  \___ \ / _ \ __| __| | '_ \ / _` / __||
+# || |___| | |_) |  ___) |  __/ |_| |_| | | | | (_| \__ \|
+# ||_____|_|_.__/  |____/ \___|\__|\__|_|_| |_|\__, |___/|
+# |                                            |___/     |
+# '------------------------------------------------------'
     settings:
       asset_directory: config/assets/Movies/
       prioritize_assets: true                       # The asset_directory contains folders per media item with respective posters
-
+# .------------------------------------------------------------------.
+# | _     _ _        ___                       _   _                 |
+# || |   (_) |__    / _ \ _ __   ___ _ __ __ _| |_(_) ___  _ __  ___ |
+# || |   | | '_ \  | | | | '_ \ / _ \ '__/ _` | __| |/ _ \| '_ \/ __||
+# || |___| | |_) | | |_| | |_) |  __/ | | (_| | |_| | (_) | | | \__ \|
+# ||_____|_|_.__/   \___/| .__/ \___|_|  \__,_|\__|_|\___/|_| |_|___/|
+# |                      |_|                                         |
+# '------------------------------------------------------------------'
     operations:
       split_duplicates: false                       # Splits all duplicate movies/shows found in this library
       assets_for_all: true                          # Search in assets for images for every item in your library
@@ -325,7 +362,13 @@ libraries:
       - omdb                                        # Update all original available date from omdb(imdb) if not from tvdb
       mass_imdb_parental_labels: none               # Apply all Parental Labels with a value of None, Mild, Moderate, or Severe to match IMDb parental guide
       # mass_poster_update: tmdb                      # Resets posters to tmdb, plex, locked, unlock which is useful to remove all overlays when running with -r -op
-
+# .-----------------------------------------------.
+# | _______     __  ____  _                       |
+# ||_   _\ \   / / / ___|| |__   _____      _____ |
+# |  | |  \ \ / /  \___ \| '_ \ / _ \ \ /\ / / __||
+# |  | |   \ V /    ___) | | | | (_) \ V  V /\__ \|
+# |  |_|    \_/    |____/|_| |_|\___/ \_/\_/ |___/|
+# '-----------------------------------------------'
   TV Shows:                                         # Must match a library name in your Plex
     report_path: config/missing/TV_report.yml
     remove_overlays: false                          # Set to true if you want to remove overlays
@@ -433,6 +476,14 @@ libraries:
     - default: network                              # ABC, CBC, NBC, FOX, etc.
     - default: streaming                            # Streaming on Disney+, Netflix, etc.
     - default: universe                             # Marvel Cinematic Universe, Wizarding World, etc.
+# .--------------------------------------------------------.
+# | _     _ _        ___                 _                 |
+# || |   (_) |__    / _ \__   _____ _ __| | __ _ _   _ ___ |
+# || |   | | '_ \  | | | \ \ / / _ \ '__| |/ _` | | | / __||
+# || |___| | |_) | | |_| |\ V /  __/ |  | | (_| | |_| \__ \|
+# ||_____|_|_.__/   \___/  \_/ \___|_|  |_|\__,_|\__, |___/|
+# |                                              |___/     |
+# '--------------------------------------------------------'
     overlay_files:
     - default: aspect                               # Creates aspect ratio overlay
       template_variables:
@@ -680,10 +731,25 @@ libraries:
     - default: video_format
       template_variables:
         builder_level: episode
+# .------------------------------------------------------.
+# | _     _ _       ____       _   _   _                 |
+# || |   (_) |__   / ___|  ___| |_| |_(_)_ __   __ _ ___ |
+# || |   | | '_ \  \___ \ / _ \ __| __| | '_ \ / _` / __||
+# || |___| | |_) |  ___) |  __/ |_| |_| | | | | (_| \__ \|
+# ||_____|_|_.__/  |____/ \___|\__|\__|_|_| |_|\__, |___/|
+# |                                            |___/     |
+# '------------------------------------------------------'
     settings:
       asset_directory: config/assets/TV Shows/
       prioritize_assets: true                       # The asset_directory contains folders per media item with respective posters
-
+# .------------------------------------------------------------------.
+# | _     _ _        ___                       _   _                 |
+# || |   (_) |__    / _ \ _ __   ___ _ __ __ _| |_(_) ___  _ __  ___ |
+# || |   | | '_ \  | | | | '_ \ / _ \ '__/ _` | __| |/ _ \| '_ \/ __||
+# || |___| | |_) | | |_| | |_) |  __/ | | (_| | |_| | (_) | | | \__ \|
+# ||_____|_|_.__/   \___/| .__/ \___|_|  \__,_|\__|_|\___/|_| |_|___/|
+# |                      |_|                                         |
+# '------------------------------------------------------------------'
     operations:
       split_duplicates: false                       # Splits all duplicate movies/shows found in this library
       assets_for_all: true                          # Search in assets for images for every item in your library
@@ -711,10 +777,26 @@ libraries:
       mass_episode_audience_rating_update: tmdb     # Update audience ratings with tmdb for episodes
       mass_imdb_parental_labels: none               # Apply all Parental Labels with a value of None, Mild, Moderate, or Severe to match IMDb parental guide
       # mass_poster_update: tmdb                      # Resets posters to tmdb, plex, locked, unlock which is useful to remove all overlays when running with -r -op
+# .---------------------------------.
+# | ____  _             _ _     _   |
+# ||  _ \| | __ _ _   _| (_)___| |_ |
+# || |_) | |/ _` | | | | | / __| __||
+# ||  __/| | (_| | |_| | | \__ \ |_ |
+# ||_|   |_|\__,_|\__, |_|_|___/\__||
+# |               |___/             |
+# '---------------------------------'
 playlist_files:
 - default: playlist
   template_variables:
     libraries: Movies, TV Shows
+# .--------------------------------------------------------------------.
+# |  ____ _       _           _   ____       _   _   _                 |
+# | / ___| | ___ | |__   __ _| | / ___|  ___| |_| |_(_)_ __   __ _ ___ |
+# || |  _| |/ _ \| '_ \ / _` | | \___ \ / _ \ __| __| | '_ \ / _` / __||
+# || |_| | | (_) | |_) | (_| | |  ___) |  __/ |_| |_| | | | | (_| \__ \|
+# | \____|_|\___/|_.__/ \__,_|_| |____/ \___|\__|\__|_|_| |_|\__, |___/|
+# |                                                          |___/     |
+# '--------------------------------------------------------------------'
 settings:                                           # Can be individually specified per library as well
   cache: true
   cache_expiration: 60
@@ -758,6 +840,16 @@ settings:                                           # Can be individually specif
   - metadata
   - collections
   - overlays
+  overlay_filetype: jpg
+  overlay_quality:
+# .------------------------------------------------------------------.
+# |  ___  _   _                 ____       _   _   _                 |
+# | / _ \| |_| |__   ___ _ __  / ___|  ___| |_| |_(_)_ __   __ _ ___ |
+# || | | | __| '_ \ / _ \ '__| \___ \ / _ \ __| __| | '_ \ / _` / __||
+# || |_| | |_| | | |  __/ |     ___) |  __/ |_| |_| | | | | (_| \__ \|
+# | \___/ \__|_| |_|\___|_|    |____/ \___|\__|\__|_|_| |_|\__, |___/|
+# |                                                        |___/     |
+# '------------------------------------------------------------------'
 webhooks:                                           # Can be individually specified per library as well
   error: (redacted)
   run_start: (redacted)
