@@ -403,6 +403,8 @@ settings:                                       # Can be individually specified 
   - metadata
   - collections
   - overlays
+  overlay_artwork_filetype: jpg   
+  overlay_artwork_quality: 75
 plex:                                           # Can be individually specified per library as well
   url: http://plex:32400
   token: 
