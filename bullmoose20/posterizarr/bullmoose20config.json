@@ -48,8 +48,9 @@
     "TitleCards": "true",
     "show_skipped": "true",
     "logLevel": "3",
-    "SkipTBA": "false",
-    "SkipJapTitle": "false"
+    "SkipTBA": "true",
+    "SkipJapTitle": "false",
+    "AssetCleanup": "true"
   },
   "OverlayPart": {
     "ImageProcessing": "true",
