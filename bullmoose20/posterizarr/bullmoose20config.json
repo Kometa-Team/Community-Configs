@@ -47,7 +47,10 @@
     "BackgroundPosters": "true",
     "TitleCards": "true",
     "show_skipped": "true",
-    "logLevel": "3"
+    "logLevel": "3",
+    "SkipTBA": "true",
+    "SkipJapTitle": "false",
+    "AssetCleanup": "true"
   },
   "OverlayPart": {
     "ImageProcessing": "true",
@@ -86,7 +89,8 @@
     "AddOverlay": "true",
     "AddBorder": "false",
     "bordercolor": "white",
-    "borderwidth": "30"
+    "borderwidth": "30",
+    "BackgroundFallback": "false"
   },
   "TitleCardTitleTextPart": {
     "fontAllCaps": "true",
