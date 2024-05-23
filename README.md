@@ -2,7 +2,7 @@
 
 This repo contains community-sourced configurations.
 
-They are not maintained, warranted, or tested by the PMM team.
+They are not maintained, warranted, or tested by the Kometa team.
 
 They may or may not:
 1. do what you want

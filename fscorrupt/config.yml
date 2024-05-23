@@ -2,28 +2,28 @@
 
 libraries:
   4K Movies:
-    schedule: hourly(11),hourly(14),hourly(17),hourly(20)
-    schedule_overlays: hourly(11),hourly(14),hourly(17),hourly(20)
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
     #schedule: hourly(9),hourly(19)
     collection_files:
     - file: config/Movies.yml
     #- file: config/collections.yml
     overlay_files:
-    - pmm: commonsense
+    - default: commonsense
       template_variables:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
-    - pmm: languages
+    - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
         back_color: '#00000099'
-        text: ""
+        text: ''
         final_name: <<key>>
-    - pmm: runtimes
+    - default: runtimes
       template_variables:
         vertical_offset: 37
         horizontal_align: center
@@ -39,33 +39,33 @@ libraries:
         4K: false
     settings:
       asset_directory: /assets/4K Movies
-      prioritize_assets: true         
+      prioritize_assets: true
     operations:
       mass_content_rating_update: mdb_commonsense
       assets_for_all: true
   Movies:
-    schedule: hourly(11),hourly(14),hourly(17),hourly(20)
-    schedule_overlays: hourly(11),hourly(14),hourly(17),hourly(20)
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
     #schedule: hourly(9),hourly(19)
     collection_files:
     - file: config/Movies.yml
     #- file: config/collections.yml
     overlay_files:
-    - pmm: commonsense
+    - default: commonsense
       template_variables:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
-    - pmm: languages
+    - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
         back_color: '#00000099'
-        text: ""
+        text: ''
         final_name: <<key>>
-    - pmm: runtimes
+    - default: runtimes
       template_variables:
         vertical_offset: 37
         horizontal_align: center
@@ -81,32 +81,32 @@ libraries:
         4K: false
     settings:
       asset_directory: /assets/Movies
-      prioritize_assets: true         
+      prioritize_assets: true
     operations:
       mass_content_rating_update: mdb_commonsense
       assets_for_all: true
   Kids Movies:
-    schedule: hourly(11),hourly(14),hourly(17),hourly(20)
-    schedule_overlays: hourly(11),hourly(14),hourly(17),hourly(20)
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
     collection_files:
     - file: config/Movies.yml
     #- file: config/Genre.yml
     overlay_files:
-    - pmm: commonsense
+    - default: commonsense
       template_variables:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
-    - pmm: languages
+    - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
         back_color: '#00000099'
-        text: ""
+        text: ''
         final_name: <<key>>
-    - pmm: runtimes
+    - default: runtimes
       template_variables:
         vertical_offset: 37
         horizontal_align: center
@@ -122,32 +122,32 @@ libraries:
         4K: false
     settings:
       asset_directory: /assets/Kids Movies
-      prioritize_assets: true         
+      prioritize_assets: true
     operations:
       mass_content_rating_update: mdb_commonsense
       assets_for_all: true
   Anime:
-    schedule: hourly(11),hourly(14),hourly(17),hourly(20)
-    schedule_overlays: hourly(11),hourly(14),hourly(17),hourly(20)
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
     collection_files:
     - file: config/Movies.yml
     #- file: config/Genre.yml
     overlay_files:
-    - pmm: commonsense
+    - default: commonsense
       template_variables:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
-    - pmm: languages
+    - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
         back_color: '#00000099'
-        text: ""
+        text: ''
         final_name: <<key>>
-    - pmm: runtimes
+    - default: runtimes
       template_variables:
         vertical_offset: 37
         horizontal_align: center
@@ -163,37 +163,37 @@ libraries:
         4K: false
     settings:
       asset_directory: /assets/Anime
-      prioritize_assets: true         
+      prioritize_assets: true
     operations:
       mass_content_rating_update: mdb_commonsense
       assets_for_all: true
   TV Shows:
-    schedule: hourly(11),hourly(14),hourly(17),hourly(20)
-    schedule_overlays: hourly(11),hourly(14),hourly(17),hourly(20)
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
     collection_files:
     - file: config/TVShows.yml
     #- file: config/Genre.yml
     overlay_files:
     #- reapply_overlays: true
-    - pmm: network
+    - default: network
       template_variables:
         builder_level: season
         vertical_position: bottom
         horizontal_position: center
         horizontal_offset: 30
-        vertical_offset: 50    
-    - pmm: languages
+        vertical_offset: 50
+    - default: languages
       template_variables:
         builder_level: episode
         overlay_limit: 5
-        horizontal_position: right
+        horizontal_position: left
         vertical_position: bottom
         style: square
         back_color: '#00000099'
         back_width: 102
-        text: ""
+        text: ''
         final_name: <<key>>
-    - pmm: status
+    - default: status
       template_variables:
         horizontal_align: center
         vertical_align: top
@@ -208,10 +208,10 @@ libraries:
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
         back_color: '#FFFFFF'
-    - pmm: runtimes
+    - default: runtimes
       template_variables:
         builder_level: episode
-        horizontal_align: left
+        horizontal_align: right
         back_color: '#00000099'
         back_height: 80
         vertical_offset: 20
@@ -227,35 +227,35 @@ libraries:
         4K_banner: false
     settings:
       asset_directory: /assets/TV Shows
-      prioritize_assets: true 
+      prioritize_assets: true
     operations:
-      assets_for_all: true        
+      assets_for_all: true
   Kids Shows:
-    schedule: hourly(11),hourly(14),hourly(17),hourly(20)
-    schedule_overlays: hourly(11),hourly(14),hourly(17),hourly(20)
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
     collection_files:
     - file: config/KidsShows.yml
     overlay_files:
     #- reapply_overlays: true
-    - pmm: network
+    - default: network
       template_variables:
         builder_level: season
         vertical_position: bottom
         horizontal_position: center
         horizontal_offset: 30
-        vertical_offset: 50    
-    - pmm: languages
+        vertical_offset: 50
+    - default: languages
       template_variables:
         builder_level: episode
         overlay_limit: 5
-        horizontal_position: right
+        horizontal_position: left
         vertical_position: bottom
         style: square
         back_color: '#00000099'
         back_width: 102
-        text: ""
+        text: ''
         final_name: <<key>>
-    - pmm: status
+    - default: status
       template_variables:
         horizontal_align: center
         vertical_align: top
@@ -270,10 +270,10 @@ libraries:
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
         back_color: '#FFFFFF'
-    - pmm: runtimes
+    - default: runtimes
       template_variables:
         builder_level: episode
-        horizontal_align: left
+        horizontal_align: right
         back_color: '#00000099'
         back_height: 80
         vertical_offset: 20
@@ -289,35 +289,35 @@ libraries:
         4K: false
     settings:
       asset_directory: /assets/Kids Shows
-      prioritize_assets: true 
+      prioritize_assets: true
     operations:
-      assets_for_all: true        
+      assets_for_all: true
   Anime Shows:
-    schedule: hourly(11),hourly(14),hourly(17),hourly(20)
-    schedule_overlays: hourly(11),hourly(14),hourly(17),hourly(20)
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
     collection_files:
     - file: config/AnimeShows.yml
     overlay_files:
     #- reapply_overlays: true
-    - pmm: network
+    - default: network
       template_variables:
         builder_level: season
         vertical_position: bottom
         horizontal_position: center
         horizontal_offset: 30
         vertical_offset: 50
-    - pmm: languages
+    - default: languages
       template_variables:
         builder_level: episode
         overlay_limit: 5
-        horizontal_position: right
+        horizontal_position: left
         vertical_position: bottom
         style: square
         back_color: '#00000099'
         back_width: 102
-        text: ""
+        text: ''
         final_name: <<key>>
-    - pmm: status
+    - default: status
       template_variables:
         horizontal_align: center
         vertical_align: top
@@ -332,10 +332,10 @@ libraries:
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
         back_color: '#FFFFFF'
-    - pmm: runtimes
+    - default: runtimes
       template_variables:
         builder_level: episode
-        horizontal_align: left
+        horizontal_align: right
         back_color: '#00000099'
         back_height: 80
         vertical_offset: 20
@@ -351,9 +351,9 @@ libraries:
         4K: false
     settings:
       asset_directory: /assets/Anime Shows
-      prioritize_assets: true 
+      prioritize_assets: true
     operations:
-      assets_for_all: true        
+      assets_for_all: true
 playlist_files:
 - file: config/playlist.yml
   template_variables:
@@ -403,6 +403,8 @@ settings:                                       # Can be individually specified 
   - metadata
   - collections
   - overlays
+  overlay_artwork_filetype: jpg   
+  overlay_artwork_quality: 75
 plex:                                           # Can be individually specified per library as well
   url: http://plex:32400
   token: 
@@ -436,7 +438,7 @@ radarr:                                         # Can be individually specified 
   monitor: false
   availability: announced
   quality_profile: 1080p
-  tag: pmm
+  tag: kometa
   search: false
   add_existing: false
   radarr_path:
@@ -454,7 +456,7 @@ sonarr:                                         # Can be individually specified 
   language_profile: German
   series_type: standard
   season_folder: true
-  tag: pmm
+  tag: kometa
   search: false
   cutoff_search: false
   add_existing: false

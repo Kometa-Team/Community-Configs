@@ -1,26 +1,26 @@
 libraries:
   Movies:
-    schedule_overlays: weekly(saturday)
+    schedule_overlays: weekly(monday|wednesday|friday|sunday)
     template_variables:
       use_separator: false
+    metadata_files:
+    - folder: config/metadata_folders
     collection_files:
     - folder: config/movies
-    - git: bullmoose20/movies_refresh
-    - pmm: content_rating_au
-    - pmm: continent
+    - default: content_rating_au
+    - default: continent
       template_variables:
         include:
         - Oceania
-    - pmm: franchise
+    - default: franchise
       template_variables:
-        title_override: 
+        title_override:
           33514: The Twilight Saga
           9743: Hannibal Lecter
           489724: Trolls
-          124916: 101 Dalmatians
-    - pmm: genre
-    - pmm: oscars
-    - pmm: other_chart
+    - default: genre
+    - default: oscars
+    - default: other_chart
       template_variables:
         use_anidb: false
         use_stevenlu: false
@@ -28,8 +28,8 @@ libraries:
         visible_library_commonsense: true
         visible_home_commonsense: true
         visible_shared_commonsense: true
-    - pmm: razzie
-    - pmm: seasonal
+    - default: razzie
+    - default: seasonal
       template_variables:
         use_patrick: false
         use_memorial: false
@@ -40,7 +40,7 @@ libraries:
         use_veteran: false
         use_thanksgiving: false
         use_aapi: false
-    - pmm: studio
+    - default: studio
       template_variables:
         include:
         - A24
@@ -52,91 +52,74 @@ libraries:
         - Walt Disney Animation Studios
         - Walt Disney Pictures
         - Walt Disney Productions
-    - pmm: tautulli
-    - pmm: universe
-    #- pmm: collectionless
+    - default: tautulli
+    - default: universe
+    #- default: collectionless
     overlay_files:
-    - pmm: commonsense
-    - pmm: mediastinger
-    - pmm: ratings
-      template_variables:
-        rating1: user
-        rating1_image: rt_tomato
-        rating1_font: config/metadata/overlays/fonts/Adlib.ttf
-        rating1_font_size: 63
-        rating2: critic
-        rating2_image: imdb
-        rating2_font: config/metadata/overlays/fonts/Impact.ttf
-        rating2_font_size: 70
-        rating3: audience
-        rating3_image: tmdb
-        rating3_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
-        rating3_font_size: 70
-        horizontal_position: right
-    - pmm: resolution
+    - default: commonsense
+    - default: mediastinger
+    - default: resolution
       template_variables:
         use_resolution: false
         use_edition: true
-    - pmm: ribbon
-    - pmm: versions
+    - default: ribbon
     settings:
       asset_directory:
       - config/assets/Movies/
       - config/assets/Collections/
       prioritize_assets: false
     operations:
-      - schedule: daily
-        assets_for_all: true
-        delete_collections:
-          configured: false
-        metadata_backup:
-          path: config/backups/Movies_Metadata_Backup.yml
-          sync_tags: true
-          add_blank_entries: false
-      - schedule: Weekly (monday)
-        mass_user_rating_update: mdb_tomatoes
-      - schedule: Weekly (tuesday)
-        mass_critic_rating_update: imdb
-      - schedule: Weekly (wednesday)
-        mass_audience_rating_update: tmdb
-      - schedule: yearly(01/01)
-        mass_genre_update:
-        - tmdb
-        - imdb
-        - omdb
-        - tvdb
-      - schedule: Weekly (friday)
-        mass_content_rating_update:
-        - mdb_commonsense
-        - omdb
-      - schedule: Weekly (saturday)
-        mass_studio_update:
-        - tmdb
-        - tvdb
-        - omdb
-      - schedule: Weekly (sunday)
-        mass_originally_avaliable_update:
-        - tmdb
-        - tvdb
-        - omdb
+    - schedule: daily
+      assets_for_all: true
+      delete_collections:
+        configured: false
+      metadata_backup:
+        path: config/backups/Movies_Metadata_Backup.yml
+        sync_tags: true
+        add_blank_entries: false
+    - schedule: Weekly (monday)
+      mass_user_rating_update: mdb_tomatoes
+    - schedule: Weekly (tuesday)
+      mass_critic_rating_update: imdb
+    - schedule: Weekly (wednesday)
+      mass_audience_rating_update: tmdb
+    - schedule: yearly(01/01)
+      mass_genre_update:
+      - tmdb
+      - imdb
+      - omdb
+      - tvdb
+    - schedule: Weekly (friday)
+      mass_content_rating_update:
+      - mdb_commonsense
+      - omdb
+    - schedule: Weekly (saturday)
+      mass_studio_update:
+      - tmdb
+      - tvdb
+      - omdb
+    - schedule: Weekly (sunday)
+      mass_originally_avaliable_update:
+      - tmdb
+      - tvdb
+      - omdb
   TV Shows:
-    schedule_overlays: weekly(saturday)
+    schedule_overlays: weekly(tuesday|thursday|saturday)
     report_path: config/missing/TV_report.yml
     template_variables:
       use_separator: false
     library_name: TV Shows
     collection_files:
     - folder: config/tvshows
-    - git: bullmoose20/tv_refresh
-    # - pmm: based
-    - pmm: content_rating_au
-    - pmm: continent
+    # - default: based
+    - default: content_rating_au
+    - default: continent
       template_variables:
         include:
         - Oceania
-    - pmm: franchise
-    - pmm: genre
-    - pmm: other_chart
+    - default: franchise
+    - default: genre
+    - default: other_chart
       template_variables:
         use_anidb: false
         use_stevenlu: false
@@ -144,106 +127,63 @@ libraries:
         visible_library_commonsense: true
         visible_home_commonsense: true
         visible_shared_commonsense: true
-    - pmm: tautulli
-    - pmm: universe
+    - default: tautulli
+    - default: universe
+    metadata_files:
+    - folder: config/metadata_folders
     overlay_files:
-    - pmm: commonsense
-    - pmm: commonsense
-      template_variables:
-        builder_level: season
-    - pmm: commonsense
-      template_variables:
-        builder_level: episode
-    - pmm: ratings
-      template_variables:
-        rating1: user
-        rating1_image: rt_tomato
-        rating1_font: config/metadata/overlays/fonts/Adlib.ttf
-        rating1_font_size: 63
-        rating2: critic
-        rating2_image: imdb
-        rating2_font: config/metadata/overlays/fonts/Impact.ttf
-        rating2_font_size: 70
-        rating3: audience
-        rating3_image: tmdb
-        rating3_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
-        rating3_font_size: 70
-        horizontal_position: right
-    - pmm: ratings
-      template_variables:
-        rating1: critic
-        rating1_image: imdb
-        rating1_font: config/metadata/overlays/fonts/Impact.ttf
-        rating1_font_size: 70
-        rating2: audience
-        rating2_image: tmdb
-        rating2_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
-        rating2_font_size: 70
-        horizontal_position: right
-        builder_level: episode
-    - pmm: ribbon
-    - pmm: runtimes
-      template_variables:
-        builder_level: episode
-    - pmm: status
-    - pmm: versions
-      template_variables:
-        builder_level: show
-    - pmm: versions
-      template_variables:
-        builder_level: season
-    - pmm: ribbon
+    - default: commonsense
+    - default: status
+    - default: ribbon
     settings:
       asset_directory:
       - config/assets/TV Shows/
       - config/assets/Collections/
       prioritize_assets: true
     operations:
-      - schedule: daily
-        assets_for_all: true
-        delete_collections:
-          configured: false
-        metadata_backup:
-          path: config/backups/TVShows_Metadata_Backup.yml
-          sync_tags: true
-          add_blank_entries: false
-      - schedule: Weekly (monday)
-        mass_user_rating_update: mdb_tomatoes
-      - schedule: Weekly (tuesday)
-        mass_critic_rating_update: imdb
-      - schedule: Weekly (wednesday)
-        mass_audience_rating_update: tmdb
-      - schedule: yearly (01/01)
-        mass_genre_update:
-        - tmdb
-        - imdb
-        - omdb
-        - tvdb
-      - schedule: Weekly (friday)
-        mass_content_rating_update:
-        - mdb_commonsense
-        - omdb
-      - schedule: Weekly (saturday)
-        mass_studio_update:
-        - tmdb
-        - tvdb
-        - omdb
-      - schedule: Weekly (sunday)
-        mass_originally_avaliable_update:
-        - tmdb
-        - tvdb
-        - omdb
-      - schedule: Weekly (monday)
-        mass_episode_critic_rating_update: imdb
-      - schedule: Weekly (tuesday)
-        mass_episode_audience_rating_update: tmdb
+    - schedule: daily
+      assets_for_all: true
+      delete_collections:
+        configured: false
+      metadata_backup:
+        path: config/backups/TVShows_Metadata_Backup.yml
+        sync_tags: true
+        add_blank_entries: false
+    - schedule: Weekly (monday)
+      mass_user_rating_update: mdb_tomatoes
+    - schedule: Weekly (tuesday)
+      mass_critic_rating_update: imdb
+    - schedule: Weekly (wednesday)
+      mass_audience_rating_update: tmdb
+    - schedule: yearly (01/01)
+      mass_genre_update:
+      - tmdb
+      - imdb
+      - omdb
+      - tvdb
+    - schedule: Weekly (friday)
+      mass_content_rating_update:
+      - mdb_commonsense
+      - omdb
+    - schedule: Weekly (saturday)
+      mass_studio_update:
+      - tmdb
+      - tvdb
+      - omdb
+    - schedule: Weekly (sunday)
+      mass_originally_avaliable_update:
+      - tmdb
+      - tvdb
+      - omdb
   Music:
     schedule: weekly (tuesday|thursday|sunday)
     library_name: Music
     collection_files:
-      - folder: config/music
+    - folder: config/music
+    settings:
+      asset_directory: config/assets/Music
 playlist_files:
-- pmm: playlist
+- default: playlist
   template_variables:
     libraries: Movies, TV Shows
 #- folder: config/playlists
@@ -257,7 +197,7 @@ settings:
   create_asset_folders: true
   prioritize_assets: false
   dimensional_asset_rename: true
-  download_url_assets: true
+  download_url_assets: false
   show_missing_season_assets: false
   show_missing_episode_assets: false
   show_asset_not_needed: false
@@ -297,13 +237,7 @@ webhooks:
   run_start: notifiarr
   run_end: notifiarr
   changes: notifiarr
-  delete:bhooks:
-  error: notifiarr
-  version: notifiarr
-  run_start: notifiarr
-  run_end: notifiarr
-  changes: notifiarr
-  delete: null
+  delete:  
 plex:
   url: http://localhost:32400
   token: [REDACTED]

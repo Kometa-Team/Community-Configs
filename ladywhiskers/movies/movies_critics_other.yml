@@ -11,33 +11,32 @@ external_templates:
   template_variables:
     collection_section: 130
 
+
 templates:
- Rotten Tomatoes:
+  Rotten Tomatoes:
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<key>>
     sync_mode: sync
     collection_mode: default
     collection_order: custom
     sort_title: "!130_Rotten Tomatoes Best of <<key>>"
-    schedule: yearly(01/30)
-    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20of%20<<key>>.jpg
-
+    schedule: monthly(01)
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatoes/main/Rotten%20Tomatoes%20Best%20of%20<<key>>.jpg
+  Collection:
+    optional:
+    - poster
+    url_poster: <<poster>>
+    sync_mode: sync
+    collection_order: audience_rating.desc
+    sort_title: "!130_<<collection_name>>"
+    schedule: weekly(tuesday|thursday)
 collections:
-  "100 Years... 100 Movies":
-    imdb_list: https://www.imdb.com/list/ls027841309/
-    collection_order: custom
-    sort_title: "!130_AFI 1!"
-    schedule: yearly(01/30)
-  Razzies Golden Raspberry Winners:
-    variables:
-      key: razzie
-    template:
-      - name: shared
-        allowed_libraries: movie
-        image: award/razzies/winner
-        translation_key: razzie_worst
-      - name: arr
-      - name: custom
-    trakt_list: https://trakt.tv/users/hdlists/lists/razzie-awards-worst-picture-winners
+  1001 Movies You Must See Before You Die:
+    template: {name: Collection, poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/1001%20Movies%20You%20Must%20See%20Before%20You%20Die.jpg}
+    trakt_list: https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
+    collection_order: release.desc
+    schedule: daily
+    visible_home: range(01/01-12/31)
+    visible_shared: range(01/01-12/31)
   Rotten Tomatoes Best All-Time:
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-top-100-movies-of-all-time
     sync_mode: sync
@@ -45,7 +44,7 @@ collections:
     collection_order: custom
     sort_title: "!130_Rotten !1"
     schedule: monthly(10)
-    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20All-Time.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatoes/main/Rotten%20Tomatoes%20Best%20All-Time.jpg
   Rotten Tomatoes Best Horror:
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time
     sync_mode: sync
@@ -53,7 +52,7 @@ collections:
     collection_order: custom
     sort_title: "!130_Rotten !2"
     schedule: monthly(10)
-    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Horror.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatoes/main/Rotten%20Tomatoes%20Best%20Horror.jpg
   Rotten Tomatoes Best Rom Com:
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
     sync_mode: sync
@@ -61,7 +60,7 @@ collections:
     collection_order: custom
     sort_title: "!130_Rotten !3"
     schedule: monthly(10)
-    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatotes/main/Rotten%20Tomatoes%20Best%20Rom%20Com.jpg
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatoes/main/Rotten%20Tomatoes%20Best%20Rom%20Com.jpg
     
 dynamic_collections:
   Rotten Tomatoes Best of:

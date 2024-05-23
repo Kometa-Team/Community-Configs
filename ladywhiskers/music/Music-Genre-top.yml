@@ -1,0 +1,16 @@
+default_template:
+  builder_level: album
+  sync_mode: sync
+  collection_order: alpha
+  sort_title: ++_<<collection_name>>
+  smart_filter:
+#    limit: 50
+    sort_by: plays.desc
+    miminum_items: 2
+    delete_below_minimum: true
+    any:
+      album_genre: <<value>>
+
+dynamic_collections:
+  Genres:         # mapping name does not matter just needs to be unique
+    type: album_genre

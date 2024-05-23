@@ -41,7 +41,7 @@ overlays:
       horizontal_align: center
       vertical_offset: 0
       vertical_align: bottom
-      url: https://raw.githubusercontent.com/FatPancake-14/plex-meta-manager/main/config/overlays/ratings/Rating_High.png
+      url: https://raw.githubusercontent.com/fscorrupt/Kometa-Overlays/main/ratings/Rating_High.png
     plex_search:
       all:
         audience_rating.gte: 6.5
@@ -53,7 +53,7 @@ overlays:
       horizontal_align: center
       vertical_offset: 0
       vertical_align: bottom
-      url: https://raw.githubusercontent.com/FatPancake-14/plex-meta-manager/main/config/overlays/ratings/Rating_Mid.png
+      url: https://raw.githubusercontent.com/fscorrupt/Kometa-Overlays/main/ratings/Rating_Mid.png
     plex_search:
       all:
         audience_rating.gte: 4.5
@@ -66,7 +66,7 @@ overlays:
       horizontal_align: center
       vertical_offset: 0
       vertical_align: bottom
-      url: https://raw.githubusercontent.com/FatPancake-14/plex-meta-manager/main/config/overlays/ratings/Rating_Low.png
+      url: https://raw.githubusercontent.com/fscorrupt/Kometa-Overlays/main/ratings/Rating_Low.png
     plex_search:
       all:
         audience_rating.gte: 0.1
@@ -110,7 +110,7 @@ overlays:
   Force-Filter:
     overlay:
       name: Force-Filter
-      url: https://raw.githubusercontent.com/FatPancake-14/plex-meta-manager/main/config/overlays/Force-Filter.png
+      url: https://raw.githubusercontent.com/fscorrupt/Kometa-Overlays/main/Force-Filter.png
       vertical_align: bottom
     plex_search:
       all:
