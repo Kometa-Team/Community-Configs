@@ -19,7 +19,7 @@ libraries:
         template_variables:
           style: color
           collection_section: "!082"
-       - git: Adam-Pope/Movies/international_feature.yml
+      - git: Adam-Pope/Movies/international_feature.yml
 
   TV Shows:
     metadata_path:
