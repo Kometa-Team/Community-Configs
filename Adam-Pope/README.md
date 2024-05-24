@@ -15,24 +15,25 @@ libraries:
       - git: Adam-Pope/Movies/regions.yml
         template_variables:
           style: color  # defaults to white
-      - pmm: country
+      - default: country
         template_variables:
           style: color
-          collection_section: "082"
+          collection_section: "!082"
+       - git: Adam-Pope/Movies/international_feature.yml
 
   TV Shows:
     metadata_path:
       - git: Adam-Pope/TV/continents.yml
         template_variables:
           style: color  # defaults to white
-          collection_section: "080" # puts continents before regions
+          collection_section: "!080" # puts continents before regions
       - git: Adam-Pope/TV/regions.yml
         template_variables:
           style: color  # defaults to white
-      - pmm: country
+      - default: country
         template_variables:
           style: color
-          collection_section: "082"
+          collection_section: "!082"
 
     overlay_path:
       - pmm: resolution     
