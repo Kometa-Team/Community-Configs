@@ -1,11 +1,19 @@
 collections: 
   Oscars International Feature Winners:
     trakt_list: https://trakt.tv/users/popeadam/lists/academy-awards-best-international-feature-film
-    collection_order: plays.asc
+    collection_order: custom
+    plex_search:
+      sort_by:
+        - plays.asc
+        - audience_rating.desc
     sync_mode: sync
-    summary: Winners of the Best Foreign Feature Film and International Feature Film category at the Academy Awards/Oscars
+    summary: Winners of the Best Foreign Feature Film and International Feature Film categories at the Academy Awards/Oscars
   Oscars International Feature Nominees:
     trakt_list: https://trakt.tv/users/popeadam/lists/academy-awards-international-feature-film-nominees
-    collection_order: plays.asc
+    collection_order: custom
+    plex_search:
+      sort_by:
+        - plays.asc
+        - audience_rating.desc
     sync_mode: sync
-    summary: Winners and nominees of the Best Foreign Feature Film and International Feature FIlm category at the Academy Awards/Oscars
+    summary: Winners and nominees of the Best Foreign Feature Film and International Feature FIlm categories at the Academy Awards/Oscars
