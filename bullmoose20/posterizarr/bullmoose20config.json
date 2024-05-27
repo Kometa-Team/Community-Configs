@@ -14,8 +14,8 @@
   },
   "PlexPart": {
     "LibstoExclude": [
-      "",
-      "",
+      "Movies",
+      "TV Shows",
       "TestMovies",
       "TestTV Shows",
       "Other Videos",
@@ -50,7 +50,8 @@
     "logLevel": "3",
     "SkipTBA": "true",
     "SkipJapTitle": "false",
-    "AssetCleanup": "true"
+    "AssetCleanup": "true",
+    "AutoUpdateIM": "true"
   },
   "OverlayPart": {
     "ImageProcessing": "true",
@@ -63,7 +64,7 @@
     "AddOverlay": "true",
     "fontcolor": "white",
     "bordercolor": "white",
-    "minPointSize": "95",
+    "minPointSize": "83",
     "maxPointSize": "250",
     "borderwidth": "30",
     "MaxWidth": "1200",
@@ -72,9 +73,9 @@
   },
   "BackgroundOverlayPart": {
     "fontAllCaps": "true",
+    "AddOverlay": "false",
     "AddBorder": "false",
     "AddText": "false",
-    "AddOverlay": "false",
     "fontcolor": "white",
     "bordercolor": "white",
     "minPointSize": "95",
