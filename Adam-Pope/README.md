@@ -1,6 +1,6 @@
-# Alternative Geography Collections (plus doublebonus Audio Language Overlay)
+# Alternative Geography Collections, Oscars International Feature Film Winners and Nominees Collections, and Audio Language Overlay
 
-Add the following code to your config.yml file to create collections for a seven continent configuration (as opposed to the six UN regions used by the default); and a version of the countries.yml which groups countries with low output that are culturally similar - such as 'Balkans', 'Nordic', 'Middle East' and 'Pacific Island'.
+Add the following code to your config.yml file to create collections for a seven continent configuration (as opposed to the six UN regions used by the default); a version of the countries.yml which groups countries with low output that are culturally similar - such as 'Balkans', 'Nordic', 'Middle East' and 'Pacific Island', and collections for the Oscar International Film Winners and Nominees
 
 The overlay yml adds a country flag defined by the audio language of the entry to the top right corner. Note that languages are not countries. Portuguese is great for films from Portugal; but its flag on a Brazilian film could be confusing. Furthermore, many films have an unknown audio language in Plex - this requires fixing at the file level with a tool such as mkvtoolnix.
 
@@ -15,24 +15,25 @@ libraries:
       - git: Adam-Pope/Movies/regions.yml
         template_variables:
           style: color  # defaults to white
-      - pmm: country
+      - default: country
         template_variables:
           style: color
-          collection_section: "082"
+          collection_section: "!082"
+      - git: Adam-Pope/Movies/international_feature.yml
 
   TV Shows:
     metadata_path:
       - git: Adam-Pope/TV/continents.yml
         template_variables:
           style: color  # defaults to white
-          collection_section: "080" # puts continents before regions
+          collection_section: "!080" # puts continents before regions
       - git: Adam-Pope/TV/regions.yml
         template_variables:
           style: color  # defaults to white
-      - pmm: country
+      - default: country
         template_variables:
           style: color
-          collection_section: "082"
+          collection_section: "!082"
 
     overlay_path:
       - pmm: resolution     

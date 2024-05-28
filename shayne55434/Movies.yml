@@ -1,20 +1,14 @@
 templates:
-  Chart Alpha:
-    sort_title: +_<<num>><<collection_name>>
+  collection:
+    optional:
+      - value
+      - movie
+    tmdb_collection_details: <<value>>
+    tmdb_movie: <<movie>>
     sync_mode: sync
-    collection_order: alpha
-    delete_below_minimum: true
-  Chart Release:
-    sort_title: +_<<collection_name>>
-    sync_mode: sync
+    item_assets: true
     collection_order: release
-    delete_below_minimum: true
-  Best of:
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
-    sort_title: +_Best of <<year>>
-    sync_mode: sync
-    summary: Rotten Tomatoes Best Movies of <<year>>, according to https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>.
-    collection_order: release
+    minimum_items: 3
     delete_below_minimum: true
   Studio:
     optional:
@@ -22,91 +16,79 @@ templates:
     tmdb_company: <<company>>
     sort_title: ++_<<collection_name>>
     sync_mode: sync
-    collection_order: alpha
-    delete_below_minimum: true
-  IMDb Genre:
-    default:
-      title: feature
-      limit: 100
-    imdb_list:
-    - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>
-      limit: <<limit>>
-    - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>&sort=user_rating,desc
-      limit: <<limit>>
-    sort_title: +++_<<collection_name>>
-    sync_mode: sync
-    collection_order: alpha
-    delete_below_minimum: true
-  Other Genre:
-    sort_title: +++_<<collection_name>>
-    sync_mode: sync
-    collection_order: alpha
-    delete_below_minimum: true
-  Actor:
-    actor: tmdb
-    tmdb_person: <<person>>
-    sort_title: ++++_<<collection_name>>
-    sync_mode: sync
-    collection_order: release
-    delete_below_minimum: true
-  Actor Director:
-    actor: tmdb
-    director: tmdb
-    tmdb_person: <<person>>
-    sort_title: ++++_<<collection_name>>
-    sync_mode: sync
-    collection_order: release
-    delete_below_minimum: true
-  Actor Director Writer:
-    actor: tmdb
-    director: tmdb
-    writer: tmdb
-    tmdb_person: <<person>>
-    sort_title: ++++_<<collection_name>>
-    sync_mode: sync
-    collection_order: release
-    delete_below_minimum: true
-  Actor Writer:
-    actor: tmdb
-    writer: tmdb
-    tmdb_person: <<person>>
-    sort_title: ++++_<<collection_name>>
-    sync_mode: sync
-    collection_order: release
-    delete_below_minimum: true
-  Director:
-    director: tmdb
-    tmdb_person: <<person>>
-    sort_title: ++++_<<collection_name>>
-    sync_mode: sync
-    collection_order: release
-    delete_below_minimum: true
-  Director Writer:
-    director: tmdb
-    writer: tmdb
-    tmdb_person: <<person>>
-    sort_title: ++++_<<collection_name>>
-    sync_mode: sync
-    collection_order: release
-    delete_below_minimum: true
-  Writer:
-    writer: tmdb
-    tmdb_person: <<person>>
-    sort_title: ++++_<<collection_name>>
-    sync_mode: sync
-    collection_order: release
-    delete_below_minimum: true
-  Collection:
-    optional:
-      - collection
-      - movie
-    tmdb_collection_details: <<collection>>
-    tmdb_movie: <<movie>>
-    sync_mode: sync
     item_assets: true
-    collection_order: release
+    collection_order: alpha
     delete_below_minimum: true
 
+######################################################
+#                Dynamic Collections                 #
+######################################################
+dynamic_collections:
+  TMDb Collections:
+    template: collection
+    type: tmdb_collection
+    remove_suffix: "Collection"
+    #remove_prefix: "The"
+    title_override:
+      # While I could remove "The" prefix, I actually like it on some of the collections. IE - "The Matrix". I also remove "Reboot", "Animated", etc...
+      119: Lord of the Rings
+      263: Dark Knight
+      528: Terminator
+      869: Planet of the Apes
+      2794: Chronicles of Riddick
+      8966: Twilight
+      9743: Hannibal Lecter
+      31562: Bourne
+      33071: Cheech and Chong
+      71458: "3 Ninjas"
+      87359: Mission Impossible
+      100693: "101 Dalmatians"
+      106768: Tarzan
+      115776: Robert Langdon
+      135468: G.I. Joe
+      192492: Jack Ryan
+      207621: VHS
+      313086: Conjuring Universe
+      386534: "... Has Fallen"
+      397842: Amityville
+    exclude:
+      # Collections listed here have been manually added to their related "parent" collection. IE - "Hobbs and Shaw" is added to "The Fast and the Furious"
+      - 10 # Star Wars Collection
+      - 151 # (Star Trek: The Original Series Collection)
+      - 748 # X-Men
+      - 1709 # Planet of the Apes (Original) Collection
+      - 2806 # American Pie
+      - 9485 # The Fast and the Furious
+      - 8091 # Alien Collection
+      - 11153 # National Lampoon's Vacation (1983)
+      - 14740 # Madagascar
+      - 86027 # Aladdin Collection
+      - 86066 # Despicable Me
+      - 87236 # Mulan
+      - 94032 # The Lion King
+      - 100693 # 101 Dalmatians (Animated)
+      - 115570 # (Star Trek: The Next Generation Collection)
+      - 115575 # (Star Trek: Alternate Reality Collection)
+      - 115762 # AVP Collection
+      - 124916 # 101 Dalmatians (Live-Action)
+      - 126209 # Halloween (Rob Zombie Series) Collection
+      - 133352 # (Resident Evil: Biohazard Collection)
+      - 135416 # Prometheus Collection
+      - 153010 # Beauty and the Beast
+      - 158391 # Not a collection in TMDb
+      - 173710 # Planet of the Apes (Reboot) Collection
+      - 298820 # American Pie (Spin-off) Collection
+      - 313086 # Conjuring Universe
+      - 448150 # Deadpool
+      - 453993 # The Wolverine
+      - 544669 # Minions Collection
+      - 553717 # Creed Collection
+      - 748401 # Aladdin (Live-Action)
+      - 762512 # (The Lion King (Reboot)
+      - 688042 # Hobbs & Shaw Collection
+      - 748401 # Aladdin (Live-Action) Collection
+      - 1110796 # Links to an invalid collection named "comin-to-town-collection"
+      - 1111183 # Links to an invalid collection named "scooby-doo-coleccion"
 collections:
 ######################################################
 #                Studio Collections                  #
@@ -118,903 +100,232 @@ collections:
     summary: Pixar Animation Studios, commonly known as Pixar, is an American computer animation studio based in Emeryville, California, a subsidiary of Disney Studios Content owned by The Walt Disney Company. Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation on February 3, 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4 billion by converting each share of Pixar stock to 2.3 shares of Disney stock, a transaction that resulted in Jobs becoming Disney's largest single shareholder at the time. Pixar is best known for its feature films technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot.
 
 ######################################################
-#                Chart Collections                   #
-######################################################
-
-######################################################
 #                TMDb Collections                    #
 ######################################################
   101 Dalmatians:
     template:
-      name: Collection
-      collection: "100693, 124916"
+      name: collection
+      value: "100693, 124916"
       movie: 337404
-  3 Ninjas:
-    template:
-      name: Collection
-      collection: 71458
   Aladdin:
     template:
-      name: Collection
-      collection: "86027, 748401"
+      name: collection
+      value: "86027, 748401"
   Alien:
     template:
-      name: Collection
-      collection: "8091, 135416, 115762"
+      name: collection
+      value: "8091, 135416, 115762"
   American Pie:
     template:
-      name: Collection
-      collection: "2806, 298820"
-  An American Tail:
-    template:
-      name: Collection
-      collection: 8783
-  Amityville:
-    template:
-      name: Collection
-      collection: 397842
-  Annabelle:
-    template:
-      name: Collection
-      collection: 402074
-  Austin Powers:
-    template:
-      name: Collection
-      collection: 1006
-  The Avengers:
-    template:
-      name: Collection
-      collection: 86311
-  Back to the Future:
-    template:
-      name: Collection
-      collection: 264
-  Bad Boys:
-    template:
-      name: Collection
-      collection: 14890
-  Batman:
-    template:
-      name: Collection
-      collection: 120794
+      name: collection
+      value: "2806, 298820"
   Beauty and the Beast:
     template:
-      name: Collection
-      collection: 153010
-      movie: 321612 #Need some custom artwork
-  Best of the Best:
-    template:
-      name: Collection
-      collection: 153948
-  Beverly Hills Cop:
-    template:
-      name: Collection
-      collection: 85861
-  Big Momma's House:
-    template:
-      name: Collection
-      collection: 44979
-  Bill & Ted's Most Excellent:
-    template:
-      name: Collection
-      collection: 91746
-  Blade:
-    template:
-      name: Collection
-      collection: 735
-  Blair Witch:
-    template:
-      name: Collection
-      collection: 64750
-  Bourne:
-    template:
-      name: Collection
-      collection: 31562
-  Cabin Fever:
-    template:
-      name: Collection
-      collection: 201576
-  Captain America:
-    template:
-      name: Collection
-      collection: 131295
-  Cars:
-    template:
-      name: Collection
-      collection: 87118
-  Charlie Brown:
-    template:
-      name: Collection
-    imdb_list: https://www.imdb.com/list/ls054850259/
-    summary: Collection of Movies and TV Specials with the beloved Peanuts characters.
-  Cheech and Chong:
-    template:
-      name: Collection
-      collection: 33071
-  Child's Play:
-    template:
-      name: Collection
-      collection: 10455
-  The Chronicles of Narnia:
-    template:
-      name: Collection
-      collection: 420
-  Chronicles of Riddick:
-    template:
-      name: Collection
-      collection: 2794
-  Cinderella:
-    template:
-      name: Collection
-      collection: 55419
-  Conjuring Universe:
-    template:
-      name: Collection
-    imdb_list: https://www.imdb.com/list/ls025508921/
-  Cloverfield:
-    template:
-      name: Collection
-    imdb_list: https://www.imdb.com/list/ls023762626/
-    summary: Cloverfield is an American science fiction anthology film series and media franchise created and produced by J. J. Abrams consisting of three films, viral marketing websites linking the films together, and a tie-in manga to the first film titled Cloverfield/Kishin (2008), all set in a shared fictional universe referred to as the "Cloververse". The franchise as a whole deals with creatures from other dimensions attacking Earth throughout various decades, all as a repercussion of an experiment by an astronaut team aboard the Cloverfield Station in outer-space. Each film depicts the reality-altering effects of their study, which was meant to find a new energy source replacing the planet's depleted resources, only to open portals for assault from various beasts from deep space.
-  Cornetto Trilogy:
-    template:
-      name: Collection
-    imdb_list: https://www.imdb.com/list/ls068623110/
-    summary: An anthology series of British comedic genre films directed by Edgar Wright, written by Wright and Simon Pegg, produced by Nira Park, and starring Pegg and Nick Frost. The trilogy consists of Shaun of the Dead (2004), Hot Fuzz (2007), and The World's End (2013).
-  Crocodile Dundee:
-    template:
-      name: Collection
-      collection: 9332
-      #schedule: yearly(01/01)
-  Dark Knight:
-    template:
-      name: Collection
-      collection: 263
-  DCU:
-    template:
-      name: Collection
-    imdb_list: https://www.imdb.com/list/ls047446610/
+      name: collection
+      value: 153010
+      movie: 321612
+#   Charlie Brown:
+#     template:
+#       name: collection
+#       value: 1028525 # No longer has a collection on TMDB
   Deadpool:
     template:
-      name: Collection
-      collection: 448150
+      name: collection
+      value: 448150
       movie: 567604
     visible_home: yearly(02/14)
     visible_shared: yearly(02/14)
-  Death Race:
-    template:
-      name: Collection
-      collection: 86116
-  Death Wish:
-    template:
-      name: Collection
-      collection: 14377
-      movie: 395990
-  Descendants:
-    template:
-      name: Collection
-      collection: 466463 #Need some custom artwork
   Despicable Me:
     template:
-      name: Collection
-      collection: "86066, 544669"
-  Die Hard:
-    template:
-      name: Collection
-      collection: 1570
-  Dirty Harry:
-    template:
-      name: Collection
-      collection: 10456
-  Disney Buddies:
-    template:
-      name: Collection
-      collection: 91657
-  Divergent:
-    template:
-      name: Collection
-      collection: 283579
-  Deep Blue Sea:
-    template:
-      name: Collection
-      collection: 518165
-  DragonHeart:
-    template:
-      name: Collection
-      collection: 169452
-  Dumb and Dumber:
-    template:
-      name: Collection
-      collection: 96665
-  Ernest:
-    template:
-      name: Collection
-      collection: 330555
-  The Expendables:
-    template:
-      name: Collection
-      collection: 126125
-  Escape Plan:
-    template:
-      name: Collection
-      collection: 525891
-  Evil Dead:
-    template:
-      name: Collection
-      collection: 1960
-  The Exorcist:
-    template:
-      name: Collection
-      collection: 12263
-  Fantastic Beasts:
-    template:
-      name: Collection
-      collection: 435259
+      name: collection
+      value: "86066, 544669"
   The Fast and the Furious:
     template:
-      name: Collection
-      collection: "9485, 688042"
-  Fear Street:
-    template:
-      name: Collection
-      collection: 790370
-  Fifty Shades:
-    template:
-      name: Collection
-      collection: 344830
-  Final Destination:
-    template:
-      name: Collection
-      collection: 8864
-  Free Willy:
-    template:
-      name: Collection
-      collection: 9328
-  Friday:
-    template:
-      name: Collection
-      collection: 43563
-  Friday the 13th:
-    template:
-      name: Collection
-      collection: 9735
-      movie: 6466
-  Futurama:
-    template:
-      name: Collection
-      collection: 13800
+      name: collection
+      value: 9485
+      movie: 384018
   Ghostbusters:
     template:
-      name: Collection
-      collection: 2980
+      name: collection
+      value: 2980
       movie: 43074
-  G.I. Joe:
-    template:
-      name: Collection
-      collection: 135468
-  The Godfather:
-    template:
-      name: Collection
-      collection: 230
-  Godzilla:
-    template:
-      name: Collection
-      collection: 535313 #Maybe include movie: 293167???
   The Grudge:
     template:
-      name: Collection
-      collection: 1974
+      name: collection
+      value: 1974
       movie: 465086
   Halloween:
     template:
-      name: Collection
-      collection: "91361, 126209"
-  Halloweentown:
-    template:
-      name: Collection
-      collection: 87252
-  The Hangover:
-    template:
-      name: Collection
-      collection: 86119
-  Hannibal Lecter:
-    template:
-      name: Collection
-      collection: 9743
-      movie: 11454
-  Happy Death Day:
-    template:
-      name: Collection
-      collection: 526380 #Will need custom artwork when 3rd film is released
-  Harold & Kumar:
-    template:
-      name: Collection
-      collection: 30663
-  Harry Potter:
-    template:
-      name: Collection
-      collection: 1241
-  ... Has Fallen:
-    template:
-      name: Collection
-      collection: 386534
-    name_mapping: Has Fallen
-  Hayao Miyazaki:
-    template:
-      name: Collection
-    imdb_list: https://www.imdb.com/list/ls069998735/
+      name: collection
+      value: "91361, 126209"
   Hellboy:
     template:
-      name: Collection
-      collection: 17235
+      name: collection
+      value: 17235
       movie: 456740
-  Hellraiser:
-    template:
-      name: Collection
-      collection: 8917
-  Herbie:
-    template:
-      name: Collection
-      collection: 12087
-  High School Musical:
-    template:
-      name: Collection
-      collection: 87253
-  Highlander:
-    template:
-      name: Collection
-      collection: 8050
-  The Hobbit:
-    template:
-      name: Collection
-      collection: 121938
-  Home Alone:
-    template:
-      name: Collection
-      collection: 9888
-  Honey, I Shrunk the Kids:
-    template:
-      name: Collection
-      collection: 72119
-  Hostel:
-    template:
-      name: Collection
-      collection: 86578
-  Hotel Transylvania:
-    template:
-      name: Collection
-      collection: 185103
-  House of 1000 Corpses:
-    template:
-      name: Collection
-      collection: 105625
-  How to Train Your Dragon:
-    template:
-      name: Collection
-      collection: 89137
-  The Human Centipede:
-    template:
-      name: Collection
-      collection: 96671
-  The Hunger Games:
-    template:
-      name: Collection
-      collection: 131635
-  I Know What You Did Last Summer:
-    template:
-      name: Collection
-      collection: 3601
-  I Spit On Your Grave:
-    template:
-      name: Collection
-      collection: 219691
-  Ice Age:
-    template:
-      name: Collection
-      collection: 8354
-  Indiana Jones:
-    template:
-      name: Collection
-      collection: 84
-  Insidious:
-    template:
-      name: Collection
-      collection: 228446
-  Ip Man:
-    template:
-      name: Collection
-      collection: 70068
-  Iron Man:
-    template:
-      name: Collection
-      collection: 131292
   Jack Ryan:
     template:
-      name: Collection
-      collection: 192492
+      name: collection
+      value: 192492
       movie: "137094, 4614"
   Jackass:
     template:
-      name: Collection
-      collection: 17178
+      name: collection
+      value: 17178
       movie: "208134, 273641, 265065"
-  James Bond:
-    template:
-      name: Collection
-      collection: 645
-  Jaws:
-    template:
-      name: Collection
-      collection: 2366
-  Jay and Silent Bob:
-    template:
-      name: Collection
-      collection: 726870 #Artwork not complete
-  Jeepers Creepers:
-    template:
-      name: Collection
-      collection: 94899
-  John Wick:
-    template:
-      name: Collection
-      collection: 404609
-  Joy Ride:
-    template:
-      name: Collection
-      collection: 166378
-  Jumanji:
-    template:
-      name: Collection
-      collection: 495527
-  Jurassic Park:
-    template:
-      name: Collection
-      collection: 328
   The Karate Kid:
     template:
-      name: Collection
-      collection: 8580
+      name: collection
+      value: 8580
       movie: 38575
   Kingsman:
     template:
-      name: Collection
-      collection: 391860
+      name: collection
+      value: 391860
       movie: "476669, 631971"
-  Kung Fu Panda:
-    template:
-      name: Collection
-      collection: 77816
-  Lake Placid:
-    template:
-      name: Collection
-      collection: 97768
-  The Land Before Time:
-    template:
-      name: Collection
-      collection: 19163
-  Laurel & Hardy:
-    template:
-      name: Collection
-    imdb_list: https://www.imdb.com/list/ls005126419/ #Need custom artwork
-  Legally Blonde:
-    template:
-      name: Collection
-      collection: 86024 #Will need custom artwork after release of Legally Blonde 4
-  LEGO DC Comics Super Heroes:
-    template:
-      name: Collection
-      collection: 386162 #Need custom artwork
-  Lego Star Wars:
-    template:
-      name: Collection
-      collection: 302331 #Need custom artwork
-  Lethal Weapon:
-    template:
-      name: Collection
-      collection: 945
-  Lilo & Stitch:
-    template:
-      name: Collection
-      collection: 97461
   The Lion King:
     template:
-      name: Collection
-      collection: "94032, 762512" #Will need custom artwork when latest film is released
-  The Little Mermaid:
-    template:
-      name: Collection
-      collection: 33085
+      name: collection
+      value: "94032, 762512" #Will need custom artwork when latest film is released (December 18, 2024)
   Living Dead:
     template:
-      name: Collection
-      collection: 261590
+      name: collection
+      value: 261590
       movie: "19185, 924, 13025, 29426"
-  Lord of the Rings:
-    template:
-      name: Collection
-      collection: 119
-  Lost Boys:
-    template:
-      name: Collection
-      collection: 109076
-  Mad Max:
-    template:
-      name: Collection
-      collection: 8945
   Madagascar:
     template:
-      name: Collection
-      collection: 14740
+      name: collection
+      value: 14740
       movie: 270946
   The Man with No Name:
     template:
-      name: Collection
+      name: collection
       movie: "391, 429, 938"
-  The Matrix:
-    template:
-      name: Collection
-      collection: 2344
-  The Maze Runner:
-    template:
-      name: Collection
-      collection: 295130
-  MCU:
-    template:
-      name: Collection
-    imdb_list: https://www.imdb.com/list/ls066946827/
-  MCU - Chronological:
-    template:
-      name: Collection
-    imdb_list: https://www.imdb.com/list/ls021001839/
-    collection_order: custom
-  Meet the Parents:
-    template:
-      name: Collection
-      collection: 51509
-  Men In Black:
-    template:
-      name: Collection
-      collection: 86055
-  Mexico Trilogy:
-    template:
-      name: Collection
-      collection: 9649
-  The Mighty Ducks:
-    template:
-      name: Collection
-      collection: 10709
-  Missing in Action:
-    template:
-      name: Collection
-      collection: 46512
-  Mission Impossible:
-    template:
-      name: Collection
-      collection: 87359
   Mortal Kombat:
     template:
-      name: Collection
-      collection: 9818
+      name: collection
+      value: 9818
       movie: "664767, 460465"
   Mulan:
     template:
-      name: Collection
-      collection: 87236
+      name: collection
+      value: 87236
       movie: 337401
-  The Mummy:
-    template:
-      name: Collection
-      collection: 1733 #movie: 282035 = The Mummy 2017
   The Muppets:
     template:
-      name: Collection
-      collection: 256377
+      name: collection
+      value: 256377
       movie: "10208, 10437, 10874, 11176, 11899, 14900, 20910"
-  Naked Gun:
-    template:
-      name: Collection
-      collection: 37139
   National Lampoon:
     template:
-      name: Collection
-      collection: 108693
+      name: collection
+      value: 108693
       movie: 296099
-  The Neverending Story:
-    template:
-      name: Collection
-      collection: 91430
-  Night at the Museum:
-    template:
-      name: Collection
-      collection: 85943
   A Nightmare on Elm Street:
     template:
-      name: Collection
-      collection: 8581
+      name: collection
+      value: 8581
       movie: "6466, 23437, 37757"
   Ocean's:
     template:
-      name: Collection
-      collection: 304
+      name: collection
+      value: 304
       movie: 402900
   Oz:
     template:
-      name: Collection
-      collection: 627517
+      name: collection
+      value: 627517
       movie: "13155, 68728"
-  Paranormal Activity:
-    template:
-      name: Collection
-      collection: 41437
   Pet Sematary:
     template:
-      name: Collection
-      collection: 10789
-      movie: 157433 #Need custom artwork
-  Phantasm:
-    template:
-      name: Collection
-      collection: 47770
-  Pirates of the Caribbean:
-    template:
-      name: Collection
-      collection: 295
-  Pitch Perfect:
-    template:
-      name: Collection
-      collection: 306031
+      name: collection
+      value: 10789
+      movie: 157433 # Needs custom artwork
   Planet of the Apes:
     template:
-      name: Collection
-      collection: "173710, 1709"
+      name: collection
+      value: "173710, 1709"
       movie: 869
-  Police Academy:
-    template:
-      name: Collection
-      collection: 9338
-  Police Story:
-    template:
-      name: Collection
-      collection: 269098 #Need custom artwork
-  Predator:
-    template:
-      name: Collection
-      collection: 399
-  The Princess Switch:
-    template:
-      name: Collection
-      collection: 713330
-  The Purge:
-    template:
-      name: Collection
-      collection: 256322
   Puss in Boots:
     template:
-      name: Collection
-      collection: 94602
+      name: collection
+      value: 94602
       movie: 83201 # Include 462650, Puss in Book?
-  Rambo:
-    template:
-      name: Collection
-      collection: 5039
-  Resident Evil:
-    template:
-      name: Collection
-      collection: 17255
-  The Ring:
-    template:
-      name: Collection
-      collection: 14563 #Need custom artwork
-#  "Resident Evil: Biohazard":
-#    template:
-#      name: Collection
-#      collection: 133352 #Need custom artwork
-#    name_mapping: Resident Evil Biohazard
-# 
-  Robert Langdon:
-    template:
-      name: Collection
-      collection: 115776
   Robocop:
     template:
-      name: Collection
-      collection: 5547
+      name: collection
+      value: 5547
+      movie: 97020 # RoboCop (2014)
   Rocky:
     template:
-      name: Collection
-      collection: "1575, 553717"
-  Rugrats:
-    template:
-      name: Collection
-      collection: 57129 #Need custom artwork
-  Rush Hour:
-    template:
-      name: Collection
-      collection: 90863
-  The Sandlot:
-    template:
-      name: Collection
-      collection: 87214 #Need custom artwork
-  The Santa Clause:
-    template:
-      name: Collection
-      collection: 53159
-  Saw:
-    template:
-      name: Collection
-      collection: 656
-  Scanners:
-    template:
-      name: Collection
-      collection: 88574
-  Scary Movie:
-    template:
-      name: Collection
-      collection: 4246
-  The Scorpion King:
-    template:
-      name: Collection
-      collection: 116669 #Need custom artwork
-  Scream:
-    template:
-      name: Collection
-      collection: 2602
+      name: collection
+      value: "1575, 553717"
   Shaft:
     template:
-      name: Collection
-      collection: "495, 608103" #Need custom artwork
-  Sharknado:
-    template:
-      name: Collection
-      collection: 286023 #Need custom artwork
-  Sherlock Holmes:
-    template:
-      name: Collection
-      collection: 102322 #Need custom artwork
-  Shrek:
-    template:
-      name: Collection
-      collection: 2150
-  The Smurfs:
-    template:
-      name: Collection
-      collection: 134897 #Need custom artwork
-  Spider-Man:
-    template:
-      name: Collection
-      collection: 556
-  Spy Kids:
-    template:
-      name: Collection
-      collection: 86486 #Need custom artwork
+      name: collection
+      value: "495, 608103" # Needs custom artwork
   Star Trek:
     template:
-      name: Collection
-      collection: "115575, 115570, 151"
+      name: collection
+      value: "151, 115570, 115575"
   Star Wars:
     template:
-      name: Collection
-      collection: 10
+      name: collection
+      value: 10
       movie: "348350, 330459"
-  Step Up:
-    template:
-      name: Collection
-      collection: 86092 #Need custom artwork
-  Superman:
-    template:
-      name: Collection
-      collection: 8537
-  Taken:
-    template:
-      name: Collection
-      collection: 135483
-  Tarzan:
-    template:
-      name: Collection
-      collection: 106768 #Need custom artwork
+      test: true
   Teenage Mutant Ninja Turtles:
     template:
-      name: Collection
-      collection: "1582, 401562"
-  Terminator:
-    template:
-      name: Collection
-      collection: 528
+      name: collection
+      value: "1582, 401562"
   Texas Chainsaw Massacre:
     template:
-      name: Collection
-      collection: "111751, 425175"
-  Thor:
-    template:
-      name: Collection
-      collection: 131296
-  Three Colors:
-    template:
-      name: Collection
-      collection: 131
-    summary: Three Colors is a film trilogy who’s colors make up the films and the three colors of France – Blue, White and Red. With the colors meaning – freedom, equality and brotherliness.
-  Tinker Bell:
-    template:
-      name: Collection
-      collection: 315595 #Need custom artwork
-  To All the Boys:
-    template:
-      name: Collection
-      collection: 569738 #Need custom artwork
+      name: collection
+      value: "111751, 425175"
   Tomb Raider:
     template:
-      name: Collection
-      collection: "2467, 621142"
-  Toy Story:
-    template:
-      name: Collection
-      collection: 10194
-  Transformers:
-    template:
-      name: Collection
-      collection: 8650
-  The Transporter:
-    template:
-      name: Collection
-      collection: 9518
-  Tremors:
-    template:
-      name: Collection
-      collection: 91799 #Need custom artwork
-  Trolls:
-    template:
-      name: Collection
-      collection: 489724 #Need custom artwork
+      name: collection
+      value: 2467
+      movie: 338970
   TRON:
     template:
-      name: Collection
-      collection: 63043
-      movie: 73362 #Need custom artwork
-  Twilight:
-    template:
-      name: Collection
-      collection: 33514
+      name: collection
+      value: 63043
+      movie: 73362 # Needs custom artwork
   Unbreakable:
     template:
-      name: Collection
-    imdb_list: https://www.imdb.com/list/ls022101006/
-    summary: The Unbreakable trilogy, officially known as the Eastrail 177 Trilogy, is an American superhero thriller and psychological horror film series. The films were written, produced, and directed by M. Night Shyamalan. The trilogy consists of Unbreakable (2000), Split (2016), and Glass (2019).
-  Underworld:
-    template:
-      name: Collection
-      collection: 2326
-  Universal Soldier:
-    template:
-      name: Collection
-      collection: 10713
-  "V/H/S":
-    name_mapping: VHS
-    template:
-      name: Collection
-      collection: 207621
-  Wallace & Gromit:
-    template:
-      name: Collection
-      collection: 529 #Need custom artwork
+      name: collection
+      movie: "9741, 381288, 450465"
   Wrong Turn:
     template:
-      name: Collection
-      collection: 52985
+      name: collection
+      value: 52985
       movie: 630586
   X-Men:
     template:
-      name: Collection
-      collection: "748, 453993, 448150"
+      name: collection
+      value: "748, 453993, 448150"
       movie: "567604, 340102"
-  xXx:
-    template:
-      name: Collection
-      collection: 52785 #Need custom artwork
-  Zeigeist:
-    template:
-      name: Collection
-      collection: 96682 #Need custom artwork
-  Zenon:
-    template:
-      name: Collection
-      collection: 321148 #Need custom artwork
+
+######################################################
+#                IMDb Collections                    #
+######################################################
+  DCU:
+    imdb_list: https://www.imdb.com/list/ls047446610/
+  Conjuring Universe:
+    imdb_list: https://www.imdb.com/list/ls025508921/
+  Cloverfield:
+    imdb_list: https://www.imdb.com/list/ls023762626/
+    summary: Cloverfield is an American science fiction anthology film series and media franchise created and produced by J. J. Abrams consisting of three films, viral marketing websites linking the films together, and a tie-in manga to the first film titled Cloverfield/Kishin (2008), all set in a shared fictional universe referred to as the "Cloververse". The franchise as a whole deals with creatures from other dimensions attacking Earth throughout various decades, all as a repercussion of an experiment by an astronaut team aboard the Cloverfield Station in outer-space. Each film depicts the reality-altering effects of their study, which was meant to find a new energy source replacing the planet's depleted resources, only to open portals for assault from various beasts from deep space.
+  Cornetto Trilogy:
+    imdb_list: https://www.imdb.com/list/ls068623110/
+    summary: An anthology series of British comedic genre films directed by Edgar Wright, written by Wright and Simon Pegg, produced by Nira Park, and starring Pegg and Nick Frost. The trilogy consists of Shaun of the Dead (2004), Hot Fuzz (2007), and The World's End (2013).
+  Hayao Miyazaki:
+    imdb_list: https://www.imdb.com/list/ls069998735/
+  MCU:
+    imdb_list: https://www.imdb.com/list/ls031310794/
+    item_assets: true
+  MCU - Chronological:
+    imdb_list: https://www.imdb.com/list/ls029032797/
+    item_assets: true
+    collection_order: custom
