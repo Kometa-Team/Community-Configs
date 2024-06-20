@@ -1,0 +1,31 @@
+collections:
+## Seperators
+  A Few:
+    sort_title: +_02 00
+    blank_collection: true
+  Best of The Past:
+    sort_title: +_03 00
+    blank_collection: true
+  Special Collections:
+    sort_title: +_04 00
+    blank_collection: true
+  Oscar Collections:
+    sort_title: +_05 00
+    blank_collection: true
+  People Collections:
+    sort_title: +_06 00
+    blank_collection: true    
+  Film Series:
+    sort_title: +_07 00
+    blank_collection: true
+    collection_mode: hide  
+  Director's Collections:
+    sort_title: ~_01 00
+    blank_collection: true
+  Film Formats:    
+    sort_title: ~_02 00
+    blank_collection: true
+    
+    
+    
+    

@@ -1,0 +1,12 @@
+collections:
+## Planet of the Apes Collection
+  Planet of the Apes Collection:    
+    sort_title: Planet of the Apes
+    summary: "Planet of the Apes is an American science fiction media franchise consisting of films, books, television series, comics, and other media about a world in which humans and intelligent apes clash for control. The franchise is based on French author Pierre Boulle's 1963 novel La Planète des singes, translated into English as Planet of the Apes or Monkey Planet. Its 1968 film adaptation, Planet of the Apes, was a critical and commercial hit, initiating a series of sequels, tie-ins, and derivative works. Arthur P. Jacobs produced the first five Apes films. 
+
+Planet of the Apes has received particular attention among film critics for its treatment of racial issues. Cinema and cultural analysts have also explored its Cold War and animal rights themes. The series has influenced subsequent films, media, and art, as well as popular culture and political discourse."
+    collection_order: alpha
+    plex_search:
+      any:
+        title: Planet of the Apes
+        title.is: "Making Apes: The Artists Who Changed Film" 
