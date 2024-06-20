@@ -1,0 +1,11 @@
+collections:
+## Star Trek Collection
+  Star Trek Collection:    
+    sort_title: Star Trek
+    collection_order: alpha
+    plex_all: true
+    filters:
+      - filepath:
+        - Star Trek
+      - title:
+        - Please Stand By

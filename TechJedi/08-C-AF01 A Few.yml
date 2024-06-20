@@ -1,0 +1,218 @@
+collections:
+# Comedies
+  A Few Comedies:
+    smart_filter:
+      all:
+        genre: Comedy
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Comedies
+    summary: "Here are a few comedies that you may not have seen yet. Each time you view this collection, we will pick another 100 comedies. The comedy genre in movies encompasses a wide range of comedic styles and themes aimed at entertaining audiences and eliciting laughter. From slapstick physical humor to witty wordplay, comedies use humor to explore various aspects of human behavior, relationships, and social situations. With a primary goal of amusement, these films often employ exaggerated characters, humorous situations, and clever dialogue to create a lighthearted atmosphere and provide a welcome escape from everyday life. Whether it's a classic screwball comedy, a raunchy satire, or a heartwarming romantic comedy, the comedy genre continues to bring joy and laughter to moviegoers of all ages. HA!"
+# Horror Movies
+  A Few Horror Movies:
+    smart_filter:
+      all:
+        genre: Horror
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Horror Movies
+    summary: "Here are a few Horror movies that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. The horror genre in movies is a captivating and thrilling genre that aims to evoke feelings of fear, suspense, and unease in its audience. Horror films often explore supernatural elements, psychological terrors, or real-world fears, such as monsters, ghosts, serial killers, or paranormal phenomena. With their intense and chilling atmosphere, horror movies engage viewers by creating a sense of anticipation and suspense, leading up to terrifying moments that can range from jump scares to psychological mind games. This genre has evolved over the years, incorporating different subgenres like slasher, supernatural, found footage, and psychological horror. By playing on our deepest fears, horror movies provide a thrilling and cathartic experience that leaves a lasting impact."
+# Action Movies
+  A Few Action Movies:
+    smart_filter:
+      all:
+        genre: Action
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Action Movies
+    summary: "Here are a few Action movies that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. The action genre in movies is an adrenaline-pumping and dynamic genre that is known for its high-octane thrills, intense physical feats, and exciting sequences. Action movies typically involve fast-paced narratives centered around courageous heroes or heroines who engage in daring and thrilling adventures. From explosive car chases and intense fight scenes to awe-inspiring stunts and breathtaking special effects, action films captivate audiences with their spectacle and non-stop excitement. Whether it's a spy thriller, a superhero epic, or a martial arts extravaganza, action movies entertain with their combination of thrilling action sequences, charismatic characters, and a sense of escapism. This genre keeps viewers on the edge of their seats while delivering an exhilarating cinematic experience."
+# Westerns
+  A Few Westerns:
+    smart_filter:
+      all:
+        genre: Western
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Westerns
+    summary: "Here are a few Westerns that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. The western genre in movies is a timeless and iconic genre that portrays the romanticized American frontier of the 19th century. These films typically feature rugged landscapes, cowboys, gunslingers, and tales of lawlessness, justice, and exploration. Western movies often highlight themes of honor, individualism, and the clash between civilization and wilderness. They offer a glimpse into a bygone era, showcasing the challenges and triumphs of characters navigating a harsh and often lawless frontier. From classic showdowns at high noon to sweeping vistas and memorable horseback chases, Westerns capture the spirit of adventure and create a sense of nostalgia. With their distinctive setting and archetypal characters, Western films continue to captivate audiences and serve as a window into the mythic American West."
+# Sci-Fi Movies
+  A Few Sci-Fi Movies:
+    smart_filter:
+      all:
+        genre: Science Fiction
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Sci-Fi Movies
+    summary: "Here are a few Sci-Fi movies that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. The science fiction genre in movies is a captivating and imaginative genre that explores futuristic or speculative concepts, often grounded in scientific or technological advancements. Science fiction films transport viewers to other worlds, alternate realities, or distant futures, offering a blend of scientific accuracy and creative storytelling. These movies frequently delve into themes of space exploration, time travel, advanced technologies, artificial intelligence, and the impact of scientific progress on society and humanity. Science fiction films often push the boundaries of visual effects, showcasing awe-inspiring visuals, futuristic designs, and ambitious world-building. Whether it's epic space operas, dystopian futures, or mind-bending narratives, the science fiction genre invites audiences to ponder the possibilities of the unknown, challenging our perceptions and expanding the realm of what is possible."
+# Family Films
+  A Few Family Films:
+    smart_filter:
+      all:
+        genre: Family
+        content_rating: G
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Family Films
+    summary: "Here are a few Family friendly movies that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. The family film genre is a heartwarming and inclusive genre that aims to entertain audiences of all ages, with a focus on providing wholesome and enjoyable experiences for families to enjoy together. these films often contain lighthearted stories, relatable characters, and positive messages. family films can span a variety of genres, from animated adventures and fantasy tales to heartwarming comedies and coming-of-age stories. they typically emphasize themes of love, friendship, and the importance of family bonds. family films strive to create an inclusive environment where viewers can share laughter, emotions, and valuable life lessons. whether it's animated classics or live-action adventures, family films offer delightful entertainment for all generations to enjoy, fostering a sense of togetherness and creating cherished memories."
+# Musicals Movies
+  A Few Musicals:
+    smart_filter:
+      all:
+        genre: Musical
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Musicals
+    summary: "Here are a few Musicals that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. The musical film genre is an enchanting and vibrant genre that combines music, dance, and storytelling to create a unique cinematic experience. Musicals are characterized by characters breaking into song and dance numbers to advance the plot or express their emotions. These films often feature catchy and memorable musical numbers that are carefully choreographed and accompanied by elaborate production designs. Musicals can cover various themes, from love and romance to dreams and aspirations, and they harness the power of music to evoke emotion and heighten the storytelling. Whether it's classic Hollywood musicals or contemporary adaptations, the musical genre offers a joyous celebration of song, dance, and the magic of storytelling. It allows audiences to escape into a world where music can fully articulate the characters' feelings and create moments of pure, infectious entertainment."
+# Film Noir Classics
+  A Few Film Noir Classics:
+    smart_filter:
+      all:
+        genre: Film-Noir
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Film Noir Classics
+    summary: "Here are a few Film Noir Classics that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. The film-noir genre in movies is a dark and atmospheric genre that emerged in the 1940s and 1950s, primarily characterized by its moody visual style and themes of crime, corruption, and moral ambiguity. These films often feature a cynical protagonist entangled in a complex web of deceit, mystery, and danger, with femme fatales, hard-boiled detectives, and shady characters adding to the intrigue. Film-noir emphasizes low-key lighting, deep shadows, and contrasting black-and-white cinematography to create a visually striking and emotionally evocative atmosphere. The narratives are commonly driven by intricate plots, with unexpected twists and a sense of moral uncertainty prevailing throughout the story. With its distinct aesthetic and an exploration of the human psyche's darker aspects, film-noir continues to captivate film enthusiasts, blending elements of crime dramas, psychological thrillers, and classic storytelling techniques."
+# Documentaries
+  A Few Documentaries:
+    smart_filter:
+      all:
+        genre: Documentary
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Documentaries
+    summary: "Here are a few Documentaries that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. The documentary film genre is a compelling and informative genre that seeks to present factual accounts, explore real-world topics, and shed light on various subjects. Unlike fictional films, documentaries strive to provide a nonfictional account of real events, people, or social issues. These films employ various storytelling techniques, including interviews, archival footage, reenactments, and expert analysis, to present a comprehensive and objective perspective. Documentaries cover a wide range of subjects, including history, science, politics, nature, and human experiences. They often aim to educate, raise awareness, provoke thought, spark conversation, or inspire change. Documentaries provide an opportunity for viewers to gain insights into different aspects of our world, challenge preconceived notions, and deepen our understanding of the real world around us."
+# Pandemic
+  A Few Pandemic Movies:
+    tmdb_keyword:
+      - 188973-pandemic
+      - 188957
+      - 9744
+      - 17995-epidemic
+      - 14674-vaccine
+      - 14675-lethal-virus
+    sort_title: +_02 A Few Pandemic Movies
+    sync_mode: append
+    summary: "Here are a few Pandemic that you may not have seen yet. The pandemic genre of movies explores fictional scenarios centered around the outbreak and spread of infectious diseases on a large scale. These films often focus on the resulting societal breakdown, the struggle for survival, and the efforts to find a cure or containment. They can be thrilling, suspenseful, and thought-provoking, highlighting themes of fear, isolation, and the resilience of the human spirit. Some popular examples of pandemic movies include \"Contagion,\" \"Outbreak,\" and \"28 Days Later.\"  The pandemic genre has gained relevance in recent times due to the global COVID-19 pandemic, capturing our collective fears and raising awareness about public health challenges. Movies in this genre often remind us of the importance of preparedness, cooperation, and the potential consequences of a widespread disease outbreak."
+# Drama
+  A Few Dramas:
+    smart_filter:
+      all:
+        genre: Drama
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Dramas
+    summary: "Here are a few Dramas that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. The drama genre in movies typically focuses on realistic characters dealing with emotional themes and interpersonal conflicts. These films often explore complex human emotions like love, loss, betrayal, and redemption, aiming to provoke deep feelings and encourage reflection in the audience. Dramas can cover a wide range of subjects and settings, from personal relationships and family dynamics to societal issues and historical events. The genre is known for its emphasis on character development, storytelling, and emotional depth."
+# Mystery
+  A Few Mysteries:
+    smart_filter:
+      all:
+        genre: Mystery
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Mysteries
+    summary: "Here are a few Mysteries that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. The mystery genre of movies typically involves a storyline centered around solving a puzzle or crime. It often includes elements of suspense, surprises, and twists to engage the audience in solving the mystery alongside the characters. These films can feature detectives, amateur sleuths, or ordinary people caught up in extraordinary situations. Common themes include murder investigations, heists, missing persons, or unexplained events."
+# Rom-Com
+  A Few Rom-Coms:
+    smart_filter:
+      all:
+        genre:
+          - Comedy
+          - Romance
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Rom-Coms
+    summary: "Here are a few Rom-Coms that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. Rom-com is a film genre that combines elements of romance and comedy. These movies typically focus on a romantic relationship between two characters, incorporating humor and light-hearted moments throughout the storyline. Rom-coms often explore themes such as love, relationships, and personal growth, aiming to entertain viewers while also conveying messages about emotions and human connections."
+# War
+  A Few War Movies:
+    smart_filter:
+      all:
+        genre: War
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few War Movies
+    summary: "Here are a few War movies that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. War movies typically depict various aspects of armed conflict, focusing on themes such as heroism, sacrifice, the effects of war on individuals and society, and the moral complexities of warfare. These movies often include intense battle scenes, emotional drama, and exploration of the human experience amidst war."
+# Time Travel
+  A Few Time Travel Movies:
+    trakt_list:
+      - https://trakt.tv/lists/3940186
+      - https://trakt.tv/lists/20709447
+      - https://trakt.tv/lists/2729898
+      - https://trakt.tv/lists/2729898
+      - https://trakt.tv/lists/4297290
+      - https://trakt.tv/lists/2652307
+    imdb_list:
+      - https://www.imdb.com/list/ls068617191/
+      - https://www.imdb.com/list/ls004426453/
+      - https://www.imdb.com/list/ls058641508/
+    tmdb_keyword:
+      - 4379
+    sort_title: +_02 A Few Time Travel Movies
+    sync_mode: append
+    summary: "Here are a few Time Travel that you may not have seen yet. Time travel is a popular film genre that revolves around characters traveling to different points in time. These stories often explore the consequences of altering the past or future, the complexities of causality, and the paradoxes that can arise from time manipulation. Time travel movies can range from comedic adventures like \"Back to the Future\" to mind-bending thrillers such as \"Primer\" or dramatic films like \"The Time Traveler's Wife.\""
+# War
+  A Few Fantasy Movies:
+    smart_filter:
+      all:
+        genre: Fantasy
+        unplayed: true
+      sort_by: random
+      limit: 100
+    sort_title: +_02 A Few Fantasy Movies
+    summary: "Here are a few Fantasy movies that you may not have seen yet. Each time you view this collection, we will pick another 100 movies. The fantasy movie genre typically involves magical or supernatural elements, mythical creatures, and imaginary worlds. These movies often include themes of heroism, good versus evil, and epic quests. Fantasy films can range from high fantasy with intricate world-building to more contemporary urban fantasy settings. Special effects play a significant role in creating fantastical visuals, and many fantasy movies are adapted from popular books or folklore."
+## Mockumentary Collection
+  A Few Mockumentaries:
+    sort_title: +_02 A Few Mockumentaries
+    collection_order: release
+    plex_search:
+      any:
+        title:
+          - What We Do in the Shadows
+          - Real Life
+          - This Is Spinal Tap
+          - Europa Report
+          - Incident at Loch Ness
+          - "Behind the Mask: The Rise of Leslie Vernon"
+          - Best in Show
+          - Waiting for Guffman
+          - A Mighty Wind
+          - Zelig
+          - Drop Dead Gorgeous
+          - Take the Money and Run
+          - Sweet and Lowdown
+          - Man Bites Dog
+          - The Blair Witch Project
+          - Bob Roberts
+          - Gentlemen Broncos
+          - Forgotten Silver
+          - Man of the Year
+          - For Your Consideration
+          - Computer Chess
+          - Shadow of the Vampire
+          - The Gods Must be Crazy
+          - The Last Polka
+          - "The Rutles: All You Need Is Cash"
+          - Mascots
+          - Bob Roberts
+          - District 9
+          - Starship Troopers
+          - Confetti
+          - We Make Movies
+          - Troll Hunter
+          - "Donald Trump's The Art of the Deal: The Movie" 
+          - A Hard Day's Night
+          - Bernie
+    summary: "Here are a few Mockumentaries that you may not have seen yet. A mocumentary is a genre of filmmaking that combines elements of comedy and documentary-style storytelling. It involves presenting fictional events or situations in the format of a documentary, often parodying the conventions and style of real documentaries."          
+
+
