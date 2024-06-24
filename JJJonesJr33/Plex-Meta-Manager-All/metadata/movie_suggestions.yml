@@ -78,9 +78,14 @@ collections:
 
   Top Rated:
     template: {name: Suggestion, poster: 213605}
-    imdb_list: 
-      - https://www.imdb.com/search/title/?groups=top_250&count=250&sort=user_rating,desc&title_type=movie
-    summary: Top Rated Movies  
+    imdb_search:
+      type: movie
+      release.after: 1990-01-01
+      rating.gte: 5
+      votes.gte: 100000
+      sort_by: rating.desc
+      limit: 250
+    summary: Top Rated Movies 
     
 ######################
 ##     Tautulli     ##

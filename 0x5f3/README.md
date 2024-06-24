@@ -1,76 +1,51 @@
-This config will populate the following:
-
-- !Suggested (random, trending, popular, top-rated, most watched)
+#### This config will populate the following:
+```
+- !Suggested (random, recently added|released, recommended, suggested, trending, popular, top-rated)
+- Unwatched (random, recommended, suggested, popular, top-rated)
+- !Watched (most watched daily|weekly|monthly|yearly)
 - !Seasonal *
 - Parental
 - Documentaries
 - Stand-up *
-- !Awards
+- Awards
 - !Year (top-rated)
 - !Decades (top-rated)
 - !Genre (popular)
 - !Genre (top-rated)
 - Sub-genre (top-rated) *
-- TMBD collections *
-- Networks ^
+- Studio *
+- TMDB collections *
+- Network ^
 
-( ! = enabled by default)
-( * = movies only )
-( ^ = shows only )
-
-
-For more details on what each section contains: [movies](MOVIES.md) | [shows](SHOWS.md)
-<br/>
-<br/>
-<br/>
-**Install:**
-
-clone into PMM's root directory:
+(! = enabled by default)
+(* = movies only)
+(^ = shows only)
 ```
-git clone https://codeberg.org/0xFFFF/pmm-config config
+###### For more details on what each section contains: [movies](MOVIES.md) | [shows](SHOWS.md)
+#### Requirements:
 ```
-
-**Usage:**
-
-Either use [movie.yml](movie.yml), [show.yml](show.yml) to use local metadata, or use [movie_repo.yml](movie_repo.yml), [show_repo.yml](show_repo.yml) to use online resources from https://codeberg.org/0xFFFF/pmm-config.
-
-Initial run to populate all collections:
+ - API keys for: mdblist, tmdb, trakt
 ```
-python plex_meta_manager.py --config config/movie.yml --collections-only --run --ignore-schedules
-python plex_meta_manager.py --config config/show.yml --collections-only --run --ignore-schedules
+#### Install:
 ```
-After a successful initial run:
-
+git clone https://github.com/0x5f3/pmm.config config
 ```
-python plex_meta_manager.py --config config/movie.yml --collections-only --run
-python plex_meta_manager.py --config config/show.yml --collections-only --run
+#### Usage:
+
+###### The initial process for populating collections:
 ```
-
-**Notes:**
-
-*If you intend to use the Parental collection, enable "item_label.sync: Parental" (line 38, 1_parental.yml) on the initial run and disable for subsequent runs. This prevents ppm from relabelling all of the items with every run, whereas disabling will only label new items added.*
-
-*Parental filtering can be enabled by restricting a home user to only show content that has been designated the Parental label.*
-
-All of the assets can be found below:
-
-- https://imgbox.com/g/1bNN3wkCVa
-- https://imgbox.com/g/3ed8as9uhp
-- https://imgbox.com/g/d1T5qqL3Ew
-- https://imgbox.com/g/dFhG1V2dLL
-- https://imgbox.com/g/iStcgmP0Y0
-- https://imgbox.com/g/KaxFlLvjrU
-- https://imgbox.com/g/QhNa27bRun
-- https://imgbox.com/g/uz44pWg4wx
-- https://imgbox.com/g/YXSDflWQpJ
-- https://imgbox.com/g/Z45sK7niGI
-
-<br/>
-After a successful run, you will have something similar to this:
-<br/>
-<br/>
-
-![movies](https://images2.imgbox.com/f5/87/1olEU9Sl_o.png)
-<br/>
-  
-![shows](https://images2.imgbox.com/dd/fc/cG7v2z2i_o.png)
+docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager:nightly --config config/config.yml --run --ignore-schedules
+```
+###### Following a successful initial run:
+```
+docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager:nightly --config config/config.yml --run
+```
+###### Notes:
+``
+The parental configuration adds a 'Parental' label to their collections and all items included. The label is capable of being used with 'Allow Only Labels' in a user's restriction settings.
+``
+#
+#
+###### A successful run will result in something similar to this:
+![movies](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_movies.png)
+![shows](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_shows.png)

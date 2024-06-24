@@ -1,0 +1,108 @@
+templates:
+  4K_banner:
+    default:
+      4K_banner: false
+    allowed_library_types: <<4K_banner>>
+
+  4K:
+    default:
+      4K: false
+    allowed_library_types: <<4K>>  
+
+overlays:
+  4K_banner:
+    template:
+      name: 4K_banner
+    overlay:
+      name: 4K_banner
+    plex_search:
+      all:
+        resolution: '4K'
+
+  4K:
+    template:
+      name: 4K
+    overlay:
+      name: 4K
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 15
+      vertical_align: top
+    collection_level: episode
+    plex_search:
+      type: episodes
+      all:
+        resolution: '4K'
+
+  rating_high:
+    overlay:
+      name: Rating_High_BG
+      horizontal_offset: 375
+      horizontal_align: center
+      vertical_offset: 0
+      vertical_align: bottom
+      url: https://raw.githubusercontent.com/fscorrupt/Kometa-Overlays/main/ratings/Rating_High.png
+    plex_search:
+      all:
+        audience_rating.gte: 6.5
+        
+  rating_mid:
+    overlay:
+      name: Rating_Mid_BG
+      horizontal_offset: 375
+      horizontal_align: center
+      vertical_offset: 0
+      vertical_align: bottom
+      url: https://raw.githubusercontent.com/fscorrupt/Kometa-Overlays/main/ratings/Rating_Mid.png
+    plex_search:
+      all:
+        audience_rating.gte: 4.5
+        audience_rating.lte: 6.4
+
+  rating_low:
+    overlay:
+      name: Rating_Low_BG
+      horizontal_offset: 375
+      horizontal_align: center
+      vertical_offset: 0
+      vertical_align: bottom
+      url: https://raw.githubusercontent.com/fscorrupt/Kometa-Overlays/main/ratings/Rating_Low.png
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 4.4
+
+  user_rating_black:
+    overlay:
+      group: rating_text
+      weight: 20
+      rating_type: audience_rating
+      name: text(audience_rating)
+      horizontal_offset: 375
+      horizontal_align: center
+      vertical_offset: 70
+      vertical_align: bottom
+      font: config/fonts/CircularStd-Bold.otf
+      font_size: 85
+      font_color: "#282a2d"
+    plex_search:
+      all:
+        audience_rating.gte: 4.5
+        audience_rating.lte: 6.4
+
+  user_rating:
+    overlay:
+      group: rating_text
+      weight: 10
+      rating_type: audience_rating
+      name: text(audience_rating)
+      horizontal_offset: 375
+      horizontal_align: center
+      vertical_offset: 70
+      vertical_align: bottom
+      font: config/fonts/CircularStd-Bold.otf
+      font_size: 85
+      font_color: "#FFFFFF"
+    plex_search:
+      all:
+        audience_rating.gte: 0.1

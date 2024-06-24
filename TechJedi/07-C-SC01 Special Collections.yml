@@ -1,0 +1,93 @@
+collections:
+## Living Dead Collection
+  Living Dead Collection:
+    sort_title: +_04 Living Dead
+    collection_order: release
+    imdb_id: tt0036027, tt0058700, tt0063350, tt0077402, tt0087799, tt0088993, tt0089907, tt0095990, tt0096071, tt0100258, tt0107953, tt0289043, tt0363547, tt0365748, tt0418819, tt0425112, tt1077258, tt0463854, tt0848557, tt1134854, tt1156398, tt1588173, tt0816711, tt1213663, tt2507128, tt2490326, tt2581244, tt3332282, tt8695030, tt1560220, tt0993840
+## Apple Collection
+  Apple Collection:
+    sort_title: +_04 Apple
+    collection_order: release
+    imdb_id: tt1247703, tt1379667, tt2357129, tt2080374, tt7153766, tt6285944, tt2088029,tt9606374,tt14460998
+    imdb_search:
+      company: co0546168,co0861654,co0822606
+      limit: 100
+## 3D Movies
+  Movies in 3D:
+    sort_title: ~_02 3D
+#    imdb_id: tt0085750, tt0373051
+    smart_filter:
+      any:
+        edition: 3D Version
+        label: 3D
+## Extended Editions
+  Extended Editions:
+    sort_title: +_04 Extended Editions
+    summary: "Extended versions of movies are alternative versions of the original films that include additional footage or scenes that were not shown in the theatrical release. These extended versions are often created to provide viewers with a more in-depth and immersive experience, allowing them to delve further into the story and characters. The extra scenes can range from extended dialogue sequences to entirely new plotlines, giving audiences a fresh perspective and enhancing their understanding of the movie's narrative.
+
+Filmmakers sometimes choose to include scenes that were originally cut due to time constraints, pacing issues, or to meet certain content restrictions. These extended versions allow directors and studios to present a more complete version of their vision, offering fans a chance to see the movie as intended and providing new insights and surprises.
+
+While not all movies have extended versions, they have become more common over the years, particularly for popular franchises or films with devoted fan bases. Many viewers enjoy the added content and appreciate the opportunity to immerse themselves further in the film's universe. Extended versions can offer an exciting alternative for fans who want to dive deeper into their favorite movies and explore new facets of the story and characters."
+    plex_search:
+      any:
+        edition:
+          - Extended Cut
+          - Extended Director's Cut
+          - Extended Edition
+          - Extended TV Cut
+          - Extended Version
+## Director's Cuts
+  Director's Cuts:
+    sort_title: +_04 Director's Cuts
+    summary: "Director's cuts of films are versions of a movie that are edited and presented according to the director's original artistic vision. These cuts often include scenes that were either removed or altered for the theatrical release. The purpose of a director's cut is to showcase the filmmaker's unfiltered and uncompromised vision, allowing audiences to experience the movie as intended by its creator. Director's cuts can provide a deeper understanding of the story, characters, and themes, offering a more authentic representation of the director's intentions.
+
+Unlike extended versions, which primarily add extra scenes or content, director's cuts can involve more substantial changes to the film. These alterations can range from minor tweaks and adjustments to major re-edits or the inclusion of entirely new scenes. Director's cuts can offer viewers a fresh perspective on a film they may already be familiar with, shedding new light on character motivations, plot elements, or thematic nuances. While not all movies have director's cuts, they are particularly common for films that have faced external pressures or creative compromises during their initial release.
+
+Director's cuts are often released after the theatrical run of a films. They provide an opportunity for directors to revisit their work and finalize it in a way that aligns more closely with their original vision. Many cinephiles and fans of specific filmmakers appreciate director's cuts for the insight they offer into the creative process and the chance to experience a film in a unique and often more artistically satisfying way."
+    plex_search:
+      any:
+        edition:
+          - Director's Cut
+          - 2003 Director's Cut
+          - Extended Director's Cut
+          - 2003 Special Edition
+          - 2006 Richard Donner Cut
+          - First Cut
+          - The Coppola Restoration
+          - The Final Cut
+          - Ultimate Director's Cut
+          - Special Edition 
+## IMAX
+  IMAX:
+    sort_title: ~_02 IMAX
+    plex_search:
+      any:
+        edition:
+          - IMAX
+## Hammer Films
+  Hammer Films Collection:
+    sort_title: +_04 Hammer Films
+    collection_order: release
+    plex_search:
+      any:
+        studio:
+          - Hammer Film Productions
+    summary: "Hammer Film Productions was a British film production company known for its iconic contributions to the horror genre. Established in 1934, Hammer gained prominence during the 1950s to the 1970s by redefining classic horror characters and introducing vibrant, atmospheric storytelling techniques. Hammer's legacy lies in its ability to breathe new life into traditional monsters like Dracula, Frankenstein, and The Mummy, creating a unique blend of Gothic horror, vivid color palettes, and memorable performances. With its signature style and innovative approach to horror, Hammer Film Productions continues to be celebrated as an influential force in the genre to this day."   
+         
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    

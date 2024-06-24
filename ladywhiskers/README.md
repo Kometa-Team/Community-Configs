@@ -1,83 +1,10 @@
-This is my Plex Meta Manager Config - heavily inspired by WhoDat104 and bullmoose20
+This is my Kometa Config - heavily inspired by WhoDat104 and bullmoose20 and probably a bajillion other people. Thanks!
 
-Creates a whole bunch of collections, including Music collections.
+movies_subgenre, movies_topics, tvshows_documentaries & tvshows_topics don't create collections, but tag items for use with the default genre collection.
 
-This should create the below collections:
-
-**PMM Default Collections:**
-Movies
-   - Based on 
-   - Oscars
-   - Actor Birthdays
-   - Common Sense Media Content Ratings
-   - Common Sense Media Recommended
-   - Continent
-     - Oceania
-   - Franchise
-   - Seasonal
-     - added Pride Month
-   - Universe
-
-TV Shows
-   - Based on
-   - Actor Birthdays
-   - Common Sense Media Content Ratings
-   - Common Sense Media Recommended
-   - Universe
-   - Continent
-     - Oceania
-   - Franchise
-     
-**Custom Collections:**
-
-Movies
-  Collections:
-   - Disney Live-Action Remakes
-   - DIsney Animation Studios
-   - THree Flavours Cornetto
-   - What Should I Watch?
-	- Expanded Genres        #WhoDat104
-   - Subgenres              #WhoDat104
-	- Topics                 #WhoDat104
-
-TV Shows
-	Collections:						
-	- TV Documentaries       #WhoDat104
-	- Avatar Universe
-	- Expanded Genres        #WhoDat104
-	- Topics                 #WhoDat104
-
-Music
-  Collections:
-   - Top 10 <<mood>> Albums
-   - Top 100 <<mood>> Tracks
-   - Top 5 <<style>> Artists
-   - Top 20 <<style>> Albums
-   - Continents
-
-Most posters are linked through Github
-
-Credits not limited to but include: 
-				- AwesomeAustin
-				- meisnate12
-				- ICHIMOKU
-				- SiskoUrso
-				- YozoraXCII
-				- Frexe
-				- Glastil
-				- JJJonesJr33
-        - WhoDat104
-        - bullmoose20
-
-  ![Movie Collections (1)](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/eb6dbd9c-2746-444b-9f27-45ed6bc379f8)
-![Movie Collections (2)](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/5f3ee81b-661a-4b42-8c9a-8a4bf2abb55c)
-![Movie Library](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/492b0ff5-c054-4057-b906-a93cc8ad864b)
-![Movie Playlist](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/22efdc4f-bb06-4aed-b8f4-4bd83fb67942)
-
-![TV Collections](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/6aa6f80c-fa27-48da-aec9-cb417d7a5c89)
-![TV Library](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/64e3fb2e-a14b-41b9-9a08-403b78f0bf65)
-[Tv and Movie Playlists](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/7ea9a53b-5ee9-43f2-a048-e5f53207fc95)
-
-![Music Collections (1)](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/d94fece6-a936-43d4-be1c-99688f07fa88)
-![Music Collections (2)](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/359590dd-4b90-4aed-b954-736b1e00b860)
-
+Posters are (slowly) being made for collections using the Create Poster script by bullmoose20
+  - https://github.com/bullmoose20/Plex-Stuff#create_poster
+![TV Shows Collections](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/fe9cc0ce-e714-4e42-84a3-20532a32590d)
+![Movies Collection 1](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/2c42aa67-9bef-418f-96f7-05e7b7163e8f)
+![Movies Collection 2](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/ba8c1761-39b6-43e6-92b5-bf68c812c1dc)
+![Music Collections](https://github.com/ladywhiskers/Plex-Meta-Manager-Configs/assets/99696830/053ca768-db62-4611-93db-4d61f65c9646)

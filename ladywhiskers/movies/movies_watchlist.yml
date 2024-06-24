@@ -1,0 +1,44 @@
+#######################################
+#          Movie Watchlist            #
+#######################################
+collections:
+  Laura's Watchlist:
+    plex_watchlist: critic_rating.desc
+    collection_order: custom
+    sync_mode: sync
+    sort_title: "!0001_<<collection_name>>"
+    collection_mode: show
+    visible_home: true
+  Movies to Watch with Britty:
+    trakt_list: https://trakt.tv/users/fuschaitea/lists/movies-to-watch-with-britty
+    sync_mode: sync
+    collection_order: custom
+    visible_home: range(01/01-12/31)
+    visible_shared: range(01/01-12/31)
+    sort_title: "!0001_<<collection_name>>"
+  Bec's Best Becommendations:
+    trakt_list: https://trakt.tv/users/fuschaitea/lists/recommendations-by-bec
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: show
+    sort_title: "!0002_<<collection_name>>"
+    visible_home: range(01/01-12/31)
+    visible_shared: range(01/01-12/31)
+  🍿 What Movie Should I Watch?:
+      smart_filter:
+        sort_by: random
+        all:
+          unplayed: true
+          release: 3650
+        limit: 5
+      url_poster: https://i.imgur.com/OMrEyGg.jpeg
+      collection_mode: hide
+      sort_title: "+1_1_next"
+      visible_library: true
+      visible_home: true
+      schedule: weekly(wednesday)
+  Julia Donaldson:
+    smart_filter:
+      all:
+        writer: tmdb
+    tmdb_person: 592851

@@ -1,0 +1,337 @@
+#   _______  __                          __       __            __                    
+#  /       \/  |                        /  \     /  |          /  |                   
+#  $$$$$$$  $$ | ______  __    __       $$  \   /$$ | ______  _$$ |_    ______        
+#  $$ |__$$ $$ |/      \/  \  /  |      $$$  \ /$$$ |/      \/ $$   |  /      \       
+#  $$    $$/$$ /$$$$$$  $$  \/$$/       $$$$  /$$$$ /$$$$$$  $$$$$$/   $$$$$$  |      
+#  $$$$$$$/ $$ $$    $$ |$$  $$<        $$ $$ $$/$$ $$    $$ | $$ | __ /    $$ |      
+#  $$ |     $$ $$$$$$$$/ /$$$$  \       $$ |$$$/ $$ $$$$$$$$/  $$ |/  /$$$$$$$ |      
+#  $$ |     $$ $$       /$$/ $$  |      $$ | $/  $$ $$       | $$  $$/$$    $$ |      
+#  $__      $__ $$$$$$$/$$/   $$/       $$/      $$/ $$$$$$$/   $$$$/  $$$$$$$/       
+#  /  \     /  |                                                                      
+#  $$  \   /$$ | ______  _______   ______   ______   ______   ______                  
+#  $$$  \ /$$$ |/      \/       \ /      \ /      \ /      \ /      \                 
+#  $$$$  /$$$$ |$$$$$$  $$$$$$$  |$$$$$$  /$$$$$$  /$$$$$$  /$$$$$$  |                
+#  $$ $$ $$/$$ |/    $$ $$ |  $$ |/    $$ $$ |  $$ $$    $$ $$ |  $$/                 
+#  $$ |$$$/ $$ /$$$$$$$ $$ |  $$ /$$$$$$$ $$ \__$$ $$$$$$$$/$$ |                      
+#  $$ | $/  $$ $$    $$ $$ |  $$ $$    $$ $$    $$ $$       $$ |                      
+#  $$/      $$/ $$$$$$$/$$/   $$/ $$$$$$$/ $$$$$$$ |$$$$$$$/$$/                       
+#                                         /  \__$$ |                                  
+#                                         $$    $$/                                   
+#                                          $$$$$$/                                    
+
+#═════════════════════════════════════════════════════════════════════════════════════
+#    __  __   ___ __   __ ___  ___  ___ 
+#   |  \/  | / _ \\ \ / /|_ _|| __|/ __|
+#   | |\/| || (_) |\ V /  | | | _| \__ \
+#   |_|  |_| \___/  \_/  |___||___||___/
+#                                       
+libraries:
+  Movies:
+    report_path: config/missing/movies_missing.yml
+    template_variables:
+      collection_mode: hide
+      use_separator: true
+    collection_files:
+#SEPARATORS
+    - file: config/scripts/collections/separators.yml
+      asset_directory: "config/assets/#Collections#/separators"
+#BASIC
+    - file: config/scripts/collections/basic.yml
+      asset_directory: "config/assets/#Collections#/Basic"
+#PLEX
+    - file: config/scripts/collections/plex.yml
+      asset_directory:
+      - "config/assets/#Collections#/Custom"
+      - "config/assets/#Collections#/Genre"
+#ACTOR
+    - file: config/scripts/collections/actor.yml
+      schedule: hourly(3)
+      asset_directory: "config/assets/#Collections#/Actors"
+#DIRECTOR
+    - file: config/scripts/collections/director.yml
+      schedule: hourly(3)
+      asset_directory: "config/assets/#Collections#/Directors"
+#FRANCHISE - TMDB
+    - pmm: franchise
+      schedule: hourly(3)
+      template_variables:
+        collection_section: '601'
+        asset_directory: "config/assets/#Collections#/Custom"
+        remove_prefix: The
+        remove_suffix: Collection
+        exclude:
+        - 556928        #Father O'Malley
+        - 1037405       #Broadway Melody
+        - 1260913       #Three Flavours Cornetto
+#TMDB
+    - file: config/scripts/collections/tmdb.yml
+      asset_directory: "config/assets/#Collections#/Custom"
+#IMDB
+    - file: config/scripts/collections/imdb.yml
+      asset_directory: "config/assets/#Collections#/Custom"
+    - file: config/scripts/collections/oscar_nominees.yml
+      # schedule: non_existing
+      schedule: monthly(1)
+      asset_directory: "config/assets/#Oscar_Nominees#"
+#METADATA
+    metadata_files:
+    - file: config/scripts/metadata/movie_metadata.yml
+      schedule: hourly(3)
+    - file: config/scripts/metadata/4k_metadata.yml
+      schedule: hourly(3)
+#OVERLAYS
+    # schedule_overlays: hourly(3)
+    overlay_files:
+    - remove_overlays: false
+    - reapply_overlay: true
+    - file: config/scripts/overlays/overlays.yml
+    - file: config/scripts/overlays/overlays_oscar_nominees.yml
+#OPERATIONS
+    operations:
+      - schedule: hourly(05-04)
+        metadata_backup:
+          path: config/backups/movie_backup.yml
+          sync_tags: true
+          add_blank_entries: false
+        assets_for_all: true
+        split_duplicates: true
+      - schedule: all[weekly(sunday), hourly(3)]
+        mass_genre_update: tmdb
+        mass_content_rating_update: mdb
+        mass_studio_update: tmdb
+        mass_originally_available_update: tmdb
+        mass_critic_rating_update: mdb_metacritic
+        mass_audience_rating_update: imdb
+        mass_user_rating_update: imdb
+
+#═════════════════════════════════════════════════════════════════════════════════════
+#    _ _    _  __    _   _   _  _   ___  
+#   | | |  | |/ /   | | | | | || | |   \ 
+#   |_  _| | ' <    | |_| | | __ | | |) |
+#     |_|  |_|\_\    \___/  |_||_| |___/ 
+#                                        
+  4K UHD:
+    schedule: hourly(3)
+    asset_directory: "config/assets/#Diamond_Edition#"
+    report_path: config/missing/4K UHD_report.yml
+#METADATA
+    metadata_files:
+    - file: config/scripts/metadata/4k_metadata.yml
+#OVERLAYS
+    overlay_files:
+    - remove_overlays: false
+    - reapply_overlay: false
+    - file: config/scripts/overlays/overlays_4KUHD.yml
+#OPERATIONS
+    operations:
+      - schedule: hourly(05-04)
+        metadata_backup:
+          path: config/backups/4K_backup.yml
+          sync_tags: true
+          add_blank_entries: false
+        assets_for_all: true
+        split_duplicates: true
+      - schedule: all[weekly(sunday), hourly(3)]
+        mass_genre_update: tmdb
+        mass_content_rating_update: mdb
+        mass_studio_update: tmdb
+        mass_originally_available_update: tmdb
+        mass_critic_rating_update: mdb_metacritic
+        mass_audience_rating_update: imdb
+        mass_user_rating_update: imdb
+
+
+#═════════════════════════════════════════════════════════════════════════════════════
+#    _____ __   __  ___  _  _   ___ __      __ ___ 
+#   |_   _|\ \ / / / __|| || | / _ \\ \    / // __|
+#     | |   \ V /  \__ \| __ || (_) |\ \/\/ / \__ \
+#     |_|    \_/   |___/|_||_| \___/  \_/\_/  |___/
+#                                                  
+  TV Shows:
+    report_path: config/missing/tv_missing.yml
+    template_variables:
+      collection_mode: hide
+      use_separator: true
+
+    collection_files:
+#SEPARATORS
+    - file: config/scripts/collections/separators.yml
+      asset_directory: "config/assets/#Collections#/separators"
+#BASIC
+    - file: config/scripts/collections/basic.yml
+      asset_directory: "config/assets/#Collections#/Basic"
+#PLEX
+    - file: config/scripts/collections/plex.yml
+      asset_directory:
+      - "config/assets/#Collections#/Custom"
+      - "config/assets/#Collections#/Genre"
+#IMDB
+    - file: config/scripts/collections/imdb.yml
+      asset_directory: "config/assets/#Collections#/Custom"
+#SHUFFLE
+    - file: config/scripts/collections/shuffle.yml
+      schedule: hourly(3)
+      asset_directory:
+      - "config/assets/#Collections#/Custom"
+      - "config/assets/#Collections#/Genre"
+#METADATA
+    metadata_files:
+    - file: config/scripts/metadata/tv_metadata.yml
+      schedule: hourly(3)
+#OVERLAY
+    schedule_overlays: hourly(3)
+    overlay_files:
+    - remove_overlays: false
+    - reapply_overlay: false
+    - file: config/scripts/overlays/overlays.yml
+
+#OPERATIONS
+    operations:
+      - schedule: hourly(05-04)
+        metadata_backup:
+          path: config/backups/tv_backup.yml
+          sync_tags: true
+          add_blank_entries: false
+        assets_for_all: true
+        split_duplicates: true
+      - schedule: all[weekly(sunday), hourly(3)]
+        mass_genre_update: tvdb
+        mass_content_rating_update: mdb
+        mass_studio_update: tmdb
+        mass_originally_available_update: tvdb
+        mass_critic_rating_update: mdb_metacritic
+        mass_audience_rating_update: imdb
+        mass_user_rating_update: imdb
+        mass_episode_audience_rating_update: imdb
+        mass_episode_user_rating_update: imdb
+        mass_episode_critic_rating_update: imdb
+
+#═════════════════════════════════════════════════════════════════════════════════════
+#    __  __    _    ___  _____  ___  ___ 
+#   |  \/  |  /_\  / __||_   _|| __|| _ \
+#   | |\/| | / _ \ \__ \  | |  | _| |   /
+#   |_|  |_|/_/ \_\|___/  |_|  |___||_|_\
+#     ___  _       _    ___  ___         
+#    / __|| |     /_\  / __|/ __|        
+#   | (__ | |__  / _ \ \__ \\__ \        
+#    \___||____|/_/ \_\|___/|___/        
+#                                        
+  MasterClass:
+    schedule: all[weekly(sunday), hourly(3)]
+    report_path: config/missing/master_report.yml
+    template_variables:
+      collection_mode: hide
+      use_separator: true
+    collection_files:
+    - file: config/scripts/collections/masterclass_collections.yml
+      asset_directory: "config/assets/#MasterClass#/Collections"
+    metadata_files:
+    - file: config/scripts/metadata/masterclass_meta.yml
+      asset_directory: "config/assets/#MasterClass#"
+    operations:
+      assets_for_all: true
+      split_duplicates: true
+      metadata_backup:
+        path: config/backups/masterclass_backup.yml
+        sync_tags: true
+        add_blank_entries: false
+#═════════════════════════════════════════════════════════════════════════════════════
+#    ___  ___  _____  _____  ___  _  _   ___  ___ 
+#   / __|| __||_   _||_   _||_ _|| \| | / __|/ __|
+#   \__ \| _|   | |    | |   | | | .` || (_ |\__ \
+#   |___/|___|  |_|    |_|  |___||_|\_| \___||___/
+#                                                 
+settings:
+  asset_directory:
+  - config/assets
+  - config/overlays
+  - "config/assets/#Collections#"
+  - "config/assets/#MasterClass#"
+  - "config/assets/#Diamond_Edition#"
+  - "config/assets/#Oscar_Nominees#"
+  cache: true
+  cache_expiration: 60
+  asset_folders: true
+  asset_depth: 3
+  create_asset_folders: true
+  prioritize_assets: true
+  dimensional_asset_rename: false
+  download_url_assets: true
+#═════════════════════════════════
+  show_missing_assets: true
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: false
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_options: true
+  show_missing: false
+#═════════════════════════════════
+  minimum_items: 1
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 1
+  save_report: true
+  tvdb_language: eng
+  item_refresh_delay: 60
+  build_collection: true
+  sync_mode: sync
+  verify_ssl: true
+  check_nightly: false
+  default_collection_order:
+  ignore_ids: 
+  ignore_imdb_ids:
+  custom_repo:
+  playlist_sync_to_users: all
+  playlist_exclude_users:
+  playlist_report: false
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+#═════════════════════════════════════════════════════════════════════════════════════
+#    _       ___     ___     ___   _  _   ___ 
+#   | |     / _ \   / __|   |_ _| | \| | / __|
+#   | |__  | (_) | | (_ |    | |  | .` | \__ \
+#   |____|  \___/   \___|   |___| |_|\_| |___/
+#                                             
+plex:
+  url: http://192.168.1.11:32400
+  token: "token here"
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+  db_cache:
+  verify_ssl:
+#═════════════════════════════════
+tmdb:
+  apikey: "api key here"
+  language: en
+  cache_expiration: 60
+  region:
+#═════════════════════════════════
+tautulli:
+  url: http://192.168.1.11:8181
+  apikey: "api key here"
+#═════════════════════════════════
+trakt:
+  client_id: "Client ID here"
+  client_secret: "Client secret here"
+  authorization:
+    access_token: "acess token here"
+    token_type: Bearer
+    expires_in: 7889237
+    refresh_token: "refresh token here"
+    scope: public
+    created_at: 
+  pin:
+#═════════════════════════════════
+mdblist:
+  apikey: "api key here"
+  cache_expiration: 60
+#═════════════════════════════════════════════════════════════════════════════════════

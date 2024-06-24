@@ -1,16 +1,28 @@
-- 1_suggested.yml
-  - Random Movies
-  - Recently Released Movies (English)
+```
+- _suggested.yml
+  - Random Movies (English)
   - Recently Added Movies (English)
-  - Trending Movies
-  - Popular Movies
-  - Top Rated Movies
-  - Most Watched Daily
-  - Most Watched Weekly
-  - Most Watched Monthly
-  - Most Watched Yearly
+  - Recently Released Movies (English)
+  - Recommended Movies (Trakt user's personal favourites and/or trakt/letterboxd lists)
+  - Suggested Movies (Trakt most favourited daily/weekly/monthly/yearly/all charts and/or trakt/letterboxd lists)
+  - Trending Movies (https://mdblist.com/lists/archivist/movie-trending)
+  - Popular Movies (https://mdblist.com/lists/archivist/movie-popular)
+  - Top Rated Movies (https://mdblist.com/lists/archivist/movie-top-rated)
 
-- 1_seasonal.yml
+- _unwatched.yml
+  - Unwatched: Random Movies
+  - Unwatched: Recommended Movies
+  - Unwatched: Suggested Movies
+  - Unwatched: Popular Movies
+  - Unwatched: Top Rated Movies
+
+- _watched.yml
+  - Most Watched Daily (https://trakt.tv/movies/watched/daily)
+  - Most Watched Weekly (https://trakt.tv/movies/watched/weekly)
+  - Most Watched Monthly (https://trakt.tv/movies/watched/monthly)
+  - Most Watched Yearly (https://trakt.tv/movies/watched/yearly)
+
+- _seasonal.yml
   - Valentine's Day Movies (02/13-02/15)
   - St. Patrick's Day Movies (03/16-03-18)
   - Easter Moviews (03/22-04/25)
@@ -19,40 +31,29 @@
   - Christmas Movies (12/01-12/31)
   - New Year's Eve Movies (12/26-01-02)
 
-- 1_parental.yml
-  - Parental: All
+- _parental.yml
+  - Parental: All (https://mdblist.com/lists/archivist/list-parental)
   - Parental: Random
-  - Parental: Recently Released
   - Parental: Recently Added
+  - Parental: Recently Released
   - Parental: Top Rated
-  
-- 1_documentary.yml
+
+- _documentary.yml
   - Documentaries: All
   - Documentaries: Random
-  - Documentaries: Recently Released
   - Documentaries: Recently Added
+  - Documentaries: Recently Released
   - Documentaries: Top Rated
-  
-- 1_standup.yml
-  - Stand-up: All
+
+- _standup.yml
+  - Stand-up: All (https://mdblist.com/lists/archivist/list-standup)
   - Stand-up: Random
-  - Stand-up: Recently Released
   - Stand-up: Recently Added
+  - Stand-up: Recently Released
   - Stand-up: Top Rated
 
-- 2_awards.yml
-  - Oscar Winners
-  - Oscar Nominees
-  - Golden Globes Winners
-  - Golden Globes Nominees
-  - BAFTA Winners
-  - Berlinale Winners
-  - Cannes Film Festival Winners
-  - European Film Award Winners
-  - Sundance Winners
-  - Venice Film Festival Winners
-
-- 3_year_top.yml
+- _year_top.yml
+  - Top Rated of 2024
   - Top Rated of 2023
   - Top Rated of 2022
   - Top Rated of 2021
@@ -68,7 +69,7 @@
   - Top Rated of 2011
   - Top Rated of 2010
 
-- 4_decades_top.yml
+- _decades_top.yml
   - Top Rated of the 2020s
   - Top Rated of the 2010s
   - Top Rated of the 2000s
@@ -79,12 +80,28 @@
   - Top Rated of the 1950s
   - Top Rated of the 1940s
 
-- 5_genre_popular.yml
+- _awards.yml
+  - Oscar Winners
+  - Oscar Nominees
+  - Golden Globes Winners
+  - Golden Globes Nominees
+  - BAFTA Winners
+  - Berlinale Winners
+  - Cannes Film Festival Winners
+  - European Film Award Winners
+  - Sundance Winners
+  - Venice Film Festival Winners
+  - Critic's Choice Winners
+  - Spirit Awards Winners
+  - Razzie Winners
+
+- _genre_popular.yml
   - Popular in Action
   - Popular in Adventure
   - Popular in Animation
   - Popular in Biography
   - Popular in Comedy
+  - Popular in Documentary
   - Popular in Drama
   - Popular in Family
   - Popular in Fantasy
@@ -95,16 +112,18 @@
   - Popular in Mystery
   - Popular in Romance
   - Popular in Sci-Fi
+  - Popular in Sport
   - Popular in Thriller
   - Popular in War
   - Popular in Western
 
-- 6_genre_top.yml
+- _genre_top.yml
   - Top Rated in Action
   - Top Rated in Adventure
   - Top Rated in Animation
   - Top Rated in Biography
   - Top Rated in Comedy
+  - Top Rated in Documentary
   - Top Rated in Drama
   - Top Rated in Family
   - Top Rated in Fantasy
@@ -115,6 +134,7 @@
   - Top Rated in Mystery
   - Top Rated in Romance
   - Top Rated in Sci-Fi
+  - Top Rated in Sport
   - Top Rated in Thriller
   - Top Rated in War
   - Top Rated in Western
@@ -123,12 +143,13 @@
   - Top Rated in Absurdism
   - Top Rated in Aliens
   - Top Rated in Alternate History
+  - Top Rated in Animatronic
   - Top Rated in Anti-Hero
   - Top Rated in Apocalypse
-  - Top Rated in Artifical Intelligence
-  - Top Rated in Assasins
+  - Top Rated in Artificial Intelligence
+  - Top Rated in Assassins
   - Top Rated in Betrayal
-  - Top Rated in Black Comedy
+  - Top Rated in Blaxploitation
   - Top Rated in Boxing
   - Top Rated in Bugs
   - Top Rated in Cannibals
@@ -136,30 +157,38 @@
   - Top Rated in Chick-Flick
   - Top Rated in Comics
   - Top Rated in Coming Of Age
+  - Top Rated in Conspiracy
   - Top Rated in Con-Artists
   - Top Rated in Cop
   - Top Rated in Costume Drama
   - Top Rated in Courtroom
   - Top Rated in Cyberpunk
+  - Top Rated in Dark Comedy
   - Top Rated in Dark Fantasy
+  - Top Rated in Demonic
   - Top Rated in Detective
-  - Top Rated in Distaster
+  - Top Rated in Dinosaurs
+  - Top Rated in Disaster
   - Top Rated in Dragons
   - Top Rated in Dystopian
   - Top Rated in Epics
   - Top Rated in Espionage
   - Top Rated in Experimental
+  - Top Rated in Exploitation
   - Top Rated in Fairytale
   - Top Rated in Found Footage
   - Top Rated in Fugitives
+  - Top Rated in Futuristic
   - Top Rated in Gangster
   - Top Rated in Ghosts
   - Top Rated in Gothic
+  - Top Rated in Grindhouse
   - Top Rated in Heartbreak
   - Top Rated in Heists
   - Top Rated in Historical Event
   - Top Rated in Hostage
   - Top Rated in Hustle
+  - Top Rated in LGBTQ+
   - Top Rated in Martial-Arts
   - Top Rated in Medical
   - Top Rated in Medieval
@@ -172,12 +201,15 @@
   - Top Rated in Naval
   - Top Rated in Ninjas
   - Top Rated in Novel
+  - Top Rated in Nunsploitation
   - Top Rated in Occult
   - Top Rated in Outerspace
   - Top Rated in Outlaw
   - Top Rated in Pandemic
   - Top Rated in Paranormal
+  - Top Rated in Parody
   - Top Rated in Period Drama
+  - Top Rated in Petrolhead
   - Top Rated in Philosophical
   - Top Rated in Political
   - Top Rated in Post-Apocalyptic
@@ -214,10 +246,32 @@
   - Top Rated in Vampires
   - Top Rated in Video Game
   - Top Rated in Werewolves
-  - Top Rated in Whodunit
+  - Top Rated in Whodunit?
   - Top Rated in Wizardry & Witchcraft
   - Top Rated in World War
   - Top Rated in Zombies
 
-- 9_collections.yml
+- _studio.yml
+  - Columbia
+  - Criterion
+  - DC Entertainment
+  - DreamWorks
+  - Lionsgate
+  - Lucasfilm
+  - Marvel Studios
+  - MGM
+  - Paramount Pictures
+  - Pixar
+  - Samuel Goldwyn Company
+  - SONY
+  - Studio Ghibli
+  - Touchstone
+  - Twentieth Century Fox
+  - United Artists
+  - Universal
+  - Walt Disney
+  - Warner Bros
+
+- _collections.yml
   - TMDb Collections
+```

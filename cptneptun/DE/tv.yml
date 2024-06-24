@@ -1,0 +1,180 @@
+############################
+#        TEMPLATES         #
+############################
+
+templates:
+  franchise:
+    optional:
+      - list
+      - shows
+    url_poster: https://theposterdb.com/api/assets/<<poster>>    
+    tvdb_list_details: <<list>>
+    tvdb_show: <<shows>>
+    sort_title: <<collection_name>>
+    collection_mode: hide
+    collection_order: release
+    schedule: 
+     - monthly(1)
+     - monthly(15)
+
+
+############################
+#       COLLECTIONS        #
+############################
+
+collections:
+
+### HINZUGEFUEGT
+
+  🗓️ Neue Folgen:
+    smart_filter:
+      sort_by: episode_added.desc
+      all:
+        episode_added: 92
+        episode_air_date: 365
+      limit: 50
+    builder_level: show
+    url_poster: https://theposterdb.com/api/assets/407033
+    summary: Serien mit neuen Folgen innerhalb der letzten 3 Monate.
+    collection_mode: hide
+    sort_title: "+2_1_neuerscheinungen"
+    visible_library: true
+    visible_home: true
+
+  🎞️ Ältere Serien:
+    smart_filter:
+      sort_by: episode_added.desc
+      all:
+        episode_added: 92
+        episode_air_date.not: 365
+      limit: 50
+    url_poster: https://theposterdb.com/api/assets/407034
+    summary: Ältere Serien, die in den letzten 3 Monaten hinzugefügt wurden.
+    collection_mode: hide
+    sort_title: "+2_2_added"
+    visible_library: true
+    visible_home: true
+
+### EMPFEHLUNGEN
+
+  📈 Meistgesehen Diese Woche:
+    trakt_watched_weekly: 25
+    trakt_trending: 25
+    tmdb_trending_weekly: 25
+    url_poster: https://theposterdb.com/api/assets/396719
+    summary: Meistgesehene Serien diese Woche.
+    collection_mode: hide
+    collection_order: random
+    sort_title: "+1_1_meistgesehen"
+    visible_home: true
+    visible_library: true
+    schedule: weekly(monday)
+
+### FEIERTAGE
+
+  🎅 Weihnachten:
+    trakt_list:
+      - https://trakt.tv/users/uyn5hnpr2wdjwksh/lists/christmas-episodes
+      - https://trakt.tv/users/philrivers/lists/christmas-episodes
+    imdb_list:
+      - https://www.imdb.com/search/keyword/?keywords=christmas-episode
+      - https://www.imdb.com/list/ls027673882/
+      - https://www.imdb.com/list/ls508664212/
+      - https://www.imdb.com/list/ls003631244/
+    plex_search:
+      all:
+        genre.not:
+          - Food
+          - Documentary
+        any:
+          episode_title:
+            - Christmas
+            - Weihnachten
+    url_poster: https://theposterdb.com/api/assets/111695
+    summary: Bald ist Weihnachten! Schaue dir die Weihnachtsfolgen aller Serien an, um in Stimmung zu kommen.
+    collection_mode: hide
+    collection_order: episode_release.asc
+    collection_level: episode
+    builder_level: episode
+    sort_title: "+8_1_weihnachten"
+    visible_home: range(11/30-12/31)
+    visible_library: range(11/30-12/31)
+    schedule: yearly(11/30)
+
+### JAHRZENTE
+
+  📺 Das Beste der 2020er:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_special,tv_miniseries&release_date=2020-01-01,2029-12-31&user_rating=5.0,10.0&num_votes=1000,&languages=en&user_rating,desc&count=150
+      limit: 200
+    url_poster: https://theposterdb.com/api/assets/350800
+    summary: "Die bestbewerteten Serien der 2020er Jahre"
+    collection_mode: hide
+    collection_order: custom
+    sort_title: "+4_1_best2020"
+    visible_library: true
+    limit: 50
+    schedule: weekly(monday)
+  
+  📺 Das Beste der 2010er:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_special,tv_miniseries&release_date=2010-01-01,2019-12-31&user_rating=5.0,10.0&num_votes=1000,&languages=en&user_rating,desc&count=150
+      limit: 200
+    url_poster: https://theposterdb.com/api/assets/350799
+    summary: "Die bestbewerteten Serien der 2010er Jahre"
+    collection_mode: hide
+    collection_order: custom
+    sort_title: "+4_2_best2010"
+    visible_library: true
+    limit: 50
+    schedule: weekly(monday)
+
+### FRANCHISES
+
+  Arrowverse:
+    template: {name: franchise, list: https://thetvdb.com/lists/arrowverse, poster: 25569}
+  
+  Breaking Bad Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/Breaking-Bad, poster: 244137}
+  
+  Boys Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/the-boys, poster: 408209}
+  
+  Élite Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/elite, poster: 155311}
+
+  Game of Thrones Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/game-of-thrones, poster: 98682}
+
+  Narcos Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/narcos, poster: 58210}
+
+  Walking Dead Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/the-walking-dead, shows: 427464, poster: 128886}
+
+### ANDERE
+
+  ⭐️ Miniserien:
+    plex_all: true
+    filters:
+      tmdb_type: miniseries
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Mini-Series.jpg
+    summary: Eine Miniserie ist eine Fernsehserie, die eine Geschichte in einer bestimmten, begrenzten Anzahl von Episoden erzählt. Eine Miniserie kann auch als Fernsehfilm mit einer begrenzten Anzahl von Episoden bezeichnet und gezeigt werden. Ab 2021 hat die Popularität des Miniserienformats sowohl bei Streaming-Diensten als auch im Fernsehen zugenommen.
+    collection_mode: hide
+    collection_order: release
+    sort_title: "+9_1_miniserien"
+    visible_library: true
+    item_label: miniserie
+    schedule: weekly(monday)
+  
+  👨‍✈️ Piloten:
+    builder_level: episode
+    plex_pilots: true
+    filters:
+      plays.lt: 1
+    summary: Sammlung aller (ungesehenen) Pilotepisoden.
+    collection_mode: hide
+    collection_order: custom
+    sort_title: "+6_3_piloten"
+    visible_library: true
+    schedule: weekly(monday)

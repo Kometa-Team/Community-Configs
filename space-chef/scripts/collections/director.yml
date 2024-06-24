@@ -1,0 +1,52 @@
+#   /$$$$$$$  /$$$$$$ /$$$$$$$  /$$$$$$$$  /$$$$$$  /$$$$$$$$  /$$$$$$  /$$$$$$$   /$$$$$$ 
+#  | $$__  $$|_  $$_/| $$__  $$| $$_____/ /$$__  $$|__  $$__/ /$$__  $$| $$__  $$ /$$__  $$
+#  | $$  \ $$  | $$  | $$  \ $$| $$      | $$  \__/   | $$   | $$  \ $$| $$  \ $$| $$  \__/
+#  | $$  | $$  | $$  | $$$$$$$/| $$$$$   | $$         | $$   | $$  | $$| $$$$$$$/|  $$$$$$ 
+#  | $$  | $$  | $$  | $$__  $$| $$__/   | $$         | $$   | $$  | $$| $$__  $$ \____  $$
+#  | $$  | $$  | $$  | $$  \ $$| $$      | $$    $$   | $$   | $$  | $$| $$  \ $$ /$$  \ $$
+#  | $$$$$$$/ /$$$$$$| $$  | $$| $$$$$$$$|  $$$$$$/   | $$   |  $$$$$$/| $$  | $$|  $$$$$$/
+#  |_______/ |______/|__/  |__/|________/ \______/    |__/    \______/ |__/  |__/ \______/ 
+
+external_templates:
+  file: config/scripts/collections/templates.yml
+  template_variables:
+    collection_section: "801"
+
+dynamic_collections:
+  Top Directors:
+    type: director
+    data:
+      depth: 5
+      limit: 25
+    title_format: <<key_name>>
+    template:
+      - tmdb_person
+      - smart_filter
+      - shared
+    template_variables:
+      tmdb_person:
+        default: <<value>>
+      tmdb_person_offset:
+        default: 0
+        Richard Brooks: 1
+      search_term:
+        default: director
+      search_value:
+        default: tmdb
+      translation_key:
+        default: director
+      dynamic:
+        default: true
+    include:
+        - Adam McKay
+        # - Alfred Hitchcock
+        - Christopher Nolan
+        - James Cameron
+        # - M. Night Shyamalan
+        - Martin Scorsese
+        # - Michael Bay
+        #- Quentin Tarantino
+        - Ridley Scott
+        - Steven Spielberg
+        # - Tim Burton
+        # - Zack Snyder

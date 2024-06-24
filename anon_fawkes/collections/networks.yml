@@ -6,7 +6,7 @@ external_templates:
 templates:
   network:
     mdblist_list:
-      url: https://mdblist.com/lists/plexmetamanager/<<type>>-<<library_type>>s/
+      url: https://mdblist.com/lists/k0meta/<<type>>-<<library_type>>s/
     sync_mode: sync
     collection_order: custom
     sort_title: +<<collection_name>>

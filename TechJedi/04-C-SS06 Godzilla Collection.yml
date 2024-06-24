@@ -1,0 +1,10 @@
+## Godzilla Collection
+collections:
+  Godzilla Collection:
+    sort_title: Godzilla
+    collection_order: release
+    plex_all: true
+    filters:
+        filepath:
+          - Godzilla
+          - Gojira

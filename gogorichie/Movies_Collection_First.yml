@@ -40,7 +40,7 @@ collections:
           - 2021
           - 2022
           - 2023
-    collection_order: release.desc
+    collection_order: release
     collection_mode: default
   IMDB Top 250:
     imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=25
@@ -70,7 +70,7 @@ collections:
     collection_order: release
     collection_mode: default
     schedule: weekly(friday)
-#Update montly
+#Update monthly
   IMDB Top 100 Superhero Movies:
     imdb_list: https://www.imdb.com/list/ls008583762/
     summary: Top 100 Superhero Movies.

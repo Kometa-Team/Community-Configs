@@ -1,0 +1,27 @@
+collections:
+## Star Wars Saga
+  Star Wars Saga:    
+    sort_title: Star Wars Saga
+    summary: "Chronologically, the story spans 67 years. It begins with Anakin Skywalker, the Chosen One of Jedi prophecy, as the prequel trilogy charts his rise as a Jedi Knight through his fall to the dark side of the Force and becoming Darth Vader. The original trilogy tells the story of Anakin's children, Luke Skywalker and Leia Organa, as they lead the fight against the Galactic Empire, and Luke saves Anakin from the dark side and becomes a Jedi in his own right. The sequel trilogy focuses on Rey, a Force prodigy who is swept up into a new galactic conflict and faces off against Anakin's fallen grandson, Kylo Ren, while becoming the first of a new generation of Jedi."
+    collection_order: alpha
+    imdb_id: tt0120915, tt0121765, tt0121766, tt3778644, tt3748528, tt0076759, tt0080684, tt0086190, tt2488496, tt2527336, tt2527338
+    show_filtered: true
+    sync_mode: sync
+    filters:
+      edition.isnot:
+        - "Despecialized Edition v2.5"
+        - "Harmy's Despecialized Edition v2.5"
+        - "Silver Screen Edition 35mm v1"
+        - "Despecialized Edition Remastered v2.0"
+        - "Revisited Edition"  
+## Star Wars Collection
+  Star Wars Collection:    
+    sort_title: Star Wars
+    collection_order: alpha
+    imdb_id: tt0094012 # Space Balls
+    plex_all: true
+    filters:
+      filepath:
+        - "Star Wars"      
+
+    

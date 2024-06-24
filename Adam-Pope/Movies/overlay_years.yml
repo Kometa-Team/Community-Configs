@@ -1,0 +1,14 @@
+overlays: 
+  year:
+    overlay:
+      name: text(<<originally_available[%Y]>>)
+      horizontal_offset: 45
+      vertical_offset: 45
+      horizontal_align: left
+      vertical_align: top
+      font_size: 63
+      font_color: "#FFFFFF"
+      back_color: "#00000099"
+      back_radius: 5
+      back_padding: 20
+    plex_all: true
