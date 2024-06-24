@@ -1,0 +1,49 @@
+templates:
+  generic_list:
+    smart_label: title.asc
+    sort_title: +2_<<collection_name>>
+    visible_home: true
+    visible_shared: true
+    radarr_add_missing: true
+
+collections:
+  Kids Movies:
+    plex_search:
+      any:
+        content_rating:
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+  AEW PPV:
+    template:
+      name: generic_list
+    imdb_list:
+      - https://www.imdb.com/list/ls044462968/
+      - https://www.imdb.com/list/ls560016464/
+      - https://www.imdb.com/list/ls523574560/
+      - https://www.imdb.com/list/ls509051450/
+      - https://www.imdb.com/list/ls566701386/
+    item_label: aew,wrestling
+    radarr_folder: "/data/media/movies/wrestling"
+    filters:
+      year.gte: 2022
+    url_poster: https://i.imgur.com/Q3gZvGl.jpeg
+  WWE PPV:
+    template:
+      name: generic_list
+    imdb_list:
+      - https://www.imdb.com/list/ls066790094/
+      - https://www.imdb.com/list/ls523285888/
+      - https://www.imdb.com/list/ls523039717/
+      - https://www.imdb.com/list/ls538431085/
+      - https://www.imdb.com/list/ls021456885/
+    item_label: wwe,wrestling
+    radarr_folder: "/data/media/movies/wrestling"
+    filters:
+      year.gte: 2022
+    url_poster: https://i.imgur.com/3eNUU6q.jpeg
