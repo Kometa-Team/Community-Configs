@@ -1,0 +1,204 @@
+collections:
+## Monty Python Collection
+  Monty Python Collection:
+    imdb_search:
+      type: movie
+      list: ls072012494
+      limit: 100
+    sort_title: +_06 Monty Python
+    collection_order: random
+    summary: "Monty Python is a renowned British comedy group that became immensely popular in the 1970s. Their unique style of surreal and absurdist humor has had a lasting impact on comedy and has garnered a dedicated fan base worldwide. The core members of Monty Python include Graham Chapman, John Cleese, Terry Gilliam, Eric Idle, Terry Jones, and Michael Palin.
+
+The group is best known for their television series, \"Monty Python's Flying Circus,\" which aired from 1969 to 1974. The show's sketches were a delightful mix of social satire, slapstick comedy, and absurdity. The iconic images and catchphrases from the show, such as the Ministry of Silly Walks and the Dead Parrot sketch, have become part of popular culture.
+
+Monty Python's success extended to the big screen with several films, the most notable being \"Monty Python and the Holy Grail\" (1975). This comedy masterpiece hilariously parodies the Arthurian legend and showcases the group's unique brand of humor. Other notable films include \"Life of Brian\" (1979), a satirical take on religion, and \"The Meaning of Life\" (1983), which comically explores the various stages and philosophies of human existence.
+
+Monty Python's work continues to be celebrated for its wit, inventiveness, and ability to push the boundaries of comedy. Their influence can be seen in numerous comedic acts and films that followed. Even after decades, their sketches and films still evoke laughter and hold a special place in the hearts of comedy enthusiasts around the world."
+## Abbott & Costello Collection
+  Abbott & Costello Collection:
+    sort_title: +_06 Abbott & Costello Collection
+    collection_order: release
+    plex_search:
+      any:
+        actor:
+          - "Bud Abbott"
+          - "Lou Costello"
+    summary: "Abbott and Costello were a popular comedy duo in the mid-20th century, known for their hilarious stage shows, radio programs, and films. Comprising of William \"Bud\" Abbott and Lou Costello, the duo's comedic chemistry and timing made them one of the most iconic and enduring comedy teams in history.
+
+Bud Abbott, the straight man, played the role of the clever yet exasperated leader, while Lou Costello was the bumbling, childlike comedian. Together, they perfected the art of slapstick comedy, wordplay, and visual gags, creating unforgettable routines and catchphrases that are still recognized today.
+
+Abbott and Costello starred in numerous successful films such as \"Buck Privates\", \"Abbott and Costello Meet Frankenstein\", and \"Who's on First?\" Among their achievements, their famous \"Who's on First?\" routine, where the confusion surrounding names of baseball players led to hilarious misunderstandings, remains a classic in comedy history. Abbott and Costello's legacy continues to inspire and entertain audiences, solidifying their place as comedy legends."
+## Stephen King Collection
+  Stephen King Collection:
+    sort_title: +_06 Stephen King Collection
+    collection_order: release
+    plex_search:
+      any:
+        writer: "Stephen King"
+        actor: "Stephen King"
+        director: "Stephen King"
+    summary: "Stephen King, the renowned author of suspenseful and horror novels, has certainly made a significant impact on the world of movies. While he is best known for his exceptional writing, King has also had involvement with the film industry in various ways. His works have been regularly adapted into movies, with many becoming cult classics and box office successes.
+
+King's novels have served as the source material for numerous movies, including iconic films like \"The Shining,\" \"Carrie,\" and \"It.\" These adaptations have brought his chilling stories to life on the big screen, captivating audiences with their psychological thrills, supernatural elements, and memorable characters. King's ability to create vivid worlds and tap into deep human fears has made his works particularly suitable for cinematic adaptations.
+
+Furthermore, Stephen King has occasionally taken on a more direct role in the film industry. He has written screenplays for movies such as \"Creepshow\" and \"Maximum Overdrive,\" allowing him to explore his storytelling talent in a different medium. Additionally, King has made a handful of appearances in film adaptations of his works, often in cameo roles, adding a touch of familiarity and excitement for fans.
+
+Overall, Stephen King's impact on movies is undeniable. His novels have inspired some truly memorable films, and his involvement in the industry has further showcased his versatility as a writer. Through his storytelling prowess, King continues to captivate audiences both on the page and on the silver screen."
+## Kevin Smith Collection
+  Kevin Smith Collection:
+    sort_title: +_06 Kevin Smith Collection
+    collection_order: release
+    plex_search:
+      any:
+        writer: "Kevin Smith"
+        actor: "Kevin Smith"
+        director: "Kevin Smith"
+    summary: "Kevin Smith is an American filmmaker and actor known for his contributions to the comedy genre. He was born on August 2, 1970, in New Jersey. Smith gained popularity in the 1990s with his independent film \"Clerks,\" which he wrote, directed, and starred in. This low-budget black-and-white comedy became a cult classic and launched Smith's career. He went on to make several other movies, including \"Mallrats,\" \"Chasing Amy,\" \"Dogma,\" and \"Jay and Silent Bob Strike Back.\" 
+
+Smith often incorporates pop culture references and witty dialogue into his work. He is also associated with a fictional universe called the \"View Askewniverse,\" which interconnects many of his films. In recent years, Smith has diversified his career by venturing into podcasting and television. He has hosted various podcasts, including \"SModcast,\" and has directed episodes of popular TV shows like \"Supergirl\" and \"The Flash.\" 
+
+Kevin Smith's work has garnered a dedicated fan base, and he continues to be an influential figure in the world of indie filmmaking. His distinct style, humor, and passion for storytelling have made him a respected filmmaker within the industry." 
+## Quentin Tarantino Collection
+  Quentin Tarantino Collection:
+    sort_title: +_06 Quentin Tarantino Collection 
+    collection_order: release
+    plex_search:
+      any:
+        title: Tarantino 
+        director: Quentin Tarantino 
+        writer: Quentin Tarantino 
+        actor: Quentin Tarantino 
+    summary: "Quentin Tarantino is a highly acclaimed film director known for his distinctive style and unconventional storytelling. Born on March 27, 1963, in Knoxville, Tennessee, Tarantino has made an indelible mark on the world of cinema with his unique blend of pop culture references, nonlinear narratives, and gritty subject matter. With an impressive body of work spanning over three decades, Tarantino has earned a reputation for his bold and visually striking films, which often explore themes of violence, crime, and revenge. As a visionary director, he has garnered numerous accolades and a dedicated fan base worldwide.
+
+Tarantino's directorial debut came with the crime thriller \"Reservoir Dogs\" in 1992, which instantly established him as a force to be reckoned with in the industry. He followed up with critically acclaimed hits like \"Pulp Fiction\" (1994), \"Kill Bill\" Volumes 1 and 2 (2003-2004), and \"Inglourious Basterds\" (2009). Known for his meticulous attention to detail and love for the art form, Tarantino's films often feature compelling dialogues, memorable performances, and expertly crafted soundtracks that complement the on-screen action. His distinct directorial style, which blends genres and pays homage to classic cinema, has made him one of the most influential filmmakers of his generation.
+
+Beyond his directorial work, Tarantino has also ventured into screenwriting and produced films. His collaboration with Robert Rodriguez on \"From Dusk Till Dawn\" (1996) and the \"Sin City\" series showcased his versatility and creative vision. With his unique storytelling approach, Tarantino has managed to leave an indelible mark on the film industry and continues to captivate audiences with his thought-provoking and gripping productions.
+
+Tarantino's films often pay homage to various film genres and eras, drawing inspiration from cinema history. His passion for filmmaking is evident in every frame, and his meticulous attention to detail shines through in his work. Quentin Tarantino's films have left an indelible mark on contemporary cinema, with his distinct directorial style becoming a significant influence for aspiring filmmakers. His contributions continue to be celebrated, and his legacy as a bold and visionary director is firmly established."
+## Hitchcock Collection
+  Hitchcock Collection:    
+    sort_title: +_06 Hitchcock
+    collection_order: release
+    plex_search:
+      any:
+        title:
+          - Hitchcock
+          - "78/52"
+        producer: Alfred Hitchcock
+        director: Alfred Hitchcock
+        writer: Alfred Hitchcock
+    summary: "Alfred Hitchcock, often referred to as the \"Master of Suspense,\" was an iconic British film director and producer who left an indelible mark on the world of cinema. Born in 1899, Hitchcock began his career in the silent film era and went on to direct over 50 feature films throughout his illustrious career. Known for his innovative storytelling techniques, meticulous attention to detail, and ability to create tension and suspense, Hitchcock's films have captivated audiences for decades and continue to be celebrated for their enduring influence on the thriller and suspense genres.
+
+Hitchcock's filmography includes numerous classics that have become synonymous with his unique style and approach to filmmaking. Among his most famous works are \"Rear Window\" (1954), which explores voyeurism and paranoia through the perspective of a wheelchair-bound photographer; \"Vertigo\" (1958), a psychological thriller that delves into themes of obsession and identity; \"North by Northwest\" (1959), an action-packed espionage tale featuring iconic set pieces and a memorable score; and \"Psycho\" (1960), a groundbreaking horror film that shocked audiences with its narrative twists and chilling atmosphere. These films, along with many others, showcase Hitchcock's mastery of visual storytelling, his ability to create memorable characters, and his penchant for exploring the darker aspects of human nature.
+
+As a director, Alfred Hitchcock was known for his meticulous planning and storyboarding, which allowed him to create precise and evocative visuals that heightened the suspense and tension in his films. He was also famous for his collaborations with talented actors, composers, and cinematographers, as well as his penchant for making cameo appearances in his own films. Despite never winning a competitive Academy Award for Best director, Hitchcock's impact on the film industry is undeniable, and his legacy continues to inspire filmmakers and captivate audiences around the world."
+## Three Stooges Collection
+  Three Stooges Collection:
+    sort_title: +_06 Three Stooges
+    collection_order: release
+    plex_search:
+      any:
+        actor:
+          - Moe Howard
+          - Larry Fine
+          - Joe DeRita
+          - Joe Besser
+          - Curly Howard
+          - Shemp Howard
+    summary: "The Three Stooges is a popular American comedy team that gained popularity in the early 1930s. While the core group consisted of three main members, there were actually six individuals who played significant roles in the team. The primary trio included Moe Howard, Larry Fine, and Curly Howard. Moe, with his distinctive bowl haircut and aggressive nature, served as the de facto leader. Larry, known for his frizzy hair and violin playing, brought wit and charm to the group. Curly, recognized for his wild curly hair and comedic physicality, became a fan favorite with his hilarious antics.
+
+Over time, there were three additional members who joined the group. Shemp Howard, Moe's older brother, initially replaced Curly due to health issues. He contributed his own style of comedy, making the group's dynamic even more diverse. Joe Besser later replaced Shemp, known for his childlike persona and catchphrase \"Not so fast, buddy!\" Lastly, Joe DeRita joined the team, replacing Joe Besser. DeRita portrayed a bumbling, childlike character and added his unique comedic touch.
+
+Together, the six members of The Three Stooges created timeless slapstick comedy and earned a lasting place in the entertainment industry."
+## Laurel & Hardy Collection
+  Laurel & Hardy Collection:
+    sort_title: +_06 Laurel & Hardy
+    summary: "Laurel and Hardy were a comedy duo act during the early Classical Hollywood era of American cinema, consisting of Englishman Stan Laurel (1890–1965) and American Oliver Hardy (1892–1957). Starting their career as a duo in the silent film era, they later successfully transitioned to \"talkies\". From the late 1920s to the mid-1950s, they were internationally famous for their slapstick comedy, with Laurel playing the clumsy, childlike friend to Hardy's pompous bully. Their signature theme song, known as \"The Cuckoo Song\", \"Ku-Ku\", or \"The Dance of the Cuckoos\" (by Hollywood composer T. Marvin Hatley) was heard over their films' opening credits, and became as emblematic of them as their bowler hats.
+    
+Together, Laurel & Hardy appeared in over 100 films during their career, spanning from the 1920s to the 1950s. Their movies, such as \"The Music Box\" and \"Sons of the Desert,\" continue to entertain audiences with their timeless humor. They left an indelible mark on the history of comedy and remain beloved figures in the world of film."
+    collection_order: release
+    imdb_id: tt3385524
+    plex_search:
+      any:
+        actor: 
+          - Stan Laurel
+          - Oliver Hardy
+## Marx Brothers Collection
+  Marx Brothers Collection:
+    sort_title: +_06 Marx Brothers Collection
+    summary: "The Marx Brothers were a comedic family act that rose to fame during the early 20th century. Consisting of four brothers—Groucho, Harpo, Chico, and Zeppo—they delighted audiences through their zany antics and razor-sharp wit. Known for their vaudeville performances, Broadway shows, and films, the Marx Brothers developed a unique style of comedy characterized by fast-paced dialogue, physical gags, and hilarious improvisation. Groucho's distinctive mustache and cigar, Harpo's curly hair and horn, and Chico's Italian accent became iconic elements of their comedy. Their movies, including \"Duck Soup\" and \"A Night at the Opera,\" continue to be regarded as comedy classics. The Marx Brothers left an indelible mark on the entertainment industry, showcasing their unmatched comic genius and leaving audiences laughing throughout generations."
+    collection_order: release
+    plex_search:
+      any:
+        actor: 
+          - Groucho Marx
+          - Harpo Marx
+          - Chico Marx
+          - Zeppo Marx
+## Buster Keaton Collection:
+  Buster Keaton Collection:
+    sort_title: +_06 Buster Keaton
+    summary: "Buster Keaton was a celebrated actor, comedian, and director during the silent film era. Born on October 4, 1895, in Kansas, USA, Keaton gained fame for his incredible physical comedy and deadpan expression. He appeared in numerous silent films, leaving an indelible mark with his unique style and exceptional stunts.
+
+Some of Keaton's most notable movies include:
+
+1. \"The General\" (1926): Widely regarded as one of the greatest silent films, \"The General\" showcases Keaton's talents as a director and actor. Set during the Civil War, Keaton plays a train engineer, displaying his remarkable physicality and comedic timing.
+
+2. \"Sherlock Jr.\" (1924): Keaton portrays a projectionist who dreams of becoming a master detective. This film showcases his ability to seamlessly blend slapstick comedy with imaginative storytelling.
+
+3. \"Steamboat Bill, Jr.\" (1928): In this film, Keaton plays the son of a steamboat captain, navigating humorous and dangerous situations. It is known for its iconic cyclone scene, where Keaton's impeccable timing shines.
+
+4. \"The Navigator\" (1924): Keaton co-directs and stars in this comedy about a wealthy man and a young woman who find themselves alone on a deserted ship. The film combines physical comedy and visual gags to great effect.
+
+5. \"Our Hospitality\" (1923): Keaton co-wrote, directed, and starred in this period comedy. Set in the 1830s, the film is centered around a family feud, leading to hilarious and thrilling moments.
+
+Throughout his career, Keaton faced challenges due to the transition from silent films to \"talkies\" in the late 1920s. His career experienced a decline during the 1930s, but he made a comeback in the 1940s with appearances in various movies and TV shows.
+
+Buster Keaton's contributions to the film industry left a lasting legacy, inspiring generations of filmmakers and comedians. His ability to combine physical stunts with comedy continues to captivate audiences to this day."
+    collection_order: release
+    plex_search:
+      any:
+        actor: Buster Keaton
+        writer: Buster Keaton
+        director: Buster Keaton
+## Peter Sellers Collection:
+  Peter Sellers Collection:
+    sort_title: +_06 Peter Sellers
+    summary: "Peter Sellers was a British actor and comedian, born on September 8, 1925, and passed away on July 24, 1980. He is best known for his incredible versatility, impeccable timing, and transformative character portrayals. Sellers rose to prominence in the 1950s and 1960s, becoming one of the most talented and respected comedic actors of his time. His career spanned over three decades, during which he starred in numerous successful films, including the Pink Panther series, Dr. Strangelove, and Being There.
+
+Sellers had an extraordinary ability to adapt to different roles, effortlessly switching between characters with distinct accents, personalities, and physical traits. He often played bumbling and eccentric characters, infusing humor into every scene. Sellers' most iconic role was that of Inspector Jacques Clouseau in the Pink Panther series, where his comedic timing and physical comedy skills shone through. He also received critical acclaim for his performance as multiple characters in Stanley Kubrick's Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb.
+
+Despite his immense talent, Sellers was known for his complex personality. He could be demanding and difficult to work with, often clashing with directors and co-stars. Nevertheless, his dedication to his craft and his ability to bring laughter to audiences around the world made him a beloved figure in the entertainment industry. Sellers' impact on comedy and his legacy as a versatile actor continue to be celebrated today, inspiring generations of performers who strive to push boundaries and bring joy to the screen."
+    collection_order: release
+    plex_search:
+      any:
+        actor: Peter Sellers
+## Charlie Chaplin Collection
+  Charlie Chaplin Collection:
+    sort_title: +_06 Charlie Chaplin
+    summary: "Charlie Chaplin was a legendary figure in the world of silent film and comedy, leaving an indelible mark on the history of cinema. Born in 1889 in London, England, Chaplin started his career in the vaudeville circuit before transitioning to the film industry. He rose to fame in the early 1910s, becoming renowned for his iconic character \"The Tramp\" with his trademark bowler hat, mustache, and cane.
+
+Chaplin's contributions to cinema were revolutionary. He not only acted in his films but also wrote, directed, and produced them, showcasing his immense talent and creativity. His films often delved into social and political themes, blending humor with poignant storytelling. Some of his most notable works include \"The Kid\" (1921), \"City Lights\" (1931), and \"Modern Times\" (1936), which continue to resonate with audiences today.
+
+Throughout his career, Chaplin received numerous accolades for his contributions to the film industry, including four Academy Awards. His unique brand of physical comedy and expressive acting style made him one of the most recognizable and beloved performers of his era. Even though the era of silent film has long passed, Chaplin's impact on cinema continues to be celebrated, and his work remains an essential part of film history."
+    collection_order: release
+    plex_search:
+      any:
+        actor: Charlie Chaplin
+        writer: Charlie Chaplin
+        director: Charlie Chaplin
+## Michael Caine Collection
+  Michael Caine Collection:
+    sort_title: +_06 Michael Caine Collection
+    summary: "Sir Michael Caine, born Maurice Joseph Micklewhite Jr. on March 14, 1933, is a highly acclaimed British actor known for his prolific career spanning over six decades. With his distinctive voice, charismatic presence, and versatile acting skills, Caine has become one of the most respected and beloved actors in the industry. He has portrayed a wide range of characters, from suave spies to meditative philosophers, bringing depth and authenticity to each role. Caine's contributions to film have earned him numerous awards, including two Academy Awards and multiple BAFTAs, cementing his status as an icon of the silver screen.
+
+Caine's acting career began in the 1950s, but he gained international fame in the 1960s with his roles in iconic films such as \"Zulu\" (1964) and \"Alfie\" (1966). He exhibited his dramatic prowess in films like \"The Ipcress File\" (1965) and \"Sleuth\" (1972), showcasing his ability to captivate audiences with his on-screen presence. Caine's collaborations with esteemed director Christopher Nolan in the 2000s further elevated his career, particularly through his roles in \"Batman Begins\" (2005), \"The Dark Knight\" (2008), and \"Inception\" (2010).
+
+Beyond his film career, Caine is also known for his charitable work and contributions to the entertainment industry. He has been an advocate for numerous causes, including education and poverty alleviation. With his remarkable talent, longevity, and philanthropic efforts, Michael Caine's impact on the world of cinema and his contributions to society make him a legendary figure in the realm of acting."
+    collection_order: release
+    plex_search:
+      any:
+        actor: Michael Caine
+        writer: Michael Caine
+        director: Michael Caine
+ 
