@@ -1,6 +1,71 @@
 ## This file is a template remove the .template to use the file
 
 libraries:
+  4K TV Shows:
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    collection_files:
+    - file: config/TVShows.yml
+    #- file: config/Genre.yml
+    overlay_files:
+    #- reapply_overlays: true
+    - default: network
+      template_variables:
+        builder_level: season
+        vertical_position: bottom
+        horizontal_position: center
+        horizontal_offset: 30
+        vertical_offset: 50
+        back_color: '#00000000'
+    - default: languages
+      template_variables:
+        builder_level: episode
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000000'
+        font_color: '#00000000'
+        back_width: 102
+        text: ''
+        final_name: <<key>>
+    - default: status
+      template_variables:
+        horizontal_align: center
+        vertical_align: top
+        vertical_offset: 0
+        horizontal_offset: 0
+        back_height: 80
+        back_width: 1100
+        font: config/fonts/Avenir_95_Black.ttf
+        font_size: 60
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#FFFFFF'
+    - default: runtimes
+      template_variables:
+        builder_level: episode
+        horizontal_align: right
+        back_color: '#00000000'
+        back_height: 80
+        vertical_offset: 20
+        horizontal_offset: 18
+        text: ''
+        back_width: 205
+    - remove_overlays: false
+    - file: config/overlays_tv.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K: true
+        4K_banner: true
+    settings:
+      asset_directory: /assets/4K TV Shows
+      prioritize_assets: true
+    operations:
+      assets_for_all: true
   4K Movies:
     schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
     schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
@@ -14,13 +79,15 @@ libraries:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
+        back_color: '#00000000'
     - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         text: ''
         final_name: <<key>>
     - default: runtimes
@@ -30,6 +97,7 @@ libraries:
         horizontal_offset: 140
         text: ''
         back_width: 205
+        back_color: '#00000000'
     - remove_overlays: false
     - file: config/overlays_movies.yml
       template_variables:
@@ -56,13 +124,15 @@ libraries:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
+        back_color: '#00000000'
     - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         text: ''
         final_name: <<key>>
     - default: runtimes
@@ -72,6 +142,7 @@ libraries:
         horizontal_offset: 140
         text: ''
         back_width: 205
+        back_color: '#00000000'
     - remove_overlays: false
     - file: config/overlays_movies.yml
       template_variables:
@@ -97,13 +168,15 @@ libraries:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
+        back_color: '#00000000'
     - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         text: ''
         final_name: <<key>>
     - default: runtimes
@@ -113,6 +186,7 @@ libraries:
         horizontal_offset: 140
         text: ''
         back_width: 205
+        back_color: '#00000000'
     - remove_overlays: false
     - file: config/overlays_movies.yml
       template_variables:
@@ -138,13 +212,15 @@ libraries:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
+        back_color: '#00000000'
     - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         text: ''
         final_name: <<key>>
     - default: runtimes
@@ -154,6 +230,7 @@ libraries:
         horizontal_offset: 140
         text: ''
         back_width: 205
+        back_color: '#00000000'
     - remove_overlays: false
     - file: config/overlays_movies.yml
       template_variables:
@@ -182,6 +259,7 @@ libraries:
         horizontal_position: center
         horizontal_offset: 30
         vertical_offset: 50
+        back_color: '#00000000'
     - default: languages
       template_variables:
         builder_level: episode
@@ -189,7 +267,8 @@ libraries:
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         back_width: 102
         text: ''
         final_name: <<key>>
@@ -212,7 +291,7 @@ libraries:
       template_variables:
         builder_level: episode
         horizontal_align: right
-        back_color: '#00000099'
+        back_color: '#00000000'
         back_height: 80
         vertical_offset: 20
         horizontal_offset: 18
@@ -244,6 +323,7 @@ libraries:
         horizontal_position: center
         horizontal_offset: 30
         vertical_offset: 50
+        back_color: '#00000000'
     - default: languages
       template_variables:
         builder_level: episode
@@ -251,7 +331,8 @@ libraries:
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         back_width: 102
         text: ''
         final_name: <<key>>
@@ -274,7 +355,7 @@ libraries:
       template_variables:
         builder_level: episode
         horizontal_align: right
-        back_color: '#00000099'
+        back_color: '#00000000'
         back_height: 80
         vertical_offset: 20
         horizontal_offset: 18
@@ -306,6 +387,7 @@ libraries:
         horizontal_position: center
         horizontal_offset: 30
         vertical_offset: 50
+        back_color: '#00000000'
     - default: languages
       template_variables:
         builder_level: episode
@@ -313,7 +395,8 @@ libraries:
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         back_width: 102
         text: ''
         final_name: <<key>>
@@ -332,11 +415,15 @@ libraries:
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
         back_color: '#FFFFFF'
+        #back_color_airing: '#016920'
+        #back_color_returning: '#81007F'
+        #back_color_canceled: '#ed1f1f'
+        #back_color_ended: '#000847'
     - default: runtimes
       template_variables:
         builder_level: episode
         horizontal_align: right
-        back_color: '#00000099'
+        back_color: '#00000000'
         back_height: 80
         vertical_offset: 20
         horizontal_offset: 18
