@@ -38,6 +38,13 @@
   - Parental: Recently Released
   - Parental: Top Rated
 
+- _family.yml
+  - Family: All
+  - Family: Random
+  - Family: Recently Added
+  - Family: Recently Released
+  - Family: Top Rated
+
 - _documentary.yml
   - Documentaries: All
   - Documentaries: Random
@@ -51,6 +58,20 @@
   - Stand-up: Recently Added
   - Stand-up: Recently Released
   - Stand-up: Top Rated
+
+- _sports.yml
+  - Sports: All
+  - Sports: Random
+  - Sports: Recently Added
+  - Sports: Recently Released
+  - Sports: Top Rated
+
+- _anime.yml
+  - Anime: All
+  - Anime: Random
+  - Anime: Recently Added
+  - Anime: Recently Released
+  - Anime: Top Rated
 
 - _year_top.yml
   - Top Rated of 2024

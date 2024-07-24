@@ -40,8 +40,32 @@ libraries:
 #      schedule: weekly(sunday)
 #    - file: config/collections/movie/050_parental_sync.yml
 #    - file: config/collections/movie/050_parental.yml
-#    - file: config/collections/movie/060_documentary.yml
-#    - file: config/collections/movie/070_standup.yml
+#    - file: config/collections/movie/060_family.yml
+#    - file: config/collections/movie/061_documentary.yml
+#    - file: config/collections/movie/062_standup.yml
+#    - file: config/collections/movie/063_sports.yml
+#    - file: config/collections/movie/064_anime.yml
+#  Movies - Kids:
+#    library_type: movie
+#    operations:
+#      - schedule: daily
+#        delete_unmanaged_collections: false
+#      - schedule: weekly(thursday)
+#        mass_audience_rating_update: mdb_average
+#        mass_critic_rating_update: mdb_metacritic
+#        mass_user_rating_update: imdb
+#        mass_content_rating_update: mdb
+#        mass_genre_update: imdb
+#      - schedule: weekly(thursday)
+#        mass_poster_update:
+#          source: tmdb
+#          seasons: false
+#          episodes: false
+#    collection_files:
+#    - file: config/collections/movie/_maintenance.yml
+#    - file: config/collections/movie/_radarr.yml
+#    - file: config/collections/movie/050_parental_sync.yml
+#    - file: config/collections/movie/050_parental.yml
   TV:
     library_type: show
     operations:
@@ -74,10 +98,14 @@ libraries:
     - file: config/collections/show/100_genre_top.yml
       schedule: weekly(saturday)
 #    - file: config/collections/show/110_network.yml
+#      schedule: weekly(wednesday)
 #    - file: config/collections/show/040_parental_sync.yml
 #    - file: config/collections/show/040_parental.yml
-#    - file: config/collections/show/050_documentary.yml
-#  KIDS:
+#    - file: config/collections/show/050_family.yml
+#    - file: config/collections/show/051_documentary.yml
+#    - file: config/collections/show/052_sports.yml
+#    - file: config/collections/show/053_anime.yml
+#  TV - Kids:
 #    library_type: show
 #    operations:
 #      - schedule: daily
