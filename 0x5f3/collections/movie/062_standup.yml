@@ -4,7 +4,7 @@ templates:
   plex:
     collection_mode: hide
     delete_not_scheduled: false
-    sort_title: "+070_<<num>>_<<collection_name>>"
+    sort_title: "+062_<<num>>_<<collection_name>>"
     sync_mode: sync
     visible_home: false
     visible_library: false
@@ -31,17 +31,27 @@ templates:
 
 collections:
   "Stand-up: All":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_standup/stand-up_all.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_all.png
     summary: "Stand-up"
+    collection_order: alpha
+#    template: {
+#                    name: plex,
+#                    num: "0"
+#                }
+#    plex_all: true
+#    filters:
+#      - filepath: "/mnt/movies-standup"
+#      - filepath: "/mnt/movies-standup-4k"
     template: {
                     mdblist_list: "list-standup",
                     mdblist_user: "archivist",
                     name: mdblist,
                     num: "0"
                 }
+                
 
   "Stand-up: Random":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_standup/stand-up_random.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_random.png
     summary: "Random Stand-up"
     template: {
                     name: plex,
@@ -54,7 +64,7 @@ collections:
       sort_by: random
 
   "Stand-up: Recently Added":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_standup/stand-up_recently-added.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_recently-added.png
     summary: "Recently added Stand-up"
     template: {
                     name: plex,
@@ -67,7 +77,7 @@ collections:
       sort_by: added.desc
 
   "Stand-up: Recently Released":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_standup/stand-up_recently-released.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_recently-released.png
     summary: "Recently released Stand-up"
     template: {
                     name: plex,
@@ -80,7 +90,7 @@ collections:
       sort_by: release.desc
 
   "Stand-up: Top Rated":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_standup/stand-up_top-rated.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_top-rated.png
     summary: "Top rated Stand-up"
     template: {
                     name: plex,

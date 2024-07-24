@@ -22,10 +22,15 @@ libraries:
     - file: config/collections/show/100_genre_top.yml
       schedule: weekly(saturday)
 #    - file: config/collections/show/110_network.yml
+#      schedule: weekly(wednesday)
 #    - file: config/collections/show/040_parental_sync.yml
 #    - file: config/collections/show/040_parental.yml
-#    - file: config/collections/show/050_documentary.yml
-#  KIDS:
+#    - file: config/collections/show/050_family.yml
+#    - file: config/collections/show/051_documentary.yml
+#    - file: config/collections/show/052_sports.yml
+#    - file: config/collections/show/053_anime.yml
+
+#  TV - Kids:
 #    library_type: show
 #    operations:
 #      - schedule: daily

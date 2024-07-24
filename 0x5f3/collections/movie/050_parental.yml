@@ -13,7 +13,7 @@ templates:
 
 collections:
   "Parental: Random":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_parental/parental_random.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_random.png
     summary: "Random movies suitable for children"
     template: {
                     name: plex,
@@ -26,7 +26,7 @@ collections:
       sort_by: random
 
   "Parental: Recently Added":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_parental/parental_recently-added.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_recently-added.png
     summary: "Recently added movies suitable for children"
     template: {
                     name: plex,
@@ -39,7 +39,7 @@ collections:
       sort_by: added.desc
 
   "Parental: Recently Released":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_parental/parental_recently-released.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_recently-released.png
     summary: "Recently released movies suitable for children"
     template: {
                     name: plex,
@@ -52,7 +52,7 @@ collections:
       sort_by: release.desc
 
   "Parental: Top Rated":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_parental/parental_top-rated.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_top-rated.png
     summary: "Top rated movies suitable for children"
     template: {
                     name: plex,

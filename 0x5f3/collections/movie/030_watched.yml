@@ -3,7 +3,7 @@
 templates:
   trakt:
     collection_mode: hide
-
+    collection_order: custom
     delete_not_scheduled: false
     sort_title: "+030_<<num>>_<<collection_name>>"
     sync_mode: sync
@@ -55,7 +55,7 @@ templates:
 
 collections:
   "Most Watched Daily":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_watched/watched_daily.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_watched/watched_daily.png
     schedule: daily
     summary: "Movies trending across the internet"
     template: {
@@ -70,7 +70,7 @@ collections:
       time_period: daily
 
   "Most Watched Weekly":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_watched/watched_weekly.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_watched/watched_weekly.png
     schedule: daily
     summary: "Movies trending across the internet"
     template: {
@@ -85,7 +85,7 @@ collections:
       time_period: weekly
 
   "Most Watched Monthly":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_watched/watched_monthly.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_watched/watched_monthly.png
     schedule: weekly(sunday)
     summary: "Movies trending across the internet"
     template: {
@@ -100,7 +100,7 @@ collections:
       time_period: monthly
 
   "Most Watched Yearly":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_watched/watched_yearly.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_watched/watched_yearly.png
     schedule: weekly(sunday)
     summary: "Movies trending across the internet"
     template: {

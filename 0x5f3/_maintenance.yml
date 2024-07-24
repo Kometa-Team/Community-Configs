@@ -19,6 +19,24 @@ libraries:
 #          episodes: false
     collection_files:
     - file: config/collections/movie/_maintenance.yml
+#  Movies - Kids:
+#    library_type: movie
+#    operations:
+#      - schedule: daily
+#        delete_unmanaged_collections: false
+#      - schedule: weekly(wednesday)
+#        mass_audience_rating_update: mdb_average
+#        mass_critic_rating_update: mdb_metacritic
+#        mass_user_rating_update: imdb
+#        mass_content_rating_update: mdb
+#        mass_genre_update: imdb
+#      - schedule: weekly(wednesday)
+#        mass_poster_update:
+#          source: tmdb
+#          seasons: false
+#          episodes: false
+#    collection_files:
+#    - file: config/collections/movie/_maintenance.yml
   TV:
     library_type: show
     operations:
@@ -37,7 +55,7 @@ libraries:
 #          episodes: false
     collection_files:
     - file: config/collections/show/_maintenance.yml
-#  KIDS:
+#  TV - Kids:
 #    library_type: show
 #    operations:
 #      - schedule: daily
