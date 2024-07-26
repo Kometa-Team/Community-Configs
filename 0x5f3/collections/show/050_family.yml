@@ -4,7 +4,7 @@ templates:
   plex:
     collection_mode: hide
     delete_not_scheduled: false
-    sort_title: "+060_<<num>>_<<collection_name>>"
+    sort_title: "+050_<<num>>_<<collection_name>>"
     sync_mode: sync
     visible_home: false
     visible_library: false
