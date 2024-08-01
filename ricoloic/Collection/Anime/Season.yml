@@ -9,7 +9,7 @@ templates:
       limit: 500
       sort_by: members
     sync_mode: sync
-    sort_title: zzzz_Season_<<sort_year>>_<<season_index>>_<<year>>
+    sort_title: "zzzz_Season_<<sort_year>>_<<season_index>>_<<year>>"
     summary: Anime airing during <<season_lower>> anime season in <<year>>.
     smart_label: release.desc
 
@@ -17,7 +17,7 @@ collections:
 
   Current Season:
     ### Always displayed as the first collection.
-    sort_title: ++++++++++++++++++_Current Season
+    sort_title: "zzzz_++++++++++++++++++_Current Season"
     mal_season:
       sort_by: members
       limit: 500

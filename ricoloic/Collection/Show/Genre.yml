@@ -4,7 +4,7 @@ templates:
     summary: <<summary>>
     default:
       exclude: Children, Anime
-    sort_title: +08<<collection_name>>
+    sort_title: "  !+08<<collection_name>>"
     smart_filter:
       sort_by: release.desc
       validate: false
