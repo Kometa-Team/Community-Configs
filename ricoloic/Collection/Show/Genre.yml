@@ -1,0 +1,99 @@
+templates:
+  Genre:
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Show/Genre/Poster/<<collection_name>>.png
+    summary: <<summary>>
+    default:
+      exclude: Children, Anime
+    sort_title: +08<<collection_name>>
+    smart_filter:
+      sort_by: release.desc
+      validate: false
+      all:
+        genre.not: <<exclude>>
+        genre: <<genre>>
+
+collections:
+  Action:
+    template:
+      name: Genre
+      genre: action
+  Adventure:
+    template:
+      name: Genre
+      genre: adventure
+  Animation:
+    template:
+      name: Genre
+      genre: animation
+      exclude: null
+  Comedy:
+    template:
+      name: Genre
+      genre: comedy
+  Crime:
+    template:
+      name: Genre
+      genre: crime
+  Documentary:
+    template:
+      name: Genre
+      genre: "biography,documentary"
+  Drama:
+    template:
+      name: Genre
+      genre: drama
+  Family:
+    template:
+      name: Genre
+      genre: family
+      exclude: null
+  Fantasy:
+    template:
+      name: Genre
+      genre: fantasy
+      exclude: null
+  History:
+    template:
+      name: Genre
+      genre: history
+  Horror:
+    template:
+      name: Genre
+      genre: horror
+  Music:
+    template:
+      name: Genre
+      genre: music
+      exclude: null
+  Mystery:
+    template:
+      name: Genre
+      genre: mystery
+  Romance:
+    template:
+      name: Genre
+      genre: romance
+  Romantic Comedy:
+    template:
+      name: Genre
+      genre: "romance,comedy"
+  Romantic Drama:
+    template:
+      name: Genre
+      genre: "romance,drama"
+  Sports:
+    template:
+      name: Genre
+      genre: sport
+  Thriller:
+    template:
+      name: Genre
+      genre: thriller
+  War:
+    template:
+      name: Genre
+      genre: war
+  Western:
+    template:
+      name: Genre
+      genre: western
