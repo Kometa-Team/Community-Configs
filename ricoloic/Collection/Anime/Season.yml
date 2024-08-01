@@ -2,7 +2,7 @@ templates:
   Anime Season:
     # sort_year is to ensure we can sort by showing the most recent seasons first
     # season_index is used to ensure we order the anime correctly, Winter > Spring > Summer > Fall
-    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Anime/Season/Poster/<<year>> <<season>>.png
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Anime/Season/Poster/<<year>><<season>>.png
     mal_season:
       season: <<season_lower>>
       year: <<year>>
@@ -24,7 +24,7 @@ collections:
     summary: Anime airing this season.
     smart_label: episode_added.desc
     sync_mode: sync
-    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Anime/Season/Poster/Current Season.png
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Anime/Season/Poster/CurrentSeason.png
 
   Summer 2024:
     template:
