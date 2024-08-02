@@ -5,7 +5,7 @@ templates:
     collection_order: custom
     collection_mode: hide
     sync_mode: sync
-    sort_title: aaa_Genre_<<collection_name>>
+    sort_title: "  !aaa_Genre_<<collection_name>>"
     url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Anime/Genre/Poster/<<poster>>.png
     summary: <<summary>>
 

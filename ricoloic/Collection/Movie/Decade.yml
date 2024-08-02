@@ -7,7 +7,7 @@ templates:
       sort_by: rating.desc
       limit: 500
     url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Movie/Decade/Poster/<<year>>s.png
-    sort_title: +07Best<<year>>
+    sort_title: "  !+07Best<<year>>"
     sync_mode: append
     collection_order: custom
     summary: <<summary>>

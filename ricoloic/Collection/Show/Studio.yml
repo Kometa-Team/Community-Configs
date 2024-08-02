@@ -23,7 +23,7 @@ templates:
       - network
     tmdb_network: <<network>>
     url_poster: https://theposterdb.com/api/assets/<<poster>>
-    sort_title: +++_<<collection_name>>
+    sort_title: "  !+++_<<collection_name>>"
     collection_mode: hide
     sync_mode: sync
 
