@@ -25,7 +25,7 @@ templates:
 
 collections:
   "Top Rated in Action":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_action.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_action.png
     summary: "Top rated movies in Action"
     template: {
                     genre: "action",
@@ -38,7 +38,7 @@ collections:
                 }
 
   "Top Rated in Adventure":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_adventure.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_adventure.png
     summary: "Top rated movies in Adventure"
     template: {
                     genre: "adventure",
@@ -51,7 +51,7 @@ collections:
                 }
 
   "Top Rated in Animation":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_animation.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_animation.png
     summary: "Top rated movies in Animation"
     template: {
                     genre: "animation",
@@ -64,7 +64,7 @@ collections:
                 }
 
   "Top Rated in Biography":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_biography.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_biography.png
     summary: "Top rated movies in Biography"
     template: {
                     genre: "biography",
@@ -77,7 +77,7 @@ collections:
                 }
 
   "Top Rated in Comedy":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_comedy.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_comedy.png
     summary: "Top rated movies in Comedy"
     template: {
                     genre: "comedy",
@@ -90,7 +90,7 @@ collections:
                 }
 
   "Top Rated in Crime":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_crime.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_crime.png
     summary: "Top rated movies in Crime"
     template: {
                     genre: "crime",
@@ -103,7 +103,7 @@ collections:
                 }
 
   "Top Rated in Documentary":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_documentary.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_documentary.png
     summary: "Top rated movies in Documentary"
     template: {
                     genre: "documentary",
@@ -115,7 +115,7 @@ collections:
                 }
 
   "Top Rated in Drama":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_drama.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_drama.png
     summary: "Top rated movies in Drama"
     template: {
                     genre: "drama",
@@ -128,7 +128,7 @@ collections:
                 }
 
   "Top Rated in Family":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_family.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_family.png
     summary: "Top rated movies in Family"
     template: {
                     genre: "family",
@@ -142,7 +142,7 @@ collections:
 
   "Top Rated in Fantasy":
     summary: "Top rated movies in Fantasy"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_fantasy.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_fantasy.png
     template: {
                     genre: "fantasy",
                     genre.not: "documentary",
@@ -154,7 +154,7 @@ collections:
                 }
 
   "Top Rated in History":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_history.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_history.png
     summary: "Top rated movies in History"
     template: {
                     genre: "history",
@@ -168,7 +168,7 @@ collections:
 
   "Top Rated in Horror":
     summary: "Top rated movies in Horror"
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_horror.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_horror.png
     template: {
                     genre: "horror",
                     genre.not: "documentary",
@@ -180,7 +180,7 @@ collections:
                 }
 
   "Top Rated in Music":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_music.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_music.png
     summary: "Top rated movies in Music"
     template: {
                     genre: "music",
@@ -193,7 +193,7 @@ collections:
                 }
 
   "Top Rated in Musicals":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_musicals.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_musicals.png
     summary: "Top rated movies in Musicals"
     template: {
                     genre: "musical",
@@ -206,7 +206,7 @@ collections:
                 }
 
   "Top Rated in Mystery":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_mystery.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_mystery.png
     summary: "Top rated movies in Mystery"
     template: {
                     genre: "mystery",
@@ -219,7 +219,7 @@ collections:
                 }
 
   "Top Rated in Romance":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_romance.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_romance.png
     summary: "Top rated movies in Romance"
     template: {
                     genre: "romance",
@@ -232,7 +232,7 @@ collections:
                 }
 
   "Top Rated in Sci-Fi":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_sci-fi.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_sci-fi.png
     summary: "Top rated movies in Sci-Fi"
     template: {
                     genre: "sci-fi",
@@ -245,7 +245,7 @@ collections:
                 }
 
   "Top Rated in Sport":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_sport.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_sport.png
     summary: "Top rated movies in Sport"
     template: {
                     genre: "sport",
@@ -258,7 +258,7 @@ collections:
                 }
 
   "Top Rated in Thriller":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_thriller.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_thriller.png
     summary: "Top rated movies in Thriller"
     template: {
                     genre: "thriller",
@@ -271,7 +271,7 @@ collections:
                 }
 
   "Top Rated in War":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_war.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_war.png
     summary: "Top rated movies in War"
     template: {
                     genre: "war",
@@ -284,7 +284,7 @@ collections:
                 }
 
   "Top Rated in Western":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_genre_top/genre_top-rated_western.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top-rated_western.png
     summary: "Top rated movies in Western"
     template: {
                     genre: "western",

@@ -1,0 +1,39 @@
+templates:
+  AniList Top Rated:
+    anilist_top_rated: 100
+    collection_order: custom
+    sync_mode: sync
+    sort_title: "  !+++_Chart_<<collection_name>>"
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Anime/Chart/Poster/<<poster>>.png
+    summary: <<summary>>
+  AniList Popular Anime:
+    anilist_popular: 100
+    collection_order: custom
+    sync_mode: sync
+    sort_title: "  !+++_Chart_<<collection_name>>"
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Anime/Chart/Poster/<<poster>>.png
+    summary: <<summary>>
+  AniList Trending Anime:
+    anilist_trending: 100
+    collection_order: custom
+    sync_mode: sync
+    sort_title: "  !+++_Chart_<<collection_name>>"
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Anime/Chart/Poster/<<poster>>.png
+    summary: <<summary>>
+
+collections:
+  Top Rated:
+    template:
+      name: AniList Top Rated
+      summary: "Discover the highest-rated anime, celebrated for their exceptional quality and storytelling."
+      poster: TopRated
+  Popular:
+    template:
+      name: AniList Popular Anime
+      summary: "Explore the most popular anime, loved by fans around the world."
+      poster: Popular
+  Trending:
+    template:
+      name: AniList Trending Anime
+      summary: "Stay up-to-date with the latest anime trends and see what's currently capturing audiences' attention."
+      poster: Trending

@@ -5,8 +5,11 @@
 - !Watched (most watched daily|weekly|monthly|yearly)
 - !Seasonal *
 - Parental
+- Family
 - Documentaries
 - Stand-up *
+- Sports
+- Anime
 - Awards
 - !Year (top-rated)
 - !Decades (top-rated)
@@ -28,24 +31,24 @@
 ```
 #### Install:
 ```
-git clone https://github.com/0x5f3/pmm.config config
+git clone --recursive https://github.com/0x5f3/kometa.config config
 ```
 #### Usage:
 
 ###### The initial process for populating collections:
 ```
-docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager:nightly --config config/config.yml --run --ignore-schedules
+docker run --rm -it -v ./config:/config kometateam/kometa:nightly --config config/config.yml --run --ignore-schedules
 ```
 ###### Following a successful initial run:
 ```
-docker run --rm -it -v ./config:/config meisnate12/plex-meta-manager:nightly --config config/config.yml --run
+docker run --rm -d -v ./config:/config kometateam/kometa:nightly --config config/config.yml --run
 ```
 ###### Notes:
 ``
-The parental configuration adds a 'Parental' label to their collections and all items included. The label is capable of being used with 'Allow Only Labels' in a user's restriction settings.
+With the parental configuration, there is a 'Parental' label added to their collections and all items included. The label can be used with 'Allow Only Labels' in a user's restriction settings.
 ``
 #
 #
 ###### A successful run will result in something similar to this:
-![movies](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_movies.png)
-![shows](https://raw.githubusercontent.com/0x5f3/pmm.config/main/assets/_/_shows.png)
+![movies](https://raw.githubusercontent.com/0x5f3/kometa.config/f75695b412b8ac0ba31fa99baa051a73d638e6e3/_/_movies.png)
+![shows](https://raw.githubusercontent.com/0x5f3/kometa.config/f75695b412b8ac0ba31fa99baa051a73d638e6e3/_/_shows.png)

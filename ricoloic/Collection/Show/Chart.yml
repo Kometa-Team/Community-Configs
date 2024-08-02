@@ -1,0 +1,25 @@
+templates:
+  Chart:
+    collection_order: custom
+    sync_mode: sync
+    sort_title: "  !++_<<collection_name>>"
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Show/Chart/Poster/<<poster>>.png
+
+collections:
+  Top Rated:
+    tmdb_top_rated: 200
+    template:
+      name: Chart
+      poster: TopRated
+
+  Trending:
+    tmdb_trending_weekly: 200
+    template:
+      name: Chart
+      poster: Trending
+
+  Popular:
+    tmdb_popular: 200
+    template:
+      name: Chart
+      poster: Popular

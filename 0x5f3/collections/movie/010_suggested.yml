@@ -104,7 +104,7 @@ templates:
 
 collections:
   "Random Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_random.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_random.png
     schedule: daily
     summary: "Random selection of movies"
     visible_library: true
@@ -119,7 +119,7 @@ collections:
       sort_by: random
 
   "Recently Added Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_recently-added.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_recently-added.png
     schedule: daily
     summary: "Recently added movies"
     visible_home: true
@@ -136,7 +136,7 @@ collections:
       sort_by: added.desc
 
   "Recently Released Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_recently-released.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_recently-released.png
     schedule: daily
     summary: "Recently released movies"
     visible_library: true
@@ -152,7 +152,7 @@ collections:
 
   "Recommended Movies":
     collection_order: alpha
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_recommended.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_recommended.png
     schedule: daily
     summary: "Based on personally favourited movies"
     template: {
@@ -166,7 +166,7 @@ collections:
 
   "Suggested Movies":
     collection_order: alpha
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_suggested.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_suggested.png
     schedule: daily
     summary: "Based on watched and favourited movies"
     template: {
@@ -204,7 +204,7 @@ collections:
         time_period: all
 
   "Trending Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_trending.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_trending.png
     schedule: daily
     summary: "Movies trending across the internet"
     template: {
@@ -217,7 +217,7 @@ collections:
     limit: 100
 
   "Popular Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_popular.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_popular.png
     schedule: daily
     sort_title: "+010_<<num>>_<<collection_name>>"
     summary: "Popular movies across the internet"
@@ -232,7 +232,7 @@ collections:
     limit: 250
 
   "Top Rated Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_top-rated.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_top-rated.png
     schedule: daily
     sort_title: "+010_<<num>>_<<collection_name>>"
     summary: "Top rated movies across the internet"

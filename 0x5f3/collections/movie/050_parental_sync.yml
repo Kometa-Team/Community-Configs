@@ -24,7 +24,7 @@ templates:
 
 collections:
   "Parental: All":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_parental/parental_all.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_all.png
     summary: "Movies suitable for children"
     template: {
                     mdblist_list: "list-parental",

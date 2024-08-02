@@ -33,7 +33,7 @@ templates:
 
 collections:
   "Emmy Award Nominees":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_nominees_emmy.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_nominees_emmy.png
     summary: "A collection of Emmy Award Nominees"
     template: {
                     event: "emmy",
@@ -44,7 +44,7 @@ collections:
                 }
 
   "Emmy Award Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_emmy.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_emmy.png
     summary: "A collection of Emmy Award Winners"
     template: {
                     event.winning: "emmy",
@@ -55,7 +55,7 @@ collections:
                 }
 
   "Golden Globes Nominees":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_nominees_golden-globes.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_nominees_golden-globes.png
     summary: "A collection of Golden Globes Nominees"
     template: {
                     event: "golden",
@@ -66,7 +66,7 @@ collections:
                 }
 
   "Golden Globes Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_golden_globes.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_golden_globes.png
     summary: "A collection of Golden Globes Winners"
     template: {
                     event.winning: "golden",
@@ -77,7 +77,7 @@ collections:
                 }
 
   "BAFTA Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_bafta.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_bafta.png
     summary: "A collection of BAFTA Winners"
     template: {
                     event.winning: "bafta",
@@ -88,7 +88,7 @@ collections:
                 }
 
   "Critic's Choice Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_critics-choice.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_critics-choice.png
     summary: "A collection of Critic's Choice Winners"
     template: {
                     event.winning: "choice",
