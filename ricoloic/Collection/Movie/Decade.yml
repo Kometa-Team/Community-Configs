@@ -1,0 +1,57 @@
+templates:
+  Best of Decade:
+    imdb_search:
+      type: movie
+      release.after: <<after>>
+      release.before: <<before>>
+      sort_by: rating.desc
+      limit: 500
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Movie/Decade/Poster/<<year>>s.png
+    sort_title: "  !+07Best<<year>>"
+    sync_mode: append
+    collection_order: custom
+    summary: <<summary>>
+
+collections:
+  Best of 1970s:
+    template:
+      name: Best of Decade
+      after: 1970-01-01
+      before: 1979-12-31
+      summary: "Experience the iconic films that defined the 1970s, a decade of groundbreaking cinema."
+      year: 1970
+  Best of 1980s:
+    template:
+      name: Best of Decade
+      after: 1980-01-01
+      before: 1989-12-31
+      summary: "Relive the cinematic magic of the 1980s, featuring unforgettable classics and cult favorites."
+      year: 1980
+  Best of 1990s:
+    template:
+      name: Best of Decade
+      after: 1990-01-01
+      before: 1999-12-31
+      summary: "Discover the best films of the 1990s, a decade rich with diverse and influential movies."
+      year: 1990
+  Best of 2000s:
+    template:
+      name: Best of Decade
+      after: 2000-01-01
+      before: 2009-12-31
+      summary: "Explore the top movies of the 2000s, a period marked by innovation and blockbuster hits."
+      year: 2000
+  Best of 2010s:
+    template:
+      name: Best of Decade
+      after: 2010-01-01
+      before: 2019-12-31
+      summary: "Dive into the standout films of the 2010s, showcasing a decade of storytelling and visual excellence."
+      year: 2010
+  Best of 2020s:
+    template:
+      name: Best of Decade
+      after: 2020-01-01
+      before: 2029-12-31
+      summary: "Witness the best of 2020s cinema, capturing the essence of contemporary filmmaking."
+      year: 2020

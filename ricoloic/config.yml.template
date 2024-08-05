@@ -1,0 +1,107 @@
+libraries:
+  Anime:
+    remove_overlays: true
+    collection_files:
+      - file: config/Collection/Anime/Chart.yml
+      - file: config/Collection/Anime/Genre.yml
+      - file: config/Collection/Anime/Season.yml
+      - file: config/Collection/Shared/Audio.yml
+
+  Movies:
+    remove_overlays: true
+    collection_files:
+      - file: config/Collection/Movie/Decade.yml
+      - file: config/Collection/Movie/Genre.yml
+      - file: config/Collection/Shared/Audio.yml
+      - file: config/Collection/Shared/Resolution.yml
+
+  TV Shows:
+    remove_overlays: true
+    collection_files:
+      - file: config/Collection/Show/Studio.yml
+      - file: config/Collection/Show/Genre.yml
+      - file: config/Collection/Show/Chart.yml
+      - file: config/Collection/Shared/Audio.yml
+      - file: config/Collection/Shared/Resolution.yml
+
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: false
+  asset_depth: 0
+  create_asset_folders: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order: alpha
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_filtered: false
+  show_options: false
+  show_missing: false
+  show_missing_assets: false
+  save_missing: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  playlist_sync_to_user:
+  verify_ssl: true
+  run_order:
+    - operations
+    - metadata
+    - collections
+    - overlays
+  prioritize_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  item_refresh_delay: 0
+  show_unconfigured: true
+  playlist_exclude_users:
+  playlist_report: true
+  custom_repo:
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality:
+
+plex:
+  url: http://192.168.1.12:32400
+  token: ####################
+  timeout: 60
+  db_cache:
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+  verify_ssl:
+
+tmdb:
+  apikey: ################################
+  language: en
+  cache_expiration: 60
+  region:
+
+trakt:
+  client_id: ####################
+  client_secret: ####################
+  pin:
+  authorization:
+    access_token:
+    token_type:
+    expires_in:
+    refresh_token:
+    scope: public
+    created_at:
+
+mal:
+  client_id: ####################
+  client_secret: ####################
+  authorization:
+    access_token:
+    token_type:
+    expires_in:
+    refresh_token:
