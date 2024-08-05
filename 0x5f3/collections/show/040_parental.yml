@@ -12,12 +12,26 @@ templates:
     visible_shared: false
 
 collections:
+  "Parental: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_unwatched.png
+    summary: "Unwatched parental"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: title.asc
+
   "Parental: Random":
     url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_random.png
     summary: "Random TV shows suitable for children"
     template: {
                     name: plex,
-                    num: "1"
+                    num: "2"
                 }
     smart_filter:
       all:
@@ -30,7 +44,7 @@ collections:
     summary: "Recently added TV shows suitable for children"
     template: {
                     name: plex,
-                    num: "2"
+                    num: "3"
                 }
     smart_filter:
       all:
@@ -43,7 +57,7 @@ collections:
     summary: "Recently released TV shows suitable for children"
     template: {
                     name: plex,
-                    num: "3"
+                    num: "4"
                 }
     smart_filter:
       all:
@@ -56,7 +70,7 @@ collections:
     summary: "Top rated TV shows suitable for children"
     template: {
                     name: plex,
-                    num: "4"
+                    num: "5"
                 }
     smart_filter:
       all:

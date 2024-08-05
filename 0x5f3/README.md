@@ -50,5 +50,5 @@ With the parental configuration, there is a 'Parental' label added to their coll
 #
 #
 ###### A successful run will result in something similar to this:
-![movies](https://raw.githubusercontent.com/0x5f3/kometa.config/f75695b412b8ac0ba31fa99baa051a73d638e6e3/_/_movies.png)
-![shows](https://raw.githubusercontent.com/0x5f3/kometa.config/f75695b412b8ac0ba31fa99baa051a73d638e6e3/_/_shows.png)
+![movies](https://raw.githubusercontent.com/0x5f3/kometa.config/collections/_/movies.png)
+![shows](https://raw.githubusercontent.com/0x5f3/kometa.config/collections/_/shows.png)

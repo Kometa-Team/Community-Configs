@@ -14,7 +14,7 @@ templates:
     collection_mode: hide
     collection_order: alpha
     delete_not_scheduled: false
-    sort_title: "+070_<<num>>_<<collection_name>>"
+    sort_title: "+062_<<num>>_<<collection_name>>"
     sync_mode: sync
     visible_home: false
     visible_library: false
@@ -48,14 +48,27 @@ collections:
                     name: mdblist,
                     num: "0"
                 }
-                
+
+  "Stand-up: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_unwatched.png
+    summary: "Unwatched stand-up"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+        collection: "Stand-up: All"
+        unplayed: true
+      collection_filtering: user
+      sort_by: title.asc
 
   "Stand-up: Random":
     url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_random.png
     summary: "Random Stand-up"
     template: {
                     name: plex,
-                    num: "1"
+                    num: "2"
                 }
     smart_filter:
       all:
@@ -68,7 +81,7 @@ collections:
     summary: "Recently added Stand-up"
     template: {
                     name: plex,
-                    num: "2"
+                    num: "3"
                 }
     smart_filter:
       all:
@@ -81,7 +94,7 @@ collections:
     summary: "Recently released Stand-up"
     template: {
                     name: plex,
-                    num: "3"
+                    num: "4"
                 }
     smart_filter:
       all:
@@ -94,7 +107,7 @@ collections:
     summary: "Top rated Stand-up"
     template: {
                     name: plex,
-                    num: "4"
+                    num: "5"
                 }
     smart_filter:
       all:

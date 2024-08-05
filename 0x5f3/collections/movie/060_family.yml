@@ -24,12 +24,26 @@ collections:
       - filepath: "/mnt/movies-family"
       - filepath: "/mnt/movies-family-4k"
 
+  "Family: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_family/family_unwatched.png
+    summary: "Unwatched family"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+        collection: "Family: All"
+        unplayed: true
+      collection_filtering: user
+      sort_by: title.asc
+
   "Family: Random":
     url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_family/family_random.png
     summary: "Random family"
     template: {
                     name: plex,
-                    num: "1"
+                    num: "2"
                 }
     smart_filter:
       all:
@@ -43,7 +57,7 @@ collections:
     visible_library: true
     template: {
                     name: plex,
-                    num: "2"
+                    num: "3"
                 }
     smart_filter:
       all:
@@ -56,7 +70,7 @@ collections:
     summary: "Recently released family"
     template: {
                     name: plex,
-                    num: "3"
+                    num: "4"
                 }
     smart_filter:
       all:
@@ -69,7 +83,7 @@ collections:
     summary: "Top rated family"
     template: {
                     name: plex,
-                    num: "4"
+                    num: "5"
                 }
     smart_filter:
       all:
