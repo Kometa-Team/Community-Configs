@@ -14,7 +14,7 @@ collections:
   "Documentaries: All":
     url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_documentary/documentary_all.png
     summary: "Documentaries"
-    collection_order: alpha
+#    collection_order: alpha
     template: {
                     name: plex,
                     num: "0"
@@ -28,12 +28,27 @@ collections:
         genre: documentary
       sort_by: title.asc
 
+  "Documentary: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_documentary/documentary_unwatched.png
+    summary: "Unwatched documentaries"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+#        collection: "Documentaries: All"
+        genre: documentary
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: title.asc
+
   "Documentaries: Random":
     url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_documentary/documentary_random.png
     summary: "Random documentaries"
     template: {
                     name: plex,
-                    num: "1"
+                    num: "2"
                 }
     smart_filter:
       all:
@@ -48,7 +63,7 @@ collections:
     visible_library: true
     template: {
                     name: plex,
-                    num: "2"
+                    num: "3"
                 }
     smart_filter:
       all:
@@ -62,7 +77,7 @@ collections:
     summary: "Recently released documentaries"
     template: {
                     name: plex,
-                    num: "3"
+                    num: "4"
                 }
     smart_filter:
       all:
@@ -76,7 +91,7 @@ collections:
     summary: "Top rated documentaries"
     template: {
                     name: plex,
-                    num: "4"
+                    num: "5"
                 }
     smart_filter:
       all:

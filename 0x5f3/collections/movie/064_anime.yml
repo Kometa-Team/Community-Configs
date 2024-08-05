@@ -23,13 +23,27 @@ collections:
     filters:
       - filepath: "/mnt/movies-anime"
       - filepath: "/mnt/movies-anime-4k"
+      
+  "Anime: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_anime/anime_unwatched.png
+    summary: "Unwatched anime"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+        collection: "Anime: All"
+        unplayed: true
+      collection_filtering: user
+      sort_by: title.asc
 
   "Anime: Random":
     url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_anime/anime_random.png
     summary: "Random anime"
     template: {
                     name: plex,
-                    num: "1"
+                    num: "2"
                 }
     smart_filter:
       all:
@@ -43,7 +57,7 @@ collections:
     visible_library: true
     template: {
                     name: plex,
-                    num: "2"
+                    num: "3"
                 }
     smart_filter:
       all:
@@ -56,7 +70,7 @@ collections:
     summary: "Recently released anime"
     template: {
                     name: plex,
-                    num: "3"
+                    num: "4"
                 }
     smart_filter:
       all:
@@ -69,7 +83,7 @@ collections:
     summary: "Top rated anime"
     template: {
                     name: plex,
-                    num: "4"
+                    num: "5"
                 }
     smart_filter:
       all:
