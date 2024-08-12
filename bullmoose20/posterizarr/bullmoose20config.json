@@ -10,7 +10,8 @@
     ],
     "PreferredSeasonLanguageOrder": [
       "xx"
-    ]
+    ],
+    "tmdb_vote_sorting": "vote_average"
   },
   "PlexPart": {
     "LibstoExclude": [
@@ -51,7 +52,9 @@
     "SkipTBA": "true",
     "SkipJapTitle": "false",
     "AssetCleanup": "true",
-    "AutoUpdateIM": "true"
+    "AutoUpdateIM": "true",
+    "seasonoverlayfile": "bottom-up-fade.png",
+    "RTLFont": "Colus-Regular.ttf"
   },
   "OverlayPart": {
     "ImageProcessing": "true",
@@ -69,7 +72,10 @@
     "borderwidth": "30",
     "MaxWidth": "1200",
     "MaxHeight": "485",
-    "text_offset": "+300"
+    "text_offset": "+300",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "6"
   },
   "BackgroundOverlayPart": {
     "fontAllCaps": "true",
@@ -83,7 +89,10 @@
     "borderwidth": "30",
     "MaxWidth": "3000",
     "MaxHeight": "500",
-    "text_offset": "+200"
+    "text_offset": "+200",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "6"
   },
   "TitleCardOverlayPart": {
     "UseBackgroundAsTitleCard": "false",
@@ -101,7 +110,10 @@
     "maxPointSize": "250",
     "MaxWidth": "2500",
     "MaxHeight": "300",
-    "text_offset": "+290"
+    "text_offset": "+290",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "6"
   },
   "TitleCardEPTextPart": {
     "fontAllCaps": "true",
@@ -113,7 +125,10 @@
     "MaxHeight": "150",
     "text_offset": "+140",
     "SeasonTCText": "Season",
-    "EpisodeTCText": "Episode"
+    "EpisodeTCText": "Episode",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "4"
   },
   "SeasonPosterOverlayPart": {
     "fontAllCaps": "true",
@@ -127,6 +142,9 @@
     "borderwidth": "30",
     "MaxWidth": "1200",
     "MaxHeight": "485",
-    "text_offset": "+300"
+    "text_offset": "+300",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "6"
   }
 }
