@@ -219,7 +219,6 @@ collections:
   "Popular Movies":
     url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_popular.png
     schedule: daily
-    sort_title: "+010_<<num>>_<<collection_name>>"
     summary: "Popular movies across the internet"
     visible_library: true
     template: {
@@ -234,7 +233,6 @@ collections:
   "Top Rated Movies":
     url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_top-rated.png
     schedule: daily
-    sort_title: "+010_<<num>>_<<collection_name>>"
     summary: "Top rated movies across the internet"
     template: {
                     mdblist_list: "movie-top-rated",
