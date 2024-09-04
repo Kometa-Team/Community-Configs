@@ -16,7 +16,9 @@
     "PosterMinWidth": "2000",
     "PosterMinHeight": "3000",
     "BgTcMinWidth": "3840",
-    "BgTcMinHeight": "2160"
+    "BgTcMinHeight": "2160",
+    "JellyfinAPIKey": "JELLYFINAPIKEY",
+    "EmbyAPIKey": "EMBYAPIKEY"
   },
   "PlexPart": {
     "LibstoExclude": [
@@ -30,7 +32,28 @@
       "Test Videos",
       "Playlists"
     ],
-    "PlexUrl": "http://192.168.2.242:32400"
+    "PlexUrl": "http://192.168.2.242:32400",
+    "UsePlex": "true"
+  },
+  "JellyfinPart": {
+    "LibstoExclude": [
+      "Youtube",
+      "Audiobooks",
+      "KidsAudiobooks",
+      "TechTrainings"
+    ],
+    "JellyfinUrl": "http://192.168.2.242:8096",
+    "UseJellyfin": "false"
+  },
+  "EmbyPart": {
+    "LibstoExclude": [
+      "Youtube",
+      "Audiobooks",
+      "KidsAudiobooks",
+      "TechTrainings"
+    ],
+    "EmbyUrl": "http://192.168.2.242:8096/emby",
+    "UseEmby": "false"
   },
   "Notification": {
     "SendNotification": "true",
@@ -63,7 +86,8 @@
     "NewLineOnSpecificSymbols": "false",
     "NewLineSymbols": [
       " - "
-    ]
+    ],
+    "PlexUpload": "false"
   },
   "OverlayPart": {
     "ImageProcessing": "true",
@@ -154,6 +178,8 @@
     "text_offset": "+300",
     "AddTextStroke": "false",
     "strokecolor": "black",
-    "strokewidth": "6"
+    "strokewidth": "6",
+    "AddShowTitletoSeason": "false",
+    "SeasonTextNewLines": "1"
   }
 }
