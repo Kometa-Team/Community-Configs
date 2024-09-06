@@ -33,7 +33,8 @@
       "Playlists"
     ],
     "PlexUrl": "http://192.168.2.242:32400",
-    "UsePlex": "true"
+    "UsePlex": "true",
+    "UploadExistingAssets": "false"
   },
   "JellyfinPart": {
     "LibstoExclude": [
@@ -43,7 +44,8 @@
       "TechTrainings"
     ],
     "JellyfinUrl": "http://192.168.2.242:8096",
-    "UseJellyfin": "false"
+    "UseJellyfin": "false",
+    "UploadExistingAssets": "false"
   },
   "EmbyPart": {
     "LibstoExclude": [
@@ -53,7 +55,8 @@
       "TechTrainings"
     ],
     "EmbyUrl": "http://192.168.2.242:8096/emby",
-    "UseEmby": "false"
+    "UseEmby": "false",
+    "UploadExistingAssets": "false"
   },
   "Notification": {
     "SendNotification": "true",
@@ -87,7 +90,8 @@
     "NewLineSymbols": [
       " - "
     ],
-    "PlexUpload": "false"
+    "PlexUpload": "false",
+    "BackupPath": "P:\\assetsbackup"
   },
   "OverlayPart": {
     "ImageProcessing": "true",
