@@ -12,12 +12,26 @@ templates:
     visible_shared: false
 
 collections:
-  "Parental: Random":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_parental/parental_random.png
-    summary: "Random TV shows suitable for children"
+  "Parental: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_unwatched.png
+    summary: "Unwatched parental"
     template: {
                     name: plex,
                     num: "1"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: title.asc
+
+  "Parental: Random":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_random.png
+    summary: "Random TV shows suitable for children"
+    template: {
+                    name: plex,
+                    num: "2"
                 }
     smart_filter:
       all:
@@ -26,11 +40,11 @@ collections:
       limit: 250
 
   "Parental: Recently Added":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_parental/parental_recently-added.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_recently-added.png
     summary: "Recently added TV shows suitable for children"
     template: {
                     name: plex,
-                    num: "2"
+                    num: "3"
                 }
     smart_filter:
       all:
@@ -39,11 +53,11 @@ collections:
       limit: 100
 
   "Parental: Recently Released":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_parental/parental_recently-released.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_recently-released.png
     summary: "Recently released TV shows suitable for children"
     template: {
                     name: plex,
-                    num: "3"
+                    num: "4"
                 }
     smart_filter:
       all:
@@ -52,11 +66,11 @@ collections:
       limit: 250
 
   "Parental: Top Rated":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_parental/parental_top-rated.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_top-rated.png
     summary: "Top rated TV shows suitable for children"
     template: {
                     name: plex,
-                    num: "4"
+                    num: "5"
                 }
     smart_filter:
       all:

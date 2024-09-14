@@ -104,7 +104,7 @@ templates:
 
 collections:
   "Random TV shows":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_random.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_random.png
     schedule: daily
     summary: "Random selection of TV shows"
     visible_library: true
@@ -119,7 +119,7 @@ collections:
       sort_by: random
 
   "Recently Added TV shows":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_recently-added.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_recently-added.png
     summary: "Recently added TV shows"
     visible_library: true
     template: {
@@ -133,7 +133,7 @@ collections:
       sort_by: added.desc
 
   "Recently Released TV shows":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_recently-released.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_recently-released.png
     summary: "Recently released TV shows"
     visible_library: true
     template: {
@@ -148,7 +148,7 @@ collections:
 
   "Recommended TV shows":
     collection_order: alpha
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_recommended.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_recommended.png
     summary: "Based on personally favourited TV shows"
     template: {
                     name: trakt,
@@ -162,7 +162,7 @@ collections:
 
   "Suggested TV shows":
     collection_order: alpha
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_suggested.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_suggested.png
     summary: "Based on watched and favourited TV shows"
     template: {
                     name: trakt,
@@ -199,7 +199,7 @@ collections:
         time_period: all
 
   "Trending TV shows":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_trending.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_trending.png
     schedule: daily
     summary: "TV shows trending across the internet"
     template: {
@@ -212,7 +212,7 @@ collections:
     limit: 50
 
   "Popular TV shows":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_popular.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_popular.png
     schedule: daily
     summary: "Popular TV shows across the internet"
     visible_library: true
@@ -226,7 +226,7 @@ collections:
     limit: 100
 
   "Top Rated TV shows":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_suggested/suggested_top-rated.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_top-rated.png
     schedule: daily
     summary: "Top rated TV shows across the internet"
     template: {

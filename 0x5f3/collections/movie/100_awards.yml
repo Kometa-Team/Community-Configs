@@ -33,7 +33,7 @@ templates:
 
 collections:
   "Oscar Nominees":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_nominees_oscars.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_nominees_oscars.png
     summary: "A collection of Oscar Nominees"
     template: {
                     event: "oscar_picture,oscar_director",
@@ -44,7 +44,7 @@ collections:
                 }
 
   "Oscar Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_oscars.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_oscars.png
     summary: "A collection of Oscar Winners"
     template: {
                     event.winning: "oscar_picture,oscar_director",
@@ -55,7 +55,7 @@ collections:
                 }
 
   "Golden Globes Nominees":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_nominees_golden-globes.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_nominees_golden-globes.png
     summary: "A collection of Golden Globes Nominees"
     template: {
                     event: "golden",
@@ -66,7 +66,7 @@ collections:
                 }
 
   "Golden Globes Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_golden_globes.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_golden_globes.png
     summary: "A collection of Golden Globes Winners"
     template: {
                     event.winning: "golden",
@@ -77,7 +77,7 @@ collections:
                 }
 
   "BAFTA Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_bafta.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_bafta.png
     summary: "A collection of BAFTA Winners"
     template: {
                     event.winning: "bafta",
@@ -88,7 +88,7 @@ collections:
                 }
 
   "Berlinale Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_berlinale.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_berlinale.png
     summary: "A collection of Berlinale Winners"
     template: {
                     event.winning: "ev0000091",
@@ -99,7 +99,7 @@ collections:
                 }
 
   "Cannes Film Festival Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_cannes.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_cannes.png
     summary: "A collection of Cannes Film Festival Winners"
     template: {
                     event.winning: "cannes",
@@ -110,7 +110,7 @@ collections:
                 }
 
   "European Film Award Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_european-film.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_european-film.png
     summary: "A collection of European Film Award Winners"
     template: {
                     event.winning: "ev0000230",
@@ -121,7 +121,7 @@ collections:
                 }
 
   "Sundance Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_sundance.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_sundance.png
     summary: "A collection of Sundance Winners"
     template: {
                     event.winning: "sundance",
@@ -132,7 +132,7 @@ collections:
                 }
 
   "Venice Film Festival Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_venice-film.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_venice-film.png
     summary: "A collection of Venice Film Festival Winners"
     template: {
                     event.winning: "ev0000681",
@@ -143,7 +143,7 @@ collections:
                 }
 
   "Critic's Choice Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_critics-choice.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_critics-choice.png
     summary: "A collection of Critic's Choice Winners"
     template: {
                     event.winning: "choice",
@@ -154,7 +154,7 @@ collections:
                 }
 
   "Spirit Awards Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_spirit-awards.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_spirit-awards.png
     summary: "A collection of Spirit Awards Winners"
     template: {
                     event.winning: "spirit",
@@ -165,7 +165,7 @@ collections:
                 }
 
   "Razzie Winners":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_awards/awards_winners_razzie.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_razzie.png
     summary: "A collection of Razzie Winners"
     template: {
                     event.winning: "razzie",

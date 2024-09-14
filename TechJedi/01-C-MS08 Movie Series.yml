@@ -1,0 +1,128 @@
+collections:
+## The Exorcist Collection
+  The Exorcist Collection:
+    sort_title: Exorcist 00
+    collection_order: release
+    plex_search:
+      any:
+        all:
+          title:
+            - Exorcist
+          title.not:
+            - The Pope's Exorcist
+        title.is: Dominion
+    summary: "The Exorcist series is a renowned collection of horror films that have captivated audiences for decades. It all began in 1973 with the release of the iconic film \"The Exorcist,\" directed by William Friedkin and based on the novel of the same name by William Peter Blatty. Regarded as a groundbreaking masterpiece, \"The Exorcist\" follows the gripping story of a young girl named Regan who becomes possessed by a demonic entity. The film is known for its chilling atmosphere, exceptional performances, and intense sequences, making it a significant milestone in the horror genre. Over the years, the series expanded with several sequels and spin-offs, each exploring different aspects of demonic possession and the battle against evil forces. With its enduring impact on pop culture, the Exorcist series has continued to mesmerize and terrify audiences around the world."
+## Iron Man Collection
+  Iron Man Collection:
+    sort_title: Iron Man 00
+    collection_order: release
+    imdb_id: tt0371746, tt1300854, tt1228705
+    summary: "The original Iron Man trilogy consists of three action-packed superhero films released between 2008 and 2013. Directed by Jon Favreau, these movies introduce us to Tony Stark, a brilliant inventor and billionaire industrialist. After a life-altering experience, Stark transforms into the iconic superhero known as Iron Man. With his high-tech suit, incredible abilities, and sharp wit, Iron Man battles both external threats and internal struggles, making for a compelling storyline that combines thrilling action, humor, and a touch of humanity. From the birth of Iron Man to his evolution as a hero, these films are a must-watch for any Marvel fan."    
+## King Kong Collection
+  King Kong Collection:
+    sort_title: King Kong 00
+    collection_order: release
+    imdb_id: tt0024216, tt0041650, tt0024593, tt0056142, tt0074751, tt0091344, tt0360717, tt3731562
+    summary: "King Kong is a fictional giant ape that has become an iconic figure in popular culture. The character was first introduced in the 1933 film titled \"King Kong,\" directed by Merian C. Cooper and Ernest B. Schoedsack. The story revolves around a massive ape named Kong, who is discovered on a mysterious and dangerous island called Skull Island. Kong is captured and brought to New York City, where he escapes and wreaks havoc. The film explores themes of humanity's fascination with the unknown, the exploitation of nature, and the destructive consequences of greed. King Kong has since appeared in numerous films, spin-offs, and adaptations and has become a beloved and enduring character in cinematic history.
+
+In addition to the original 1933 film, King Kong has been remade and reimagined several times, with notable adaptations including the 1976 version starring Jessica Lange and the 2005 rendition by Peter Jackson. The character has also been featured in sequels, crossovers, and even a recent monster universe shared with Godzilla. King Kong's impact goes beyond the movies, as the character has influenced various forms of media, such as books, comics, video games, and theme park attractions. King Kong continues to captivate audiences with its captivating mythos and its portrayal of a colossal, misunderstood creature that has become an enduring symbol of the power and awe of nature."
+## Road to… Collection
+  Road to… Collection:
+    sort_title: Road to
+    collection_order: release
+    imdb_id: tt0035262, tt0045094, tt0034116, tt0056417, tt0039776, tt0032993, tt0038032
+    summary: "The \"Road to...\" movies were a beloved series of comedy films from the mid-20th century, starring Bing Crosby and Bob Hope. The series, which started with \"Road to Singapore\" in 1940 and continued with several more films over the next couple of decades, showcased the incredible chemistry and comedic talents of the iconic duo. 
+
+In these films, Crosby and Hope portrayed characters with their own names, but in fictional, often exotic locations. Each movie followed a similar plotline, where the two friends would embark on a hilarious and often zany journey, encountering various adventures and mishaps along the way. The movies were known for their clever banter, slapstick humor, catchy musical numbers, and playful competition between Crosby and Hope. \"The Road to...\" series became a massive success and remains a classic example of buddy comedies in Hollywood, entertaining generations of audiences with their timeless humor and unforgettable performances."
+## Jumanji Collection
+  Jumanji Collection:
+    sort_title: Jumanji 00
+    collection_order: release
+    plex_search:
+      any:
+        title:
+          - Jumanji
+    summary: "The original Jumanji movie was released in 1995 and is considered a classic. It stars Robin Williams as Alan Parrish, a man who becomes trapped inside the Jumanji board game for 26 years. When two siblings, Judy and Peter, find the game, they unwittingly release Alan and the chaos of Jumanji into the real world.
+
+As the game progresses, the characters encounter various dangerous creatures, unpredictable weather, and challenging obstacles, all while trying to finish the game and restore peace. They must work together and rely on their wits to survive the game's challenges.
+
+The original Jumanji movie was known for its groundbreaking visual effects at the time, blending CGI and practical effects. Robin Williams delivered a memorable performance as Alan Parrish, and the film continues to be loved for its adventure, humor, and heart.
+
+The movie's success led to the creation of the Jumanji film franchise, with \"Jumanji: Welcome to the Jungle\" serving as a standalone sequel/reboot in 2017."
+## Mad Max Collection
+  Mad Max Collection:
+    sort_title: Mad Max 00
+    collection_order: release
+    plex_search:
+      any:
+        title:
+          - Mad Max
+    summary: "\"Mad Max\" is a post-apocalyptic action film franchise that has captivated audiences since its debut in 1979. Set in a dystopian future, the series follows the adventures of the titular character, Max Rockatansky, as he navigates the harsh and lawless wasteland.
+
+The original film, \"Mad Max\" (1980), directed by George Miller, introduced us to a world on the brink of collapse. We witness Max, portrayed by Mel Gibson, serving as a police officer in a society plagued by violence and lawlessness. The film showcases thrilling car chases, gritty action, and an immersive story that establishes Max as a reluctant hero.
+
+Fast forward to 2015 and \"Mad Max: Fury Road\" brought the franchise back with a bang. Directed by George Miller once again, this visually stunning and critically acclaimed film stars Tom Hardy as Max. In \"Fury Road,\" Max finds himself entangled with a group of women led by Imperator Furiosa (played by Charlize Theron), who are attempting to escape the tyrannical rule of Immortan Joe. This installment is known for its relentless action sequences, jaw-dropping stunts, and a captivating world brought to life with exceptional practical effects.
+
+Both the 1980 version and the most recent \"Fury Road\" are beloved entries in the Mad Max franchise, each offering their own unique take on the post-apocalyptic world and delivering unforgettable thrills."
+## Terminator Collection
+  Terminator Collection:
+    sort_title: Terminator 00
+    collection_order: release
+    plex_search:
+      any:
+        title:
+          - Terminator
+    summary: "The Terminator series is a popular sci-fi film franchise that began with the release of the film \"The Terminator\" in 1984. Directed by James Cameron, the movie introduced audiences to a dystopian future where machines called Terminators, created by an artificial intelligence called Skynet, seek to exterminate humanity.
+
+In the first film, a cyborg assassin referred to as the Terminator, played by Arnold Schwarzenegger, is sent back in time to 1984 to kill Sarah Connor, a young woman whose unborn son is destined to lead a human resistance against the machines. However, a human soldier named Kyle Reese is also sent back in time to protect Sarah Connor.
+
+\"The Terminator,\" with its thrilling action sequences and innovative storytelling, became a critical and commercial success. It was praised for its striking visual effects and introduced audiences to memorable characters like Sarah Connor and the iconic Terminator.
+
+This success led to the creation of multiple sequels, including \"Terminator 2: Judgment Day\" in 1991, where an advanced Terminator model is sent back to kill Sarah's son, John Connor, as a child. The film is often hailed as one of the best action movies of all time, thanks to its groundbreaking visual effects and intense storyline.
+
+The franchise continued with several more films, like \"Terminator 3: Rise of the Machines\" in 2003, \"Terminator Salvation\" in 2009, and \"Terminator Genisys\" in 2015. Each film further explores the battle between humanity and the machines, often featuring time-travel elements and evolving Terminator models.
+
+With its compelling themes of man versus machine, time travel, and a post-apocalyptic future, the Terminator series has captivated audiences for decades. It has left an indelible mark on popular culture and remains a beloved franchise among sci-fi enthusiasts."
+## Beverly Hills Cop Collection
+  Beverly Hills Cop Collection:
+    sort_title: Beverly Hills Cop 00
+    collection_order: release
+    plex_search:
+      any:
+        title:
+          - Beverly Hills Cop
+    summary: "The \"Beverly Hills Cop\" film series is a popular action-comedy franchise. It revolves around the adventures of Detroit police detective Axel Foley, portrayed by Eddie Murphy. Here's a summary of the movies:
+
+1. \"Beverly Hills Cop\" (1984): The first film introduces Axel Foley as a wise-cracking and unconventional detective who travels to Beverly Hills to investigate his friend's murder. Foley clashes with the local police while unraveling a smuggling operation. It combines action, humor, and memorable characters.
+
+2. \"Beverly Hills Cop II\" (1987): In this sequel, Axel Foley returns to Beverly Hills to help his detective friends. This time, they face dangerous criminals involved in an armored car robbery. The movie maintains the comedic tone and action-packed sequences of the original while introducing new characters and expanding the story.
+
+3. \"Beverly Hills Cop III\" (1994): In the third installment, Axel Foley discovers a counterfeit money operation at a theme park while investigating his boss's murder. Although it received mixed reviews, it still contains the series' signature humor, action, and chemistry between the characters.
+
+The \"Beverly Hills Cop\" movies gained popularity due to Eddie Murphy's charismatic performance, the blend of action and comedy, and the memorable music by Harold Faltermeyer. While the third film wasn't as well-received as the others, the series remains a classic part of '80s and '90s cinema."
+## Austin Powers Collection
+  Austin Powers Collection:
+    sort_title: Austin Powers 00
+    collection_order: release
+    plex_search:
+      any:
+        title:
+          - Austin Powers
+    summary: "The Austin Powers series of movies is an iconic comedy franchise that parodies the 1960s spy genre. Created by Mike Myers, who also stars as the titular character, the series consists of three movies: \"Austin Powers: International Man of Mystery\" (1997), \"Austin Powers: The Spy Who Shagged Me\" (1999), and \"Austin Powers in Goldmember\" (2002). The films follow the outlandishly groovy adventures of British secret agent Austin Powers as he battles his arch-nemesis, Dr. Evil, who has been cryogenically frozen and recently thawed in the modern era. With its unique blend of slapstick humor, clever wordplay, and memorable characters, the Austin Powers series has become a cult classic and a beloved comedy franchise.
+
+The first film, \"Austin Powers: International Man of Mystery,\" introduces us to the charismatic and eccentric title character. Austin Powers, a 1960s British spy, is cryogenically frozen and awakened in the 1990s to stop his nemesis, Dr. Evil, from wreaking havoc on the world. However, Austin must navigate the radically changed cultural landscape while embracing his antiquated sense of style and mannerisms. The film serves as a hilarious commentary on the differences between the '60s and the modern era, with Austin's outdated viewpoints and behavior clashing with contemporary society.
+
+In subsequent movies, the series continues Austin Powers' comedic escapades as he travels through time and faces new challenges. The over-the-top humor, including outrageous characters like Mini-Me, Fat Bastard, and Frau Farbissina, has made the Austin Powers films highly quotable and instantly recognizable. With its vibrant retro aesthetic, catchy soundtrack, and witty dialogue, the series has left an indelible mark on popular culture, influencing everything from fashion trends to catchphrases. The Austin Powers movies offer a side-splittingly funny and lovingly satirical take on spy movies and have earned a dedicated fan base that continues to enjoy their groovy antics to this day."
+## Jaws Collection
+  Jaws Collection:
+    sort_title: Jaws 00
+    collection_order: release
+    plex_search:
+      any:
+        title:
+          - Jaws
+    summary: "The Jaws series of movies is a classic thriller franchise that revolves around the terrifying presence of a man-eating great white shark. The original film, simply titled \"Jaws\" and released in 1975, was directed by Steven Spielberg and based on Peter Benchley's novel of the same name. It follows the story of a small seaside town called Amity Island, which is terrorized by a giant shark that begins targeting beachgoers. A police chief, a marine biologist, and a local shark hunter team up to hunt down and eliminate the deadly predator.
+
+\"Jaws\" became a cultural phenomenon upon its release and is often regarded as one of the greatest films ever made. It masterfully combines suspense, horror, and adventure, and its groundbreaking use of animatronics and visual effects helped redefine the thriller genre. The film's iconic musical score, composed by John Williams, heightens the tension and fear associated with the shark, adding to the film's lasting impact.
+
+Three sequels followed the success of the original film: \"Jaws 2\" (1978), \"Jaws 3-D\" (1983), and \"Jaws: The Revenge\" (1987). While not achieving the same level of critical acclaim as the first film, the sequels continued to explore the threat of the massive great white shark and the ensuing dangers faced by the characters in the series. Each movie attempted to capture the intense atmosphere and suspense of the original, although they were not able to fully replicate its success. Nonetheless, the Jaws series as a whole has left an indelible mark on cinema, solidifying the image of the great white shark as a fearsome and formidable predator in the minds of audiences worldwide."

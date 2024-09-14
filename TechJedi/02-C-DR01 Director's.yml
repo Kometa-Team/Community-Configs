@@ -1,0 +1,101 @@
+collections:
+## Alfred Hitchcock Collection
+  Alfred Hitchcock (Director):    
+    sort_title: ~_01 Hitchcock, Alfred
+    collection_order: release
+    plex_search:
+      any:
+        director: Alfred Hitchcock
+    summary: "Alfred Hitchcock, often referred to as the \"Master of Suspense,\" was an iconic British film director and producer who left an indelible mark on the world of cinema. Born in 1899, Hitchcock began his career in the silent film era and went on to direct over 50 feature films throughout his illustrious career. Known for his innovative storytelling techniques, meticulous attention to detail, and ability to create tension and suspense, Hitchcock's films have captivated audiences for decades and continue to be celebrated for their enduring influence on the thriller and suspense genres.
+
+Hitchcock's filmography includes numerous classics that have become synonymous with his unique style and approach to filmmaking. Among his most famous works are \"Rear Window\" (1954), which explores voyeurism and paranoia through the perspective of a wheelchair-bound photographer; \"Vertigo\" (1958), a psychological thriller that delves into themes of obsession and identity; \"North by Northwest\" (1959), an action-packed espionage tale featuring iconic set pieces and a memorable score; and \"Psycho\" (1960), a groundbreaking horror film that shocked audiences with its narrative twists and chilling atmosphere. These films, along with many others, showcase Hitchcock's mastery of visual storytelling, his ability to create memorable characters, and his penchant for exploring the darker aspects of human nature.
+
+As a director, Alfred Hitchcock was known for his meticulous planning and storyboarding, which allowed him to create precise and evocative visuals that heightened the suspense and tension in his films. He was also famous for his collaborations with talented actors, composers, and cinematographers, as well as his penchant for making cameo appearances in his own films. Despite never winning a competitive Academy Award for Best director, Hitchcock's impact on the film industry is undeniable, and his legacy continues to inspire filmmakers and captivate audiences around the world."
+## Ken Annakin Collection
+  Ken Annakin (Director):    
+    sort_title: ~_01 Annakin, Ken
+    collection_order: release
+    plex_search:
+      any:
+        director: Ken Annakin
+    summary: "Ken Annakin was a prolific British film director, known for his remarkable contributions to the world of cinema. Born in Beverley, Yorkshire, England, on August 10, 1914, Annakin began his career in the film industry as a camera operator during World War II. He later transitioned into directing, and over the course of his career, he helmed more than 50 films. Annakin's diverse filmography includes notable works such as \"Swiss Family Robinson\" (1960), \"The Longest Day\" (1962), and \"Battle of the Bulge\" (1965). His ability to capture the essence of adventure and war in his films earned him a reputation as a skilled storyteller and a visionary director.
+
+One of Annakin's most significant contributions to cinema was his work on the 1965 film \"Those Magnificent Men in Their Flying Machines.\" This comedy-adventure film showcased Annakin's talent for blending humor, action, and drama, and it became a major box office success. The film's innovative use of special effects and aerial photography was groundbreaking for its time, and it inspired a generation of filmmakers, including George Lucas, the creator of the \"Star Wars\" franchise.
+
+In a nod to Ken Annakin's influence on his own career, George Lucas named one of the central characters in the \"Star Wars\" saga after the esteemed director. Anakin Skywalker, who would later become the iconic villain Darth Vader, was a tribute to Annakin's impact on the world of cinema. This homage not only highlights the enduring legacy of Ken Annakin's work but also serves as a testament to the power of film to inspire and connect generations of filmmakers and audiences alike."
+## Coen Brothers Collection
+  Coen Brothers (Director):
+    sort_title: ~_01 Coen Brothers Collection
+    collection_order: release
+    plex_search:
+      any:
+        director:
+          - Joel Coen
+          - Ethan Coen
+        writer:
+          - Joel Coen
+          - Ethan Coen
+        producer:
+          - Joel Coen
+          - Ethan Coen
+    summary: "The Coen Brothers, Joel and Ethan Coen, are celebrated American filmmakers known for their unique style and diverse range of films. Born in Minnesota, the brothers have collaborated on writing, directing, producing, and editing numerous critically acclaimed movies across various genres. Their distinctive filmmaking approach often combines dark humor, eccentric characters, intricate storytelling, and stylish cinematography. Some of their notable works include \"Fargo,\" \"The Big Lebowski,\" \"No Country for Old Men,\" and \"True Grit.\" The Coen Brothers have received numerous awards, including multiple Academy Awards, and continue to captivate audiences with their unparalleled storytelling and visual flair."
+## Akira Kurosawa Collection
+  Akira Kurosawa (Director):
+    sort_title: ~_01 Kurosawa, Akira 
+    collection_order: release
+    plex_search:
+      any:
+        director: Akira Kurosawa 
+    summary: "Akira Kurosawa was a highly influential Japanese film director who is widely regarded as one of the greatest filmmakers in cinema history. Born on March 23, 1910, in Tokyo, Kurosawa's work combines stunning visuals, powerful storytelling, and deep exploration of human nature. He was known for his masterful control of composition, innovative use of editing techniques, and his ability to juxtapose different cinematic elements to create impactful scenes. Kurosawa's films often dealt with themes of honor, duty, and the complexities of human existence. Throughout his career, which spanned over 50 years, Kurosawa directed many acclaimed movies, including \"Seven Samurai,\" \"Rashomon,\" and \"Yojimbo,\" each leaving an indelible mark on the world of cinema. Even today, his films continue to inspire and captivate audiences around the globe."
+## Billy Wilder Collection
+  Billy Wilder (Director):
+    sort_title: ~_01 Wilder, Billy 
+    collection_order: release
+    plex_search:
+      any:
+        writer: Billy Wilder 
+        director: Billy Wilder 
+    summary: "Billy Wilder was a highly influential Austrian-American film director, screenwriter, and producer. Born on June 22, 1906, in Sucha, Austria-Hungary (now part of Poland), Wilder's work spanned multiple genres and showcased his versatility as a filmmaker. He is known for his wit, sharp dialogue, and cynical yet sardonic storytelling style. 
+
+Wilder's films often explored themes of human frailty, desire, and societal critiques with a touch of dark humor. Throughout his career, he directed and co-wrote numerous iconic movies, including \"Some Like It Hot,\" \"Sunset Boulevard,\" and \"The Apartment.\" 
+
+Wilder's ability to seamlessly blend drama, comedy, and social commentary earned him multiple Academy Awards and critical acclaim. He was not only a skilled director but also a talented writer, crafting memorable characters and delivering thought-provoking narratives. 
+
+Wilder's films continue to be celebrated for their timeless appeal and lasting impact on the cinematic landscape. His contributions to the film industry have left an indelible mark, and his works remain influential to this day."
+## Bong Joon-ho Collection
+  Bong Joon-ho (Director):
+    sort_title: ~_01 Joon-ho, Bong 
+    collection_order: release
+    plex_search:
+      any:
+        director: Bong Joon-ho 
+    summary: "Bong Joon-ho is a critically acclaimed South Korean film director and screenwriter known for his distinctive storytelling style and ability to seamlessly blend genres. Born on September 14, 1969, in Daegu, South Korea, Bong Joon-ho has achieved international recognition for his unique and thought-provoking films.
+
+Bong's work often explores themes of social inequality, humanity's relationship with the environment, and the complex dynamics between individuals and society. He is known for his meticulous attention to detail, visual flair, and mastery of suspense. Bong's movies are often characterized by a blend of dark humor, deep social commentary, and unexpected twists.
+
+One of Bong Joon-ho's most acclaimed films is \"Parasite,\" which won the Palme d'Or at the 2019 Cannes Film Festival and became the first South Korean film to win the Best Picture Oscar. With its brilliant storytelling and powerful critique of social class, \"Parasite\" has cemented Bong's status as a visionary director.
+
+Other notable films by Bong Joon-ho include \"Memories of Murder,\" \"The Host,\" and \"Snowpiercer,\" each showcasing his ability to captivate audiences with compelling narratives and stunning visuals.
+
+Bong Joon-ho's films have garnered worldwide acclaim, demonstrating his unique voice and artistic vision. His ability to blend various genres while making poignant social commentary has solidified his place as one of the most influential and innovative directors of our time."
+## Charlie Chaplin Collection
+  Charlie Chaplin (Director):
+    sort_title: ~_01 Chaplin, Charlie 
+    collection_order: release
+    plex_search:
+      any:
+        director: Charlie Chaplin 
+    summary: "Charlie Chaplin was a legendary film director who revolutionized the world of silent cinema. Born on April 16, 1889, in London, England, Chaplin’s iconic character, \"The Tramp,\" became an enduring symbol of comedy and social critique. Through his brilliant physical comedy and heartfelt performances, Chaplin's films touched the hearts of audiences and transcended language barriers.
+
+Some of Chaplin's most notable directorial works include \"The Kid\" (1921), \"City Lights\" (1931), and \"Modern Times\" (1936). Known for his innovative filmmaking techniques and ability to blend comedy with social commentary, Chaplin created a unique cinematic experience that appealed to both laughter and empathy. His films often explored themes of poverty, inequality, and the human condition, making profound statements while eliciting genuine laughter.
+
+Chaplin's contributions to filmmaking were recognized and celebrated throughout his career. He received multiple Academy Honorary Awards and his influence can still be felt in modern comedy. Charlie Chaplin's films continue to be cherished and appreciated today, reminding us of the power of laughter and the importance of compassion in the face of adversity. His impact on cinema remains significant, as he is remembered as one of the greatest pioneers of the art form."
+## Christopher Nolan Collection
+  Christopher Nolan (Director):
+    sort_title: ~_01 Nolan, Christopher
+    collection_order: release
+    plex_search:
+      any:
+        director: Christopher Nolan 
+    summary: "Christopher Nolan is a highly acclaimed film director, producer, and screenwriter known for his visually stunning and intellectually stimulating movies. Born on July 30, 1970, in London, England, Nolan gained recognition for his unique storytelling techniques and complex narratives. He often explores themes of time, memory, and identity in his films, which blend elements of science fiction, psychological suspense, and action. Nolan's notable works include \"Memento,\" \"The Dark Knight\" trilogy, \"Inception,\" and \"Interstellar.\" His movies often feature non-linear storytelling, intricate plots, and breathtaking cinematography. Nolan's dedication to practical effects and his commitment to preserving the cinematic experience have earned him critical and commercial success, making him one of the most influential directors of our time.
+"

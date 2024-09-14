@@ -1,0 +1,119 @@
+templates:
+  Genre:
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Show/Genre/Poster/<<poster>>.png
+    summary: <<summary>>
+    default:
+      exclude: Children, Anime
+    sort_title: "  !+08<<collection_name>>"
+    smart_filter:
+      sort_by: release.desc
+      validate: false
+      all:
+        genre.not: <<exclude>>
+        genre: <<genre>>
+
+collections:
+  Action:
+    template:
+      name: Genre
+      genre: action
+      poster: Action
+  Adventure:
+    template:
+      name: Genre
+      genre: adventure
+      poster: Adventure
+  Animation:
+    template:
+      name: Genre
+      genre: animation
+      exclude: null
+      poster: Animation
+  Comedy:
+    template:
+      name: Genre
+      genre: comedy
+      poster: Comedy
+  Crime:
+    template:
+      name: Genre
+      genre: crime
+      poster: Crime
+  Documentary:
+    template:
+      name: Genre
+      genre: "biography,documentary"
+      poster: Documentary
+  Drama:
+    template:
+      name: Genre
+      genre: drama
+      poster: Drama
+  Family:
+    template:
+      name: Genre
+      genre: family
+      exclude: null
+      poster: Family
+  Fantasy:
+    template:
+      name: Genre
+      genre: fantasy
+      exclude: null
+      poster: Fantasy
+  History:
+    template:
+      name: Genre
+      genre: history
+      poster: History
+  Horror:
+    template:
+      name: Genre
+      genre: horror
+      poster: Horror
+  Music:
+    template:
+      name: Genre
+      genre: music
+      exclude: null
+      poster: Music
+  Mystery:
+    template:
+      name: Genre
+      genre: mystery
+      poster: Mystery
+  Romance:
+    template:
+      name: Genre
+      genre: romance
+      poster: Romance
+  Romantic Comedy:
+    template:
+      name: Genre
+      genre: "romance,comedy"
+      poster: RomanticComedy
+  Romantic Drama:
+    template:
+      name: Genre
+      genre: "romance,drama"
+      poster: RomanticDrama
+  Sports:
+    template:
+      name: Genre
+      genre: sport
+      poster: Sports
+  Thriller:
+    template:
+      name: Genre
+      genre: thriller
+      poster: Thriller
+  War:
+    template:
+      name: Genre
+      genre: war
+      poster: War
+  Western:
+    template:
+      name: Genre
+      genre: western
+      poster: Western

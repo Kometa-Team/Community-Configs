@@ -1,0 +1,506 @@
+templates:
+  Anime Season:
+    # sort_year is to ensure we can sort by showing the most recent seasons first
+    # season_index is used to ensure we order the anime correctly, Winter > Spring > Summer > Fall
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Anime/Season/Poster/<<year>><<season>>.png
+    mal_season:
+      season: <<season_lower>>
+      year: <<year>>
+      limit: 500
+      sort_by: members
+    sync_mode: sync
+    sort_title: "zzzz_Season_<<sort_year>>_<<season_index>>_<<year>>"
+    summary: Anime airing during <<season_lower>> anime season in <<year>>.
+    smart_label: release.desc
+
+collections:
+
+  Current Season:
+    ### Always displayed as the first collection.
+    sort_title: "zzzz_++++++++++++++++++_Current Season"
+    mal_season:
+      sort_by: members
+      limit: 500
+    summary: Anime airing this season.
+    smart_label: episode_added.desc
+    sync_mode: sync
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Anime/Season/Poster/CurrentSeason.png
+
+  Summer 2024:
+    template:
+      name: Anime Season
+      year: 2024
+      sort_year: "00976"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2024:
+    template:
+      name: Anime Season
+      year: 2024
+      sort_year: "00976"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+
+  Fall 2023:
+    template:
+      name: Anime Season
+      year: 2023
+      sort_year: "00977"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2023:
+    template:
+      name: Anime Season
+      year: 2023
+      sort_year: "00977"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2023:
+    template:
+      name: Anime Season
+      year: 2023
+      sort_year: "00977"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2023:
+    template:
+      name: Anime Season
+      year: 2023
+      sort_year: "00977"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2022:
+    template:
+      name: Anime Season
+      year: 2022
+      sort_year: "00978"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2022:
+    template:
+      name: Anime Season
+      year: 2022
+      sort_year: "00978"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2022:
+    template:
+      name: Anime Season
+      year: 2022
+      sort_year: "00978"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2022:
+    template:
+      name: Anime Season
+      year: 2022
+      sort_year: "00978"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2021:
+    template:
+      name: Anime Season
+      year: 2021
+      sort_year: "00979"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2021:
+    template:
+      name: Anime Season
+      year: 2021
+      sort_year: "00979"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2021:
+    template:
+      name: Anime Season
+      year: 2021
+      sort_year: "00979"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2021:
+    template:
+      name: Anime Season
+      year: 2021
+      sort_year: "00979"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2020:
+    template:
+      name: Anime Season
+      year: 2020
+      sort_year: "00980"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2020:
+    template:
+      name: Anime Season
+      year: 2020
+      sort_year: "00980"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2020:
+    template:
+      name: Anime Season
+      year: 2020
+      sort_year: "00980"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2020:
+    template:
+      name: Anime Season
+      year: 2020
+      sort_year: "00980"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2019:
+    template:
+      name: Anime Season
+      year: 2019
+      sort_year: "00981"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2019:
+    template:
+      name: Anime Season
+      year: 2019
+      sort_year: "00981"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2019:
+    template:
+      name: Anime Season
+      year: 2019
+      sort_year: "00981"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2019:
+    template:
+      name: Anime Season
+      year: 2019
+      sort_year: "00981"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2018:
+    template:
+      name: Anime Season
+      year: 2018
+      sort_year: "00982"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2018:
+    template:
+      name: Anime Season
+      year: 2018
+      sort_year: "00982"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2018:
+    template:
+      name: Anime Season
+      year: 2018
+      sort_year: "00982"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2018:
+    template:
+      name: Anime Season
+      year: 2018
+      sort_year: "00982"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2017:
+    template:
+      name: Anime Season
+      year: 2017
+      sort_year: "00983"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2017:
+    template:
+      name: Anime Season
+      year: 2017
+      sort_year: "00983"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2017:
+    template:
+      name: Anime Season
+      year: 2017
+      sort_year: "00983"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2017:
+    template:
+      name: Anime Season
+      year: 2017
+      sort_year: "00983"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2016:
+    template:
+      name: Anime Season
+      year: 2016
+      sort_year: "00984"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2016:
+    template:
+      name: Anime Season
+      year: 2016
+      sort_year: "00984"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2016:
+    template:
+      name: Anime Season
+      year: 2016
+      sort_year: "00984"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2016:
+    template:
+      name: Anime Season
+      year: 2016
+      sort_year: "00984"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2015:
+    template:
+      name: Anime Season
+      year: 2015
+      sort_year: "00985"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2015:
+    template:
+      name: Anime Season
+      year: 2015
+      sort_year: "00985"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2015:
+    template:
+      name: Anime Season
+      year: 2015
+      sort_year: "00985"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2015:
+    template:
+      name: Anime Season
+      year: 2015
+      sort_year: "00985"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2014:
+    template:
+      name: Anime Season
+      year: 2014
+      sort_year: "00986"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2014:
+    template:
+      name: Anime Season
+      year: 2014
+      sort_year: "00986"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2014:
+    template:
+      name: Anime Season
+      year: 2014
+      sort_year: "00986"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2014:
+    template:
+      name: Anime Season
+      year: 2014
+      sort_year: "00986"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2013:
+    template:
+      name: Anime Season
+      year: 2013
+      sort_year: "00987"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2013:
+    template:
+      name: Anime Season
+      year: 2013
+      sort_year: "00987"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2013:
+    template:
+      name: Anime Season
+      year: 2013
+      sort_year: "00987"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2013:
+    template:
+      name: Anime Season
+      year: 2013
+      sort_year: "00987"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2012:
+    template:
+      name: Anime Season
+      year: 2012
+      sort_year: "00988"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2012:
+    template:
+      name: Anime Season
+      year: 2012
+      sort_year: "00988"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2012:
+    template:
+      name: Anime Season
+      year: 2012
+      sort_year: "00988"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2012:
+    template:
+      name: Anime Season
+      year: 2012
+      sort_year: "00988"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2011:
+    template:
+      name: Anime Season
+      year: 2011
+      sort_year: "00989"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2011:
+    template:
+      name: Anime Season
+      year: 2011
+      sort_year: "00989"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2011:
+    template:
+      name: Anime Season
+      year: 2011
+      sort_year: "00989"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2011:
+    template:
+      name: Anime Season
+      year: 2011
+      sort_year: "00989"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"
+
+  Fall 2010:
+    template:
+      name: Anime Season
+      year: 2010
+      sort_year: "00990"
+      season: "Fall"
+      season_lower: "fall"
+      season_index: "0"
+  Summer 2010:
+    template:
+      name: Anime Season
+      year: 2010
+      sort_year: "00990"
+      season: "Summer"
+      season_lower: "summer"
+      season_index: "1"
+  Spring 2010:
+    template:
+      name: Anime Season
+      year: 2010
+      sort_year: "00990"
+      season: "Spring"
+      season_lower: "spring"
+      season_index: "2"
+  Winter 2010:
+    template:
+      name: Anime Season
+      year: 2010
+      sort_year: "00990"
+      season: "Winter"
+      season_lower: "winter"
+      season_index: "3"

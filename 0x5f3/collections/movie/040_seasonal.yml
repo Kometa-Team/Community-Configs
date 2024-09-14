@@ -6,7 +6,7 @@ templates:
     collection_order: alpha
     delete_not_scheduled: true
     limit: 1000
-    sort_title: "+040_<<num>>_<<collection_name>>"
+    sort_title: "+040_<<collection_name>>"
     summary: "A timed collection of <<holiday>> movies and other movies that may relate to the holiday."
     sync_mode: sync
     visible_home: false
@@ -51,7 +51,7 @@ templates:
 
 collections:
   "Valentine's Day Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_seasonal/seasonal_valentines-day.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_valentines-day.png
     schedule: range(02/10-02/14)
     template: {
                     holiday: "Valentine's Day",
@@ -68,7 +68,7 @@ collections:
           genre.not: Documentary
 
   "St. Patrick's Day Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_seasonal/seasonal_st-patricks-day.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_st-patricks-day.png
     schedule: range(03/16-03/18)
     template: {
                     holiday: "St. Patrick's Day",
@@ -77,7 +77,7 @@ collections:
                 }
 
   "Easter Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_seasonal/seasonal_easter.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_easter.png
     schedule: range(03/22-04/25)
     template: {
                     holiday: "Easter",
@@ -86,7 +86,7 @@ collections:
                 }
 
   "Halloween Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_seasonal/seasonal_halloween.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_halloween.png
     schedule: range(10/29-10/31)
     template: {
                     holiday: "Halloween",
@@ -100,7 +100,7 @@ collections:
           genre.not: Documentary
 
   "Thanksgiving Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_seasonal/seasonal_thanksgiving.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_thanksgiving.png
     schedule: range(11/22-11/25)
     template: {
                     holiday: "Thanksgiving",
@@ -109,7 +109,7 @@ collections:
                 }
 
   "Christmas Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_seasonal/seasonal_christmas.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_christmas.png
     schedule: range(12/01-12/31)
     template: {
                     holiday: "Christmas",
@@ -121,7 +121,7 @@ collections:
                 }
 
   "New Year's Eve Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_seasonal/seasonal_new-years-eve.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_new-years-eve.png
     schedule: range(12/26-01/02)
     template: {
                     holiday: "New Year's Eve",

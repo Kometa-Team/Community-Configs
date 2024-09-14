@@ -1,0 +1,79 @@
+templates:
+  Best of Decades Past:
+    sort_title: +_03.1 <<startYear>>s
+    file_poster: /config/assets/Best of/Best Of <<poster>>.png
+    file_background: /config/assets/Best of/wp2177406.jpg
+    collection_order: random
+    sync_mode: sync
+    imdb_search:
+      type: movie,short
+      sort_by: rating.desc
+      release.after: <<startYear>>-01-01
+      release.before: <<endYear>>-12-31
+      votes.gte: 10000
+      rating.gte: 6
+      #url: https://www.imdb.com/search/title/?title_type=feature,short&release_date=<<startYear>>-01-01,<<endYear>>-12-31&num_votes=10000,&sort=user_rating,desc
+      limit: 300
+  Best of Years Past:
+    sort_title: +_03.2 Best Films of <<year>>
+    plex_search:
+      all:
+        audience_rating.gte: 6
+        critic_rating.gte: 5
+        year: <<year>>
+    file_poster: /config/assets/Best Of/BestOf<<year>>.png
+    file_background: /config/assets/Best Of/Film-Reel-Wallpaper.jpg
+    collection_order: random
+    sync_mode: sync
+    summary: These are the top rated movies for <<year>>. Based on a combination of Critic and Audience ratings.
+collections:
+## Best of Decades Past
+  "Best of the 20's":
+    template: { name: Best of Decades Past, poster: 20s, startYear: 1920, endYear: 1929 }
+  "Best of the 30's":
+    template: { name: Best of Decades Past, poster: 30s, startYear: 1930, endYear: 1939 }
+  "Best of the 40's":
+    template: { name: Best of Decades Past, poster: 40s, startYear: 1940, endYear: 1949 }
+  "Best of the 50's":
+    template: { name: Best of Decades Past, poster: 50s, startYear: 1950, endYear: 1959 }
+  "Best of the 60's":
+    template: { name: Best of Decades Past, poster: 60s, startYear: 1960, endYear: 1969 }
+  "Best of the 70's":
+    template: { name: Best of Decades Past, poster: 70s, startYear: 1970, endYear: 1979 }
+  "Best of the 80's":
+    template: { name: Best of Decades Past, poster: 80s, startYear: 1980, endYear: 1989 }
+  "Best of the 90's":
+    template: { name: Best of Decades Past, poster: 90s, startYear: 1990, endYear: 1999 }
+  "Best of the 2000's":
+    template: { name: Best of Decades Past, poster: 2000s, startYear: 2000, endYear: 2009 }
+  "Best of the 2010's":
+    template: { name: Best of Decades Past, poster: 2010s, startYear: 2010, endYear: 2019 }
+  "Best of the 2020's":
+    template: { name: Best of Decades Past, poster: 2020s, startYear: 2020, endYear: 2029 }
+## Best of Years Past
+  Best Films of The Year:
+    sort_title: +_00 Best Films of The Year
+    plex_search:
+      all:
+        audience_rating.gte: 6
+        critic_rating.gte: 4.2
+        year: 2024
+    file_poster: /config/assets/Best Of/BestOfTheYear.png
+    file_background: /config/assets/Best Of/Film-Reel-Wallpaper.jpg
+    collection_order: random
+    sync_mode: sync
+    summary: These are the top rated movies for this year. Based on a combination of Critic and Audience ratings.
+  Best Films of 2023:
+    template: {name: Best of Years Past, year: 2023}
+  Best Films of 2022:
+    template: {name: Best of Years Past, year: 2022}
+  Best Films of 2021:
+    template: {name: Best of Years Past, year: 2021}
+  Best Films of 2020:
+    template: {name: Best of Years Past, year: 2020}
+    
+    
+    
+    
+    
+ 

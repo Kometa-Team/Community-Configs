@@ -12,7 +12,7 @@ templates:
 
 collections:
   "Unwatched: Random Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_unwatched/unwatched_random.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_random.png
     summary: "Random selection of movies"
     template: {
                     name: plex,
@@ -27,7 +27,7 @@ collections:
       sort_by: random
 
   "Unwatched: Recommended Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_unwatched/unwatched_recommended.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_recommended.png
     summary: "Based on personally favourited movies"
     template: {
                     name: plex,
@@ -41,7 +41,7 @@ collections:
       sort_by: title.asc
 
   "Unwatched: Suggested Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_unwatched/unwatched_suggested.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_suggested.png
     summary: "Based on watched and favourited movies"
     template: {
                     name: plex,
@@ -55,7 +55,7 @@ collections:
       sort_by: title.asc
 
   "Unwatched: Popular Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_unwatched/unwatched_popular.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_popular.png
     summary: "Popular movies across the internet"
     template: {
                     name: plex,
@@ -69,7 +69,7 @@ collections:
       sort_by: random
 
   "Unwatched: Top Rated Movies":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_unwatched/unwatched_top-rated.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_top-rated.png
     summary: "Top rated movies across the internet"
     template: {
                     name: plex,

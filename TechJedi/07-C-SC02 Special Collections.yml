@@ -1,0 +1,48 @@
+collections:
+## Old Movies Just Added
+  Old Movies Just Added:     # SMART COLLECTION
+    sort_title: +_01 Old Movies Just Added
+    smart_filter:
+      sort_by: added.desc
+      all:
+        added: 15
+        any:
+          release.not: 900
+      limit: 250
+    summary: Some older releases that were recently added that you may have missed in the past.
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+## Skeptoid Media
+  Skeptoid Media:
+    sort_title: +_04 Skeptoid Media
+    collection_order: release
+    plex_search:
+      any:
+        title.is:
+          - "The UFO Movie They Don't Want You to See"
+          - "Science Friction"
+    summary: "Skeptoid Media is a nonprofit organization that produces Skeptoid, a podcast and web-based program as well as feature documenraries. This program critically explores topics related to science, history, and pop culture, aiming to challenge misinformation and promote critical thinking. Founded in 2006 by Brian Dunning, its mission is to apply scientific skepticism to widely held beliefs to help people distinguish reality from pseudoscience and myth."
+## Behind the Scenes
+  Behind the Scenes:
+    show_missing: true  
+    sort_title: +_04 Behind the Scenes
+    collection_order: random
+    tmdb_list: https://www.themoviedb.org/list/8304101-behind-the-scenes
+    plex_search:
+      any:
+        title.is:
+          - "Time Warp: The Greatest Cult Films of All Time - Vol. 1: Midnight Madness"
+          - "Time Warp: The Greatest Cult Films of All-Time - Vol. 2: Horror and Sci-Fi"
+          - "Time Warp: The Greatest Cult Films of All-Time - Vol. 3: Comedy and Camp"
+    summary: "Welcome to the fascinating world behind the silver screen, where movies not only entertain us on-screen but also captivate us with the stories unfolding behind the scenes. From gripping documentaries to imaginative fictional narratives, these films offer a peek into the intricate workings of the film industry and the creative minds that bring our favorite stories to life.
+
+In this realm, documentaries serve as windows into the real lives of filmmakers, actors, and crews, revealing the challenges, triumphs, and relentless passion that drive them. They uncover the meticulous planning, intense collaboration, and sometimes unforeseen obstacles that shape the making of cinematic masterpieces. Whether delving into the groundbreaking techniques of visionary directors or chronicling the historic moments that shaped cinematic history, these documentaries offer an unfiltered look at the artistry and dedication behind every frame.
+
+Conversely, fictional narratives transport us into imaginative realms where the line between reality and illusion blurs. These films craft compelling stories that weave together the personal and professional lives of characters navigating the complexities of filmmaking. Through these narratives, we witness the emotional rollercoaster of artistic creation, from the exhilarating highs of inspiration to the gut-wrenching lows of artistic and personal conflict. They explore themes of ambition, betrayal, redemption, and the enduring power of storytelling itself.
+
+Together, these behind-the-scenes movies celebrate the magic of cinema while shining a spotlight on the unsung heroes and visionaries who transform dreams into reality. Whether you're a cinephile seeking deeper insight into your favorite films or simply curious about the inner workings of Hollywood, join us as we explore the captivating world where imagination meets celluloid."
+  
+  
+  
+  

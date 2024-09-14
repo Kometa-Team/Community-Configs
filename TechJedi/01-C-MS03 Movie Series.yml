@@ -1,0 +1,53 @@
+collections:
+## Jurassic Park Collection
+  Jurassic Park Collection:
+    sort_title: Jurassic Park 00
+    collection_order: release
+    imdb_id: tt0107290, tt0119567, tt0163025, tt0369610, tt4881806, tt0016039, tt8041270, tt29380429 # Includes Lost World (1925),LEGO Jurassic Park- The Unofficial Retelling (2023)
+    tmdb_movie:
+      #- 3078985 # The Movies That Made Us (2019) - S02E03 - Jurassic Park.
+      - 934627 # Jurassic Punk
+    summary: "The Jurassic Park film series, a thrilling and groundbreaking science fiction adventure franchise, began with the release of the seminal movie \"Jurassic Park\" in 1993. Directed by Steven Spielberg and based on the novel by Michael Crichton, the film is set on a remote island where a billionaire entrepreneur has created a theme park featuring cloned dinosaurs. When a group of experts is invited to preview the park, a series of disastrous events unfolds, leading to a struggle for survival against the prehistoric creatures. The film was a massive success, praised for its groundbreaking special effects, captivating story, and memorable characters. \"Jurassic Park\" set a new standard for visual effects in cinema and ignited a fascination with dinosaurs in popular culture.
+
+The success of the first film led to two sequels, \"The Lost World: Jurassic Park\" in 1997 and \"Jurassic Park III\" in 2001. Both films expand on the universe established in the original, exploring new locations and introducing new dinosaur species. \"The Lost World,\" also directed by Spielberg, follows a team of researchers and hunters who travel to a second island where dinosaurs have been allowed to roam free. \"Jurassic Park III,\" directed by Joe Johnston, sees the return of Dr. Alan Grant, played by Sam Neill, as he is tricked into visiting the same island to help find a missing child. While both sequels received mixed reviews, they continued to captivate audiences with their thrilling action sequences and awe-inspiring dinosaur encounters.
+
+In 2015, the franchise was revived with \"Jurassic World,\" directed by Colin Trevorrow, which introduced a new generation of characters and dinosaurs. Set 22 years after the events of the original film, \"Jurassic World\" takes place on the same island, now home to a fully operational dinosaur theme park. When a genetically engineered dinosaur escapes its enclosure, chaos ensues, and the park's visitors are put in grave danger. The film was followed by \"Jurassic World: Fallen Kingdom\" in 2018, directed by J.A. Bayona, which explores the ethical implications of cloning and genetic engineering. The Jurassic Park series continues to enthrall audiences with its blend of adventure, suspense, and cutting-edge visual effects, while also raising thought-provoking questions about humanity's relationship with nature and technology."
+## Resident Evil Collection
+  Resident Evil Collection:    
+    sort_title: Resident Evil 00
+    collection_order: release
+    plex_search:
+      any:
+        title: Resident Evil
+    summary: "The Resident Evil film series, based on the popular video game franchise of the same name, is a collection of action-packed, science fiction horror movies that began with the release of \"Resident Evil\" in 2002. Directed by Paul W.S. Anderson, the film introduces the protagonist Alice, played by Milla Jovovich, who wakes up with amnesia in a mysterious mansion. As she navigates the dangerous environment filled with zombies and other mutated creatures, Alice uncovers a sinister plot by the Umbrella Corporation, a powerful pharmaceutical company responsible for the outbreak of the T-virus, which turns humans into zombies. The film was a commercial success, spawning a series of sequels that further explore the world of Resident Evil and Alice's fight against the Umbrella Corporation.
+
+Throughout the series, Alice encounters various characters from the video games, such as Jill Valentine, Claire Redfield, and Leon S. Kennedy, as well as original characters created for the films. The sequels, including \"Resident Evil: Apocalypse\" (2004), \"Resident Evil: Extinction\" (2007), \"Resident Evil: Afterlife\" (2010), \"Resident Evil: Retribution\" (2012), and \"Resident Evil: The Final Chapter\" (2016), expand on the universe and the ongoing battle against the T-virus and the Umbrella Corporation. The films are known for their intense action sequences, impressive special effects, and the strong performance of Milla Jovovich as Alice.
+
+While the Resident Evil film series has received mixed reviews from critics, it has garnered a dedicated fan base and has become one of the highest-grossing film franchises based on a video game. The films' blend of horror, action, and science fiction elements has made them a staple in the genre, and their influence can be seen in various forms of media. With a reboot of the series in development, the Resident Evil franchise continues to captivate audiences with its thrilling and terrifying world."
+
+## Re-Animator Collection
+  Re-Animator Collection:
+    sort_title: Re-Animator
+    summary: 'Re-Animator is an American film series consisting of three horror films directed by Stuart Gordon and Brian Yuzna. Loosely based on the 1922 serialized short story "Herbert West–Reanimator" by H. P. Lovecraft, the films follow the exploits of Herbert West, the inventor of a serum that can re-animate deceased bodies. West is portrayed by actor Jeffrey Combs in all three films.'
+    collection_order: release
+    imdb_id: tt0089885, tt0091083, tt0099180, tt0222812
+## X-Files Collection
+  X-Files Collection:
+    sort_title: X-Files 00
+    collection_order: release
+    plex_search:
+      any:
+        title:
+          - X-Files
+          - "X Files"
+          - Kolchak
+          - "The Night Strangler"
+    summary: "The X-Files is a popular science fiction television series that originally aired from 1993 to 2002, with a revival in 2016 and 2018. Created by Chris Carter, the show follows FBI Special Agents Fox Mulder (David Duchovny) and Dana Scully (Gillian Anderson) as they investigate unsolved cases involving paranormal phenomena, known as the X-Files. Mulder is a believer in the existence of extraterrestrials and the paranormal, while Scully, a medical doctor, is a skeptic who seeks scientific explanations for the cases they encounter. The series is known for its blend of stand-alone \"monster of the week\" episodes and overarching mythology episodes that delve into a complex conspiracy involving alien colonization and government cover-ups.
+
+Two feature films were released as part of the X-Files franchise: \"The X-Files: Fight the Future\" (1998) and \"The X-Files: I Want to Believe\" (2008). \"Fight the Future\" takes place between the fifth and sixth seasons of the TV series and expands on the show's mythology, with Mulder and Scully uncovering a global conspiracy involving extraterrestrials and a deadly virus. \"I Want to Believe,\" released after the original series ended, is a stand-alone story that focuses on a psychic's visions and a series of mysterious disappearances, with Mulder and Scully returning to their roles as investigators.
+
+While Carl Kolchak is not a character in the X-Files series, he is the protagonist of the 1970s TV show \"Kolchak: The Night Stalker,\" which served as a significant inspiration for Chris Carter when creating The X-Files. Portrayed by Darren McGavin, Carl Kolchak is a newspaper reporter who investigates strange and supernatural occurrences, often finding himself at odds with the authorities who seek to cover up the truth. The character's dogged pursuit of the truth and his encounters with the paranormal laid the groundwork for the dynamic between Mulder and Scully in The X-Files, and the show's creators have acknowledged the influence of \"Kolchak: The Night Stalker\" on their work."
+
+    
+  
+    

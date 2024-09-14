@@ -6,7 +6,7 @@
 > I also use Kometa's assets with folder structure as described in the wiki here: https://metamanager.wiki/en/latest/kometa/guides/assets/
 
 ### Here are some Examples of Posterizarr, before the Kometa run:
-![](https://github.com/fscorrupt/Posterizarr/blob/main/images/posterizarr-overview.jpg)
+![](https://github.com/fscorrupt/Posterizarr/blob/main/images/posterizarr-overview-new.jpg)
 
 ### Here are some Examples after Kometa run:
-![](https://github.com/fscorrupt/Posterizarr/blob/main/images/kometa-overview.png)
+![](https://github.com/fscorrupt/Posterizarr/blob/main/images/kometa-overview-new.jpg)

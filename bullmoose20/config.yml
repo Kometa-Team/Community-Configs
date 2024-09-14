@@ -839,8 +839,8 @@ settings:                                           # Can be individually specif
   - metadata
   - collections
   - overlays
-  overlay_artwork_filetype: jpg   
-  overlay_artwork_quality: 75   
+  overlay_artwork_filetype: jpg                    # Default is jpg. webp or png are also available
+  overlay_artwork_quality: 75                      # Default is 75 if left blank, otherwise, for jpg or webp, going above 95 not recommended as excessive file sizes could be created and then not able to be uploaded to plex
 # .------------------------------------------------------------------.
 # |  ___  _   _                 ____       _   _   _                 |
 # | / _ \| |_| |__   ___ _ __  / ___|  ___| |_| |_(_)_ __   __ _ ___ |

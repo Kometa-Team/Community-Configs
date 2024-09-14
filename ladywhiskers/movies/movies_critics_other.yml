@@ -21,22 +21,7 @@ templates:
     sort_title: "!130_Rotten Tomatoes Best of <<key>>"
     schedule: monthly(01)
     url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatoes/main/Rotten%20Tomatoes%20Best%20of%20<<key>>.jpg
-  Collection:
-    optional:
-    - poster
-    url_poster: <<poster>>
-    sync_mode: sync
-    collection_order: audience_rating.desc
-    sort_title: "!130_<<collection_name>>"
-    schedule: weekly(tuesday|thursday)
 collections:
-  1001 Movies You Must See Before You Die:
-    template: {name: Collection, poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/1001%20Movies%20You%20Must%20See%20Before%20You%20Die.jpg}
-    trakt_list: https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
-    collection_order: release.desc
-    schedule: daily
-    visible_home: range(01/01-12/31)
-    visible_shared: range(01/01-12/31)
   Rotten Tomatoes Best All-Time:
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-top-100-movies-of-all-time
     sync_mode: sync

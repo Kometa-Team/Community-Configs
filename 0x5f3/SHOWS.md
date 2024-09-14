@@ -24,17 +24,43 @@
 
 - _parental.yml
   - Parental: All (https://mdblist.com/lists/archivist/list-parental)
+  - Parental: Unwatched
   - Parental: Random
   - Parental: Recently Added
   - Parental: Recently Released
   - Parental: Top Rated
 
+- _family.yml
+  - Family: All
+  - Family: Unwatched
+  - Family: Random
+  - Family: Recently Added
+  - Family: Recently Released
+  - Family: Top Rated
+
 - _documentary.yml
   - Documentaries: All
+  - Documentaries: Unwatched
   - Documentaries: Random
   - Documentaries: Recently Added
   - Documentaries: Recently Released
   - Documentaries: Top Rated
+
+- _sports.yml
+  - Sports: All
+  - Sports: Unwatched
+  - Sports: Random
+  - Sports: Recently Added
+  - Sports: Recently Released
+  - Sports: Top Rated
+
+- _anime.yml
+  - Anime: All
+  - Anime: Unwatched
+  - Anime: Random
+  - Anime: Recently Added
+  - Anime: Recently Released
+  - Anime: Top Rated
 
 - _awards.yml
   - Emmy Award Winners
