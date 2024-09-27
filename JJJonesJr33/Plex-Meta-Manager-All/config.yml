@@ -11,7 +11,7 @@ libraries: # Library mappings must have a colon (:) placed after them
     collection_files:
     - /config/metadata/collections.yml
     - /config/metadata/decades.yml
-    - /config/metadata/suggestions_uhd.yml
+    - /config/metadata/suggestions_movies_uhd.yml
     overlay_files:        
     - /config/overlays/movies_uhd.yml
     settings:
@@ -31,7 +31,7 @@ libraries: # Library mappings must have a colon (:) placed after them
     collection_files:
     - /config/metadata/collections.yml
     - /config/metadata/decades.yml
-    - /config/metadata/suggestions.yml
+    - /config/metadata/suggestions_movies.yml
     overlay_files:        
     - /config/overlays/movies.yml
     settings:
@@ -94,7 +94,7 @@ libraries: # Library mappings must have a colon (:) placed after them
     report_path: config/reports/shows.yml
     collection_files:
     - /config/metadata/collections.yml
-    - /config/metadata/suggestions.yml
+    - /config/metadata/suggestions_tv.yml
     - /config/metadata/networks.yml
     overlay_files:        
     - /config/overlays/shows.yml
@@ -113,7 +113,7 @@ libraries: # Library mappings must have a colon (:) placed after them
     remove_overlays: false
     report_path: config/reports/live.yml
     collection_files:
-    - /config/metadata/suggestions.yml
+    - /config/metadata/suggestions_tv.yml
     - /config/metadata/networks.yml
     overlay_files:        
     - /config/overlays/live.yml
