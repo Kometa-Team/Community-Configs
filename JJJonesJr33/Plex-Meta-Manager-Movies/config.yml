@@ -17,9 +17,6 @@ libraries: # Library mappings must have a colon (:) placed after them
     - /config/overlays/movies_uhd.yml
     settings:
       asset_directory:
-      - config/assets/movies
-      - config/assets/collections
-      - config/assets/suggestions
       - config/assets/
     operations:
       assets_for_all: false
@@ -41,14 +38,6 @@ libraries: # Library mappings must have a colon (:) placed after them
     settings:
       asset_directory:
       - config/assets/
-      - config/assets/movies
-      - config/assets/awards
-      - config/assets/collections
-      - config/assets/decades
-      - config/assets/genres
-      - config/assets/holidays
-      - config/assets/studios
-      - config/assets/suggestions
     operations:
       assets_for_all: false
       split_duplicates: false
