@@ -1,16 +1,6 @@
 ##############################################################
-##                Dynamic Decade Collections                ##
+##              Dynamic Decade Collections                  ##
 ##                Created by JJJonesJr33                    ##
-##                      Version 2.0                         ##
-##############################################################
-##############################################################
-##                                                          ##
-##            User/Config Credits - Special Thanks          ##
-##                                                          ##
-##               Yozora, Bullmoose20, & Sohjiro             ##
-##   Glasti1, Hiren-Z, OhMyBahGosh, tuxpeople, cpt-kuesel   ##
-##      meisnate12, TheUnchainedZebra, Evil Tacctician      ##
-##                                                          ##
 ##############################################################
 
 #######################
@@ -22,7 +12,7 @@ templates:
     smart_filter:
       any:
         decade: <<decade>>
-      sort_by: release.desc
+      sort_by: year.desc
       url_poster: https://theposterdb.com/api/assets/<<poster>>
       sort_title: +++++_<<collection_name>>
       collection_mode: hide

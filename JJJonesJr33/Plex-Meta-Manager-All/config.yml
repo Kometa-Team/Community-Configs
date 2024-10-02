@@ -1,97 +1,215 @@
-## This file is a template remove the .template to use the file
+#################################
+##    Version: 2.0.2-build50   ##
+##     UPDATED 09/27/2024      ##
+#################################
 
 libraries: # Library mappings must have a colon (:) placed after them
-  Anime:
+  movies_uhd:
+    library_name: Movies | UHD
+    remove_overlays: false
+    report_path: config/reports/movies_uhd.yml
+    collection_files:
+    - /config/metadata/collections.yml
+    - /config/metadata/decades.yml
+    - /config/metadata/suggestions_movies_uhd.yml
+    overlay_files:        
+    - /config/overlays/movies_uhd.yml
+    settings:
+      asset_directory:
+      - config/assets/
+    operations:
+      assets_for_all: false
+      split_duplicates: false
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+  movies:
+    library_name: Movies
+    remove_overlays: false
+    report_path: config/reports/movies.yml
+    collection_files:
+    - /config/metadata/collections.yml
+    - /config/metadata/decades.yml
+    - /config/metadata/suggestions_movies.yml
+    overlay_files:        
+    - /config/overlays/movies.yml
+    settings:
+      asset_directory:
+      - config/assets/
+    operations:
+      assets_for_all: false
+      split_duplicates: false
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+  movies_anime:
+    library_name: Movies | Anime
+    remove_overlays: false
+    report_path: config/reports/movies_anime.yml
     collection_files:
     - /config/metadata/anime.yml
+    overlay_files:
+    - /config/overlays/movies_anime.yml
     settings:
-      missing_path: config/missing
       asset_directory:
       - config/assets/
     operations:
       assets_for_all: false
       split_duplicates: false
-      delete_unmanaged_collections: false
-  Movies:
-    library_name: Movies
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+      item_audio_language: default  # Set default audio language
+      item_subtitle_language: en-US  # Set default subtitle language
+  anime:
+    library_name: TV | Anime
+    remove_overlays: false
+    report_path: config/reports/anime.yml
     collection_files:
-    - /config/metadata/genres.yml
-    - /config/metadata/holidays.yml
-    # - /config/metadata/studios.yml
-    - /config/metadata/movie_suggestions.yml
-    - /config/metadata/awards.yml
-    # - /config/metadata/collections.yml
-    - /config/metadata/decades.yml
+    - /config/metadata/anime.yml
+    overlay_files:
+    - /config/overlays/anime.yml
     settings:
-      missing_path: config/missing
       asset_directory:
       - config/assets/
-      - config/assets/movies
-      - config/assets/awards
-      - config/assets/collections
-      - config/assets/decades
-      - config/assets/genres
-      - config/assets/holidays
-      - config/assets/studios
-      - config/assets/movie_suggestions
     operations:
       assets_for_all: false
       split_duplicates: false
-      delete_unmanaged_collections: true
-  TV Shows:
-    library_name: TV Shows
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+      item_audio_language: default  # Set default audio language
+      item_subtitle_language: en-US  # Set default subtitle language
+      item_refresh:
+        enabled: true  # Enable item refresh
+        files:
+        - /config/metadata/anime.yml
+  shows:
+    library_name: TV | Shows
+    remove_overlays: false
+    report_path: config/reports/shows.yml
+    collection_files:
+    - /config/metadata/collections.yml
+    - /config/metadata/suggestions_tv.yml
+    - /config/metadata/networks.yml
+    overlay_files:        
+    - /config/overlays/shows.yml
+    settings:
+      asset_directory:
+      - config/assets/
+    operations:
+      assets_for_all: false
+      split_duplicates: false
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+  live:
+    library_name: TV | Live
+    remove_overlays: false
+    report_path: config/reports/live.yml
+    collection_files:
+    - /config/metadata/suggestions_tv.yml
+    - /config/metadata/networks.yml
+    overlay_files:        
+    - /config/overlays/live.yml
+    settings:
+      asset_directory:
+      - config/assets/
+    operations:
+      assets_for_all: false
+      split_duplicates: false
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+  teens:
+    library_name: TV | Teens
+    remove_overlays: false
+    report_path: config/reports/teens.yml
     collection_files:
     - /config/metadata/kids.yml
-    - /config/metadata/networks.yml
-    - /config/metadata/tv_suggestions.yml
+    overlay_files:        
+    - /config/overlays/teens.yml
     settings:
-      missing_path: config/missing
       asset_directory:
       - config/assets/
-      - config/assets/kids
-      - config/assets/networks
-      - config/assets/tv_suggestions
     operations:
       assets_for_all: false
       split_duplicates: false
-      delete_unmanaged_collections: true
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+  kids:
+    library_name: TV | Kids
+    remove_overlays: false
+    report_path: config/reports/kids.yml
+    collection_files:
+    - /config/metadata/kids.yml
+    overlay_files:        
+    - /config/overlays/kids.yml
+    settings:
+      asset_directory:
+      - config/assets/
+    operations:
+      assets_for_all: false
+      split_duplicates: false
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
 settings: # Can be individually specified per library as well
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
   cache: true
   cache_expiration: 60
+  asset_directory: config/assets
+  report_path: config/reports
   asset_folders: true
   asset_depth: 3
   create_asset_folders: true
-  create_asset_directories: true
+  prioritize_assets: false
   dimensional_asset_rename: true
+  download_url_assets: true
+  show_missing_season_assets: false
+  show_missing_episode_assets: true
+  show_asset_not_needed: true
   sync_mode: sync
+  minimum_items: 1
+  default_collection_order:
   delete_below_minimum: true
   delete_not_scheduled: false
   run_again_delay: 2
   missing_only_released: true
   only_filter_missing: false
   show_unmanaged: true
+  show_unconfigured: true
   show_filtered: true
   show_options: true
-  show_missing: false
+  show_missing: true
   show_missing_assets: false
-  show_missing_season_assets: false
-  save_missing: false
+  save_report: true
   tvdb_language: eng
   ignore_ids:
   ignore_imdb_ids:
-  minimum_items: 1
-  default_collection_order:
-  download_url_assets: true
-  verify_ssl: true
   item_refresh_delay: 0
-  asset_directory: config/assets
-  missing_path: config/missing
   playlist_sync_to_users: all
-  show_missing_episode_assets: true
-  show_asset_not_needed: true
-  custom_repo:
-  prioritize_assets: false
+  playlist_exclude_users:
   playlist_report: true
+  verify_ssl: true
+  custom_repo:
+  overlay_artwork_filetype: png
+  overlay_artwork_quality: 95
+  overlay_filetype: png
+  overlay_quality: 95
   check_nightly: false
 webhooks:
   error: notifiarr
@@ -122,35 +240,6 @@ mdblist:
   cache_expiration: 60
 notifiarr:
   apikey: 
-radarr: # Can be individually specified per library as well
-  url: http://192.168.1.2:7878/
-  token: ################################
-  add_missing: true
-  add_existing: false
-  root_folder_path: /media/movies
-  monitor: true
-  availability: released
-  quality_profile: 1080p
-  tag:
-  search: true
-  radarr_path: /media
-  plex_path: /media/movies
-sonarr:
-  url: http://192.168.1.12:32789
-  token: ################################
-  add_missing: true
-  add_existing: false
-  root_folder_path: /media/shows
-  monitor: all
-  quality_profile: 1080p
-  language_profile: English
-  series_type: standard
-  season_folder: true
-  tag: 
-  search: true
-  cutoff_search: false
-  sonarr_path: /media
-  plex_path: /media/shows
 anidb: # Not required for AniDB builders unless you want mature content
   username: 
   password: 

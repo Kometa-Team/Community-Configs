@@ -1,0 +1,56 @@
+##############################################################
+##                      Collections                         ##
+##                Created by JJJonesJr33                    ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:
+  Collection:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sort_title: +++++++++++_<<collection_name>>
+    collection_mode: hide
+    # collection_order: custom
+    # visible_home: range(10/01-10/31)
+    # visible_shared: range(10/01-10/31)
+    sync_mode: sync
+      
+#############################
+##       Collections       ##
+#############################
+
+collections:
+
+#################
+##    Trakt    ##
+#################
+
+  Stargate Universe In Order:
+    template: {name: Collection, poster: 228932}
+    collection_order: custom    
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/stargate-cinematic-universe-in-timeline-order
+    summary: "Stargate Cinematic Universe in Timeline Order"
+
+  Star Trek Universe In Order:
+    template: {name: Collection, poster: 164122}
+    collection_order: custom    
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/star-trek-cinematic-universe-in-timeline-order
+    summary: "Star Trek Cinematic Universe in Timeline Order"
+
+  Star Wars Universe In Order:
+    template: {name: Collection, poster: 226519}
+    collection_order: custom    
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/star-wars-cinematic-universe-in-timeline-order
+    summary: "Star Wars Cinematic Universe in Timeline Order"
+    
+  Marvel Cinematic Universe In Order:
+    template: {name: Collection, poster: 162417}
+    collection_order: custom    
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/marvel-cinematic-universe-in-timeline-order
+    summary: "Marvel Cinematic Universe In Order"
