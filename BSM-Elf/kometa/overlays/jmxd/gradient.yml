@@ -1,0 +1,6 @@
+overlays:
+  gradient:
+    overlay:
+      name: gradient
+      file: config/overlays/jmxd/gradient.png
+    plex_all: true
