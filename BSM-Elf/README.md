@@ -19,3 +19,4 @@ With ElfHosted, your `config.yml`resides in `/config/kometa/`. The `overlays` an
 
 
 *The overlays are based upon work done by `jmxd`, who can be found in the Kometa Discord.*
+![Screenshot 2024-10-11 090957](https://github.com/user-attachments/assets/f25e7882-9872-4f1c-9d9a-1653a4755beb)
