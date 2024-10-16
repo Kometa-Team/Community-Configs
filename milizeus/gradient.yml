@@ -1,0 +1,12 @@
+overlays:
+
+  gradient_top:
+    overlay:
+      name: gradient_top
+    plex_all: true
+
+  gradient_bottom:
+    overlay:
+      name: gradient_bottom
+    plex_all: true
+
