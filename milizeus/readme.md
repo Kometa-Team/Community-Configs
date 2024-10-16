@@ -1,6 +1,6 @@
 **Movies Preview**: 
 <br>
-<img width="1278" alt="screenshot_movies" src="https://github.com/milizeus/Plex-Meta-Manager-Configs/assets/1452641/09845daa-7caa-4930-86b4-99e9ed48e1a1">
+<img width="1278" alt="screenshot_movies" src="https://github.com/milizeus/Plex-Meta-Manager-Configs/blob/61f709235c55572f37be18eadb8c48663eb9f664/milizeus/screenshot_movies.png">
 
 <br>
 <br>
