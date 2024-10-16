@@ -18,6 +18,8 @@ templates:
       vertical_align: <<vertical_align>>
       vertical_offset: <<vertical_offset>>
 
+
+
 overlays:
 
 
@@ -926,5 +928,8 @@ overlays:
     plex_search:
       all:
         audience_rating.gte: 0.1
+        audience_rating.lte: 0.2
 
   ### RATINGS ###
+
+
