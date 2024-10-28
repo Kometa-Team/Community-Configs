@@ -1,3 +1,11 @@
+
+#  TV:
+  Movies:
+    #reapply_overlays: true
+
+    operations:
+      mass_imdb_parental_labels: none
+
     overlay_files:
     - file: config/miliconfig/001/overlay/both/gradient.yml
     - pmm: resolution
