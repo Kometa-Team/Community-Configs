@@ -4,6 +4,8 @@
     "tmdbtoken": "This is the super long token from tmdb - free",
     "FanartTvAPIKey": "fanart.tv token - free",
     "PlexToken": "plex token - free",
+    "JellyfinAPIKey": "JELLYFINAPIKEY",
+    "EmbyAPIKey": "EMBYAPIKEY",
     "FavProvider": "tmdb",
     "PreferredLanguageOrder": [
       "xx"
@@ -16,15 +18,13 @@
     "PosterMinWidth": "2000",
     "PosterMinHeight": "3000",
     "BgTcMinWidth": "3840",
-    "BgTcMinHeight": "2160",
-    "JellyfinAPIKey": "JELLYFINAPIKEY",
-    "EmbyAPIKey": "EMBYAPIKEY"
+    "BgTcMinHeight": "2160"
   },
   "PlexPart": {
     "LibstoExclude": [
-      "Movies",
-      "TV Shows",
-      "TestMovies",
+      "",
+      "",
+      "",
       "TestTV Shows",
       "Other Videos",
       "Music",
@@ -38,23 +38,33 @@
   },
   "JellyfinPart": {
     "LibstoExclude": [
-      "Youtube",
-      "Audiobooks",
-      "KidsAudiobooks",
-      "TechTrainings"
+      "",
+      "",
+      "",
+      "TestTV Shows",
+      "Other Videos",
+      "Music",
+      "Photos",
+      "Test Videos",
+      "Playlists"
     ],
-    "JellyfinUrl": "http://192.168.2.242:8096",
+    "JellyfinUrl": "http://192.168.2.242:8097",
     "UseJellyfin": "false",
     "UploadExistingAssets": "false"
   },
   "EmbyPart": {
     "LibstoExclude": [
-      "Youtube",
-      "Audiobooks",
-      "KidsAudiobooks",
-      "TechTrainings"
+      "",
+      "",
+      "",
+      "TestTV Shows",
+      "Other Videos",
+      "Music",
+      "Photos",
+      "Test Videos",
+      "Playlists"
     ],
-    "EmbyUrl": "http://192.168.2.242:8096/emby",
+    "EmbyUrl": "http://192.168.2.242:8096",
     "UseEmby": "false",
     "UploadExistingAssets": "false"
   },
@@ -112,7 +122,8 @@
     "text_offset": "+300",
     "AddTextStroke": "false",
     "strokecolor": "black",
-    "strokewidth": "6"
+    "strokewidth": "6",
+    "lineSpacing": "0"
   },
   "BackgroundOverlayPart": {
     "fontAllCaps": "true",
@@ -129,7 +140,8 @@
     "text_offset": "+200",
     "AddTextStroke": "false",
     "strokecolor": "black",
-    "strokewidth": "6"
+    "strokewidth": "6",
+    "lineSpacing": "0"
   },
   "TitleCardOverlayPart": {
     "UseBackgroundAsTitleCard": "false",
@@ -150,7 +162,8 @@
     "text_offset": "+290",
     "AddTextStroke": "false",
     "strokecolor": "black",
-    "strokewidth": "6"
+    "strokewidth": "6",
+    "lineSpacing": "0"
   },
   "TitleCardEPTextPart": {
     "fontAllCaps": "true",
@@ -165,7 +178,8 @@
     "EpisodeTCText": "Episode",
     "AddTextStroke": "false",
     "strokecolor": "black",
-    "strokewidth": "4"
+    "strokewidth": "4",
+    "lineSpacing": "0"
   },
   "SeasonPosterOverlayPart": {
     "fontAllCaps": "true",
@@ -183,7 +197,20 @@
     "AddTextStroke": "false",
     "strokecolor": "black",
     "strokewidth": "6",
+    "lineSpacing": "0"
+  },
+  "ShowTitleOnSeasonPosterPart": {
     "AddShowTitletoSeason": "false",
-    "SeasonTextNewLines": "1"
+    "fontAllCaps": "true",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "6",
+    "fontcolor": "white",
+    "minPointSize": "45",
+    "maxPointSize": "300",
+    "MaxWidth": "1900",
+    "MaxHeight": "500",
+    "text_offset": "+300",
+    "lineSpacing": "0"
   }
 }

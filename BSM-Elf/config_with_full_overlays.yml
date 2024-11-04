@@ -1,0 +1,231 @@
+libraries:                                      # This is called out once within the config.yml file                                       
+  Movies:                          # Each library must match the Plex library name
+    remove_overlays: false                        # Set this to true to remove all overlays:
+    overlay_files:
+    - file: config/kometa/overlays/jmxd/gradient.yml   #Top Gradient
+    - default: resolution   #Resolution & Dynamic Range
+      template_variables:
+        file: config/kometa/kometa/overlays/jmxd/resolution/<<key>><<alt>>.png
+        use_resolution: true
+        use_edition: false
+        horizontal_offset: 50
+        horizontal_align: left
+        vertical_offset: 50
+        vertical_align: top
+        back_radius: 0
+        back_align: left
+        back_color: '#00000000'
+        back_height: 50
+    - default: audio_codec   #Audio Codec
+      template_variables:
+        file: config/kometa/kometa/overlays/jmxd/audio_codec/<<key>>.png
+        horizontal_offset: 50
+        horizontal_align: right
+        vertical_offset: 50
+        vertical_align: top
+        back_radius: 0
+        back_align: right
+        back_color: '#00000000'
+        back_height: 50
+    - default: resolution   #Edition
+      template_variables:
+        file: config/kometa/overlays/jmxd/edition/<<key>>.png
+        use_resolution: false
+        use_edition: true
+        horizontal_offset: 0
+        horizontal_align: center
+        vertical_offset: 0
+        vertical_align: bottom
+        back_radius: 0
+        back_color: '#00000000'
+        back_height: 153
+    run_order:
+    - operations
+    - metadata
+    - collections
+    - overlays
+    collection_files:
+    - default: franchise
+      template_variables:
+        build_collection: true
+        sync_mode: append
+        collection_mode: hide
+        minimum_items: 2
+    - config/kometa/metadata/holidays.yml
+    #- config/kometa/metadata/decades.yml
+    #- config/kometa/metadata/studios.yml
+    - config/kometa/metadata/movie_suggestions.yml
+    - config/kometa/metadata/awards.yml
+    - config/kometa/metadata/collections.yml
+    - config/kometa/metadata/genres.yml
+    settings:
+      report_path: config/kometa/missing
+      asset_directory:
+      - config/kometa/assets/
+      - config/kometa/assets/movies
+      - config/kometa/assets/awards
+      - config/kometa/assets/collections
+      - config/kometa/assets/decades
+      - config/kometa/assets/genres
+      - config/kometa/assets/holidays
+      - config/kometa/assets/studios
+      - config/kometa/assets/movie_suggestions
+    operations:
+      assets_for_all: false
+      split_duplicates: false
+      mass_critic_rating_update: mdb
+      mass_audience_rating_update: imdb
+      item_refresh: true
+      delete_collections:
+        configured: false
+        managed: false
+        less: 2
+  TV Shows:                                                     # Must be named the same as Plex's 
+    run_order:
+    - operations
+    - metadata
+    - collections
+    - overlays
+    remove_overlays: false
+    overlay_files:
+    - default: network              # TV Show Networks
+      template_variables:
+        vertical_align: bottom
+        vertical_offset: 15
+        horizontal_align: left
+        horizontal_offset: 15
+    collection_files:
+    - config/kometa/metadata/networks.yml
+    - config/kometa/metadata/tv_suggestions.yml
+    settings:
+      report_path: config/kometa/missing
+      asset_directory:
+      - config/kometa/assets/
+      - config/kometa/assets/kids
+      - config/kometa/assets/networks
+      - config/kometa/assets/tv_suggestions
+    operations:
+      assets_for_all: false
+      split_duplicates: false
+playlist_files:
+- default: playlist                  # This is a file within PMM's defaults folder
+  template_variables:
+    trakt_list_xmen: https://trakt.tv/users/alan-pittflix/lists/x-men
+  # see the wiki for how to use local files, folders, URLs, or files from git
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_folders: true
+  asset_depth: 3
+  create_asset_folders: true
+  dimensional_asset_rename: true
+  download_url_assets: true
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 2
+  default_collection_order:
+  run_again_delay: 0
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: true
+  show_options: true
+  show_missing: false
+  show_missing_assets: false
+  save_report: true
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_user: all
+  playlist_exclude_users:
+  playlist_report: false
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality: 75
+  asset_directory: config/kometa/assets
+  prioritize_assets: false
+  delete_below_minimum: false
+  delete_not_scheduled: false
+plex:                            # Can be individually specified per library as well; REQUIRED for the script to run
+  url: http://plex:32400
+  token: 
+  timeout: 900
+  clean_bundles: true
+  empty_trash: false
+  optimize: true
+  verify_ssl:
+  db_cache: 40
+tmdb:                            # REQUIRED for the script to run
+  apikey: 0095192b8ceb2b5a44015e97f0afcc9c
+  language: en
+  cache_expiration: 60
+  region:
+tautulli:                        # Can be individually specified per library as well
+  url: http://tautulli:8181
+  apikey: 
+notifiarr:
+  apikey:
+mdblist:
+  apikey: 
+  cache_expiration: 60
+omdb:
+  apikey: 
+  cache_expiration: 60
+trakt:
+  client_id: 
+  client_secret: 
+  pin:
+  authorization:
+    # everything below is autofilled by the script
+    access_token: 
+    token_type: 
+    expires_in: 
+    refresh_token: 
+    scope: public
+    created_at: 
+radarr:                          # Can be individually specified per library as well.
+  url: http://radarr4k:7878        # Change this to either 'radarr4k' or 'radarr' # You can only link one.
+  token:               # Radarr API Token.
+  add_missing: false             # If you set this to 'true' then PMM/Kometa will scan your collections and add any movies missing from them to radarr/radarr4k.
+  add_existing: false            # If you set this to 'true' then PMM/Kometa will scan your collections and add all movies to radarr/radarr4k for monitoring.
+  root_folder_path: /storage/symlinks/movies-4k     # Change to your root path from radarr or radarr4k.
+  monitor: true                  # Monitor the movie when adding new movies.
+  availability: released        # Default Minimum Availability to use when adding new movies.
+  quality_profile:          # You must input the exact name of the quality profile you want used from radarr/radarr4 without typos.
+  tag: kometa                    # Default list or comma-separated string of tags to use when adding new movies.
+  search: false                  # Start search for missing movie when adding new movies.
+  radarr_path:                   # This can remain blank without issue.
+  plex_path:                     # This can remain blank without issue.
+  upgrade_existing: false        # Upgrades all existing movies in collections to match the Quality Profile of the collection.
+  monitor_existing: false        # Ensures all existing movies in collections match your monitor setting.
+  ignore_cache: false            # Ignores Kometa's cache when adding items to Radarr.
+sonarr:                          # Can be individually specified per library as well.
+  url: http://sonarr4k:8989        # Change this to either 'sonarr4k' or 'sonarr'. You can only link one or the other.
+  token:               # Sonarr API Token.
+  add_missing: false             # If you set this to 'true' then PMM/Kometa will scan your collections and add any movies missing from them to sonarr/sonarr4k.
+  add_existing: false            # If you set this to 'true' then PMM/Kometa will scan your collections and add any movies missing from them to sonarr/sonarr4k.
+  root_folder_path: /storage/symlinks/series-4k     # Change to your root path from sonarr or sonarr4k.
+  monitor: all                   # Default Monitor to use when adding new shows.
+  quality_profile:          # You must input the exact name of the quality profile you want used from sonarr/sonarr4k without typos.
+  language_profile: Original      # Default Language Profile to use when adding new shows.
+  series_type: standard          # Default Series Type to use when adding new shows.
+  season_folder: true            # Use the Season Folder Option when adding new shows.
+  tag: kometa                    # Default list or comma-separated string of tags to use when adding new shows.
+  search: false                  # Start search for missing episodes when adding new shows.
+  cutoff_search: false           # Start search for cutoff unmet episodes when adding new shows.
+  sonarr_path:                   # This can remain blank without issue.
+  plex_path:                     # This can remain blank without issue.
+  upgrade_existing: false        # Upgrades all existing shows in collections to match the Quality Profile of the collection.
+  monitor_existing: false        # Ensures all existing shows in collections match your monitor setting.
+  ignore_cache: false            #Ignores Kometa's cache when adding items to Sonarr.

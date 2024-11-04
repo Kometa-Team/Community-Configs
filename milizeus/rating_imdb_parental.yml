@@ -1,3 +1,6 @@
+##############################################################################
+##############################################################################
+
 templates:
   tmp_rating_imdb:
     collection_level: <<overlay_level>>
@@ -12,15 +15,33 @@ templates:
     overlay:
       name: <<overlay_name>>
       #weight: <<weight>>
-      #group: rating_imdb_parental 
+      #group: rating_imdb
       horizontal_align: <<horizontal_align>>
       horizontal_offset: <<horizontal_offset>>
       vertical_align: <<vertical_align>>
       vertical_offset: <<vertical_offset>>
 
+
+##############################################################################
+##############################################################################
+
+
 overlays:
 
-  ### IMDB PARENTAL RATING ###
+  backdrop:
+    overlay:
+      name: backdrop
+      horizontal_align: left
+      horizontal_offset: 65
+      vertical_align: bottom
+      vertical_offset: 24 # = audience
+      back_width: 337
+      back_height: 99
+      back_color: '#00000000'
+      back_radius: 8
+    plex_all: true
+
+  ### IMDB PARENTAL RATING ### 321 x 83
 
   non_nudity_none:
     template:
@@ -163,3 +184,6 @@ overlays:
         label: "Frightening:Severe"
 
   ### IMDB PARENTAL RATING ###
+
+
+
