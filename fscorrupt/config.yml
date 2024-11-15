@@ -32,18 +32,18 @@ libraries:
     - default: status
       template_variables:
         horizontal_align: center
-        vertical_align: top
-        vertical_offset: 0
+        vertical_align: bottom
+        vertical_offset: 23
         horizontal_offset: 0
-        back_height: 80
-        back_width: 1100
-        font: config/fonts/Avenir_95_Black.ttf
-        font_size: 60
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
         font_color_airing: '#27C24C'
         font_color_returning: '#FFA500'
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
-        back_color: '#FFFFFF'
+        back_color: '#00000000'
     - default: runtimes
       template_variables:
         builder_level: episode
@@ -275,18 +275,18 @@ libraries:
     - default: status
       template_variables:
         horizontal_align: center
-        vertical_align: top
-        vertical_offset: 0
+        vertical_align: bottom
+        vertical_offset: 23
         horizontal_offset: 0
-        back_height: 80
-        back_width: 1100
-        font: config/fonts/Avenir_95_Black.ttf
-        font_size: 60
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
         font_color_airing: '#27C24C'
         font_color_returning: '#FFA500'
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
-        back_color: '#FFFFFF'
+        back_color: '#00000000'
     - default: runtimes
       template_variables:
         builder_level: episode
@@ -339,18 +339,18 @@ libraries:
     - default: status
       template_variables:
         horizontal_align: center
-        vertical_align: top
-        vertical_offset: 0
+        vertical_align: bottom
+        vertical_offset: 23
         horizontal_offset: 0
-        back_height: 80
-        back_width: 1100
-        font: config/fonts/Avenir_95_Black.ttf
-        font_size: 60
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
         font_color_airing: '#27C24C'
         font_color_returning: '#FFA500'
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
-        back_color: '#FFFFFF'
+        back_color: '#00000000'
     - default: runtimes
       template_variables:
         builder_level: episode
@@ -403,22 +403,18 @@ libraries:
     - default: status
       template_variables:
         horizontal_align: center
-        vertical_align: top
-        vertical_offset: 0
+        vertical_align: bottom
+        vertical_offset: 23
         horizontal_offset: 0
-        back_height: 80
-        back_width: 1100
-        font: config/fonts/Avenir_95_Black.ttf
-        font_size: 60
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
         font_color_airing: '#27C24C'
         font_color_returning: '#FFA500'
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
-        back_color: '#FFFFFF'
-        #back_color_airing: '#016920'
-        #back_color_returning: '#81007F'
-        #back_color_canceled: '#ed1f1f'
-        #back_color_ended: '#000847'
+        back_color: '#00000000'
     - default: runtimes
       template_variables:
         builder_level: episode
@@ -475,7 +471,7 @@ settings:                                       # Can be individually specified 
   only_filter_missing: false
   show_missing_assets: true
   save_report: false
-  tvdb_language: 
+  tvdb_language: en
   ignore_ids:
   ignore_imdb_ids:
   item_refresh_delay: 0
@@ -490,16 +486,17 @@ settings:                                       # Can be individually specified 
   - metadata
   - collections
   - overlays
-  overlay_artwork_filetype: jpg   
-  overlay_artwork_quality: 75
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality: 90
 plex:                                           # Can be individually specified per library as well
   url: http://plex:32400
-  token: 
+  token:
   timeout: 360
   clean_bundles: false
   empty_trash: false
   optimize: false
   db_cache:
+  verify_ssl:
 webhooks:
   error:
   version:
@@ -507,19 +504,19 @@ webhooks:
   run_end:
   delete:
 tmdb:
-  apikey: 
+  apikey:
   language: en
   cache_expiration: 60
   region:
 tautulli:                                       # Can be individually specified per library as well
   url: http://tautulli:8181
-  apikey: 
+  apikey:
 omdb:
-  apikey: 
+  apikey:
   cache_expiration: 60
 radarr:                                         # Can be individually specified per library as well
   url: http://radarr:7878
-  token: 
+  token:
   version: v4
   root_folder_path: /mnt/unionfs/Movies
   monitor: false
@@ -533,12 +530,13 @@ radarr:                                         # Can be individually specified 
   add_missing: false
   upgrade_existing: false
   ignore_cache: false
+  monitor_existing: false
 sonarr:                                         # Can be individually specified per library as well
   url: http://sonarr:8989
-  token: 
+  token:
   version: v4
   root_folder_path: /mnt/unionfs/Shows
-  monitor: false
+  monitor: none
   quality_profile: 1080p - DE Only
   language_profile: German
   series_type: standard
@@ -552,17 +550,18 @@ sonarr:                                         # Can be individually specified 
   add_missing: false
   upgrade_existing: false
   ignore_cache: false
+  monitor_existing: false
 trakt:
-  client_id: 
-  client_secret: 
+  client_id:
+  client_secret:
   authorization:
-    access_token: 
+    access_token:
     token_type: Bearer
     expires_in: 7889237
-    refresh_token: 
+    refresh_token:
     scope: public
     created_at: 1704621604
   pin:
 mdblist:
-  apikey: 
+  apikey:
   cache_expiration: 60
