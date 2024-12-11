@@ -1,6 +1,71 @@
 ## This file is a template remove the .template to use the file
 
 libraries:
+  4K TV Shows:
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    collection_files:
+    - file: config/TVShows.yml
+    #- file: config/Genre.yml
+    overlay_files:
+    #- reapply_overlays: true
+    - default: network
+      template_variables:
+        builder_level: season
+        vertical_position: bottom
+        horizontal_position: center
+        horizontal_offset: 30
+        vertical_offset: 50
+        back_color: '#00000000'
+    - default: languages
+      template_variables:
+        builder_level: episode
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000000'
+        font_color: '#00000000'
+        back_width: 102
+        text: ''
+        final_name: <<key>>
+    - default: status
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        vertical_offset: 23
+        horizontal_offset: 0
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#00000000'
+    - default: runtimes
+      template_variables:
+        builder_level: episode
+        horizontal_align: right
+        back_color: '#00000000'
+        back_height: 80
+        vertical_offset: 20
+        horizontal_offset: 18
+        text: ''
+        back_width: 205
+    - remove_overlays: false
+    - file: config/overlays_tv.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K: true
+        4K_banner: true
+    settings:
+      asset_directory: /assets/4K TV Shows
+      prioritize_assets: true
+    operations:
+      assets_for_all: true
   4K Movies:
     schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
     schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
@@ -14,13 +79,15 @@ libraries:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
+        back_color: '#00000000'
     - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         text: ''
         final_name: <<key>>
     - default: runtimes
@@ -30,6 +97,7 @@ libraries:
         horizontal_offset: 140
         text: ''
         back_width: 205
+        back_color: '#00000000'
     - remove_overlays: false
     - file: config/overlays_movies.yml
       template_variables:
@@ -56,13 +124,15 @@ libraries:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
+        back_color: '#00000000'
     - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         text: ''
         final_name: <<key>>
     - default: runtimes
@@ -72,6 +142,7 @@ libraries:
         horizontal_offset: 140
         text: ''
         back_width: 205
+        back_color: '#00000000'
     - remove_overlays: false
     - file: config/overlays_movies.yml
       template_variables:
@@ -97,13 +168,15 @@ libraries:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
+        back_color: '#00000000'
     - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         text: ''
         final_name: <<key>>
     - default: runtimes
@@ -113,6 +186,7 @@ libraries:
         horizontal_offset: 140
         text: ''
         back_width: 205
+        back_color: '#00000000'
     - remove_overlays: false
     - file: config/overlays_movies.yml
       template_variables:
@@ -138,13 +212,15 @@ libraries:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
+        back_color: '#00000000'
     - default: languages
       template_variables:
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         text: ''
         final_name: <<key>>
     - default: runtimes
@@ -154,6 +230,7 @@ libraries:
         horizontal_offset: 140
         text: ''
         back_width: 205
+        back_color: '#00000000'
     - remove_overlays: false
     - file: config/overlays_movies.yml
       template_variables:
@@ -182,6 +259,7 @@ libraries:
         horizontal_position: center
         horizontal_offset: 30
         vertical_offset: 50
+        back_color: '#00000000'
     - default: languages
       template_variables:
         builder_level: episode
@@ -189,30 +267,31 @@ libraries:
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         back_width: 102
         text: ''
         final_name: <<key>>
     - default: status
       template_variables:
         horizontal_align: center
-        vertical_align: top
-        vertical_offset: 0
+        vertical_align: bottom
+        vertical_offset: 23
         horizontal_offset: 0
-        back_height: 80
-        back_width: 1100
-        font: config/fonts/Avenir_95_Black.ttf
-        font_size: 60
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
         font_color_airing: '#27C24C'
         font_color_returning: '#FFA500'
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
-        back_color: '#FFFFFF'
+        back_color: '#00000000'
     - default: runtimes
       template_variables:
         builder_level: episode
         horizontal_align: right
-        back_color: '#00000099'
+        back_color: '#00000000'
         back_height: 80
         vertical_offset: 20
         horizontal_offset: 18
@@ -244,6 +323,7 @@ libraries:
         horizontal_position: center
         horizontal_offset: 30
         vertical_offset: 50
+        back_color: '#00000000'
     - default: languages
       template_variables:
         builder_level: episode
@@ -251,30 +331,31 @@ libraries:
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         back_width: 102
         text: ''
         final_name: <<key>>
     - default: status
       template_variables:
         horizontal_align: center
-        vertical_align: top
-        vertical_offset: 0
+        vertical_align: bottom
+        vertical_offset: 23
         horizontal_offset: 0
-        back_height: 80
-        back_width: 1100
-        font: config/fonts/Avenir_95_Black.ttf
-        font_size: 60
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
         font_color_airing: '#27C24C'
         font_color_returning: '#FFA500'
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
-        back_color: '#FFFFFF'
+        back_color: '#00000000'
     - default: runtimes
       template_variables:
         builder_level: episode
         horizontal_align: right
-        back_color: '#00000099'
+        back_color: '#00000000'
         back_height: 80
         vertical_offset: 20
         horizontal_offset: 18
@@ -306,6 +387,7 @@ libraries:
         horizontal_position: center
         horizontal_offset: 30
         vertical_offset: 50
+        back_color: '#00000000'
     - default: languages
       template_variables:
         builder_level: episode
@@ -313,30 +395,31 @@ libraries:
         horizontal_position: left
         vertical_position: bottom
         style: square
-        back_color: '#00000099'
+        back_color: '#00000000'
+        font_color: '#00000000'
         back_width: 102
         text: ''
         final_name: <<key>>
     - default: status
       template_variables:
         horizontal_align: center
-        vertical_align: top
-        vertical_offset: 0
+        vertical_align: bottom
+        vertical_offset: 23
         horizontal_offset: 0
-        back_height: 80
-        back_width: 1100
-        font: config/fonts/Avenir_95_Black.ttf
-        font_size: 60
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
         font_color_airing: '#27C24C'
         font_color_returning: '#FFA500'
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
-        back_color: '#FFFFFF'
+        back_color: '#00000000'
     - default: runtimes
       template_variables:
         builder_level: episode
         horizontal_align: right
-        back_color: '#00000099'
+        back_color: '#00000000'
         back_height: 80
         vertical_offset: 20
         horizontal_offset: 18
@@ -388,7 +471,7 @@ settings:                                       # Can be individually specified 
   only_filter_missing: false
   show_missing_assets: true
   save_report: false
-  tvdb_language: 
+  tvdb_language: en
   ignore_ids:
   ignore_imdb_ids:
   item_refresh_delay: 0
@@ -403,16 +486,17 @@ settings:                                       # Can be individually specified 
   - metadata
   - collections
   - overlays
-  overlay_artwork_filetype: jpg   
-  overlay_artwork_quality: 75
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality: 90
 plex:                                           # Can be individually specified per library as well
   url: http://plex:32400
-  token: 
+  token:
   timeout: 360
   clean_bundles: false
   empty_trash: false
   optimize: false
   db_cache:
+  verify_ssl:
 webhooks:
   error:
   version:
@@ -420,19 +504,19 @@ webhooks:
   run_end:
   delete:
 tmdb:
-  apikey: 
+  apikey:
   language: en
   cache_expiration: 60
   region:
 tautulli:                                       # Can be individually specified per library as well
   url: http://tautulli:8181
-  apikey: 
+  apikey:
 omdb:
-  apikey: 
+  apikey:
   cache_expiration: 60
 radarr:                                         # Can be individually specified per library as well
   url: http://radarr:7878
-  token: 
+  token:
   version: v4
   root_folder_path: /mnt/unionfs/Movies
   monitor: false
@@ -446,12 +530,13 @@ radarr:                                         # Can be individually specified 
   add_missing: false
   upgrade_existing: false
   ignore_cache: false
+  monitor_existing: false
 sonarr:                                         # Can be individually specified per library as well
   url: http://sonarr:8989
-  token: 
+  token:
   version: v4
   root_folder_path: /mnt/unionfs/Shows
-  monitor: false
+  monitor: none
   quality_profile: 1080p - DE Only
   language_profile: German
   series_type: standard
@@ -465,17 +550,18 @@ sonarr:                                         # Can be individually specified 
   add_missing: false
   upgrade_existing: false
   ignore_cache: false
+  monitor_existing: false
 trakt:
-  client_id: 
-  client_secret: 
+  client_id:
+  client_secret:
   authorization:
-    access_token: 
+    access_token:
     token_type: Bearer
     expires_in: 7889237
-    refresh_token: 
+    refresh_token:
     scope: public
     created_at: 1704621604
   pin:
 mdblist:
-  apikey: 
+  apikey:
   cache_expiration: 60

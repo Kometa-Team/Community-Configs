@@ -1,0 +1,61 @@
+##############################################################
+##               Suggestions Collections                    ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+templates:
+  Suggestion:
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    collection_mode: hide
+    collection_order: release.desc
+    # visible_home: range(01/01-12/31)
+    # visible_shared: range(01/01-12/31)
+    sync_mode: sync
+
+collections:
+
+#################
+##    Trakt    ##
+#################
+
+  Trending:
+    template: {name: Suggestion, poster: 532898}  
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/trakt-trending
+    summary: "Movies Trending across the internet"
+    sort_title: +++_Trending
+    
+  Popular:
+    template: {name: Suggestion, poster: 532900}
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/trakt-top-weekly
+    summary: "A collection of the most watched movies over the past week."
+    sort_title: ++++_Popular
+    
+  Recommended:
+    template: {name: Suggestion, poster: 532903}
+    trakt_list:
+      - https://trakt.tv/users/bsm-venger/lists/movie-recommendations-couchmoney-tv
+    summary: "Recommended Top Movies of the Week"
+    sort_title: ++_Recommended
+    
+  Newly Released:
+    template: {name: Suggestion, poster: 532904}
+    url_poster: https://theposterdb.com/api/assets/213599
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/newly-released
+    summary: "A collection of newly-released movies in cinema and on streaming services."
+    sort_title: +++++_Newly Released
+    
+  Watchlist:
+    template: {name: Suggestion, poster: 241611}
+    url_poster: https://theposterdb.com/api/assets/532905
+    mdblist_list: https://mdblist.com/lists/bsm-venger/my-watchlist
+    collection_order: release.desc  
+    sync_mode: sync
+    summary: "A collection of movies I want to watch."    
+    sort_title: +_Watchlist
+

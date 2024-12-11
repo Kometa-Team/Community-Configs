@@ -1,0 +1,92 @@
+## _family.yml
+
+templates:
+  plex:
+    collection_mode: hide
+    delete_not_scheduled: false
+    sort_title: "+050_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+
+collections:
+  "Family: All":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_family/family_all.png
+    summary: "Family"
+    collection_order: alpha
+    template: {
+                    name: plex,
+                    num: "0"
+                }
+    plex_all: true
+    filters:
+      - filepath: "/mnt/tv-family"
+      - filepath: "/mnt/tv-family-4k"
+
+  "Family: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_family/family_unwatched.png
+    summary: "Unwatched family"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+        collection: "Family: All"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: title.asc
+
+  "Family: Random":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_family/family_random.png
+    summary: "Random family"
+    template: {
+                    name: plex,
+                    num: "2"
+                }
+    smart_filter:
+      all:
+        collection: "Family: All"
+      limit: 250
+      sort_by: random
+
+  "Family: Recently Added":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_family/family_recently-added.png
+    summary: "Recently added family"
+    visible_library: true
+    template: {
+                    name: plex,
+                    num: "3"
+                }
+    smart_filter:
+      all:
+        collection: "Family: All"
+      limit: 100
+      sort_by: added.desc
+
+  "Family: Recently Released":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_family/family_recently-released.png
+    summary: "Recently released family"
+    template: {
+                    name: plex,
+                    num: "4"
+                }
+    smart_filter:
+      all:
+        collection: "Family: All"
+      limit: 250
+      sort_by: release.desc
+
+  "Family: Top Rated":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_family/family_top-rated.png
+    summary: "Top rated family"
+    template: {
+                    name: plex,
+                    num: "5"
+                }
+    smart_filter:
+      all:
+        collection: "Family: All"
+      limit: 250
+      sort_by: critic_rating.desc

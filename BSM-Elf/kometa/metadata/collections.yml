@@ -1,0 +1,103 @@
+##############################################################
+##               Chart Collections                          ##
+##############################################################
+
+collections:
+  IMDb Top 250:
+    imdb_chart: top_movies
+    collection_order: custom
+    collection_mode: hide
+    sync_mode: sync    
+    sort_title: ++++++_Top_250_Movies
+    url_poster: https://theposterdb.com/api/assets/495518
+    summary: The IMDb Top 250 is a list of the top rated 250 films, based on ratings by the registered users of the website using the methods described. As of 5 September 2023, The Shawshank Redemption, directed by Frank Darabont, is No. 1 on the list, and has been since 2008.The "Top 250" rating is based on only the ratings of "regular voters". The number of votes a registered user would have to make to be considered as a user who votes regularly has been kept secret. IMDb has stated that to maintain the effectiveness of the Top 250 list they "deliberately do not disclose the criteria used for a person to be counted as a regular voter".
+  Martial Arts: #Added Trakt List
+    collection_order: critic_rating.desc
+    collection_mode: hide
+    sync_mode: sync     
+    sort_title: +++++++++++++_Martial_Arts
+    trakt_list:
+      - https://trakt.tv/users/moses456/lists/martial-arts_-awesome-martial-arts-movies
+    url_poster: https://theposterdb.com/api/assets/51773
+    summary: Martial Arts films are a sub-genre of action films that feature numerous martial arts combat between characters. These combats are usually the films' primary appeal and entertainment value, and often are a method of storytelling and character expression and development. Martial Arts are frequently featured in training scenes and other sequences in addition to fights. Martial Arts films commonly include other types of action, such as hand-to-hand combat, stuntwork, chases, and gunfights.   
+  Music: #Added Trakt List
+    collection_order: critic_rating.desc
+    collection_mode: hide
+    sync_mode: sync     
+    sort_title: +++++++++++++_Music
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/music  
+    url_poster: https://theposterdb.com/api/assets/532892
+    summary: Music films are genre that revolves around music being an integral part of the characters lives.
+  Stand Up Comedy:
+    collection_order: critic_rating.desc
+    collection_mode: hide
+    sync_mode: sync     
+    sort_title: +++++++++++++_Stand_Up_Comedy
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/stand-up-comedy
+    url_poster: https://theposterdb.com/api/assets/74610
+    summary: Stand-up comedy is a comedic style in which a comedian performs in front of a live audience, speaking directly to them through a microphone. Comedians give the illusion that they are dialoguing, but in actuality, they are monologuing a grouping of humorous stories, jokes and one-liners, typically called a shtick, routine, act, or set. Some stand-up comedians use props, music or magic tricks to enhance their acts. Stand-up comedians perform quasi-autobiographical and fictionalized extensions of their offstage selves.
+  Pandemic:
+    collection_order: critic_rating.desc
+    collection_mode: hide
+    sync_mode: sync     
+    sort_title: +++++++++++++_Pandemic
+    trakt_list:
+      - https://trakt.tv/users/siskourso/lists/pandemic-movies
+    url_poster: https://theposterdb.com/api/assets/55837
+    summary: A Pandemic film resolves around widespread viruses, plagues, and diseases. While not directly including any zombie keywords this will include a fair amount of zombie themed movies.  
+  Chick Flicks:
+    collection_order: critic_rating.desc
+    collection_mode: hide
+    sync_mode: sync     
+    sort_title: +++++++++++++_Chick_Flicks
+    trakt_list:
+      - https://trakt.tv/users/omar-comin/lists/chick-flicks
+      - https://trakt.tv/users/roy8846/lists/chick-flick-s
+      - https://trakt.tv/users/rizreflects/lists/chick-flicks
+    url_poster: https://theposterdb.com/api/assets/49133
+    summary: Although many types of films may be directed toward a female audience, the term "chick flick" is typically used only in reference to films that contain personal drama and emotion or themes that are relationship-based (although not necessarily romantic, as films may focus on parent-child or friend relationships).     
+  Romantic Comedy:
+    collection_order: critic_rating.desc
+    collection_mode: hide
+    sync_mode: sync     
+    sort_title: +++++++++++++_Romantic_Comedy
+    trakt_list:
+      - https://trakt.tv/users/29zombies/lists/romantic-comedies
+      - https://trakt.tv/users/jarvis-5345236/lists/romantic-comedies
+      - https://trakt.tv/users/martin216/lists/romantic-comedies?sort=released,asc
+    url_poster: https://theposterdb.com/api/assets/52015
+    summary: Romantic comedies (aka Rom-Coms) are defined by comedy derived from relationship frustrations that are intimate in nature. This includes any combination of gender or situation across the sexual spectrum with films that include some of the best romantic quotes ever written.   
+  Romantic Drama:
+    collection_order: critic_rating.desc
+    collection_mode: hide
+    sync_mode: sync     
+    sort_title: +++++++++++++_Romantic_Drama
+    trakt_list:
+      - https://trakt.tv/users/rizreflects/lists/romantic-dramas
+      - https://trakt.tv/users/kingkearney/lists/romantic-dramas
+    url_poster: https://theposterdb.com/api/assets/60370
+    summary: Romantic drama is a genre that intertwines love stories with intense emotional experiences, focusing on the characters' relationships and personal growth. It often explores themes of passion, conflict, sacrifice, and the complexity of love, balancing moments of joy and heartache.   
+  Comedy:
+    collection_order: critic_rating.desc
+    collection_mode: hide
+    sync_mode: sync     
+    sort_title: +++++++++++++_Comedy
+    trakt_list:
+      - https://trakt.tv/users/delorenzo2414/lists/comedylist
+      - https://trakt.tv/users/mynameisredo/lists/comedies18-nc17-r-nr-totally-adult-copy
+      - https://trakt.tv/users/29zombies/lists/comedies
+      - https://trakt.tv/users/omar-comin/lists/comedies
+    url_poster: https://theposterdb.com/api/assets/51397
+    summary: Comedy films are "make 'em laugh" films designed to elicit laughter from the audience. Comedies are light-hearted dramas, crafted to amuse, entertain, and provoke enjoyment.     
+  Gangster:
+    collection_order: critic_rating.desc
+    collection_mode: hide
+    sync_mode: sync     
+    sort_title: +++++++++++++_Ganster
+    trakt_list:
+      - https://trakt.tv/users/rockcrusher/lists/gangsters
+      - https://trakt.tv/users/kimchitech/lists/gangsters
+    url_poster: https://theposterdb.com/api/assets/62561
+    summary: A gangster film or gangster movie is a film belonging to a genre that focuses on gangs and organized crime. It is a subgenre of crime film, that may involve large criminal organizations, or small gangs formed to perform a certain illegal act.     

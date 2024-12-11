@@ -1,0 +1,166 @@
+templates:
+  Genre:
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Movie/Genre/Poster/<<poster>>.png
+    summary: <<summary>>
+    default:
+      exclude: Children, Anime
+    sort_title: "  !+08<<collection_name>>"
+    smart_filter:
+      sort_by: release.desc
+      validate: false
+      all:
+        genre.not: <<exclude>>
+        genre: <<genre>>
+  Genre IMDB:
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Movie/Genre/Poster/<<poster>>.png
+    summary: <<summary>>
+    sync_mode: append
+    smart_label: release.desc
+    sort_title: "  !+08<<collection_name>>"
+
+collections:
+  Action:
+    template:
+      name: Genre
+      genre: action
+      summary: "Experience heart-pounding excitement and adrenaline-fueled sequences with high-stakes action and intense confrontations."
+      poster: Action
+  Adventure:
+    template:
+      name: Genre
+      genre: adventure
+      summary: "Embark on epic journeys and thrilling quests across uncharted territories."
+      poster: Adventure
+  Animation:
+    template:
+      name: Genre
+      genre: animation
+      summary: "Dive into imaginative worlds and enchanting stories brought to life through animation."
+      exclude: null
+      poster: Animation
+  Comedy:
+    template:
+      name: Genre
+      genre: comedy
+      summary: "Get ready for a good laugh with hilarious antics and witty humor."
+      poster: Comedy
+  Crime:
+    template:
+      name: Genre
+      genre: crime
+      summary: "Delve into the dark underbelly of society with gripping tales of crime and justice."
+      poster: Crime
+  Disaster:
+    template:
+      name: Genre IMDB
+      summary: "Shit's goin' wrong, grab some popcorn."
+      poster: Disaster
+    imdb_list:
+      - https://www.imdb.com/list/ls538074103/
+      - https://www.imdb.com/list/ls064468734/
+  Documentary:
+    template:
+      name: Genre
+      genre: "biography,documentary"
+      summary: "Explore real-life stories, events, and experiences through informative documentaries."
+      poster: Documentary
+  Drama:
+    template:
+      name: Genre
+      genre: drama
+      summary: "Experience compelling narratives and deep emotional journeys."
+      poster: Drama
+  Family:
+    template:
+      name: Genre
+      genre: family
+      summary: "Enjoy heartwarming and fun-filled movies for all ages."
+      exclude: null
+      poster: Family
+  Fantasy:
+    template:
+      name: Genre
+      genre: fantasy
+      summary: "Enter magical realms and fantastical adventures beyond imagination."
+      exclude: null
+      poster: Fantasy
+  History:
+    template:
+      name: Genre
+      genre: history
+      summary: "Discover the past with captivating stories based on historical events."
+      poster: History
+  Horror:
+    template:
+      name: Genre
+      genre: horror
+      summary: "Prepare for spine-chilling tales and terrifying thrills."
+      poster: Horror
+  Music:
+    template:
+      name: Genre
+      genre: music
+      summary: "Celebrate the power of music with stories that strike a chord."
+      exclude: null
+      poster: Music
+  Mystery:
+    template:
+      name: Genre
+      genre: mystery
+      summary: "Unravel puzzling mysteries and thrilling whodunits."
+      poster: Mystery
+  Romance:
+    template:
+      name: Genre
+      genre: romance
+      summary: "Fall in love with heartwarming and passionate love stories."
+      poster: Romance
+  Romantic Comedy:
+    template:
+      name: Genre
+      genre: "romance,comedy"
+      summary: "Enjoy a delightful blend of humor and romance."
+      poster: RomanticComedy
+  Romantic Drama:
+    template:
+      name: Genre
+      genre: "romance,drama"
+      summary: "Experience the intense emotions of love and drama."
+      poster: RomanticDrama
+  Sci-Fi:
+    template:
+      name: Genre IMDB
+      genre: "sci-fi"
+      summary: "Explore futuristic worlds and mind-bending scientific adventures."
+      poster: Sci-Fi
+  Sports:
+    template:
+      name: Genre
+      genre: sport
+      summary: "Witness inspiring tales of athleticism and perseverance."
+      poster: Sports
+  Stand-Up:
+    template:
+      name: Genre IMDB
+      summary: "Turn off your cell phones and don't heckle."
+      poster: Stand-Up
+    imdb_list:
+      - https://www.imdb.com/list/ls041728102/
+  Thriller:
+    template:
+      name: Genre
+      genre: thriller
+      summary: "Experience the edge-of-your-seat suspense and excitement."
+      poster: Thriller
+  War:
+    template:
+      name: Genre
+      genre: war
+      summary: "Explore the intense and often harrowing realities of war."
+      poster: War
+  Western:
+    template:
+      name: Genre
+      genre: western
+      summary: "Saddle up for rugged adventures in the Wild West."
+      poster: Western

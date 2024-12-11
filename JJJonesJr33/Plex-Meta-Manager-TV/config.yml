@@ -1,60 +1,131 @@
-## This file is a template remove the .template to use the file
+#################################
+##    Version: 2.0.2-build50   ##
+##     UPDATED 09/27/2024      ##
+#################################
 
 libraries: # Library mappings must have a colon (:) placed after them
-  TV Shows:
-    library_name: TV Shows
+  shows:
+    library_name: TV | Shows
+    remove_overlays: false
+    report_path: config/reports/shows.yml
     collection_files:
+    - /config/metadata/collections.yml
     - /config/metadata/suggestions.yml
     - /config/metadata/networks.yml
-    - /config/metadata/kids.yml
+    overlay_files:        
+    - /config/overlays/shows.yml
     settings:
-      missing_path: config/missing
       asset_directory:
       - config/assets/
-      - config/assets/kids
-      - config/assets/networks
-      - config/assets/suggestions
     operations:
       assets_for_all: false
       split_duplicates: false
-      delete_unmanaged_collections: true
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+  live:
+    library_name: TV | Live
+    remove_overlays: false
+    report_path: config/reports/live.yml
+    collection_files:
+    - /config/metadata/suggestions.yml
+    - /config/metadata/networks.yml
+    overlay_files:        
+    - /config/overlays/live.yml
+    settings:
+      asset_directory:
+      - config/assets/
+    operations:
+      assets_for_all: false
+      split_duplicates: false
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+  teens:
+    library_name: TV | Teens
+    remove_overlays: false
+    report_path: config/reports/teens.yml
+    collection_files:
+    - /config/metadata/kids.yml
+    overlay_files:        
+    - /config/overlays/teens.yml
+    settings:
+      asset_directory:
+      - config/assets/
+    operations:
+      assets_for_all: false
+      split_duplicates: false
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
+  kids:
+    library_name: TV | Kids
+    remove_overlays: false
+    report_path: config/reports/kids.yml
+    collection_files:
+    - /config/metadata/kids.yml
+    overlay_files:        
+    - /config/overlays/kids.yml
+    settings:
+      asset_directory:
+      - config/assets/
+    operations:
+      assets_for_all: false
+      split_duplicates: false
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
 settings: # Can be individually specified per library as well
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
   cache: true
   cache_expiration: 60
+  asset_directory: config/assets
+  report_path: config/reports
   asset_folders: true
   asset_depth: 3
   create_asset_folders: true
-  create_asset_directories: true
+  prioritize_assets: false
   dimensional_asset_rename: true
+  download_url_assets: true
+  show_missing_season_assets: false
+  show_missing_episode_assets: true
+  show_asset_not_needed: true
   sync_mode: sync
+  minimum_items: 1
+  default_collection_order:
   delete_below_minimum: true
   delete_not_scheduled: false
   run_again_delay: 2
   missing_only_released: true
   only_filter_missing: false
   show_unmanaged: true
+  show_unconfigured: true
   show_filtered: true
   show_options: true
-  show_missing: false
+  show_missing: true
   show_missing_assets: false
-  show_missing_season_assets: false
-  save_missing: false
+  save_report: true
   tvdb_language: eng
   ignore_ids:
   ignore_imdb_ids:
-  minimum_items: 1
-  default_collection_order:
-  download_url_assets: true
-  verify_ssl: true
   item_refresh_delay: 0
-  asset_directory: config/assets
-  missing_path: config/missing
   playlist_sync_to_users: all
-  show_missing_episode_assets: true
-  show_asset_not_needed: true
-  custom_repo:
-  prioritize_assets: false
+  playlist_exclude_users:
   playlist_report: true
+  verify_ssl: true
+  custom_repo:
+  overlay_artwork_filetype: png
+  overlay_artwork_quality: 95
+  overlay_filetype: png
+  overlay_quality: 95
   check_nightly: false
 webhooks:
   error: notifiarr
@@ -78,6 +149,9 @@ tautulli: # Can be individually specified per library as well
   url: http://192.168.1.2:8181/
   apikey: 
 omdb:
+  apikey: 
+  cache_expiration: 60
+mdblist:
   apikey: 
   cache_expiration: 60
 notifiarr:

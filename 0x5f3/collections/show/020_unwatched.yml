@@ -12,7 +12,7 @@ templates:
 
 collections:
   "Unwatched: Random TV shows":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_unwatched/unwatched_random.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_random.png
     summary: "Random selection of TV shows"
     template: {
                     name: plex,
@@ -28,7 +28,7 @@ collections:
       sort_by: random
 
   "Unwatched: Recommended TV shows":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_unwatched/unwatched_recommended.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_recommended.png
     summary: "Based on personally favourited TV shows"
     template: {
                     name: plex,
@@ -42,7 +42,7 @@ collections:
       sort_by: title.asc
 
   "Unwatched: Suggested TV shows":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_unwatched/unwatched_suggested.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_suggested.png
     summary: "Based on watched and favourited TV shows"
     template: {
                     name: plex,
@@ -56,7 +56,7 @@ collections:
       sort_by: title.asc
 
   "Unwatched: Popular TV shows":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_unwatched/unwatched_popular.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_popular.png
     summary: "Popular TV shows across the internet"
     template: {
                     name: plex,
@@ -70,7 +70,7 @@ collections:
       sort_by: random
 
   "Unwatched: Top Rated TV shows":
-    url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_unwatched/unwatched_top-rated.png
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_top-rated.png
     summary: "Top rated TV shows across the internet"
     template: {
                     name: plex,

@@ -1,22 +1,30 @@
 {
-  "ApiPart":{
+  "ApiPart": {
     "tvdbapi": "tvdb api key - free",
     "tmdbtoken": "This is the super long token from tmdb - free",
     "FanartTvAPIKey": "fanart.tv token - free",
     "PlexToken": "plex token - free",
+    "JellyfinAPIKey": "JELLYFINAPIKEY",
+    "EmbyAPIKey": "EMBYAPIKEY",
     "FavProvider": "tmdb",
     "PreferredLanguageOrder": [
       "xx"
     ],
     "PreferredSeasonLanguageOrder": [
       "xx"
-    ]
+    ],
+    "tmdb_vote_sorting": "vote_average",
+    "WidthHeightFilter": "false",
+    "PosterMinWidth": "2000",
+    "PosterMinHeight": "3000",
+    "BgTcMinWidth": "3840",
+    "BgTcMinHeight": "2160"
   },
   "PlexPart": {
     "LibstoExclude": [
-      "Movies",
-      "TV Shows",
-      "TestMovies",
+      "",
+      "",
+      "",
       "TestTV Shows",
       "Other Videos",
       "Music",
@@ -24,7 +32,41 @@
       "Test Videos",
       "Playlists"
     ],
-    "PlexUrl": "http://192.168.2.242:32400"
+    "PlexUrl": "http://192.168.2.242:32400",
+    "UsePlex": "true",
+    "UploadExistingAssets": "false"
+  },
+  "JellyfinPart": {
+    "LibstoExclude": [
+      "",
+      "",
+      "",
+      "TestTV Shows",
+      "Other Videos",
+      "Music",
+      "Photos",
+      "Test Videos",
+      "Playlists"
+    ],
+    "JellyfinUrl": "http://192.168.2.242:8097",
+    "UseJellyfin": "false",
+    "UploadExistingAssets": "false"
+  },
+  "EmbyPart": {
+    "LibstoExclude": [
+      "",
+      "",
+      "",
+      "TestTV Shows",
+      "Other Videos",
+      "Music",
+      "Photos",
+      "Test Videos",
+      "Playlists"
+    ],
+    "EmbyUrl": "http://192.168.2.242:8096",
+    "UseEmby": "false",
+    "UploadExistingAssets": "false"
   },
   "Notification": {
     "SendNotification": "true",
@@ -51,7 +93,15 @@
     "SkipTBA": "true",
     "SkipJapTitle": "false",
     "AssetCleanup": "true",
-    "AutoUpdateIM": "true"
+    "AutoUpdateIM": "true",
+    "seasonoverlayfile": "bottom-up-fade.png",
+    "RTLFont": "Colus-Regular.ttf",
+    "NewLineOnSpecificSymbols": "false",
+    "NewLineSymbols": [
+      " - "
+    ],
+    "PlexUpload": "false",
+    "BackupPath": "P:\\assetsbackup"
   },
   "OverlayPart": {
     "ImageProcessing": "true",
@@ -69,7 +119,11 @@
     "borderwidth": "30",
     "MaxWidth": "1200",
     "MaxHeight": "485",
-    "text_offset": "+300"
+    "text_offset": "+300",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "6",
+    "lineSpacing": "0"
   },
   "BackgroundOverlayPart": {
     "fontAllCaps": "true",
@@ -83,7 +137,11 @@
     "borderwidth": "30",
     "MaxWidth": "3000",
     "MaxHeight": "500",
-    "text_offset": "+200"
+    "text_offset": "+200",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "6",
+    "lineSpacing": "0"
   },
   "TitleCardOverlayPart": {
     "UseBackgroundAsTitleCard": "false",
@@ -101,7 +159,11 @@
     "maxPointSize": "250",
     "MaxWidth": "2500",
     "MaxHeight": "300",
-    "text_offset": "+290"
+    "text_offset": "+290",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "6",
+    "lineSpacing": "0"
   },
   "TitleCardEPTextPart": {
     "fontAllCaps": "true",
@@ -113,7 +175,11 @@
     "MaxHeight": "150",
     "text_offset": "+140",
     "SeasonTCText": "Season",
-    "EpisodeTCText": "Episode"
+    "EpisodeTCText": "Episode",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "4",
+    "lineSpacing": "0"
   },
   "SeasonPosterOverlayPart": {
     "fontAllCaps": "true",
@@ -127,6 +193,24 @@
     "borderwidth": "30",
     "MaxWidth": "1200",
     "MaxHeight": "485",
-    "text_offset": "+300"
+    "text_offset": "+300",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "6",
+    "lineSpacing": "0"
+  },
+  "ShowTitleOnSeasonPosterPart": {
+    "AddShowTitletoSeason": "false",
+    "fontAllCaps": "true",
+    "AddTextStroke": "false",
+    "strokecolor": "black",
+    "strokewidth": "6",
+    "fontcolor": "white",
+    "minPointSize": "45",
+    "maxPointSize": "300",
+    "MaxWidth": "1900",
+    "MaxHeight": "500",
+    "text_offset": "+300",
+    "lineSpacing": "0"
   }
 }

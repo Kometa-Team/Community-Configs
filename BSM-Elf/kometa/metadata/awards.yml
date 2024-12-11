@@ -1,0 +1,77 @@
+##############################################################
+##               Movie Awards Collections                   ##
+##############################################################
+
+#######################
+##     Templates     ##
+#######################
+
+
+templates:
+    Awards:
+      url_poster: https://theposterdb.com/api/assets/<<poster>>
+    # visible_home: range(11/01-02/28)
+    # visible_shared: range(11/01-02/28)
+    # schedule: range(11/01-02/28)
+      collection_mode: hide
+      collection_order: release.asc
+      sync_mode: sync
+      label: <<smart_label>>
+        
+#############################
+##       Collections       ##
+#############################
+
+collections:
+
+  Best Picture Nominees:
+    imdb_award: 
+      event_id: ev0000003
+      category_filter: [best picture, best motion picture of the year]    
+      winning: false      
+      sync_mode: sync
+      collection_mode: hide
+      smart_label: release.asc
+      event_year: 1929-current
+    sort_title: ++++++++_best_picture_nominee
+    summary: "A collection of Oscar nominated films for Best Motion Picture of the Year"
+    url_poster: https://theposterdb.com/api/assets/10084
+
+  Best Picture Winners:
+    imdb_award: 
+      event_id: ev0000003
+      category_filter: [best picture, best motion picture of the year]
+      winning: true
+      sync_mode: sync
+      collection_mode: hide
+      smart_label: release.asc
+      event_year: 1929-current 
+    sort_title: +++++++_best_picture_winner
+    summary: "A collection of Oscar winning films for Best Motion Picture of the Year"
+    url_poster: https://theposterdb.com/api/assets/10096
+
+  Best Actor:
+    imdb_award: 
+      event_id: ev0000003
+      category_filter: [best actor in a leading role, best performance by an actor in a leading role]
+      winning: true
+      sync_mode: sync
+      collection_mode: hide
+      smart_label: release.asc
+      event_year: 1929-current 
+    sort_title: +++++++++_best_actor
+    summary: "A collection of Oscar winning films for Best Performance by an Actor in a Leading Role"
+    url_poster: https://theposterdb.com/api/assets/40088
+
+  Best Actress:
+    imdb_award: 
+      event_id: ev0000003
+      category_filter: [best actress in a leading role, best performance by an actress in a leading role]
+      winning: true
+      sync_mode: sync
+      collection_mode: hide
+      smart_label: release.asc
+      event_year: 1929-current 
+    sort_title: ++++++++++_best_actress
+    summary: "A collection of Oscar winning films for Best Performance by an Actress in a Leading Role"
+    url_poster: https://theposterdb.com/api/assets/40096
