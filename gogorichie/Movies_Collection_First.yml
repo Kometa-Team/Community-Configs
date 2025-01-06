@@ -69,10 +69,11 @@ collections:
           - 2021
           - 2022
           - 2023
+          - 2024
     collection_order: release
     collection_mode: default
   IMDB Top 250:
-    imdb_list: https://www.imdb.com/search/title/?groups=top_250&count=25
+    imdb_search: https://www.imdb.com/search/title/?groups=top_250&count=25
     summary: Top 250 most popular movies
     sync_mode: sync
     collection_mode: show_items
@@ -101,14 +102,14 @@ collections:
     schedule: weekly(friday)
 #Update monthly
   IMDB Top 100 Superhero Movies:
-    imdb_list: https://www.imdb.com/list/ls008583762/
+    imdb_search: https://www.imdb.com/list/ls008583762/
     summary: Top 100 Superhero Movies.
     collection_order: release
     collection_mode: default
-    schedule: monthly(2)
+    schedule: weekly(monday)
 #Update yearly
   IMDB Top 25 Baseball Movies:
-    imdb_list: https://www.imdb.com/list/ls064950205/
+    imdb_search: https://www.imdb.com/list/ls064950205/
     summary: Top 25 Baseball Movies.
     collection_order: alpha
     collection_mode: show_items
