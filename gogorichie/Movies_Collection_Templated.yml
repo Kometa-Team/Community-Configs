@@ -16,12 +16,12 @@ templates:
     url_poster: <<poster>>
     sort_title: <<collection_name>>
     collection_order: release
-    schedule: weekly(saturday)
+    schedule: weekly(sunday)
   imdb:
     url_poster: <<poster>>
     summary: <<summary>>
     sync_mode: sync
-    schedule: weekly(saturday)
+    schedule: weekly(sunday)
   Holiday:
     url_poster: <<poster>>
     sort_title: <<collection_name>>
