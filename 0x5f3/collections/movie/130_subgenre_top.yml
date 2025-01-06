@@ -1,0 +1,1695 @@
+## _subgenre_top.yml
+
+templates:
+  sub_genre:
+    collection_mode: hide
+    collection_order: critic_rating.desc
+    delete_not_scheduled: false
+    limit: 250
+    sort_title: "+130_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    imdb_search:
+      genre: <<genre>>
+      genre.any: <<genre.any>>
+      genre.not: documentary
+      keyword.any: <<keyword.any>>
+      keyword: <<keyword>>
+      language: <<language>>
+      limit: 250
+      rating.gte: <<rating.gte>>
+      sort_by: rating.desc
+      type: <<type>>
+      votes.gte: <<votes.gte>>
+    imdb_list:
+      - <<imdb_extra_1>>
+      - <<imdb_extra_2>>
+      - <<imdb_extra_3>>
+      - <<imdb_extra_4>>
+      - <<imdb_extra_5>>
+    letterboxd_list_details:
+      - url: https://letterboxd.com/ediblehedgehog/list/<<letterboxd_list>>/by/rating/
+        limit: 250
+      - url: <<letterboxd_list_details_url_1>>
+        limit: <<letterboxd_list_details_limit_1>>
+      - url: <<letterboxd_list_details_url_2>>
+        limit: <<letterboxd_list_details_limit_2>>
+      - url: <<letterboxd_list_details_url_3>>
+        limit: <<letterboxd_list_details_limit_3>>
+      - url: <<letterboxd_list_details_url_4>>
+        limit: <<letterboxd_list_details_limit_4>>
+      - url: <<letterboxd_list_details_url_5>>
+        limit: <<letterboxd_list_details_limit_5>>
+    trakt_list:
+      - <<trakt_extra_1>>
+      - <<trakt_extra_2>>
+      - <<trakt_extra_3>>
+      - <<trakt_extra_4>>
+      - <<trakt_extra_5>>
+    optional:
+      - genre
+      - genre.any
+      - imdb_extra_1
+      - imdb_extra_2
+      - imdb_extra_3
+      - imdb_extra_4
+      - imdb_extra_5
+      - keyword
+      - keyword.any
+      - letterboxd_list_details_url_1
+      - letterboxd_list_details_url_2
+      - letterboxd_list_details_url_3
+      - letterboxd_list_details_url_4
+      - letterboxd_list_details_url_5
+      - letterboxd_list_details_limit_1
+      - letterboxd_list_details_limit_2
+      - letterboxd_list_details_limit_3
+      - letterboxd_list_details_limit_4
+      - letterboxd_list_details_limit_5
+      - trakt_extra_1
+      - trakt_extra_2
+      - trakt_extra_3
+      - trakt_extra_4
+      - trakt_extra_5
+
+collections:
+  "Top Rated in Absurdism":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_absurdism.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Absurdism"
+    template: {
+                    keyword: "absurdism",
+                    language: "en",
+                    letterboxd_list: "theme-absurdism",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Aliens":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_aliens.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Aliens"
+    template: {
+                    keyword: "alien,alien-invasion",
+                    language: "en",
+                    letterboxd_list: "theme-aliens",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Alternate History":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_alternate-history.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Alternate History"
+    template: {
+                    keyword: "alternate-history",
+                    language: "en",
+                    letterboxd_list: "theme-alternate-history",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Animatronic":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_animatronic.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Animatronic"
+    template: {
+                    keyword.any: "animatronic,puppetry",
+                    language: "en",
+                    letterboxd_list: "theme-animatronic",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Anti-Hero":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_anti-hero.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Anti-Hero"
+    template: {
+                    keyword: "anti-hero,superhero",
+                    language: "en",
+                    letterboxd_list: "theme-anti-hero",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Apocalypse":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_apocalypse.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Apocalypse"
+    template: {
+                    keyword: "apocalypse,end-of-the-world",
+                    language: "en",
+                    letterboxd_list: "theme-apocalypse",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Artificial Intelligence":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_artificial-intelligence.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Artificial Intelligence"
+    template: {
+                    keyword: "artificial-intelligence",
+                    language: "en",
+                    letterboxd_list: "theme-artificial-intelligence",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Assassins":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_assassins.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Assassins"
+    template: {
+                    keyword: "assassination-attempt",
+                    language: "en",
+                    letterboxd_list: "theme-assassins",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Betrayal":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_betrayal.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Betrayal"
+    template: {
+                    keyword: "betrayal",
+                    language: "en",
+                    letterboxd_list: "theme-betrayal",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Blaxploitation":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_blaxploitation.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Blaxploitation"
+    template: {
+                    keyword: "blaxploitation",
+                    language: "en",
+                    letterboxd_list: "theme-blaxploitation",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Boxing":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_boxing.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Boxing"
+    template: {
+                    keyword.any: "boxing,boxing-champion",
+                    language: "en",
+                    letterboxd_list: "theme-boxing",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Bugs":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_bugs.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Bugs"
+    template: {
+                    keyword: "giant-insect",
+                    language: "en",
+                    letterboxd_list: "theme-bugs",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Cannibals":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_cannibals.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Cannibals"
+    template: {
+                    keyword: "cannibalism,cannibal",
+                    language: "en",
+                    letterboxd_list: "theme-cannibalism",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Caper":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_caper.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Caper"
+    template: {
+                    keyword: "caper",
+                    language: "en",
+                    letterboxd_list: "theme-caper",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Chick-flick":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_chick-flick.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Chick-flick"
+    template: {
+                    keyword: "chick-flick",
+                    language: "en",
+                    letterboxd_list_details_url_1: "https://letterboxd.com/akookieforyou/list/chick-flicks/by/rating/",
+                    letterboxd_list_details_limit_1: 250,
+                    letterboxd_list_details_url_2: "https://letterboxd.com/marialuisacctc/list/women-have-superior-taste-that-is-why-these/by/rating/",
+                    letterboxd_list_details_limit_2: 250,
+                    letterboxd_list: "theme-chick-flick",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Comics":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_comics.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Comics"
+    template: {
+                    keyword: "based-on-comic",
+                    language: "en",
+                    letterboxd_list: "theme-comics",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Coming of Age":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_coming-of-age.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Coming of Age"
+    template: {
+                    keyword: "coming-of-age,friendship,teenage-boy,teenage-girl",
+                    language: "en",
+                    letterboxd_list: "theme-coming-of-age",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Conspiracy":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_conspiracy.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Conspiracy"
+    template: {
+                    keyword: "conspiracy",
+                    language: "en",
+                    letterboxd_list: "theme-conspiracy",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Con-Artists":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_con-artists.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Con-Artists"
+    template: {
+                    keyword: "con-artist,con-man",
+                    language: "en",
+                    letterboxd_list: "theme-con-artists",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Cop":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_cop.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Cop"
+    template: {
+                    keyword: "detective,police-car,police-detective,police-officer,police-station,police",
+                    language: "en",
+                    letterboxd_list: "theme-cop",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Costume Drama":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_costume-drama.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Costume Drama"
+    template: {
+                    keyword: "costume-drama",
+                    language: "en",
+                    letterboxd_list: "theme-costume-drama",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Courtroom":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_courtroom.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Courtroom"
+    template: {
+                    keyword: "courtroom,judge,lawyer",
+                    language: "en",
+                    letterboxd_list: "theme-courtroom",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Cyberpunk":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_cyberpunk.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Cyberpunk"
+    template: {
+                    keyword: "cyberpunk,future",
+                    language: "en",
+                    letterboxd_list: "theme-cyberpunk",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Dark Comedy":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_dark-comedy.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Dark Comedy"
+    template: {
+                    genre: "comedy",
+                    keyword.any: "black-comedy,dark-comedy",
+                    language: "en",
+                    letterboxd_list: "theme-dark-comedy",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Dark Fantasy":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_dark-fantasy.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Dark Fantasy"
+    template: {
+                    keyword: "dark-fantasy",
+                    language: "en",
+                    letterboxd_list: "theme-dark-fantasy",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Demonic":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_demonic.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Demonic"
+    template: {
+                    keyword: "demon",
+                    language: "en",
+                    letterboxd_list: "theme-demonic",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Detective":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_detective.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Detective"
+    template: {
+                    keyword: "detective,police-detective",
+                    language: "en",
+                    letterboxd_list: "theme-detective",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Dinosaurs":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_dinosaurs.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Dinosaurs"
+    template: {
+                    keyword: "dinosaur",
+                    language: "en",
+                    letterboxd_list: "theme-dinosaurs",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Disaster":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_disaster.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Disaster"
+    template: {
+                    keyword: "disaster,disaster-film",
+                    language: "en",
+                    letterboxd_list: "theme-disaster",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Dragons":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_dragons.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Dragons"
+    template: {
+                    keyword: "dragon",
+                    language: "en",
+                    letterboxd_list: "theme-dragons",
+                    name: sub_genre,
+                    rating.gte: 3,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Dystopian":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_dystopian.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Dystopian"
+    template: {
+                    keyword: "dystopia",
+                    language: "en",
+                    letterboxd_list: "theme-dystopian",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Epics":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_epics.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Epics"
+    template: {
+                    keyword: "epic",
+                    language: "en",
+                    letterboxd_list: "theme-epics",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Espionage":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_espionage.png
+    schedule: weekly(tuesday)
+    summary: "Top rated movies in Espionage"
+    template: {
+                    keyword: "espionage",
+                    language: "en",
+                    letterboxd_list: "theme-espionage",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Experimental":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_experimental.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Experimental"
+    template: {
+                    keyword: "experimental-film",
+                    language: "en",
+                    letterboxd_list: "theme-experimental",
+                    name: sub_genre,
+                    rating.gte: 3,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Exploitation":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_exploitation.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Exploitation"
+    template: {
+                    keyword: "exploitation-film",
+                    language: "en",
+                    letterboxd_list_details_url_1: "https://letterboxd.com/axeman/list/exploitation/by/rating/",
+                    letterboxd_list_details_limit_1: 250,
+                    letterboxd_list: "theme-exploitation",
+                    name: sub_genre,
+                    rating.gte: 3,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Fairytales":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_fairytales.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Fairytales"
+    template: {
+                    keyword: "based-on-fairy-tale",
+                    language: "en",
+                    letterboxd_list: "theme-fairytale",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Found Footage":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_found-footage.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Found Footage"
+    template: {
+                    genre: "horror",
+                    keyword: "found-footage",
+                    language: "en",
+                    letterboxd_list: "theme-found-footage",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Fugitives":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_fugitives.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Fugitives"
+    template: {
+                    keyword: "fugitive,on-the-run",
+                    language: "en",
+                    letterboxd_list: "theme-fugitives",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Futuristic":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_futuristic.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Futuristic"
+    template: {
+                    keyword: "future",
+                    language: "en",
+                    letterboxd_list: "theme-futuristic",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Gangster":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_gangster.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Gangster"
+    template: {
+                    keyword: "gangster",
+                    language: "en",
+                    letterboxd_list: "theme-gangster",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Ghosts":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_ghosts.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Ghosts"
+    template: {
+                    genre: "horror",
+                    keyword: "ghost",
+                    language: "en",
+                    letterboxd_list: "theme-ghosts",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+
+                }
+
+  "Top Rated in Gothic":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_gothic.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Gothic"
+    template: {
+                    genre: "horror",
+                    keyword: "gothic",
+                    language: "en",
+                    letterboxd_list: "theme-gothic",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Grindhouse":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_grindhouse.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Grindhouse"
+    template: {
+                    keyword: "grindhouse",
+                    language: "en",
+                    letterboxd_list_details_url_1: "https://letterboxd.com/narpjay/list/exploitation-films-b-movie-cheese-grindhouse/by/rating/",
+                    letterboxd_list_details_limit_1: 250,
+                    letterboxd_list: "theme-grindhouse",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Heartbreak":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_heartbreak.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Heartbreak"
+    template: {
+                    keyword: "broken-heart",
+                    language: "en",
+                    letterboxd_list: "theme-heartbreak",
+                    name: sub_genre,
+                    rating.gte: 1,
+                    type: "movie,tv_movie",
+                    votes.gte: 10
+                }
+
+  "Top Rated in Heists":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_heists.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Heists"
+    template: {
+                    keyword: "heist,robbery",
+                    language: "en",
+                    letterboxd_list: "theme-heists",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Historical Event":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_historical-event.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Historical Event"
+    template: {
+                    keyword: "historical-event",
+                    language: "en",
+                    letterboxd_list: "theme-historical-event",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Hostage":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_hostage.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Hostage"
+    template: {
+                    imdb_extra_1: "https://www.imdb.com/search/keyword/?title_type=movie,tv_movie&user_rating=5.0,10.0&num_votes=1000,&keywords=hostage,kidnapping&languages=en&sort=user_rating,desc",
+                    keyword: "hostage-situation",
+                    language: "en",
+                    letterboxd_list: "theme-hostage",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                 }
+
+  "Top Rated in Hustle":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_hustle.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Hustle"
+    template: {
+                    keyword: "hustler,gambling",
+                    language: "en",
+                    letterboxd_list: "theme-hustle",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in LGBTQ+":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_lgbtq.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in LGBTQ+"
+    template: {
+                    keyword.any: "lgbt,lgbtq,lgbtqi,lgbtqia,gay,lesbianism,homosexuality,gay-interest",
+                    language: "en",
+                    letterboxd_list: "theme-lgbtq",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Martial-Arts":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_martial-arts.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Martial-Arts"
+    template: {
+                    imdb_extra_1: "https://www.imdb.com/list/ls000099643",
+                    imdb_extra_2: "https://www.imdb.com/list/ls068611186",
+                    imdb_extra_3: "https://www.imdb.com/list/ls068378513",
+                    imdb_extra_4: "https://www.imdb.com/list/ls090404120",
+                    keyword: "martial-artist,martial-arts-master,martial-arts",
+                    language: "en",
+                    letterboxd_list: "theme-martial-arts",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Medical":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_medical.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Medical"
+    template: {
+                    keyword: "medical",
+                    language: "en",
+                    letterboxd_list: "theme-medical",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Medieval":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_medieval.png
+    schedule: weekly(wednesday)
+    summary: "Top rated movies in Medieval"
+    template: {
+                    keyword: "medieval-times",
+                    language: "en",
+                    letterboxd_list: "theme-medieval",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Melodrama":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_melodrama.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Melodrama"
+    template: {
+                    keyword: "melodrama",
+                    language: "en",
+                    letterboxd_list: "theme-melodrama",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Military":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_military.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Military"
+    template: {
+                    keyword: "military,soldier",
+                    language: "en",
+                    letterboxd_list: "theme-military",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Mindfuck":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_mindfuck.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Mindfuck"
+    template: {
+                    imdb_extra_1: "https://www.imdb.com/list/ls066069214",
+                    keyword: "mindbender",
+                    language: "en",
+                    letterboxd_list: "theme-mindfuck",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    trakt_extra_1: "https://trakt.tv/users/hdlists/lists/mindfuck-movies",
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Mockumentary":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_mockumentary.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Mockumentary"
+    template: {
+                    imdb_extra_1: "https://www.imdb.com/list/ls027069047",
+                    keyword: "mockumentary,fake-documentary",
+                    language: "en",
+                    letterboxd_list: "theme-mockumentary",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Monsters":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_monsters.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Monsters"
+    template: {
+                    genre: "horror",
+                    keyword: "creature,monster,creature-feature",
+                    language: "en",
+                    letterboxd_list: "theme-monsters",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Mythology":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_mythology.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Mythology"
+    template: {
+                    keyword: "mythology",
+                    language: "en",
+                    letterboxd_list: "theme-mythology",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Naval":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_naval.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Naval"
+    template: {
+                    keyword: "naval-battle",
+                    language: "en",
+                    letterboxd_list: "theme-naval",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Ninjas":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_ninjas.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Ninjas"
+    template: {
+                    keyword: "ninja",
+                    language: "en",
+                    letterboxd_list: "theme-ninjas",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Novel":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_novel.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Novel"
+    template: {
+                    keyword: "based-on-book,based-on-novel",
+                    language: "en",
+                    letterboxd_list: "theme-novel",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Nunsploitation":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_nunsploitation.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Nunsploitation"
+    template: {
+                    keyword: "nunsploitation",
+                    language: "en",
+                    letterboxd_list: "theme-nunsploitation",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Occult":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_occult.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Occult"
+    template: {
+                    keyword: "occult",
+                    language: "en",
+                    letterboxd_list: "theme-occult",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Outerspace":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_outerspace.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Outerspace"
+    template: {
+                    keyword: "outer-space,space-travel",
+                    language: "en",
+                    letterboxd_list: "theme-outer-space",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    trakt_extra_1: "https://trakt.tv/users/hdlists/lists/outer-space-space-exploration-movies",
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Outlaw":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_outlaw.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Outlaw"
+    template: {
+                    keyword: "outlaw",
+                    language: "en",
+                    letterboxd_list: "theme-outlaw",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Pandemic":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_pandemic.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Pandemic"
+    template: {
+                    keyword: "pandemic",
+                    language: "en",
+                    letterboxd_list: "theme-pandemic",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Paranormal":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_paranormal.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Paranormal"
+    template: {
+                    keyword: "paranormal-phenomenon",
+                    language: "en",
+                    letterboxd_list: "theme-paranormal",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Parody":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_parody.png
+    schedule: weekly(thursday)
+    summary: "Top rated movies in Parody"
+    template: {
+                    keyword.any: "parody,parody-comedy",
+                    language: "en",
+                    letterboxd_list: "theme-parody",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Period Drama":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_period-drama.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Period Drama"
+    template: {
+                    keyword: "period-drama",
+                    language: "en",
+                    letterboxd_list: "theme-period-drama",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Petrolhead":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_petrolhead.png
+    schedule: weekly(monday)
+    summary: "Top rated movies in Petrolhead"
+    template: {
+                    keyword.any: "car-racing,racing",
+                    language: "en",
+                    letterboxd_list: "theme-petrolhead",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Philosophical":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_philosophical.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Philosophical"
+    template: {
+                    keyword: "philosophy",
+                    language: "en",
+                    letterboxd_list: "theme-philosophical",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    trakt_extra_1: "https://trakt.tv/users/rizreflects/lists/philosophical",
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Political":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_political.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Political"
+    template: {
+                    keyword: "politics,politician",
+                    language: "en",
+                    letterboxd_list: "theme-political",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Post-Apocalyptic":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_post-apocalyptic.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Post-Apocalyptic"
+    template: {
+                    keyword: "post-apocalypse",
+                    language: "en",
+                    letterboxd_list: "theme-post-apocalyptic",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Prehistoric":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_prehistoric.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Prehistoric"
+    template: {
+                    keyword: "prehistoric-times",
+                    language: "en",
+                    letterboxd_list_details_url_1: "https://letterboxd.com/mikkelhh/list/before-civilization-prehistoric-films/by/rating/",
+                    letterboxd_list_details_limit_1: 250,
+                    letterboxd_list: "theme-prehistoric",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Prison":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_prison.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Prison"
+    template: {
+                    keyword: "prison,prisoner,prison-guard",
+                    language: "en",
+                    letterboxd_list: "theme-prison",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Psychedelic":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_psychedelic.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Psychedelic"
+    template: {
+                    keyword: "psychedelic",
+                    language: "en",
+                    letterboxd_list: "theme-psychedelic",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Psychological":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_psychological.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Psychological"
+    template: {
+                    keyword.any: "psychological,psychological-horror",
+                    language: "en",
+                    letterboxd_list: "theme-psychological",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Religion":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_religion.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Religion"
+    template: {
+                    keyword: "faith,religion,prayer",
+                    language: "en",
+                    letterboxd_list: "theme-religous",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Remake":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_remake.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Remake"
+    template: {
+                    keyword: "remake",
+                    language: "en",
+                    letterboxd_list_details_url_1: "https://letterboxd.com/l_shelby/list/remakes/by/rating/",
+                    letterboxd_list_details_limit_1: 250,
+                    letterboxd_list: "theme-remake",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Revenge":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_revenge.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Revenge"
+    template: {
+                    keyword: "revenge-plot",
+                    language: "en",
+                    letterboxd_list: "theme-revenge",
+                    name: sub_genre,
+                    rating.gte: 3,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Robots":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_robots.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Robots"
+    template: {
+                    keyword: "giant-robot",
+                    language: "en",
+                    letterboxd_list: "theme-robots",
+                    name: sub_genre,
+                    rating.gte: 3,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Romantic Comedy":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_romantic-comedy.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Romantic Comedy"
+    template: {
+                    genre: "romance,comedy",
+                    language: "en",
+                    letterboxd_list: "theme-romantic-comedy",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+    filters:
+     genre: Comedy
+     year.gte: 1960
+
+  "Top Rated in Romantic Drama":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_romantic-drama.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Romantic Drama"
+    template: {
+                    genre: "romance,drama",
+                    language: "en",
+                    letterboxd_list: "theme-romantic-drama",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+    filters:
+     genre: Drama
+     year.gte: 1960
+
+  "Top Rated in Samurai":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_samurai.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Samurai"
+    template: {
+                    keyword: "samurai,sword-fight",
+                    language: "en",
+                    letterboxd_list_details_url_1: "https://letterboxd.com/jhcrotinger/list/samurai/by/rating/",
+                    letterboxd_list_details_limit_1: 250,
+                    letterboxd_list: "theme-samurai",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Satire":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_satire.png
+    schedule: weekly(friday)
+    summary: "Top rated movies in Satire"
+    template: {
+                    genre: "comedy",
+                    keyword: "satire",
+                    language: "en",
+                    letterboxd_list: "theme-satire",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Serial Killers":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_serial-killers.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Serial Killers"
+    template: {
+                    keyword: "serial-killer,murder",
+                    language: "en",
+                    letterboxd_list: "theme-serial-killers",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Slasher":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_slasher.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Slasher"
+    template: {
+                    imdb_extra_1: "https://www.imdb.com/list/ls053988992",
+                    imdb_extra_2: "https://www.imdb.com/list/ls029703473",
+                    imdb_extra_3: "https://www.imdb.com/list/ls002540370",
+                    imdb_extra_4: "https://www.imdb.com/list/ls062357250",
+                    keyword: "slasher",
+                    language: "en",
+                    letterboxd_list: "theme-slasher",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Space Opera":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_space-opera.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Space Opera"
+    template: {
+                    keyword: "space-opera",
+                    language: "en",
+                    letterboxd_list: "theme-space-opera",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Spaghetti Western":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_spaghetti-western.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Spaghetti Western"
+    template: {
+                    keyword: "spaghetti-western",
+                    language: "en",
+                    letterboxd_list: "theme-spaghetti-western",
+                    name: sub_genre,
+                    rating.gte: 1,
+                    type: "movie,tv_movie",
+                    votes.gte: 10
+                }
+
+  "Top Rated in Splatter":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_splatter.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Splatter"
+    template: {
+                    genre: "horror",
+                    keyword: "splatter",
+                    language: "en",
+                    letterboxd_list: "theme-splatter",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Steampunk":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_steampunk.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Steampunk"
+    template: {
+                    keyword: "steampunk",
+                    language: "en",
+                    letterboxd_list: "theme-steampunk",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Stoner":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_stoner.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Stoner"
+    template: {
+                    keyword: "stoner,marijuana",
+                    language: "en",
+                    letterboxd_list: "theme-stoner",
+                    name: sub_genre,
+                    rating.gte: 1,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Stop-Motion":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_stop-motion.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Stop-Motion"
+    template: {
+                    keyword: "stop-motion",
+                    language: "en",
+                    letterboxd_list_details_url_1: "https://letterboxd.com/savage_/list/stop-motion/by/rating/",
+                    letterboxd_list_details_limit_1: 250,
+                    letterboxd_list: "theme-stop-motion",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Superhero":
+    summary: "Top rated movies in Superhero"
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_superhero.png
+    schedule: weekly(saturday)
+    template: {
+                    name: sub_genre,
+                    keyword: "superhero",
+                    type: "movie,tv_movie",
+                    rating.gte: 5,
+                    votes.gte: 1000,
+                    language: "en",
+                    letterboxd_list: "theme-superhero"
+                }
+
+  "Top Rated in Supernatural":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_supernatural.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Supernatural"
+    template: {
+                    keyword: "supernatural-power",
+                    language: "en",
+                    letterboxd_list: "theme-supernatural",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Surrealism":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_surrealism.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Surrealism"
+    template: {
+                    keyword: "surrealism",
+                    language: "en",
+                    letterboxd_list: "theme-surrealism",
+                    name: sub_genre,
+                    rating.gte: 7,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Survival":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_survival.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Survival"
+    template: {
+                    keyword: "survival,survivor",
+                    language: "en",
+                    letterboxd_list: "theme-survival",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    trakt_extra_1: "https://trakt.tv/users/rizreflects/lists/survival",
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Swashbuckler":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_swashbuckler.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Swashbuckler"
+    template: {
+                    keyword: "swashbuckler",
+                    language: "en",
+                    letterboxd_list: "theme-swashbuckler",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Sword & Sandal":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_sword-sandal.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Sword & Sandal"
+    template: {
+                    imdb_extra_1: "https://www.imdb.com/list/ls043130664",
+                    keyword: "sword-and-sandal",
+                    language: "en",
+                    letterboxd_list: "theme-sword-sandal",
+                    name: sub_genre,
+                    rating.gte: 3,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Sword & Sorcery":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_sword-sorcery.png
+    schedule: weekly(saturday)
+    summary: "Top rated movies in Sword & Sorcery"
+    template: {
+                    imdb_extra_1: "https://www.imdb.com/list/ls022909805",
+                    keyword: "sword-and-sorcery",
+                    language: "en",
+                    letterboxd_list: "theme-sword-sorcery",
+                    name: sub_genre,
+                    rating.gte: 3,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Time Travel":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_time-travel.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in Time Travel"
+    template: {
+                    keyword: "time-travel",
+                    language: "en",
+                    letterboxd_list: "theme-time-travel",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    trakt_extra_1: "https://trakt.tv/users/rizreflects/lists/time-travel",
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Treasure Hunt":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_treasure-hunt.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in Treasure Hunt"
+    template: {
+                    keyword: "treasure-hunt",
+                    language: "en",
+                    letterboxd_list: "theme-treasure-hunt",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in True Story":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_true-story.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in True Story"
+    template: {
+                    keyword: "based-on-true-story",
+                    language: "en",
+                    letterboxd_list: "theme-true-story",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    trakt_extra_1: "https://trakt.tv/users/hdlists/lists/based-on-or-inspired-by-a-true-story",
+                    trakt_extra_2: "https://trakt.tv/users/rizreflects/lists/true-story-based",
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Urban Fantasy":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_urban-fantasy.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in Urban Fantasy"
+    template: {
+                    keyword: "urban-fantasy",
+                    language: "en",
+                    letterboxd_list: "theme-urban-fantasy",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Utopian":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_utopian.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in Utopian"
+    template: {
+                    imdb_extra_1: "https://www.imdb.com/list/ls041227401",
+                    keyword: "utopia",
+                    language: "en",
+                    letterboxd_list: "theme-utopian",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Vampires":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_vampires.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in Vampires"
+    template: {
+                    keyword: "vampire",
+                    language: "en",
+                    letterboxd_list: "theme-vampires",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Video Game":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_video-game.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in Video Game"
+    template: {
+                    keyword: "based-on-video-game",
+                    language: "en",
+                    letterboxd_list: "theme-video-game",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Werewolves":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_werewolves.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in Werewolves"
+    template: {
+                    keyword.any: "werewolf,werewolves",
+                    language: "en",
+                    letterboxd_list: "theme-werewolves",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }
+
+  "Top Rated in Whodunit?":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_whodunit.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in Whodunit?"
+    template: {
+                    keyword: "whodunit",
+                    language: "en",
+                    letterboxd_list: "theme-whodunit",
+                    name: sub_genre,
+                    rating.gte: 2,
+                    type: "movie,tv_movie",
+                    votes.gte: 100
+                }
+
+  "Top Rated in Wizardry & Witchcraft":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_wizardry-witchcraft.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in Wizardry & Witchcraft"
+    template: {
+                    keyword.any: "witch,wizard",
+                    language: "en",
+                    letterboxd_list: "theme-wizardry-witchcraft",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+               }
+
+  "Top Rated in World War":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_world-war.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in World War"
+    template: {
+                    keyword.any: "world-war-one,world-war-two",
+                    language: "en",
+                    letterboxd_list: "theme-world-war",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+               }
+
+  "Top Rated in Zombies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_subgenre_top/subgenre_top_zombies.png
+    schedule: weekly(sunday)
+    summary: "Top rated movies in Zombies"
+    template: {
+                    keyword: "zombie",
+                    language: "en",
+                    letterboxd_list: "theme-zombie",
+                    name: sub_genre,
+                    rating.gte: 5,
+                    type: "movie,tv_movie",
+                    votes.gte: 1000
+                }

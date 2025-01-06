@@ -1,0 +1,567 @@
+## This file is a template remove the .template to use the file
+
+libraries:
+  4K TV Shows:
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    collection_files:
+    - file: config/TVShows.yml
+    #- file: config/Genre.yml
+    overlay_files:
+    #- reapply_overlays: true
+    - default: network
+      template_variables:
+        builder_level: season
+        vertical_position: bottom
+        horizontal_position: center
+        horizontal_offset: 30
+        vertical_offset: 50
+        back_color: '#00000000'
+    - default: languages
+      template_variables:
+        builder_level: episode
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000000'
+        font_color: '#00000000'
+        back_width: 102
+        text: ''
+        final_name: <<key>>
+    - default: status
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        vertical_offset: 23
+        horizontal_offset: 0
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#00000000'
+    - default: runtimes
+      template_variables:
+        builder_level: episode
+        horizontal_align: right
+        back_color: '#00000000'
+        back_height: 80
+        vertical_offset: 20
+        horizontal_offset: 18
+        text: ''
+        back_width: 205
+    - remove_overlays: false
+    - file: config/overlays_tv.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K: true
+        4K_banner: true
+    settings:
+      asset_directory: /assets/4K TV Shows
+      prioritize_assets: true
+    operations:
+      assets_for_all: true
+  4K Movies:
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    #schedule: hourly(9),hourly(19)
+    collection_files:
+    - file: config/Movies.yml
+    #- file: config/collections.yml
+    overlay_files:
+    - default: commonsense
+      template_variables:
+        vertical_offset: 37
+        horizontal_offset: 255
+        back_width: 230
+        back_color: '#00000000'
+    - default: languages
+      template_variables:
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000000'
+        font_color: '#00000000'
+        text: ''
+        final_name: <<key>>
+    - default: runtimes
+      template_variables:
+        vertical_offset: 37
+        horizontal_align: center
+        horizontal_offset: 140
+        text: ''
+        back_width: 205
+        back_color: '#00000000'
+    - remove_overlays: false
+    - file: config/overlays_movies.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: true
+        4K: false
+    settings:
+      asset_directory: /assets/4K Movies
+      prioritize_assets: true
+    operations:
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Movies:
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    #schedule: hourly(9),hourly(19)
+    collection_files:
+    - file: config/Movies.yml
+    #- file: config/collections.yml
+    overlay_files:
+    - default: commonsense
+      template_variables:
+        vertical_offset: 37
+        horizontal_offset: 255
+        back_width: 230
+        back_color: '#00000000'
+    - default: languages
+      template_variables:
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000000'
+        font_color: '#00000000'
+        text: ''
+        final_name: <<key>>
+    - default: runtimes
+      template_variables:
+        vertical_offset: 37
+        horizontal_align: center
+        horizontal_offset: 140
+        text: ''
+        back_width: 205
+        back_color: '#00000000'
+    - remove_overlays: false
+    - file: config/overlays_movies.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: false
+        4K: false
+    settings:
+      asset_directory: /assets/Movies
+      prioritize_assets: true
+    operations:
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Kids Movies:
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    collection_files:
+    - file: config/Movies.yml
+    #- file: config/Genre.yml
+    overlay_files:
+    - default: commonsense
+      template_variables:
+        vertical_offset: 37
+        horizontal_offset: 255
+        back_width: 230
+        back_color: '#00000000'
+    - default: languages
+      template_variables:
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000000'
+        font_color: '#00000000'
+        text: ''
+        final_name: <<key>>
+    - default: runtimes
+      template_variables:
+        vertical_offset: 37
+        horizontal_align: center
+        horizontal_offset: 140
+        text: ''
+        back_width: 205
+        back_color: '#00000000'
+    - remove_overlays: false
+    - file: config/overlays_movies.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: false
+        4K: false
+    settings:
+      asset_directory: /assets/Kids Movies
+      prioritize_assets: true
+    operations:
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  Anime:
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    collection_files:
+    - file: config/Movies.yml
+    #- file: config/Genre.yml
+    overlay_files:
+    - default: commonsense
+      template_variables:
+        vertical_offset: 37
+        horizontal_offset: 255
+        back_width: 230
+        back_color: '#00000000'
+    - default: languages
+      template_variables:
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000000'
+        font_color: '#00000000'
+        text: ''
+        final_name: <<key>>
+    - default: runtimes
+      template_variables:
+        vertical_offset: 37
+        horizontal_align: center
+        horizontal_offset: 140
+        text: ''
+        back_width: 205
+        back_color: '#00000000'
+    - remove_overlays: false
+    - file: config/overlays_movies.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: false
+        4K: false
+    settings:
+      asset_directory: /assets/Anime
+      prioritize_assets: true
+    operations:
+      mass_content_rating_update: mdb_commonsense
+      assets_for_all: true
+  TV Shows:
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    collection_files:
+    - file: config/TVShows.yml
+    #- file: config/Genre.yml
+    overlay_files:
+    #- reapply_overlays: true
+    - default: network
+      template_variables:
+        builder_level: season
+        vertical_position: bottom
+        horizontal_position: center
+        horizontal_offset: 30
+        vertical_offset: 50
+        back_color: '#00000000'
+    - default: languages
+      template_variables:
+        builder_level: episode
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000000'
+        font_color: '#00000000'
+        back_width: 102
+        text: ''
+        final_name: <<key>>
+    - default: status
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        vertical_offset: 23
+        horizontal_offset: 0
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#00000000'
+    - default: runtimes
+      template_variables:
+        builder_level: episode
+        horizontal_align: right
+        back_color: '#00000000'
+        back_height: 80
+        vertical_offset: 20
+        horizontal_offset: 18
+        text: ''
+        back_width: 205
+    - remove_overlays: false
+    - file: config/overlays_tv.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K: false
+        4K_banner: false
+    settings:
+      asset_directory: /assets/TV Shows
+      prioritize_assets: true
+    operations:
+      assets_for_all: true
+  Kids Shows:
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    collection_files:
+    - file: config/KidsShows.yml
+    overlay_files:
+    #- reapply_overlays: true
+    - default: network
+      template_variables:
+        builder_level: season
+        vertical_position: bottom
+        horizontal_position: center
+        horizontal_offset: 30
+        vertical_offset: 50
+        back_color: '#00000000'
+    - default: languages
+      template_variables:
+        builder_level: episode
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000000'
+        font_color: '#00000000'
+        back_width: 102
+        text: ''
+        final_name: <<key>>
+    - default: status
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        vertical_offset: 23
+        horizontal_offset: 0
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#00000000'
+    - default: runtimes
+      template_variables:
+        builder_level: episode
+        horizontal_align: right
+        back_color: '#00000000'
+        back_height: 80
+        vertical_offset: 20
+        horizontal_offset: 18
+        text: ''
+        back_width: 205
+    - remove_overlays: false
+    - file: config/overlays_tv.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: false
+        4K: false
+    settings:
+      asset_directory: /assets/Kids Shows
+      prioritize_assets: true
+    operations:
+      assets_for_all: true
+  Anime Shows:
+    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    collection_files:
+    - file: config/AnimeShows.yml
+    overlay_files:
+    #- reapply_overlays: true
+    - default: network
+      template_variables:
+        builder_level: season
+        vertical_position: bottom
+        horizontal_position: center
+        horizontal_offset: 30
+        vertical_offset: 50
+        back_color: '#00000000'
+    - default: languages
+      template_variables:
+        builder_level: episode
+        overlay_limit: 5
+        horizontal_position: left
+        vertical_position: bottom
+        style: square
+        back_color: '#00000000'
+        font_color: '#00000000'
+        back_width: 102
+        text: ''
+        final_name: <<key>>
+    - default: status
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+        vertical_offset: 23
+        horizontal_offset: 0
+        back_height: 149
+        back_width: 965
+        font: config/fonts/Colus-Regular.ttf
+        font_size: 80
+        font_color_airing: '#27C24C'
+        font_color_returning: '#FFA500'
+        font_color_canceled: '#ED1F1F'
+        font_color_ended: '#FF0000'
+        back_color: '#00000000'
+    - default: runtimes
+      template_variables:
+        builder_level: episode
+        horizontal_align: right
+        back_color: '#00000000'
+        back_height: 80
+        vertical_offset: 20
+        horizontal_offset: 18
+        text: ''
+        back_width: 205
+    - remove_overlays: false
+    - file: config/overlays_tv.yml
+      template_variables:
+      # Which overlay(s) should be used?
+      # Posters
+        4K_banner: false
+        4K: false
+    settings:
+      asset_directory: /assets/Anime Shows
+      prioritize_assets: true
+    operations:
+      assets_for_all: true
+playlist_files:
+- file: config/playlist.yml
+  template_variables:
+    use_walking: true
+    radarr_add_missing_walking: false
+    sonarr_add_missing_walking: false
+settings:                                       # Can be individually specified per library as well
+  cache: true
+  cache_expiration: 60
+  asset_directory: /assets
+  asset_folders: true
+  asset_depth: 1
+  create_asset_folders: false
+  prioritize_assets: true
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: true
+  show_missing_episode_assets: false
+  show_asset_not_needed: false
+  sync_mode: sync
+  default_collection_order:
+  minimum_items: 1
+  delete_below_minimum: false
+  delete_not_scheduled: false
+  run_again_delay: 0
+  missing_only_released: true
+  show_unconfigured: true
+  show_unmanaged: false
+  show_filtered: false
+  show_options: true
+  show_missing: true
+  only_filter_missing: false
+  show_missing_assets: true
+  save_report: false
+  tvdb_language: en
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_users: all
+  playlist_report: false
+  custom_repo:
+  verify_ssl: true
+  check_nightly: false
+  playlist_exclude_users: Louisa, Peter
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality: 90
+plex:                                           # Can be individually specified per library as well
+  url: http://plex:32400
+  token:
+  timeout: 360
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+  db_cache:
+  verify_ssl:
+webhooks:
+  error:
+  version:
+  run_start:
+  run_end:
+  delete:
+tmdb:
+  apikey:
+  language: en
+  cache_expiration: 60
+  region:
+tautulli:                                       # Can be individually specified per library as well
+  url: http://tautulli:8181
+  apikey:
+omdb:
+  apikey:
+  cache_expiration: 60
+radarr:                                         # Can be individually specified per library as well
+  url: http://radarr:7878
+  token:
+  version: v4
+  root_folder_path: /mnt/unionfs/Movies
+  monitor: false
+  availability: announced
+  quality_profile: 1080p
+  tag: kometa
+  search: false
+  add_existing: false
+  radarr_path:
+  plex_path:
+  add_missing: false
+  upgrade_existing: false
+  ignore_cache: false
+  monitor_existing: false
+sonarr:                                         # Can be individually specified per library as well
+  url: http://sonarr:8989
+  token:
+  version: v4
+  root_folder_path: /mnt/unionfs/Shows
+  monitor: none
+  quality_profile: 1080p - DE Only
+  language_profile: German
+  series_type: standard
+  season_folder: true
+  tag: kometa
+  search: false
+  cutoff_search: false
+  add_existing: false
+  sonarr_path:
+  plex_path:
+  add_missing: false
+  upgrade_existing: false
+  ignore_cache: false
+  monitor_existing: false
+trakt:
+  client_id:
+  client_secret:
+  authorization:
+    access_token:
+    token_type: Bearer
+    expires_in: 7889237
+    refresh_token:
+    scope: public
+    created_at: 1704621604
+  pin:
+mdblist:
+  apikey:
+  cache_expiration: 60

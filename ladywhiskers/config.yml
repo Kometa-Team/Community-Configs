@@ -1,250 +1,209 @@
 libraries:
   Movies:
+    schedule_overlays: weekly(monday|wednesday|friday|sunday)
     template_variables:
       use_separator: false
-    metadata_path:
-      - folder: config/movies
-      - git: bullmoose20/movies_refresh
-      - pmm: actor
-        template_variables:
-          collection_section: '001'
-          use_separator: false
-          style: diiivoycolor
-          name_format: "\U0001F382 <<key_name>>'s Birthday"
-          translation_key: birthday
-          sort_by: audience_rating.desc
-          title_format: <<key_name>>'s Birthday
-          data:
-            depth: 20
-            limit: 100
-          tmdb_birthday:
-            this_month: true
-      - pmm: content_rating_cs
-      - pmm: other_chart
-        template_variables:
-          use_anidb: false
-          use_stevenlu: false
-          use_pirated: false
-          visible_library_commonsense: true
-          visible_home_commonsense: true
-          visible_shared_commonsense: true
-      - pmm: continent
-        template_variables:
-          include:
-            - Oceania
-      - pmm: studio
-        template_variables:
-          include:
-            - A24
-            - DreamWorks Studios
-            - DreamWorks Pictures
-            - Pixar
-            - 
-      - pmm: franchise
-        template_variables:
-          minimum_items: 2
-          delete_below_minimum: true
-      - pmm: universe
-    overlay_path:
-      - schedule: weekly(saturday)
-      - remove_overlays: false
-      - reapply_overlays: true
-      - pmm: commonsense
-      - pmm: mediastinger
-      - pmm: ratings
-        template_variables:
-          rating1: user
-          rating1_image: rt_tomato
-          rating1_font: config/metadata/overlays/fonts/Adlib.ttf
-          rating1_font_size: 63
-          rating2: critic
-          rating2_image: imdb
-          rating2_font: config/metadata/overlays/fonts/Impact.ttf
-          rating2_font_size: 70
-          rating3: audience
-          rating3_image: tmdb
-          rating3_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
-          rating3_font_size: 70
-          horizontal_position: right
-      - pmm: resolution
-      - pmm: ribbon
-      - pmm: versions
+    metadata_files:
+    - folder: config/metadata_folders
+    collection_files:
+    - folder: config/movies
+    - default: content_rating_au
+    - default: continent
+      template_variables:
+        include:
+        - Oceania
+    - default: franchise
+      template_variables:
+        title_override:
+          33514: The Twilight Saga
+          9743: Hannibal Lecter
+          489724: Trolls
+    #- default: genre
+    - default: letterboxd
+      template_variables:
+        use_imdb_top_250: true 
+        use_oscars: true 
+        use_cannes: true 
+        visible_library_top_250: true 
+        visible_home_top_250: true 
+        visible_shared_top_250: true
+    - default: other_chart
+      template_variables:
+        use_anidb: false
+        use_stevenlu: false
+        use_pirated: false
+        visible_library_commonsense: true
+        visible_home_commonsense: true
+        visible_shared_commonsense: true
+    - default: razzie
+    - default: seasonal
+      template_variables:
+        use_patrick: false
+        use_memorial: false
+        schedule_father: range(09/01-09/07)
+        use_independence: false
+        use_labor: false
+        use_veteran: false
+        use_thanksgiving: false
+        use_aapi: false
+    - default: studio
+      template_variables:
+        include:
+        - A24
+        - Blue Sky Studios
+        - DreamWorks Studios
+        - DreamWorks Pictures
+        - Pixar
+        - Studio Ghibli
+        - Walt Disney Animation Studios
+        - Walt Disney Pictures
+        - Walt Disney Productions
+    - default: tautulli
+    - default: universe
+    #- default: collectionless
+    overlay_files:
+    - default: commonsense
+    - default: mediastinger
+    - default: resolution
+      template_variables:
+        use_resolution: false
+        use_edition: true
+    - default: ribbon
     settings:
       asset_directory:
-        - config/assets/Movies/
+      - config/assets/Movies/
+      - config/assets/Collections/
       prioritize_assets: false
     operations:
-      split_duplicates: false
+    - schedule: daily
       assets_for_all: true
       delete_collections:
         configured: false
-        managed: true
-      mass_user_rating_update: mdb_tomatoes
-      mass_critic_rating_update: imdb
-      mass_audience_rating_update: tmdb
-      mass_genre_update: omdb
-      mass_content_rating_update: mdb_commonsense
-      mass_originally_available_update: tmdb
-      mass_imdb_parental_labels: none
       metadata_backup:
-        path: config/metadata/backups/Movie_Backup.yml
+        path: config/backups/Movies_Metadata_Backup.yml
         sync_tags: true
         add_blank_entries: false
-      genre_mapper:
-        Sci-Fi: Science Fiction
-        Action & Adventure: Action
+    - schedule: Weekly (monday)
+      mass_user_rating_update: mdb_tomatoes
+    - schedule: Weekly (tuesday)
+      mass_critic_rating_update: imdb
+    - schedule: Weekly (wednesday)
+      mass_audience_rating_update: tmdb
+    - schedule: yearly(01/01)
+      mass_genre_update:
+      - tmdb
+      - imdb
+      - omdb
+      - tvdb
+    - schedule: Weekly (friday)
+      mass_content_rating_update:
+      - mdb_commonsense
+      - omdb
+    - schedule: Weekly (saturday)
+      mass_studio_update:
+      - tmdb
+      - tvdb
+      - omdb
+    - schedule: Weekly (sunday)
+      mass_originally_avaliable_update:
+      - tmdb
+      - tvdb
+      - omdb
   TV Shows:
+    schedule_overlays: weekly(tuesday|thursday|saturday)
     report_path: config/missing/TV_report.yml
     template_variables:
       use_separator: false
     library_name: TV Shows
-    metadata_path:
-      - pmm: based
- #     - git: bullmoose20/tv_refresh
-      - pmm: actor
-        template_variables:
-          collection_section: '001'
-          use_separator: false
-          style: diiivoycolor
-          name_format: "\U0001F382 <<key_name>>'s Birthday"
-          translation_key: birthday
-          sort_by: audience_rating.desc
-          title_format: <<key_name>>'s Birthday
-          data:
-            depth: 20
-            limit: 100
-          tmdb_birthday:
-            this_month: true
-      - pmm: content_rating_cs
-      - pmm: other_chart
-        template_variables:
-          use_anidb: false
-          use_stevenlu: false
-          use_pirated: false
-          visible_library_commonsense: true
-          visible_home_commonsense: true
-          visible_shared_commonsense: true
-      - pmm: universe
-      - pmm: continent
-        template_variables:
-          include:
-            - Oceania
-      - pmm: franchise
-        template_variables:
-          minimum_items: 2
-          delete_below_minimum: true
-      - folder: config/tvshows
-    overlay_path:
-      - schedule: weekly(friday)
-      - remove_overlays: false
-      - reapply_overlays: true
-      - pmm: commonsense
-      - pmm: commonsense
-        template_variables:
-          overlay_level: season
-      - pmm: commonsense
-        template_variables:
-          overlay_level: episode
-      - pmm: ratings
-        template_variables:
-          rating1: user
-          rating1_image: rt_tomato
-          rating1_font: config/metadata/overlays/fonts/Adlib.ttf
-          rating1_font_size: 63
-          rating2: critic
-          rating2_image: imdb
-          rating2_font: config/metadata/overlays/fonts/Impact.ttf
-          rating2_font_size: 70
-          rating3: audience
-          rating3_image: tmdb
-          rating3_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
-          rating3_font_size: 70
-          horizontal_position: right
-      - pmm: ratings
-        template_variables:
-          rating1: critic
-          rating1_image: imdb
-          rating1_font: config/metadata/overlays/fonts/Impact.ttf
-          rating1_font_size: 70
-          rating2: audience
-          rating2_image: tmdb
-          rating2_font: config/metadata/overlays/fonts/Avenir_95_Black.ttf
-          rating2_font_size: 70
-          horizontal_position: right
-          overlay_level: episode
-      - pmm: ribbon
-      - pmm: runtimes
-        template_variables:
-          overlay_level: episode
-      - pmm: status
-      - pmm: versions
-        template_variables:
-          overlay_level: show
-      - pmm: versions
-        template_variables:
-          overlay_level: season
-      - pmm: ribbon
+    collection_files:
+    - folder: config/tvshows
+    # - default: based
+    - default: content_rating_au
+    - default: continent
+      template_variables:
+        include:
+        - Oceania
+    - default: franchise
+    - default: genre
+    - default: other_chart
+      template_variables:
+        use_anidb: false
+        use_stevenlu: false
+        use_pirated: false
+        visible_library_commonsense: true
+        visible_home_commonsense: true
+        visible_shared_commonsense: true
+    - default: tautulli
+    - default: universe
+    metadata_files:
+    - folder: config/metadata_folders
+    overlay_files:
+    - default: commonsense
+    - default: status
+    - default: ribbon
     settings:
       asset_directory:
-        - config/assets/TV Shows/
-      prioritize_assets: false
+      - config/assets/TV Shows/
+      - config/assets/Collections/
+      prioritize_assets: true
     operations:
-      split_duplicates: false
+    - schedule: daily
       assets_for_all: true
       delete_collections:
         configured: false
-        managed: true
+      metadata_backup:
+        path: config/backups/TVShows_Metadata_Backup.yml
+        sync_tags: true
+        add_blank_entries: false
+    - schedule: Weekly (monday)
       mass_user_rating_update: mdb_tomatoes
+    - schedule: Weekly (tuesday)
       mass_critic_rating_update: imdb
+    - schedule: Weekly (wednesday)
       mass_audience_rating_update: tmdb
-      mass_genre_update: omdb
-      mass_content_rating_update: mdb_commonsense
-      mass_originally_available_update: tmdb
-      mass_episode_critic_rating_update: imdb
-      mass_episode_audience_rating_update: tmdb
-      mass_imdb_parental_labels: none
-      metadata_backup:
-        path: config/metadata/backups/TVShows_Backup.yml
-        sync_tags: true
-        add_blank_entries: false
-      genre_mapper:
-        Sci-Fi: Science Fiction
-        Action & Adventure: Action
+    - schedule: yearly (01/01)
+      mass_genre_update:
+      - tmdb
+      - imdb
+      - omdb
+      - tvdb
+    - schedule: Weekly (friday)
+      mass_content_rating_update:
+      - mdb_commonsense
+      - omdb
+    - schedule: Weekly (saturday)
+      mass_studio_update:
+      - tmdb
+      - tvdb
+      - omdb
+    - schedule: Weekly (sunday)
+      mass_originally_avaliable_update:
+      - tmdb
+      - tvdb
+      - omdb
   Music:
-    schedule: weekly (sunday)
+    schedule: weekly (tuesday|thursday|sunday)
     library_name: Music
-    metadata_path:
-      - folder: config/music
-    operations:
-      delete_collections:
-        less: 20
-      metadata_backup:
-        path: config/metadata/backups/Music_Backup.yml
-        sync_tags: true
-        add_blank_entries: false
-    overlay_path:
-      - schedule: weekly(saturday)
-      - remove_overlays: false
-      - reapply_overlays: false
-      - pmm: audio_codec
-        template_variables:
-          overlay_level: album
+    collection_files:
+    - folder: config/music
+    settings:
+      asset_directory: config/assets/Music
 playlist_files:
-  - pmm: playlist
-    template_variables:
-      libraries: 'Movies, TV Shows'
-  - folder: config/playlists
+- default: playlist
+  template_variables:
+    libraries: Movies, TV Shows
+- folder: config/playlists
 settings:
   cache: true
-  cache_expiration: 60
+  cache_expiration: 2048
   asset_directory: config/assets
-  missing_path: config/missing
+  report_path: config/missing
   asset_folders: true
   asset_depth: 1
-  create_asset_folders: false
+  create_asset_folders: true
   prioritize_assets: false
   dimensional_asset_rename: true
-  download_url_assets: false
+  download_url_assets: true
   show_missing_season_assets: false
   show_missing_episode_assets: false
   show_asset_not_needed: false
@@ -270,16 +229,23 @@ settings:
   playlist_sync_to_user: all
   playlist_exclude_users:
   playlist_report: false
-  verify_ssl: true
+  verify_ssl: false
   custom_repo:
   check_nightly: true
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality:
 webhooks:
   error: notifiarr
   version: notifiarr
   run_start: notifiarr
   run_end: notifiarr
   changes: notifiarr
-  delete: null
+  delete:  
 plex:
   url: http://localhost:32400
   token: [REDACTED]
@@ -304,11 +270,6 @@ mdblist:
   cache_expiration: 600
 notifiarr:
   apikey: [REDACTED]
-anidb:
-  username:
-  password:
-  language: en
-  client:
 radarr:
   url: http://localhost:7878
   token: [REDACTED]
@@ -353,11 +314,3 @@ trakt:
     refresh_token: [REDACTED]
     scope: [REDACTED]
     created_at: [REDACTED]
-mal:
-  client_id:
-  client_secret:
-  authorization:
-    access_token:
-    token_type:
-    expires_in:
-    refresh_token:

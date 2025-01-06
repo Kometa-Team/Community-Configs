@@ -1,0 +1,244 @@
+## _suggested.yml
+
+templates:
+  plex:
+    collection_mode: hide
+    delete_not_scheduled: false
+    sort_title: "+010_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+
+  trakt:
+    collection_mode: hide
+    delete_not_scheduled: false
+    sort_title: "+010_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    trakt_list:
+      - <<trakt_list_extra_01>>
+      - <<trakt_list_extra_02>>
+      - <<trakt_list_extra_03>>
+      - <<trakt_list_extra_04>>
+      - <<trakt_list_extra_05>>
+      - <<trakt_list_extra_06>>
+      - <<trakt_list_extra_07>>
+      - <<trakt_list_extra_08>>
+      - <<trakt_list_extra_09>>
+      - <<trakt_list_extra_10>>
+      - <<trakt_list_extra_11>>
+      - <<trakt_list_extra_12>>
+      - <<trakt_list_extra_13>>
+      - <<trakt_list_extra_14>>
+      - <<trakt_list_extra_15>>
+      - <<trakt_list_extra_16>>
+      - <<trakt_list_extra_17>>
+      - <<trakt_list_extra_18>>
+      - <<trakt_list_extra_19>>
+      - <<trakt_list_extra_20>>
+    optional:
+      - trakt_list_extra_01
+      - trakt_list_extra_02
+      - trakt_list_extra_03
+      - trakt_list_extra_04
+      - trakt_list_extra_05
+      - trakt_list_extra_06
+      - trakt_list_extra_07
+      - trakt_list_extra_08
+      - trakt_list_extra_09
+      - trakt_list_extra_10
+      - trakt_list_extra_11
+      - trakt_list_extra_12
+      - trakt_list_extra_13
+      - trakt_list_extra_14
+      - trakt_list_extra_15
+      - trakt_list_extra_16
+      - trakt_list_extra_17
+      - trakt_list_extra_18
+      - trakt_list_extra_19
+      - trakt_list_extra_20
+
+  mdblist:
+    collection_mode: hide
+    collection_order: custom
+    delete_not_scheduled: false
+    sort_title: "+010_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    mdblist_list:
+      sort_by: <<mdblist_sort>>
+      url: https://mdblist.com/lists/<<mdblist_user>>/<<mdblist_list>>/
+    optional:
+      - mdblist_extra_1
+      - mdblist_extra_2
+      - mdblist_extra_3
+      - mdblist_extra_4
+      - mdblist_extra_5
+
+  letterboxd:
+    collection_mode: hide
+    collection_order: custom
+    delete_not_scheduled: false
+    sort_title: "+010_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    letterboxd_list:
+      - <<letterboxd_list_extra_01>>
+      - <<letterboxd_list_extra_02>>
+      - <<letterboxd_list_extra_03>>
+      - <<letterboxd_list_extra_04>>
+      - <<letterboxd_list_extra_05>>
+    optional:
+      - letterboxd_list_extra_01
+      - letterboxd_list_extra_02
+      - letterboxd_list_extra_03
+      - letterboxd_list_extra_04
+      - letterboxd_list_extra_05
+
+collections:
+  "Random Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_random.png
+    schedule: daily
+    summary: "Random selection of movies"
+    visible_library: true
+    template: {
+                    name: plex,
+                    num: "0"
+                }
+    smart_filter:
+      any:
+        audio_language: English, english
+      limit: 250
+      sort_by: random
+
+  "Recently Added Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_recently-added.png
+    schedule: daily
+    summary: "Recently added movies"
+    visible_home: true
+    visible_library: true
+    visible_shared: true
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      any:
+        audio_language: English, english
+      limit: 200
+      sort_by: added.desc
+
+  "Recently Released Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_recently-released.png
+    schedule: daily
+    summary: "Recently released movies"
+    visible_library: true
+    template: {
+                    name: plex,
+                    num: "2"
+                }
+    smart_filter:
+      any:
+        audio_language: English, english
+      limit: 200
+      sort_by: release.desc
+
+  "Recommended Movies":
+    collection_order: alpha
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_recommended.png
+    schedule: daily
+    summary: "Based on personally favourited movies"
+    template: {
+                    name: letterboxd,
+#                    letterboxd_list_extra_01: "https://letterboxd.com/########/list/movie-recommendations",
+                    num: "3"
+                }
+    trakt_userlist:
+      - userlist: favorites
+        user: me
+
+  "Suggested Movies":
+    collection_order: alpha
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_suggested.png
+    schedule: daily
+    summary: "Based on watched and favourited movies"
+    template: {
+                    name: trakt,
+                    num: "4"
+#                    num: "4",
+#                    trakt_list_extra_01: "https://trakt.tv/users/########/lists/movie-recommendations-couchmoney-tv",
+#                    trakt_list_extra_02: "https://trakt.tv/users/########/lists/movies-based-on-recently-watched-couchmoney-tv"
+                }
+    trakt_chart:
+      - chart: recommended
+        countries: us, gb, ie, ca, au, nz
+        languages: en
+        limit: 5
+        time_period: daily
+      - chart: recommended
+        countries: us, gb, ie, ca, au, nz
+        languages: en
+        limit: 10
+        time_period: weekly
+      - chart: recommended
+        countries: us, gb, ie, ca, au, nz
+        languages: en
+        limit: 25
+        time_period: monthly
+      - chart: recommended
+        countries: us, gb, ie, ca, au, nz
+        languages: en
+        limit: 50
+        time_period: yearly
+      - chart: recommended
+        countries: us, gb, ie, ca, au, nz
+        languages: en
+        limit: 200
+        time_period: all
+
+  "Trending Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_trending.png
+    schedule: daily
+    summary: "Movies trending across the internet"
+    template: {
+                    mdblist_list: "movie-trending",
+                    mdblist_sort: "rank.desc",
+                    mdblist_user: "archivist",
+                    name: mdblist,
+                    num: "5"
+                }
+    limit: 100
+
+  "Popular Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_popular.png
+    schedule: daily
+    summary: "Popular movies across the internet"
+    visible_library: true
+    template: {
+                    mdblist_list: "movie-popular",
+                    mdblist_sort: "imdbpopular.desc",
+                    mdblist_user: "archivist",
+                    name: mdblist,
+                    num: "6"
+                }
+    limit: 250
+
+  "Top Rated Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_suggested/suggested_top-rated.png
+    schedule: daily
+    summary: "Top rated movies across the internet"
+    template: {
+                    mdblist_list: "movie-top-rated",
+                    mdblist_sort: "imdbrating.desc",
+                    mdblist_user: "archivist",
+                    name: mdblist,
+                    num: "7"
+                }
+    limit: 500

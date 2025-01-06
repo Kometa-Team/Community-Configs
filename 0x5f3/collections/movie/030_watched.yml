@@ -1,0 +1,115 @@
+## _watched.yml
+
+templates:
+  trakt:
+    collection_mode: hide
+    collection_order: custom
+    delete_not_scheduled: false
+    sort_title: "+030_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    trakt_list:
+      - <<trakt_list_extra_01>>
+      - <<trakt_list_extra_02>>
+      - <<trakt_list_extra_03>>
+      - <<trakt_list_extra_04>>
+      - <<trakt_list_extra_05>>
+      - <<trakt_list_extra_06>>
+      - <<trakt_list_extra_07>>
+      - <<trakt_list_extra_08>>
+      - <<trakt_list_extra_09>>
+      - <<trakt_list_extra_10>>
+      - <<trakt_list_extra_11>>
+      - <<trakt_list_extra_12>>
+      - <<trakt_list_extra_13>>
+      - <<trakt_list_extra_14>>
+      - <<trakt_list_extra_15>>
+      - <<trakt_list_extra_16>>
+      - <<trakt_list_extra_17>>
+      - <<trakt_list_extra_18>>
+      - <<trakt_list_extra_19>>
+      - <<trakt_list_extra_20>>
+    optional:
+      - trakt_list_extra_01
+      - trakt_list_extra_02
+      - trakt_list_extra_03
+      - trakt_list_extra_04
+      - trakt_list_extra_05
+      - trakt_list_extra_06
+      - trakt_list_extra_07
+      - trakt_list_extra_08
+      - trakt_list_extra_09
+      - trakt_list_extra_10
+      - trakt_list_extra_11
+      - trakt_list_extra_12
+      - trakt_list_extra_13
+      - trakt_list_extra_14
+      - trakt_list_extra_15
+      - trakt_list_extra_16
+      - trakt_list_extra_17
+      - trakt_list_extra_18
+      - trakt_list_extra_19
+      - trakt_list_extra_20
+
+collections:
+  "Most Watched Daily":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_watched/watched_daily.png
+    schedule: daily
+    summary: "Movies trending across the internet"
+    template: {
+                    name: trakt,
+                    num: "0"
+                }
+    trakt_chart:
+      chart: watched
+      countries: us, gb, ie, ca, au, nz
+      languages: en
+      limit: 50
+      time_period: daily
+
+  "Most Watched Weekly":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_watched/watched_weekly.png
+    schedule: daily
+    summary: "Movies trending across the internet"
+    template: {
+                    name: trakt,
+                    num: "1"
+                }
+    trakt_chart:
+      chart: watched
+      countries: us, gb, ie, ca, au, nz
+      languages: en
+      limit: 50
+      time_period: weekly
+
+  "Most Watched Monthly":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_watched/watched_monthly.png
+    schedule: weekly(sunday)
+    summary: "Movies trending across the internet"
+    template: {
+                    name: trakt,
+                    num: "2"
+                }
+    trakt_chart:
+      chart: watched
+      countries: us, gb, ie, ca, au, nz
+      languages: en
+      limit: 75
+      time_period: monthly
+
+  "Most Watched Yearly":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_watched/watched_yearly.png
+    schedule: weekly(sunday)
+    summary: "Movies trending across the internet"
+    template: {
+                    name: trakt,
+                    num: "3"
+                }
+    trakt_chart:
+      chart: watched
+      countries: us, gb, ie, ca, au, nz
+      languages: en
+      limit: 100
+      time_period: yearly

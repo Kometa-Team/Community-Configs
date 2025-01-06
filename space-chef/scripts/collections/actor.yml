@@ -1,0 +1,103 @@
+#    /$$$$$$   /$$$$$$  /$$$$$$$$  /$$$$$$  /$$$$$$$   /$$$$$$ 
+#   /$$__  $$ /$$__  $$|__  $$__/ /$$__  $$| $$__  $$ /$$__  $$
+#  | $$  \ $$| $$  \__/   | $$   | $$  \ $$| $$  \ $$| $$  \__/
+#  | $$$$$$$$| $$         | $$   | $$  | $$| $$$$$$$/|  $$$$$$ 
+#  | $$__  $$| $$         | $$   | $$  | $$| $$__  $$ \____  $$
+#  | $$  | $$| $$    $$   | $$   | $$  | $$| $$  \ $$ /$$  \ $$
+#  | $$  | $$|  $$$$$$/   | $$   |  $$$$$$/| $$  | $$|  $$$$$$/
+#  |__/  |__/ \______/    |__/    \______/ |__/  |__/ \______/ 
+
+external_templates:
+  file: config/scripts/collections/templates.yml
+  template_variables:
+    collection_section: "901"
+        
+dynamic_collections:
+  Top Actors:
+    type: actor
+    data:
+      depth: 5
+      limit: 25
+    title_format: <<key_name>>
+    template:
+      - tmdb_person
+      - smart_filter
+      - shared
+    template_variables:
+      tmdb_person:
+        default: <<value>>
+      tmdb_person_offset:
+        default: 0
+      search_term:
+        default: actor
+      search_value:
+        default: tmdb
+      translation_key:
+        default: actor
+      style:
+        default: bw
+      dynamic:
+        default: true
+    include:
+        - Adam Driver
+        - Adam Sandler
+        - Anthony Hopkins
+        - Benedict Cumberbatch
+        - Brad Pitt
+        - Bruce Willis
+        - Christian Bale
+        - Christopher Walken
+        - Clint Eastwood
+        - Daniel Craig
+        - Daniel Day-Lewis
+        - Denzel Washington
+        - Eddie Murphy
+        - George Clooney
+        - Helen Mirren
+        - Hugh Jackman
+        - Ian McKellen
+        - Idris Elba
+        - Jack Nicholson
+        - James Franco
+        - Jeff Bridges
+        - Jeff Goldblum
+        - Jennifer Aniston
+        - Jennifer Lawrence
+        - Jim Carrey
+        - Joaquin Phoenix
+        - Johnny Depp
+        - Julia Roberts
+        - Kate Winslet
+        - Keanu Reeves
+        - Kevin Hart
+        - Leonardo DiCaprio
+        - Liam Neeson
+        - Mark Wahlberg
+        - Matt Damon
+        - Matthew McConaughey
+        - Meryl Streep
+        - Mike Myers
+        - Morgan Freeman
+        - Natalie Portman
+        - Nicolas Cage
+        - Nicole Kidman
+        - Paul Rudd
+        - Robert De Niro
+        - Robert Downey Jr
+        - Robin Williams
+        - Ryan Gosling
+        - Ryan Reynolds
+        - Sacha Baron Cohen
+        - Samuel L. Jackson
+        - Sandra Bullock
+        - Scarlett Johansson
+        - Sean Connery
+        - Seth Rogen
+        - Steve Carell
+        - Tim Allen
+        - Tom Cruise
+        - Tom Hanks
+        - Viola Davis
+        - Will Ferrell
+        - Will Smith
+        - Woody Harrelson

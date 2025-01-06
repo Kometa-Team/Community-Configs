@@ -1,0 +1,100 @@
+collections:
+## Walt Disney Studios
+  Walt Disney Studios:
+    sort_title: +_04 Disney
+    collection_order: release
+    plex_search:
+      any:
+        studio:
+          - Disney
+    summary: "Walt Disney Studios, also known as Disney Studios, has a rich history that began in 1923 when Walt and Roy Disney founded the company. They started by producing a series of short films featuring a character named Oswald the Lucky Rabbit. However, they lost the rights to Oswald, which led Walt Disney to create a new character - Mickey Mouse.
+
+In 1928, the first synchronized sound cartoon, \"Steamboat Willie,\" was released, introducing audiences to Mickey Mouse. This iconic short film propelled Disney Studios to success, and Mickey Mouse quickly became a beloved character. Throughout the 1930s, the studio continued making innovative animated films, including the first full-color cartoon, \"Flowers and Trees.\"
+
+In 1937, Disney released its first full-length animated feature film, \"Snow White and the Seven Dwarfs,\" which was a monumental achievement and marked a significant milestone for the studio. Following this success, Disney continued to produce beloved classics like \"Pinocchio,\" \"Fantasia,\" \"Dumbo,\" and \"Bambi\" in the 1940s.
+
+In the 1950s, Disney ventured into live-action films and produced a series of highly successful movies, including \"Treasure Island\" and \"20,000 Leagues Under the Sea.\" The studio also expanded its entertainment empire by opening Disneyland in 1955, the first-ever theme park of its kind.
+
+During the 1960s and 1970s, Disney Studios experienced a resurgence in animated films with hits like \"101 Dalmatians,\" \"The Jungle Book,\" and \"The Aristocats.\" In the 1980s and 1990s, the studio produced a string of animated classics, including \"The Little Mermaid,\" \"Beauty and the Beast,\" \"Aladdin,\" and \"The Lion King.\"
+
+In addition to animated films, Disney also acquired other production companies, such as Pixar Animation Studios in 2006 and Marvel Entertainment in 2009. These acquisitions strengthened Disney's position in the industry and enabled the creation of successful franchises like the Marvel Cinematic Universe.
+
+In recent years, Disney has continued to produce blockbuster hits, including live-action adaptations of its animated classics and new installments in popular franchises such as \"Star Wars\" and \"Frozen.\" Disney+ was launched in 2019, offering a streaming service with a vast library of Disney content.
+
+Today, Walt Disney Studios remains a dominant force in the entertainment industry, continuing to create beloved characters, stories, and experiences that captivate audiences worldwide."
+## Pixar Collection
+  Pixar Collection:
+    sort_title: +_04 Pixar
+    collection_order: release
+    plex_all: true
+    filters:
+      - filepath: "Pixar"
+      - studio: "Pixar"
+      - title.is:
+        - Inside Out
+        - Big Hero 6
+        - WALL·E
+    summary: "Pixar Animation Studios is a renowned American animation studio known for its innovative storytelling and groundbreaking computer-generated animation. Established in 1986, Pixar has consistently produced a string of critically acclaimed and commercially successful animated films. Their unique blend of heartwarming storytelling, stunning visuals, and memorable characters has made Pixar one of the most beloved animation studios worldwide.
+
+Pixar's films have captured the hearts of audiences of all ages and have become cultural touchstones. Movies like \"Toy Story,\" \"Finding Nemo,\" \"The Incredibles,\" and \"Inside Out\" have not only entertained millions but also explored complex themes and emotions with depth and sincerity. Pixar's commitment to pushing the boundaries of technological advancements in animation has been instrumental in shaping the industry and inspiring a new generation of storytellers. With their dedication to storytelling excellence and artistic innovation, Pixar continues to inspire and captivate audiences around the globe."
+## Toy Story Collection
+  Toy Story Collection:
+    sort_title: Toy Story
+    summary: "Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation in 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006. Pixar is best known for its feature films, technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot."
+    collection_order: release
+    plex_search:
+      any:
+        title:
+          - Toy Story
+## Cars Collection
+  Cars Collection:
+    sort_title: Cars
+    collection_order: release
+    ## tt0901686 = Mater and the Ghost Light
+    ## tt12280202,145316 = Air Mater
+    ## tt1691917 = Planes
+    ## tt2980706 = Planes Fire & Rescue
+    ## 141528 = Time Travel Mater (2012)
+    ## 286189 = The Radiator Springs 500½
+    ## tt7334642,483396 = Miss Fritter's Racing Skoool
+    ## tt1330219 Tokyo Mater
+    ## 171536 Unidentified Flying Mater
+    ## 296137 Spinning
+    ## 56553 Rescue Squad Mater
+    ## 148608 Moon Mater
+    ## 148605 Monster Truck Mater
+    ## 140967 Mater the Greater
+    ## 148606 Mater Private Eye
+    ## 230767 Hiccups
+    ## 148607 Heavy Metal Mater
+    ## 39030 El Materdor
+    ## 296159 Bugged
+    imdb_id: tt0317219, tt1216475, tt2980706, tt3606752, tt0901686, tt1691917, tt2980706, tt7334642, tt1330219
+    tmdb_movie:
+        - 145316
+        - 141528
+        - 286189
+        - 483396
+        - 171536
+        - 296137
+        - 56553
+        - 148608
+        - 148605
+        - 140967
+        - 148606
+        - 230767
+        - 148607
+        - 39030
+        - 296159
+    summary: "The Cars series, produced by Pixar Animation Studios, is a popular animated film franchise that began with the release of \"Cars\" in 2006. The story revolves around a race car named Lightning McQueen, voiced by Owen Wilson, who finds himself in the small town of Radiator Springs while on his way to the Piston Cup Championship. As he interacts with the town's quirky inhabitants, Lightning learns valuable life lessons about friendship, humility, and the importance of slowing down to appreciate the journey. The film's unique blend of humor, heartwarming storytelling, and visually stunning animation made it a hit with audiences and critics alike.
+
+The success of the first film led to the release of \"Cars 2\" in 2011 and \"Cars 3\" in 2017. In \"Cars 2,\" Lightning McQueen and his tow truck friend Mater, voiced by Larry the Cable Guy, embark on an international adventure filled with espionage, intrigue, and high-speed racing. The third installment, \"Cars 3,\" sees an older Lightning McQueen struggling to keep up with a new generation of technologically advanced race cars. As he faces the possibility of retirement, Lightning must rediscover his passion for racing and learn from a new mentor, Cruz Ramirez, to regain his competitive edge. Both sequels expanded the Cars universe, introducing new characters and locations while maintaining the franchise's core themes of friendship, perseverance, and personal growth.
+
+In addition to the Cars series, DisneyToon Studios produced a spin-off franchise called \"Planes,\" which takes place in the same universe. The first film, released in 2013, follows Dusty Crophopper, a crop-dusting plane with dreams of becoming a racing champion. Despite his fear of heights and lack of experience, Dusty's determination and the support of his friends help him overcome obstacles and compete in the prestigious Wings Around the Globe race. A sequel, \"Planes: Fire & Rescue,\" was released in 2014, focusing on Dusty's transition from racing to aerial firefighting. While the Planes series did not achieve the same level of critical acclaim as the Cars films, it still found success with younger audiences and expanded the world of anthropomorphic vehicles."
+## Disneyland Attractions
+  Disneyland Attractions:
+    sort_title: +_04 Disneyland Attractions
+    summary: "The movies that started it all. Some of these are the films that Walt Disney originally based some of the attractions in Disneyland on. Some are newer movies that have re-themed the attractions and a few are movies based on attractions."
+    imdb_id: tt0780521, tt1964418, tt0325980, tt0046672, tt0046183, tt0029583, tt0041094, tt0870154, tt0082971, tt14602326, tt0047977, tt0076363, tt0038969, tt0096438, tt0019422, tt0032910, tt0033563, tt3861390, tt1014759, tt0043274, tt0053285, tt10298810, tt0052722, tt0054357, tt0042332, tt0041094, tt0032455, tt0038166, tt0057546, tt1695843, tt2245084,tt0053352
+      
+      

@@ -1,0 +1,172 @@
+############################
+#        TEMPLATES         #
+############################
+
+templates:
+  franchise:
+    optional:
+      - list
+      - shows
+    url_poster: https://theposterdb.com/api/assets/<<poster>>    
+    tvdb_list_details: <<list>>
+    tvdb_show: <<shows>>
+    sort_title: <<collection_name>>
+    collection_mode: hide
+    collection_order: release
+    schedule: 
+     - monthly(1)
+     - monthly(15)
+
+
+############################
+#       COLLECTIONS        #
+############################
+
+collections:
+
+### ADDED
+
+  🗓️ New Episodes:
+    smart_filter:
+      sort_by: episode_added.desc
+      all:
+        episode_added: 92
+        episode_air_date: 365
+      limit: 50
+    builder_level: show
+    url_poster: https://theposterdb.com/api/assets/407033
+    collection_mode: hide
+    sort_title: "+2_1_new"
+    visible_library: true
+    visible_home: true
+
+  🎞️ Old Shows Just Added:
+    smart_filter:
+      sort_by: episode_added.desc
+      all:
+        episode_added: 92
+        episode_air_date.not: 365
+      limit: 50
+    url_poster: https://theposterdb.com/api/assets/407034
+    collection_mode: hide
+    sort_title: "+2_2_added"
+    visible_library: true
+    visible_home: true
+
+### RECOMMENDED
+
+  📈 Popular This Week:
+    trakt_watched_weekly: 25
+    trakt_trending: 25
+    tmdb_trending_weekly: 25
+    url_poster: https://theposterdb.com/api/assets/396719
+    collection_mode: hide
+    collection_order: random
+    sort_title: "+1_1_popular"
+    visible_home: true
+    visible_library: true
+    schedule: weekly(monday)
+
+### SEASON
+
+  🎅 Christmas:
+    trakt_list:
+      - https://trakt.tv/users/uyn5hnpr2wdjwksh/lists/christmas-episodes
+      - https://trakt.tv/users/philrivers/lists/christmas-episodes
+    imdb_list:
+      - https://www.imdb.com/search/keyword/?keywords=christmas-episode
+      - https://www.imdb.com/list/ls027673882/
+      - https://www.imdb.com/list/ls508664212/
+      - https://www.imdb.com/list/ls003631244/
+    plex_search:
+      all:
+        genre.not:
+          - Food
+          - Documentary
+        any:
+          episode_title:
+            - Christmas
+            - Weihnachten
+    url_poster: https://theposterdb.com/api/assets/111695
+    collection_mode: hide
+    collection_order: episode_release.asc
+    collection_level: episode
+    builder_level: episode
+    sort_title: "+8_1_christmas"
+    visible_home: range(11/30-12/31)
+    visible_library: range(11/30-12/31)
+    schedule: yearly(11/30)
+
+### DECADES
+
+  📺 Best Of 2020s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_special,tv_miniseries&release_date=2020-01-01,2029-12-31&user_rating=5.0,10.0&num_votes=1000,&languages=en&user_rating,desc&count=150
+      limit: 200
+    url_poster: https://theposterdb.com/api/assets/350800
+    collection_mode: hide
+    collection_order: custom
+    sort_title: "+4_1_best2020"
+    visible_library: true
+    limit: 50
+    schedule: weekly(monday)
+  
+  📺 Best OF 2010s:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series,tv_special,tv_miniseries&release_date=2010-01-01,2019-12-31&user_rating=5.0,10.0&num_votes=1000,&languages=en&user_rating,desc&count=150
+      limit: 200
+    url_poster: https://theposterdb.com/api/assets/350799
+    collection_mode: hide
+    collection_order: custom
+    sort_title: "+4_2_best2010"
+    visible_library: true
+    limit: 50
+    schedule: weekly(monday)
+
+### FRANCHISES
+
+  Arrowverse:
+    template: {name: franchise, list: https://thetvdb.com/lists/arrowverse, poster: 25569}
+  
+  Breaking Bad Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/Breaking-Bad, poster: 244137}
+  
+  Boys Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/the-boys, poster: 408209}
+  
+  Élite Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/elite, poster: 155311}
+
+  Game of Thrones Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/game-of-thrones, poster: 98682}
+
+  Narcos Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/narcos, poster: 58210}
+
+  Walking Dead Universe:
+    template: {name: franchise, list: https://thetvdb.com/lists/the-walking-dead, shows: 427464, poster: 128886}
+
+### ANDERE
+
+  ⭐️ Miniseries:
+    plex_all: true
+    filters:
+      tmdb_type: miniseries
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/Mini-Series.jpg
+    collection_mode: hide
+    collection_order: release
+    sort_title: "+9_1_miniseris"
+    visible_library: true
+    item_label: miniserie
+    schedule: weekly(monday)
+  
+  👨‍✈️ Pilots:
+    builder_level: episode
+    plex_pilots: true
+    filters:
+      plays.lt: 1
+    collection_mode: hide
+    collection_order: custom
+    sort_title: "+6_3_pilots"
+    visible_library: true
+    schedule: weekly(monday)

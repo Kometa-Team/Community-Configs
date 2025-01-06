@@ -1,0 +1,19 @@
+##############################################################################
+#                     Franchise Separator Collections                        #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#          https://kometa.wiki/en/latest/defaults/movie/franchise/           #
+##############################################################################
+
+external_templates:
+  default: templates
+  template_variables:
+    collection_section: "035"
+
+collections:
+  Franchise Collections:
+    template:
+      - name: separator
+        separator: franchise
+        key_name: Franchise
+        translation_key: separator

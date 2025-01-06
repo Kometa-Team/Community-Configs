@@ -1,0 +1,56 @@
+collections:
+## Oscar Nominations
+  96th Annual Oscar Nominations:
+    sort_title: "+_05 Oscars 96"
+    imdb_award:
+      event_id: ev0000003
+      event_year: 2024
+      winning: false
+    collection_order: random
+    sync_mode: sync
+  95th Annual Oscar Nominations:
+    sort_title: "+_05 Oscars 95"
+    imdb_award:
+      event_id: ev0000003
+      event_year: 2023
+      winning: false
+    collection_order: alpha
+    sync_mode: sync
+  94th Annual Oscar Nominations:
+    sort_title: "+_05 Oscars 94"
+    imdb_award:
+      event_id: ev0000003
+      event_year: 2022
+      winning: false
+    collection_order: alpha
+    sync_mode: sync
+  93rd Annual Oscar Nominations:
+    sort_title: "+_05 Oscars 93"
+    imdb_award:
+      event_id: ev0000003
+      event_year: 2021
+      winning: false
+    collection_order: alpha
+    sync_mode: sync
+  92nd Annual Oscar Nominations:
+    sort_title: "+_05 Oscars 92"
+    imdb_award:
+      event_id: ev0000003
+      event_year: 2020
+      winning: false
+    collection_order: alpha
+    sync_mode: sync
+## Oscars- Best Pictures
+  Oscars-Best Picture:
+    show_missing: true
+    sort_title: "+_05 Oscars 00"
+    summary: "At the 1st Academy Awards ceremony (for 1927 and 1928), there were two categories of awards that were each considered the top award of the night: Outstanding Picture and Unique and Artistic Picture, the former being won by the war epic Wings, and the latter by the art film Sunrise. Each award was intended to honor different and equally important aspects of superior filmmaking.
+
+The following year, the Academy dropped the Unique and Artistic Picture award, and decided retroactively that the award won by Wings was the highest honor that could be awarded. Although the award kept the title Outstanding Picture for the next ceremony, the name underwent several changes over the years. Since 1962, the award has been simply called Best Picture. This collection contains all of the winners in this category."
+    imdb_search:
+      type: movie
+      event.winning: oscar_picture
+      limit: 150
+    #imdb_list: https://www.imdb.com/search/title/?count=250&groups=oscar_best_picture_winners&sort=year,desc
+    imdb_id: tt3783958
+  

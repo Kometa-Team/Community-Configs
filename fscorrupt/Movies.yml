@@ -1,0 +1,245 @@
+templates:
+  Chart Alpha:
+    sort_title: +<<num>>_<<collection_name>>
+    sync_mode: sync
+    collection_order: alpha
+    collection_minimum: 3
+    delete_below_minimum: true
+  Chart Release:
+    sort_title: +_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Best of:
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
+    sort_title: +_Best of <<year>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of <<year>>, according to https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>.
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Studio:
+    optional:
+      - company
+    tmdb_company: <<company>>
+    sort_title: +4_<<collection_name>>
+    sync_mode: sync
+    collection_order: alpha
+    collection_minimum: 3
+    delete_below_minimum: true
+  IMDb Genre:
+    default:
+      title: feature
+      limit: 100
+    imdb_list:
+    - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>
+      limit: <<limit>>
+    - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>&sort=user_rating,desc
+      limit: <<limit>>
+    sort_title: +++_<<collection_name>>
+    sync_mode: sync
+    collection_order: alpha
+    collection_minimum: 3
+    delete_below_minimum: true
+  Other Genre:
+    sort_title: +++_<<collection_name>>
+    sync_mode: sync
+    collection_order: alpha
+    collection_minimum: 3
+    delete_below_minimum: true
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Actor Director:
+    actor: tmdb
+    director: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Actor Director Writer:
+    actor: tmdb
+    director: tmdb
+    writer: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Actor Writer:
+    actor: tmdb
+    writer: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Director:
+    director: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Director Writer:
+    director: tmdb
+    writer: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Writer:
+    writer: tmdb
+    tmdb_person: <<person>>
+    sort_title: ++++_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+  Collection:
+    optional:
+      - collection
+      - movie
+    tmdb_collection_details: <<collection>>
+    tmdb_movie: <<movie>>
+    sync_mode: sync
+    item_assets: true
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+
+collections:
+  English Only:
+    plex_search:
+      all:
+        audio_language: en
+        audio_language.not: de
+    item_label: EnglishOnly
+    build_collection: false
+  Not English Only Anymore:
+    plex_search:
+      all:
+        audio_language:
+          - en
+          - de
+        label: EnglishOnly
+    item_label.remove: EnglishOnly
+    build_collection: false
+  German Only:
+    plex_search:
+      all:
+        audio_language.not: en
+        audio_language: de
+        label: EnglishOnly
+    item_label.remove: EnglishOnly
+    build_collection: false
+######################################################
+#                Studio Collections                  #
+######################################################
+  Pixar:
+    template: {name: Studio, company: 3}
+    summary: Pixar Animation Studios, commonly known as Pixar, is an American computer animation studio based in Emeryville, California, a subsidiary of Disney Studios Content owned by The Walt Disney Company. Pixar began in 1979 as part of the Lucasfilm computer division, known as the Graphics Group, before its spin-off as a corporation on February 3, 1986, with funding from Apple co-founder Steve Jobs, who became its majority shareholder. Disney purchased Pixar in 2006 at a valuation of $7.4 billion by converting each share of Pixar stock to 2.3 shares of Disney stock, a transaction that resulted in Jobs becoming Disney's largest single shareholder at the time. Pixar is best known for its feature films technologically powered by RenderMan, the company's own implementation of the industry-standard RenderMan Interface Specification image-rendering application programming interface. Luxo Jr., a desk lamp from the studio's 1986 short film of the same name, is the studio's mascot.
+
+######################################################
+#                Chart Collections                   #
+######################################################
+
+  Top 10 Pirated Films:
+    template: {name: Chart Alpha, num: 4}
+    trakt_list:
+      - https://trakt.tv/users/fs-corrupt/lists/top-10-pirated-movies-of-the-week?sort=rank,asc
+    summary: These are the top 10 most pirated movies in the last week according to https://trakt.tv/users/linaspurinis/lists/top-10-pirated-movies-of-the-week?sort=rank,asc
+    url_poster: https://i.imgur.com/tIIEBSP.jpg
+    schedule: daily
+  Popular Movies on Plex:
+    template: {name: Chart Alpha, num: 2}
+    tautulli_popular:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    tautulli_watched:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    summary: This collection is based on the most popular movies on my server in the last 30 days. It is updated every day at 3AM.
+    url_poster: https://i.imgur.com/aWlUc1Z.jpg
+    schedule: daily
+  Trending:
+    template: {name: Chart Alpha, num: 4}
+    trakt_trending: 40
+    tmdb_trending_daily: 40
+    tmdb_trending_weekly: 40
+    summary: Movies Trending across the internet, according to https://trakt.tv/movies/trending.
+    url_poster: https://i.imgur.com/oOS46kt.jpg
+    schedule: daily
+  Popular:
+    template: {name: Chart Alpha, num: 4}
+    tmdb_popular: 40
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
+      limit: 40
+    summary: Popular Movies across the internet, according to https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short.
+    url_poster: https://i.imgur.com/U3OaYtB.jpg
+    schedule: daily
+  Top Rated:
+    template: {name: Chart Alpha, num: 5}
+    tmdb_top_rated: 250
+    summary: Top Rated Movies across the internet
+    url_poster: https://i.imgur.com/VvfdUHn.jpg
+    schedule: daily
+  Top Horror Movies:
+    template: {name: Chart Alpha, num: 7}
+    trakt_list:
+      - https://trakt.tv/users/w1nt3r/lists/time-out-s-100-best-horror-films?sort=rank,asc
+    summary: Top horror movies, accoring to https://trakt.tv/users/w1nt3r/lists/time-out-s-100-best-horror-films?sort=rank,asc.
+    url_poster: https://i.imgur.com/oOR5qVD.jpg
+    radarr_add: true
+    radarr_search: true
+    schedule: weekly (sunday)
+  Best of 1980s:
+    template: {name: Chart Alpha, num: 8}
+    trakt_list: https://trakt.tv/users/zyrus/lists/80s-classics?sort=rank,asc
+    summary: Best of 1980s, according to https://trakt.tv/users/zyrus/lists/80s-classics?sort=rank,asc.
+    url_poster: https://i.imgur.com/Lep5SN7.jpg
+    schedule: weekly (sunday)
+  Best of 1990s:
+    template: {name: Chart Alpha, num: 9.0}
+    trakt_list: https://trakt.tv/users/sp1ti/lists/a-v-club-s-best-films-of-the-90s?sort=rank,asc
+    summary: Best of the 1990s, according to https://trakt.tv/users/sp1ti/lists/a-v-club-s-best-films-of-the-90s?sort=rank,asc.
+    url_poster: https://i.imgur.com/ziwXMK4.jpg
+    schedule: weekly (sunday)
+  Best of 2000s:
+    template: {name: Chart Alpha, num: 9.1}
+    trakt_list: https://trakt.tv/users/sp1ti/lists/a-v-club-s-best-films-of-the-00s?sort=rank,asc
+    summary: Best of the 2000s, according to https://trakt.tv/users/sp1ti/lists/a-v-club-s-best-films-of-the-00s?sort=rank,asc.
+    url_poster: https://i.imgur.com/1dtBQzK.jpg
+    schedule: weekly (sunday)
+  Best of 2020:
+    template: {name: Best of, year: 2020}
+    url_poster: https://i.imgur.com/rw5Gg5y.jpg
+    schedule: weekly (sunday)
+  Oscars:
+    template: {name: Chart Release}
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    summary: Oscar Winning Movies
+    url_poster: https://i.imgur.com/w7U2VOp.jpg
+    schedule: weekly (sunday)
+  In Cinema:
+    template: {name: Chart Alpha, num: 2}
+    trakt_list: https://trakt.tv/users/fs-corrupt/lists/in-cinemas?sort=rank,asc
+    summary: Currently in Austria/Germany Cinema´s, according to https://trakt.tv/users/fs-corrupt/lists/in-cinemas?sort=rank,asc.
+    url_poster: https://i.imgur.com/f1jz2HR.jpg
+    schedule: daily

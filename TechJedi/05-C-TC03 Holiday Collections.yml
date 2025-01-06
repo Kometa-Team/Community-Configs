@@ -1,0 +1,100 @@
+templates:
+    Holiday:
+        sort_title: +++++++_A1
+        collection_order: release
+        delete_not_scheduled: true
+        run_again: true
+        visible_home: true
+        visible_shared: true
+        visible_library: true
+        sync_mode: sync
+collections:
+  Christmas Movies:
+    schedule: range(12/10-12/27)
+    template: {name: Holiday}
+    imdb_id: tt0193524 # Star Wars Holiday Special
+    plex_all: true
+    filters:
+      - filepath: Christmas
+    trakt_list:
+      - https://trakt.tv/users/movistapp/lists/christmas-movies
+      - https://trakt.tv/users/pualani78/lists/christmas-2020
+      - https://trakt.tv/users/veninjak/lists/complete-christmas-2021-copy
+    imdb_list:
+      - https://www.imdb.com/list/ls025976544/
+      - https://www.imdb.com/list/ls003863000/
+      - https://www.imdb.com/list/ls027454200/
+      - https://www.imdb.com/list/ls027886673/
+      - https://www.imdb.com/list/ls097998599/
+    summary: From Die Hard to the Star Wars Holiday Special, there is a little something for everyone this holiday season, under the Plexmas Tree.
+  Halloween Movies:
+    schedule: range(10/10-10/31)
+    template: {name: Holiday}
+    trakt_list:
+      - https://www.imdb.com/list/ls000091321/
+      - https://trakt.tv/users/kairbear08/lists/halloween
+      - https://trakt.tv/users/mybicycle/lists/halloween
+      - https://trakt.tv/users/jayinftl/lists/halloween
+      - https://trakt.tv/users/roswellgeek/lists/halloween
+    summary: Halloween films to give you a chill.
+  New Year's Eve Movies:
+    schedule: range(12/26-01/02)
+    template: {name: Holiday}
+    imdb_list: https://www.imdb.com/list/ls066838460/
+  Valentine's Day Movies:
+    schedule: range(02/12-02/15)
+    template: {name: Holiday}
+    imdb_list:
+      - https://www.imdb.com/list/ls000094398/
+      - https://www.imdb.com/list/ls057783436/
+      - https://www.imdb.com/list/ls064427905/
+  St. Patrick's Day Movies:
+    schedule: range(03/01-03/17)
+    template: {name: Holiday}
+    imdb_list: https://www.imdb.com/list/ls063934595/
+  Thanksgiving Movies:
+    schedule: range(11/10-11/28)
+    template: {name: Holiday}
+    imdb_list: 
+      - https://www.imdb.com/list/ls000835734/
+      - https://www.imdb.com/list/ls091597850/
+    summary: These moves are not turkeys!
+  Easter Movies:
+    schedule: range(3/22-4/25)
+    template: {name: Holiday}
+    imdb_list: 
+      - https://www.imdb.com/list/ls062665509/
+      - https://www.imdb.com/list/ls051733651/
+  Memorial Day Movies:
+    template: {name: Holiday}
+    schedule: range(5/22-5/31)
+    url_poster: https://i.imgur.com/T5Vontt.png
+    imdb_search:
+      type: movie
+      list:
+        - ls565595526
+        - ls052440738
+  4th of July Movies:
+    template: {name: Holiday}
+    schedule: range(7/01-7/06)
+    imdb_list:
+      - https://www.imdb.com/list/ls000858190/
+      - https://www.imdb.com/list/ls063503978/
+      - https://www.imdb.com/list/ls022279733/
+  Columbus Day:
+    template: {name: Holiday}
+    schedule: range(10/5-10/13)
+    plex_search:
+      any:
+        director: Chris Columbus
+        writer: Chris Columbus
+        producer: Chris Columbus
+    summary: "Chris Columbus is a highly accomplished director who has brought us numerous captivating films. He is widely recognized for his talent in directing stories with heartwarming themes and creating memorable characters. In the first paragraph, let's discuss his early works. Columbus made a name for himself with the beloved family-friendly films \"Home Alone\" and \"Home Alone 2: Lost in New York.\" Both movies follow the mischievous adventures of a young boy as he outwits burglars during the holiday season. These comedies are cherished by audiences of all ages for their clever slapstick humor and heartwarming messages about family and courage.
+
+Moving on to the second paragraph, we find Columbus expanding his repertoire by exploring magical worlds. One outstanding example is \"Harry Potter and the Sorcerer's Stone,\" the first film in the acclaimed Harry Potter series. Columbus masterfully brings J.K. Rowling's enchanting story to life, introducing viewers to the wizarding world and its iconic characters. His attention to detail and ability to capture the essence of Rowling's rich imagination earned him the admiration of fans worldwide. Columbus also helmed the second film in the series, \"Harry Potter and the Chamber of Secrets,\" further immersing audiences in the magical universe.
+
+In the final paragraph, we will explore Columbus' more recent projects. One notable film is \"Percy Jackson & The Olympians: The Lightning Thief,\" based on Rick Riordan's popular book series. Columbus brings the action-packed world of Greek mythology to the screen, as the young Percy Jackson discovers his true identity as a demigod and embarks on a thrilling quest. Columbus delivers a visually stunning adventure filled with mythical creatures and epic battles. Another captivating film in his repertoire is \"The Help,\" a powerful drama set in 1960s Mississippi. Columbus skillfully tackles the sensitive subject of racial inequality, showcasing the lives of African American maids during this tumultuous time.
+
+Overall, Chris Columbus' filmography showcases his versatility as a director. From family comedies to magical wizarding adventures and poignant dramas, Columbus consistently delivers engaging and impactful films. His ability to resonate with audiences and create memorable cinematic experiences is what makes his work cherished by moviegoers worldwide."
+
+    

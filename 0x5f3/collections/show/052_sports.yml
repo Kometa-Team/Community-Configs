@@ -1,0 +1,152 @@
+## _sports.yml
+
+templates:
+  plex:
+    collection_mode: hide
+    delete_not_scheduled: false
+    sort_title: "+052_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+
+collections:
+  "Sports: All":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_sports/sports_all.png
+    summary: "Sports"
+#    collection_order: alpha
+    template: {
+                    name: plex,
+                    num: "0"
+                }
+#    plex_all: true
+#    filters:
+#      - filepath: "/mnt/tv-sports"
+#      - filepath: "/mnt/tv-sports-4k"
+    smart_filter:
+#      all:
+#        collection: Sports: All"
+      any:
+        studio:
+            - "All Elite Wrestling"
+            - "BBC Sport"
+            - "HBO Sports"
+            - "Total Nonstop Action (TNA)"
+            - "UFC"
+            - "Ultimate Fighting Championship"
+            - "World Wrestling Entertainment (WWE)"
+            - "WWE Home Video"
+      sort_by: title.asc
+
+  "Sports: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_sports/sports_unwatched.png
+    summary: "Unwatched sports"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+#        collection: "Sports: All"
+        any:
+          studio:
+            - "All Elite Wrestling"
+            - "BBC Sport"
+            - "HBO Sports"
+            - "Total Nonstop Action (TNA)"
+            - "UFC"
+            - "Ultimate Fighting Championship"
+            - "World Wrestling Entertainment (WWE)"
+            - "WWE Home Video"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: title.asc
+
+  "Sports: Random":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_sports/sports_random.png
+    summary: "Random sports"
+    template: {
+                    name: plex,
+                    num: "2"
+                }
+    smart_filter:
+#      all:
+#        collection: Sports: All"
+      any:
+        studio:
+            - "All Elite Wrestling"
+            - "BBC Sport"
+            - "HBO Sports"
+            - "UFC"
+            - "Ultimate Fighting Championship"
+            - "World Wrestling Entertainment (WWE)"
+            - "WWE Home Video"
+      limit: 250
+      sort_by: random
+
+  "Sports: Recently Added":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_sports/sports_recently-added.png
+    summary: "Recently added sports"
+    visible_library: true
+    template: {
+                    name: plex,
+                    num: "3"
+                }
+    smart_filter:
+#      all:
+#        collection: Sports: All"
+      any:
+        studio:
+            - "All Elite Wrestling"
+            - "BBC Sport"
+            - "HBO Sports"
+            - "UFC"
+            - "Ultimate Fighting Championship"
+            - "World Wrestling Entertainment (WWE)"
+            - "WWE Home Video"
+      limit: 100
+      sort_by: added.desc
+
+  "Sports: Recently Released":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_sports/sports_recently-released.png
+    summary: "Recently released sports"
+    template: {
+                    name: plex,
+                    num: "4"
+                }
+    smart_filter:
+#      all:
+#        collection: Sports: All"
+      any:
+        studio:
+            - "All Elite Wrestling"
+            - "BBC Sport"
+            - "HBO Sports"
+            - "UFC"
+            - "Ultimate Fighting Championship"
+            - "World Wrestling Entertainment (WWE)"
+            - "WWE Home Video"
+      limit: 250
+      sort_by: release.desc
+
+  "Sports: Top Rated":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_sports/sports_top-rated.png
+    summary: "Top rated sports"
+    template: {
+                    name: plex,
+                    num: "5"
+                }
+    smart_filter:
+#      all:
+#        collection: Sports: All"
+      any:
+        studio:
+            - "All Elite Wrestling"
+            - "BBC Sport"
+            - "HBO Sports"
+            - "UFC"
+            - "Ultimate Fighting Championship"
+            - "World Wrestling Entertainment (WWE)"
+            - "WWE Home Video"
+      limit: 250
+      sort_by: critic_rating.desc

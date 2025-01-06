@@ -1,0 +1,2957 @@
+#####  This collection was previously named All Genres.yml  #####
+
+templates:
+  Thematic:
+    sort_title: +4_<<collection_name>>.png
+    limit: 100 
+    sync_mode: sync     
+collections:
+###########################
+#   GENRE AGNOSTIC  #
+###########################
+
+  80s Classics:
+    template: {name: Thematic}
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66a4c6b20684f22f68368a11
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    file_poster: config/assets/80s Classics.png
+    visible_shared: true
+    limit: 100    
+    summary: Travel back to the vibrant 80s with a collection of iconic films and unforgettable moments.
+
+  Ancient Times:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls527648867/
+      - https://www.imdb.com/list/ls511631391/
+      - https://www.imdb.com/list/ls511671658/
+      - https://www.imdb.com/list/ls082901324/
+    letterboxd_list:
+      - https://letterboxd.com/thecentipedeboy/list/bronze-age/
+      - https://letterboxd.com/solidzdar/list/bronze-age-mindset/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Ancient Times.png
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+    summary: Movies set between 4000 BCE and 500 CE, typically feature ancient cities, rural landscapes, monumental architecture, early warfare, primitive weapons, and mythological elements from early civilizations
+   
+  African Locales:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls051534056/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/African.png
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+    summary: Movies that are set in Africa. For other location based thematic collections see; Dead of Winter or Lonely People in Neon Cities
+    
+  Alternate History:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls084920069/?st_dt=&mode=detail&page=1&title_type=movie&release_date=2000%2C&ref_=ttls_ref_yr&sort=date_added,desc
+    trakt_list:
+      - https://trakt.tv/users/pterisaur/lists/alternate-history-24253071?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Alternate History.png
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+    summary: Alternate history is speculative fiction where pivotal historical events unfold differently, exploring What if? scenarios that diverge from recorded history, offering intriguing and imaginative outcomes.  
+
+  Animal Tales:
+    template: {name: Thematic}
+    imdb_search:
+      Keyword: animal
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Animal Tales.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Heartwarming and entertaining films that bring animals to life, showcasing their adventures, friendships, and often teaching valuable life lessons. All movies have a released year of 2000 or after. Similar collections include; Canine Chronicles    
+   
+  Aviation Cinema:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls021419838/?st_dt=&mode=detail&page=1&title_type=movie&ref_=ttls_ref_rt_usr&sort=release_date,desc
+      - https://www.imdb.com/list/ls068387574/?sort=list_order,asc&st_dt=&mode=detail&page=1&title_type=movie&release_date=1980%2C&ref_=ttls_ref_yr
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Aviation.png
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+    summary: Movies that unfold in the skies or have plots centered around flight. Similar collections are; Aerial Warfare
+    
+  Awesome Villains:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/pterisaur/lists/villains?genres=action&display=movie&sort=random,asc
+      - https://trakt.tv/users/pterisaur/lists/villains?genres=thriller&display=movie&hide=unreleased&sort=random,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+    file_poster: config/assets/Awesome Villains.png
+    summary: Awesome villains movies feature captivating antagonists who elevate the storytelling with their presence, motivations, and dynamic performances, leaving lasting impressions.
+    
+  B-Movies:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls000647834/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/B-Movies.png
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+    summary: A collection of the best of the worst. B-movies are a cheap emulation of a mainstream film, a low-budget stab at drawing in viewers.
+  
+  Based on Novels:
+    template: {name: Thematic}
+    imdb_list: 
+      - https://www.imdb.com/list/ls006444168/?sort=list_order,asc&st_dt=&mode=detail&page=1
+    letterboxd_list: 
+      - https://letterboxd.com/soirore/list/books-and-their-adaptations/
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/movies-based-on-books?display=movie&sort=rank,asc
+      - https://trakt.tv/users/pipeinformatico/lists/films-or-tv-based-on-books?display=movie&sort=title,asc
+      - https://trakt.tv/users/krissykk/lists/movies-based-on-books-1of7?display=movie&sort=added,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Based on Novels.png
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+    summary: There's no overdue fees in this library. Similar collections are; Stephen King & John Grisham
+    
+  Theological Movies:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls021573673/
+      - https://www.imdb.com/list/ls082153440/
+      - https://www.imdb.com/list/ls056261985/
+      - https://www.imdb.com/list/ls052135430/
+      - https://www.imdb.com/list/ls523975103/
+      - https://www.imdb.com/list/ls058893748/?year=1980%2C
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Theological Movies.png
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+    summary: Theological movie includes religious themes, scriptural stories, faith-driven characters, divine interventions, miracles, ancient settings, moral dilemmas, and depictions of God's will and human spirituality.
+      
+  Canine Chronicles:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls063494147/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_yr&sort=release_date,desc
+    trakt_list:
+      - https://trakt.tv/users/mraniki/lists/theme-dog?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Canine Chronicles.png
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+    summary: Films that revolve around dogs as central characters, portraying their adventures, relationships with humans, and showcasing the unique bonds. Similar collection are; Animal Tales
+
+  Computer Troubles:
+    template: {name: Thematic}
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66a578458ad778032abf2c32
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Computer Troubles.png
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+
+  Cult Classics:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: Cult classic
+      rating.gte: 5.0
+      release.after: 1980-01-01
+      type: movie, tv_movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Cult Classics.png
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+    summary: Cult films have devoted fanbases, forming subcultures. Fans engage in repeated viewings, quoting dialogue, and immersive experiences. Inclusive definitions cover major studio flops, while exclusive ones emphasize transgressive, overlooked films.
+
+  Dance Lovers:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls000054939/
+      - https://www.imdb.com/list/ls057029570/
+    letterboxd_list:
+      - https://letterboxd.com/monocle/list/moving-pictures-films-about-dancing/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Dance.png
+    visible_home: true
+    visible_shared: true
+    limit: 100    
+    summary: Movies that center around the passion, emotion, and artistry of dance, embracing the beauty and creativity of movement. Similar collections are; Music Lovers & Musicals
+  
+  Diseased Minds:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/cage/lists/film-for-the-diseased-mind?display=movie&sort=random,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Diseased Minds.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Not for those with heart conditions. You might get dirty looks if you mention these films. Welcome aboard fellow traveller. Remember it's only a movie... Similar collections are; Weirdo Watchlist
+ 
+  Dreamy Filmgaze:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/kun/list/all-about-the-dreamy-filmgaze/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Movies that are equivalent to dream-pop, shoegaze music - They possess an ethereal emptiness vibe, yet sometimes violently distorted with overwhelmingly detached moments that kind of separate you from reality.
+    limit: 100
+    file_poster: config/assets/Dreamy Filmgaze.png
+   
+  Driven by Thrills:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls006753960/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_rt_usr&sort=release_date,desc
+      - https://www.imdb.com/list/ls022678663/
+    trakt_list:
+      - https://trakt.tv/users/kingkearney/lists/car-driving-action?genres=action&display=movie&sort=random,asc
+      - https://trakt.tv/users/omegaforce696/lists/car-movies?sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Driven by Thrills.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Movies that are themed around high-speed pursuits. Some characters may or may not live their life a quarter mile at a time. Similar collections are; Extreme Sports & Motorsports
+
+  Entrepreneurs and Startups:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls080399485/
+    letterboxd_list:
+      - https://letterboxd.com/nackenrolle/list/entrepreneurship/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Entrepreneurs and Startups.png
+    visible_home: true
+    limit: 100
+    visible_shared: true
+    summary: An Entrepreneurs and Industrialists movie features ambitious characters, business challenges, innovation, cutthroat competition, high-stakes decisions, corporate intrigue, and the journey from startup to success or failure.
+   
+  Extreme Sports:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls025051389/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Extreme Sports.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Ultimate All-round Extreme Sports, Race Car / Motorcycle, Mountaineering / Rock Climbing, Parkour, Surfing / Diving, Skateboard / Skiing, Skydiving / Basejumping
+  
+  Famous Figures:
+    template: {name: Thematic}
+    imdb_list: 
+      - https://www.imdb.com/list/ls000936075/
+      - https://www.imdb.com/list/ls502719827/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Famous Figures.png
+    limit: 100
+    visible_home: true
+    visible_shared: true
+    summary: Explore the fascinating lives of history's most influential personalities in this gripping collection, where legends and legacies unfold on screen.
+ 
+  Femme Fatale:
+    template: {name: Thematic}
+    imdb_list: 
+      - https://www.imdb.com/list/ls095524956/
+      - https://www.imdb.com/list/ls099689284/
+      - https://www.imdb.com/list/ls058405423/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Femme Fatal.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Femme fatale films includes noir classics, thrillers, and dramas where seductive, manipulative women play central roles, often leading to deception, betrayal, and tragic consequences in their stories.
+    
+  Found Footage:
+    template: {name: Thematic}
+    imdb_list: https://www.imdb.com/list/ls063914804/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_yr&sort=release_date,desc
+    letterboxd_list: https://letterboxd.com/jewbo23/list/found-footage/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Found Footage.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Found footage can be used for any genre, but it is most commonly used in horror and features footage that appears to be an existing and informal recording of events with the purpose of simulating real-life horrific events.
+
+  High Art Genre: 
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/darrencb/list/high-art-genre-movies/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Movies made by auteur directors with an arthouse directive, that happen to be genre movies. Similar collections are Arthouse & Avant-Garde 
+    file_poster: config/assets/High Art Genre.png
+  
+  International Gems:
+    template: {name: Thematic}
+    trakt_list: 
+     - https://trakt.tv/users/ld667/lists/the-best-foreign-movies-ever-made?sort=rank,asc
+     - https://trakt.tv/users/rizreflects/lists/critically-acclaimed-foreign-movies?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/International Gems.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary:  Critically acclaimed foreign cinema from around the globe. Experience cultures, languages, and captivating stories from diverse corners of the world.
+
+  High Seas:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls085227746/?year=1995%2C
+      - https://www.imdb.com/list/ls022021686/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/The High Seas.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Movies featuring maritime settings, underwater exploration, oceanic creatures, nautical adventures, environmental themes, shipwrecks, sea mysteries, and the challenges and wonders of the vast, often perilous ocean.
+   
+  Hidden in the Jungle:
+    template: {name: Thematic}
+    imdb_list: 
+      - https://www.imdb.com/list/ls538344423/ 
+      - https://www.imdb.com/list/ls056591393/
+      - https://www.imdb.com/list/ls074504276/?year=1990%2C
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66a4d0650684f22f68368ba2
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Hidden in the Jungle.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: A thrilling collection of jungle movies, featuring survival adventures, exotic wildlife, and untamed landscapes where characters face nature's challenges and discover hidden secrets.
+    
+  Loneliness and Isolation:
+    template: {name: Thematic}
+    trakt_list: 
+     - https://trakt.tv/users/majeed_pk/lists/loneliness-and-isolation?sort=rank,asc
+    letterboxd_list: https://letterboxd.com/dayaonfilm/list/loneliness-in-movies/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Loneliness & Isolation.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: A collection of movies where the antagonist is alone and isolated either physically or psychologically. Similar collections are; Isolation Horror or Lonely People in Neon Citie 
+
+  Lonely People in Neon Cities:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/hydratedshrimp/list/lonely-people-in-neon-cities/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: A cinematic journey through urban isolation, set amidst the vibrant glow of neon-lit metropolises. For other location based collections see; Dead of Winter & African Locales
+    file_poster: config/assets/Lonely People in Neon Cities.png
+ 
+  Lost Worlds:
+    template: {name: Thematic}
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66a470706e3be86e8f2c7f8a
+    collection_order: random
+    sync_mode: sync
+    radarr_add_missing: true
+    radarr_availability: announced
+    radarr_search: true
+    radarr_quality: HD-1080p
+    radarr_folder: /movies
+    limit: 100    
+  Lost in your 20s:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/adaydreaming/list/feeling-lost-in-your-20s/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Coming-of-age type films but for those in their mid 20's, Other coming of age collections are; Teenage Wasteland
+    file_poster: config/assets/Lost in your 20s.png
+
+  Unhealthy Obsessions:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/dayaonfilm/list/obsession-in-movies/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: The obsessed artist, a character trying to execute a plan perfectly, two lovers trying to live the rest of their lives together, an idea, or, most importantly, revenge..
+    file_poster: config/assets/Unhealthy Obsessions.png
+
+  Good Films, 90 Minutes or Less:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/stautis/list/good-films-90-minutes-or-less/page/2/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Short for time, but still want to squeeze a film in, this list is made for you.
+    file_poster: config/assets/Good Films, 90 Minutes or Less.png
+
+  Parallel Universes:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls028038190/
+    trakt_list:  
+      - https://trakt.tv/users/ld667/lists/parallel-universe-movies-and-tv-shows?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Parallel Universes.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Delve into mind-bending films that transport you to alternate dimensions and parallel universes where the fabric of reality unravels. Experience narratives that challenge your perception of what's possible. Similar collections are; Alternate Reality and What is Reality?
+
+  Morally Ambiguous:
+    template: {name: Thematic}
+    letterboxd_list: 
+      - https://letterboxd.com/steve404/list/morally-ambiguous/
+      - https://letterboxd.com/stephz1/list/morally-ambiguous/
+      - https://letterboxd.com/spap1/list/films-about-morally-ambiguous-people-getting/
+      - https://letterboxd.com/master_oogway1/list/morally-ambiguous/
+      - https://letterboxd.com/shannonmah/list/morally-ambiguous-with-complex-characters/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    summary: Dive into the morally ambiguous with films that blur lines, ignite debate, and redefine ethical boundaries in this thought-provoking collection. Similar collections are; Villian Protagonists
+    file_poster: config/assets/Morally Ambiguous.png
+    
+  Music Lovers:
+    template: {name: Thematic}
+    imdb_search:
+      genre: Music
+      release.after: 1990-01-01
+      type: movie
+      votes.gte: 100000
+      rating.gte: 5.0
+      limit: 100
+      sort_by: rating.desc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Music Lovers.png
+    summary: Music films revolve around music being an integral part of the characters lives. Movies in this collection are not required to be Musicals. A similar collection is Dance Lovers
+    limit: 100
+
+  Mystic Monsters Manifesto:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls092674905/?st_dt=&mode=detail&page=1&title_type=movie&release_date=2000%2C&ref_=ttls_ref_rt_usr&sort=list_order,asc
+      - https://www.imdb.com/list/ls003359911/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1980%2C&ref_=ttls_ref_rt_usr&sort=release_date,desc
+    imdb_search:
+      keyword: monster horror
+      genre: Horror
+      release.after: 1990-01-01
+      type: movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Mystic Monsters Manifesto.png
+    visible_home: true
+    visible_shared: true
+    summary: A monster movie uses a deformed or supernatural creature or set of creatures, to introduce elements of horror. The only real requirement is that the antagonist can be categorized as a monster. Similar collections are; Giant Terrors, Deep Sea Terrors and Satanic Horrors
+    limit: 100
+    
+  Mythological Movies:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls062932267/
+      - https://www.imdb.com/list/ls545242836/
+      - https://www.imdb.com/list/ls074882241/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Mythological Movies.png
+    visible_home: true
+    visible_shared: true
+    summary: A Mythological movie features gods, legendary creatures, and epic quests rooted in ancient myths. It includes divine intervention, heroic characters, moral lessons, and fantastical settings that reflect cultural folklore.
+    limit: 100
+    
+  Nihilistic and Bleak:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/darrencb/list/the-world-is-hell-hopeless-cinema/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Nihilistic and Bleak.png
+    visible_home: true
+    visible_shared: true
+    summary: Nihilistic movies explore the philosophy of nihilism, depicting a bleak worldview where life lacks inherent meaning or purpose. They often showcase existential despair, moral ambiguity, and the futility of human endeavors.
+    limit: 100
+    
+  Netflix Movies That Are Actually Good:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/donquixote616/list/netflix-movies-that-are-actually-good/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Out of almost 5,000 movies on Netflix, we managed to find a couple dozen worth watching.
+    file_poster: config/assets/Netflix Movies That Are Actually Good.png
+    limit: 100
+     
+  Self Discovery:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/ceyceyx/list/what-will-i-do-with-this-life/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Oh whatever will I do with this life..
+    file_poster: config/assets/Self Discovery.png
+    limit: 100
+    
+  Mind of a Murderer:
+    template: {name: Thematic}
+    reciperr_list: 
+      - https://reciperr.com/api/recipe/list/params?recipeMetadataId=66a4a6896e3be86e8f2c815a
+      - https://reciperr.com/api/recipe/list/params?recipeMetadataId=66acc12a6d1bfb48f98adb7e
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Mind of a Murderer.png
+    visible_home: true
+    visible_shared: true
+    summary: A chilling collection of films exploring the minds of serial killers, blending suspense, psychological drama, and crime thrills to unravel the dark depths of human nature.
+    limit: 100
+    
+  Nightmare Vacations:
+    template: {name: Thematic}
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66a598568ad778032abf2d32
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Nightmare Vacations.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    
+  Race Against Time:
+    template: {name: Thematic}
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66a598c88ad778032abf2d4d
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Race Against Time.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    
+  Separately Interconnected:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/steve404/list/separately-interconnected/
+    imdb_list: https://www.imdb.com/list/ls023210543/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Referred to as Hyperlink Cinema, these are movies where the characters or action reside in separate stories, but a connection or influence between those disparate stories is slowly revealed to the audience.
+    file_poster: config/assets/Separately Interconnected.png
+    limit: 100
+    
+  Swords and Sorcery:
+    template: {name: Thematic}
+    trakt_list:  
+      - https://trakt.tv/users/marcelocastanheira/lists/swords?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Swords and Sorcery.png
+    visible_home: true
+    visible_shared: true
+    summary: Genre agnostic, sword-themed movies set in medieveal times, featuring fantasy epics, historical battles, and legendary tales of heroism.
+    limit: 100
+    
+  Teenage Wasteland:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/moviemaestro/list/teenage-wasteland-a-comprehensive-list-of/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: A comprehensive list of coming-of-age films. For similar collections see; Lost in your 20s
+    file_poster: config/assets/Teenage Wasteland.png
+    limit: 100
+    
+  Terrorism:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/steve404/list/terror/
+    trakt_list: 
+      - https://trakt.tv/users/sanjoe/lists/terrorist-movies-series?display=movie&sort=title,asc
+      - https://trakt.tv/users/pprojecttv/lists/terrorists?display=movie&sort=my_rating,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Terror.png
+    visible_home: true
+    visible_shared: true
+    summary: Terrorism-themed movies depict intense, suspenseful narratives exploring acts of violence, extremism, and counter-terrorism efforts, often evoking fear and tension. Similar collections include; Special Forces Warfare.
+    limit: 100
+    
+  The Chosen One:
+    template: {name: Thematic}
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66a573078ad778032abf2b59
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/The Chosen One.png
+    visible_home: true
+    visible_shared: true
+    limit: 100
+    
+  Triumph of the Geeks:
+    template: {name: Thematic}
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66a46d196e3be86e8f2c7f1d
+    collection_order: random
+    sync_mode: sync
+    limit: 100
+    
+  True Stories:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/darksideno1/lists/true-story-movies?display=movie&sort=rank,desc
+      - https://trakt.tv/users/hdlists/lists/based-on-or-inspired-by-a-true-story?display=movie&sort=rank,asc
+      - https://trakt.tv/users/jacksmomrocks/lists/movies-based-on-true-stories?display=movie&sort=percentage,asc
+    imdb_list: 
+      - https://www.imdb.com/list/ls000266069/?st_dt=&mode=detail&page=1&sort=release_date,desc&title_type=movie&release_date=1980%2C&ref_=ttls_ref_yr
+      - https://www.imdb.com/list/ls022809331/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/True Story.png
+    visible_home: true
+    visible_shared: true
+    summary: Movies that are based on true stories but take creative license, for movies with factually accurate truths see Docu Drama Collection.
+    limit: 100
+    
+  Trove of Toys:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls023654151/?title_type=feature%2Ctv_movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Trove of Toys.png
+    visible_home: true
+    visible_shared: true
+    summary: Films based on toy lines turn iconic toys into action-packed movies, combining nostalgia with adventure for audiences of all ages.
+    limit: 100
+    
+  Twist Ending:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls066370089/?sort=release_date,desc&st_dt=&mode=detail&page=1&user_rating=5.9%2C&release_date=1990%2C&ref_=ttls_ref_yr
+    trakt_list:
+      - https://trakt.tv/users/niklcc/lists/that-ending-tho?sort=added,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Twist Ending.png
+    visible_home: true
+    visible_shared: true
+    summary: Now you're looking for the secret. But you won't find it because of course, you're not really looking. You want to be fooled
+    limit: 100
+    
+  Witching Hour Hits:
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66a45330b13eac58ded57fac
+    collection_order: random
+    sync_mode: sync
+ 
+  World Building Masterclass:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/simonramshaw/list/they-arent-films-theyre-experiences/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Certain films are completely self-assured in their atmospheres and worlds that they build. Often, these worlds are able to get under the viewer's skin and stay with them for quite some time, for better or worse.
+    file_poster: config/assets/World Building Masterclass.png
+    limit: 100
+    
+  Video Game Adaptions:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/29zombies/lists/video-game?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Video Game Adaption.png
+    visible_home: true
+    visible_shared: true
+    summary: Movies based on video games, ya noob!
+    limit: 100
+    
+  Villain Protagonists:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls029771593/?st_dt=&mode=detail&page=1&title_type=movie&ref_=ttls_ref_rt_usr&sort=release_date,desc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Villain Protagonists.png
+    visible_home: true
+    visible_shared: true
+    summary: Movies where the villain is the main character offer captivating insights into the darker side of humanity. These films explore complex antiheroes, delving into their motivations, twisted journeys, and the moral ambiguity that blurs the line between good and evil.
+    limit: 100
+    
+  Visually Insane:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/etolkin/list/filmlist:28697007/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: We asked Twitter “What’s the most visually insane movie you’ve ever seen?”
+    file_poster: config/assets/Visually Insane.png
+    limit: 100
+    
+  Underground Network:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/justin/lists/underground-network?sort=rank,asc
+      - https://trakt.tv/users/rendom/lists/hack-the-planet-compilation?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assests/Underground Network.png
+    summary: Genre agnsotic, techno, cyber, hacking and AI themed movies that delve into the intersection of advanced technology and the human conditon.  Similar collections are; Techno Thriller   
+    limit: 100
+    
+  Weirdo Watchlist:
+    template: {name: Thematic}
+    letterboxd_list:
+      - https://letterboxd.com/hamburgersplash/list/weirdo-watchlist/
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Movies that are slightly off.
+    file_poster: config/assets/Weirdo Watchlist.png
+    limit: 100
+    
+  Whistleblowers:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: whistleblower
+      release.after: 1990-01-01
+      rating.gte: 5.0
+      type: movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Whistle Blowers.png
+    visible_home: true
+    visible_shared: true
+    summary: Drama movies based on whistleblower events that cover gripping narratives inspired by mainly real-life individuals who expose hidden truths, corruption, or illegal activities, often facing personal risks and ethical dilemmas in their pursuit of justice.
+    limit: 100
+    
+###########################
+#   ACTION Collections #
+###########################
+
+  Assassins and Killers:
+    template: {name: Thematic}
+    letterboxd_list: 
+      - https://letterboxd.com/steve404/list/assassins-and-hitmen/
+      - https://letterboxd.com/symonymm/list/films-about-hitmen-assassins/
+      - https://letterboxd.com/melissa90s/list/female-assassins-hitwomen-revenge-amnesia/
+      - https://letterboxd.com/moribund/list/assassins/
+      - https://letterboxd.com/hunterduesing/list/the-existential-hitman/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: If your looking for James Bond your in the wrong place
+    file_poster: config/assets/Assassins and Killers.png
+ 
+  Deadly Dames:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls003456810/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Deadly Dames.png
+    visible_home: true
+    visible_shared: true
+    summary: The only requirement to be included in this action collection is for the lead actor to be female.
+ 
+  Gritty and Violent:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls063671530/?sort=release_date,desc&st_dt=&mode=detail&page=1&release_date=1990%2C&ref_=ttls_ref_yr
+    letterboxd_list: https://letterboxd.com/steve404/list/gritty-and-violent/
+    limit: 150
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Gritty and Violent.png
+    visible_home: true
+    visible_shared: true
+    summary: Gritty and violent movies are unapologetically brutal, featuring explicitly violent scenes that delve into the raw and unforgiving aspects of human nature, delivering an intense and visceral cinematic experience.
+
+  Heroic Bloodshed:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls084912490/?st_dt=&mode=detail&page=1&title_type=movie&ref_=ttls_ref_typ&sort=release_date,desc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Heroic Bloodshed.png  
+
+  High Octane Action:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls082047035/
+      - https://www.imdb.com/list/ls020414651/?st_dt=&mode=detail&page=1&genres=Action&title_type=movie&ref_=ttls_ref_rt_usr&sort=release_date,desc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/High Octane Action.png
+    visible_home: true
+    visible_shared: true
+    summary: Fast-paced action movies thrust the protagonist into relentless, extended sequences of high-octane intensity, pushing their endurance to the limit as they face thrilling challenges and overcome formidable obstacles.
+
+  Red Hot Revenge:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/jtucci/lists/revenge?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Red Hot Revenge.png
+    summary: Revenge movies are visceral tales of vengeance, driven by a protagonist's burning desire for retribution, featuring intense action, suspense, and exploration of the moral complexities surrounding the pursuit of justice.
+
+  Super Hero Action:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/hdlists/lists/superhero-movies-from-1980-to-today?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Super Hero.png
+    visible_home: true
+    visible_shared: true
+    limit: 350
+
+###########################
+#   ADVENTURE Collections #
+###########################
+
+  Treasure Hunter Adventures:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: treasure hunt
+      genre: Adventure
+      release.after: 1990-01-01
+      rating.gte: 5.0
+      type: movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Treasure Hunters.png
+    visible_home: true
+    visible_shared: true
+    summary: Action-packed quests for hidden riches. Adventurous individuals face perilous obstacles, solve puzzles, and navigate treacherous landscapes in thrilling pursuits of ancient artifacts and coveted treasures.
+
+  Survival Situations:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/rizreflects/lists/survival?sort=rank,asc
+      - https://trakt.tv/users/jarvis-9503966/lists/survival?display=movie&sort=rank,asc
+      - https://trakt.tv/users/giuseppedr/lists/survival?display=movie&sort=rank,asc
+    letterboxd_list: https://letterboxd.com/steve404/list/survival/  
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Survival Situations.png
+    visible_home: true
+    visible_shared: true
+    summary: This is a broad collection of movies where the plot is centered around survival elements, for more specific movies see; Isolation Horror, Man vs Nature or Natural Disasters collections.
+
+  Natural Disaster Adventures:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/pterisaur/lists/natural-disasters-24253288?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Disaster.png
+    visible_home: true
+    visible_shared: true
+    summary: Weather-based natural disasters that include high-stakes action, breathtaking visuals, and resilient characters. For other types of natural disasters see Pandemics, these films capture the urgency and adrenaline of the fight for survival in the face of impending doom.
+
+  Escape Adventures:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls022857108/?st_dt=&mode=detail&page=1&title_type=movie&num_votes=2000%2C&ref_=ttls_ref_rt_vt&sort=release_date,desc
+      - https://www.imdb.com/list/ls004871044/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_yr&sort=alpha,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Escape Stories.png
+    visible_home: true
+    visible_shared: true
+    summary: Tense narratives where characters strive to break free from captivity, imprisonment, or dangerous situations. These gripping films showcase cunning plans, high-stakes risks, and relentless determination as individuals fight for their freedom against formidable odd.
+
+  Man vs Nature Adventures:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls076069267/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_yr&sort=moviemeter,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Man vs Nature.png
+    visible_home: true
+    visible_shared: true
+    summary: For movies to be included in this collection, they must depict intense conflicts where humans face formidable challenges posed by nature. Similar collections are; Natural Disasters
+
+###########################
+#    ANIMATION Collections   #
+###########################
+
+  Traditional Animation:
+    template: {name: Thematic}
+    imdb_search:
+      keyword.any: 2d animation, hand drawn animation
+      type: movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Traditional Animation.png
+    visible_home: true
+    visible_shared: true
+    summary: Traditional animation is defined by hand-drawn and painted images that are assembled to animate a cartoon that tells a story
+  
+  Non-Traditional Animation:
+    template: {name: Thematic}
+    letterboxd_list:
+      - https://letterboxd.com/steve404/list/stop-animation/
+      - https://letterboxd.com/steve404/list/puppet-masters/
+    trakt_list: https://trakt.tv/users/majeed_pk/lists/oscar-nominated-claymation-films?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Non-Traditional Animation.png
+    visible_home: true
+    visible_shared: true
+    summary: Includes Stop-Motion, Claymation and Puppetry Animations Categories.
+
+###########################
+#    COMEDY Collections   #
+###########################
+
+  Action Comedy:
+    template: {name: Thematic}
+    smart_filter:
+      all:
+        genre: 
+        - Action
+        - Comedy
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Action Comedy.png
+    visible_home: true
+    visible_shared: true
+    summary: The action-comedy sub-genre incorporates humorous actions within the action, using the exciting events in the story for laughs.
+
+  Campy Comedies:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls097162360/?sort=release_date,desc&st_dt=&mode=detail&page=1&title_type=movie&release_date=1980%2C&ref_=ttls_ref_rt_usr
+    trakt_list: 
+      - https://trakt.tv/users/ravynloony/lists/campy?display=movie&sort=votes,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Campy.png
+    visible_home: true
+    visible_shared: true
+    summary: Campy movies are hilariously over-the-top, embracing cheesy dialogue, exaggerated acting, and outrageous plots. They revel in their own absurdity, delivering a mix of humor, nostalgia, and unintentional entertainment.
+
+  Buddy Comedies:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: buddy comedy
+      release.after: 2000-01-01
+      genre: comedy
+      type: movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Buddy Comedy.png
+    visible_home: true
+    visible_shared: true
+    summary: A buddy comedy is defined by at least two individuals who we follow through a series of humorous events. Often their (platonic) relationship is the main source of comedy in the story
+
+  Parody and Spoof Comedies:
+    template: {name: Thematic}
+    trakt_list: 
+      - https://trakt.tv/users/hdlists/lists/top-50-parody-movies-of-all-time?sort=rank,asc
+      - https://trakt.tv/users/maxtrontv/lists/parody-movies?sort=rank,asc
+    letterboxd_list:
+      - https://letterboxd.com/shawn_stubbs/list/spoofs/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Parody and Spoof.png
+    visible_home: true
+    visible_shared: true
+    summary: A parody mocks and specifically targets a single piece of art or connected body of work. A spoof is broader than a parody because it mocks an entire genre.
+
+  Road Comedies:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: road trip comedy
+      release.after: 1980-01-01
+      genre: comedy
+      type: movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Road Comedy.png
+    visible_home: true
+    visible_shared: true
+    summary: Road comedies are defined by humorous situations derived from a journey along a set path, and often feature a set of stops and characters along the way that forces the protagonist(s) further down the road.
+ 
+  Satirical Comedies:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: satire comedy, satire
+      release.after: 2000-01-01
+      rating.gte: 5.0
+      genre: comedy
+      type: movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Satire Comedy.png
+    visible_home: true
+    visible_shared: true
+    summary: Satire movies are the broadest of the three in that it mocks overall ideas, vices, human nature, institutions, or any number of concepts that don’t necessarily have a specific connection to another piece of art.
+
+  Stand-up Comedies:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/giladg/lists/stand-up-comedy
+    imdb_list:
+      - https://www.imdb.com/list/ls070221411/
+      - https://www.imdb.com/list/ls086584751/
+      - https://www.imdb.com/list/ls086022668/
+      - https://www.imdb.com/list/ls049792208/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Stand Up Comedy.png
+    visible_home: true
+    visible_shared: true
+
+  Stoner Comedies:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/aegxpredator/list/stoner-movies-ranked/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Stoner Comedy.png
+    visible_home: true
+    visible_shared: true
+    summary: Stoner comedy movies are humorous films that often revolve around marijuana use, featuring quirky characters, absurd situations, and plenty of laughter-inducing drug-related shenanigans.
+
+###########################
+#    CRIME Collections    #
+###########################
+
+  Crime Capers:
+    template: {name: Thematic}
+    trakt_list: 
+      - https://trakt.tv/users/madanaka/lists/genre-crime-caper?display=movie&sort=released,asc
+      - https://trakt.tv/users/madanaka/lists/genre-comedic-crime-caper?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Crime Caper.png
+    visible_home: true
+    visible_shared: true
+    summary: The caper sub-genre is defined by a group of criminals, often non-violent, who set out on a heist or job. A caper is often humorous and less serious in nature when compared to the other crime subgenres
+
+  Crime Heists:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/renegadepartygrave/lists/heists-and-crime?display=movie&sort=rank,asc
+      - https://trakt.tv/users/koolo7000/lists/heists?display=movie&sort=rank,asc
+      - https://trakt.tv/users/flekz22/lists/heists?display=movie&sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Crime Heists.png
+    visible_home: true
+    visible_shared: true
+    summary: The heist sub-genre is defined by a criminal, or group of criminals, who set out to steal something valuable, and have a more serious tone when compared to a caper story. The subjects must navigate a set of obstacles and avoid law enforcement, and often the “getaway” is incorporated.
+
+  Drugs and Addiction:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/qbasekostas/lists/drugs?display=movie&sort=released,desc
+      - https://trakt.tv/users/martachilegge/lists/drugs?display=movie&sort=released,asc
+      - https://trakt.tv/users/g0g0/lists/drugs?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Drugs.png
+    visible_home: true
+    visible_shared: true
+    summary: Drug movies explore the consequences and culture of substance abuse, conveying the highs, lows, and societal impact with depth. Similar themed collections are; War on Drugs
+
+  Gangbangers and Street Kings:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls008529174/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1991%2C&ref_=ttls_ref_rt_usr&sort=release_date,desc
+      - https://www.imdb.com/list/ls059114425/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1991%2C&ref_=ttls_ref_rt_usr&sort=release_date,desc
+    trakt_list:
+      - https://trakt.tv/users/187rocky/lists/hip-hop?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Gangbangers and Street Kings.png
+    visible_home: true
+    visible_shared: true
+    summary: Movies that look at the raw realities of street life, depicting the dynamics of turf wars and the harsh struggles faced within urban neighborhoods, delivering a gripping portrayal of inner-city existence. Similar collections are; Organized Crime or War on Drugs
+
+  Law Enforcement:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/ld667/lists/cops?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Law Enforcement.png
+    summary: Thriller movies where the plot is centered around Law Enforcement Officers showcasing the relentless pursuit of justice, high-stakes investigations, and the courage and dedication of those who uphold the law
+
+  Organized Crime:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/42069bbq/lists/ultimate-gangster-movie-list?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Organized Crime.png
+    visible_home: true
+    visible_shared: true
+    summary: Explore the gritty underworld of organized crime through movies that delve into the inner workings of criminal organizations, showcasing their illegal enterprises, rivalries, and the consequences of their actions.
+
+  Prisoners and Inmates:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls000521403/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_yr&sort=list_order,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Prisoners and Inmates.png
+    visible_home: true
+    visible_shared: true
+    summary: The Prison theme delves into the dark confines of correctional institutions, exploring the harsh realities of incarceration. It depicts the struggles, violence, and survival instincts of inmates, capturing the tension, corruption, and relentless pursuit of freedom
+
+  War Crimes and Attrocities:
+    template: {name: Thematic}
+    letterboxd_list:
+      - https://letterboxd.com/coolkid81/list/war-crimes/
+    imdb_list:
+      - https://www.imdb.com/list/ls560178482/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/War Crimes.png
+    visible_home: true
+    visible_shared: true
+    summary: Depictions of severe human rights violations during conflicts, including genocide, torture, and massacres. It explores the moral and ethical implications, the impact on victims, and the quest for justice.
+   
+  War on Drugs:
+    template: {name: Thematic}
+    letterboxd_list:
+      - https://letterboxd.com/monkeyonparole/list/war-on-drugs/
+    imdb_list:
+      - https://www.imdb.com/list/ls022678776/?st_dt=&mode=detail&page=1&release_date=1990%2C&ref_=ttls_ref_rt_usr&sort=list_order,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/War on Drugs.png
+    visible_home: true
+    visible_shared: true
+    summary: Drug dealers, traffickers, narcos, drug related cartel and gang violence, the opium wars, vigilantes, law enforcement, and political efforts related to the drug trade. Similar collections are; Drugs & Addiction
+    
+#############################
+#  DOCUMENTARY Collections  #
+############################# 
+
+  Nature & Travel Documentaries:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls022921053/?sort=list_order,asc&st_dt=&mode=detail&page=1&ref_=ttls_ref_typ
+      - https://www.imdb.com/list/ls069065424/
+      - https://www.imdb.com/list/ls523226902/
+      - https://www.imdb.com/list/ls567613846/
+      - https://www.imdb.com/list/ls027244940/?sort=moviemeter,asc&st_dt=&mode=detail&page=1
+    imdb_search:
+      genre: documentary  
+      keyword.any: nature, travel
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/nature and travel.png
+    visible_home: true
+    visible_shared: true
+    summary: Nature and travel documentary films showcase the beauty, diversity, and wonders of the natural world and cultural landscapes through immersive storytelling.
+    
+  Engineering & Science Documentaries:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls567611972/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=Documentary&ref_=ttls_ref_gnr
+      - https://www.imdb.com/list/ls567611821/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=Documentary&ref_=ttls_ref_gnr
+      - https://www.imdb.com/list/ls092769254/
+      - https://www.imdb.com/list/ls059688385/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=Documentary&ref_=ttls_ref_gnr
+    imdb_search:
+      genre: documentary  
+      keyword.any: science, technology      
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/engineering and Science.png
+    visible_home: true
+    visible_shared: true
+    summary: Engineering and science documentary films explore groundbreaking discoveries, technological innovations, and the fascinating intersection of human ingenuity with the natural world.
+        
+  Social and Political Documentaries:
+    template: {name: Thematic}
+    collection_order: random
+    trakt_list: 
+      - https://trakt.tv/users/kingkearney/lists/social-cultural-documentaries?sort=released,asc
+    imdb_list: 
+      - https://www.imdb.com/list/ls068685065/
+      - https://www.imdb.com/list/ls068584225/
+      - https://www.imdb.com/list/ls033695271/
+    sync_mode: sync
+    file_poster: config/assets/social and political.png
+    visible_home: true
+    visible_shared: true
+    summary: Social and political documentary films examine pressing issues, systemic injustices, and the human stories behind societal phenomena, fostering awareness and sparking conversations
+ 
+  Biographical & Historical Documentaries:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls023064426/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=Documentary&ref_=ttls_ref_gnr
+      - https://www.imdb.com/list/ls054283777/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=Documentary&ref_=ttls_ref_gnr
+    imdb_search:
+      genre: documentary  
+      keyword.any: biographical, documentary, History       
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/biographical & historical.png
+    visible_home: true
+    visible_shared: true
+    summary: Biographical and historical documentary films chronicle the lives of notable figures or pivotal events, offering insights into their impact and legacy.
+
+###########################
+#    DRAMA Collections   #
+###########################
+
+
+  Anxiety-Inducing Dramas:
+    template: {name: Thematic}
+    letterboxd_list:
+      - https://letterboxd.com/juliendonkeyboi/list/anxiety-inducing-cinema/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Films that leave you visibly shaken; masterclasses in building tension that make you feel truly anxious for whatever is happening on screen. For similar collections see; Edge of Your Seat
+    file_poster: config/assets/Anxiety-Inducing Cinema.png
+ 
+  Arthouse Dramas:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls070273880/?st_dt=&mode=detail&page=1&release_date=1990%2C&ref_=ttls_ref_yr&sort=release_date,desc
+    trakt_list:
+      - https://trakt.tv/users/smallclone/lists/arthouse?display=movie&sort=title,asc
+      - https://trakt.tv/users/baljuin/lists/arthouse?sort=rank,asc
+      - https://trakt.tv/users/aiven/lists/arthouse?display=movie&sort=rank,asc
+      - https://trakt.tv/users/gettheguests/lists/arthouse?display=movie&sort=rank,asc
+      - https://trakt.tv/users/ahuitema/lists/arthouse-films?display=movie&sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Arthouse.png
+    visible_home: true
+    visible_shared: true
+    summary: From thoughtful dramas to unconventional romances, these independent treasures from a variety of countries offer something deeper than the usual Hollywood movie.
+
+  Avant-garde Dramas:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls023796198/?st_dt=&mode=detail&page=1&genres=Drama&title_type=movie&release_date=1990%2C&ref_=ttls_ref_gnr&sort=release_date,desc
+      - https://www.imdb.com/list/ls053070177/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_yr&sort=list_order,asc
+    traktv_list:
+      - https://trakt.tv/users/ezrapeace/lists/avant-garde?display=movie&sort=rank,asc
+    letterboxd_list:
+      - https://letterboxd.com/desdemoor/list/avant-garde-and-experimental-films-200-to/
+      - https://letterboxd.com/misterminsoo/list/the-20th-century-avant-garde-a-primer/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Avante Garde.png
+    visible_home: true
+    visible_shared: true
+    summary: Avant-garde or Experimental cinema is a mode of filmmaking that rigorously re-evaluates cinematic conventions and explores non-narrative forms or alternatives to traditional narratives or methods
+
+  Civil Rights Dramas:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/ondrisel/lists/civil-rights?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls073345619/
+      - https://www.imdb.com/list/ls023675920/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Civil Rights.png
+    visible_home: true
+    visible_shared: true   
+    summary: Drama movies focsuing on the civil rights movements of the past.
+
+  Courtroom Dramas:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls090260671/?sort=list_order,asc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=5.9%2C&release_date=1990%2C&ref_=ttls_ref_yr
+    trakt_list:
+      - https://trakt.tv/users/rizreflects/lists/courtroom-dramas?sort=rank,asc
+    imdb_search:
+      keyword: Legal drama
+      genre: Drama
+      release.after: 1980-01-01
+      type: movie
+    letterboxd_list:
+      - https://letterboxd.com/lethe/list/courtroom-dramas-legal-thrillers/by/release/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Courtroom Cases.png
+    visible_home: true
+    visible_shared: true
+    summary: Mainly crime dramas and thrillers where the majority of the story will take place inside, or support the events that are connected to a court case. 
+
+  Docudramas:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: Docudrama
+      release.after: 1980-01-01
+      type: movie, tv_movie
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls560657695/
+    sync_mode: sync
+    file_poster: config/assets/Docudrama.png
+    visible_home: true
+    visible_shared: true
+    summary: A docudrama takes real-life accounts and recreates them in a way that attempts to accurately represent events while also realizing the dramatic potential of those events. Docudramas are held to a higher standard of accuracy (not quality) than historical accounts or memoirs.
+
+  Emotional Epics:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls054527321/?sort=moviemeter,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Emotional Epics.png
+    visible_home: true
+    visible_shared: true
+
+  Faith and Spiritual Dramas:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls042673206/?st_dt=&mode=detail&page=1&title_type=movie&release_date=2000%2C&ref_=ttls_ref_rt_usr&sort=release_date,desc
+      - https://www.imdb.com/list/ls033950903/?sort=list_order,asc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=6.0%2C&release_date=2000%2C&ref_=ttls_ref_yr
+      - https://www.imdb.com/list/ls070333270/?st_dt=&mode=detail&page=1&title_type=movie&release_date=2000%2C&ref_=ttls_ref_yr&sort=release_date,desc
+    letterboxd_list:
+      - https://letterboxd.com/jmayward/list/arts-and-faith-top-100-spiritually-significant/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Faith and Spiritual.png
+    visible_home: true
+    visible_shared: true
+    summary: When life gets hard, you’ve got to have faith. These movies look at the religious and spiritual realms and tell Spiritually Significant stories.
+
+  Impactful Dramas:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/ellefnning/list/for-when-you-want-to-feel-something/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: These movies can range from emotional rollercoasters to psychological thrillers with deep meanings reflecting back on society. They may change the way you think about some things. Similar collections are; Tearjerkers or Inspirational Stories
+    file_poster: config/assets/Impactful Stories.png
+ 
+  Inspirational Dramas:
+    template: {name: Thematic}
+    imdb_list: https://www.imdb.com/list/ls063407922/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Inspirational Stories.png
+    visible_home: true
+    visible_shared: true
+    Summary: Inspirational stories uplift audiences through narratives of triumph over adversity, resilience, and the power of human spirit to overcome challenges. Similar collections are; Impactful Stories, Tearjerkers & Emotional Epics
+
+  Medical Dramas:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: Medical drama
+      genre: Drama
+      release.after: 1980-01-01
+      type: movie, tv_movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Medical Drama.png
+    visible_home: true
+    visible_shared: true
+    summary: Medical movies depict the trials and triumphs of healthcare professionals, exploring themes of life, death, and the complexities of the medical field through captivating narratives.
+    
+  Melodramas:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/rizreflects/lists/melodramas?genres=drama&display=movie&sort=released,asc
+      - https://trakt.tv/users/camille-build/lists/melodrama?sort=added,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Melo Drama.png
+    visible_home: true
+    visible_shared: true
+    summary: A modern melodrama is defined by the prioritization of dramatic rhetoric and plot over character. The events are intended to elicit an intense emotional response. A melodrama strives for situations used to illustrate a larger moral thesis that acts as an agent of empathy.
+
+  Philosophical Dramas:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls064715933/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Philosophical Dramas.png
+    visible_home: true
+    visible_shared: true
+    summary:  These movies have a tendency to expand our thinking. Not in the movie itself, but in our own life. Our social interaction with one another, power of the mind, life and death, the dreaming world, time and space.
+    
+  Political Dramas:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls041865971/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=Drama&title_type=movie&user_rating=5.9%2C&release_date=2000%2C&ref_=ttls_ref_gnr
+    trakt_list:
+      - https://trakt.tv/users/rizreflects/lists/political-dramas?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Political Drama.png
+    visible_home: true
+    visible_shared: true
+    summary: The political-drama sub-genre focuses on the complications and inherent drama that takes place inside the world of politics. This can range anywhere from local government to national political climates.
+
+  Sad Girl Cinema:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/indiasfilms/list/sad-girl-cinema/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Sad girl cinema for the sad girls who probably listen to Lana Del Rey.
+    file_poster: config/assets/Sad Girl Cinema.png
+  
+  Sociocultural Dramas:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls013596851/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Sociocultural.png
+    visible_home: true
+    visible_shared: true
+    summary: Sociocultural Anthropological movies focus on the drama derived from human behavior and society at large, and while the story may feature a central protagonist, the story might focus on a specific culture or a broad representation of society
+
+  Tearjerkering Dramas:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/marzipan-pie/lists/tearjerkers?display=movie&sort=added,asc
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Tearjerkers.png
+    summary: Hanky
+
+###########################
+#   FANTASY Collections  #
+###########################
+
+  Based on Childrens Fantasy:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/krissykk/lists/novels-movies-based-on-children-s-classic-novels?display=movie&sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Based on Childrens Classics.png
+    visible_home: true
+    visible_shared: true
+    summary:  Movies that are based on classic novels for children. Similar collections are; Fairytale Fantasy
+    
+  Dark Fantasy:
+    template: {name: Thematic}
+    imdb_search:
+      genre: fantasy
+      keyword: dark fantasy
+      type: movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Dark Fantasy.png
+    visible_home: true
+    visible_shared: true
+    summary: A dark fantasy is a story where elements of fantasy are introduced into a hostile and frightening world. If a significant portion of the story takes place in a world that has a range of circumstances, mood, and tone it would most likely be categorized as a high fantasy or general fantasy.
+
+  FairyTale Fantasy:
+    template: {name: Thematic}
+    imdb_search:
+      genre: fantasy
+      keyword: fairy tale
+      type: movie 
+      release.after: 2002-01-01      
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/FairyTale Fantasy.png
+    visible_home: true
+    visible_shared: true
+    summary: A Fairytale movie is a cinematic genre that presents a story in which improbable events, often accompanied by magical elements, unfold to lead to a happy ending. Inspired by folktales and fairytales, these films transport viewers to enchanting worlds where love, bravery, and the triumph of good prevail.
+
+  High Fantasy:
+    template: {name: Thematic}
+    imdb_search:
+      genre: fantasy
+      keyword: high fantasy
+      type: movie 
+      release.after: 2000-01-01     
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/High Fantasy.png
+    visible_home: true
+    visible_shared: true
+    summary: High fantasy can also be referred to as epic fantasy, and introduces elements of fantasy in a fictional setting, and will include romance, battles, and mythical creatures. High fantasy is the fantasy genre equivalent of a historical epic or a science fiction space opera.
+
+  Magical Realism:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls031947751/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Magical Realism.png
+    visible_home: true
+    visible_shared: true
+    summary: Magical realism blends magical elements into a realistic setting, where the extraordinary is accepted as part of everyday life without question, unlike fantasy, where magic is central
+    
+  Urban Fantasy:
+    template: {name: Thematic}
+    imdb_search:
+      genre: fantasy
+      keyword: urban fantasy
+      type: movie 
+      release.after: 2000-01-01       
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Urban Fantasy.png
+    visible_home: true
+    visible_shared: true
+    summary: An urban fantasy is a story that introduces elements of fantasy and is set entirely in an urban environment. The urban environment can be real, fictional, modern, or inspired by history, but the story must take place and deal with concepts and themes related to an urban environment
+
+###########################
+#   HISTORY Collections  #
+###########################
+
+  Historical Epics:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/mdelatonow/lists/historical-epics-chrono-order?genres=history&display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Historical Epic.png
+    visible_home: true
+    visible_shared: true
+    summary: A historical epic is the dramatized account of a large-scale event that has an attached historical account. They often feature battles, romance, and journeys, and will commonly revise history or provide assumptions that fill in gaps in the account of the historical event.
+
+  Historical Fiction:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/xkriss44/lists/historical-fiction-fantasy-movies?display=movie&sort=released,asc
+      - https://trakt.tv/users/anna0_0/lists/historical-fiction?display=movie&sort=released,asc
+    imdb_search:
+      keyword: Historical Fiction
+      genre: Drama
+      release.after: 1990-01-01
+      type: movie
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Historical Fiction.png
+    visible_home: true
+    visible_shared: true
+    summary: Historical fiction takes place during a historical time period, and will often take a more liberal approach to representing history for the sake of drama and entertainment. Historical fiction may use real-life events and people to build context, but they’re meant to be accepted as a supposition rather than serve as an accurate historical account.
+
+  Period Pieces:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls008922647/?st_dt=&mode=detail&page=1&genres=Drama&title_type=movie&release_date=1990%2C&ref_=ttls_ref_gnr&sort=list_order,asc
+    imdb_search:
+      genre: history
+      keyword: period drama
+      type: movie 
+      release.after: 1990-01-01        
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Period Piece.png
+    visible_home: true
+    visible_shared: true
+    summary: The difference between a period piece and historical fiction is slight, but the main difference is a general omission or a lack of necessity for real-life characters or events to provide context. Period pieces are merely defined by taking place in, and accurately depicting the time period as opposed to specific lives, events, or accounts.
+
+###########################
+#   HORROR Collections #
+###########################
+
+  Art House Horrors:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls505819138/?year=1995%2C&genres=horror
+      - https://www.imdb.com/list/ls047233174/?genres=horror&year=1995%2C
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Art House Horror.png
+    summary: Also known as elevated horror, arthouse horror focuses on psychological themes and atmosphere. Often, arthouse horror films have a distinct cinematic style that may delve into philosophical ideas that challenge the viewers' beliefs.
+   
+  Backwoods Horror:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls087105870/
+      - https://www.imdb.com/list/ls003647620/?year=1980%2C
+      - https://www.imdb.com/list/ls068573001/?year=1990%2C
+      - https://www.imdb.com/list/ls068636512/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Backwoods Horror.png
+    visible_home: true
+    visible_shared: true
+    summary: Backwoods horrors are easy to define. They are simply slasher films that are set in forests, woodlands, or rural locations that are affected by rural poverty. Oftentimes, city slickers traveling through rural territory run into the country folk who eventually hunt the city slickers down in a grisly manner.
+
+  Body Transformation Horror:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls059662140/?genres=horror&year=1990%2C
+      - https://www.imdb.com/list/ls538091737/?genres=horror&year=1995%2C
+      - https://www.imdb.com/list/ls074133227/?genres=horror&year=1985%2C
+    sync_mode: sync
+    file_poster: config/assets/Body Transformation.png
+    visible_home: true
+    visible_shared: true
+    summary: At its most basic form, body horror films show grotesque or disturbing violations of the human body. The most popular forms of body horror involved mutations through disease or infection, uncontrolled transformations, and depictions of unnatural movements of the body.
+
+  Cannibal Horror:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls066162946/?year=1990%2C&genres=horror
+      - https://www.imdb.com/list/ls079147556/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Cannibal Horrors.png
+    summary:  Using cannibalism for shock value. The realistic and graphic violence and genuine cruelty are hard to stomach. The subgenre's reputation is often viewed negatively, causing cannibal horror films to be taboo. 
+
+  Cosmic Horrors:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls084669400/
+      - https://www.imdb.com/list/ls562293210/
+      - https://www.imdb.com/list/ls069296498/
+      - https://www.imdb.com/list/ls521906411/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Cosmic Horrors.png
+    visible_home: true
+    visible_shared: true
+    summary: Named after H.P. Lovecraft, Lovecraftian horror, or cosmic horror, places horror on the unknown or beings beyond human comprehension
+         
+  Deep Sea Horrors:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls099527452/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1970%2C&ref_=ttls_ref_gnr&sort=release_date,desc&genres=Horror
+      - https://www.imdb.com/list/ls004587557/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=Horror&ref_=ttls_ref_gnr
+      - https://www.imdb.com/list/ls033924602/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=Horror&ref_=ttls_ref_gnr
+      - https://www.imdb.com/list/ls099527452/?st_dt=&mode=detail&page=1&title_type=movie&ref_=ttls_ref_gnr&sort=list_order,asc&genres=Horror
+      - https://www.imdb.com/list/ls099527452/
+    trakt_list:
+      - https://trakt.tv/users/twentywashere/lists/thalassophobia-deep-sea-and-shallow-waters?sort=released,desc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Deep Sea Horror.png
+    visible_home: true
+    visible_shared: true
+    summary: Just when you thought it was safe to go browse lists again...
+
+  Folk Horror:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls576920812/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Folk Horrors.png
+    visible_home: true
+    visible_shared: true
+    summary: Folk horror consists of movies that are heavily focused on a community's relationship with the earth. Often set in rural or secluded areas, the brutal clash between modernism and primitive societies comes to a head, and Mother Nature tends to always prevail.
+         
+  Haunted Houses:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls056310226/
+      - https://www.imdb.com/list/ls021127795/
+      - https://www.imdb.com/list/ls063688533/?genres=horror&year=1995%2C
+      - https://www.imdb.com/list/ls070615149/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Haunted Houses.png
+    visible_home: true
+    visible_shared: true
+    summary: A Haunted House horror movie features a sinister, often abandoned house with a dark history, supernatural occurrences, vengeful spirits, unsettling atmospheres, psychological terror, and characters trapped by the malevolent presence within.
+
+  Home Invasions:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls029032720/
+      - https://www.imdb.com/list/ls090922610/
+      - https://www.imdb.com/list/ls062364491/
+      - https://www.imdb.com/list/ls059850296/
+      - https://www.imdb.com/list/ls026846953/
+      - https://www.imdb.com/list/ls064154569/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Home Invasions.png
+    visible_home: true
+    visible_shared: true
+    summary: This subgenre normally involves a woman home alone or a group of people that are threatened by one or more assailants who are typically masked. The main focus of the home invasion film is whether the victim(s) will survive.
+
+  Ghosts and Spirits:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls021549291/
+      - https://www.imdb.com/list/ls062609921/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Ghosts and Spirits.png
+    visible_home: true
+    visible_shared: true
+    summary: In horror cinema, ghosts and spirits are often the souls of dead people who have unfinished business or seek revenge.
+
+  Gothic Horror:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls031200023/?year=1995%2C
+      - https://www.imdb.com/list/ls538257452/?year=1995%2C
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Gothic Horrors.png
+    visible_home: true
+    visible_shared: true
+    summary: Gothic horror takes a lot of its tone and aesthetics from gothic literature. There is a delicate blend of romance and melancholy mixed in with horror elements.
+
+  Grotesque and Gory:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls057415258/
+      - https://www.imdb.com/list/ls055126959/?genres=horror&year=1995%2C
+      - https://www.imdb.com/list/ls031479286/?genres=horror&year=1995%2C
+      - https://www.imdb.com/list/ls000060287/?genres=horror&year=1995%2C
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Grotesque and Gory.png
+    visible_home: true
+    visible_shared: true
+    summary: Exploitation horror features the most extreme examples of gore, mutilation, and cannibalism in films. The graphic nature of these films is hard to stomach as they put all of the brutality on display.
+       
+  Hospital Horrors:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/frograt/list/hospital-horror/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Hospital Horror.png
+    visible_home: true
+    visible_shared: true
+    summary: A Hospital Horrors movie includes eerie medical settings, sinister doctors or nurses, terrifying surgeries, grotesque experiments, psychological fear, life-and-death stakes, and a sense of helplessness within the hospital's walls.
+    
+  Isolation and Phobia Horrors:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/ravynloony/lists/isolation-horror?display=movie&sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls068746790/
+      - https://www.imdb.com/list/ls500369904/
+      - https://www.imdb.com/list/ls079367301/?genres=horror
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Isolation Horror.png
+    visible_home: true
+    visible_shared: true
+    summary: As the name suggests, phobia/isolation horror focuses on the horrors of survival. There is typically a distinct phobia present in these films like claustrophobia. If the characters do make it out alive, there is usually a heavy price they have to pay to survive.
+ 
+  Horror Puzzles:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/lieen/lists/death-games-isolation-horror-puzzle-escape-room?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Horror Puzzle.png
+    visible_home: true
+    visible_shared: true
+    summary: Horror movies focused around the antogonists fighting against time or escaping a room or puzzle. For Similar but more broad horror movies see Isolation Horror Collection.
+
+  Madness and Insanity:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls026559717/?year=1995%2C&genres=horror
+      - https://www.imdb.com/list/ls073798519/?year=1995%2C
+      - https://www.imdb.com/list/ls075057360/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Madness Horrors.png
+    visible_home: true
+    visible_shared: true
+    summary: This subgenre focuses less on the deaths of the characters, but on the madness that drives them forward in the story. The terror is whether they have lost their minds due to circumstances, mental illness, or just psychopathic tendencies.
+
+  Malicious Little Creatures:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls039795535/
+      - https://www.imdb.com/list/ls003911487/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Malicious Little Creatures.png
+    visible_home: true
+    visible_shared: true
+    summary: A collection of fantasy horror movies involving small creatures.
+       
+  Stalking and Slashing:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/marcelocastanheira/lists/horror-slashers?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Stalking and Slashing.png
+    visible_home: true
+    visible_shared: true
+    summary: Revolving around a relentless killer stalking and brutally slashing their victims. These movies are characterized by suspense, graphic violence, creative kills, and the thrill of survival against a relentless and often masked antagonist.
+
+  Supernatural Horrors:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/kingkearney/lists/supernatural-horror?genres=horror&display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Supernatural Horrors.png
+    visible_home: true
+    visible_shared: true
+    summary: Supernatural of or relating to an order of existence beyond the visible observable universe … attributed to an invisible agent such as a ghost or spirit
+
+  Stephen King:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/drakula1000/lists/stephen-king?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Stephen King.png
+    visible_home: true
+    visible_shared: true
+    summary: A collection of movies that have been adapted from Stephen King novels
+
+  Torture Horror:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls092072180/
+      - https://www.imdb.com/list/ls051058749/?genres=horror
+      - https://www.imdb.com/list/ls097554419/
+    sync_mode: sync
+    file_poster: config/assets/Torture Horror.png
+    visible_home: true
+    visible_shared: true
+    summary: Also known as torture porn, this subgenre depicted bouts of extreme violence and explicit scenes of torture and mutilation. The subgenre inherently indulges in sadism delivered by an often-motiveless villain, granting audiences satisfaction and gratification when it comes to gore and physical violence.
+  
+  Vampires & Werewolves:
+    template: {name: Thematic}
+    imdb_list: https://www.imdb.com/list/ls023126841/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_yr&sort=list_order,asc
+    trakt_list:
+      - https://trakt.tv/users/scubapilot/lists/vampire?display=movie&sort=released,desc
+      - https://trakt.tv/users/ld667/lists/werewolf-movies?display=movie&sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Vampires and Werewolves.png
+    summary: Vampires and werewolves movies explore the eternal struggle between these iconic creatures, weaving together thrilling tales of supernatural powers, forbidden romances, and epic battles between light and darkness.
+
+  Zombie Horrors:
+    template: {name: Thematic}
+    imdb_list: https://www.imdb.com/list/ls055027705/
+    trakt_list: https://trakt.tv/users/simiansays/lists/zombies?display=movie&sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Zombie Films.png
+
+###########################
+#   MARTIAL ARTS Collections #
+###########################
+
+  Unleashing the Dragon:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/majeed_pk/lists/martial-arts-the-top-250-greatest-movies-of-all-time?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Unleashing the Dragon.png
+
+  Wu Xia Legends:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/kevelliott/lists/martial-arts-kung-fu-wuxia-action?sort=rank,asc
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Wu Xia Legends.png
+
+###########################
+#   MYSTERY Collections #
+###########################
+
+  Murder Mystery Thrillers:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/giladg/lists/murder-mystery-movies?sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Murder Mystery.png
+    summary: Murder mystery movies enthrall audiences with suspenseful tales of crime and investigation, filled with intriguing whodunits, puzzling clues, and suspense that keeps viewers guessing until the shocking reveal.
+
+  Manhunt Mysteries:
+    template: {name: Thematic}
+    letterboxd_list: 
+      - https://letterboxd.com/filmcanman/list/man-hunting-man-movies/
+      - https://letterboxd.com/steve404/list/man-hunts-and-missing-persons/
+    imdb_list:
+      - https://www.imdb.com/list/ls056754561/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Two man enter. One man leave.
+    file_poster: config/assets/Manhunts.png
+
+  Missing Person Mysteries:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls054160033/?sort=list_order,asc&st_dt=&mode=detail&page=1&title_type=movie&release_date=1980%2C&ref_=ttls_ref_yr
+    collection_order: random                
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Movies about missing persons center on suspenseful investigations, unraveling mysteries, and exploring the emotional impact of disappearances on individuals and communities. Similar collections are; Murder Mystery
+    file_poster: config/assets/Missing Persons.png
+    
+###########################
+#   ROMANCE Collections #
+###########################
+
+  Classic Romance:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/nic-in-vic-2011/lists/romantic-classics?sort=collected,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Classic Romance.png
+    
+  Lost Lovers Romance:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/caroliscore/list/definitely-there-was-love-oh-but-the-circumstances/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Oh what we could’ve been if things had been different..
+    file_poster: config/assets/Lost Lovers.png
+
+  Quirky Romance:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls004938917/?st_dt=&mode=detail&page=1&genres=Romance&title_type=movie&release_date=1990%2C&ref_=ttls_ref_gnr&sort=list_order,asc
+      - https://www.imdb.com/list/ls005356048/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=Romance&title_type=movie&user_rating=5.9%2C&release_date=1990%2C&ref_=ttls_ref_gnr
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Quirky Romance.png
+    visible_home: true
+    visible_shared: true
+    summary: Quirky romance movies offer unconventional love stories with eccentric characters, showcasing unique relationships and unexpected connections that captivate audiences with their charm and originality.
+
+  Sapphic Romance:
+    template: {name: Thematic}
+    letterboxd_list: 
+      - https://letterboxd.com/alexil/list/sapphic-films/
+      - https://letterboxd.com/dselwyns/list/the-great-big-lesbian-cinema-recommendation/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: A list of feature-length films with sapphic main character/s
+    file_poster: config/assets/Sapphic Films.png
+
+  Seduction Romance:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: seduction
+      genre: Romance
+      release.after: 2000-01-01
+      type: movie
+    trakt_list: https://trakt.tv/users/theetherealities/lists/dark-seductive-and-psychological?display=movie&sort=title,asc  
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Seduction Romance.png
+    visible_home: true
+    visible_shared: true
+    summary: The Seductive Romance movies are a captivating cinematic genre that explores the complex dynamics of passionate relationships. These films portray captivating characters who engage in a dance of seduction, igniting intense chemistry and exploring the depths of desire, love, and the power of attraction.
+
+  Steamy Romance:
+    template: {name: Thematic}
+    trakt_list::
+      - https://trakt.tv/users/mylife4me79/lists/sexy-steamy-movies?display=movie&sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Steamy Movies.png
+    visible_home: true
+    visible_shared: true
+    summary: Is it just us, or is it getting a little hot in here? These are movies with strong sexual content and or nudity.
+
+  Taboo Romance:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls076161300/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=Romance&title_type=movie&user_rating=5.9%2C&release_date=1990%2C&ref_=ttls_ref_gnr
+      - https://www.imdb.com/list/ls551323502/?sort=list_order,asc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=5.9%2C&release_date=1990%2C&ref_=ttls_ref_gnr
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Taboo Romance.png
+    summary: Taboo romance movies delve into unconventional relationships that challenge societal norms, exploring forbidden love, taboo pairings, and controversial connections, often resulting in emotional turmoil, forbidden desires, and complex moral dilemmas.
+ 
+###########################
+#   SCI-FI Collections #
+###########################
+
+  Alien Invasion Sci-Fi:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls044715127/?sort=list_order,asc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=6.0%2C&release_date=1990%2C&ref_=ttls_ref_yr
+      - https://www.imdb.com/list/ls003302466/?sort=alpha,asc&st_dt=&mode=detail&page=1&genres=Sci-Fi&title_type=movie&user_rating=6.0%2C&release_date=2000%2C&ref_=ttls_ref_yr
+    trakt_list:
+      - https://trakt.tv/users/marcelocastanheira/lists/sci-fi-alien-invasion?genres=science-fiction&display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Alien Invasion.png
+    summary: Alien Invasion movies unleash extraterrestrial chaos, as otherworldly forces descend upon Earth, leading to epic battles, desperate survival struggles, and humanity's fight for its very existence.
+
+  Alternate Reality Sci-Fi:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls002329576/?sort=moviemeter,asc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=6.0%2C&release_date=1990%2C&ref_=ttls_ref_yr
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Alternate Reality.png
+    summary: Alternate Reality
+
+  Artificial Intelligence:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls045904068/
+      - https://www.imdb.com/list/ls033423140/?year=1980%2C
+      - https://www.imdb.com/list/ls500056453/?title_type=feature&genres=sci-fi
+    sync_mode: sync
+    file_poster: config/assets/Artificial Intelligence.png
+    visible_home: true
+    visible_shared: true
+    summary: An Artificial Intelligence movie explores advanced AI systems, ethical dilemmas, human-AI relationships, sentient machines, the potential dangers of AI autonomy, societal impacts, and the blurred line between human and artificial consciousness.
+    
+  Atompunk Sci-Fi:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls538157463/
+    letterboxd_list:
+      - https://letterboxd.com/vlahos/list/atompunk/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Atompunk.png
+    visible_home: false
+    visible_shared: false
+    summary: Atompunk Sci-Fi movies feature retro-futuristic aesthetics inspired by mid-20th century atomic age, blending advanced technology with a vintage look. They explore themes of nuclear power, space exploration, and Cold War fears
+
+  Cyberpunk Sci-Fi:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/wintermute2517/lists/cyberpunk-movies?sort=rank,asc
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Cyberpunk.png
+
+  Deep Space Sci-Fi:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/edwardmolasses/lists/deep-space?sort=title,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Deep Space.png
+
+  Dystopian Nightmare Sci-Fi:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/remontant/lists/dystopian-movies?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Dystopian Nightmare.png
+    summary: Dystopias are often characterized by dehumanization, totalitarian governments, ruthless megacorporations, environmental disasters, or other characteristics associated with a dramatic decline in society.
+
+  First Contact:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls066636366/
+    letterboxd_list: https://letterboxd.com/phillemall/list/first-contact/
+    sync_mode: sync
+    file_poster: config/assets/First Contact.png
+    visible_home: true
+    visible_shared: true
+    summary: A First Contact movie involves humanity's initial encounter with extraterrestrial life, exploring communication challenges, cultural clashes, mutual curiosity or fear, the implications of alien technology, and the potential for conflict or cooperation.
+      
+  Hard Sci-Fi:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls009075429/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Hard Science.png
+    visible_home: true
+    visible_shared: true
+    summary: Hard Sci-Fi emphasizes scientific accuracy and realistic technology, focusing on plausible scientific concepts, unlike mainstream Sci-Fi, which often prioritizes imaginative, speculative elements and fantastical technology without strict adherence to scientific realism
+      
+  Immortality:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls021011555/
+      - https://www.imdb.com/list/ls066955083/?title_type=feature
+      - https://www.imdb.com/list/ls066469769/?title_type=feature
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Immortality.png
+    visible_home: true
+    visible_shared: true
+    summary: These movies explore the consequences of eternal life, including moral dilemmas, isolation, loss of loved ones, the search for meaning, the impact on humanity, and the desire for or escape from endless existence
+
+  Killer Robots Sci-Fi:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls041168639/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_yr&sort=list_order,asc
+      - https://www.imdb.com/list/ls003203757/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_rt_usr&sort=list_order,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Killer Robots.png
+    summary: They're programmed to kill and tell jokes, and they're all out of jokes
+
+  Giant Terror Sci-Fi:
+    template: {name: Thematic}
+    letterboxd_list: https://letterboxd.com/steve404/list/giants/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Giants.png
+    visible_home: true
+    visible_shared: true
+    summary: Giant Beings unleash monstrous mayhem, showcasing mainly terrifying but always gigantic creatures as central elements.
+
+  Military Sci-Fi:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls053434152/?sort=release_date,desc&st_dt=&mode=detail&page=1
+      - https://www.imdb.com/list/ls066363484/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Military Sci Fi.png
+    summary: A military science fiction story is defined by a strict focus on the military conflict in a speculative or future setting. While other movies may include space warfare, a military science fiction story will be limited to themes and events directly tied to military service and battle. 
+
+  Near Future Sci-Fi:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls069493744/
+    letterboxd_list:
+      - https://letterboxd.com/katherineoostma/list/near-future/
+      - https://letterboxd.com/odininthenorth/list/near-future/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Near-Future.png
+    summary: Near Future Sci-Fi movies focus on advanced technology and societal changes just beyond the present day, exploring plausible innovations, ethical dilemmas, environmental shifts, and the potential consequences of rapid technological progress.
+
+  Neo-Noir Sci-Fi:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/cr995867/lists/neo-noir-copy?sort=popularity,asc
+    sync_mode: sync
+    file_poster: config/assets/Neo-Noir.png
+    visible_home: true
+    visible_shared: true
+    summary: Neo-noir movies are modern interpretations of classic film noir, featuring dark, atmospheric settings, morally ambiguous characters, intricate plots, and a sense of disillusionment and gritty realism that reflects the complexities of the modern world.
+
+  Post-apocalyptic Sci-Fi:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls021761817/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_rt_usr&sort=list_order,asc
+    trakt_list:
+      - https://trakt.tv/users/remontant/lists/apocalyptic-and-post-apocalyptic-movies?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assests/Post-apocalyptic.png
+    summary : Post-apocalyptic movies plunge us into desolate landscapes, ravaged by catastrophe. They depict the struggles of survivors, their fight for survival, and the search for redemption and a new beginning in a shattered world.
+
+  Space Opera Sci-Fi:
+    template: {name: Thematic}
+    trakt_list:    
+      - https://trakt.tv/users/thoughton/lists/sailing-the-sea-of-stars?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Space Opera.png
+    visible_home: true
+    visible_shared: true
+    summary: A space opera is defined by a mixture of space warfare, adventure, and romance. The genre got its name from similarities to “soap operas” and “horse operas” due to their collective connection to melodrama. The term “space opera” has no connection to music of any kind.
+
+  Steampunk Sci-Fi:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/oya-kesh/lists/steampunk?sort=rank,asc
+      - https://trakt.tv/users/jhale716/lists/collection-steampunk?sort=rank,asc
+      - https://trakt.tv/users/dersyd0/lists/steampunk-movies?sort=title,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Steampunk.png
+    summary: The steampunk sub-genre is inspired by technology created during the 19th century and the industrial revolution and may be set in a speculative future, alternate universe, or revision of the 1800s.
+
+  Tech Noir Sci-Fi:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: Tech Noir
+      genre: Sci-Fi
+      release.after: 1980-01-01
+      type: movie
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Tech Noir.png
+    summary: Tech noir is similar to dystopian but defined by technology as the main source behind humanity's struggle and partial downfall. There is no requirement for a centralized government, and the only true aspect that places a story in this category is that technology threatens our reality.
+
+  Time Travel Sci-Fi:
+    template: {name: Thematic}
+    trakt_list: 
+      - https://trakt.tv/users/vagnerr/lists/time-travel?sort=rank,asc
+      - https://trakt.tv/users/rizreflects/lists/time-travel?display=movie&sort=released,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls074708606/
+      - https://www.imdb.com/list/ls068617191/
+      - https://www.imdb.com/list/ls063434927/
+      - https://www.imdb.com/list/ls058641508/
+      - https://www.imdb.com/list/ls029803480/
+      - https://www.imdb.com/list/ls066184124/
+      - https://www.imdb.com/list/ls004426453/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Time Travel.png
+    summary: Movies featuring time travel as a central theme, unraveling complex plots that explore the intricacies of altering the past and future.
+
+  Utopian Sci-Fi:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: Utopia
+      release.after: 2000-01-01
+      type: movie
+    imdb_list:
+      - https://www.imdb.com/list/ls099778437/?sort=list_order,asc&st_dt=&mode=detail&page=1&user_rating=5.9%2C&release_date=1990%2C&ref_=ttls_ref_yr
+    trakt_list:
+      - https://trakt.tv/users/likeclockwork/lists/bizarre-utopias?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Utopian.png
+    summary: The utopian genre is defined by the creator’s view of an idyllic world, themes included in the movies are peace, harmony, and a world without hunger or homelessness.
+
+  Virtual Reality:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls026587395/
+    letterboxd_list:
+      - https://letterboxd.com/livindead/list/virtual-reality/
+      - https://letterboxd.com/kalimero/list/virtual-reality/
+      - https://letterboxd.com/thelookingglas/list/virtual-reality-vr-cinema-disconinued/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Virtual Reality.png
+    visible_home: true
+    visible_shared: true
+    summary: A Virtual Reality movie explores immersive digital worlds, the blurring of reality and simulation, psychological effects, escapism, ethical concerns, the potential dangers of tech dependency, and the impact of VR on identity and society.
+
+###########################
+#   SPORTS Collections #
+###########################
+
+  Adrenaline-Pumping Sports:
+    template: {name: Thematic}
+    trakt_list: 
+      - https://trakt.tv/users/nic-in-vic-2011/lists/adrenaline-pumping-sports-collection?sort=collected,asc
+      - https://trakt.tv/users/geoinfoguy/lists/sports?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Adrenaline Pumping Sports.png
+    summary: Sports movies in general
+
+  Baseball & Basketball Sports:
+    template: {name: Thematic}
+    reciperr_list: 
+      - https://reciperr.com/api/recipe/list/params?recipeMetadataId=66aca16d6d1bfb48f98adac9 
+      - https://reciperr.com/api/recipe/list/params?recipeMetadataId=66acc1746d1bfb48f98adbac
+    imdb_list:
+      - https://www.imdb.com/list/ls020800918/
+      - https://www.imdb.com/list/ls056420212/
+      - https://www.imdb.com/list/ls064950205/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Baseball and Basketball.png
+    summary:
+  
+
+  Boxing Glory:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls021220211/
+    trakt_list:
+      - https://trakt.tv/users/airtracker/lists/boxing?sort=rank,asc
+      - https://trakt.tv/users/jim222001/lists/the-best-boxing-movies?sort=rank,asc
+      - https://trakt.tv/users/kingkearney/lists/boxing?sort=random,asc
+    sync_mode: sync
+    collection_order: random
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Boxing.png
+    summary: Step into the ring of history with our Boxing Collection. Explore gloves, robes, championship belts, and memorabilia that chronicle the sweat, blood, and glory of legendary boxing bouts and champions
+
+  Combat Sports:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: Combat Sport
+      genre: Drama
+    imdb_list:
+      - https://www.imdb.com/list/ls021220211/
+    trakt_list:
+      - https://trakt.tv/users/kingkearney/lists/boxing?sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Combat Sports.png
+    summary: Sports movies that include any form of combat sports as the central theme
+
+  Motorsports:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls091552549/?sort=release_date,desc&st_dt=&mode=detail&page=1
+    trakt_list:
+      - https://trakt.tv/users/rdenatale/lists/motorsports?sort=released,asc
+    letterboxd_list:
+      - https://letterboxd.com/steve404/list/motorsports/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Motorsports.png
+    summary: Movies that include any form of motorsports as the central theme
+    
+###########################
+#   THRILLER Collections #
+###########################
+
+  Abductions:
+    template: {name: Thematic}
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66acc14f6d1bfb48f98adb94
+    letterboxd_list: https://letterboxd.com/mhwoof/list/abduction/
+    collection_order: random
+    file_poster: config/assests/Abductions.png
+    visible_home: true
+    visible_shared: true
+
+  Animals Attack:
+    template: {name: Thematic}
+    imdb_list: 
+      - https://www.imdb.com/list/ls538144176/
+      - https://www.imdb.com/list/ls097049896/?genres=thriller&title_type=feature
+    collection_order: random
+    file_poster: config/assests/Animals Attack.png
+    visible_home: true
+    visible_shared: true
+    summary: Featuring wild animals or pets turning violent, showcasing terrifying encounters, survival struggles, primal instincts, human-animal conflict, and the resulting chaos or horror as creatures become predators.
+    
+  Dead of Winter Thrillers:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls579327628/
+      - https://www.imdb.com/list/ls084865065/
+      - https://www.imdb.com/list/ls021435319/
+      - https://www.imdb.com/list/ls026820338/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    summary: Experience a collection of winter thrillers set against icy landscapes and bone-chilling mysteries. For other location based collections see; African Locales or Lonely People in Neon Cities
+    file_poster: config/assets/Dead of Winter.png
+
+  Cons & Scams:
+    template: {name: Thematic}
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66acc1996d1bfb48f98adbc2
+    collection_order: random
+    file_poster: config/assests/Cons & Scams.png
+    visible_home: true
+    visible_shared: true
+
+  Conspiracy Theory Thrillers:
+    template: {name: Thematic}
+    trakt_list: 
+      - https://trakt.tv/users/kayaaron13/lists/conspiracy-movies?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls020828491/?sort=release_date,desc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=6.0%2C&release_date=1990%2C&ref_=ttls_ref_yr
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Conspiracy Thrillers.png
+    summary: Just because you're paranoid doesn't mean they aren't after you.
+
+  Edge of Your Seat Thrillers:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/marzipan-pie/lists/edge-of-your-seat?sort=title,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Edge of Your Seat.png
+    summary: Genre agnostic, suspenseful movies that keep audiences on the edge of their seats, featuring gripping narratives, unexpected twists, high-stakes situations, and nail-biting suspense.
+
+  Psychosexual Thrillers:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/majeed_pk/lists/erotic-thrillers?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Erotic Thrillers.png
+    summary: To comfort the disturbed and to disturb the comfortable
+
+  Espionage and Spy Thrillers:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/scotttrakt/lists/spy-espionage?sort=title,asc
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Espionage and Spy.png
+    summary: Secret agents. Covert missions. International intrigue. These thriller type movies are packed with action, mystery and some truly riveting tales of espionage.
+
+  Killer Shark Thrillers:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/cage/lists/killer-sharks?sort=released,asc
+      - https://trakt.tv/users/s4bre21/lists/shark-movies?sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Killer Sharks.png
+    visible_home: true
+    visible_shared: true
+    summary: Thriller movies that depict people who buy boats that are way too small
+
+  Political Thrillers:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/kayaaron13/lists/political-movies?sort=rank,asc
+    sync_mode: sync
+    file_poster: config/assets/Political thrillers.png
+    visible_home: true
+    visible_shared: true
+    summary: Political thrillers are gripping films that explore the high-stakes world of politics, filled with intrigue, conspiracies, power struggles, and suspenseful plots that keep audiences on the edge of their seats.
+
+  Psychological Thrillers:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls057336010/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Psychological Thriller.png
+    visible_home: true
+    visible_shared: true
+    summary: Psychological thriller movies unravel the intricate workings of unstable minds, featuring mysterious circumstances, intense paranoia, and characters driven to extreme actions in gripping narratives.
+
+  Satanic Thrillers:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls044093733/?sort=list_order,asc&st_dt=&mode=detail&page=1&user_rating=5.9%2C&release_date=1990%2C&ref_=ttls_ref_yr
+    trakt_list:
+      - https://trakt.tv/users/kingkearney/lists/satanic-stories?sort=added,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Satanic Stories.png
+    visible_home: true
+    visible_shared: true
+    summary: Satanic thriller movies delve into the realms of dark supernatural forces, demonic rituals, and occult practices, often portraying the battle between good and evil, and the terrifying consequences of dabbling with the devil.
+
+  Teen Scream Thrillers:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/kingkearney/lists/teen-screams?sort=random,asc
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Teen Scream.png
+    summary: More thriller than horror, for movies to be included in the collection they must target teenage audiences, blend horror with coming-of-age themes, and deliver scares through supernatural elements, suspense, and relatable teenage protagonists
+
+  Techno Thrillers:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls095055453/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=Thriller&title_type=movie&release_date=1990%2C&ref_=ttls_ref_gnr
+    sync_mode: sync
+    file_poster: config/assets/Techno Thriller.png
+    visible_home: true
+    visible_shared: true
+    summary: The techno-thriller sub-genre is defined by a conflict that takes place for or through Various forms of technology. What makes a techno-thriller different from various action sub-genres is the level of detail paid toward the underlying technical aspects of the technology and its effects.
+
+  Pandemics & Plague Thrillers:
+    template: {name: Thematic}
+    trakt_list: 
+      - https://trakt.tv/users/bonyboy/lists/pandemic-list?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls025188564/
+      - https://www.imdb.com/list/ls092321048/
+      - https://www.imdb.com/list/ls077464194/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Pandemic.png
+    summary: A Pandemic film resolves around widespread viruses, plagues, and diseases.
+
+###########################
+#    WAR Collections   #
+###########################
+
+  Aerial Warfare:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls520156225/
+      - https://www.imdb.com/list/ls076254723/?sort=release_date,desc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=5.9%2C&release_date=1980%2C&ref_=ttls_ref_rt_usr
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Aerial Warfare.png
+    visible_home: true
+    visible_shared: true
+    summary: Aerial warfare movies depict intense combat and strategic battles fought in the skies, showcasing aerial dogfights, bomber missions, and the bravery and skill of pilots as they engage in high-stakes battles during wars and conflicts.
+
+  Christian Crusades:
+    template: {name: Thematic}
+    imdb_list: https://www.imdb.com/list/ls520106428/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Christian Crusade.png
+
+  Civil Wars:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls000038854/?sort=release_date,desc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=5.9%2C&release_date=1990%2C&ref_=ttls_ref_yr
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Civil Wars.png
+    visible_home: true
+    visible_shared: true
+    summary: Civil War movies portray the intense and brutal conflicts that occurred during a nation's internal strife, exploring the ideological divisions, epic battles, and personal sacrifices of individuals caught in the midst
+
+  Gulf Wars:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls520152171/
+      - https://www.imdb.com/list/ls063038865/?sort=release_date,desc&st_dt=&mode=detail&page=1&user_rating=6.0%2C&release_date=1990%2C&ref_=ttls_ref_yr
+      - https://www.imdb.com/list/ls006118614/?sort=release_date,desc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=6.0%2C&release_date=1990%2C&ref_=ttls_ref_yr
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Gulf Wars.png
+    visible_home: true
+    visible_shared: true
+    summary: Gulf War films depict the american wars in the middle east, showcasing military operations, insurgencies, and the political climate of the time
+
+  Naval Warfare:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls520156138/
+      - https://www.imdb.com/list/ls026529469/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=War&title_type=movie&user_rating=5.9%2C&release_date=1990%2C&ref_=ttls_ref_gnr
+      - https://www.imdb.com/list/ls021449523/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1980%2C&ref_=ttls_ref_rt_usr&sort=release_date,desc
+      - https://www.imdb.com/list/ls056668246/?st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_yr&sort=list_order,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Naval Warfare.png
+    visible_home: true
+    visible_shared: true
+    summary: Naval Warfare movies delve into the high-stakes conflicts fought at sea. These films portray epic battleships, submarines, and naval aircraft engaged in strategic maneuvers, showcasing the intensity, tactics, and bravery of sailors.
+
+  Strategic Warfare:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls520152149/
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Strategic Warfare.png
+    visible_home: true
+    visible_shared: true
+    summary: Strategic warfare movies showcase the intricacies of military tactics, intelligence operations, and strategic decision-making, portraying the high-stakes conflicts and strategic maneuvers in gripping narratives.
+
+  Sniper Warfare:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls077330873/
+      - https://www.imdb.com/list/ls000613658/?sort=list_order,asc&st_dt=&mode=detail&page=1&title_type=movie&release_date=1990%2C&ref_=ttls_ref_yr
+      - https://www.imdb.com/list/ls077330873/?sort=user_rating,asc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=5.0%2C&release_date=1990%2C&ref_=ttls_ref_rt_usr
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Sniper.png
+    visible_home: true
+    visible_shared: true
+    summary: Slow is smooth, smooth is fast
+
+  Special Ops Warfare:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls520152318/
+      - https://www.imdb.com/list/ls098556173/?sort=list_order,asc&st_dt=&mode=detail&page=1&genres=War&ref_=ttls_ref_gnr
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Special Ops Warfare.png
+    visible_home: true
+    visible_shared: true
+    summary: Special Ops Warfare movies are an exhilarating cinematic genre that delves into high-stakes military operations conducted by elite forces. These films showcase covert missions, intense combat sequences, and strategic tactics employed by specialized units.
+
+  Vietnam War:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/cage/lists/vietnam-war?display=movie&sort=rank,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Vietnam War.png
+    visible_home: true
+    visible_shared: true
+    summary: Vietnam War movies depict the harrowing experiences of soldiers, the psychological toll of warfare, the moral ambiguity, and the protests surrounding one of history's most controversial conflicts
+
+  War Epics:
+    template: {name: Thematic}
+    imdb_list:
+      url: https://www.imdb.com/list/ls520152785/
+    collection_order: random
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/War Epics.png
+    summary: War epic movies are grand cinematic spectacles that depict large-scale conflicts, showcasing the heroism, sacrifice, and human resilience amidst the brutality and chaos of war.
+
+  World War I:
+    template: {name: Thematic}
+    imdb_list:
+      - https://www.imdb.com/list/ls001838989/?sort=list_order,asc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=5.9%2C&release_date=1990%2C&ref_=ttls_ref_yr
+      - https://www.imdb.com/list/ls048967176/?sort=list_order,asc&st_dt=&mode=detail&page=1&title_type=movie&user_rating=5.9%2C&release_date=1990%2C&ref_=ttls_ref_yr
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/WWI Collection.png
+    visible_home: true
+    visible_shared: true
+    summary: WWI movies depict the harrowing experiences of soldiers during the First World War, showcasing the trenches, battles, camaraderie, and the devastating impact of one of history's deadliest conflicts on a global scale.
+
+  World War II:
+    template: {name: Thematic}
+    trakt_list:
+      - https://trakt.tv/users/hennygingerale/lists/world-war-ii?sort=popularity,asc
+      - https://trakt.tv/users/robinvanzuilen/lists/world-war-ii?sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/WWII Collection.png
+    visible_home: true
+    visible_shared: true
+    summary: WWII movies
+
+###########################
+#    WESTERN Collections  #
+###########################    
+
+  Epic Western:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: Epic Western
+      genre: Western   
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Epic Western.png
+    visible_home: true
+    visible_shared: true
+    summary: The idea of an epic western is to emphasize and incorporate many if not all of the western genre elements, but on a grand scale, and also use the backdrop of large scale real-life events to frame your story.
+
+  Marshal Western:
+    template: {name: Thematic}
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=marshal&ref_=kw_ref_typ&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Western&user_rating=5.9%2C&release_date=1990%2C
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Marshal Western.png
+    visible_home: true
+    visible_shared: true
+    summary: A marshal western is where we follow a lawman as they attempt to track down, apprehend, and punish a criminal or group of gangsters.
+
+  Outlaw Western:
+    template: {name: Thematic}
+    imdb_search:
+      genre: western
+      keyword: outlaw
+      type: movie 
+      release.after: 1990-01-01    
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Outlaw Western.png
+    visible_home: true
+    visible_shared: true
+    summary: An outlaw western is where we follow a criminal or group of criminals as they attempt crimes and evade the law. Often, these movies will portray the outlaws in a somewhat favorable manner.
+
+  Revenge Western:
+    template: {name: Thematic}
+    imdb_list: https://www.imdb.com/search/keyword/?keywords=revenge&ref_=kw_ref_key&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Western&user_rating=6.9%2C&release_date=1990%2C
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Revenge Western.png
+    visible_home: true
+    visible_shared: true
+    summary: This genre is defined by a singular goal and will incorporate the elements of the western genre while the protagonist seeks revenge.
+
+  Revisionist Western:
+    template: {name: Thematic}
+    imdb_search:
+      genre: western
+      keyword: revisionist western
+      type: movie 
+      release.after: 1990-01-01      
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66acc2c56d1bfb48f98adc1b
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Revisionist Western.png
+    visible_home: true
+    visible_shared: true
+    summary: A revisionist western challenges and often aims to disprove the notions propped up by traditional westerns. Early westerns often had their own agenda, and revisionist westerns attempt to dissolve and cast aside a commonly one-sided genre.
+
+  Spaghetti Western:
+    template: {name: Thematic}
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66acc2e66d1bfb48f98adc31
+    trakt_list_details: https://trakt.tv/users/del74/lists/spaghetti-westerns?display=movie&sort=released,asc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/Spaghetti Western.png
+    visible_home: true
+    visible_shared: true
+    summary: The Spaghetti Western genre was named such because the films were initially made in Italy or produced by Italian filmmakers. Because these films are defined by their ‘heritage’ they can also fall into many of the other western genres as long as they are Italian built. Here are our picks for the best Spaghetti Westerns of all time.
+    
+##########################
+#  UNIVERSE Collections  #
+##########################    
+    
+  Wizarding World of J. K. Rowling:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/nic-in-vic-2011/lists/wizarding-world-collection?sort=collected,asc
+    collection_order: random
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/U-Wizarding World.png
+
+  Xmen Universe:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/donxy/lists/x-men-universe?sort=rank,asc
+    collection_order: random
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/U-X-Men Unvierse.png
+   
+  Ridleyverse:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/dsnake1/lists/chronological-ridleyverse?sort=rank,asc
+    collection_order: random
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/U-Ridleyverse.png
+
+  DC Comics:
+    template: {name: Thematic}
+    imdb_list: https://www.imdb.com/list/ls034926506/?title_type=feature
+    collection_order: random
+    sort_title: DC Comics
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/DC Comics Cover.png
+    summary: Studio agnostic collection of all feature films adapted from DC Comics publications
+    
+  Marvel Cinematic Universe:
+    template: {name: Thematic}
+    imdb_search:
+      keyword: marvel cinematic universe
+    collection_order: release
+    visible_home: true
+    visible_shared: true
+    sync_mode: sync    
+    file_poster: config/assets/U-Marvel Universe.png
+    
+  Marvel Comics:
+    template: {name: Thematic}
+    imdb_list: https://www.imdb.com/list/ls000024621
+    imdb_search:
+      keyword: Marvel Comics
+    collection_order: random
+    sort_title: Marvel Comics
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/Marvel Comics Cover.png
+    summary: Studio agnostic collection of all feature films adapted from Marvel Comics publications 
+    
+  Disney Live Action:
+    template: {name: Thematic}
+    imdb_list: https://www.imdb.com/list/ls083312980/
+    collection_order: random
+    visible_home: true
+    visible_shared: true  
+    summary: Get ready to roll out the red carpet for the most magical movie collection ever! Disney's Live Action Remake Collection is here to take you on a hilarious and enchanting journey through some of your favorite classic tales, with a twist that only Disney can deliver.   
+    file_poster: config/assets/U-Disney Live Action.png
+
+  Disney Animated Classics:
+    template: {name: Thematic}
+    trakt_list_details: https://trakt.tv/users/draackje/lists/disney-animated-classics?sort=released,desc
+    plex_search:
+      all:
+        Genre: animation
+    Filters:
+      Studio: 
+        - Walt Disney Animation Studios
+        - Walt Disney Pictures
+        - Walt Disney Productions
+        - Walt Disney Feature Animation
+    collection_order: random
+    visible_home: true
+    visible_shared: true
+    file_poster: config/assets/U-Disney Animated Classics.png
+ 
+  John Grisham:
+    template: {name: Thematic}
+    trakt_list: https://trakt.tv/users/zerophyte/lists/john-grisham?sort=released,desc
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/John Grisham.png
+    visible_home: true
+    visible_shared: true
+    summary: All movies based on Novels from acclaimed author John Grisham. Other authro based collections are; Stephen King & James Bond
+     
+  #########################
+  #  COUNTRY Collections  #
+  #########################     
+  
+  Australian Cinema:
+    template: {name: Thematic}
+    imdb_search:
+      location: australia
+    file_poster: config/assests/C-Australian Cinema.png
+    collection_order: random      
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+ 
+  Chinese Cinema:
+    template: {name: Thematic}
+    trakt_list: 
+      - https://trakt.tv/users/replaysmike/lists/chinese?display=movie&sort=released,asc
+      - https://trakt.tv/users/c858/lists/chinese-movies?sort=rank,asc
+    imdb_search:
+      language.primary: zh
+      country: ch
+    collection_order: random
+    sync_mode: sync
+    file_poster: config/assets/C-Chinese Cinema.png
+    visible_home: true
+    visible_shared: true
+  
+  Indian Cinema:
+    template: {name: Thematic}
+    reciperr_list: 
+      - https://reciperr.com/api/recipe/list/params?recipeMetadataId=66a4cab60684f22f68368ae7
+      - https://reciperr.com/api/recipe/list/params?recipeMetadataId=66acc1be6d1bfb48f98adbd8
+    imdb_search:
+      location: india    
+    collection_order: random
+    file_poster: config/assests/C-Indian Cinema.png
+    visible_home: true
+    visible_shared: true
+    
+  Japanese Cinema:
+    template: {name: Thematic}
+    imdb_search:
+      language.primary: ja
+      country: jp
+      genre.not: animation         
+    imdb_list: 
+      - https://www.imdb.com/list/ls064895701/
+    trakt_list:
+      - https://trakt.tv/users/reffn/lists/japanese?display=movie&sort=released,asc
+    collection_order: random
+    visible_home: true
+    visible_shared: true
+    sync_mode: sync    
+    file_poster: config/assets/C-Japanese Cinema.png 
+        
+  Korean Cinema:
+    template: {name: Thematic}
+    plex_search:
+      all:
+        country: Korea
+    file_poster: config/assests/C-Korean Cinema.png
+    visible_home: true
+    visible_shared: true
+    summary: Buckle up for a K-cinematic joyride filled with more twists and turns than a Korean variety show!
+    
+  Scandinavian Cinema:
+    template: {name: Thematic}
+    reciperr_list: https://reciperr.com/api/recipe/list/params?recipeMetadataId=66acc0f26d1bfb48f98adb67
+    plex_search:
+      any:
+        country: 
+          - Finland
+          - Denmark
+          - Norway
+          - Sweden
+          - Iceland
+    file_poster: config/assets/C-Scandinavian Cinema.png
+    visible_home: true
+    visible_shared: true
+    summary: Laugh, cry, sigh, scream, shout or whatever you feel like with these comedies, dramas, romances, thrillers and so much more, all hailing from Scandinavia.

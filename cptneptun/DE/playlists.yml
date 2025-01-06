@@ -1,0 +1,8 @@
+playlists:
+  Arrowverse (chronologisch):
+    sync_mode: sync
+    libraries: Serien
+    trakt_list: https://trakt.tv/users/donxy/lists/arrowverse
+    filters:
+      plays.lt: 1
+    summary: Ein DC-Comics-Franchise, das Crossover mit Green Arrow, The Flash, Supergirl und vielen anderen umfasst.

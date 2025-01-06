@@ -1,0 +1,20 @@
+templates:
+  Collection:
+    optional:
+      - list
+      - show
+      - poster
+    tvdb_list_details: <<list>>
+    tvdb_show: <<show>>
+    url_poster: <<poster>>
+    sync_mode: sync
+    collection_order: release
+    sort_title: "!050_<<collection_name>>"
+collections:
+  Attenborough:
+    template: {name: Collection}
+    plex_all: true
+    filter:
+      actor: David Attenborough
+    url_poster: https://raw.githubusercontent.com/WhoDat104/Franchises/main/Attenborough.jpg
+    summary: Collection of David Attenborough TV Shows.

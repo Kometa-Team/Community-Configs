@@ -1,0 +1,275 @@
+## _genre_popular.yml
+
+templates:
+  popular:
+    collection_mode: hide
+    collection_order: custom
+    delete_not_scheduled: false
+    limit: 250
+    sort_title: "+110_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    imdb_search:
+      genre: <<genre>>
+      genre.not: <<genre.not>>
+      language: <<language>>
+      limit: 500
+      popularity.gte: <<popularity.gte>>
+      sort_by: popularity.asc
+      type: <<type>>
+    optional:
+      - genre.not
+
+collections:
+  "Popular in Action":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_action.png
+    summary: "Popular movies in Action"
+    template: {
+                    genre: "action",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Adventure":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_adventure.png
+    summary: "Popular movies in Adventure"
+    template: {
+                    genre: "adventure",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Animation":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_animation.png
+    summary: "Popular movies in Animation"
+    template: {
+                    genre: "animation",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Biography":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_biography.png
+    summary: "Popular movies in Biography"
+    template: {
+                    genre: "biography",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Comedy":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_comedy.png
+    summary: "Popular movies in Comedy"
+    template: {
+                    genre: "comedy",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Crime":
+    summary: "Popular movies in Crime"
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_crime.png
+    template: {
+                    genre: "crime",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Documentary":
+   summary: "Popular movies in Documentary"
+   url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_documentary.png
+   template: {
+                   genre: "documentary",
+                   language: "en",
+                   name: popular,
+                   popularity.gte: 5,
+                   type: "movie,tv_movie"
+               }
+
+  "Popular in Drama":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_drama.png
+    summary: "Popular movies in Drama"
+    template: {
+                    genre: "drama",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Family":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_family.png
+    summary: "Popular movies in Family"
+    template: {
+                    genre: "family",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Fantasy":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_fantasy.png
+    summary: "Popular movies in Fantasy"
+    template: {
+                    genre: "fantasy",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in History":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_history.png
+    summary: "Popular movies in History"
+    template: {
+                    genre: "history",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Horror":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_horror.png
+    summary: "Popular movies in Horror"
+    template: {
+                    genre: "horror",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Music":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_music.png
+    summary: "Popular movies in Music"
+    template: {
+                    genre: "music",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Musicals":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_musicals.png
+    summary: "Popular movies in Musicals"
+    template: {
+                    genre: "musical",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Mystery":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_mystery.png
+    summary: "Popular movies in Mystery"
+    template: {
+                    genre: "mystery",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Romance":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_romance.png
+    summary: "Popular movies in Romance"
+    template: {
+                    genre: "romance",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Sci-Fi":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_sci-fi.png
+    summary: "Popular movies in Sci-Fi"
+    template: {
+                    genre: "sci-fi",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Sport":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_sport.png
+    summary: "Popular movies in Sport"
+    template: {
+                    genre: "sport",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Thriller":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_thriller.png
+    summary: "Popular movies in Thriller"
+    template: {
+                    genre: "thriller",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in War":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_war.png
+    summary: "Popular movies in War"
+    template: {
+                    genre: "war",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }
+
+  "Popular in Western":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_popular/genre_popular_western.png
+    summary: "Popular movies in Western"
+    template: {
+                    genre: "western",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: popular,
+                    popularity.gte: 5,
+                    type: "movie,tv_movie"
+                }

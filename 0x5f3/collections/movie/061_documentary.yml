@@ -1,0 +1,101 @@
+## _documentary.yml
+
+templates:
+  plex:
+    collection_mode: hide
+    delete_not_scheduled: false
+    sort_title: "+061_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+
+collections:
+  "Documentaries: All":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_documentary/documentary_all.png
+    summary: "Documentaries"
+#    collection_order: alpha
+    template: {
+                    name: plex,
+                    num: "0"
+                }
+#    plex_all: true
+#    filters:
+#      - filepath: "/mnt/movies-documentary"
+#      - filepath: "/mnt/movies-documentary-4k"
+    smart_filter:
+      all:
+        genre: documentary
+      sort_by: title.asc
+
+  "Documentary: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_documentary/documentary_unwatched.png
+    summary: "Unwatched documentaries"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+#        collection: "Documentaries: All"
+        genre: documentary
+        unplayed: true
+      collection_filtering: user
+      sort_by: title.asc
+
+  "Documentaries: Random":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_documentary/documentary_random.png
+    summary: "Random documentaries"
+    template: {
+                    name: plex,
+                    num: "2"
+                }
+    smart_filter:
+      all:
+#        collection: "Documentaries: All"
+        genre: documentary
+      limit: 250
+      sort_by: random
+
+  "Documentaries: Recently Added":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_documentary/documentary_recently-added.png
+    summary: "Recently added documentaries"
+    visible_library: true
+    template: {
+                    name: plex,
+                    num: "3"
+                }
+    smart_filter:
+      all:
+#        collection: "Documentaries: All"
+        genre: documentary
+      limit: 100
+      sort_by: added.desc
+
+  "Documentaries: Recently Released":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_documentary/documentary_recently-released.png
+    summary: "Recently released documentaries"
+    template: {
+                    name: plex,
+                    num: "4"
+                }
+    smart_filter:
+      all:
+#        collection: "Documentaries: All"
+        genre: documentary
+      limit: 250
+      sort_by: release.desc
+
+  "Documentaries: Top Rated":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_documentary/documentary_top-rated.png
+    summary: "Top rated documentaries"
+    template: {
+                    name: plex,
+                    num: "5"
+                }
+    smart_filter:
+      all:
+#        collection: "Documentaries: All"
+        genre: documentary
+      limit: 250
+      sort_by: critic_rating.desc

@@ -1,0 +1,43 @@
+############################
+#          Topics          #
+############################
+templates:
+  Collection:
+    optional:
+      - poster
+    #url_poster: <<poster>>
+    collection_order: audience_rating.desc
+    sort_title: "!060_<<collection_name>>"
+    schedule: monthly(29)
+    item_genre: <<collection_name>>
+    build_collection: false
+
+#######################################################################################################   
+collections: 
+  Football:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Football.jpg}
+    imdb_list: https://www.imdb.com/list/ls567409329/
+  Inspirational:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Inspirational.jpg}
+    imdb_list: https://www.imdb.com/list/ls567409348/
+    trakt_list: https://trakt.tv/users/rizreflects/lists/inspiring
+  Natural Disaster:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Natural%20Disaster.jpg}
+    imdb_list: https://www.imdb.com/list/ls567402383/
+  Spy:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Spy.jpg}
+    imdb_list: https://www.imdb.com/list/ls567409179
+  Stand-up Comedy:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Stand-Up%20Comedy.jpg}
+    imdb_list: 
+      - https://www.imdb.com/list/ls567409881/
+    imdb_search:
+      votes.gte: 100
+      keyword: stand-up comedy
+    collection_order: release.desc
+  Unexpectedly Amazing:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Unexpectedly%20Amazing.jpg}
+    imdb_list: https://www.imdb.com/list/ls567408147/
+  Witch:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Witch.jpg}
+    imdb_list: https://www.imdb.com/list/ls567408343/

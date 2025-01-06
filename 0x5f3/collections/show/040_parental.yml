@@ -1,0 +1,79 @@
+## _parental.yml
+
+templates:
+  plex:
+    collection_mode: hide
+    delete_not_scheduled: false
+    label.sync: Parental
+    sort_title: "+040_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+
+collections:
+  "Parental: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_unwatched.png
+    summary: "Unwatched parental"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: title.asc
+
+  "Parental: Random":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_random.png
+    summary: "Random TV shows suitable for children"
+    template: {
+                    name: plex,
+                    num: "2"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      sort_by: random
+      limit: 250
+
+  "Parental: Recently Added":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_recently-added.png
+    summary: "Recently added TV shows suitable for children"
+    template: {
+                    name: plex,
+                    num: "3"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      sort_by: added.desc
+      limit: 100
+
+  "Parental: Recently Released":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_recently-released.png
+    summary: "Recently released TV shows suitable for children"
+    template: {
+                    name: plex,
+                    num: "4"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      sort_by: release.desc
+      limit: 250
+
+  "Parental: Top Rated":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_top-rated.png
+    summary: "Top rated TV shows suitable for children"
+    template: {
+                    name: plex,
+                    num: "5"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      sort_by: critic_rating.desc
+      limit: 250

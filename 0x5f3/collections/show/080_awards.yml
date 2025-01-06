@@ -1,0 +1,99 @@
+## _awards.yml
+
+templates:
+  award_nominee:
+    collection_mode: hide
+    collection_order: release.desc
+    delete_not_scheduled: false
+    sort_title: "+080_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    imdb_search:
+      event: <<event>>
+      language: <<language>>
+      limit: 1000
+      type: <<type>>
+
+  award_winner:
+    collection_mode: hide
+    collection_order: release.desc
+    delete_not_scheduled: false
+    sort_title: "+080_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    imdb_search:
+      event.winning: <<event.winning>>
+      language: <<language>>
+      limit: 1000
+      type: <<type>>
+
+collections:
+  "Emmy Award Nominees":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_nominees_emmy.png
+    summary: "A collection of Emmy Award Nominees"
+    template: {
+                    event: "emmy",
+                    language: "en",
+                    name: award_nominee,
+                    num: "A",
+                    type: "tv_series,tv_mini_series,tv_special"
+                }
+
+  "Emmy Award Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_emmy.png
+    summary: "A collection of Emmy Award Winners"
+    template: {
+                    event.winning: "emmy",
+                    language: "en",
+                    name: award_winner,
+                    num: "B",
+                    type: "tv_series,tv_mini_series,tv_special"
+                }
+
+  "Golden Globes Nominees":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_nominees_golden-globes.png
+    summary: "A collection of Golden Globes Nominees"
+    template: {
+                    event: "golden",
+                    language: "en",
+                    name: award_nominee,
+                    num: "C",
+                    type: "tv_series,tv_mini_series,tv_special"
+                }
+
+  "Golden Globes Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_golden_globes.png
+    summary: "A collection of Golden Globes Winners"
+    template: {
+                    event.winning: "golden",
+                    language: "en",
+                    name: award_winner,
+                    num: "D",
+                    type: "tv_series,tv_mini_series,tv_special"
+                }
+
+  "BAFTA Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_bafta.png
+    summary: "A collection of BAFTA Winners"
+    template: {
+                    event.winning: "bafta",
+                    language: "en",
+                    name: award_winner,
+                    num: "E",
+                    type: "tv_series,tv_mini_series,tv_special"
+                }
+
+  "Critic's Choice Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_critics-choice.png
+    summary: "A collection of Critic's Choice Winners"
+    template: {
+                    event.winning: "choice",
+                    language: "en",
+                    name: award_winner,
+                    num: "F",
+                    type: "tv_series,tv_mini_series,tv_special"
+                }
