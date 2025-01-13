@@ -1,0 +1,938 @@
+##############################################################################
+##############################################################################
+
+templates:
+  tmp_rating:
+    collection_level: <<overlay_level>>
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+      horizontal_align: left
+      horizontal_offset: 7
+      vertical_align: bottom
+      vertical_offset: 7
+    overlay:
+      name: <<overlay_name>>
+      weight: <<weight>>
+      group: rating_audience
+      horizontal_align: <<horizontal_align>>
+      horizontal_offset: <<horizontal_offset>>
+      vertical_align: <<vertical_align>>
+      vertical_offset: <<vertical_offset>>
+
+
+
+overlays:
+
+
+  ### RATINGS ###
+
+  non_r0:
+    template:
+      - name: tmp_rating
+        weight: 100
+    plex_all: true
+
+  non_r100:
+    template:
+      - name: tmp_rating
+        weight: 200
+    plex_search:
+      all:
+        audience_rating.gte: 10
+
+  non_r99:
+    template:
+      - name: tmp_rating
+        weight: 199
+    plex_search:
+      all:
+        audience_rating.gte: 9.9
+        audience_rating.lte: 10
+
+  non_r98:
+    template:
+      - name: tmp_rating
+        weight: 198
+    plex_search:
+      all:
+        audience_rating.gte: 9.8
+        audience_rating.lte: 9.9
+
+  non_r97:
+    template:
+      - name: tmp_rating
+        weight: 197
+    plex_search:
+      all:
+        audience_rating.gte: 9.7
+        audience_rating.lte: 9.8
+
+  non_r96:
+    template:
+      - name: tmp_rating
+        weight: 196
+    plex_search:
+      all:
+        audience_rating.gte: 9.6
+        audience_rating.lte: 9.7
+
+  non_r95:
+    template:
+      - name: tmp_rating
+        weight: 195
+    plex_search:
+      all:
+        audience_rating.gte: 9.5
+        audience_rating.lte: 9.6
+
+  non_r94:
+    template:
+      - name: tmp_rating
+        weight: 194
+    plex_search:
+      all:
+        audience_rating.gte: 9.4
+        audience_rating.lte: 9.5
+
+  non_r93:
+    template:
+      - name: tmp_rating
+        weight: 193
+    plex_search:
+      all:
+        audience_rating.gte: 9.3
+        audience_rating.lte: 9.4
+
+  non_r92:
+    template:
+      - name: tmp_rating
+        weight: 192
+    plex_search:
+      all:
+        audience_rating.gte: 9.2
+        audience_rating.lte: 9.3
+
+  non_r91:
+    template:
+      - name: tmp_rating
+        weight: 191
+    plex_search:
+      all:
+        audience_rating.gte: 9.1
+        audience_rating.lte: 9.2
+
+  non_r90:
+    template:
+      - name: tmp_rating
+        weight: 190
+    plex_search:
+      all:
+        audience_rating.gte: 9.0
+        audience_rating.lte: 9.1
+
+  non_r89:
+    template:
+      - name: tmp_rating
+        weight: 189
+    plex_search:
+      all:
+        audience_rating.gte: 8.9
+        audience_rating.lte: 9.0
+
+  non_r88:
+    template:
+      - name: tmp_rating
+        weight: 188
+    plex_search:
+      all:
+        audience_rating.gte: 8.8
+        audience_rating.lte: 8.9
+
+  non_r87:
+    template:
+      - name: tmp_rating
+        weight: 187
+    plex_search:
+      all:
+        audience_rating.gte: 8.7
+        audience_rating.lte: 8.8
+
+  non_r86:
+    template:
+      - name: tmp_rating
+        weight: 186
+    plex_search:
+      all:
+        audience_rating.gte: 8.6
+        audience_rating.lte: 8.7
+
+  non_r85:
+    template:
+      - name: tmp_rating
+        weight: 185
+    plex_search:
+      all:
+        audience_rating.gte: 8.5
+        audience_rating.lte: 8.6
+
+  non_r84:
+    template:
+      - name: tmp_rating
+        weight: 184
+    plex_search:
+      all:
+        audience_rating.gte: 8.4
+        audience_rating.lte: 8.5
+
+  non_r83:
+    template:
+      - name: tmp_rating
+        weight: 183
+    plex_search:
+      all:
+        audience_rating.gte: 8.3
+        audience_rating.lte: 8.4
+
+  non_r82:
+    template:
+      - name: tmp_rating
+        weight: 182
+    plex_search:
+      all:
+        audience_rating.gte: 8.2
+        audience_rating.lte: 8.3
+
+  non_r81:
+    template:
+      - name: tmp_rating
+        weight: 181
+    plex_search:
+      all:
+        audience_rating.gte: 8.1
+        audience_rating.lte: 8.2
+
+  non_r80:
+    template:
+      - name: tmp_rating
+        weight: 180
+    plex_search:
+      all:
+        audience_rating.gte: 8.0
+        audience_rating.lte: 8.1
+
+  non_r79:
+    template:
+      - name: tmp_rating
+        weight: 179
+    plex_search:
+      all:
+        audience_rating.gte: 7.9
+        audience_rating.lte: 8.0
+
+  non_r78:
+    template:
+      - name: tmp_rating
+        weight: 178
+    plex_search:
+      all:
+        audience_rating.gte: 7.8
+        audience_rating.lte: 7.9
+
+  non_r77:
+    template:
+      - name: tmp_rating
+        weight: 177
+    plex_search:
+      all:
+        audience_rating.gte: 7.7
+        audience_rating.lte: 7.8
+
+  non_r76:
+    template:
+      - name: tmp_rating
+        weight: 176
+    plex_search:
+      all:
+        audience_rating.gte: 7.6
+        audience_rating.lte: 7.7
+
+  non_r75:
+    template:
+      - name: tmp_rating
+        weight: 175
+    plex_search:
+      all:
+        audience_rating.gte: 7.5
+        audience_rating.lte: 7.6
+
+  non_r74:
+    template:
+      - name: tmp_rating
+        weight: 174
+    plex_search:
+      all:
+        audience_rating.gte: 7.4
+        audience_rating.lte: 7.5
+
+  non_r73:
+    template:
+      - name: tmp_rating
+        weight: 173
+    plex_search:
+      all:
+        audience_rating.gte: 7.3
+        audience_rating.lte: 7.4
+
+  non_r72:
+    template:
+      - name: tmp_rating
+        weight: 172
+    plex_search:
+      all:
+        audience_rating.gte: 7.2
+        audience_rating.lte: 7.3
+
+  non_r71:
+    template:
+      - name: tmp_rating
+        weight: 171
+    plex_search:
+      all:
+        audience_rating.gte: 7.1
+        audience_rating.lte: 7.2
+
+  non_r70:
+    template:
+      - name: tmp_rating
+        weight: 170
+    plex_search:
+      all:
+        audience_rating.gte: 7.0
+        audience_rating.lte: 7.1
+
+  non_r69:
+    template:
+      - name: tmp_rating
+        weight: 169
+    plex_search:
+      all:
+        audience_rating.gte: 6.9
+        audience_rating.lte: 7.0
+
+  non_r68:
+    template:
+      - name: tmp_rating
+        weight: 168
+    plex_search:
+      all:
+        audience_rating.gte: 6.8
+        audience_rating.lte: 6.9
+
+  non_r67:
+    template:
+      - name: tmp_rating
+        weight: 167
+    plex_search:
+      all:
+        audience_rating.gte: 6.7
+        audience_rating.lte: 6.8
+
+  non_r66:
+    template:
+      - name: tmp_rating
+        weight: 166
+    plex_search:
+      all:
+        audience_rating.gte: 6.6
+        audience_rating.lte: 6.7
+
+  non_r65:
+    template:
+      - name: tmp_rating
+        weight: 165
+    plex_search:
+      all:
+        audience_rating.gte: 6.5
+        audience_rating.lte: 6.6
+
+  non_r64:
+    template:
+      - name: tmp_rating
+        weight: 164
+    plex_search:
+      all:
+        audience_rating.gte: 6.4
+        audience_rating.lte: 6.5
+
+  non_r63:
+    template:
+      - name: tmp_rating
+        weight: 163
+    plex_search:
+      all:
+        audience_rating.gte: 6.3
+        audience_rating.lte: 6.4
+
+  non_r62:
+    template:
+      - name: tmp_rating
+        weight: 162
+    plex_search:
+      all:
+        audience_rating.gte: 6.2
+        audience_rating.lte: 6.3
+
+  non_r61:
+    template:
+      - name: tmp_rating
+        weight: 161
+    plex_search:
+      all:
+        audience_rating.gte: 6.1
+        audience_rating.lte: 6.2
+
+  non_r60:
+    template:
+      - name: tmp_rating
+        weight: 160
+    plex_search:
+      all:
+        audience_rating.gte: 6.0
+        audience_rating.lte: 6.1
+
+  non_r59:
+    template:
+      - name: tmp_rating
+        weight: 159
+    plex_search:
+      all:
+        audience_rating.gte: 5.9
+        audience_rating.lte: 6.0
+
+  non_r58:
+    template:
+      - name: tmp_rating
+        weight: 158
+    plex_search:
+      all:
+        audience_rating.gte: 5.8
+        audience_rating.lte: 5.9
+
+  non_r57:
+    template:
+      - name: tmp_rating
+        weight: 157
+    plex_search:
+      all:
+        audience_rating.gte: 5.7
+        audience_rating.lte: 5.8
+
+  non_r56:
+    template:
+      - name: tmp_rating
+        weight: 156
+    plex_search:
+      all:
+        audience_rating.gte: 5.6
+        audience_rating.lte: 5.7
+
+  non_r55:
+    template:
+      - name: tmp_rating
+        weight: 155
+    plex_search:
+      all:
+        audience_rating.gte: 5.5
+        audience_rating.lte: 5.6
+
+  non_r54:
+    template:
+      - name: tmp_rating
+        weight: 154
+    plex_search:
+      all:
+        audience_rating.gte: 5.4
+        audience_rating.lte: 5.5
+
+  non_r53:
+    template:
+      - name: tmp_rating
+        weight: 153
+    plex_search:
+      all:
+        audience_rating.gte: 5.3
+        audience_rating.lte: 5.4
+
+  non_r52:
+    template:
+      - name: tmp_rating
+        weight: 152
+    plex_search:
+      all:
+        audience_rating.gte: 5.2
+        audience_rating.lte: 5.3
+
+  non_r51:
+    template:
+      - name: tmp_rating
+        weight: 151
+    plex_search:
+      all:
+        audience_rating.gte: 5.1
+        audience_rating.lte: 5.2
+
+  non_r50:
+    template:
+      - name: tmp_rating
+        weight: 150
+    plex_search:
+      all:
+        audience_rating.gte: 5.0
+        audience_rating.lte: 5.1
+
+  non_r49:
+    template:
+      - name: tmp_rating
+        weight: 149
+    plex_search:
+      all:
+        audience_rating.gte: 4.9
+        audience_rating.lte: 5.0
+
+  non_r48:
+    template:
+      - name: tmp_rating
+        weight: 148
+    plex_search:
+      all:
+        audience_rating.gte: 4.8
+        audience_rating.lte: 4.9
+
+  non_r47:
+    template:
+      - name: tmp_rating
+        weight: 147
+    plex_search:
+      all:
+        audience_rating.gte: 4.7
+        audience_rating.lte: 4.8
+
+  non_r46:
+    template:
+      - name: tmp_rating
+        weight: 146
+    plex_search:
+      all:
+        audience_rating.gte: 4.6
+        audience_rating.lte: 4.7
+
+  non_r45:
+    template:
+      - name: tmp_rating
+        weight: 145
+    plex_search:
+      all:
+        audience_rating.gte: 4.5
+        audience_rating.lte: 4.6
+
+  non_r44:
+    template:
+      - name: tmp_rating
+        weight: 144
+    plex_search:
+      all:
+        audience_rating.gte: 4.4
+        audience_rating.lte: 4.5
+
+  non_r43:
+    template:
+      - name: tmp_rating
+        weight: 143
+    plex_search:
+      all:
+        audience_rating.gte: 4.3
+        audience_rating.lte: 4.4
+
+  non_r42:
+    template:
+      - name: tmp_rating
+        weight: 142
+    plex_search:
+      all:
+        audience_rating.gte: 4.2
+        audience_rating.lte: 4.3
+
+  non_r41:
+    template:
+      - name: tmp_rating
+        weight: 141
+    plex_search:
+      all:
+        audience_rating.gte: 4.1
+        audience_rating.lte: 4.2
+
+  non_r40:
+    template:
+      - name: tmp_rating
+        weight: 140
+    plex_search:
+      all:
+        audience_rating.gte: 4.0
+        audience_rating.lte: 4.1
+
+  non_r39:
+    template:
+      - name: tmp_rating
+        weight: 139
+    plex_search:
+      all:
+        audience_rating.gte: 3.9
+        audience_rating.lte: 4.0
+
+  non_r38:
+    template:
+      - name: tmp_rating
+        weight: 138
+    plex_search:
+      all:
+        audience_rating.gte: 3.8
+        audience_rating.lte: 3.9
+
+  non_r37:
+    template:
+      - name: tmp_rating
+        weight: 137
+    plex_search:
+      all:
+        audience_rating.gte: 3.7
+        audience_rating.lte: 3.8
+
+  non_r36:
+    template:
+      - name: tmp_rating
+        weight: 136
+    plex_search:
+      all:
+        audience_rating.gte: 3.6
+        audience_rating.lte: 3.7
+
+  non_r35:
+    template:
+      - name: tmp_rating
+        weight: 135
+    plex_search:
+      all:
+        audience_rating.gte: 3.5
+        audience_rating.lte: 3.6
+
+  non_r34:
+    template:
+      - name: tmp_rating
+        weight: 134
+    plex_search:
+      all:
+        audience_rating.gte: 3.4
+        audience_rating.lte: 3.5
+
+  non_r33:
+    template:
+      - name: tmp_rating
+        weight: 133
+    plex_search:
+      all:
+        audience_rating.gte: 3.3
+        audience_rating.lte: 3.4
+
+  non_r32:
+    template:
+      - name: tmp_rating
+        weight: 132
+    plex_search:
+      all:
+        audience_rating.gte: 3.2
+        audience_rating.lte: 3.3
+
+  non_r31:
+    template:
+      - name: tmp_rating
+        weight: 131
+    plex_search:
+      all:
+        audience_rating.gte: 3.1
+        audience_rating.lte: 3.2
+
+  non_r30:
+    template:
+      - name: tmp_rating
+        weight: 130
+    plex_search:
+      all:
+        audience_rating.gte: 3.0
+        audience_rating.lte: 3.1
+
+  non_r29:
+    template:
+      - name: tmp_rating
+        weight: 129
+    plex_search:
+      all:
+        audience_rating.gte: 2.9
+        audience_rating.lte: 3.0
+
+  non_r28:
+    template:
+      - name: tmp_rating
+        weight: 128
+    plex_search:
+      all:
+        audience_rating.gte: 2.8
+        audience_rating.lte: 2.9
+
+  non_r27:
+    template:
+      - name: tmp_rating
+        weight: 127
+    plex_search:
+      all:
+        audience_rating.gte: 2.7
+        audience_rating.lte: 2.8
+
+  non_r26:
+    template:
+      - name: tmp_rating
+        weight: 126
+    plex_search:
+      all:
+        audience_rating.gte: 2.6
+        audience_rating.lte: 2.7
+
+  non_r25:
+    template:
+      - name: tmp_rating
+        weight: 125
+    plex_search:
+      all:
+        audience_rating.gte: 2.5
+        audience_rating.lte: 2.6
+
+  non_r24:
+    template:
+      - name: tmp_rating
+        weight: 124
+    plex_search:
+      all:
+        audience_rating.gte: 2.4
+        audience_rating.lte: 2.5
+
+  non_r23:
+    template:
+      - name: tmp_rating
+        weight: 123
+    plex_search:
+      all:
+        audience_rating.gte: 2.3
+        audience_rating.lte: 2.4
+
+  non_r22:
+    template:
+      - name: tmp_rating
+        weight: 122
+    plex_search:
+      all:
+        audience_rating.gte: 2.2
+        audience_rating.lte: 2.3
+
+  non_r21:
+    template:
+      - name: tmp_rating
+        weight: 121
+    plex_search:
+      all:
+        audience_rating.gte: 2.1
+        audience_rating.lte: 2.2
+
+  non_r20:
+    template:
+      - name: tmp_rating
+        weight: 120
+    plex_search:
+      all:
+        audience_rating.gte: 2.0
+        audience_rating.lte: 2.1
+
+  non_r19:
+    template:
+      - name: tmp_rating
+        weight: 119
+    plex_search:
+      all:
+        audience_rating.gte: 1.9
+        audience_rating.lte: 2.0
+
+  non_r18:
+    template:
+      - name: tmp_rating
+        weight: 118
+    plex_search:
+      all:
+        audience_rating.gte: 1.8
+        audience_rating.lte: 1.9
+
+  non_r17:
+    template:
+      - name: tmp_rating
+        weight: 117
+    plex_search:
+      all:
+        audience_rating.gte: 1.7
+        audience_rating.lte: 1.8
+
+  non_r16:
+    template:
+      - name: tmp_rating
+        weight: 116
+    plex_search:
+      all:
+        audience_rating.gte: 1.6
+        audience_rating.lte: 1.7
+
+  non_r15:
+    template:
+      - name: tmp_rating
+        weight: 115
+    plex_search:
+      all:
+        audience_rating.gte: 1.5
+        audience_rating.lte: 1.6
+
+  non_r14:
+    template:
+      - name: tmp_rating
+        weight: 114
+    plex_search:
+      all:
+        audience_rating.gte: 1.4
+        audience_rating.lte: 1.5
+
+  non_r13:
+    template:
+      - name: tmp_rating
+        weight: 113
+    plex_search:
+      all:
+        audience_rating.gte: 1.3
+        audience_rating.lte: 1.4
+
+  non_r12:
+    template:
+      - name: tmp_rating
+        weight: 112
+    plex_search:
+      all:
+        audience_rating.gte: 1.2
+        audience_rating.lte: 1.3
+
+  non_r11:
+    template:
+      - name: tmp_rating
+        weight: 111
+    plex_search:
+      all:
+        audience_rating.gte: 1.1
+        audience_rating.lte: 1.2
+
+  non_r10:
+    template:
+      - name: tmp_rating
+        weight: 100
+    plex_search:
+      all:
+        audience_rating.gte: 1.0
+        audience_rating.lte: 1.1
+
+  non_r9:
+    template:
+      - name: tmp_rating
+        weight: 109
+    plex_search:
+      all:
+        audience_rating.gte: 0.9
+        audience_rating.lte: 1.0
+
+  non_r8:
+    template:
+      - name: tmp_rating
+        weight: 108
+    plex_search:
+      all:
+        audience_rating.gte: 0.8
+        audience_rating.lte: 0.9
+
+  non_r7:
+    template:
+      - name: tmp_rating
+        weight: 107
+    plex_search:
+      all:
+        audience_rating.gte: 0.7
+        audience_rating.lte: 0.8
+
+  non_r6:
+    template:
+      - name: tmp_rating
+        weight: 106
+    plex_search:
+      all:
+        audience_rating.gte: 0.6
+        audience_rating.lte: 0.7
+
+  non_r5:
+    template:
+      - name: tmp_rating
+        weight: 105
+    plex_search:
+      all:
+        audience_rating.gte: 0.5
+        audience_rating.lte: 0.6
+
+  non_r4:
+    template:
+      - name: tmp_rating
+        weight: 104
+    plex_search:
+      all:
+        audience_rating.gte: 0.4
+        audience_rating.lte: 0.5
+
+  non_r3:
+    template:
+      - name: tmp_rating
+        weight: 103
+    plex_search:
+      all:
+        audience_rating.gte: 0.3
+        audience_rating.lte: 0.4
+
+  non_r2:
+    template:
+      - name: tmp_rating
+        weight: 102
+    plex_search:
+      all:
+        audience_rating.gte: 0.2
+        audience_rating.lte: 0.3
+
+  non_r1:
+    template:
+      - name: tmp_rating
+        weight: 101
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 0.2
+
+  ### RATINGS ###
+
+

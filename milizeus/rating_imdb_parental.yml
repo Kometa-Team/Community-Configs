@@ -1,0 +1,189 @@
+##############################################################################
+##############################################################################
+
+templates:
+  tmp_rating_imdb:
+    collection_level: <<overlay_level>>
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+      horizontal_align: left
+      horizontal_offset: 7
+      vertical_align: bottom
+      vertical_offset: 7
+    overlay:
+      name: <<overlay_name>>
+      #weight: <<weight>>
+      #group: rating_imdb
+      horizontal_align: <<horizontal_align>>
+      horizontal_offset: <<horizontal_offset>>
+      vertical_align: <<vertical_align>>
+      vertical_offset: <<vertical_offset>>
+
+
+##############################################################################
+##############################################################################
+
+
+overlays:
+
+#  backdrop:
+#    overlay:
+#      name: backdrop
+#      horizontal_align: left
+#      horizontal_offset: 65
+#      vertical_align: bottom
+#      vertical_offset: 24 # = audience
+#      back_width: 337
+#      back_height: 99
+#      back_color: '#00000000'
+#      back_radius: 8
+#    plex_all: true
+
+  ### IMDB PARENTAL RATING ### 321 x 83
+
+  non_nudity_none:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Nudity:None"
+
+  non_nudity_mild:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Nudity:Mild"
+
+  non_nudity_moderate:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Nudity:Moderate"
+
+  non_nudity_severe:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Nudity:Severe"
+
+  non_profanity_none:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Profanity:None"
+
+  non_profanity_mild:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Profanity:Mild"
+
+  non_profanity_moderate:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Profanity:Moderate"
+
+  non_profanity_severe:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Profanity:Severe"
+
+  non_alcohol_none:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Alcohol:None"
+
+  non_alcohol_mild:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Alcohol:Mild"
+
+  non_alcohol_moderate:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Alcohol:Moderate"
+
+  non_alcohol_severe:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Alcohol:Severe"
+
+  non_violence_none:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Violence:None"
+
+  non_violence_mild:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Violence:Mild"
+
+  non_violence_moderate:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Violence:Moderate"
+
+  non_violence_severe:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Violence:Severe"
+
+  non_fright_none:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Frightening:None"
+
+  non_fright_mild:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Frightening:Mild"
+
+  non_fright_moderate:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Frightening:Moderate"
+
+  non_fright_severe:
+    template:
+      - name: tmp_rating_imdb
+    plex_search:
+      all:
+        label: "Frightening:Severe"
+
+  ### IMDB PARENTAL RATING ###
+
+
+
