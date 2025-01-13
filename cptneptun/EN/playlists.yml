@@ -1,0 +1,8 @@
+playlists:
+  Arrowverse (chronological):
+    sync_mode: sync
+    libraries: TV Shows
+    trakt_list: https://trakt.tv/users/donxy/lists/arrowverse
+    filters:
+      plays.lt: 1
+    summary: The Arrowverse is an American superhero media franchise and a shared universe that is centered on various interconnected television series based on DC Comics superhero characters.

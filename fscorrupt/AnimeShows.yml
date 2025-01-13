@@ -1,0 +1,69 @@
+templates:
+  Chart Alpha:
+    sort_title: +<<num>>_<<collection_name>>
+    sync_mode: sync
+    collection_order: alpha
+    collection_minimum: 3
+    delete_below_minimum: true
+  Chart:
+    sort_title: +<<num>>_<<collection_name>>
+    sync_mode: sync
+  network:
+    optional:
+      - network
+    tmdb_network: <<network>>
+    sort_title: +2_<<collection_name>>
+    sync_mode: sync
+
+collections:
+#  4K Overlay:
+#    plex_search:
+#      all:
+#        resolution: 4K
+#    item_overlay: 4K-Mini
+#    item_assets: true
+#    build_collection: false
+######################################################
+#                       Charts                       #
+######################################################
+  Plex Popular:
+    template: { name: Chart, num: 2 }
+    tautulli_popular:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    tautulli_watched:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+    summary: Popular Shows on Plex
+    url_poster: https://i.imgur.com/0xmqc5a.png
+    schedule: daily
+  Trending:
+    template: {name: Chart Alpha, num: 4}
+    trakt_trending: 40
+    tmdb_trending_daily: 40
+    tmdb_trending_weekly: 40
+    summary: Movies Trending across the internet, according to https://trakt.tv/movies/trending.
+    url_poster: https://i.imgur.com/oOS46kt.jpg
+    schedule: daily
+  Popular:
+    template: {name: Chart Alpha, num: 4}
+    tmdb_popular: 40
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
+      limit: 40
+    summary: Popular Movies across the internet, according to https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short.
+    url_poster: https://i.imgur.com/U3OaYtB.jpg
+    schedule: daily
+  Top Rated:
+    template: {name: Chart Alpha, num: 5}
+    tmdb_top_rated: 250
+    summary: Top Rated Movies across the internet
+    url_poster: https://i.imgur.com/VvfdUHn.jpg
+    schedule: daily
+  Emmy Winners:
+    template: { name: Chart, num: 5 }
+    imdb_list: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&groups=emmy_winner
+    summary: Emmy Winning Shows
+    schedule: weekly (sunday)

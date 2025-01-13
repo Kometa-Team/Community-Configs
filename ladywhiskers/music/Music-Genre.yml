@@ -1,0 +1,3769 @@
+templates:
+  Genre:
+    builder_level: album
+    sort_title: +_<<collection_name>>
+    sync_mode: sync
+#    collection_order: alpha
+    smart_filter:
+      miminum_items: 2
+      delete_below_minimum: true
+#      limit: 50
+      sort_by: title.asc
+#      any:
+      all:
+        album_genre: <<genres>>
+
+collections:
+######################################################
+#                  Genre Collections                 #
+######################################################
+  2 Tone:
+    template: {name: Genre, genres: 2 Tone}
+  2-Step:
+    template: {name: Genre, genres: 2-Step}
+  Aak:
+    template: {name: Genre, genres: Aak}
+  Abhang:
+    template: {name: Genre, genres: Abhang}
+  Aboio:
+    template: {name: Genre, genres: Aboio}
+  Abstract Hip Hop:
+    template: {name: Genre, genres: Abstract Hip Hop}
+  Acid Breaks:
+    template: {name: Genre, genres: Acid Breaks}
+  Acid House:
+    template: {name: Genre, genres: Acid House}
+  Acid Jazz:
+    template: {name: Genre, genres: Acid Jazz}
+  Acid Rock:
+    template: {name: Genre, genres: Acid Rock}
+  Acid Techno:
+    template: {name: Genre, genres: Acid Techno}
+  Acid Trance:
+    template: {name: Genre, genres: Acid Trance}
+  Acidcore:
+    template: {name: Genre, genres: Acidcore}
+  Acousmatic:
+    template: {name: Genre, genres: Acousmatic}
+  Acoustic Blues:
+    template: {name: Genre, genres: Acoustic Blues}
+  Acoustic Chicago Blues:
+    template: {name: Genre, genres: Acoustic Chicago Blues}
+  Acoustic Rock:
+    template: {name: Genre, genres: Acoustic Rock}
+  Acoustic Texas Blues:
+    template: {name: Genre, genres: Acoustic Texas Blues}
+  Adhunik Geet:
+    template: {name: Genre, genres: Adhunik Geet}
+  Afoxê:
+    template: {name: Genre, genres: Afoxê}
+  African Blues:
+    template: {name: Genre, genres: African Blues}
+  Afro House:
+    template: {name: Genre, genres: Afro House}
+  Afro Rock:
+    template: {name: Genre, genres: Afro Rock}
+  Afro Trap:
+    template: {name: Genre, genres: Afro Trap}
+  Afro-Cuban Jazz:
+    template: {name: Genre, genres: Afro-Cuban Jazz}
+  Afro-Funk:
+    template: {name: Genre, genres: Afro-Funk}
+  Afro-Jazz:
+    template: {name: Genre, genres: Afro-Jazz}
+  Afro-Zouk:
+    template: {name: Genre, genres: Afro-Zouk}
+  Afrobeat:
+    template: {name: Genre, genres: Afrobeat}
+  Afrobeats:
+    template: {name: Genre, genres: Afrobeats}
+  Afropiano:
+    template: {name: Genre, genres: Afropiano}
+  Afroswing:
+    template: {name: Genre, genres: Afroswing}
+  Agbadza:
+    template: {name: Genre, genres: Agbadza}
+  Agbekor:
+    template: {name: Genre, genres: Agbekor}
+  Aggrotech:
+    template: {name: Genre, genres: Aggrotech}
+  Ahwash:
+    template: {name: Genre, genres: Ahwash}
+  Aita:
+    template: {name: Genre, genres: Aita}
+  Akishibu-Kei:
+    template: {name: Genre, genres: Akishibu-Kei}
+  Al Jeel:
+    template: {name: Genre, genres: Al Jeel}
+  Algerian Chaabi:
+    template: {name: Genre, genres: Algerian Chaabi}
+  Algorave:
+    template: {name: Genre, genres: Algorave}
+  Alloukou:
+    template: {name: Genre, genres: Alloukou}
+  Alpenrock:
+    template: {name: Genre, genres: Alpenrock}
+  Alté:
+    template: {name: Genre, genres: Alté}
+  Alternative Country:
+    template: {name: Genre, genres: Alternative Country}
+  Alternative Dance:
+    template: {name: Genre, genres: Alternative Dance}
+  Alternative Folk:
+    template: {name: Genre, genres: Alternative Folk}
+  Alternative Hip Hop:
+    template: {name: Genre, genres: Alternative Hip Hop}
+  Alternative Metal:
+    template: {name: Genre, genres: Alternative Metal}
+  Alternative Pop:
+    template: {name: Genre, genres: Alternative Pop}
+  Alternative Punk:
+    template: {name: Genre, genres: Alternative Punk}
+  Alternative R&B:
+    template: {name: Genre, genres: Alternative R&B}
+  Alternative Rock:
+    template: {name: Genre, genres: Alternative Rock}
+  Amapiano:
+    template: {name: Genre, genres: Amapiano}
+  Ambasse Bey:
+    template: {name: Genre, genres: Ambasse Bey}
+  Ambient:
+    template: {name: Genre, genres: Ambient}
+  Ambient Americana:
+    template: {name: Genre, genres: Ambient Americana}
+  Ambient Dub:
+    template: {name: Genre, genres: Ambient Dub}
+  Ambient House:
+    template: {name: Genre, genres: Ambient House}
+  Ambient Noise Wall:
+    template: {name: Genre, genres: Ambient Noise Wall}
+  Ambient Pop:
+    template: {name: Genre, genres: Ambient Pop}
+  Ambient Techno:
+    template: {name: Genre, genres: Ambient Techno}
+  Ambient Trance:
+    template: {name: Genre, genres: Ambient Trance}
+  Ambrosian Chant:
+    template: {name: Genre, genres: Ambrosian Chant}
+  American Primitive Guitar:
+    template: {name: Genre, genres: American Primitive Guitar}
+  Americana:
+    template: {name: Genre, genres: Americana}
+  Anarcho-Punk:
+    template: {name: Genre, genres: Anarcho-Punk}
+  Anatolian Rock:
+    template: {name: Genre, genres: Anatolian Rock}
+  Andalusian Classical:
+    template: {name: Genre, genres: Andalusian Classical}
+  Andean New Age:
+    template: {name: Genre, genres: Andean New Age}
+  Anglican Chant:
+    template: {name: Genre, genres: Anglican Chant}
+  Animal Sounds:
+    template: {name: Genre, genres: Animal Sounds}
+  Anti-Folk:
+    template: {name: Genre, genres: Anti-Folk}
+  Aor:
+    template: {name: Genre, genres: Aor}
+  Apala:
+    template: {name: Genre, genres: Apala}
+  Appalachian Folk:
+    template: {name: Genre, genres: Appalachian Folk}
+  Aquacrunk:
+    template: {name: Genre, genres: Aquacrunk}
+  Arabesk:
+    template: {name: Genre, genres: Arabesk}
+  Arabesk Rap:
+    template: {name: Genre, genres: Arabesk Rap}
+  Arena Rock:
+    template: {name: Genre, genres: Arena Rock}
+  Arrocha:
+    template: {name: Genre, genres: Arrocha}
+  Arrocha Funk:
+    template: {name: Genre, genres: Arrocha Funk}
+  Arrocha Sertanejo:
+    template: {name: Genre, genres: Arrocha Sertanejo}
+  Arrochadeira:
+    template: {name: Genre, genres: Arrochadeira}
+  Ars Antiqua:
+    template: {name: Genre, genres: Ars Antiqua}
+  Ars Nova:
+    template: {name: Genre, genres: Ars Nova}
+  Ars Subtilior:
+    template: {name: Genre, genres: Ars Subtilior}
+  Art Pop:
+    template: {name: Genre, genres: Art Pop}
+  Art Punk:
+    template: {name: Genre, genres: Art Punk}
+  Art Rock:
+    template: {name: Genre, genres: Art Rock}
+  Art Song:
+    template: {name: Genre, genres: Art Song}
+  Artcore:
+    template: {name: Genre, genres: Artcore}
+  Asian Rock:
+    template: {name: Genre, genres: Asian Rock}
+  Asmr:
+    template: {name: Genre, genres: Asmr}
+  Assiko:
+    template: {name: Genre, genres: Assiko}
+  Atmospheric Black Metal:
+    template: {name: Genre, genres: Atmospheric Black Metal}
+  Atmospheric Drum And Bass:
+    template: {name: Genre, genres: Atmospheric Drum And Bass}
+  Atmospheric Sludge Metal:
+    template: {name: Genre, genres: Atmospheric Sludge Metal}
+  Audio Drama:
+    template: {name: Genre, genres: Audio Drama}
+  Avant-Folk:
+    template: {name: Genre, genres: Avant-Folk}
+  Avant-Garde:
+    template: {name: Genre, genres: Avant-Garde}
+  Avant-Garde Jazz:
+    template: {name: Genre, genres: Avant-Garde Jazz}
+  Avant-Garde Metal:
+    template: {name: Genre, genres: Avant-Garde Metal}
+  Avant-Garde Pop:
+    template: {name: Genre, genres: Avant-Garde Pop}
+  Avant-Prog:
+    template: {name: Genre, genres: Avant-Prog}
+  Avanzada:
+    template: {name: Genre, genres: Avanzada}
+  Avtorskaya Pesnya:
+    template: {name: Genre, genres: Avtorskaya Pesnya}
+  Axé:
+    template: {name: Genre, genres: Axé}
+  Bachata:
+    template: {name: Genre, genres: Bachata}
+  Bachatón:
+    template: {name: Genre, genres: Bachatón}
+  Bagad:
+    template: {name: Genre, genres: Bagad}
+  Baião:
+    template: {name: Genre, genres: Baião}
+  Baila:
+    template: {name: Genre, genres: Baila}
+  Baisha Xiyue:
+    template: {name: Genre, genres: Baisha Xiyue}
+  Baithak Gana:
+    template: {name: Genre, genres: Baithak Gana}
+  Bakersfield Sound:
+    template: {name: Genre, genres: Bakersfield Sound}
+  Balani Show:
+    template: {name: Genre, genres: Balani Show}
+  Balearic Beat:
+    template: {name: Genre, genres: Balearic Beat}
+  Balearic Trance:
+    template: {name: Genre, genres: Balearic Trance}
+  Balinese Gamelan:
+    template: {name: Genre, genres: Balinese Gamelan}
+  Balitaw:
+    template: {name: Genre, genres: Balitaw}
+  Ballad:
+    template: {name: Genre, genres: Ballad}
+  Ballad Opera:
+    template: {name: Genre, genres: Ballad Opera}
+  Ballet:
+    template: {name: Genre, genres: Ballet}
+  Ballet De Cour:
+    template: {name: Genre, genres: Ballet De Cour}
+  Ballroom House:
+    template: {name: Genre, genres: Ballroom House}
+  Baltimore Club:
+    template: {name: Genre, genres: Baltimore Club}
+  Bambuco:
+    template: {name: Genre, genres: Bambuco}
+  Banda Sinaloense:
+    template: {name: Genre, genres: Banda Sinaloense}
+  Bandari:
+    template: {name: Genre, genres: Bandari}
+  Bandinha:
+    template: {name: Genre, genres: Bandinha}
+  Barber Beats:
+    template: {name: Genre, genres: Barber Beats}
+  Barbershop:
+    template: {name: Genre, genres: Barbershop}
+  Bard Rock:
+    template: {name: Genre, genres: Bard Rock}
+  Bardcore:
+    template: {name: Genre, genres: Bardcore}
+  Baroque:
+    template: {name: Genre, genres: Baroque}
+  Baroque Pop:
+    template: {name: Genre, genres: Baroque Pop}
+  Baroque Suite:
+    template: {name: Genre, genres: Baroque Suite}
+  Bashment Soca:
+    template: {name: Genre, genres: Bashment Soca}
+  Bass House:
+    template: {name: Genre, genres: Bass House}
+  Bassline:
+    template: {name: Genre, genres: Bassline}
+  Batida:
+    template: {name: Genre, genres: Batida}
+  Batidão Romântico:
+    template: {name: Genre, genres: Batidão Romântico}
+  Battle Rap:
+    template: {name: Genre, genres: Battle Rap}
+  Battle Record:
+    template: {name: Genre, genres: Battle Record}
+  Batucada:
+    template: {name: Genre, genres: Batucada}
+  Batuque:
+    template: {name: Genre, genres: Batuque}
+  Baul Gaan:
+    template: {name: Genre, genres: Baul Gaan}
+  Beat Bruxaria:
+    template: {name: Genre, genres: Beat Bruxaria}
+  Beat Music:
+    template: {name: Genre, genres: Beat Music}
+  Beat Poetry:
+    template: {name: Genre, genres: Beat Poetry}
+  Beatboxing:
+    template: {name: Genre, genres: Beatboxing}
+  Beatdown Hardcore:
+    template: {name: Genre, genres: Beatdown Hardcore}
+  Bebop:
+    template: {name: Genre, genres: Bebop}
+  Bedroom Pop:
+    template: {name: Genre, genres: Bedroom Pop}
+  Beijing Opera:
+    template: {name: Genre, genres: Beijing Opera}
+  Bélé:
+    template: {name: Genre, genres: Bélé}
+  Belgian Techno:
+    template: {name: Genre, genres: Belgian Techno}
+  Bend-Skin:
+    template: {name: Genre, genres: Bend-Skin}
+  Beneventan Chant:
+    template: {name: Genre, genres: Beneventan Chant}
+  Benga:
+    template: {name: Genre, genres: Benga}
+  Benna:
+    template: {name: Genre, genres: Benna}
+  Beompae:
+    template: {name: Genre, genres: Beompae}
+  Bérite Club:
+    template: {name: Genre, genres: Bérite Club}
+  Berlin School:
+    template: {name: Genre, genres: Berlin School}
+  Bhajan:
+    template: {name: Genre, genres: Bhajan}
+  Bhangra:
+    template: {name: Genre, genres: Bhangra}
+  Bhavageethe:
+    template: {name: Genre, genres: Bhavageethe}
+  Big Band:
+    template: {name: Genre, genres: Big Band}
+  Big Beat:
+    template: {name: Genre, genres: Big Beat}
+  Big Room House:
+    template: {name: Genre, genres: Big Room House}
+  Big Room Trance:
+    template: {name: Genre, genres: Big Room Trance}
+  Biguine:
+    template: {name: Genre, genres: Biguine}
+  Bikutsi:
+    template: {name: Genre, genres: Bikutsi}
+  Binaural Beats:
+    template: {name: Genre, genres: Binaural Beats}
+  Biraha:
+    template: {name: Genre, genres: Biraha}
+  Birdsong:
+    template: {name: Genre, genres: Birdsong}
+  Birmingham Sound:
+    template: {name: Genre, genres: Birmingham Sound}
+  Bit Music:
+    template: {name: Genre, genres: Bit Music}
+  Bitpop:
+    template: {name: Genre, genres: Bitpop}
+  Black 'N' Roll:
+    template: {name: Genre, genres: Black 'N' Roll}
+  Black Ambient:
+    template: {name: Genre, genres: Black Ambient}
+  Black Metal:
+    template: {name: Genre, genres: Black Metal}
+  Black Midi:
+    template: {name: Genre, genres: Black Midi}
+  Black Noise:
+    template: {name: Genre, genres: Black Noise}
+  Blackened Crust:
+    template: {name: Genre, genres: Blackened Crust}
+  Blackened Death Metal:
+    template: {name: Genre, genres: Blackened Death Metal}
+  Blackgaze:
+    template: {name: Genre, genres: Blackgaze}
+  Bleep Techno:
+    template: {name: Genre, genres: Bleep Techno}
+  Blue-Eyed Soul:
+    template: {name: Genre, genres: Blue-Eyed Soul}
+  Bluegrass:
+    template: {name: Genre, genres: Bluegrass}
+  Bluegrass Gospel:
+    template: {name: Genre, genres: Bluegrass Gospel}
+  Blues:
+    template: {name: Genre, genres: Blues}
+  Blues Rock:
+    template: {name: Genre, genres: Blues Rock}
+  Bocet:
+    template: {name: Genre, genres: Bocet}
+  Boduberu:
+    template: {name: Genre, genres: Boduberu}
+  Boedra:
+    template: {name: Genre, genres: Boedra}
+  Bogino Duu:
+    template: {name: Genre, genres: Bogino Duu}
+  Bolero:
+    template: {name: Genre, genres: Bolero}
+  Bolero Español:
+    template: {name: Genre, genres: Bolero Español}
+  Bolero Son:
+    template: {name: Genre, genres: Bolero Son}
+  Bolero-Beat:
+    template: {name: Genre, genres: Bolero-Beat}
+  Bomba:
+    template: {name: Genre, genres: Bomba}
+  Bomba Del Chota:
+    template: {name: Genre, genres: Bomba Del Chota}
+  Bongo Flava:
+    template: {name: Genre, genres: Bongo Flava}
+  Boogaloo:
+    template: {name: Genre, genres: Boogaloo}
+  Boogie:
+    template: {name: Genre, genres: Boogie}
+  Boogie Rock:
+    template: {name: Genre, genres: Boogie Rock}
+  Boogie-Woogie:
+    template: {name: Genre, genres: Boogie-Woogie}
+  Boom Bap:
+    template: {name: Genre, genres: Boom Bap}
+  Bossa Nova:
+    template: {name: Genre, genres: Bossa Nova}
+  Bounce:
+    template: {name: Genre, genres: Bounce}
+  Bouncy Techno:
+    template: {name: Genre, genres: Bouncy Techno}
+  Bouyon:
+    template: {name: Genre, genres: Bouyon}
+  Brass Band:
+    template: {name: Genre, genres: Brass Band}
+  Brazilian Bass:
+    template: {name: Genre, genres: Brazilian Bass}
+  Break-In:
+    template: {name: Genre, genres: Break-In}
+  Breakbeat:
+    template: {name: Genre, genres: Breakbeat}
+  Breakbeat Hardcore:
+    template: {name: Genre, genres: Breakbeat Hardcore}
+  Breakbeat Kota:
+    template: {name: Genre, genres: Breakbeat Kota}
+  Breakcore:
+    template: {name: Genre, genres: Breakcore}
+  Breaks:
+    template: {name: Genre, genres: Breaks}
+  Breakstep:
+    template: {name: Genre, genres: Breakstep}
+  Brega:
+    template: {name: Genre, genres: Brega}
+  Brega Calypso:
+    template: {name: Genre, genres: Brega Calypso}
+  Brega Funk:
+    template: {name: Genre, genres: Brega Funk}
+  Briddim:
+    template: {name: Genre, genres: Briddim}
+  Brill Building:
+    template: {name: Genre, genres: Brill Building}
+  Brit Funk:
+    template: {name: Genre, genres: Brit Funk}
+  Britcore:
+    template: {name: Genre, genres: Britcore}
+  British Blues:
+    template: {name: Genre, genres: British Blues}
+  British Brass Band:
+    template: {name: Genre, genres: British Brass Band}
+  British Folk Rock:
+    template: {name: Genre, genres: British Folk Rock}
+  British Rhythm & Blues:
+    template: {name: Genre, genres: British Rhythm & Blues}
+  Britpop:
+    template: {name: Genre, genres: Britpop}
+  Bro-Country:
+    template: {name: Genre, genres: Bro-Country}
+  Broadband Noise:
+    template: {name: Genre, genres: Broadband Noise}
+  Broken Beat:
+    template: {name: Genre, genres: Broken Beat}
+  Broken Transmission:
+    template: {name: Genre, genres: Broken Transmission}
+  Brostep:
+    template: {name: Genre, genres: Brostep}
+  Brutal Death Metal:
+    template: {name: Genre, genres: Brutal Death Metal}
+  Brutal Prog:
+    template: {name: Genre, genres: Brutal Prog}
+  Bubblegum Bass:
+    template: {name: Genre, genres: Bubblegum Bass}
+  Bubblegum Dance:
+    template: {name: Genre, genres: Bubblegum Dance}
+  Bubblegum Pop:
+    template: {name: Genre, genres: Bubblegum Pop}
+  Bubbling:
+    template: {name: Genre, genres: Bubbling}
+  Bubbling House:
+    template: {name: Genre, genres: Bubbling House}
+  Budots:
+    template: {name: Genre, genres: Budots}
+  Bulería:
+    template: {name: Genre, genres: Bulería}
+  Bullerengue:
+    template: {name: Genre, genres: Bullerengue}
+  Burger-Highlife:
+    template: {name: Genre, genres: Burger-Highlife}
+  Burmese Classical:
+    template: {name: Genre, genres: Burmese Classical}
+  Burmese Mono:
+    template: {name: Genre, genres: Burmese Mono}
+  Burmese Stereo:
+    template: {name: Genre, genres: Burmese Stereo}
+  Burning Spirits:
+    template: {name: Genre, genres: Burning Spirits}
+  Bytebeat:
+    template: {name: Genre, genres: Bytebeat}
+  Byzantine Chant:
+    template: {name: Genre, genres: Byzantine Chant}
+  C-Pop:
+    template: {name: Genre, genres: C-Pop}
+  C86:
+    template: {name: Genre, genres: C86}
+  Ca Trù:
+    template: {name: Genre, genres: Ca Trù}
+  Cabaret:
+    template: {name: Genre, genres: Cabaret}
+  Cabo Zouk:
+    template: {name: Genre, genres: Cabo Zouk}
+  Cadence Lypso:
+    template: {name: Genre, genres: Cadence Lypso}
+  Cadence Rampa:
+    template: {name: Genre, genres: Cadence Rampa}
+  Cải Lương:
+    template: {name: Genre, genres: Cải Lương}
+  Cajun:
+    template: {name: Genre, genres: Cajun}
+  Cakewalk:
+    template: {name: Genre, genres: Cakewalk}
+  Čalgija:
+    template: {name: Genre, genres: Čalgija}
+  Calipso Venezolano:
+    template: {name: Genre, genres: Calipso Venezolano}
+  Calypso:
+    template: {name: Genre, genres: Calypso}
+  Campursari:
+    template: {name: Genre, genres: Campursari}
+  Campus Folk:
+    template: {name: Genre, genres: Campus Folk}
+  Canción Melódica:
+    template: {name: Genre, genres: Canción Melódica}
+  Candombe:
+    template: {name: Genre, genres: Candombe}
+  Candombe Beat:
+    template: {name: Genre, genres: Candombe Beat}
+  Cantata:
+    template: {name: Genre, genres: Cantata}
+  Cante Alentejano:
+    template: {name: Genre, genres: Cante Alentejano}
+  Canterbury Scene:
+    template: {name: Genre, genres: Canterbury Scene}
+  Canto A Lo Poeta:
+    template: {name: Genre, genres: Canto A Lo Poeta}
+  Canto Cardenche:
+    template: {name: Genre, genres: Canto Cardenche}
+  Cantonese Opera:
+    template: {name: Genre, genres: Cantonese Opera}
+  Cantopop:
+    template: {name: Genre, genres: Cantopop}
+  Cantoria:
+    template: {name: Genre, genres: Cantoria}
+  Cantu A Chiterra:
+    template: {name: Genre, genres: Cantu A Chiterra}
+  Cantu A Tenore:
+    template: {name: Genre, genres: Cantu A Tenore}
+  Canzone D'Autore:
+    template: {name: Genre, genres: Canzone D'Autore}
+  Canzone Napoletana:
+    template: {name: Genre, genres: Canzone Napoletana}
+  Canzone Neomelodica:
+    template: {name: Genre, genres: Canzone Neomelodica}
+  Cape Breton Fiddling:
+    template: {name: Genre, genres: Cape Breton Fiddling}
+  Cape Jazz:
+    template: {name: Genre, genres: Cape Jazz}
+  Caporal:
+    template: {name: Genre, genres: Caporal}
+  Carimbó:
+    template: {name: Genre, genres: Carimbó}
+  Carnatic Classical:
+    template: {name: Genre, genres: Carnatic Classical}
+  Carnavalito:
+    template: {name: Genre, genres: Carnavalito}
+  Carranga:
+    template: {name: Genre, genres: Carranga}
+  Celtic:
+    template: {name: Genre, genres: Celtic}
+  Celtic Chant:
+    template: {name: Genre, genres: Celtic Chant}
+  Celtic Electronica:
+    template: {name: Genre, genres: Celtic Electronica}
+  Celtic Metal:
+    template: {name: Genre, genres: Celtic Metal}
+  Celtic New Age:
+    template: {name: Genre, genres: Celtic New Age}
+  Celtic Punk:
+    template: {name: Genre, genres: Celtic Punk}
+  Celtic Rock:
+    template: {name: Genre, genres: Celtic Rock}
+  Central Asian Throat Singing:
+    template: {name: Genre, genres: Central Asian Throat Singing}
+  Chacarera:
+    template: {name: Genre, genres: Chacarera}
+  Chachachá:
+    template: {name: Genre, genres: Chachachá}
+  Chalga:
+    template: {name: Genre, genres: Chalga}
+  Chamamé:
+    template: {name: Genre, genres: Chamamé}
+  Chamarrita Açoriana:
+    template: {name: Genre, genres: Chamarrita Açoriana}
+  Chamarrita Rioplatense:
+    template: {name: Genre, genres: Chamarrita Rioplatense}
+  Chamber Folk:
+    template: {name: Genre, genres: Chamber Folk}
+  Chamber Pop:
+    template: {name: Genre, genres: Chamber Pop}
+  Champeta:
+    template: {name: Genre, genres: Champeta}
+  Changa Tuki:
+    template: {name: Genre, genres: Changa Tuki}
+  Changüí:
+    template: {name: Genre, genres: Changüí}
+  Chanson À Texte:
+    template: {name: Genre, genres: Chanson À Texte}
+  Chanson Française:
+    template: {name: Genre, genres: Chanson Française}
+  Chanson Réaliste:
+    template: {name: Genre, genres: Chanson Réaliste}
+  Chap Hop:
+    template: {name: Genre, genres: Chap Hop}
+  Charanga:
+    template: {name: Genre, genres: Charanga}
+  Chazzanut:
+    template: {name: Genre, genres: Chazzanut}
+  Chèo:
+    template: {name: Genre, genres: Chèo}
+  Chicago Blues:
+    template: {name: Genre, genres: Chicago Blues}
+  Chicago Bop:
+    template: {name: Genre, genres: Chicago Bop}
+  Chicago Drill:
+    template: {name: Genre, genres: Chicago Drill}
+  Chicago House:
+    template: {name: Genre, genres: Chicago House}
+  Chicago Soul:
+    template: {name: Genre, genres: Chicago Soul}
+  Chicano Rap:
+    template: {name: Genre, genres: Chicano Rap}
+  Chilena:
+    template: {name: Genre, genres: Chilena}
+  Chillout:
+    template: {name: Genre, genres: Chillout}
+  Chillstep:
+    template: {name: Genre, genres: Chillstep}
+  Chillsynth:
+    template: {name: Genre, genres: Chillsynth}
+  Chillwave:
+    template: {name: Genre, genres: Chillwave}
+  Chimurenga:
+    template: {name: Genre, genres: Chimurenga}
+  Chinese Classical:
+    template: {name: Genre, genres: Chinese Classical}
+  Chinese Opera:
+    template: {name: Genre, genres: Chinese Opera}
+  Chinese Revolutionary Opera:
+    template: {name: Genre, genres: Chinese Revolutionary Opera}
+  Chipmunk Soul:
+    template: {name: Genre, genres: Chipmunk Soul}
+  Chiptune:
+    template: {name: Genre, genres: Chiptune}
+  Chopped And Screwed:
+    template: {name: Genre, genres: Chopped And Screwed}
+  Choral Symphony:
+    template: {name: Genre, genres: Choral Symphony}
+  Choro:
+    template: {name: Genre, genres: Choro}
+  Chotis Madrileño:
+    template: {name: Genre, genres: Chotis Madrileño}
+  Christian Hip Hop:
+    template: {name: Genre, genres: Christian Hip Hop}
+  Christian Metal:
+    template: {name: Genre, genres: Christian Metal}
+  Christian Rock:
+    template: {name: Genre, genres: Christian Rock}
+  Christmas Music:
+    template: {name: Genre, genres: Christmas Music}
+  Church Music:
+    template: {name: Genre, genres: Church Music}
+  Chutney:
+    template: {name: Genre, genres: Chutney}
+  Chutney Soca:
+    template: {name: Genre, genres: Chutney Soca}
+  Cilokaq:
+    template: {name: Genre, genres: Cilokaq}
+  Cinematic Classical:
+    template: {name: Genre, genres: Cinematic Classical}
+  Ciranda:
+    template: {name: Genre, genres: Ciranda}
+  Circus March:
+    template: {name: Genre, genres: Circus March}
+  City Pop:
+    template: {name: Genre, genres: City Pop}
+  Classic Blues:
+    template: {name: Genre, genres: Classic Blues}
+  Classic Country:
+    template: {name: Genre, genres: Classic Country}
+  Classic Jazz:
+    template: {name: Genre, genres: Classic Jazz}
+  Classic Rock:
+    template: {name: Genre, genres: Classic Rock}
+  Classical:
+    template: {name: Genre, genres: Classical}
+  Classical Crossover:
+    template: {name: Genre, genres: Classical Crossover}
+  Classical Period:
+    template: {name: Genre, genres: Classical Period}
+  Close Harmony:
+    template: {name: Genre, genres: Close Harmony}
+  Cloud Rap:
+    template: {name: Genre, genres: Cloud Rap}
+  Club:
+    template: {name: Genre, genres: Club}
+  Cocktail Nation:
+    template: {name: Genre, genres: Cocktail Nation}
+  Coco:
+    template: {name: Genre, genres: Coco}
+  Coladeira:
+    template: {name: Genre, genres: Coladeira}
+  Coldwave:
+    template: {name: Genre, genres: Coldwave}
+  Colindă:
+    template: {name: Genre, genres: Colindă}
+  Colour Bass:
+    template: {name: Genre, genres: Colour Bass}
+  Comedy:
+    template: {name: Genre, genres: Comedy}
+  Comedy Hip Hop:
+    template: {name: Genre, genres: Comedy Hip Hop}
+  Comedy Rock:
+    template: {name: Genre, genres: Comedy Rock}
+  Comfy Synth:
+    template: {name: Genre, genres: Comfy Synth}
+  Compas:
+    template: {name: Genre, genres: Compas}
+  Complextro:
+    template: {name: Genre, genres: Complextro}
+  Concert Band:
+    template: {name: Genre, genres: Concert Band}
+  Concerto:
+    template: {name: Genre, genres: Concerto}
+  Concerto For Orchestra:
+    template: {name: Genre, genres: Concerto For Orchestra}
+  Concerto Grosso:
+    template: {name: Genre, genres: Concerto Grosso}
+  Conducted Improvisation:
+    template: {name: Genre, genres: Conducted Improvisation}
+  Conga:
+    template: {name: Genre, genres: Conga}
+  Congolese Rumba:
+    template: {name: Genre, genres: Congolese Rumba}
+  Conscious Hip Hop:
+    template: {name: Genre, genres: Conscious Hip Hop}
+  Contemporary Christian:
+    template: {name: Genre, genres: Contemporary Christian}
+  Contemporary Classical:
+    template: {name: Genre, genres: Contemporary Classical}
+  Contemporary Country:
+    template: {name: Genre, genres: Contemporary Country}
+  Contemporary Folk:
+    template: {name: Genre, genres: Contemporary Folk}
+  Contemporary Gospel:
+    template: {name: Genre, genres: Contemporary Gospel}
+  Contemporary Jazz:
+    template: {name: Genre, genres: Contemporary Jazz}
+  Contemporary R&B:
+    template: {name: Genre, genres: Contemporary R&B}
+  Contra:
+    template: {name: Genre, genres: Contra}
+  Cool Jazz:
+    template: {name: Genre, genres: Cool Jazz}
+  Coon Song:
+    template: {name: Genre, genres: Coon Song}
+  Copla:
+    template: {name: Genre, genres: Copla}
+  Corrido:
+    template: {name: Genre, genres: Corrido}
+  Corrido Tumbado:
+    template: {name: Genre, genres: Corrido Tumbado}
+  Country:
+    template: {name: Genre, genres: Country}
+  Country And Irish:
+    template: {name: Genre, genres: Country And Irish}
+  Country Blues:
+    template: {name: Genre, genres: Country Blues}
+  Country Boogie:
+    template: {name: Genre, genres: Country Boogie}
+  Country Folk:
+    template: {name: Genre, genres: Country Folk}
+  Country Gospel:
+    template: {name: Genre, genres: Country Gospel}
+  Country Pop:
+    template: {name: Genre, genres: Country Pop}
+  Country Rap:
+    template: {name: Genre, genres: Country Rap}
+  Country Rock:
+    template: {name: Genre, genres: Country Rock}
+  Country Soul:
+    template: {name: Genre, genres: Country Soul}
+  Country Yodeling:
+    template: {name: Genre, genres: Country Yodeling}
+  Countrypolitan:
+    template: {name: Genre, genres: Countrypolitan}
+  Coupé-Décalé:
+    template: {name: Genre, genres: Coupé-Décalé}
+  Cowboy Poetry:
+    template: {name: Genre, genres: Cowboy Poetry}
+  Cowpunk:
+    template: {name: Genre, genres: Cowpunk}
+  Crack Rock Steady:
+    template: {name: Genre, genres: Crack Rock Steady}
+  Crime Jazz:
+    template: {name: Genre, genres: Crime Jazz}
+  Crossbreed:
+    template: {name: Genre, genres: Crossbreed}
+  Crossover Jazz:
+    template: {name: Genre, genres: Crossover Jazz}
+  Crossover Prog:
+    template: {name: Genre, genres: Crossover Prog}
+  Crossover Thrash:
+    template: {name: Genre, genres: Crossover Thrash}
+  Cruise:
+    template: {name: Genre, genres: Cruise}
+  Crunk:
+    template: {name: Genre, genres: Crunk}
+  Crunkcore:
+    template: {name: Genre, genres: Crunkcore}
+  Crust Punk:
+    template: {name: Genre, genres: Crust Punk}
+  Csárdás:
+    template: {name: Genre, genres: Csárdás}
+  Cuarteto:
+    template: {name: Genre, genres: Cuarteto}
+  Cubatón:
+    template: {name: Genre, genres: Cubatón}
+  Cueca:
+    template: {name: Genre, genres: Cueca}
+  Cumbia:
+    template: {name: Genre, genres: Cumbia}
+  Cumbia Argentina:
+    template: {name: Genre, genres: Cumbia Argentina}
+  Cumbia Chilena:
+    template: {name: Genre, genres: Cumbia Chilena}
+  Cumbia Colombiana:
+    template: {name: Genre, genres: Cumbia Colombiana}
+  Cumbia Mexicana:
+    template: {name: Genre, genres: Cumbia Mexicana}
+  Cumbia Norteña Mexicana:
+    template: {name: Genre, genres: Cumbia Norteña Mexicana}
+  Cumbia Peruana:
+    template: {name: Genre, genres: Cumbia Peruana}
+  Cumbia Pop:
+    template: {name: Genre, genres: Cumbia Pop}
+  Cumbia Santafesina:
+    template: {name: Genre, genres: Cumbia Santafesina}
+  Cumbia Sonidera:
+    template: {name: Genre, genres: Cumbia Sonidera}
+  Cumbia Turra:
+    template: {name: Genre, genres: Cumbia Turra}
+  Cumbia Villera:
+    template: {name: Genre, genres: Cumbia Villera}
+  Cumbiatón:
+    template: {name: Genre, genres: Cumbiatón}
+  Cuplé:
+    template: {name: Genre, genres: Cuplé}
+  Currulao:
+    template: {name: Genre, genres: Currulao}
+  Cyber Metal:
+    template: {name: Genre, genres: Cyber Metal}
+  Cybergrind:
+    template: {name: Genre, genres: Cybergrind}
+  Cyberpunk:
+    template: {name: Genre, genres: Cyberpunk}
+  D-Beat:
+    template: {name: Genre, genres: D-Beat}
+  Dabke:
+    template: {name: Genre, genres: Dabke}
+  Dance:
+    template: {name: Genre, genres: Dance}
+  Dance-Pop:
+    template: {name: Genre, genres: Dance-Pop}
+  Dance-Punk:
+    template: {name: Genre, genres: Dance-Punk}
+  Dance-Rock:
+    template: {name: Genre, genres: Dance-Rock}
+  Dancefloor Drum And Bass:
+    template: {name: Genre, genres: Dancefloor Drum And Bass}
+  Dancehall:
+    template: {name: Genre, genres: Dancehall}
+  Dangak:
+    template: {name: Genre, genres: Dangak}
+  Dangdut:
+    template: {name: Genre, genres: Dangdut}
+  Danmono:
+    template: {name: Genre, genres: Danmono}
+  Dansband:
+    template: {name: Genre, genres: Dansband}
+  Dansktop:
+    template: {name: Genre, genres: Dansktop}
+  Danzón:
+    template: {name: Genre, genres: Danzón}
+  Dariacore:
+    template: {name: Genre, genres: Dariacore}
+  Dark Ambient:
+    template: {name: Genre, genres: Dark Ambient}
+  Dark Cabaret:
+    template: {name: Genre, genres: Dark Cabaret}
+  Dark Disco:
+    template: {name: Genre, genres: Dark Disco}
+  Dark Electro:
+    template: {name: Genre, genres: Dark Electro}
+  Dark Folk:
+    template: {name: Genre, genres: Dark Folk}
+  Dark Jazz:
+    template: {name: Genre, genres: Dark Jazz}
+  Dark Plugg:
+    template: {name: Genre, genres: Dark Plugg}
+  Dark Psytrance:
+    template: {name: Genre, genres: Dark Psytrance}
+  Dark Wave:
+    template: {name: Genre, genres: Dark Wave}
+  Darkcore:
+    template: {name: Genre, genres: Darkcore}
+  Darkstep:
+    template: {name: Genre, genres: Darkstep}
+  Darksynth:
+    template: {name: Genre, genres: Darksynth}
+  Data Sonification:
+    template: {name: Genre, genres: Data Sonification}
+  Death 'N' Roll:
+    template: {name: Genre, genres: Death 'N' Roll}
+  Death Industrial:
+    template: {name: Genre, genres: Death Industrial}
+  Death Metal:
+    template: {name: Genre, genres: Death Metal}
+  Death-Doom Metal:
+    template: {name: Genre, genres: Death-Doom Metal}
+  Deathchant Hardcore:
+    template: {name: Genre, genres: Deathchant Hardcore}
+  Deathcore:
+    template: {name: Genre, genres: Deathcore}
+  Deathgrind:
+    template: {name: Genre, genres: Deathgrind}
+  Deathrock:
+    template: {name: Genre, genres: Deathrock}
+  Deathstep:
+    template: {name: Genre, genres: Deathstep}
+  Deconstructed Club:
+    template: {name: Genre, genres: Deconstructed Club}
+  Deep Funk:
+    template: {name: Genre, genres: Deep Funk}
+  Deep House:
+    template: {name: Genre, genres: Deep House}
+  Deep Soul:
+    template: {name: Genre, genres: Deep Soul}
+  Deep Tech:
+    template: {name: Genre, genres: Deep Tech}
+  Deep Techno:
+    template: {name: Genre, genres: Deep Techno}
+  Delta Blues:
+    template: {name: Genre, genres: Delta Blues}
+  Dembow:
+    template: {name: Genre, genres: Dembow}
+  Dennery Segment:
+    template: {name: Genre, genres: Dennery Segment}
+  Denpa:
+    template: {name: Genre, genres: Denpa}
+  Depressive Black Metal:
+    template: {name: Genre, genres: Depressive Black Metal}
+  Descarga:
+    template: {name: Genre, genres: Descarga}
+  Desert Blues:
+    template: {name: Genre, genres: Desert Blues}
+  Desert Rock:
+    template: {name: Genre, genres: Desert Rock}
+  Detroit Techno:
+    template: {name: Genre, genres: Detroit Techno}
+  Detroit Trap:
+    template: {name: Genre, genres: Detroit Trap}
+  Dhaanto:
+    template: {name: Genre, genres: Dhaanto}
+  Dhrupad:
+    template: {name: Genre, genres: Dhrupad}
+  Digicore:
+    template: {name: Genre, genres: Digicore}
+  Digital Cumbia:
+    template: {name: Genre, genres: Digital Cumbia}
+  Digital Fusion:
+    template: {name: Genre, genres: Digital Fusion}
+  Digital Hardcore:
+    template: {name: Genre, genres: Digital Hardcore}
+  Dimotiko:
+    template: {name: Genre, genres: Dimotiko}
+  Dirty South:
+    template: {name: Genre, genres: Dirty South}
+  Disco:
+    template: {name: Genre, genres: Disco}
+  Disco Polo:
+    template: {name: Genre, genres: Disco Polo}
+  Dissonant Death Metal:
+    template: {name: Genre, genres: Dissonant Death Metal}
+  Diva House:
+    template: {name: Genre, genres: Diva House}
+  Divertissement:
+    template: {name: Genre, genres: Divertissement}
+  Dixieland:
+    template: {name: Genre, genres: Dixieland}
+  Djanba:
+    template: {name: Genre, genres: Djanba}
+  Djent:
+    template: {name: Genre, genres: Djent}
+  Dobrado:
+    template: {name: Genre, genres: Dobrado}
+  Doina:
+    template: {name: Genre, genres: Doina}
+  Dongjing:
+    template: {name: Genre, genres: Dongjing}
+  Donk:
+    template: {name: Genre, genres: Donk}
+  Donosti Sound:
+    template: {name: Genre, genres: Donosti Sound}
+  Doo-Wop:
+    template: {name: Genre, genres: Doo-Wop}
+  Doom Metal:
+    template: {name: Genre, genres: Doom Metal}
+  Doomcore:
+    template: {name: Genre, genres: Doomcore}
+  Doomgaze:
+    template: {name: Genre, genres: Doomgaze}
+  Doskpop:
+    template: {name: Genre, genres: Doskpop}
+  Downtempo:
+    template: {name: Genre, genres: Downtempo}
+  Dream Pop:
+    template: {name: Genre, genres: Dream Pop}
+  Dream Trance:
+    template: {name: Genre, genres: Dream Trance}
+  Dreampunk:
+    template: {name: Genre, genres: Dreampunk}
+  Drift Phonk:
+    template: {name: Genre, genres: Drift Phonk}
+  Drill:
+    template: {name: Genre, genres: Drill}
+  Drill And Bass:
+    template: {name: Genre, genres: Drill And Bass}
+  Drone:
+    template: {name: Genre, genres: Drone}
+  Drone Metal:
+    template: {name: Genre, genres: Drone Metal}
+  Drum And Bass:
+    template: {name: Genre, genres: Drum And Bass}
+  Drumfunk:
+    template: {name: Genre, genres: Drumfunk}
+  Drumless Hip Hop:
+    template: {name: Genre, genres: Drumless Hip Hop}
+  Drumline:
+    template: {name: Genre, genres: Drumline}
+  Drumstep:
+    template: {name: Genre, genres: Drumstep}
+  Dub:
+    template: {name: Genre, genres: Dub}
+  Dub Poetry:
+    template: {name: Genre, genres: Dub Poetry}
+  Dub Techno:
+    template: {name: Genre, genres: Dub Techno}
+  Dubstep:
+    template: {name: Genre, genres: Dubstep}
+  Dubstyle:
+    template: {name: Genre, genres: Dubstyle}
+  Dubwise:
+    template: {name: Genre, genres: Dubwise}
+  Duma:
+    template: {name: Genre, genres: Duma}
+  Dunedin Sound:
+    template: {name: Genre, genres: Dunedin Sound}
+  Dungeon Rap:
+    template: {name: Genre, genres: Dungeon Rap}
+  Dungeon Sound:
+    template: {name: Genre, genres: Dungeon Sound}
+  Dungeon Synth:
+    template: {name: Genre, genres: Dungeon Synth}
+  Duranguense:
+    template: {name: Genre, genres: Duranguense}
+  Dutch House:
+    template: {name: Genre, genres: Dutch House}
+  Eai:
+    template: {name: Genre, genres: Eai}
+  East Coast Hip Hop:
+    template: {name: Genre, genres: East Coast Hip Hop}
+  Easy Listening:
+    template: {name: Genre, genres: Easy Listening}
+  Easycore:
+    template: {name: Genre, genres: Easycore}
+  Ebm:
+    template: {name: Genre, genres: Ebm}
+  Eccojams:
+    template: {name: Genre, genres: Eccojams}
+  Edm:
+    template: {name: Genre, genres: Edm}
+  Electric Blues:
+    template: {name: Genre, genres: Electric Blues}
+  Electric Texas Blues:
+    template: {name: Genre, genres: Electric Texas Blues}
+  Electro:
+    template: {name: Genre, genres: Electro}
+  Electro House:
+    template: {name: Genre, genres: Electro House}
+  Electro Latino:
+    template: {name: Genre, genres: Electro Latino}
+  Electro Swing:
+    template: {name: Genre, genres: Electro Swing}
+  Electro-Disco:
+    template: {name: Genre, genres: Electro-Disco}
+  Electro-Funk:
+    template: {name: Genre, genres: Electro-Funk}
+  Electro-Industrial:
+    template: {name: Genre, genres: Electro-Industrial}
+  Electroacoustic:
+    template: {name: Genre, genres: Electroacoustic}
+  Electroclash:
+    template: {name: Genre, genres: Electroclash}
+  Electronic:
+    template: {name: Genre, genres: Electronic}
+  Electronic Rock:
+    template: {name: Genre, genres: Electronic Rock}
+  Electronica:
+    template: {name: Genre, genres: Electronica}
+  Electronicore:
+    template: {name: Genre, genres: Electronicore}
+  Electropop:
+    template: {name: Genre, genres: Electropop}
+  Electropunk:
+    template: {name: Genre, genres: Electropunk}
+  Electrotango:
+    template: {name: Genre, genres: Electrotango}
+  Eleki:
+    template: {name: Genre, genres: Eleki}
+  Embolada:
+    template: {name: Genre, genres: Embolada}
+  Emo:
+    template: {name: Genre, genres: Emo}
+  Emo Pop:
+    template: {name: Genre, genres: Emo Pop}
+  Emo Rap:
+    template: {name: Genre, genres: Emo Rap}
+  Emocore:
+    template: {name: Genre, genres: Emocore}
+  Emoviolence:
+    template: {name: Genre, genres: Emoviolence}
+  Enka:
+    template: {name: Genre, genres: Enka}
+  Éntekhno:
+    template: {name: Genre, genres: Éntekhno}
+  Epic Collage:
+    template: {name: Genre, genres: Epic Collage}
+  Epic Doom Metal:
+    template: {name: Genre, genres: Epic Doom Metal}
+  Estrada:
+    template: {name: Genre, genres: Estrada}
+  Ethereal Wave:
+    template: {name: Genre, genres: Ethereal Wave}
+  Ethio-Jazz:
+    template: {name: Genre, genres: Ethio-Jazz}
+  Étude:
+    template: {name: Genre, genres: Étude}
+  Euphoric Hardstyle:
+    template: {name: Genre, genres: Euphoric Hardstyle}
+  Euro House:
+    template: {name: Genre, genres: Euro House}
+  Euro-Disco:
+    template: {name: Genre, genres: Euro-Disco}
+  Euro-Trance:
+    template: {name: Genre, genres: Euro-Trance}
+  Eurobeat:
+    template: {name: Genre, genres: Eurobeat}
+  Eurodance:
+    template: {name: Genre, genres: Eurodance}
+  Europop:
+    template: {name: Genre, genres: Europop}
+  Euskal Kantagintza Berria:
+    template: {name: Genre, genres: Euskal Kantagintza Berria}
+  Exotica:
+    template: {name: Genre, genres: Exotica}
+  Experimental:
+    template: {name: Genre, genres: Experimental}
+  Experimental Big Band:
+    template: {name: Genre, genres: Experimental Big Band}
+  Experimental Electronic:
+    template: {name: Genre, genres: Experimental Electronic}
+  Experimental Hip Hop:
+    template: {name: Genre, genres: Experimental Hip Hop}
+  Experimental Rock:
+    template: {name: Genre, genres: Experimental Rock}
+  Expressionism:
+    template: {name: Genre, genres: Expressionism}
+  Extratone:
+    template: {name: Genre, genres: Extratone}
+  Fado:
+    template: {name: Genre, genres: Fado}
+  Fado De Coimbra:
+    template: {name: Genre, genres: Fado De Coimbra}
+  Fairy Tale:
+    template: {name: Genre, genres: Fairy Tale}
+  Fakaseasea:
+    template: {name: Genre, genres: Fakaseasea}
+  Falak:
+    template: {name: Genre, genres: Falak}
+  Famo:
+    template: {name: Genre, genres: Famo}
+  Fandango:
+    template: {name: Genre, genres: Fandango}
+  Fandango Caiçara:
+    template: {name: Genre, genres: Fandango Caiçara}
+  Fantasia:
+    template: {name: Genre, genres: Fantasia}
+  Fantezi:
+    template: {name: Genre, genres: Fantezi}
+  Festejo:
+    template: {name: Genre, genres: Festejo}
+  Festival Progressive House:
+    template: {name: Genre, genres: Festival Progressive House}
+  Festival Trap:
+    template: {name: Genre, genres: Festival Trap}
+  Fidget House:
+    template: {name: Genre, genres: Fidget House}
+  Field Recording:
+    template: {name: Genre, genres: Field Recording}
+  Fife And Drum:
+    template: {name: Genre, genres: Fife And Drum}
+  Fife And Drum Blues:
+    template: {name: Genre, genres: Fife And Drum Blues}
+  Fijiri:
+    template: {name: Genre, genres: Fijiri}
+  Filin:
+    template: {name: Genre, genres: Filin}
+  Filipino Rondalla:
+    template: {name: Genre, genres: Filipino Rondalla}
+  Filk:
+    template: {name: Genre, genres: Filk}
+  Filmi:
+    template: {name: Genre, genres: Filmi}
+  Finnish Tango:
+    template: {name: Genre, genres: Finnish Tango}
+  Flamenco:
+    template: {name: Genre, genres: Flamenco}
+  Flamenco Jazz:
+    template: {name: Genre, genres: Flamenco Jazz}
+  Flamenco Pop:
+    template: {name: Genre, genres: Flamenco Pop}
+  Flashcore:
+    template: {name: Genre, genres: Flashcore}
+  Flex Dance Music:
+    template: {name: Genre, genres: Flex Dance Music}
+  Florida Breaks:
+    template: {name: Genre, genres: Florida Breaks}
+  Fm Synthesis:
+    template: {name: Genre, genres: Fm Synthesis}
+  Folk:
+    template: {name: Genre, genres: Folk}
+  Folk Metal:
+    template: {name: Genre, genres: Folk Metal}
+  Folk Pop:
+    template: {name: Genre, genres: Folk Pop}
+  Folk Punk:
+    template: {name: Genre, genres: Folk Punk}
+  Folk Rock:
+    template: {name: Genre, genres: Folk Rock}
+  Folkhop:
+    template: {name: Genre, genres: Folkhop}
+  Folktronica:
+    template: {name: Genre, genres: Folktronica}
+  Fon Leb:
+    template: {name: Genre, genres: Fon Leb}
+  Footwork:
+    template: {name: Genre, genres: Footwork}
+  Footwork Jungle:
+    template: {name: Genre, genres: Footwork Jungle}
+  Forest Psytrance:
+    template: {name: Genre, genres: Forest Psytrance}
+  Forró:
+    template: {name: Genre, genres: Forró}
+  Forró Eletrônico:
+    template: {name: Genre, genres: Forró Eletrônico}
+  Forró Universitário:
+    template: {name: Genre, genres: Forró Universitário}
+  Freak Folk:
+    template: {name: Genre, genres: Freak Folk}
+  Freakbeat:
+    template: {name: Genre, genres: Freakbeat}
+  Free Folk:
+    template: {name: Genre, genres: Free Folk}
+  Free Improvisation:
+    template: {name: Genre, genres: Free Improvisation}
+  Free Jazz:
+    template: {name: Genre, genres: Free Jazz}
+  Free Tekno:
+    template: {name: Genre, genres: Free Tekno}
+  Freeform Hardcore:
+    template: {name: Genre, genres: Freeform Hardcore}
+  Freestyle:
+    template: {name: Genre, genres: Freestyle}
+  French Electro:
+    template: {name: Genre, genres: French Electro}
+  French House:
+    template: {name: Genre, genres: French House}
+  Frenchcore:
+    template: {name: Genre, genres: Frenchcore}
+  Frevo:
+    template: {name: Genre, genres: Frevo}
+  Fuji:
+    template: {name: Genre, genres: Fuji}
+  Full-On:
+    template: {name: Genre, genres: Full-On}
+  Funaná:
+    template: {name: Genre, genres: Funaná}
+  Funeral Doom Metal:
+    template: {name: Genre, genres: Funeral Doom Metal}
+  Funeral March:
+    template: {name: Genre, genres: Funeral March}
+  Fungi:
+    template: {name: Genre, genres: Fungi}
+  Funk:
+    template: {name: Genre, genres: Funk}
+  Funk Brasileiro:
+    template: {name: Genre, genres: Funk Brasileiro}
+  Funk Carioca:
+    template: {name: Genre, genres: Funk Carioca}
+  Funk De Bh:
+    template: {name: Genre, genres: Funk De Bh}
+  Funk Mandelão:
+    template: {name: Genre, genres: Funk Mandelão}
+  Funk Melody:
+    template: {name: Genre, genres: Funk Melody}
+  Funk Metal:
+    template: {name: Genre, genres: Funk Metal}
+  Funk Ostentação:
+    template: {name: Genre, genres: Funk Ostentação}
+  Funk Proibidão:
+    template: {name: Genre, genres: Funk Proibidão}
+  Funk Rock:
+    template: {name: Genre, genres: Funk Rock}
+  Funknejo:
+    template: {name: Genre, genres: Funknejo}
+  Funkot:
+    template: {name: Genre, genres: Funkot}
+  Funktronica:
+    template: {name: Genre, genres: Funktronica}
+  Funky House:
+    template: {name: Genre, genres: Funky House}
+  Fusion Gugak:
+    template: {name: Genre, genres: Fusion Gugak}
+  Future Bass:
+    template: {name: Genre, genres: Future Bass}
+  Future Bounce:
+    template: {name: Genre, genres: Future Bounce}
+  Future Core:
+    template: {name: Genre, genres: Future Core}
+  Future Funk:
+    template: {name: Genre, genres: Future Funk}
+  Future Garage:
+    template: {name: Genre, genres: Future Garage}
+  Future House:
+    template: {name: Genre, genres: Future House}
+  Future Rave:
+    template: {name: Genre, genres: Future Rave}
+  Future Riddim:
+    template: {name: Genre, genres: Future Riddim}
+  Futurepop:
+    template: {name: Genre, genres: Futurepop}
+  Futurism:
+    template: {name: Genre, genres: Futurism}
+  G-Funk:
+    template: {name: Genre, genres: G-Funk}
+  G-House:
+    template: {name: Genre, genres: G-House}
+  Gabber:
+    template: {name: Genre, genres: Gabber}
+  Gaelic Psalm Singing:
+    template: {name: Genre, genres: Gaelic Psalm Singing}
+  Gagaku:
+    template: {name: Genre, genres: Gagaku}
+  Gagok:
+    template: {name: Genre, genres: Gagok}
+  Gaita Zuliana:
+    template: {name: Genre, genres: Gaita Zuliana}
+  Gambang Kromong:
+    template: {name: Genre, genres: Gambang Kromong}
+  Gamelan:
+    template: {name: Genre, genres: Gamelan}
+  Gamelan Angklung:
+    template: {name: Genre, genres: Gamelan Angklung}
+  Gamelan Beleganjur:
+    template: {name: Genre, genres: Gamelan Beleganjur}
+  Gamelan Degung:
+    template: {name: Genre, genres: Gamelan Degung}
+  Gamelan Gender Wayang:
+    template: {name: Genre, genres: Gamelan Gender Wayang}
+  Gamelan Gong Gede:
+    template: {name: Genre, genres: Gamelan Gong Gede}
+  Gamelan Gong Kebyar:
+    template: {name: Genre, genres: Gamelan Gong Kebyar}
+  Gamelan Jegog:
+    template: {name: Genre, genres: Gamelan Jegog}
+  Gamelan Joged Bumbung:
+    template: {name: Genre, genres: Gamelan Joged Bumbung}
+  Gamelan Salendro:
+    template: {name: Genre, genres: Gamelan Salendro}
+  Gamelan Sekaten:
+    template: {name: Genre, genres: Gamelan Sekaten}
+  Gamelan Selunding:
+    template: {name: Genre, genres: Gamelan Selunding}
+  Gamelan Semar Pegulingan:
+    template: {name: Genre, genres: Gamelan Semar Pegulingan}
+  Gamelan Siteran:
+    template: {name: Genre, genres: Gamelan Siteran}
+  Gangsta Rap:
+    template: {name: Genre, genres: Gangsta Rap}
+  Garage House:
+    template: {name: Genre, genres: Garage House}
+  Garage Punk:
+    template: {name: Genre, genres: Garage Punk}
+  Garage Rock:
+    template: {name: Genre, genres: Garage Rock}
+  Garage Rock Revival:
+    template: {name: Genre, genres: Garage Rock Revival}
+  Garba:
+    template: {name: Genre, genres: Garba}
+  Geek Rock:
+    template: {name: Genre, genres: Geek Rock}
+  Género Chico:
+    template: {name: Genre, genres: Género Chico}
+  Género Grande:
+    template: {name: Genre, genres: Género Grande}
+  Genge:
+    template: {name: Genre, genres: Genge}
+  Gengetone:
+    template: {name: Genre, genres: Gengetone}
+  Għana:
+    template: {name: Genre, genres: Għana}
+  Ghazal:
+    template: {name: Genre, genres: Ghazal}
+  Ghetto Funk:
+    template: {name: Genre, genres: Ghetto Funk}
+  Ghetto House:
+    template: {name: Genre, genres: Ghetto House}
+  Ghettotech:
+    template: {name: Genre, genres: Ghettotech}
+  Ginan:
+    template: {name: Genre, genres: Ginan}
+  Glam:
+    template: {name: Genre, genres: Glam}
+  Glam Metal:
+    template: {name: Genre, genres: Glam Metal}
+  Glam Punk:
+    template: {name: Genre, genres: Glam Punk}
+  Glam Rock:
+    template: {name: Genre, genres: Glam Rock}
+  Glitch:
+    template: {name: Genre, genres: Glitch}
+  Glitch Hop:
+    template: {name: Genre, genres: Glitch Hop}
+  Glitch Hop Edm:
+    template: {name: Genre, genres: Glitch Hop Edm}
+  Glitch Pop:
+    template: {name: Genre, genres: Glitch Pop}
+  Gnawa:
+    template: {name: Genre, genres: Gnawa}
+  Go-Go:
+    template: {name: Genre, genres: Go-Go}
+  Goa Trance:
+    template: {name: Genre, genres: Goa Trance}
+  Gommance:
+    template: {name: Genre, genres: Gommance}
+  Gondang:
+    template: {name: Genre, genres: Gondang}
+  Goombay:
+    template: {name: Genre, genres: Goombay}
+  Goregrind:
+    template: {name: Genre, genres: Goregrind}
+  Gorenoise:
+    template: {name: Genre, genres: Gorenoise}
+  Gospel:
+    template: {name: Genre, genres: Gospel}
+  Gospel House:
+    template: {name: Genre, genres: Gospel House}
+  Gospel Reggae:
+    template: {name: Genre, genres: Gospel Reggae}
+  Gothic:
+    template: {name: Genre, genres: Gothic}
+  Gothic Country:
+    template: {name: Genre, genres: Gothic Country}
+  Gothic Metal:
+    template: {name: Genre, genres: Gothic Metal}
+  Gothic Rock:
+    template: {name: Genre, genres: Gothic Rock}
+  Gqom:
+    template: {name: Genre, genres: Gqom}
+  Grand Opera:
+    template: {name: Genre, genres: Grand Opera}
+  Grebo:
+    template: {name: Genre, genres: Grebo}
+  Gregorian Chant:
+    template: {name: Genre, genres: Gregorian Chant}
+  Grime:
+    template: {name: Genre, genres: Grime}
+  Grindcore:
+    template: {name: Genre, genres: Grindcore}
+  Griot:
+    template: {name: Genre, genres: Griot}
+  Groove Metal:
+    template: {name: Genre, genres: Groove Metal}
+  Group Sounds:
+    template: {name: Genre, genres: Group Sounds}
+  Grunge:
+    template: {name: Genre, genres: Grunge}
+  Guaguancó:
+    template: {name: Genre, genres: Guaguancó}
+  Guajira:
+    template: {name: Genre, genres: Guajira}
+  Guaracha:
+    template: {name: Genre, genres: Guaracha}
+  Guaracha Edm:
+    template: {name: Genre, genres: Guaracha Edm}
+  Guarania:
+    template: {name: Genre, genres: Guarania}
+  Guided Meditation:
+    template: {name: Genre, genres: Guided Meditation}
+  Guitarrada:
+    template: {name: Genre, genres: Guitarrada}
+  Gumbe:
+    template: {name: Genre, genres: Gumbe}
+  Guoyue:
+    template: {name: Genre, genres: Guoyue}
+  Gwo Ka:
+    template: {name: Genre, genres: Gwo Ka}
+  Gypsy Jazz:
+    template: {name: Genre, genres: Gypsy Jazz}
+  Gypsy Punk:
+    template: {name: Genre, genres: Gypsy Punk}
+  Habanera:
+    template: {name: Genre, genres: Habanera}
+  Haitian Vodou Drumming:
+    template: {name: Genre, genres: Haitian Vodou Drumming}
+  Halftime:
+    template: {name: Genre, genres: Halftime}
+  Hambo:
+    template: {name: Genre, genres: Hambo}
+  Hamburger Schule:
+    template: {name: Genre, genres: Hamburger Schule}
+  Hands Up:
+    template: {name: Genre, genres: Hands Up}
+  Hanmai:
+    template: {name: Genre, genres: Hanmai}
+  Hapa Haole:
+    template: {name: Genre, genres: Hapa Haole}
+  Happy Hardcore:
+    template: {name: Genre, genres: Happy Hardcore}
+  Harawi:
+    template: {name: Genre, genres: Harawi}
+  Hard Bop:
+    template: {name: Genre, genres: Hard Bop}
+  Hard Drum:
+    template: {name: Genre, genres: Hard Drum}
+  Hard House:
+    template: {name: Genre, genres: Hard House}
+  Hard Nrg:
+    template: {name: Genre, genres: Hard Nrg}
+  Hard Rock:
+    template: {name: Genre, genres: Hard Rock}
+  Hard Techno:
+    template: {name: Genre, genres: Hard Techno}
+  Hard Trance:
+    template: {name: Genre, genres: Hard Trance}
+  Hard Trap:
+    template: {name: Genre, genres: Hard Trap}
+  Hardbag:
+    template: {name: Genre, genres: Hardbag}
+  Hardbass:
+    template: {name: Genre, genres: Hardbass}
+  Hardcore Breaks:
+    template: {name: Genre, genres: Hardcore Breaks}
+  Hardcore Hip Hop:
+    template: {name: Genre, genres: Hardcore Hip Hop}
+  Hardcore Punk:
+    template: {name: Genre, genres: Hardcore Punk}
+  Hardcore Techno:
+    template: {name: Genre, genres: Hardcore Techno}
+  Hardgroove Techno:
+    template: {name: Genre, genres: Hardgroove Techno}
+  Hardstep:
+    template: {name: Genre, genres: Hardstep}
+  Hardstyle:
+    template: {name: Genre, genres: Hardstyle}
+  Hardvapour:
+    template: {name: Genre, genres: Hardvapour}
+  Hardwave:
+    template: {name: Genre, genres: Hardwave}
+  Harsh Noise:
+    template: {name: Genre, genres: Harsh Noise}
+  Harsh Noise Wall:
+    template: {name: Genre, genres: Harsh Noise Wall}
+  Hát Tuồng:
+    template: {name: Genre, genres: Hát Tuồng}
+  Hauntology:
+    template: {name: Genre, genres: Hauntology}
+  Heartland Rock:
+    template: {name: Genre, genres: Heartland Rock}
+  Heaven Trap:
+    template: {name: Genre, genres: Heaven Trap}
+  Heavy Metal:
+    template: {name: Genre, genres: Heavy Metal}
+  Heavy Psych:
+    template: {name: Genre, genres: Heavy Psych}
+  Heikyoku:
+    template: {name: Genre, genres: Heikyoku}
+  Henan Opera:
+    template: {name: Genre, genres: Henan Opera}
+  Hexd:
+    template: {name: Genre, genres: Hexd}
+  Hi-Nrg:
+    template: {name: Genre, genres: Hi-Nrg}
+  Hi-Tech:
+    template: {name: Genre, genres: Hi-Tech}
+  Highlife:
+    template: {name: Genre, genres: Highlife}
+  Hill Country Blues:
+    template: {name: Genre, genres: Hill Country Blues}
+  Himene Tarava:
+    template: {name: Genre, genres: Himene Tarava}
+  Hindustani Classical:
+    template: {name: Genre, genres: Hindustani Classical}
+  Hip Hop:
+    template: {name: Genre, genres: Hip Hop}
+  Hip Hop Soul:
+    template: {name: Genre, genres: Hip Hop Soul}
+  Hip House:
+    template: {name: Genre, genres: Hip House}
+  Hipco:
+    template: {name: Genre, genres: Hipco}
+  Hiplife:
+    template: {name: Genre, genres: Hiplife}
+  Holy Minimalism:
+    template: {name: Genre, genres: Holy Minimalism}
+  Honky Tonk:
+    template: {name: Genre, genres: Honky Tonk}
+  Honkyoku:
+    template: {name: Genre, genres: Honkyoku}
+  Hopepunk:
+    template: {name: Genre, genres: Hopepunk}
+  Horror Punk:
+    template: {name: Genre, genres: Horror Punk}
+  Horror Synth:
+    template: {name: Genre, genres: Horror Synth}
+  Horrorcore:
+    template: {name: Genre, genres: Horrorcore}
+  House:
+    template: {name: Genre, genres: House}
+  Huapango:
+    template: {name: Genre, genres: Huapango}
+  Huayno:
+    template: {name: Genre, genres: Huayno}
+  Humppa:
+    template: {name: Genre, genres: Humppa}
+  Hyangak:
+    template: {name: Genre, genres: Hyangak}
+  Hybrid Trap:
+    template: {name: Genre, genres: Hybrid Trap}
+  Hyper Techno:
+    template: {name: Genre, genres: Hyper Techno}
+  Hyperpop:
+    template: {name: Genre, genres: Hyperpop}
+  Hyphy:
+    template: {name: Genre, genres: Hyphy}
+  Hypnagogic Pop:
+    template: {name: Genre, genres: Hypnagogic Pop}
+  Idm:
+    template: {name: Genre, genres: Idm}
+  Idol Kayō:
+    template: {name: Genre, genres: Idol Kayō}
+  Illbient:
+    template: {name: Genre, genres: Illbient}
+  Impressionism:
+    template: {name: Genre, genres: Impressionism}
+  Indeterminacy:
+    template: {name: Genre, genres: Indeterminacy}
+  Indian Classical:
+    template: {name: Genre, genres: Indian Classical}
+  Indian Pop:
+    template: {name: Genre, genres: Indian Pop}
+  Indie Folk:
+    template: {name: Genre, genres: Indie Folk}
+  Indie Pop:
+    template: {name: Genre, genres: Indie Pop}
+  Indie Rock:
+    template: {name: Genre, genres: Indie Rock}
+  Indie Surf:
+    template: {name: Genre, genres: Indie Surf}
+  Indietronica:
+    template: {name: Genre, genres: Indietronica}
+  Indo Jazz:
+    template: {name: Genre, genres: Indo Jazz}
+  Indorock:
+    template: {name: Genre, genres: Indorock}
+  Industrial:
+    template: {name: Genre, genres: Industrial}
+  Industrial Hardcore:
+    template: {name: Genre, genres: Industrial Hardcore}
+  Industrial Hip Hop:
+    template: {name: Genre, genres: Industrial Hip Hop}
+  Industrial Metal:
+    template: {name: Genre, genres: Industrial Metal}
+  Industrial Musical:
+    template: {name: Genre, genres: Industrial Musical}
+  Industrial Rock:
+    template: {name: Genre, genres: Industrial Rock}
+  Industrial Techno:
+    template: {name: Genre, genres: Industrial Techno}
+  Instrumental:
+    template: {name: Genre, genres: Instrumental}
+  Instrumental Hip Hop:
+    template: {name: Genre, genres: Instrumental Hip Hop}
+  Instrumental Jazz:
+    template: {name: Genre, genres: Instrumental Jazz}
+  Instrumental Rock:
+    template: {name: Genre, genres: Instrumental Rock}
+  Integral Serialism:
+    template: {name: Genre, genres: Integral Serialism}
+  Interview:
+    template: {name: Genre, genres: Interview}
+  Iraqi Maqam:
+    template: {name: Genre, genres: Iraqi Maqam}
+  Irish Folk:
+    template: {name: Genre, genres: Irish Folk}
+  Isa:
+    template: {name: Genre, genres: Isa}
+  Isicathamiya:
+    template: {name: Genre, genres: Isicathamiya}
+  Islamic Modal Music:
+    template: {name: Genre, genres: Islamic Modal Music}
+  Italo Dance:
+    template: {name: Genre, genres: Italo Dance}
+  Italo House:
+    template: {name: Genre, genres: Italo House}
+  Italo-Disco:
+    template: {name: Genre, genres: Italo-Disco}
+  Izlan:
+    template: {name: Genre, genres: Izlan}
+  Izvorna Bosanska Muzika:
+    template: {name: Genre, genres: Izvorna Bosanska Muzika}
+  J-Core:
+    template: {name: Genre, genres: J-Core}
+  J-Pop:
+    template: {name: Genre, genres: J-Pop}
+  J-Rock:
+    template: {name: Genre, genres: J-Rock}
+  Jácara:
+    template: {name: Genre, genres: Jácara}
+  Jackin House:
+    template: {name: Genre, genres: Jackin House}
+  Jaipongan:
+    template: {name: Genre, genres: Jaipongan}
+  Jam Band:
+    template: {name: Genre, genres: Jam Band}
+  Jamaican Ska:
+    template: {name: Genre, genres: Jamaican Ska}
+  James Bay Fiddling:
+    template: {name: Genre, genres: James Bay Fiddling}
+  Jamgrass:
+    template: {name: Genre, genres: Jamgrass}
+  Jangle Pop:
+    template: {name: Genre, genres: Jangle Pop}
+  Japanese Classical:
+    template: {name: Genre, genres: Japanese Classical}
+  Javanese Gamelan:
+    template: {name: Genre, genres: Javanese Gamelan}
+  Jazz:
+    template: {name: Genre, genres: Jazz}
+  Jazz Blues:
+    template: {name: Genre, genres: Jazz Blues}
+  Jazz Fusion:
+    template: {name: Genre, genres: Jazz Fusion}
+  Jazz Guachaca:
+    template: {name: Genre, genres: Jazz Guachaca}
+  Jazz Mugham:
+    template: {name: Genre, genres: Jazz Mugham}
+  Jazz Poetry:
+    template: {name: Genre, genres: Jazz Poetry}
+  Jazz Pop:
+    template: {name: Genre, genres: Jazz Pop}
+  Jazz Rap:
+    template: {name: Genre, genres: Jazz Rap}
+  Jazz Rock:
+    template: {name: Genre, genres: Jazz Rock}
+  Jazz-Funk:
+    template: {name: Genre, genres: Jazz-Funk}
+  Jazzstep:
+    template: {name: Genre, genres: Jazzstep}
+  Jeongak:
+    template: {name: Genre, genres: Jeongak}
+  Jerk Rap:
+    template: {name: Genre, genres: Jerk Rap}
+  Jersey Club:
+    template: {name: Genre, genres: Jersey Club}
+  Jersey Drill:
+    template: {name: Genre, genres: Jersey Drill}
+  Jersey Sound:
+    template: {name: Genre, genres: Jersey Sound}
+  Jesus Music:
+    template: {name: Genre, genres: Jesus Music}
+  Jiangnan Sizhu:
+    template: {name: Genre, genres: Jiangnan Sizhu}
+  Jit:
+    template: {name: Genre, genres: Jit}
+  Jiuta:
+    template: {name: Genre, genres: Jiuta}
+  Joik:
+    template: {name: Genre, genres: Joik}
+  Jongo:
+    template: {name: Genre, genres: Jongo}
+  Joropo:
+    template: {name: Genre, genres: Joropo}
+  Jōruri:
+    template: {name: Genre, genres: Jōruri}
+  Jota:
+    template: {name: Genre, genres: Jota}
+  Jovem Guarda:
+    template: {name: Genre, genres: Jovem Guarda}
+  Jubilee:
+    template: {name: Genre, genres: Jubilee}
+  Jug Band:
+    template: {name: Genre, genres: Jug Band}
+  Jùjú:
+    template: {name: Genre, genres: Jùjú}
+  Juke:
+    template: {name: Genre, genres: Juke}
+  Jump Blues:
+    template: {name: Genre, genres: Jump Blues}
+  Jump Up:
+    template: {name: Genre, genres: Jump Up}
+  Jumpstyle:
+    template: {name: Genre, genres: Jumpstyle}
+  Jungle:
+    template: {name: Genre, genres: Jungle}
+  Jungle Dutch:
+    template: {name: Genre, genres: Jungle Dutch}
+  Jungle Terror:
+    template: {name: Genre, genres: Jungle Terror}
+  Junkanoo:
+    template: {name: Genre, genres: Junkanoo}
+  K-Pop:
+    template: {name: Genre, genres: K-Pop}
+  Kabarett:
+    template: {name: Genre, genres: Kabaret}
+  Kacapi Suling:
+    template: {name: Genre, genres: Kacapi Suling}
+  Kadongo Kamu:
+    template: {name: Genre, genres: Kadongo Kamu}
+  Kafi:
+    template: {name: Genre, genres: Kafi}
+  Kagura:
+    template: {name: Genre, genres: Kagura}
+  Kalattut:
+    template: {name: Genre, genres: Kalattut}
+  Kalindula:
+    template: {name: Genre, genres: Kalindula}
+  Kalon'Ny Fahiny:
+    template: {name: Genre, genres: Kalon'Ny Fahiny}
+  Kaneka:
+    template: {name: Genre, genres: Kaneka}
+  Kankyō Ongaku:
+    template: {name: Genre, genres: Kankyō Ongaku}
+  Kantan Chamorrita:
+    template: {name: Genre, genres: Kantan Chamorrita}
+  Kanto:
+    template: {name: Genre, genres: Kanto}
+  Kapuka:
+    template: {name: Genre, genres: Kapuka}
+  Kaseko:
+    template: {name: Genre, genres: Kaseko}
+  Kasékò:
+    template: {name: Genre, genres: Kasékò}
+  Kawaii Future Bass:
+    template: {name: Genre, genres: Kawaii Future Bass}
+  Kawaii Metal:
+    template: {name: Genre, genres: Kawaii Metal}
+  Kayōkyoku:
+    template: {name: Genre, genres: Kayōkyoku}
+  Kecak:
+    template: {name: Genre, genres: Kecak}
+  Keroncong:
+    template: {name: Genre, genres: Keroncong}
+  Ketuk Tilu:
+    template: {name: Genre, genres: Ketuk Tilu}
+  Khrueang Sai:
+    template: {name: Genre, genres: Khrueang Sai}
+  Khyal:
+    template: {name: Genre, genres: Khyal}
+  Kidandali:
+    template: {name: Genre, genres: Kidandali}
+  Kidumbak:
+    template: {name: Genre, genres: Kidumbak}
+  Kilapanga:
+    template: {name: Genre, genres: Kilapanga}
+  Kirtan:
+    template: {name: Genre, genres: Kirtan}
+  Kizomba:
+    template: {name: Genre, genres: Kizomba}
+  Klapa:
+    template: {name: Genre, genres: Klapa}
+  Kleinkunst:
+    template: {name: Genre, genres: Kleinkunst}
+  Klezmer:
+    template: {name: Genre, genres: Klezmer}
+  Kliningan:
+    template: {name: Genre, genres: Kliningan}
+  Könsrock:
+    template: {name: Genre, genres: Könsrock}
+  Koplo:
+    template: {name: Genre, genres: Koplo}
+  Korean Ballad:
+    template: {name: Genre, genres: Korean Ballad}
+  Korean Classical:
+    template: {name: Genre, genres: Korean Classical}
+  Korean Revolutionary Opera:
+    template: {name: Genre, genres: Korean Revolutionary Opera}
+  Kouta:
+    template: {name: Genre, genres: Kouta}
+  Krakowiak:
+    template: {name: Genre, genres: Krakowiak}
+  Krautrock:
+    template: {name: Genre, genres: Krautrock}
+  Kuda Lumping:
+    template: {name: Genre, genres: Kuda Lumping}
+  Kuduro:
+    template: {name: Genre, genres: Kuduro}
+  Kujawiak:
+    template: {name: Genre, genres: Kujawiak}
+  Kulintang:
+    template: {name: Genre, genres: Kulintang}
+  Kumi-Daiko:
+    template: {name: Genre, genres: Kumi-Daiko}
+  Kumiuta:
+    template: {name: Genre, genres: Kumiuta}
+  Kundiman:
+    template: {name: Genre, genres: Kundiman}
+  Kwaito:
+    template: {name: Genre, genres: Kwaito}
+  Kwassa Kwassa:
+    template: {name: Genre, genres: Kwassa Kwassa}
+  Kwela:
+    template: {name: Genre, genres: Kwela}
+  Kyivan Chant:
+    template: {name: Genre, genres: Kyivan Chant}
+  Laiko:
+    template: {name: Genre, genres: Laiko}
+  Lambada:
+    template: {name: Genre, genres: Lambada}
+  Landó:
+    template: {name: Genre, genres: Landó}
+  Langgam Jawa:
+    template: {name: Genre, genres: Langgam Jawa}
+  Latin:
+    template: {name: Genre, genres: Latin}
+  Latin Ballad:
+    template: {name: Genre, genres: Latin Ballad}
+  Latin Disco:
+    template: {name: Genre, genres: Latin Disco}
+  Latin Funk:
+    template: {name: Genre, genres: Latin Funk}
+  Latin House:
+    template: {name: Genre, genres: Latin House}
+  Latin Jazz:
+    template: {name: Genre, genres: Latin Jazz}
+  Latin Pop:
+    template: {name: Genre, genres: Latin Pop}
+  Latin Rock:
+    template: {name: Genre, genres: Latin Rock}
+  Latin Soul:
+    template: {name: Genre, genres: Latin Soul}
+  Lavani:
+    template: {name: Genre, genres: Lavani}
+  Lecture:
+    template: {name: Genre, genres: Lecture}
+  Leftfield:
+    template: {name: Genre, genres: Leftfield}
+  Lento Violento:
+    template: {name: Genre, genres: Lento Violento}
+  Levenslied:
+    template: {name: Genre, genres: Levenslied}
+  Lied:
+    template: {name: Genre, genres: Lied}
+  Liedermacher:
+    template: {name: Genre, genres: Liedermacher}
+  Liquid Funk:
+    template: {name: Genre, genres: Liquid Funk}
+  Liscio:
+    template: {name: Genre, genres: Liscio}
+  Livetronica:
+    template: {name: Genre, genres: Livetronica}
+  Lo-Fi:
+    template: {name: Genre, genres: Lo-Fi}
+  Lo-Fi Hip Hop:
+    template: {name: Genre, genres: Lo-Fi Hip Hop}
+  Lo-Fi House:
+    template: {name: Genre, genres: Lo-Fi House}
+  Lolicore:
+    template: {name: Genre, genres: Lolicore}
+  Louisiana Blues:
+    template: {name: Genre, genres: Louisiana Blues}
+  Lounge:
+    template: {name: Genre, genres: Lounge}
+  Lovers Rock:
+    template: {name: Genre, genres: Lovers Rock}
+  Lowend:
+    template: {name: Genre, genres: Lowend}
+  Lowercase:
+    template: {name: Genre, genres: Lowercase}
+  Luk Krung:
+    template: {name: Genre, genres: Luk Krung}
+  Luk Thung:
+    template: {name: Genre, genres: Luk Thung}
+  Lullaby:
+    template: {name: Genre, genres: Lullaby}
+  Lundu:
+    template: {name: Genre, genres: Lundu}
+  Lute Song:
+    template: {name: Genre, genres: Lute Song}
+  Mad:
+    template: {name: Genre, genres: Mad}
+  Madchester:
+    template: {name: Genre, genres: Madchester}
+  Maddahi:
+    template: {name: Genre, genres: Maddahi}
+  Madrigal:
+    template: {name: Genre, genres: Madrigal}
+  Maftirim:
+    template: {name: Genre, genres: Maftirim}
+  Mahori:
+    template: {name: Genre, genres: Mahori}
+  Mahraganat:
+    template: {name: Genre, genres: Mahraganat}
+  Mainstream Rock:
+    template: {name: Genre, genres: Mainstream Rock}
+  Makina:
+    template: {name: Genre, genres: Makina}
+  Makossa:
+    template: {name: Genre, genres: Makossa}
+  Malagueña Venezolana:
+    template: {name: Genre, genres: Malagueña Venezolana}
+  Malay Gamelan:
+    template: {name: Genre, genres: Malay Gamelan}
+  Malhun:
+    template: {name: Genre, genres: Malhun}
+  Mallsoft:
+    template: {name: Genre, genres: Mallsoft}
+  Malouf:
+    template: {name: Genre, genres: Malouf}
+  Maloya:
+    template: {name: Genre, genres: Maloya}
+  Maloya Élektrik:
+    template: {name: Genre, genres: Maloya Élektrik}
+  Mambo:
+    template: {name: Genre, genres: Mambo}
+  Mambo Chileno:
+    template: {name: Genre, genres: Mambo Chileno}
+  Mambo Urbano:
+    template: {name: Genre, genres: Mambo Urbano}
+  Mandopop:
+    template: {name: Genre, genres: Mandopop}
+  Manele:
+    template: {name: Genre, genres: Manele}
+  Mangue Beat:
+    template: {name: Genre, genres: Mangue Beat}
+  Manila Sound:
+    template: {name: Genre, genres: Manila Sound}
+  Manyao:
+    template: {name: Genre, genres: Manyao}
+  Marabi:
+    template: {name: Genre, genres: Marabi}
+  Maracatu:
+    template: {name: Genre, genres: Maracatu}
+  March:
+    template: {name: Genre, genres: March}
+  Marching Band:
+    template: {name: Genre, genres: Marching Band}
+  Marchinha:
+    template: {name: Genre, genres: Marchinha}
+  Mariachi:
+    template: {name: Genre, genres: Mariachi}
+  Marinera:
+    template: {name: Genre, genres: Marinera}
+  Marrabenta:
+    template: {name: Genre, genres: Marrabenta}
+  Martial Industrial:
+    template: {name: Genre, genres: Martial Industrial}
+  Mashcore:
+    template: {name: Genre, genres: Mashcore}
+  Maskanda:
+    template: {name: Genre, genres: Maskanda}
+  Mass:
+    template: {name: Genre, genres: Mass}
+  Math Pop:
+    template: {name: Genre, genres: Math Pop}
+  Math Rock:
+    template: {name: Genre, genres: Math Rock}
+  Mathcore:
+    template: {name: Genre, genres: Mathcore}
+  Maxixe:
+    template: {name: Genre, genres: Maxixe}
+  Mazurka:
+    template: {name: Genre, genres: Mazurka}
+  Mbalax:
+    template: {name: Genre, genres: Mbalax}
+  Mbaqanga:
+    template: {name: Genre, genres: Mbaqanga}
+  Mbube:
+    template: {name: Genre, genres: Mbube}
+  Mchiriku:
+    template: {name: Genre, genres: Mchiriku}
+  Medieval:
+    template: {name: Genre, genres: Medieval}
+  Medieval Lyric Poetry:
+    template: {name: Genre, genres: Medieval Lyric Poetry}
+  Medieval Metal:
+    template: {name: Genre, genres: Medieval Metal}
+  Medieval Rock:
+    template: {name: Genre, genres: Medieval Rock}
+  Mega Funk:
+    template: {name: Genre, genres: Mega Funk}
+  Meiji Shinkyoku:
+    template: {name: Genre, genres: Meiji Shinkyoku}
+  Melbourne Bounce:
+    template: {name: Genre, genres: Melbourne Bounce}
+  Melodic Black Metal:
+    template: {name: Genre, genres: Melodic Black Metal}
+  Melodic Death Metal:
+    template: {name: Genre, genres: Melodic Death Metal}
+  Melodic Dubstep:
+    template: {name: Genre, genres: Melodic Dubstep}
+  Melodic Hardcore:
+    template: {name: Genre, genres: Melodic Hardcore}
+  Melodic House:
+    template: {name: Genre, genres: Melodic House}
+  Melodic Metalcore:
+    template: {name: Genre, genres: Melodic Metalcore}
+  Melodic Techno:
+    template: {name: Genre, genres: Melodic Techno}
+  Melodic Trance:
+    template: {name: Genre, genres: Melodic Trance}
+  Mélodie:
+    template: {name: Genre, genres: Mélodie}
+  Memphis Rap:
+    template: {name: Genre, genres: Memphis Rap}
+  Mento:
+    template: {name: Genre, genres: Mento}
+  Menzuma:
+    template: {name: Genre, genres: Menzuma}
+  Merecumbé:
+    template: {name: Genre, genres: Merecumbé}
+  Merengue:
+    template: {name: Genre, genres: Merengue}
+  Merengue Típico:
+    template: {name: Genre, genres: Merengue Típico}
+  Merenhouse:
+    template: {name: Genre, genres: Merenhouse}
+  Merequetengue:
+    template: {name: Genre, genres: Merequetengue}
+  Méringue:
+    template: {name: Genre, genres: Méringue}
+  Merseybeat:
+    template: {name: Genre, genres: Merseybeat}
+  Metal:
+    template: {name: Genre, genres: Metal}
+  Metalcore:
+    template: {name: Genre, genres: Metalcore}
+  Meyxana:
+    template: {name: Genre, genres: Meyxana}
+  Miami Bass:
+    template: {name: Genre, genres: Miami Bass}
+  Microhouse:
+    template: {name: Genre, genres: Microhouse}
+  Microsound:
+    template: {name: Genre, genres: Microsound}
+  Microtonal Classical:
+    template: {name: Genre, genres: Microtonal Classical}
+  Midtempo Bass:
+    template: {name: Genre, genres: Midtempo Bass}
+  Midwest Emo:
+    template: {name: Genre, genres: Midwest Emo}
+  Miejski Folk:
+    template: {name: Genre, genres: Miejski Folk}
+  Milonga:
+    template: {name: Genre, genres: Milonga}
+  Min'Yō:
+    template: {name: Genre, genres: Min'Yō}
+  Minatory:
+    template: {name: Genre, genres: Minatory}
+  Mincecore:
+    template: {name: Genre, genres: Mincecore}
+  Minimal Drum And Bass:
+    template: {name: Genre, genres: Minimal Drum And Bass}
+  Minimal Synth:
+    template: {name: Genre, genres: Minimal Synth}
+  Minimal Techno:
+    template: {name: Genre, genres: Minimal Techno}
+  Minimal Wave:
+    template: {name: Genre, genres: Minimal Wave}
+  Minimalism:
+    template: {name: Genre, genres: Minimalism}
+  Minneapolis Sound:
+    template: {name: Genre, genres: Minneapolis Sound}
+  Minstrelsy:
+    template: {name: Genre, genres: Minstrelsy}
+  Mobb Music:
+    template: {name: Genre, genres: Mobb Music}
+  Mod:
+    template: {name: Genre, genres: Mod}
+  Mod Revival:
+    template: {name: Genre, genres: Mod Revival}
+  Moda De Viola:
+    template: {name: Genre, genres: Moda De Viola}
+  Modal Jazz:
+    template: {name: Genre, genres: Modal Jazz}
+  Modern Blues:
+    template: {name: Genre, genres: Modern Blues}
+  Modern Classical:
+    template: {name: Genre, genres: Modern Classical}
+  Modern Creative:
+    template: {name: Genre, genres: Modern Creative}
+  Modern Hardtek:
+    template: {name: Genre, genres: Modern Hardtek}
+  Modern Laiko:
+    template: {name: Genre, genres: Modern Laiko}
+  Modinha:
+    template: {name: Genre, genres: Modinha}
+  Moe Song:
+    template: {name: Genre, genres: Moe Song}
+  Monodrama:
+    template: {name: Genre, genres: Monodrama}
+  Mood Kayō:
+    template: {name: Genre, genres: Mood Kayō}
+  Moogsploitation:
+    template: {name: Genre, genres: Moogsploitation}
+  Moombahcore:
+    template: {name: Genre, genres: Moombahcore}
+  Moombahton:
+    template: {name: Genre, genres: Moombahton}
+  Mor Lam:
+    template: {name: Genre, genres: Mor Lam}
+  Mor Lam Sing:
+    template: {name: Genre, genres: Mor Lam Sing}
+  Morenada:
+    template: {name: Genre, genres: Morenada}
+  Morna:
+    template: {name: Genre, genres: Morna}
+  Moroccan Chaabi:
+    template: {name: Genre, genres: Moroccan Chaabi}
+  Motet:
+    template: {name: Genre, genres: Motet}
+  Motown:
+    template: {name: Genre, genres: Motown}
+  Moutya:
+    template: {name: Genre, genres: Moutya}
+  Movimiento Alterado:
+    template: {name: Genre, genres: Movimiento Alterado}
+  Mozarabic Chant:
+    template: {name: Genre, genres: Mozarabic Chant}
+  Mpb:
+    template: {name: Genre, genres: Mpb}
+  Mugham:
+    template: {name: Genre, genres: Mugham}
+  Muiñeira:
+    template: {name: Genre, genres: Muiñeira}
+  Mulatós:
+    template: {name: Genre, genres: Mulatós}
+  Muliza:
+    template: {name: Genre, genres: Muliza}
+  Murga:
+    template: {name: Genre, genres: Murga}
+  Murga Uruguaya:
+    template: {name: Genre, genres: Murga Uruguaya}
+  Musette:
+    template: {name: Genre, genres: Musette}
+  Music Hall:
+    template: {name: Genre, genres: Music Hall}
+  Música Cebolla:
+    template: {name: Genre, genres: Música Cebolla}
+  Música Criolla:
+    template: {name: Genre, genres: Música Criolla}
+  Música De Intervenção:
+    template: {name: Genre, genres: Música De Intervenção}
+  Música Típica Chilena:
+    template: {name: Genre, genres: Música Típica Chilena}
+  Musical:
+    template: {name: Genre, genres: Musical}
+  Musique Concrète:
+    template: {name: Genre, genres: Musique Concrète}
+  Musique Concrète Instrumentale:
+    template: {name: Genre, genres: Musique Concrète Instrumentale}
+  Muzika Yehudit Mekorit:
+    template: {name: Genre, genres: Muzika Yehudit Mekorit}
+  Muziki Wa Dansi:
+    template: {name: Genre, genres: Muziki Wa Dansi}
+  Nagauta:
+    template: {name: Genre, genres: Nagauta}
+  Narcocorrido:
+    template: {name: Genre, genres: Narcocorrido}
+  Narodnozabavna Glasba:
+    template: {name: Genre, genres: Narodnozabavna Glasba}
+  Nasheed:
+    template: {name: Genre, genres: Nasheed}
+  Nashville Sound:
+    template: {name: Genre, genres: Nashville Sound}
+  Native American New Age:
+    template: {name: Genre, genres: Native American New Age}
+  Nature Sounds:
+    template: {name: Genre, genres: Nature Sounds}
+  Natya Sangeet:
+    template: {name: Genre, genres: Natya Sangeet}
+  Nederbeat:
+    template: {name: Genre, genres: Nederbeat}
+  Nederpop:
+    template: {name: Genre, genres: Nederpop}
+  Neo Kyma:
+    template: {name: Genre, genres: Neo Kyma}
+  Neo Soul:
+    template: {name: Genre, genres: Neo Soul}
+  Neo-Acoustic:
+    template: {name: Genre, genres: Neo-Acoustic}
+  Neo-Grime:
+    template: {name: Genre, genres: Neo-Grime}
+  Neo-Medieval Folk:
+    template: {name: Genre, genres: Neo-Medieval Folk}
+  Neo-Progressive Rock:
+    template: {name: Genre, genres: Neo-Progressive Rock}
+  Neo-Psychedelia:
+    template: {name: Genre, genres: Neo-Psychedelia}
+  Neo-Rockabilly:
+    template: {name: Genre, genres: Neo-Rockabilly}
+  Néo-Trad:
+    template: {name: Genre, genres: Néo-Trad}
+  Neo-Traditional Country:
+    template: {name: Genre, genres: Neo-Traditional Country}
+  Neoclassical Dark Wave:
+    template: {name: Genre, genres: Neoclassical Dark Wave}
+  Neoclassical Metal:
+    template: {name: Genre, genres: Neoclassical Metal}
+  Neoclassical New Age:
+    template: {name: Genre, genres: Neoclassical New Age}
+  Neoclassicism:
+    template: {name: Genre, genres: Neoclassicism}
+  Neocrust:
+    template: {name: Genre, genres: Neocrust}
+  Neofolk:
+    template: {name: Genre, genres: Neofolk}
+  Neofolklore:
+    template: {name: Genre, genres: Neofolklore}
+  Neon Pop Punk:
+    template: {name: Genre, genres: Neon Pop Punk}
+  Neoperreo:
+    template: {name: Genre, genres: Neoperreo}
+  Nerdcore:
+    template: {name: Genre, genres: Nerdcore}
+  Nerdcore Techno:
+    template: {name: Genre, genres: Nerdcore Techno}
+  Neue Deutsche Härte:
+    template: {name: Genre, genres: Neue Deutsche Härte}
+  Neue Deutsche Welle:
+    template: {name: Genre, genres: Neue Deutsche Welle}
+  Neurofunk:
+    template: {name: Genre, genres: Neurofunk}
+  Neurohop:
+    template: {name: Genre, genres: Neurohop}
+  New Age:
+    template: {name: Genre, genres: New Age}
+  New Beat:
+    template: {name: Genre, genres: New Beat}
+  New Complexity:
+    template: {name: Genre, genres: New Complexity}
+  New Jack Swing:
+    template: {name: Genre, genres: New Jack Swing}
+  New Orleans Blues:
+    template: {name: Genre, genres: New Orleans Blues}
+  New Orleans R&B:
+    template: {name: Genre, genres: New Orleans R&B}
+  New Rave:
+    template: {name: Genre, genres: New Rave}
+  New Romantic:
+    template: {name: Genre, genres: New Romantic}
+  New Wave:
+    template: {name: Genre, genres: New Wave}
+  Ngoma:
+    template: {name: Genre, genres: Ngoma}
+  Nhạc Đỏ:
+    template: {name: Genre, genres: Nhạc Đỏ}
+  Nhạc Vàng:
+    template: {name: Genre, genres: Nhạc Vàng}
+  Night Full-On:
+    template: {name: Genre, genres: Night Full-On}
+  Nightcore:
+    template: {name: Genre, genres: Nightcore}
+  Nigun:
+    template: {name: Genre, genres: Nigun}
+  Nintendocore:
+    template: {name: Genre, genres: Nintendocore}
+  Nitzhonot:
+    template: {name: Genre, genres: Nitzhonot}
+  Njuup:
+    template: {name: Genre, genres: Njuup}
+  No Melody Trap:
+    template: {name: Genre, genres: No Melody Trap}
+  No Wave:
+    template: {name: Genre, genres: No Wave}
+  Nocturne:
+    template: {name: Genre, genres: Nocturne}
+  Noh:
+    template: {name: Genre, genres: Noh}
+  Noise:
+    template: {name: Genre, genres: Noise}
+  Noise Pop:
+    template: {name: Genre, genres: Noise Pop}
+  Noise Rock:
+    template: {name: Genre, genres: Noise Rock}
+  Noisecore:
+    template: {name: Genre, genres: Noisecore}
+  Non-Music:
+    template: {name: Genre, genres: Non-Music}
+  Nortec:
+    template: {name: Genre, genres: Nortec}
+  Norteño:
+    template: {name: Genre, genres: Norteño}
+  Northern Soul:
+    template: {name: Genre, genres: Northern Soul}
+  Nouveau Zydeco:
+    template: {name: Genre, genres: Nouveau Zydeco}
+  Nova Cançó:
+    template: {name: Genre, genres: Nova Cançó}
+  Novelty Piano:
+    template: {name: Genre, genres: Novelty Piano}
+  Novo Dub:
+    template: {name: Genre, genres: Novo Dub}
+  Nu Disco:
+    template: {name: Genre, genres: Nu Disco}
+  Nu Jazz:
+    template: {name: Genre, genres: Nu Jazz}
+  Nu Metal:
+    template: {name: Genre, genres: Nu Metal}
+  Nu Skool Breaks:
+    template: {name: Genre, genres: Nu Skool Breaks}
+  Nu Style Gabber:
+    template: {name: Genre, genres: Nu Style Gabber}
+  Nueva Canción:
+    template: {name: Genre, genres: Nueva Canción}
+  Nueva Canción Chilena:
+    template: {name: Genre, genres: Nueva Canción Chilena}
+  Nueva Canción Española:
+    template: {name: Genre, genres: Nueva Canción Española}
+  Nueva Cumbia Chilena:
+    template: {name: Genre, genres: Nueva Cumbia Chilena}
+  Nueva Trova:
+    template: {name: Genre, genres: Nueva Trova}
+  Nuevo Cancionero:
+    template: {name: Genre, genres: Nuevo Cancionero}
+  Nuevo Flamenco:
+    template: {name: Genre, genres: Nuevo Flamenco}
+  Nuevo Tango:
+    template: {name: Genre, genres: Nuevo Tango}
+  Nwobhm:
+    template: {name: Genre, genres: Nwobhm}
+  Nyū Myūjikku:
+    template: {name: Genre, genres: Nyū Myūjikku}
+  Oberek:
+    template: {name: Genre, genres: Oberek}
+  Occult Rock:
+    template: {name: Genre, genres: Occult Rock}
+  Odissi Classical:
+    template: {name: Genre, genres: Odissi Classical}
+  Oi:
+    template: {name: Genre, genres: Oi}
+  Old Roman Chant:
+    template: {name: Genre, genres: Old Roman Chant}
+  Old School Death Metal:
+    template: {name: Genre, genres: Old School Death Metal}
+  Old School Hip Hop:
+    template: {name: Genre, genres: Old School Hip Hop}
+  Old-Time:
+    template: {name: Genre, genres: Old-Time}
+  Omutibo:
+    template: {name: Genre, genres: Omutibo}
+  Onda Nueva:
+    template: {name: Genre, genres: Onda Nueva}
+  Ondō:
+    template: {name: Genre, genres: Ondō}
+  Onkyo:
+    template: {name: Genre, genres: Onkyo}
+  Opera:
+    template: {name: Genre, genres: Opera}
+  Opera Buffa:
+    template: {name: Genre, genres: Opera Buffa}
+  Opéra Comique:
+    template: {name: Genre, genres: Opéra Comique}
+  Opera Semiseria:
+    template: {name: Genre, genres: Opera Semiseria}
+  Opera Seria:
+    template: {name: Genre, genres: Opera Seria}
+  Opera-Ballet:
+    template: {name: Genre, genres: Opera-Ballet}
+  Operatic Pop:
+    template: {name: Genre, genres: Operatic Pop}
+  Operetta:
+    template: {name: Genre, genres: Operetta}
+  Opm:
+    template: {name: Genre, genres: Opm}
+  Oratorio:
+    template: {name: Genre, genres: Oratorio}
+  Orchestral:
+    template: {name: Genre, genres: Orchestral}
+  Orchestral Jazz:
+    template: {name: Genre, genres: Orchestral Jazz}
+  Orchestral Song:
+    template: {name: Genre, genres: Orchestral Song}
+  Organic House:
+    template: {name: Genre, genres: Organic House}
+  Ori Deck:
+    template: {name: Genre, genres: Ori Deck}
+  Oriental Ballad:
+    template: {name: Genre, genres: Oriental Ballad}
+  Orkes Gambus:
+    template: {name: Genre, genres: Orkes Gambus}
+  Orthodox Pop:
+    template: {name: Genre, genres: Orthodox Pop}
+  Outlaw Country:
+    template: {name: Genre, genres: Outlaw Country}
+  Outsider House:
+    template: {name: Genre, genres: Outsider House}
+  Overture:
+    template: {name: Genre, genres: Overture}
+  Özgün Müzik:
+    template: {name: Genre, genres: Özgün Müzik}
+  P-Funk:
+    template: {name: Genre, genres: P-Funk}
+  Pachanga:
+    template: {name: Genre, genres: Pachanga}
+  Pacific Reggae:
+    template: {name: Genre, genres: Pacific Reggae}
+  Pagan Black Metal:
+    template: {name: Genre, genres: Pagan Black Metal}
+  Pagan Folk:
+    template: {name: Genre, genres: Pagan Folk}
+  Paghjella:
+    template: {name: Genre, genres: Paghjella}
+  Pagodão:
+    template: {name: Genre, genres: Pagodão}
+  Pagode:
+    template: {name: Genre, genres: Pagode}
+  Pagode Romântico:
+    template: {name: Genre, genres: Pagode Romântico}
+  Paisley Underground:
+    template: {name: Genre, genres: Paisley Underground}
+  Palingsound:
+    template: {name: Genre, genres: Palingsound}
+  Palm-Wine:
+    template: {name: Genre, genres: Palm-Wine}
+  Pansori:
+    template: {name: Genre, genres: Pansori}
+  Parang:
+    template: {name: Genre, genres: Parang}
+  Partido Alto:
+    template: {name: Genre, genres: Partido Alto}
+  Pasillo:
+    template: {name: Genre, genres: Pasillo}
+  Pasodoble:
+    template: {name: Genre, genres: Pasodoble}
+  Payada:
+    template: {name: Genre, genres: Payada}
+  Peak Time Techno:
+    template: {name: Genre, genres: Peak Time Techno}
+  Pep Band:
+    template: {name: Genre, genres: Pep Band}
+  Persian Classical:
+    template: {name: Genre, genres: Persian Classical}
+  Persian Pop:
+    template: {name: Genre, genres: Persian Pop}
+  Philly Club:
+    template: {name: Genre, genres: Philly Club}
+  Philly Soul:
+    template: {name: Genre, genres: Philly Soul}
+  Phleng Phuea Chiwit:
+    template: {name: Genre, genres: Phleng Phuea Chiwit}
+  Phonk:
+    template: {name: Genre, genres: Phonk}
+  Phonk House:
+    template: {name: Genre, genres: Phonk House}
+  Piano Blues:
+    template: {name: Genre, genres: Piano Blues}
+  Piano Rock:
+    template: {name: Genre, genres: Piano Rock}
+  Picopop:
+    template: {name: Genre, genres: Picopop}
+  Piedmont Blues:
+    template: {name: Genre, genres: Piedmont Blues}
+  Pilón:
+    template: {name: Genre, genres: Pilón}
+  Pimba:
+    template: {name: Genre, genres: Pimba}
+  Pinpeat:
+    template: {name: Genre, genres: Pinpeat}
+  Pìobaireachd:
+    template: {name: Genre, genres: Pìobaireachd}
+  Pipe Band Music:
+    template: {name: Genre, genres: Pipe Band Music}
+  Piphat:
+    template: {name: Genre, genres: Piphat}
+  Piseiro:
+    template: {name: Genre, genres: Piseiro}
+  Piyyut:
+    template: {name: Genre, genres: Piyyut}
+  Pizzica:
+    template: {name: Genre, genres: Pizzica}
+  Plainchant:
+    template: {name: Genre, genres: Plainchant}
+  Plena:
+    template: {name: Genre, genres: Plena}
+  Plugg:
+    template: {name: Genre, genres: Plugg}
+  Pluggnb:
+    template: {name: Genre, genres: Pluggnb}
+  Plunderphonics:
+    template: {name: Genre, genres: Plunderphonics}
+  Poetry:
+    template: {name: Genre, genres: Poetry}
+  Polca Criolla:
+    template: {name: Genre, genres: Polca Criolla}
+  Political Hip Hop:
+    template: {name: Genre, genres: Political Hip Hop}
+  Polka:
+    template: {name: Genre, genres: Polka}
+  Polka Paraguaya:
+    template: {name: Genre, genres: Polka Paraguaya}
+  Polonaise:
+    template: {name: Genre, genres: Polonaise}
+  Pon-Chak Disco:
+    template: {name: Genre, genres: Pon-Chak Disco}
+  Pop:
+    template: {name: Genre, genres: Pop}
+  Pop Ghazal:
+    template: {name: Genre, genres: Pop Ghazal}
+  Pop Kreatif:
+    template: {name: Genre, genres: Pop Kreatif}
+  Pop Metal:
+    template: {name: Genre, genres: Pop Metal}
+  Pop Minang:
+    template: {name: Genre, genres: Pop Minang}
+  Pop Punk:
+    template: {name: Genre, genres: Pop Punk}
+  Pop Raï:
+    template: {name: Genre, genres: Pop Raï}
+  Pop Rap:
+    template: {name: Genre, genres: Pop Rap}
+  Pop Rock:
+    template: {name: Genre, genres: Pop Rock}
+  Pop Soul:
+    template: {name: Genre, genres: Pop Soul}
+  Pop Yeh-Yeh:
+    template: {name: Genre, genres: Pop Yeh-Yeh}
+  Porn Groove:
+    template: {name: Genre, genres: Porn Groove}
+  Pornogrind:
+    template: {name: Genre, genres: Pornogrind}
+  Porro:
+    template: {name: Genre, genres: Porro}
+  Post-Bop:
+    template: {name: Genre, genres: Post-Bop}
+  Post-Britpop:
+    template: {name: Genre, genres: Post-Britpop}
+  Post-Classical:
+    template: {name: Genre, genres: Post-Classical}
+  Post-Grunge:
+    template: {name: Genre, genres: Post-Grunge}
+  Post-Hardcore:
+    template: {name: Genre, genres: Post-Hardcore}
+  Post-Industrial:
+    template: {name: Genre, genres: Post-Industrial}
+  Post-Metal:
+    template: {name: Genre, genres: Post-Metal}
+  Post-Minimalism:
+    template: {name: Genre, genres: Post-Minimalism}
+  Post-Punk:
+    template: {name: Genre, genres: Post-Punk}
+  Post-Punk Revival:
+    template: {name: Genre, genres: Post-Punk Revival}
+  Post-Rock:
+    template: {name: Genre, genres: Post-Rock}
+  Powada:
+    template: {name: Genre, genres: Powada}
+  Power Electronics:
+    template: {name: Genre, genres: Power Electronics}
+  Power Metal:
+    template: {name: Genre, genres: Power Metal}
+  Power Noise:
+    template: {name: Genre, genres: Power Noise}
+  Power Pop:
+    template: {name: Genre, genres: Power Pop}
+  Power Soca:
+    template: {name: Genre, genres: Power Soca}
+  Powerstomp:
+    template: {name: Genre, genres: Powerstomp}
+  Powerviolence:
+    template: {name: Genre, genres: Powerviolence}
+  Praise & Worship:
+    template: {name: Genre, genres: Praise & Worship}
+  Prank Calls:
+    template: {name: Genre, genres: Prank Calls}
+  Prelude:
+    template: {name: Genre, genres: Prelude}
+  Production Music:
+    template: {name: Genre, genres: Production Music}
+  Progressive:
+    template: {name: Genre, genres: Progressive}
+  Progressive Bluegrass:
+    template: {name: Genre, genres: Progressive Bluegrass}
+  Progressive Breaks:
+    template: {name: Genre, genres: Progressive Breaks}
+  Progressive Country:
+    template: {name: Genre, genres: Progressive Country}
+  Progressive Electronic:
+    template: {name: Genre, genres: Progressive Electronic}
+  Progressive Folk:
+    template: {name: Genre, genres: Progressive Folk}
+  Progressive House:
+    template: {name: Genre, genres: Progressive House}
+  Progressive Metal:
+    template: {name: Genre, genres: Progressive Metal}
+  Progressive Pop:
+    template: {name: Genre, genres: Progressive Pop}
+  Progressive Psytrance:
+    template: {name: Genre, genres: Progressive Psytrance}
+  Progressive Rock:
+    template: {name: Genre, genres: Progressive Rock}
+  Progressive Trance:
+    template: {name: Genre, genres: Progressive Trance}
+  Proto-Punk:
+    template: {name: Genre, genres: Proto-Punk}
+  Psichedelia Occulta Italiana:
+    template: {name: Genre, genres: Psichedelia Occulta Italiana}
+  Psybient:
+    template: {name: Genre, genres: Psybient}
+  Psybreaks:
+    template: {name: Genre, genres: Psybreaks}
+  Psychedelic:
+    template: {name: Genre, genres: Psychedelic}
+  Psychedelic Folk:
+    template: {name: Genre, genres: Psychedelic Folk}
+  Psychedelic Pop:
+    template: {name: Genre, genres: Psychedelic Pop}
+  Psychedelic Rock:
+    template: {name: Genre, genres: Psychedelic Rock}
+  Psychedelic Soul:
+    template: {name: Genre, genres: Psychedelic Soul}
+  Psychobilly:
+    template: {name: Genre, genres: Psychobilly}
+  Psycore:
+    template: {name: Genre, genres: Psycore}
+  Psystyle:
+    template: {name: Genre, genres: Psystyle}
+  Psytrance:
+    template: {name: Genre, genres: Psytrance}
+  Pub Rock:
+    template: {name: Genre, genres: Pub Rock}
+  Pungmul:
+    template: {name: Genre, genres: Pungmul}
+  Punk:
+    template: {name: Genre, genres: Punk}
+  Punk Blues:
+    template: {name: Genre, genres: Punk Blues}
+  Punk Rap:
+    template: {name: Genre, genres: Punk Rap}
+  Punk Rock:
+    template: {name: Genre, genres: Punk Rock}
+  Punta:
+    template: {name: Genre, genres: Punta}
+  Punto:
+    template: {name: Genre, genres: Punto}
+  Purple Sound:
+    template: {name: Genre, genres: Purple Sound}
+  Puxa:
+    template: {name: Genre, genres: Puxa}
+  Q-Pop:
+    template: {name: Genre, genres: Q-Pop}
+  Qaraami:
+    template: {name: Genre, genres: Qaraami}
+  Qasidah Modern:
+    template: {name: Genre, genres: Qasidah Modern}
+  Qawwali:
+    template: {name: Genre, genres: Qawwali}
+  Quan Họ:
+    template: {name: Genre, genres: Quan Họ}
+  Queercore:
+    template: {name: Genre, genres: Queercore}
+  Quiet Storm:
+    template: {name: Genre, genres: Quiet Storm}
+  Quyi:
+    template: {name: Genre, genres: Quyi}
+  R&B:
+    template: {name: Genre, genres: R&B}
+  Rabiz:
+    template: {name: Genre, genres: Rabiz}
+  Raga Rock:
+    template: {name: Genre, genres: Raga Rock}
+  Ragga:
+    template: {name: Genre, genres: Ragga}
+  Ragga Hip-Hop:
+    template: {name: Genre, genres: Ragga Hip-Hop}
+  Ragga Jungle:
+    template: {name: Genre, genres: Ragga Jungle}
+  Raggacore:
+    template: {name: Genre, genres: Raggacore}
+  Raggatek:
+    template: {name: Genre, genres: Raggatek}
+  Ragtime:
+    template: {name: Genre, genres: Ragtime}
+  Raï:
+    template: {name: Genre, genres: Raï}
+  Ranchera:
+    template: {name: Genre, genres: Ranchera}
+  Rap Metal:
+    template: {name: Genre, genres: Rap Metal}
+  Rap Rock:
+    template: {name: Genre, genres: Rap Rock}
+  Rapcore:
+    template: {name: Genre, genres: Rapcore}
+  Rapso:
+    template: {name: Genre, genres: Rapso}
+  Rara:
+    template: {name: Genre, genres: Rara}
+  Rasin:
+    template: {name: Genre, genres: Rasin}
+  Rasqueado Cuiabano:
+    template: {name: Genre, genres: Rasqueado Cuiabano}
+  Rasteirinha:
+    template: {name: Genre, genres: Rasteirinha}
+  Ratchet Music:
+    template: {name: Genre, genres: Ratchet Music}
+  Rautalanka:
+    template: {name: Genre, genres: Rautalanka}
+  Rave:
+    template: {name: Genre, genres: Rave}
+  Raw Punk:
+    template: {name: Genre, genres: Raw Punk}
+  Rawphoric:
+    template: {name: Genre, genres: Rawphoric}
+  Rawstyle:
+    template: {name: Genre, genres: Rawstyle}
+  Rebetiko:
+    template: {name: Genre, genres: Rebetiko}
+  Red Dirt:
+    template: {name: Genre, genres: Red Dirt}
+  Red Song:
+    template: {name: Genre, genres: Red Song}
+  Reductionism:
+    template: {name: Genre, genres: Reductionism}
+  Regalia:
+    template: {name: Genre, genres: Regalia}
+  Reggae:
+    template: {name: Genre, genres: Reggae}
+  Reggae Rock:
+    template: {name: Genre, genres: Reggae Rock}
+  Reggae-Pop:
+    template: {name: Genre, genres: Reggae-Pop}
+  Reggaeton:
+    template: {name: Genre, genres: Reggaeton}
+  Regional Mexicano:
+    template: {name: Genre, genres: Regional Mexicano}
+  Renaissance:
+    template: {name: Genre, genres: Renaissance}
+  Repente:
+    template: {name: Genre, genres: Repente}
+  Requiem:
+    template: {name: Genre, genres: Requiem}
+  Revue:
+    template: {name: Genre, genres: Revue}
+  Rhumba:
+    template: {name: Genre, genres: Rhumba}
+  Ricercar:
+    template: {name: Genre, genres: Ricercar}
+  Riddim Dubstep:
+    template: {name: Genre, genres: Riddim Dubstep}
+  Rigsar:
+    template: {name: Genre, genres: Rigsar}
+  Ring Shout:
+    template: {name: Genre, genres: Ring Shout}
+  Riot Grrrl:
+    template: {name: Genre, genres: Riot Grrrl}
+  Ripsaw:
+    template: {name: Genre, genres: Ripsaw}
+  Ritual Ambient:
+    template: {name: Genre, genres: Ritual Ambient}
+  Rizitika:
+    template: {name: Genre, genres: Rizitika}
+  Rkt:
+    template: {name: Genre, genres: Rkt}
+  Rock:
+    template: {name: Genre, genres: Rock}
+  Rock And Roll:
+    template: {name: Genre, genres: Rock And Roll}
+  Rock Andaluz:
+    template: {name: Genre, genres: Rock Andaluz}
+  Rock Andino:
+    template: {name: Genre, genres: Rock Andino}
+  Rock Musical:
+    template: {name: Genre, genres: Rock Musical}
+  Rock Opera:
+    template: {name: Genre, genres: Rock Opera}
+  Rock Rural:
+    template: {name: Genre, genres: Rock Rural}
+  Rock Urbano:
+    template: {name: Genre, genres: Rock Urbano}
+  Rockabilly:
+    template: {name: Genre, genres: Rockabilly}
+  Rocksteady:
+    template: {name: Genre, genres: Rocksteady}
+  Rōkyoku:
+    template: {name: Genre, genres: Rōkyoku}
+  Rom Kbach:
+    template: {name: Genre, genres: Rom Kbach}
+  Romanian Popcorn:
+    template: {name: Genre, genres: Romanian Popcorn}
+  Romantic Classical:
+    template: {name: Genre, genres: Romantic Classical}
+  Romantische Oper:
+    template: {name: Genre, genres: Romantische Oper}
+  Rominimal:
+    template: {name: Genre, genres: Rominimal}
+  Roots Reggae:
+    template: {name: Genre, genres: Roots Reggae}
+  Roots Rock:
+    template: {name: Genre, genres: Roots Rock}
+  Rumba:
+    template: {name: Genre, genres: Rumba}
+  Rumba Catalana:
+    template: {name: Genre, genres: Rumba Catalana}
+  Rumba Cubana:
+    template: {name: Genre, genres: Rumba Cubana}
+  Rumba Flamenca:
+    template: {name: Genre, genres: Rumba Flamenca}
+  Runo Song:
+    template: {name: Genre, genres: Runo Song}
+  Russian Chanson:
+    template: {name: Genre, genres: Russian Chanson}
+  Russian Romance:
+    template: {name: Genre, genres: Russian Romance}
+  Ryūkōka:
+    template: {name: Genre, genres: Ryūkōka}
+  Sacred Harp:
+    template: {name: Genre, genres: Sacred Harp}
+  Sacred Steel:
+    template: {name: Genre, genres: Sacred Steel}
+  Saeta:
+    template: {name: Genre, genres: Saeta}
+  Salegy:
+    template: {name: Genre, genres: Salegy}
+  Salsa:
+    template: {name: Genre, genres: Salsa}
+  Salsa Choke:
+    template: {name: Genre, genres: Salsa Choke}
+  Salsa Dura:
+    template: {name: Genre, genres: Salsa Dura}
+  Salsa Romántica:
+    template: {name: Genre, genres: Salsa Romántica}
+  Saluang Klasik:
+    template: {name: Genre, genres: Saluang Klasik}
+  Samba:
+    template: {name: Genre, genres: Samba}
+  Samba De Breque:
+    template: {name: Genre, genres: Samba De Breque}
+  Samba De Gafieira:
+    template: {name: Genre, genres: Samba De Gafieira}
+  Samba De Roda:
+    template: {name: Genre, genres: Samba De Roda}
+  Samba De Terreiro:
+    template: {name: Genre, genres: Samba De Terreiro}
+  Samba Soul:
+    template: {name: Genre, genres: Samba Soul}
+  Samba-Canção:
+    template: {name: Genre, genres: Samba-Canção}
+  Samba-Choro:
+    template: {name: Genre, genres: Samba-Choro}
+  Samba-Enredo:
+    template: {name: Genre, genres: Samba-Enredo}
+  Samba-Exaltação:
+    template: {name: Genre, genres: Samba-Exaltação}
+  Samba-Jazz:
+    template: {name: Genre, genres: Samba-Jazz}
+  Samba-Joia:
+    template: {name: Genre, genres: Samba-Joia}
+  Samba-Reggae:
+    template: {name: Genre, genres: Samba-Reggae}
+  Samba-Rock:
+    template: {name: Genre, genres: Samba-Rock}
+  Sambalanço:
+    template: {name: Genre, genres: Sambalanço}
+  Sambass:
+    template: {name: Genre, genres: Sambass}
+  Sampledelia:
+    template: {name: Genre, genres: Sampledelia}
+  Sanjo:
+    template: {name: Genre, genres: Sanjo}
+  Santé Engagé:
+    template: {name: Genre, genres: Santé Engagé}
+  Sarala Gee:
+    template: {name: Genre, genres: Sarala Gee}
+  Sardana:
+    template: {name: Genre, genres: Sardana}
+  Sasscore:
+    template: {name: Genre, genres: Sasscore}
+  Sawt:
+    template: {name: Genre, genres: Sawt}
+  Saya Afroboliviana:
+    template: {name: Genre, genres: Saya Afroboliviana}
+  Schlager:
+    template: {name: Genre, genres: Schlager}
+  Schottische:
+    template: {name: Genre, genres: Schottische}
+  Schranz:
+    template: {name: Genre, genres: Schranz}
+  Screamo:
+    template: {name: Genre, genres: Screamo}
+  Scrumpy And Western:
+    template: {name: Genre, genres: Scrumpy And Western}
+  Sea Shanty:
+    template: {name: Genre, genres: Sea Shanty}
+  Sean-Nós:
+    template: {name: Genre, genres: Sean-Nós}
+  Seapunk:
+    template: {name: Genre, genres: Seapunk}
+  Séga:
+    template: {name: Genre, genres: Séga}
+  Seggae:
+    template: {name: Genre, genres: Seggae}
+  Seguidilla:
+    template: {name: Genre, genres: Seguidilla}
+  Seishun Punk:
+    template: {name: Genre, genres: Seishun Punk}
+  Semba:
+    template: {name: Genre, genres: Semba}
+  Semi-Trot:
+    template: {name: Genre, genres: Semi-Trot}
+  Serenade:
+    template: {name: Genre, genres: Serenade}
+  Serialism:
+    template: {name: Genre, genres: Serialism}
+  Sertanejo:
+    template: {name: Genre, genres: Sertanejo}
+  Sertanejo Raiz:
+    template: {name: Genre, genres: Sertanejo Raiz}
+  Sertanejo Romântico:
+    template: {name: Genre, genres: Sertanejo Romântico}
+  Sertanejo Universitário:
+    template: {name: Genre, genres: Sertanejo Universitário}
+  Seto Leelo:
+    template: {name: Genre, genres: Seto Leelo}
+  Sevdalinka:
+    template: {name: Genre, genres: Sevdalinka}
+  Sevillanas:
+    template: {name: Genre, genres: Sevillanas}
+  Shaabi:
+    template: {name: Genre, genres: Shaabi}
+  Shabad Kirtan:
+    template: {name: Genre, genres: Shabad Kirtan}
+  Shan'Ge:
+    template: {name: Genre, genres: Shan'Ge}
+  Shangaan Electro:
+    template: {name: Genre, genres: Shangaan Electro}
+  Shanto:
+    template: {name: Genre, genres: Shanto}
+  Shashmaqam:
+    template: {name: Genre, genres: Shashmaqam}
+  Shatta:
+    template: {name: Genre, genres: Shatta}
+  Shibuya-Kei:
+    template: {name: Genre, genres: Shibuya-Kei}
+  Shidaiqu:
+    template: {name: Genre, genres: Shidaiqu}
+  Shima-Uta:
+    template: {name: Genre, genres: Shima-Uta}
+  Shinkyoku:
+    template: {name: Genre, genres: Shinkyoku}
+  Shitgaze:
+    template: {name: Genre, genres: Shitgaze}
+  Shoegaze:
+    template: {name: Genre, genres: Shoegaze}
+  Shōmyō:
+    template: {name: Genre, genres: Shōmyō}
+  Sierreño:
+    template: {name: Genre, genres: Sierreño}
+  Sigidrigi:
+    template: {name: Genre, genres: Sigidrigi}
+  Sigilkore:
+    template: {name: Genre, genres: Sigilkore}
+  Sinawi:
+    template: {name: Genre, genres: Sinawi}
+  Sinfonia Concertante:
+    template: {name: Genre, genres: Sinfonia Concertante}
+  Singeli:
+    template: {name: Genre, genres: Singeli}
+  Singer-Songwriter:
+    template: {name: Genre, genres: Singer-Songwriter}
+  Singspiel:
+    template: {name: Genre, genres: Singspiel}
+  Ska:
+    template: {name: Genre, genres: Ska}
+  Ska Punk:
+    template: {name: Genre, genres: Ska Punk}
+  Skacore:
+    template: {name: Genre, genres: Skacore}
+  Skate Punk:
+    template: {name: Genre, genres: Skate Punk}
+  Sketch Comedy:
+    template: {name: Genre, genres: Sketch Comedy}
+  Skiffle:
+    template: {name: Genre, genres: Skiffle}
+  Skiladiko:
+    template: {name: Genre, genres: Skiladiko}
+  Skinhead Reggae:
+    template: {name: Genre, genres: Skinhead Reggae}
+  Skullstep:
+    template: {name: Genre, genres: Skullstep}
+  Skweee:
+    template: {name: Genre, genres: Skweee}
+  Slack-Key Guitar:
+    template: {name: Genre, genres: Slack-Key Guitar}
+  Slacker Rock:
+    template: {name: Genre, genres: Slacker Rock}
+  Slam Death Metal:
+    template: {name: Genre, genres: Slam Death Metal}
+  Slam Poetry:
+    template: {name: Genre, genres: Slam Poetry}
+  Slap House:
+    template: {name: Genre, genres: Slap House}
+  Slow Waltz:
+    template: {name: Genre, genres: Slow Waltz}
+  Slowcore:
+    template: {name: Genre, genres: Slowcore}
+  Sludge Metal:
+    template: {name: Genre, genres: Sludge Metal}
+  Slushwave:
+    template: {name: Genre, genres: Slushwave}
+  Smooth Jazz:
+    template: {name: Genre, genres: Smooth Jazz}
+  Smooth Soul:
+    template: {name: Genre, genres: Smooth Soul}
+  Snap:
+    template: {name: Genre, genres: Snap}
+  Soca:
+    template: {name: Genre, genres: Soca}
+  Soft Rock:
+    template: {name: Genre, genres: Soft Rock}
+  Sōkyoku:
+    template: {name: Genre, genres: Sōkyoku}
+  Son Calentano:
+    template: {name: Genre, genres: Son Calentano}
+  Son Cubano:
+    template: {name: Genre, genres: Son Cubano}
+  Son Huasteco:
+    template: {name: Genre, genres: Son Huasteco}
+  Son Istmeño:
+    template: {name: Genre, genres: Son Istmeño}
+  Son Jarocho:
+    template: {name: Genre, genres: Son Jarocho}
+  Son Montuno:
+    template: {name: Genre, genres: Son Montuno}
+  Sonata:
+    template: {name: Genre, genres: Sonata}
+  Songo:
+    template: {name: Genre, genres: Songo}
+  Sonorism:
+    template: {name: Genre, genres: Sonorism}
+  Sophisti-Pop:
+    template: {name: Genre, genres: Sophisti-Pop}
+  Soukous:
+    template: {name: Genre, genres: Soukous}
+  Soul:
+    template: {name: Genre, genres: Soul}
+  Soul Blues:
+    template: {name: Genre, genres: Soul Blues}
+  Soul Jazz:
+    template: {name: Genre, genres: Soul Jazz}
+  Sound Art:
+    template: {name: Genre, genres: Sound Art}
+  Sound Collage:
+    template: {name: Genre, genres: Sound Collage}
+  Sound Effects:
+    template: {name: Genre, genres: Sound Effects}
+  Sound Poetry:
+    template: {name: Genre, genres: Sound Poetry}
+  Southeast Asian Classical:
+    template: {name: Genre, genres: Southeast Asian Classical}
+  Southern Gospel:
+    template: {name: Genre, genres: Southern Gospel}
+  Southern Hip Hop:
+    template: {name: Genre, genres: Southern Hip Hop}
+  Southern Metal:
+    template: {name: Genre, genres: Southern Metal}
+  Southern Rock:
+    template: {name: Genre, genres: Southern Rock}
+  Southern Soul:
+    template: {name: Genre, genres: Southern Soul}
+  Sovietwave:
+    template: {name: Genre, genres: Sovietwave}
+  Space Age Pop:
+    template: {name: Genre, genres: Space Age Pop}
+  Space Ambient:
+    template: {name: Genre, genres: Space Ambient}
+  Space Disco:
+    template: {name: Genre, genres: Space Disco}
+  Space Rock:
+    template: {name: Genre, genres: Space Rock}
+  Space Rock Revival:
+    template: {name: Genre, genres: Space Rock Revival}
+  Spacesynth:
+    template: {name: Genre, genres: Spacesynth}
+  Spectralism:
+    template: {name: Genre, genres: Spectralism}
+  Speech:
+    template: {name: Genre, genres: Speech}
+  Speed Garage:
+    template: {name: Genre, genres: Speed Garage}
+  Speed House:
+    template: {name: Genre, genres: Speed House}
+  Speed Metal:
+    template: {name: Genre, genres: Speed Metal}
+  Speedcore:
+    template: {name: Genre, genres: Speedcore}
+  Spiritual Jazz:
+    template: {name: Genre, genres: Spiritual Jazz}
+  Spirituals:
+    template: {name: Genre, genres: Spirituals}
+  Splittercore:
+    template: {name: Genre, genres: Splittercore}
+  Spoken Word:
+    template: {name: Genre, genres: Spoken Word}
+  Spouge:
+    template: {name: Genre, genres: Spouge}
+  Staïfi:
+    template: {name: Genre, genres: Staïfi}
+  Standup Comedy:
+    template: {name: Genre, genres: Standup Comedy}
+  Steampunk:
+    template: {name: Genre, genres: Steampunk}
+  Stenchcore:
+    template: {name: Genre, genres: Stenchcore}
+  Stochastic Music:
+    template: {name: Genre, genres: Stochastic Music}
+  Stomp And Holler:
+    template: {name: Genre, genres: Stomp And Holler}
+  Stoner Metal:
+    template: {name: Genre, genres: Stoner Metal}
+  Stoner Rock:
+    template: {name: Genre, genres: Stoner Rock}
+  Stornello:
+    template: {name: Genre, genres: Stornello}
+  Street Punk:
+    template: {name: Genre, genres: Street Punk}
+  Stride:
+    template: {name: Genre, genres: Stride}
+  Sufi Rock:
+    template: {name: Genre, genres: Sufi Rock}
+  Sufiana Kalam:
+    template: {name: Genre, genres: Sufiana Kalam}
+  Sundanese Pop:
+    template: {name: Genre, genres: Sundanese Pop}
+  Sungura:
+    template: {name: Genre, genres: Sungura}
+  Sunshine Pop:
+    template: {name: Genre, genres: Sunshine Pop}
+  Suomisaundi:
+    template: {name: Genre, genres: Suomisaundi}
+  Surf:
+    template: {name: Genre, genres: Surf}
+  Surf Punk:
+    template: {name: Genre, genres: Surf Punk}
+  Surf Rock:
+    template: {name: Genre, genres: Surf Rock}
+  Sutartinės:
+    template: {name: Genre, genres: Sutartinės}
+  Swamp Blues:
+    template: {name: Genre, genres: Swamp Blues}
+  Swamp Pop:
+    template: {name: Genre, genres: Swamp Pop}
+  Swamp Rock:
+    template: {name: Genre, genres: Swamp Rock}
+  Swancore:
+    template: {name: Genre, genres: Swancore}
+  Swing:
+    template: {name: Genre, genres: Swing}
+  Swing Revival:
+    template: {name: Genre, genres: Swing Revival}
+  Symphonic Black Metal:
+    template: {name: Genre, genres: Symphonic Black Metal}
+  Symphonic Metal:
+    template: {name: Genre, genres: Symphonic Metal}
+  Symphonic Poem:
+    template: {name: Genre, genres: Symphonic Poem}
+  Symphonic Prog:
+    template: {name: Genre, genres: Symphonic Prog}
+  Symphonic Rock:
+    template: {name: Genre, genres: Symphonic Rock}
+  Symphony:
+    template: {name: Genre, genres: Symphony}
+  Synth Funk:
+    template: {name: Genre, genres: Synth Funk}
+  Synth-Pop:
+    template: {name: Genre, genres: Synth-Pop}
+  Synthwave:
+    template: {name: Genre, genres: Synthwave}
+  T-Pop:
+    template: {name: Genre, genres: T-Pop}
+  Taarab:
+    template: {name: Genre, genres: Taarab}
+  Tajaraste:
+    template: {name: Genre, genres: Tajaraste}
+  Takamba:
+    template: {name: Genre, genres: Takamba}
+  Talempong:
+    template: {name: Genre, genres: Talempong}
+  Talempong Goyang:
+    template: {name: Genre, genres: Talempong Goyang}
+  Talking Blues:
+    template: {name: Genre, genres: Talking Blues}
+  Tallava:
+    template: {name: Genre, genres: Tallava}
+  Tamborera:
+    template: {name: Genre, genres: Tamborera}
+  Tamborito:
+    template: {name: Genre, genres: Tamborito}
+  Tamborzão:
+    template: {name: Genre, genres: Tamborzão}
+  Tammurriata:
+    template: {name: Genre, genres: Tammurriata}
+  Tân Cổ Giao Duyên:
+    template: {name: Genre, genres: Tân Cổ Giao Duyên}
+  Tango:
+    template: {name: Genre, genres: Tango}
+  Tanjidor:
+    template: {name: Genre, genres: Tanjidor}
+  Tape Music:
+    template: {name: Genre, genres: Tape Music}
+  Tappa:
+    template: {name: Genre, genres: Tappa}
+  Taquirari:
+    template: {name: Genre, genres: Taquirari}
+  Tarantella:
+    template: {name: Genre, genres: Tarantella}
+  Tarraxinha:
+    template: {name: Genre, genres: Tarraxinha}
+  Tassu:
+    template: {name: Genre, genres: Tassu}
+  Tchinkoumé:
+    template: {name: Genre, genres: Tchinkoumé}
+  Tearout:
+    template: {name: Genre, genres: Tearout}
+  Tearout Brostep:
+    template: {name: Genre, genres: Tearout Brostep}
+  Tech House:
+    template: {name: Genre, genres: Tech House}
+  Tech Trance:
+    template: {name: Genre, genres: Tech Trance}
+  Technical Death Metal:
+    template: {name: Genre, genres: Technical Death Metal}
+  Technical Thrash Metal:
+    template: {name: Genre, genres: Technical Thrash Metal}
+  Techno:
+    template: {name: Genre, genres: Techno}
+  Techno Bass:
+    template: {name: Genre, genres: Techno Bass}
+  Techno Kayō:
+    template: {name: Genre, genres: Techno Kayō}
+  Technobanda:
+    template: {name: Genre, genres: Technobanda}
+  Techstep:
+    template: {name: Genre, genres: Techstep}
+  Tecnobrega:
+    template: {name: Genre, genres: Tecnobrega}
+  Tecnofunk:
+    template: {name: Genre, genres: Tecnofunk}
+  Tecnomerengue:
+    template: {name: Genre, genres: Tecnomerengue}
+  Tecnorumba:
+    template: {name: Genre, genres: Tecnorumba}
+  Teen Pop:
+    template: {name: Genre, genres: Teen Pop}
+  Tejano:
+    template: {name: Genre, genres: Tejano}
+  Tembang Cianjuran:
+    template: {name: Genre, genres: Tembang Cianjuran}
+  Terrorcore:
+    template: {name: Genre, genres: Terrorcore}
+  Tex-Mex:
+    template: {name: Genre, genres: Tex-Mex}
+  Texas Blues:
+    template: {name: Genre, genres: Texas Blues}
+  Texas Country:
+    template: {name: Genre, genres: Texas Country}
+  Thai Classical:
+    template: {name: Genre, genres: Thai Classical}
+  Third Stream:
+    template: {name: Genre, genres: Third Stream}
+  Third Wave Ska:
+    template: {name: Genre, genres: Third Wave Ska}
+  Thrash Metal:
+    template: {name: Genre, genres: Thrash Metal}
+  Thrashcore:
+    template: {name: Genre, genres: Thrashcore}
+  Thumri:
+    template: {name: Genre, genres: Thumri}
+  Tiento:
+    template: {name: Genre, genres: Tiento}
+  Timba:
+    template: {name: Genre, genres: Timba}
+  Timbila:
+    template: {name: Genre, genres: Timbila}
+  Tin Pan Alley:
+    template: {name: Genre, genres: Tin Pan Alley}
+  Tizita:
+    template: {name: Genre, genres: Tizita}
+  Toada De Boi:
+    template: {name: Genre, genres: Toada De Boi}
+  Toccata:
+    template: {name: Genre, genres: Toccata}
+  Tonada Asturiana:
+    template: {name: Genre, genres: Tonada Asturiana}
+  Tonada Potosina:
+    template: {name: Genre, genres: Tonada Potosina}
+  Tonadilla:
+    template: {name: Genre, genres: Tonadilla}
+  Tondero:
+    template: {name: Genre, genres: Tondero}
+  Tontipop:
+    template: {name: Genre, genres: Tontipop}
+  Totalism:
+    template: {name: Genre, genres: Totalism}
+  Township Bubblegum:
+    template: {name: Genre, genres: Township Bubblegum}
+  Township Jive:
+    template: {name: Genre, genres: Township Jive}
+  Tradi-Modern:
+    template: {name: Genre, genres: Tradi-Modern}
+  Traditional Black Gospel:
+    template: {name: Genre, genres: Traditional Black Gospel}
+  Traditional Country:
+    template: {name: Genre, genres: Traditional Country}
+  Traditional Doom Metal:
+    template: {name: Genre, genres: Traditional Doom Metal}
+  Traditional Pop:
+    template: {name: Genre, genres: Traditional Pop}
+  Tragédie En Musique:
+    template: {name: Genre, genres: Tragédie En Musique}
+  Trallalero:
+    template: {name: Genre, genres: Trallalero}
+  Trampská Hudba:
+    template: {name: Genre, genres: Trampská Hudba}
+  Trance:
+    template: {name: Genre, genres: Trance}
+  Trance Metal:
+    template: {name: Genre, genres: Trance Metal}
+  Trancestep:
+    template: {name: Genre, genres: Trancestep}
+  Trap:
+    template: {name: Genre, genres: Trap}
+  Trap Edm:
+    template: {name: Genre, genres: Trap Edm}
+  Trap Latino:
+    template: {name: Genre, genres: Trap Latino}
+  Trap Metal:
+    template: {name: Genre, genres: Trap Metal}
+  Trap Shaabi:
+    template: {name: Genre, genres: Trap Shaabi}
+  Trap Soul:
+    template: {name: Genre, genres: Trap Soul}
+  Tread:
+    template: {name: Genre, genres: Tread}
+  Tribal Ambient:
+    template: {name: Genre, genres: Tribal Ambient}
+  Tribal Guarachero:
+    template: {name: Genre, genres: Tribal Guarachero}
+  Tribal House:
+    template: {name: Genre, genres: Tribal House}
+  Trip Hop:
+    template: {name: Genre, genres: Trip Hop}
+  Tropical House:
+    template: {name: Genre, genres: Tropical House}
+  Tropical Rock:
+    template: {name: Genre, genres: Tropical Rock}
+  Tropicália:
+    template: {name: Genre, genres: Tropicália}
+  Tropicanibalismo:
+    template: {name: Genre, genres: Tropicanibalismo}
+  Tropipop:
+    template: {name: Genre, genres: Tropipop}
+  Trot:
+    template: {name: Genre, genres: Trot}
+  Trova:
+    template: {name: Genre, genres: Trova}
+  Trova Yucateca:
+    template: {name: Genre, genres: Trova Yucateca}
+  Truck Driving Country:
+    template: {name: Genre, genres: Truck Driving Country}
+  Tsapiky:
+    template: {name: Genre, genres: Tsapiky}
+  Tsonga Disco:
+    template: {name: Genre, genres: Tsonga Disco}
+  Tsugaru-Jamisen:
+    template: {name: Genre, genres: Tsugaru-Jamisen}
+  Tumba:
+    template: {name: Genre, genres: Tumba}
+  Tumba Francesa:
+    template: {name: Genre, genres: Tumba Francesa}
+  Tumbélé:
+    template: {name: Genre, genres: Tumbélé}
+  Turbo-Folk:
+    template: {name: Genre, genres: Turbo-Folk}
+  Turkish Classical:
+    template: {name: Genre, genres: Turkish Classical}
+  Turntablism:
+    template: {name: Genre, genres: Turntablism}
+  Twee Pop:
+    template: {name: Genre, genres: Twee Pop}
+  Twerk:
+    template: {name: Genre, genres: Twerk}
+  Uk Drill:
+    template: {name: Genre, genres: Uk Drill}
+  Uk Funky:
+    template: {name: Genre, genres: Uk Funky}
+  Uk Garage:
+    template: {name: Genre, genres: Uk Garage}
+  Uk Hardcore:
+    template: {name: Genre, genres: Uk Hardcore}
+  Uk Jackin:
+    template: {name: Genre, genres: Uk Jackin}
+  Uk Street Soul:
+    template: {name: Genre, genres: Uk Street Soul}
+  Uk82:
+    template: {name: Genre, genres: Uk82}
+  Unakesa:
+    template: {name: Genre, genres: Unakesa}
+  Underground Hip Hop:
+    template: {name: Genre, genres: Underground Hip Hop}
+  Unyago:
+    template: {name: Genre, genres: Unyago}
+  Upopo:
+    template: {name: Genre, genres: Upopo}
+  Uptempo Hardcore:
+    template: {name: Genre, genres: Uptempo Hardcore}
+  Urban Cowboy:
+    template: {name: Genre, genres: Urban Cowboy}
+  Urtiin Duu:
+    template: {name: Genre, genres: Urtiin Duu}
+  Urumi Melam:
+    template: {name: Genre, genres: Urumi Melam}
+  Utopian Virtual:
+    template: {name: Genre, genres: Utopian Virtual}
+  Uzun Hava:
+    template: {name: Genre, genres: Uzun Hava}
+  V-Pop:
+    template: {name: Genre, genres: V-Pop}
+  Vaigat:
+    template: {name: Genre, genres: Vaigat}
+  Vallenato:
+    template: {name: Genre, genres: Vallenato}
+  Vals Criollo:
+    template: {name: Genre, genres: Vals Criollo}
+  Valsa Brasileira:
+    template: {name: Genre, genres: Valsa Brasileira}
+  Vanera:
+    template: {name: Genre, genres: Vanera}
+  Vaportrap:
+    template: {name: Genre, genres: Vaportrap}
+  Vaporwave:
+    template: {name: Genre, genres: Vaporwave}
+  Vaudeville:
+    template: {name: Genre, genres: Vaudeville}
+  Vaudeville Blues:
+    template: {name: Genre, genres: Vaudeville Blues}
+  Vedic Chant:
+    template: {name: Genre, genres: Vedic Chant}
+  Verbunkos:
+    template: {name: Genre, genres: Verbunkos}
+  Verismo:
+    template: {name: Genre, genres: Verismo}
+  Vietnamese Bolero:
+    template: {name: Genre, genres: Vietnamese Bolero}
+  Vietnamese Classical:
+    template: {name: Genre, genres: Vietnamese Classical}
+  Viking Metal:
+    template: {name: Genre, genres: Viking Metal}
+  Viking Rock:
+    template: {name: Genre, genres: Viking Rock}
+  Vinahouse:
+    template: {name: Genre, genres: Vinahouse}
+  Visa:
+    template: {name: Genre, genres: Visa}
+  Visual Kei:
+    template: {name: Genre, genres: Visual Kei}
+  Vocal House:
+    template: {name: Genre, genres: Vocal House}
+  Vocal Jazz:
+    template: {name: Genre, genres: Vocal Jazz}
+  Vocal Surf:
+    template: {name: Genre, genres: Vocal Surf}
+  Vocal Trance:
+    template: {name: Genre, genres: Vocal Trance}
+  Vocalese:
+    template: {name: Genre, genres: Vocalese}
+  Volkstümliche Musik:
+    template: {name: Genre, genres: Volkstümliche Musik}
+  Vude:
+    template: {name: Genre, genres: Vude}
+  Waka:
+    template: {name: Genre, genres: Waka}
+  Waltz:
+    template: {name: Genre, genres: Waltz}
+  War Metal:
+    template: {name: Genre, genres: War Metal}
+  Wassoulou:
+    template: {name: Genre, genres: Wassoulou}
+  Waulking Song:
+    template: {name: Genre, genres: Waulking Song}
+  Wave:
+    template: {name: Genre, genres: Wave}
+  Weightless:
+    template: {name: Genre, genres: Weightless}
+  West Coast Breaks:
+    template: {name: Genre, genres: West Coast Breaks}
+  West Coast Hip Hop:
+    template: {name: Genre, genres: West Coast Hip Hop}
+  West Coast Swing:
+    template: {name: Genre, genres: West Coast Swing}
+  Western:
+    template: {name: Genre, genres: Western}
+  Western Classical:
+    template: {name: Genre, genres: Western Classical}
+  Western Swing:
+    template: {name: Genre, genres: Western Swing}
+  Whale Song:
+    template: {name: Genre, genres: Whale Song}
+  Whistling:
+    template: {name: Genre, genres: Whistling}
+  White Voice:
+    template: {name: Genre, genres: White Voice}
+  Winter Synth:
+    template: {name: Genre, genres: Winter Synth}
+  Witch House:
+    template: {name: Genre, genres: Witch House}
+  Wong Shadow:
+    template: {name: Genre, genres: Wong Shadow}
+  Wonky:
+    template: {name: Genre, genres: Wonky}
+  Wonky Techno:
+    template: {name: Genre, genres: Wonky Techno}
+  Work Song:
+    template: {name: Genre, genres: Work Song}
+  World Fusion:
+    template: {name: Genre, genres: World Fusion}
+  Xẩm:
+    template: {name: Genre, genres: Xẩm}
+  Xote:
+    template: {name: Genre, genres: Xote}
+  Xuc:
+    template: {name: Genre, genres: Xuc}
+  Yacht Rock:
+    template: {name: Genre, genres: Yacht Rock}
+  Yakousei:
+    template: {name: Genre, genres: Yakousei}
+  Yangzhou Opera:
+    template: {name: Genre, genres: Yangzhou Opera}
+  Yaraví:
+    template: {name: Genre, genres: Yaraví}
+  Yayue:
+    template: {name: Genre, genres: Yayue}
+  Yé-Yé:
+    template: {name: Genre, genres: Yé-Yé}
+  Yodeling:
+    template: {name: Genre, genres: Yodeling}
+  Ytpmv:
+    template: {name: Genre, genres: Ytpmv}
+  Yu-Mex:
+    template: {name: Genre, genres: Yu-Mex}
+  Yue Opera:
+    template: {name: Genre, genres: Yue Opera}
+  Yukar:
+    template: {name: Genre, genres: Yukar}
+  Zamacueca:
+    template: {name: Genre, genres: Zamacueca}
+  Zamba:
+    template: {name: Genre, genres: Zamba}
+  Zamrock:
+    template: {name: Genre, genres: Zamrock}
+  Zarzuela:
+    template: {name: Genre, genres: Zarzuela}
+  Zarzuela Barroca:
+    template: {name: Genre, genres: Zarzuela Barroca}
+  Zeitoper:
+    template: {name: Genre, genres: Zeitoper}
+  Zema:
+    template: {name: Genre, genres: Zema}
+  Zenonesque:
+    template: {name: Genre, genres: Zenonesque}
+  Zess:
+    template: {name: Genre, genres: Zess}
+  Zeuhl:
+    template: {name: Genre, genres: Zeuhl}
+  Zeybek:
+    template: {name: Genre, genres: Zeybek}
+  Zhongguo Feng:
+    template: {name: Genre, genres: Zhongguo Feng}
+  Ziglibithy:
+    template: {name: Genre, genres: Ziglibithy}
+  Zinli:
+    template: {name: Genre, genres: Zinli}
+  Znamenny Chant:
+    template: {name: Genre, genres: Znamenny Chant}
+  Zoblazo:
+    template: {name: Genre, genres: Zoblazo}
+  Zohioliin Duu:
+    template: {name: Genre, genres: Zohioliin Duu}
+  Zolo:
+    template: {name: Genre, genres: Zolo}
+  Zouglou:
+    template: {name: Genre, genres: Zouglou}
+  Zouk:
+    template: {name: Genre, genres: Zouk}
+  Zouk Love:
+    template: {name: Genre, genres: Zouk Love}
+  Zydeco:
+    template: {name: Genre, genres: Zydeco}

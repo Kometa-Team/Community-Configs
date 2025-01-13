@@ -1,0 +1,52 @@
+templates:
+  Resolution:
+    optional:
+      - overlay_level
+      - use_<<opt1>>
+      - use_<<opt2>>
+    collection_level: <<overlay_level>>
+    allowed_library_types:
+      - <<use_<<opt1>>>>
+      - <<use_<<opt2>>>>
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Shared/Resolution/Poster/<<collection_name>>.png
+
+collections:
+  4K:
+    template:
+      - name: Resolution
+        weight: 100
+        opt1: 4k
+    plex_search:
+      any:
+        resolution.regex: '(?i)2160|4k'
+    sort_title: zzzzzz_a4k
+
+  1080P:
+    template:
+      - name: Resolution
+        weight: 70
+        opt1: 1080p
+    plex_search:
+      any:
+        resolution.regex: '(?i)1080|2k'
+    sort_title: zzzzzz_b1080p
+
+  720P:
+    template:
+      - name: Resolution
+        weight: 40
+        opt1: 720p
+    plex_search:
+      any:
+        resolution.regex: '(?i)720|hd'
+    sort_title: zzzzzz_c720p
+
+  480P:
+    template:
+      - name: Resolution
+        weight: 10
+        opt1: 480p
+    plex_search:
+      any:
+        resolution.regex: '(?i)480|sd'
+    sort_title: zzzzzz_d480p

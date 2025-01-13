@@ -11,7 +11,7 @@ collections:
     sync_mode: sync
     url_poster: https://theposterdb.com/api/assets/238229
     collection_order: alpha
-    sort_title: ++++++++_attenboroughs_planet
+    sort_title: ++++_attenboroughs_planet
 
   # Only the 'Life' documentaries
   Attenborough's Life Collection:
@@ -20,12 +20,12 @@ collections:
     sync_mode: sync
     url_poster: https://theposterdb.com/api/assets/241456
     collection_order: alpha
-    sort_title: ++++++++_attenboroughs_life
+    sort_title: ++++_attenboroughs_life
 
   # All Movie/Show documentaries, including the Planet docs
   David Attenborough Collection:
     plex_all: true
-    sort_title: ++++++++_attenborough_collection
+    sort_title: ++++_attenborough_collection
     url_poster: https://theposterdb.com/api/assets/241457
     collection_order: alpha
     filter:
@@ -38,7 +38,7 @@ metadata:
   #
   #====================================================================================
   79257: #Planet Earth:
-    url_poster: https://theposterdb.com/api/assets/238212
+    url_poster: https://theposterdb.com/api/assets/238235
     seasons:
       0:
         url_poster: https://theposterdb.com/api/assets/238213
@@ -53,6 +53,11 @@ metadata:
         url_poster: https://theposterdb.com/api/assets/238218
   413197: #Planet Earth III:
     url_poster: https://theposterdb.com/api/assets/238237
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/421279
+      1:
+        url_poster: https://theposterdb.com/api/assets/421280
 
   251418: #Frozen Planet:
     url_poster: https://theposterdb.com/api/assets/238232
@@ -68,6 +73,8 @@ metadata:
         url_poster: https://theposterdb.com/api/assets/264555
       1:
         url_poster: https://theposterdb.com/api/assets/264554
+      2:
+        url_poster: https://theposterdb.com/api/assets/372126
 
   359250: #The Green Planet:
     url_poster: https://theposterdb.com/api/assets/238241
@@ -103,6 +110,8 @@ metadata:
         url_poster: https://theposterdb.com/api/assets/238220
       1:
         url_poster: https://theposterdb.com/api/assets/238221
+      2:
+        url_poster: https://theposterdb.com/api/assets/357175
 
   355229: # Our Planet:
     url_poster: https://theposterdb.com/api/assets/238234
@@ -111,6 +120,8 @@ metadata:
         url_poster: https://theposterdb.com/api/assets/238210
       1:
         url_poster: https://theposterdb.com/api/assets/238211
+      2:
+        url_poster: https://theposterdb.com/api/assets/372126
 
   359365: # A Perfect Planet:
     url_poster: https://theposterdb.com/api/assets/238230
@@ -389,6 +400,13 @@ metadata:
   9511: # Zoo Quest
     url_poster: https://theposterdb.com/api/assets/238077
 
+  423494: # Wild Isles
+    url_poster: https://theposterdb.com/api/assets/331381
+    seasons:
+      0:
+        url_poster: https://theposterdb.com/api/assets/331382
+      1:
+        url_poster: https://theposterdb.com/api/assets/331383
   #====================================================================================
   #
   #                                    MOVIES

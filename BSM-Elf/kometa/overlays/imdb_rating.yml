@@ -1,0 +1,21 @@
+overlays:
+  imdb_rating:
+    overlay:
+      name: text(<<imdb_rating>>)
+      horizontal_offset: 66
+      horizontal_align: right
+      vertical_offset: 66
+      vertical_align: bottom
+      back_radius: 10
+      back_color: '#f5c518'
+      back_height: 49
+      back_padding: 15
+      font_color: "#000000"
+      font: config/overlays/fonts/AvenirNextLTPro-Bold.ttf
+      font_size: 66
+    plex_all: true
+    filters:
+      edition.isnot:
+        - "IMAX Enhanced"
+        - "Extended Edition"
+        - "Unrated Edition"

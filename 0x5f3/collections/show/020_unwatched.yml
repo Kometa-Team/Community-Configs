@@ -1,0 +1,84 @@
+## _unwatched.yml
+
+templates:
+  plex:
+    collection_mode: hide
+    delete_not_scheduled: false
+    sort_title: "+020_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+
+collections:
+  "Unwatched: Random TV shows":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_random.png
+    summary: "Random selection of TV shows"
+    template: {
+                    name: plex,
+                    num: "0"
+                }
+    smart_filter:
+      all:
+        plays.lt: 1
+        any:
+          audio_language: English, english
+      collection_filtering: user
+      limit: 250
+      sort_by: random
+
+  "Unwatched: Recommended TV shows":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_recommended.png
+    summary: "Based on personally favourited TV shows"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+        collection: "Recommended TV shows"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: title.asc
+
+  "Unwatched: Suggested TV shows":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_suggested.png
+    summary: "Based on watched and favourited TV shows"
+    template: {
+                    name: plex,
+                    num: "2"
+                }
+    smart_filter:
+      all:
+        collection: "Suggested TV shows"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: title.asc
+
+  "Unwatched: Popular TV shows":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_popular.png
+    summary: "Popular TV shows across the internet"
+    template: {
+                    name: plex,
+                    num: "3"
+                }
+    smart_filter:
+      all:
+        collection: "Popular TV shows"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: random
+
+  "Unwatched: Top Rated TV shows":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_unwatched/unwatched_top-rated.png
+    summary: "Top rated TV shows across the internet"
+    template: {
+                    name: plex,
+                    num: "4"
+                }
+    smart_filter:
+      all:
+        collection: "Top Rated TV shows"
+        plays.lt: 1
+      collection_filtering: user
+      sort_by: random

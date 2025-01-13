@@ -1,0 +1,23 @@
+external_templates:
+  file: config/templates/musictemplates.yml
+  template_variables:
+    collection_section: "004"
+
+templates:
+  track mood collection:
+    builder_level: track
+    smart_filter:
+      limit: 100
+      minimum_items: 100
+      delete_below_minimum: true
+      sort_by: plays.desc
+      all:
+        track_mood: <<value>>
+
+#dynamic_collections:
+#  Track Moods:
+#    type: track_mood
+#    title_format: Top 100 <<key_name>> Tracks
+#    template:
+#      - track mood collection
+#      - shared

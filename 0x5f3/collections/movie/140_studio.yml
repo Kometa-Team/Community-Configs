@@ -1,0 +1,210 @@
+## _studio.yml
+
+templates:
+  company:
+    collection_mode: hide
+    collection_order: alpha
+    delete_not_scheduled: false
+    sort_title: "+140_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    limit: 1000
+    imdb_search:
+      company: <<company>>
+      language: <<language>>
+      limit: 10000
+      sort_by: release.desc
+      type: <<type>>
+
+collections:
+  "Columbia":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_columbia.png
+    summary: "A collection from Columbia"
+    template: {
+                    company: "co0050868",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Criterion":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_criterion-collection.png
+    summary: "A collection from Criterion"
+    template: {
+                    company: "co0044076",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "DC Entertainment":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_dc-entertainment.png
+    summary: "A collection from DC Entertainment"
+    template: {
+                    company: "co0123927",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "DreamWorks":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_dreamworks.png
+    summary: "A collection from DreamWorks"
+    template: {
+                    company: "co0040938,co0129164,co0819670,co0396719,co0252576",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Lionsgate":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_lionsgate.png
+    summary: "A collection from Lionsgate"
+    template: {
+                    company: "co0807819,co0006881,co0060306,co0179392",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Lucasfilm":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_lucasfilm.png
+    summary: "A collection from Lucasfilm"
+    template: {
+                    company: "co0071326,co0196838,co0049348",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Marvel Studios":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_marvel-studios.png
+    summary: "A collection from Marvel Studios"
+    template: {
+                    company: "co0051941",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "MGM":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_mgm.png
+    summary: "A collection from MGM"
+    template: {
+                    company: "co0007143",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Paramount Pictures":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_paramount-pictures.png
+    summary: "A collection from Paramount Pictures"
+    template: {
+                    company: "co0023400",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Pixar":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_pixar.png
+    summary: "A collection from Pixar"
+    template: {
+                    company: "co0017902,co0348691",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Studio Ghibli":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_studio-ghibli.png
+    summary: "A collection from Studio Ghibli"
+    template: {
+                    company: "co0048420",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Samuel Goldwyn Company":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_samuel-goldwyn-company.png
+    summary: "A collection from Samuel Goldwyn Company"
+    template: {
+                    company: "co0016710",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "SONY":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_sony.png
+    summary: "A collection from SONY"
+    template: {
+                    company: "co0026545,co0014453,co0121181,co0001799,co0208736",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Touchstone":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_touchstone.png
+    summary: "A collection from Touchstone"
+    template: {
+                    company: "co0049348",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Twentieth Century Fox":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_twentieth-century-fox.png
+    summary: "A collection from Twentieth Century Fox"
+    template: {
+                    company: "co0000756",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "United Artists":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_united-artists.png
+    summary: "A collection from United Artists"
+    template: {
+                    company: "co0026841",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Universal":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_universal.png
+    summary: "A collection from Universal"
+    template: {
+                    company: "co0005073",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Walt Disney":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_walt-disney.png
+    summary: "A collection from Walt Disney"
+    template: {
+                    company: "co0226183,co0008970",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }
+
+  "Warner Bros":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_studio/studio_warner-bros.png
+    summary: "A collection from Warner Bros"
+    template: {
+                    company: "co0002663",
+                    language: "en",
+                    name: company,
+                    type: "movie,tv_movie"
+                }

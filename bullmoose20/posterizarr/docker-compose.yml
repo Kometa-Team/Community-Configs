@@ -1,0 +1,20 @@
+services:
+  posterizarr:
+    hostname: "posterizarr"
+    container_name: "posterizarr"
+    environment:
+      - "PGID=100"
+      - "PUID=99"
+      - "TZ=America/New_York"
+      - "UMASK=002"
+      - "TERM=xterm"
+      - "RUN_TIME=10:30,19:30"
+    image: "ghcr.io/fscorrupt/docker-posterizarr:latest"
+    restart: "unless-stopped"
+    networks:
+      - "posterizarr"
+    volumes:
+      - "/mnt/user/appdata/posterizarr:/config:rw"
+networks:
+  posterizarr:
+    driver: bridge

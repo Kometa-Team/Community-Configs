@@ -1,0 +1,91 @@
+#############################################################
+
+#                         Playlist                          #
+
+#         Created by Yozora, Bullmoose20, & Sohjiro         #
+#############################################################
+#  REQUIRES TRAKT AUTHENTICATION                            #
+#  https://metamanager.wiki/en/latest/config/trakt.html     #
+#                                                           #
+#  Use the libraries template variable to adjust the names  #
+#                                                           #
+#  Call this from your config.yml (Movie or Show)           #
+#  If nothing is specified these are the defaults           #
+#                                                           #
+#    playlist_files:                                        #
+#      - git: kometa/playlist                                  #
+#        template_variables:                                #
+#          # Sets the names of the libraries to use         #
+#          libraries: Movies, TV Shows                      #
+#                                                           #
+#          # For each playlist use the "key" to set         #
+#          # the options.                                   #
+#          # Available collections                          #
+#          #   KEY              PLAYLIST                    #
+#          #   arrow            Arrowverse                  #
+#          #   mcu              Marvel Cinematic Universe   #
+#          #   dcau             DC Animated Universe        #
+#          #   pokemon          Pokémon                     #
+#          #   startrek         Star Trek                   #
+#          #   starwars         Star Wars                   #
+#          #   clonewars        Star Wars The Clone Wars    #
+#          #   xmen             X-Men                       #
+#                                                           #
+#          # Available options. Replace "key" with the      #
+#          # desired playlist's key from the chart above.   #
+#                                                           #
+#          # Turn the playlist on/off                       #
+#          use_key: true                                    #
+#          # Radarr Add Missing                             #
+#          radarr_add_missing_key: true                     #
+#          # Sonarr Add Missing                             #
+#          sonarr_add_missing_key: true                     #
+#          # Radarr Tag for missing items                   #
+#          radarr_tag_key:                                  #
+#          # Sonarr Tag for missing items                   #
+#          sonarr_tag_key:                                  #
+#          # Radarr Tag for existing items                  #
+#          item_radarr_tag_key:                             #
+#          # Sonarr Tag for existing items                  #
+#          item_sonarr_tag_key:                             #
+#############################################################
+
+templates:
+  playlist:
+    default:
+      libraries: Movies, TV Shows, Anime, Kids Movies, Anime Shows
+      radarr_add_missing_<<key>>: <<radarr_add_missing>>
+      sonarr_add_missing_<<key>>: <<sonarr_add_missing>>
+      radarr_tag_<<key>>: <<radarr_tag>>
+      sonarr_tag_<<key>>: <<sonarr_tag>>
+      item_radarr_tag_<<key>>: <<item_radarr_tag>>
+      item_sonarr_tag_<<key>>: <<item_sonarr_tag>>
+    optional:
+      - use_<<key>>
+      - radarr_add_missing
+      - sonarr_add_missing
+      - radarr_tag
+      - sonarr_tag
+      - item_radarr_tag
+      - item_sonarr_tag
+    allowed_library_types:
+      - <<use_<<key>>>>
+    radarr_add_missing: <<radarr_add_missing_<<key>>>>
+    sonarr_add_missing: <<sonarr_add_missing_<<key>>>>
+    radarr_tag: <<radarr_tag_<<key>>>>
+    sonarr_tag: <<sonarr_tag_<<key>>>>
+    item_radarr_tag: <<item_radarr_tag_<<key>>>>
+    item_sonarr_tag: <<item_sonarr_tag_<<key>>>>
+    cache_builders: 1
+    sync_to_users: all
+    sync_mode: sync
+    libraries: <<libraries>>
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/playlist/<<playlist_name_encoded>>.jpg
+
+playlists:
+  The Walking Dead Universe (Timeline Order):
+    template:
+      - name: playlist
+        key: walking
+    trakt_list: https://trakt.tv/users/fs-corrupt/lists/the-walking-dead-universe
+    summary: Chronological order as the story develops.

@@ -1,0 +1,116 @@
+## _standup.yml
+
+templates:
+  plex:
+    collection_mode: hide
+    delete_not_scheduled: false
+    sort_title: "+062_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+
+  mdblist:
+    collection_mode: hide
+    collection_order: alpha
+    delete_not_scheduled: false
+    sort_title: "+062_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    mdblist_list:
+      sort_by: title.asc
+      url: https://mdblist.com/lists/<<mdblist_user>>/<<mdblist_list>>/
+    optional:
+      - mdblist_extra_1
+      - mdblist_extra_2
+      - mdblist_extra_3
+      - mdblist_extra_4
+      - mdblist_extra_5
+
+collections:
+  "Stand-up: All":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_all.png
+    summary: "Stand-up"
+    collection_order: alpha
+#    template: {
+#                    name: plex,
+#                    num: "0"
+#                }
+#    plex_all: true
+#    filters:
+#      - filepath: "/mnt/movies-standup"
+#      - filepath: "/mnt/movies-standup-4k"
+    template: {
+                    mdblist_list: "list-standup",
+                    mdblist_user: "archivist",
+                    name: mdblist,
+                    num: "0"
+                }
+
+  "Stand-up: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_unwatched.png
+    summary: "Unwatched stand-up"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+        collection: "Stand-up: All"
+        unplayed: true
+      collection_filtering: user
+      sort_by: title.asc
+
+  "Stand-up: Random":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_random.png
+    summary: "Random Stand-up"
+    template: {
+                    name: plex,
+                    num: "2"
+                }
+    smart_filter:
+      all:
+        collection: "Stand-up: All"
+      limit: 250
+      sort_by: random
+
+  "Stand-up: Recently Added":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_recently-added.png
+    summary: "Recently added Stand-up"
+    template: {
+                    name: plex,
+                    num: "3"
+                }
+    smart_filter:
+      all:
+        collection: "Stand-up: All"
+      limit: 100
+      sort_by: added.desc
+
+  "Stand-up: Recently Released":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_recently-released.png
+    summary: "Recently released Stand-up"
+    template: {
+                    name: plex,
+                    num: "4"
+                }
+    smart_filter:
+      all:
+        collection: "Stand-up: All"
+      limit: 250
+      sort_by: release.desc
+
+  "Stand-up: Top Rated":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_standup/stand-up_top-rated.png
+    summary: "Top rated Stand-up"
+    template: {
+                    name: plex,
+                    num: "5"
+                }
+    smart_filter:
+      all:
+        collection: "Stand-up: All"
+      limit: 250
+      sort_by: critic_rating.desc

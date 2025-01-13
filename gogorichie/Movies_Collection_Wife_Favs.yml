@@ -11,7 +11,7 @@ collections:
     schedule: weekly(sunday)
     collection_order: alpha
   Oscar Winners:
-    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    imdb_search: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
     collection_order: release
     summary: Oscar Winning Movies
     schedule: monthly(1), monthly(15)

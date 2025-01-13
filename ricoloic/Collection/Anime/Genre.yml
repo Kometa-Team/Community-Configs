@@ -1,0 +1,246 @@
+templates:
+  MAL Genre:
+    mal_search:
+      genre: <<genre_id>>
+    collection_order: custom
+    collection_mode: hide
+    sync_mode: sync
+    sort_title: "  !aaa_Genre_<<collection_name>>"
+    url_poster: https://raw.githubusercontent.com/ricoloic/Kometa-Personal-Config/master/Assets/Anime/Genre/Poster/<<poster>>.png
+    summary: <<summary>>
+
+collections:
+  Action:
+    template:
+      name: MAL Genre
+      genre_id: 1
+      summary: "Get ready for high-energy battles and intense action sequences."
+      poster: Action
+  Adventure:
+    template:
+      name: MAL Genre
+      genre_id: 2
+      summary: "Embark on thrilling journeys and epic quests in fantastical worlds."
+      poster: Adventure
+  Boys Love:
+    template:
+      name: MAL Genre
+      genre_id: 28
+      summary: "Explore the heartfelt and romantic stories of boys' love."
+      poster: BoysLove
+  Cars:
+    template:
+      name: MAL Genre
+      genre_id: 3
+      summary: "Rev up your engines with anime centered around cars and racing."
+      poster: Cars
+  Comedy:
+    template:
+      name: MAL Genre
+      genre_id: 4
+      summary: "Laugh out loud with hilarious antics and comedic adventures."
+      poster: Comedy
+  Demons:
+    template:
+      name: MAL Genre
+      genre_id: 6
+      summary: "Dive into dark and supernatural tales featuring demons and otherworldly beings."
+      poster: Demons
+  Drama:
+    template:
+      name: MAL Genre
+      genre_id: 8
+      summary: "Experience deep emotional journeys and compelling narratives."
+      poster: Drama
+  Ecchi:
+    template:
+      name: MAL Genre
+      genre_id: 9
+      summary: "Indulge in playful and provocative stories with ecchi elements."
+      poster: Ecchi
+  Erotica:
+    template:
+      name: MAL Genre
+      genre_id: 49
+      summary: "Discover more mature and erotic themes in anime."
+      poster: Erotica
+  Fantasy:
+    template:
+      name: MAL Genre
+      genre_id: 10
+      summary: "Enter magical worlds filled with fantastical creatures and adventures."
+      poster: Fantasy
+  Game:
+    template:
+      name: MAL Genre
+      genre_id: 11
+      summary: "Immerse yourself in anime centered around games and gaming culture."
+      poster: Game
+  Girls Love:
+    template:
+      name: MAL Genre
+      genre_id: 26
+      summary: "Enjoy romantic and heartfelt stories of girls' love."
+      poster: GirlsLove
+  Gourmet:
+    template:
+      name: MAL Genre
+      genre_id: 47
+      summary: "Savor the delicious world of gourmet anime, celebrating food and culinary arts."
+      poster: Gourmet
+  Harem:
+    template:
+      name: MAL Genre
+      genre_id: 35
+      summary: "Delve into anime where one character is surrounded by multiple love interests."
+      poster: Harem
+  Hentai:
+    template:
+      name: MAL Genre
+      genre_id: 12
+      summary: "Explore explicit and adult-themed anime."
+      poster: Hentai
+  Historical:
+    template:
+      name: MAL Genre
+      genre_id: 13
+      summary: "Travel back in time with anime set in historical periods."
+      poster: Historical
+  Horror:
+    template:
+      name: MAL Genre
+      genre_id: 14
+      summary: "Get ready for spine-chilling and terrifying horror stories."
+      poster: Horror
+  Isekai:
+    template:
+      name: MAL Genre
+      genre_id: 62
+      summary: "Join characters as they are transported to other worlds in isekai adventures."
+      poster: Isekai
+  Martial Arts:
+    template:
+      name: MAL Genre
+      genre_id: 17
+      summary: "Experience the discipline and excitement of martial arts-themed anime."
+      poster: MartialArts
+  Mecha:
+    template:
+      name: MAL Genre
+      genre_id: 18
+      summary: "Dive into the world of giant robots and mecha battles."
+      poster: Mecha
+  Military:
+    template:
+      name: MAL Genre
+      genre_id: 38
+      summary: "Explore anime focused on military themes and warfare."
+      poster: Military
+  Music:
+    template:
+      name: MAL Genre
+      genre_id: 19
+      summary: "Celebrate the power of music through anime dedicated to musical themes."
+      poster: Music
+  Mystery:
+    template:
+      name: MAL Genre
+      genre_id: 7
+      summary: "Unravel thrilling mysteries and solve intriguing puzzles."
+      poster: Mystery
+  Parody:
+    template:
+      name: MAL Genre
+      genre_id: 20
+      summary: "Enjoy hilarious parodies that poke fun at various genres and tropes."
+      poster: Parody
+  Police:
+    template:
+      name: MAL Genre
+      genre_id: 39
+      summary: "Follow the action-packed and investigative stories of police-themed anime."
+      poster: Police
+  Psychological:
+    template:
+      name: MAL Genre
+      genre_id: 40
+      summary: "Dive into mind-bending and thought-provoking psychological tales."
+      poster: Psychological
+  Romance:
+    template:
+      name: MAL Genre
+      genre_id: 22
+      summary: "Fall in love with romantic anime stories filled with passion and emotion."
+      poster: Romance
+  Samurai:
+    template:
+      name: MAL Genre
+      genre_id: 21
+      summary: "Experience the honor and action of samurai-themed anime."
+      poster: Samurai
+  School:
+    template:
+      name: MAL Genre
+      genre_id: 23
+      summary: "Relive the drama, romance, and comedy of school life in anime."
+      poster: School
+  Sci-Fi:
+    template:
+      name: MAL Genre
+      genre_id: 24
+      summary: "Explore futuristic worlds and sci-fi adventures in anime."
+      poster: Sci-Fi
+  Shoujo:
+    template:
+      name: MAL Genre
+      genre_id: 25
+      summary: "Enjoy anime aimed at young girls, often focusing on romance and personal growth."
+      poster: Shoujo
+  Shounen:
+    template:
+      name: MAL Genre
+      genre_id: 27
+      summary: "Experience action-packed stories aimed at young boys, full of adventure and excitement."
+      poster: Shounen
+  Slice of Life:
+    template:
+      name: MAL Genre
+      genre_id: 36
+      summary: "Relax with everyday stories that capture the essence of life."
+      poster: SliceofLife
+  Space:
+    template:
+      name: MAL Genre
+      genre_id: 29
+      summary: "Blast off into outer space with anime set among the stars."
+      poster: Space
+  Sports:
+    template:
+      name: MAL Genre
+      genre_id: 30
+      summary: "Feel the thrill of competition and athleticism in sports anime."
+      poster: Sports
+  Super Power:
+    template:
+      name: MAL Genre
+      genre_id: 31
+      summary: "Watch characters wield extraordinary powers in super-powered adventures."
+      poster: SuperPower
+  Supernatural:
+    template:
+      name: MAL Genre
+      genre_id: 37
+      summary: "Encounter otherworldly phenomena and supernatural beings."
+      poster: Supernatural
+  Suspense:
+    template:
+      name: MAL Genre
+      genre_id: 41
+      summary: "Keep on the edge of your seat with suspenseful and thrilling narratives."
+      poster: Suspense
+  Vampire:
+    template:
+      name: MAL Genre
+      genre_id: 32
+      summary: "Enter the dark and seductive world of vampires in anime."
+      poster: Vampire

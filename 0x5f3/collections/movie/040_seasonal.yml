@@ -1,0 +1,130 @@
+## _seasonal.yml
+
+templates:
+  seasonal:
+    collection_mode: hide
+    collection_order: alpha
+    delete_not_scheduled: true
+    limit: 1000
+    sort_title: "+040_<<collection_name>>"
+    summary: "A timed collection of <<holiday>> movies and other movies that may relate to the holiday."
+    sync_mode: sync
+    visible_home: false
+    visible_library: true
+    visible_shared: false
+    imdb_list:
+      - <<imdb_extra_1>>
+      - <<imdb_extra_2>>
+      - <<imdb_extra_3>>
+      - <<imdb_extra_4>>
+      - <<imdb_extra_5>>
+      - <<imdb_extra_6>>
+    letterboxd_list:
+      - <<letterboxd_extra_1>>
+      - <<letterboxd_extra_2>>
+      - <<letterboxd_extra_3>>
+      - <<letterboxd_extra_4>>
+      - <<letterboxd_extra_5>>
+    trakt_list:
+      - <<trakt_extra_1>>
+      - <<trakt_extra_2>>
+      - <<trakt_extra_3>>
+      - <<trakt_extra_4>>
+      - <<trakt_extra_5>>
+    optional:
+      - imdb_extra_1
+      - imdb_extra_2
+      - imdb_extra_3
+      - imdb_extra_4
+      - imdb_extra_5
+      - imdb_extra_6
+      - letterboxd_extra_1
+      - letterboxd_extra_2
+      - letterboxd_extra_3
+      - letterboxd_extra_4
+      - letterboxd_extra_5
+      - trakt_extra_1
+      - trakt_extra_2
+      - trakt_extra_3
+      - trakt_extra_4
+      - trakt_extra_5
+
+collections:
+  "Valentine's Day Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_valentines-day.png
+    schedule: range(02/10-02/14)
+    template: {
+                    holiday: "Valentine's Day",
+                    letterboxd_extra_1: "https://letterboxd.com/ediblehedgehog/list/theme-valentines/by/rating/",
+                    name: seasonal
+                }
+    plex_search:
+      - all:
+          critic_rating.gte: 8.0
+          genre: Romance, Comedy
+      - all:
+          critic_rating.gte: 8.0
+          genre: Romance, Drama
+          genre.not: Documentary
+
+  "St. Patrick's Day Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_st-patricks-day.png
+    schedule: range(03/16-03/18)
+    template: {
+                    holiday: "St. Patrick's Day",
+                    letterboxd_extra_1: "https://letterboxd.com/ediblehedgehog/list/theme-st-patricks/by/rating/",
+                    name: seasonal
+                }
+
+  "Easter Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_easter.png
+    schedule: range(03/22-04/25)
+    template: {
+                    holiday: "Easter",
+                    letterboxd_extra_1: "https://letterboxd.com/ediblehedgehog/list/theme-easter/by/rating/",
+                    name: seasonal
+                }
+
+  "Halloween Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_halloween.png
+    schedule: range(10/29-10/31)
+    template: {
+                    holiday: "Halloween",
+                    letterboxd_extra_1: "https://letterboxd.com/ediblehedgehog/list/theme-halloween/by/rating/",
+                    name: seasonal
+                }
+    plex_search:
+      - all:
+          critic_rating.gte: 8.0
+          genre: Horror
+          genre.not: Documentary
+
+  "Thanksgiving Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_thanksgiving.png
+    schedule: range(11/22-11/25)
+    template: {
+                    holiday: "Thanksgiving",
+                    letterboxd_extra_1: "https://letterboxd.com/ediblehedgehog/list/theme-thanksgiving/by/rating/",
+                    name: seasonal
+                }
+
+  "Christmas Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_christmas.png
+    schedule: range(12/01-12/31)
+    template: {
+                    holiday: "Christmas",
+                    imdb_extra_1: "https://www.imdb.com/list/ls000096828",
+                    imdb_extra_2: "https://www.imdb.com/list/ls068976997",
+                    imdb_extra_3: "https://www.imdb.com/list/ls027567380",
+                    letterboxd_extra_1: "https://letterboxd.com/ediblehedgehog/list/theme-christmas/by/rating/",
+                    name: seasonal
+                }
+
+  "New Year's Eve Movies":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_seasonal/seasonal_new-years-eve.png
+    schedule: range(12/26-01/02)
+    template: {
+                    holiday: "New Year's Eve",
+                    letterboxd_extra_1: "https://letterboxd.com/ediblehedgehog/list/theme-new-years-eve/by/rating/",
+                    name: seasonal
+                }

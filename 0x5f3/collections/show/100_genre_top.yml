@@ -1,0 +1,297 @@
+## _genre_top.yml
+
+templates:
+  genre_top:
+    collection_mode: hide
+    collection_order: custom
+    delete_not_scheduled: false
+    limit: 500
+    sort_title: "+100_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    imdb_search:
+      genre: <<genre>>
+      genre.not: <<genre.not>>
+      language: <<language>>
+      limit: 1000
+      rating.gte: <<rating.gte>>
+      sort_by: rating.desc
+      type: <<type>>
+      votes.gte: <<votes.gte>>
+    optional:
+      - genre.not
+
+collections:
+  "Top Rated in Action":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_action.png
+    summary: "Top rated TV shows in Action"
+    template: {
+                    genre: "action",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Adventure":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_adventure.png
+    summary: "Top rated TV shows in Adventure"
+    template: {
+                    genre: "adventure",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Animation":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_animation.png
+    summary: "Top rated TV shows in Animation"
+    template: {
+                    genre: "animation",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000,
+                }
+
+  "Top Rated in Biography":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_biography.png
+    summary: "Top rated TV shows in Biography"
+    template: {
+                    genre: "biography",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Comedy":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_comedy.png
+    summary: "Top rated TV shows in Comedy"
+    template: {
+                    genre: "comedy",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Crime":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_crime.png
+    summary: "Top rated TV shows in Crime"
+    template: {
+                    genre: "crime",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Documentary":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_documentary.png
+    summary: "Top rated TV shows in Documentary"
+    template: {
+                    genre: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Drama":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_drama.png
+    summary: "Top rated TV shows in Drama"
+    template: {
+                    genre: "drama",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Family":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_family.png
+    summary: "Top rated TV shows in Family"
+    template: {
+                    genre: "family",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Fantasy":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_fantasy.png
+    summary: "Top rated TV shows in Fantasy"
+    template: {
+                    genre: "fantasy",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in History":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_history.png
+    summary: "Top rated TV shows in History"
+    template: {
+                    genre: "history",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000,
+                }
+
+  "Top Rated in Horror":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_horror.png
+    summary: "Top rated TV shows in Horror"
+    template: {
+                    genre: "horror",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Music":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_music.png
+    summary: "Top rated TV shows in Music"
+    template: {
+                    genre: "music",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Musicals":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_musicals.png
+    summary: "Top rated TV shows in Musicals"
+    template: {
+                    genre: "musical",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Mystery":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_mystery.png
+    summary: "Top rated TV shows in Mystery"
+    template: {
+                    genre: "mystery",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Romance":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_romance.png
+    summary: "Top rated TV shows in Romance"
+    template: {
+                    genre: "romance",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Sci-Fi":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_sci-fi.png
+    summary: "Top rated TV shows in Sci-Fi"
+    template: {
+                    genre: "sci-fi",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Sport":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_sport.png
+    summary: "Top rated TV shows in Sport"
+    template: {
+                    genre: "sport",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Thriller":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_thriller.png
+    summary: "Top rated TV shows in Thriller"
+    template: {
+                    genre: "thriller",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000,
+                }
+
+  "Top Rated in War":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_war.png
+    summary: "Top rated TV shows in War"
+    template: {
+                    genre: "war",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }
+
+  "Top Rated in Western":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_genre_top/genre_top_western.png
+    summary: "Top rated TV shows in Western"
+    template: {
+                    genre: "western",
+                    genre.not: "documentary",
+                    language: "en",
+                    name: genre_top,
+                    rating.gte: 5,
+                    type: "tv_series,tv_mini_series,tv_special",
+                    votes.gte: 10000
+                }

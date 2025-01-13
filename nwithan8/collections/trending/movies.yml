@@ -1,0 +1,45 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  # Box Office
+  "🍿 At The Box Office":
+    template: { name: New,
+                level: "+++" }
+    summary: "Now playing on a screen near you"
+    trakt_boxoffice: true
+    collection_order: custom
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  # Trending online
+  "📈 Trending Now":
+    template: { name: Chart,
+                level: "+++" }
+    summary: "The hottest movies right now"
+    trakt_chart:
+      chart: trending
+      limit: 30
+    collection_order: custom
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  # Trending on Plex
+  "👀 What Everyone Is Watching":
+    template: { name: Chart,
+                level: "++" }
+    summary: "What other subscribers are checking out"
+    libraries: "Movies"  # Only consider movies in the Movies library (even when building this collection for 4K Movies)
+    sync_mode: sync
+    collection_order: custom
+    tautulli_popular:
+      list_days: 30
+      list_size: 15
+      list_minimum: 2
+    visible_library: true
+    visible_home: true
+    visible_shared: true

@@ -1,0 +1,176 @@
+## _awards.yml
+
+templates:
+  award_nominee:
+    collection_mode: hide
+    collection_order: release.desc
+    delete_not_scheduled: false
+    sort_title: "+100_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    imdb_search:
+      event: <<event>>
+      language: <<language>>
+      limit: 1000
+      type: <<type>>
+
+  award_winner:
+    collection_mode: hide
+    collection_order: release.desc
+    delete_not_scheduled: false
+    sort_title: "+100_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+    imdb_search:
+      event.winning: <<event.winning>>
+      language: <<language>>
+      limit: 1000
+      type: <<type>>
+
+collections:
+  "Oscar Nominees":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_nominees_oscars.png
+    summary: "A collection of Oscar Nominees"
+    template: {
+                    event: "oscar_picture,oscar_director",
+                    language: "en",
+                    name: award_nominee,
+                    num: "A",
+                    type: "movie,tv_movie"
+                }
+
+  "Oscar Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_oscars.png
+    summary: "A collection of Oscar Winners"
+    template: {
+                    event.winning: "oscar_picture,oscar_director",
+                    language: "en",
+                    name: award_winner,
+                    num: "B",
+                    type: "movie,tv_movie"
+                }
+
+  "Golden Globes Nominees":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_nominees_golden-globes.png
+    summary: "A collection of Golden Globes Nominees"
+    template: {
+                    event: "golden",
+                    language: "en",
+                    name: award_nominee,
+                    num: "C",
+                    type: "movie,tv_movie"
+                }
+
+  "Golden Globes Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_golden_globes.png
+    summary: "A collection of Golden Globes Winners"
+    template: {
+                    event.winning: "golden",
+                    language: "en",
+                    name: award_winner,
+                    num: "D",
+                    type: "movie,tv_movie"
+                }
+
+  "BAFTA Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_bafta.png
+    summary: "A collection of BAFTA Winners"
+    template: {
+                    event.winning: "bafta",
+                    language: "en",
+                    name: award_winner,
+                    num: "E",
+                    type: "movie,tv_movie"
+                }
+
+  "Berlinale Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_berlinale.png
+    summary: "A collection of Berlinale Winners"
+    template: {
+                    event.winning: "ev0000091",
+                    language: "en",
+                    name: award_winner,
+                    num: "F",
+                    type: "movie,tv_movie"
+                }
+
+  "Cannes Film Festival Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_cannes.png
+    summary: "A collection of Cannes Film Festival Winners"
+    template: {
+                    event.winning: "cannes",
+                    language: "en",
+                    name: award_winner,
+                    num: "G",
+                    type: "movie,tv_movie"
+                }
+
+  "European Film Award Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_european-film.png
+    summary: "A collection of European Film Award Winners"
+    template: {
+                    event.winning: "ev0000230",
+                    language: "en",
+                    name: award_winner,
+                    num: "H",
+                    type: "movie,tv_movie"
+                }
+
+  "Sundance Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_sundance.png
+    summary: "A collection of Sundance Winners"
+    template: {
+                    event.winning: "sundance",
+                    language: "en",
+                    name: award_winner,
+                    num: "I",
+                    type: "movie,tv_movie"
+                }
+
+  "Venice Film Festival Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_venice-film.png
+    summary: "A collection of Venice Film Festival Winners"
+    template: {
+                    event.winning: "ev0000681",
+                    language: "en",
+                    name: award_winner,
+                    num: "J",
+                    type: "movie,tv_movie"
+                }
+
+  "Critic's Choice Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_critics-choice.png
+    summary: "A collection of Critic's Choice Winners"
+    template: {
+                    event.winning: "choice",
+                    language: "en",
+                    name: award_winner,
+                    num: "K",
+                    type: "movie,tv_movie"
+                }
+
+  "Spirit Awards Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_spirit-awards.png
+    summary: "A collection of Spirit Awards Winners"
+    template: {
+                    event.winning: "spirit",
+                    language: "en",
+                    name: award_winner,
+                    num: "L",
+                    type: "movie,tv_movie"
+                }
+
+  "Razzie Winners":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_awards/awards_winners_razzie.png
+    summary: "A collection of Razzie Winners"
+    template: {
+                    event.winning: "razzie",
+                    language: "en",
+                    name: award_winner,
+                    num: "M",
+                    type: "movie,tv_movie"
+                }

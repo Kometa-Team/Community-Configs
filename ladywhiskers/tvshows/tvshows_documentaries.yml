@@ -1,0 +1,124 @@
+#######################################################
+#              Documentary Genres                     #
+#                TV Collections                       #
+#######################################################
+
+templates:
+  Collection:
+    optional:
+      - poster
+    #url_poster: <<poster>>
+    sync_mode: sync
+    sort_title: "!060_<<collection_name>>"
+    collection_order: release.desc
+    schedule: weekly(tuesday)
+    item_genre: <<collection_name>>
+    build_collection: false
+
+collections:
+  America:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/America.jpg}
+    imdb_list: https://www.imdb.com/list/ls567617875/
+    tvdb_show: 309958, 342167, 321784
+  Animal: 
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Animal.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611777/
+    tvdb_show: 231181, 302286, 365318, 397323, 380404, 414372, 423716, 342167, 354527
+  Apocalypse :
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Apocalypse.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611328/
+    tvdb_show: 101421, 279117
+  The Arts:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/The%20Arts.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611610/
+    tvdb_show: 362158, 353954, 418474, 266866
+  Building:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Building.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611261/
+    tvdb_show: 400435, 280472, 363422, 269355, 379326
+  Conspiracy:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Conspiracy.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611457/
+    tvdb_show: 37043, 111931, 287495, 386899
+  Dinosaur:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Dinosaur.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611901/
+    tvdb_show: 419593, 416319
+  Engineering:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Engineering.jpg}
+    imdb_list: 
+        - https://www.imdb.com/list/ls567611972/        #All other Engineering List
+        - https://www.imdb.com/list/ls567611261/        #Building List
+        - https://www.imdb.com/list/ls567611821/        #Engineering Disaster List
+    tvdb_show: 410587, 375980, 370754, 369458, 345959, 122401, 280472, 282106, 370754, 400435, 399511, 420420
+  Engineering Disaster:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Engineering%20Disaster.jpg}
+    imdb_list: https://www.imdb.com/list/ls567611821/
+    tvdb_show: 410587, 375980, 370754, 369458, 345959      
+  Fringe:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Fringe.jpg}
+    imdb_list: 
+        - https://www.imdb.com/list/ls567613015/        #All other Fringe List
+        - https://www.imdb.com/list/ls567611457/        #Conpsiracy List
+        - https://www.imdb.com/list/ls567616578/        #Paranormal List
+        - https://www.imdb.com/list/ls567637035/        #UFO List
+    tvdb_show: 37043, 111931, 287495, 386899, 261380, 111931, 255855, 417262, 290249, 370439, 336514, 413801, 111931, 311398, 255855, 370439, 376545, 420534
+  History :
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/History.jpg}
+    imdb_list: https://www.imdb.com/list/ls567613721/
+    tvdb_show: 84970, 119811, 290249, 136411, 311398, 287495, 362158, 356885, 400435, 418474, 413801, 421687, 361079, 420420, 80620, 376545, 360852, 427595, 363422, 355566, 420534, 269355
+#    smart_filter:
+#        sort_by: year.asc
+#        all:
+#          genre: documentary  
+#            any:
+#              genre: biography, war       
+  Human Body:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Human%20Body.jpg}
+    imdb_list: https://www.imdb.com/list/ls567613933/
+    tvdb_show: 370439, 324346, 333111
+    tmdb_show: 207778
+  Manufacturing:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Manufacturing.jpg}
+    imdb_list: https://www.imdb.com/list/ls567613987/
+    tvdb_show: 421687, 399511
+  Nature:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Nature.jpg}
+    imdb_list: 
+        - https://www.imdb.com/list/ls567613846/        #All other Nature List
+        - https://www.imdb.com/list/ls567611777/        #Animals List
+        - https://www.imdb.com/list/ls567611901/        #Dinosaur list
+        - https://www.imdb.com/list/ls567616526/        #Plants List
+        - https://www.imdb.com/list/ls567616754/        #Space List
+        - https://www.imdb.com/list/ls567637089/        #Weather List
+    tvdb_show: 231181, 302286, 365318, 397323, 380404, 414372, 423716, 342167, 354527, 419593, 416319, 268119, 388660, 356885, 333247, 387478, 136411, 377071, 390520, 269320, 255951, 286699, 370598, 80865, 419048, 398721, 433852
+  Paranormal:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Paranormal.jpg}
+    imdb_list: https://www.imdb.com/list/ls567616578/
+    tvdb_show: 261380
+  Plant:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Plant.jpg}
+    imdb_list: https://www.imdb.com/list/ls567616526/
+    tvdb_show: 298146
+  Space:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Space.jpg}
+    imdb_list: 
+        - https://www.imdb.com/list/ls567616754/        #All other Space List
+        - https://www.imdb.com/list/ls567637035/        #UFO List
+    tvdb_show: 377071, 364784
+  Sport :
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Sport.jpg}
+    imdb_list: https://www.imdb.com/list/ls567616746/
+    tvdb_show: 362158, 398117
+  Technology:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Technology.jpg}
+    imdb_list: https://www.imdb.com/list/ls567616111/
+    tvdb_show: 122401, 362158, 282106, 358433, 410168, 41726
+  UFO:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Ufo.jpg}
+    imdb_list: https://www.imdb.com/list/ls567637035/
+    tvdb_show: 111931, 255855
+  Weather:
+    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Weather.jpg}
+    imdb_list: https://www.imdb.com/list/ls567637089/
+    tvdb_show: 390520, 269320, 255951, 286699, 370598, 80865, 419048

@@ -1,0 +1,79 @@
+## _parental.yml
+
+templates:
+  plex:
+    collection_mode: hide
+    delete_not_scheduled: false
+    label.sync: Parental
+    sort_title: "+050_<<num>>_<<collection_name>>"
+    sync_mode: sync
+    visible_home: false
+    visible_library: false
+    visible_shared: false
+
+collections:
+  "Parental: Unwatched":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_unwatched.png
+    summary: "Unwatched parental"
+    template: {
+                    name: plex,
+                    num: "1"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+        unplayed: true
+      collection_filtering: user
+      sort_by: title.asc
+
+  "Parental: Random":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_random.png
+    summary: "Random movies suitable for children"
+    template: {
+                    name: plex,
+                    num: "2"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      limit: 250
+      sort_by: random
+
+  "Parental: Recently Added":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_recently-added.png
+    summary: "Recently added movies suitable for children"
+    template: {
+                    name: plex,
+                    num: "3"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      limit: 100
+      sort_by: added.desc
+
+  "Parental: Recently Released":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_recently-released.png
+    summary: "Recently released movies suitable for children"
+    template: {
+                    name: plex,
+                    num: "4"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      limit: 250
+      sort_by: release.desc
+
+  "Parental: Top Rated":
+    url_poster: https://raw.githubusercontent.com/0x5f3/kometa.config/assets/_parental/parental_top-rated.png
+    summary: "Top rated movies suitable for children"
+    template: {
+                    name: plex,
+                    num: "5"
+                }
+    smart_filter:
+      all:
+        collection: "Parental: All"
+      limit: 250
+      sort_by: critic_rating.desc

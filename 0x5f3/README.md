@@ -1,45 +1,54 @@
-This config will populate the following:
-
-- !Suggested (random, trending, popular, top-rated, most watched)
+#### This config will populate the following:
+```
+- !Suggested (random, recently added|released, recommended, suggested, trending, popular, top-rated)
+- Unwatched (random, recommended, suggested, popular, top-rated)
+- !Watched (most watched daily|weekly|monthly|yearly)
 - !Seasonal *
 - Parental
+- Family
 - Documentaries
 - Stand-up *
-- !Awards
+- Sports
+- Anime
+- Awards
 - !Year (top-rated)
 - !Decades (top-rated)
 - !Genre (popular)
 - !Genre (top-rated)
 - Sub-genre (top-rated) *
-- TMBD collections *
+- Studio *
+- TMDB collections *
+- Network ^
 
-( * = movies only )
-( ! = enabled by default)
-
-For more details on what each section contains: [movies](MOVIES.md) | [shows](SHOWS.md)
-<br/>
-<br/>
-<br/>
-**Install:**
-
-clone into PMM's root directory:
+(! = enabled by default)
+(* = movies only)
+(^ = shows only)
 ```
-git clone --branch assets https://github.com/0x5f3/pmm-config config
+###### For more details on what each section contains: [movies](MOVIES.md) | [shows](SHOWS.md)
+#### Requirements:
 ```
-initial run to populate collections:
+ - API keys for: mdblist, tmdb, trakt
 ```
-python plex_meta_manager.py --config config/movie.yml --collections-only --run --ignore-schedules
-python plex_meta_manager.py --config config/show.yml --collections-only --run --ignore-schedules
+#### Install:
 ```
+git clone --recursive https://github.com/0x5f3/kometa.config config
+```
+#### Usage:
 
-*If you intend to use the Parental collection, enable "item_label.sync: Parental" (line 38, 1_parental.yml) on the initial run and disable for subsequent runs. This prevents ppm from relabelling all of the items with every run, where as disabling will only label new items added.*
-
-<br/>
-After a successful run, you will have something similar to this:
-<br/>
-<br/>
-
-![movies](https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/_/_movies.png)
-<br/>
-  
-![shows](https://raw.githubusercontent.com/0x5f3/pmm-config/assets/assets/_/_shows.png)
+###### The initial process for populating collections:
+```
+docker run --rm -it -v ./config:/config kometateam/kometa:nightly --config config/config.yml --run --ignore-schedules
+```
+###### Following a successful initial run:
+```
+docker run --rm -d -v ./config:/config kometateam/kometa:nightly --config config/config.yml --run
+```
+###### Notes:
+``
+With the parental configuration, there is a 'Parental' label added to their collections and all items included. The label can be used with 'Allow Only Labels' in a user's restriction settings.
+``
+#
+#
+###### A successful run will result in something similar to this:
+![movies](https://raw.githubusercontent.com/0x5f3/kometa.config/collections/_/movies.png)
+![shows](https://raw.githubusercontent.com/0x5f3/kometa.config/collections/_/shows.png)
