@@ -45,6 +45,26 @@ libraries: # Library mappings must have a colon (:) placed after them
         configured: false
         managed: true
         less: 1
+  foreign:
+    library_name: TV - Foreign
+    remove_overlays: false
+    report_path: config/reports/foreign.yml
+    collection_files:
+    - /config/metadata/suggestions.yml
+    - /config/metadata/networks.yml
+    #overlay_files:        
+    #- /config/overlays/foreign.yml
+    settings:
+      asset_directory:
+      - config/assets/
+    operations:
+      mass_imdb_parental_labels: none
+      assets_for_all: false
+      split_duplicates: false
+      delete_collections:
+        configured: false
+        managed: true
+        less: 1
   teens:
     library_name: TV | Teens
     remove_overlays: false
