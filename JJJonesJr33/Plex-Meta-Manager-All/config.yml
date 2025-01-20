@@ -18,6 +18,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       asset_directory:
       - config/assets/
     operations:
+      mass_imdb_parental_labels: none
       assets_for_all: false
       split_duplicates: false
       delete_collections:
@@ -38,6 +39,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       asset_directory:
       - config/assets/
     operations:
+      mass_imdb_parental_labels: none
       assets_for_all: false
       split_duplicates: false
       delete_collections:
@@ -56,6 +58,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       asset_directory:
       - config/assets/
     operations:
+      mass_imdb_parental_labels: none
       assets_for_all: false
       split_duplicates: false
       delete_collections:
@@ -76,6 +79,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       asset_directory:
       - config/assets/
     operations:
+      mass_imdb_parental_labels: none
       assets_for_all: false
       split_duplicates: false
       delete_collections:
@@ -102,6 +106,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       asset_directory:
       - config/assets/
     operations:
+      mass_imdb_parental_labels: none
       assets_for_all: false
       split_duplicates: false
       delete_collections:
@@ -121,6 +126,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       asset_directory:
       - config/assets/
     operations:
+      mass_imdb_parental_labels: none
       assets_for_all: false
       split_duplicates: false
       delete_collections:
@@ -139,6 +145,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       asset_directory:
       - config/assets/
     operations:
+      mass_imdb_parental_labels: none
       assets_for_all: false
       split_duplicates: false
       delete_collections:
@@ -157,6 +164,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       asset_directory:
       - config/assets/
     operations:
+      mass_imdb_parental_labels: none
       assets_for_all: false
       split_duplicates: false
       delete_collections:
