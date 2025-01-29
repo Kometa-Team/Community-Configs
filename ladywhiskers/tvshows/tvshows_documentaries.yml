@@ -8,7 +8,7 @@ templates:
     optional:
       - poster
     #url_poster: <<poster>>
-    sync_mode: sync
+    #sync_mode: sync
     sort_title: "!060_<<collection_name>>"
     collection_order: release.desc
     schedule: weekly(tuesday)

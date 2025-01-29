@@ -1,5 +1,5 @@
 ######################################################
-#              ASOIAF            #
+#                     ASOIAF                         #
 ######################################################
 metadata:
   121361: # TVDB id for Game of Thrones. Set by willtong93 on MediUX. https://mediux.pro/sets/7917
@@ -177,6 +177,7 @@ metadata:
             url_poster: https://api.mediux.pro/assets/e9b5e393-9f1d-43a3-b65a-087aecd4d97b
   371572: # TVDB id for House of the Dragon. Set by willtong93 on MediUX. https://mediux.pro/sets/8785
     url_poster: https://api.mediux.pro/assets/ec4e0015-f195-4708-8c53-126b04e2e9f5
+    url_background: https://api.mediux.pro/assets/481cb43a-daca-4374-ab71-551341e5d977
     seasons:
       1:
         url_poster: https://api.mediux.pro/assets/92f6ffb2-36ab-4191-8ce1-f0b3cf6c02f1
@@ -201,3 +202,14 @@ metadata:
             url_poster: https://api.mediux.pro/assets/d24c3eac-33ff-469a-8446-ded7aa515974
           10:
             url_poster: https://api.mediux.pro/assets/9095422e-82ce-44b1-89b3-7f4f72dbf9ea
+      2:
+        url_poster: https://api.mediux.pro/assets/989a6a87-cce4-4bbf-96a4-9dca3b75987f
+        episodes:
+          1:
+            url_poster: https://api.mediux.pro/assets/23da4586-e1da-4982-bf68-9a2c3367ac46
+          2:
+            url_poster: https://api.mediux.pro/assets/d6a6a1c4-702b-45da-855f-e7262689e7cc
+          3:
+            url_poster: https://api.mediux.pro/assets/c4c6a91d-2c3b-4421-9bae-c543bdf43e9e
+          4:
+            url_poster: https://api.mediux.pro/assets/6a89423c-3edd-4c8d-a215-d46d4a9ac0ca

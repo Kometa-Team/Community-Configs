@@ -5,7 +5,7 @@ templates:
     collection_order: critic_rating.desc
     delete_not_scheduled: false
     limit: 250
-    sort_title: "+130_<<collection_name>>"
+    #sort_title: "+130_<<collection_name>>"
     sync_mode: sync
     visible_home: false
     visible_library: false
@@ -29,7 +29,7 @@ templates:
       - <<imdb_extra_4>>
       - <<imdb_extra_5>>
     letterboxd_list_details:
-      - url: https://letterboxd.com/ediblehedgehog/list/<<letterboxd_list>>/by/rating/
+      - url: https://letterboxd.com/mehrmantraut/list/<<letterboxd_list>>/by/rating/
         limit: 250
       - url: <<letterboxd_list_details_url_1>>
         limit: <<letterboxd_list_details_limit_1>>
@@ -722,7 +722,6 @@ collections:
     schedule: weekly(wednesday)
     #summary: "Top rated movies in Hostage"
     template: {
-                    imdb_extra_1: "https://www.imdb.com/search/keyword/?title_type=movie,tv_movie&user_rating=5.0,10.0&num_votes=1000,&keywords=hostage,kidnapping&languages=en&sort=user_rating,desc",
                     keyword: "hostage-situation",
                     language: "en",
                     letterboxd_list: "theme-hostage",
