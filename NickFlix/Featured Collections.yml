@@ -1,0 +1,97 @@
+#####  There are other TOP collections coming from the Movie.yml file  #####
+#####  This collection was previously named All Top.yml  #####
+
+templates:
+
+    Featured:
+        sort_title: +1_<<collection_name>> 
+    
+collections:
+
+  Trending Now:
+    template: {name: Featured}
+    trakt_chart:
+      chart: trending
+      limit: 30
+    sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    collection_order: custom
+    file_poster: config/assets/F-Now Trending.png
+    summary: Weekly Trending and recent movies as seen on Trakt.com
+    
+  IMDB Top 250:
+    template: {name: Featured}
+    imdb_chart: top_movies
+    visible_home: false
+    visible_shared: false
+    summary: Top movies of all time
+    file_poster: config/assets/F-IMDB Top 250.png
+    collection_order: custom
+    collection_mode: hide
+    schedule:
+     - weekly(sunday)
+     - hourly(02)
+
+  Best Oscar Picture:
+    template: {name: Featured}
+    imdb_list: https://www.imdb.com/search/title/?count=100&groups=oscar_best_picture_winners&sort=year%2Cdesc
+    collection_order: custom
+    visible_home: false
+    visible_shared: false
+    file_poster: config/assets/F-Best Oscar Picture.png
+    summary: Get ready to roll out the red carpet and polish your acceptance speech, because "Best Oscar Picture" is here to showcase the crème de la crème of cinematic excellence! This extraordinary collection brings together the most critically acclaimed and celebrated films that have graced the prestigious Oscar stage.
+
+  4K Ultra High-Def:
+    template: {name: Featured}
+    collection_order: custom
+    plex_search:
+      all:
+        resolution: 4K
+      sort_by: audience_rating.desc
+      limit: 300
+    file_poster: config/assets/F-4K Ultra High-Def.png
+    visible_home: false
+    visible_shared: false
+
+  Top 100 Grossing Films of All Time:
+    template: {name: Featured}
+    imdb_list: https://www.imdb.com/list/ls098063263/
+    sync_mode: sync
+    limit: 100
+    visible_home: false
+    visible_shared: false
+    file_poster: config/assets/F-Top 100 Grossing Films.png
+    
+  TMDb Now Playing:
+    tmdb_now_playing: 30
+    collection_order: custom
+    sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    file_poster: config/assets/F-Now Playing.png
+    
+  Your Recommended:
+    template: {name: Featured}
+    smart_filter:
+      all:
+        user_rating.gte: 8.0
+        unplayed: false
+      sort_by: audience_rating.desc
+    sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    file_poster: config/assets/F-Your Recommended.png
+    summary: Movies that the current logged in Plex user has watched and rated at or above 4 out of 5 stars
+    
+  NicFlix Most Popular Movies:
+    template: {name: Featured}  
+    sync_mode: sync
+    collection_order: custom
+    tautulli_watched:
+      list_days: 30
+      list_size: 10
+      list_minimum: 1
+    file_poster: config/assets/NicFlix Most Popular Movies.png  
+    summary: Most popular movies on NicFlix in the last 30 Days.  
+  

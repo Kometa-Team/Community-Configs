@@ -252,7 +252,7 @@ collections:
     template: { name: Anime, mal_id: 72, poster: 240867} 
   Reverse Harem:
     template: { name: Anime, mal_id: 73, poster: } 
-  Romantic Subtext:
+  Love Status Quo:
     template: { name: Anime, mal_id: 74, poster: } 
   Samurai:
     template: { name: Anime, mal_id: 21, poster: 213669} 
@@ -290,6 +290,10 @@ collections:
     template: { name: Anime, mal_id: 25, poster: 240214} 
   Shounen:
     template: { name: Anime, mal_id: 27, poster: 240215} 
+  Urban Fantasy:
+    template: { name: Anime, mal_id: 82, poster: } 
+  Villainess:
+    template: { name: Anime, mal_id: 83, poster: } 
 
   # Collection1: # Replace Username1 with a valid MAL Username
     # template: { name: User, username: Username1, poster:  }

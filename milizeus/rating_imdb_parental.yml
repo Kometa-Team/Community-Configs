@@ -28,18 +28,18 @@ templates:
 
 overlays:
 
-  backdrop:
-    overlay:
-      name: backdrop
-      horizontal_align: left
-      horizontal_offset: 65
-      vertical_align: bottom
-      vertical_offset: 24 # = audience
-      back_width: 337
-      back_height: 99
-      back_color: '#00000000'
-      back_radius: 8
-    plex_all: true
+#  backdrop:
+#    overlay:
+#      name: backdrop
+#      horizontal_align: left
+#      horizontal_offset: 65
+#      vertical_align: bottom
+#      vertical_offset: 24 # = audience
+#      back_width: 337
+#      back_height: 99
+#      back_color: '#00000000'
+#      back_radius: 8
+#    plex_all: true
 
   ### IMDB PARENTAL RATING ### 321 x 83
 

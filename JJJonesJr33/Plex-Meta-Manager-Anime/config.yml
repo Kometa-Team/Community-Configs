@@ -5,7 +5,7 @@
 
 libraries: # Library mappings must have a colon (:) placed after them
   movies_anime:
-    library_name: Movies | Anime
+    library_name: Movies - Anime
     remove_overlays: false
     report_path: config/reports/movies_anime.yml
     collection_files:
@@ -16,6 +16,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       asset_directory:
       - config/assets/
     operations:
+      mass_imdb_parental_labels: none
       assets_for_all: false
       split_duplicates: false
       delete_collections:
@@ -25,7 +26,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       item_audio_language: default  # Set default audio language
       item_subtitle_language: en-US  # Set default subtitle language
   anime:
-    library_name: TV | Anime
+    library_name: TV - Anime
     remove_overlays: false
     report_path: config/reports/anime.yml
     collection_files:
@@ -36,6 +37,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       asset_directory:
       - config/assets/
     operations:
+      mass_imdb_parental_labels: none
       assets_for_all: false
       split_duplicates: false
       delete_collections:
