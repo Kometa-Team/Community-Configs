@@ -1,3 +1,5 @@
+# Configuration file for the Kometa application.
+# This file specifies the libraries to be used by the application.
 libraries:
   Movies:
     schedule_overlays: weekly(monday|wednesday|friday|sunday)
@@ -18,14 +20,15 @@ libraries:
           33514: The Twilight Saga
           9743: Hannibal Lecter
           489724: Trolls
-    #- default: genre
+#    - default: genre
     - default: letterboxd
+      schedule: monthly(17)
       template_variables:
-        use_imdb_top_250: true 
-        use_oscars: true 
-        use_cannes: true 
-        visible_library_top_250: true 
-        visible_home_top_250: true 
+        use_imdb_top_250: true
+        use_oscars: true
+        use_cannes: true
+        visible_library_top_250: true
+        visible_home_top_250: true
         visible_shared_top_250: true
     - default: other_chart
       template_variables:
@@ -38,6 +41,8 @@ libraries:
     - default: razzie
     - default: seasonal
       template_variables:
+        trakt_list_christmas: https://trakt.tv/users/k0meta/lists/christmas-extravaganza-non-tv-movie
+        schedule_christmas: range(11/01-12/26)
         use_patrick: false
         use_memorial: false
         schedule_father: range(09/01-09/07)
@@ -124,7 +129,7 @@ libraries:
         include:
         - Oceania
     - default: franchise
-    - default: genre
+    #- default: genre
     - default: other_chart
       template_variables:
         use_anidb: false
@@ -182,7 +187,7 @@ libraries:
       - tvdb
       - omdb
   Music:
-    schedule: weekly (tuesday|thursday|sunday)
+    schedule: weekly (sunday)
     library_name: Music
     collection_files:
     - folder: config/music
@@ -192,7 +197,7 @@ playlist_files:
 - default: playlist
   template_variables:
     libraries: Movies, TV Shows
-- folder: config/playlists
+#- folder: config/playlists
 settings:
   cache: true
   cache_expiration: 2048
@@ -211,7 +216,7 @@ settings:
   minimum_items: 1
   default_collection_order:
   delete_below_minimum: true
-  delete_not_scheduled: false
+  delete_not_scheduled: true
   run_again_delay: 2
   missing_only_released: true
   only_filter_missing: false
@@ -239,13 +244,14 @@ settings:
   - overlays
   overlay_artwork_filetype: jpg
   overlay_artwork_quality:
+  show_unfiltered: false
 webhooks:
   error: notifiarr
   version: notifiarr
   run_start: notifiarr
   run_end: notifiarr
   changes: notifiarr
-  delete:  
+  delete:
 plex:
   url: http://localhost:32400
   token: [REDACTED]
