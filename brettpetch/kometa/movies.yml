@@ -1,0 +1,71 @@
+collections:
+ Most Recommended this Month:
+   trakt_chart:
+     chart: recommended
+     time_period: monthly
+     limit: 30
+   sync_mode: sync
+   smart_label: random
+   sort_title: "#5Popular"
+   summary: Most recommended this month on Trakt
+   visible_home: True
+   visible_shared: True
+   visible_library: True
+
+ Most Watched Recently:
+   trakt_chart:
+     - chart: watched
+       time_period: monthly
+       limit: 30
+     - chart: watched
+       time_period: weekly
+       limit: 20
+     - chart: watched
+       time_period: daily
+   sync_mode: sync
+   smart_label: random
+   sort_title: "#4Popular"
+   summary: Most watched this day/week/month on Trakt
+   visible_home: True
+   visible_shared: True
+   visible_library: True
+
+ Popular Movies:
+   trakt_trending: 40
+   tmdb_trending_daily: 40
+   tmdb_trending_weekly: 40
+   tautulli_popular:
+     list_days: 30
+     list_size: 40
+   stevenlu_popular: True
+   sort_title: "#1Popular"
+   sync_mode: sync
+   smart_label: added.desc
+   summary: Movies Trending across the internet
+   url_background: 
+   url_poster: 
+   visible_home: True
+   visible_shared: True
+   visible_library: True
+
+ Best Superhero Movies:
+   trakt_list: https://trakt.tv/users/hdlists/lists/best-superhero-movies
+   sort_title: "#4Best Superhero Movies"
+   sync_mode: sync
+   smart_label: critic_rating.desc
+   summary: Best Superhero Movies of All Time
+   url_poster: 
+
+ Chick Flicks:
+   sort_title: "#CHICKFLICKS"
+   trakt_list:
+     - https://trakt.tv/users/djxotik/lists/chick-flix
+     - https://trakt.tv/users/nate8727/lists/chick-flicks
+   sync_mode: sync
+   smart_label: random
+   url_poster: 
+   url_background: https://walter.trakt.tv/images/movies/000/000/057/fanarts/full/b02a4d1e6a.jpg
+   visible_home: True
+   visible_shared: True
+   visible_library: True
+
