@@ -1,0 +1,39 @@
+collections:
+ Trending Animation TV:
+   smart_label: release.desc
+   sort_title: "#1Trending TV"
+   sync_mode: sync
+   trakt_trending: 200
+   summary: Shows Trending across the internet
+   visible_home: True
+   visible_shared: True
+   visible_library: True
+
+ Popular Animation TV:
+   smart_label: release.desc
+   sort_title: "#2Popular TV"
+   sync_mode: sync
+   tautulli_popular:
+     list_days: 60
+     list_size: 100
+   imdb_list:
+     url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
+     limit: 40
+   summary: Popular Shows across the internet
+   visible_home: True
+   visible_shared: True
+   visible_library: True
+
+ Top Rated Animated TV:
+   smart_label: user_rating.desc
+   sort_title: "#3Top Rated TV"
+   sync_mode: sync
+   imdb_list:
+     url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc
+     limit: 100
+   tmdb_top_rated: 200
+   summary: Top Rated Shows across the internet
+   visible_home: True
+   visible_shared: True
+   visible_library: True
+
