@@ -1,0 +1,859 @@
+libraries:
+  Movies:
+    collection_files:
+    - file: config/kometa/movies.yml
+    - default: oscars
+      template_variables:
+        visible_home: range(02/20-03/29)
+        visible_library: range(02/20-03/29)
+        visible_shared: range(02/20-03/29)
+        data:
+          starting: latest
+          ending: latest
+    - default: berlinale
+      template_variables:
+        visible_home: range(02/15-03/10)
+        visible_library: range(02/15-03/10)
+        visible_shared: range(02/15-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: bafta
+      template_variables:
+        visible_home: range(02/06-02/15)
+        visible_library: range(02/06-02/15)
+        visible_shared: range(02/06-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - default: choice
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: emmy
+      template_variables:
+        visible_home: range(11/20-12/05)
+        visible_library: range(11/20-12/05)
+        visible_shared: range(11/20-12/05)
+        data:
+          starting: latest
+          ending: latest
+    - default: golden
+      template_variables:
+        visible_home: range(02/01-02/15)
+        visible_library: range(02/01-02/15)
+        visible_shared: range(02/01-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - default: spirit
+      template_variables:
+        visible_home: range(02/21-03/10)
+        visible_library: range(02/21-03/10)
+        visible_shared: range(02/21-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: pca
+      template_variables:
+        visible_home: range(02/15-03/10)
+        visible_library: range(02/15-03/10)
+        visible_shared: range(02/15-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: sag
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: sundance
+      template_variables:
+        visible_home: range(01/20-02/10)
+        visible_library: range(01/20-02/10)
+        visible_shared: range(01/20-02/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: tiff
+      template_variables:
+        visible_home: range(09/01-10/01)
+        visible_library: range(09/01-10/01)
+        visible_shared: range(09/01-10/01)
+        data:
+          starting: latest
+          ending: latest
+    - default: letterboxd
+      template_variables:
+        use_oscars: false
+        use_imdb_top_250: false
+        use_cannes: false
+    - default: tmdb
+    - default: streaming
+    - default: decade
+    split_duplicates: false
+
+  Movies (Animations):
+    collection_files:
+    - file: config/kometa/moviesan.yml
+    - default: oscars
+      collection_order: audience_rating.desc
+      template_variables:
+        visible_home: range(02/20-03/29)
+        visible_library: range(02/20-03/29)
+        visible_shared: range(02/20-03/29)
+        data:
+          starting: latest
+          ending: latest
+    - default: berlinale
+      template_variables:
+        visible_home: range(02/15-03/10)
+        visible_library: range(02/15-03/10)
+        visible_shared: range(02/15-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: bafta
+      template_variables:
+        visible_home: range(02/06-02/15)
+        visible_library: range(02/06-02/15)
+        visible_shared: range(02/06-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - default: choice
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: emmy
+      template_variables:
+        visible_home: range(11/20-12/05)
+        visible_library: range(11/20-12/05)
+        visible_shared: range(11/20-12/05)
+        data:
+          starting: latest
+          ending: latest
+    - default: golden
+      template_variables:
+        visible_home: range(02/01-02/15)
+        visible_library: range(02/01-02/15)
+        visible_shared: range(02/01-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - default: spirit
+      template_variables:
+        visible_home: range(02/21-03/10)
+        visible_library: range(02/21-03/10)
+        visible_shared: range(02/21-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: pca
+      template_variables:
+        visible_home: range(02/15-03/10)
+        visible_library: range(02/15-03/10)
+        visible_shared: range(02/15-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: sag
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: sundance
+      template_variables:
+        visible_home: range(01/20-02/10)
+        visible_library: range(01/20-02/10)
+        visible_shared: range(01/20-02/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: tiff
+      template_variables:
+        visible_home: range(09/01-10/01)
+        visible_library: range(09/01-10/01)
+        visible_shared: range(09/01-10/01)
+        data:
+          starting: latest
+          ending: latest
+    - default: letterboxd
+      template_variables:
+        use_oscars: false
+        use_imdb_top_250: false
+        use_cannes: false
+    - default: tmdb
+    - default: streaming
+    - default: decade
+    split_duplicates: false
+
+  Movies (4K):
+    collection_files:
+    - file: config/kometa/movies4k.yml
+    - default: oscars
+      collection_order: audience_rating.desc
+      template_variables:
+        visible_home: range(02/20-03/29)
+        visible_library: range(02/20-03/29)
+        visible_shared: range(02/20-03/29)
+        data:
+          starting: latest
+          ending: latest
+    - default: berlinale
+      template_variables:
+        visible_home: range(02/15-03/10)
+        visible_library: range(02/15-03/10)
+        visible_shared: range(02/15-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: bafta
+      template_variables:
+        visible_home: range(02/06-02/15)
+        visible_library: range(02/06-02/15)
+        visible_shared: range(02/06-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - default: choice
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: emmy
+      template_variables:
+        visible_home: range(11/20-12/05)
+        visible_library: range(11/20-12/05)
+        visible_shared: range(11/20-12/05)
+        data:
+          starting: latest
+          ending: latest
+    - default: golden
+      template_variables:
+        visible_home: range(02/01-02/15)
+        visible_library: range(02/01-02/15)
+        visible_shared: range(02/01-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - default: spirit
+      template_variables:
+        visible_home: range(02/21-03/10)
+        visible_library: range(02/21-03/10)
+        visible_shared: range(02/21-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: pca
+      template_variables:
+        visible_home: range(02/15-03/10)
+        visible_library: range(02/15-03/10)
+        visible_shared: range(02/15-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: sag
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: sundance
+      template_variables:
+        visible_home: range(01/20-02/10)
+        visible_library: range(01/20-02/10)
+        visible_shared: range(01/20-02/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: tiff
+      template_variables:
+        visible_home: range(09/01-10/01)
+        visible_library: range(09/01-10/01)
+        visible_shared: range(09/01-10/01)
+        data:
+          starting: latest
+          ending: latest
+    - default: letterboxd
+      template_variables:
+        use_oscars: false
+        use_imdb_top_250: false
+        use_cannes: false
+    - default: tmdb
+    - default: streaming
+    - default: decade
+    split_duplicates: false
+
+  Movies (4K-DV):
+    collection_files:
+    - file: config/kometa/movies4k.yml
+    - default: oscars
+      collection_order: audience_rating.desc
+      template_variables:
+        visible_home: range(02/20-03/29)
+        visible_library: range(02/20-03/29)
+        visible_shared: range(02/20-03/29)
+        data:
+          starting: latest
+          ending: latest
+    - default: berlinale
+      template_variables:
+        visible_home: range(02/15-03/10)
+        visible_library: range(02/15-03/10)
+        visible_shared: range(02/15-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: bafta
+      template_variables:
+        visible_home: range(02/06-02/15)
+        visible_library: range(02/06-02/15)
+        visible_shared: range(02/06-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - default: choice
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: emmy
+      template_variables:
+        visible_home: range(11/20-12/05)
+        visible_library: range(11/20-12/05)
+        visible_shared: range(11/20-12/05)
+        data:
+          starting: latest
+          ending: latest
+    - default: golden
+      template_variables:
+        visible_home: range(02/01-02/15)
+        visible_library: range(02/01-02/15)
+        visible_shared: range(02/01-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - default: spirit
+      template_variables:
+        visible_home: range(02/21-03/10)
+        visible_library: range(02/21-03/10)
+        visible_shared: range(02/21-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: pca
+      template_variables:
+        visible_home: range(02/15-03/10)
+        visible_library: range(02/15-03/10)
+        visible_shared: range(02/15-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: sag
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: sundance
+      template_variables:
+        visible_home: range(01/20-02/10)
+        visible_library: range(01/20-02/10)
+        visible_shared: range(01/20-02/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: tiff
+      template_variables:
+        visible_home: range(09/01-10/01)
+        visible_library: range(09/01-10/01)
+        visible_shared: range(09/01-10/01)
+        data:
+          starting: latest
+          ending: latest
+    - default: letterboxd
+      template_variables:
+        use_oscars: false
+        use_imdb_top_250: false
+        use_cannes: false
+    - default: tmdb
+    - default: streaming
+      template_variables:
+        visible_home: range(09/01-10/01)
+        visible_library: range(09/01-10/01)
+        visible_shared: range(09/01-10/01)
+    - default: decade
+    split_duplicates: false
+
+  Movies (4K-Remux):
+    collection_files:
+    - file: config/kometa/movies4k.yml
+    - default: oscars
+      collection_order: audience_rating.desc
+      template_variables:
+        visible_home: range(02/20-03/29)
+        visible_library: range(02/20-03/29)
+        visible_shared: range(02/20-03/29)
+        data:
+          starting: latest
+          ending: latest
+    - default: berlinale
+      template_variables:
+        visible_home: range(02/15-03/10)
+        visible_library: range(02/15-03/10)
+        visible_shared: range(02/15-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: bafta
+      template_variables:
+        visible_home: range(02/06-02/15)
+        visible_library: range(02/06-02/15)
+        visible_shared: range(02/06-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - default: choice
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: emmy
+      template_variables:
+        visible_home: range(11/20-12/05)
+        visible_library: range(11/20-12/05)
+        visible_shared: range(11/20-12/05)
+        data:
+          starting: latest
+          ending: latest
+    - default: golden
+      template_variables:
+        visible_home: range(02/01-02/15)
+        visible_library: range(02/01-02/15)
+        visible_shared: range(02/01-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - default: spirit
+      template_variables:
+        visible_home: range(02/21-03/10)
+        visible_library: range(02/21-03/10)
+        visible_shared: range(02/21-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: pca
+      template_variables:
+        visible_home: range(02/15-03/10)
+        visible_library: range(02/15-03/10)
+        visible_shared: range(02/15-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: sag
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: sundance
+      template_variables:
+        visible_home: range(01/20-02/10)
+        visible_library: range(01/20-02/10)
+        visible_shared: range(01/20-02/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: tiff
+      template_variables:
+        visible_home: range(09/01-10/01)
+        visible_library: range(09/01-10/01)
+        visible_shared: range(09/01-10/01)
+        data:
+          starting: latest
+          ending: latest
+    - default: letterboxd
+      template_variables:
+        use_oscars: false
+        use_imdb_top_250: false
+        use_cannes: false
+    - default: tmdb
+    - default: streaming
+    - default: decade
+    split_duplicates: false
+
+  TV:
+    collection_files:
+    - file: config/kometa/series-refresh.yml
+    - default: tmdb
+    - default: streaming
+      template_variables:
+        collection_order: episode_release.desc
+        visible_home_amazon: weekly(thursday|friday)
+        visible_library_amazon: weekly(thursday|friday)
+        visible_shared_amazon: weekly(thursday|friday)
+        visible_home_appletv: weekly(tuesday|thursday|friday)
+        visible_library_appletv: weekly(tuesday|thursday|friday)
+        visible_shared_appletv: weekly(tuesday|thursday|friday)
+        visible_home_discovery: weekly(wednesday)
+        visible_library_discovery: weekly(wednesday)
+        visible_shared_discovery: weekly(wednesday)
+        visible_home_disney: true
+        visible_library_disney: true
+        visible_shared_disney: true
+        visible_home_hulu: weekly(sunday|monday)
+        visible_library_hulu: weekly(sunday|monday)
+        visible_shared_hulu: weekly(sunday|monday)
+        visible_home_max: weekly(monday|friday|saturday|sunday)
+        visible_library_max: weekly(sunday|monday)
+        visible_shared_max: weekly(sunday|monday)
+        visible_home_netflix: weekly(friday)
+        visible_library_netflix: weekly(friday)
+        visible_shared_netflix: weekly(friday)
+        visible_home_paramount: weekly(friday|saturday|sunday)
+        visible_library_paramount: weekly(friday|saturday|sunday)
+        visible_shared_paramount: weekly(friday|saturday|sunday)
+        visible_home_peacock: weekly(friday|saturday|sunday|monday)
+        visible_library_peacock: weekly(friday|saturday|sunday|monday)
+        visible_shared_peacock: weekly(friday|saturday|sunday|monday)
+        visible_home_showtime: weekly(saturday|sunday)
+        visible_library_showtime: weekly(saturday|sunday)
+        visible_shared_showtime: weekly(saturday|sunday)
+    - default: choice
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: emmy
+      template_variables:
+        visible_home: range(11/20-12/05)
+        visible_library: range(11/20-12/05)
+        visible_shared: range(11/20-12/05)
+        data:
+          starting: latest
+          ending: latest
+    - default: golden
+      template_variables:
+        visible_home: range(02/01-02/15)
+        visible_library: range(02/01-02/15)
+        visible_shared: range(02/01-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - default: decade
+    - file: config/kometa/series.yml
+    split_duplicates: false
+
+  TV (4K):
+    collection_files:
+    - file: config/kometa/series-refresh.yml
+    - default: tmdb
+    - default: streaming
+      template_variables:
+        collection_order: episode_release.desc
+        visible_home_amazon: weekly(thursday|friday)
+        visible_library_amazon: weekly(thursday|friday)
+        visible_shared_amazon: weekly(thursday|friday)
+        visible_home_appletv: weekly(tuesday|thursday|friday)
+        visible_library_appletv: weekly(tuesday|thursday|friday)
+        visible_shared_appletv: weekly(tuesday|thursday|friday)
+        visible_home_discovery: weekly(wednesday)
+        visible_library_discovery: weekly(wednesday)
+        visible_shared_discovery: weekly(wednesday)
+        visible_home_disney: true
+        visible_library_disney: true
+        visible_shared_disney: true
+        visible_home_hulu: weekly(sunday|monday)
+        visible_library_hulu: weekly(sunday|monday)
+        visible_shared_hulu: weekly(sunday|monday)
+        visible_home_max: weekly(monday|friday|saturday|sunday)
+        visible_library_max: weekly(sunday|monday)
+        visible_shared_max: weekly(sunday|monday)
+        visible_home_netflix: weekly(friday)
+        visible_library_netflix: weekly(friday)
+        visible_shared_netflix: weekly(friday)
+        visible_home_paramount: weekly(friday|saturday|sunday)
+        visible_library_paramount: weekly(friday|saturday|sunday)
+        visible_shared_paramount: weekly(friday|saturday|sunday)
+        visible_home_peacock: weekly(friday|saturday|sunday|monday)
+        visible_library_peacock: weekly(friday|saturday|sunday|monday)
+        visible_shared_peacock: weekly(friday|saturday|sunday|monday)
+        visible_home_showtime: weekly(saturday|sunday)
+        visible_library_showtime: weekly(saturday|sunday)
+        visible_shared_showtime: weekly(saturday|sunday)
+    - default: choice
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: emmy
+      template_variables:
+        visible_home: range(11/20-12/05)
+        visible_library: range(11/20-12/05)
+        visible_shared: range(11/20-12/05)
+        data:
+          starting: latest
+          ending: latest
+    - default: golden
+      template_variables:
+        visible_home: range(02/01-02/15)
+        visible_library: range(02/01-02/15)
+        visible_shared: range(02/01-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - file: config/kometa/series4k.yml
+    split_duplicates: false
+
+  TV (DV):
+    collection_files:
+    - file: config/kometa/series-refresh.yml
+    - default: tmdb
+    - default: streaming
+      template_variables:
+        collection_order: episode_release.desc
+        visible_home_amazon: weekly(thursday|friday)
+        visible_library_amazon: weekly(thursday|friday)
+        visible_shared_amazon: weekly(thursday|friday)
+        visible_home_appletv: weekly(tuesday|thursday|friday)
+        visible_library_appletv: weekly(tuesday|thursday|friday)
+        visible_shared_appletv: weekly(tuesday|thursday|friday)
+        visible_home_discovery: weekly(wednesday)
+        visible_library_discovery: weekly(wednesday)
+        visible_shared_discovery: weekly(wednesday)
+        visible_home_disney: true
+        visible_library_disney: true
+        visible_shared_disney: true
+        visible_home_hulu: weekly(sunday|monday)
+        visible_library_hulu: weekly(sunday|monday)
+        visible_shared_hulu: weekly(sunday|monday)
+        visible_home_max: weekly(monday|friday|saturday|sunday)
+        visible_library_max: weekly(sunday|monday)
+        visible_shared_max: weekly(sunday|monday)
+        visible_home_netflix: weekly(friday)
+        visible_library_netflix: weekly(friday)
+        visible_shared_netflix: weekly(friday)
+        visible_home_paramount: weekly(friday|saturday|sunday)
+        visible_library_paramount: weekly(friday|saturday|sunday)
+        visible_shared_paramount: weekly(friday|saturday|sunday)
+        visible_home_peacock: weekly(friday|saturday|sunday|monday)
+        visible_library_peacock: weekly(friday|saturday|sunday|monday)
+        visible_shared_peacock: weekly(friday|saturday|sunday|monday)
+        visible_home_showtime: weekly(saturday|sunday)
+        visible_library_showtime: weekly(saturday|sunday)
+        visible_shared_showtime: weekly(saturday|sunday)
+    - default: choice
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: emmy
+      template_variables:
+        visible_home: range(11/20-12/05)
+        visible_library: range(11/20-12/05)
+        visible_shared: range(11/20-12/05)
+        data:
+          starting: latest
+          ending: latest
+    - default: golden
+      template_variables:
+        visible_home: range(02/01-02/15)
+        visible_library: range(02/01-02/15)
+        visible_shared: range(02/01-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - file: config/kometa/series4k.yml
+    split_duplicates: false
+
+  TV (Animations):
+    collection_files:
+    - file: config/kometa/series-refresh.yml
+    - default: tmdb
+    - default: streaming
+      template_variables:
+        collection_order: episode_release.desc
+        visible_home_amazon: weekly(thursday|friday)
+        visible_library_amazon: weekly(thursday|friday)
+        visible_shared_amazon: weekly(thursday|friday)
+        visible_home_appletv: weekly(tuesday|thursday|friday)
+        visible_library_appletv: weekly(tuesday|thursday|friday)
+        visible_shared_appletv: weekly(tuesday|thursday|friday)
+        visible_home_discovery: weekly(wednesday)
+        visible_library_discovery: weekly(wednesday)
+        visible_shared_discovery: weekly(wednesday)
+        visible_home_disney: true
+        visible_library_disney: true
+        visible_shared_disney: true
+        visible_home_hulu: weekly(sunday|monday)
+        visible_library_hulu: weekly(sunday|monday)
+        visible_shared_hulu: weekly(sunday|monday)
+        visible_home_max: weekly(monday|friday|saturday|sunday)
+        visible_library_max: weekly(sunday|monday)
+        visible_shared_max: weekly(sunday|monday)
+        visible_home_netflix: weekly(friday)
+        visible_library_netflix: weekly(friday)
+        visible_shared_netflix: weekly(friday)
+        visible_home_paramount: weekly(friday|saturday|sunday)
+        visible_library_paramount: weekly(friday|saturday|sunday)
+        visible_shared_paramount: weekly(friday|saturday|sunday)
+        visible_home_peacock: weekly(friday|saturday|sunday|monday)
+        visible_library_peacock: weekly(friday|saturday|sunday|monday)
+        visible_shared_peacock: weekly(friday|saturday|sunday|monday)
+        visible_home_showtime: weekly(saturday|sunday)
+        visible_library_showtime: weekly(saturday|sunday)
+        visible_shared_showtime: weekly(saturday|sunday)
+    - default: choice
+      template_variables:
+        visible_home: range(02/20-03/10)
+        visible_library: range(02/20-03/10)
+        visible_shared: range(02/20-03/10)
+        data:
+          starting: latest
+          ending: latest
+    - default: emmy
+      template_variables:
+        visible_home: range(11/20-12/05)
+        visible_library: range(11/20-12/05)
+        visible_shared: range(11/20-12/05)
+        data:
+          starting: latest
+          ending: latest
+    - default: golden
+      template_variables:
+        visible_home: range(02/01-02/15)
+        visible_library: range(02/01-02/15)
+        visible_shared: range(02/01-02/15)
+        data:
+          starting: latest
+          ending: latest
+    - file: config/kometa/seriesan.yml
+    split_duplicates: false
+
+  Anime:
+    collection_files:
+    - file: config/kometa/series-refresh.yml
+    - default: tmdb
+    - default: streaming
+    - file: config/kometa/seriesanime.yml
+    split_duplicates: false
+
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  assets_for_all: false
+  sync_mode: sync
+  show_unmanaged: false
+  show_missing: false
+  save_missing: false
+  show_filtered: false
+  run_again_delay: 2
+  missing_only_released: false
+  create_asset_folders: false
+  delete_below_minimum: false
+  show_missing_assets: true
+  tvdb_language: default
+  asset_depth: 0
+  dimensional_asset_rename: false
+  show_missing_season_assets: false
+  delete_not_scheduled: false
+  only_filter_missing: false
+  show_options: false
+  ignore_ids:
+  ignore_imdb_ids:
+  minimum_items: 1
+  download_url_assets: false
+  default_collection_order:
+  verify_ssl: false
+  playlist_sync_to_users: all
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  item_refresh_delay: 0
+  custom_repo:
+  prioritize_assets: false
+  playlist_report: true
+  check_nightly: false
+  show_unconfigured: true
+  playlist_exclude_users:
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality:
+plex:                                           # Can be individually specified per library as well
+  url: http://127.0.0.1:32400
+  token: 
+  timeout: 60
+  clean_bundles: true
+  empty_trash: false
+  optimize: false
+  db_cache:
+  verify_ssl:
+tmdb:
+  apikey: 
+  language: en
+  cache_expiration: 60
+  region: CA
+tautulli:
+  url: http://127.0.0.1:8181/tautulli/
+  apikey: 
+trakt:
+  client_id: 
+  client_secret: 
+  authorization:
+    access_token: 
+    token_type: Bearer
+    expires_in: 
+    refresh_token: 
+    scope: public
+    created_at: 
+  pin:
+mal:
+  client_id: 
+  client_secret: 
+  authorization:
+  localhost_url:
+  cache_expiration: 60

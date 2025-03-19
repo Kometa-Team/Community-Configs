@@ -1,0 +1,19 @@
+collections:
+ Trending Animation Movies:
+   trakt_trending: 40
+   tmdb_trending_daily: 40
+   tmdb_trending_weekly: 40
+   tautulli_popular:
+     list_days: 30
+     list_size: 40
+   stevenlu_popular: True
+   sort_title: "#1Trending"
+   sync_mode: sync
+   smart_label: added.desc
+   summary: Movies Trending across the internet
+   url_background: 
+   url_poster: 
+   visible_home: True
+   visible_shared: True
+   visible_library: True
+

@@ -1,0 +1,140 @@
+templates:
+  MAL Genre:
+    mal_genre:
+      genre_id: <<genre_id>>
+    collection_order: alpha
+    collection_mode: hide
+    sync_mode: sync
+
+collections:
+ Trending Anime:
+   smart_label: release.desc
+   sort_title: "#1Trending TV"
+   sync_mode: sync
+   trakt_trending: 200
+   summary: Shows Trending across the internet
+   visible_home: True
+   visible_shared: True
+   visible_library: True
+
+ Popular Anime:
+   smart_label: release.desc
+   sort_title: "#2Popular TV"
+   sync_mode: sync
+   tautulli_popular:
+     list_days: 60
+     list_size: 100
+   imdb_list:
+     url: https://www.imdb.com/search/keyword/?keywords=anime
+     limit: 40
+   summary: Popular Shows across the internet
+   visible_home: True
+   visible_shared: True
+   visible_library: True
+
+ Hidden Gems of Anime:
+   smart_label: user_rating.desc
+   sort_title: "#3Top Rated TV"
+   sync_mode: sync
+   trakt_list: https://trakt.tv/users/sp1ti/lists/a-recommends-hidden-gems
+   summary: Top Rated Shows across the internet
+   url_poster: https://i.imgur.com/Ja997V8.jpg
+
+ "Obscure and Artsy Anime":
+   smart_label: user_rating.desc
+   sort_title: "#4A Recommends"
+   sync_mode: sync
+   trakt_list: https://trakt.tv/users/sp1ti/lists/a-recommends-obscure-and-artsy-anime
+   summary: "/a/ Recommends: Obscure and Artsy Anime"
+   url_poster: https://images.wikia.com/animu-mango/images/f/fa/1276994333805.jpg
+
+ Donghua:
+   collection_order: alpha
+   sync_mode: sync
+   plex_search:
+     all:
+       audio_language: zh
+       title.not: aggretsuko
+ Mobile Suit Gundam:
+   collection_order: alpha
+   sync_mode: sync
+   plex_search:
+     all:
+       title: Gundam
+ Cars:
+   template: { name: MAL Genre, genre_id: 3 }
+ Demons:
+   template: { name: MAL Genre, genre_id: 6 }
+ Ecchi:
+   template: { name: MAL Genre, genre_id: 9 }
+ Game:
+   template: { name: MAL Genre, genre_id: 11 }
+ Harem:
+   template: { name: MAL Genre, genre_id: 35 }
+ Mecha:
+   template: { name: MAL Genre, genre_id: 18 }
+ Military:
+   template: { name: MAL Genre, genre_id: 38 }
+ Psychological:
+   template: { name: MAL Genre, genre_id: 40 }
+ Samurai:
+   template: { name: MAL Genre, genre_id: 21 }
+ School:
+   template: { name: MAL Genre, genre_id: 23 }
+ Shoujo:
+   template: { name: MAL Genre, genre_id: 25 }
+ Shounen:
+   template: { name: MAL Genre, genre_id: 27 }
+ Slice of Life:
+   template: { name: MAL Genre, genre_id: 36 }
+ Space:
+   template: { name: MAL Genre, genre_id: 29 }
+ Supernatural:
+   template: { name: MAL Genre, genre_id: 37 }
+ Super Power:
+   template: { name: MAL Genre, genre_id: 31 }
+ Vampire:
+   template: { name: MAL Genre, genre_id: 32 }
+ Action:
+   template: { name: MAL Genre, genre_id: 1 }
+ Adventure:
+   template: { name: MAL Genre, genre_id: 2 }
+ Comedy:
+   template: { name: MAL Genre, genre_id: 4 }
+ Drama:
+   template: { name: MAL Genre, genre_id: 8 }
+ Fantasy:
+   template: { name: MAL Genre, genre_id: 10 }
+ Historical:
+   template: { name: MAL Genre, genre_id: 13 }
+ Horror:
+   template: { name: MAL Genre, genre_id: 14 }
+ Martial Arts:
+   template: { name: MAL Genre, genre_id: 17 }
+ Music:
+   template: { name: MAL Genre, genre_id: 19 }
+ Mystery:
+   template: { name: MAL Genre, genre_id: 7 }
+ Romance:
+   template: { name: MAL Genre, genre_id: 22 }
+ Sci-Fi:
+   template: { name: MAL Genre, genre_id: 24 }
+ Sports:
+   template: { name: MAL Genre, genre_id: 30 }
+ Boys Love:
+   template: { name: MAL Genre, genre_id: 28 }
+ Girls Love:
+   template: { name: MAL Genre, genre_id: 26 }
+ Gourmet:
+   template: { name: MAL Genre, genre_id: 47 }
+ Erotica:
+   template: { name: MAL Genre, genre_id: 49 }
+ Hentai:
+   template: { name: MAL Genre, genre_id: 12 }
+ Parody:
+   template: { name: MAL Genre, genre_id: 20 }
+ Police:
+   template: { name: MAL Genre, genre_id: 39 }
+ Thriller:
+   template: { name: MAL Genre, genre_id: 41 }
+
