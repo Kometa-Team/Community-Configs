@@ -1,39 +1,40 @@
 #######################################
 #          Movie Watchlist            #
 #######################################
+# filepath: c:\Users\laura\Kometa\config\movies\movies_watchlist.yml
+templates:
+  Watchlist:
+    sync_mode: sync
+    collection_order: custom
+    sort_title: "!0001_<<collection_name>>"
+    collection_mode: show
+    visible_home: true
+
 collections:
   Top Family Movie Picks:
-    trakt_list: https://trakt.tv/users/fuschaitea/lists/top-family-movie-picks?
-    collection_order: custom
-    sync_mode: sync
-    sort_title: "!00001_<<collection_name>>"
-    collection_mode: show
-    visible_home: true
+    template: Watchlist
+    trakt_list: https://trakt.tv/users/fuschaitea/lists/top-family-movie-picks
+
   Laura's Watchlist:
+    template: Watchlist
     plex_watchlist: critic_rating.desc
-    collection_order: custom
-    sync_mode: sync
-    sort_title: "!0001_<<collection_name>>"
-    collection_mode: show
-    visible_home: true
+
   Watch with Britty:
+    template: Watchlist
     trakt_list: https://trakt.tv/users/fuschaitea/lists/movies-to-watch-with-britty
-    sync_mode: sync
-    collection_order: custom
-    visible_home: range(01/01-12/31)
-    visible_shared: range(01/01-12/31)
-    sort_title: "!0001_<<collection_name>>"
+
   Recommendations for Mum:
     trakt_list: 
-      -https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-movies-couchmoney-tv
-      -https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-tv-shows-couchmoney-tv
-      -https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum 
+      - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-movies-couchmoney-tv
+      - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-tv-shows-couchmoney-tv
+      - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum 
     sync_mode: sync
     collection_order: custom
     collection_mode: show
     sort_title: "!0001_<<collection_name>>"
     visible_home: range(01/01-12/31)
     visible_shared: range(01/01-12/31)
+
   🍿 What Movie Should I Watch?:
       smart_filter:
         sort_by: random
@@ -47,8 +48,10 @@ collections:
       visible_library: true
       visible_home: true
       schedule: weekly(wednesday)
+
   Julia Donaldson:
     smart_filter:
+      sort_by: title.asc
       all:
         writer: tmdb
     tmdb_person: 592851
