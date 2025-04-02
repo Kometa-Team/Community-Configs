@@ -15,10 +15,10 @@ collections:
     collection_mode: show
     sort_title: "!0001_<<collection_name>>"
   Recommendations for Mum:
-    trakt_list: 
-      -https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-movies-couchmoney-tv
-      -https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-tv-shows-couchmoney-tv
-      -https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum 
+    trakt_list:
+    - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-movies-couchmoney-tv
+    - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-tv-shows-couchmoney-tv
+    - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum
     sync_mode: sync
     collection_order: custom
     collection_mode: show
