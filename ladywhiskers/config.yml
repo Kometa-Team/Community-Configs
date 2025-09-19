@@ -1,27 +1,37 @@
-# Configuration file for the Kometa application.
-# This file specifies the libraries to be used by the application.
+# This is the main configuration file for Kometa.
+# It defines the Plex libraries to manage, global settings,
+# and connections to external services like TMDb, Trakt, etc.
+
+# The 'libraries' section defines the Plex libraries that Kometa will manage.
+# Each library has its own set of collections, overlays, and operations.
 libraries:
+  # Configuration for the 'Movies' library in Plex.
   Movies:
+    # Schedule for when to apply overlays to movie posters.
+    # This runs on Monday, Wednesday, Friday, and Sunday.
     schedule_overlays: weekly(monday|wednesday|friday|sunday)
+    # Template variables are used to pass values to templates.
     template_variables:
       use_separator: false
+    # Specifies metadata files to apply to the library.
     metadata_files:
     - folder: config/metadata_folders
+    # A list of collection files to be processed for this library.
+    # These files define the logic for creating collections in Plex.
     collection_files:
-    - folder: config/movies
-    - default: content_rating_au
-    - default: continent
+    - folder: config/movies  # Custom collection files
+    - default: content_rating_au # Default collection for Australian content ratings
+    - default: continent # Default collection for continents
       template_variables:
         include:
         - Oceania
-    - default: franchise
+    - default: franchise # Default collection for movie franchises
       template_variables:
-        title_override:
+        title_override: # Override titles for specific franchises
           33514: The Twilight Saga
           9743: Hannibal Lecter
           489724: Trolls
-#    - default: genre
-    - default: letterboxd
+    - default: letterboxd # Collections based on Letterboxd data
       schedule: monthly(17)
       template_variables:
         use_imdb_top_250: true
@@ -30,7 +40,7 @@ libraries:
         visible_library_top_250: true
         visible_home_top_250: true
         visible_shared_top_250: true
-    - default: other_chart
+    - default: other_chart # Collections from other movie charts
       template_variables:
         use_anidb: false
         use_stevenlu: false
@@ -38,8 +48,8 @@ libraries:
         visible_library_commonsense: true
         visible_home_commonsense: true
         visible_shared_commonsense: true
-    - default: razzie
-    - default: seasonal
+    - default: razzie # Collection for Razzie-winning movies
+    - default: seasonal # Collections for seasonal events (e.g., Christmas)
       template_variables:
         trakt_list_christmas: https://trakt.tv/users/k0meta/lists/christmas-extravaganza-non-tv-movie
         schedule_christmas: range(11/01-12/26)
@@ -51,7 +61,7 @@ libraries:
         use_veteran: false
         use_thanksgiving: false
         use_aapi: false
-    - default: studio
+    - default: studio # Collections for movie studios
       template_variables:
         include:
         - A24
@@ -63,9 +73,9 @@ libraries:
         - Walt Disney Animation Studios
         - Walt Disney Pictures
         - Walt Disney Productions
-    - default: tautulli
-    - default: universe
-    #- default: collectionless
+    - default: tautulli # Collections based on Tautulli data
+    - default: universe # Collections for movie universes
+    # Defines overlay files to be applied to movie posters.
     overlay_files:
     - default: commonsense
     - default: mediastinger
@@ -74,11 +84,13 @@ libraries:
         use_resolution: false
         use_edition: true
     - default: ribbon
+    # Library-specific settings.
     settings:
       asset_directory:
       - config/assets/Movies/
       - config/assets/Collections/
       prioritize_assets: false
+    # Operations to be performed on the library.
     operations:
     - schedule: daily
       assets_for_all: true
@@ -114,6 +126,8 @@ libraries:
       - tmdb
       - tvdb
       - omdb
+
+  # Configuration for the 'TV Shows' library in Plex.
   TV Shows:
     schedule_overlays: weekly(tuesday|thursday|saturday)
     report_path: config/missing/TV_report.yml
@@ -122,14 +136,12 @@ libraries:
     library_name: TV Shows
     collection_files:
     - folder: config/tvshows
-    # - default: based
     - default: content_rating_au
     - default: continent
       template_variables:
         include:
         - Oceania
     - default: franchise
-    #- default: genre
     - default: other_chart
       template_variables:
         use_anidb: false
@@ -186,6 +198,8 @@ libraries:
       - tmdb
       - tvdb
       - omdb
+
+  # Configuration for the 'Music' library in Plex.
   Music:
     schedule: weekly (sunday)
     library_name: Music
@@ -193,11 +207,14 @@ libraries:
     - folder: config/music
     settings:
       asset_directory: config/assets/Music
+
+# Defines playlist files to be processed.
 playlist_files:
 - default: playlist
   template_variables:
     libraries: Movies, TV Shows
-#- folder: config/playlists
+
+# Global settings for Kometa.
 settings:
   cache: true
   cache_expiration: 2048
@@ -245,6 +262,8 @@ settings:
   overlay_artwork_filetype: jpg
   overlay_artwork_quality:
   show_unfiltered: false
+
+# Webhook settings for sending notifications.
 webhooks:
   error: notifiarr
   version: notifiarr
@@ -252,33 +271,47 @@ webhooks:
   run_end: notifiarr
   changes: notifiarr
   delete:
+
+# Plex connection settings.
 plex:
   url: http://localhost:32400
-  token: [REDACTED]
+  token: [REDACTED] # Your Plex token
   timeout: 600
   clean_bundles: false
   empty_trash: false
   optimize: false
   db_cache:
+
+# TMDb (The Movie Database) API settings.
 tmdb:
-  apikey: [REDACTED]
+  apikey: [REDACTED] # Your TMDb API key
   language: en
   cache_expiration: 600
   region:
+
+# Tautulli connection settings.
 tautulli:
   url: http://localhost:1818
-  apikey: [REDACTED]
+  apikey: [REDACTED] # Your Tautulli API key
+
+# OMDb (Open Movie Database) API settings.
 omdb:
-  apikey: [REDACTED]
+  apikey: [REDACTED] # Your OMDb API key
   cache_expiration: 600
+
+# MDbList connection settings.
 mdblist:
-  apikey: [REDACTED]
+  apikey: [REDACTED] # Your MDbList API key
   cache_expiration: 600
+
+# Notifiarr connection settings.
 notifiarr:
-  apikey: [REDACTED]
+  apikey: [REDACTED] # Your Notifiarr API key
+
+# Radarr connection settings.
 radarr:
   url: http://localhost:7878
-  token: [REDACTED]
+  token: [REDACTED] # Your Radarr API token
   add_missing: false
   add_existing: false
   root_folder_path: Z:\data\media\movies
@@ -291,9 +324,11 @@ radarr:
   plex_path:
   upgrade_existing: false
   ignore_cache: false
+
+# Sonarr connection settings.
 sonarr:
   url: http://localhost:8989
-  token: [REDACTED]
+  token: [REDACTED] # Your Sonarr API token
   add_missing: false
   add_existing: false
   root_folder_path: Z:\data\media\tv
@@ -309,9 +344,11 @@ sonarr:
   plex_path:
   upgrade_existing: false
   ignore_cache: false
+
+# Trakt connection settings.
 trakt:
-  client_id: [REDACTED]
-  client_secret: [REDACTED]
+  client_id: [REDACTED] # Your Trakt client ID
+  client_secret: [REDACTED] # Your Trakt client secret
   pin:
   authorization:
     access_token: [REDACTED]

@@ -1,19 +1,25 @@
-#######################################
-#          TV Watchlist               #
-#######################################
+# This file defines collections based on TV show watchlists from various sources,
+# such as Trakt and Plex itself. These are meant to be visible collections.
+
 collections:
+  # A collection based on the Plex watchlist of a user named Laura.
   Laura's Watchlist:
     plex_watchlist: critic_rating.desc
     collection_order: custom
     sync_mode: sync
     sort_title: "!0001_<<collection_name>>"
     collection_mode: show
+
+  # A collection of TV shows to watch with someone named Britty, from a Trakt list.
   Watch with Britty:
     trakt_list: https://trakt.tv/users/fuschaitea/lists/shows-to-watch-with-britty
     sync_mode: sync
     collection_order: custom
     collection_mode: show
     sort_title: "!0001_<<collection_name>>"
+
+  # A collection of movie and TV show recommendations for "Mum".
+  # It combines multiple Trakt lists.
   Recommendations for Mum:
     trakt_list:
     - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-movies-couchmoney-tv

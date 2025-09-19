@@ -1,10 +1,16 @@
+# This file defines a template for creating collections of tracks based on their "mood" tag.
+# The dynamic collection that would use this template is commented out,
+# so this file doesn't create any collections in its current state.
+
 external_templates:
   file: config/templates/musictemplates.yml
   template_variables:
     collection_section: "004"
 
 templates:
+  # This template creates a collection of tracks based on a mood.
   track mood collection:
+    # This ensures that the collections are built based on individual tracks.
     builder_level: track
     smart_filter:
       limit: 100
@@ -14,10 +20,14 @@ templates:
       all:
         track_mood: <<value>>
 
-#dynamic_collections:
-#  Track Moods:
-#    type: track_mood
-#    title_format: Top 100 <<key_name>> Tracks
-#    template:
-#      - track mood collection
-#      - shared
+# The following dynamic collection is commented out. If it were active, it would
+# create a collection for each mood tag found in the library, containing the
+# top 100 tracks with that mood.
+#
+# dynamic_collections:
+#   Track Moods:
+#     type: track_mood
+#     title_format: Top 100 <<key_name>> Tracks
+#     template:
+#       - track mood collection
+#       - shared

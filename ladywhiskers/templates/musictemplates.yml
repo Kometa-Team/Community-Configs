@@ -1,4 +1,10 @@
+# This file contains a set of reusable templates for creating collections in Kometa.
+# These templates are referenced in other configuration files to avoid repetition
+# and to ensure consistency across collections.
+
 templates:
+  # Template for creating a separator in the Plex library.
+  # Separators are empty collections used to visually group other collections.
   separator:
     default:
       key: separator
@@ -40,6 +46,7 @@ templates:
     summary: <<summary_<<key>>>>
     name: <<name_<<key>>>>
 
+  # Template for shared settings that are common to many collections.
   shared:
     conditionals:
       name_<<key>>:
@@ -133,6 +140,7 @@ templates:
     minimum_items: <<minimum_items_<<key>>>>
     delete_collections_named: <<delete_collections_named>>
 
+  # Template for creating a smart filter.
   smart_filter:
     default:
       sort_by: release.desc
@@ -152,6 +160,7 @@ templates:
         <<search_term>>: <<search_value>>
         <<search_term2>>: <<search_value2>>
 
+  # Template for creating a filter.
   filter:
     default:
       sync_mode: sync
@@ -171,6 +180,7 @@ templates:
     filters:
       <<filter_term>>: <<value>>
 
+  # Template for creating a smart collection from an MDbList list.
   mdb_smart:
     default:
       sync_mode: sync
@@ -182,6 +192,7 @@ templates:
     sync_mode: <<sync_mode_<<key>>>>
     mdblist_list: <<mdblist_list>>
 
+  # Template for settings related to Radarr and Sonarr.
   arr:
     default:
       key: <<mapping_name>>
@@ -217,6 +228,7 @@ templates:
     radarr_search: <<radarr_search_<<key>>>>
     sonarr_search: <<sonarr_search_<<key>>>>
 
+  # Template for custom collections.
   custom:
     default:
       sync_mode: sync
@@ -228,6 +240,7 @@ templates:
     sync_mode: <<sync_mode_<<key>>>>
     cache_builders: <<cache_builders>>
 
+  # Template for "Other" collections.
   other_collection:
     default:
       collection_section: "00"
@@ -237,6 +250,7 @@ templates:
     run_definition: <<use_other>>
     sort_title: "!<<collection_section>><<pre>><<title>>"
 
+  # Template for year-based collections.
   use_year_collections:
     conditionals:
       final_collection_section:
