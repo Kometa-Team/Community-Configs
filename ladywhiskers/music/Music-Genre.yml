@@ -1,26 +1,31 @@
+# This file defines collections for a vast number of music genres.
+# It uses a template to create a collection for each genre based on the
+# 'album_genre' tag in the music library.
+
 templates:
+  # A generic template for creating genre collections.
   Genre:
+    # This ensures that the collections are built based on album genres.
     builder_level: album
     sort_title: +_<<collection_name>>
     sync_mode: sync
-#    collection_order: alpha
+    # A smart filter is used to find albums with the specified genre tag.
     smart_filter:
       miminum_items: 2
       delete_below_minimum: true
-#      limit: 50
       sort_by: title.asc
-#      any:
       all:
         album_genre: <<genres>>
 
 collections:
-######################################################
-#                  Genre Collections                 #
-######################################################
+  # Each of the following blocks defines a music genre collection.
+  # The 'template' key is used to call the 'Genre' template with the genre name.
   2 Tone:
     template: {name: Genre, genres: 2 Tone}
   2-Step:
     template: {name: Genre, genres: 2-Step}
+  # ... and so on for all the other genres.
+  # The structure is the same for all of them.
   Aak:
     template: {name: Genre, genres: Aak}
   Abhang:

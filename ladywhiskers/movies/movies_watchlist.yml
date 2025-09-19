@@ -1,8 +1,8 @@
-#######################################
-#          Movie Watchlist            #
-#######################################
-# filepath: c:\Users\laura\Kometa\config\movies\movies_watchlist.yml
+# This file defines collections based on watchlists from various sources,
+# such as Trakt and Plex itself. These are meant to be visible collections.
+
 templates:
+  # A generic template for creating watchlist collections.
   Watchlist:
     sync_mode: sync
     collection_order: custom
@@ -11,23 +11,28 @@ templates:
     visible_home: true
 
 collections:
+  # A collection of family movies from a Trakt list.
   Top Family Movie Picks:
     template: Watchlist
     trakt_list: https://trakt.tv/users/fuschaitea/lists/top-family-movie-picks
 
+  # A collection based on the Plex watchlist of a user named Laura.
   Laura's Watchlist:
     template: Watchlist
     plex_watchlist: critic_rating.desc
 
+  # A collection of movies to watch with someone named Britty, from a Trakt list.
   Watch with Britty:
     template: Watchlist
     trakt_list: https://trakt.tv/users/fuschaitea/lists/movies-to-watch-with-britty
 
+  # A collection of movie and TV show recommendations for "Mum".
+  # It combines multiple Trakt lists.
   Recommendations for Mum:
-    trakt_list: 
+    trakt_list:
       - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-movies-couchmoney-tv
       - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-tv-shows-couchmoney-tv
-      - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum 
+      - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum
     sync_mode: sync
     collection_order: custom
     collection_mode: show
@@ -35,12 +40,13 @@ collections:
     visible_home: range(01/01-12/31)
     visible_shared: range(01/01-12/31)
 
-  🍿 What Movie Should I Watch?:
+  # A smart collection that shows 5 random, unplayed movies from the last 10 years.
+  "🍿 What Movie Should I Watch?":
       smart_filter:
         sort_by: random
         all:
           unplayed: true
-          release: 3650
+          release: 3650 # last 10 years (365 days * 10)
         limit: 5
       url_poster: https://i.imgur.com/OMrEyGg.jpeg
       collection_mode: hide
@@ -49,9 +55,10 @@ collections:
       visible_home: true
       schedule: weekly(wednesday)
 
+  # A collection of movies written by Julia Donaldson.
   Julia Donaldson:
     smart_filter:
       sort_by: title.asc
       all:
         writer: tmdb
-    tmdb_person: 592851
+    tmdb_person: 592851 # TMDb ID for Julia Donaldson

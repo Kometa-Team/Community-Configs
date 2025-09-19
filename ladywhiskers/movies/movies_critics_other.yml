@@ -1,26 +1,31 @@
-##############################################################################
-#                          Other Awards Collections                          #
-#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
-#                 Credit to maxwelldeux for the Trakt Lists                  #
-#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
-#        https://metamanager.wiki/en/latest/defaults/award/other.html        #
-##############################################################################
+# This file defines collections based on critics' ratings and awards,
+# primarily from Rotten Tomatoes. It uses Trakt lists to source the movies.
+# Credits: Yozora, Bullmoose20, Sohjiro, maxwelldeux, WhoDat104
 
+# External templates are used to avoid repetition.
+# 'pmm: templates' likely refers to a set of predefined templates.
 external_templates:
   pmm: templates
   template_variables:
+    # This variable is used to control the sorting of collections.
     collection_section: 130
 
-
+# Template for creating Rotten Tomatoes "Best of" collections.
 templates:
   Rotten Tomatoes:
+    # The Trakt list URL is parameterized with 'key', which will be a year.
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<key>>
+    # 'sync' mode ensures that the Plex collection matches the Trakt list.
     sync_mode: sync
     collection_mode: default
     collection_order: custom
+    # The sort title is prefixed to control the order of collections in Plex.
     sort_title: "!130_Rotten Tomatoes Best of <<key>>"
+    # Schedule for when to update the collection.
     schedule: monthly(01)
     url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatoes/main/Rotten%20Tomatoes%20Best%20of%20<<key>>.jpg
+
+# Static collections based on specific Rotten Tomatoes lists.
 collections:
   Rotten Tomatoes Best All-Time:
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-top-100-movies-of-all-time
@@ -30,6 +35,7 @@ collections:
     sort_title: "!130_Rotten !1"
     schedule: monthly(10)
     url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatoes/main/Rotten%20Tomatoes%20Best%20All-Time.jpg
+
   Rotten Tomatoes Best Horror:
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time
     sync_mode: sync
@@ -38,6 +44,7 @@ collections:
     sort_title: "!130_Rotten !2"
     schedule: monthly(10)
     url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatoes/main/Rotten%20Tomatoes%20Best%20Horror.jpg
+
   Rotten Tomatoes Best Rom Com:
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
     sync_mode: sync
@@ -46,14 +53,19 @@ collections:
     sort_title: "!130_Rotten !3"
     schedule: monthly(10)
     url_poster: https://raw.githubusercontent.com/WhoDat104/Rotten-Tomatoes/main/Rotten%20Tomatoes%20Best%20Rom%20Com.jpg
-    
+
+# Dynamic collections are created based on a range of values.
+# In this case, it creates "Best of" collections for recent years.
 dynamic_collections:
   Rotten Tomatoes Best of:
     type: number
     sync: true
     data:
+      # Creates collections for the last two years.
       starting: current_year-2
       ending: current_year-1
+    # The title of the collection will be formatted with the year.
     title_format: Rotten Tomatoes Best of <<key_name>>
+    # The 'Rotten Tomatoes' template is used to create the collections.
     template:
       - Rotten Tomatoes

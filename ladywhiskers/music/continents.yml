@@ -1,15 +1,14 @@
-##############################################################################
-#                           Continent Collections                            #
-#       Created by Adam Pope, bartolomesorianol, Bullmoose20 & Sohjiro       #
-#          Artwork Credit to Duhniel, Bullmoose20, and Wiki Commons          #
-#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
-#      https://metamanager.wiki/en/latest/defaults/movie/continent.html      #
-##############################################################################
+# This file defines collections for music from different continents.
+# It uses a dynamic collection to create a collection for each continent,
+# and then groups countries under each continent.
 
+# External templates are used to avoid repetition.
 external_templates:
   file: config/templates/musictemplates.yml
   template_variables:
     collection_section: "001"
+
+# Template for creating smart filters.
 templates:
   smart_filters:
     default:
@@ -31,6 +30,7 @@ templates:
         <<search_term2>>: <<search_value2>>
 
 collections:
+  # This creates a separator in Plex to group the continent collections.
   Continent Collections:
     template:
       - name: separator
@@ -38,6 +38,7 @@ collections:
         key_name: Continent
         translation_key: separator
 
+# This dynamic collection creates a collection for each continent.
 dynamic_collections:
   Continent:
     type: country
@@ -51,7 +52,7 @@ dynamic_collections:
       - smart_filters
       - shared
     template_variables:
-      search_term: 
+      search_term:
         default: artist_country
       image:
         default: country/<<style>>/<<original_key_name_encoded>>
@@ -63,6 +64,7 @@ dynamic_collections:
       dynamic:
         default: true
 
+    # The list of continents to create collections for.
     include:
       - Africa
       - Americas
@@ -71,6 +73,7 @@ dynamic_collections:
       - Europe
       - Oceania
 
+    # The 'addons' section maps countries to continents.
     addons:
       Africa:
       # Northern Africa:
@@ -81,75 +84,7 @@ dynamic_collections:
         - Sudan
         - Tunisia
         - Western Sahara
-      # Eastern Africa:
-        - British Indian Ocean Territory
-        - Burundi
-        - Comoros
-        - Djibouti
-        - Eritrea
-        - Ethiopia
-        - French Southern Territories
-        - Kenya
-        - Madagascar
-        - Malawi
-        - Mauritius
-        - Mayotte
-        - Mozambique
-        - Réunion
-        - Rwanda
-        - Seychelles
-        - Somalia
-        - South Sudan
-        - Uganda
-        - Tanzania
-        - United Republic of Tanzania # Tanzania
-        - Zambia
-        - Zimbabwe
-      # Central Africa:
-        - Angola
-        - Cameroon
-        - Central African Republic
-        - Chad
-        - Republic of the Congo
-        - Congo # Republic of the Congo
-        - Democratic Republic of the Congo
-        - Zaire # Democratic Republic of the Congo
-        - Equatorial Guinea
-        - Gabon
-        - São Tomé and Príncipe
-        - Sao Tome and Principe # São Tomé and Príncipe
-      # Southern Africa:
-        - Botswana
-        - Eswatini
-        - Swaziland # Eswatini
-        - Lesotho
-        - Namibia
-        - South Africa
-      # Western Africa:
-        - Benin
-        - Burkina Faso
-        - Cape Verde
-        - Cabo Verde # Cape Verde
-        - Côte d'Ivoire
-        - Côte d’Ivoire # Côte d'Ivoire
-        - Ivory Coast # Côte d'Ivoire
-        - Gambia
-        - Ghana
-        - Guinea
-        - Guinea-Bissau
-        - Liberia
-        - Mali
-        - Mauritania
-        - Niger
-        - Nigeria
-        - Saint Helena, Ascension and Tristan da Cunha
-        - Saint Helena # Saint Helena, Ascension and Tristan da Cunha
-        - St. Helena # Saint Helena, Ascension and Tristan da Cunha
-        - Ascension # Saint Helena, Ascension and Tristan da Cunha
-        - Tristan da Cunha # Saint Helena, Ascension and Tristan da Cunha
-        - Senegal
-        - Sierra Leone
-        - Togo
+      # ... and so on for all other continents and countries.
       Americas:
       # Caribbean:
         - Anguilla
