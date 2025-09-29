@@ -16,8 +16,8 @@ collections:
    tautulli_popular:
      list_days: 60
      list_size: 100
-   imdb_list:
-     url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries
+   imdb_search:
+     type: tv_series,tv_miniseries
      limit: 40
    summary: Popular Shows across the internet
    visible_home: True
@@ -28,8 +28,10 @@ collections:
    smart_label: user_rating.desc
    sort_title: "#3Top Rated TV"
    sync_mode: sync
-   imdb_list:
-     url: https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&num_votes=20000,&sort=user_rating,desc
+   imdb_search:
+     type: tv_series,tv_miniseries
+     votes.gte: 20000,
+     sort_by: rating.desc
      limit: 100
    tmdb_top_rated: 200
    summary: Top Rated Shows across the internet
