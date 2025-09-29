@@ -1,7 +1,6 @@
 templates:
   MAL Genre:
-    mal_genre:
-      genre_id: <<genre_id>>
+    mal_genre: <<genre_id>>
     collection_order: alpha
     collection_mode: hide
     sync_mode: sync
@@ -24,8 +23,8 @@ collections:
    tautulli_popular:
      list_days: 60
      list_size: 100
-   imdb_list:
-     url: https://www.imdb.com/search/keyword/?keywords=anime
+   imdb_search:
+     keyword: anime
      limit: 40
    summary: Popular Shows across the internet
    visible_home: True
