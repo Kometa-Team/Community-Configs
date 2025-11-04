@@ -2,19 +2,30 @@ services:
   posterizarr:
     hostname: "posterizarr"
     container_name: "posterizarr"
-    environment:
-      - "PGID=100"
-      - "PUID=99"
-      - "TZ=America/New_York"
-      - "UMASK=002"
-      - "TERM=xterm"
-      - "RUN_TIME=10:30,19:30"
-    image: "ghcr.io/fscorrupt/docker-posterizarr:latest"
+    image: "ghcr.io/fscorrupt/posterizarr:latest"
     restart: "unless-stopped"
+
+    # Run as Unraid's nobody:users
+    user: "99:100"
+
+    ports:
+      - "8008:8000"
+
+    environment:
+      - "TZ=America/New_York"   # keep if that's what you want
+      - "UMASK=002"             # group-writable files (664) & dirs (775)
+      - "TERM=xterm"
+      - "RUN_TIME=disabled"
+
     networks:
       - "posterizarr"
+
     volumes:
       - "/mnt/user/appdata/posterizarr:/config:rw"
+      - "/mnt/user/appdata/posterizarr/assets:/assets:rw"
+      - "/mnt/user/appdata/posterizarr/assetsbackup:/assetsbackup:rw"
+      - "/mnt/user/appdata/posterizarr/manualassets:/manualassets:rw"
+
 networks:
   posterizarr:
     driver: bridge
