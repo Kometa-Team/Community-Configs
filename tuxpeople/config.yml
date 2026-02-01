@@ -1,0 +1,268 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/json-schema/config-schema.json
+
+libraries: # This is called out once within the config.yml file
+  Filme: # These are names of libraries in your Plex
+    template_variables:
+      use_separator: false
+    collection_files:
+    # Recently released media - https://kometa.wiki/en/latest/defaults/chart/basic/
+    - default: basic
+      #- default: separator_chart
+      # # IMDb Top 250 - https://kometa.wiki/en/latest/defaults/chart/imdb/
+      # - default: imdb
+      #   #schedule: monthly(1)
+      #   template_variables:
+      #     use_all: false
+      #     use_top: true
+      # # StevenLu's Popular, Top 10 Pirated, and Common Sense - https://kometa.wiki/en/latest/defaults/chart/other/
+      # - default: other_chart
+      #   #schedule: weekly(wednesday)
+      #   template_variables:
+      #     use_all: false
+      #     use_stevenlu: true
+      #     use_commonsense: true
+      #     use_pirated: true
+      #- default: separator_award
+      # # Oscar winners - https://kometa.wiki/en/latest/defaults/award/oscars/
+      # - default: oscars
+      #   template_variables:
+      #     use_best_picture: true
+      #     use_year_collections: false
+      #     use_best_director: false
+      # Create seasonal collections based on holidays - https://kometa.wiki/en/latest/defaults/movie/seasonal/
+    - default: seasonal
+      schedule: weekly(thursday)
+      template_variables:
+        limit: 100
+        use_all: false
+        use_years: true
+        use_valentine: true
+        use_patrick: true
+        use_easter: true
+        use_mother: true
+        use_independence: true
+        use_halloween: true
+        use_veteran: true
+        use_thanksgiving: true
+        use_christmas: true
+    - default: franchise # Star Wars: Skywalker Saga, Godzilla (Anime)
+      # - default: based # Based on a Book, Based on a True Story
+      # - default: streaming # Disney+ Movies, Max Shows
+      # - default: studio # DreamWorks Studios, Walt Disney Pictures
+      # - git: tuxpeople/Charts
+      # - git: tuxpeople/Holidays
+      # - git: tuxpeople/Playlists
+      # - git: tuxpeople/VariousLists
+    - repo: collections/charts/charts
+    - repo: collections/holidays/holidays
+    - repo: collections/sports/wrestling
+    - repo: collections/various/various_lists
+    - repo: playlists/actors/actors
+    - repo: playlists/franchises/franchises
+    - repo: playlists/genres/genres
+
+    overlay_files:
+    - remove_overlays: false # Set this to true to remove all overlays
+    - default: ribbon # This is a file within PMM's defaults folder
+      template_variables:
+        use_letterboxd: false # Deaktiviert - Letterboxd kann keine TMDb IDs mehr scrapen (Seitenstruktur geändert)
+    - default: commonsense
+
+    metadata_files:
+    # - git: ladywhiskers/metadata_folders/mediux_stargate
+    - repo: metadata/german_metadata
+
+    settings:
+      asset_directory: config/assets/Filme/
+      prioritize_assets: true # The asset_directory contains folders per media item with respective posters
+
+    operations:
+      split_duplicates: false # Splits all duplicate movies/shows found in this library
+      assets_for_all: false # Search in assets for images for every item in your library
+      delete_collections:
+        configured: false
+        managed: true
+      # mass_user_rating_update: mdb_tomatoes         # Update user ratings with mdb_tomatoes
+      # mass_critic_rating_update: imdb               # Update critic ratings with imdb
+      # mass_audience_rating_update: tmdb             # Update audience ratings with tmdb
+      # mass_genre_update: tmdb                       # Update all genres from tmdb
+      mass_content_rating_update:
+      - mdb_commonsense
+      - mdb_age_rating
+      - NR
+      # mass_originally_available_update: tmdb        # Update all original available date from tmdb
+      # mass_episode_critic_rating_update: imdb       # Update critic ratings with imdb for episodes
+      # mass_episode_audience_rating_update: tmdb     # Update audience ratings with tmdb for episodes
+      # mass_imdb_parental_labels: none               # Apply all Parental Labels with a value of None, Mild, Moderate, or Severe to match IMDb parental guide
+      # # mass_poster_update: tmdb                      # Resets posters to tmdb, plex, locked, unlock which is useful to remove all overlays when running with -r -op
+
+  Serien:
+    collection_files:
+    # Recently released media - https://kometa.wiki/en/latest/defaults/chart/basic/
+    - default: basic
+    - default: franchise # Star Wars: Skywalker Saga, Godzilla (Anime)
+    - default: based # Based on a Book, Based on a True Story
+      # - default: network # Disney Channel, Lifetime
+      # - default: streaming # Disney+ Movies, Max Shows
+      # - default: studio # DreamWorks Studios, Walt Disney Pictures
+    - repo: tv/tv_collections
+
+    overlay_files:
+    - remove_overlays: false # Set this to true to remove all overlays
+    - default: ribbon # This is a file within PMM's defaults folder
+    - default: commonsense
+    - default: commonsense
+      template_variables:
+        builder_level: season
+    - default: commonsense
+      template_variables:
+        builder_level: episode
+
+    settings:
+      asset_directory: config/assets/Serien/
+      prioritize_assets: true # The asset_directory contains folders per media item with respective posters
+
+    operations:
+      split_duplicates: false # Splits all duplicate movies/shows found in this library
+      assets_for_all: false # Search in assets for images for every item in your library
+      # delete_collections:
+      #   configured: false                           # False - Collection must be an Unconfigured Collection to be deleted (collection is not in the config file of the specific PMM run).
+      #   managed: false                              # False - Collection must be an Unmanaged Collection to be deleted (the collection does not have the PMM label)
+      # mass_user_rating_update: mdb_tomatoes         # Update user ratings with mdb_tomatoes
+      # mass_critic_rating_update: imdb               # Update critic ratings with imdb
+      # mass_audience_rating_update: tmdb             # Update audience ratings with tmdb
+      # mass_genre_update: tmdb                       # Update all genres from tmdb
+      mass_content_rating_update: mdb_commonsense # Changes Content Rating to "1", "2" etc. to specify appropriate age
+      # mass_originally_available_update: tmdb        # Update all original available date from tmdb
+      # mass_episode_critic_rating_update: imdb       # Update critic ratings with imdb for episodes
+      # mass_episode_audience_rating_update: tmdb     # Update audience ratings with tmdb for episodes
+      # mass_imdb_parental_labels: none               # Apply all Parental Labels with a value of None, Mild, Moderate, or Severe to match IMDb parental guide
+      # # mass_poster_update: tmdb                      # Resets posters to tmdb, plex, locked, unlock which is useful to remove all overlays when running with -r -op
+
+# playlist_files:
+#       - file: foobar
+
+settings:
+  cache: true
+  cache_expiration: 7
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: true
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_options: false
+  show_missing: true
+  show_missing_assets: true
+  save_report: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_users:
+  - all
+  playlist_exclude_users:
+  playlist_report: false
+  verify_ssl: true
+  custom_repo: https://github.com/tuxpeople/Kometa-Community-Configs/tree/master/tuxpeople/
+
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality: 75
+  show_unfiltered: false
+plex: # Can be individually specified per library as well; REQUIRED for the script to run
+  url: <<PLEXURL>>
+  token: <<PLEXTOKEN>>
+  timeout: 60
+  db_cache: 4096
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+  verify_ssl: false
+tmdb: # REQUIRED for the script to run
+  apikey: <<TMDBAPIKEY>>
+  language: <<TMDBLANGUAGE>>
+  # tautulli:                        # Can be individually specified per library as well
+  #   url: http://192.168.1.12:8181
+  #   apikey: ################################
+  # cache_expiration: 7
+  # region:
+  cache_expiration: 7
+  region: <<TMDBREGION>>
+github:
+  token: <<GITHUBTOKEN>>
+omdb:
+  apikey: <<OMDBAPIKEY>>
+  cache_expiration: 7
+mdblist:
+  apikey: <<MDBLISTAPIKEY>>
+  cache_expiration: 7
+# notifiarr:
+#   apikey: 033eb0db-8669-4fca-bfd0-c30f215ad0c4
+radarr: # Can be individually specified per library as well
+  url: <<RADARRURL>>
+  token: <<RADARRTOKEN>>
+  add_missing: false
+  add_existing: false
+  root_folder_path: /data/media/movies/added
+  monitor: true
+  availability: announced
+  quality_profile: Web 1080p DL GER
+  tag: pmm
+  search: true
+  radarr_path:
+  plex_path:
+  upgrade_existing: false
+  ignore_cache: false
+  monitor_existing: false
+sonarr: # Can be individually specified per library as well
+  url: <<SONARRURL>>
+  token: <<SONARRTOKEN>>
+  add_missing: false
+  add_existing: false
+  root_folder_path: /data/media/tv/main
+  monitor: all
+  quality_profile: Web 720p DL DE
+  series_type: standard
+  season_folder: true
+  tag: pmm
+  search: true
+  cutoff_search: false
+  sonarr_path:
+  plex_path:
+  upgrade_existing: false
+  ignore_cache: false
+  monitor_existing: false
+  language_profile:
+trakt:
+  client_id: <<TRAKTCLIENTID>>
+  client_secret: <<TRAKTCLIENTSECRET>>
+  pin:
+  authorization:
+    # everything below is autofilled by the script
+    access_token: <<TRAKTACCESSTOKEN>>
+    token_type: Bearer
+    expires_in: 604800
+    refresh_token: <<TRAKTREFRESHTOKEN>>
+    scope: public
+    created_at: 1769963503
+  force_refresh:

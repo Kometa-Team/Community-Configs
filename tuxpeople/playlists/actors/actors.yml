@@ -1,0 +1,15 @@
+templates:
+  person:
+    sort_title: +3_<<collection_name>>
+    visible_home: true
+    visible_shared: true
+    tmdb_discover:
+      with_people: <<person>>
+    collection_order: release
+
+collections:
+  Bud Spencer & Terence Hill:
+    template: {name: person, person: "18841, 15140"}
+    summary: "The congenial duo: Bud Spencer and Terence Hill"
+    url_poster: https://i.imgur.com/NQ0PmZD.png
+    radarr_add_missing: true
