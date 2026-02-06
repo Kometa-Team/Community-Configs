@@ -1,0 +1,123 @@
+templates:
+  Resolution:
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 15
+      vertical_align: top
+    collection_level: <<overlay_level>>
+    overlay:
+      name: <<overlay_name>>
+      pmm: PMM/overlays/images/<<overlay>>
+      group: res
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+  4K_banner:
+    default:
+      4K_banner: false
+    allowed_library_types: <<4K_banner>>
+
+  4K:
+    default:
+      4K: false
+    allowed_library_types: <<4K>>
+
+  Audience_Rating:
+    optional:
+      - overlay_level
+    default:
+      rating_type: audience_rating
+      horizontal_offset: 32
+      horizontal_align: right
+      vertical_offset: 40
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    allowed_library_types: <<Audience_Rating>>
+    overlay:
+      name: text(<<rating_type>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: fonts/Comfortaa-Bold.ttf
+      font_size: 77
+      font_color: "#FFFEFC"
+
+  TMDB_Rating:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    allowed_library_types: <<TMDB_Rating>>
+    overlay:
+      name: TMDB_Rating
+      horizontal_offset: 15
+      horizontal_align: right
+      vertical_offset: 15
+      vertical_align: bottom
+
+  IMDB_Rating:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    allowed_library_types: <<IMDB_Rating>>
+    overlay:
+      name: IMDB_Rating
+      horizontal_offset: 15
+      horizontal_align: right
+      vertical_offset: 15
+      vertical_align: bottom
+# End Of Templates
+
+# Start of Poster Overlays
+overlays:
+  4K_banner:
+    template:
+      name: 4K_banner
+    overlay:
+      name: 4K_banner
+    plex_search:
+      all:
+        resolution: '4K'
+
+  4K:
+    template:
+      name: 4K
+    overlay:
+      name: 4K
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 15
+      vertical_align: top
+    collection_level: episode
+    plex_search:
+      type: episodes
+      all:
+        resolution: '4K'
+
+  TMDB_Rating:
+    template:
+      - name: TMDB_Rating
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+
+  IMDB_Rating:
+    template:
+      - name: IMDB_Rating
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+
+  Audience_Rating:
+    template:
+      name: Audience_Rating
+    plex_search:
+      all:
+        audience_rating.gte: 0.1

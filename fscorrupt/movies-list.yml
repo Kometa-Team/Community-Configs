@@ -1,0 +1,479 @@
+#####################################
+#     Custom Movie Lists            #
+#####################################
+templates:
+  Special Genre:
+    sort_title: "!C <<collection_name>>"
+    collection_order: release
+    collection_mode: hide
+
+collections:
+  90 Minute Movies:
+      sort_title: "!C <<collection_name>>"
+      sync_mode: sync
+      summary: "A random selection of 100 unwatched movies from 1980 or later, under 97 minutes, with a critic rating of 6.0 or higher, excluding Documentary, Horror and Musical titles."
+      smart_filter:
+        all:
+          resolution: 1080p
+          duration.lte: 97
+          title.not:
+            - Pokémon
+            - Pokemon
+          year.gte: 1980
+          rating.gte: 6.0
+          genre.not:
+            - Documentary
+            - Horror
+            - Musical
+          unplayed: true
+        sort: random
+        limit: 100
+
+  95%+ Rated Movies:
+    sort_title: "!C <<collection_name>>"
+    sync_mode: sync
+    summary: "A selection of movies with a critic rating of 9.5 or higher."
+    smart_filter:
+      all:
+        rating.gte: 9.5
+      sort: random 
+
+  100% Rated Movies:
+    sort_title: "!C <<collection_name>>"
+    sync_mode: sync
+    summary: "A selection of movies with a critic rating of 10."
+    smart_filter:
+      all:
+        rating.gte: 10
+      sort: random   
+
+  Animated Movies:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls027345371/
+      - https://www.imdb.com/list/ls051688785/
+    trakt_list:
+      - https://trakt.tv/users/movistapp/lists/animation?sort=rank,asc
+    summary: "A choice of 189 of the best animated movies released between 2000 and 2025"   
+    collection_order: alpha
+
+  Anime Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/csbarker/lists/anime-movies?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls001855112/
+      - https://www.imdb.com/list/ls026128329/
+    collection_order: alpha
+
+  Apocalyptic & Post-Apocalyptic Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/maxtrontv/lists/apocalyptic-post-apocalyptic-movies?sort=released,asc
+    collection_order: alpha
+
+  Based on Books Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/movies-based-on-books?sort=rank,asc
+    collection_order: alpha
+
+  Based on Comics Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/movies-based-on-comics?sort=rank,asc 
+    collection_order: alpha
+
+  Based on True Events Movies:   
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/benfranklin/lists/based-on-a-true-story?sort=rank,asc
+      - https://trakt.tv/users/hdlists/lists/based-on-or-inspired-by-a-true-story?sort=rank,asc
+    summary: "Movies based on true events"
+    collection_order: alpha
+
+  Based on Video Games Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/movies-based-on-video-games?sort=rank,asc  
+    collection_order: alpha 
+
+  Biopic Movies:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls069101453/
+      - https://www.imdb.com/list/ls063513546/
+      - https://www.imdb.com/list/ls068070566/
+    collection_order: alpha
+
+  Car Movies:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls051642922/
+      - https://www.imdb.com/list/ls064778755/
+      - https://www.imdb.com/list/ls003667158/
+    trakt_list:
+      - https://trakt.tv/users/omegaforce696/lists/car-movies?sort=rank,asc
+    summary: "Best Car Movies of all time"   
+    collection_order: alpha
+
+  Coming-of-Age Movies:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls024933763/
+      - https://www.imdb.com/list/ls051428446/
+      - https://www.imdb.com/list/ls002609132/
+    summary: "Best Coming-of-Age Movies of all time."   
+    collection_order: alpha
+
+  Dark Comedy Movies:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls066399600/
+      - https://www.imdb.com/list/ls052772888/
+    summary: "Best Dark Comedy movies of all time."   
+    collection_order: alpha
+
+  Disaster Movies:
+    template: { name: Special Genre }
+    mdblist_list:
+      - https://mdblist.com/lists/showtime416/disaster-movies
+    trakt_list:
+      - https://trakt.tv/users/sflixkd/lists/disaster-films?sort=popularity,asc
+      - https://trakt.tv/users/jiehad/lists/disaster-movie?sort=released,asc
+    summary: "A disaster film or disaster movie is a film genre that has an impending or ongoing disaster as its subject and primary plot device."   
+    collection_order: alpha
+
+  Documentary Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/rjchignell/lists/best-of-documentary?sort=rank,asc
+    collection_order: alpha
+
+  Entrepreneurship Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/benfranklin/lists/let-s-talk-business-movies-4-entrepreneurs?sort=rank,asc
+      - https://trakt.tv/users/majeed_pk/lists/movies-about-business-70?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls080399485/
+    summary: "The Best Movies About Entrepreneurship"
+    collection_order: alpha 
+
+  Family Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/mah_entaddikt/lists/best-family-films 
+      - https://trakt.tv/users/pants42/lists/movies-family?sort=rank,asc
+      - https://trakt.tv/users/k0meta/lists/family-favorites?sort=rank,asc
+    summary: "Best Rated Family Movies of all time"   
+    collection_order: alpha
+
+  Fantasy Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/best-fantasy-movies-of-all-time?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls020144005/
+    collection_order: alpha
+
+  Fight Movies:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls055460275/
+      - https://www.imdb.com/list/ls008633159/
+    trakt_list:
+      - https://trakt.tv/users/rontraub/lists/fight-movies?sort=rank,asc
+    summary: "Best Fight Movies of all time"   
+    collection_order: alpha 
+
+  Found Footage Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/piinkie/lists/the-found-footage-list?sort=rank,asc
+      - https://trakt.tv/users/sp1ti/lists/extensive-found-footage-films-list-by-tdwillis-26273?sort=released,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls063914804/
+    summary: "Best Found Footage Movies of all time"   
+    collection_order: alpha
+
+  Gangster Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/gangster-mafia-movies?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls066176690/
+    summary: "Best Gangster movies of all time."   
+    collection_order: alpha
+
+  Hacker Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/rzepkowski/lists/hacker-movies?sort=rank,asc
+    collection_order: alpha
+
+  Heist Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/best-heist-movies-of-all-time?sort=released,asc
+      - https://trakt.tv/users/mantero/lists/robbery-movies?sort=released,asc
+      - https://trakt.tv/users/ilium/lists/great-heist-movies?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls021434413/ 
+      - https://www.imdb.com/list/ls086639673/
+    summary: "Best Heist Movies of all time"   
+    collection_order: alpha
+
+  Historical Epic Movies:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls095246868/
+      - https://www.imdb.com/list/ls063414075/
+      - https://www.imdb.com/list/ls047154491/
+    summary: "Best Historical Epic movies of all time."   
+    collection_order: alpha
+
+  Horror Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/movistapp/lists/horror?sort=rank,asc
+      - https://trakt.tv/users/ttaggart/lists/horror-movies-to-watch?sort=rank,asc
+      - https://trakt.tv/users/mattrizzo/lists/horror-mania?sort=released,asc
+      - https://trakt.tv/users/majeed_pk/lists/best-supernatural-horror-movies-and-tv?sort=rank,asc
+    summary: "Best Horror Movies of all time"   
+    collection_order: alpha
+
+  Mafia Movies:
+    template: { name: Special Genre }
+    trakt_list:    
+      - https://trakt.tv/users/media-rumor/lists/mafia-movies?sort=popularity,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls068980300/
+    summary: "Best Mafia & Gangster Movies of all time"   
+    collection_order: alpha
+
+  Mindfuck Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/mindfuck-movies
+      - https://trakt.tv/users/benfranklin/lists/best-mindfucks
+      - https://trakt.tv/users/kageshii/lists/mindfuckfest
+      - https://trakt.tv/users/lish408/lists/mindfuck?sort=popularity,asc
+    summary: "A collection of Movies that will mess with your mind!"
+    collection_order: alpha
+
+  Movies with a Twist:   
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/crazy-plot-twists?sort=rank,asc
+      - https://trakt.tv/users/agusb_1101/lists/plot-twist-movies?sort=rank,asc
+    summary: "Movies with a Twist"
+    collection_order: alpha
+
+  Movies You Must See Before You Die:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/maxtrontv/lists/movies-you-must-see-before-you-die?page=4&sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls039101558/
+    summary: "Movies You Must See Before You Die."   
+    collection_order: alpha
+
+  Music Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/maxtrontv/lists/music-movies?sort=rank,asc
+      - https://trakt.tv/users/startec1690/lists/musical-movies?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls066191116/
+    summary: "Best Music/Musical movies of all time."   
+    collection_order: alpha 
+
+  Mystery Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/latest-hd-mystery-movies-top-rated-from-1980-to-today?sort=rank,asc
+      - https://trakt.tv/users/galacticboy/lists/top-250-mystery-movies?sort=rank,asc
+    summary: "Best Rated Mystery Movies of all time"   
+    collection_order: alpha
+
+  Nostalgia Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/80s-90s-nostalgia-movies?sort=rank,asc
+    collection_order: alpha
+
+  One Actor Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/rzepkowski/lists/one-actor-movies?sort=released,asc
+    collection_order: alpha
+
+  One Man Army Movies:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls076649490/
+      - https://www.imdb.com/list/ls099860390/
+      - https://www.imdb.com/list/ls022345978/
+    summary: "Best Rated One Man Army Movies of all time"   
+    collection_order: alpha
+
+  Parody Movies:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls021746010/
+      - https://www.imdb.com/list/ls063238644/
+      - https://www.imdb.com/list/ls567404864/
+      - https://www.imdb.com/list/ls054484229/
+      - https://www.imdb.com/list/ls061358718/
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/spoof-parody-films?sort=rank,asc
+      - https://trakt.tv/users/kodi-c881832b-f962-4cc7-b587-ed15aed31a9c/lists/parody-spoof-movies?sort=added,asc    
+    summary: "Best Parody Movies of all time"   
+    collection_order: alpha
+
+  Pet Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/lists/1727526
+      - https://trakt.tv/lists/2223890
+      - https://trakt.tv/lists/1722478
+    imdb_list:
+      - https://www.imdb.com/list/ls076750554/
+      - https://www.imdb.com/list/ls507065059/
+      - https://www.imdb.com/list/ls055993600/
+      - https://www.imdb.com/list/ls021279991/
+    summary: "A collection of Movies around Dogs, Cats and Animals in general!"
+    collection_order: alpha
+
+  Romantic Comedy Movies:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls058479560/
+    trakt_list:
+      - https://trakt.tv/users/29zombies/lists/romantic-comedies?sort=title,asc
+    summary: "Best Romantic Comedy Movies of all time"   
+    collection_order: alpha
+
+  Serial Killers Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/ximphrambugle/lists/serial-killer-movies?sort=rank,asc
+      - https://trakt.tv/users/littlenonni75/lists/tv-movies-serial-killers?sort=released,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls063841856/
+      - https://www.imdb.com/list/ls008127108/
+    summary: "Best Serial Killers movies of all time."   
+    collection_order: alpha
+
+  Slasher Horrors Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/rizreflects/lists/slasher-movies?sort=rank,asc
+      - https://trakt.tv/users/drachenplatinum/lists/slashers?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls029703473/ 
+    summary: "Best Slasher Horrors of all time"
+    collection_order: alpha
+
+  Slasher Movies 1990s-2000s:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls063156587/
+    summary: "Best 90s/2000s Slasher Horrors"
+    collection_order: alpha 
+
+  Sport Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/150-best-sports-movies-of-all-time?sort=rank,asc
+    collection_order: alpha
+
+  Spy Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/donxy/lists/spy-films-1465050?sort=popularity,asc
+      - https://trakt.tv/users/maxtrontv/lists/spy-movies?sort=released,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls066367722/
+    summary: "Best Spy movies of all time."   
+    collection_order: alpha
+
+  Stoner Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/vikypl/lists/stoner-s-classics?sort=collected,desc
+      - https://trakt.tv/users/jarvis-1144833/lists/stoner-movies?sort=rank,asc
+      - https://trakt.tv/users/dough13/lists/stoner-movies?sort=added,asc
+      - https://trakt.tv/users/pikota/lists/best-stoner-movies?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls075204988/
+      - https://www.imdb.com/list/ls059809313/
+      - https://www.imdb.com/list/ls076799034/
+      - https://www.imdb.com/list/ls036810850/
+      - https://www.imdb.com/list/ls083546886/
+    summary: "Best Stoner Movies of all time"   
+
+  Time Loop Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/rzepkowski/lists/time-loop-groundhog-day?sort=popularity,asc
+    collection_order: alpha
+
+  Time Travel Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/lists/3940186
+      - https://trakt.tv/lists/20709447
+      - https://trakt.tv/lists/2729898
+      - https://trakt.tv/lists/2729898
+      - https://trakt.tv/lists/4297290
+      - https://trakt.tv/lists/2652307
+    imdb_list:
+      - https://www.imdb.com/list/ls068617191/
+      - https://www.imdb.com/list/ls004426453/
+    summary: "A collection of Movies that include time travel."
+    collection_order: alpha
+
+  Top 50 Grossing Films of All-Time:
+    template: { name: Special Genre }
+    tmdb_list: 
+      - https://www.themoviedb.org/list/10
+    collection_order: custom
+
+  Top Grossing Films Annually:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls568936874/    
+    collection_order: release.desc
+
+  War Movies:
+    template: { name: Special Genre }
+    imdb_list:
+      - https://www.imdb.com/list/ls024001687/
+    trakt_list:
+      - https://trakt.tv/users/maxwelldeux/lists/101-war-movies-you-must-see-before-you-die?sort=rank,asc
+      - https://trakt.tv/users/babakhan23/lists/war-movies?sort=rank,asc     
+    summary: "Best Rated War Movies of all time"   
+    collection_order: alpha
+
+  Western Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/maxtrontv/lists/western-movies?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls003680383/
+      - https://www.imdb.com/list/ls002124326/
+      - https://www.imdb.com/list/ls066568329/
+    summary: "Best Western movies of all time."   
+    collection_order: alpha
+
+  Zombie Movies:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/zompari/lists/the-best-zombie-movies?sort=released,desc
+      - https://trakt.tv/users/kuratchikingu/lists/zombie-movies-shows?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls000058536/
+    summary: "Best Zombie Movies of all time"   
+    collection_order: alpha

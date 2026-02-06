@@ -1,0 +1,127 @@
+#####################################
+#     Custom Collection Templates   #
+#####################################
+templates:
+  Original:
+    sort_title: "!AAA <<collection_name>>"
+    collection_order: release
+    collection_mode: hide   
+  Studios:
+    sort_title: "!AAB <<collection_name>>"
+    collection_order: release
+    collection_mode: hide
+
+collections:
+  # Originals
+  Netflix Originals:
+    template: { name: Original }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/netflix-originals?sort=rank,asc
+    summary: "Feature films by Netflix"   
+    collection_order: alpha 
+  Disney+ Originals:
+    template: { name: Original }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/disney-originals?sort=rank,asc
+    summary: "Feature films by Disney+"   
+    collection_order: alpha   
+  AppleTV+ Originals:
+    template: { name: Original }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/appletv-originals?sort=rank,asc
+    summary: "Feature films by AppleTV+"   
+    collection_order: alpha        
+  Amazon Originals:
+    template: { name: Original }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/amazon-originals?sort=rank,asc
+    summary: "Feature films by Amazon"   
+    collection_order: alpha         
+
+  #Studios
+  Pixar Movies:
+    template: { name: Studios }
+    trakt_list:
+      - https://trakt.tv/users/draackje/lists/pixar-feature-films?sort=released,desc
+    summary: "Feature films by Pixar AnimationStudios"   
+    collection_order: alpha    
+
+  Walt Disney Pictures Movies:
+    template: { name: Studios }
+    trakt_list:
+      - https://trakt.tv/users/addvariety/lists/the-complete-walt-disney-animation-studios-collection?sort=released,asc
+    summary: "Feature films by Walt Disney PicturesStudios"   
+    collection_order: alpha
+
+  Disney Live-Action Remakes:  
+    template: { name: Studios }
+    trakt_list:
+      - https://trakt.tv/users/aaron713/lists/disney-live-action-adaptations-and-remakes-of-disney-animated-films?sort=rank,asc
+    summary: "Disney Live-Action Remakes"   
+    collection_order: alpha  
+
+  Dreamworks Movies:
+    template: { name: Studios }
+    trakt_list:
+      - https://trakt.tv/users/draackje/lists/dreamworks-feature-films?sort=released,desc
+    summary: "Feature films by Dreamworks Animation."   
+    collection_order: alpha    
+
+  A24 Movies:
+    template: { name: Studios }
+    trakt_list:
+      - https://trakt.tv/users/fidel-cb/lists/a24-movies-and-tv-shows?sort=released,asc
+    summary: "Movies, TV Shows and Documentaries that A24 has produced/distributed."   
+    collection_order: alpha  
+
+  Sony Pictures Animation:
+    template: { name: Studios }
+    trakt_list:
+      - https://trakt.tv/users/donxy/lists/sony-pictures-animation?sort=released,desc
+      - https://trakt.tv/users/oneluckydad/lists/sony-pictures-animation?sort=released,asc     
+    summary: "Movies, TV Shows and Documentaries that Sony Pictures Animation has produced."   
+    collection_order: alpha   
+
+  Paramount PicturesStudios:
+    template: { name: Studios }
+    trakt_list:
+      - https://trakt.tv/users/boleg/lists/paramount-movies-2015-2023?sort=rank,asc
+    imdb_list:
+      - https://www.imdb.com/list/ls029950709/     
+    summary: "Feature films by Paramount PicturesStudios"   
+    collection_order: alpha
+
+  Universal Pictures:
+    template: { name: Studios }
+    trakt_list:
+      - https://trakt.tv/users/max-blade/lists/film-animation-classique-universal-pictures
+    summary: "Feature films by Universal Pictures"   
+    collection_order: alpha
+
+  Warner Bros. Pictures:
+    template: { name: Studios }
+    imdb_list:
+      - https://www.imdb.com/list/ls099404144/
+    summary: "Feature films by Warner Bros. Pictures"   
+    collection_order: alpha  
+
+  Studio Ghibli:
+    template: { name: Studios }
+    trakt_list:
+      - https://trakt.tv/users/draackje/lists/studio-ghibli-feature-films?sort=released,desc
+    summary: "Feature films by Studio Ghibli"   
+    collection_order: alpha    
+
+  Blumhouse Productions:
+    template: { name: Studios }
+    imdb_list:
+      - https://www.imdb.com/list/ls521124741/
+    summary: "Feature films by Blumhouse Productions"   
+    collection_order: alpha                      
+
+  Legendary Pictures:
+    template: { name: Studios }
+    trakt_list:
+      - https://trakt.tv/users/rhwonderful/lists/legendary-pictures?sort=rank,asc
+    summary: "Feature films by Legendary Pictures"   
+    collection_order: alpha    

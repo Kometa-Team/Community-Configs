@@ -1,0 +1,54 @@
+templates:
+  Director:
+    smart_filter:
+      all:
+        director: tmdb
+      sort_by: title.asc
+    tmdb_person: <<person>>
+    sort_title: "!200_<<collection_name>>"
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sync_mode: sync
+    summary: <<collection_name>>'s Films
+    collection_mode: hide_items
+
+  Writer:
+    smart_filter:
+      all:
+        writer: tmdb
+      sort_by: title.asc
+    tmdb_person: <<person>>
+    sort_title: "!200_<<collection_name>>"
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sync_mode: sync
+    summary: <<collection_name>>'s Films
+    collection_mode: hide_items    
+
+collections:
+  John Carpenter:
+    template: {name: Director, person: 11770, poster: 56450}
+  Wes Craven:
+    template: {name: Director, person: 5140, poster: 355110}    
+  Christopher Nolan:
+    template: {name: Director, person: 525, poster: 47425}
+  Quentin Tarantino:
+    template: {name: Director, person: 138, poster: 47468}
+  Steven Spielberg:
+    template: {name: Director, person: 488, poster: 47477}
+  Michael Bay:
+    template: {name: Director, person: 865, poster: 47463}  
+  Martin Scorsese:
+    template: {name: Director, person: 1032, poster: 47460}  
+  Peter Jackson:
+    template: {name: Director, person: 108, poster: 165687}          
+  Stanley Kubrick:
+    template: {name: Director, person: 240, poster: 47475}     
+  Ridley Scott:
+    template: {name: Director, person: 578, poster: 47470}    
+  David Fincher:
+    template: {name: Director, person: 7467, poster: 47439}    
+  Denis Villeneuve:
+    template: {name: Director, person: 137427, poster: 326125}      
+  Makoto Shinkai:
+    template: {name: Director, person: 74091, poster: 364190}         
+  Stephen King:
+    template: {name: Writer, person: 3027, poster: 47476}
