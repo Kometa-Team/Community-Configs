@@ -1,14 +1,23 @@
-## This file is a template remove the .template to use the file
+# ============================================================================
+# Kometa Configuration File
+# ============================================================================
 
+# Libraries configuration - defines how each library is processed
 libraries:
+  # 4K TV Shows Library
   4K TV Shows:
-    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
-    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    # Schedule collection updates at specified hours (UTC)
+    schedule: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Schedule overlay updates at the same intervals
+    schedule_overlays: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Collection files to process
     collection_files:
     - file: config/TVShows.yml
     #- file: config/Genre.yml
+    # Overlay files and configurations
     overlay_files:
     #- reapply_overlays: true
+    # Network overlay for seasons
     - default: network
       template_variables:
         builder_level: season
@@ -17,8 +26,15 @@ libraries:
         horizontal_offset: 30
         vertical_offset: 50
         back_color: '#00000000'
+    # Languages overlay for episodes
     - default: languages
       template_variables:
+        languages:
+        - de      # German
+        - en      # English
+        - ja      # Japanese
+        - zh      # Chinese
+        - ko      # Korean
         builder_level: episode
         overlay_limit: 5
         horizontal_position: left
@@ -29,6 +45,7 @@ libraries:
         back_width: 102
         text: ''
         final_name: <<key>>
+    # Show status overlay (airing, returning, canceled, ended)
     - default: status
       template_variables:
         horizontal_align: center
@@ -44,6 +61,7 @@ libraries:
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
         back_color: '#00000000'
+    # Runtime overlay for episodes
     - default: runtimes
       template_variables:
         builder_level: episode
@@ -54,34 +72,52 @@ libraries:
         horizontal_offset: 18
         text: ''
         back_width: 205
+    # Remove overlays setting
     - remove_overlays: false
+    # Custom overlays file
     - file: config/overlays_tv.yml
       template_variables:
       # Which overlay(s) should be used?
       # Posters
         4K: true
         4K_banner: true
+    # Asset directory settings
     settings:
       asset_directory: /assets/4K TV Shows
       prioritize_assets: true
+    # Operations
     operations:
       assets_for_all: true
+
+  # 4K Movies Library
   4K Movies:
-    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
-    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    # Schedule collection updates
+    schedule: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Schedule overlay updates
+    schedule_overlays: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
     #schedule: hourly(9),hourly(19)
+    # Collection files to process
     collection_files:
     - file: config/Movies.yml
     #- file: config/collections.yml
+    # Overlay files and configurations
     overlay_files:
+    # Common Sense Media content ratings overlay
     - default: commonsense
       template_variables:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
         back_color: '#00000000'
+    # Languages overlay
     - default: languages
       template_variables:
+        languages:
+        - de      # German
+        - en      # English
+        - ja      # Japanese
+        - zh      # Chinese
+        - ko      # Korean
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
@@ -90,6 +126,7 @@ libraries:
         font_color: '#00000000'
         text: ''
         final_name: <<key>>
+    # Runtime overlay
     - default: runtimes
       template_variables:
         vertical_offset: 37
@@ -98,35 +135,57 @@ libraries:
         text: ''
         back_width: 205
         back_color: '#00000000'
+    # Remove overlays setting
     - remove_overlays: false
+    # Custom overlays file
     - file: config/overlays_movies.yml
       template_variables:
       # Which overlay(s) should be used?
       # Posters
         4K_banner: true
         4K: false
+    # Asset directory settings
     settings:
       asset_directory: /assets/4K Movies
       prioritize_assets: true
+    # Operations including content rating updates
     operations:
       mass_content_rating_update: mdb_commonsense
       assets_for_all: true
+
+  # Standard Movies Library
   Movies:
-    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
-    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    # Schedule collection updates
+    schedule: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Schedule overlay updates
+    schedule_overlays: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
     #schedule: hourly(9),hourly(19)
+    # Multiple collection files
     collection_files:
     - file: config/Movies.yml
-    #- file: config/collections.yml
+    - file: config/universe.yml
+    - file: config/movies-studios.yml
+    - file: config/movies-list.yml
+    - file: config/actors.yml
+    - file: config/directors.yml
+    # Overlay files and configurations
     overlay_files:
+    # Common Sense Media overlay
     - default: commonsense
       template_variables:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
         back_color: '#00000000'
+    # Languages overlay
     - default: languages
       template_variables:
+        languages:
+        - de      # German
+        - en      # English
+        - ja      # Japanese
+        - zh      # Chinese
+        - ko      # Korean
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
@@ -135,6 +194,7 @@ libraries:
         font_color: '#00000000'
         text: ''
         final_name: <<key>>
+    # Runtime overlay
     - default: runtimes
       template_variables:
         vertical_offset: 37
@@ -143,34 +203,53 @@ libraries:
         text: ''
         back_width: 205
         back_color: '#00000000'
+    # Remove overlays setting
     - remove_overlays: false
+    # Custom overlays file (no 4K overlays)
     - file: config/overlays_movies.yml
       template_variables:
       # Which overlay(s) should be used?
       # Posters
         4K_banner: false
         4K: false
+    # Asset directory settings
     settings:
       asset_directory: /assets/Movies
       prioritize_assets: true
+    # Operations including content rating updates
     operations:
       mass_content_rating_update: mdb_commonsense
       assets_for_all: true
+
+  # Kids Movies Library
   Kids Movies:
-    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
-    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    # Schedule collection updates
+    schedule: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Schedule overlay updates
+    schedule_overlays: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Collection files
     collection_files:
     - file: config/Movies.yml
-    #- file: config/Genre.yml
+    - file: config/universe.yml
+    - file: config/movies-studios.yml
+    - file: config/movies-list.yml
+    - file: config/actors.yml
+    - file: config/directors.yml
+    # Overlay files and configurations
     overlay_files:
+    # Common Sense Media overlay
     - default: commonsense
       template_variables:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
         back_color: '#00000000'
+    # Languages overlay (limited to German and English for kids)
     - default: languages
       template_variables:
+        languages:
+        - de      # German
+        - en      # English
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
@@ -179,6 +258,7 @@ libraries:
         font_color: '#00000000'
         text: ''
         final_name: <<key>>
+    # Runtime overlay
     - default: runtimes
       template_variables:
         vertical_offset: 37
@@ -187,34 +267,52 @@ libraries:
         text: ''
         back_width: 205
         back_color: '#00000000'
+    # Remove overlays setting
     - remove_overlays: false
+    # Custom overlays file (no 4K overlays)
     - file: config/overlays_movies.yml
       template_variables:
       # Which overlay(s) should be used?
       # Posters
         4K_banner: false
         4K: false
+    # Asset directory settings
     settings:
       asset_directory: /assets/Kids Movies
       prioritize_assets: true
+    # Operations including content rating updates
     operations:
       mass_content_rating_update: mdb_commonsense
       assets_for_all: true
+
+  # Anime (Movies) Library
   Anime:
-    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
-    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    # Schedule collection updates
+    schedule: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Schedule overlay updates
+    schedule_overlays: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Collection files
     collection_files:
     - file: config/Movies.yml
-    #- file: config/Genre.yml
+    - file: config/show-list.yml
+    # Overlay files and configurations
     overlay_files:
+    # Common Sense Media overlay
     - default: commonsense
       template_variables:
         vertical_offset: 37
         horizontal_offset: 255
         back_width: 230
         back_color: '#00000000'
+    # Languages overlay (multiple languages for anime)
     - default: languages
       template_variables:
+        languages:
+        - de      # German
+        - en      # English
+        - ja      # Japanese
+        - zh      # Chinese
+        - ko      # Korean
         overlay_limit: 5
         horizontal_position: left
         vertical_position: bottom
@@ -223,6 +321,7 @@ libraries:
         font_color: '#00000000'
         text: ''
         final_name: <<key>>
+    # Runtime overlay
     - default: runtimes
       template_variables:
         vertical_offset: 37
@@ -231,27 +330,38 @@ libraries:
         text: ''
         back_width: 205
         back_color: '#00000000'
+    # Remove overlays setting
     - remove_overlays: false
+    # Custom overlays file (no 4K overlays)
     - file: config/overlays_movies.yml
       template_variables:
       # Which overlay(s) should be used?
       # Posters
         4K_banner: false
         4K: false
+    # Asset directory settings
     settings:
       asset_directory: /assets/Anime
       prioritize_assets: true
+    # Operations including content rating updates
     operations:
       mass_content_rating_update: mdb_commonsense
       assets_for_all: true
+
+  # Standard TV Shows Library
   TV Shows:
-    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
-    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    # Schedule collection updates
+    schedule: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Schedule overlay updates
+    schedule_overlays: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Collection files
     collection_files:
     - file: config/TVShows.yml
-    #- file: config/Genre.yml
+    - file: config/show-list.yml
+    # Overlay files and configurations
     overlay_files:
     #- reapply_overlays: true
+    # Network overlay for seasons
     - default: network
       template_variables:
         builder_level: season
@@ -260,8 +370,15 @@ libraries:
         horizontal_offset: 30
         vertical_offset: 50
         back_color: '#00000000'
+    # Languages overlay for episodes
     - default: languages
       template_variables:
+        languages:
+        - de      # German
+        - en      # English
+        - ja      # Japanese
+        - zh      # Chinese
+        - ko      # Korean
         builder_level: episode
         overlay_limit: 5
         horizontal_position: left
@@ -272,6 +389,7 @@ libraries:
         back_width: 102
         text: ''
         final_name: <<key>>
+    # Show status overlay (airing, returning, canceled, ended)
     - default: status
       template_variables:
         horizontal_align: center
@@ -287,6 +405,7 @@ libraries:
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
         back_color: '#00000000'
+    # Runtime overlay for episodes
     - default: runtimes
       template_variables:
         builder_level: episode
@@ -297,25 +416,36 @@ libraries:
         horizontal_offset: 18
         text: ''
         back_width: 205
+    # Remove overlays setting
     - remove_overlays: false
+    # Custom overlays file (no 4K overlays)
     - file: config/overlays_tv.yml
       template_variables:
       # Which overlay(s) should be used?
       # Posters
         4K: false
         4K_banner: false
+    # Asset directory settings
     settings:
       asset_directory: /assets/TV Shows
       prioritize_assets: true
+    # Operations
     operations:
       assets_for_all: true
+
+  # Kids TV Shows Library
   Kids Shows:
-    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
-    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    # Schedule collection updates
+    schedule: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Schedule overlay updates
+    schedule_overlays: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Collection files
     collection_files:
     - file: config/KidsShows.yml
+    # Overlay files and configurations
     overlay_files:
     #- reapply_overlays: true
+    # Network overlay for seasons
     - default: network
       template_variables:
         builder_level: season
@@ -324,8 +454,12 @@ libraries:
         horizontal_offset: 30
         vertical_offset: 50
         back_color: '#00000000'
+    # Languages overlay for episodes (limited to German and English)
     - default: languages
       template_variables:
+        languages:
+        - de      # German
+        - en      # English
         builder_level: episode
         overlay_limit: 5
         horizontal_position: left
@@ -336,6 +470,7 @@ libraries:
         back_width: 102
         text: ''
         final_name: <<key>>
+    # Show status overlay (airing, returning, canceled, ended)
     - default: status
       template_variables:
         horizontal_align: center
@@ -351,6 +486,7 @@ libraries:
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
         back_color: '#00000000'
+    # Runtime overlay for episodes
     - default: runtimes
       template_variables:
         builder_level: episode
@@ -361,25 +497,36 @@ libraries:
         horizontal_offset: 18
         text: ''
         back_width: 205
+    # Remove overlays setting
     - remove_overlays: false
+    # Custom overlays file (no 4K overlays)
     - file: config/overlays_tv.yml
       template_variables:
       # Which overlay(s) should be used?
       # Posters
         4K_banner: false
         4K: false
+    # Asset directory settings
     settings:
       asset_directory: /assets/Kids Shows
       prioritize_assets: true
+    # Operations
     operations:
       assets_for_all: true
+
+  # Anime TV Shows Library
   Anime Shows:
-    schedule: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
-    schedule_overlays: hourly(06),hourly(10),hourly(14),hourly(18),hourly(22)
+    # Schedule collection updates
+    schedule: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Schedule overlay updates
+    schedule_overlays: hourly(02),hourly(05),hourly(08),hourly(11),hourly(14),hourly(17),hourly(20),hourly(23)
+    # Collection files
     collection_files:
     - file: config/AnimeShows.yml
+    # Overlay files and configurations
     overlay_files:
     #- reapply_overlays: true
+    # Network overlay for seasons
     - default: network
       template_variables:
         builder_level: season
@@ -388,8 +535,15 @@ libraries:
         horizontal_offset: 30
         vertical_offset: 50
         back_color: '#00000000'
+    # Languages overlay for episodes (multiple languages for anime)
     - default: languages
       template_variables:
+        languages:
+        - de      # German
+        - en      # English
+        - ja      # Japanese
+        - zh      # Chinese
+        - ko      # Korean
         builder_level: episode
         overlay_limit: 5
         horizontal_position: left
@@ -400,6 +554,7 @@ libraries:
         back_width: 102
         text: ''
         final_name: <<key>>
+    # Show status overlay (airing, returning, canceled, ended)
     - default: status
       template_variables:
         horizontal_align: center
@@ -415,6 +570,7 @@ libraries:
         font_color_canceled: '#ED1F1F'
         font_color_ended: '#FF0000'
         back_color: '#00000000'
+    # Runtime overlay for episodes
     - default: runtimes
       template_variables:
         builder_level: episode
@@ -425,27 +581,42 @@ libraries:
         horizontal_offset: 18
         text: ''
         back_width: 205
+    # Remove overlays setting
     - remove_overlays: false
+    # Custom overlays file (no 4K overlays)
     - file: config/overlays_tv.yml
       template_variables:
       # Which overlay(s) should be used?
       # Posters
         4K_banner: false
         4K: false
+    # Asset directory settings
     settings:
       asset_directory: /assets/Anime Shows
       prioritize_assets: true
+    # Operations
     operations:
       assets_for_all: true
+
+# ============================================================================
+# Playlist Configuration
+# ============================================================================
 playlist_files:
 - file: config/playlist.yml
   template_variables:
     use_walking: true
     radarr_add_missing_walking: false
-    sonarr_add_missing_walking: false
-settings:                                       # Can be individually specified per library as well
+    sonarr_add_missing_walking: false                                    # Can be individually specified per library as well
+    
+# ============================================================================
+# Global Settings - Can be overridden per library
+# ============================================================================
+settings:
+  # Caching options
   cache: true
   cache_expiration: 60
+  
+  # Asset settings
   asset_directory: /assets
   asset_folders: true
   asset_depth: 1
@@ -456,13 +627,21 @@ settings:                                       # Can be individually specified 
   show_missing_season_assets: true
   show_missing_episode_assets: false
   show_asset_not_needed: false
+  
+  # Sync and collection settings
   sync_mode: sync
   default_collection_order:
   minimum_items: 1
   delete_below_minimum: false
   delete_not_scheduled: false
+  
+  # Scheduling
   run_again_delay: 0
+  
+  # Release settings
   missing_only_released: true
+  
+  # Display options
   show_unconfigured: true
   show_unmanaged: false
   show_filtered: false
@@ -470,54 +649,100 @@ settings:                                       # Can be individually specified 
   show_missing: true
   only_filter_missing: false
   show_missing_assets: true
+  
+  # Report settings
   save_report: false
+  
+  # API settings
   tvdb_language: eng
   ignore_ids:
   ignore_imdb_ids:
   item_refresh_delay: 0
+  
+  # Playlist settings
   playlist_sync_to_users: all
   playlist_report: false
+  playlist_exclude_users: Louisa, Peter
+  
+  # Advanced options
   custom_repo:
   verify_ssl: true
   check_nightly: false
-  playlist_exclude_users: Louisa, Peter
+  
+  # Execution order
   run_order:
   - operations
   - metadata
   - collections
   - overlays
+  
+  # Overlay settings
   overlay_artwork_filetype: jpg
   overlay_artwork_quality: 90
-plex:                                           # Can be individually specified per library as well
+  show_unfiltered: false
+
+# ============================================================================
+# Plex Media Server Configuration
+# ============================================================================
+plex:
+  # Plex server connection
   url: http://plex:32400
   token:
   timeout: 360
+  
+  # Maintenance options
   clean_bundles: false
   empty_trash: false
   optimize: false
+  
+  # Cache options
   db_cache:
   verify_ssl:
+
+# ============================================================================
+# Webhooks - for notifications and monitoring
+# ============================================================================
 webhooks:
   error:
   version:
   run_start:
   run_end:
   delete:
+
+# ============================================================================
+# TMDb (The Movie Database) Configuration
+# ============================================================================
 tmdb:
-  apikey:
+  apikey: 
   language: en
   cache_expiration: 60
   region:
-tautulli:                                       # Can be individually specified per library as well
+
+# ============================================================================
+# Tautulli Configuration (Plex monitoring)
+# ============================================================================
+tautulli:
+  # Tautulli API settings
   url: http://tautulli:8181
-  apikey:
+  apikey: 
+
+# ============================================================================
+# OMDb (Open Movie Database) Configuration
+# ============================================================================
 omdb:
-  apikey:
+  apikey: 
   cache_expiration: 60
-radarr:                                         # Can be individually specified per library as well
+
+# ============================================================================
+# Radarr Configuration (Movie download management)
+# ============================================================================
+radarr:
+  # Radarr server connection
   url: http://radarr:7878
-  token:
+  token: 
   version: v4
+  
+  # Download settings
   root_folder_path: /mnt/unionfs/Movies
   monitor: false
   availability: announced
@@ -525,16 +750,27 @@ radarr:                                         # Can be individually specified 
   tag: kometa
   search: false
   add_existing: false
+  
+  # Path mapping
   radarr_path:
   plex_path:
+  
+  # Movie management
   add_missing: false
   upgrade_existing: false
   ignore_cache: false
   monitor_existing: false
-sonarr:                                         # Can be individually specified per library as well
+
+# ============================================================================
+# Sonarr Configuration (TV show download management)
+# ============================================================================
+sonarr:
+  # Sonarr server connection
   url: http://sonarr:8989
-  token:
+  token: 
   version: v4
+  
+  # Download settings
   root_folder_path: /mnt/unionfs/Shows
   monitor: none
   quality_profile: 1080p - DE Only
@@ -545,23 +781,37 @@ sonarr:                                         # Can be individually specified 
   search: false
   cutoff_search: false
   add_existing: false
+  
+  # Path mapping
   sonarr_path:
   plex_path:
+  
+  # Show management
   add_missing: false
   upgrade_existing: false
   ignore_cache: false
   monitor_existing: false
+
+# ============================================================================
+# Trakt Configuration (Social tracking)
+# ============================================================================
 trakt:
-  client_id:
-  client_secret:
+  client_id: 
+  client_secret: 
+  # OAuth authentication tokens
   authorization:
-    access_token:
+    access_token: 
     token_type: Bearer
-    expires_in: 7889237
-    refresh_token:
+    expires_in: 7889238
+    refresh_token: 
     scope: public
-    created_at: 1704621604
+    created_at: 1759861193
   pin:
+  force_refresh:
+
+# ============================================================================
+# MDBList Configuration (Database/list services)
+# ============================================================================
 mdblist:
-  apikey:
+  apikey: 
   cache_expiration: 60

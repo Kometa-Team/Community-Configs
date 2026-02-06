@@ -1,0 +1,214 @@
+templates:
+  Special Genre:
+    sort_title: "!C <<collection_name>>"
+    collection_order: release
+    collection_mode: hide
+
+  Holiday Episodes:
+    builder_level: episode
+    sort_title: "!E <<collection_name>>"
+    collection_mode: hide
+
+  # Top Episodes by IMDB Rating
+  Top Episodes IMDB:
+    builder_level: episode
+    smart_filter:
+      all:
+        title: <<title>>
+      sort_by:
+        - audience_rating.desc
+        - critic_rating.desc
+      limit: <<limit>>
+    summary: The top <<limit>> episodes of <<title>>, sorted by IMDb rating. 
+    sort_title: " !AC<<title>>"
+    collection_mode: hide 
+
+  # Custom iCarly Collection due to a bug with the 2021 iCarly Show
+  Custom iCarly:
+    builder_level: episode
+    smart_filter:
+      all:
+        title: <<title>>
+        year.lt: 2015
+      sort_by:
+        - audience_rating.desc
+        - critic_rating.desc
+      limit: <<limit>>
+    summary: The top <<limit>> episodes of <<title>>, sorted by IMDb rating. 
+    sort_title: " !AC<<title>>"
+    collection_mode: hide     
+
+  # Chronological TV Episode Collections
+  Chronological-Episode-Level Genre:
+    builder_level: episode
+    sort_title: "!AD <<collection_name>>"
+    collection_mode: hide
+
+collections:
+  # Chronological TV Episode Collections
+  Star Wars The Clone Wars Chronological Order:
+    template: { name: Chronological-Episode-Level Genre }
+    trakt_list:
+      - https://trakt.tv/users/fs-corrupt/lists/star-wars-the-clone-wars-chronological-episode-order?sort=rank,asc
+    summary: "Star Wars: The Clone Wars Chronological Episode Order"
+    collection_order: custom  
+    sort_title: " !AD<<title>>"
+
+  # Custom Collections
+  All Time Favorite Sitcoms:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/nichtlegacy/lists/all-time-favorites?sort=rank,asc
+    summary: "Personal favorites from all time"
+    collection_order: alpha    
+    sort_title: " !AA<<title>>"
+
+  All Time Favorite Nickelodeon Shows:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/thelagacyminer/lists/all-time-favorite-nickelodeon-shows?sort=rank,asc
+    summary: "Personal favorites from all time"
+    collection_order: alpha    
+    sort_title: " !AA<<title>>"
+
+  Based on Video Games Shows:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/shows-based-on-video-games?sort=rank,asc
+    summary: "Shows Based on Video Games"
+    collection_order: alpha
+    sort_title: " !AA<<title>>"
+
+  Based on Comics Shows:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/shows-based-on-comics
+    summary: "Shows Based on Comics"
+    collection_order: alpha
+    sort_title: " !AA<<title>>"
+
+  Based on Books Shows:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/shows-based-on-books?sort=rank,asc
+    summary: "Shows Based on Books"
+    collection_order: alpha
+    sort_title: " !AA<<title>>"
+
+  Based on True Events Shows:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/shows-based-on-true-stories?sort=rank,asc
+    summary: "Shows Based on True Events"
+    collection_order: alpha
+    sort_title: " !AA<<title>>"    
+
+  Nostalgia Shows:
+    template: { name: Special Genre }
+    trakt_list:
+      - https://trakt.tv/users/k0meta/lists/nostalgia-shows?sort=rank,asc
+    summary: "Nostalgia Shows"
+    collection_order: alpha
+    sort_title: " !AA<<title>>"   
+
+  # Holiday TV Episodes
+  Halloween TV Episodes:
+    template: { name: Holiday Episodes}
+    trakt_list:
+      - https://trakt.tv/users/efreakiel/lists/halloween-tv-episodes?sort=title,asc
+      - https://trakt.tv/users/finniefoo/lists/halloween-episodes?sort=rank,asc
+    summary: "Halloween television episodes"
+    collection_order: random    
+    sort_title: " !AB<<title>>"  
+
+  Christmas TV Episodes:
+    template: { name: Holiday Episodes }
+    trakt_list:
+      - https://trakt.tv/users/philrivers/lists/christmas-episodes
+      - https://trakt.tv/users/somedude69/lists/wikipedia-christmas-episodes-sitcoms
+    summary: "Christmas television episodes"
+    collection_order: random
+    sort_title: " !AB<<title>>"     
+
+  # Custom Top XX Collections
+
+  # German Spongebob
+  Spongebob Schwammkopf Top 100:
+    collection_order: custom
+    builder_level: episode
+    plex_search:
+      type: episodes
+      sort_by: audience_rating.desc
+      limit: 100
+      all:
+        title.is: "Spongebob Schwammkopf"      
+    sort_title: " !AC<<title>>"    
+
+  # The Middle (Custom due to a bug with "Malcolm in the Middle")
+  The Middle Top 50:
+    collection_order: custom
+    builder_level: episode
+    plex_search:
+      type: episodes
+      sort_by: audience_rating.desc
+      limit: 50
+      all:
+        title.is: "The Middle"
+    sort_title: " !AC<<title>>"
+
+  # Malcolm in the Middle (Custom due to a bug with "The Middle")
+  Malcolm mittendrin Top 50:
+    collection_order: custom
+    builder_level: episode
+    plex_search:
+      type: episodes
+      sort_by: audience_rating.desc
+      limit: 50
+      all:
+        title.is: "Malcolm mittendrin"
+    sort_title: " !AC<<title>>"
+
+  # House (Custom due to the german title "Dr. House")
+  Dr. House Top 50:
+    collection_order: custom
+    builder_level: episode
+    plex_search:
+      type: episodes
+      sort_by: audience_rating.desc
+      limit: 50
+      all:
+        title.is: "Dr. House"
+    sort_title: " !AC<<title>>"    
+
+  # Top XX Collections via template
+  Simpsons Top 100:
+    template: {name: Top Episodes IMDB, limit: 100, title: "The Simpsons"}
+
+  Family Guy Top 100:
+    template: {name: Top Episodes IMDB, limit: 100, title: "Family Guy"}    
+
+  The Office (US) Top 50:
+    template: {name: Top Episodes IMDB, limit: 50, title: "The Office (US)"} 
+
+  How I Met Your Mother Top 50:
+    template: {name: Top Episodes IMDB, limit: 50, title: "How I Met Your Mother"}   
+
+  Two and a Half Men Top 50:
+    template: {name: Top Episodes IMDB, limit: 50, title: "Two and a Half Men"}     
+
+  Black Mirror Top 5:
+    template: {name: Top Episodes IMDB, limit: 5, title: "Black Mirror"}     
+
+  Phineas and Ferb Top 25:
+    template: {name: Top Episodes IMDB, limit: 25, title: "Phineas and Ferb"}
+
+  South Park Top 50:
+    template: {name: Top Episodes IMDB, limit: 50, title: "South Park"}
+
+  Rick and Morty Top 25:
+    template: {name: Top Episodes IMDB, limit: 25, title: "Rick and Morty"}   
+
+  # iCarly (2007)
+  iCarly Top 30:
+    template: {name: Custom iCarly, limit: 30, title: "iCarly"}        
+

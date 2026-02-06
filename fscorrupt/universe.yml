@@ -1,0 +1,176 @@
+##############################################################################
+#                            Universe Collections                            #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#                              Edited by nichtlegacy                         #
+##############################################################################
+
+external_templates:
+  default: templates
+  template_variables:
+    collection_section: "040"
+
+templates:
+  universe:
+    conditionals:
+      mdblist_list:
+        conditions:
+          - trakt_list_<<key>>.exists: false
+            imdb_list_<<key>>.exists: false
+            mdblist_list_<<key>>.exists: false
+            value: <<mdblist_url>>
+      trakt_list:
+        conditions:
+          - trakt_list_<<key>>.exists: false
+            imdb_list_<<key>>.exists: false
+            mdblist_list_<<key>>.exists: false
+            value: <<trakt_url>>
+    default:
+      mdblist_list_<<key>>: <<mdblist_list>>
+      trakt_list_<<key>>: <<trakt_list>>
+      name_mapping_<<key>>: <<name_mapping>>
+      minimum_items: 2
+    optional:
+      - name_mapping
+      - trakt_list_<<key>>
+      - imdb_list_<<key>>
+      - mdblist_url
+      - trakt_url
+    minimum_items: <<minimum_items>>
+    name_mapping: <<name_mapping_<<key>>>>
+    imdb_list: <<imdb_list_<<key>>>>
+    trakt_list: <<trakt_list_<<key>>>>
+    mdblist_list: <<mdblist_list_<<key>>>>
+
+dynamic_collections:
+  Universe Collections:
+    type: custom
+    data:
+      avp: Alien / Predator
+      dca: DC Animated Universe
+      dcu: DC Extended Universe
+      fast: Fast & Furious
+      marvel: In Association With Marvel
+      mcu: Marvel Cinematic Universe
+      middle: Middle Earth
+      rocky: Rocky / Creed
+      trek: Star Trek
+      star: Star Wars Universe
+      pokemon: Pokémon Universe
+      wizard: Wizarding World
+      xmen: X-Men Universe
+      mimpossible: Mission Impossible
+      jbond: James Bond
+      terminator: Terminator
+      spider: Spider-Verse
+      monster: MonsterVerse
+      resi: Resident Evil
+      sman: Superman
+      batm: Batman
+      pirate: Pirates of the Caribbean
+      indi: Indiana Jones
+      apes: Planet of the Apes
+      hween: Halloween
+      saw: Saw
+      jckass: Jackass
+      chchong: Cheech & Chong
+      friday: Freddy & Jason Universe
+      askew: Jay & Silent Bob
+      prge: The Purge
+      cornet: Three Flavours Cornetto Trilogy
+      tformers: Transformers
+      scream: Scream
+      scarymovie: Scary Movie
+      jpark: Jurassic Park
+      dhard: Stirb Langsam
+      bfuture: Zurück in die Zukunft
+      rambo: Rambo
+      mblack: Men in Black
+      fdestination: Final Destination
+      hgames: The Hunger Games
+      jwick: John Wick
+      matrix: The Matrix
+      conjurig: Conjuring Universe
+      ghostbusters: Ghostbusters
+      bourne: Jason Bourne
+      mmax: Mad Max
+      chucky: Chucky Universe
+      texaschainsaw: Texas Chainsaw Massacre
+      apie: American Pie
+      wturn: Wrong Turn
+      ## Shows
+      wdead: The Walking Dead Universe
+    template:
+      - universe
+      - arr
+      - custom
+      - shared
+    template_variables:
+      allowed_libraries:
+        avp: movie
+        wizard: movie
+        fast: movie
+        rocky: movie
+        mummy: movie
+      # check1
+      trakt_url:
+        marvel: https://trakt.tv/users/vancityguy/lists/in-association-with-marvel?sort=title,asc
+        mcu: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe
+        avp: https://trakt.tv/users/fs-corrupt/lists/alien-predator-timeline?sort=rank,asc
+        trek: https://trakt.tv/users/jmfslayer/lists/star-trek-chronology-updated?sort=rank,asc
+        middle: https://trakt.tv/users/oya-kesh/lists/middle-earth
+        star: https://trakt.tv/users/nichtlegacy/lists/star-wars-universe?sort=watched,desc #Everything in library, Shows + Movies + Family Guy + Robot Chicken + Project 4KXX
+        pokemon: https://trakt.tv/users/yoru14/lists/pokemon?sort=released,desc
+        wizard: https://trakt.tv/users/mcawesomevilles/lists/wizarding-world-chronological-order?sort=rank,asc
+        mimpossible: https://trakt.tv/lists/official/mission-impossible-collection?sort=rank,asc
+        terminator: https://trakt.tv/lists/official/the-terminator-collection?sort=rank,asc
+        spider: https://trakt.tv/users/rzepkowski/lists/spider-man-movies?sort=rank,asc
+        monster: https://trakt.tv/users/journey-over/lists/the-monsterverse?sort=rank,asc
+        resi: https://trakt.tv/users/krissykk/lists/resident-evil-collection?sort=rank,desc
+        sman: https://trakt.tv/users/rzepkowski/lists/superman-movies?sort=rank,asc
+        batm: https://trakt.tv/users/rzepkowski/lists/batman-movies?sort=rank,asc
+        pirate: https://trakt.tv/users/rzepkowski/lists/pirates-of-the-caribbean-movies?sort=rank,asc
+        indi: https://trakt.tv/lists/official/indiana-jones-collection?sort=rank,asc
+        apes: https://trakt.tv/users/bruinschris/lists/planet-of-the-apes?sort=rank,asc
+        hween: https://trakt.tv/users/rzepkowski/lists/halloween-movies?sort=rank,asc
+        saw: https://trakt.tv/users/rzepkowski/lists/saw-movies?sort=rank,asc
+        jckass: https://trakt.tv/users/behead974/lists/jackass?sort=rank,asc
+        chchong: https://trakt.tv/users/siskourso/lists/cheech-chong?sort=released,desc
+        friday: https://trakt.tv/users/rzepkowski/lists/friday-the-13th-and-a-nightmare-on-elm-street-movies?sort=rank,asc
+        askew: https://trakt.tv/users/wikid82/lists/the-view-askewniverse?sort=released,desc
+        prge: https://trakt.tv/users/rzepkowski/lists/the-purge-movies?sort=rank,asc
+        cornet: https://trakt.tv/lists/official/three-flavours-cornetto-trilogy-db5dc796-e810-4a5c-b6f9-2c43fddb9feb?sort=rank,asc
+        tformers: https://trakt.tv/users/strangerer/lists/transformers?sort=released,desc
+        scream: https://trakt.tv/lists/official/scream-collection?sort=rank,asc
+        scarymovie: https://trakt.tv/users/jmpichardo/lists/scary-movie?sort=released,desc
+        jpark: https://trakt.tv/lists/official/jurassic-park-collection?sort=rank,asc
+        dhard: https://trakt.tv/users/dinkysniff/lists/collection-the-die-hard-series?sort=released,desc
+        bfuture: https://trakt.tv/lists/official/back-to-the-future-collection?sort=rank,asc
+        rambo: https://trakt.tv/users/arachn0id/lists/rambo?sort=released,desc
+        mblack: https://trakt.tv/users/rzepkowski/lists/men-in-black-movies?sort=rank,asc
+        fdestination: https://trakt.tv/lists/official/final-destination-collection?sort=rank,asc
+        hgames: https://trakt.tv/lists/official/the-hunger-games-collection?sort=rank,asc
+        jwick: https://trakt.tv/lists/official/john-wick-collection?sort=rank,asc
+        matrix: https://trakt.tv/lists/official/the-matrix-collection?sort=rank,asc
+        conjurig: https://trakt.tv/users/arachn0id/lists/the-conjuring-universe?sort=released,desc
+        ghostbusters: https://trakt.tv/users/rzepkowski/lists/ghostbusters-movies?sort=rank,asc
+        bourne: https://trakt.tv/lists/official/the-bourne-collection?sort=rank,asc
+        mmax: https://trakt.tv/lists/official/mad-max-collection?sort=rank,asc
+        chucky: https://trakt.tv/users/rzepkowski/lists/child-s-play-movies?sort=rank,asc
+        texaschainsaw: https://trakt.tv/users/rzepkowski/lists/the-texas-chainsaw-massacre-movies?sort=rank,asc    
+        apie: https://trakt.tv/users/elieser49ers/lists/american-pie-franchise-chronological-order?sort=rank,asc
+        wturn: https://trakt.tv/users/bruinschris/lists/wrong-turn-1-7?sort=rank,asc
+        ## Shows
+        wdead: https://trakt.tv/users/fs-corrupt/lists/the-walking-dead-universe?sort=rank,asc
+      # check2
+      mdblist_url:
+        arrow: https://mdblist.com/lists/k0meta/external/15113
+        dca: https://mdblist.com/lists/k0meta/external/15405
+        dcu: https://mdblist.com/lists/k0meta/external/15107
+        fast: https://mdblist.com/lists/k0meta/external/9246
+        mummy: https://mdblist.com/lists/k0meta/external/9249
+        rocky: https://mdblist.com/lists/k0meta/external/9248
+        xmen: https://mdblist.com/lists/k0meta/external/9244
+        jbond: https://mdblist.com/lists/hdlists/james-bond-movies
+      # check3
+      image:
+        default: universe/<<key>>

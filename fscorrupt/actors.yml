@@ -1,0 +1,64 @@
+templates:
+  Actor:
+    smart_filter:
+      all:
+        actor: tmdb
+      sort_by: title.asc
+    tmdb_person: <<person>>
+    sort_title: "!201_<<collection_name>>"
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+    sync_mode: sync
+    summary: <<collection_name>>'s Films
+    collection_mode: hide_items
+
+collections:
+  Denzel Washington:
+    template: {name: Actor, person: 5292, poster: 116380}
+  Samuel L. Jackson:
+    template: {name: Actor, person: 2231, poster: 48966}
+  Morgan Freeman:
+    template: {name: Actor, person: 192, poster: 48939}
+  Nicolas Cage:
+    template: {name: Actor, person: 2963, poster: 116368}
+  Leonardo Di Caprio:
+    template: {name: Actor, person: 6193, poster: 116370}
+  Jason Statham:
+    template: {name: Actor, person: 976, poster: 310748}
+  Mark Wahlberg:
+    template: {name: Actor, person: 13240, poster: 239138}
+  Liam Neeson:
+    template: {name: Actor, person: 3896, poster: 125692}
+  Keanu Reeves:
+    template: {name: Actor, person: 6384, poster: 436483}
+  Tom Cruise:
+    template: {name: Actor, person: 500, poster: 150195}
+  Matt Damon:
+    template: {name: Actor, person: 1892, poster: 47461}
+  Adam Sandler:
+    template: {name: Actor, person: 19292, poster: 53382}    
+  Tom Hanks:
+    template: {name: Actor, person: 31, poster: 47480}    
+  Jim Carrey:
+    template: {name: Actor, person: 206, poster: 464665}        
+  Anne Hathaway:
+    template: {name: Actor, person: 1813, poster: 464632}     
+  Ryan Reynolds:
+    template: {name: Actor, person: 10859, poster: 125984}     
+  Robin Williams:
+    template: {name: Actor, person: 2157, poster: 116364}     
+  Ryan Gosling:
+    template: {name: Actor, person: 30614, poster: 136161}        
+  Jeff Goldblum:
+    template: {name: Actor, person: 4785, poster: 125817}           
+  Arnold Schwarzenegger:
+    template: {name: Actor, person: 1100, poster: 47415}     
+  Clint Eastwood:
+    template: {name: Actor, person: 190, poster: 447160}      
+  Ben Stiller:
+    template: {name: Actor, person: 7399, poster: 150150}      
+  Owen Wilson:
+    template: {name: Actor, person: 887, poster: 125611}              
+  Matthew McConaughey:
+    template: {name: Actor, person: 10297, poster: 252246}    
+  Jake Gyllenhaal:
+    template: {name: Actor, person: 131, poster: 252237}
