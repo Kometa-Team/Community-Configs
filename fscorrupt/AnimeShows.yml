@@ -51,7 +51,7 @@ collections:
     template: {name: Chart Alpha, num: 4}
     tmdb_popular: 40
     imdb_search:
-      type: movie, tv_movie, documentary, short
+      type: movie, tv_movie, short
       sort_by: popularity.desc
       limit: 40
     summary: Popular Movies across the internet, curated from TMDB and IMDb.
