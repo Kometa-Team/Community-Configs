@@ -7,7 +7,7 @@ templates:
   4K:
     default:
       4K: false
-    allowed_library_types: <<4K>> 
+    allowed_library_types: <<4K>>
 
 overlays:
   4K_banner:
@@ -45,7 +45,7 @@ overlays:
     plex_search:
       all:
         audience_rating.gte: 6.5
-        
+
   rating_mid:
     overlay:
       name: Rating_Mid_BG

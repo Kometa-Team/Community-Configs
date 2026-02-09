@@ -2,7 +2,7 @@ overlays:
 
 ############################
 #          ICHIMOKU        #
-############################ 
+############################
 
    DV:
     overlay: DV
@@ -33,7 +33,7 @@ overlays:
     overlay: DV-DolbyTrueHDAtmos
     plex_search:
       all:
-        collection:  DV-DolbyTrueHDAtmos 
+        collection:  DV-DolbyTrueHDAtmos
    DV-dtsX:
     overlay: DV-dtsX
     plex_search:
@@ -43,7 +43,7 @@ overlays:
     overlay: DV-dtsHD
     plex_search:
       all:
-        collection: DV-dtsHD                    
+        collection: DV-dtsHD
    4K:
     overlay: 4K_banner
     plex_search:
@@ -73,7 +73,7 @@ overlays:
     overlay: 4K-DolbyDigitalPlus
     plex_search:
       all:
-        collection: 4K-DolbyDigitalPlus        
+        collection: 4K-DolbyDigitalPlus
    4K-DolbyDigitalPlusAtmos:
     overlay: 4K-DolbyDigitalPlusAtmos
     plex_search:
