@@ -13,6 +13,9 @@ libraries:
     # Collection files to process
     collection_files:
     - file: config/TVShows.yml
+    - default: emmy
+      template_variables:
+        schedule: weekly(sunday)
     #- file: config/Genre.yml
     # Overlay files and configurations
     overlay_files:
@@ -99,6 +102,9 @@ libraries:
     # Collection files to process
     collection_files:
     - file: config/Movies.yml
+    - default: emmy
+      template_variables:
+        schedule: weekly(sunday)
     #- file: config/collections.yml
     # Overlay files and configurations
     overlay_files:
@@ -168,6 +174,9 @@ libraries:
     - file: config/movies-list.yml
     - file: config/actors.yml
     - file: config/directors.yml
+    - default: emmy
+      template_variables:
+        schedule: weekly(sunday)
     # Overlay files and configurations
     overlay_files:
     # Common Sense Media overlay
@@ -235,6 +244,9 @@ libraries:
     - file: config/movies-list.yml
     - file: config/actors.yml
     - file: config/directors.yml
+    - default: emmy
+      template_variables:
+        schedule: weekly(sunday)
     # Overlay files and configurations
     overlay_files:
     # Common Sense Media overlay
@@ -295,6 +307,9 @@ libraries:
     collection_files:
     - file: config/Movies.yml
     - file: config/show-list.yml
+    - default: emmy
+      template_variables:
+        schedule: weekly(sunday)
     # Overlay files and configurations
     overlay_files:
     # Common Sense Media overlay
@@ -358,6 +373,9 @@ libraries:
     collection_files:
     - file: config/TVShows.yml
     - file: config/show-list.yml
+    - default: emmy
+      template_variables:
+        schedule: weekly(sunday)
     # Overlay files and configurations
     overlay_files:
     #- reapply_overlays: true
@@ -442,6 +460,9 @@ libraries:
     # Collection files
     collection_files:
     - file: config/KidsShows.yml
+    - default: emmy
+      template_variables:
+        schedule: weekly(sunday)
     # Overlay files and configurations
     overlay_files:
     #- reapply_overlays: true
@@ -523,6 +544,9 @@ libraries:
     # Collection files
     collection_files:
     - file: config/AnimeShows.yml
+    - default: emmy
+      template_variables:
+        schedule: weekly(sunday)
     # Overlay files and configurations
     overlay_files:
     #- reapply_overlays: true
@@ -607,7 +631,7 @@ playlist_files:
     use_walking: true
     radarr_add_missing_walking: false
     sonarr_add_missing_walking: false                                    # Can be individually specified per library as well
-    
+
 # ============================================================================
 # Global Settings - Can be overridden per library
 # ============================================================================
@@ -615,7 +639,7 @@ settings:
   # Caching options
   cache: true
   cache_expiration: 60
-  
+
   # Asset settings
   asset_directory: /assets
   asset_folders: true
@@ -627,20 +651,20 @@ settings:
   show_missing_season_assets: true
   show_missing_episode_assets: false
   show_asset_not_needed: false
-  
+
   # Sync and collection settings
   sync_mode: sync
   default_collection_order:
   minimum_items: 1
   delete_below_minimum: false
   delete_not_scheduled: false
-  
+
   # Scheduling
   run_again_delay: 0
-  
+
   # Release settings
   missing_only_released: true
-  
+
   # Display options
   show_unconfigured: true
   show_unmanaged: false
@@ -649,33 +673,33 @@ settings:
   show_missing: true
   only_filter_missing: false
   show_missing_assets: true
-  
+
   # Report settings
   save_report: false
-  
+
   # API settings
   tvdb_language: eng
   ignore_ids:
   ignore_imdb_ids:
   item_refresh_delay: 0
-  
+
   # Playlist settings
   playlist_sync_to_users: all
   playlist_report: false
   playlist_exclude_users: Louisa, Peter
-  
+
   # Advanced options
   custom_repo:
   verify_ssl: true
   check_nightly: false
-  
+
   # Execution order
   run_order:
   - operations
   - metadata
   - collections
   - overlays
-  
+
   # Overlay settings
   overlay_artwork_filetype: jpg
   overlay_artwork_quality: 90
@@ -689,12 +713,12 @@ plex:
   url: http://plex:32400
   token:
   timeout: 360
-  
+
   # Maintenance options
   clean_bundles: false
   empty_trash: false
   optimize: false
-  
+
   # Cache options
   db_cache:
   verify_ssl:
@@ -713,7 +737,7 @@ webhooks:
 # TMDb (The Movie Database) Configuration
 # ============================================================================
 tmdb:
-  apikey: 
+  apikey:
   language: en
   cache_expiration: 60
   region:
@@ -724,13 +748,13 @@ tmdb:
 tautulli:
   # Tautulli API settings
   url: http://tautulli:8181
-  apikey: 
+  apikey:
 
 # ============================================================================
 # OMDb (Open Movie Database) Configuration
 # ============================================================================
 omdb:
-  apikey: 
+  apikey:
   cache_expiration: 60
 
 # ============================================================================
@@ -739,9 +763,9 @@ omdb:
 radarr:
   # Radarr server connection
   url: http://radarr:7878
-  token: 
+  token:
   version: v4
-  
+
   # Download settings
   root_folder_path: /mnt/unionfs/Movies
   monitor: false
@@ -750,11 +774,11 @@ radarr:
   tag: kometa
   search: false
   add_existing: false
-  
+
   # Path mapping
   radarr_path:
   plex_path:
-  
+
   # Movie management
   add_missing: false
   upgrade_existing: false
@@ -767,9 +791,9 @@ radarr:
 sonarr:
   # Sonarr server connection
   url: http://sonarr:8989
-  token: 
+  token:
   version: v4
-  
+
   # Download settings
   root_folder_path: /mnt/unionfs/Shows
   monitor: none
@@ -781,11 +805,11 @@ sonarr:
   search: false
   cutoff_search: false
   add_existing: false
-  
+
   # Path mapping
   sonarr_path:
   plex_path:
-  
+
   # Show management
   add_missing: false
   upgrade_existing: false
@@ -796,14 +820,14 @@ sonarr:
 # Trakt Configuration (Social tracking)
 # ============================================================================
 trakt:
-  client_id: 
-  client_secret: 
+  client_id:
+  client_secret:
   # OAuth authentication tokens
   authorization:
-    access_token: 
+    access_token:
     token_type: Bearer
     expires_in: 7889238
-    refresh_token: 
+    refresh_token:
     scope: public
     created_at: 1759861193
   pin:
@@ -813,5 +837,5 @@ trakt:
 # MDBList Configuration (Database/list services)
 # ============================================================================
 mdblist:
-  apikey: 
+  apikey:
   cache_expiration: 60

@@ -33,8 +33,12 @@ templates:
       title: feature
       limit: 100
     imdb_search:
-    - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>&sort=user_rating,desc
-      limit: <<limit>>
+      - type: <<title>>
+        release.gte: 1990-01-01
+        rating.gte: 5.0
+        votes.gte: 100000
+        genre: <<genre>>
+        limit: <<limit>>
     sort_title: +++_<<collection_name>>
     sync_mode: sync
     collection_order: alpha
