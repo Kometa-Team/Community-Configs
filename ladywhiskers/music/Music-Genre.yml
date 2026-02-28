@@ -9,6 +9,7 @@ templates:
     builder_level: album
     sort_title: +_<<collection_name>>
     sync_mode: sync
+    validate: false #to skip unused genres.
     # A smart filter is used to find albums with the specified genre tag.
     smart_filter:
       miminum_items: 2
