@@ -1,48 +1,62 @@
-#######################################
-#          TV Topics                  #
-#######################################
+# This file defines collections for TV shows based on various topics.
+# Like the other topic and subgenre files, these are not meant to be visible
+# collections, but rather a way to tag shows with a specific topic.
+# This is achieved by using 'build_collection: false' and 'item_genre: <<collection_name>>'.
 
 templates:
+  # A generic template for creating topic-based collections.
   Collection:
     optional:
       - show
       - poster
     tvdb_show: <<show>>
-    #url_poster: <<poster>>
     sync_mode: sync
     collection_order: audience_rating.desc
     sort_title: "!060_<<collection_name>>"
     schedule: weekly(tuesday)
+    # This is the key part: instead of building a collection, it tags the items
+    # with the collection's name as a genre.
     item_genre: <<collection_name>>
     build_collection: false
 
 collections:
+  # Each of the following blocks defines a topic.
+  # The 'template' key is used to call the 'Collection' template.
+  # The shows are sourced from IMDb lists.
   Anthology:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/WhoDat104/Genres/main/Anthology.jpg}
+    template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls567937024/
+
   Apocalypse:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Apocalypse.jpg}
+    template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls527128700/
+
   Historical Fiction:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Historical%20Fiction.jpg}
+    template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls527147593/
+
   Medical:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Medical.jpg}
-    imdb_list: 
+    template: {name: Collection}
+    imdb_list:
         - https://www.imdb.com/list/ls064005250/
         - https://www.imdb.com/list/ls567394825/
+
   Slice of Life:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Slice%20of%20Life.jpg}
+    template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls527147618/
+
   Spy:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Spy.jpg}
+    template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls527147789/
+
   Stephen King:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Stephen%20King.jpg}
+    template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls567399416/
+
   Supernatural:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Supernatural.jpg}
+    template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls527140144/
+
   Time Travel:
-    template: {name: Collection} #poster: https://raw.githubusercontent.com/kometa-team/Default-Images/master/genre/Time%20Travel.jpg}
+    template: {name: Collection}
     imdb_list: https://www.imdb.com/list/ls527147299/

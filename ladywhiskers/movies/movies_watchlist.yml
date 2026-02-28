@@ -8,6 +8,7 @@ templates:
     collection_order: custom
     sort_title: "!0001_<<collection_name>>"
     collection_mode: show
+    visible_library: true
     visible_home: true
 
 collections:
@@ -55,3 +56,6 @@ collections:
       all:
         writer: tmdb
     tmdb_person: 592851
+    visible_home: true
+    visible_shared: true
+    visible_library: true

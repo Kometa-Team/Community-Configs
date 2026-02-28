@@ -6,7 +6,7 @@ templates:
     delete_not_scheduled: false
     limit: 250
     #sort_title: "+130_<<collection_name>>"
-    sync_mode: sync
+    #sync_mode: sync
     visible_home: false
     visible_library: false
     visible_shared: false
@@ -1249,8 +1249,6 @@ collections:
     template: {
                     keyword: "samurai,sword-fight",
                     language: "en",
-                    letterboxd_list_details_url_1: "https://letterboxd.com/jhcrotinger/list/samurai/by/rating/",
-                    letterboxd_list_details_limit_1: 250,
                     letterboxd_list: "theme-samurai",
                     name: sub_genre,
                     rating.gte: 2,
@@ -1381,7 +1379,7 @@ collections:
     schedule: weekly(saturday)
     #summary: "Top rated movies in Stop-Motion"
     template: {
-                    keyword: "stop-motion",
+                    keyword: "stop-motion-animation",
                     language: "en",
                     letterboxd_list_details_url_1: "https://letterboxd.com/savage_/list/stop-motion/by/rating/",
                     letterboxd_list_details_limit_1: 250,
@@ -1392,7 +1390,7 @@ collections:
                     votes.gte: 100
                 }
 
-  Superhero":
+  Superhero:
     #summary: "Top rated movies in Superhero"
     #url_poster: https://raw.githubusercontent.com/0x5f3/pmm.config/assets/_subgenre_top/subgenre_top_superhero.png
     schedule: weekly(saturday)
