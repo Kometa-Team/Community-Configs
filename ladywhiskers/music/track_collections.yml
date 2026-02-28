@@ -19,6 +19,8 @@ templates:
       sort_by: plays.desc
       all:
         track_mood: <<value>>
+        
+collections: {} #placeholder
 
 # The following dynamic collection is commented out. If it were active, it would
 # create a collection for each mood tag found in the library, containing the
