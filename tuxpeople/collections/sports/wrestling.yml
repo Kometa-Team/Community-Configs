@@ -1,0 +1,70 @@
+templates:
+  generic_list:
+    smart_label: title.asc
+    sort_title: +2_<<collection_name>>
+    visible_home: true
+    visible_shared: true
+
+collections:
+  AEW PPV:
+    template:
+      name: generic_list
+    imdb_list:
+    - https://www.imdb.com/list/ls044462968/
+    - https://www.imdb.com/list/ls560016464/
+    - https://www.imdb.com/list/ls523574560/
+    - https://www.imdb.com/list/ls509051450/
+    - https://www.imdb.com/list/ls501229163/ # Top Rated AEW PPVs
+    tmdb_company: 119828
+    item_label: aew,wrestling
+    item_radarr_tag: aew,wrestling
+    radarr_tag: aew,wrestling
+    item_sonarr_tag: aew,wrestling
+    sonarr_tag: aew,wrestling
+    radarr_folder: "/data/media/movies/wrestling"
+    radarr_quality_profile: Web 1080p DL ENG
+    filters:
+      year.gte: 2019 # AEW started in 2019
+      duration.gte: 50
+      tmdb_title.not:
+      - "Zero Hour"
+      - "Buy In"
+      - "Buy-In"
+    url_poster: https://i.imgur.com/Q3gZvGl.jpeg
+    radarr_add_missing: true
+  WWE PPV:
+    template:
+      name: generic_list
+    imdb_list:
+    - https://www.imdb.com/list/ls066790094/
+    - https://www.imdb.com/list/ls523285888/
+    - https://www.imdb.com/list/ls523039717/
+    - https://www.imdb.com/list/ls538431085/
+    - https://www.imdb.com/list/ls021456885/
+    - https://www.imdb.com/list/ls045736258/ # Top Rated WWE PPVs
+    item_label: wwe,wrestling
+    item_radarr_tag: wwe,wrestling
+    radarr_tag: wwe,wrestling
+    item_sonarr_tag: wwe,wrestling
+    sonarr_tag: wwe,wrestling
+    radarr_folder: "/data/media/movies/wrestling"
+    radarr_quality_profile: Web 1080p DL ENG
+    filters:
+      year.gte: 2020 # Modern WWE era
+      duration.gte: 50
+    url_poster: https://i.imgur.com/3eNUU6q.jpeg
+    radarr_add_missing: true
+  WWE Wrestlemania:
+    template:
+      name: generic_list
+    imdb_list:
+    - https://www.imdb.com/de/list/ls088281187/
+    item_label: wwe,wrestling,wrestlemania
+    item_radarr_tag: wwe,wrestling
+    radarr_tag: wwe,wrestling
+    item_sonarr_tag: wwe,wrestling
+    sonarr_tag: wwe,wrestling
+    radarr_folder: "/data/media/movies/wrestling"
+    radarr_quality_profile: Web 1080p DL ENG
+    url_poster: https://i.imgur.com/3eNUU6q.jpeg
+    radarr_add_missing: true

@@ -7,7 +7,7 @@ templates:
     visible_shared: true
 collections:
   Trending:
-    template: { name: Chart, num: 1 }
+    template: {name: Chart, num: 1}
     trakt_trending: 40
     tmdb_trending_daily: 40
     tmdb_trending_weekly: 40
@@ -15,14 +15,14 @@ collections:
     summary: Movies trending across the internet
     url_poster: https://i.imgur.com/cxnU9ZL.png
   Top Rated:
-    template: { name: Chart, num: 2 }
+    template: {name: Chart, num: 2}
     imdb_chart: top_movies
     tmdb_top_rated: 250
     smart_label: critic_rating.desc
     summary: Top Rated Movies, according to IMDB and tmdb.
     url_poster: https://i.imgur.com/AWxpE67.png
   Popular:
-    template: { name: Chart, num: 3 }
+    template: {name: Chart, num: 3}
     smart_label: year.desc
     tmdb_popular: 40
     imdb_chart: popular_movies
@@ -36,7 +36,7 @@ collections:
   #    summary: Movies That Everyone is Watching
   #    url_poster: https://i.imgur.com/8cxTJ1b.png
   Oscar Best Picture-Winning Movies:
-    template: { name: Chart, num: 5 }
+    template: {name: Chart, num: 5}
     imdb_search:
       event.winning: oscar_picture
       sort_by: year.desc
@@ -45,7 +45,7 @@ collections:
     smart_label: year.desc
     url_poster: https://theposterdb.com/api/assets/75802
   Oscar Winning Movies:
-    template: { name: Chart, num: 6 }
+    template: {name: Chart, num: 6}
     imdb_search:
       event.winning: oscar
       sort_by: year.desc

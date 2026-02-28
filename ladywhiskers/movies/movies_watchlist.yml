@@ -10,45 +10,45 @@ templates:
     collection_mode: show
     visible_library: true
     visible_home: true
-    visible_shared: true
 
 collections:
   Top Family Movie Picks:
-    template: {name: Watchlist}
+    template: Watchlist
     trakt_list: https://trakt.tv/users/fuschaitea/lists/top-family-movie-picks
 
   Laura's Watchlist:
-    template: {name: Watchlist}
+    template: Watchlist
     plex_watchlist: critic_rating.desc
 
   Watch with Britty:
-    template: {name: Watchlist}
+    template: Watchlist
     trakt_list: https://trakt.tv/users/fuschaitea/lists/movies-to-watch-with-britty
 
   Recommendations for Mum:
-    template: {name: Watchlist}
-    trakt_list:
+    trakt_list: 
       - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-movies-couchmoney-tv
       - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-tv-shows-couchmoney-tv
-      - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+      - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum 
+    sync_mode: sync
+    collection_order: custom
+    collection_mode: show
+    sort_title: "!0001_<<collection_name>>"
+    visible_home: range(01/01-12/31)
+    visible_shared: range(01/01-12/31)
 
   🍿 What Movie Should I Watch?:
-    smart_filter:
-      sort_by: random
-      all:
-        unplayed: true
-        release: 3650
-      limit: 5
-    url_poster: https://i.imgur.com/OMrEyGg.jpeg
-    collection_mode: hide
-    sort_title: "+1_1_next"
-    visible_library: true
-    visible_home: true
-    visible_shared: true
-    schedule: weekly(wednesday)
+      smart_filter:
+        sort_by: random
+        all:
+          unplayed: true
+          release: 3650
+        limit: 5
+      url_poster: https://i.imgur.com/OMrEyGg.jpeg
+      collection_mode: hide
+      sort_title: "+1_1_next"
+      visible_library: true
+      visible_home: true
+      schedule: weekly(wednesday)
 
   Julia Donaldson:
     smart_filter:

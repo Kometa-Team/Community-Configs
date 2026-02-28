@@ -1,0 +1,2613 @@
+############################
+#        LGBT / Pride      #
+############################
+
+# Note: You need at least 1 film in your collection with LGBTQ+ in its Plex Genres or it may fail
+# OR remove all LGBTQ+ in the 'item_genre:' below.
+
+templates:
+  Collection:
+    optional:
+      - poster
+    url_poster: <<poster>>
+    sync_mode: sync
+    collection_order: release
+    sort_title: "+!016_<<collection_name>>"
+
+collections: 
+
+################ LGBTQ+ Film Collections / Sets ########
+
+  Another Gay Movie Collection:   # 
+     template:
+      name: Collection  
+     tmdb_collection: 102008 # https://www.themoviedb.org/collection/102008-another-gay-movie-collection
+     url_poster: "https://www.themoviedb.org/t/p/w1280/xbPefIXNaCwLcSdiHkOOmGQdYg5.jpg"
+     sort_title: "!AnGay" 
+     item_genre: [ LGBTQ+, Comedy, Romance ] 
+     item_label: [ LGBTQ+, LGBT  ] 
+     summary: "Both Another Gay movies including Another Gay Movie and Another Gay Sequel. Laugh out loud gay comedy bitches!"
+
+  Bearcity Collection:   # 
+     template:
+      name: Collection  
+     tmdb_collection: 192999 # https://www.themoviedb.org/collection/192999-bearcity-collection
+     url_poster: "https://www.themoviedb.org/t/p/w1280/wnUhC9KvYtsELi1jsJb1D3x4HNt.jpg"
+     sort_title: "!Bear" 
+     item_genre: [ LGBTQ+, Drama, Comedy, Romance ] 
+     item_label: [ LGBTQ+ ] 
+     summary: "The BearCity films, directed by Douglas Langway, beginning with Bearcity in 2010. Romance can be hairy."
+
+  Boys Briefs 1:   # https://www.imdb.com/title/tt0346647/mediaviewer/rm4285546753/?ref_=tt_ph_2
+     imdb_id: 
+      - tt0344787  # The Absolution of Anthony (1997) 
+      - tt0257187  # Smear (1998)
+      - tt0347028  # Front Room (1997)
+      - tt0346961  # Fairy Tale (1998)
+      - tt0346979  # Ferkel (also Piglets) (1999)
+      - tt0348110  # Stanley Beloved (1998)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/cIqAQiNFRI4wfUrBYM6Ks7I0t6j.jpg"
+     sort_title: "!BB01" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT, Shorts, Boys Briefs ] 
+     summary: "Reunion of six short films having homosexuality as theme: The Absolution of Anthony, by Dean Slotar, depicting a 16-year-old boy living with a Catholic grandfather in Bronx; Smear, by Sam Zalutsky, telling the story of a boy who is in love with a straight friend; Front Room, by Pierre Yves Clouin, an experimental short showing a gay physical relationship; Fairy Tale, by David Kittredge, when a man decides to introduce his boyfriend to his homophobic family; Ferkel or Piglets, by Luc Feit, showing an old lady who tries to ruin a sexual encounter; and Stanley Beloved, by Simon Chung, telling the story of a boy who, before going to study abroad, decides to spend a summer day with his best friend."
+
+  Boys Briefs 2:   # in " " to accomidate the : in the name
+     imdb_id: 
+      - tt0291887  # Doors Cut Down (2016) {original title-En malas compañías}
+      - tt0272034  # Chicken (2001)
+      - tt0231210  # Back Room (1999)
+      - tt0326564  # *Breakfast {original title-Frühstück?} ( )
+      - tt0303403  # Touch (2002)
+      - tt0283033  # Take-Out (2000)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/2tXqtAGrrKIfGOjOcG1QKxYxYvG.jpg"
+     sort_title: "!BB02" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT, Shorts, Boys Briefs ] 
+     summary: "The long-awaited sequel to Boys Briefs, the successful compilation of six outstanding short films about gay first love. Hosted by DANNY ROBERTS, star of MTV's THE REAL WORLD NEW ORLEANS. Films included are: Doors Cut Down [En malas compañías] (2000); Chicken (2001); Back Room (1999); Breakfast [Frühstück] (2002); Touch (2001); and Take-Out (2000)"
+
+  Boys Briefs 3:   
+     imdb_id: 
+      - tt0489453  # Boys Grammar (2005)
+      - tt0464083  # Latch key (2024)
+      - tt0463668  # Postmortem (2005)
+      - tt0451697  # David (2005)
+      - tt0476470  # Little Boy Blues (2005)
+      - tt0421722  # Between the Boys (2004)
+      - tt0819684  # Cabalerno (2006)
+      - tt0469183  # Shakespeare’s Sonnets (2005)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/hbN5mPkmomYtKUuV2idmLzUG5R9.jpg"
+     sort_title: "!BB03" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT, Shorts, Boys Briefs ] 
+     summary: "Getting intimate can be challenging, especially when two guys are involved. Explore the sometimes charming, sometimes sadistic world of hooking up in Boys Briefs 3: Between The Boys. From the very first glance in Cabalerno to post-breakup sex in Postmortem, the films of this most recent Boys Briefs compilation explore the wild, sometimes conniving things boys will do to get what they want. 8 Shorts: Cabalerno (2006); Shakespeare's Sonnets (2005); David (2005); Boys Grammar (2005); Latch Key (2005); Little Boy Blues (2005); Between the Boys (2004); Postmortem (2005)."
+
+  Boys Briefs 4:   
+     imdb_id: 
+      - tt0345440  # Into the Night (Short 2002)
+      - tt0434818  # Boy (short 2004)
+      - tt0453673  # Gigolo (2005)
+      - tt0426420  # Build (Short 2004)
+      - tt0330831  # Rock Bottom (2002)
+      - tt0462891  # Gold (2005)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/jwVVI3oouMh0NDJHXVqZNyr7aRo.jpg"
+     sort_title: "!BB04" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT, Shorts, Boys Briefs ] 
+     summary: "BOYS BRIEFS 4 is a collection of six short films about gay male hustlers. While sex plays a key role in these films they aren't mere exploitation vehicles. Instead BOYS BRIEFS 4 reveals the true experiences of the hustler resulting in a series of slice-of-life vignettes that are surprisingly poignant and emotionally compelling."
+
+  Boys Briefs 5:   
+     imdb_id: 
+      - tt1166805  # You, Me & Him (Short 2007) 
+      - tt1059893  # Benny's gym (2007)
+      - tt1541844  # Flatmates [Kompisar] (2007)
+      - tt1015994  # Kali Ma (2007)
+      - tt1068268  # Mr_Right_22 (2007)
+      - tt1082142  # Yeah No Definitely (2007)
+      - tt0782867  # Secrets (2007) {Original title-Ha-Sodot}     
+     url_poster: "https://www.themoviedb.org/t/p/w1280/65YOZ5kXynsGhsaNjJMlpydWwl2.jpg"
+     sort_title: "!BB05" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT, Shorts, Boys Briefs ] 
+     summary: "The successful short film compilation series continues with six outstanding films focused on school and college-age youth. 6 Shorts: Benny's gym (2007); Flatmates [Kompisar] (2007); Kali Ma (2007); Mr_Right_22 (2007); Secrets (2007); Yeah No Definitely (2007)."
+
+  The Boy Culture Collection:
+    template:
+      name: Collection
+    imdb_id:
+      - tt0433350   # Boy Culture (2006)
+      - tt10267912  # Boy Culture: Generation X (2021– TV miniseries / feature cut)
+    url_poster: "https://www.themoviedb.org/t/p/w1280/96A8TJwIBD0Gp5dr2ELix61UztH.jpg"
+    sort_title: "!BoyCulture"
+    item_genre: [ LGBTQ+, Drama, Romance ]
+    item_label: [ LGBTQ+, LGBT ]
+    summary: "Q. Allan Brocka’s cult favorite about an escort juggling love and intimacy, plus the 2021 continuation 'Boy Culture: Generation X'."
+
+  Boys Life 1:   # 
+     imdb_id: 
+      - tt0107851  # Pool Days (1993)
+      - tt0109846  # A Friend of Dorothy (1994)
+      - tt0101737  # The Disco Years (1991) 
+     url_poster: "https://www.themoviedb.org/t/p/w1280/jXKecGbSp36C486myi1pbe6EKAI.jpg"
+     sort_title: "!BL01" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT, Shorts, Boys Life ] 
+     summary: "Stories of Love, Lust, and Liberation. A collection of LGBTQ short film compilations. Each of the three short films in this collection presents a young gay man at the threshold of adulthood."
+
+  Boys Life 2:   
+     imdb_id: 
+      - tt0119735  # Must Be the Music (1996)
+      - tt0119812  # Nunzio's Second Cousin (1994)
+      - tt0112321  # Alkali, Iowa (1995)
+      - tt0225460  # The Dadshuttle (1996)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/xwE1BIR3JU1B9Hpm7lG3KHHjVdf.jpg"
+     sort_title: "!BL02" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT, Shorts, Boys Life ] 
+     summary: "Compilation of four short films, 'Must Be the Music', 'Nunzio's Second Cousin', 'Alkali, Iowa', and 'The Dadshuttle', of gay interest."
+
+  Boys Life 3. Third time's a charm:   
+     imdb_id: 
+      - tt0119372  # Inside out (1996)
+      - tt0168912  # Just in time (1998)
+      - tt0191181  # Hitch (Short 2009)
+      - tt0127505  # Majorettes in Space (1996) {Original title-Des majorettes dans l'espace}
+      - tt0212555  # $30 (short 1999)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/8aTB7Gj7L2iC08GPjn6IqUW2x9L.jpg"
+     sort_title: "!BL03" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT, Shorts, Boys Life ] 
+     summary: "Third time's a charm:Jason Gould satirizes coming out in Hollywood in Inside Out, starring Alexis Arquette and papa Elliot Gould. Lane Janger's Just One Time was a festival favorite recently expanded into a feature film that turns the tables on a groom-to-be and his fantasies of sex with two women. Bradley Rust Gray's Hitch follows two attractive young guys on a dizzying road trip that leads them toward sexual self-discovery. David Fournier's Majorettes in Space is a witty French spoof of post-modern sex, romance, relationships, the Pope and baton-twirling majorettes. And, Gregory Cooke's $30 is the bittersweet story of a closeted teen presented with a young prostitute on his 16th birthday."
+  
+  Boys Life 4. Four Play:   
+     imdb_id: 
+      - tt0316147  # L.T.R. (2002)
+      - tt0310124  # O Beautiful (2002)
+      - tt0319122  # Bumping Heads (2002)
+      - tt0367137  # This Car Up (2003)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/gmQOT66uyXvwzql6lK6FUEcVuzZ.jpg"
+     sort_title: "!BL04" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT Shorts, Boys Life ] 
+     summary: "Lust, Love, Libidos and Liberation: Four sexy groundbreaking gay short films of lust, love, libidos, and liberation."
+
+  Boys Life 5:   
+     imdb_id: 
+      - tt0450256  # Dare (2005) 
+      - tt0192028  # Fishbelly White (1998)
+      - tt0312269  # Late Summer (2001)
+      - tt0098993  # Time Off / (aka After (1990)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/h9VzrmB0JVwd4EnbrVPfud2mlK9.jpg"
+     sort_title: "!BL05" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT, Shorts, Boys Life ] 
+     summary: "Boys Life 5 is the fifth installment of the Boys Life series, which collects LGBT-related short films. Distributed by Strand Releasing. This gay anthology of short films about unrequited love should strike a universal chord with audiences of all persuasions. 4 Shorts: Dare (2005); Fishbelly White (1998); Late Summer (2001); Time Off (1990)."
+
+  Boys Life 6:   
+     imdb_id: 
+      - tt0492940  # Bugcrush (2006) 
+      - tt0814071  # Davy and Stu (2006)
+      - tt0924133  # Doorman (2006)
+      - tt1039964  # Heartland (2007)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/8GF4WrcejmqUhnglJcaO4e1FyH4.jpg"
+     sort_title: "!BL06" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT, Shorts, Boys Life ] 
+     summary: "Anthology of four gay-themed stories centered around the idea of first-time crushes."
+  
+  Boys Life 7:   
+     imdb_id: 
+      - tt0492974  # First Date (2006)
+      - tt1419747  # Raw Love (2008) {original title-Amor crudo}
+      - tt0392797  # Spokane (2004)
+      - tt1238780  # The Young and Evil (2008)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/eeewmhu0OP1yfhXA6xouH4nE0f9.jpg"
+     sort_title: "!BL07" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ LGBTQ+, LGBT, Shorts, Boys Life ] 
+     summary: "A compilation of four gay shorts from Sundance includes a story of a disturbed black teen trying to seduce a much older AIDS prevention counselor; and a story of high school seniors pondering end of school and the end of their secret love."
+
+  Boys Love (Japan) Collection:
+    template:
+      name: Collection
+    imdb_id:
+      - tt1235414   # Boys Love (2006)
+      - tt1417097   # Boys Love: Gekijôban / Schoolboy Crush (2007)
+    url_poster: "https://www.themoviedb.org/t/p/w1280/g22DsZFq0uY3tbRC01Jzz3UnmHa.jpg"  
+    sort_title: "!BoysLoveJP"
+    item_genre: [ LGBTQ+, Drama, Romance ]
+    item_label: [ LGBTQ+, LGBT ]
+    summary: "Kotaro Terauchi’s BL duology: the 2006 DTV hit and its 2007 theatrical remake 'Boys Love: The Movie' (aka 'Schoolboy Crush')."
+
+  Boys On Film 1. Hard Love:   
+     imdb_id: 
+       - tt1073162  # Cowboy Forever (2006) liver Scherz and Pit Bukowski; Håkon Liu's
+       - tt1054488  # Gay Zombie (2007)
+       - tt0985686  # Le weekend (2007)
+       - tt9520770  # Packed Lunch (2005)
+       - tt1188722  # Mirror Mirror (2008)
+       - tt1687264  # Scarred (2007)
+       - tt1057518  # Serene Hunter (2007)
+       - tt0800225  # Summer (2006)
+       - tt0983244  # VGL-Hung! (2007)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/hx1nG4zfyVrVJ0NCGlf9lfJc7Au.jpg"
+     sort_title: "!BoF01"
+     item_genre: [ LGBTQ+ ]
+     item_label: [ Boys on Film, Boys on Film 1, LGBTQ+, LGBT, Shorts ]  
+     summary: "Created by gay directors and actors, Boys On Film features numerous award-winning shorts that deal with all aspects of gay life"
+
+  Boys On Film 2. In Too Deep:   
+     imdb_id: 
+     - tt1339071  # Cowboy (2008)
+     - tt1116028  # Bramadero (2007)
+     - tt1090758  # Futures (and Derivatives) (2007)
+     - tt1255881  # Love Bite (2008)
+     - tt1355203  # The Island (2009)
+     - tt1139978  # Weekend in the Countryside (2007) {Original title-Week-end à la campagne}
+     - tt1419715  # Working It Out (2007)
+     - tt0971205  # Lucky Blue (2007)
+     - tt1015994  # Kali Ma
+     url_poster: "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/9kRMNTXUZyLNnUuCkz0Qh27m4EB.jpg"
+     sort_title: "!BoF02" 
+     item_genre: [ LGBTQ+ ]
+     item_label: [ Boys on Film, Boys on Film 2, LGBTQ+, LGBT, Shorts ] 
+     summary: "A scintillating and sexy collection of shorts that proves that queer filmmaking is still as fresh and exciting as ever"
+
+  Boys On Film 3. American Boy:   
+     imdb_id:
+      - tt1433081  # Astoria, Queens (2009)
+      - tt0492940  # Bugcrush (2006)
+      - tt1342854  # Dish (2009)
+      - tt1238780  # The Young and Evil
+      - tt1403123  # Area X (2007)
+      - tt1244567  # In the Closet (2008)
+      - tt0450256  # Dare (2005)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/280s3t3yqbYRNWFxAVM33ggFIr0.jpg"
+     sort_title: "!BoF03" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 3, LGBTQ+, LGBT, Shorts ] 
+     summary: "Boys on Film crosses the Atlantic to bring you a bevy of intriguing and genre-busting shorts from the land of the free. Starring Michael Cassidy (Smallville, The OC), Aaron Michael Davies (Another Gay Sequel), Donald Cumming (The Virgins) and porn star Brent Corrigan, these award-winning shorts from East coast to West side reveal that there is more to these American boys than meets the eye."
+   
+  Boys On Film 4. Protect Me From What I Want :   
+     imdb_id:  
+        - tt1494794  # My Name Is Love (2008)
+        - tt0463668  # Postmortem (2005)
+        - tt1199471  # Heiko (2008) 
+        - tt1408309  # Protect Me From What I Want (2009)
+        - tt1403246  # Steam (2009)
+        - tt1774663  # Vandals (2008) 
+        - tt1157732  # VWrestling (2007) {original-Bræðrabylta}
+     url_poster: "https://posters.movieposterdb.com/23_01/2010/2108480/s_boys-on-film-4-protect-me-from-what-i-want-movie-poster_096e7689.jpg"
+     sort_title: "!BoF04" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 4, LGBTQ+, LGBT, Shorts ] 
+     summary: "Elliot Tittensor (TV's Shameless) stars as Daz in headlining film PROTECT ME FROM WHAT I WANT, a gripping British film debut that sees him woo a young lad in an underpass, only to be threatened with a break-up the following morning. Passive and submissive roles are tackled and tugged in gay graffiti tale VANDALS and Icelandic grapple-fest WRESTLING, while POSTMORTEM, MY NAME IS LOVE, and Iris Prize-winner STEAM look at promising encounters that turn awry. Rounding out the collection are HEIKO, an alternative ode to foot fetishes, BREATH where 12-year-old Erik swims out to sea to make a daring move on his best friend's father, and the crème de la crème from this collection TREVOR, which won multiple prestigious awards from Sundance, Berlinale, and even The Academy Awards (Oscar) for Best Short Film."
+  
+  Boys On Film 5. Protect Me From What I Want:   
+     imdb_id:  
+        - tt1646960  # Blokes (2010)
+        - tt1064728  # Candy Boy
+        - tt0451697  # David (2005) 
+        - tt0363604  # Far West (2003)
+        - tt1610478  # Go Go Reject (2010)
+        - tt1351642  # James (2008)
+        - tt1205560  # Last Call  (2009)
+        - tt1347104  # Two Young Men, UT (2009)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/sM4BMVUVNscxKxDqCxuLPfN2qea.jpg"
+     sort_title: "!BoF05" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 5, LGBTQ+, LGBT, Shorts ] 
+     summary: "Boys On Film 5: Candy Boy features nine award-winning short films. Boys will be boys in Pascal-Alex Vincent's FAR WEST and CANDY BOY, where a farmyard and an orphanage get a gay makeover. GO-GO REJECT sees Flashdance obsessive Daniel aim for the stars, as SWEAT has Holby City's David Paisley infiltrating a bath house with unexpected results. Meanwhile, love proves to be timeless when LAST CALL unites past and present, but TWOYOUNGMEN, UT. hints at an uncertain future. Looking back on the dictatorship of Augusto Pinochet, BLOCKS focuses on the sexual awakening of a peeping Tom. Two more young boys, a confused JAMES and mute DAVID, both reach out for an experienced hand, but will they find what they are looking for?"
+
+  Boys On Film 6. Pacific Rim:   
+     imdb_id: 
+        - tt1562259  # Ajumma! Are You Krazy??? (2009)
+        - tt1570493  # Drowning (2009)
+        - tt1520884  # Franswa Sharl (2009)
+        - tt3275358  # LOVE, 100°C (2010)
+        - tt0972564  # My Last Ten Hours With You (2007)
+        - tt1043771  # Ron the Zookeeper (2007) 
+        - tt1363483  # Tanjong Rhu (2009) 
+        - tt1401198  # Teddy (2009)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/q1W3GvKKiAxWsXZTfFGRrcggbfy.jpg"
+     sort_title: "!BoF06" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 6, LGBTQ+, LGBT, Shorts ] 
+     summary: "Boys On Film goes down under to bring a fresh batch of funny and touching tales courtesy of our Aussie and Kiwi cousins, while from the USA and Hawaii to Singapore via Korea several more stories of men falling in love round out the collection. Rising stars Xavier Samuel and Callan McAuliffe put their own twist on traditional coming out fables in Craig Boreham s second contribution to the Boys On Film library, Drowning and the Berlin Film Festival Crystal Bear winner, Franswa Sharl"
+
+  Boys On Film 7. Bad Romance:   
+     imdb_id: 
+      - tt1601236  # Cake and Sand (2010) 
+      - tt1714627  # Cappuccino (2010)
+      - tt1590766  # Communication (2010)
+      - tt1490622  # Curious Thing (2010) 
+      - tt1753995  # Just Friends? (2009)
+      - tt1582228  # Mirrors (2007)
+      - tt1520428  # The New Tenants (2009)
+      - tt6014904  # The Strange Ones (2017)
+      - tt1544548  # The Traitor (2009)
+      - tt1628845  # Watch Over Me (2010)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/nBlj2QQzvPKGEWBIAtCyLhKJ7j4.jpg"
+     sort_title: "!BoF07" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 7, LGBTQ+, LGBT, Shorts ] 
+     summary: "Prepare to experience an alternative take on attraction. Boys On Film explores the darker side of romance with a collection of edgy, controversial and sexy short films that have wowed film festival audiences the world over."
+ 
+  Boys On Film 8. Cruel Britannia:   
+     imdb_id: 
+      - tt0371521  # All Over Brazil (2003)
+      - tt1396948  # Diana (2009)
+      - tt1802762  # Downing (2011) 
+      - tt1652484  # I Don't Care (2010) 
+      - tt1582220  # Man and Boy (2010) 
+      - tt1639845  # Nightswimming (2009)
+      - tt1808493  # Spring (2011) 
+      - tt1249164  # The Chef's Letter (2008) 
+      - tt1830903  # We Once Were Tide (2011) 
+      - tt2040594  # What You Looking At (2011)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/jWWbKHpV69iUtt3bioPucwOP0jf.jpg"
+     sort_title: "!BoF08" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 8, LGBTQ+, LGBT, Shorts ] 
+     summary: "From the cliffs of the Isle of Wight to an abandoned swimming pool via a broken down lift in Lambeth, Peccadillo Pictures presents an eclectic mix of ten UK-set short films from scorching new British talent that depict LGBT characters in situations both funny and heart-rending, definitive and unique."
+
+  Boys On Film 9. Youth in Trouble:   
+     imdb_id: 
+      - tt1655586  # Colonial Gods (2009)
+      - tt1978422  # Deep End (2011) 
+      - tt1753712  # Easy Money (2010) 
+      - tt2072899  # Family Affair (2011) 
+      - tt2271243  # It's Not a Cowboy Movie (2012)
+      - tt2128693  # Prora (2012) 
+      - tt2211097  # The Wilding (2012)
+      - tt3391026  # Together (2013)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/szuewZoVzdXqpNzP10g1qkb0xzV.jpg"
+     sort_title: "!BoF09" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 9, LLGBTQ+, LGBT, Shorts ] 
+     summary: "YOUTH IN TROUBLE is the ninth edition to BOYS ON FILM, the world's most successful short-film series. This compilation features a range of eclectic, innovative, and genre-bending short films. Within these eight award winning films, a friendship is tested in an ex-Nazi holiday camp; love and freedom wage war in an Australian boys' prison' and BROKEBACK MOUNTAIN exposes secrets in a French high-school lavatory."
+
+  Boys On Film 10. X:   
+     imdb_id: 
+      - tt1996199  # Boys Village (2011) 
+      - tt2361532  # HEADLONG (2012) 
+      - tt1609935  # INFLATABLE SWAMP (2010) 
+      - tt2284754  # LITTLE GAY BOY, CHRIST IS DEAD (2012) 
+      - tt2066980  # TEENS LIKE PHIL (2012) 
+      - tt2176350  # YEAH KOWALSKI! (2011) 
+     url_poster: "https://www.themoviedb.org/t/p/w1280/rZMUCI8IktQBgvOqqEsg4XUs3sj.jpg"
+     sort_title: "!BoF10"
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 10, LGBTQ+, LGBT, Shorts ] 
+     summary: "A young man goes through a series of encounters that will change his life forever, an unearthly beauty will put a relationship at risk, a friendship is questioned as a secret is revealed and a young boy haunts a village long forgotten."
+
+  Boys On Film 11. We Are Animals:   
+     imdb_id: 
+      - tt3315732  # Burger (2013)
+      - tt2193764  # For Dorian (2015) 
+      - tt2517090  # Little Man (2012)
+      - tt2447552  # Spooners (2013)
+      - tt0882817  # Three Summers (2006)
+      - tt2741220  # We Are Animals (2013) 
+     url_poster: "https://www.themoviedb.org/t/p/w1280/kKGzNGJZrIwnEsY17sLKqlQMAEJ.jpg"
+     sort_title: "!BoF11" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 11, LGBTQ+, LGBT, Shorts ] 
+     summary: "Boys on Film 11: We Are Animals: With Barret Lewis. A series of eight short films dealing with the varied experiences of gay men and boys." 
+
+  Boys On Film 12. Confession:   
+     imdb_id: 
+      - tt3345716  # Age 17 (2013)
+      - tt3319632  # Cruise Patrol (2013)
+      - tt2409720  # Deflated (2012) 
+      - tt3382170  # Good Morning (2014)
+      - tt3639326  # Home from the Gym (2014) 
+      - tt3356318  # Human Warmth (2013)
+      - tt3493688  # I Am Syd Stone (2014) 
+      - tt3552042  # Showboy (2014) 
+      - tt3606394  # Tonight It's Me (2014) 
+     url_poster: "https://www.themoviedb.org/t/p/w1280/hAGSu7W5XdH63zSgkbRpZPiReuB.jpg"
+     sort_title: "!BoF12" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 12, LGBTQ+, LGBT  Shorts ] 
+     summary: "Confession Noun A formal statement of one s sins with repentance and desire of absolution; often intimate personal revelations. Repentance is futile. In our latest collection of gay short films we expose private lives, uncover secrets and present a choice - to conceal or to confess? Within these nine stories, a hustler spends the night with a mysterious stranger, a football player hides a secret that could threaten everything, a heartthrob returns home to rekindle a past relationship and desire pushes a 17 year old to the edge."
+
+  Boys On Film 13. Trick & Treat:   
+     imdb_id: 
+      - tt3103792  # A LAST FAREWELL (2013)
+      - tt2624306  # BOYGAME (2013)
+      - tt3348476  # CAGED (2013)
+      - tt4214874  # Followers (2015) 
+      - tt2246240  # KISSING DREW (2013)
+      - tt3550298  # MIDDLE MAN (2014)
+      - tt4938744  # MIRRORS (2015)
+      - tt3179406  # Remission (2014)
+      - tt3147230  # SURPIRSE (2015) 
+      - tt3209148  # VIS A VIS (2015)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/ggwLXc6aubsli3k7eHdAzSDy3NC.jpg"
+     sort_title: "!BoF13" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 13, LGBTQ+, LGBT, Shorts ] 
+     summary: "Time for a trick & a treat! BOYS ON FILM surprises and delights with 10 new, award-winning short films, exploring relationships, dark desires and confronting hidden secrets. An American teenager fantasises over his school bully, a miscommunication threatens to end an entire relationship, at the end of the world the desolate English countryside sets the scene for a group of men trying to cheat death, and an elderly woman sees a vision of Jesus on the swimming shorts of a young African man. Showcasing talent from around the world let TRICK & TREAT entice and astound you."
+
+  Boys On Film 14. Worlds Collide:   
+     imdb_id: 
+      - tt3502596  # {Brace} (2015) 
+      - tt3201792  # Aban and Khorshid (2014) 
+      - tt3427066  # An Afternoon (2014) 
+      - tt3261142  # Barrio Boy (2014)
+      - tt2978734  # I Love Hooligans (2013) 
+      - tt2767286  # The Package (2013) 
+      - tt1858573  # The Violation (2013)
+      - tt2401813  # Un Mundo Para Raúl (2012) 
+      - tt4040964  # Want It (2015) 
+     url_poster: "https://www.themoviedb.org/t/p/w1280/m1qMLVXRed19UuVwkKKu1Jg91CO.jpg"
+     sort_title: "!BoF14" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 14, LLGBTQ+, LGBT, Halloween, Shorts ] 
+     summary: "BOYS ON FILM 14 features 9 new, powerful, and dramatic short films that will make you laugh and cry, question your inner self and give life to your darkest fantasies. Worlds collide in more ways than one in this stunning collection of award winning short films. Confidence is violated, classes clash and desire is concealed, yet love still triumphs regardless of the consequences. Showcasing talent from around the world let WORLDS COLLIDE shake you from your very seat."
+
+  Boys On Film 15. Time & Tied:   
+     imdb_id: 
+      - tt4643840  # Closets (2015) 
+      - tt5354406  # Dawn (2016) 
+      - tt5230498  # G O'Clock (2016) 
+      - tt4378350  # Morning is broken (2015) 
+      - tt4356466  # Nightstand (2015)
+      - tt4855104  # Putting on the Dish (2015) 
+      - tt5505532  # Sauna the Dead A Fairy Tale (2016)
+      - tt4231686  # Trouser Bar (2016)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/mzBBDJa8JccM6pg9s8g017UyiFa.jpg"
+     sort_title: "!BoF15" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 15, LLGBTQ+, LGBT, Shorts ] 
+     summary: "Embark on a magical journey through time with Boys On Film 15: Time & Tied — featuring a brand new selection of sensational gay British short films that showcase some of the UK's best emerging talent. This compilation features nine complete films: Lloyd Eyre-Morgan's 'Closets' starring Tommy Knight and Ceallach Spellman; Brian Fairbairn & Karl Eccleston's 'Putting On The Dish' starring Steve Wickenden and Neil Chinneck; Mitchell Marion's 'G O'Clock' starring Marc Rovira Cenar and Phillip Weddell; Charlie Parham's 'Nightstand' starring Nicholas Gleaves and Amrou Al-Kadhi; Simon Anderson's 'Morning Is Broken' starring Matthew Tennyson, Nigel Allen and Jack Hawkins; Tom Frederic's 'Sauna The Dead: A Fairy Tale' starring himself and Kumar Muniandy; Leon Lopez's 'CrossRoad' starring Marc Rovira Cenar, Ashley Campbell, and Calum Ewan Cameron; Jake Graf's 'Dawn' starring Nicole Gibson and Harry Rundle; and Kristen Bjorn's 'Trouser Bar' starring Denholm Spurr, Scott Hunter, and Zac Renfree."
+
+  Boys On Film 16. Possession:   
+     imdb_id: 
+      - tt4950208  # Follow Me (2015)
+      - tt4796558  # When a man love a woman (2016)
+      - tt5287794  # Away with me (2015) 
+      - tt4831484  # B. (2015)
+      - tt4070722  # Chance (2015)
+      - tt4396602  # Golden (2015)
+      - tt5684820  # Jamie (2016)
+      - tt4884602  # PYOTR495 (2016) 
+      - tt5529712  # Sign - A Silent Film (2016)
+      - tt5479546  # We could be parents (2016)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/YKZUZimFkoZe0wFYRXZiF4XWDD.jpg"
+     sort_title: "!BoF16" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 16, LGBTQ+, LGBT, Shorts ] 
+     summary: "As a brooding teenager, BOYS ON FILM is celebrating a not so sweet sixteen with an astonishing selection of the latest international gay short films."
+
+  Boys On Film 17. Love is the Drug:   
+     imdb_id: 
+      - tt7356144  # Alex and the Handyman (2017)
+      - tt3767798  # Happy and Gay (2014)
+      - tt3630326  # Hole (2014)
+      - tt5116864  # BOYS (2016) 
+      - tt2599822  # Kiss Me Softly (2012)
+      - tt3823636  # Mr. Sugar Daddy (2016) 
+      - tt5840276  # Pedro (2016) 
+      - tt7181154  # Tellin Dad (2017)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/sndM1cL42ilD2mG358gBPFPz2jH.jpg"
+     sort_title: "!BoF17" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 17, LGBTQ+, LGBT, Shorts ] 
+     summary: "Explore hidden desires on a sleepover, fall in love with the handyman and be seduced by a stranger on the beach as you discover why LOVE IS THE DRUG."
+
+  Boys On Film 18. Heroes:   
+     imdb_id: 
+      - tt8362448  # AIDS Doctors and Nurses tell their Stories (2017)
+      - tt5194364  # An Evening (2016)
+      - tt5238696  # Buddy (2015)
+      - tt4288764  # Dániel (2015)
+      - tt6089930  # Half a Life (2017)
+      - tt2148962  # It's Consuming Me (2012) 
+      - tt5465768  # Mother Knows Best (2016) 
+      - tt6244096  # Silly Girl (2016) 
+      - tt6504812  # The Colour of His Hair (2017)
+      - tt2716708  # Undress Me (2012) 
+     url_poster: "https://www.themoviedb.org/t/p/w1280/cZXHh6bhKKOyKwBfMvoScRFbQao.jpg"
+     sort_title: "!BoF18" 
+     item_genre: [ LLGBTQ+, LGBT ] 
+     item_label: [ Boys on Film, Boys on Film 18, LGBTQ+, LGBT, Shorts ] 
+     summary: "Ten uplifting and powerful tales recounting the lives of everyday heroes with no special powers except striving for their own identities." 
+
+  Boys On Film 19. No Ordinary Boy:   
+     imdb_id: 
+      - tt7600484  # Blood Out of a Stone (2018) *** List Checked ***
+      - tt7855798  # Michael Joseph Jason John (2018)
+      - tt8090660  # Between Here and Now (2018) 
+      - tt6436348  # Dusk (2017) 
+      - tt8215338  # Four Quartets (2018) 
+      - tt7317124  # Jermaine and Elsie (2017) 
+      - tt14176502 # Meatoo (2018) 
+      - tt7896320  # No More We (2018) 
+      - tt6884552  # Run(a)Way Arab (2018) 
+      - tt7058048  # The Fish Curry (2017) 
+      - tt8215338  # FOUR QUARTETS (Short 2018)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/9Zg9mikcZu3lQ6v0SRue1ZkZozS.jpg"
+     sort_title: "!BoF19" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 19, LGBTQ+, LGBT, Shorts ] 
+     summary: "As BOYS ON FILM reaches the end of its teenage years, we take a look at those unique boys; Boys who will go one step further, who excite, invigorate, and always impress. Boys who break boundaries, shape their worlds and are more than what they appear to be…"
+
+  Boys On Film 20. Heaven Can Wait:   
+     imdb_id: 
+      - tt6658038  # FOREIGN LOVERS (2017) *** List Checked ***
+      - tt8852680  # Just Me (2018) 
+      - tt6724880  # Manivald
+      - tt6794956  # SLEEPOVER (2018) 
+      - tt5717448  # The World in Your Window (2017) 
+      - tt12619710 # Chromophobia (2019) {original title-Chromophobie}
+      - tt6271614  # Mine (2017)
+      - tt8706080  # Don’t Blame Jack (2019)
+      - tt8949438  # Mankind (2019)
+      - tt7575134  # Isha (2018)
+      - tt8696410  # RUOK (2018)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/eYVR4VHmOBdC93qmcycb8bZm0c7.jpg"
+     sort_title: "!BoF20" 
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film 20, LGBTQ+, LGBT, Shorts ] 
+     summary: "On the cusp of adulthood, the world's longest running short film series is only getting started. Celebrate 20 years of 'Boys on Film' with the finest of gay short cinema. Bursting onto the scene, wide-eyed and keen, your first time with the boys was Hard Love. For a second you were In Too Deep - you dallied with the American Boy, travelling the Pacific Rim with Bad Romance on your tail. Now out of your teens, your Heroes behind you, the future is yours. Heaven Can Wait."
+
+  Boys on Films 21. Beautiful Secret:     
+     template:
+       name: Collection
+     imdb_list: ls507989915
+     collection_order: release
+     url_poster: "https://www.themoviedb.org/t/p/w1280/8DcglK23NJRSbRqU3iauqZrxZfU.jpg"
+     sort_title: "!BoF21"
+     item_genre:  [ LGBTQ+ ]
+     item_label:  [ Boys on Film, Boys on Film 21, LGBTQ+, LGBT, Shorts ] 
+     summary: "Those boys you know and love are back! Boys On Film invites you on a voyage of emotion-soaked self-discovery, where same-sex attraction is celebrated, first loves are tenderly formulated, and beautiful secrets burn and bloom. "
+
+  Boys on Films 22. Love to Love You:     
+     template:
+       name: Collection
+     imdb_id: 
+      - tt10037018  # HAVE WE MET BEFORE?  (UK, 12 mins) Dir. Oliver Mason
+      - tt11602406  # THE ACT (2020) (UK, 18 mins) Dir. Thomas Hescott
+      - tt8580134   # FIRST POSITION (2019) (USA, 20 mins) Dir. Michael Elias Thomas
+      - tt26659215  # WINTER (2021) {Original title-Invierno} (Mexico, 16 mins) Dir. Luis Pacheco, Rafael Ruiz Espejo
+      - tt12615984  # THE SUIT WEARETH THE MAN (2020) (UK, 30 mins) Dir. Mitchell Marion
+      - tt7478508   # INFINITE WHILE IT LASTS (2019) {Original title-Infinito Enquanto Dure} (Brazil, 19 mins) Dir. Akira Kamiki
+      - tt5950338   # MELON GRAB (2017) (Australia, 10 mins) Dir. Andrew Lee
+      - tt8962074   # THRIVE (2019) (UK, 17 mins) Dir. Jamie Dispirito
+     collection_order: release
+     url_poster: "https://www.themoviedb.org/t/p/w1280/3lRboZpw7NnuqmsWcYAEFj5JsxK.jpg"
+     sort_title: "!BoF22"
+     item_genre:  [ LGBTQ+ ]
+     item_label:  [ Boys on Film, Boys on Film 22, LGBTQ+, LGBT, Shorts ] 
+     summary: "The latest in Peccadillo’s critically acclaimed series – now established a leading showcase for new and emerging queer filmmaking talent from around the world – features a fresh and exciting selection of the very best contemporary gay short films. Each self-contained drama in this diverse and thoughtfully curated collection offers fascinating and insightful new perspectives on the gay experience – sensual, affecting, sometimes provocative and always entertaining."
+  
+  Boys on Films 23. Dangerous To Know:     
+     template:
+       name: Collection
+     imdb_id: 
+      - tt16310886  # My Uncle's Friend (2021) {original title-O Amigo do Meu Tio}
+      - tt10959346  # Budapest Closed City (2012) {original title-Budapest, zárt város}
+      - tt13253228  # Eden (2020)
+      - tt15777202  # Chaperone (2022)
+      - tt7372134   # Break Me (2018) {Original title- Knus meg}
+      - tt14645068  # By His Will (2021) {Original title- By His Will (She'asani Kirtzono)}
+      - tt10522770  # Red Ants Bite (2019)
+      - tt21156936  # Hornbeam (2022)
+      - tt14648208  # Jim (2022)
+      - tt13940764  # Too Rough (2022)
+     collection_order: release
+     url_poster: "https://www.themoviedb.org/t/p/w1280/5BrBUaJNFndJFYlf1P2riT73HSu.jpg"
+     sort_title: "!BoF23"
+     item_genre:  [ LGBTQ+ ]
+     item_label:  [ Boys on Film, Boys on Film 23, LGBTQ+, LGBT, Shorts ] 
+     summary: "Boys on Film presents ten encounters from across the globe, where the dangerous allure of a risky attraction yields emotional results - proving that the age-old adage of taking the plunge is as relevant - and sexy - as ever before."
+  
+  Boys on Films 24. Happy Endings:     
+     template:
+       name: Collection
+     imdb_id: 
+      - tt29544576  # We Collide (2023)
+      - tt14097540  # Firsts (2022)
+      - tt15213158  # Sea Sparkles (2022) {original title-Noctilucas}
+      - tt15003996  # Aloof (2020)
+      - tt15396222  # The Rev (2021)
+      - tt14728004  # Prelude (2019)
+      - tt14245316  # Beautiful Stranger (2021)
+      - tt19386966  # You Like That (2023)
+      - tt15684792  # Thursday, Friday, Saturday (2021) {original title-Jeudi, vendredi, samedi}
+      - tt16288638  # L’homme Inconnu (2021)
+      - tt11425868  # S.A.M (2020)
+     collection_order: release
+     url_poster: "https://www.themoviedb.org/t/p/w1280/rCANmw7UffDHpZuJOvRlJhav0jS.jpg"
+     sort_title: "!BoF24"
+     item_genre:  [ LGBTQ+  ]
+     item_label:  [ Boys on Film, Boys on Film 24, LGBTQ+, LGBT, Shorts ] 
+     summary: "A perfect stranger. The boy next door. A sparring partner. A friend from abroad. Boys on Film presents eight encounters from across the globe, where the dangerous allure of a risky attraction yields emotional results - proving that the age-old adage of taking the plunge is as relevant - and sexy - as ever before."
+               # Let BOYS ON FILM move, inspire and uplift you with this stunning collection of 11 new gay short films, marking the final physical edition of the series.
+
+  Boys On Film. Campfire:   
+     imdb_id: 
+      - tt0244577  # Campfire (2000)
+      - tt0244705  # Particularly Now, in Spring (1996)
+      - tt0244652  # Sailor (1998)
+      - tt0244773  # Saint (1997)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/lPHSWXNgQcTLAUzoHJec417mjBJ.jpg"
+     sort_title: "!BoF25"
+     item_genre: [ LGBTQ+ ] 
+     item_label: [ Boys on Film, Boys on Film Campfire, LGBTQ+, LGBT, Shorts ] 
+     summary: "In Campfire a lovesick boy scout goes on a camping trip in the country and tries to choose between his girl and his best friend. Particularly Now, In Spring follows a boy athlete as he takes his first steps into adulthood. Saint concerns the scantily-clad death of Saint Sebastian. Finally, Sailor looks at the love between a teenager and a seafarer. One of many pleasures in Defurne's work is the playful and unforced way in which he references the work of other artists from Dreyer and Eisenstein to photographers Herbert List and Pierre et Gilles. Most significantly, Defurne and his regular team have created an allegorical and headily romantic gay aesthetic that draws on a wide range of influences, but is uniquely their own. Defurne's choice of using largely unprofessional actors brings a charming innocence to the performances that complements the magical, overwrought worlds that they inhabit."
+
+  The Brotherhood Collection:
+     template:
+      name: Collection  
+     tmdb_collection: 262086 # https://www.themoviedb.org/collection/262086-the-brotherhood-collection
+     url_poster: "https://image.tmdb.org/t/p/original/Air0iciOgSizYgUmUvM4Jkekb2g.jpg"
+     sort_title: "!Broth" 
+     item_genre: [ LGBTQ+, Horror ] 
+     item_label: [ LGBTQ+ ] 
+     summary: "The Brotherhood Collection of film; the premise of each film in the series is that a young man is either already interested in or is approached to join a fraternity and along the way, discovers the existence of magic and the supernatural. The main character is drawn to the supernatural and magic, which can manifest as vampires, demons, or warlocks"
+
+  Donald Strachey Mystery Collection:   # 
+     template:
+      name: Collection  
+     tmdb_list: 8559161 # https://www.themoviedb.org/list/8559161-donald-strachey-mystery-collection
+     url_poster: "https://www.themoviedb.org/t/p/w1280/j5g5KhVXpuLNUY4wOqm6TjAFcbk.jpg"
+     sort_title: "!Don" 
+     item_genre: [ LGBTQ+, Drama, Thriller, Crime, Mystery ] 
+     item_label: [ LGBTQ+ ] 
+     summary: "The collection of TV movies about Donald Strachey, private dectective."
+
+  Eating Out Collection:
+     template:
+      name: Collection  
+     tmdb_collection: 129453  # https://www.themoviedb.org/collection/129453-eating-out-collection
+     url_poster: "https://www.themoviedb.org/t/p/w1280/a4x9oL2i5E6VI4ppMOF21dPnv2g.jpg"
+     sort_title: "!EatO" 
+     item_genre: [ LGBTQ+, Comedy, Romance ] 
+     item_label: [ LGBTQ+ ] 
+     summary: "An American film series consisting of five LGBT-themed sex comedy films"
+
+  Gregg Araki - Teenage Apocalypse Trilogy:
+     template:
+      name: Collection  
+     imdb_id: 
+      - tt0108366   # Totally F***ed Up (1993)
+      - tt0112887   # The Doom Generation (1995)
+      - tt0119809   # Nowhere (1997)
+     url_poster: "https://www.impawards.com/1995/posters/doom_generation.jpg"
+     sort_title: "!ArakiTeenApoc"
+     item_genre: [ LGBTQ+, Drama, Romance, Cult ]
+     item_label: [ LGBTQ+, LGBT ]
+     summary: "Araki’s seminal queer teen triptych — DIY angst to neon apocalyptica — often bundled as one set."
+
+  Global Warming Collection:
+     template:
+      name: Collection  
+     tmdb_list: 8559242 # https://www.themoviedb.org/list/8559242-global-warming-1-2/edit?active_nav_item=step_3
+     url_poster: "https://www.themoviedb.org/t/p/w1280/NLSSpIvzQ1Y8GwmOgLjlqglKmx.jpg"
+     sort_title: "!Glob"
+     item_genre: [ LGBTQ+, Shorts ]
+     item_label: [ LGBTQ+, LGBT, ]
+     summary: "A collection gay short films."
+
+  Kiss Me Guido Collection:   # 
+     template:
+      name: Collection  
+     tmdb_list: 8559167 # https://www.themoviedb.org/list/8559167-kiss-me-guido-collection
+     url_poster: "https://www.themoviedb.org/t/p/w1280/3aFhsB4ez8ViUofXMaSI9k7bT1m.jpg"
+     sort_title: "!KissM" 
+     item_genre: [ LGBTQ+, Comedy ] 
+     item_label: [ LGBTQ+, LGBT, Religion] 
+     summary: "Some of My Best Friends was a TV sitcom inspired by the independent film Kiss Me, Guido. The film, written by Tony Vitale, was adapted into the 2001 CBS series by Marc Cherry & Tony Vitale, which centered on a group of friends in New York City. "
+
+  Mathias & Frederick Collection:   # 
+     template:
+      name: Collection  
+     tmdb_collection: 545187 # https://www.themoviedb.org/collection/545187-mathias-frederick-collection
+     url_poster: "https://www.themoviedb.org/t/p/w1280/h4OVoWozF9UzgAjvld6ulSLGrLK.jpg"
+     sort_title: "!Mathia" 
+     item_genre: [ LGBTQ+, Drama, Romance ] 
+     item_label: [ LGBTQ+, LGBT, Religion] 
+     summary: "Short film series by Søren Green."
+
+  My Own Private...:
+     template:
+      name: Collection  
+     imdb_id: 
+     - tt2261871 # My Own Private Idaho (1991)
+     - tt2261871 # My Own Private River (2012)
+     url_poster: "https://www.themoviedb.org/t/p/w1280/p9TF90Pb5yg2MNb2UztzyXktMm4.jpg"
+     sort_title: "!My" 
+     item_genre: [ LGBTQ+, Drama ] 
+     item_label: [ LGBTQ+ ] 
+     summary: "My Private Idaho reworked with added material that had been cut out of the original (My Own Private Idaho) The added footage features, primarily, River Phoenix's character, and the focus of the reworked film is on his hustler character rather than Keanu Reeve's character. Hence the title."
+
+  Rocky Horror Duology:
+    template:
+      name: Collection
+    imdb_id:
+      - tt0073629   # The Rocky Horror Picture Show (1975)
+      - tt0083067   # Shock Treatment (1981)
+    url_poster: "https://www.themoviedb.org/t/p/w1280/aZJ0gncaRSywxR6yZLAeQYoDpkQ.jpg"
+    sort_title: "!RockyHorror"
+    item_genre: [ LGBTQ+, Comedy, Musical, Cult ]
+    item_label: [ LGBTQ+, LGBT, Cult ]
+    summary: "The ultimate queer-cult pairing: the 1975 phenomenon and its 1981 follow-up 'Shock Treatment'."
+
+  Sordid Lives Collection:
+     template:
+      name: Collection  
+     tmdb_list: 8559178 # https://www.themoviedb.org/list/8559178-sordid-lives-collection
+     url_poster: "https://www.themoviedb.org/t/p/w1280/7OBwo48VMz9TfJCKmqALB6QW2bz.jpg"
+     sort_title: "!Sord" 
+     item_genre: [ LGBTQ+, Comedy ] 
+     item_label: [ LGBTQ+ LGBT ] 
+     summary: "Del T. Shores' films about a nutty white trash family and their friends."
+
+  John Waters “Trash Trilogy”:
+    template:
+      name: Collection
+    imdb_id:
+      - tt0069089   # Pink Flamingos (1972)
+      - tt0072979   # Female Trouble (1974)
+      - tt0075936   # Desperate Living (1977)
+    url_poster: "https://www.themoviedb.org/t/p/w1280/10N8SvTQwUqyWgocPam1P18Jgr.jpg"
+    sort_title: "!Trash"
+    item_genre: [ LGBTQ+, Comedy, Cult ]
+    item_label: [ LGBTQ+, LGBT ]
+    summary: "Waters’ filth-positive classics — canonized as the 'Trash Trilogy' — with Divine & Dreamlanders chaos."
+
+  The Falls Collection:   # 
+     template:
+      name: Collection  
+     tmdb_collection: 437584 # https://www.themoviedb.org/collection/437584-the-falls-collection
+     url_poster: "https://www.themoviedb.org/t/p/w1280/iER9GZBUBHJo6cWRBuMDzFmmcj5.jpg"
+     sort_title: "!Falls" 
+     item_genre: [ LGBTQ+, Drama, Romance ] 
+     item_label: [ LGBTQ+, LGBT, Religion, Mormon ] 
+     summary: "The Falls is a collection of feature films about two missionaries that fall in love while on their mission. RJ travels to a small town in Oregon with Elder Merrill to serve their mission and teach the words of Joseph Smith. Living together and sharing the challenge of leaving home, the two men help each other discover their strengths. They share a passion for their faith and learn to express their feelings, risking the only community they have for a forbidden intimacy."
+  
+  The Groomsmen Trilogy:   # 
+     template:
+      name: Collection  
+     tmdb_collection: 1353960  # https://www.themoviedb.org/collection/1353960-the-groomsmen-trilogy
+     url_poster: "https://www.themoviedb.org/t/p/w1280/xH0eLtsj2Znwcw72RBIym6reaIB.jpg"
+     sort_title: "!Groomsmen" 
+     item_genre: [ LGBTQ+, Comedy, Romance, TV Movie ] 
+     item_label: [ LGBTQ+, LGBT, ] 
+     summary: "The Groomsmen trilogy follows three best friends from different backgrounds and cultures as they come together to celebrate their wedding days."
+
+  The Shiny Shrimps Collection:
+     template:
+      name: Collection  
+     tmdb_collection: 888893  # https://www.themoviedb.org/collection/888893-les-crevettes-pailletees-saga
+     url_poster: "https://www.themoviedb.org/t/p/w1280/slefveadmrsO5L10jmxQJRQwYze.jpg"
+     sort_title: "!sh" 
+     item_genre: [ LGBTQ+, Comedy ] 
+     item_label: [ LGBTQ+, LGBT, ] 
+     summary: "'The Shiny Shrimps' is the first film in a collection of animated comedies following an undisciplined LGBTQ+ water polo team "
+
+  Quentin Crisp Collection:
+     template:
+      name: Collection  
+     tmdb_collection: 487014  # https://www.themoviedb.org/collection/487014-quentin-crisp-collection 
+     url_poster: "https://www.themoviedb.org/t/p/w1280/bdKnysyR5WLkbr335Uti8FF9OJQ.jpg"
+     sort_title: "!Que" 
+     item_genre: [ LGBTQ+, Drama, Comedy, TV Movie ] 
+     item_label: [ LGBTQ+ ] 
+     summary: "The life and death of Quentin Crisp (1908 - 1999)."
+
+  Vampire Boys:   
+      template:
+       name: Collection
+      tmdb_collection: 256746 # https://www.themoviedb.org/collection/256746-vampire-boys-collection 
+      url_poster: "https://www.themoviedb.org/t/p/w1280/kbTTgenqwz8IrKih4VZ5i1s6rri.jpg"
+      sort_title: "!VB" 
+      item_genre: [ LGBTQ+ ] 
+      item_label: [ LGBTQ+, LGBT, Horror ] 
+      summary: "Low budget, gay-themed horror vampire flick, film where the vampire boys are more into each other with a twilight feel"
+
+  Yossi collection:   
+      template:
+       name: Collection
+      tmdb_collection:  409138 # https://www.themoviedb.org/collection/409138-yossi-collection 8559158
+      collection_order: release
+      url_poster: "www.themoviedb.org/t/p/w1280/y30egmXtXggkHA2yfcDQcmM9D90.jpg"
+      sort_title: "!Yos"
+      item_genre:  [ LGBTQ+, Drama, Romance, War ]
+      item_label:  [ LGBTQ+ ] 
+      summary: "Yossi (Name meaning 'God will add') is a pair of films directed by Eytan Fox about soldiers at the Israel – Lebanon border who try to find some peace and solace from the daily routine of war, with the follow up film picking up the events 10 years later. The film has a sequel entitled Yossi (Hebrew: הסיפור של יוסי‎‎ Yossi's Story) released in 2012 that picks up the story a number of years after the events in the first film."
+
+  You Should Meet My Son! Collection:   
+      template:
+       name: Collection
+      tmdb_list:  8559164 # https://www.themoviedb.org/list/8559164-you-should-meet-my-son-collection
+      collection_order: release
+      url_poster: "https://www.themoviedb.org/t/p/w1280/nKgXhm2VeWGyMDsohWcNtWk8Z8O.jpg"
+      sort_title: "!You"
+      item_genre:  [ LGBTQ+, Comedy ]
+      item_label:  [ LGBTQ+ ] 
+      summary: "The first is a comedy about a conservative Southern mom who discovers that her only son is gay. Determined that he won’t go through life alone and miserable, she sets out to find him the perfect husband!. In the second film is about a religious mother who is determined to stop her gay son's wedding. But her plans go awry when she accidentally befriends his fiancé and begins dispensing relationship advice."
+  
+  1313 Collection:   
+      template:
+       name: Collection
+      tmdb_collection: 471259  # https://www.themoviedb.org/collection/471259-1313-collection
+      collection_order: release
+      file_poster: /config/assets/1313/1313_collection.png
+      sort_title: "!1313"
+      item_genre:  [ LGBTQ+, Fantasy, Horror, Action, Western, Thriller, Science Fiction ]
+      item_label:  [ LGBTQ+ ] 
+      summary: "A series of horror and thriller films by David DeCoteau featuring homoerotic themes."
+
+################ LGBT Christmas Collection #############
+  Christmas LGBTQ:
+     template:
+       name: Collection
+     imdb_list:
+      - ls4108590789  # My Collection based from this LGBT Christmas YAML collection
+      - ls523993232
+      - ls537764266
+      - ls566883096
+     imdb_id:
+      - tt0067771   # Some of My Best Friends Are... (1971 )
+      - tt0119668   # Midnight in the Garden of Good and Evil (1997)
+      - tt0388473   # Tokyo Godfathers (2003) {Original title-Tôkyô goddofâzâzu}
+      - tt0294870   # Rent (2005)
+      - tt0356680   # The Family Stone (2005)
+      - tt1561328   # A Super Gay Christmas (Short 2009)
+      - tt1305714   # Make the Yuletide Gay (2009)
+      - tt1645187   # Walk a Mile in My Pradas (2011)
+      - tt2262073   # Scrooge & Marley (2012)
+      - tt2151863   # The Perfect Wedding (2012)
+      - tt2186358   # The Unattainably Perfect Gay Christmas (2013) {Original title- Red Lodge}
+      - tt2402927   # Carol (2015)
+      - tt3824458   # Tangerine (2015)
+      - tt5106400   # Shared Rooms (2016)
+      - tt8175678   # Gay Christmas (Short 2017)
+      - tt2279339   # Love the Coopers (2015)
+      - tt11399518  # City of Trees (2021) [L]
+      - tt9288486   # Ghosting: The Spirit of Christmas (2019) [L]
+      - tt1950235   # Let It Snow (2019)
+      - tt9887520   # Season of Love (2019) [L]
+      - tt10768194  # A New York Christmas Wedding (2020)
+      - tt13454498  # Dashing in December (2020)
+      - tt13341908  # Christmas Ever After (2020) Note: Lifetime romcom; the main romance is straight, but it has a queer supporting couple that got it onto some LGBTQ holiday movie lists.
+      - tt13403782  # The Christmas Lottery [L] Note - straight main couple, queer relatives.
+      - tt12950902  # The Christmas House (2020)
+      - tt13147656  # The Christmas Setup (2020) 
+      - tt8522006   # Happiest Season (2020)
+      - tt13972332  # Some Kind of Christmas! (2020)
+      - tt15133684  # A Jenkins Family Christmas (2021)
+      - tt13632182  # Christmas at the Ranch (2021)
+      - tt15289090  # Christmas on the Farm (2021) 
+      - tt16117078  # Days of Our Lives: A Very Salem Christmas (2021)
+      - tt15388610  # Zoey’s Extraordinary Christmas (2021)  - NOTE: Zoey's Extraordinary Christmas is not explicitly about LGBT themes or characters, though the series Zoey's Extraordinary Playlist (which the movie is based on) features a prominent gay character, Mo, portrayed by the non-binary actor Alex Newell, and maintains a broad focus on family and togetherness rather than specific LGBTQ+ narratives ##
+      - tt15011242  # The Syed Family Xmas Eve Game Night (2021) [L]
+      - tt11628854  # Silent Night (2021)
+      - tt14315756  # Single All the Way (2021)
+      - tt15800254  # The Bitch Who Stole Christmas (2021)
+      - tt16365840  # The Christmas House 2: Deck Those Halls (2021)
+      - tt15515882  # Under the Christmas Tree (2021)
+      - tt21072238  # A Christmas to Treasure ()
+      - tt15824322  # Christmas with You (2022) NOTE: Christmas story about a musician who returns home to find love with her former sweetheart. However, the film does feature a lesbian character, Laila, who Kelsey, the protagonist, eventually pursues a relationship with.
+      - tt13937754  # Christmas at the Golden Dragon (2022). Note: Hallmark ensemble film set around Christmas. Not entirely LGBTQ-centered, but it does feature a queer storyline; included in some queer holiday round-ups
+      - tt19853810  # Looking for Her (2022) [L]
+      - tt18236492  # Merry and Gay [L]
+      - tt22005252  # The Christmas Clapback (2022) [L]
+      - tt22296044  # The Holiday Sitter (2022)
+      - tt7775720   # Spoiler Alert (2022)
+      - tt19083430  # A Holiday I Do (2023) [L]
+      - tt22325454  # A Savage Christmas (2023)
+      - tt28796908  # A Queer Christmas Carol (2023)
+      - tt28287106  # Christmas on Cherry Lane (2023)
+      - tt29684873  # Friends & Family Christmas (2023) [L]
+      - tt33885024  # Deck the Walls (2024)
+      - tt11752598  # Last ExMas (2024) [L]
+      - tt31199966  # The Holiday Club (2024) [L]
+      - tt27420000  # The Holiday Exchange (2024)
+      - tt20502488  # Meet Me Next Christmas (2024)
+     file_poster: /config/assets/Plex Posters/Pridechristmas1.jpg
+     sort_title: "!112_02Christmas"
+     item_genre: [LGBTQ+, Christmas]
+     item_label: [LGBTQ+, LGBT, Christmas, Holidays]
+     summary: "A list of LGBTQ+ themed Christmas films"
+
+  The Christmas House Collection:
+     imdb_id: 
+      - tt12950902  # The Christmas House (2020) 
+      - tt16365840  # The Christmas House 2 Deck Those Halls (2021)  
+     url_poster: "https://www.themoviedb.org/t/p/w1280/y2VeV2gq2me7eIMXPh1PQFDL1DQ.jpg"
+     sort_title: "!ChritsmasH" 
+     item_genre: [ LGBTQ+, Christmas ] 
+     item_label: [ LGBTQ+, Christmas, Holidays, Hallmark ] 
+     summary: "A collection of Christmas films focused on the Mitchell family."
+
+################ LGBT Horror Collection ################  
+  LGBTQ Horror:
+     template:
+       name: Collection
+     imdb_list:
+      - ls527122422
+      - ls044460700
+      - ls081262161
+      - ls074360857
+      - ls009644329
+      - ls4108248330
+     imdb_id:
+      - tt13639222  # Queer for Fear: The History of Queer Horror (2002) *TV Mini Series*
+     file_poster: /config/assets/Plex Posters/LGBT_Horror.jpg 
+     sort_title: "!112_02Horror"
+     item_genre: [ Horror, Halloween, LGBTQ+ ]
+     item_label: [ Horror]
+     summary: "A selection of LGBTQ+ themed Horror films"
+
+################ LGBT Sort Films #######################
+  # LGBTQ Shorts:      # Not working need ti find a way to source it
+  #    template:
+  #      name: Collection
+  #   plex_all: true
+  #   filters:
+  #   label: [ LGBTQ+, LGBT ] 
+  #     duration.lte: 45
+  #   imdb_list:
+  #     - ls1111111
+  #   imdb_id:
+  #   - tt111111  #
+  #     file_poster: /config/assets/Plex Posters/LGBTQ_shorts.jpg
+  #     sort_title: "!112_02Shorts"
+  #     item_label: [ Short ]
+  #     summary: "A selection of Short LGBTQ+ films under 45 Mins"
+  #     sync_mode: append
+
+################ People Collections ####################
+
+  Danny La Rue:
+    template:
+      name: Collection
+    imdb_id:
+      - tt0069054  # Our Miss Fred (1972)
+      - tt1273656  # Come Spy with Me (1977)
+      - tt1138477  # Cinderella: The Shoe Must Go On (1986)
+      - tt1810819  # The Unforgettable Danny La Rue (2010)
+    url_poster: "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/3qWoy5Hsfcfa4EW5UrndZlMxLD3.jpg" 
+    tmdb_person: 940070 # https://www.themoviedb.org/person/940070-danny-la-rue
+    sort_title: "!113_Dann"
+    item_genre: [ LGBTQ+, LGBT ]
+    item_label: [ LGBTQ+, LGBT ]
+    summary: "Danny La Rue, OBE (born Daniel Patrick Carroll, 26 July 1927 – 31 May 2009) was an Irish-English singer and entertainer, best known for his on-stage drag persona. He performed in drag and also as himself in theatrical productions, television shows and film. From Wikipedia (en), the free encyclopedia"
+ 
+  Eytan Fox Collection (beyond Yossi):
+    template:
+      name: Collection
+    imdb_id:
+      - tt0334754  # Yossi & Jagger (2002)
+      - tt1934269  # Yossi (2012)
+      - tt0352994  # Walk on Water (2004)
+      - tt0476643  # The Bubble (2006)
+      - tt1935742  # Cupcakes (2013)
+      - tt9733388  # Sublet (2020)
+    url_poster: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Eytan_Fox_2012_Shankbone.JPG/500px-Eytan_Fox_2012_Shankbone.JPG" 
+    sort_title: "!113_EytanFox"
+    item_genre: [ LGBTQ+, LGBT, Drama, Romance ]
+    item_label: [ LGBTQ+, LGBT  ]
+    summary: "Israel’s leading queer auteur: the 'Yossi' duology plus 'Walk on Water', 'The Bubble', and musical crowd-pleaser 'Cupcakes'."
+
+  Joe Orton:
+    template:
+      name: Collection
+    imdb_id:
+      - tt0066002  # Loot (1970)
+      - tt0093776  # Prick Up Your Ears (1987)
+      - tt1527272  # A Genius Like Us: A Portrait of Joe Orton (1982)
+      - tt0065700  # Entertaining Mr. Sloane (1970) 
+      - tt7681212  # Joe Orton Laid Bare (2017)
+    url_poster: "https://www.themoviedb.org/t/p/w1280/vBRjMmysFKhbTp4MdqvozXvY34W.jpg" 
+    tmdb_person: 1179375 # https://www.themoviedb.org/person/1179375-joe-orton
+    sort_title: "!113_JoeO"
+    item_genre: [ LGBTQ+, LGBT  ]
+    item_label: [ LGBTQ+, LGBT  ]
+    summary: "The Joe Orton Collection"
+############### All LGBTQ+ Films List -Start-   ########
+  LGBTQ+ Collection:
+     template:
+       name: Collection
+     # imdb_list: ls4108140061 # My Collection based from this whole YAML collection
+     imdb_id: 
+ ######### 1910s ########### 
+      - tt0007522 # Vingarne (1916), Description: 'There's a very good review here which sums up the many reasons why this can count as the first gay-themed film ever, but you'll be hard pressed to find the subtext from what remains. Dreyer's Michael, based on the same source, is much more ambivalent.'
+      - tt0009878 # Different from the Others (1919) {original title-'Anders als die Andern'}, Description: 'First ever gay-themed film starring Conrad Veidt (of 'Cabinet of Dr. Caligari' and 'Casablanca' fame). Conceived by sexologist Magnus Hirschfeld to push for legalization, it led to the reintroduction of film censorship in post-WWI Germany.'
+ ######### 1920s ###########
+      - tt0013571 # Salomé (1922), Description: 'Was infamously filmed with an all-gay cast, even though that is a matter of contention. Quite obviously very camp, with a number of performers in drag.'
+      - tt0015136 # Michael (1924), Description: 'Carl Theodor Dreyer's adaptation of gay writer Herman Bang's novel could be regarded as the first gay-themed narrative film. Contributed to harsher censorship laws banning the subject for decades.'
+      - tt0018935 # Sex in Chains (1928) {original title-'Geschlecht in Fesseln'}, Description: 'first film about gender confusion in jail considers homosexuality an affliction and could thereby pass strengthened censorship laws'
+      - tt0057490 # The Servant (1963) https://www.imdb.com/title/tt0057740/
+ ######### 1930s ###########
+      - tt0022183 # Mädchen in Uniform (1931), Description: 'first film to touch female homosexuality in a surprisingly overt way and allowing for genuine emotions; could pass German censorship laws because only male homosexuality was penalized. The remake of 1958 is more famous but also more ambivalent.'
+      - tt0022737 # Call Her Savage (1932), Description: 'There is a brief scene of what would be the first gay bar in film in this pre-code melodrama.  You can find it on Youtube and don't have to watch the whole thing, as there's no connection to the plot.'
+      - tt0122158 # Lot in Sodom (1933), Description: 'released on DVD with 'Salomé' (1923), 'Lot in Sodom' has clear gay subtext, although it is essentially an experimental retelling quite faithful to the Biblical story.'
+      - tt0026819 # One Frightened Night (1935) Description: 
+ ######### 1940s ###########
+      - tt0033712   # Here Comes Mr. Jordan (1941) Description: 
+      - tt0037008 # Laura (1944), Description: 'with the production code, gay subtext vanished, but many '40s crime films feature presumably homosexual villains, few as obvious as Clifton Webb's Waldo Lydecker, who unlike others isn't portrayed in a defamatory way.'
+      - tt0039383 # Fireworks (1947), Description: 'homoerotic experimental no-budget film led to Kenneth Anger's arrest on obscenity charges and, eventually, a Supreme Court ruling declaring the film to be art.'
+      - tt0040746 # Rope (1948)
+      - tt0041998 # Thirst (1949) {original title-'Törst'}, Description: 'Bergman often touched female homosexuality, but rarely as overtly as in this early piece.'
+      - tt0037988 # The Picture of Dorian Gray (1945) 
+ ######### 1950s ###########
+      - tt0042296 # Caged (1950), Description: 'It's a difficult choice to include the first and campiest women in prison flick as it's chock full of Lesbian stereotypes and equals homosexuality with depravity. Still, it is part of history, and after re-watching it after a number of years, I think anyone with an interest in queer film should watch it for an individual opinion.'
+      - tt0043084 # Song of Love (1950) {original title-'Un chant d'amour'}, Description: 'Jean Genet's only film is the first explicitly homoerotic and was consequently banned from exhibition, most notably in the US in 1966, where it was dismissed as obscene.'
+      - tt0042803 # Olivia (1951), Description: 'similar to 'Girls in Uniform', but involving more mystery'
+      - tt0046521 # I Vitelloni (1953) {original title-'I vitelloni'}, Description: 'While this film is famous for a lot of reasons, it also features the first obvious homosexual hook-up attempt.'
+      - tt0048545 # Rebel Without a Cause (1955), Description: 'Many '50s films are said to contain homosexual cyphers as the subject wasn't raised. Sal Mineo as Plato is perhaps most obvious given his real-life homosexuality, but at the time the role made him an idol for (female) teens.'
+      - tt0049829 # Tea and Sympathy (1956), Description: 'interesting for making it clear that in the '50s, being gay was viewed maybe not as the ultimate sin, but an affliction worse than death'
+      - tt0050128 # The Third Sex (1957) {original title-Anders als du und ich (§ 175)} AKA
+      - tt0050128 # Bewildered Youth (1957) {original title-'Anders als du und ich (§ 175)'}, Description: 'every possible stereotype on homosexuality is exploited here by a disgraced Nazi director desperately craving attention. Still, the aged homosexual luring culturally talented young men into his web of sin is oddly fascinating... John Waters would probably call this the ultimate gay bash 'n trash movie.'
+      - tt0051964 # Mädchen in Uniform (1958), Description: 'remake of the 1931 film tones the Lesbian aspect down but is perhaps more cult for Lilli Palmer's performance.'
+      - tt0053318 # Suddenly, Last Summer (1959), Description: 'while the most overt of Tennessee Williams's stage adaptations in its content owing to Gore Vidal's screenplay, it's the pinnacle of depicting homosexuality as a perverted affliction, and was in fact passed by the MPAA for that very reason.'
+      - tt0053428 # Come Dance with Me! (1959) {original title-'Voulez-vous danser avec moi?'}, Description: 'One of French veteran comedy writer Gérard Oury's weaker outings, it does have Brigitte Bardot waltz into a late 50s gay cabaret and could be refreshingly open-minded for the time, but the ending ruins it.'
+      - tt0053291 # Some Like It Hot (1959) Description:
+ ######### 1960s ###########
+      - tt0054403 # The Trials of Oscar Wilde (1960), Description: 'first of many films to focus on Wilde's sodomy conviction, it is surprisingly faithful to the trial's records given the time.'
+      - tt0054743 # The Children's Hour (1961), Description: 'William Wyler's remake of his earlier adaptation of Lillian Hellman's play (which erased the homosexual element) marks the first 'A' picture in which gay bashing is portrayed as a social evil - while still holding it to be an affliction.'
+      - tt0055506 # A Taste of Honey (1961), Description: ''kitchen sink' adaptation of Shelagh Delaney's play features the first clearly positive (i.e. non-tragical) depiction of a gay character in his relationship with Rita Tushingham's main protagonist.'
+      - tt0055597 # Victim (1961), Description: 'first narrative film with homosexuality (with the first use of the actual word) and gay bashing (i. e. blackmail) as the central plot element, with a strong political message towards legalization.'
+      - tt0055728 # Advise & Consent (1962), Description: 'A difficult choice to include in this list for me, but if I take Caged, then this one's also a must. It's the first post-war film to show a gay bar, where the climax happens. But ouch - it's an uncomfortable movie to watch for queers. It takes the Fate worse than death approach to a whole new level and doesn't make sense in that regard. It's real-life gay (or bi) Charles Laughton's last film, the production was marred by conflict with real-life homophobe Henry Fonda.'
+      - tt0055796 # Billy Budd (1962), Description: 'not the first and not the last adaptation but the least ambiguous owing to bisexual Charles Laughton's performance.'
+      - tt0056671 # Walk on the Wild Side (1962), Description: 'Capucine's last film before The Pink Panther as a bisexual prostitute in a abusive relationship with sugar-mommy Barbara Stanwyck, Jane Fonda as a nymphomaniac and Anne Baxter as a motherly Mexican leave little room for a hapless leading man. It's a bungled adaptation of Nelson Algren's completely different and even more convoluted novel. But it's relatively blameless, leading critics at the time to dismiss the film as lewd. Well, it's camp for sure.'
+      - tt0138329 # Blonde Cobra (1963), Description: 'experimental cross-dressing super-8 movie added to the '1001 films you must watch before you die' list. Personally I don't see why.'
+      - tt0054880 # Flaming Creatures (1963), Description: 'experimental film full of sexual ambiguity seized upon release in a NYC theater and banned for being obscene. Also on '1001 films you must watch before you die' list for whatever reason.'
+      - tt0058555 # Scorpio Rising (1963), Description: 'Anger's biker fetish experimental film caused controversy in spite of complete lack of subject matter and led to another obscenity trial, ruled in his favor. That doesn't make it any less non-sequitur.'
+      - tt0057244 # The Leather Boys (1964), Description: 'notwithstanding the misleading title which refers to bike gangs, there is an open gay angle in this kitchen sink classic.'
+      - tt0057960 # Love Meetings (1964) {original title-'Comizi d'amore'}, Description: 'Oddly, Pasolini's only film in which he directly addresses homosexuality - in a broader context - is this fascinating documentary in which he asks people about their views on sex'
+      - tt0058326 # Swastika (1964) {original title-'Manji'}, Description: 'Again a very misleading title (Manji refers to the Buddhist symbol) for perhaps the first openly erotic Lesbian love story.'
+      - tt0057842 # This Special Friendship (1964) {original title-'Les amitiés particulières'}, Description: 'Adaptation of Roger Peyrefitte's novel features a first gay coming-of-age story featuring actual minors. Peyrefitte met his longtime companion on the set who was one of the extras (and 12 years old at the time).'
+      - tt0062016 # My Hustler (1965), Description: 'Primitive like most of Warhol's films, this one is probably the most contemporarily significant as it points out how long many gay assets and clichés have been around.'
+      - tt0232954 # Winter Kept Us Warm (1965), Description: 'Low-budget gay romance was lightyears ahead of its time and the first Canadian film invited to Cannes'
+      - tt0059919 # With Beauty and Sorrow (1965) {original title-'Utsukushisa to kanashimi to'}, Description: 'A Lesbian relationship is at the center of Shinoda's elegant Kawabata adaptation, meant to be symbolic rather than realistic. Still, compared to Hollywood at the time it's very daring.'
+      - tt0060395 # The Family Way (1966)  Description:
+      - tt0060891 # The Nun (1966) {original title-'La religieuse'}, Description: 'A scathing portrayal of women's status in the 18th century and Rivette's most accessible film. The Lesbian mother superior played by Liselotte Pulver (most famous as James Cagney's secretary in One Two Three) is a fate worse than death character, but convincingly so given Diderot's scandalous enlightenment novel. It's not really sympathetic to homosexuality but rather depicts Lesbianism as an inevitable result of confinement. The film was forbidden right after its Cannes premiere on the grounds of hurting the sentiments of the Catholic population, and only released a year later in altered form.'
+      - tt0060574 # Young Törless (1966) {original title-'Der junge Törless'}, Description: 'I'm at odds whether one can truly call this adaptation of Robert Musil's novella gay-related, it's more of a social portrait (read my review if you like), but it does highlight the psychological association of homosexual acts with (criminal) degeneration, and shows where this misconception may have originated.'
+      - tt0061403 # Bike Boy (1967), Description: 'I'm not quite sure if one could count any of Warhol / Morrissey's outings as LGBT. They're usually ramblings of not particularly sympathetic narcissists, and this one's no exception. It does have some queer background talk ripe with stereotypes, but maybe that's just how the New York scene was just then.'
+      - tt0144304 # The Boy and the Wind (1967) {original title-'O Menino e o Vento'}, Description: 'Very obscure Brazilian one-of-a-kind supernatural social witchhunt drama is a very elegant allegory on perhaps less homosexuals as social outcasts - even though that does figure - but more the tendency to incriminate difference in general.'
+      - tt0062990 # The Fox (1967), Description: 'Made in the year the production code was abandoned, thus it's the first Anglophone film with masturbation and a detailed description of rape. A Bergmanesque character study which flirts with being a thriller. The ending prevents it from being a Lesbian love story.'
+      - tt0062144 # Portrait of Jason (1967), Description: 'Shirley Clarke's famous monologue of a gay black hustler could be called the first gay-themed documentary. Albeit simple, it's definitely superior to Warhol's films of the period.'
+      - tt0063462 # The Producers (1967), Description: 'Can be seen as 'anti-gay' because of the stereotypes, but then again Mel Brooks is all about stereotypes, and everyone gets roasted it his most famous film. As ludicrous as the gay characters may seem, they're proud and out and therefore a progress to the self-loathing gay characters up to then.'
+      - tt0062185 # Reflections in a Golden Eye (1967) Description: 'Adaptation of Carson McCullers 1941 novel doesn't really succeed in dealing with the topic of repressed homosexuality as overtly as the novel does, but makes for interesting (i.e. odd) viewing since it tries so desperately to conceal what the story is all about.'
+      - tt0062728 # Les Biches (1968) {original title-'Les biches'}, Description: 'Menage à trois between two women and a man is, like so much of Chabrol, sensationalist and perfectly photographed. Of course, the female couple is bi instead of Lesbian, and share and compete for the same man... a dirty old man's fantasy but stylish to the hilt.'
+      - tt0063203 # Black Lizard (1968) {original title-'Kuro tokage'}, Description: 'Camp classic starring writer Yukio Mishima's drag queen lover Akihiro Maruyama as the femme fatale cat burglar.'
+      - tt0062883 # The Detective (1968), Description: 'Most gays will find the equation of corruption and homosexuality this film insinuates revolting, but it's a good look at the contemporary scene and how closeted and cliché everything was in Stonewall year.'
+      - tt0062979 # Flesh (1968), Description: 'Not a gay-themed film per se, it's often included in anthologies owing to lots of full frontal nudity, a background of hustlers, and a scene involving the conversation of two drag queens. It is, however, 8mm quality, badly edited and barely watchable.'
+      - tt0063850 # If.... (1968) Description:
+      - tt0062461 # Gates to Paradise (1968), Description: 'Not as overt as the novel but close enough in terms of the two male lead's relationship, surprising considering the historical setting.'
+      - tt0063185 # The Killing of Sister George (1968), Description: 'Robert Aldrich's adaptation of Frank Marcus' play is the first unmitigated look at a Lesbian relationship, albeit unfortunately taking an inevitably tragic turn.'
+      - tt0063236 # Lonesome Cowboys (1968), Description: 'Again, not really LGBT in my opinion but most people would probably consider it so. Again, it seems to me a rather unsympathetic display of exhibitionism by a bunch of addicts and naive pretty faces.'
+      - tt0063585 # The Sergeant (1968), Description: 'Finally got to see it. Features a great performance by Rod Steiger as a  but unfortunately also a rather weak script.'
+      - tt0063678 # Teorema (1968), Description: 'While Pasolini never directed a truly gay-themed film in spite of his homosexuality - which would have been impossible in Italy - many of his films have allusions, this one being the most obvious.'
+      - tt0064556 # Black Rose (1969) {original title-'Kuro bara no yakata'}, Description: 'Second film starring Akihiro Maruyama as a femme fatale and perhaps the most ravishing portrayal of a drag queen (whose real sex is never mentioned) becoming total ruler of all men unfortunate enough to meet her.'
+      - tt0064940 # Satyricon (1969) {original title-'Fellini - Satyricon'}, Description: 'Chock full of gay allusions but uses those as a cheap shock element, therefore considered one of Fellini's few duds.'
+      - tt0064068 # Funeral Parade of Roses (1969) {original title-'Bara no sôretsu'}, Description: 'First Trans-themed film instrumental to establishing an identity for Tokyo's gay underground in the '60s - i.e. the longest-running gay mag was called 'barazoku' = rose tribe, a long-standing synonym for gays.'
+      - tt0064363 # The Gay Deceivers (1969), Description: 'Rather silly romantic comedy with a gay angle and every imaginable stereotype, it's still somewhat interesting for real-life gay Michael Greer's landlord queen and a surprise ending.'
+      - tt0064507 # Hunting Scenes from Bavaria (1969) {original title-'Jagdszenen aus Niederbayern'}, Description: 'One of the first New German Cinema films and also the first one to address the subject of gay discrimination.'
+      - tt0064665 # Midnight Cowboy (1969), Description: 'Oscar-winning hustler portrait with gay subtext strong enough to earn the film an 'X' rating, prompting the MPAA to modify its standards. Its gay angle is so-so owing to the self-loathing aspect of Hoffman's character.'
+      - tt0065031 # Staircase (1969), Description: 'Mostly vilified for its rampant display of stereotypes, but it's a captivating, if at times horrifying, experience for Burton's and Harrison's attempts at mimicking a relationship.'
+      - tt0066579 # Women in Love (1969), Description: 'Ken Russell's confusing D.H. Lawrence adaptation highlights the relationship between the male leads, the film's most controversial scene contained the first mainstream shots of male genitalia.'
+ ######### 1970s ###########
+      - tt0065488 # The Boys in the Band (1970), Description: 'first film with exclusively gay protagonists is widely considered a milestone in queer cinema, still looks fresh in terms of physical language and banter, and underscores how much of a social development there has been since.'
+      - tt0065700 # Entertaining Mr Sloane (1970), Description: 'mellowed down version of Joe Orton's famous play, but interesting (in an unpleasant way) for its queasy approach'
+      - tt0066115 # Myra Breckinridge (1970), Description: 'drivel with the tenacity to make one of the first male rape scenes in film one giant joke, still interesting to watch for the stereotypes and plot subtexts. And of course there's Welch as a glamour-obsessed post-op trans. Trashy but essential.'
+      - tt0359910 # Roll On Four O'Clock (1970) Description: Set in a city comprehensive school of low expectations and ambitions. Pupil Latimer does not conform to the macho culture and is labeled a homosexual, leading to bullying by both the pupils and some of the teachers. **  ITV Sunday Night Theatre - https://www.imdb.com/title/tt0359910/
+      - tt0066392 # Something for Everyone (1970), Description: 'involves (once again) a manipulative bisexual young man sneaking his way into the upper class by sex - portraying homosexuality as high society depravity. Interesting because it feels so anachronistic.'
+      - tt0066482 # Trash ( 1970) - https://archive.org/details/trash-1970 (1970) Description: 
+      - tt0066921 # A Clockwork Orange (1971) Description: 
+      - tt0066109 # The Music Lovers (1971), Description: 'often reviled for its idiosyncratic focus on the self-loathing aspect of Tchaikovsky's homosexuality (and how it drives his wife into nymphomaniac insanity), it still has Richard Chamberlain in his only gay-themed role.'
+      - tt0067690 # Daughters of Darkness (1971) {original title-'Les lèvres rouges'}, Description: 'The Lesbian vampire shtick is of course clearly exploitative and hardly an expression of sexual liberation, but this particular film is heavily symbolic and easily the classiest of the genre.'
+      - tt0067445 # Death in Venice (1971) {original title-'Morte a Venezia'}, Description: 'Visconti's adaptation is arguably the most artistic rendition of Platonic homo-eroticism. Read Björn Andresen's remarks on the shoot on the title page, though - it wasn't easy to be the boy who played Tadzio.'
+      - tt0065622 # The Decameron (1971) {original title-'Il Decameron'}, Description: 'features one humoristic gay-themed episode, but as always Pasolini carefully avoids any realistic approach to the subject.'
+      - tt0067112 # Fortune and Men's Eyes (1971), Description: 'adaptation of John Herbert's play with strong homoerotic (rape) imagery and a great Michael Greer as prison 'Queeny' - a part which might have inspired the Rocky Horror Picture Show'
+      - tt0065393 # Les amis (1971), Description: 'naturalistic description of a man-boy relationship which could be interpreted as disturbing these days, but in the 70s sensitivities were obviously different - that's probably pretty much what it was like, and - who knows? - still is in conservative societies.'
+      - tt0066136 # It Is Not the Homosexual Who Is Perverse, But the Society in Which He Lives (1971) {original title-'Nicht der Homosexuelle ist pervers, sondern die Situation, in der er lebt'}, Description: 'Rosa von Praunheim's first and most famous take on gay life in West Germany just after it was decriminalized; the narrative text is still the most poignant critique of gay life after four decades - for that you'll have to forgive abysmal acting. His autobiography 'Sex and Career', which has much of the narrative script, is better.'
+      - tt0198360 # The Murdered House (1971) {original title-'A Casa Assassinada'}, Description: 'adaptation of one of those Latin American family chronicles which make such good reads, it's remarkable for portraying its gay characters as integral personalities rather than stereotypes (although there's a good deal of flamboyance)'
+      - tt0067580 # Pink Narcissus (1971), Description: 'Bidgood's glamour kitsch celebrating male beauty had a lasting influence on gay art, especially the photographers Pierre et Gilles.'
+      - tt0067771 # Some of My Best Friends Are... (1971), Description: 'bit of a time travel experience available on Youtube'
+      - tt0067805 # Sunday Bloody Sunday (1971), Description: 'love triangle with a successful, less tragical gay character than in Schlesinger's previous film 'Midnight Cowboy'.'
+      - tt0067952 # Villain (1971), Description: 'many people know of Burton's gay performance in 'Staircase', fewer know of his portrayal of a sadistic gay gangster. It's a horror show of clichés, yet oddly fascinates because of the abusive relation the principal characters have.'
+      - tt0068278 # The Bitter Tears of Petra von Kant (1972) {original title-'Die bitteren Tränen der Petra von Kant'}, Description: 'Fassbender's Lesbian love story could be criticized for a good deal of self-loathing, but artistically it's one of his best.'
+      - tt2395484 # A Ton of Grass Goes to Pot (1972) Description: 
+      - tt0068327 # Cabaret (1972), Description: 'from a gay viewpoint, the brilliant adaptation of Isherwood's most famous book is more interesting for how much of the gay content had been left out, while Fosse still found ways to leave it in - namely through Joel Grey's Oscar-winning performance and Michael York's notorious 'confession'.'
+      - tt0068726 # I Want What I Want (1972), Description: 'First serious Anglophone trans-themed film I'm aware of has the lead performed by Anne Heywood, Sandy Dennis' bi lover in The Fox. She's not convincing as a man at all, so it starts very oddly, but by and by the theme is presented in an adequate, if somewhat stiff manner.'
+      - tt0067425 # My Dearest Senorita (1972) {original title-'Mi querida señorita'}, Description: 'A better trans-themed film from Spain, very subtle as the queer theme is embedded in an unrelated story. Must have caused quite a stir at the times but I have little information about it.'
+      - tt0069054 # Our Miss Fred (1972) Description: 
+      - tt0069089 # Pink Flamingos (1972), Description: 'Some people may wonder, where's John Waters in this list? So I just include his most notorious classic to maintain that his films are not really LGBT in my view. This one's a camp classic, definitely worth watching, and many people see it as an expression of post-Stonewall liberation. But it's exploitative trash as well, and if I exclude countless Spanish Lesbian vampire flicks of that era, I'm really not sure if it's OK to put this one in.'
+      - tt0071508 # Flesh for Frankenstein (1973) Description: 
+      - tt0068883 # Ludwig (1973), Description: 'Visconti's biopic of Bavaria's last king contains his most daring gay imagery, mirroring his relationship with his frequent star Helmut Berger.'
+      - tt0070957 # Tenderness of the Wolves (1973) {original title-'Die Zärtlichkeit der Wölfe'}, Description: 'best film of one of the worst directors ever, this Fassbender-written adaptation of notorious cannibal Fritz Haarman is accurate yet sensationalist'
+      - tt0071690 # I, You, He, She (1974) {original title-'Je tu il elle'}, Description: 'Another difficult choice. Is a film LGBT-related because it has a 15-minute Lesbian sex scene at the end, with no comprehensible connection to the rest, and without the slightest pretense of coherency? Or is this just artsy, dreary, boring sexploitation? Make up your own mind, but be warned: you may find this revoltingly uninteresting.'
+      - tt0071690  # Je, tu, il, elle (1974) {Original title: Je tu il elle} {dir-Chantal Akerman, Belgium; experimental film with lesbian relationship} 
+      - tt0072362 # A Very Natural Thing (1974), Description: 'naturalistic portrayal of gay life in NYC, many aspects of which still seem to linger, and a reminder of how the Pride movement started.'
+      - tt0072890 # Dog Day Afternoon (1975), Description: ''true life better than fiction' - classic tale of a heist gone wrong cannot really be called gay-themed because that's just a twist to real-life John Wojtowicz's story, but one can argue that it's remarkable that Warner Bros. didn't supress that story element.'
+      - tt0072976 # Fox and His Friends (1975) {original title-'Faustrecht der Freiheit'}, Description: 'Fassbender's most openly gay film is actually an adaptation of a literary classic, but remodeled to depict the German gay scene.'
+      - tt0073438 # The Naked Civil Servant (1975), Description: 'starring John Hurt in a BAFTA-winning performance he arguably never surpassed, this has been voted #4 in the BFI's all-time best TV movie poll. In my view one of the best gay-themed films ever made, owing of course to Quentin Crisp's inimitable personality.'
+      - tt0073540 # Picnic at Hanging Rock (1975), Description: 'Peter Weir's masterpiece has often been interpreted in a Lesbian context, but I've never felt so sure about that... decided to list it here after consulting with a Lesbian friend. It's one of the most ambiguous films ever made, after all.'
+      - tt0073629 # The Rocky Horror Picture Show (1975), Description: ''don't dream it, be it' - the greatest cult classic of all time isn't really about sexual orientation, but a satire on '50s mores versus '60s/'70s liberation - yet much more enjoyable than many '90s 'It's OK' movies.'
+      - tt0073650 # Salò, or the 120 Days of Sodom (1975) {original title-'Salò o le 120 giornate di Sodoma'}, Description: 'Pasolini's last and most notorious film associates homosexual acts with the depravity of the Fascist elite and could therefore be regarded as an anti-gay by a gay director - a premise under which it makes some odd sense'
+      - tt0257099 # Saturday Night at the Baths (1975), Description: 'interesting for displaying the show acts that used to be common in the NYC scene, but not much of a story.'
+      - tt0216668 # David Is Homosexual (1976) Description: 
+      - tt0074888 # La meilleure façon de marcher (1976) Description: 'deals with gay bashing as a result of repressed sexuality and is still relevant in this regard.'
+      - tt0073839 # Un enfant dans la foule (1976) Description: 'More a coming-of-age story, director Gérard Blain works on his adolescent traumas in this autobiographic retelling of a rebellious teen turning tricks in occupied WWII Paris. Not as sympathetic to gays as his Les Amis but a much better film.'
+      - tt0073196 # Je t'aime moi non plus (1976) Description: 'Another film that actually should not be on this list as it's unabashedly exploitative, it's also a one-of-a-kind surreal experience. The gay theme is milked for shock yet off-the-charts unrealistic, and one cannot help but wonder about uber-hetero Serge Gainsbourg's motivation for (ab)using his real-life partner Jane Birkin, plus naming the film after their biggest hit. However, it's Joe Dallessandro's only film in which he is really gay.'
+      - tt0222067 # Johan (1976), Description: 'very overt and underground, but camera-wise almost unwatchable.'
+      - tt0074973 # Norman... Is That You? (1976), Description: 'First black gay-themed film is a cliché-riddled theater piece, but quite sympathetic and once again an interesting time-travel experience.'
+      - tt0075144 # The Ritz (1976), Description: 'extremely silly cult comedy set in a gay bathhouse; the variety show in there makes for an odd time-travel experience.'
+      - tt0075177 # Sebastiane (1976), Description: 'Derek Jarman's most famous film is a bit of a drab to watch these days, as it could be accused of pretentiousness. Back in the day it probably made many mouths water.'
+      - tt0075655 # Alexander: The Other Side of Dawn (1977), Description: 'focus is on teenage runaways with the main character being a kept boy just a sub-plot, but that adds up quite nicely in this time piece which caused quite a stir. The sugar daddy thing isn't so unrealistic either.'
+      - tt0074273 # Change of Sex (1977) {original title-'Cambio de sexo'}, Description: 'Later megastar Victoria Abril plays a trans woman in her first lead role and is actually quite convincing as a young man, with fellow Almodóvar regular Bibi Andersen co-starring. Aranda goes for some lurid shots, the story is a bit kitsch but overall it's OK to watch.'
+      - tt1273656 # Come Spy with Me (1977) Description: 
+      - tt0076280 # The Consequence (1977) {original title-'Die Konsequenz'}, Description: 'Surprising for Wolfgang Petersen's modest direction and Jürgen Prochnow's mature acting, since both would go on to make 'Das Boot', this is one of the best early gay-themed films I know.'
+      - tt0076837 # El transexual (1977), Description: 'Another Spanish trans-themed film, quite similar story to Cambio de sexo but this one's a dud, starring sex symbol Agata Lys who wasn't the best actress. Why so many Spanish LGBT titles that year? With dictator Franco's death in 1975, censorship had ended, making Spanish media content one of the most liberated for a number of years.'
+      - tt0075069 # Hidden Pleasures (1977) {original title-'Los placeres ocultos'}, Description: 'was celebrated at the time for being the first gay-themed Spanish film with full exposure, and director Eloy de la Iglesia was gay. But I find his work quite problematic, as his older man-younger man relationships tend to portray the sugar daddy as a troubled individual abused by criminal juveniles. Still, this is easily his best film.'
+      - tt0076378 # Me siento extraña (1977), Description: 'Another Spanish LGBT entry that year was the first Spanish-language Lesbian romance with Rocio Durcal, who regretted doing the film, stopped acting and became a very successful singer. Barbara Rey's career also took a dive because the film was attacked for its gay content, but ultimately she became a very famous TV host. In spite of the critics, the film was a success in relation to screens number.'
+      - tt0076513 # Outrageous! (1977), Description: 'bio retracing Craig Russell's career as a female impersonator touring gay clubs is interesting for depicting the scene as it once was.'
+      - tt0076085 # A Special Day (1977) {original title-'Una giornata particolare'}, Description: 'none less than Sophia Loren and Marcello Mastroianni in the first film to address the topic of persecution of homosexuals during Fascism.'
+      - tt0075616 # To an Unknown God (1977) {original title-'A un Dios desconocido'}, Description: 'first Spanish film to address the subject of homosexuality head-on, the film deals with an ageing magician recalling his love affair with gay poet (and Nobel laureate) Garcia Lorca.'
+      - tt0199143 # Word Is Out (1977), Description: 'easily the best of the 70s gay-themed documentaries and an important historical document on film.'
+      - tt0077435 # A Different Story (1978), Description: 'Much vilified for insinuating that people can change their orientations like shirts, this fluffy piece doesn't actually quite do that, and suffers more from Perry King's lack of talent than a predictable script.'
+      - tt0077164 # My Father, My Mother (1978) {original title-'Ang Tatay Kong Nanay'}, Description: 'In spite of very bad image quality and quite a few stereotypes, this one's a real gem, owing to Dolphy, one of the Philippines' biggest stars. He wasn't gay/trans in real life but often took roles like this to push for greater acceptance. His performance and a good story make this one of the most watch-worthy queer films of the '70s.'
+      - tt29703523 # Caligula: The Ultimate Cut (1978) Description:
+      - tt0077438 # Confessions of a Congressman (1978) {original title-'El diputado'}, Description: 'Again, Eloy de Iglesia puts an older man-younger boy relationship at the center of what is otherwise a political conspiracy thriller. This can be read as a comment on the transitioning of Spain at the time but it's not written well.'
+      - tt0076336 # The Place Without Limits (1978) {original title-'El lugar sin límites'}, Description: 'adaptation of Chilean gay writer José Donoso's novel centered on a Transvestite, this is a very bold, excessive marvel of a film, but of course tragedy ensues.'
+      - tt0077729 # In a Year with 13 Moons (1978) {original title-'In einem Jahr mit 13 Monden'}, Description: 'Fassbender's piece on a trans woman goes deeply psychoanalytical and paints a far too depressing and hopeless picture in my view, but highlights his own gender confusion. Still, not a film to watch for younger trans people, I would presume.'
+      - tt0077288 # La Cage aux Folles (1978) {original title-'La cage aux folles'}, Description: 'cult comedy was the first gay-themed film which was a huge hit even with straight audiences, and won the foreign film Golden Globe. Chock full of clichés, it's nevertheless honestly sympathetic.'
+      - tt0076152 # A Man Called Autumn Flower (1978) {original title-'Un hombre llamado Flor de Otoño'}, Description: 'Perhaps the most interesting of the 70s post-Franco gay films, as this one combines anti-fascist resistance with underground culture and a love story, which makes for a pretty good, albeit tragic, story.'
+      - tt0253366 # Ocana, an Intermittent Portrait (1978) {original title-'Ocaña, retrat intermitent'}, Description: 'Naive painter and public happening artist José Pérez Ocaña was a local hero of Barcelona during Spain's transition period and a queer idol, one of the first outspoken LGBT activists. He talked a lot in this film, with much more verve than usual in other docus of that time. There's a more recent film about him but this one captures the mood of the era.'
+      - tt0077928 # Midnight Express (1978) Description:
+      - tt0080662 # You Are Not Alone (1978) {original title-'Du er ikke alene'}, Description: 'coming-of-age story calling for tolerance and solidarity'
+      - tt0078794 # Army of Lovers or Revolt of the Perverts (1979) {original title-'Armee der Liebenden oder Revolte der Perversen'}, Description: 'von Praunheim's docu on the emergence of the US Pride movement before AIDS, not as known as it deserves to be.'
+      - tt0079107 # Das Ende des Regenbogens (1979), Description: 'It's a coming-of-age drama and not really gay-themed, as the lead turns tricks for money but is presented as straight. His clients are bystanders and have no background. It's interesting for showing the rent boy scene in a non-judgmental way, but that also makes it rather flat.'
+      - tt0079111 # Ernesto (1979), Description: 'adaptation of a posthumously published novel by Umberto Saba, quite explicit yet quite glossy'
+      - tt0074541 # Forbidden Letters (1979) Description:
+      - tt0219992 # Race d'Ep (1979), Description: 'an ideological docu re-enacting (in large part) photographer Wilhelm von Gloeden's settings accompanied by a fake Sicilian narrator. Since those picture are borderline pedo, it's an unfortunate mix, but not uncommon at the time.'
+      - tt0079702 # La patata bollente (1979), Description: 'fluffy comedy with very serious undertones, this was quite a hit at the time and combines cheap laughs with a plea for social conscience.'
+      - tt0079843 # Saint Jack (1979), Description: 'hard to come by Bogdanovich classic features - of all people - one-time Bond George Lazenby in a hustler set-up. Not gay-themed but an intresting period piece for sure.'
+      - tt0064963 # The Set (1979) Description: 
+      - tt0079054 # To Forget Venice (1979) {original title-'Dimenticare Venezia'}, Description: 'maybe the most sophisticated gay-themed film of the '70s, Brusati's masterpiece is cryptic but elegant.'
+      - tt0080051 # Twice a Woman (1979) {original title-'Twee vrouwen'}, Description: 'First European Lesbian-themed film of note, it's unfortunately heavily constructed as it's a literary adaptation, but nevertheless remarkable for focusing on the characters' inner workings instead of their sex.'
+      - tt0082829 # Nous étions un seul homme (1979), Description: 'WWII gay romance between a German soldier in hiding and a French village idiot, quite a story regarding the time.'
+      - tt0128265 # Immacolata e Concetta, l'altra gelosia (1979), Description: 'This is said to be the first Italian Lesbian romance, but I haven't been able to find it.'
+ ######### 1980s ###########
+      - tt0080569 # Cruising (1980), Description: 'Friedman's other, more infamous gay-themed film is interesting for the intense debate it incited, less for its unconvincing story.'
+      - tt0081051 # Dear Boys (1980) {original title-'Lieve jongens'}, Description: 'unfortunately failed adaptation of gay cult author Gerard Reve'
+      - tt0081606 # Taxi to the Toilet (1980) {original title-'Taxi zum Klo'}, Description: 'hilarious gay comedy depicting the Berlin scene as it pretty much still is.'
+      - tt0081635 # Times Square (1980), Description: 'teenage runaway movie with lesbian romance, which was much more overt in the unedited version.'
+      - tt0413492 # Witches, Faggots, Dykes and Poofters (1980), Description: 'rare look at the queer scene in Oz'
+  # 1981 #
+      - tt0078993 # La confusion des sentiments (1981), Description: 'Finally saw this made-for-TV Stefan Zweig adaptation with Michel Piccoli. Apart from a very attractive young lead, it looks pretty dated even for early 80s standards, which is probably why it's so obscure.'
+      - tt0167856 # Culo e camicia (1981), Description: '2nd episode in this two-in-one is borderline exploitative comedy, kind of a poor man's La cage aux folles'
+      - tt0182338 # Nessuno è perfetto (1981), Description: 'by no means perfect rom com stars Ornella Muti as a trans woman, and is therefore interesting to watch just for her gorgeousness. The story is surprisingly complicated for Italian comedy of the time.'
+      - tt0088784 # The Kiss (1981) {original title-'O Beijo No Asfalto'}, Description: 'stage adaptation of a popular theater piece of the time,this is more an examination of machismo under threat than homosexuality itself, which is more of a catalyst.'
+      - tt0083366 # Zorro: The Gay Blade (1981) Description:
+  # 1982 #
+      - tt1527272 # A Genius Like Us: A Portrait of Joe Orton (1982)
+      - tt0083872 # Another Way (1982) {original title-'Egymásra nézve'}, Description: 'bold Lesbian love story - the first from a socialist country - won its leading actress an award at Cannes'
+      - tt0083743 # La colmena (1982), Description: 'Golden Bear-winning adaptation of Camilo José Cela's controversial masterpiece 'The Hive' (1951) with a multitude of characters, among which an ageing homosexual stands out for what happens at the end.'
+      - tt0295916 # Le crime d'amour (1982), Description: 'the first (and least convincing) of the French bisexual subtext movies with a seductive young male protagonist of questionable character.'
+      - tt0085990 # Drifting (1982) {original title-'Nagu'a'}, Description: 'first openly gay-themed film from Israel, bleak but honest'
+      - tt0083806 # Deathtrap (1982) Description:
+      - tt0083962 # Forty Deuce (1982), Description: 'Paul Morrissey's most openly gay (i.e. least camp) film stars Kevin Bacon, but as usual with that director, it's all about depravity.'
+      - tt0084228 # Labyrinth of Passion (1982) {original title-'Laberinto de pasiones'}, Description: 'Almodóvar's 2nd film is a wild array of ambiguous sexuality, including a very young Antonio Banderas as a gay Iranian wannabe terrorist.'
+      - tt0085852 # Liquid Sky (1982), Description: 'Lesbian underground SciFi cult classic'
+      - tt0084293 # Making Love (1982), Description: 'first mainstream Hollywood gay-themed drama memorable for Kate Jackson's bewildered wife of a bisexual husband and Harry Hamlin's commitment problems.'
+      - tt0084664 # Nobody's Wife (1982) {original title-'Señora de nadie'}, Description: 'tale of female liberation with a focus on the protagonist's friendship with a gay guy'
+      - tt0084477 # Partners (1982), Description: 'cringing awful but an interesting look at stereotypes of the time'
+      - tt0084489 # Personal Best (1982), Description: 'fairly unknown Olympic boycott film was among the first to sympathetically address a Lesbian relationship'
+      - tt0084565 # Querelle (1982), Description: 'Fassbender's adaptation of Genet's most explicit novel doesn't shy away from sexually charged imagery, but doesn't succeed in capturing its atmosphere.'
+      - tt0084805 # Tootsie (1982) Description:
+      - tt0084865 # Victor/Victoria (1982), Description: 'now can this brillliant gender-bending musical featuring everybody involved at their absolute peak be called 'gay-related'? Robert Preston's Toddy is still the best gay character coming out of Hollywood for me, but some of my friends feel it's all a bit too gaudy, merry and superficial. To each his own - it's one of my all-time favorites.'
+  # 1983 #
+      - tt0085461 # The Dresser (1983), Description: 'Tom Courtenay won the Golden Globe for his the title-giving performance of an effeminate, but by no means weak attendant.'
+      - tt0085370 # Entre Nous (1983) {original title-'Coup de foudre'}, Description: 'well-done period-drama bisexual love story based on the director's parents and her mother's lover'
+      - tt0086543 # The 4th Man (1983) {original title-'De vierde man'}, Description: 'Paul Verhoeven's thriller is the best adaptation of a Gerard Reve novel, and is playing with sexual identity like many '80s films.'
+      - tt0085701 # The Hunger (1983), Description: 'It's a bit exploitative on the gay angle - however, not offensively so, like 'Basic Instinct' for instance. However, it was the first film involving Lesbian sex between A-list actresses, sparking the L-themed magazine Deneuve - which had to change its name to Curve following a lwasuit by the actress, though.'
+      - tt0085838 # Lianna (1983), Description: 'serious coming-out drama was among the first realistic Lesbian-themed films in the US.'
+      - tt0086320 # Sleepaway Camp (1983) Description: 
+      - tt0086377 # Streamers (1983), Description: 'less focus on the gay topic rather than examining psychological insecurities - as so often in Altman films. '3 Women' (1977) may carry a much stronger gay content but it's such a difficult film that I dare not interpret it in that context.'
+      - tt0083949 # A Woman in Flames (1983) {original title-'Die flambierte Frau'}, Description: 'unconvincing sensationalist character study features 'Törless' actor Mathieu Carrière as a bisexual hustler - in an example of how this subject shouldn't be handled'
+      - tt0084085 # The Wounded Man (1983) {original title-'L'homme blessé'}, Description: 'tough one-sided gay romance memorable for its explicit eroticism and Jean-Hugues Anglade's debut performance.'
+  # 1984 #
+      - tt0086904 # Another Country (1984), Description: 'adaptation of a play indicting the British private school system based on a true story, the film is memorable for its performances by future stars Rupert Everett, Cary Elwes and Colin Firth.'
+      - tt0087696 # Improper Conduct (1984) {original title-'Mauvaise conduite'}, Description: 'very interesting depiction of Cuban 'penitentiary reform' of homosexuals wondering why this is such a big issue for Castro'
+      - tt8857006 # Die at 20 (1984) {original title-Crever à 20 ans}
+      - tt0088782 # Before Stonewall (1984), Description: 'it's a classic'
+      - tt0088297 # The Cheat (1984) {original title-'La triche'}, Description: 'another French young man of ambiguous sexuality movie'
+      - tt0087676 # A Man Like Eva (1984) {original title-'Ein Mann wie EVA'}, Description: 'weird fictitious biopic/homage to Fassbender'
+      - tt0088275 # The Times of Harvey Milk (1984), Description: 'groundbreaking Oscar-winning docu about the first gay-rights activist to hold political office.'
+      - tt0087688 # Mass Appeal (1984) Description:
+  # 1985 #
+      - tt0088722 # The Angelic Conversation (1985) {original title-'Angelic Conversation'}, Description: 'one of the lesser, more experimental Jarmans'
+      - tt0088789 # The Berlin Affair (1985) {original title-'Interno berlinese'}, Description: 'a bit gaudy Tanizaki lesbian affair during Nazidom adaptation'
+      - tt0089716 # Colonel Redl (1985) {original title-'Oberst Redl'}, Description: 'Brandauer's portrayal of an officer set up for treason because of his homosexuality won the Jury Prize at Cannes, but is admittedly a very free enactment of the true story'
+      - tt0089015 # Desert Hearts (1985), Description: 'could count as the first real Lesbian romance film with - still - the arguably most realistic love scene.'
+      - tt0089069 # An Early Frost (1985), Description: 'one of the earliest AIDS-themed films with an excellent Aidan Quinn'
+      - tt0089424 # Kiss of the Spider Woman (1985), Description: 'adaptation of gay writer Manuel Puig's most famous novel, William Hurt's performance as a criminalized homosexual won him the Oscar.'
+      - tt0089707 # November Moon (1985) {original title-'Novembermond'}, Description: 'another slightly overambitious lesbian-affair-during-Nazidom movie'
+      - tt0088864 # Buddies (1985) Description:
+      - tt0088939 # The Color Purple (1985) Description:
+      - tt0089393 # Just One of the Guys (1985)       - tt0073888 # What can I do with a male nude (1985)
+      - tt0091578 # My Beautiful Laundrette (1985), Description: 'Stephen Frears' breakthrough film with a naturalistic gay love story embedded in a complex social drama.'
+      - tt0090309 # Westler (1985), Description: 'hard-to-come-by East-meets-West gay love story from when the Wall still divided the world. It's not a must-see but landed its director his job as head of the Berlin Film Festival's Panorama section - which hands out the Teddy, i.e. the most important gay film award.'
+      - tt0073888 # What can I do with a male nude (1985) Description: 
+  # 1986 #
+      - tt0090648 # Anne Trister (1986), Description: 'This is a Lesbian classic even though - or perhaps because - (bi)sexual orientation is just a part of the protagonist's self-finding process, a recurring theme for director Léa Pool.'
+      - tt0091702 # Otra historia de amor (1986), Description: 'dramatic, but well written first Argentinian gay love story'
+      - tt1138477 # Cinderella: The Shoe Must Go On (1986) Description: Panto / Drag
+      - tt0090798 # Caravaggio (1986), Description: 'features once more two British actors emerging in the 80s in gay roles, Dexter Fletcher and - more surprisingly - 'Game of Thrones' Sean Bean.'
+      - tt0102840 # The Flavor of Corn (1986) {original title-'Il sapore del grano'}, Description: 'man-boy love story ultimately involving a woman, a lot like 'Ernesto' but not explicit'
+      - tt0090197 # In a Glass Cage (1986) {original title-'Tras el cristal'}, Description: 'Villaronga's most infamous film focuses like his less famous '99.9' on perversion and sadomasochism - not really gay but a walk on the dark side of sex.'
+      - tt0089537 # Mala Noche (1986), Description: 'Gus van Sant's debut about adolescent hustlers, which would become a recurrent theme in his work.'
+      - tt0093412 # Law of Desire (1987) {original title-La ley del deseo} Description: 
+      - tt0092068 # Ménage (1986) {original title-'Tenue de soirée'}, Description: 'love triangle between a gay con artist and a small-time crook couple isn't realistic, but highly enjoyable.'
+      - tt0091725 # Parting Glances (1986), Description: 'one of the first films to address AIDS'
+      - tt0094248 # Vera (1986), Description: 'first film I know about a trans man'
+      - tt0092160 # Friends Forever (1986) {original title-'Venner for altid'}, Description: 'coming-of-age story in which the protagonist is a straight boy coming to terms with his best friend's homosexuality.'
+      - tt0093493 # Mannequin 1987
+      - tt0139857 # Angels of the Night (1987) {original title-'Anjos da Noite'}, Description: 'a neon kaleidoscope of mostly queer metropolitan characters'
+      - tt0093453 # The Gold Rimmed Glasses (1987) {original title-'Gli occhiali d'oro'}, Description: 'adaptation of Giorgio Bassani's - I would say - much better novel memorable for Morricone's music and Noiret's flawless performance.'
+      - tt0093239 # I've Heard the Mermaids Singing (1987), Description: 'For Canada's first Lesbian-themed film, this is relatively obscure, owing perhaps to weak structure and average storytelling.'
+      - tt0093412 # Law of Desire (1987) {original title-'La ley del deseo'}, Description: 'won the 1st Teddy (gay film award), was Pedro Almodóvar's first overtly gay film but is also his most melodramatic and least structured.'
+      - tt0093393 # The Last of England (1987), Description: 'won the 2nd Teddy, but is more of a social portrait embedded with gay imagery.'
+  # 1987 #
+      - tt0093512 # Maurice (1987), Description: 'E.M. Forster adaptation memorable for early performances by Rupert Graves and Hugh Grant, and for being one of the first gay-themed films meeting with universal critical acclaim.'
+      - tt0093776 # Prick Up Your Ears (1987), Description: 'naturalistic take on Joe Orton's difficult relationship with his ultimate murderer, with Gary Oldman and Alfred Molina at their best'
+      - tt0094200 # Two of Us (1987)  Description:
+      - tt0094210 # Night Zoo (1987) {original title-'Un zoo la nuit'}, Description: 'while principally a father-son story, it's set in an underground where both cops and bandits are gay - which has an artsy, eerie effect.'
+      - tt1003279 # The Poem of Wind and Trees (1987) {original title-'Kaze to ki no uta (Sanctus)'}, Description: 'this gay cult classic anime was the first non-pornographic feature to contain explicit sex, has a complex romantic story and is incredibly hard to find'
+      - tt0094336 # Withnail and I (1987) {original title-'Withnail & I'}, Description: 'while it's essentially a black comedy about an unorthodox friendship, it does have a few (hilarious / tragical) gay twists.'
+      - tt0339895 # What If I'm Gay? (1987) - https://www.imdb.com/title/tt0339895/
+  # 1988 #
+      - tt0094595 # Summer Vacation 1999 (1988) {original title-'1999 nen no natsu yasumi'}, Description: 'cross-dressing coming-of-age drama in which all male roles are played by actresses of the Takarazuka revue, a theater entirely composed of girls playing boys.'
+      - tt0096039 # Saturday the 14th Strikes Back (1988) Description: 
+      - tt0096516 # Straight for the Heart (1988) {original title-'À corps perdu'}, Description: 'Léa Pool's follow-up to Anne Trister features a similar story of self-finding of an artistic bisexual, but is more meandering.'
+      - tt0099858 # Alexandria: Again and Forever (1989) {original title-إسكندرية كمان وكمان}
+      - tt0094667 # Apartment Zero (1988), Description: '21 years before 'A Serious Man', Colin Firth starred in another gay role in this little known morbid masterpiece of dark eroticism.'
+      - tt0094930 # Curse of the Queerwolf (1988), Description: 'first queer trashy satire I know of'
+      - tt0095117 # The Everlasting Secret Family (1988), Description: 'weird Frank Moorhouse adaptation i.e. gay pulp fiction'
+      - tt0095183 # The Fruit Machine (1988), Description: 'runaway gay teenagers getting involved in noir-esque mystery, very amusing for depicting the gay youths as just about the only normal people in the world.'
+      - tt0095562 # Macho Dancer (1988), Description: 'first of many explicit Filipino hustler movies'
+      - tt0096289 # Torch Song Trilogy (1988), Description: 'Harvey Fierstein's adaptation of his own play runs the whole gamut of gay life, with a rich story hardly ever surpassed.'
+      - tt0095097 # Once More (1988), Description: 'weird French experimental film with another young man of dubious motivation; lots of those in the 80s'
+  # 1989 #
+      - tt0097095 # Coming Out (1989), Description: 'first gay-themed East German film ended up being the last East German film, opening the night the wall fell. Won 4th Teddy.'
+      - tt0097099 # Common Threads: Stories from the Quilt (1989), Description: 'Famous docu about living and dying during the AIDS pandemic won Rob Epstein and Jeffrey Friedman their 2nd Oscar after The Times of Harvey Milk.'
+      - tt0097714 # Last Exit to Brooklyn (1989), Description: 'could be called the last 'anti-gay' film because of Stephen Lang's self-loathing character and the awful treatment Alexis Arquette's character receives, but it is faithful to the novel, and if the message is being transgendered in 1950's NYC was no picknick, it's probably accurate.'
+      - tt0100049 # Longtime Companion (1989), Description: 'first mainstream drama focusing on gay relationships and the AIDS pandemic'
+      - tt0095545 # Looking for Langston (1989), Description: 'artistically brilliant poetic film won 3rd Teddy'
+      - tt0097790 # Loverboy (1989)
+      - tt0103099 # Tongues Untied (1989), Description: 'Teddy-winning docu, interesting topic but there are far better essays and anthologies by Essex Hemphill, Joseph Beam etc. For a film, this is too textual, it's missing story.'
+      - tt0100865 # Via Appia (1989), Description: 'first and perhaps best of Hick's many voyeuristic endeavours'
+ ######### 1990s ###########
+      - tt0780606 # A Shock To The System (1990)
+      - tt0100332 # Paris Is Burning (1990)
+    # 1991 #
+      - tt0101798 # Edward II (1991)
+      - tt0104448 # The Hours and Times (1991)
+      - tt0102152 # Jerker (1991)
+      - tt0102395 # Mannequin Two: On the Move (1991)
+      - tt0102494 # My Own Private Idaho (1991)
+      - tt0102613 # Our Sons (1991)
+      - tt0103312 # Young Soul Rebels (1991)
+    # 1992 #
+      - tt0104414 # Amazing Grace (1992) {original title-חסד מופלא}
+      - tt0104036 # The Crying Game (1992)
+      - tt0108504 # For a Lost Soldier (1992) {original title-Voor een verloren soldaat}
+      - tt0104745 # The Living End (1992)
+      - tt1963768 # The Lost Language of Cranes (1992)
+      - tt0104776 # Luna Park (1992) {original title-Луна-парк}
+      - tt0107756 # Orlando (1992)
+      - tt0105508 # Swoon (1992)
+      - tt0103616 # The Accompanist (1992) {original title-L'Accompagnatrice}
+    # 1993 #
+      - tt0106273 # And the Band Played On (1993)
+      - tt0106519 # Carlito's Way (1993)
+      - tt0104471 # I'll Love You Forever Tonight (1993)
+      - tt0107292 # Just One of the Girls (1993) {original title-Anything for Love}
+      - tt0107447 # Love and Human Remains (1993)
+      - tt0107818 # Philadelphia (1993)
+      - tt0108168 # Pretty Boy (1993) {original title-Smukke Dreng}
+      - tt0108366 # Totally F***ed Up (1993)
+      - tt0107156 # The Wedding Banquet (1993) {original title-囍宴}
+      - tt0108649 # Zero Patience (1993)
+    # 1994 #
+      - tt0110455 # A Man of No Importance (1994)
+      - tt0109831 # Four Weddings and a Funeral (1994)
+      - tt0109045 # Pricilla (1994)
+      - tt0111309 # The Sum of Us (1994)
+      - tt0108320 # There Goes My Baby (1994)
+      - tt0111418 # Threesome (1994)
+      - tt0111486 # Trevor (1994)
+      - tt0111019 # Wild Reeds (1994) {original title-Les Roseaux sauvages}
+    # 1995 #
+      - tt0112571 # Boys on the Side (1995)
+      - tt0113464 # Jeffrey (1995)
+      - tt0114020 # Sebastian (1995) {original title-När alla vet}
+      - tt0114682 # To Wong Foo, Thanks for Everything! Julie Newmar (1995) {original title-To Wong Foo Thanks for Everything, Julie Newmar}
+      - tt0114702 # Total Eclipse (1995)
+    # 1996 #
+      - tt0115640 # Beautiful Thing (1996)
+      - tt0115685 # The Birdcage (1996)
+      - tt0115741 # Boyfriends (1996)
+      - tt0122417 # Butch Camp (1996)
+      - tt0116102 # Different for Girls (1996)
+      - tt0113122 # Frisk (1996)
+      - tt0116587 # Hustler White (1996)
+      - tt0116882 # Lilies (1996) {original title-Lilies - Les feluettes}
+      - tt0244705 # Particularly Now, in Spring (1996)
+      - tt0117435 # Raising Heroes (1996)
+      - tt0116164 # Regular Guys (1996) {original title-Echte Kerle}
+    # 1997 #
+      - tt0118590 # All the Rage (1997)
+      - tt0118698 # Bent (1997)
+      - tt0118762 # Boys Life 2 (1997)
+      - tt0156460 # Defying Gravity (1997)
+      - tt0119857 # Happy Birthday! (1997) {original title-Parabéns!}
+      - tt0118845 # Happy Together (1997) {original title-春光乍洩}
+      - tt0125209 # I Think I Do (1997)
+      - tt0119360 # In & Out (1997)
+      - tt0119465 # Kiss Me, Guido (1997)
+      - tt0119668 # Midnight in the Garden of Good and Evil (1997)
+      - tt0244773 # Saint (1997)
+      - tt0119248 # Steam: The Turkish Bath (1997) {original title-Hamam}
+      - tt0125128 # The Hanging Garden (1997)
+      - tt0114687 # The Toilers and the Wayfarers (1997)
+      - tt0120514 # Wilde (1997)
+    # 1998 #
+      - tt0120577 # 54 (Director's Cut) (1998)
+      - tt0126810 # Bedrooms and Hallways (1998)
+      - tt0138414 # Edge of Seventeen (1998)
+      - tt0162973 # Get Real (1998)
+      - tt0193997 # Hard (1998)
+      - tt0138487 # Head On (1998)
+      - tt0150941 # Homo Heights (1998)
+      - tt0146990 # Like It Is (1998)
+      - tt0166287 # Don't Tell Anyone (1998) {Original title-No se lo digas a nadie}
+      - tt0120772 # The Object of My Affection (1998)
+      - tt0244652 # Sailor (1998) {original title-Matroos}
+      - tt0120879 # Velvet Goldmine (1998)
+      - tt0120890 # Wild Things (1998)
+      - tt0177394 # The Wolves of Kromer (1998)
+    # 1999 #
+      - tt0161219 # Advice from a Caterpillar (1999)
+      - tt2015290 # Angel in the Toilet (1999) {original title-憚り天使}
+      - tt0211504 # Bad Company (1999) {original title-Mauvaises fréquentations}
+      - tt0171804 # Boys Don't Cry (1999)
+      - tt0179116 # But I'm A Cheerleader (1999)
+      - tt0155711 # Flawless (1999)
+      - tt0209252 # Private Dicks: Men Exposed (1999)
+      - tt0217032 # Secret Men's Business (1999)
+      - tt0138834 # Story of a Bad Boy (1999)
+      - tt0134119 # The Talented Mr. Ripley (1999)
+      - tt0162710 # Trick (1999)
+      - tt0164221 # Virtual Sexuality (1999)
+ ######### 2000s ###########
+  # 2000 #
+      - tt0247196 # Before Night Falls (2000)
+      - tt0212815 # Big Eden (2000)
+      - tt0249462 # Billy Elliot (2000)
+      - tt0221838 # Borstal Boy (2000)
+      - tt0265101 # Boys Life 3 (2000)
+      - tt0222850 # The Broken Hearts Club: A Romantic Comedy (2000)
+      - tt0227277 # Burnt Money (2000) {original title-Plata quemada}
+      - tt0244577 # Campfire (2000) {original title-Kampvuur}
+      - tt0242795 # Come Undone (2000) {original title-Presque rien}
+      - tt0230098 # Confusion of Genders (2000) {original title-La confusion des genres}
+      - tt0229397 # Forgive and Forget (2000)
+      - tt0228577 # I Couldn't Care Less (2000) {original title-Me Da Igual}
+      - tt0280791 # The Journey Of Jared Price (2000)
+      - tt0231844 # Just a Question of Love (2000) {original title-Juste une question d'amour}
+      - tt0217119 # A Matter of Taste (2000) {original title-Une affaire de goût}
+      - tt0156841 # The Next Best Thing (2000)
+      - tt0250478 # Nico and Dani (2000) {original title-Krámpack}
+      - tt0160749 # Red Dirt (2000)
+      - tt0204640 # Sordid Lives (2000)
+      - tt0185014 # Wonder Boys (2000)
+  # 2001 #
+      - tt0250202 # All Over the Guy (2001)
+      - tt0265105 # The Brotherhood (2001)
+      - tt0280502 # The Brotherhood 2: Young Warlocks (2001)
+      - tt0299608 # The Burning Boy (2001)
+      - tt0272034 # Chicken (2001)
+      - tt0245115 # The Fluffer (2001)
+      - tt0248845 # Hedwig And The Angry Inch (2001)
+      - tt0274497 # His Secret Life (2001) {original title-Le Fate Ignoranti}
+      - tt0242587 # L.I.E. (2001)
+      - tt0288192 # Return To Innocence (2001)
+      - tt0273719 # Shake It All About (2001) {original title-En kort, en lang}
+      - tt0299213 # Waterboys (2001) {original title-ウォーターボーイズ}
+  # 2002 #
+      - tt0372884 # Eating Out (2002)
+      - tt0309600 # Food of Love (2002) {original title-Menja d’amor}
+      - tt0340124 # Gaydar (2002)
+      - tt0257850 # The Laramie Project (2002)
+      - tt0267736 # The Matthew Shepard Story (2002)
+      - tt0313410 # No Night Is Too Long (2002) based on the book by Barbara Vine (aka Ruth Rendell) - https://archive.org/details/NoNightIsTooLong2002 (2002)
+      - tt0245341 # P.S. Your Cat Is Dead! (2002)
+      - tt0292644 # The Rules of Attraction (2002)
+      - tt0279781 # Sorority Boys (2002)
+      - tt0250067 # The Trip (2002)
+      - tt0318828 # When Boys Fly (2002)
+      - tt0334754 # Yossi & Jagger (2002) {original title-יוסי וג'אגר}
+  # 2003 #
+      - tt0336910 # 9 Dead Gay Guys (2003)
+      - tt0401248 # Beautiful Boxer (2003) {original title-บิวตี้ฟูล บ๊อกเซอร์}
+      - tt0310805 # The Brotherhood III: Young Demons (2003)
+      - tt0306761 # Eden's Curve (2003)- A coming of age romantic drama set in 1972 based on real life events.
+      - tt0401813 # Everything Taboo DVD Extras (Subtitulado en Español) (2003)
+      - tt0380358 # Fairies (2003) 
+      - tt0363604 # Far West (2003)
+      - tt0375782 # Gone, But Not Forgotten (2003)
+      - tt0345551 # Latter Days (2003)
+      - tt0330602 # Mambo Italiano (2003)
+      - tt0339419 # The Mudge Boy (2003)
+      - tt0320244 # Party Monster (2003)
+      - tt0378867 # Testosterone (2003)
+      - tt0354694 # The Last Year (2003)
+      - tt0375771 # Gay Hollywood (2003)
+  # 2004 #
+      - tt0246404 # The 24th Day (2004)
+      - tt33509348 # 101 Embarrassing Sexual Accidents (2004)
+      - tt0421722 # Between the Boys (2004)
+      - tt0306597 # Brother to Brother (2004)
+      - tt0377701 # Cowboys & Angels (2004)
+      - tt0398963 # Dorian Blues (2004)
+      - tt0402223 # The Graffiti Artist (2004)
+      - tt0340137 # Grande école (2004)
+      - tt0375911 # Guys & Balls (2004) GTM (German) (2004) {original title-Männer wie wir}
+      - tt0390080 # Harry And Max (2004)
+      - tt0356159 # Hellbent (2004)
+      - tt0359423 # A Home at the End of the World (2004)
+      - tt0379265 # If Dad Only Knew (2004) {original title-Outing Riley}
+      - tt0362269 # Kinsey (2004)
+      - tt0402130 # The Last Day (2004) {original title-Le dernier jour}
+      - tt0370986 # Mysterious Skin (2004)
+      - tt0381466 # Oh Happy Day (2004)
+      - tt0297389 # Poster Boy (2004)
+      - tt0410953 # Prom Queen: The Marc Hall Story (2004)
+      - tt0367097 # Straight-Jacket (2004)
+      - tt0374252 # Sugar (2004)
+      - tt0367027 # Shortbus (2006) {dir-John Cameron Mitchell, USA; ensemble exploring sex & relationships, explicit queer content}
+      - tt0420206 # Summer Storm (2004) {original title-Sommersturm}
+      - tt0380773 # Three Dancing Slaves (2004) {original title-Le Clan}
+      - tt0367153 # The Toolbox Murders (2004)
+      - tt0381668 # Tropical Malady (2004) {original title-Sud pralad} {dir-Apichatpong Weerasethakul, Thailand; lyrical queer romance split into two halves}
+      - tt0374277 # Touch of Pink (2004)
+      - tt0352994 # Walk on Water (2004) {original title-LaLehet Al HaMayim}
+  # 2005 #
+      - tt0372122 # Adam & Steve (2005)
+      - tt0466669 # Almost Normal (2005)
+      - tt0779722 # Amnesia: The James Brighton Enigma (2005)
+      - tt0337573 # Antibodies (2005) {original title-Antikörper}
+      - tt0459672 # Baby Shark-Short (2005) {original title-Bébé requin}
+      - tt0489453 # Boys Grammar (2005)
+      - tt0411195 # Breakfast on Pluto (2005)
+      - tt0388795 # Brokeback Mountain (2005)
+      - tt0445236 # The Brotherhood IV: the Complex (2005)
+      - tt0401085 # C.R.A.Z.Y. (2005)
+      - tt0450256 # Dare (2005)
+      - tt0451697 # David (2005)
+      - tt0384929 # The Dying Gaul (2005)
+      - tt0427906 # Eleven Men Out (2005) {original title-Strákarnir okkar}
+      - tt0356680 # The Family Stone (2005)
+      - tt0443510 # Flirting with Anthony (2005)
+      - tt0415833 # Hate Crime (2005)
+      - tt0421994 # Imagine Me & You (2005)
+      - tt0434124 # Kinky Boots (2005)
+      - tt0464083 # Latch Key (2005)
+      - tt0470715 # Like a Brother (2005) {original title-Comme un frère}
+      - tt0476470 # Little Boy Blues (2005)
+      - tt0444518 # A Love to Hide (2005) {original title-Un amour à taire}
+      - tt0424287 # The Mostly Unfabulous Social Life of Ethan Green (2005)
+      - tt9520770 # Packed Lunch (2005)
+      - tt0441897 # Pedro (2005) {original title-San Pietro}
+      - tt0463668 # Postmortem (2005)
+      - tt0452671 # Race You to the Bottom (2005)
+      - tt0482579 # Regarding Billy (2005)
+      - tt0294870 # Rent (2005)
+      - tt0469183 # Shakespeare's Sonnets (2005)
+      - tt0420931 # Starcrossed (2005)
+      - tt0464219 # Straight Acting (2005)
+      - tt1035498 # Tan Lines (2005)
+      - tt2407380 # Test (2005)
+      - tt0446051 # Third Man Out (2005)
+      - tt0407265 # Transamerica (2005)
+      - tt0436852 # True Love (2005)
+      - tt0412044 # WTC View (2005)
+      - tt0479773 # You Are My Sunshine (2005) {original title-너는 내 운명}
+      - tt0421090 # Zerophilia (2005)
+  # 2006 #
+      - tt0443431 # Another Gay Movie (2006)
+      - tt0482351 # Beastly Boyz (2006)
+      - tt0433350 # Boy Culture (2006)
+      - tt5780094 # Boys Briefs 3: Between the Boys (2006)
+      - tt0476643 # The Bubble (2006) {original title-הבועה}
+      - tt0492940 # Bugcrush (2006)
+      - tt0473174 # Coffee Date (2006)
+      - tt0468463 # The Conrad Boys (2006)
+      - tt1073162 # Cowboy Forever (2006)
+      - tt0481273 # The Curiosity of Chance (2006)
+      - tt0834906 # Dead Boyz Don't Scream (2006)
+      - tt15115280 # Driftwood (2006)
+      - tt0795376 # Eating Out 2: Sloppy Seconds (2006)
+      - tt0885520 # Eternal Summer (2006) {original title-盛夏光年}
+      - tt0433363 # Force Of Impact (2006) {original title-Deadly Skies}
+      - tt0464049 # The History Boys (2006)
+      - tt0490126 # Kenneth Williams: Fantabulosa! (2006)
+      - tt0778784 # My Best Friend (2006) {original title-Mon meilleur ami}
+      - tt0486751 # One To Another (2006) {original title-Chacun sa nuit}
+      - tt0778805 # The Perfect Penis (2006)
+      - tt0492330 # Poltergay (2006)
+      - tt0488903 # Punish Me (2006) {original title-Verfolgt}
+      - tt0821557 # Rag Tag (2006)
+      - tt0367027 # Shortbus (2006)
+      - tt0492487 # Small Town Gay Bar (2006)
+      - tt0907843 # Stealth (2006) {original title-Comme des voleurs (à l'est)}
+      - tt0800225 # Summer (2006)
+      - tt0770824 # A Summer Day (2006) {original title-Un jour d'été}
+      - tt0807767 # Sun Kissed (2006)
+      - tt0362225 # Tell No One (2006) {original title-Ne le dis à personne}
+      - tt0882817 # Three Summers (2006) {original title-Tre Somre}
+      - tt0823158 # Wedding Wars (2006)
+      - tt1087905 # Whispering Moon (2006) {original title-Das Flüstern des Mondes}
+      - tt0816160 # The Young, the Gay and the Restless (2006)
+  # 2007 #
+      - tt0465375 # After Sex (2007)
+      - tt1085362 # An Angel Named Billy (2007)
+      - tt1403123 # Area X (2007)
+      - tt0847833 # Back Soon (2007)
+      - tt1135961 # Bangkok Love Story (2007) {original title-เพื่อน กูรักมึงว่ะ}
+      - tt1116028 # Bramadero (2007)
+      - tt0910847 # Breakfast with Scot (2007)
+      - tt1151426 # Breath (2007) {original title-Zucht}
+      - tt1064728 # Candy Boy (2007)
+      - tt0495026 # Choose Connor (2007)
+      - tt1138002 # Chris & Don: A Love Story (2007)
+      - tt0815447 # Clandestinos (2007)
+      - tt1043903 # Clapham Junction (2007)
+      - tt0465436 # December Boys (2007)
+      - tt0838192 # Fashion Victims (2007) {original title-Reine Geschmacksache}
+      - tt1464533 # Father Knows... (2007)
+      - tt1541844 # Flatmates (2007) {original title-Kompisar}
+      - tt0835034 # A Four Letter Word (2007)
+      - tt1090758 # Futures (and Derivatives) (2007)
+      - tt0815165 # The Gay Bed & Breakfast of Terror (2007)
+      - tt1054488 # Gay Zombie (2007)
+      - tt0949771 # Here’s Looking at You, Boy (2007) {original title-Schau mir in die Augen, Kleiner}
+      - tt0960770 # Holding Trevor (2007)
+      - tt0762107 # I Now Pronounce You Chuck & Larry (2007)
+      - tt0463536 # Jake's Closet (2007)
+      - tt1015994 # Kali Ma (2007)
+      - tt0893346 # Kiss the Bride (2007)
+      - tt0985686 # Le weekend (2007) {original title-Le Weekend}
+      - tt0494253 # Long-Term Relationship (2007)
+      - tt1152282 # Love of Siam (2007) {original title-รักแห่งสยาม}
+      - tt0971205 # Lucky Blue (2007)
+      - tt1582228 # Mirrors (2007) {original title-Miroirs d'été}
+      - tt0972564 # My Last Ten Hours With You (2007)
+      - tt0928413 # Naked Boys Singing! (2007)
+      - tt6465952 # Nuclear (2007) GTM short (2007) - tt6465952. ?? may be wrong one.
+      - tt1236210 # Pam Ann Live - Come Fly With Me (2007)
+      - tt0826600 # Phoenix (2007)
+      - tt1085496 # Rock Haven (2007)
+      - tt1043771 # Ron the Zookeeper (2007)
+      - tt0379976 # Savage Grace (2007)
+      - tt1687264 # Scarred (2007)
+      - tt1057518 # Serene Hunter (2007)
+      - tt0942384 # Shelter (2007)
+      - tt1010052 # Surveillance 24/7 (2007) {original title-Surveillance}
+      - tt1074218 # A Very British Sex Scandal (2007)
+      - tt0983244 # VGL-Hung! (2007)
+      - tt1139978 # Weekend in the Countryside (2007) {original title-Week-end à la campagne}
+      - tt0384683 # What We Do Is Secret (2007)
+      - tt0880573 # While You Are Here (2007) {original title-Solange Du hier bist}
+      - tt1419715 # Working It Out (2007)
+      - tt1157732 # Wrestling (2007) {original title-Bræðrabylta}
+      - tt0995829 # XXY (2007)
+      - tt1038119 # You Belong to Me (2007)
+      - tt1166805 # You, Me and Him (2007) {original title-Café com Leite}
+  # 2008 #
+      - tt1137994 # 3-Day Weekend (2008)
+      - tt0317079 # And Then Came Summer (2008)
+      - tt1051981 # Another Gay Sequel: Gays Gone Wild! (2008)
+      - tt1234240 # Antarctica (2008) {original title-אנטארקטיקה}
+      - tt1224437 # Ask Not (2008)
+      - tt1315031 # Beatific Vision (2008)
+      - tt1971339 # Boy Meets Boy (2008) {original title-소년, 소년을 만나다}
+      - tt0412536 # Brideshead Revisited (2008)
+      - tt1249164 # The Chef's Letter (2008)
+      - tt0870089 # Ciao (2008)
+      - tt1339071 # Cowboy (2008)
+      - tt1196140 # Daybreak (2008)
+      - tt1212408 # Dog Tags (2008)
+      - tt0889595 # Dream Boy (2008)
+      - tt0877700 # Give Me Your Hand (2008) {original title-Donne-moi la main}
+                   # Glitter & Queer 2 (2008) Note: https://www.themoviedb.org/movie/320539-glitter-queer-2
+      - tt1205492 # A Good Boy (2008) {original title-Guter Junge}
+      - tt1065444 # I Dreamt Under Water (2008) {original title-J'ai rêvé sous l'eau}
+      - tt1130987 # Ice Blues: A Donald Strachey Mystery (2008)
+      - tt1244567 # In the Closet (2008)
+      - tt1351642 # James (2008)
+      - tt1244571 # Jay (2008)
+      - tt1104083 # Little Ashes (2008)
+      - tt1255881 # Love Bite (2008)
+      - tt1114723 # The Man Who Loved Yngve (2008) {original title-Mannen som elsket Yngve}
+      - tt1013753 # Milk (2008)
+      - tt1188722 # Mirror Mirror (2008)
+      - tt1106447 # Mulligans (2008)
+      - tt1494794 # My Name Is Love (2008) {original title-Love}
+      - tt0955306 # Noah's Arc: Jumping the Broom (2008)
+      - tt1238298 # On the Other Hand, Death: A Donald Strachey Mystery (2008)
+      - tt1151384 # Otto; or, Up with Dead People (2008)
+      - tt1067733 # Patrik 1.5 (2008) {original title-Patrik 1,5}
+      - tt0454941 # The Sensei (2008)
+      - tt1204153 # Sweat (2008)
+      - tt1015158 # The Books of John (2008)
+      - tt1251371 # Thirteen or So Minutes (2008)
+      - tt1774663 # Vandals (2008) {original title-Vandalen}
+      - tt0476991 # Were the World Mine (2008)
+      - tt1238780 # The Young and Evil (2008)
+  # 2009 #
+      - tt1387312 # Aaron... Albeit a Sex Hero (2009) {original title-Aaron Albeit a Hero}
+      - tt1562259 # Ajumma! Are You Krazy??? (2009)
+      - tt1626922 # All Boys (2009) {original title-Poikien bisnes}
+      - tt1528710 # All You Need Is Love (2009) {original title-All You Need is Love - Meine Schwiegertochter ist ein Mann}
+      - tt1222330 # The Art of Being Straight (2009)
+      - tt1433081 # Astoria, Queens (2009)
+      - tt1574342 # Be Mine (2009)
+      - tt1137437 # Between Love & Goodbye (2009)
+      - tt1332100 # The Big Gay Musical (2009)
+      - tt1266047 # The Boy with the Sun in His Eyes (2009)
+      - tt1655586 # Colonial Gods (Short 2009)
+      - tt1235124  # Dorian Gray (2009)
+      - tt1327820 # Brotherhood (2009) {original title-Broderskab}
+      - tt2240970 # Cannibals (2009) {original title-Caníbales}
+      - tt1396235 # Catalina: A New Kind of Superhero (2009)
+      - tt1090646 # City Rats (2009)
+      - tt1445784 # The Coach (2009) {original title-Træneren}
+      - tt1241316 # Dare (2009)
+      - tt1377144 # Decoding Alan Turing (2009)
+      - tt1396948 # Diana (2009)
+      - tt1213638 # Different From Whom? (2009) {original title-Diverso da chi?}
+      - tt1342854 # Dish (2009)
+      - tt1235124 # Dorian Gray (2009)
+      - tt1290400 # Double Identity (2009)
+      - tt1268962 # Drool (2009)
+      - tt1570493 # Drowning (2009)
+      - tt1472059 # Eating Out 3: All You Can Eat (2009)
+      - tt1311082 # Edgar Allan Poe's the Pit and the Pendulum (2009)
+      - tt0997057 # An Englishman in New York (2009)
+      - tt1424327 # Eyes Wide Open (2009) {original title-עיניים פקוחות}
+      - tt1411853 # Finding Me (2009)
+      - tt1520884 # Franswa Sharl (2009)
+      - tt1410020 # Freeway Killer (2009)
+      - tt0843852 # Growing Out (2009)
+      - tt1119646 # The Hangover (2009)
+      - tt5679570 # He Likes Guys (2009)
+      - tt1199471 # Heiko (2009)
+      - tt0405022 # House of Boys (2009)
+      - tt1334537 # Humpday (2009)
+      - tt1424797 # I Killed My Mother (2009) {original title-J'ai tué ma mère}
+      - tt1045772 # I Love You Phillip Morris (2009)
+      - tt1753995 # Just Friends? (2009)
+      - tt1355203 # The Island (2009)
+      - tt1205560 # Last Call (2009)
+      - tt1461242 # Lucky Bastard (2009)
+      - tt1305714 # Make the Yuletide Gay (2009)
+      - tt0882789 # Mr. Right (2009)
+      - tt1520428 # The New Tenants (2009)
+      - tt0949875 # The New Twenty (2009)
+      - tt1564058 # Out in the Silence (2009)
+      - tt1049400 # Outrage (2009)
+      - tt1223082 # Oy Vey! My Son Is Gay! (2009)
+      - tt1391110 # Paper Boys (2009)
+      - tt1073510 # Prayers for Bobby (2009)
+      - tt1408309 # Protect Me From What I Want (2009)
+      - tt1288571 # Shank (2009)
+      - tt1315981 # A Single Man (2009)
+      - tt1361332 # A Siren In The Dark (2009)
+      - tt1403246 # Steam (2009)
+      - tt1399602 # Straight (2009) {original title-स्ट्रेट}
+      - tt1363483 # Tanjong Rhu (2009) {original title-丛林湾}
+      - tt1401198 # Teddy (2009)
+      - tt1544548 # The Traitor (2009) {original title-הבוגד}
+      - tt1347104 # Twoyoungmen, UT. (2009)
+      - tt1070887 # The War Boys (2009)
+      - tt1555219 # Wrecked (2009)
+      - tt1493922 # You Can't Curry Love (2009)
+ ######### 2010s ###########
+      - tt1655387 # Altitude Falling (2010)
+      - tt2719032 # And, There You Are (2010)
+      - tt1426320 # BearCity (2010)
+      - tt1646960 # Blocks (2010) {original title-Blokes}
+      - tt1753712 # Easy Money (Short 2010) {original title-Dinero fácil}
+      - tt1601236 # Cakes and Sand (2010) {original title-Torten im Sand}
+      - tt1756584 # Censored Dreams (2010) {original title-Laruang Lalake}
+      - tt1513067 # College Boys Live (2010)
+      - tt1174693 # The Four-Faced Liar (2010)
+      - tt1610478 # Go Go Reject (2010)
+      - tt1600524 # Heartbeats (2010) {original title-Les amours imaginaires}
+      - tt1609935 # Inflatable Swamp (2010)
+      - tt1533053 # Is It Just Me? (2010)
+      - tt1634524 # Jitters (2010) {original title-Órói}
+      - tt1523483 # Kaboom (2010)
+      - tt0842926 # The Kids Are All Right (2010)
+      - tt1405810 # Loose Cannons (2010) {original title-Mine vaganti}
+      - tt3275358 # LOVE, 100°C (2010) {original title-사랑은 100℃}
+      - tt1582220 # Man and Boy (2010)
+      - tt1639845 # Nightswimming (2010)
+      - tt1587839 # Pooltime (2010)
+      - tt1149604 # Raging Sun, Raging Sky (2010) {original title-Rabioso sol, rabioso cielo}
+      - tt1634300 # Role/Play (2010)
+      - tt1577064 # Seeing Heaven (2010)
+      - tt1607583 # Shut Up & Kiss Me (2010) {original title-Shut Up and Kiss Me}
+      - tt1698656 # Sparrow (2010)
+                  # Steam Room Stories Vol 1 (2010)
+      - tt1278469 # Temple Grandin (2010)
+      - tt1615885 # The Seminarian (2010)
+      - tt1318995 # Twisted Romance (2010) {original title-Vil romance}
+      - tt1810819 # The Unforgettable Danny La Rue (2010)
+      - tt1407055 # Violet Tendencies (2010)
+      - tt1628845 # Watch Over Me (2010) {original title-שמור עלי}
+      - tt1727390 # Waterberry Tears (2010)
+      - tt1615916 # You Should Meet My Son! (2010)
+  # 2011 #
+      - tt1932596 # 33 Teeth (2011)
+      - tt2147199 # Arisan! 2 (2011)
+      - tt1753995 # Bad Romance (2011) {original title-친구사이?}
+      - tt1697878 # Bite Marks (2011)
+      - tt1920858 # Blinders (2011)
+      - tt1961281 # The Boy Who Couldn't Swim (2011) {original title-Drengen der ikke kunne svømme}
+      - tt1996199 # Boys Village (2011)
+      - tt2072899 # Family Affair (2011) {original title-Assunto de Família}
+      - tt1715322 # Buffering (2011)
+      - tt1714627 # Cappuccino (2011)
+      - tt1188998 # Children of God (2011) {original title-Kielletty hedelmä}
+      - tt1651062 # Christopher and His Kind (2011)
+      - tt1590766 # Communication (2010) (2011)
+      - tt1490622 # Curious Thing (2011)
+      - tt1802762 # Downing (2011)
+      - tt1978422 # Deep End (2011)      
+      - tt1833845 # Eating Out: Drama Camp (2011)
+      - tt2197937 # Félix and the Fish (2011) {original title-Félix y el pez}
+      - tt1827528 # Harvest (2011) {original title-Stadt Land Fluss}
+      - tt1913042 # Hold Your Peace (2011)
+      - tt1779814 # I Want to Get Married (2011)
+      - tt1986871 # Into the Lion's Den (2011)
+      - tt0138541 # Judas Kiss (2011)
+      - tt1728978 # Longhorns (2011)
+      - tt1737798 # The Love Patient (2011)
+      - tt1625150 # North Sea Texas (2011) {original title-Noordzee, Texas}
+      - tt2664680 # Oh My Ghost 2 (2011) {original title-หอแต๋วแตก แหวกชิมิ}
+      - tt1681371 # One (2011)
+      - tt1500512 # Private Romeo (2011)
+      - tt1810861 # Remington and the Curse of the Zombadings (2011) {original title-Zombadings 1: Patayin sa Shokot si Remington}
+      - tt1833674 # Rent Boys (2011) {original title-Die Jungs vom Bahnhof Zoo}
+      - tt1830792 # Romeos (2011)
+      - tt1808493 # Spring (2011)
+      - tt6014904 # The Strange Ones (2011)
+      - tt1712573 # Strapped (2011)
+      - tt1847731 # Tomboy (2011) {dir-Céline Sciamma, France; tender coming-of-age about a transmasculine child}
+      - tt1293797 # The Last Days of Edgar Harding (2011)
+      - tt1781947 # Vampire Boys (2011)
+      - tt1830402 # Vampires: Brighter in Darkness (2011)
+      - tt1645187 # Walk a Mile in My Pradas (2011)
+      - tt1830903 # We Once Were Tide (2011)
+      - tt1915533 # A Wedding Most Strange (2011)
+      - tt1635659 # What Happens Next (2011)
+      - tt2040594 # What You Looking At? (2011)
+      - tt1877808 # The Wishmakers (2011) {original title-The Wish Makers of West Hollywood}
+  # 2012 #
+      - tt2024351 # 1313: Cougar Cult (2012)
+      - tt2271135 # 1313: Night of the Widow (2012)
+      - tt2136682 # 1313: UFO Invasion (2012)
+      - tt1520493 # A Warm Wind (2012)
+      - tt2251203 # After the Sky Turned Black (2012)
+      - tt1840911 # Angels of Sex (2012) {original title-El sexo de los ángeles}
+      - tt1298530 # Animals (2012)
+      - tt2066176 # Any Day Now (2012)
+      - tt1332052 # Arizona Sky (2012)
+      - tt2356975 # Bathing Franky (2012)
+      - tt2005156 # BearCity 2: The Proposal (2012)
+      - tt2402623 # Beyond the Walls (2012) {original title-Hors les murs}
+      - tt3233952 # The Curse of the Un-Kissable Kid (2012)
+      - tt9505992 # D'Agostino (2012)
+      - tt2409720 # Deflated (2012)
+      - tt1833846 # Eating Out: The Open Weekend (2012)
+      - tt0790653 # Elliot Loves (2012)
+      - tt2193764 # For Dorian (2012)
+      - tt1598496 # Four More Years (2012) {original title-Fyra år till}
+      - tt2211097 # The Wilding (2012) tt2211097 (2012)
+      - tt2361532 # Headlong (2012) {original title-Corps perdu}
+      - tt1160371 # Heels (2012)
+      - tt2124803 # How to Survive a Plague (2012)
+      - tt3356318 # Human Warmth (2012) {original title-Chaleur humaine}
+      - tt1995329 # I Want Your Love (2012)
+      - tt2860592 # Impossible Choice (2012)
+      - tt2148962 # It's Consuming Me (2012)
+      - tt2271243 # It's Not a Cowboy Movie (2012) {original title-Ce n'est pas un film de cow-boys}
+      - tt2316882 # Jackpot (2012)
+      - tt2011953 # Keep the Lights On (2012)
+      - tt2599822 # Kiss Me Softly (2012) {original title-Kus me zachtjes}
+      - tt2284754 # Little Gay Boy, chrisT is Dead (2012) {original title-Little Gay Boy, Christ is Dead}
+      - tt2517090 # Little Man (2012)
+      - tt2329476 # Lucas (2012)
+      - tt2281345 # A Magnificent Haunting (2012) {original title-Magnifica presenza}
+      - tt2404645 # The Men Next Door (2012)
+      - tt0972563 # Midlothia (2012)
+      - tt1943765 # Morgan (2012)
+      - tt2266940 # The Morning After (2012)
+      - tt2261871 # My Own Private River (2012)
+      - tt1776252 # Nate & Margaret (2012) {original title-Nate and Margaret}
+      - tt11698310 # Nightfall (2012) {original title-Anochecer}
+      - tt2664226 # Oh My Ghost 3 (2012) {original title-หอแต๋วแตก แหกมว๊ากมว๊ากกก}
+      - tt2318625 # Out in the Dark (2012) {original title-עלטה}
+      - tt2128693 # Prora (2012)
+      - tt2318645 # Raid of the Rainbow Lounge (2012)
+      - tt2198139 # Rhapsody (2012)
+      - tt2328737 # Saltwater (2012)
+      - tt2011223 # Scenes From A Gay Marriage (2012)
+      - tt2262073 # Scrooge & Marley (2012)
+      - tt2174094 # Sex Lies and Depravity (2012)
+      - tt2433190 # Sexual Tension: Volatile (2012) {original title-Tensión sexual, Volumen 1: Volátil}
+      - tt2168288 # Silent Youth (2012)
+      - tt2107835 # The Skinny (2012)
+      - tt2256601 # A Stable for Disabled Horses (2012)
+      - tt2599786 # Summer Vacation (2012) {original title-חופש גדול}
+      - tt2066980 # Teens Like Phil (2012)
+      - tt2181867 # Tell No One (2012) {original title-Come non detto}
+      - tt2306783 # The Falls (2012)
+      - tt1922747 # The Hour of Living (2012)
+      - tt1659337 # The Perks of Being a Wallflower (2012)
+      - tt2326110 # The Pretty Boys (2012)
+      - tt2716708 # Undress Me (2012) {original title-Ta av Mig}
+      - tt2509008 # Water (2012) {original title-Vattnet}
+      - tt1967697 # White Frog (2012)
+      - tt2401813 # A World for Raúl (2012) {original title-Un mundo para Raúl}
+      - tt1934269 # Yossi (2012) {original title-הסיפור של יוסי}
+  # 2013 #
+      - tt3345716 # Age 17 (2013) {original title-17 anni}
+      - tt2215515 # Aleksandr's Price (2013)
+      - tt1291580 # Behind the Candelabra (2013)
+      - tt2555166 # Born This Way (2013)
+      - tt2624306 # Boygame (2013)
+      - tt2679456 # Boys Behind Bars (2013)
+      - tt3315732 # Burger (2013)
+      - tt1811307 # Burning Blue (2013)
+      - tt3348476 # Caged (2013) {original title-Uitgesproken}
+      - tt2139725 # Cal (2013)
+      - tt2494476 # Capital Games (2013)
+      - tt0790636 # Dallas Buyers Club (2013)
+      - tt2991092 # Eastern Boys (2013)
+      - tt2776106 # Floating Skyscrapers (2013) {original title-Płynące wieżowce}
+      - tt0980999 # Four (2013)
+      - tt2617828 # Free Fall (2013) {original title-Freier Fall}
+      - tt2106739 # Gayby (2013)
+      - tt1815717 # Gerontophilia (2013)
+      - tt2623502 # Getting Go: The Go Doc Project (2013)
+      - tt2978734 # I Love Hooligans (2013) {original title-I ♥ Hooligans}
+      - tt2243389 # I'm So Excited! (2013) {original title-Los amantes pasajeros}
+      - tt2167715 # It's All So Quiet (2013) {original title-Boven is het stil}
+      - tt2996228 # John Apple Jack (2013)
+      - tt1311071 # Kill Your Darlings (2013)
+      - tt2017634 # Kink (2013)
+      - tt2246240 # Kissing Drew (2013)
+      - tt2719868 # Last Summer (2013)
+      - tt2567770 # The Last Time I Saw Richard (2013)
+      - tt2473718 # Leather (2013)
+      - tt2915500 # Longing Nights (2013) {original title-Noches de espera}
+      - tt2047802 # Men to Kiss (2013) {original title-Männer zum Knutschen}
+      - tt1301308 # Mixed Kebab (2013)
+      - tt2379082 # Monster Pies (2013)
+      - tt2195448 # More Sex Lies & Depravity (2013)
+      - tt2767286 # The Package (2013) {original title-O Pacote}
+      - tt3180154 # Peyote (2013)
+      - tt2661578 # Rosie (2013)
+      - tt2924590 # Snails in the Rain (2013) {original title-שבלולים בגשם}
+      - tt3026824 # Solo (2013)
+      - tt2729818 # Southern Baptist Sissies (2013)
+      - tt2447552 # Spooners (2013)
+      - tt2852458 # Stranger by the Lake (2013) {original title-L'Inconnu du lac}
+      - tt3169740 # The Falls: Testament of Love (2013)
+      - tt2807704 # The Language of Love (2013)
+      - tt1883160 # The Visitor (2013) {original title-Cibrâil - Eine Liebe in Berlin}
+      - tt3391026 # Together (2013) tt3391026 (2013)
+      - tt2427892 # Tom at the Farm (2013) {original title-Tom à la ferme}
+      - tt3083006 # Triple Crossed (2013)
+      - tt2732210 # Tumbledown (2013)
+      - tt1854589 # Turtle Hill, Brooklyn (2013)
+      - tt2378567 # Vampire Boys 2: The New Brood (2013)
+      - tt1858573 # The Violation (2013)
+      - tt2741220 # We Are Animals (2013)
+      - tt2176350 # Yeah, Kowalski! (2013)
+      - tt2784210 # I'm A Porn Star: Gay 4 Pay (2013)
+  # 2014 #
+      - tt3088200 # 1 Last Chance at Paradise (2014)
+      - tt2260850 # 4 Moons (2014) {original title-Cuatro Lunas}
+      - tt3239442 # The 10 Year Plan (2014)
+      - tt3100636 # 52 Tuesdays (2014)
+      - tt3103792 # A Last Farewell (2014) {original title-Ett sista farväl}
+      - tt3201792 # Aban + Khorshid (2014)
+      - tt3427066 # An Afternoon (2014) {original title-En eftermiddag}
+      - tt0371521 # All Over Brazil (2014)
+      - tt3261142 # Barrio Boy (2014)
+      - tt3623002 # Best Day Ever (2014)
+      - tt2573206 # Big Gay Love (2014)
+      - tt3007302 # Boy Meets Girl (2014)
+      - tt3318220 # Boys (2014) {original title-Jongens}
+      - tt1878942 # Date and Switch (2014)
+      - tt3621802 # Death in Buenos Aires (2014) {original title-Muerte en Buenos Aires}
+      - tt3069084 # Disc of Love (2014)
+      - tt3528852 # Eroddity(s) (2014)
+      - tt2375021 # For My Brother (2014) {original title-For Min Brors Skyld}
+      - tt2199543 # Futuro Beach (2014) {original title-Praia do Futuro}
+      - tt2429074 # G.B.F. (2014)
+      - tt5866596 # Gay Over (2014)
+      - tt2235902 # Geography Club (2014)
+      - tt3382170 # Good Morning (2014)
+      - tt3767798 # Happy & Gay (2014)
+      - tt2801746 # Hawaii (2014)
+      - tt3289362 # Hidden Away (2014) {original title-A escondidas}
+      - tt3630326 # Hole (2014)
+      - tt3639326 # Home from the Gym (2014)
+      - tt2719796 # Hot Guys With Guns (2014)
+      - tt3493688 # I Am Syd Stone (2014)
+      - tt3268458 # The Internet's Own Boy: The Story of Aaron Swartz (2014)
+      - tt4139718 # It Gets Better (2014)
+      - tt2381046 # Jamie Marks Is Dead (2014)
+      - tt2402194 # Kissing Darkness (2014)
+      - tt2474310 # Land of Storms (2014) {original title-Viharsarok}
+      - tt2609778 # The Last Straight Man (2014)
+      - tt3730580 # Losing Your Flames (2014)
+      - tt3922958 # Love in the Time of Civil War (2014) {original title-L'amour au temps de la guerre civile}
+      - tt2639344 # Love Is Strange (2014)
+      - tt1638898 # Love Or Whatever (2014)
+      - tt3479250 # Man in Love (2014) {original title-남자가 사랑할 때}
+      - tt3550298 # Middle Man (2014)
+      - tt2935986 # More Scenes From A Gay Marriage (2014)
+      - tt2091235 # My Straight Son (2014) {original title-Azul y no tan rosa}
+      - tt3587890 # Naked Dragon (2014)
+      - tt5997324 # Naked. Sordid. Reality. (2014)
+      - tt3506934 # Night Flight (2014) {original title-야간비행}
+      - tt1684226 # The Normal Heart (2014)
+      - tt3581098 # Perfect Cowboy (2014)
+      - tt3169706 # Pride (2014)
+      - tt3179406 # Remission (2014)
+      - tt3122436 # The Secret Path (2014)
+      - tt4307924 # The Boy in the Dress
+      - tt3552042 # Showboy (2014)
+      - tt2176690 # The Smell of Us (2014)
+      - tt3360038 # Speed Walking (2014) {original title-Kapgang}
+      - tt2313311 # Tennessee Queer (2014)
+      - tt3828220 # The Amazing Praybeyt Benjamin (2014)
+      - tt2196059 # The Dark Place (2014)
+      - tt1478354 # The David Dance (2014)
+      - tt2400002 # The Last Match (2014) {original title-La partida}
+      - tt3516028 # The Passenger (2014)
+      - tt3606394 # Tonight It's Me (2014)
+      - tt4666696 # Vampires: Lucas Rising (2014)
+      - tt3708528 # Velociraptor (2014)
+      - tt1702014 # The Way He Looks (2014) {original title-Hoje Eu Quero Voltar Sozinho}
+      - tt3817552 # While There Is Still Time (2014) {original title-Enquanto ainda é tempo}
+      - tt3497630 # Wish for Tomorrow (2014)
+      - tt3186946 # Xenia (2014)
+      - tt4809238 # You & I (2014)
+  # 2015 #
+      - tt3268288  # A Reunion (2015)
+      - tt4042326  # Angels With Tethered Wings (2015)
+      - tt5287794  # Away with Me (2015)
+      - tt4831484  # B. (2015)
+      - tt3322898  # Baby Steps (2015)
+      - tt3212408  # Beautiful Something (2015)
+      - tt2789926  # Boys in Brazil (2015) {original title-Do Lado de Fora}
+      - tt3502596  # Brace (2015)
+      - tt3262990  # Brotherly Love (2015)
+      - tt4070722  # Chance (2015)
+      - tt12132458 # Children of History (Les Enfants De L'Histoire) (2015) {original title-Les enfants de l’Histoire}
+      - tt5151482  # Choke Hold (2015)
+      - tt4411504  # The Clan (2015) {original title-El clan}
+      - tt4643840  # Closets (2015)
+      - tt3319632  # Cruise Patrol (2015)
+      - tt4288764  # Dániel (2015)
+      - tt0810819  # The Danish Girl (2015)
+      - tt2248739  # Departure (2015)
+      - tt3997238  # Do I Sound Gay? (2015)
+      - tt3356682  # The Dream Children (2015)
+      - tt11767484 # Drown (2015) {original title-شنای پروانه}
+      - tt2274604  # Eat With Me (2015)
+      - tt4950208  # Follow Me (2015) {original title-Volg mij}
+      - tt4214874  # Followers (2015)
+      - tt3978720  # Fourth Man Out (2015)
+      - tt3672616  # Fulboy (2015)
+      - tt4504914  # Global Warming (2015)
+      - tt3717192  # Godless (2015)
+      - tt4396602  # Golden (2015)
+      - tt4896952  # Good Boy (2015)
+      - tt4549746  #  Hopefuls (Portuguese Audio) (2015) {original title-Aspirantes}
+      - tt3713030  # I Am Michael (2015)
+      - tt4097612  # In the Grayscale (2015) {original title-En la gama de los grises}
+      - tt4544008  # Jess & James (2012) (2015) {original title-Jess y James}
+      - tt3627854  # Like You Mean It (2015)
+      - tt2250426  # Lord Montagu (2015)
+      - tt2279339  # Love the Coopers (2015)
+      - tt5332128  # LUV Don't Live Here (2015)
+      - tt3569230  # Legend (2015)
+      - tt4938744  # Mirrors (2015)
+      - tt4378350  # Morning Is Broken (2015)
+      - tt3918222  # My Brother's Shoes (2015)
+      - tt3385334  # Naz & Maalik (2015)
+      - tt3530002  # The Night Before (2015)
+      - tt4356466  # Nightstand (2015)
+      - tt6449382  # Oh My Ghost 4 (2015) {original title-หอแต๋วแตก แหกนะคะ}
+      - tt3954584  # Open Relationship (2015) {original title-Relación abierta}
+      - tt4855104  # Putting on the Dish (2015)
+      - tt4486122  # Scrum (2015)
+      - tt4427060  # Seashore (2015) {original title-Beira-Mar}
+      - tt1737724  # Seed Money: The Chuck Holmes Story (2015)
+      - tt2501884  # Seek (2015)
+      - tt3624628  # Soft Lad (2015) (2015)
+      - tt4370192  # Solos (2015)
+      - tt1895587  # Spotlight (2015)
+      - tt3588082  # Steel (2015)
+      - tt3018070  # Stonewall (2015)
+      - tt2486880  # Such Good People (2015)
+      - tt3147230  #  Surprise (2015)
+      - tt1533089  # Tab Hunter Confidential (2015)
+      - tt3824458  # Tangerine (2015)
+      - tt3148952  # The Circle (2015) {original title-Der Kreis}
+      - tt4526950  # The Perfect Wedding (2015)
+      - tt2945796  # The Rise of the Krays (2015)
+      - tt3581788  # The Surface (2015)
+      - tt4276000  # Thirst (2015) {original title-צמא}
+      - tt3899516  # Those People (2015)
+      - tt3309136  # Three In A Bed (2015)
+      - tt2866824  # Tiger Orange (2015)
+      - tt5227660  # Utopians.2015.720p.BluRay.x264-WiKi (2015) {original title-同流合烏}
+      - tt3209148  # Vis à Vis (2015)
+      - tt4334482  # Viva (2015)
+      - tt4040964  # Want It (2015)
+      - tt0388534  # Wasp (2015)
+      - tt4456774  # Water Boys (2015) {original title-Non accettare i sogni dagli sconosciuti}
+      - tt4064498  # Where Are You Going, Habibi? (2015) {original title-Wo willst du hin, Habibi?
+  # 2016 #
+      - tt4064498 # Where Are You Going, Habibi? (2015) {original title-Wo willst du hin, Habibi?}
+      - tt5834036 # 1:54 (2016)
+      - tt5492660 # 1992 (2016)
+      - tt2580714 # Adults Only (2016)
+      - tt4945528 # BearCity 3 (2016)
+      - tt4331970 # Being.17.2016.1080p.BluRay.x264-FOXM (2016) {original title-Quand on a 17 ans}
+      - tt5116864 # Boys (2016)
+      - tt3445580 # Boys in the Trees (2016)
+      - tt5332158 # Bromance (2016) {original title-Como una novia sin sexo}
+      - tt5858380 # CAS (2016)
+      - tt4932154 # Center of My World (2016) {original title-Die Mitte der Welt}
+      - tt3638396 # Closet Monster (2016)
+      - tt9588558 # Consequence (2016)
+      - tt5354406 # Dawn (2016)
+      - tt5615116 # Dear Dad (2016)
+      - tt0291887 # Doors Cut Down (2016) {original title-En malas compañías}
+      - tt5883632 # Esteros (2016)
+      - tt5194364 # An Evening (2016) {original title-En aften}
+      - tt4977772 # Exterminator (2016)
+      - tt3520216 # Fair Haven (2016)
+      - tt3185602 # Front Cover (2016)
+      - tt5230498 # G O'Clock (2016)
+      - tt3337146 # Gay Meets Girl (2016) {original title-Een man weet niet wat hij mist}
+      - tt4333216 # Getting Off (2016)
+                  # Global Warming 2 (2016) Notes: https://www.themoviedb.org/movie/606539-global-warming-vol-2 
+      - tt5473298 # The Good Waiter (2016)
+      - tt4613254 # Heartstone (2016) {original title-Hjartasteinn}
+      - tt6190122 # Hello, Stranger (2016) {original title-Dag vreemde man}
+      - tt3703836 # Henry Gamble's Birthday Party (2016)
+      - tt5572566 # Hidden Kisses (2016) {original title-Baisers cachés}
+      - tt2556308 # Holiday (2016) {original title-होलीडे}
+      - tt5684820 # Jamie (2016)
+      - tt3385354 # Jayson Bend (2016)
+      - tt5090530 # Johnny (2016)
+      - tt5129682 # King Cobra (2016)
+      - tt3912214 # Kiss Me, Kill Me (2016)
+      - tt4243996 # The Kite (2016) {original title-Dragen}
+      - tt4733640 # The Limehouse Golem (2016)
+      - tt5050788 # Loev (2016)
+      - tt2507238 # Me Him Her (2016)
+      - tt4975722 # Moonlight (2016)
+      - tt5465768 # Mother Knows Best (2016) {original title-Mamma vet bäst}
+      - tt3823636 # Mr. Sugar Daddy (2016)
+      - tt3952614 # NY84 (2016)
+      - tt5436082 # One Kiss (2016) {original title-Un bacio}
+      - tt4929038 # The Ornithologist (2016) {original title-O Ornitólogo}
+      - tt4158876 # Other People (2016)
+      - tt3687898 # Palace of Fun (2016)
+      - tt5187088 # Paradigm (2016) {original title-Paradigma}
+      - tt5096628 # Paris 05:59 / Théo & Hugo (2016) {original title-Théo et Hugo dans le même bateau}
+      - tt5160154 # The Pass (2016)
+      - tt5840276 # Pedro (2016)
+      - tt4884602 # Pyotr495 (2016) {original title-PYOTR495}
+      - tt4327510 # Retake (2016)
+      - tt5505532 # Sauna the Dead: A Fairy Tale (2016)
+      - tt1417097 # Schoolboy Crush (2016) {original title-BOYS LOVE 劇場版}
+      - tt5106400 # Shared Rooms (2016)
+      - tt5529712 # Sign (2016)
+      - tt6244096 # Silly Girl (2016)
+      - tt5601558 # Spoilers (2016)
+      - tt4421798 # Still a Rose (2016)
+      - tt5705124 # Straight A (2016)
+      - tt3637994 # Surprise (2016)
+      - tt3142366 # Take Me to the River - International (2016)
+      - tt2375589 # Teenage Kicks (2016)
+      - tt2371461 # The Apple Tree (2016)
+      - tt2252668 # The Best Friend (2016) {original title-O Melhor Amigo}
+      - tt6048582 # The Falls (2016)
+      - tt3607322 # The Third One (2016) {original title-El tercero}
+      - tt2349548 # The Ways of Man (2016) {original title-Tots els camins de Déu}
+      - tt5432188 # Tomcat (2016) {original title-Kater}
+      - tt5225242 # Tri-Curious (2016)
+      - tt4231686 # Trouser Bar (2016)
+      - tt5594970 # Warwick (2016)
+      - tt5479546 # We Could Be Parents (2016) {original title-Vi skulle bli bra föräldrar}
+      - tt5287602 # The Weekend (2016)
+      - tt5058014 # Weirdos (2016)
+      - tt4796558 # When a Man Loves a Woman (2016)
+      - tt5486818 # Whos.Gonna.Love.Me.Now.2016.1080p.WEBRip.x264-RARBG (2016)
+      - tt5136396 # Xavier (2016)
+      - tt4846220 # You'll Never Be Alone (2016) {original title-Nunca vas a estar solo}
+      - tt4490654 # You're Killing Me (2016)
+  # 2017 #
+      - tt6135348 # 120 BPM (Beats Per Minute) {Original title-120 battements par minute} {dir-Robin Campillo, France; ACT UP Paris activism during AIDS crisis, Cannes Grand Prix}
+      - tt5749812 # 4 Days (2017) {original title-4 μέρες}
+      - tt5048406 # 4 Days in France (2017) {original title-Jours de France}
+      - tt4536304 # A Little Lust (2017) {original title-Né Giulietta, né Romeo}
+      - tt6582734 # A Place To Be (2017) {original title-En algun lugar}
+      - tt6523092 # Against the Law (2017)
+      - tt8362448 # AIDS: Doctors and Nurses tell their Stories (2017)
+      - tt3544014 # Akron (2017)
+      - tt5894846 # Al Berto (2017)
+      - tt4341390 # Alaska Is a Drag (2017)
+      - tt7356144 # Alex and the Handyman (2017)
+      - tt7338604 # All Things Fade (2017)
+      - tt6846664 # Angels in America: Part I - Millennium Approaches (2017) {original title-National Theatre Live: Angels in America Part One - Millennium Approaches}
+      - tt5258904 # B&B (2017)
+      - tt6303866 # Beach Rats (2017)
+      - tt4126434 # Before the Fall (2017)
+      - tt7220282 # Blackville (2017) - https://www.imdb.com/title/tt7220282/ TV SERIES 
+      - tt6212208 # BOB (2017)
+      - tt6474626 # Body Electric (2017) {original title-Corpo Elétrico}
+      - tt6135348 # BPM (Beats per Minute) (2017) {original title-120 battements par minute}
+      - tt5238696 # Buddy (2017)
+      - tt4830786 # The Cakemaker (2017) {original title-האופה מברלין}
+      - tt5726616 # Call Me by Your Name (2017)
+      - tt4807950 # Cherry Pop (2017)
+      - tt6504812 # The Colour of His Hair (2017)
+      - tt6108178 # Disobedience (2017) {dir-Sebastián Lelio, UK; forbidden lesbian romance in Orthodox Jewish community}
+      - tt4723724 # Do You Take This Man (2017)
+      - tt6436348 # Dusk (2017)
+      - tt7344622 # Everything Is Free (2017)
+      - tt7058048 # The Fish Curry (2017) {original title-माछेर झोल (Maacher Jhol)}
+      - tt6658038 # Foreign Lovers (2017)
+      - tt5635086 # God's Own Country (2017)
+      - tt7232928 # Growing Up Gay (2017)
+      - tt6089930 # Half a Life (2017) {original title-نصفُ حياة}
+      - tt5016946 # Handsome Devil (2017)
+      - tt4590092 # I Love You Both (2017)
+      - tt3278224 # I Dream in Another Language (2017) {original title-Sueño en otro idioma}
+      - tt7317124 # Jermaine and Elsie (2017)
+      - tt5350358 # Jonathan (2017)
+      - tt4765862 # Kept Boy (2017)
+      - tt2891456 # The Lavender Scare (2017)
+      - tt5254594 # Lunch (2017)
+      - tt6088928 # Marz (2017)
+      - tt7452458 # Meet Up (2017)
+      - tt4066836 # Miles (2017)
+      - tt7390114 # More Than Only (2017)
+      - tt7308862 # Petit Ami (2017)
+      - tt5811808 # The Revival (2017)
+      - tt1954972 # Rift (2017)
+      - tt5654600 # Saturday Church (2017)
+      - tt6577814 # Screwed (2017) {original title-Pihalla}
+      - tt7201192 # The Secret Kiss (2017)
+      - tt5948190 # Sodom (2017)
+      - tt2196053 # Something Like Summer (2017)
+      - tt4690526 # Stillest Hour (2017)
+      - tt5643380 # Taekwondo (2017)
+      - tt6473838 # Tainted Souls (2017) {original title-Il contagio}
+      - tt6720674 # Tale of the Lost Boys (2017)
+      - tt7181154 # Tellin'Dad (2017)
+      - tt6151222 # The Untold Tales of Armistead Maupin (2017)
+      - tt6343502 # This World We Live In (2017)
+      - tt5226984 # Tom of Finland (2017)
+      - tt7591822 # Versatile (2017) {original title-Versátil}
+      - tt5634960 # A Very Sordid Wedding (2017)
+      - tt3859872 # West of Eden (2017)
+      - tt5734350 # What About Shelley (2017)
+      - tt5717448 # The World in Your Window (2017)
+  # 2018 #
+      - tt7288176  # 45 Days Away From You (2018) {original title-45 Dias Sem Você}
+      - tt6411590  # 1985 (2018)
+      - tt8803990  # A Double Life (2018)
+      - tt8066304  # Aalorukkam (2018) {original title-ആളൊരുക്കം}
+      - tt5688996  # Alex Strangelove (2018)
+      - tt8294696  # An American Hate Crime (2018)
+      - tt8090660  # Between Here and Now (2018)
+      - tt7600484  # Blood Out of a Stone (2018)
+      - tt1727824  # Bohemian Rhapsody (2018)
+      - tt7008872  # Boy Erased (2018)
+      - tt8320406  # Boy Undone (2018) {original title-Memorias de lo que no fue}
+      - tt8080562  # Broken Sunflower Hearts (2018)
+      - tt9369620  # A Brother (2018) {original title-Un frère}
+      - tt8150000  # Clothes & Blow (2018)
+      - tt6090190  # Coby (2018)
+      - tt7761014  # Cola De Mono (2018) {original title-Cola de mono}
+      - tt8795582  # Consequences (2018) {original title-Posledice}
+      - tt4042818  # The Death & Life of John F. Donovan (2018)
+      - tt8187918  # Devil's Path (2018)
+      - tt7157516  # Elwood Takes a Lover (2018)
+      - tt6259198  # Every Act of Life (2018)
+      - tt6944264  # Faces (2018) https://www.imdb.com/title/tt6944264/plotsummary/?ref_=tt_ov_pl
+      - tt8847200  # Foreign Body (2018) {original title-Strano telo}
+      - tt8215338  # Four Quartets (2018)
+      - tt7847352  # French Kisses (2018)
+      - tt6962260  # Green Butterflies (2018) {original title-Mariposas Verdes}
+      - tt6485830  # Grimsey (2018)
+      - tt6902722  # Happiness Adjacent (2018)
+      - tt2404639  # The Happy Prince (2018)
+      - tt8144850  # The Harvesters (2018) {original title-Die Stropers}
+      - tt7238326  # He Love Me (2018)
+      - tt6909050  # Him (2018) {original title-Hann}
+      - tt6113122  # Hurricane Bianca: From Russia with Hate (2018)
+      - tt8168186  # I Am Jonas (2018) {original title-Jonas}
+      - tt5460880  # Ideal Home (2018)
+      - tt6933338  # José (2018)
+      - tt7901640  # Just Friends (2018) {original title-Gewoon vrienden}
+      - tt8852680  # Just Me (2018)
+      - tt6884200  # A Kid Like Jake (2018)
+      - tt6426028  # Knife+Heart (2018) {original title-Un couteau dans le cœur}
+      - tt2073600  # Lad : A Yorkshire Story (2018)
+      - tt9056522  # Love, Scott (2018)
+      - tt5164432  # Love, Simon (2018)
+      - tt1339326  # Lovebirds (2018)
+      - tt6902624  # Luber (2018)
+      - tt6724880  # Manivald (2018)
+      - tt1389098  # Mapplethorpe (2018)
+      - tt7943248  # Marilyn (2018)
+      - tt6999052  # Mario (2018)
+      - tt7855798  # Michael Joseph Jason John (2018)
+      - tt6257174  # The Miseducation of Cameron Post (2018)
+      - tt9077520  # `Mom, I'm Gay`  (2018) {original title-Mamá, soy gay}
+      - tt6256872  # A Moment in the Reeds (2018) {original title-Tämä hetki kaislikossa}
+      - tt6400166  # My Best Friend (English Subtitles) (2018) {original title-Mi mejor amigo}
+      - tt6917290  # My Big Gay Italian Wedding (2018) {original title-Puoi baciare lo sposo}
+      - tt8870384  # My Dad Works the Night Shift (2018) {original title-Mon père travaille de nuit}
+      - tt5356260  # My Life with James Dean (2017) {original title-Ma vie avec James Dean}
+      - tt8046334  # My Loneliness Is Killing Me (2018)
+      - tt0420136  # Night Watch (2018) {original title-Ronda nocturna}
+      - tt7896320  # No More We (2018) {original title-Vi finns inte längre}
+      - tt8228538  # Papi Chulo (2018)
+      - tt11968170 # Parking (2018)
+      - tt5954892  # Paths (2018) {original title-Ein Weg}
+      - tt7525936  # Permanent Green Light (2018) {original title-Feu vert permanent}
+      - tt5424984  # Play the Devil (2018)
+      - tt6280608  # Postcards from London (2018)
+      - tt8286894  # Rafiki (2018) {dir-Wanuri Kahiu, Kenya; banned lesbian romance, Cannes premiere}
+      - tt7328908  # Riot (2018)
+      - tt8278752  # Romance is Dead (2018)
+      - tt8723752  # Rubber Dolphin (2018) {original title-דולפין מגומי}
+      - tt6884552  # Run(a)Way Arab (2018)
+      - tt7518372  # Sauna (2018)
+      - tt8307082  # Sauvage/Wild (2018) {original title-Sauvage}
+      - tt2773246  # Scotty and the Secret History of Hollywood (2018)
+      - tt12318844 # Sex & Water (2018)
+      - tt6794956  # Sleepover (2018) {original title-Sova över}
+      - tt8026554  # Socrates (2018) {original title-Sócrates}
+      - tt7534054  # Sorry Angel (2018) {original title-Plaire, aimer et courir vite}
+      - tt7866702  # The Story of the Stone (2018) {original title-紅樓夢}
+      - tt0144801  # The Brandon Teena Story (2018)
+      - tt7390090  # The Breeding (2018)
+      - tt8868992  # The Gay Rub: A Documentary (2018)
+      - tt7415494  # The Jealous Sea (2018)
+      - tt6257174  # The Miseducation of Cameron Post (2018) {dir-Desiree Akhavan, USA; teen sent to gay conversion camp, Sundance winner}
+      - tt9582004  # The Latent Image (2018)
+      - tt10887516 # Through a Boy's Eyes (2018) {original title-El hijo}
+      - tt7600886  # Vertical Lines (2018)
+      - tt6671244  # We (2018) {original title-Wij}
+      - tt8150768  # We Are Three (2018) {original title-Somos tr3s}
+      - tt7681824  # We the Animals (2018)
+      - tt7073710  # What Keeps You Alive (2018)
+      - tt10662012 # Shadowlands (2018)
+  # 2019 #
+      - tt8169994  # Where We Go from Here
+      - tt4714710  # A Nice Quiet Life (Director's Cut) (2019)
+      - tt9664206  # The Acrobat (2019) {original title-L'acrobate}
+      - tt9097148  # All In My Family (2019)
+      - tt9185542  # An Almost Ordinary Summer (2019) {original title-Croce e delizia}
+      - tt8027296  # Analysis Paralysis (2019)
+      - tt4168280  # At the End of the Day (2019)
+      - tt9664838  # Athlete (2019) {original title-アスリート 〜俺が彼に溺れた日々〜}
+      - tt8703884  # Bathroom Stalls & Parking Lots (2019)
+      - tt10957708 # Beautiful Alexander (2019) {original title-Mooie Alexander}
+      - tt9326498  # Bitter Years (2019) {original title-Gli anni amari}
+      - tt10293074 # Bittersweet Waters (2019) {original title-Agua agridulce}
+      - tt11200818 # Memoirs of a Geeza (2019)
+      - tt8727582  # Circus of Books (2019)
+      - tt9056668  # Cognitive (2019)
+      - tt9691896  # Coming Out (2019)
+      - tt10622790 # Cousins (2019) {original title-Primos}
+      - tt9514116  # Darkroom (2019) {original title-Darkroom: Tödliche Tropfen}
+      - tt9845398  # End of the Century (2019) SPANISH {original title-Fin de siglo}
+      - tt8159302  # Fireflies (2019) {original title-Luciérnagas}
+      - tt10887468 # French Touch: Between Men (2019) {original title-Avec la Participation de France 2}
+      - tt3110634  # From Zero To I Love You (2019)
+      - tt4481066  # Giant Little Ones (2019)
+      - tt9358192  # Halston (2019)
+      - tt10628006 # Happy Endings Sleepover (2019)
+      - tt3452322  # He Took Hi Skin Off For Me (2019)
+      - tt7594134  # Hurley (2019)
+      - tt14724836 # I'm Coming (2019)
+      - tt11109618 # In a Moment (2019) {original title-In einem Moment}
+      - tt6198058  # Into The Mirror (2019)
+      - tt9212252  # Involuntary Activist (2019) {original title-Den ofrivilliga aktivisten}
+      - tt10288968 # Jeremiah (2019)
+      - tt7901640  # Just Freinds (2019) Original title: Gewoon vrienden
+      - tt10442108 # Kinky Boots: The Musical (2019)
+      - tt8806886  # Label Me (2019)
+      - tt6378942  # Last Ferry (2019)
+      - tt14391414 # Leave it to Levi (2019)
+      - tt1950235  # Let It Snow (2019)
+      - tt6547786  # Life Like (2019)
+      - tt8299896  # Love Blooms (2019) {original title-L'amour debout}
+      - tt9660572  # Lúbtha (2019)
+      - tt7521322  # Magic H8 Ball (2019)
+      - tt9650368  # Magnetic harvest (2019) {original title-La Traction des pôles}
+      - tt8767908  # Matthias & Maxime (2019)
+      - tt14176502 # Meatoo (2019)
+      - tt9859504  # Men of Hard Skin (2019) {original title-Hombres de piel dura}
+      - tt9916544  # My Sweet Prince (2019)
+      - tt8974586  # Nevrland (2019)
+      - tt8075462  # A Normal Guy (2019) {original title-Un băiat normal}
+      - tt10533570 # Orpheus' Song (2019) {original title-Orfeos Traum}
+      - tt8291806  # Pain and Glory (2019) {original title-Dolor y gloria}
+      - tt8887784  # A Perfect Host (2019) {original title-Adonis Complex}
+      - tt10584538 # The Pier Man (2019) {original title-L'homme jetée}
+      - tt6881910  # Rent: Live (2019)
+      - tt2066051  # Rocketman (2019)
+      - tt7217362  # Say Yes (2019)
+      - tt8258510  # Sequin in a Blue Room (2019)
+      - tt10095276 # Serviced (2019)
+      - tt6918220  # The Shiny Shrimps (2019) {original title-Les Crevettes pailletées}
+      - tt7304136  # Siberia and Him (2019) {original title-Сибирь и он}
+      - tt9735504  # South of Heaven (2019) {original title-Ten Zuiden van de Hemel}
+      - tt10822952 # Spectrum (2019)
+      - tt8483220  # Steam Room Stories: The Movie (2019)
+      - tt6397196  # Sunday Sessions (2019)
+      - tt10080924 # Sweater (2019) {original title-সোয়েটার}
+      - tt7016254  # Synonyms (2019) {original title-Synonymes}
+      - tt9373782  # That Is All (2019)
+      - tt9789686  # The Blonde One (2019) {original title-Un rubio}
+      - tt1156311  # The Green-Eyed Monster (2019)
+      - tt9413640  # The Handyman (2019)
+      - tt7897352  # These Peculiar Days (2019) {original title-Los días particulares}
+      - tt7666724  # This Is Not Berlin (2019) {original title-Esto no es Berlín}
+      - tt7905148  # Trade (2019) {original title-Trade the Film}
+      - tt12819044 # Vegas Nights (2019)
+      - tt7043012  # Velvet Buzzsaw (2019)
+      - tt10889638 # We Are Dancers (2019)
+      - tt8976832  # Who Would You Take to a Deserted Island? (2019) {original title-¿A quién te llevarías a una isla desierta?}
+      - tt13594538 # Your aura (2019) {original title-Your Aura}
+      - tt9573686  # Your Bones and Your Eyes (2019) {original title-Seus Ossos e Seus Olhos}
+      - tt8100118  # Zero One (2019)
+ ######### 2020s ###########
+      - tt9779804  # 15 Years (2020) {original title-15 שנה}
+      - tt10691314 # Are We Lost Forever (2020) {original title-Vi finns inte längre}
+      - tt6255042  # As Long As I'm Famous (2020)
+      - tt13845698 # Beach Bums (2020)
+      - tt11968438 # Bedtime Stories: Blissing Deal (2020)
+      - tt1234430  # Between Something and Nothing (2020)
+      - tt12359272 # Dear Tenant (2020) {original title-Qin ai de fang ke}. *******
+      - tt9112712  # Breaking Fast (2020)
+      - tt12950902 # The Christmas House (2020)
+      - tt13147656 # The Christmas Setup (2020)
+                   # Cold Coffee (2020) - https://mabumbe.com/movies/titles/910062/cold-coffee, https://www.themoviedb.org/movie/1550122-coffee-date/edit?active_nav_item=crew&language=en-GB
+      - tt11525022 # Dance of the Forty One (2020) {original title-El baile de los 41}
+      - tt13454498 # Dashing in December (2020)
+      - tt7886936  # Dating Amber (2020)
+      - tt11719648 # Dry Wind (2020) {original title-Vento Seco}
+      - tt11875996 # Dungarees (2020)
+      - tt6614334  # Escaping Freedom (2020)
+      - tt8449154  # The Family Tree (2020)
+                   # The fourth date (2020) {original title-La cuarta cita} Note: The Fourth Date" is a 2020 short film by Spanish director Roberto Pérez Toledo, which follows two men, David Mora and Rubén Bernal, as they conduct dates via webcam due to the quarantine. The romance film, originally titled La cuarta cita, was filmed during the early stages of the COVID-19 pandemic, requiring the protagonists to get to know each other through video calls instead of in person. 
+      - tt5913964  # Grid (2020)
+      - tt9683478  # The Half of It (2020)
+      - tt8522006  # Happiest Season (2020)
+      - tt13440832 # Happy Campers (2020) NOTE: P*rn that was editted to make more main stream 'movies' 
+      - tt14150574 # Happy Families (2020)
+      - tt12278958 # Hey, Google (2020)
+      - tt11850446 # Honey Do List (2020)
+      - tt12964760 # Hydroalcoholic (2020) {original title-Hidroalcohólico}
+      - tt4651466  # Joe Bell (2020) {original title-Good Joe Bell}
+      - tt10699362 # Moffie (2020)
+      - tt8090564  # Monsoon (2020)
+      - tt10768194 # A New York Christmas Wedding (2020)
+      - tt7941580  # Of Hearts and Castles (2020)
+      - tt12576394 # Pete Can't Play Basketball (2020)
+      - tt11597144 # Pretty Boy (2020)
+      - tt11086128 # Query (2020)
+      - tt9694682  # Rapture in Blue (2020)
+      - tt2186358  # Red Lodge (The Unattainably Perfect Gay Christmas) (2020) {original title-Red Lodge}
+      - tt10254662 # Red Yellow Pink (2020)
+      - tt12222000 # Same Time Tomorrow (2020)
+      - tt8364138  # Stage Mother (2020)
+      - tt8855960  # Straight Up (2020)
+      - tt11102688 # Stranger Than Us (2020)
+      - tt9187214  # The Strong Ones (2020) {original title-Los fuertes}
+      - tt10457128 # Summer of 85 (2020) {original title-Été 85}
+      - tt11169050 # Supernova (2020)
+      - tt13441166 # The Lake House (2020)
+      - tt1573830  # The Meeting (2020) {original title-Görüş}
+      - tt11324534 # The Thing About Harry (2020)
+      - tt9738716  # The World to Come (2020) {dir-Mona Fastvold, USA; 19th-century frontier lesbian romance, Venice premiere} 
+      - tt10975520 # Twilight's Kiss (2020) {original title-叔・叔}
+      - tt11327514 # Uncle Frank (2020)
+      - tt11394200 # Welcome to Chechnya (2020)
+      - tt9674172  # What We Don't Say (2020)
+      - tt11585100 # What Women Want Gay Romance (2020)
+      - tt11559138 # Young Hunter (2020) {original title-El cazador}
+  # 2021 #
+      - tt6823148  # Benedetta (2021) {dir-Paul Verhoeven, France/Netherlands; based on real 17th-c. lesbian nun scandal}
+      - tt13268214 # B-Boy Blues (2021)
+      - tt6852178  # Benediction (2021)
+      - tt15800254 # The Bitch Who Stole Christmas (2021)
+      - tt13316820 # Boy Meets Boy (2021)
+      - tt36219219 # Cheat (2021)
+      - tt0402928  # Coffee Date (2001) Short 
+      - tt16365840 # The Christmas House 2: Deck Those Halls (2021)
+      - tt15017380 # Cicada (2021) {original title-매미}
+      - tt16117078 # Days of our Lives: A Very Salem Christmas (2021)
+      - tt11880722 # Down in Paris (2021)
+      - tt8430054  # Flee (2021) {dir-Jonas Poher Rasmussen, Denmark; animated documentary about Afghan gay refugee, Oscar-nominated} 
+      - tt4061620  # Firebird (2021)
+      - tt14775784 # Great freedom (2021) {original title-Große Freiheit}
+      - tt15825296 # Iftah (2021) {original title-יפתח}
+      - tt13824652 # Just Ask Him (2021)
+      - tt13919412 # Love the One You're With (2021)
+      - tt15260034 # The Male Gaze: Three's Company (2021)
+      - tt9320140  # The Man with the Answers (2021) {original title-Ο Άνθρωπος με τις Απαντήσεις}
+      - tt11941800 # Mascarpone (2021) {original title-Maschile singolare}
+      - tt12715498 # No Goodbyes (2021)
+      - tt11464430 # On the Fringe of Wild (2021)
+      - tt6857376  # Palmer (2021)
+      - tt11768008 # Poppy Field (2021) {original title-Câmp de maci}
+      - tt3513522  # Potato Dreams of America (2021)
+      - tt11224358 # Pray Away (2021)
+      - tt14315756 # Single all the Way (2021)
+      - tt10832274 # Swan Song (2021)
+      - tt15078366 # Wet Sand (2021)
+      - tt11795652 # Wildhood (2021)
+      - tt7161760  # Willem (2021)
+      - tt14135888 # Young Hearts (2021) {original title-Si t’as un coeur}
+      - tt10329134 # Your Name Engraved Herein (2020) {Original title-Ke zai ni xin di de ming zi}
+  # 2022 #
+      - tt20222182 #  A Dice with Five Sides (2022) Un dado con cinco caras (2022)
+      - tt19770238 # Aftersun (2022)
+      - tt10640346 # Babylon (2022)
+      - tt13845660 # Beautiful Beings (2022) {original title-Berdreymi}
+      - tt9731598  # Bros (2022)
+      - tt8649344  # Blue Jean (2022) {dir-Georgina Oakley, UK; lesbian PE teacher in Thatcher’s Britain during Section 28}
+      - tt21072238 # A Christmas to Treasure (2022)
+      - tt9660502  # Close (2022)
+      - tt9446368  # Connor & Jayden (2022)
+      - tt6710474  # Everything Everywhere All at Once (2022)
+      - tt15218000 # Fire Island (2022)
+      - tt8740320  # Give or Take (2022)
+      - tt13358190 # Golden Delicious (2022)
+      - tt12186098 # Hypochondriac (2022)
+      - tt7947604  # In from the Side (2022)
+      - tt13495458 # The Inspection (2022)
+      - tt10406466 # It Is in Us All (2022)
+      - tt19869374 # Joel Kim Booster: Psychosexual (2022)
+      - tt19719976 # Joyland (2022) {dir-Saim Sadiq, Pakistan; queer love story, banned in Pakistan, Cannes prize winner}
+      - tt16528036 # Love Without Fear (2022) {original title-Amar sin miedo}
+      - tt23732486 # Malehood (2022)
+      - tt6337816  # Monica (2022) {dir-Andrea Pallaoro, USA/Italy; trans woman returns to care for estranged mother, Cannes entry}
+      - tt15310458 # A Matter of Trust (2022) {original title-Ingen kender dagen}
+      - tt15143222 # My Fake Boyfriend (2022)
+      - tt23014880 # My Massive Cock (2022)
+      - tt13139228 # My Policeman (2022)
+      - tt14967472 # Of an Age (2022)
+      - tt17049112 # The Revenge of the Shiny Shrimps (2022) {original title-La Revanche des Crevettes Pailletées}
+      - tt29870121 # Rosodium (2022)
+      - tt7775720  # Spoiler Alert (2022)
+      - tt14960854 # Swallowed (2022)
+      - tt22296044 # The Holiday Sitter (2022)
+      - tt14502344 # They/Them (2022)
+      - tt5322004  # Three Months (2022)
+  # 2023 #
+      - tt21192142 # All of Us Strangers (2023)
+      - tt9428746  # Aristotle and Dante Discover the Secrets of the Universe (2023)
+      - tt17527468 # Bottoms (2023)
+      - tt15474896 # Brother (2023)
+      - tt17679584 # The Blue Caftan (2022) {original title-أزرق القفطان}
+      - tt32335104 # Being Gay in China (2023)
+      - tt28287106 # Christmas on Cherry Lane (2023)
+      - tt7130916  # Dicks: The Musical (2023)
+      - tt14592044 # Down Low (2023)
+      - tt28088572 # Exteriors (2023)
+      - tt15764854 # Fireworks (2023) {original title-Stranizza d'amuri}
+      - tt28512820 # Flee (2023)
+      - tt21519398 # Ganymede (2023)
+      - tt13924430 # I Love You More (2023)
+      - tt27036277 # I'm Not Gay: A Musical (2023)
+      - tt23637458 # Insignificant (2023)
+      - tt28457018 # The Judgment (2023) Directed by Marwan Mokbel
+      - tt15679400 # Knock at the Cabin (2023)
+      - tt5535276  # Maestro (2023)
+      - tt22742964 # Marry My Dead Body (2023) {original title-關於我和鬼變成家人的那件事}
+      - tt22086180 # Mates (2023)
+      - tt23736044 # Monster (2023) {original title-怪物}
+      - tt19500164 # Nimona (2023)
+      - tt28608722 # No Strings Attached (2023)
+      - tt28690326 # Notes of Autumn (2023)
+      - tt18394610 # Nuovo Olimpo (2023)
+      - tt20833316 # Our Son (2023)
+      - tt16252698 # Passages (2023)
+      - tt28108610 # Queer Planet (2023)
+      - tt10172266 # Red, White & Royal Blue (2023)
+      - tt28067411 # Remembering His Touch (2023)
+      - tt13514636 # Rock Hudson: All That Heaven Allowed (2023)
+      - tt24146896 # Rotting in the Sun (2023)
+      - tt17351924 # Saltburn (2023)
+      - tt22802920 # Since the Last Time We Met (2023) {original title-Desde la última vez que nos vimos}
+      - tt27715185 # Solo (2023)
+      - tt32335000 # Spanish Touch (2023)
+      - tt13055264 # Strange Way of Life (2023) {original title-Extraña forma de vida}
+      - tt27139897 # The Summer with Carmen (2023) {original title-Το καλοκαίρι της Κάρμεν}
+      - tt26670489 # These Untold Secrets (2023)
+      - tt18036574 # Tropic (2023)
+      - tt22299436 # The Astronaut Lovers (2024) {original title-Los amantes astronautas}
+                 # Brokeback Mountain West End May, 2023 NFT (N/A)  Theature West END 
+  # 2024 #
+      - tt31850380 # Big Rage (2024)
+      - tt8992484  # Birthright (2024) {original title-A Herança}
+      - tt20236042 # Dormitory (2024) {original title-Yurt}
+      - tt19356262 # Drive-Away Dolls (2024)
+      - tt26593560 # Filmes, Séries e Programas de TV Online | Claro tv+ (2024) {original title-13 Sentimentos}
+      - tt32915102 # The Groomsmen: First Look (2024)
+      - tt32915125 # The Groomsmen: Second Chances (2024)
+      - tt32915152 # The Groomsmen Last Dance (2024) {original title-The Groomsmen: Last Dance}
+      - tt27420000 # The Holiday Exchange (2024)
+      - tt23888758 # Layla (2024)
+      - tt29352944 # The Lost Holliday (2024)
+      - tt31317343 # Mascarpone: The Rainbow Cake (2024) {original title-Maschile plurale}
+      - tt24176060 # Queer (2024)
+      - tt27792063 # Rachel Scanlon: Gay Fantasy (2024)
+      - tt26731484 # Scraps (2024)
+      - tt30317033 # Sebastian (2024)
+      - tt31629757 # Slay (2024)
+      - tt11735158 # Studio One Forever (2024)
+      - tt12350938 # Sunflower (2024)
+      - tt26476006 # Tortu (2024)
+      - tt21451014 # Unicorns (2024)
+      - tt15245268 # Young Hearts (2024)
+  # 2025 #
+      - tt14674708 # Going Places (2025)
+      - tt36437611 # Jerrod Carmichael: Don't Be Gay (2025)
+      - tt30700695 # Lilies Not for Me (2025)
+      - tt31193771 # Sally (2025)
+      - tt36362582 # Tom Daley 1.6 Seconds (2025)
+ # Steam Room Stories Vol 1 (N/A)
+ # Stream Room Stories Vol 2 (N/A)
+ ######### 2030s ########### 
+     collection_order: release.desc
+     file_poster: /config/assets/Plex Posters/LGBT03PlexPoster.jpg # https://theposterdb.com/posters/722666
+     # tmdb_collection:  # https:/     
+     sort_title: "!112_01LGBT"
+     item_genre:  [ LGBTQ+ ]
+     item_label:  [ LGBTQ+, LGBT ] 
+     summary: LGBTQ+ Lesbian, Gay, Bisexual, Transgender, Queer and Questioning collection of films.
+############### All LGBTQ+ Films List -END-  ###########

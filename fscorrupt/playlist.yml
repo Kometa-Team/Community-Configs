@@ -69,7 +69,7 @@ templates:
       - item_radarr_tag
       - item_sonarr_tag
     allowed_library_types:
-      - <<use_<<key>>>>
+      - movie,show
     radarr_add_missing: <<radarr_add_missing_<<key>>>>
     sonarr_add_missing: <<sonarr_add_missing_<<key>>>>
     radarr_tag: <<radarr_tag_<<key>>>>

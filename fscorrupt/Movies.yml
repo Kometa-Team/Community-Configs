@@ -32,11 +32,13 @@ templates:
     default:
       title: feature
       limit: 100
-    imdb_list:
-    - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>
-      limit: <<limit>>
-    - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>&sort=user_rating,desc
-      limit: <<limit>>
+    imdb_search:
+      - type: <<title>>
+        release.gte: 1990-01-01
+        rating.gte: 5.0
+        votes.gte: 100000
+        genre: <<genre>>
+        limit: <<limit>>
     sort_title: +++_<<collection_name>>
     sync_mode: sync
     collection_order: alpha
@@ -185,15 +187,6 @@ collections:
     summary: Movies Trending across the internet, according to https://trakt.tv/movies/trending.
     url_poster: https://i.imgur.com/oOS46kt.jpg
     schedule: daily
-  Popular:
-    template: {name: Chart Alpha, num: 4}
-    tmdb_popular: 40
-    imdb_list:
-      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
-      limit: 40
-    summary: Popular Movies across the internet, according to https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short.
-    url_poster: https://i.imgur.com/U3OaYtB.jpg
-    schedule: daily
   Top Rated:
     template: {name: Chart Alpha, num: 5}
     tmdb_top_rated: 250
@@ -230,12 +223,6 @@ collections:
   Best of 2020:
     template: {name: Best of, year: 2020}
     url_poster: https://i.imgur.com/rw5Gg5y.jpg
-    schedule: weekly (sunday)
-  Oscars:
-    template: {name: Chart Release}
-    imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
-    summary: Oscar Winning Movies
-    url_poster: https://i.imgur.com/w7U2VOp.jpg
     schedule: weekly (sunday)
   In Cinema:
     template: {name: Chart Alpha, num: 2}

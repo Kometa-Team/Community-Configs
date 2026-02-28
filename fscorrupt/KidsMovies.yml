@@ -32,11 +32,20 @@ templates:
     default:
       title: feature
       limit: 100
-    imdb_list:
-    - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>
-      limit: <<limit>>
-    - url: https://www.imdb.com/search/title/?title_type=<<title>>&release_date=1990-01-01,&user_rating=5.0,10.0&num_votes=100000,&genres=<<genre>>&sort=user_rating,desc
-      limit: <<limit>>
+    imdb_search:
+      - type: <<title>>
+        release.gte: 1990-01-01
+        rating.gte: 5.0
+        votes.gte: 100000
+        genre: <<genre>>
+        limit: <<limit>>
+      - type: <<title>>
+        release.gte: 1990-01-01
+        rating.gte: 5.0
+        votes.gte: 100000
+        genre: <<genre>>
+        sort_by: rating.desc
+        limit: <<limit>>
     sort_title: +++_<<collection_name>>
     sync_mode: sync
     collection_order: alpha
@@ -156,10 +165,11 @@ collections:
   Popular:
     template: {name: Chart Alpha, num: 4}
     tmdb_popular: 40
-    imdb_list:
-      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
+    imdb_search:
+      type: movie, tv_movie, documentary, short
+      sort_by: popularity.desc
       limit: 40
-    summary: Popular Movies across the internet, according to https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short.
+    summary: Popular Movies across the internet.
     url_poster: https://i.imgur.com/U3OaYtB.jpg
     schedule: daily
   Top Rated:

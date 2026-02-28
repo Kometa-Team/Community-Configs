@@ -73,7 +73,7 @@ collections:
   Hallmark:
     template: { name: network, network: 384, poster: 204747}
   HBO:
-    template: { name: network, network: "49, 5484, 5485, 3186, 2593", poster: 204710}
+    template: { name: network, network: "49, 3186, 2593", poster: 204710}
   Hulu:
     template: { name: network, network: 453, poster: 204711}
   HGTV:
@@ -126,4 +126,5 @@ collections:
     template: { name: network, network: 41, poster: 212634}
   YouTube:
     template: { name: network, network: "247, 1436", poster: 212633}
+
 

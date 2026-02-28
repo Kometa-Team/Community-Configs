@@ -1,0 +1,15 @@
+templates:
+  generic_list:
+    smart_label: title.asc
+    sort_title: +2_<<collection_name>>
+    visible_home: true
+    visible_shared: true
+
+collections:
+  Kids Movies:
+    template:
+      name: generic_list
+    plex_search:
+      any:
+        content_rating.regex: '(?i)\b0\b|\b1\b|\b2\b|\b3\b|\b4\b|\b5\b|\b6\b|\b7\b|\b8\b'
+    # url_poster: https://www.plexcollectionposters.com/images/2019/05/18/Kids-Movies56f26dc216393583.jpg
