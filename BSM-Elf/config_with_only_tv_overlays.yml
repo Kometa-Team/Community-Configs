@@ -128,7 +128,7 @@ plex:                            # Can be individually specified per library as 
   verify_ssl:
   db_cache: 40
 tmdb:                            # REQUIRED for the script to run
-  apikey: 0095192b8ceb2b5a44015e97f0afcc9c
+  apikey: <redacted>
   language: en
   cache_expiration: 60
   region:
