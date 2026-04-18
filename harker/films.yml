@@ -1070,3 +1070,230 @@ collections:
 ###########################
 #    Genre Collections    #
 ###########################
+
+
+                                      ######################################################
+                                      #      2026 Refresh — UK studios, BAFTA, TIFF,       #
+                                      #      Sundance, Cannes extensions + Dystopia        #
+                                      ######################################################
+
+  Working Title Films:
+    template:
+      name: Studio
+      studio: Working Title
+      poster: https://i.imgur.com/5DvSQX6.png
+    summary: Notting Hill, Love Actually, Bridget Jones, Atonement, About a Boy — the Richard Curtis-era British rom-com powerhouse.
+  Film4 Productions:
+    template:
+      name: Studio
+      studio: Film4
+      poster: https://i.imgur.com/xL3fRpn.png
+    summary: Slumdog Millionaire, 12 Years a Slave, The Favourite, Poor Things — Channel 4s feature-film arm backing bold auteur cinema.
+  HandMade Films:
+    template:
+      name: Studio
+      studio: HandMade Films
+      poster: https://i.imgur.com/kfT1KGx.png
+    summary: Monty Pythons Life of Brian, Time Bandits, Mona Lisa, Withnail & I — George Harrisons studio rescuing British eccentric cinema.
+  DNA Films:
+    template:
+      name: Studio
+      studio: DNA Films
+      poster: https://i.imgur.com/VgYAnb5.png
+    summary: 28 Days Later, Ex Machina, Annihilation — Andrew Macdonald and Allon Reichs sci-fi/horror imprint.
+  Hammer Film Productions:
+    template:
+      name: Studio
+      studio: Hammer Film Productions
+      poster: https://i.imgur.com/7eXMFyG.png
+    summary: Dracula, Frankenstein, Curse of the Werewolf — the iconic British gothic-horror studio.
+  See-Saw Films:
+    template:
+      name: Studio
+      studio: See-Saw Films
+      poster: https://i.imgur.com/SuJ5qXE.png
+    summary: The Kings Speech, Lion, Ammonite, The Power of the Dog — Iain Canning and Emile Shermans prestige slate.
+  Warp Films:
+    template:
+      name: Studio
+      studio: Warp Films
+      poster: https://i.imgur.com/lFMzYCG.png
+    summary: This is England, Submarine, Four Lions, 71 — the Sheffield-based indie behind Shane Meadows and Chris Morris.
+  Pathé UK:
+    template:
+      name: Studio
+      studio: Pathé
+      poster: https://i.imgur.com/4EjoXfS.png
+    summary: Les Misérables, Slumdog Millionaire, Philomena, The Iron Lady — UK arm of the French mini-major.
+  Heyday Films:
+    template:
+      name: Studio
+      studio: Heyday Films
+      poster: https://i.imgur.com/zVdcQ8e.png
+    summary: Paddington, Harry Potter series — David Heymans family-feature production house.
+  Element Pictures:
+    template:
+      name: Studio
+      studio: Element Pictures
+      poster: https://i.imgur.com/0XnhJfV.png
+    summary: The Favourite, Poor Things, Normal People — Irish/UK indie behind Yorgos Lanthimos prestige films.
+  Scott Free Productions UK:
+    template:
+      name: Studio
+      studio: Scott Free Productions
+      poster: https://i.imgur.com/OvKQ0vA.png
+    summary: Ridley Scotts UK operation — Gladiator, The Martian, House of Gucci, Napoleon.
+  Blueprint Pictures:
+    template:
+      name: Studio
+      studio: Blueprint Pictures
+      poster: https://i.imgur.com/qHPvKY9.png
+    summary: Three Billboards Outside Ebbing Missouri, The Banshees of Inisherin, In Bruges, Seven Psychopaths — Martin McDonaghs home.
+  BAFTA Awards & Nominees 2022:
+    template:
+      name: BAFTA
+      year: 2022
+    imdb_list: https://www.imdb.com/list/ls540050544/
+  BAFTA Awards & Nominees 2023:
+    template:
+      name: BAFTA
+      year: 2023
+    imdb_list: https://www.imdb.com/list/ls566091692/
+  BAFTA Awards & Nominees 2024:
+    template:
+      name: BAFTA
+      year: 2024
+    imdb_list: https://www.imdb.com/list/ls563533931/
+  BAFTA Awards & Nominees 2025:
+    template:
+      name: BAFTA
+      year: 2025
+    imdb_list: https://www.imdb.com/list/ls4143664547/
+  BAFTA Awards & Nominees 2026:
+    template:
+      name: BAFTA
+      year: 2026
+    imdb_search:
+      event:
+      - event.bafta
+      event_year: 2026
+  Toronto International Film Festival 2022:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/tnzBoC0.png
+    imdb_list: https://www.imdb.com/list/ls538024313/
+    summary: 2022 Toronto International Film Festival selections
+  Toronto International Film Festival 2023:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/tnzBoC0.png
+    imdb_list: https://www.imdb.com/list/ls569010957/
+    summary: 2023 Toronto International Film Festival selections
+  Toronto International Film Festival 2024:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/tnzBoC0.png
+    imdb_list: https://www.imdb.com/list/ls563533848/
+    summary: 2024 Toronto International Film Festival selections
+  Toronto International Film Festival 2025:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/tnzBoC0.png
+    imdb_search:
+      event:
+      - event.ev0000659
+      event_year: 2025
+    summary: 2025 Toronto International Film Festival selections
+  Sundance Film Festival 2022:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/YgVn7JR.png
+    imdb_list: https://www.imdb.com/list/ls540033345/
+    summary: 2022 Sundance Film Festival selections
+  Sundance Film Festival 2023:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/YgVn7JR.png
+    imdb_list: https://www.imdb.com/list/ls566092317/
+    summary: 2023 Sundance Film Festival selections
+  Sundance Film Festival 2024:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/YgVn7JR.png
+    imdb_list: https://www.imdb.com/list/ls563534033/
+    summary: 2024 Sundance Film Festival selections
+  Sundance Film Festival 2025:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/YgVn7JR.png
+    imdb_search:
+      event:
+      - event.ev0000631
+      event_year: 2025
+    summary: 2025 Sundance Film Festival selections
+  Cannes Film Festival 2021:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/ymaMNrS.png
+    imdb_search:
+      event:
+      - event.ev0000147
+      event_year: 2021
+    summary: 2021 Cannes Film Festival selections
+  Cannes Film Festival 2022:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/ymaMNrS.png
+    imdb_search:
+      event:
+      - event.ev0000147
+      event_year: 2022
+    summary: 2022 Cannes Film Festival selections
+  Cannes Film Festival 2023:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/ymaMNrS.png
+    imdb_search:
+      event:
+      - event.ev0000147
+      event_year: 2023
+    summary: 2023 Cannes Film Festival selections
+  Cannes Film Festival 2024:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/ymaMNrS.png
+    imdb_search:
+      event:
+      - event.ev0000147
+      event_year: 2024
+    summary: 2024 Cannes Film Festival selections
+  Cannes Film Festival 2025:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/ymaMNrS.png
+    imdb_search:
+      event:
+      - event.ev0000147
+      event_year: 2025
+    summary: 2025 Cannes Film Festival selections
+  Dystopian Movies:
+    template:
+      name: Genre
+      poster: https://i.imgur.com/5zmFnAL.png
+    summary: Dystopian and post-apocalyptic futures — Blade Runner, Mad Max, Children of Men, Dredd, 1984, Snowpiercer, The Road, Brazil, V for Vendetta, Equilibrium, Gattaca, Elysium, Book of Eli, The Handmaid's
+      Tale, 28 Days Later, The Matrix, THX 1138, Logan's Run, Soylent Green, A Clockwork Orange.
+    tmdb_list:
+    - https://www.themoviedb.org/list/8257-dystopian-future
+    imdb_list:
+    - https://www.imdb.com/list/ls059633855/
+    - https://www.imdb.com/list/ls076129631/
+    plex_search:
+      any:
+        keyword:
+        - dystopia
+        - post-apocalyptic
+        - post apocalyptic
+        - dystopian-future
+    sort_title: +++++++_Dystopia
+    collection_order: release
+    url_background: https://i.imgur.com/OrVCnSN.jpg
