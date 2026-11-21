@@ -10,10 +10,9 @@ collections:
     template:
       name: generic_list
     imdb_list:
-    - https://www.imdb.com/list/ls044462968/
     - https://www.imdb.com/list/ls560016464/
+    - https://www.imdb.com/list/ls044462968/
     - https://www.imdb.com/list/ls523574560/
-    - https://www.imdb.com/list/ls509051450/
     - https://www.imdb.com/list/ls501229163/ # Top Rated AEW PPVs
     tmdb_company: 119828
     item_label: aew,wrestling
@@ -37,7 +36,7 @@ collections:
       name: generic_list
     imdb_list:
     - https://www.imdb.com/list/ls066790094/
-    - https://www.imdb.com/list/ls523285888/
+    - https://www.imdb.com/list/ls590447148/
     - https://www.imdb.com/list/ls523039717/
     - https://www.imdb.com/list/ls538431085/
     - https://www.imdb.com/list/ls021456885/
@@ -58,7 +57,7 @@ collections:
     template:
       name: generic_list
     imdb_list:
-    - https://www.imdb.com/de/list/ls088281187/
+    - https://www.imdb.com/list/ls088281187/
     item_label: wwe,wrestling,wrestlemania
     item_radarr_tag: wwe,wrestling
     radarr_tag: wwe,wrestling
